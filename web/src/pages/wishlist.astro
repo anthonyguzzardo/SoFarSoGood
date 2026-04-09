@@ -1,0 +1,116 @@
+---
+/**
+ * /wishlist — every paper we want indexed, from 1800 BCE to 2026.
+ *
+ * The most ambitious page on the site. Shows the full scope of what we're
+ * trying to build — a complete index of human scientific knowledge — and
+ * invites the community to help us get there. Every entry that's "wanted"
+ * is a paper we don't have yet. Every entry that's "indexed" is a win.
+ */
+
+import BaseLayout from "../layouts/BaseLayout.astro";
+import WishlistBrowser from "../components/WishlistBrowser.tsx";
+import Stat from "../components/Stat.astro";
+import {
+  allWishlistEntries,
+  allEras,
+  allFields,
+  eraLabel,
+  fieldLabel,
+  wishlistStats,
+  displayYear,
+} from "../lib/wishlist.ts";
+
+const eraLabels = Object.fromEntries(allEras.map((e) => [e, eraLabel(e)]));
+const fieldLabels = Object.fromEntries(allFields.map((f) => [f, fieldLabel(f)]));
+---
+
+<BaseLayout
+  title="Wishlist — NIAC Atlas"
+  description={`${wishlistStats.total} scientific papers and writings spanning ${Math.abs(wishlistStats.oldestYear) + wishlistStats.newestYear} years of human knowledge — help us index them all.`}
+  nav="wishlist"
+>
+  {/* ----------------------------------------------------------- */}
+  {/* Header                                                      */}
+  {/* ----------------------------------------------------------- */}
+  <section class="mb-12">
+    <div class="eyebrow text-accent mb-3">The Wishlist</div>
+    <h2
+      class="font-display text-4xl md:text-5xl font-semibold tracking-tight leading-tight max-w-4xl"
+    >
+      Every scientific paper we're trying to index
+    </h2>
+    <p class="mt-4 text-base text-dim max-w-3xl leading-relaxed">
+      From a Babylonian clay tablet cataloguing Pythagorean triples in 1800 BCE
+      to DESI dark energy measurements in 2024 — this is the full scope of what
+      we're building. {wishlistStats.total} papers spanning{" "}
+      {Math.abs(wishlistStats.oldestYear) + wishlistStats.newestYear} years of
+      human scientific knowledge. Every entry marked "wanted" is one we haven't
+      indexed yet.{" "}
+      <a href="/mission" class="text-accent underline hover:text-white">
+        Help us get there.
+      </a>
+    </p>
+  </section>
+
+  {/* ----------------------------------------------------------- */}
+  {/* Stats                                                       */}
+  {/* ----------------------------------------------------------- */}
+  <section class="mb-12">
+    <div
+      class="surface rounded-lg px-6 py-5 grid grid-cols-2 md:grid-cols-5 gap-y-4 gap-x-6"
+    >
+      <Stat value={wishlistStats.total} label="papers listed" />
+      <Stat value={wishlistStats.wanted} label="still wanted" />
+      <Stat value={wishlistStats.indexed} label="indexed" />
+      <Stat
+        value={`${displayYear(wishlistStats.oldestYear)}–${wishlistStats.newestYear}`}
+        label="time span"
+      />
+      <Stat value={allFields.length} label="scientific fields" />
+    </div>
+  </section>
+
+  {/* ----------------------------------------------------------- */}
+  {/* Field breakdown                                             */}
+  {/* ----------------------------------------------------------- */}
+  <section class="mb-16">
+    <div class="flex flex-wrap gap-3">
+      {
+        allFields.map((f) => (
+          <div
+            class="px-3 py-2 rounded border hairline text-xs font-mono"
+            style="background: var(--color-paper-raised);"
+          >
+            <span class="text-accent">{fieldLabel(f)}</span>
+            <span class="text-dim ml-1">
+              {wishlistStats.byField[f]}
+            </span>
+          </div>
+        ))
+      }
+    </div>
+  </section>
+
+  {/* ----------------------------------------------------------- */}
+  {/* Browse all (interactive React island)                       */}
+  {/* ----------------------------------------------------------- */}
+  <section>
+    <div
+      class="flex items-baseline justify-between mb-6 pb-4 border-b hairline"
+    >
+      <h3 class="font-display text-2xl font-semibold">
+        The full list
+      </h3>
+      <span class="eyebrow">search · filter by era · filter by field</span>
+    </div>
+    <WishlistBrowser
+      entries={allWishlistEntries}
+      eras={allEras}
+      fields={allFields}
+      eraLabels={eraLabels}
+      fieldLabels={fieldLabels}
+      client:load
+    />
+  </section>
+</BaseLayout>
