@@ -1,0 +1,24 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import Timeline from "../components/Timeline.tsx";
+import { allConcepts, stats } from "../lib/concepts.ts";
+---
+
+<BaseLayout title="Timeline — NIAC Atlas" nav="timeline">
+  <section class="mb-10">
+    <div class="eyebrow text-accent mb-3">View · Timeline</div>
+    <h2
+      class="font-display text-4xl md:text-5xl font-semibold tracking-tight leading-tight max-w-3xl"
+    >
+      Every NIAC concept, plotted across {stats.yearMax - stats.yearMin + 1} years
+    </h2>
+    <p class="mt-4 text-base text-dim max-w-2xl leading-relaxed">
+      Each dot is one concept. Columns show how dense each year was; color
+      shows the funding phase. The shape of the chart is the rhythm of NIAC
+      itself — when ideas got proposed, when they hit Phase II, when the
+      program leaned hard into a research wave.
+    </p>
+  </section>
+
+  <Timeline concepts={allConcepts} client:load />
+</BaseLayout>

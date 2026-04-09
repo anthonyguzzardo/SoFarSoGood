@@ -1,0 +1,120 @@
+---
+import "../styles/global.css";
+import { allConcepts } from "../lib/concepts.ts";
+
+interface Props {
+  title: string;
+  description?: string;
+  /** Active nav item — drives the underline/highlight in the header. */
+  nav?: "browse" | "timeline" | "subjects" | "atlas" | "concept" | null;
+}
+
+const {
+  title,
+  description = "An atlas of every future humans have seriously imagined.",
+  nav = null,
+} = Astro.props;
+
+/** Slug list for the random-concept button — injected once into the page. */
+const allSlugs = allConcepts.map((c) => c.slug);
+
+/** Each nav item: label, href, key for active-state matching. */
+const navItems = [
+  { key: "browse", label: "Browse", href: "/" },
+  { key: "timeline", label: "Timeline", href: "/timeline" },
+  { key: "subjects", label: "Subjects", href: "/subjects" },
+  { key: "atlas", label: "Atlas", href: "/atlas" },
+] as const;
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content={description} />
+    <title>{title}</title>
+    <link
+      rel="icon"
+      href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🛰</text></svg>"
+    />
+  </head>
+  <body class="min-h-screen flex flex-col relative">
+    {/* Ambient background — fixed, behind everything. */}
+    <div class="starfield"></div>
+    <div class="starfield-vignette"></div>
+
+    {/* ----------------------------------------------------------------- */}
+    {/* Header                                                            */}
+    {/* ----------------------------------------------------------------- */}
+    <header class="border-b hairline relative z-10 backdrop-blur-sm">
+      <div
+        class="max-w-6xl mx-auto px-6 py-6 flex items-center justify-between gap-6 flex-wrap"
+      >
+        <a href="/" class="inline-block group">
+          <h1 class="text-2xl font-semibold tracking-tight font-display">
+            NIAC <span class="text-accent">Atlas</span>
+          </h1>
+          <p class="text-xs text-dim mt-0.5">
+            an atlas of imagined futures
+          </p>
+        </a>
+
+        <nav class="flex items-center gap-1 flex-wrap">
+          {
+            navItems.map((item) => (
+              <a
+                href={item.href}
+                class:list={[
+                  "px-3 py-2 text-xs uppercase tracking-widest font-mono rounded transition",
+                  nav === item.key
+                    ? "text-accent border hairline-strong"
+                    : "text-dim hover:text-white border border-transparent",
+                ]}
+              >
+                {item.label}
+              </a>
+            ))
+          }
+          <button
+            id="random-concept-btn"
+            type="button"
+            class="ml-2 px-3 py-2 text-xs uppercase tracking-widest font-mono rounded border hairline hover:border-amber-400 hover:text-accent transition text-dim"
+          >
+            ↯ Random
+          </button>
+        </nav>
+      </div>
+    </header>
+
+    <main class="flex-1 max-w-6xl w-full mx-auto px-6 py-12 relative z-10">
+      <slot />
+    </main>
+
+    <footer class="border-t hairline mt-24 relative z-10">
+      <div class="max-w-6xl mx-auto px-6 py-8 text-xs text-dim font-mono">
+        <p>
+          Concepts sourced from
+          <a
+            href="https://ntrs.nasa.gov"
+            class="underline hover:text-white"
+            target="_blank"
+            rel="noopener">NASA Technical Reports Server</a
+          >. NIAC = NASA Innovative Advanced Concepts. Not affiliated with NASA.
+        </p>
+      </div>
+    </footer>
+
+    {/* Inline script for the random-concept button. No React, no hydration. */}
+    <script is:inline define:vars={{ allSlugs }}>
+      const btn = document.getElementById("random-concept-btn");
+      if (btn) {
+        btn.addEventListener("click", () => {
+          const slug =
+            allSlugs[Math.floor(Math.random() * allSlugs.length)];
+          window.location.href = `/concept/${slug}`;
+        });
+      }
+    </script>
+  </body>
+</html>

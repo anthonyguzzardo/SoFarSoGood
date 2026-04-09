@@ -1,0 +1,192 @@
+@import "tailwindcss";
+
+/* ----------------------------------------------------------------------- */
+/* Design tokens                                                           */
+/* ----------------------------------------------------------------------- */
+/* The atlas is a dark, paper-quiet space — closer to a Rauschenberg-meets- */
+/* JPL aesthetic than the standard "tech site" purple gradient.            */
+
+@theme {
+  --color-ink: #e8e6df;
+  --color-ink-dim: #9a978c;
+  --color-ink-faint: #5a5852;
+  --color-paper: #07070a;
+  --color-paper-raised: #11111a;
+  --color-paper-edge: #25252d;
+  --color-accent: #ffb84d;
+  --color-accent-dim: #8a5a1c;
+  --color-accent-glow: rgba(255, 184, 77, 0.18);
+
+  --font-display: ui-serif, "Iowan Old Style", "Apple Garamond", Georgia, serif;
+  --font-body: ui-sans-serif, system-ui, -apple-system, sans-serif;
+  --font-mono: ui-monospace, "JetBrains Mono", SFMono-Regular, Menlo, monospace;
+}
+
+html,
+body {
+  background: var(--color-paper);
+  color: var(--color-ink);
+  font-family: var(--font-body);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+::selection {
+  background: var(--color-accent);
+  color: var(--color-paper);
+}
+
+/* ----------------------------------------------------------------------- */
+/* Ambient star field                                                      */
+/* ----------------------------------------------------------------------- */
+/* A fixed-position layer behind everything that paints a procedural star  */
+/* field with three depth tiers. Pure CSS, no JS, no images. The trick is  */
+/* a stack of radial gradients tiled across a large background-size — each */
+/* tile contributes one or two stars, and the eye fills in randomness.    */
+
+.starfield {
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+  background-color: var(--color-paper);
+  background-image:
+    /* deep / faint stars */
+    radial-gradient(1px 1px at 23px 47px, rgba(255, 255, 255, 0.55), transparent 50%),
+    radial-gradient(1px 1px at 161px 89px, rgba(255, 255, 255, 0.4), transparent 50%),
+    radial-gradient(1px 1px at 240px 200px, rgba(255, 255, 255, 0.5), transparent 50%),
+    radial-gradient(1px 1px at 311px 71px, rgba(255, 255, 255, 0.35), transparent 50%),
+    radial-gradient(1px 1px at 91px 251px, rgba(255, 255, 255, 0.45), transparent 50%),
+    radial-gradient(1px 1px at 199px 311px, rgba(255, 255, 255, 0.4), transparent 50%),
+    /* mid stars */
+    radial-gradient(1.5px 1.5px at 67px 137px, rgba(255, 255, 255, 0.7), transparent 50%),
+    radial-gradient(1.5px 1.5px at 287px 23px, rgba(255, 255, 255, 0.65), transparent 50%),
+    radial-gradient(1.5px 1.5px at 41px 221px, rgba(255, 255, 255, 0.7), transparent 50%),
+    /* near / brightest, slightly amber */
+    radial-gradient(2px 2px at 137px 173px, rgba(255, 220, 180, 0.85), transparent 50%),
+    radial-gradient(2px 2px at 257px 257px, rgba(255, 220, 180, 0.75), transparent 50%);
+  background-size: 360px 360px;
+  background-repeat: repeat;
+  opacity: 0.85;
+}
+
+/* A second layer scaled differently to break up the tiling regularity. */
+.starfield::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image:
+    radial-gradient(1px 1px at 80px 130px, rgba(255, 255, 255, 0.5), transparent 50%),
+    radial-gradient(1px 1px at 220px 60px, rgba(255, 255, 255, 0.35), transparent 50%),
+    radial-gradient(1.5px 1.5px at 350px 220px, rgba(255, 240, 200, 0.6), transparent 50%),
+    radial-gradient(1px 1px at 470px 380px, rgba(255, 255, 255, 0.5), transparent 50%);
+  background-size: 540px 540px;
+  background-repeat: repeat;
+  opacity: 0.7;
+  transform: rotate(13deg);
+}
+
+/* Subtle vignette so the corners feel like deeper space. */
+.starfield-vignette {
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+  background: radial-gradient(
+    ellipse at center,
+    transparent 40%,
+    rgba(0, 0, 0, 0.55) 100%
+  );
+}
+
+/* ----------------------------------------------------------------------- */
+/* Reusable utilities                                                      */
+/* ----------------------------------------------------------------------- */
+
+.hairline {
+  border-color: var(--color-paper-edge);
+}
+
+.hairline-strong {
+  border-color: var(--color-accent-dim);
+}
+
+.font-display {
+  font-family: var(--font-display);
+}
+.font-mono {
+  font-family: var(--font-mono);
+}
+.text-dim {
+  color: var(--color-ink-dim);
+}
+.text-faint {
+  color: var(--color-ink-faint);
+}
+.text-accent {
+  color: var(--color-accent);
+}
+
+/* Mono caption used everywhere for metadata. */
+.eyebrow {
+  font-family: var(--font-mono);
+  font-size: 0.6875rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--color-ink-dim);
+}
+
+/* Pull-quote style — used on the concept page. */
+.pull-quote {
+  font-family: var(--font-display);
+  font-style: italic;
+  font-size: 1.5rem;
+  line-height: 1.45;
+  color: var(--color-ink);
+  border-left: 2px solid var(--color-accent);
+  padding-left: 1.25rem;
+}
+
+/* Card-like raised surface used in stats meter and graph view. */
+.surface {
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.02),
+    rgba(255, 255, 255, 0)
+  );
+  border: 1px solid var(--color-paper-edge);
+}
+
+/* Faint glow halo for the featured concept hero. */
+.hero-glow {
+  position: relative;
+}
+.hero-glow::before {
+  content: "";
+  position: absolute;
+  inset: -40px -60px;
+  background: radial-gradient(
+    ellipse at 30% 40%,
+    var(--color-accent-glow),
+    transparent 60%
+  );
+  z-index: -1;
+  pointer-events: none;
+  filter: blur(20px);
+}
+
+/* Subtle scroll-bar tweaks — keep it dark to match. */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: var(--color-paper-edge);
+  border-radius: 5px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-accent-dim);
+}

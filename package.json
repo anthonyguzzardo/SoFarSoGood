@@ -1,0 +1,20 @@
+{
+  "name": "niac-atlas",
+  "version": "0.0.1",
+  "private": true,
+  "description": "An atlas of every future NASA has paid people to seriously imagine.",
+  "type": "module",
+  "workspaces": [
+    "web"
+  ],
+  "scripts": {
+    "dev": "npm run dev --workspace web",
+    "build": "npm run build --workspace web",
+    "preview": "npm run preview --workspace web",
+    "ingest": "node --experimental-strip-types ingestion/fetch-niac.ts"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.0",
+    "typescript": "^5.7.0"
+  }
+}

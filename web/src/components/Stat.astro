@@ -1,0 +1,18 @@
+---
+/**
+ * Single cell in the homepage stats meter.
+ * Big number on top, mono caption below. That's the whole component.
+ */
+interface Props {
+  value: string | number;
+  label: string;
+}
+const { value, label } = Astro.props;
+---
+
+<div>
+  <div class="font-display text-3xl md:text-4xl font-semibold tracking-tight leading-none">
+    {value}
+  </div>
+  <div class="eyebrow mt-2">{label}</div>
+</div>

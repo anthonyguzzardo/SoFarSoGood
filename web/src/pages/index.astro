@@ -1,0 +1,89 @@
+---
+/**
+ * Homepage.
+ *
+ * Three sections, in order:
+ *   1. Stats meter — anchors the corpus in concrete numbers right away.
+ *      "188 funded futures · 9 years · 142 PIs" makes the atlas feel real.
+ *   2. Featured concept hero — oversized type, pull quote, glow halo.
+ *      First impression is "wait, that's a real thing someone got paid to study?"
+ *   3. Browse — the interactive ConceptBrowser island.
+ */
+
+import BaseLayout from "../layouts/BaseLayout.astro";
+import {
+  allConcepts,
+  getFeaturedConcept,
+  pullQuote,
+  piLine,
+  stats,
+} from "../lib/concepts.ts";
+import ConceptBrowser from "../components/ConceptBrowser.tsx";
+import Stat from "../components/Stat.astro";
+
+const featured = getFeaturedConcept();
+const featuredQuote = pullQuote(featured.abstract);
+---
+
+<BaseLayout title="NIAC Atlas — speculative aerospace, mapped" nav="browse">
+  {/* ----------------------------------------------------------------- */}
+  {/* Stats meter                                                       */}
+  {/* ----------------------------------------------------------------- */}
+  <section class="mb-16">
+    <div
+      class="surface rounded-lg px-6 py-5 grid grid-cols-2 md:grid-cols-5 gap-y-4 gap-x-6"
+    >
+      <Stat value={stats.totalConcepts} label="funded futures" />
+      <Stat value={stats.totalPIs} label="principal investigators" />
+      <Stat value={stats.totalOrgs} label="institutions" />
+      <Stat value={`${stats.yearMin}–${stats.yearMax}`} label="years covered" />
+      <Stat
+        value={`I·${stats.byPhase.I ?? 0}  II·${stats.byPhase.II ?? 0}`}
+        label="phase breakdown"
+      />
+    </div>
+  </section>
+
+  {/* ----------------------------------------------------------------- */}
+  {/* Featured concept hero                                             */}
+  {/* ----------------------------------------------------------------- */}
+  <section class="mb-24 hero-glow">
+    <div class="eyebrow text-accent mb-4">Featured concept</div>
+    <a href={`/concept/${featured.slug}`} class="block group">
+      <h2
+        class="font-display text-5xl md:text-7xl font-semibold tracking-tight leading-[1.05] group-hover:opacity-90 transition-opacity max-w-5xl"
+      >
+        {featured.title}
+      </h2>
+      <div class="mt-5 eyebrow font-mono">
+        {featured.year}
+        {featured.phase && (
+          <span class="text-accent"> · NIAC Phase {featured.phase}</span>
+        )}
+        <span> · {piLine(featured)}</span>
+      </div>
+
+      <blockquote class="pull-quote mt-10 max-w-3xl">
+        “{featuredQuote}”
+      </blockquote>
+
+      <div
+        class="mt-8 inline-flex items-center gap-2 text-accent eyebrow group-hover:gap-3 transition-all"
+      >
+        <span>Read concept</span>
+        <span>→</span>
+      </div>
+    </a>
+  </section>
+
+  {/* ----------------------------------------------------------------- */}
+  {/* Browse all concepts (interactive React island)                    */}
+  {/* ----------------------------------------------------------------- */}
+  <section>
+    <div class="flex items-baseline justify-between mb-6 pb-4 border-b hairline">
+      <h3 class="font-display text-2xl font-semibold">The atlas</h3>
+      <span class="eyebrow">browse · search · filter</span>
+    </div>
+    <ConceptBrowser concepts={allConcepts} client:load />
+  </section>
+</BaseLayout>

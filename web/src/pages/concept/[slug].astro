@@ -1,0 +1,208 @@
+---
+/**
+ * Concept detail page — magazine-style layout.
+ *
+ * Layout:
+ *   header        full-width
+ *   pull quote    full-width, indented, large italic serif
+ *   body / aside  two columns: abstract on left, metadata sidebar on right
+ *   more-like-this  full-width footer with related concepts
+ */
+
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import {
+  allConcepts,
+  getConcept,
+  getRelatedConcepts,
+  pullQuote,
+  excerpt,
+  piLine,
+} from "../../lib/concepts.ts";
+
+export function getStaticPaths() {
+  return allConcepts.map((c) => ({ params: { slug: c.slug } }));
+}
+
+const { slug } = Astro.params;
+const concept = getConcept(slug!);
+if (!concept) throw new Error(`Concept not found: ${slug}`);
+
+const quote = pullQuote(concept.abstract);
+const related = getRelatedConcepts(concept.slug, 4);
+
+// Split abstract into paragraphs at blank lines if any.
+const paragraphs = concept.abstract
+  .split(/\n{2,}/)
+  .map((p) => p.trim())
+  .filter(Boolean);
+---
+
+<BaseLayout
+  title={`${concept.title} — NIAC Atlas`}
+  description={concept.abstract.slice(0, 200)}
+  nav="concept"
+>
+  <article>
+    {/* ----------------------------------------------------------- */}
+    {/* Breadcrumb                                                  */}
+    {/* ----------------------------------------------------------- */}
+    <a href="/" class="eyebrow hover:text-white inline-flex items-center gap-1">
+      ← Back to atlas
+    </a>
+
+    {/* ----------------------------------------------------------- */}
+    {/* Header                                                      */}
+    {/* ----------------------------------------------------------- */}
+    <header class="mt-6 mb-12 max-w-4xl">
+      <div class="eyebrow mb-3">
+        <span class="text-accent">NIAC</span>
+        {concept.phase && (
+          <span>
+            {" · Phase "}
+            {concept.phase}
+          </span>
+        )}
+        <span> · {concept.year}</span>
+      </div>
+      <h1
+        class="font-display text-4xl md:text-6xl font-semibold tracking-tight leading-[1.05]"
+      >
+        {concept.title}
+      </h1>
+      <div class="mt-6 text-base text-dim">
+        {piLine(concept)}
+      </div>
+    </header>
+
+    {/* ----------------------------------------------------------- */}
+    {/* Pull quote                                                  */}
+    {/* ----------------------------------------------------------- */}
+    <blockquote class="pull-quote my-12 max-w-3xl">
+      “{quote}”
+    </blockquote>
+
+    {/* ----------------------------------------------------------- */}
+    {/* Body + sidebar                                              */}
+    {/* ----------------------------------------------------------- */}
+    <div class="grid grid-cols-1 md:grid-cols-[minmax(0,1fr)_240px] gap-12 mt-16">
+      {/* Body */}
+      <div>
+        <div class="eyebrow mb-3">Abstract</div>
+        <div class="space-y-4 text-base leading-relaxed max-w-2xl">
+          {paragraphs.map((p) => <p>{p}</p>)}
+        </div>
+      </div>
+
+      {/* Sidebar */}
+      <aside class="space-y-8 text-sm">
+        {/* Authors */}
+        <div>
+          <div class="eyebrow mb-2">Team</div>
+          <ul class="space-y-2">
+            {
+              concept.authors.map((a) => (
+                <li>
+                  <div class="font-medium">{a.name}</div>
+                  {a.organization && (
+                    <div class="text-dim text-xs">{a.organization}</div>
+                  )}
+                  {a.isPI && (
+                    <div class="eyebrow text-accent mt-0.5">Lead PI</div>
+                  )}
+                </li>
+              ))
+            }
+          </ul>
+        </div>
+
+        {/* Subjects */}
+        {concept.subjects.length > 0 && (
+          <div>
+            <div class="eyebrow mb-2">Subjects</div>
+            <ul class="space-y-1">
+              {concept.subjects.map((s) => (
+                <li class="text-xs font-mono text-dim">{s}</li>
+              ))}
+            </ul>
+          </div>
+        )}
+
+        {/* Keywords */}
+        {concept.keywords.length > 0 && (
+          <div>
+            <div class="eyebrow mb-2">Keywords</div>
+            <div class="flex flex-wrap gap-1.5">
+              {concept.keywords.slice(0, 16).map((k) => (
+                <span class="text-xs font-mono text-faint">
+                  #{k.replace(/\s+/g, "-")}
+                </span>
+              ))}
+            </div>
+          </div>
+        )}
+
+        {/* Source */}
+        <div>
+          <div class="eyebrow mb-2">Source</div>
+          <a
+            href={concept.sourceUrl}
+            target="_blank"
+            rel="noopener"
+            class="text-xs font-mono text-accent underline break-all"
+          >
+            ntrs.nasa.gov →
+          </a>
+          {concept.downloadUrls.length > 0 && (
+            <ul class="mt-2 space-y-1">
+              {concept.downloadUrls.map((url) => (
+                <li>
+                  <a
+                    href={url}
+                    target="_blank"
+                    rel="noopener"
+                    class="text-xs font-mono text-dim underline"
+                  >
+                    PDF ↗
+                  </a>
+                </li>
+              ))}
+            </ul>
+          )}
+        </div>
+      </aside>
+    </div>
+
+    {/* ----------------------------------------------------------- */}
+    {/* More like this                                              */}
+    {/* ----------------------------------------------------------- */}
+    {related.length > 0 && (
+      <section class="mt-32 pt-12 border-t hairline">
+        <div class="flex items-baseline justify-between mb-8">
+          <h3 class="font-display text-2xl font-semibold">More like this</h3>
+          <span class="eyebrow">by shared keywords + lineage</span>
+        </div>
+        <ul class="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-8">
+          {related.map((r) => (
+            <li>
+              <a href={`/concept/${r.slug}`} class="block group">
+                <div class="eyebrow mb-1">
+                  {r.year}
+                  {r.phase && (
+                    <span class="text-accent"> · Phase {r.phase}</span>
+                  )}
+                  <span> · {piLine(r)}</span>
+                </div>
+                <h4 class="font-display text-lg font-semibold leading-snug group-hover:underline">
+                  {r.title}
+                </h4>
+                <p class="mt-2 text-sm text-dim leading-relaxed">
+                  {excerpt(r.abstract, 200)}
+                </p>
+              </a>
+            </li>
+          ))}
+        </ul>
+      </section>
+    )}
+  </article>
+</BaseLayout>

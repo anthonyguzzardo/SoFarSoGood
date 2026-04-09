@@ -1,0 +1,28 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import Atlas from "../components/Atlas.tsx";
+import { allConcepts } from "../lib/concepts.ts";
+---
+
+<BaseLayout title="Atlas — NIAC Atlas" nav="atlas">
+  <section class="mb-10">
+    <div class="eyebrow text-accent mb-3">View · Atlas</div>
+    <h2
+      class="font-display text-4xl md:text-5xl font-semibold tracking-tight leading-tight max-w-3xl"
+    >
+      Wander the imagined future
+    </h2>
+    <p class="mt-4 text-base text-dim max-w-2xl leading-relaxed">
+      Every concept as a node, every research lineage and topical neighbor as
+      an edge. Drag a node and watch the cluster reorganize. Click to read.
+      The dense knots are where research communities are forming around an
+      idea — usually propulsion, habitats, or far-side astronomy.
+    </p>
+    <p class="mt-2 text-xs text-faint font-mono max-w-2xl">
+      placeholder edges from shared keywords + shared PIs · proper
+      embedding-based similarity coming in session 3
+    </p>
+  </section>
+
+  <Atlas concepts={allConcepts} client:only="react" />
+</BaseLayout>

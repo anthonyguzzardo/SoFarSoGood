@@ -1,0 +1,11 @@
+node_modules
+dist
+.env
+.env.*
+!.env.example
+.DS_Store
+.astro
+.wrangler
+
+# Keep raw API responses out of git but track normalized output
+data/raw/

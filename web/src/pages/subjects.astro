@@ -1,0 +1,111 @@
+---
+/**
+ * /subjects — typographic browse-by-topic.
+ *
+ * Two stacked sections:
+ *   1. SUBJECTS — broader categories from NTRS subjectCategories. Smaller
+ *      number of items, each with a real count.
+ *   2. KEYWORDS — long tail of granular tags. Sized by frequency so the
+ *      cloud has visual rhythm. Filtered to only show keywords with >= 2
+ *      occurrences (otherwise the cloud is dominated by single-mention
+ *      noise).
+ *
+ * Clicking a topic navigates to the homepage with `?q=<label>` so the
+ * ConceptBrowser pre-fills the search box. (Browser doesn't currently
+ * read query params — that's a 5-line addition we'll do later if needed.)
+ */
+
+import BaseLayout from "../layouts/BaseLayout.astro";
+import { allTopics } from "../lib/concepts.ts";
+
+const subjects = allTopics
+  .filter((t) => t.kind === "subject")
+  .sort((a, b) => b.count - a.count);
+
+const keywords = allTopics
+  .filter((t) => t.kind === "keyword" && t.count >= 2)
+  .sort((a, b) => b.count - a.count)
+  .slice(0, 200);
+
+const maxKwCount = Math.max(...keywords.map((k) => k.count), 1);
+
+/** Map a keyword count to a font size in rem, log-scaled. */
+function sizeFor(count: number): string {
+  const t = Math.log(count + 1) / Math.log(maxKwCount + 1);
+  const min = 0.75;
+  const max = 1.75;
+  return `${(min + (max - min) * t).toFixed(2)}rem`;
+}
+
+/** Map a count to opacity so rare keywords fade. */
+function opacityFor(count: number): number {
+  const t = Math.log(count + 1) / Math.log(maxKwCount + 1);
+  return 0.4 + 0.6 * t;
+}
+---
+
+<BaseLayout title="Subjects — NIAC Atlas" nav="subjects">
+  <section class="mb-12">
+    <div class="eyebrow text-accent mb-3">View · Subjects</div>
+    <h2
+      class="font-display text-4xl md:text-5xl font-semibold tracking-tight leading-tight max-w-3xl"
+    >
+      The vocabulary of imagined futures
+    </h2>
+    <p class="mt-4 text-base text-dim max-w-2xl leading-relaxed">
+      Every subject and keyword the corpus uses, sized by how often it
+      appears. The shape of this cloud is a rough map of what NIAC has been
+      thinking about for the last decade — propulsion dominates, then habitats,
+      then increasingly weird sensing.
+    </p>
+  </section>
+
+  {/* ----------------------------------------------------------------- */}
+  {/* SUBJECTS                                                          */}
+  {/* ----------------------------------------------------------------- */}
+  <section class="mb-20">
+    <div class="eyebrow mb-4 pb-2 border-b hairline">
+      Broad subject categories
+    </div>
+    <ul class="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-3">
+      {
+        subjects.map((s) => (
+          <li>
+            <a
+              href={`/?q=${encodeURIComponent(s.label)}`}
+              class="flex items-baseline justify-between gap-4 group py-2 border-b hairline"
+            >
+              <span class="font-display text-lg group-hover:text-accent transition-colors">
+                {s.label}
+              </span>
+              <span class="eyebrow shrink-0">{s.count}</span>
+            </a>
+          </li>
+        ))
+      }
+    </ul>
+  </section>
+
+  {/* ----------------------------------------------------------------- */}
+  {/* KEYWORDS                                                          */}
+  {/* ----------------------------------------------------------------- */}
+  <section>
+    <div class="eyebrow mb-6 pb-2 border-b hairline">
+      Keyword cloud — {keywords.length} terms with ≥2 mentions
+    </div>
+    <div class="flex flex-wrap gap-x-5 gap-y-3 leading-tight">
+      {
+        keywords.map((k) => (
+          <a
+            href={`/?q=${encodeURIComponent(k.label)}`}
+            class="font-mono hover:text-accent transition-colors"
+            style={`font-size: ${sizeFor(k.count)}; opacity: ${opacityFor(k.count)}`}
+          >
+            {k.label}
+            <sup class="text-xs ml-0.5 text-faint">{k.count}</sup>
+          </a>
+        ))
+      }
+    </div>
+  </section>
+</BaseLayout>
