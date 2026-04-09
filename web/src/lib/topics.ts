@@ -41,6 +41,11 @@ export interface ThoughtExperiment {
   modernStatus: string;
 }
 
+export interface Misconception {
+  claim: string;
+  reality: string;
+}
+
 export interface Topic {
   slug: string;
   title: string;
@@ -49,6 +54,7 @@ export interface Topic {
   openQuestions: string[];
   unsolvedProblems: UnsolvedProblem[];
   thoughtExperiments: ThoughtExperiment[];
+  misconceptions?: Misconception[];
   timeline: TimelineEntry[];
   media: MediaEntry[];
   relatedConceptSlugs: string[];

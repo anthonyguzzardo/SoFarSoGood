@@ -293,30 +293,21 @@ const paragraphs = concept.abstract
           />
         </div>
 
-        {/* Card list below the graph */}
-        <ul class="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-6">
+        {/* Compact link list below the graph — click nodes above for visual exploration */}
+        <ul class="space-y-2">
           {related.map((r) => (
             <li>
               <a
                 href={`/concept/${r.slug}`}
-                class="block group p-4 rounded-lg border-l-2 transition-all duration-150"
-                style="border-left-color: transparent;"
-                onmouseover="this.style.borderLeftColor='var(--color-accent)';this.style.background='var(--color-paper-raised)'"
-                onmouseout="this.style.borderLeftColor='transparent';this.style.background='transparent'"
+                class="group flex items-baseline gap-3 py-1.5 transition-colors"
               >
-                <div class="eyebrow mb-1">
-                  {r.year}
-                  {r.phase && (
-                    <span class="text-accent"> · Phase {r.phase}</span>
-                  )}
-                  <span> · {piLine(r)}</span>
-                </div>
-                <h4 class="font-display text-lg font-semibold leading-snug group-hover:underline">
+                <span class="eyebrow shrink-0">{r.year}</span>
+                <span class="font-display text-base leading-snug group-hover:text-accent transition-colors">
                   {r.title}
-                </h4>
-                <p class="mt-2 text-sm text-dim leading-relaxed">
-                  {excerpt(r.abstract, 200)}
-                </p>
+                </span>
+                {r.phase && (
+                  <span class="eyebrow text-accent shrink-0">Phase {r.phase}</span>
+                )}
               </a>
             </li>
           ))}

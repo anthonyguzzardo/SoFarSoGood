@@ -4,7 +4,7 @@
     "tier": "full",
     "title": "Black Holes",
     "subtitle": "Where spacetime breaks and physics begins again",
-    "overview": "A black hole is a region of spacetime where gravity is so extreme that nothing — not even light — can escape once it crosses the event horizon. First predicted by Schwarzschild's 1916 solution to Einstein's field equations, black holes spent decades as mathematical curiosities before astronomers found overwhelming evidence they're everywhere: at the centers of galaxies, in binary star systems, and possibly wandering through interstellar space in the billions. The 2019 Event Horizon Telescope image of M87* and the 2015 LIGO detection of gravitational waves from merging black holes turned them from theoretical objects into observed ones. Yet the deepest questions remain open: what happens at the singularity? Is information truly destroyed? How does gravity behave at the quantum scale?",
+    "overview": "What happens when gravity wins completely? A black hole is a region of spacetime where gravity is so extreme that nothing — not even light — can escape once it crosses the event horizon. First predicted by Schwarzschild's 1916 solution to Einstein's field equations, black holes spent decades as mathematical curiosities before astronomers found overwhelming evidence they're everywhere: at the centers of galaxies, in binary star systems, and possibly wandering through interstellar space in the billions. The 2019 Event Horizon Telescope image of M87* and the 2015 LIGO detection of gravitational waves from merging black holes turned them from theoretical objects into observed ones. Yet the deepest questions remain open: what happens at the singularity? Is information truly destroyed? How does gravity behave at the quantum scale?",
     "openQuestions": [
       "What happens to information that falls into a black hole? (the information paradox)",
       "What replaces the singularity in a quantum theory of gravity?",
@@ -20,11 +20,26 @@
         "status": "partially-resolved",
         "significance": "If information is truly destroyed when a black hole evaporates, it violates a foundational principle of quantum mechanics (unitarity). Resolving this likely requires understanding quantum gravity.",
         "milestones": [
-          { "year": 1974, "event": "Hawking shows black holes radiate thermally, implying information loss" },
-          { "year": 1997, "event": "Maldacena's AdS/CFT correspondence suggests information is preserved in principle" },
-          { "year": 2004, "event": "Hawking concedes his bet with Preskill — information is probably not lost" },
-          { "year": 2013, "event": "AMPS 'firewall paradox' reignites debate — smooth horizons may be impossible" },
-          { "year": 2019, "event": "Page curve calculations using 'island' formula suggest unitarity is preserved" }
+          {
+            "year": 1974,
+            "event": "Hawking shows black holes radiate thermally, implying information loss"
+          },
+          {
+            "year": 1997,
+            "event": "Maldacena's AdS/CFT correspondence suggests information is preserved in principle"
+          },
+          {
+            "year": 2004,
+            "event": "Hawking concedes his bet with Preskill — information is probably not lost"
+          },
+          {
+            "year": 2013,
+            "event": "AMPS 'firewall paradox' reignites debate — smooth horizons may be impossible"
+          },
+          {
+            "year": 2019,
+            "event": "Page curve calculations using 'island' formula suggest unitarity is preserved"
+          }
         ]
       },
       {
@@ -34,10 +49,22 @@
         "status": "open",
         "significance": "Penrose proved that singularities (points of infinite density) are inevitable inside black holes under general relativity. But infinite density is almost certainly unphysical — something must replace the singularity, and finding out what requires a theory of quantum gravity that doesn't exist yet.",
         "milestones": [
-          { "year": 1965, "event": "Penrose's singularity theorem proves gravitational collapse leads to singularities" },
-          { "year": 1970, "event": "Hawking & Penrose extend the theorem — singularities are generic, not special" },
-          { "year": 2003, "event": "Loop quantum gravity models suggest a 'bounce' replaces the singularity" },
-          { "year": 2020, "event": "Penrose wins Nobel Prize for this work — the problem he identified remains open" }
+          {
+            "year": 1965,
+            "event": "Penrose's singularity theorem proves gravitational collapse leads to singularities"
+          },
+          {
+            "year": 1970,
+            "event": "Hawking & Penrose extend the theorem — singularities are generic, not special"
+          },
+          {
+            "year": 2003,
+            "event": "Loop quantum gravity models suggest a 'bounce' replaces the singularity"
+          },
+          {
+            "year": 2020,
+            "event": "Penrose wins Nobel Prize for this work — the problem he identified remains open"
+          }
         ]
       },
       {
@@ -47,9 +74,18 @@
         "status": "open",
         "significance": "If tiny black holes formed in the early universe, they could be the dark matter we've been searching for — no new particles needed. Observational constraints have ruled out many mass ranges, but a window remains open.",
         "milestones": [
-          { "year": 1971, "event": "Hawking proposes primordial black holes could form from density fluctuations" },
-          { "year": 2016, "event": "LIGO's first detection revives interest — the merging black holes were heavier than expected" },
-          { "year": 2023, "event": "JWST observations place new constraints on primordial black hole abundance" }
+          {
+            "year": 1971,
+            "event": "Hawking proposes primordial black holes could form from density fluctuations"
+          },
+          {
+            "year": 2016,
+            "event": "LIGO's first detection revives interest — the merging black holes were heavier than expected"
+          },
+          {
+            "year": 2023,
+            "event": "JWST observations place new constraints on primordial black hole abundance"
+          }
         ]
       }
     ],
@@ -70,17 +106,50 @@
       }
     ],
     "timeline": [
-      { "year": 1783, "event": "John Michell proposes 'dark stars' too massive for light to escape" },
-      { "year": 1916, "event": "Karl Schwarzschild solves Einstein's equations, predicts the event horizon" },
-      { "year": 1935, "event": "Einstein & Rosen describe 'bridges' (wormholes) in spacetime" },
-      { "year": 1958, "event": "David Finkelstein shows the Schwarzschild radius is a one-way membrane" },
-      { "year": 1963, "event": "Roy Kerr solves rotating black holes — the realistic case" },
-      { "year": 1967, "event": "John Wheeler coins the term 'black hole'" },
-      { "year": 1971, "event": "Cygnus X-1 identified as first strong black hole candidate" },
-      { "year": 1974, "event": "Stephen Hawking predicts black holes radiate and eventually evaporate" },
-      { "year": 2015, "event": "LIGO detects gravitational waves from two merging black holes" },
-      { "year": 2019, "event": "Event Horizon Telescope produces first direct image of a black hole (M87*)" },
-      { "year": 2022, "event": "EHT images Sagittarius A*, the black hole at the center of our galaxy" }
+      {
+        "year": 1783,
+        "event": "John Michell proposes 'dark stars' too massive for light to escape"
+      },
+      {
+        "year": 1916,
+        "event": "Karl Schwarzschild solves Einstein's equations, predicts the event horizon"
+      },
+      {
+        "year": 1935,
+        "event": "Einstein & Rosen describe 'bridges' (wormholes) in spacetime"
+      },
+      {
+        "year": 1958,
+        "event": "David Finkelstein shows the Schwarzschild radius is a one-way membrane"
+      },
+      {
+        "year": 1963,
+        "event": "Roy Kerr solves rotating black holes — the realistic case"
+      },
+      {
+        "year": 1967,
+        "event": "John Wheeler coins the term 'black hole'"
+      },
+      {
+        "year": 1971,
+        "event": "Cygnus X-1 identified as first strong black hole candidate"
+      },
+      {
+        "year": 1974,
+        "event": "Stephen Hawking predicts black holes radiate and eventually evaporate"
+      },
+      {
+        "year": 2015,
+        "event": "LIGO detects gravitational waves from two merging black holes"
+      },
+      {
+        "year": 2019,
+        "event": "Event Horizon Telescope produces first direct image of a black hole (M87*)"
+      },
+      {
+        "year": 2022,
+        "event": "EHT images Sagittarius A*, the black hole at the center of our galaxy"
+      }
     ],
     "media": [
       {
@@ -126,15 +195,44 @@
       "direct-probe-of-dark-energy-interactions-with-a-solar-system-laboratory-nasa-inn-2019",
       "a-lunar-long-baseline-uv-optical-imaging-interferometer-artemis-enabled-stellar--2025"
     ],
-    "searchTerms": ["black hole", "gravitational", "event horizon", "singularity", "gravity", "spacetime"],
-    "relatedTopicSlugs": ["gravity", "quantum-physics", "telescopes"]
+    "searchTerms": [
+      "black hole",
+      "gravitational",
+      "event horizon",
+      "singularity",
+      "gravity",
+      "spacetime"
+    ],
+    "relatedTopicSlugs": [
+      "gravity",
+      "quantum-physics",
+      "telescopes"
+    ],
+    "misconceptions": [
+      {
+        "claim": "Black holes are cosmic vacuum cleaners that suck everything in.",
+        "reality": "A black hole has the same gravitational pull as the star it formed from. If the Sun were replaced by a black hole of equal mass, Earth's orbit wouldn't change at all. You have to get extremely close before things get inescapable."
+      },
+      {
+        "claim": "Nothing can ever escape a black hole.",
+        "reality": "Hawking showed in 1974 that black holes slowly radiate energy and eventually evaporate. The process takes longer than the current age of the universe for stellar-mass black holes, but it means they aren't truly permanent."
+      },
+      {
+        "claim": "Falling in means instant spaghettification.",
+        "reality": "For a supermassive black hole, you could cross the event horizon without noticing anything unusual. Tidal forces only become lethal near the singularity, which for a billion-solar-mass black hole is far below the horizon. The bigger the black hole, the gentler the crossing."
+      },
+      {
+        "claim": "We've never actually observed a black hole — they're purely theoretical.",
+        "reality": "The Event Horizon Telescope imaged one in 2019 (M87*). LIGO has detected gravitational waves from dozens of merging black holes since 2015. We've tracked individual stars orbiting the supermassive black hole at the center of our galaxy for over 20 years."
+      }
+    ]
   },
   {
     "slug": "gravity",
     "tier": "full",
     "title": "Gravity",
     "subtitle": "The force we feel every second and still don't fully understand",
-    "overview": "Gravity is the most familiar force in the universe and the least understood at a fundamental level. Newton gave us the math to predict orbits in 1687. Einstein replaced it in 1915 with general relativity — gravity isn't a force at all, but the curvature of spacetime caused by mass and energy. This framework predicts gravitational waves, black holes, the expansion of the universe, and GPS timing corrections to nanosecond precision. And yet: general relativity breaks down at singularities, refuses to play nicely with quantum mechanics, and can't explain why the universe's expansion is accelerating (dark energy) or why galaxies hold together better than their visible matter should allow (dark matter). A quantum theory of gravity — one that unifies Einstein's curved spacetime with the quantum world — remains the biggest open problem in physics.",
+    "overview": "Why does the force we feel every second remain the deepest mystery in physics? Gravity is the most familiar force in the universe and the least understood at a fundamental level. Newton gave us the math to predict orbits in 1687. Einstein replaced it in 1915 with general relativity — gravity isn't a force at all, but the curvature of spacetime caused by mass and energy. This framework predicts gravitational waves, black holes, the expansion of the universe, and GPS timing corrections to nanosecond precision. And yet: general relativity breaks down at singularities, refuses to play nicely with quantum mechanics, and can't explain why the universe's expansion is accelerating (dark energy) or why galaxies hold together better than their visible matter should allow (dark matter). A quantum theory of gravity — one that unifies Einstein's curved spacetime with the quantum world — remains the biggest open problem in physics.",
     "openQuestions": [
       "Is gravity fundamentally quantum, or does spacetime resist quantization?",
       "What is dark energy, and why is the universe's expansion accelerating?",
@@ -150,12 +248,30 @@
         "status": "open",
         "significance": "General relativity and quantum mechanics are the two most successful theories in physics, and they're fundamentally incompatible. Unifying them would unlock our understanding of black hole interiors, the Big Bang, and possibly the nature of spacetime itself. This is arguably the biggest open problem in all of physics.",
         "milestones": [
-          { "year": 1930, "event": "First attempts to apply quantum rules to the gravitational field" },
-          { "year": 1967, "event": "DeWitt and Wheeler formulate the Wheeler-DeWitt equation" },
-          { "year": 1984, "event": "First superstring revolution — string theory emerges as a quantum gravity candidate" },
-          { "year": 1986, "event": "Ashtekar reformulates GR, launching loop quantum gravity" },
-          { "year": 1997, "event": "Maldacena's AdS/CFT duality connects gravity to quantum field theory" },
-          { "year": 2012, "event": "Amplituhedron discovered — hints gravity amplitudes have simpler geometric structure" }
+          {
+            "year": 1930,
+            "event": "First attempts to apply quantum rules to the gravitational field"
+          },
+          {
+            "year": 1967,
+            "event": "DeWitt and Wheeler formulate the Wheeler-DeWitt equation"
+          },
+          {
+            "year": 1984,
+            "event": "First superstring revolution — string theory emerges as a quantum gravity candidate"
+          },
+          {
+            "year": 1986,
+            "event": "Ashtekar reformulates GR, launching loop quantum gravity"
+          },
+          {
+            "year": 1997,
+            "event": "Maldacena's AdS/CFT duality connects gravity to quantum field theory"
+          },
+          {
+            "year": 2012,
+            "event": "Amplituhedron discovered — hints gravity amplitudes have simpler geometric structure"
+          }
         ]
       },
       {
@@ -165,10 +281,22 @@
         "status": "open",
         "significance": "Quantum field theory predicts the vacuum energy of empty space should be enormous — roughly 10^120 times larger than what we observe. This is often called 'the worst prediction in physics.' Either something is canceling almost all of it with absurd precision, or our understanding of vacuum energy is fundamentally wrong.",
         "milestones": [
-          { "year": 1917, "event": "Einstein introduces the cosmological constant, then later calls it his 'biggest blunder'" },
-          { "year": 1989, "event": "Weinberg points out the anthropic bound — if Λ were much larger, galaxies couldn't form" },
-          { "year": 1998, "event": "Accelerating expansion discovered — the cosmological constant is small but not zero" },
-          { "year": 2003, "event": "String theory landscape (10^500 vacua) proposed as a framework, but no prediction" }
+          {
+            "year": 1917,
+            "event": "Einstein introduces the cosmological constant, then later calls it his 'biggest blunder'"
+          },
+          {
+            "year": 1989,
+            "event": "Weinberg points out the anthropic bound — if Λ were much larger, galaxies couldn't form"
+          },
+          {
+            "year": 1998,
+            "event": "Accelerating expansion discovered — the cosmological constant is small but not zero"
+          },
+          {
+            "year": 2003,
+            "event": "String theory landscape (10^500 vacua) proposed as a framework, but no prediction"
+          }
         ]
       },
       {
@@ -178,11 +306,26 @@
         "status": "open",
         "significance": "About 27% of the universe's total mass-energy is dark matter — we can see its gravitational effects everywhere, from galaxy rotation curves to the cosmic microwave background, but we have no idea what it's made of. Decades of direct detection experiments have found nothing.",
         "milestones": [
-          { "year": 1933, "event": "Zwicky measures galaxy cluster velocities, infers invisible mass" },
-          { "year": 1970, "event": "Vera Rubin's galaxy rotation curves provide definitive evidence" },
-          { "year": 1998, "event": "First WIMP direct detection experiments begin at underground laboratories" },
-          { "year": 2012, "event": "LHC finds the Higgs but no supersymmetric particles (the leading WIMP candidate)" },
-          { "year": 2023, "event": "LZ experiment sets the strongest limits ever on WIMP cross-sections — still nothing" }
+          {
+            "year": 1933,
+            "event": "Zwicky measures galaxy cluster velocities, infers invisible mass"
+          },
+          {
+            "year": 1970,
+            "event": "Vera Rubin's galaxy rotation curves provide definitive evidence"
+          },
+          {
+            "year": 1998,
+            "event": "First WIMP direct detection experiments begin at underground laboratories"
+          },
+          {
+            "year": 2012,
+            "event": "LHC finds the Higgs but no supersymmetric particles (the leading WIMP candidate)"
+          },
+          {
+            "year": 2023,
+            "event": "LZ experiment sets the strongest limits ever on WIMP cross-sections — still nothing"
+          }
         ]
       },
       {
@@ -192,9 +335,18 @@
         "status": "open",
         "significance": "About 68% of the universe is dark energy — a mysterious component driving the accelerating expansion of space. Is it Einstein's cosmological constant (vacuum energy)? A dynamical field? A sign that general relativity is wrong on cosmic scales? We don't know.",
         "milestones": [
-          { "year": 1998, "event": "Two teams independently discover accelerating expansion via Type Ia supernovae" },
-          { "year": 2011, "event": "Nobel Prize to Perlmutter, Schmidt, Riess" },
-          { "year": 2024, "event": "DESI preliminary results hint dark energy may vary over time — not a constant" }
+          {
+            "year": 1998,
+            "event": "Two teams independently discover accelerating expansion via Type Ia supernovae"
+          },
+          {
+            "year": 2011,
+            "event": "Nobel Prize to Perlmutter, Schmidt, Riess"
+          },
+          {
+            "year": 2024,
+            "event": "DESI preliminary results hint dark energy may vary over time — not a constant"
+          }
         ]
       }
     ],
@@ -222,16 +374,46 @@
       }
     ],
     "timeline": [
-      { "year": 1687, "event": "Isaac Newton publishes Principia — universal gravitation as inverse-square law" },
-      { "year": 1797, "event": "Henry Cavendish measures gravitational constant G in a laboratory" },
-      { "year": 1915, "event": "Albert Einstein publishes general relativity — gravity as spacetime curvature" },
-      { "year": 1919, "event": "Eddington's solar eclipse expedition confirms light bending by gravity" },
-      { "year": 1933, "event": "Fritz Zwicky infers 'dark matter' from galaxy cluster dynamics" },
-      { "year": 1964, "event": "Peter Higgs proposes the Higgs mechanism — mass from field interactions" },
-      { "year": 1998, "event": "Two teams discover accelerating expansion of the universe (dark energy)" },
-      { "year": 2012, "event": "Higgs boson discovered at CERN — confirms mass mechanism, but gravity still separate" },
-      { "year": 2015, "event": "LIGO detects gravitational waves, confirming Einstein's 100-year-old prediction" },
-      { "year": 2023, "event": "NANOGrav detects gravitational wave background — the hum of merging supermassive black holes" }
+      {
+        "year": 1687,
+        "event": "Isaac Newton publishes Principia — universal gravitation as inverse-square law"
+      },
+      {
+        "year": 1797,
+        "event": "Henry Cavendish measures gravitational constant G in a laboratory"
+      },
+      {
+        "year": 1915,
+        "event": "Albert Einstein publishes general relativity — gravity as spacetime curvature"
+      },
+      {
+        "year": 1919,
+        "event": "Eddington's solar eclipse expedition confirms light bending by gravity"
+      },
+      {
+        "year": 1933,
+        "event": "Fritz Zwicky infers 'dark matter' from galaxy cluster dynamics"
+      },
+      {
+        "year": 1964,
+        "event": "Peter Higgs proposes the Higgs mechanism — mass from field interactions"
+      },
+      {
+        "year": 1998,
+        "event": "Two teams discover accelerating expansion of the universe (dark energy)"
+      },
+      {
+        "year": 2012,
+        "event": "Higgs boson discovered at CERN — confirms mass mechanism, but gravity still separate"
+      },
+      {
+        "year": 2015,
+        "event": "LIGO detects gravitational waves, confirming Einstein's 100-year-old prediction"
+      },
+      {
+        "year": 2023,
+        "event": "NANOGrav detects gravitational wave background — the hum of merging supermassive black holes"
+      }
     ],
     "media": [
       {
@@ -262,15 +444,43 @@
       "atom-interferometry-for-detection-of-gravitational-waves-nasa-institute-for-adva-2019",
       "direct-probe-of-dark-energy-interactions-with-a-solar-system-laboratory-nasa-inn-2019"
     ],
-    "searchTerms": ["gravity", "gravitational", "spacetime", "general relativity", "dark matter", "dark energy"],
-    "relatedTopicSlugs": ["black-holes", "quantum-physics"]
+    "searchTerms": [
+      "gravity",
+      "gravitational",
+      "spacetime",
+      "general relativity",
+      "dark matter",
+      "dark energy"
+    ],
+    "relatedTopicSlugs": [
+      "black-holes",
+      "quantum-physics"
+    ],
+    "misconceptions": [
+      {
+        "claim": "Gravity is a force that pulls objects toward each other.",
+        "reality": "In general relativity, gravity isn't a force at all — it's the curvature of spacetime caused by mass and energy. Objects in free fall feel no gravitational force. An astronaut in orbit is weightless not because gravity is absent, but because they're in free fall."
+      },
+      {
+        "claim": "Astronauts float because there's no gravity in space.",
+        "reality": "The ISS experiences about 90% of Earth's surface gravity. Astronauts float because they're in free fall — constantly falling around the Earth, not because gravity has disappeared. \"Microgravity\" is a misnomer."
+      },
+      {
+        "claim": "Gravity is well understood — Newton and Einstein figured it out.",
+        "reality": "We can predict its effects with extraordinary precision, but we have no idea how gravity works at the quantum level. It's the only fundamental force without a quantum theory. Unifying gravity with quantum mechanics is the biggest open problem in physics."
+      },
+      {
+        "claim": "Heavy objects fall faster than light ones.",
+        "reality": "In vacuum, all objects fall at the same rate regardless of mass — a result Galileo demonstrated and Apollo 15 confirmed on the Moon with a hammer and feather. Air resistance is what makes a feather fall slowly on Earth, not its weight."
+      }
+    ]
   },
   {
     "slug": "quantum-physics",
     "tier": "full",
     "title": "Quantum Physics",
     "subtitle": "The rules that govern everything small — and maybe everything",
-    "overview": "Quantum mechanics is the framework that describes nature at the smallest scales: atoms, photons, electrons, quarks. Its predictions are the most precisely tested in all of science — the magnetic moment of the electron agrees with theory to 12 decimal places. And yet quantum mechanics is profoundly strange: particles exist in superpositions of states until measured, distant particles can be entangled so that measuring one instantly affects the other, and the act of observation appears to play a fundamental role in determining reality. A century after its founding, physicists still disagree about what quantum mechanics *means*. The measurement problem, the nature of the wave function, and whether quantum mechanics needs to be modified to include gravity are among the deepest open questions in science.",
+    "overview": "Why do the rules governing everything small seem to contradict everything we experience? Quantum mechanics is the framework that describes nature at the smallest scales: atoms, photons, electrons, quarks. Its predictions are the most precisely tested in all of science — the magnetic moment of the electron agrees with theory to 12 decimal places. And yet quantum mechanics is profoundly strange: particles exist in superpositions of states until measured, distant particles can be entangled so that measuring one instantly affects the other, and the act of observation appears to play a fundamental role in determining reality. A century after its founding, physicists still disagree about what quantum mechanics *means*. The measurement problem, the nature of the wave function, and whether quantum mechanics needs to be modified to include gravity are among the deepest open questions in science.",
     "openQuestions": [
       "What is the correct interpretation of quantum mechanics? (Copenhagen, Many-Worlds, pilot wave, etc.)",
       "Can quantum computing solve problems that are truly intractable classically?",
@@ -286,11 +496,26 @@
         "status": "open",
         "significance": "Quantum mechanics gives two rules: (1) systems evolve smoothly via the Schrödinger equation, (2) upon 'measurement,' the wave function collapses to a definite state. But what counts as a measurement? Why do these two rules exist? Every interpretation of quantum mechanics is essentially a different answer to this question.",
         "milestones": [
-          { "year": 1935, "event": "Schrödinger's cat thought experiment dramatizes the problem" },
-          { "year": 1957, "event": "Everett proposes Many-Worlds — no collapse, all outcomes are real" },
-          { "year": 1986, "event": "Decoherence theory explains why quantum effects are invisible at human scales" },
-          { "year": 2003, "event": "Zurek's quantum Darwinism explains how classical reality emerges from quantum substrates" },
-          { "year": 2022, "event": "Nobel Prize recognizes entanglement experiments, but interpretation remains open" }
+          {
+            "year": 1935,
+            "event": "Schrödinger's cat thought experiment dramatizes the problem"
+          },
+          {
+            "year": 1957,
+            "event": "Everett proposes Many-Worlds — no collapse, all outcomes are real"
+          },
+          {
+            "year": 1986,
+            "event": "Decoherence theory explains why quantum effects are invisible at human scales"
+          },
+          {
+            "year": 2003,
+            "event": "Zurek's quantum Darwinism explains how classical reality emerges from quantum substrates"
+          },
+          {
+            "year": 2022,
+            "event": "Nobel Prize recognizes entanglement experiments, but interpretation remains open"
+          }
         ]
       },
       {
@@ -300,11 +525,26 @@
         "status": "open",
         "significance": "Shor's algorithm shows quantum computers can factor large numbers exponentially faster than any known classical algorithm. But 'known' is doing heavy lifting — we can't prove there isn't a fast classical factoring algorithm we haven't found. The deeper question is whether BQP (what quantum computers can solve efficiently) is strictly larger than BPP (classical). Nobody has proven this.",
         "milestones": [
-          { "year": 1981, "event": "Feynman proposes using quantum systems to simulate quantum physics" },
-          { "year": 1994, "event": "Shor's algorithm — quantum computers can break RSA encryption" },
-          { "year": 2019, "event": "Google claims quantum supremacy with Sycamore processor" },
-          { "year": 2023, "event": "IBM runs 127-qubit circuits; error correction remains the bottleneck" },
-          { "year": 2024, "event": "Google Willow processor demonstrates below-threshold error correction" }
+          {
+            "year": 1981,
+            "event": "Feynman proposes using quantum systems to simulate quantum physics"
+          },
+          {
+            "year": 1994,
+            "event": "Shor's algorithm — quantum computers can break RSA encryption"
+          },
+          {
+            "year": 2019,
+            "event": "Google claims quantum supremacy with Sycamore processor"
+          },
+          {
+            "year": 2023,
+            "event": "IBM runs 127-qubit circuits; error correction remains the bottleneck"
+          },
+          {
+            "year": 2024,
+            "event": "Google Willow processor demonstrates below-threshold error correction"
+          }
         ]
       },
       {
@@ -314,10 +554,22 @@
         "status": "open",
         "significance": "The conjecture that Einstein-Rosen bridges (wormholes) and Einstein-Podolsky-Rosen pairs (entangled particles) are the same thing. If true, spacetime itself might be woven from quantum entanglement — geometry would emerge from information. This would be a huge step toward quantum gravity.",
         "milestones": [
-          { "year": 2006, "event": "Ryu-Takayanagi formula connects entanglement entropy to geometry in AdS/CFT" },
-          { "year": 2013, "event": "Maldacena and Susskind propose ER = EPR" },
-          { "year": 2019, "event": "Quantum error correction codes found to have deep connections to AdS/CFT geometry" },
-          { "year": 2022, "event": "Jafferis et al. claim to simulate a traversable wormhole on Google's Sycamore chip (controversial)" }
+          {
+            "year": 2006,
+            "event": "Ryu-Takayanagi formula connects entanglement entropy to geometry in AdS/CFT"
+          },
+          {
+            "year": 2013,
+            "event": "Maldacena and Susskind propose ER = EPR"
+          },
+          {
+            "year": 2019,
+            "event": "Quantum error correction codes found to have deep connections to AdS/CFT geometry"
+          },
+          {
+            "year": 2022,
+            "event": "Jafferis et al. claim to simulate a traversable wormhole on Google's Sycamore chip (controversial)"
+          }
         ]
       }
     ],
@@ -352,16 +604,46 @@
       }
     ],
     "timeline": [
-      { "year": 1900, "event": "Max Planck introduces energy quanta to solve the black-body radiation problem" },
-      { "year": 1905, "event": "Einstein explains the photoelectric effect via light quanta (photons)" },
-      { "year": 1925, "event": "Heisenberg and Schrödinger independently formulate quantum mechanics" },
-      { "year": 1927, "event": "Heisenberg's uncertainty principle; Bohr's Copenhagen interpretation" },
-      { "year": 1935, "event": "Einstein, Podolsky, Rosen publish the EPR paradox — 'spooky action at a distance'" },
-      { "year": 1964, "event": "John Bell proves no local hidden variable theory can reproduce quantum predictions" },
-      { "year": 1982, "event": "Alain Aspect experimentally confirms Bell inequality violations — entanglement is real" },
-      { "year": 1994, "event": "Peter Shor shows a quantum computer could factor large numbers exponentially faster" },
-      { "year": 2019, "event": "Google claims quantum supremacy with a 53-qubit processor" },
-      { "year": 2022, "event": "Nobel Prize to Aspect, Clauser, Zeilinger for experiments establishing entanglement" }
+      {
+        "year": 1900,
+        "event": "Max Planck introduces energy quanta to solve the black-body radiation problem"
+      },
+      {
+        "year": 1905,
+        "event": "Einstein explains the photoelectric effect via light quanta (photons)"
+      },
+      {
+        "year": 1925,
+        "event": "Heisenberg and Schrödinger independently formulate quantum mechanics"
+      },
+      {
+        "year": 1927,
+        "event": "Heisenberg's uncertainty principle; Bohr's Copenhagen interpretation"
+      },
+      {
+        "year": 1935,
+        "event": "Einstein, Podolsky, Rosen publish the EPR paradox — 'spooky action at a distance'"
+      },
+      {
+        "year": 1964,
+        "event": "John Bell proves no local hidden variable theory can reproduce quantum predictions"
+      },
+      {
+        "year": 1982,
+        "event": "Alain Aspect experimentally confirms Bell inequality violations — entanglement is real"
+      },
+      {
+        "year": 1994,
+        "event": "Peter Shor shows a quantum computer could factor large numbers exponentially faster"
+      },
+      {
+        "year": 2019,
+        "event": "Google claims quantum supremacy with a 53-qubit processor"
+      },
+      {
+        "year": 2022,
+        "event": "Nobel Prize to Aspect, Clauser, Zeilinger for experiments establishing entanglement"
+      }
     ],
     "media": [
       {
@@ -390,15 +672,42 @@
       "niac-phase-2-final-report-for-astrophysics-and-technical-lab-studies-of-a-solar--2022",
       "astrophysics-and-technical-study-of-a-solar-neutrino-spacecraft-niac-nasa-innova-2019"
     ],
-    "searchTerms": ["quantum", "entanglement", "superposition", "wave function", "photon"],
-    "relatedTopicSlugs": ["black-holes", "gravity"]
+    "searchTerms": [
+      "quantum",
+      "entanglement",
+      "superposition",
+      "wave function",
+      "photon"
+    ],
+    "relatedTopicSlugs": [
+      "black-holes",
+      "gravity"
+    ],
+    "misconceptions": [
+      {
+        "claim": "Quantum effects only matter at the atomic scale.",
+        "reality": "Superconductors, lasers, transistors, and MRI machines all depend on quantum effects. Every chip in every phone is applied quantum mechanics. Quantum mechanics runs the macroscopic world — we just don't notice it because decoherence hides the weirdness."
+      },
+      {
+        "claim": "The \"observer\" in quantum mechanics must be conscious.",
+        "reality": "The observer is any interaction that extracts information — a photon bouncing off an electron counts. A Geiger counter is an observer. Consciousness has nothing to do with quantum measurement, despite decades of pop-science confusion."
+      },
+      {
+        "claim": "Quantum entanglement allows faster-than-light communication.",
+        "reality": "Entanglement correlates measurement outcomes, but you can't use it to transmit information. Each individual measurement looks random; the correlation only appears when you compare results over a classical channel. The no-communication theorem proves this rigorously."
+      },
+      {
+        "claim": "Schrödinger's cat is literally alive and dead at the same time.",
+        "reality": "Schrödinger proposed the thought experiment in 1935 to show the absurdity of applying quantum superposition to everyday objects. It was a critique of the Copenhagen interpretation, not a description of reality. He was arguing the interpretation was incomplete."
+      }
+    ]
   },
   {
     "slug": "propulsion",
     "tier": "full",
     "title": "Propulsion",
     "subtitle": "How we escape the gravity well — and whether we ever reach the stars",
-    "overview": "Every journey into space begins with the same brutal constraint: you must throw mass behind you to move forward, and you must carry that mass with you. The Tsiolkovsky rocket equation is merciless — to go faster, you need exponentially more fuel, which makes you heavier, which means you need even more fuel. Chemical rockets, for all their drama, can barely get us to Mars. To reach the outer planets in months instead of years, or to reach other stars within a human lifetime, we need fundamentally different approaches: solar sails that ride photon pressure, electric sails that push against the solar wind, fusion drives that burn hydrogen into helium, antimatter engines that convert mass directly into energy, or laser-propelled lightsails that leave the fuel at home entirely. NIAC has funded dozens of these ideas, and some of them might actually work.",
+    "overview": "Why is it so brutally hard to leave Earth — and can we ever reach the stars? Every journey into space begins with the same brutal constraint: you must throw mass behind you to move forward, and you must carry that mass with you. The Tsiolkovsky rocket equation is merciless — to go faster, you need exponentially more fuel, which makes you heavier, which means you need even more fuel. Chemical rockets, for all their drama, can barely get us to Mars. To reach the outer planets in months instead of years, or to reach other stars within a human lifetime, we need fundamentally different approaches: solar sails that ride photon pressure, electric sails that push against the solar wind, fusion drives that burn hydrogen into helium, antimatter engines that convert mass directly into energy, or laser-propelled lightsails that leave the fuel at home entirely. NIAC has funded dozens of these ideas, and some of them might actually work.",
     "openQuestions": [
       "Can fusion propulsion be made practical for crewed missions to Mars and beyond?",
       "Is laser-propelled lightsail travel to Alpha Centauri achievable within 20 years of flight?",
@@ -414,10 +723,22 @@
         "status": "open",
         "significance": "Fusion produces millions of times more energy per kilogram than chemical fuels. A working fusion drive would cut Mars trips to weeks and make the outer solar system accessible. But containing and directing a fusion reaction in a lightweight engine remains an unsolved engineering problem — we can't even sustain net-positive fusion on the ground yet.",
         "milestones": [
-          { "year": 1958, "event": "Project Orion proposes nuclear pulse propulsion — bombs as fuel" },
-          { "year": 1978, "event": "Project Daedalus designs a fusion-powered interstellar probe" },
-          { "year": 2022, "event": "National Ignition Facility achieves fusion ignition — more energy out than laser energy in" },
-          { "year": 2025, "event": "NIAC funds lattice confinement fusion and pulsed fission-fusion concepts" }
+          {
+            "year": 1958,
+            "event": "Project Orion proposes nuclear pulse propulsion — bombs as fuel"
+          },
+          {
+            "year": 1978,
+            "event": "Project Daedalus designs a fusion-powered interstellar probe"
+          },
+          {
+            "year": 2022,
+            "event": "National Ignition Facility achieves fusion ignition — more energy out than laser energy in"
+          },
+          {
+            "year": 2025,
+            "event": "NIAC funds lattice confinement fusion and pulsed fission-fusion concepts"
+          }
         ]
       },
       {
@@ -427,10 +748,22 @@
         "status": "open",
         "significance": "The nearest star is 4.2 light-years away. Our fastest spacecraft (Parker Solar Probe, ~0.05% the speed of light) would take over 6,000 years to get there. To make interstellar travel possible in a human lifetime, we need to reach at least 10% the speed of light. No known technology can do this with a crewed vehicle, and even robotic probes face enormous challenges.",
         "milestones": [
-          { "year": 1960, "event": "Bussard proposes the interstellar ramjet — scooping hydrogen from space" },
-          { "year": 1984, "event": "Forward proposes laser-pushed lightsails" },
-          { "year": 2016, "event": "Breakthrough Starshot announces $100M program for laser-pushed gram-scale probes" },
-          { "year": 2018, "event": "'Oumuamua passes through our solar system — first observed interstellar object" }
+          {
+            "year": 1960,
+            "event": "Bussard proposes the interstellar ramjet — scooping hydrogen from space"
+          },
+          {
+            "year": 1984,
+            "event": "Forward proposes laser-pushed lightsails"
+          },
+          {
+            "year": 2016,
+            "event": "Breakthrough Starshot announces $100M program for laser-pushed gram-scale probes"
+          },
+          {
+            "year": 2018,
+            "event": "'Oumuamua passes through our solar system — first observed interstellar object"
+          }
         ]
       },
       {
@@ -440,10 +773,22 @@
         "status": "partially-resolved",
         "significance": "The rocket equation means that for every bit of speed you want, you need exponentially more fuel. For chemical rockets, reaching orbit requires ~90% of your vehicle to be fuel. This isn't an engineering limit — it's physics. The 'partial resolution' comes from concepts that avoid carrying fuel: solar sails (photon pressure), electric sails (solar wind), and beamed energy (laser propulsion).",
         "milestones": [
-          { "year": 1903, "event": "Tsiolkovsky publishes the equation — Δv = ve × ln(m0/mf)" },
-          { "year": 2010, "event": "IKAROS demonstrates fuel-free propulsion via solar sail" },
-          { "year": 2019, "event": "LightSail 2 demonstrates controlled solar sailing from Earth orbit" },
-          { "year": 2025, "event": "NIAC funds metamaterial solar sails for breakthrough acceleration" }
+          {
+            "year": 1903,
+            "event": "Tsiolkovsky publishes the equation — Δv = ve × ln(m0/mf)"
+          },
+          {
+            "year": 2010,
+            "event": "IKAROS demonstrates fuel-free propulsion via solar sail"
+          },
+          {
+            "year": 2019,
+            "event": "LightSail 2 demonstrates controlled solar sailing from Earth orbit"
+          },
+          {
+            "year": 2025,
+            "event": "NIAC funds metamaterial solar sails for breakthrough acceleration"
+          }
         ]
       }
     ],
@@ -464,15 +809,42 @@
       }
     ],
     "timeline": [
-      { "year": 1903, "event": "Tsiolkovsky publishes the rocket equation — the fundamental constraint of spaceflight" },
-      { "year": 1926, "event": "Robert Goddard launches the first liquid-fueled rocket" },
-      { "year": 1958, "event": "Project Orion proposed — nuclear pulse propulsion via atomic bombs" },
-      { "year": 1964, "event": "Cesare Marchetti proposes antimatter propulsion" },
-      { "year": 1974, "event": "Project Daedalus — first detailed engineering study of an interstellar probe (fusion)" },
-      { "year": 1998, "event": "Deep Space 1 demonstrates ion propulsion in flight" },
-      { "year": 2010, "event": "JAXA's IKAROS becomes first spacecraft to fly on a solar sail" },
-      { "year": 2016, "event": "Breakthrough Starshot announced — laser-pushed lightsails to Alpha Centauri" },
-      { "year": 2019, "event": "The Planetary Society's LightSail 2 demonstrates controlled solar sailing in Earth orbit" }
+      {
+        "year": 1903,
+        "event": "Tsiolkovsky publishes the rocket equation — the fundamental constraint of spaceflight"
+      },
+      {
+        "year": 1926,
+        "event": "Robert Goddard launches the first liquid-fueled rocket"
+      },
+      {
+        "year": 1958,
+        "event": "Project Orion proposed — nuclear pulse propulsion via atomic bombs"
+      },
+      {
+        "year": 1964,
+        "event": "Cesare Marchetti proposes antimatter propulsion"
+      },
+      {
+        "year": 1974,
+        "event": "Project Daedalus — first detailed engineering study of an interstellar probe (fusion)"
+      },
+      {
+        "year": 1998,
+        "event": "Deep Space 1 demonstrates ion propulsion in flight"
+      },
+      {
+        "year": 2010,
+        "event": "JAXA's IKAROS becomes first spacecraft to fly on a solar sail"
+      },
+      {
+        "year": 2016,
+        "event": "Breakthrough Starshot announced — laser-pushed lightsails to Alpha Centauri"
+      },
+      {
+        "year": 2019,
+        "event": "The Planetary Society's LightSail 2 demonstrates controlled solar sailing in Earth orbit"
+      }
     ],
     "media": [
       {
@@ -505,15 +877,44 @@
       "extreme-metamaterial-solar-sails-for-breakthrough-space-exploration-niac-phase-i-2025",
       "lattice-confinement-fusion-fast-fission-for-space-2025"
     ],
-    "searchTerms": ["propulsion", "thrust", "solar sail", "fusion", "ion", "antimatter", "rocket"],
-    "relatedTopicSlugs": ["gravity", "telescopes"]
+    "searchTerms": [
+      "propulsion",
+      "thrust",
+      "solar sail",
+      "fusion",
+      "ion",
+      "antimatter",
+      "rocket"
+    ],
+    "relatedTopicSlugs": [
+      "gravity",
+      "telescopes"
+    ],
+    "misconceptions": [
+      {
+        "claim": "Rockets push against the air to generate thrust.",
+        "reality": "Rockets work by Newton's third law — ejecting mass backward pushes the rocket forward. They actually work better in vacuum, where there's no air resistance. This is why exhaust velocity matters more than atmospheric conditions."
+      },
+      {
+        "claim": "Nuclear propulsion means detonating nuclear bombs.",
+        "reality": "Most nuclear propulsion concepts use nuclear thermal engines (heating hydrogen through a reactor) or nuclear electric systems (powering ion drives). Project Orion was the bomb-pulse concept, but modern NIAC-funded designs are conventional fission or fusion reactors."
+      },
+      {
+        "claim": "Solar sails are pushed by the solar wind.",
+        "reality": "Solar sails are pushed by photon pressure — the momentum of light itself. The solar wind is charged particles moving at ~400 km/s; photon pressure is electromagnetic radiation at light speed. The physics is radiation pressure, not particle wind."
+      },
+      {
+        "claim": "We just need faster rockets to reach the stars.",
+        "reality": "Speed isn't the main constraint — energy is. Even at 10% light speed, Alpha Centauri takes 43 years. The real challenge is specific impulse (fuel efficiency), not raw thrust. This is why concepts like beamed propulsion leave the energy source at home."
+      }
+    ]
   },
   {
     "slug": "telescopes",
     "tier": "full",
     "title": "Telescopes & Observation",
     "subtitle": "The instruments that let us see what we can't touch",
-    "overview": "Everything we know about the universe beyond Earth comes through telescopes. From Galileo's refractor in 1609 to the James Webb Space Telescope orbiting the L2 Lagrange point, every generation has built instruments that revealed a universe bigger, older, and stranger than anyone expected. Modern telescopes don't just see visible light — they observe across the electromagnetic spectrum: radio waves from pulsars, microwaves from the cosmic background radiation, infrared from nascent star systems, ultraviolet from hot young stars, X-rays from neutron star accretion, and gamma rays from the most violent events in the cosmos. The next frontier is multi-messenger astronomy: combining light, gravitational waves, and neutrinos to see the same event through completely different physics. NIAC has funded ambitious concepts including solar gravitational lensing (using the Sun itself as a telescope), lunar-based interferometers, and radically new sensor architectures.",
+    "overview": "Why has every revolution in astronomy been a revolution in how we see? Everything we know about the universe beyond Earth comes through telescopes. From Galileo's refractor in 1609 to the James Webb Space Telescope orbiting the L2 Lagrange point, every generation has built instruments that revealed a universe bigger, older, and stranger than anyone expected. Modern telescopes don't just see visible light — they observe across the electromagnetic spectrum: radio waves from pulsars, microwaves from the cosmic background radiation, infrared from nascent star systems, ultraviolet from hot young stars, X-rays from neutron star accretion, and gamma rays from the most violent events in the cosmos. The next frontier is multi-messenger astronomy: combining light, gravitational waves, and neutrinos to see the same event through completely different physics. NIAC has funded ambitious concepts including solar gravitational lensing (using the Sun itself as a telescope), lunar-based interferometers, and radically new sensor architectures.",
     "openQuestions": [
       "Can we use the Sun's gravitational lens to image exoplanet surfaces in detail?",
       "What will the first direct image of an exoplanet's continents look like?",
@@ -529,10 +930,22 @@
         "status": "open",
         "significance": "We've found over 5,000 exoplanets but we can't see any of them as more than a dot — we infer their existence from starlight dips and wobbles. To see continents, oceans, or vegetation on an Earth-like exoplanet, we need telescope systems far beyond anything that exists. The solar gravitational lens (using the Sun's gravity to bend and focus light from distant stars) could theoretically achieve this, but the telescope would need to be placed 550+ AU from the Sun.",
         "milestones": [
-          { "year": 1995, "event": "First exoplanet around a Sun-like star discovered" },
-          { "year": 2008, "event": "First direct images of exoplanets (Fomalhaut b, HR 8799 system)" },
-          { "year": 2020, "event": "NIAC funds solar gravitational lens mission study — 10-kilometer resolution at 100 light-years" },
-          { "year": 2025, "event": "NIAC funds continued SGL studies and hybrid observatory concepts" }
+          {
+            "year": 1995,
+            "event": "First exoplanet around a Sun-like star discovered"
+          },
+          {
+            "year": 2008,
+            "event": "First direct images of exoplanets (Fomalhaut b, HR 8799 system)"
+          },
+          {
+            "year": 2020,
+            "event": "NIAC funds solar gravitational lens mission study — 10-kilometer resolution at 100 light-years"
+          },
+          {
+            "year": 2025,
+            "event": "NIAC funds continued SGL studies and hybrid observatory concepts"
+          }
         ]
       },
       {
@@ -542,9 +955,18 @@
         "status": "open",
         "significance": "Between the cosmic microwave background (380,000 years after the Big Bang) and the first stars (~200 million years later) lies a period we've never observed — the cosmic dark ages. The only signal from this era is redshifted 21cm hydrogen radiation, which requires extremely sensitive, interference-free radio telescopes. The lunar far side — shielded from Earth's radio noise — may be the only place to detect it.",
         "milestones": [
-          { "year": 2018, "event": "EDGES experiment claims detection of 21cm signal from cosmic dawn (disputed)" },
-          { "year": 2019, "event": "China's Chang'e-4 demonstrates lunar far-side radio observations" },
-          { "year": 2025, "event": "NIAC funds lunar far-side radio telescope concepts" }
+          {
+            "year": 2018,
+            "event": "EDGES experiment claims detection of 21cm signal from cosmic dawn (disputed)"
+          },
+          {
+            "year": 2019,
+            "event": "China's Chang'e-4 demonstrates lunar far-side radio observations"
+          },
+          {
+            "year": 2025,
+            "event": "NIAC funds lunar far-side radio telescope concepts"
+          }
         ]
       }
     ],
@@ -565,15 +987,42 @@
       }
     ],
     "timeline": [
-      { "year": 1609, "event": "Galileo Galilei observes Jupiter's moons with a homemade refractor" },
-      { "year": 1668, "event": "Isaac Newton builds the first reflecting telescope" },
-      { "year": 1932, "event": "Karl Jansky detects radio waves from the Milky Way — radio astronomy begins" },
-      { "year": 1962, "event": "First X-ray telescope launched — opens high-energy astrophysics" },
-      { "year": 1990, "event": "Hubble Space Telescope launched — transforms our view of the universe" },
-      { "year": 2009, "event": "Kepler space telescope begins finding thousands of exoplanets" },
-      { "year": 2015, "event": "LIGO detects gravitational waves — a new kind of 'telescope'" },
-      { "year": 2021, "event": "James Webb Space Telescope launched — infrared eyes on the first galaxies" },
-      { "year": 2027, "event": "Vera Rubin Observatory first light expected — will survey the entire sky every 3 nights" }
+      {
+        "year": 1609,
+        "event": "Galileo Galilei observes Jupiter's moons with a homemade refractor"
+      },
+      {
+        "year": 1668,
+        "event": "Isaac Newton builds the first reflecting telescope"
+      },
+      {
+        "year": 1932,
+        "event": "Karl Jansky detects radio waves from the Milky Way — radio astronomy begins"
+      },
+      {
+        "year": 1962,
+        "event": "First X-ray telescope launched — opens high-energy astrophysics"
+      },
+      {
+        "year": 1990,
+        "event": "Hubble Space Telescope launched — transforms our view of the universe"
+      },
+      {
+        "year": 2009,
+        "event": "Kepler space telescope begins finding thousands of exoplanets"
+      },
+      {
+        "year": 2015,
+        "event": "LIGO detects gravitational waves — a new kind of 'telescope'"
+      },
+      {
+        "year": 2021,
+        "event": "James Webb Space Telescope launched — infrared eyes on the first galaxies"
+      },
+      {
+        "year": 2027,
+        "event": "Vera Rubin Observatory first light expected — will survey the entire sky every 3 nights"
+      }
     ],
     "media": [
       {
@@ -599,8 +1048,36 @@
       "further-development-of-aperture-a-precise-extremely-large-reflective-telescope-u-2019",
       "low-mass-planar-photonic-imaging-sensor-2019"
     ],
-    "searchTerms": ["telescope", "imaging", "interferometer", "observatory", "spectroscopy", "sensor"],
-    "relatedTopicSlugs": ["black-holes", "gravity"]
+    "searchTerms": [
+      "telescope",
+      "imaging",
+      "interferometer",
+      "observatory",
+      "spectroscopy",
+      "sensor"
+    ],
+    "relatedTopicSlugs": [
+      "black-holes",
+      "gravity"
+    ],
+    "misconceptions": [
+      {
+        "claim": "Bigger telescopes just see farther away.",
+        "reality": "A larger aperture primarily improves resolution (sharper images) and light-gathering (detecting fainter objects). Distance isn't the limit — faintness and angular size are. The cosmic microwave background is the most distant thing we observe, and you can detect it with a TV antenna."
+      },
+      {
+        "claim": "Space telescopes are always better than ground-based ones.",
+        "reality": "For infrared and UV, absolutely. But modern adaptive optics let ground telescopes like the VLT correct for atmospheric distortion in real time. The largest ground-based scopes already exceed Hubble's resolution for visible light."
+      },
+      {
+        "claim": "Telescopes show us what the universe looks like right now.",
+        "reality": "Every observation is a look into the past. The Sun you see is 8 minutes old. The Andromeda galaxy is 2.5 million years old. JWST observes galaxies from 13 billion years ago — we are literally watching the universe's childhood."
+      },
+      {
+        "claim": "To see even further, we need to build even bigger mirrors.",
+        "reality": "Interferometry lets multiple smaller telescopes act as one enormous aperture. The Event Horizon Telescope is effectively Earth-sized. NIAC-funded concepts go further — using the Sun's gravitational field as a lens, no mirror needed at all."
+      }
+    ]
   },
   {
     "slug": "solar-sails",
@@ -617,17 +1094,50 @@
       "How do you maintain pointing accuracy and communication with a gram-scale probe at interstellar distances?"
     ],
     "timeline": [
-      { "year": 1619, "event": "Johannes Kepler observes comet tails point away from the Sun, hints at radiation pressure" },
-      { "year": 1873, "event": "James Clerk Maxwell predicts light exerts pressure from electromagnetic theory" },
-      { "year": 1924, "event": "Friedrich Tsander and Konstantin Tsiolkovsky propose solar sails for spaceflight" },
-      { "year": 1958, "event": "Richard Garwin publishes first serious engineering analysis of a solar sail" },
-      { "year": 1984, "event": "Robert Forward proposes laser-pushed lightsails for interstellar travel" },
-      { "year": 2004, "event": "Japanese ISAS deploys first solar sail membrane in space (suborbital test)" },
-      { "year": 2010, "event": "JAXA's IKAROS becomes first spacecraft to demonstrate solar sailing in deep space" },
-      { "year": 2016, "event": "Breakthrough Starshot announces $100M program for laser-propelled probes to Alpha Centauri" },
-      { "year": 2019, "event": "The Planetary Society's LightSail 2 demonstrates controlled solar sailing in Earth orbit" },
-      { "year": 2024, "event": "NASA's ACS3 mission deploys advanced composite solar sail booms in orbit" },
-      { "year": 2025, "event": "NIAC funds extreme metamaterial solar sail concepts for breakthrough exploration" }
+      {
+        "year": 1619,
+        "event": "Johannes Kepler observes comet tails point away from the Sun, hints at radiation pressure"
+      },
+      {
+        "year": 1873,
+        "event": "James Clerk Maxwell predicts light exerts pressure from electromagnetic theory"
+      },
+      {
+        "year": 1924,
+        "event": "Friedrich Tsander and Konstantin Tsiolkovsky propose solar sails for spaceflight"
+      },
+      {
+        "year": 1958,
+        "event": "Richard Garwin publishes first serious engineering analysis of a solar sail"
+      },
+      {
+        "year": 1984,
+        "event": "Robert Forward proposes laser-pushed lightsails for interstellar travel"
+      },
+      {
+        "year": 2004,
+        "event": "Japanese ISAS deploys first solar sail membrane in space (suborbital test)"
+      },
+      {
+        "year": 2010,
+        "event": "JAXA's IKAROS becomes first spacecraft to demonstrate solar sailing in deep space"
+      },
+      {
+        "year": 2016,
+        "event": "Breakthrough Starshot announces $100M program for laser-propelled probes to Alpha Centauri"
+      },
+      {
+        "year": 2019,
+        "event": "The Planetary Society's LightSail 2 demonstrates controlled solar sailing in Earth orbit"
+      },
+      {
+        "year": 2024,
+        "event": "NASA's ACS3 mission deploys advanced composite solar sail booms in orbit"
+      },
+      {
+        "year": 2025,
+        "event": "NIAC funds extreme metamaterial solar sail concepts for breakthrough exploration"
+      }
     ],
     "media": [
       {
@@ -665,8 +1175,22 @@
       "electric-sail-propulsion-for-deep-space-missions-2019",
       "procsima-diffractionless-beamed-propulsion-for-breakthrough-interstellar-mission-2019"
     ],
-    "searchTerms": ["solar sail", "light sail", "lightsail", "radiation pressure", "photon propulsion", "electric sail", "laser propulsion", "Breakthrough Starshot", "IKAROS"],
-    "relatedTopicSlugs": ["propulsion", "interstellar-travel", "space-tethers"],
+    "searchTerms": [
+      "solar sail",
+      "light sail",
+      "lightsail",
+      "radiation pressure",
+      "photon propulsion",
+      "electric sail",
+      "laser propulsion",
+      "Breakthrough Starshot",
+      "IKAROS"
+    ],
+    "relatedTopicSlugs": [
+      "propulsion",
+      "interstellar-travel",
+      "space-tethers"
+    ],
     "unsolvedProblems": [],
     "thoughtExperiments": []
   },
@@ -685,16 +1209,46 @@
       "Can microgravity manufacturing of specialty materials (ZBLAN fiber, protein crystals) become commercially viable?"
     ],
     "timeline": [
-      { "year": 1969, "event": "Apollo missions demonstrate feasibility of working with lunar regolith" },
-      { "year": 1985, "event": "First experiments with materials processing in microgravity aboard Space Shuttle" },
-      { "year": 2001, "event": "First commercial microgravity manufacturing experiments on ISS" },
-      { "year": 2014, "event": "Made In Space 3D-prints first object manufactured in space aboard ISS" },
-      { "year": 2016, "event": "Additive Manufacturing Facility begins operations on ISS" },
-      { "year": 2018, "event": "ICON demonstrates large-scale 3D-printed construction on Earth using concrete" },
-      { "year": 2019, "event": "NIAC funds SpiderFab concept for on-orbit construction of kilometer-scale structures" },
-      { "year": 2021, "event": "Redwire demonstrates first commercial fiber optic manufacturing in microgravity" },
-      { "year": 2023, "event": "NASA Artemis program drives renewed focus on lunar surface manufacturing" },
-      { "year": 2025, "event": "NIAC funds Mycotecture Phase II -- growing habitats from fungal mycelium on Mars" }
+      {
+        "year": 1969,
+        "event": "Apollo missions demonstrate feasibility of working with lunar regolith"
+      },
+      {
+        "year": 1985,
+        "event": "First experiments with materials processing in microgravity aboard Space Shuttle"
+      },
+      {
+        "year": 2001,
+        "event": "First commercial microgravity manufacturing experiments on ISS"
+      },
+      {
+        "year": 2014,
+        "event": "Made In Space 3D-prints first object manufactured in space aboard ISS"
+      },
+      {
+        "year": 2016,
+        "event": "Additive Manufacturing Facility begins operations on ISS"
+      },
+      {
+        "year": 2018,
+        "event": "ICON demonstrates large-scale 3D-printed construction on Earth using concrete"
+      },
+      {
+        "year": 2019,
+        "event": "NIAC funds SpiderFab concept for on-orbit construction of kilometer-scale structures"
+      },
+      {
+        "year": 2021,
+        "event": "Redwire demonstrates first commercial fiber optic manufacturing in microgravity"
+      },
+      {
+        "year": 2023,
+        "event": "NASA Artemis program drives renewed focus on lunar surface manufacturing"
+      },
+      {
+        "year": 2025,
+        "event": "NIAC funds Mycotecture Phase II -- growing habitats from fungal mycelium on Mars"
+      }
     ],
     "media": [
       {
@@ -732,8 +1286,22 @@
       "biomaterials-out-of-thin-air-in-situ-on-demand-printing-of-advanced-biocomposite-2019",
       "spiderfab-process-for-on-orbit-construction-of-kilometer-scale-apertures-2019"
     ],
-    "searchTerms": ["manufacturing", "3D printing", "additive manufacturing", "regolith", "ISRU", "in-situ resource", "microgravity", "mycotecture", "fabrication"],
-    "relatedTopicSlugs": ["planetary-habitats", "propulsion", "space-tethers"],
+    "searchTerms": [
+      "manufacturing",
+      "3D printing",
+      "additive manufacturing",
+      "regolith",
+      "ISRU",
+      "in-situ resource",
+      "microgravity",
+      "mycotecture",
+      "fabrication"
+    ],
+    "relatedTopicSlugs": [
+      "planetary-habitats",
+      "propulsion",
+      "space-tethers"
+    ],
     "unsolvedProblems": [],
     "thoughtExperiments": []
   },
@@ -752,16 +1320,46 @@
       "How do you extract and utilize water ice from permanently shadowed lunar craters?"
     ],
     "timeline": [
-      { "year": 1929, "event": "Hermann Noordung publishes first detailed space station habitat design" },
-      { "year": 1952, "event": "Wernher von Braun designs a rotating wheel space station for artificial gravity" },
-      { "year": 1971, "event": "Soviet Salyut 1 becomes first crewed space station" },
-      { "year": 1986, "event": "Mir space station begins 15 years of continuous habitation -- longest to date" },
-      { "year": 1991, "event": "Biosphere 2 sealed-environment experiment reveals difficulties of closed life support" },
-      { "year": 1998, "event": "International Space Station construction begins -- still operating 25+ years later" },
-      { "year": 2016, "event": "Bigelow Aerospace BEAM inflatable module attached to ISS for testing" },
-      { "year": 2020, "event": "NASA confirms water ice in sunlit areas of the Moon" },
-      { "year": 2021, "event": "NIAC funds Growth-Adapted Tensegrity structures for extraterrestrial habitats" },
-      { "year": 2025, "event": "NIAC funds Mycotecture Phase II and Breathing Mars Air concepts" }
+      {
+        "year": 1929,
+        "event": "Hermann Noordung publishes first detailed space station habitat design"
+      },
+      {
+        "year": 1952,
+        "event": "Wernher von Braun designs a rotating wheel space station for artificial gravity"
+      },
+      {
+        "year": 1971,
+        "event": "Soviet Salyut 1 becomes first crewed space station"
+      },
+      {
+        "year": 1986,
+        "event": "Mir space station begins 15 years of continuous habitation -- longest to date"
+      },
+      {
+        "year": 1991,
+        "event": "Biosphere 2 sealed-environment experiment reveals difficulties of closed life support"
+      },
+      {
+        "year": 1998,
+        "event": "International Space Station construction begins -- still operating 25+ years later"
+      },
+      {
+        "year": 2016,
+        "event": "Bigelow Aerospace BEAM inflatable module attached to ISS for testing"
+      },
+      {
+        "year": 2020,
+        "event": "NASA confirms water ice in sunlit areas of the Moon"
+      },
+      {
+        "year": 2021,
+        "event": "NIAC funds Growth-Adapted Tensegrity structures for extraterrestrial habitats"
+      },
+      {
+        "year": 2025,
+        "event": "NIAC funds Mycotecture Phase II and Breathing Mars Air concepts"
+      }
     ],
     "media": [
       {
@@ -799,8 +1397,22 @@
       "breathing-mars-air-stationary-and-portable-o2-generation-final-report-2025",
       "thirsty-walls-a-new-paradigm-for-air-revitalization-in-life-support-2019"
     ],
-    "searchTerms": ["habitat", "life support", "settlement", "colony", "Mars base", "lunar base", "ISRU", "radiation shielding", "closed loop"],
-    "relatedTopicSlugs": ["in-space-manufacturing", "astrobiology", "propulsion"],
+    "searchTerms": [
+      "habitat",
+      "life support",
+      "settlement",
+      "colony",
+      "Mars base",
+      "lunar base",
+      "ISRU",
+      "radiation shielding",
+      "closed loop"
+    ],
+    "relatedTopicSlugs": [
+      "in-space-manufacturing",
+      "astrobiology",
+      "propulsion"
+    ],
     "unsolvedProblems": [],
     "thoughtExperiments": []
   },
@@ -819,17 +1431,50 @@
       "Could a fusion-powered spacecraft reach Pluto in under 5 years?"
     ],
     "timeline": [
-      { "year": 1945, "event": "First nuclear fission detonation demonstrates enormous energy release" },
-      { "year": 1955, "event": "Project Rover begins developing nuclear thermal rocket engines at Los Alamos" },
-      { "year": 1958, "event": "Project Orion proposes nuclear pulse propulsion using atomic detonations" },
-      { "year": 1968, "event": "NERVA nuclear thermal engine achieves 845 seconds specific impulse in ground tests" },
-      { "year": 1973, "event": "NERVA program canceled despite successful engine tests -- political, not technical failure" },
-      { "year": 1978, "event": "Project Daedalus designs interstellar probe using inertial confinement fusion" },
-      { "year": 2003, "event": "Project Prometheus revives NASA nuclear propulsion studies (later scaled back)" },
-      { "year": 2020, "event": "NIAC funds Pulsed Fission-Fusion (PuFF) engine concept" },
-      { "year": 2022, "event": "National Ignition Facility achieves fusion ignition -- more energy out than laser energy in" },
-      { "year": 2023, "event": "DARPA and NASA select Lockheed Martin for DRACO nuclear thermal rocket demonstration" },
-      { "year": 2025, "event": "NIAC funds Lattice Confinement Fusion for space propulsion" }
+      {
+        "year": 1945,
+        "event": "First nuclear fission detonation demonstrates enormous energy release"
+      },
+      {
+        "year": 1955,
+        "event": "Project Rover begins developing nuclear thermal rocket engines at Los Alamos"
+      },
+      {
+        "year": 1958,
+        "event": "Project Orion proposes nuclear pulse propulsion using atomic detonations"
+      },
+      {
+        "year": 1968,
+        "event": "NERVA nuclear thermal engine achieves 845 seconds specific impulse in ground tests"
+      },
+      {
+        "year": 1973,
+        "event": "NERVA program canceled despite successful engine tests -- political, not technical failure"
+      },
+      {
+        "year": 1978,
+        "event": "Project Daedalus designs interstellar probe using inertial confinement fusion"
+      },
+      {
+        "year": 2003,
+        "event": "Project Prometheus revives NASA nuclear propulsion studies (later scaled back)"
+      },
+      {
+        "year": 2020,
+        "event": "NIAC funds Pulsed Fission-Fusion (PuFF) engine concept"
+      },
+      {
+        "year": 2022,
+        "event": "National Ignition Facility achieves fusion ignition -- more energy out than laser energy in"
+      },
+      {
+        "year": 2023,
+        "event": "DARPA and NASA select Lockheed Martin for DRACO nuclear thermal rocket demonstration"
+      },
+      {
+        "year": 2025,
+        "event": "NIAC funds Lattice Confinement Fusion for space propulsion"
+      }
     ],
     "media": [
       {
@@ -867,8 +1512,22 @@
       "fusion-enabled-pluto-orbiter-and-lander-2019",
       "concept-assessment-of-a-fission-fragment-rocket-engine-ffre-propelled-spacecraft-2019"
     ],
-    "searchTerms": ["nuclear thermal", "fission", "fusion", "NERVA", "nuclear propulsion", "reactor", "Orion", "pulsed fission", "lattice confinement"],
-    "relatedTopicSlugs": ["propulsion", "interstellar-travel", "planetary-habitats"],
+    "searchTerms": [
+      "nuclear thermal",
+      "fission",
+      "fusion",
+      "NERVA",
+      "nuclear propulsion",
+      "reactor",
+      "Orion",
+      "pulsed fission",
+      "lattice confinement"
+    ],
+    "relatedTopicSlugs": [
+      "propulsion",
+      "interstellar-travel",
+      "planetary-habitats"
+    ],
     "unsolvedProblems": [],
     "thoughtExperiments": []
   },
@@ -887,16 +1546,46 @@
       "How do we prioritize targets when there are billions of potentially habitable worlds?"
     ],
     "timeline": [
-      { "year": 1952, "event": "Otto Struve proposes detecting exoplanets via stellar radial velocity and transits" },
-      { "year": 1992, "event": "First confirmed exoplanets discovered orbiting a pulsar (Wolszczan & Frail)" },
-      { "year": 1995, "event": "Mayor & Queloz discover 51 Pegasi b -- first exoplanet around a Sun-like star" },
-      { "year": 2005, "event": "First direct image of an exoplanet (2M1207 b)" },
-      { "year": 2009, "event": "Kepler space telescope launches, eventually finds thousands of exoplanets" },
-      { "year": 2014, "event": "Kepler confirms first Earth-sized planet in a habitable zone (Kepler-186f)" },
-      { "year": 2016, "event": "Proxima Centauri b discovered -- nearest known exoplanet to Earth" },
-      { "year": 2018, "event": "TESS mission launches to survey bright, nearby stars for transiting planets" },
-      { "year": 2022, "event": "JWST begins characterizing exoplanet atmospheres with unprecedented sensitivity" },
-      { "year": 2025, "event": "NIAC funds solar gravitational lens and hybrid observatory exoplanet imaging concepts" }
+      {
+        "year": 1952,
+        "event": "Otto Struve proposes detecting exoplanets via stellar radial velocity and transits"
+      },
+      {
+        "year": 1992,
+        "event": "First confirmed exoplanets discovered orbiting a pulsar (Wolszczan & Frail)"
+      },
+      {
+        "year": 1995,
+        "event": "Mayor & Queloz discover 51 Pegasi b -- first exoplanet around a Sun-like star"
+      },
+      {
+        "year": 2005,
+        "event": "First direct image of an exoplanet (2M1207 b)"
+      },
+      {
+        "year": 2009,
+        "event": "Kepler space telescope launches, eventually finds thousands of exoplanets"
+      },
+      {
+        "year": 2014,
+        "event": "Kepler confirms first Earth-sized planet in a habitable zone (Kepler-186f)"
+      },
+      {
+        "year": 2016,
+        "event": "Proxima Centauri b discovered -- nearest known exoplanet to Earth"
+      },
+      {
+        "year": 2018,
+        "event": "TESS mission launches to survey bright, nearby stars for transiting planets"
+      },
+      {
+        "year": 2022,
+        "event": "JWST begins characterizing exoplanet atmospheres with unprecedented sensitivity"
+      },
+      {
+        "year": 2025,
+        "event": "NIAC funds solar gravitational lens and hybrid observatory exoplanet imaging concepts"
+      }
     ],
     "media": [
       {
@@ -932,8 +1621,22 @@
       "direct-multipixel-imaging-and-spectroscopy-of-an-exoplanet-with-a-solar-gravity--2025",
       "hybrid-observatory-for-earth-like-exoplanets-hoee-2025"
     ],
-    "searchTerms": ["exoplanet", "transit", "radial velocity", "habitable zone", "biosignature", "Kepler", "TESS", "JWST", "direct imaging"],
-    "relatedTopicSlugs": ["telescopes", "astrobiology", "solar-sails"],
+    "searchTerms": [
+      "exoplanet",
+      "transit",
+      "radial velocity",
+      "habitable zone",
+      "biosignature",
+      "Kepler",
+      "TESS",
+      "JWST",
+      "direct imaging"
+    ],
+    "relatedTopicSlugs": [
+      "telescopes",
+      "astrobiology",
+      "solar-sails"
+    ],
     "unsolvedProblems": [],
     "thoughtExperiments": []
   },
@@ -952,16 +1655,46 @@
       "Could a tether system at Mars-Phobos L1 reduce the delta-v cost of Mars surface access?"
     ],
     "timeline": [
-      { "year": 1895, "event": "Konstantin Tsiolkovsky imagines a tower extending to geostationary orbit" },
-      { "year": 1960, "event": "Yuri Artsutanov publishes the first realistic space elevator concept" },
-      { "year": 1975, "event": "Jerome Pearson independently derives the space elevator concept with detailed engineering" },
-      { "year": 1979, "event": "Arthur C. Clarke popularizes the space elevator in The Fountains of Paradise" },
-      { "year": 1991, "event": "Carbon nanotubes discovered -- first material with theoretical strength for an Earth elevator" },
-      { "year": 1993, "event": "First momentum-exchange tether experiment (SEDS-1) deploys 20 km tether in orbit" },
-      { "year": 2000, "event": "Bradley Edwards publishes comprehensive space elevator feasibility study for NASA" },
-      { "year": 2005, "event": "NASA funds Centennial Challenge for space elevator climber competition" },
-      { "year": 2019, "event": "NIAC funds Phobos L1 Operational Tether Experiment (PHLOTE) and space elevator concepts" },
-      { "year": 2023, "event": "Graphene and boron nitride nanotube research advances toward elevator-grade materials" }
+      {
+        "year": 1895,
+        "event": "Konstantin Tsiolkovsky imagines a tower extending to geostationary orbit"
+      },
+      {
+        "year": 1960,
+        "event": "Yuri Artsutanov publishes the first realistic space elevator concept"
+      },
+      {
+        "year": 1975,
+        "event": "Jerome Pearson independently derives the space elevator concept with detailed engineering"
+      },
+      {
+        "year": 1979,
+        "event": "Arthur C. Clarke popularizes the space elevator in The Fountains of Paradise"
+      },
+      {
+        "year": 1991,
+        "event": "Carbon nanotubes discovered -- first material with theoretical strength for an Earth elevator"
+      },
+      {
+        "year": 1993,
+        "event": "First momentum-exchange tether experiment (SEDS-1) deploys 20 km tether in orbit"
+      },
+      {
+        "year": 2000,
+        "event": "Bradley Edwards publishes comprehensive space elevator feasibility study for NASA"
+      },
+      {
+        "year": 2005,
+        "event": "NASA funds Centennial Challenge for space elevator climber competition"
+      },
+      {
+        "year": 2019,
+        "event": "NIAC funds Phobos L1 Operational Tether Experiment (PHLOTE) and space elevator concepts"
+      },
+      {
+        "year": 2023,
+        "event": "Graphene and boron nitride nanotube research advances toward elevator-grade materials"
+      }
     ],
     "media": [
       {
@@ -990,8 +1723,22 @@
       "phase-1-study-for-the-phobos-l1-operational-tether-experiment-phlote-2019",
       "technology-development-and-demonstration-concepts-for-the-space-elevator-2019"
     ],
-    "searchTerms": ["space elevator", "tether", "orbital tether", "momentum exchange", "cable", "carbon nanotube", "PHLOTE", "climber", "geostationary"],
-    "relatedTopicSlugs": ["propulsion", "in-space-manufacturing", "solar-sails"],
+    "searchTerms": [
+      "space elevator",
+      "tether",
+      "orbital tether",
+      "momentum exchange",
+      "cable",
+      "carbon nanotube",
+      "PHLOTE",
+      "climber",
+      "geostationary"
+    ],
+    "relatedTopicSlugs": [
+      "propulsion",
+      "in-space-manufacturing",
+      "solar-sails"
+    ],
     "unsolvedProblems": [],
     "thoughtExperiments": []
   },
@@ -1010,16 +1757,46 @@
       "Is the phosphine signal in Venus's atmosphere real, and if so, is it biological?"
     ],
     "timeline": [
-      { "year": 1953, "event": "Miller-Urey experiment produces amino acids from simulated early Earth atmosphere" },
-      { "year": 1976, "event": "Viking landers test for life on Mars -- results ambiguous and still debated" },
-      { "year": 1977, "event": "Deep-sea hydrothermal vents discovered, teeming with life independent of sunlight" },
-      { "year": 1996, "event": "ALH84001 meteorite claimed to contain Martian microfossils (later disputed)" },
-      { "year": 2005, "event": "Cassini discovers water-ice geysers on Enceladus erupting from a subsurface ocean" },
-      { "year": 2008, "event": "Phoenix lander confirms water ice just below Mars surface" },
-      { "year": 2014, "event": "Hubble observes water vapor plumes at Europa" },
-      { "year": 2020, "event": "Phosphine detected in Venus atmosphere (controversial) reignites Venus astrobiology" },
-      { "year": 2023, "event": "JWST begins analyzing exoplanet atmospheres for potential biosignatures" },
-      { "year": 2025, "event": "NIAC funds Venus atmosphere sample return and SPARROW ocean worlds explorer concepts" }
+      {
+        "year": 1953,
+        "event": "Miller-Urey experiment produces amino acids from simulated early Earth atmosphere"
+      },
+      {
+        "year": 1976,
+        "event": "Viking landers test for life on Mars -- results ambiguous and still debated"
+      },
+      {
+        "year": 1977,
+        "event": "Deep-sea hydrothermal vents discovered, teeming with life independent of sunlight"
+      },
+      {
+        "year": 1996,
+        "event": "ALH84001 meteorite claimed to contain Martian microfossils (later disputed)"
+      },
+      {
+        "year": 2005,
+        "event": "Cassini discovers water-ice geysers on Enceladus erupting from a subsurface ocean"
+      },
+      {
+        "year": 2008,
+        "event": "Phoenix lander confirms water ice just below Mars surface"
+      },
+      {
+        "year": 2014,
+        "event": "Hubble observes water vapor plumes at Europa"
+      },
+      {
+        "year": 2020,
+        "event": "Phosphine detected in Venus atmosphere (controversial) reignites Venus astrobiology"
+      },
+      {
+        "year": 2023,
+        "event": "JWST begins analyzing exoplanet atmospheres for potential biosignatures"
+      },
+      {
+        "year": 2025,
+        "event": "NIAC funds Venus atmosphere sample return and SPARROW ocean worlds explorer concepts"
+      }
     ],
     "media": [
       {
@@ -1055,8 +1832,22 @@
       "venus-atmosphere-and-cloud-particle-sample-return-for-astrobiology-2025",
       "sparrow-steam-propelled-autonomous-retrieval-robot-for-ocean-worlds-2019"
     ],
-    "searchTerms": ["astrobiology", "biosignature", "extremophile", "origin of life", "habitable", "Europa", "Enceladus", "Mars life", "exoplanet atmosphere"],
-    "relatedTopicSlugs": ["exoplanet-detection", "planetary-habitats", "telescopes"],
+    "searchTerms": [
+      "astrobiology",
+      "biosignature",
+      "extremophile",
+      "origin of life",
+      "habitable",
+      "Europa",
+      "Enceladus",
+      "Mars life",
+      "exoplanet atmosphere"
+    ],
+    "relatedTopicSlugs": [
+      "exoplanet-detection",
+      "planetary-habitats",
+      "telescopes"
+    ],
     "unsolvedProblems": [],
     "thoughtExperiments": []
   },
@@ -1076,17 +1867,50 @@
       "Are there unknown physics that could make faster-than-light travel possible?"
     ],
     "timeline": [
-      { "year": 1903, "event": "Tsiolkovsky speculates about interstellar travel in 'The Exploration of Cosmic Space'" },
-      { "year": 1958, "event": "Project Orion proposes reaching nearby stars via nuclear pulse propulsion" },
-      { "year": 1960, "event": "Robert Bussard proposes the interstellar ramjet" },
-      { "year": 1978, "event": "Project Daedalus completes first rigorous interstellar probe design (fusion-powered)" },
-      { "year": 1984, "event": "Robert Forward proposes laser-pushed lightsails for interstellar travel" },
-      { "year": 1994, "event": "Miguel Alcubierre publishes the warp drive metric -- FTL consistent with GR but requires exotic matter" },
-      { "year": 2016, "event": "Breakthrough Starshot announces $100M program for laser-propelled probes" },
-      { "year": 2017, "event": "'Oumuamua detected -- first observed interstellar object passing through our solar system" },
-      { "year": 2019, "event": "Borisov comet confirmed as second interstellar visitor" },
-      { "year": 2024, "event": "NIAC funds Dynamic Orbital Slingshot for rendezvous with interstellar objects" },
-      { "year": 2025, "event": "NIAC funds diffractionless beamed propulsion and metamaterial solar sails for interstellar concepts" }
+      {
+        "year": 1903,
+        "event": "Tsiolkovsky speculates about interstellar travel in 'The Exploration of Cosmic Space'"
+      },
+      {
+        "year": 1958,
+        "event": "Project Orion proposes reaching nearby stars via nuclear pulse propulsion"
+      },
+      {
+        "year": 1960,
+        "event": "Robert Bussard proposes the interstellar ramjet"
+      },
+      {
+        "year": 1978,
+        "event": "Project Daedalus completes first rigorous interstellar probe design (fusion-powered)"
+      },
+      {
+        "year": 1984,
+        "event": "Robert Forward proposes laser-pushed lightsails for interstellar travel"
+      },
+      {
+        "year": 1994,
+        "event": "Miguel Alcubierre publishes the warp drive metric -- FTL consistent with GR but requires exotic matter"
+      },
+      {
+        "year": 2016,
+        "event": "Breakthrough Starshot announces $100M program for laser-propelled probes"
+      },
+      {
+        "year": 2017,
+        "event": "'Oumuamua detected -- first observed interstellar object passing through our solar system"
+      },
+      {
+        "year": 2019,
+        "event": "Borisov comet confirmed as second interstellar visitor"
+      },
+      {
+        "year": 2024,
+        "event": "NIAC funds Dynamic Orbital Slingshot for rendezvous with interstellar objects"
+      },
+      {
+        "year": 2025,
+        "event": "NIAC funds diffractionless beamed propulsion and metamaterial solar sails for interstellar concepts"
+      }
     ],
     "media": [
       {
@@ -1130,8 +1954,22 @@
       "dynamic-orbital-slingshot-for-rendezvous-with-interstellar-objects-2024",
       "extreme-metamaterial-solar-sails-for-breakthrough-space-exploration-niac-phase-i-2025"
     ],
-    "searchTerms": ["interstellar", "light-year", "Alpha Centauri", "warp drive", "generation ship", "Breakthrough Starshot", "Oumuamua", "Alcubierre", "starship"],
-    "relatedTopicSlugs": ["propulsion", "solar-sails", "nuclear-propulsion"],
+    "searchTerms": [
+      "interstellar",
+      "light-year",
+      "Alpha Centauri",
+      "warp drive",
+      "generation ship",
+      "Breakthrough Starshot",
+      "Oumuamua",
+      "Alcubierre",
+      "starship"
+    ],
+    "relatedTopicSlugs": [
+      "propulsion",
+      "solar-sails",
+      "nuclear-propulsion"
+    ],
     "unsolvedProblems": [],
     "thoughtExperiments": []
   }

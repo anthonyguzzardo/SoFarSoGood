@@ -106,6 +106,36 @@ const overviewParagraphs = topic.overview
     </section>
 
     {/* ----------------------------------------------------------- */}
+    {/* Misconceptions                                              */}
+    {/* ----------------------------------------------------------- */}
+    {
+      topic.misconceptions?.length > 0 && (
+        <section class="mb-20">
+          <div class="eyebrow text-accent mb-4 pb-2 border-b hairline">
+            Common misconceptions — what most people get wrong
+          </div>
+          <div class="space-y-6 max-w-3xl">
+            {topic.misconceptions.map((m) => (
+              <div
+                class="p-5 rounded-lg border hairline"
+                style="background: var(--color-paper-raised);"
+              >
+                <div class="flex gap-3 items-start mb-3">
+                  <span class="text-red-400 font-mono text-sm shrink-0 mt-0.5">✗</span>
+                  <p class="text-base leading-relaxed">{m.claim}</p>
+                </div>
+                <div class="flex gap-3 items-start">
+                  <span class="text-green-400 font-mono text-sm shrink-0 mt-0.5">✓</span>
+                  <p class="text-base leading-relaxed text-dim">{m.reality}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </section>
+      )
+    }
+
+    {/* ----------------------------------------------------------- */}
     {/* Unsolved problems                                           */}
     {/* ----------------------------------------------------------- */}
     {

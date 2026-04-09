@@ -10,7 +10,7 @@
  * information-dense modern era while still showing ancient entries.
  */
 
-import { useCallback, useMemo, useRef, useState } from "react";
+import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 
 interface Entry {
   id: string;
@@ -167,19 +167,25 @@ export default function WishlistTimeline({
     [onSelect]
   );
 
+  // Delay hide so moving between adjacent dots doesn't flicker.
+  const hideTimer = useRef<ReturnType<typeof setTimeout> | null>(null);
+  useEffect(() => () => { if (hideTimer.current) clearTimeout(hideTimer.current); }, []);
+
   const handleDotHover = useCallback(
     (entry: (Entry & { x: number; y: number }) | null) => {
+      if (hideTimer.current) { clearTimeout(hideTimer.current); hideTimer.current = null; }
       if (!entry) {
-        setHoveredId(null);
-        setTooltip(null);
+        hideTimer.current = setTimeout(() => {
+          setHoveredId(null);
+          setTooltip(null);
+        }, 80);
         return;
       }
       setHoveredId(entry.id);
-      // Use the dot's SVG-space position converted to percentage-based
-      // positioning, so it doesn't jitter when the SVG scales.
+      // Pin tooltip X to the dot column. Y is fixed (always above chart)
+      // so moving between stacked dots doesn't cause vertical jitter.
       const xPct = (entry.x / WIDTH) * 100;
-      const yPct = (entry.y / HEIGHT) * 100;
-      setTooltip({ x: xPct, y: yPct, entry });
+      setTooltip({ x: xPct, y: 0, entry });
     },
     []
   );
@@ -280,13 +286,15 @@ export default function WishlistTimeline({
         ))}
       </svg>
 
-      {/* Tooltip — positioned with percentages so it doesn't jitter on SVG scale */}
+      {/* Tooltip — pinned above chart, slides horizontally with transition */}
       {tooltip && (
         <div
           className="absolute pointer-events-none px-3 py-2 rounded text-xs z-20"
           style={{
-            left: `${Math.min(tooltip.x, 80)}%`,
-            bottom: `${100 - tooltip.y + 5}%`,
+            left: `${Math.min(Math.max(tooltip.x, 10), 80)}%`,
+            top: 0,
+            transform: "translateX(-50%) translateY(-100%)",
+            transition: "left 0.12s ease-out",
             background: "var(--color-paper-raised)",
             border: "1px solid var(--color-paper-edge)",
             fontFamily: "var(--font-mono)",
