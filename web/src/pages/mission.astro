@@ -1,0 +1,307 @@
+---
+/**
+ * /mission — what this project is, where it's going, and how to help.
+ *
+ * This is the "about" page with teeth. Not a corporate mission statement —
+ * a genuine explanation of what we're trying to build and an invitation
+ * to anyone who cares about the same things.
+ */
+
+import BaseLayout from "../layouts/BaseLayout.astro";
+import { stats } from "../lib/concepts.ts";
+import { allTopics } from "../lib/topics.ts";
+---
+
+<BaseLayout
+  title="Mission — NIAC Atlas"
+  description="What we're building, why it matters, and how to help."
+  nav="mission"
+>
+  <article class="max-w-3xl">
+    {/* ----------------------------------------------------------- */}
+    {/* Header                                                      */}
+    {/* ----------------------------------------------------------- */}
+    <header class="mb-16 hero-glow">
+      <div class="eyebrow text-accent mb-3">The mission</div>
+      <h1
+        class="font-display text-5xl md:text-6xl font-semibold tracking-tight leading-[1.05]"
+      >
+        Make all of human scientific knowledge browsable, connected, and alive.
+      </h1>
+      <p class="mt-8 text-lg text-dim leading-relaxed">
+        NASA's website is old and clunky. arXiv is a firehose. Wikipedia is
+        flat. Google Scholar is just search. Nowhere on the internet can you
+        start with a black hole, follow a thread through 300 years of physics,
+        watch the best explanation ever filmed, read the original paper, and
+        discover that a NASA-funded team is working on something related
+        right now — all in one place.
+      </p>
+      <p class="mt-4 text-lg text-dim leading-relaxed">
+        We're building that place.
+      </p>
+    </header>
+
+    {/* ----------------------------------------------------------- */}
+    {/* Where we are                                                */}
+    {/* ----------------------------------------------------------- */}
+    <section class="mb-20">
+      <div class="eyebrow text-accent mb-4 pb-2 border-b hairline">
+        Where we are now
+      </div>
+      <p class="text-base leading-relaxed mb-4">
+        Right now, NIAC Atlas indexes <strong class="text-accent">{stats.totalConcepts} speculative aerospace concepts</strong> from
+        NASA's Innovative Advanced Concepts program — fusion engines, solar
+        sails, gravitational lensing telescopes, submarine explorers for
+        Titan's methane seas. Each one is a real idea that someone got
+        funded to seriously study.
+      </p>
+      <p class="text-base leading-relaxed mb-4">
+        We have <a href="/explore" class="text-accent underline hover:text-white">{allTopics.length} curated deep dives</a> into
+        the big scientific questions these concepts touch: black holes,
+        gravity, quantum physics, propulsion, telescopes. Each one pulls
+        together history, open questions, the best explainer videos and books
+        we've found, and the NIAC concepts pushing the field forward.
+      </p>
+      <p class="text-base leading-relaxed">
+        It's a start. There's a long way to go.
+      </p>
+    </section>
+
+    {/* ----------------------------------------------------------- */}
+    {/* Where we're going                                           */}
+    {/* ----------------------------------------------------------- */}
+    <section class="mb-20">
+      <div class="eyebrow text-accent mb-4 pb-2 border-b hairline">
+        Where we're going
+      </div>
+
+      <div class="space-y-8">
+        <div>
+          <h3 class="font-display text-xl font-semibold mb-2">
+            A universal index of scientific knowledge
+          </h3>
+          <p class="text-base text-dim leading-relaxed">
+            Every paper, every book, every dataset that matters — modern and
+            historical. We want a search for "rotating tether" to return
+            NIAC concepts, arXiv papers, historical texts, and the best
+            explainer videos on the topic. We're starting with NASA. Next:
+            arXiv, OpenAlex, PubMed. Eventually: the deep history —
+            Galileo's notebooks alongside JWST observations.
+          </p>
+        </div>
+
+        <div>
+          <h3 class="font-display text-xl font-semibold mb-2">
+            Connections that help people discover
+          </h3>
+          <p class="text-base text-dim leading-relaxed">
+            AI-assisted semantic search and automatic cross-referencing so the
+            platform actively surfaces relationships nobody has drawn before.
+            A 2024 JWST observation connects to a 1905 Einstein paper connects
+            to a 1687 Newton manuscript. The system should help you think, not
+            just search.
+          </p>
+        </div>
+
+        <div>
+          <h3 class="font-display text-xl font-semibold mb-2">
+            A community that builds knowledge together
+          </h3>
+          <p class="text-base text-dim leading-relaxed">
+            The most interesting discourse on the internet happens when
+            curious, intelligent people gather around things they genuinely
+            care about. We want that here — not engagement-optimized noise,
+            but the kind of conversation that makes you smarter for having
+            read it. Discussion, debate, shared research, and the possibility
+            that two people find each other here and go on to work on
+            something that matters.
+          </p>
+        </div>
+
+        <div>
+          <h3 class="font-display text-xl font-semibold mb-2">
+            The best explanations, linked to primary sources
+          </h3>
+          <p class="text-base text-dim leading-relaxed">
+            Science communicators like Veritasium, 3Blue1Brown, PBS Space
+            Time, the Dwarkesh Podcast, Quanta Magazine, and many others do
+            extraordinary work making hard ideas accessible. Their
+            explanations should live alongside the papers and data they draw
+            from — so you can go from "that was a great video" to "here's
+            the actual paper" in one click.
+          </p>
+        </div>
+
+        <div>
+          <h3 class="font-display text-xl font-semibold mb-2">
+            History as a first-class citizen
+          </h3>
+          <p class="text-base text-dim leading-relaxed">
+            You cannot understand the present without understanding the past.
+            Every modern discovery stands on centuries of prior work. We want
+            to make those lineages visible — so you can see that the concept
+            of a "dark star" predates Einstein by 130 years, that Newton's
+            reflecting telescope begat Hubble begat JWST, that the rocket
+            equation Tsiolkovsky wrote in 1903 is still the constraint every
+            mission designer fights today.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    {/* ----------------------------------------------------------- */}
+    {/* How to help                                                 */}
+    {/* ----------------------------------------------------------- */}
+    <section class="mb-20">
+      <div class="eyebrow text-accent mb-4 pb-2 border-b hairline">
+        How to contribute
+      </div>
+
+      <p class="text-base leading-relaxed mb-8">
+        This is an open-source project and we need help. Here are real things
+        you can do right now, no matter your background.
+      </p>
+
+      <div class="space-y-6">
+        <div
+          class="p-6 rounded-lg border hairline"
+          style="background: var(--color-paper-raised);"
+        >
+          <div class="flex items-start gap-3">
+            <span class="text-accent font-mono text-lg shrink-0">01</span>
+            <div>
+              <h4 class="font-display text-lg font-semibold mb-1">
+                Curate a topic deep dive
+              </h4>
+              <p class="text-sm text-dim leading-relaxed">
+                Pick a scientific topic you're passionate about. Write a short
+                overview, list the open questions, find the best videos and
+                books, and trace the historical timeline. We'll help you get
+                it into the site. You don't need to be an expert — you need
+                to be curious and thorough.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="p-6 rounded-lg border hairline"
+          style="background: var(--color-paper-raised);"
+        >
+          <div class="flex items-start gap-3">
+            <span class="text-accent font-mono text-lg shrink-0">02</span>
+            <div>
+              <h4 class="font-display text-lg font-semibold mb-1">
+                Improve the data
+              </h4>
+              <p class="text-sm text-dim leading-relaxed">
+                Our NIAC concept data is good but not perfect. Phase metadata
+                is ~70% detected via keyword sniffing — the rest needs
+                human eyes. Some concepts appear as duplicates across Phase I
+                and Phase II reports. If you have domain knowledge, help us
+                clean and enrich the dataset.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="p-6 rounded-lg border hairline"
+          style="background: var(--color-paper-raised);"
+        >
+          <div class="flex items-start gap-3">
+            <span class="text-accent font-mono text-lg shrink-0">03</span>
+            <div>
+              <h4 class="font-display text-lg font-semibold mb-1">
+                Digitize historical sources
+              </h4>
+              <p class="text-sm text-dim leading-relaxed">
+                The hardest and most important part of the mission. Pre-1900
+                scientific texts — manuscripts, early journal articles,
+                engineering drawings — need to be scanned, OCR'd, transcribed,
+                and linked to modern work. If you read Latin, German, French,
+                Arabic, or Chinese, your skills are especially valuable. Even
+                English-language historical texts need careful transcription.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="p-6 rounded-lg border hairline"
+          style="background: var(--color-paper-raised);"
+        >
+          <div class="flex items-start gap-3">
+            <span class="text-accent font-mono text-lg shrink-0">04</span>
+            <div>
+              <h4 class="font-display text-lg font-semibold mb-1">
+                Write code
+              </h4>
+              <p class="text-sm text-dim leading-relaxed">
+                The project is TypeScript (Astro + React), open source, and
+                there's no shortage of engineering work: ingestion pipelines
+                for new data sources (arXiv, OpenAlex, PubMed), semantic
+                search infrastructure, better visualizations, accessibility
+                improvements, and eventually community features. Check the
+                repo and pick up an issue.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="p-6 rounded-lg border hairline"
+          style="background: var(--color-paper-raised);"
+        >
+          <div class="flex items-start gap-3">
+            <span class="text-accent font-mono text-lg shrink-0">05</span>
+            <div>
+              <h4 class="font-display text-lg font-semibold mb-1">
+                Recommend great science communication
+              </h4>
+              <p class="text-sm text-dim leading-relaxed">
+                Know a video, podcast, book, or article that changed how you
+                think about a scientific topic? We want to know about it.
+                The curated media layer is only as good as the community's
+                collective taste. Send us your favorites.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    {/* ----------------------------------------------------------- */}
+    {/* The belief                                                  */}
+    {/* ----------------------------------------------------------- */}
+    <section class="mb-12 pt-12 border-t hairline">
+      <blockquote class="pull-quote max-w-2xl">
+        "The most exciting phrase to hear in science, the one that heralds
+        new discoveries, is not 'Eureka!' but 'That's funny...'"
+      </blockquote>
+      <p class="mt-4 eyebrow">— Isaac Asimov (attributed)</p>
+      <p class="mt-8 text-base text-dim leading-relaxed max-w-2xl">
+        We believe the next great scientific insight is more likely to happen
+        when a curious person can wander freely through all of human
+        knowledge — from a 1783 thought experiment about dark stars to a
+        2025 NIAC study on gravitational lensing — and notice a connection
+        that nobody else has seen. That's what we're building toward.
+      </p>
+    </section>
+
+    {/* ----------------------------------------------------------- */}
+    {/* CTA                                                         */}
+    {/* ----------------------------------------------------------- */}
+    <section class="mb-8">
+      <a
+        href="https://github.com/anthonyguzzardo/niac-atlas"
+        target="_blank"
+        rel="noopener"
+        class="inline-flex items-center gap-2 text-accent eyebrow hover:text-white transition"
+      >
+        <span>View the project on GitHub</span>
+        <span>→</span>
+      </a>
+    </section>
+  </article>
+</BaseLayout>
