@@ -11,8 +11,9 @@
  *      noise).
  *
  * Clicking a topic navigates to the homepage with `?q=<label>` so the
- * ConceptBrowser pre-fills the search box. (Browser doesn't currently
- * read query params — that's a 5-line addition we'll do later if needed.)
+ * ConceptBrowser pre-fills the search box. ConceptBrowser reads `q`,
+ * `phase`, and `from` on mount and mirrors changes back via replaceState,
+ * so deep links and shared URLs round-trip cleanly.
  */
 
 import BaseLayout from "../layouts/BaseLayout.astro";

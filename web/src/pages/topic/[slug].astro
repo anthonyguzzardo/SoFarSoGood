@@ -1,0 +1,263 @@
+---
+/**
+ * Topic deep dive — a curated, long-form exploration of a scientific frontier.
+ *
+ * Each topic page is a hand-crafted entry point into a big question:
+ * black holes, gravity, quantum physics, propulsion, telescopes. It pulls
+ * together an overview, open questions, a historical timeline, curated media
+ * (Veritasium, Dwarkesh, books, docs), and links to related NIAC concepts.
+ *
+ * These pages are the "Veritasium layer" of the atlas — they make you care
+ * about a topic before sending you into the primary sources.
+ */
+
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import {
+  allTopics,
+  getTopic,
+  getTopicConcepts,
+  getRelatedTopics,
+  mediaIcon,
+} from "../../lib/topics.ts";
+import { excerpt, piLine } from "../../lib/concepts.ts";
+
+export function getStaticPaths() {
+  return allTopics.map((t) => ({ params: { slug: t.slug } }));
+}
+
+const { slug } = Astro.params;
+const topic = getTopic(slug!);
+if (!topic) throw new Error(`Topic not found: ${slug}`);
+
+const concepts = getTopicConcepts(topic);
+const relatedTopics = getRelatedTopics(topic);
+
+// Split overview into paragraphs.
+const overviewParagraphs = topic.overview
+  .split(/\n{2,}/)
+  .map((p) => p.trim())
+  .filter(Boolean);
+---
+
+<BaseLayout
+  title={`${topic.title} — NIAC Atlas`}
+  description={topic.subtitle}
+  nav="explore"
+>
+  <article>
+    {/* ----------------------------------------------------------- */}
+    {/* Breadcrumb                                                  */}
+    {/* ----------------------------------------------------------- */}
+    <a
+      href="/explore"
+      class="eyebrow hover:text-white inline-flex items-center gap-1"
+    >
+      ← All topics
+    </a>
+
+    {/* ----------------------------------------------------------- */}
+    {/* Header                                                      */}
+    {/* ----------------------------------------------------------- */}
+    <header class="mt-6 mb-16 max-w-4xl hero-glow">
+      <div class="eyebrow text-accent mb-3">Deep dive</div>
+      <h1
+        class="font-display text-5xl md:text-7xl font-semibold tracking-tight leading-[1.05]"
+      >
+        {topic.title}
+      </h1>
+      <p
+        class="mt-6 font-display text-xl md:text-2xl text-dim leading-relaxed max-w-3xl"
+      >
+        {topic.subtitle}
+      </p>
+    </header>
+
+    {/* ----------------------------------------------------------- */}
+    {/* Overview                                                    */}
+    {/* ----------------------------------------------------------- */}
+    <section class="mb-20 max-w-3xl">
+      <div class="space-y-4 text-base leading-relaxed">
+        {overviewParagraphs.map((p) => <p>{p}</p>)}
+      </div>
+    </section>
+
+    {/* ----------------------------------------------------------- */}
+    {/* Open questions                                              */}
+    {/* ----------------------------------------------------------- */}
+    <section class="mb-20">
+      <div class="eyebrow text-accent mb-4 pb-2 border-b hairline">
+        Open questions — what we still don't know
+      </div>
+      <ul class="space-y-4 max-w-3xl">
+        {
+          topic.openQuestions.map((q) => (
+            <li class="flex gap-3">
+              <span
+                class="text-accent font-mono text-lg leading-snug shrink-0"
+                aria-hidden="true"
+              >
+                ?
+              </span>
+              <span class="text-base leading-relaxed">{q}</span>
+            </li>
+          ))
+        }
+      </ul>
+    </section>
+
+    {/* ----------------------------------------------------------- */}
+    {/* Historical timeline                                         */}
+    {/* ----------------------------------------------------------- */}
+    <section class="mb-20">
+      <div class="eyebrow text-accent mb-4 pb-2 border-b hairline">
+        Timeline — how we got here
+      </div>
+      <div class="relative pl-8 max-w-3xl">
+        {/* Vertical line */}
+        <div
+          class="absolute left-3 top-0 bottom-0 w-px"
+          style="background: var(--color-paper-edge);"
+        >
+        </div>
+
+        <ul class="space-y-6">
+          {
+            topic.timeline.map((entry) => (
+              <li class="relative">
+                {/* Dot on the line */}
+                <div
+                  class="absolute -left-5 top-1.5 w-2.5 h-2.5 rounded-full border-2"
+                  style="border-color: var(--color-accent); background: var(--color-paper);"
+                />
+                <div class="eyebrow text-accent mb-1">{entry.year}</div>
+                <div class="text-sm leading-relaxed">{entry.event}</div>
+              </li>
+            ))
+          }
+        </ul>
+      </div>
+    </section>
+
+    {/* ----------------------------------------------------------- */}
+    {/* Curated media                                               */}
+    {/* ----------------------------------------------------------- */}
+    {
+      topic.media.length > 0 && (
+        <section class="mb-20">
+          <div class="eyebrow text-accent mb-4 pb-2 border-b hairline">
+            Go deeper — curated media
+          </div>
+          <ul class="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl">
+            {topic.media.map((m) => (
+              <li>
+                <a
+                  href={m.url}
+                  target="_blank"
+                  rel="noopener"
+                  class="block group p-4 rounded-lg border hairline hover:border-amber-400/40 transition"
+                  style="background: var(--color-paper-raised);"
+                >
+                  <div class="flex items-start gap-3">
+                    <span
+                      class="text-lg shrink-0 mt-0.5"
+                      aria-hidden="true"
+                    >
+                      {mediaIcon(m.type as any)}
+                    </span>
+                    <div>
+                      <div class="font-display text-base font-medium leading-snug group-hover:text-accent transition-colors">
+                        {m.title}
+                      </div>
+                      <div class="eyebrow mt-1">
+                        {m.source} · {m.type}
+                      </div>
+                      <p class="mt-2 text-sm text-dim leading-relaxed">
+                        {m.note}
+                      </p>
+                    </div>
+                  </div>
+                </a>
+              </li>
+            ))}
+          </ul>
+        </section>
+      )
+    }
+
+    {/* ----------------------------------------------------------- */}
+    {/* Related NIAC concepts                                       */}
+    {/* ----------------------------------------------------------- */}
+    {
+      concepts.length > 0 && (
+        <section class="mb-20">
+          <div class="eyebrow text-accent mb-4 pb-2 border-b hairline">
+            From the NIAC Atlas — funded concepts related to {topic.title.toLowerCase()}
+          </div>
+          <ul class="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-8 max-w-4xl">
+            {concepts.map((c) => (
+              <li>
+                <a href={`/concept/${c.slug}`} class="block group">
+                  <div class="eyebrow mb-1">
+                    {c.year}
+                    {c.phase && (
+                      <span class="text-accent"> · Phase {c.phase}</span>
+                    )}
+                    <span> · {piLine(c)}</span>
+                  </div>
+                  <h4 class="font-display text-lg font-semibold leading-snug group-hover:underline">
+                    {c.title}
+                  </h4>
+                  <p class="mt-2 text-sm text-dim leading-relaxed">
+                    {excerpt(c.abstract, 180)}
+                  </p>
+                </a>
+              </li>
+            ))}
+          </ul>
+          <div class="mt-6">
+            <a
+              href={`/?q=${encodeURIComponent(topic.searchTerms[0] ?? topic.title)}`}
+              class="eyebrow text-accent hover:text-white inline-flex items-center gap-2 transition"
+            >
+              Search all concepts for "{topic.searchTerms[0] ?? topic.title}" →
+            </a>
+          </div>
+        </section>
+      )
+    }
+
+    {/* ----------------------------------------------------------- */}
+    {/* Related topics                                              */}
+    {/* ----------------------------------------------------------- */}
+    {
+      relatedTopics.length > 0 && (
+        <section class="mt-32 pt-12 border-t hairline">
+          <div class="flex items-baseline justify-between mb-8">
+            <h3 class="font-display text-2xl font-semibold">
+              Keep exploring
+            </h3>
+            <span class="eyebrow">related topics</span>
+          </div>
+          <ul class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            {relatedTopics.map((rt) => (
+              <li>
+                <a
+                  href={`/topic/${rt.slug}`}
+                  class="block group p-6 rounded-lg border hairline hover:border-amber-400/40 transition"
+                  style="background: var(--color-paper-raised);"
+                >
+                  <h4 class="font-display text-xl font-semibold group-hover:text-accent transition-colors">
+                    {rt.title}
+                  </h4>
+                  <p class="mt-2 text-sm text-dim leading-relaxed">
+                    {rt.subtitle}
+                  </p>
+                </a>
+              </li>
+            ))}
+          </ul>
+        </section>
+      )
+    }
+  </article>
+</BaseLayout>

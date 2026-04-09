@@ -16,7 +16,7 @@
  *     so the visual rhythm is preserved when filters are off.
  */
 
-import { useMemo, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import type { Concept, Phase } from "../../../shared/concept.ts";
 
 interface Props {
@@ -26,9 +26,18 @@ interface Props {
 const PHASES: Array<Phase | "any"> = ["any", "I", "II", "III"];
 
 export default function ConceptBrowser({ concepts }: Props) {
-  const [query, setQuery] = useState("");
-  const [phase, setPhase] = useState<Phase | "any">("any");
-  const [yearMin, setYearMin] = useState<number | null>(null);
+  // Initial state is read from the URL so deep links from /subjects (which
+  // sends ?q=<label>) and shared links (?phase=II&from=2020) pre-fill the
+  // controls. Lazy initializers run once per mount; SSR sees the empty
+  // defaults and the client island re-runs them on hydration.
+  const [query, setQuery] = useState(() => initialParam("q") ?? "");
+  const [phase, setPhase] = useState<Phase | "any">(
+    () => (initialParam("phase") as Phase | null) ?? "any"
+  );
+  const [yearMin, setYearMin] = useState<number | null>(() => {
+    const v = initialParam("from");
+    return v && /^\d+$/.test(v) ? Number(v) : null;
+  });
 
   /** Distinct years present in the corpus, sorted ascending. */
   const years = useMemo(() => {
@@ -38,6 +47,22 @@ export default function ConceptBrowser({ concepts }: Props) {
 
   const minYear = years[0]!;
   const maxYear = years[years.length - 1]!;
+
+  // Mirror current filter state back into the URL (replaceState, no history
+  // entries) so the page is sharable/bookmarkable at any moment. We strip
+  // empty params so a fresh visit doesn't accumulate cruft.
+  useEffect(() => {
+    if (typeof window === "undefined") return;
+    const params = new URLSearchParams();
+    if (query.trim()) params.set("q", query.trim());
+    if (phase !== "any") params.set("phase", phase);
+    if (yearMin !== null) params.set("from", String(yearMin));
+    const qs = params.toString();
+    const next = qs ? `${window.location.pathname}?${qs}` : window.location.pathname;
+    if (next !== window.location.pathname + window.location.search) {
+      window.history.replaceState(null, "", next);
+    }
+  }, [query, phase, yearMin]);
 
   /** Filtered list. Recomputed any time inputs change — cheap at this size. */
   const filtered = useMemo(() => {
@@ -260,6 +285,12 @@ export default function ConceptBrowser({ concepts }: Props) {
 
 function q(s: string): string {
   return s.trim().toLowerCase();
+}
+
+/** Read a single URL query param on mount. Returns null on SSR. */
+function initialParam(key: string): string | null {
+  if (typeof window === "undefined") return null;
+  return new URLSearchParams(window.location.search).get(key);
 }
 
 function excerpt(text: string, maxChars: number, query: string): string {

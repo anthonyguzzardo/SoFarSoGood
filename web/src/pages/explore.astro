@@ -1,0 +1,58 @@
+---
+/**
+ * /explore — index of curated topic deep dives.
+ *
+ * The front door to the "Veritasium layer" of the atlas. Each card is a
+ * hand-crafted entry point into a big scientific question.
+ */
+
+import BaseLayout from "../layouts/BaseLayout.astro";
+import { allTopics } from "../lib/topics.ts";
+---
+
+<BaseLayout title="Explore — NIAC Atlas" nav="explore">
+  <section class="mb-12">
+    <div class="eyebrow text-accent mb-3">Explore · Deep Dives</div>
+    <h2
+      class="font-display text-4xl md:text-5xl font-semibold tracking-tight leading-tight max-w-3xl"
+    >
+      The big questions
+    </h2>
+    <p class="mt-4 text-base text-dim max-w-2xl leading-relaxed">
+      Curated deep dives into the scientific frontiers that matter most.
+      History, open questions, the best explanations we've found, and the
+      NIAC concepts pushing each field forward.
+    </p>
+  </section>
+
+  <section>
+    <ul class="grid grid-cols-1 md:grid-cols-2 gap-6">
+      {
+        allTopics.map((t) => (
+          <li>
+            <a
+              href={`/topic/${t.slug}`}
+              class="block group p-8 rounded-lg border hairline hover:border-amber-400/40 transition h-full"
+              style="background: var(--color-paper-raised);"
+            >
+              <div class="eyebrow text-accent mb-2">
+                {t.openQuestions.length} open questions ·{" "}
+                {t.timeline.length} milestones · {t.media.length} media
+              </div>
+              <h3 class="font-display text-2xl md:text-3xl font-semibold leading-snug group-hover:text-accent transition-colors">
+                {t.title}
+              </h3>
+              <p class="mt-3 text-base text-dim leading-relaxed">
+                {t.subtitle}
+              </p>
+              <div class="mt-6 eyebrow text-accent group-hover:gap-3 inline-flex items-center gap-2 transition-all">
+                <span>Dive in</span>
+                <span>→</span>
+              </div>
+            </a>
+          </li>
+        ))
+      }
+    </ul>
+  </section>
+</BaseLayout>

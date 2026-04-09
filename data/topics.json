@@ -1,0 +1,291 @@
+[
+  {
+    "slug": "black-holes",
+    "title": "Black Holes",
+    "subtitle": "Where spacetime breaks and physics begins again",
+    "overview": "A black hole is a region of spacetime where gravity is so extreme that nothing — not even light — can escape once it crosses the event horizon. First predicted by Schwarzschild's 1916 solution to Einstein's field equations, black holes spent decades as mathematical curiosities before astronomers found overwhelming evidence they're everywhere: at the centers of galaxies, in binary star systems, and possibly wandering through interstellar space in the billions. The 2019 Event Horizon Telescope image of M87* and the 2015 LIGO detection of gravitational waves from merging black holes turned them from theoretical objects into observed ones. Yet the deepest questions remain open: what happens at the singularity? Is information truly destroyed? How does gravity behave at the quantum scale?",
+    "openQuestions": [
+      "What happens to information that falls into a black hole? (the information paradox)",
+      "What replaces the singularity in a quantum theory of gravity?",
+      "Do primordial black holes from the early universe account for dark matter?",
+      "Can we observe Hawking radiation directly?",
+      "What is the interior geometry of a rotating (Kerr) black hole really like?"
+    ],
+    "timeline": [
+      { "year": 1783, "event": "John Michell proposes 'dark stars' too massive for light to escape" },
+      { "year": 1916, "event": "Karl Schwarzschild solves Einstein's equations, predicts the event horizon" },
+      { "year": 1935, "event": "Einstein & Rosen describe 'bridges' (wormholes) in spacetime" },
+      { "year": 1958, "event": "David Finkelstein shows the Schwarzschild radius is a one-way membrane" },
+      { "year": 1963, "event": "Roy Kerr solves rotating black holes — the realistic case" },
+      { "year": 1967, "event": "John Wheeler coins the term 'black hole'" },
+      { "year": 1971, "event": "Cygnus X-1 identified as first strong black hole candidate" },
+      { "year": 1974, "event": "Stephen Hawking predicts black holes radiate and eventually evaporate" },
+      { "year": 2015, "event": "LIGO detects gravitational waves from two merging black holes" },
+      { "year": 2019, "event": "Event Horizon Telescope produces first direct image of a black hole (M87*)" },
+      { "year": 2022, "event": "EHT images Sagittarius A*, the black hole at the center of our galaxy" }
+    ],
+    "media": [
+      {
+        "title": "How One Genius Solved Gravity",
+        "source": "Veritasium",
+        "type": "video",
+        "url": "https://www.youtube.com/watch?v=xZBJSYjgMXo",
+        "note": "Deep dive into Schwarzschild's original solution and what it actually predicts"
+      },
+      {
+        "title": "Why Black Holes Could Delete The Universe",
+        "source": "Kurzgesagt",
+        "type": "video",
+        "url": "https://www.youtube.com/watch?v=yWO-cvGETRQ",
+        "note": "Accessible introduction to the information paradox"
+      },
+      {
+        "title": "Black Holes: The Edge of All We Know",
+        "source": "Netflix / Harvard",
+        "type": "documentary",
+        "url": "https://www.imdb.com/title/tt10780792/",
+        "note": "Follows the EHT team's effort to image M87* and the theoretical quest to resolve the information paradox"
+      },
+      {
+        "title": "Roger Penrose: The Nobel Prize Interview",
+        "source": "Nobel Prize",
+        "type": "interview",
+        "url": "https://www.nobelprize.org/prizes/physics/2020/penrose/interview/",
+        "note": "Penrose on his singularity theorems and why he believes consciousness is non-computable"
+      },
+      {
+        "title": "The Most Wanted Particle in Physics",
+        "source": "Dwarkesh Podcast (ft. Nima Arkani-Hamed)",
+        "type": "podcast",
+        "url": "https://www.dwarkeshpatel.com/p/nima-arkani-hamed",
+        "note": "Touches on black hole information, the limits of quantum field theory, and what a theory of quantum gravity might look like"
+      }
+    ],
+    "relatedConceptSlugs": [
+      "direct-multipixel-imaging-and-spectroscopy-of-an-exoplanet-with-a-solar-gravity--2025",
+      "gravity-observation-and-dark-energy-detection-explorer-in-the-solar-system-nasa--2025",
+      "atom-interferometry-for-detection-of-gravitational-waves-nasa-institute-for-adva-2019",
+      "direct-probe-of-dark-energy-interactions-with-a-solar-system-laboratory-nasa-inn-2019",
+      "a-lunar-long-baseline-uv-optical-imaging-interferometer-artemis-enabled-stellar--2025"
+    ],
+    "searchTerms": ["black hole", "gravitational", "event horizon", "singularity", "gravity", "spacetime"],
+    "relatedTopicSlugs": ["gravity", "quantum-physics", "telescopes"]
+  },
+  {
+    "slug": "gravity",
+    "title": "Gravity",
+    "subtitle": "The force we feel every second and still don't fully understand",
+    "overview": "Gravity is the most familiar force in the universe and the least understood at a fundamental level. Newton gave us the math to predict orbits in 1687. Einstein replaced it in 1915 with general relativity — gravity isn't a force at all, but the curvature of spacetime caused by mass and energy. This framework predicts gravitational waves, black holes, the expansion of the universe, and GPS timing corrections to nanosecond precision. And yet: general relativity breaks down at singularities, refuses to play nicely with quantum mechanics, and can't explain why the universe's expansion is accelerating (dark energy) or why galaxies hold together better than their visible matter should allow (dark matter). A quantum theory of gravity — one that unifies Einstein's curved spacetime with the quantum world — remains the biggest open problem in physics.",
+    "openQuestions": [
+      "Is gravity fundamentally quantum, or does spacetime resist quantization?",
+      "What is dark energy, and why is the universe's expansion accelerating?",
+      "What is dark matter, and is it a gravitational phenomenon?",
+      "Are there extra dimensions of space that gravity leaks into?",
+      "Can we detect gravitons — the hypothetical quantum of gravity?"
+    ],
+    "timeline": [
+      { "year": 1687, "event": "Isaac Newton publishes Principia — universal gravitation as inverse-square law" },
+      { "year": 1797, "event": "Henry Cavendish measures gravitational constant G in a laboratory" },
+      { "year": 1915, "event": "Albert Einstein publishes general relativity — gravity as spacetime curvature" },
+      { "year": 1919, "event": "Eddington's solar eclipse expedition confirms light bending by gravity" },
+      { "year": 1933, "event": "Fritz Zwicky infers 'dark matter' from galaxy cluster dynamics" },
+      { "year": 1964, "event": "Peter Higgs proposes the Higgs mechanism — mass from field interactions" },
+      { "year": 1998, "event": "Two teams discover accelerating expansion of the universe (dark energy)" },
+      { "year": 2012, "event": "Higgs boson discovered at CERN — confirms mass mechanism, but gravity still separate" },
+      { "year": 2015, "event": "LIGO detects gravitational waves, confirming Einstein's 100-year-old prediction" },
+      { "year": 2023, "event": "NANOGrav detects gravitational wave background — the hum of merging supermassive black holes" }
+    ],
+    "media": [
+      {
+        "title": "Why Gravity is NOT a Force",
+        "source": "Veritasium",
+        "type": "video",
+        "url": "https://www.youtube.com/watch?v=XRr1kaXKBsU",
+        "note": "Excellent visual explanation of general relativity as curved spacetime, not a pull"
+      },
+      {
+        "title": "Gravity Visualized",
+        "source": "PBS Space Time",
+        "type": "video",
+        "url": "https://www.youtube.com/watch?v=wrwgIjBUYVc",
+        "note": "How to think about spacetime curvature without the misleading rubber-sheet analogy"
+      },
+      {
+        "title": "The Biggest Ideas in the Universe: Space, Time, and Motion",
+        "source": "Sean Carroll",
+        "type": "book",
+        "url": "https://www.preposterousuniverse.com/biggestideas/",
+        "note": "Graduate-level concepts made accessible — the best book-length treatment of GR for a curious non-physicist"
+      }
+    ],
+    "relatedConceptSlugs": [
+      "direct-multipixel-imaging-and-spectroscopy-of-an-exoplanet-with-a-solar-gravity--2025",
+      "gravity-observation-and-dark-energy-detection-explorer-in-the-solar-system-nasa--2025",
+      "atom-interferometry-for-detection-of-gravitational-waves-nasa-institute-for-adva-2019",
+      "direct-probe-of-dark-energy-interactions-with-a-solar-system-laboratory-nasa-inn-2019"
+    ],
+    "searchTerms": ["gravity", "gravitational", "spacetime", "general relativity", "dark matter", "dark energy"],
+    "relatedTopicSlugs": ["black-holes", "quantum-physics"]
+  },
+  {
+    "slug": "quantum-physics",
+    "title": "Quantum Physics",
+    "subtitle": "The rules that govern everything small — and maybe everything",
+    "overview": "Quantum mechanics is the framework that describes nature at the smallest scales: atoms, photons, electrons, quarks. Its predictions are the most precisely tested in all of science — the magnetic moment of the electron agrees with theory to 12 decimal places. And yet quantum mechanics is profoundly strange: particles exist in superpositions of states until measured, distant particles can be entangled so that measuring one instantly affects the other, and the act of observation appears to play a fundamental role in determining reality. A century after its founding, physicists still disagree about what quantum mechanics *means*. The measurement problem, the nature of the wave function, and whether quantum mechanics needs to be modified to include gravity are among the deepest open questions in science.",
+    "openQuestions": [
+      "What is the correct interpretation of quantum mechanics? (Copenhagen, Many-Worlds, pilot wave, etc.)",
+      "Can quantum computing solve problems that are truly intractable classically?",
+      "How do you reconcile quantum mechanics with general relativity?",
+      "Is quantum entanglement the key to understanding spacetime itself? (ER = EPR)",
+      "Does quantum mechanics break down at some scale, or is it exact?"
+    ],
+    "timeline": [
+      { "year": 1900, "event": "Max Planck introduces energy quanta to solve the black-body radiation problem" },
+      { "year": 1905, "event": "Einstein explains the photoelectric effect via light quanta (photons)" },
+      { "year": 1925, "event": "Heisenberg and Schrödinger independently formulate quantum mechanics" },
+      { "year": 1927, "event": "Heisenberg's uncertainty principle; Bohr's Copenhagen interpretation" },
+      { "year": 1935, "event": "Einstein, Podolsky, Rosen publish the EPR paradox — 'spooky action at a distance'" },
+      { "year": 1964, "event": "John Bell proves no local hidden variable theory can reproduce quantum predictions" },
+      { "year": 1982, "event": "Alain Aspect experimentally confirms Bell inequality violations — entanglement is real" },
+      { "year": 1994, "event": "Peter Shor shows a quantum computer could factor large numbers exponentially faster" },
+      { "year": 2019, "event": "Google claims quantum supremacy with a 53-qubit processor" },
+      { "year": 2022, "event": "Nobel Prize to Aspect, Clauser, Zeilinger for experiments establishing entanglement" }
+    ],
+    "media": [
+      {
+        "title": "Some Light Quantum Mechanics",
+        "source": "3Blue1Brown",
+        "type": "video",
+        "url": "https://www.youtube.com/watch?v=MzRCDLre1b4",
+        "note": "Beautiful visual introduction to quantum states and measurement using polarization"
+      },
+      {
+        "title": "Quantum Entanglement Explained",
+        "source": "Veritasium",
+        "type": "video",
+        "url": "https://www.youtube.com/watch?v=ZuvK-od647c",
+        "note": "Clear explanation of what entanglement actually is (and isn't)"
+      },
+      {
+        "title": "Something Deeply Hidden",
+        "source": "Sean Carroll",
+        "type": "book",
+        "url": "https://www.preposterousuniverse.com/somethinghidden/",
+        "note": "The best accessible argument for the Many-Worlds interpretation"
+      }
+    ],
+    "relatedConceptSlugs": [
+      "niac-phase-2-final-report-for-astrophysics-and-technical-lab-studies-of-a-solar--2022",
+      "astrophysics-and-technical-study-of-a-solar-neutrino-spacecraft-niac-nasa-innova-2019"
+    ],
+    "searchTerms": ["quantum", "entanglement", "superposition", "wave function", "photon"],
+    "relatedTopicSlugs": ["black-holes", "gravity"]
+  },
+  {
+    "slug": "propulsion",
+    "title": "Propulsion",
+    "subtitle": "How we escape the gravity well — and whether we ever reach the stars",
+    "overview": "Every journey into space begins with the same brutal constraint: you must throw mass behind you to move forward, and you must carry that mass with you. The Tsiolkovsky rocket equation is merciless — to go faster, you need exponentially more fuel, which makes you heavier, which means you need even more fuel. Chemical rockets, for all their drama, can barely get us to Mars. To reach the outer planets in months instead of years, or to reach other stars within a human lifetime, we need fundamentally different approaches: solar sails that ride photon pressure, electric sails that push against the solar wind, fusion drives that burn hydrogen into helium, antimatter engines that convert mass directly into energy, or laser-propelled lightsails that leave the fuel at home entirely. NIAC has funded dozens of these ideas, and some of them might actually work.",
+    "openQuestions": [
+      "Can fusion propulsion be made practical for crewed missions to Mars and beyond?",
+      "Is laser-propelled lightsail travel to Alpha Centauri achievable within 20 years of flight?",
+      "Can we harvest antimatter in space rather than manufacturing it on Earth?",
+      "Are there propulsion physics we haven't discovered yet? (Mach effect, EmDrive, etc.)",
+      "What's the minimum trip time to Mars with near-term technology?"
+    ],
+    "timeline": [
+      { "year": 1903, "event": "Tsiolkovsky publishes the rocket equation — the fundamental constraint of spaceflight" },
+      { "year": 1926, "event": "Robert Goddard launches the first liquid-fueled rocket" },
+      { "year": 1958, "event": "Project Orion proposed — nuclear pulse propulsion via atomic bombs" },
+      { "year": 1964, "event": "Cesare Marchetti proposes antimatter propulsion" },
+      { "year": 1974, "event": "Project Daedalus — first detailed engineering study of an interstellar probe (fusion)" },
+      { "year": 1998, "event": "Deep Space 1 demonstrates ion propulsion in flight" },
+      { "year": 2010, "event": "JAXA's IKAROS becomes first spacecraft to fly on a solar sail" },
+      { "year": 2016, "event": "Breakthrough Starshot announced — laser-pushed lightsails to Alpha Centauri" },
+      { "year": 2019, "event": "The Planetary Society's LightSail 2 demonstrates controlled solar sailing in Earth orbit" }
+    ],
+    "media": [
+      {
+        "title": "The Absurdity of Detecting Gravitational Waves",
+        "source": "Veritasium",
+        "type": "video",
+        "url": "https://www.youtube.com/watch?v=pjbgrVLeVto",
+        "note": "Not propulsion directly, but shows the engineering precision needed for space physics"
+      },
+      {
+        "title": "Can We Really Go to the Stars?",
+        "source": "PBS Space Time",
+        "type": "video",
+        "url": "https://www.youtube.com/watch?v=EzZGPCyrpSU",
+        "note": "Honest assessment of interstellar propulsion concepts and their feasibility"
+      },
+      {
+        "title": "Project Hail Mary",
+        "source": "Andy Weir",
+        "type": "book",
+        "url": "https://www.andyweirauthor.com/books/project-hail-mary-hc",
+        "note": "Fiction, but the propulsion physics and delta-v calculations are real and lovingly detailed"
+      }
+    ],
+    "relatedConceptSlugs": [
+      "the-pulsed-fission-fusion-puff-engine-development-status-2020",
+      "electric-sail-propulsion-for-deep-space-missions-2019",
+      "electric-sail-propulsion-for-exploring-nearby-interstellar-space-2019",
+      "fusion-enabled-pluto-orbiter-and-lander-2019",
+      "extreme-metamaterial-solar-sails-for-breakthrough-space-exploration-niac-phase-i-2025",
+      "lattice-confinement-fusion-fast-fission-for-space-2025"
+    ],
+    "searchTerms": ["propulsion", "thrust", "solar sail", "fusion", "ion", "antimatter", "rocket"],
+    "relatedTopicSlugs": ["gravity", "telescopes"]
+  },
+  {
+    "slug": "telescopes",
+    "title": "Telescopes & Observation",
+    "subtitle": "The instruments that let us see what we can't touch",
+    "overview": "Everything we know about the universe beyond Earth comes through telescopes. From Galileo's refractor in 1609 to the James Webb Space Telescope orbiting the L2 Lagrange point, every generation has built instruments that revealed a universe bigger, older, and stranger than anyone expected. Modern telescopes don't just see visible light — they observe across the electromagnetic spectrum: radio waves from pulsars, microwaves from the cosmic background radiation, infrared from nascent star systems, ultraviolet from hot young stars, X-rays from neutron star accretion, and gamma rays from the most violent events in the cosmos. The next frontier is multi-messenger astronomy: combining light, gravitational waves, and neutrinos to see the same event through completely different physics. NIAC has funded ambitious concepts including solar gravitational lensing (using the Sun itself as a telescope), lunar-based interferometers, and radically new sensor architectures.",
+    "openQuestions": [
+      "Can we use the Sun's gravitational lens to image exoplanet surfaces in detail?",
+      "What will the first direct image of an exoplanet's continents look like?",
+      "Can a lunar far-side radio telescope detect signals from the cosmic dark ages?",
+      "How large can we build space-based interferometers?",
+      "Will multi-messenger astronomy (light + gravitational waves + neutrinos) reveal entirely new phenomena?"
+    ],
+    "timeline": [
+      { "year": 1609, "event": "Galileo Galilei observes Jupiter's moons with a homemade refractor" },
+      { "year": 1668, "event": "Isaac Newton builds the first reflecting telescope" },
+      { "year": 1932, "event": "Karl Jansky detects radio waves from the Milky Way — radio astronomy begins" },
+      { "year": 1962, "event": "First X-ray telescope launched — opens high-energy astrophysics" },
+      { "year": 1990, "event": "Hubble Space Telescope launched — transforms our view of the universe" },
+      { "year": 2009, "event": "Kepler space telescope begins finding thousands of exoplanets" },
+      { "year": 2015, "event": "LIGO detects gravitational waves — a new kind of 'telescope'" },
+      { "year": 2021, "event": "James Webb Space Telescope launched — infrared eyes on the first galaxies" },
+      { "year": 2027, "event": "Vera Rubin Observatory first light expected — will survey the entire sky every 3 nights" }
+    ],
+    "media": [
+      {
+        "title": "How the James Webb Space Telescope Works",
+        "source": "Veritasium",
+        "type": "video",
+        "url": "https://www.youtube.com/watch?v=aICaAEXDJQQ",
+        "note": "Engineering deep dive into JWST's design and the problems it solves"
+      },
+      {
+        "title": "The Largest Structure in the Universe",
+        "source": "History of the Universe",
+        "type": "video",
+        "url": "https://www.youtube.com/watch?v=vIqr4Dz00rs",
+        "note": "Incredible visualization of cosmic structure revealed by survey telescopes"
+      }
+    ],
+    "relatedConceptSlugs": [
+      "direct-multipixel-imaging-and-spectroscopy-of-an-exoplanet-with-a-solar-gravity--2025",
+      "fluidic-telescope-flute-nasa-innovative-advanced-concepts-niac-phase-i-final-rep-2026",
+      "a-lunar-long-baseline-uv-optical-imaging-interferometer-artemis-enabled-stellar--2025",
+      "hybrid-observatory-for-earth-like-exoplanets-hoee-2025",
+      "further-development-of-aperture-a-precise-extremely-large-reflective-telescope-u-2019",
+      "low-mass-planar-photonic-imaging-sensor-2019"
+    ],
+    "searchTerms": ["telescope", "imaging", "interferometer", "observatory", "spectroscopy", "sensor"],
+    "relatedTopicSlugs": ["black-holes", "gravity"]
+  }
+]
