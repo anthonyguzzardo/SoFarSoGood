@@ -24,12 +24,31 @@ export interface TimelineEntry {
   event: string;
 }
 
+export interface UnsolvedProblem {
+  name: string;
+  yearPosed: number;
+  posedBy: string;
+  status: "open" | "partially-resolved" | "resolved";
+  significance: string;
+  milestones: TimelineEntry[];
+}
+
+export interface ThoughtExperiment {
+  name: string;
+  yearProposed: number;
+  proposedBy: string;
+  description: string;
+  modernStatus: string;
+}
+
 export interface Topic {
   slug: string;
   title: string;
   subtitle: string;
   overview: string;
   openQuestions: string[];
+  unsolvedProblems: UnsolvedProblem[];
+  thoughtExperiments: ThoughtExperiment[];
   timeline: TimelineEntry[];
   media: MediaEntry[];
   relatedConceptSlugs: string[];

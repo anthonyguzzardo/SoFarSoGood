@@ -11,6 +11,63 @@
       "Can we observe Hawking radiation directly?",
       "What is the interior geometry of a rotating (Kerr) black hole really like?"
     ],
+    "unsolvedProblems": [
+      {
+        "name": "The Black Hole Information Paradox",
+        "yearPosed": 1974,
+        "posedBy": "Stephen Hawking",
+        "status": "partially-resolved",
+        "significance": "If information is truly destroyed when a black hole evaporates, it violates a foundational principle of quantum mechanics (unitarity). Resolving this likely requires understanding quantum gravity.",
+        "milestones": [
+          { "year": 1974, "event": "Hawking shows black holes radiate thermally, implying information loss" },
+          { "year": 1997, "event": "Maldacena's AdS/CFT correspondence suggests information is preserved in principle" },
+          { "year": 2004, "event": "Hawking concedes his bet with Preskill — information is probably not lost" },
+          { "year": 2013, "event": "AMPS 'firewall paradox' reignites debate — smooth horizons may be impossible" },
+          { "year": 2019, "event": "Page curve calculations using 'island' formula suggest unitarity is preserved" }
+        ]
+      },
+      {
+        "name": "The Singularity Problem",
+        "yearPosed": 1965,
+        "posedBy": "Roger Penrose",
+        "status": "open",
+        "significance": "Penrose proved that singularities (points of infinite density) are inevitable inside black holes under general relativity. But infinite density is almost certainly unphysical — something must replace the singularity, and finding out what requires a theory of quantum gravity that doesn't exist yet.",
+        "milestones": [
+          { "year": 1965, "event": "Penrose's singularity theorem proves gravitational collapse leads to singularities" },
+          { "year": 1970, "event": "Hawking & Penrose extend the theorem — singularities are generic, not special" },
+          { "year": 2003, "event": "Loop quantum gravity models suggest a 'bounce' replaces the singularity" },
+          { "year": 2020, "event": "Penrose wins Nobel Prize for this work — the problem he identified remains open" }
+        ]
+      },
+      {
+        "name": "Primordial Black Holes as Dark Matter",
+        "yearPosed": 1971,
+        "posedBy": "Stephen Hawking",
+        "status": "open",
+        "significance": "If tiny black holes formed in the early universe, they could be the dark matter we've been searching for — no new particles needed. Observational constraints have ruled out many mass ranges, but a window remains open.",
+        "milestones": [
+          { "year": 1971, "event": "Hawking proposes primordial black holes could form from density fluctuations" },
+          { "year": 2016, "event": "LIGO's first detection revives interest — the merging black holes were heavier than expected" },
+          { "year": 2023, "event": "JWST observations place new constraints on primordial black hole abundance" }
+        ]
+      }
+    ],
+    "thoughtExperiments": [
+      {
+        "name": "The Black Hole Complementarity Thought Experiment",
+        "yearProposed": 1993,
+        "proposedBy": "Leonard Susskind, Lárus Thorlacius, John Uglum",
+        "description": "An observer falling into a black hole sees nothing special at the horizon — they pass right through. But an observer watching from outside sees the infalling matter frozen and smeared across the horizon, eventually re-emitted as Hawking radiation. Both descriptions are valid, and they never contradict each other because the two observers can never compare notes.",
+        "modernStatus": "The AMPS firewall paradox (2012) challenged this picture by arguing that complementarity, smooth horizons, and unitarity can't all be true simultaneously. The debate continues."
+      },
+      {
+        "name": "The Penrose Process",
+        "yearProposed": 1969,
+        "proposedBy": "Roger Penrose",
+        "description": "A spinning black hole has a region called the ergosphere where spacetime is dragged so violently that nothing can stand still. Penrose showed you could throw an object into the ergosphere, have it split in two, and recover more energy than you put in — extracting rotational energy from the black hole itself. In principle, an advanced civilization could use this to power their society.",
+        "modernStatus": "Mathematically rigorous and experimentally confirmed in analogue systems (superradiance in rotating fluids). A real energy extraction mechanism, though no civilization has tried it yet."
+      }
+    ],
     "timeline": [
       { "year": 1783, "event": "John Michell proposes 'dark stars' too massive for light to escape" },
       { "year": 1916, "event": "Karl Schwarzschild solves Einstein's equations, predicts the event horizon" },
@@ -83,6 +140,85 @@
       "Are there extra dimensions of space that gravity leaks into?",
       "Can we detect gravitons — the hypothetical quantum of gravity?"
     ],
+    "unsolvedProblems": [
+      {
+        "name": "Quantum Gravity",
+        "yearPosed": 1930,
+        "posedBy": "Léon Rosenfeld (first attempts to quantize gravity)",
+        "status": "open",
+        "significance": "General relativity and quantum mechanics are the two most successful theories in physics, and they're fundamentally incompatible. Unifying them would unlock our understanding of black hole interiors, the Big Bang, and possibly the nature of spacetime itself. This is arguably the biggest open problem in all of physics.",
+        "milestones": [
+          { "year": 1930, "event": "First attempts to apply quantum rules to the gravitational field" },
+          { "year": 1967, "event": "DeWitt and Wheeler formulate the Wheeler-DeWitt equation" },
+          { "year": 1984, "event": "First superstring revolution — string theory emerges as a quantum gravity candidate" },
+          { "year": 1986, "event": "Ashtekar reformulates GR, launching loop quantum gravity" },
+          { "year": 1997, "event": "Maldacena's AdS/CFT duality connects gravity to quantum field theory" },
+          { "year": 2012, "event": "Amplituhedron discovered — hints gravity amplitudes have simpler geometric structure" }
+        ]
+      },
+      {
+        "name": "The Cosmological Constant Problem",
+        "yearPosed": 1989,
+        "posedBy": "Steven Weinberg (sharpened the problem)",
+        "status": "open",
+        "significance": "Quantum field theory predicts the vacuum energy of empty space should be enormous — roughly 10^120 times larger than what we observe. This is often called 'the worst prediction in physics.' Either something is canceling almost all of it with absurd precision, or our understanding of vacuum energy is fundamentally wrong.",
+        "milestones": [
+          { "year": 1917, "event": "Einstein introduces the cosmological constant, then later calls it his 'biggest blunder'" },
+          { "year": 1989, "event": "Weinberg points out the anthropic bound — if Λ were much larger, galaxies couldn't form" },
+          { "year": 1998, "event": "Accelerating expansion discovered — the cosmological constant is small but not zero" },
+          { "year": 2003, "event": "String theory landscape (10^500 vacua) proposed as a framework, but no prediction" }
+        ]
+      },
+      {
+        "name": "The Nature of Dark Matter",
+        "yearPosed": 1933,
+        "posedBy": "Fritz Zwicky",
+        "status": "open",
+        "significance": "About 27% of the universe's total mass-energy is dark matter — we can see its gravitational effects everywhere, from galaxy rotation curves to the cosmic microwave background, but we have no idea what it's made of. Decades of direct detection experiments have found nothing.",
+        "milestones": [
+          { "year": 1933, "event": "Zwicky measures galaxy cluster velocities, infers invisible mass" },
+          { "year": 1970, "event": "Vera Rubin's galaxy rotation curves provide definitive evidence" },
+          { "year": 1998, "event": "First WIMP direct detection experiments begin at underground laboratories" },
+          { "year": 2012, "event": "LHC finds the Higgs but no supersymmetric particles (the leading WIMP candidate)" },
+          { "year": 2023, "event": "LZ experiment sets the strongest limits ever on WIMP cross-sections — still nothing" }
+        ]
+      },
+      {
+        "name": "The Nature of Dark Energy",
+        "yearPosed": 1998,
+        "posedBy": "Saul Perlmutter, Brian Schmidt, Adam Riess (discovery teams)",
+        "status": "open",
+        "significance": "About 68% of the universe is dark energy — a mysterious component driving the accelerating expansion of space. Is it Einstein's cosmological constant (vacuum energy)? A dynamical field? A sign that general relativity is wrong on cosmic scales? We don't know.",
+        "milestones": [
+          { "year": 1998, "event": "Two teams independently discover accelerating expansion via Type Ia supernovae" },
+          { "year": 2011, "event": "Nobel Prize to Perlmutter, Schmidt, Riess" },
+          { "year": 2024, "event": "DESI preliminary results hint dark energy may vary over time — not a constant" }
+        ]
+      }
+    ],
+    "thoughtExperiments": [
+      {
+        "name": "Einstein's Elevator",
+        "yearProposed": 1907,
+        "proposedBy": "Albert Einstein",
+        "description": "Imagine standing in a closed elevator with no windows. You feel your feet pressed to the floor. Are you standing on Earth's surface, or are you in deep space with the elevator accelerating upward? Einstein realized there's no experiment you can do inside the elevator to tell the difference. This 'equivalence principle' became the foundation of general relativity — gravity and acceleration are the same thing.",
+        "modernStatus": "The equivalence principle has been confirmed to extraordinary precision (1 part in 10^15 by the MICROSCOPE satellite, 2022). It remains a cornerstone of GR, but whether it holds at quantum scales is an open question."
+      },
+      {
+        "name": "Newton's Cannonball",
+        "yearProposed": 1687,
+        "proposedBy": "Isaac Newton",
+        "description": "Imagine firing a cannonball horizontally from a very tall mountain. Fire it slowly — it falls and hits the ground. Fire it faster — it travels further before landing. Fire it fast enough, and the curve of its fall matches the curve of the Earth. It never lands. It's in orbit. Newton showed that falling and orbiting are the same thing — the Moon is just a cannonball that keeps missing the ground.",
+        "modernStatus": "This thought experiment is still used to teach orbital mechanics. It correctly describes how orbits work in Newtonian gravity, and the concept extends to general relativity with geodesics replacing straight lines."
+      },
+      {
+        "name": "The Twins Paradox",
+        "yearProposed": 1911,
+        "proposedBy": "Paul Langevin (based on Einstein's 1905 special relativity)",
+        "description": "One twin stays on Earth. The other boards a spaceship traveling at near-light speed to a distant star and back. When the traveling twin returns, they've aged less than their sibling. Time itself passed more slowly for the traveler. This isn't an illusion — clocks brought on fast-moving aircraft and GPS satellites confirm time dilation is real.",
+        "modernStatus": "Resolved within special and general relativity — the asymmetry comes from the traveling twin changing reference frames (accelerating). Confirmed experimentally by Hafele-Keating (1971), GPS timing corrections (daily), and particle accelerator experiments."
+      }
+    ],
     "timeline": [
       { "year": 1687, "event": "Isaac Newton publishes Principia — universal gravitation as inverse-square law" },
       { "year": 1797, "event": "Henry Cavendish measures gravitational constant G in a laboratory" },
@@ -139,6 +275,79 @@
       "Is quantum entanglement the key to understanding spacetime itself? (ER = EPR)",
       "Does quantum mechanics break down at some scale, or is it exact?"
     ],
+    "unsolvedProblems": [
+      {
+        "name": "The Measurement Problem",
+        "yearPosed": 1926,
+        "posedBy": "Implicit in the Born rule and Schrödinger equation",
+        "status": "open",
+        "significance": "Quantum mechanics gives two rules: (1) systems evolve smoothly via the Schrödinger equation, (2) upon 'measurement,' the wave function collapses to a definite state. But what counts as a measurement? Why do these two rules exist? Every interpretation of quantum mechanics is essentially a different answer to this question.",
+        "milestones": [
+          { "year": 1935, "event": "Schrödinger's cat thought experiment dramatizes the problem" },
+          { "year": 1957, "event": "Everett proposes Many-Worlds — no collapse, all outcomes are real" },
+          { "year": 1986, "event": "Decoherence theory explains why quantum effects are invisible at human scales" },
+          { "year": 2003, "event": "Zurek's quantum Darwinism explains how classical reality emerges from quantum substrates" },
+          { "year": 2022, "event": "Nobel Prize recognizes entanglement experiments, but interpretation remains open" }
+        ]
+      },
+      {
+        "name": "Is Quantum Computing Fundamentally More Powerful?",
+        "yearPosed": 1994,
+        "posedBy": "Peter Shor (sharpened by his factoring algorithm)",
+        "status": "open",
+        "significance": "Shor's algorithm shows quantum computers can factor large numbers exponentially faster than any known classical algorithm. But 'known' is doing heavy lifting — we can't prove there isn't a fast classical factoring algorithm we haven't found. The deeper question is whether BQP (what quantum computers can solve efficiently) is strictly larger than BPP (classical). Nobody has proven this.",
+        "milestones": [
+          { "year": 1981, "event": "Feynman proposes using quantum systems to simulate quantum physics" },
+          { "year": 1994, "event": "Shor's algorithm — quantum computers can break RSA encryption" },
+          { "year": 2019, "event": "Google claims quantum supremacy with Sycamore processor" },
+          { "year": 2023, "event": "IBM runs 127-qubit circuits; error correction remains the bottleneck" },
+          { "year": 2024, "event": "Google Willow processor demonstrates below-threshold error correction" }
+        ]
+      },
+      {
+        "name": "ER = EPR (Spacetime from Entanglement)",
+        "yearPosed": 2013,
+        "posedBy": "Juan Maldacena and Leonard Susskind",
+        "status": "open",
+        "significance": "The conjecture that Einstein-Rosen bridges (wormholes) and Einstein-Podolsky-Rosen pairs (entangled particles) are the same thing. If true, spacetime itself might be woven from quantum entanglement — geometry would emerge from information. This would be a huge step toward quantum gravity.",
+        "milestones": [
+          { "year": 2006, "event": "Ryu-Takayanagi formula connects entanglement entropy to geometry in AdS/CFT" },
+          { "year": 2013, "event": "Maldacena and Susskind propose ER = EPR" },
+          { "year": 2019, "event": "Quantum error correction codes found to have deep connections to AdS/CFT geometry" },
+          { "year": 2022, "event": "Jafferis et al. claim to simulate a traversable wormhole on Google's Sycamore chip (controversial)" }
+        ]
+      }
+    ],
+    "thoughtExperiments": [
+      {
+        "name": "Schrödinger's Cat",
+        "yearProposed": 1935,
+        "proposedBy": "Erwin Schrödinger",
+        "description": "A cat is sealed in a box with a radioactive atom, a Geiger counter, and a vial of poison. If the atom decays (a quantum event), the counter triggers, the vial breaks, and the cat dies. Quantum mechanics says the atom is in a superposition of decayed and not-decayed until observed — so is the cat both alive and dead? Schrödinger meant this as a *reductio ad absurdum* — he was arguing quantum mechanics must be incomplete, not that cats can be half-dead.",
+        "modernStatus": "Decoherence theory explains why cats don't actually exist in superpositions — the environment constantly 'measures' large objects. But the deeper question (what causes definite outcomes) remains open. Every interpretation answers it differently."
+      },
+      {
+        "name": "The EPR Paradox",
+        "yearProposed": 1935,
+        "proposedBy": "Albert Einstein, Boris Podolsky, Nathan Rosen",
+        "description": "Create a pair of entangled particles and send them to opposite ends of the universe. Measure one — the other instantly 'knows' the outcome, regardless of distance. Einstein called this 'spooky action at a distance' and argued it proved quantum mechanics was incomplete — there must be hidden variables determining the outcome in advance.",
+        "modernStatus": "Bell's theorem (1964) and Aspect's experiments (1982) proved Einstein was wrong — there are no local hidden variables. Entanglement is real, and the correlations can't be explained by any pre-existing shared information. But it can't be used to send information faster than light, so special relativity is safe."
+      },
+      {
+        "name": "Wigner's Friend",
+        "yearProposed": 1961,
+        "proposedBy": "Eugene Wigner",
+        "description": "Wigner's friend performs a quantum measurement inside a sealed lab and sees a definite outcome. But from Wigner's perspective outside the lab, the friend + the quantum system are in superposition — the measurement hasn't 'happened' yet. Who is right? Can two observers disagree about whether a measurement has occurred?",
+        "modernStatus": "Extended versions (Frauchiger-Renner, 2018) sharpen this into a formal paradox. Recent experiments (2019) suggest that 'facts' in quantum mechanics may be observer-dependent. This remains one of the sharpest challenges to any single interpretation."
+      },
+      {
+        "name": "Maxwell's Demon",
+        "yearProposed": 1867,
+        "proposedBy": "James Clerk Maxwell",
+        "description": "Imagine a tiny demon guarding a trapdoor between two gas chambers. It lets fast molecules through one way and slow molecules the other. Without expending energy, it creates a temperature difference — violating the second law of thermodynamics. Where's the catch?",
+        "modernStatus": "Resolved by Landauer's principle (1961) and Bennett's analysis (1982): the demon must store information about each molecule, and erasing that information necessarily dissipates energy. Information is physical — it costs energy to forget. This connects thermodynamics to information theory at a fundamental level."
+      }
+    ],
     "timeline": [
       { "year": 1900, "event": "Max Planck introduces energy quanta to solve the black-body radiation problem" },
       { "year": 1905, "event": "Einstein explains the photoelectric effect via light quanta (photons)" },
@@ -192,6 +401,63 @@
       "Can we harvest antimatter in space rather than manufacturing it on Earth?",
       "Are there propulsion physics we haven't discovered yet? (Mach effect, EmDrive, etc.)",
       "What's the minimum trip time to Mars with near-term technology?"
+    ],
+    "unsolvedProblems": [
+      {
+        "name": "Practical Fusion Propulsion",
+        "yearPosed": 1958,
+        "posedBy": "Project Orion team (Stanislaw Ulam, Freeman Dyson)",
+        "status": "open",
+        "significance": "Fusion produces millions of times more energy per kilogram than chemical fuels. A working fusion drive would cut Mars trips to weeks and make the outer solar system accessible. But containing and directing a fusion reaction in a lightweight engine remains an unsolved engineering problem — we can't even sustain net-positive fusion on the ground yet.",
+        "milestones": [
+          { "year": 1958, "event": "Project Orion proposes nuclear pulse propulsion — bombs as fuel" },
+          { "year": 1978, "event": "Project Daedalus designs a fusion-powered interstellar probe" },
+          { "year": 2022, "event": "National Ignition Facility achieves fusion ignition — more energy out than laser energy in" },
+          { "year": 2025, "event": "NIAC funds lattice confinement fusion and pulsed fission-fusion concepts" }
+        ]
+      },
+      {
+        "name": "The Interstellar Speed Problem",
+        "yearPosed": 1960,
+        "posedBy": "Robert Bussard (first serious interstellar propulsion proposal)",
+        "status": "open",
+        "significance": "The nearest star is 4.2 light-years away. Our fastest spacecraft (Parker Solar Probe, ~0.05% the speed of light) would take over 6,000 years to get there. To make interstellar travel possible in a human lifetime, we need to reach at least 10% the speed of light. No known technology can do this with a crewed vehicle, and even robotic probes face enormous challenges.",
+        "milestones": [
+          { "year": 1960, "event": "Bussard proposes the interstellar ramjet — scooping hydrogen from space" },
+          { "year": 1984, "event": "Forward proposes laser-pushed lightsails" },
+          { "year": 2016, "event": "Breakthrough Starshot announces $100M program for laser-pushed gram-scale probes" },
+          { "year": 2018, "event": "'Oumuamua passes through our solar system — first observed interstellar object" }
+        ]
+      },
+      {
+        "name": "The Tyranny of the Rocket Equation",
+        "yearPosed": 1903,
+        "posedBy": "Konstantin Tsiolkovsky",
+        "status": "partially-resolved",
+        "significance": "The rocket equation means that for every bit of speed you want, you need exponentially more fuel. For chemical rockets, reaching orbit requires ~90% of your vehicle to be fuel. This isn't an engineering limit — it's physics. The 'partial resolution' comes from concepts that avoid carrying fuel: solar sails (photon pressure), electric sails (solar wind), and beamed energy (laser propulsion).",
+        "milestones": [
+          { "year": 1903, "event": "Tsiolkovsky publishes the equation — Δv = ve × ln(m0/mf)" },
+          { "year": 2010, "event": "IKAROS demonstrates fuel-free propulsion via solar sail" },
+          { "year": 2019, "event": "LightSail 2 demonstrates controlled solar sailing from Earth orbit" },
+          { "year": 2025, "event": "NIAC funds metamaterial solar sails for breakthrough acceleration" }
+        ]
+      }
+    ],
+    "thoughtExperiments": [
+      {
+        "name": "The Bussard Ramjet",
+        "yearProposed": 1960,
+        "proposedBy": "Robert Bussard",
+        "description": "Instead of carrying fuel, what if your interstellar ship scooped hydrogen from interstellar space using a giant magnetic funnel, fused it, and used the exhaust for thrust? The faster you go, the more fuel you scoop, so there's no tyranny of the rocket equation. In principle, you could accelerate indefinitely.",
+        "modernStatus": "Unfortunately, detailed analysis shows the interstellar medium is too thin and the magnetic scoop creates more drag than the engine produces thrust. The concept doesn't work as originally proposed, but variations (using pre-placed fuel stations or combining with other propulsion) are still studied."
+      },
+      {
+        "name": "The Space Elevator",
+        "yearProposed": 1895,
+        "proposedBy": "Konstantin Tsiolkovsky",
+        "description": "Anchor a cable at the equator and extend it 36,000 km up to geostationary orbit and beyond. The cable stays taut because the upper portion is flung outward by centrifugal force. Climb the cable and you're in orbit — no rockets needed. Energy cost drops from $2,000/kg to perhaps $10/kg.",
+        "modernStatus": "The physics is sound but no known material is strong enough for the cable. Carbon nanotubes have the theoretical strength but can't be manufactured at length. A lunar space elevator (much shorter, lower gravity) might be feasible with existing materials."
+      }
     ],
     "timeline": [
       { "year": 1903, "event": "Tsiolkovsky publishes the rocket equation — the fundamental constraint of spaceflight" },
@@ -249,6 +515,49 @@
       "Can a lunar far-side radio telescope detect signals from the cosmic dark ages?",
       "How large can we build space-based interferometers?",
       "Will multi-messenger astronomy (light + gravitational waves + neutrinos) reveal entirely new phenomena?"
+    ],
+    "unsolvedProblems": [
+      {
+        "name": "Imaging Exoplanet Surfaces",
+        "yearPosed": 1995,
+        "posedBy": "Implicit since the first exoplanet discovery (Mayor & Queloz)",
+        "status": "open",
+        "significance": "We've found over 5,000 exoplanets but we can't see any of them as more than a dot — we infer their existence from starlight dips and wobbles. To see continents, oceans, or vegetation on an Earth-like exoplanet, we need telescope systems far beyond anything that exists. The solar gravitational lens (using the Sun's gravity to bend and focus light from distant stars) could theoretically achieve this, but the telescope would need to be placed 550+ AU from the Sun.",
+        "milestones": [
+          { "year": 1995, "event": "First exoplanet around a Sun-like star discovered" },
+          { "year": 2008, "event": "First direct images of exoplanets (Fomalhaut b, HR 8799 system)" },
+          { "year": 2020, "event": "NIAC funds solar gravitational lens mission study — 10-kilometer resolution at 100 light-years" },
+          { "year": 2025, "event": "NIAC funds continued SGL studies and hybrid observatory concepts" }
+        ]
+      },
+      {
+        "name": "The Cosmic Dark Ages",
+        "yearPosed": 1990,
+        "posedBy": "Theoretical cosmology community",
+        "status": "open",
+        "significance": "Between the cosmic microwave background (380,000 years after the Big Bang) and the first stars (~200 million years later) lies a period we've never observed — the cosmic dark ages. The only signal from this era is redshifted 21cm hydrogen radiation, which requires extremely sensitive, interference-free radio telescopes. The lunar far side — shielded from Earth's radio noise — may be the only place to detect it.",
+        "milestones": [
+          { "year": 2018, "event": "EDGES experiment claims detection of 21cm signal from cosmic dawn (disputed)" },
+          { "year": 2019, "event": "China's Chang'e-4 demonstrates lunar far-side radio observations" },
+          { "year": 2025, "event": "NIAC funds lunar far-side radio telescope concepts" }
+        ]
+      }
+    ],
+    "thoughtExperiments": [
+      {
+        "name": "The Solar Gravitational Lens",
+        "yearProposed": 1979,
+        "proposedBy": "Von Eshleman",
+        "description": "Einstein showed that gravity bends light. The Sun bends light from distant stars, and at a distance of about 550 AU (14 times farther than Pluto), the bent light converges into a focus — effectively turning the entire Sun into a lens with a diameter of 1.4 million kilometers. A telescope placed at this focal line could theoretically image an exoplanet with enough resolution to see continents.",
+        "modernStatus": "Mathematically sound and being actively studied by NIAC-funded teams. The challenge is getting a telescope 550+ AU from the Sun (current farthest probe, Voyager 1, is ~165 AU after 47 years). A solar sail or laser-propelled probe might make the journey in 25-30 years."
+      },
+      {
+        "name": "Olbers' Paradox",
+        "yearProposed": 1823,
+        "proposedBy": "Heinrich Wilhelm Olbers (earlier versions by Kepler, Halley, Cheseaux)",
+        "description": "If the universe is infinite and filled with stars, then every line of sight should eventually end at a star's surface. The entire sky should be as bright as the surface of the Sun. Why is the sky dark at night?",
+        "modernStatus": "Resolved by the finite age of the universe and its expansion. Light from the most distant stars hasn't had time to reach us (the observable universe has an edge in time, if not space), and the expansion of space redshifts distant starlight out of the visible spectrum. The resolution came from both general relativity and Big Bang cosmology."
+      }
     ],
     "timeline": [
       { "year": 1609, "event": "Galileo Galilei observes Jupiter's moons with a homemade refractor" },
