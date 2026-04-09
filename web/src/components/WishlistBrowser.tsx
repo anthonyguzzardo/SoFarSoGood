@@ -6,7 +6,7 @@
  * era for chronological browsing.
  */
 
-import { useMemo, useState } from "react";
+import { useCallback, useMemo, useState } from "react";
 
 interface WishlistEntry {
   id: string;
@@ -20,6 +20,8 @@ interface WishlistEntry {
   importance: string;
   status: string;
   source: string;
+  modernRelevance?: string;
+  relatedWishlistIds?: string[];
 }
 
 interface Props {
@@ -45,6 +47,13 @@ export default function WishlistBrowser({
   const [query, setQuery] = useState("");
   const [selectedEra, setSelectedEra] = useState<string>("all");
   const [selectedField, setSelectedField] = useState<string>("all");
+  const [expandedId, setExpandedId] = useState<string | null>(null);
+
+  const REPO = "anthonyguzzardo/niac-atlas";
+
+  const toggleExpand = useCallback((id: string) => {
+    setExpandedId((prev) => (prev === id ? null : id));
+  }, []);
 
   const filtered = useMemo(() => {
     const q = query.trim().toLowerCase();
@@ -230,74 +239,156 @@ export default function WishlistBrowser({
               {list.map((e) => (
                 <li
                   key={e.id}
-                  className="p-5 rounded-lg border"
+                  id={`wishlist-${e.id}`}
+                  className="rounded-lg border transition-all duration-300"
                   style={{
-                    borderColor: "var(--color-paper-edge)",
+                    borderColor: expandedId === e.id ? "var(--color-accent)" : "var(--color-paper-edge)",
                     background: "var(--color-paper-raised)",
                   }}
                 >
-                  <div className="flex items-start justify-between gap-3 mb-1">
-                    <h5
-                      className="text-base font-medium leading-snug"
-                      style={{ fontFamily: "var(--font-display)" }}
-                    >
-                      {e.title}
-                    </h5>
-                    <span
-                      className="shrink-0 px-2 py-0.5 rounded text-xs uppercase tracking-wider"
+                  {/* Clickable header */}
+                  <button
+                    type="button"
+                    className="w-full text-left p-5 cursor-pointer rounded-lg transition-colors duration-150"
+                    style={{
+                      background: expandedId === e.id ? "transparent" : "transparent",
+                    }}
+                    onMouseEnter={(ev) => {
+                      ev.currentTarget.style.background = "rgba(255, 255, 255, 0.02)";
+                    }}
+                    onMouseLeave={(ev) => {
+                      ev.currentTarget.style.background = "transparent";
+                    }}
+                    onClick={() => toggleExpand(e.id)}
+                  >
+                    <div className="flex items-start justify-between gap-3 mb-1">
+                      <h5
+                        className="text-base font-medium leading-snug"
+                        style={{ fontFamily: "var(--font-display)" }}
+                      >
+                        {e.title}
+                      </h5>
+                      <div className="flex items-center gap-2 shrink-0">
+                        <span
+                          className="px-2 py-0.5 rounded text-xs uppercase tracking-wider"
+                          style={{
+                            fontFamily: "var(--font-mono)",
+                            color:
+                              e.status === "wanted"
+                                ? "var(--color-ink-dim)"
+                                : e.status === "acquired"
+                                  ? "var(--color-accent)"
+                                  : "#4ade80",
+                            borderWidth: 1,
+                            borderColor:
+                              e.status === "wanted"
+                                ? "var(--color-paper-edge)"
+                                : e.status === "acquired"
+                                  ? "rgba(255, 184, 77, 0.3)"
+                                  : "rgba(74, 222, 128, 0.3)",
+                          }}
+                        >
+                          {e.status}
+                        </span>
+                        <span
+                          className="text-xs transition-transform duration-200"
+                          style={{
+                            color: "var(--color-ink-faint)",
+                            transform: expandedId === e.id ? "rotate(180deg)" : "rotate(0)",
+                          }}
+                        >
+                          ▾
+                        </span>
+                      </div>
+                    </div>
+                    <div
+                      className="text-xs mb-2"
                       style={{
+                        color: "var(--color-ink-dim)",
                         fontFamily: "var(--font-mono)",
-                        color:
-                          e.status === "wanted"
-                            ? "var(--color-ink-dim)"
-                            : e.status === "acquired"
-                              ? "var(--color-accent)"
-                              : "#4ade80",
-                        borderWidth: 1,
-                        borderColor:
-                          e.status === "wanted"
-                            ? "var(--color-paper-edge)"
-                            : e.status === "acquired"
-                              ? "rgba(255, 184, 77, 0.3)"
-                              : "rgba(74, 222, 128, 0.3)",
                       }}
                     >
-                      {e.status}
-                    </span>
-                  </div>
-                  <div
-                    className="text-xs mb-2"
-                    style={{
-                      color: "var(--color-ink-dim)",
-                      fontFamily: "var(--font-mono)",
-                    }}
-                  >
-                    {e.author} · {displayYear(e.year)} ·{" "}
-                    <span style={{ color: "var(--color-accent)" }}>
-                      {fieldLabels[e.field] ?? e.field}
-                    </span>{" "}
-                    · {e.subfield}
-                    {e.importance === "foundational" && (
-                      <span className="ml-2" style={{ color: "var(--color-accent)" }}>
-                        ★ foundational
-                      </span>
+                      {e.author} · {displayYear(e.year)} ·{" "}
+                      <span style={{ color: "var(--color-accent)" }}>
+                        {fieldLabels[e.field] ?? e.field}
+                      </span>{" "}
+                      · {e.subfield}
+                      {e.importance === "foundational" && (
+                        <span className="ml-2" style={{ color: "var(--color-accent)" }}>
+                          ★ foundational
+                        </span>
+                      )}
+                    </div>
+                    <p
+                      className="text-sm leading-relaxed"
+                      style={{ color: "var(--color-ink-dim)" }}
+                    >
+                      {e.significance}
+                    </p>
+                    {e.modernRelevance && (
+                      <div
+                        className="mt-3 px-3 py-2 rounded text-sm leading-relaxed"
+                        style={{
+                          background: "rgba(255, 184, 77, 0.04)",
+                          borderLeft: "2px solid rgba(255, 184, 77, 0.3)",
+                          color: "var(--color-ink)",
+                          fontFamily: "var(--font-display)",
+                          fontStyle: "italic",
+                        }}
+                      >
+                        {e.modernRelevance}
+                      </div>
                     )}
-                  </div>
-                  <p
-                    className="text-sm leading-relaxed"
-                    style={{ color: "var(--color-ink-dim)" }}
-                  >
-                    {e.significance}
-                  </p>
-                  <div
-                    className="mt-2 text-xs"
-                    style={{
-                      color: "var(--color-ink-faint)",
-                      fontFamily: "var(--font-mono)",
-                    }}
-                  >
-                    Source: {e.source}
-                  </div>
+                  </button>
+
+                  {/* Expanded panel — contribution actions */}
+                  {expandedId === e.id && (
+                    <div
+                      className="px-5 pb-5 pt-0 border-t"
+                      style={{ borderColor: "var(--color-paper-edge)" }}
+                    >
+                      <div
+                        className="pt-4 text-xs mb-3"
+                        style={{ color: "var(--color-ink-faint)", fontFamily: "var(--font-mono)" }}
+                      >
+                        Source: {e.source}
+                      </div>
+                      <div
+                        className="text-xs uppercase tracking-widest mb-3"
+                        style={{ color: "var(--color-accent)", fontFamily: "var(--font-mono)" }}
+                      >
+                        Help with this paper
+                      </div>
+                      <div className="flex flex-wrap gap-2">
+                        {e.status === "wanted" && (
+                          <a
+                            href={`https://github.com/${REPO}/issues/new?title=${encodeURIComponent(`Source found: ${e.title}`)}&body=${encodeURIComponent(`**Paper:** ${e.title}\n**Author:** ${e.author}\n**Year:** ${displayYear(e.year)}\n\n**I found this paper at:** [paste URL or location]\n\n**Notes:** `)}&labels=source-found`}
+                            target="_blank"
+                            rel="noopener"
+                            className="wishlist-action-btn wishlist-action-primary"
+                          >
+                            I found this paper →
+                          </a>
+                        )}
+                        <a
+                          href={`https://github.com/${REPO}/issues/new?title=${encodeURIComponent(`Context for: ${e.title}`)}&body=${encodeURIComponent(`**Paper:** ${e.title}\n**Author:** ${e.author} (${displayYear(e.year)})\n\n**Additional context I'd like to add:**\n\n`)}&labels=context`}
+                          target="_blank"
+                          rel="noopener"
+                          className="wishlist-action-btn"
+                        >
+                          Add context
+                        </a>
+                        <a
+                          href={`https://github.com/${REPO}/issues/new?title=${encodeURIComponent(`Connection: ${e.title} → [NIAC concept]`)}&body=${encodeURIComponent(`**Historical paper:** ${e.title} (${e.author}, ${displayYear(e.year)})\n\n**Connects to NIAC concept:** [paste concept name]\n\n**How they connect:** `)}&labels=connection`}
+                          target="_blank"
+                          rel="noopener"
+                          className="wishlist-action-btn"
+                        >
+                          Link to NIAC concept
+                        </a>
+                      </div>
+                    </div>
+                  )}
                 </li>
               ))}
             </ul>

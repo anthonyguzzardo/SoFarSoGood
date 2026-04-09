@@ -1,0 +1,212 @@
+---
+/**
+ * /contribute — concrete, low-barrier actions that route to GitHub.
+ *
+ * The mission page says "here's how to contribute." This page says
+ * "here's what needs doing right now, and here's the button to do it."
+ * Every action constructs a pre-filled GitHub issue URL.
+ */
+
+import BaseLayout from "../layouts/BaseLayout.astro";
+import { allConcepts, stats } from "../lib/concepts.ts";
+import { wishlistStats } from "../lib/wishlist.ts";
+
+const REPO = "anthonyguzzardo/niac-atlas";
+
+// Concepts with unknown phase
+const unknownPhase = allConcepts.filter((c) => c.phase === null);
+// Concepts missing "what if it works" payoff lines
+const missingPayoff = allConcepts.filter((c) => !c.whatIfItWorks);
+---
+
+<BaseLayout title="Contribute — NIAC Atlas" nav="mission">
+  <section class="mb-12 reveal">
+    <div class="eyebrow text-accent mb-3">Contribute</div>
+    <h2
+      class="font-display text-4xl md:text-5xl font-semibold tracking-tight leading-tight max-w-4xl"
+    >
+      Help build the atlas
+    </h2>
+    <p class="mt-4 text-base text-dim max-w-3xl leading-relaxed">
+      Every action here takes less than two minutes and makes the atlas
+      better for everyone. No setup required — each button opens a
+      pre-filled GitHub issue. You just add the details and submit.
+    </p>
+  </section>
+
+  {/* ----------------------------------------------------------- */}
+  {/* Help us tag phases                                          */}
+  {/* ----------------------------------------------------------- */}
+  <section class="mb-16 reveal reveal-delay-1">
+    <div
+      class="p-8 rounded-lg border hairline"
+      style="background: var(--color-paper-raised);"
+    >
+      <div class="flex items-start justify-between gap-6 flex-wrap mb-6">
+        <div>
+          <div class="eyebrow text-accent mb-2">01 · Tag a phase</div>
+          <h3 class="font-display text-2xl font-semibold">
+            {unknownPhase.length} concepts need phase tagging
+          </h3>
+          <p class="mt-2 text-sm text-dim max-w-xl leading-relaxed">
+            Our ingestion pipeline detects NIAC Phase I/II/III from keywords,
+            but {unknownPhase.length} concepts still have unknown phase. If you
+            know which phase a concept belongs to, let us know.
+          </p>
+        </div>
+        <div class="font-display text-5xl font-semibold text-accent opacity-30">
+          ?
+        </div>
+      </div>
+      <div class="flex flex-wrap gap-2 max-h-40 overflow-y-auto">
+        {unknownPhase.slice(0, 20).map((c) => (
+          <a
+            href={`https://github.com/${REPO}/issues/new?title=${encodeURIComponent(`Phase tag: ${c.title}`)}&body=${encodeURIComponent(`**Concept:** ${c.title}\n**Year:** ${c.year}\n**Slug:** ${c.slug}\n\n**Phase:** (I / II / III)\n**How I know:** `)}&labels=phase-tag`}
+            target="_blank"
+            rel="noopener"
+            class="px-3 py-1.5 text-xs font-mono rounded border hairline hover:border-amber-400/40 hover:text-accent transition truncate max-w-xs"
+            style="color: var(--color-ink-dim);"
+            title={c.title}
+          >
+            {c.title.slice(0, 50)}{c.title.length > 50 ? "…" : ""}
+          </a>
+        ))}
+        {unknownPhase.length > 20 && (
+          <span class="text-xs text-faint font-mono self-center">
+            +{unknownPhase.length - 20} more
+          </span>
+        )}
+      </div>
+    </div>
+  </section>
+
+  {/* ----------------------------------------------------------- */}
+  {/* Write a payoff line                                         */}
+  {/* ----------------------------------------------------------- */}
+  <section class="mb-16 reveal reveal-delay-2">
+    <div
+      class="p-8 rounded-lg border hairline"
+      style="background: var(--color-paper-raised);"
+    >
+      <div class="mb-6">
+        <div class="eyebrow text-accent mb-2">02 · Write a "What if it works" line</div>
+        <h3 class="font-display text-2xl font-semibold">
+          {missingPayoff.length} concepts need payoff lines
+        </h3>
+        <p class="mt-2 text-sm text-dim max-w-xl leading-relaxed">
+          Every NIAC concept represents speculative technology. We want a
+          punchy one-liner that captures the stakes: "If this works, [amazing
+          thing happens]." You write the line, we add it to the atlas.
+        </p>
+      </div>
+      <div class="flex flex-wrap gap-3">
+        <a
+          href={`https://github.com/${REPO}/issues/new?title=${encodeURIComponent("Payoff line suggestion")}&body=${encodeURIComponent("**Concept:** [paste concept title here]\n\n**What if it works:** If [this technology] works, [amazing consequence].\n\n**Why I think this is the right framing:** ")}&labels=payoff-line`}
+          target="_blank"
+          rel="noopener"
+          class="px-4 py-2 text-sm font-mono rounded border hairline hover:border-amber-400 hover:text-accent transition"
+        >
+          Suggest a payoff line →
+        </a>
+        <a
+          href="/?q="
+          class="px-4 py-2 text-sm font-mono rounded border border-transparent text-dim hover:text-white transition"
+        >
+          Browse concepts first
+        </a>
+      </div>
+    </div>
+  </section>
+
+  {/* ----------------------------------------------------------- */}
+  {/* Suggest a paper                                             */}
+  {/* ----------------------------------------------------------- */}
+  <section class="mb-16 reveal reveal-delay-3">
+    <div
+      class="p-8 rounded-lg border hairline"
+      style="background: var(--color-paper-raised);"
+    >
+      <div class="mb-6">
+        <div class="eyebrow text-accent mb-2">03 · Suggest a paper</div>
+        <h3 class="font-display text-2xl font-semibold">
+          Expand the wishlist
+        </h3>
+        <p class="mt-2 text-sm text-dim max-w-xl leading-relaxed">
+          We have {wishlistStats.total} papers on the wishlist spanning{" "}
+          {Math.abs(wishlistStats.oldestYear) + wishlistStats.newestYear} years.
+          Know a foundational paper that's missing? A groundbreaking experiment
+          we overlooked? Suggest it and we'll add it.
+        </p>
+      </div>
+      <a
+        href={`https://github.com/${REPO}/issues/new?title=${encodeURIComponent("Wishlist suggestion: [paper title]")}&body=${encodeURIComponent("**Paper title:** \n**Author:** \n**Year:** \n**Field:** (mathematics / physics / astronomy / chemistry / biology / medicine / computer-science / earth-science / engineering / philosophy / social-science)\n**Subfield:** \n**Why it matters:** \n**Where it can be found:** ")}&labels=wishlist`}
+        target="_blank"
+        rel="noopener"
+        class="px-4 py-2 text-sm font-mono rounded border hairline hover:border-amber-400 hover:text-accent transition"
+      >
+        Suggest a paper →
+      </a>
+    </div>
+  </section>
+
+  {/* ----------------------------------------------------------- */}
+  {/* Recommend media                                             */}
+  {/* ----------------------------------------------------------- */}
+  <section class="mb-16 reveal">
+    <div
+      class="p-8 rounded-lg border hairline"
+      style="background: var(--color-paper-raised);"
+    >
+      <div class="mb-6">
+        <div class="eyebrow text-accent mb-2">04 · Recommend a video, book, or podcast</div>
+        <h3 class="font-display text-2xl font-semibold">
+          Curate the best explanations
+        </h3>
+        <p class="mt-2 text-sm text-dim max-w-xl leading-relaxed">
+          Our topic deep dives include curated media — the best videos, podcasts,
+          books, and articles for each scientific frontier. If you've found
+          something brilliant that should be in the atlas, tell us.
+        </p>
+      </div>
+      <a
+        href={`https://github.com/${REPO}/issues/new?title=${encodeURIComponent("Media recommendation: [title]")}&body=${encodeURIComponent("**Title:** \n**URL:** \n**Type:** (video / podcast / book / documentary / interview / article)\n**Source:** (e.g., Veritasium, PBS Space Time, etc.)\n**Related topic:** (black-holes / gravity / quantum-physics / propulsion / telescopes / other)\n**Why it's great:** ")}&labels=media`}
+        target="_blank"
+        rel="noopener"
+        class="px-4 py-2 text-sm font-mono rounded border hairline hover:border-amber-400 hover:text-accent transition"
+      >
+        Recommend media →
+      </a>
+    </div>
+  </section>
+
+  {/* ----------------------------------------------------------- */}
+  {/* Write code                                                  */}
+  {/* ----------------------------------------------------------- */}
+  <section class="mb-16 reveal">
+    <div
+      class="p-8 rounded-lg border hairline"
+      style="background: var(--color-paper-raised);"
+    >
+      <div class="mb-6">
+        <div class="eyebrow text-accent mb-2">05 · Write code</div>
+        <h3 class="font-display text-2xl font-semibold">
+          Build the infrastructure
+        </h3>
+        <p class="mt-2 text-sm text-dim max-w-xl leading-relaxed">
+          The atlas is TypeScript + Astro + React, open source on GitHub.
+          If you can write code, check the issues and the roadmap. Semantic
+          search, citation graphs, new data sources — there's no shortage
+          of interesting problems.
+        </p>
+      </div>
+      <a
+        href={`https://github.com/${REPO}`}
+        target="_blank"
+        rel="noopener"
+        class="px-4 py-2 text-sm font-mono rounded border hairline hover:border-amber-400 hover:text-accent transition"
+      >
+        View the repo →
+      </a>
+    </div>
+  </section>
+</BaseLayout>

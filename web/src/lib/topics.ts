@@ -54,6 +54,14 @@ export interface Topic {
   relatedConceptSlugs: string[];
   searchTerms: string[];
   relatedTopicSlugs: string[];
+  /**
+   * Topic maturity. Controls rendering density.
+   * "full" = all sections populated (existing 5 topics).
+   * "standard" = overview, open questions, timeline, related concepts.
+   * "stub" = overview + related concepts. Placeholder for community expansion.
+   * Defaults to "full" for backward compatibility.
+   */
+  tier?: "full" | "standard" | "stub";
 }
 
 export const allTopics: Topic[] = rawTopics as Topic[];
@@ -77,6 +85,15 @@ export function getRelatedTopics(topic: Topic): Topic[] {
   return topic.relatedTopicSlugs
     .map((s) => getTopic(s))
     .filter((t): t is Topic => t !== undefined);
+}
+
+/** Topics grouped by tier. */
+export function topicsByTier() {
+  return {
+    full: allTopics.filter((t) => (t.tier ?? "full") === "full"),
+    standard: allTopics.filter((t) => t.tier === "standard"),
+    stub: allTopics.filter((t) => t.tier === "stub"),
+  };
 }
 
 /** Icon for media types. */

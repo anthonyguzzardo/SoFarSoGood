@@ -1,0 +1,221 @@
+---
+/**
+ * Reading path detail page — a curated narrative journey through time.
+ *
+ * Each step is a card with editorial narration + a resolved reference to
+ * a concept, topic, or wishlist entry. Steps are connected by a vertical
+ * line with numbered dots, like a metro map of scientific discovery.
+ */
+
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import {
+  allReadingPaths,
+  getReadingPath,
+  getRelatedPaths,
+  resolveStep,
+} from "../../lib/reading-paths.ts";
+
+export function getStaticPaths() {
+  return allReadingPaths.map((p) => ({ params: { slug: p.slug } }));
+}
+
+const { slug } = Astro.params;
+const path = getReadingPath(slug!);
+if (!path) throw new Error(`Reading path not found: ${slug}`);
+
+const relatedPaths = getRelatedPaths(path);
+const resolvedSteps = path.steps.map((step) => ({
+  step,
+  resolved: resolveStep(step),
+}));
+---
+
+<BaseLayout
+  title={`${path.title} — NIAC Atlas`}
+  description={path.subtitle}
+  nav="paths"
+>
+  <article>
+    {/* ----------------------------------------------------------- */}
+    {/* Breadcrumb                                                  */}
+    {/* ----------------------------------------------------------- */}
+    <a
+      href="/paths"
+      class="eyebrow hover:text-white inline-flex items-center gap-1"
+    >
+      ← All paths
+    </a>
+
+    {/* ----------------------------------------------------------- */}
+    {/* Header                                                      */}
+    {/* ----------------------------------------------------------- */}
+    <header class="mt-6 mb-16 max-w-4xl hero-glow reveal">
+      <div class="eyebrow text-accent mb-3">
+        Reading path · {path.steps.length} stops
+      </div>
+      <h1
+        class="font-display text-4xl md:text-6xl font-semibold tracking-tight leading-[1.05]"
+      >
+        {path.title}
+      </h1>
+      <p
+        class="mt-6 font-display text-xl md:text-2xl text-dim leading-relaxed max-w-3xl"
+      >
+        {path.subtitle}
+      </p>
+      <div class="flex flex-wrap gap-2 mt-6">
+        {path.tags.map((tag) => (
+          <span
+            class="px-2 py-1 text-xs font-mono rounded border hairline"
+            style="color: var(--color-ink-dim);"
+          >
+            {tag}
+          </span>
+        ))}
+      </div>
+    </header>
+
+    {/* ----------------------------------------------------------- */}
+    {/* Intro narration                                             */}
+    {/* ----------------------------------------------------------- */}
+    <section class="mb-16 max-w-3xl reveal">
+      <p class="text-base leading-relaxed">{path.intro}</p>
+    </section>
+
+    {/* ----------------------------------------------------------- */}
+    {/* Steps — vertical narrative with connector line               */}
+    {/* ----------------------------------------------------------- */}
+    <section class="mb-20">
+      <div class="relative pl-12 md:pl-16 max-w-3xl">
+        {/* Vertical connector line */}
+        <div
+          class="absolute left-4 md:left-6 top-0 bottom-0 w-px"
+          style="background: var(--color-paper-edge);"
+        ></div>
+
+        <div class="space-y-12">
+          {resolvedSteps.map(({ step, resolved }, i) => (
+            <div class:list={["relative reveal", `reveal-delay-${Math.min(i % 3 + 1, 3)}`]}>
+              {/* Step number on the line */}
+              <div
+                class="absolute -left-8 md:-left-10 w-8 h-8 rounded-full flex items-center justify-center text-xs font-mono border-2"
+                style={{
+                  borderColor:
+                    step.type === "concept"
+                      ? "var(--color-accent)"
+                      : step.type === "topic"
+                        ? "#2dd4bf"
+                        : "var(--color-paper-edge)",
+                  background: "var(--color-paper)",
+                  color:
+                    step.type === "concept"
+                      ? "var(--color-accent)"
+                      : step.type === "topic"
+                        ? "#2dd4bf"
+                        : "var(--color-ink-dim)",
+                }}
+              >
+                {i + 1}
+              </div>
+
+              {/* Step content */}
+              <div>
+                {/* Narration */}
+                <p class="text-base leading-relaxed mb-4">
+                  {step.narration}
+                </p>
+
+                {/* Pull quote */}
+                {step.pullQuote && (
+                  <blockquote class="pull-quote mb-4 text-lg">
+                    "{step.pullQuote}"
+                  </blockquote>
+                )}
+
+                {/* Reference card */}
+                {resolved && (
+                  <a
+                    href={resolved.href}
+                    class="block group p-5 rounded-lg border hairline hover:border-amber-400/40 transition"
+                    style="background: var(--color-paper-raised);"
+                  >
+                    <div class="eyebrow mb-1.5" style={{
+                      color:
+                        step.type === "concept"
+                          ? "var(--color-accent)"
+                          : step.type === "topic"
+                            ? "#2dd4bf"
+                            : "var(--color-ink-dim)",
+                    }}>
+                      {step.type === "concept" && "NIAC Concept"}
+                      {step.type === "topic" && "Deep Dive"}
+                      {step.type === "wishlist" && "Historical Paper"}
+                      {" · "}
+                      {resolved.eyebrow}
+                    </div>
+                    <h4 class="font-display text-lg font-semibold leading-snug group-hover:text-accent transition-colors">
+                      {resolved.title}
+                    </h4>
+                    <div class="mt-2 eyebrow text-accent group-hover:gap-3 inline-flex items-center gap-2 transition-all">
+                      <span>
+                        {step.type === "concept" && "Read concept"}
+                        {step.type === "topic" && "Explore topic"}
+                        {step.type === "wishlist" && "View in wishlist"}
+                      </span>
+                      <span>→</span>
+                    </div>
+                  </a>
+                )}
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+
+    {/* ----------------------------------------------------------- */}
+    {/* Outro narration                                             */}
+    {/* ----------------------------------------------------------- */}
+    <section class="mb-20 max-w-3xl reveal">
+      <div class="eyebrow text-accent mb-4 pb-2 border-b hairline">
+        Where this thread leads
+      </div>
+      <p class="text-base leading-relaxed">{path.outro}</p>
+    </section>
+
+    {/* ----------------------------------------------------------- */}
+    {/* Related paths                                               */}
+    {/* ----------------------------------------------------------- */}
+    {relatedPaths.length > 0 && (
+      <section class="mt-32 pt-12 border-t hairline reveal">
+        <div class="flex items-baseline justify-between mb-8">
+          <h3 class="font-display text-2xl font-semibold">
+            Keep reading
+          </h3>
+          <span class="eyebrow">related paths</span>
+        </div>
+        <ul class="grid grid-cols-1 md:grid-cols-2 gap-6">
+          {relatedPaths.map((rp) => (
+            <li>
+              <a
+                href={`/path/${rp.slug}`}
+                class="block group p-6 rounded-lg border hairline hover:border-amber-400/40 transition"
+                style="background: var(--color-paper-raised);"
+              >
+                <div class="eyebrow text-accent mb-2">
+                  {rp.steps.length} stops
+                </div>
+                <h4 class="font-display text-xl font-semibold group-hover:text-accent transition-colors">
+                  {rp.title}
+                </h4>
+                <p class="mt-2 text-sm text-dim leading-relaxed">
+                  {rp.subtitle}
+                </p>
+              </a>
+            </li>
+          ))}
+        </ul>
+      </section>
+    )}
+  </article>
+</BaseLayout>

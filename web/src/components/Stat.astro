@@ -1,18 +1,56 @@
 ---
 /**
- * Single cell in the homepage stats meter.
- * Big number on top, mono caption below. That's the whole component.
+ * Single cell in the stats meter.
+ * Big number on top, mono caption below. Numeric values count up from 0
+ * on viewport entry; non-numeric values fade in.
  */
 interface Props {
   value: string | number;
   label: string;
 }
 const { value, label } = Astro.props;
+
+const isNumeric = typeof value === "number";
 ---
 
-<div>
-  <div class="font-display text-3xl md:text-4xl font-semibold tracking-tight leading-none">
-    {value}
+<div class="stat-cell reveal">
+  <div
+    class="font-display text-3xl md:text-4xl font-semibold tracking-tight leading-none"
+    data-stat-target={isNumeric ? String(value) : undefined}
+  >
+    {isNumeric ? 0 : value}
   </div>
   <div class="eyebrow mt-2">{label}</div>
 </div>
+
+<script is:inline>
+  function initStatCounters() {
+    var els = document.querySelectorAll("[data-stat-target]");
+    if (!els.length) return;
+    var observer = new IntersectionObserver(
+      function (entries) {
+        entries.forEach(function (entry) {
+          if (!entry.isIntersecting) return;
+          observer.unobserve(entry.target);
+          var target = parseInt(entry.target.getAttribute("data-stat-target"), 10);
+          if (isNaN(target)) return;
+          var start = performance.now();
+          var duration = 800;
+          function tick(now) {
+            var elapsed = now - start;
+            var progress = Math.min(elapsed / duration, 1);
+            // Ease out cubic
+            var eased = 1 - Math.pow(1 - progress, 3);
+            entry.target.textContent = String(Math.round(target * eased));
+            if (progress < 1) requestAnimationFrame(tick);
+          }
+          requestAnimationFrame(tick);
+        });
+      },
+      { threshold: 0.3 }
+    );
+    els.forEach(function (el) { observer.observe(el); });
+  }
+  initStatCounters();
+  document.addEventListener("astro:after-swap", initStatCounters);
+</script>

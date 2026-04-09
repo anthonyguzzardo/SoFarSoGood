@@ -7,11 +7,13 @@
  */
 
 import BaseLayout from "../layouts/BaseLayout.astro";
-import { allTopics } from "../lib/topics.ts";
+import { allTopics, topicsByTier } from "../lib/topics.ts";
+
+const { full, standard, stub } = topicsByTier();
 ---
 
 <BaseLayout title="Explore — NIAC Atlas" nav="explore">
-  <section class="mb-12">
+  <section class="mb-12 reveal">
     <div class="eyebrow text-accent mb-3">Explore · Deep Dives</div>
     <h2
       class="font-display text-4xl md:text-5xl font-semibold tracking-tight leading-tight max-w-3xl"
@@ -25,26 +27,48 @@ import { allTopics } from "../lib/topics.ts";
     </p>
   </section>
 
-  <section>
+  {/* ----------------------------------------------------------------- */}
+  {/* Full-tier topics — large cards with hero treatment                */}
+  {/* ----------------------------------------------------------------- */}
+  <section class="mb-16">
     <ul class="grid grid-cols-1 md:grid-cols-2 gap-6">
       {
-        allTopics.map((t) => (
-          <li>
+        full.map((t, i) => (
+          <li class:list={[i === 0 && "md:col-span-2", "reveal", `reveal-delay-${Math.min(i, 3)}`]}>
             <a
               href={`/topic/${t.slug}`}
-              class="block group p-8 rounded-lg border hairline hover:border-amber-400/40 transition h-full"
+              class:list={[
+                "block group rounded-lg border hairline hover:border-amber-400/40 transition h-full",
+                i === 0 ? "p-10 hero-glow" : "p-8",
+              ]}
               style="background: var(--color-paper-raised);"
             >
               <div class="eyebrow text-accent mb-2">
                 {t.openQuestions.length} open questions ·{" "}
                 {t.timeline.length} milestones · {t.media.length} media
               </div>
-              <h3 class="font-display text-2xl md:text-3xl font-semibold leading-snug group-hover:text-accent transition-colors">
+              <h3
+                class:list={[
+                  "font-display font-semibold leading-snug group-hover:text-accent transition-colors",
+                  i === 0 ? "text-3xl md:text-5xl" : "text-2xl md:text-3xl",
+                ]}
+              >
                 {t.title}
               </h3>
-              <p class="mt-3 text-base text-dim leading-relaxed">
+              <p class:list={[
+                "text-dim leading-relaxed",
+                i === 0 ? "mt-4 text-lg md:text-xl max-w-3xl" : "mt-3 text-base",
+              ]}>
                 {t.subtitle}
               </p>
+              {t.openQuestions[0] && (
+                <p class:list={[
+                  "font-display italic leading-relaxed",
+                  i === 0 ? "mt-6 text-base md:text-lg text-accent/80" : "mt-4 text-sm text-accent/70",
+                ]}>
+                  "{t.openQuestions[0]}"
+                </p>
+              )}
               <div class="mt-6 eyebrow text-accent group-hover:gap-3 inline-flex items-center gap-2 transition-all">
                 <span>Dive in</span>
                 <span>→</span>
@@ -55,4 +79,71 @@ import { allTopics } from "../lib/topics.ts";
       }
     </ul>
   </section>
+
+  {/* ----------------------------------------------------------------- */}
+  {/* Standard-tier topics — more topics, lighter treatment             */}
+  {/* ----------------------------------------------------------------- */}
+  {standard.length > 0 && (
+    <section class="mb-16 reveal">
+      <div class="eyebrow text-accent mb-4 pb-2 border-b hairline">
+        More frontiers
+      </div>
+      <ul class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+        {standard.map((t, i) => (
+          <li class:list={["reveal", `reveal-delay-${Math.min(i % 3 + 1, 3)}`]}>
+            <a
+              href={`/topic/${t.slug}`}
+              class="block group p-6 rounded-lg border hairline hover:border-amber-400/40 transition h-full"
+              style="background: var(--color-paper-raised);"
+            >
+              <div class="eyebrow text-accent mb-2">
+                {t.openQuestions.length} questions · {t.timeline.length} milestones
+              </div>
+              <h3 class="font-display text-xl font-semibold leading-snug group-hover:text-accent transition-colors">
+                {t.title}
+              </h3>
+              <p class="mt-2 text-sm text-dim leading-relaxed">
+                {t.subtitle}
+              </p>
+              <div class="mt-4 eyebrow text-accent group-hover:gap-3 inline-flex items-center gap-2 transition-all">
+                <span>Explore</span>
+                <span>→</span>
+              </div>
+            </a>
+          </li>
+        ))}
+      </ul>
+    </section>
+  )}
+
+  {/* ----------------------------------------------------------------- */}
+  {/* Stub topics — community invitation                                */}
+  {/* ----------------------------------------------------------------- */}
+  {stub.length > 0 && (
+    <section class="reveal">
+      <div class="eyebrow text-accent mb-4 pb-2 border-b hairline">
+        Help us build these
+      </div>
+      <p class="text-sm text-dim mb-6 max-w-2xl leading-relaxed">
+        These topics have seed content but need community contributions to become
+        full deep dives. Pick one that excites you and help us flesh it out.
+      </p>
+      <ul class="grid grid-cols-1 md:grid-cols-3 gap-4">
+        {stub.map((t) => (
+          <li>
+            <a
+              href={`/topic/${t.slug}`}
+              class="block group p-5 rounded-lg border hairline border-dashed hover:border-amber-400/40 transition"
+            >
+              <h4 class="font-display text-lg font-semibold group-hover:text-accent transition-colors">
+                {t.title}
+              </h4>
+              <p class="mt-1 text-xs text-dim">{t.subtitle}</p>
+              <div class="mt-3 eyebrow text-accent">Help build this →</div>
+            </a>
+          </li>
+        ))}
+      </ul>
+    </section>
+  )}
 </BaseLayout>

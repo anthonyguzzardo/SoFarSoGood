@@ -107,12 +107,18 @@ export default function ConceptBrowser({ concepts }: Props) {
             type="text"
             value={query}
             onChange={(e) => setQuery(e.target.value)}
-            placeholder="Search 188 concepts — try 'tether', 'venus', 'fission'…"
-            className="w-full bg-transparent border rounded px-4 py-3 text-base focus:outline-none focus:border-amber-400"
+            placeholder="Search — try 'tether', 'venus', 'fission', 'telescope'…"
+            className="w-full border rounded-lg px-5 py-4 text-base focus:outline-none transition-all duration-200"
             style={{
-              borderColor: "var(--color-paper-edge)",
+              borderColor: query
+                ? "var(--color-accent)"
+                : "var(--color-paper-edge)",
               fontFamily: "var(--font-mono)",
               color: "var(--color-ink)",
+              background: "var(--color-paper-raised)",
+              boxShadow: query
+                ? "0 0 0 1px rgba(255, 184, 77, 0.1), 0 4px 12px rgba(0, 0, 0, 0.2)"
+                : "none",
             }}
           />
           {query && (
@@ -229,21 +235,47 @@ export default function ConceptBrowser({ concepts }: Props) {
       ) : (
         byYear.map(([year, list]) => (
           <div key={year} className="mb-12">
-            <h4
-              className="text-sm mb-4 pb-2 border-b"
-              style={{
-                color: "var(--color-ink-dim)",
-                borderColor: "var(--color-paper-edge)",
-                fontFamily: "var(--font-mono)",
-              }}
+            <div
+              className="flex items-baseline justify-between mb-5 pb-3 border-b"
+              style={{ borderColor: "var(--color-paper-edge)" }}
             >
-              {year}
-              <span className="ml-2">— {list.length}</span>
-            </h4>
-            <ul className="space-y-6">
+              <h4
+                className="text-lg font-semibold tracking-tight"
+                style={{ fontFamily: "var(--font-display)" }}
+              >
+                {year}
+              </h4>
+              <span
+                className="text-xs"
+                style={{
+                  color: "var(--color-ink-faint)",
+                  fontFamily: "var(--font-mono)",
+                }}
+              >
+                {list.length} {list.length === 1 ? "concept" : "concepts"}
+              </span>
+            </div>
+            <ul className="space-y-4">
               {list.map((c) => (
                 <li key={c.slug}>
-                  <a href={`/concept/${c.slug}`} className="block group">
+                  <a
+                    href={`/concept/${c.slug}`}
+                    className="block group p-4 rounded-lg border-l-2 transition-all duration-150"
+                    style={{
+                      borderLeftColor: "transparent",
+                      background: "transparent",
+                    }}
+                    onMouseEnter={(e) => {
+                      e.currentTarget.style.borderLeftColor = "var(--color-accent)";
+                      e.currentTarget.style.background = "var(--color-paper-raised)";
+                      e.currentTarget.style.transform = "translateX(4px)";
+                    }}
+                    onMouseLeave={(e) => {
+                      e.currentTarget.style.borderLeftColor = "transparent";
+                      e.currentTarget.style.background = "transparent";
+                      e.currentTarget.style.transform = "translateX(0)";
+                    }}
+                  >
                     <div
                       className="text-xs mb-1"
                       style={{
@@ -261,6 +293,17 @@ export default function ConceptBrowser({ concepts }: Props) {
                     <h5 className="text-lg font-medium leading-snug group-hover:underline">
                       {c.title}
                     </h5>
+                    {c.whatIfItWorks && (
+                      <p
+                        className="mt-1.5 text-sm italic leading-relaxed"
+                        style={{
+                          color: "var(--color-accent)",
+                          fontFamily: "var(--font-display)",
+                        }}
+                      >
+                        {c.whatIfItWorks}
+                      </p>
+                    )}
                     <p
                       className="mt-2 text-sm leading-relaxed"
                       style={{ color: "var(--color-ink-dim)" }}

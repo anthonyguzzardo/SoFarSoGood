@@ -17,7 +17,13 @@ import {
   pullQuote,
   excerpt,
   piLine,
+  categorize,
 } from "../../lib/concepts.ts";
+import ConceptIcon from "../../components/ConceptIcon.astro";
+import ConceptNeighborhood from "../../components/ConceptNeighborhood.tsx";
+import { pathsForConcept } from "../../lib/reading-paths.ts";
+import { getWishlistForConcept } from "../../lib/connections.ts";
+import { getWishlistEntry, displayYear } from "../../lib/wishlist.ts";
 
 export function getStaticPaths() {
   return allConcepts.map((c) => ({ params: { slug: c.slug } }));
@@ -29,6 +35,9 @@ if (!concept) throw new Error(`Concept not found: ${slug}`);
 
 const quote = pullQuote(concept.abstract);
 const related = getRelatedConcepts(concept.slug, 4);
+const readingPaths = pathsForConcept(concept.slug);
+const historicalRoots = getWishlistForConcept(concept.slug);
+const category = categorize(concept);
 
 // Split abstract into paragraphs at blank lines if any.
 const paragraphs = concept.abstract
@@ -54,15 +63,18 @@ const paragraphs = concept.abstract
     {/* Header                                                      */}
     {/* ----------------------------------------------------------- */}
     <header class="mt-6 mb-12 max-w-4xl">
-      <div class="eyebrow mb-3">
-        <span class="text-accent">NIAC</span>
-        {concept.phase && (
-          <span>
-            {" · Phase "}
-            {concept.phase}
-          </span>
-        )}
-        <span> · {concept.year}</span>
+      <div class="flex items-center gap-3 mb-3">
+        <ConceptIcon category={category} size={24} />
+        <div class="eyebrow">
+          <span class="text-accent">NIAC</span>
+          {concept.phase && (
+            <span>
+              {" · Phase "}
+              {concept.phase}
+            </span>
+          )}
+          <span> · {concept.year}</span>
+        </div>
       </div>
       <h1
         class="font-display text-4xl md:text-6xl font-semibold tracking-tight leading-[1.05]"
@@ -75,9 +87,21 @@ const paragraphs = concept.abstract
     </header>
 
     {/* ----------------------------------------------------------- */}
+    {/* What if it works callout                                    */}
+    {/* ----------------------------------------------------------- */}
+    {concept.whatIfItWorks && (
+      <div class=”payoff-callout my-12 px-6 py-5 rounded-lg max-w-3xl”>
+        <div class=”eyebrow text-accent mb-2”>What if it works</div>
+        <p class=”font-display text-xl md:text-2xl leading-relaxed”>
+          {concept.whatIfItWorks}
+        </p>
+      </div>
+    )}
+
+    {/* ----------------------------------------------------------- */}
     {/* Pull quote                                                  */}
     {/* ----------------------------------------------------------- */}
-    <blockquote class="pull-quote my-12 max-w-3xl">
+    <blockquote class=”pull-quote my-12 max-w-3xl”>
       “{quote}”
     </blockquote>
 
@@ -173,18 +197,113 @@ const paragraphs = concept.abstract
     </div>
 
     {/* ----------------------------------------------------------- */}
-    {/* More like this                                              */}
+    {/* Historical roots — connections to wishlist entries           */}
+    {/* ----------------------------------------------------------- */}
+    {historicalRoots.length > 0 && (
+      <section class="mt-20 pt-12 border-t hairline">
+        <div class="flex items-baseline justify-between mb-6">
+          <h3 class="font-display text-xl font-semibold">Historical roots</h3>
+          <span class="eyebrow">across the centuries</span>
+        </div>
+        <ul class="space-y-4 max-w-3xl">
+          {historicalRoots.map((conn) => {
+            const entry = getWishlistEntry(conn.wishlistId);
+            return (
+              <li
+                class="p-5 rounded-lg border hairline"
+                style="background: var(--color-paper-raised);"
+              >
+                <div class="flex items-start justify-between gap-3 mb-1">
+                  <div>
+                    <div class="eyebrow mb-1">
+                      {entry ? `${entry.author} · ${displayYear(entry.year)}` : conn.wishlistId}
+                      <span
+                        class="ml-2"
+                        style={{
+                          color: conn.strength === "direct" ? "var(--color-accent)" : "var(--color-ink-faint)",
+                        }}
+                      >
+                        {conn.strength}
+                      </span>
+                    </div>
+                    <h4 class="font-display text-base font-semibold leading-snug">
+                      {entry?.title ?? conn.wishlistId}
+                    </h4>
+                  </div>
+                </div>
+                <p class="mt-2 text-sm text-dim leading-relaxed">
+                  {conn.thread}
+                </p>
+              </li>
+            );
+          })}
+        </ul>
+      </section>
+    )}
+
+    {/* ----------------------------------------------------------- */}
+    {/* Reading paths this concept appears in                       */}
+    {/* ----------------------------------------------------------- */}
+    {readingPaths.length > 0 && (
+      <section class="mt-20 pt-12 border-t hairline">
+        <div class="flex items-baseline justify-between mb-6">
+          <h3 class="font-display text-xl font-semibold">Follow the thread</h3>
+          <span class="eyebrow">reading paths</span>
+        </div>
+        <ul class="space-y-4">
+          {readingPaths.map((rp) => (
+            <li>
+              <a
+                href={`/path/${rp.slug}`}
+                class="block group p-5 rounded-lg border hairline hover:border-amber-400/40 transition"
+                style="background: var(--color-paper-raised);"
+              >
+                <div class="eyebrow text-accent mb-1">
+                  {rp.steps.length} stops · {rp.tags.slice(0, 3).join(" · ")}
+                </div>
+                <h4 class="font-display text-lg font-semibold leading-snug group-hover:text-accent transition-colors">
+                  {rp.title}
+                </h4>
+                <p class="mt-1 text-sm text-dim leading-relaxed">
+                  {rp.subtitle}
+                </p>
+              </a>
+            </li>
+          ))}
+        </ul>
+      </section>
+    )}
+
+    {/* ----------------------------------------------------------- */}
+    {/* Neighborhood graph + related concepts                       */}
     {/* ----------------------------------------------------------- */}
     {related.length > 0 && (
       <section class="mt-32 pt-12 border-t hairline">
-        <div class="flex items-baseline justify-between mb-8">
-          <h3 class="font-display text-2xl font-semibold">More like this</h3>
+        <div class="flex items-baseline justify-between mb-6">
+          <h3 class="font-display text-2xl font-semibold">Neighborhood</h3>
           <span class="eyebrow">by shared keywords + lineage</span>
         </div>
-        <ul class="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-8">
+
+        {/* Mini force graph */}
+        <div class="mb-10 surface rounded-lg overflow-hidden">
+          <ConceptNeighborhood
+            center={{ slug: concept.slug, title: concept.title, year: concept.year, phase: concept.phase }}
+            neighbors={related.map((r) => ({ slug: r.slug, title: r.title, year: r.year, phase: r.phase }))}
+            client:only="react"
+          />
+        </div>
+
+        {/* Card list below the graph */}
+        <ul class="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-6">
           {related.map((r) => (
             <li>
-              <a href={`/concept/${r.slug}`} class="block group">
+              <a
+                href={`/concept/${r.slug}`}
+                class="block group p-4 rounded-lg border-l-2 transition-all duration-150"
+                style="border-left-color: transparent;"
+                onmouseover="this.style.borderLeftColor='var(--color-accent)';this.style.background='var(--color-paper-raised)'"
+                onmouseout="this.style.borderLeftColor='transparent';this.style.background='transparent'"
+              >
                 <div class="eyebrow mb-1">
                   {r.year}
                   {r.phase && (

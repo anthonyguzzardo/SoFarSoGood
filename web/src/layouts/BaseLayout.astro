@@ -1,12 +1,13 @@
 ---
 import "../styles/global.css";
+import { ViewTransitions } from "astro:transitions";
 import { allConcepts } from "../lib/concepts.ts";
 
 interface Props {
   title: string;
   description?: string;
   /** Active nav item — drives the underline/highlight in the header. */
-  nav?: "browse" | "timeline" | "subjects" | "atlas" | "explore" | "wishlist" | "mission" | "concept" | null;
+  nav?: "browse" | "timeline" | "subjects" | "atlas" | "explore" | "paths" | "wishlist" | "mission" | "concept" | null;
 }
 
 const {
@@ -21,12 +22,16 @@ const allSlugs = allConcepts.map((c) => c.slug);
 /** Each nav item: label, href, key for active-state matching. */
 const navItems = [
   { key: "browse", label: "Browse", href: "/" },
-  { key: "timeline", label: "Timeline", href: "/timeline" },
-  { key: "subjects", label: "Subjects", href: "/subjects" },
-  { key: "atlas", label: "Atlas", href: "/atlas" },
   { key: "explore", label: "Explore", href: "/explore" },
+  { key: "paths", label: "Paths", href: "/paths" },
   { key: "wishlist", label: "Wishlist", href: "/wishlist" },
   { key: "mission", label: "Mission", href: "/mission" },
+] as const;
+
+const viewItems = [
+  { key: "timeline", label: "Timeline", href: "/timeline" },
+  { key: "atlas", label: "Atlas", href: "/atlas" },
+  { key: "subjects", label: "Subjects", href: "/subjects" },
 ] as const;
 ---
 
@@ -41,6 +46,7 @@ const navItems = [
       rel="icon"
       href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🛰</text></svg>"
     />
+    <ViewTransitions />
   </head>
   <body class="min-h-screen flex flex-col relative">
     {/* Ambient background — fixed, behind everything. */}
@@ -79,6 +85,22 @@ const navItems = [
               </a>
             ))
           }
+          <span class="text-faint mx-1 text-xs">·</span>
+          {
+            viewItems.map((item) => (
+              <a
+                href={item.href}
+                class:list={[
+                  "px-2 py-1.5 text-[0.6rem] uppercase tracking-widest font-mono rounded transition",
+                  nav === item.key
+                    ? "text-accent border hairline-strong"
+                    : "text-faint hover:text-dim border border-transparent",
+                ]}
+              >
+                {item.label}
+              </a>
+            ))
+          }
           <button
             id="random-concept-btn"
             type="button"
@@ -108,6 +130,9 @@ const navItems = [
       </div>
     </footer>
 
+    {/* Scroll progress bar */}
+    <div class="scroll-progress" aria-hidden="true"></div>
+
     {/* Inline script for the random-concept button. No React, no hydration. */}
     <script is:inline define:vars={{ allSlugs }}>
       const btn = document.getElementById("random-concept-btn");
@@ -118,6 +143,45 @@ const navItems = [
           window.location.href = `/concept/${slug}`;
         });
       }
+    </script>
+
+    {/* Scroll-reveal observer — watches .reveal elements, adds .revealed on viewport entry. */}
+    <script is:inline>
+      function initReveals() {
+        var els = document.querySelectorAll(".reveal");
+        if (!els.length) return;
+        var observer = new IntersectionObserver(
+          function (entries) {
+            entries.forEach(function (entry) {
+              if (entry.isIntersecting) {
+                entry.target.classList.add("revealed");
+                observer.unobserve(entry.target);
+              }
+            });
+          },
+          { threshold: 0.1, rootMargin: "0px 0px -40px 0px" }
+        );
+        els.forEach(function (el) { observer.observe(el); });
+      }
+      initReveals();
+      document.addEventListener("astro:after-swap", initReveals);
+    </script>
+
+    {/* Scroll progress bar updater. */}
+    <script is:inline>
+      function initProgress() {
+        var bar = document.querySelector(".scroll-progress");
+        if (!bar) return;
+        function update() {
+          var h = document.documentElement.scrollHeight - window.innerHeight;
+          var pct = h > 0 ? (window.scrollY / h) * 100 : 0;
+          bar.style.setProperty("--scroll", pct + "%");
+        }
+        window.addEventListener("scroll", update, { passive: true });
+        update();
+      }
+      initProgress();
+      document.addEventListener("astro:after-swap", initProgress);
     </script>
   </body>
 </html>

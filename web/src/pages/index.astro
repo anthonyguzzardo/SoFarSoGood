@@ -1,88 +1,325 @@
 ---
 /**
- * Homepage.
+ * Homepage — redesigned for pull, not information.
  *
- * Three sections, in order:
- *   1. Stats meter — anchors the corpus in concrete numbers right away.
- *      "188 funded futures · 9 years · 142 PIs" makes the atlas feel real.
- *   2. Featured concept hero — oversized type, pull quote, glow halo.
- *      First impression is "wait, that's a real thing someone got paid to study?"
- *   3. Browse — the interactive ConceptBrowser island.
+ * Structure:
+ *   1. Hero hook — three visceral one-liners from real concepts.
+ *      "A telescope made of liquid." instantly beats
+ *      "What happens when NASA pays people to imagine the future?"
+ *   2. "Start here" scroll trap — 5 high-tension cards that feel like
+ *      discoveries, not documentation. The conversion layer.
+ *   3. Spotlight — the rotating featured concept hero with pull quote.
+ *   4. Navigation — relabeled for energy ("Deep dives", not "Explore").
+ *   5. Editor's picks — whatIfItWorks as primary text, title secondary.
+ *   6. The Atlas — full interactive browser.
  */
 
 import BaseLayout from "../layouts/BaseLayout.astro";
 import {
   allConcepts,
   getFeaturedConcept,
+  getEditorialPicks,
   pullQuote,
   piLine,
+  excerpt,
   stats,
+  categorize,
 } from "../lib/concepts.ts";
+import type { ConceptCategory } from "../lib/concepts.ts";
 import ConceptBrowser from "../components/ConceptBrowser.tsx";
-import Stat from "../components/Stat.astro";
 
 const featured = getFeaturedConcept();
 const featuredQuote = pullQuote(featured.abstract);
+const editorialPicks = getEditorialPicks(featured.slug, 6);
+
+/* Scroll-trap concepts — the most mind-blowing spotlights. */
+const startHere = allConcepts
+  .filter(
+    (c) =>
+      c.editorialTier === "spotlight" &&
+      c.whatIfItWorks &&
+      c.slug !== featured.slug
+  )
+  .slice(0, 5);
+
+/* Hero lines — curated for maximum "wait, what?" tension. */
+const heroLines = [
+  { text: "A telescope made of liquid", match: "fluidic-telescope" },
+  { text: "Buildings grown from fungus on Mars", match: "mycotecture" },
+  { text: "A submarine in methane oceans", match: "titan-submarine" },
+];
+const resolvedHero = heroLines.map((h) => ({
+  ...h,
+  slug: allConcepts.find((c) => c.slug.includes(h.match))?.slug,
+}));
+
+const categoryLabel: Record<ConceptCategory, string> = {
+  propulsion: "Propulsion",
+  telescope: "Optics",
+  habitat: "Habitat",
+  planetary: "Worlds",
+  "life-detection": "Astrobiology",
+  power: "Energy",
+  communication: "Comms",
+  defense: "Defense",
+  robotics: "Robotics",
+  manufacturing: "Manufacturing",
+  other: "Research",
+};
 ---
 
 <BaseLayout title="NIAC Atlas — speculative aerospace, mapped" nav="browse">
   {/* ----------------------------------------------------------------- */}
-  {/* Stats meter                                                       */}
+  {/* Hero — the emotional hook, not an info dump                       */}
   {/* ----------------------------------------------------------------- */}
-  <section class="mb-16">
-    <div
-      class="surface rounded-lg px-6 py-5 grid grid-cols-2 md:grid-cols-5 gap-y-4 gap-x-6"
-    >
-      <Stat value={stats.totalConcepts} label="funded futures" />
-      <Stat value={stats.totalPIs} label="principal investigators" />
-      <Stat value={stats.totalOrgs} label="institutions" />
-      <Stat value={`${stats.yearMin}–${stats.yearMax}`} label="years covered" />
-      <Stat
-        value={`I·${stats.byPhase.I ?? 0}  II·${stats.byPhase.II ?? 0}`}
-        label="phase breakdown"
-      />
+  <section class="pt-4 md:pt-8 pb-12">
+    <div class="max-w-4xl">
+      <div class="space-y-2">
+        {resolvedHero.map((h, i) => (
+          <p class="hero-line" style={`animation-delay: ${i * 0.18}s`}>
+            {h.slug ? (
+              <a
+                href={`/concept/${h.slug}`}
+                class="font-display text-3xl md:text-5xl lg:text-6xl font-semibold leading-[1.08] tracking-tight hover:text-accent transition-colors"
+              >
+                {h.text}.
+              </a>
+            ) : (
+              <span class="font-display text-3xl md:text-5xl lg:text-6xl font-semibold leading-[1.08] tracking-tight">
+                {h.text}.
+              </span>
+            )}
+          </p>
+        ))}
+      </div>
+
+      <p
+        class="hero-line mt-8 text-accent font-mono text-sm uppercase tracking-[0.2em]"
+        style="animation-delay: 0.6s"
+      >
+        NASA funded all of them.
+      </p>
+
+      <p
+        class="hero-line mt-4 text-dim text-lg leading-relaxed max-w-2xl font-display"
+        style="animation-delay: 0.75s"
+      >
+        {stats.totalConcepts} speculative aerospace concepts.{" "}
+        {stats.totalPIs} principal investigators.{" "}
+        {stats.yearMin}&ndash;{stats.yearMax}.
+        This is what happens when serious people are paid to imagine the impossible.
+      </p>
     </div>
   </section>
 
   {/* ----------------------------------------------------------------- */}
-  {/* Featured concept hero                                             */}
+  {/* Start here — the scroll trap / conversion layer                   */}
   {/* ----------------------------------------------------------------- */}
-  <section class="mb-24 hero-glow">
-    <div class="eyebrow text-accent mb-4">Featured concept</div>
-    <a href={`/concept/${featured.slug}`} class="block group">
-      <h2
-        class="font-display text-5xl md:text-7xl font-semibold tracking-tight leading-[1.05] group-hover:opacity-90 transition-opacity max-w-5xl"
-      >
-        {featured.title}
-      </h2>
-      <div class="mt-5 eyebrow font-mono">
-        {featured.year}
-        {featured.phase && (
-          <span class="text-accent"> · NIAC Phase {featured.phase}</span>
-        )}
-        <span> · {piLine(featured)}</span>
-      </div>
-
-      <blockquote class="pull-quote mt-10 max-w-3xl">
-        “{featuredQuote}”
-      </blockquote>
-
-      <div
-        class="mt-8 inline-flex items-center gap-2 text-accent eyebrow group-hover:gap-3 transition-all"
-      >
-        <span>Read concept</span>
-        <span>→</span>
-      </div>
-    </a>
+  <section class="mb-24 reveal">
+    <div class="eyebrow text-accent mb-6">Start here</div>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+      {startHere.map((c) => {
+        const cat = categorize(c);
+        return (
+          <a href={`/concept/${c.slug}`} class="concept-card group">
+            <div class="card-tags">
+              <span class="card-tag tag-funded">Funded</span>
+              {c.phase && (
+                <span class="card-tag tag-meta">Phase {c.phase}</span>
+              )}
+              <span class="card-tag tag-meta">
+                {categoryLabel[cat] ?? cat}
+              </span>
+            </div>
+            <p class="mt-4 font-display text-lg md:text-xl font-semibold leading-snug">
+              {c.whatIfItWorks}
+            </p>
+            <div class="card-subtitle mt-3">
+              {c.title.length > 65
+                ? c.title.slice(0, 65).replace(/\s+\S*$/, "") + "\u2026"
+                : c.title}
+            </div>
+            <div class="mt-auto pt-4 card-cta">
+              <span>How this would work</span>
+              <span class="arrow">&rarr;</span>
+            </div>
+          </a>
+        );
+      })}
+    </div>
   </section>
 
   {/* ----------------------------------------------------------------- */}
-  {/* Browse all concepts (interactive React island)                    */}
+  {/* Spotlight — the rotating featured concept                         */}
   {/* ----------------------------------------------------------------- */}
-  <section>
-    <div class="flex items-baseline justify-between mb-6 pb-4 border-b hairline">
-      <h3 class="font-display text-2xl font-semibold">The atlas</h3>
-      <span class="eyebrow">browse · search · filter</span>
+  <section class="mb-24 reveal">
+    <div class="hero-glow p-8 md:p-12 rounded-2xl surface">
+      <div class="eyebrow text-accent mb-4">Spotlight</div>
+      <a href={`/concept/${featured.slug}`} class="block group">
+        <h2
+          class="font-display text-4xl md:text-6xl font-semibold tracking-tight leading-[1.05] group-hover:opacity-90 transition-opacity max-w-5xl"
+        >
+          {featured.title}
+        </h2>
+        <div class="mt-5 eyebrow font-mono">
+          {featured.year}
+          {featured.phase && (
+            <span class="text-accent"> &middot; NIAC Phase {featured.phase}</span>
+          )}
+          <span> &middot; {piLine(featured)}</span>
+        </div>
+
+        {featured.whatIfItWorks && (
+          <div class="payoff-callout mt-8 px-5 py-4 rounded-lg max-w-3xl">
+            <div class="eyebrow text-accent mb-1.5">What if it works</div>
+            <p class="font-display text-lg md:text-xl leading-relaxed">
+              {featured.whatIfItWorks}
+            </p>
+          </div>
+        )}
+
+        <blockquote class="pull-quote mt-10 max-w-3xl">
+          &ldquo;{featuredQuote}&rdquo;
+        </blockquote>
+
+        <div
+          class="mt-8 inline-flex items-center gap-2 text-accent eyebrow group-hover:gap-3 transition-all"
+        >
+          <span>Why this matters</span>
+          <span>&rarr;</span>
+        </div>
+      </a>
+    </div>
+  </section>
+
+  {/* ----------------------------------------------------------------- */}
+  {/* Navigation — relabeled for energy                                 */}
+  {/* ----------------------------------------------------------------- */}
+  <section class="mb-24 reveal">
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+      <a
+        href="/explore"
+        class="group p-5 rounded-xl border hairline hover:border-amber-400/40 transition text-center"
+        style="background: var(--color-paper-raised);"
+      >
+        <div class="font-display text-xl font-semibold group-hover:text-accent transition-colors">
+          Deep dives
+        </div>
+        <div class="eyebrow mt-1">curated essays</div>
+      </a>
+      <a
+        href="/paths"
+        class="group p-5 rounded-xl border hairline hover:border-amber-400/40 transition text-center"
+        style="background: var(--color-paper-raised);"
+      >
+        <div class="font-display text-xl font-semibold group-hover:text-accent transition-colors">
+          Follow threads
+        </div>
+        <div class="eyebrow mt-1">connected concepts</div>
+      </a>
+      <a
+        href="/wishlist"
+        class="group p-5 rounded-xl border hairline hover:border-amber-400/40 transition text-center"
+        style="background: var(--color-paper-raised);"
+      >
+        <div class="font-display text-xl font-semibold group-hover:text-accent transition-colors">
+          The impossible list
+        </div>
+        <div class="eyebrow mt-1">3,800 years of ideas</div>
+      </a>
+      <a
+        href="/contribute"
+        class="group p-5 rounded-xl border hairline hover:border-amber-400/40 transition text-center"
+        style="background: var(--color-paper-raised);"
+      >
+        <div class="font-display text-xl font-semibold group-hover:text-accent transition-colors">
+          Help map this
+        </div>
+        <div class="eyebrow mt-1">open source</div>
+      </a>
+    </div>
+  </section>
+
+  {/* ----------------------------------------------------------------- */}
+  {/* Editor's picks — hook first, title second                         */}
+  {/* ----------------------------------------------------------------- */}
+  {editorialPicks.length > 0 && (
+    <section class="mb-24 reveal">
+      <div class="eyebrow text-accent mb-6">These are real</div>
+      <ul class="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-6">
+        {editorialPicks.map((c) => (
+          <li>
+            <a
+              href={`/concept/${c.slug}`}
+              class="block group p-5 rounded-lg border hairline hover:border-amber-400/40 transition"
+              style="background: var(--color-paper-raised);"
+            >
+              <div class="eyebrow mb-2">
+                {c.year}
+                {c.phase && (
+                  <span class="text-accent"> &middot; Phase {c.phase}</span>
+                )}
+                <span> &middot; {piLine(c)}</span>
+              </div>
+              {c.whatIfItWorks ? (
+                <Fragment>
+                  <p class="font-display text-lg font-semibold leading-snug group-hover:text-accent transition-colors">
+                    {c.whatIfItWorks}
+                  </p>
+                  <p class="mt-2 text-xs text-faint font-mono leading-relaxed">
+                    {c.title.length > 80
+                      ? c.title.slice(0, 80).replace(/\s+\S*$/, "") + "\u2026"
+                      : c.title}
+                  </p>
+                </Fragment>
+              ) : (
+                <h4 class="font-display text-lg font-semibold leading-snug group-hover:text-accent transition-colors">
+                  {c.title}
+                </h4>
+              )}
+            </a>
+          </li>
+        ))}
+      </ul>
+    </section>
+  )}
+
+  {/* ----------------------------------------------------------------- */}
+  {/* The full atlas                                                    */}
+  {/* ----------------------------------------------------------------- */}
+  <section class="reveal">
+    <div class="mb-10">
+      <div class="eyebrow text-accent mb-3">The full atlas</div>
+      <div
+        class="flex flex-col md:flex-row md:items-end md:justify-between gap-4 pb-6 border-b hairline"
+      >
+        <div>
+          <h3
+            class="font-display text-3xl md:text-4xl font-semibold tracking-tight leading-tight"
+          >
+            Every funded future
+          </h3>
+          <p class="mt-2 text-sm text-dim max-w-xl leading-relaxed">
+            {stats.totalConcepts} concepts from NASA's Innovative Advanced Concepts
+            program &mdash; from rotating tethers to fusion engines to submarines on
+            Titan. Search, filter, discover.
+          </p>
+        </div>
+        <div class="flex gap-6 shrink-0">
+          <div class="text-right">
+            <div class="font-display text-2xl font-semibold tracking-tight">
+              {stats.yearMin}&ndash;{stats.yearMax}
+            </div>
+            <div class="eyebrow mt-1">year range</div>
+          </div>
+          <div class="text-right">
+            <div class="font-display text-2xl font-semibold tracking-tight">
+              {stats.totalPIs}
+            </div>
+            <div class="eyebrow mt-1">investigators</div>
+          </div>
+        </div>
+      </div>
     </div>
     <ConceptBrowser concepts={allConcepts} client:load />
   </section>

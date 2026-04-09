@@ -76,6 +76,22 @@ export interface Concept {
    * separate table, not on the concept itself.
    */
   relatedSourceIds: string[];
+
+  /**
+   * Editorially curated "what if it works" payoff line. A punchy one-liner
+   * capturing the stakes of this concept.
+   * Example: "If solar gravitational lensing works, we can image exoplanet
+   * continents at 25 km resolution."
+   * Populated via data/editorial.json overlay, not the ingestion pipeline.
+   */
+  whatIfItWorks?: string;
+
+  /**
+   * Editorial tier for display priority.
+   * "spotlight" = handpicked for homepage hero rotation.
+   * "highlight" = strong enough for editor's picks section.
+   */
+  editorialTier?: "spotlight" | "highlight";
 }
 
 /**

@@ -1,0 +1,114 @@
+[
+  {
+    "slug": "from-dark-stars-to-gravitational-lensing",
+    "title": "From Dark Stars to Gravitational Lensing",
+    "subtitle": "How a 1783 thought experiment about invisible stars led to NASA funding a telescope that uses the Sun itself as a lens.",
+    "intro": "In 1783, an English clergyman named John Michell wrote a paper asking a simple question: what if a star were so massive that light itself couldn't escape? He called them 'dark stars.' Two hundred and forty years later, NASA is funding a mission to use the gravitational field of our own star as a telescope lens. This is the thread that connects them.",
+    "steps": [
+      {
+        "type": "topic",
+        "ref": "black-holes",
+        "narration": "Michell's dark stars were the first theoretical prediction of what we now call black holes. His reasoning was Newtonian — escape velocity exceeding the speed of light — but the intuition was right. Start here to understand the physics of gravitational collapse.",
+        "pullQuote": "If there should really exist in nature any bodies whose density is not less than that of the sun, and whose diameters are more than 500 times the diameter of the sun, their light could not arrive at us."
+      },
+      {
+        "type": "wishlist",
+        "ref": "aristarchus-sizes",
+        "narration": "But to understand why gravity bends light, we need to go further back. Aristarchus was the first to try to measure the actual distances to celestial objects — using geometry alone. His methods were crude, but the idea that the cosmos has measurable structure is the foundation everything else rests on."
+      },
+      {
+        "type": "wishlist",
+        "ref": "kepler-astronomia-nova",
+        "narration": "Kepler showed that planets move in ellipses, not circles. This was the first proof that gravity's influence shapes orbits in non-obvious ways. The Sun doesn't just attract — it sculpts the geometry of motion."
+      },
+      {
+        "type": "topic",
+        "ref": "gravity",
+        "narration": "Newton turned Kepler's laws into a universal theory. Einstein turned Newton's theory into curved spacetime. And curved spacetime means gravity bends light — not just captures it, but lenses it. This deep dive traces the full arc from falling apples to gravitational waves.",
+        "pullQuote": "Spacetime tells matter how to move; matter tells spacetime how to curve."
+      },
+      {
+        "type": "concept",
+        "ref": "direct-multipixel-imaging-and-spectroscopy-of-an-exoplanet-with-a-solar-gravity--2025",
+        "narration": "And here is where the thread arrives at the present: a NIAC-funded mission to fly a spacecraft to 550 AU from the Sun and use the Sun's gravity as a lens to image exoplanet surfaces at 25 km resolution. Not by building a bigger mirror, but by using the geometry of spacetime itself."
+      }
+    ],
+    "outro": "From a clergyman wondering about invisible stars in 1783 to a NASA-funded mission design in 2025. The thread took 242 years to weave. This is what the atlas is for — making these threads visible, so that the next connection doesn't take two centuries to notice.",
+    "relatedPathSlugs": ["eyes-on-the-universe"],
+    "tags": ["black-holes", "gravity", "telescopes", "optics"]
+  },
+  {
+    "slug": "titan-the-other-ocean-world",
+    "title": "Titan: The Other Ocean World",
+    "subtitle": "From Huygens spotting a dot through his telescope in 1655 to NASA designing submarines for methane seas.",
+    "intro": "Saturn's largest moon has rain, rivers, lakes, and seas — not of water, but of liquid methane and ethane. It has a thick nitrogen atmosphere, weather systems, and dunes made of organic molecules. It is the most Earth-like world we know of, and the most alien. NASA has been designing machines to explore it for decades. This is that story.",
+    "steps": [
+      {
+        "type": "wishlist",
+        "ref": "galileo-sidereus",
+        "narration": "It starts with Galileo pointing a telescope at Jupiter and discovering its moons. In one night, he proved that not everything orbits Earth. That opened the door to the idea that other worlds might have their own characteristics — their own weather, their own chemistry, their own oceans."
+      },
+      {
+        "type": "topic",
+        "ref": "telescopes",
+        "narration": "Christiaan Huygens — using a telescope far more powerful than Galileo's — discovered Titan in 1655. He saw a bright dot moving around Saturn. It would take another 349 years before we could see what was on its surface. This deep dive covers how telescopes evolved from Galileo's refractor to the instruments that finally pierced Titan's orange haze."
+      },
+      {
+        "type": "concept",
+        "ref": "phase-1-final-report-titan-submarine-2019",
+        "narration": "NASA's Phase I study asked a wild question: can we build a submarine that operates at -179°C in a sea of liquid methane? The answer was yes, and the concept was detailed enough to specify buoyancy management in a fluid denser than expected. Kraken Mare — Titan's largest sea — is bigger than the Caspian Sea."
+      },
+      {
+        "type": "concept",
+        "ref": "titan-turtle-niac-phase-ii-design-for-a-submersible-vehicle-for-titan-exploratio-2020",
+        "narration": "The Titan Turtle pushed the concept further: a submersible that could dive deep, survive pressure differentials, and return data from an alien ocean floor. Phase II funding meant NASA thought this was genuinely feasible, not just fun speculation."
+      },
+      {
+        "type": "concept",
+        "ref": "the-shapeshifter-a-morphing-multi-agent-multi-modal-robotic-platform-for-the-exp-2019",
+        "narration": "And then there's the Shapeshifter: a single machine that can reconfigure itself to roll across Titan's surface, fly through its atmosphere, and float on its methane lakes. Not three different vehicles — one machine that becomes whatever the terrain demands.",
+        "pullQuote": "A morphing, multi-agent, multi-modal robotic platform capable of rolling, flying, floating, and diving — all in one mission."
+      }
+    ],
+    "outro": "Titan is the only world besides Earth where we know liquid exists on the surface right now. Not in the past, not locked under ice — right now, at this moment, methane rain is falling into methane rivers that flow into methane seas. We've designed the submarines. We've designed the shapeshifting robots. The only question is when we send them.",
+    "relatedPathSlugs": ["from-dark-stars-to-gravitational-lensing"],
+    "tags": ["planetary", "robotics", "astrobiology", "titan"]
+  },
+  {
+    "slug": "eyes-on-the-universe",
+    "title": "Eyes on the Universe",
+    "subtitle": "From Galileo's glass lens to a telescope made of liquid floating in microgravity — how we learned to see further.",
+    "intro": "Every revolution in astronomy has been a revolution in optics. Galileo turned a spyglass skyward and saw Jupiter's moons. Newton built a reflector and saw Saturn's rings. Hubble orbited above the atmosphere and saw galaxies forming after the Big Bang. Each time we built a better eye, we discovered a universe bigger and stranger than we imagined. The NIAC program is designing the next eyes.",
+    "steps": [
+      {
+        "type": "wishlist",
+        "ref": "galileo-sidereus",
+        "narration": "January 7, 1610. Galileo points a 20x telescope at Jupiter and sees three 'fixed stars' near it. By January 13, he realizes they're moving — they're moons. In a few nights of observation, he overturns 2,000 years of geocentric cosmology. The telescope doesn't just magnify. It redefines what's real."
+      },
+      {
+        "type": "wishlist",
+        "ref": "alhazen-optics",
+        "narration": "But the science of light that made Galileo's telescope possible traces back to Ibn al-Haytham, who wrote the Book of Optics in 1021. He was the first to correctly explain that we see by light entering the eye — not by beams shooting out of it. He described the camera obscura, analyzed refraction, and pioneered the experimental method in physics. Without his optics, no telescopes."
+      },
+      {
+        "type": "topic",
+        "ref": "telescopes",
+        "narration": "From Galileo's refractor to Newton's reflector to radio telescopes to space-based observatories — the deep dive covers three centuries of building better eyes. Each generation hit a wall: atmospheric distortion, mirror weight, diffraction limits. Each generation found a way through."
+      },
+      {
+        "type": "concept",
+        "ref": "lunar-crater-radio-telescope-lcrt-on-the-far-side-of-the-moon-nasa-innovative-ad-2025",
+        "narration": "What if you built a radio telescope inside a crater on the Moon's far side? The Moon itself becomes the shield, blocking every radio signal from Earth. It would be the quietest observatory in the solar system — able to detect signals from the cosmic Dark Ages, before the first stars formed."
+      },
+      {
+        "type": "concept",
+        "ref": "fluidic-telescope-flute-nasa-innovative-advanced-concepts-niac-phase-i-final-rep-2026",
+        "narration": "And what if the mirror itself were liquid? In microgravity, a liquid naturally forms a perfect surface — no grinding, no polishing, no launch constraints on size. The FLUTE concept could build mirrors larger than anything we can fabricate as a solid. The material becomes the optic.",
+        "pullQuote": "In microgravity, surface tension shapes a liquid into a near-perfect optical surface — potentially enabling telescope apertures far beyond what solid mirrors allow."
+      }
+    ],
+    "outro": "The pattern repeats: each time we build a better eye, the universe gets bigger. Galileo saw four moons. Hubble saw billions of galaxies. The next generation of telescopes — a crater on the Moon, a lens made of liquid, the Sun itself as an optic — might show us continents on worlds orbiting other stars. The only limit has ever been how well we can see.",
+    "relatedPathSlugs": ["from-dark-stars-to-gravitational-lensing"],
+    "tags": ["telescopes", "optics", "observation", "lunar"]
+  }
+]

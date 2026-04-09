@@ -17,7 +17,8 @@
  */
 
 import BaseLayout from "../layouts/BaseLayout.astro";
-import { allTopics } from "../lib/concepts.ts";
+import { allTopics, computeKeywordCooccurrence } from "../lib/concepts.ts";
+import SubjectConstellation from "../components/SubjectConstellation.tsx";
 
 const subjects = allTopics
   .filter((t) => t.kind === "subject")
@@ -29,6 +30,9 @@ const keywords = allTopics
   .slice(0, 200);
 
 const maxKwCount = Math.max(...keywords.map((k) => k.count), 1);
+
+const coEdges = computeKeywordCooccurrence(120);
+const constellationKeywords = keywords.map((k) => ({ label: k.label, count: k.count }));
 
 /** Map a keyword count to a font size in rem, log-scaled. */
 function sizeFor(count: number): string {
@@ -85,6 +89,26 @@ function opacityFor(count: number): number {
         ))
       }
     </ul>
+  </section>
+
+  {/* ----------------------------------------------------------------- */}
+  {/* CONSTELLATION — keyword co-occurrence graph                       */}
+  {/* ----------------------------------------------------------------- */}
+  <section class="mb-20 reveal">
+    <div class="eyebrow text-accent mb-3 pb-2 border-b hairline">
+      Keyword constellation — proximity = co-occurrence
+    </div>
+    <p class="text-sm text-dim mb-6 max-w-2xl leading-relaxed">
+      Keywords that appear together in the same NIAC concepts cluster together.
+      Drag to explore. Click any keyword to search for it.
+    </p>
+    <div class="surface rounded-lg overflow-hidden">
+      <SubjectConstellation
+        keywords={constellationKeywords}
+        edges={coEdges}
+        client:only="react"
+      />
+    </div>
   </section>
 
   {/* ----------------------------------------------------------------- */}

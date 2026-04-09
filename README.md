@@ -110,6 +110,15 @@ npm run dev        # → http://localhost:3000
 npm run build      # → web/dist/
 ```
 
+## Contributing
+
+Want to help? We'd love that. See **[CONTRIBUTING.md](CONTRIBUTING.md)** for
+the full guide — how to fork, branch, open PRs, and what we especially need
+help with.
+
+Short version: fork the repo, make a branch, open a pull request. Nobody can
+push directly to `main` except maintainers.
+
 ## Known gaps
 
 - **Year range is 2017–2026.** Older NIAC (1998–2016) needs contract-grant prefix queries.

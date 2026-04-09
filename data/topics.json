@@ -1,6 +1,7 @@
 [
   {
     "slug": "black-holes",
+    "tier": "full",
     "title": "Black Holes",
     "subtitle": "Where spacetime breaks and physics begins again",
     "overview": "A black hole is a region of spacetime where gravity is so extreme that nothing — not even light — can escape once it crosses the event horizon. First predicted by Schwarzschild's 1916 solution to Einstein's field equations, black holes spent decades as mathematical curiosities before astronomers found overwhelming evidence they're everywhere: at the centers of galaxies, in binary star systems, and possibly wandering through interstellar space in the billions. The 2019 Event Horizon Telescope image of M87* and the 2015 LIGO detection of gravitational waves from merging black holes turned them from theoretical objects into observed ones. Yet the deepest questions remain open: what happens at the singularity? Is information truly destroyed? How does gravity behave at the quantum scale?",
@@ -130,6 +131,7 @@
   },
   {
     "slug": "gravity",
+    "tier": "full",
     "title": "Gravity",
     "subtitle": "The force we feel every second and still don't fully understand",
     "overview": "Gravity is the most familiar force in the universe and the least understood at a fundamental level. Newton gave us the math to predict orbits in 1687. Einstein replaced it in 1915 with general relativity — gravity isn't a force at all, but the curvature of spacetime caused by mass and energy. This framework predicts gravitational waves, black holes, the expansion of the universe, and GPS timing corrections to nanosecond precision. And yet: general relativity breaks down at singularities, refuses to play nicely with quantum mechanics, and can't explain why the universe's expansion is accelerating (dark energy) or why galaxies hold together better than their visible matter should allow (dark matter). A quantum theory of gravity — one that unifies Einstein's curved spacetime with the quantum world — remains the biggest open problem in physics.",
@@ -265,6 +267,7 @@
   },
   {
     "slug": "quantum-physics",
+    "tier": "full",
     "title": "Quantum Physics",
     "subtitle": "The rules that govern everything small — and maybe everything",
     "overview": "Quantum mechanics is the framework that describes nature at the smallest scales: atoms, photons, electrons, quarks. Its predictions are the most precisely tested in all of science — the magnetic moment of the electron agrees with theory to 12 decimal places. And yet quantum mechanics is profoundly strange: particles exist in superpositions of states until measured, distant particles can be entangled so that measuring one instantly affects the other, and the act of observation appears to play a fundamental role in determining reality. A century after its founding, physicists still disagree about what quantum mechanics *means*. The measurement problem, the nature of the wave function, and whether quantum mechanics needs to be modified to include gravity are among the deepest open questions in science.",
@@ -392,6 +395,7 @@
   },
   {
     "slug": "propulsion",
+    "tier": "full",
     "title": "Propulsion",
     "subtitle": "How we escape the gravity well — and whether we ever reach the stars",
     "overview": "Every journey into space begins with the same brutal constraint: you must throw mass behind you to move forward, and you must carry that mass with you. The Tsiolkovsky rocket equation is merciless — to go faster, you need exponentially more fuel, which makes you heavier, which means you need even more fuel. Chemical rockets, for all their drama, can barely get us to Mars. To reach the outer planets in months instead of years, or to reach other stars within a human lifetime, we need fundamentally different approaches: solar sails that ride photon pressure, electric sails that push against the solar wind, fusion drives that burn hydrogen into helium, antimatter engines that convert mass directly into energy, or laser-propelled lightsails that leave the fuel at home entirely. NIAC has funded dozens of these ideas, and some of them might actually work.",
@@ -506,6 +510,7 @@
   },
   {
     "slug": "telescopes",
+    "tier": "full",
     "title": "Telescopes & Observation",
     "subtitle": "The instruments that let us see what we can't touch",
     "overview": "Everything we know about the universe beyond Earth comes through telescopes. From Galileo's refractor in 1609 to the James Webb Space Telescope orbiting the L2 Lagrange point, every generation has built instruments that revealed a universe bigger, older, and stranger than anyone expected. Modern telescopes don't just see visible light — they observe across the electromagnetic spectrum: radio waves from pulsars, microwaves from the cosmic background radiation, infrared from nascent star systems, ultraviolet from hot young stars, X-rays from neutron star accretion, and gamma rays from the most violent events in the cosmos. The next frontier is multi-messenger astronomy: combining light, gravitational waves, and neutrinos to see the same event through completely different physics. NIAC has funded ambitious concepts including solar gravitational lensing (using the Sun itself as a telescope), lunar-based interferometers, and radically new sensor architectures.",
@@ -596,5 +601,538 @@
     ],
     "searchTerms": ["telescope", "imaging", "interferometer", "observatory", "spectroscopy", "sensor"],
     "relatedTopicSlugs": ["black-holes", "gravity"]
+  },
+  {
+    "slug": "solar-sails",
+    "tier": "standard",
+    "title": "Solar Sails & Light Propulsion",
+    "subtitle": "Sailing on starlight",
+    "overview": "Solar sails are spacecraft propelled not by fuel but by the pressure of photons striking a large, reflective surface. The idea dates back to Kepler, who noticed that comet tails always point away from the Sun, and to the early 20th-century Russian pioneers Tsander and Tsiolkovsky, who proposed harnessing this radiation pressure for spaceflight. The physics is simple: every photon carries momentum, and when it bounces off a mirror, it transfers twice its momentum to the sail. The force is tiny -- about 9 micronewtons per square meter at Earth's distance from the Sun -- but it never stops. A solar sail accelerates continuously, day after day, without ever running out of fuel.\n\nJAPAN's IKAROS became the first solar sail to fly in deep space in 2010, and The Planetary Society's LightSail 2 demonstrated controlled solar sailing in Earth orbit in 2019. But the real promise lies in advanced concepts: metamaterial sails engineered to be ultra-reflective and ultra-light, diffractive sails that steer without tilting, and laser-pushed lightsails like Breakthrough Starshot's concept that could reach a significant fraction of the speed of light. Electric sails -- which push against the solar wind's charged particles using a web of charged tethers -- offer a complementary approach that works especially well in the outer solar system.\n\nFor interstellar travel, light propulsion may be the only realistic near-term option. Chemical and even fusion rockets face the tyranny of the rocket equation, but a sail leaves its energy source behind. The challenge is making sails large enough and light enough to achieve useful accelerations, and -- for laser-driven concepts -- building the ground-based laser arrays powerful enough to push them to the stars.",
+    "openQuestions": [
+      "Can metamaterial or diffractive sails achieve thrust-to-mass ratios high enough for interstellar precursor missions?",
+      "Is laser-pushed lightsail travel to Alpha Centauri achievable with a 20-year flight time?",
+      "How do you decelerate a lightsail at its destination without a laser array at the other end?",
+      "Can electric sails provide practical propulsion for missions to the heliopause and beyond?",
+      "What is the maximum sail temperature that next-generation materials can withstand near the Sun?",
+      "How do you maintain pointing accuracy and communication with a gram-scale probe at interstellar distances?"
+    ],
+    "timeline": [
+      { "year": 1619, "event": "Johannes Kepler observes comet tails point away from the Sun, hints at radiation pressure" },
+      { "year": 1873, "event": "James Clerk Maxwell predicts light exerts pressure from electromagnetic theory" },
+      { "year": 1924, "event": "Friedrich Tsander and Konstantin Tsiolkovsky propose solar sails for spaceflight" },
+      { "year": 1958, "event": "Richard Garwin publishes first serious engineering analysis of a solar sail" },
+      { "year": 1984, "event": "Robert Forward proposes laser-pushed lightsails for interstellar travel" },
+      { "year": 2004, "event": "Japanese ISAS deploys first solar sail membrane in space (suborbital test)" },
+      { "year": 2010, "event": "JAXA's IKAROS becomes first spacecraft to demonstrate solar sailing in deep space" },
+      { "year": 2016, "event": "Breakthrough Starshot announces $100M program for laser-propelled probes to Alpha Centauri" },
+      { "year": 2019, "event": "The Planetary Society's LightSail 2 demonstrates controlled solar sailing in Earth orbit" },
+      { "year": 2024, "event": "NASA's ACS3 mission deploys advanced composite solar sail booms in orbit" },
+      { "year": 2025, "event": "NIAC funds extreme metamaterial solar sail concepts for breakthrough exploration" }
+    ],
+    "media": [
+      {
+        "title": "Solar Sails Could Take Us to the Stars",
+        "source": "Kurzgesagt",
+        "type": "video",
+        "url": "https://www.youtube.com/watch?v=EzZGPCyrpSU",
+        "note": "Accessible overview of how light propulsion works and why it matters for interstellar travel"
+      },
+      {
+        "title": "Can We Travel to the Stars?",
+        "source": "PBS Space Time",
+        "type": "video",
+        "url": "https://www.youtube.com/watch?v=JMTbRPH4VNI",
+        "note": "Deep analysis of Breakthrough Starshot and the physics of laser-pushed sails"
+      },
+      {
+        "title": "LightSail 2 Mission Overview",
+        "source": "The Planetary Society",
+        "type": "video",
+        "url": "https://www.youtube.com/watch?v=iRkFMTge-JM",
+        "note": "First-hand account of flying a solar sail in Earth orbit"
+      },
+      {
+        "title": "The Starship Century",
+        "source": "Gregory Benford & James Benford (eds.)",
+        "type": "book",
+        "url": "https://www.amazon.com/Starship-Century-Toward-Interstellar/dp/1939051002",
+        "note": "Collection of essays on interstellar propulsion including detailed solar and laser sail analysis"
+      }
+    ],
+    "relatedConceptSlugs": [
+      "extreme-metamaterial-solar-sails-for-breakthrough-space-exploration-niac-phase-i-2025",
+      "conceptual-design-of-an-electric-sail-technology-demonstration-mission-spacecraf-2019",
+      "electric-sail-propulsion-for-deep-space-missions-2019",
+      "procsima-diffractionless-beamed-propulsion-for-breakthrough-interstellar-mission-2019"
+    ],
+    "searchTerms": ["solar sail", "light sail", "lightsail", "radiation pressure", "photon propulsion", "electric sail", "laser propulsion", "Breakthrough Starshot", "IKAROS"],
+    "relatedTopicSlugs": ["propulsion", "interstellar-travel", "space-tethers"],
+    "unsolvedProblems": [],
+    "thoughtExperiments": []
+  },
+  {
+    "slug": "in-space-manufacturing",
+    "tier": "standard",
+    "title": "In-Space Manufacturing",
+    "subtitle": "Building in zero gravity",
+    "overview": "Every object humans have used in space -- from the International Space Station to the Mars rovers -- was built on Earth and launched at enormous cost. The fundamental constraint is the same one that plagues all spaceflight: getting mass out of Earth's gravity well. But what if we could build structures in space, using materials found in space? In-space manufacturing aims to break the launch bottleneck by constructing everything from satellite components to lunar habitats using local resources and novel fabrication techniques adapted for microgravity and vacuum.\n\nThe approaches range from 3D printing with lunar and Martian regolith, to growing structures from fungal mycelium, to having robotic spiders weave kilometer-scale antenna dishes in orbit. Regolith-based additive manufacturing could produce radiation shielding, landing pads, and structural elements from the dirt already on the Moon and Mars. Biological manufacturing -- using engineered organisms to produce polymers, adhesives, or even building materials from CO2 and water -- offers the tantalizing possibility of factories that grow rather than being assembled.\n\nThe microgravity environment itself offers unique manufacturing advantages: perfect spheres, ultra-pure crystals, and fiber optics impossible to produce under gravity. As humanity establishes permanent presence beyond Earth, the ability to manufacture in situ will shift from novelty to necessity.",
+    "openQuestions": [
+      "Can regolith-based 3D printing produce structures strong enough for pressurized habitats?",
+      "How do you control biological manufacturing processes (mycotecture, biomaterials) in low-gravity environments?",
+      "What is the minimum industrial ecosystem needed to be self-sustaining on the Moon or Mars?",
+      "Can robotic systems autonomously construct large structures in orbit without human supervision?",
+      "How do you ensure quality control and structural integrity for additively manufactured space components?",
+      "Can microgravity manufacturing of specialty materials (ZBLAN fiber, protein crystals) become commercially viable?"
+    ],
+    "timeline": [
+      { "year": 1969, "event": "Apollo missions demonstrate feasibility of working with lunar regolith" },
+      { "year": 1985, "event": "First experiments with materials processing in microgravity aboard Space Shuttle" },
+      { "year": 2001, "event": "First commercial microgravity manufacturing experiments on ISS" },
+      { "year": 2014, "event": "Made In Space 3D-prints first object manufactured in space aboard ISS" },
+      { "year": 2016, "event": "Additive Manufacturing Facility begins operations on ISS" },
+      { "year": 2018, "event": "ICON demonstrates large-scale 3D-printed construction on Earth using concrete" },
+      { "year": 2019, "event": "NIAC funds SpiderFab concept for on-orbit construction of kilometer-scale structures" },
+      { "year": 2021, "event": "Redwire demonstrates first commercial fiber optic manufacturing in microgravity" },
+      { "year": 2023, "event": "NASA Artemis program drives renewed focus on lunar surface manufacturing" },
+      { "year": 2025, "event": "NIAC funds Mycotecture Phase II -- growing habitats from fungal mycelium on Mars" }
+    ],
+    "media": [
+      {
+        "title": "Building a Moon Base",
+        "source": "Kurzgesagt",
+        "type": "video",
+        "url": "https://www.youtube.com/watch?v=NtQkz0aRDe8",
+        "note": "Explores lunar construction challenges and in-situ resource utilization concepts"
+      },
+      {
+        "title": "3D Printing in Space",
+        "source": "PBS Space Time",
+        "type": "video",
+        "url": "https://www.youtube.com/watch?v=VStTxJkGq2I",
+        "note": "The physics and engineering of additive manufacturing beyond Earth"
+      },
+      {
+        "title": "Can We Build on Mars?",
+        "source": "Veritasium",
+        "type": "video",
+        "url": "https://www.youtube.com/watch?v=G323VbkEPXk",
+        "note": "Engineering challenges of construction on Mars with local materials"
+      },
+      {
+        "title": "The Case for Space",
+        "source": "Robert Zubrin",
+        "type": "book",
+        "url": "https://www.amazon.com/Case-Space-Revolution-Spaceflight-Possibility/dp/1633885348",
+        "note": "Detailed argument for in-situ resource utilization as the key to sustainable space settlement"
+      }
+    ],
+    "relatedConceptSlugs": [
+      "mycotecture-off-planet-phase-ii-final-report-2025",
+      "3d-additive-construction-with-regolith-for-surface-systems-2019",
+      "biomaterials-out-of-thin-air-in-situ-on-demand-printing-of-advanced-biocomposite-2019",
+      "spiderfab-process-for-on-orbit-construction-of-kilometer-scale-apertures-2019"
+    ],
+    "searchTerms": ["manufacturing", "3D printing", "additive manufacturing", "regolith", "ISRU", "in-situ resource", "microgravity", "mycotecture", "fabrication"],
+    "relatedTopicSlugs": ["planetary-habitats", "propulsion", "space-tethers"],
+    "unsolvedProblems": [],
+    "thoughtExperiments": []
+  },
+  {
+    "slug": "planetary-habitats",
+    "tier": "standard",
+    "title": "Planetary Habitats",
+    "subtitle": "Living on other worlds",
+    "overview": "Humans evolved for exactly one environment: sea-level Earth, with its 1g gravity, nitrogen-oxygen atmosphere, magnetic field shielding, and stable temperature range. Every other place in the solar system will kill you -- quickly. Mars has a barely-there atmosphere of CO2, average temperatures of -60C, and no global magnetic field to stop solar radiation. The Moon has no atmosphere at all. Building habitats that keep humans alive, sane, and productive on these worlds is one of the great engineering challenges of the century.\n\nThe solutions being explored are remarkably creative. Inflatable modules could be buried under regolith for radiation protection. Structures grown from fungal mycelium (mycotecture) could self-repair and adapt to their environment. Thirsty Walls could extract water from humid cabin air while simultaneously revitalizing the atmosphere. Oxygen can be pulled from the Martian atmosphere using solid oxide electrolysis. The real challenge is not any single system but making them all work together as a closed or semi-closed life support system that doesn't depend on supply ships from Earth.\n\nBeyond the engineering, there are profound questions about what kind of societies will form in these habitats. Isolated, resource-constrained communities living in artificial environments under extreme stress -- the social dynamics of planetary settlement are as uncharted as the worlds themselves.",
+    "openQuestions": [
+      "Can closed-loop life support systems operate reliably for years without resupply from Earth?",
+      "How do you protect settlers from cosmic radiation and solar particle events on Mars?",
+      "What are the long-term health effects of living in 0.38g (Mars) or 0.16g (Moon) gravity?",
+      "Can biological systems (mycelium, algae, plants) provide reliable structural and life support functions?",
+      "What is the minimum viable population for a self-sustaining off-Earth settlement?",
+      "How do you extract and utilize water ice from permanently shadowed lunar craters?"
+    ],
+    "timeline": [
+      { "year": 1929, "event": "Hermann Noordung publishes first detailed space station habitat design" },
+      { "year": 1952, "event": "Wernher von Braun designs a rotating wheel space station for artificial gravity" },
+      { "year": 1971, "event": "Soviet Salyut 1 becomes first crewed space station" },
+      { "year": 1986, "event": "Mir space station begins 15 years of continuous habitation -- longest to date" },
+      { "year": 1991, "event": "Biosphere 2 sealed-environment experiment reveals difficulties of closed life support" },
+      { "year": 1998, "event": "International Space Station construction begins -- still operating 25+ years later" },
+      { "year": 2016, "event": "Bigelow Aerospace BEAM inflatable module attached to ISS for testing" },
+      { "year": 2020, "event": "NASA confirms water ice in sunlit areas of the Moon" },
+      { "year": 2021, "event": "NIAC funds Growth-Adapted Tensegrity structures for extraterrestrial habitats" },
+      { "year": 2025, "event": "NIAC funds Mycotecture Phase II and Breathing Mars Air concepts" }
+    ],
+    "media": [
+      {
+        "title": "The First City on Mars",
+        "source": "Kurzgesagt",
+        "type": "video",
+        "url": "https://www.youtube.com/watch?v=t9c7aheZxls",
+        "note": "Detailed visualization of what a Martian settlement might actually look like"
+      },
+      {
+        "title": "Can We Terraform Mars?",
+        "source": "PBS Space Time",
+        "type": "video",
+        "url": "https://www.youtube.com/watch?v=FshtPsOTCP4",
+        "note": "Honest assessment of terraforming feasibility and the timescales involved"
+      },
+      {
+        "title": "The Martian",
+        "source": "Andy Weir",
+        "type": "book",
+        "url": "https://www.andyweirauthor.com/books/the-martian-hc",
+        "note": "Fiction grounded in real habitat engineering -- what happens when life support fails on Mars"
+      },
+      {
+        "title": "How We'll Live on Mars",
+        "source": "Stephen Petranek",
+        "type": "book",
+        "url": "https://www.amazon.com/How-Well-Live-Mars-TED/dp/1476784760",
+        "note": "Concise overview of Mars habitat concepts and the timeline for settlement"
+      }
+    ],
+    "relatedConceptSlugs": [
+      "mycotecture-off-planet-phase-ii-final-report-2025",
+      "growth-as-an-alternative-approach-to-the-construction-of-extra-terrestrial-habit-2021",
+      "breathing-mars-air-stationary-and-portable-o2-generation-final-report-2025",
+      "thirsty-walls-a-new-paradigm-for-air-revitalization-in-life-support-2019"
+    ],
+    "searchTerms": ["habitat", "life support", "settlement", "colony", "Mars base", "lunar base", "ISRU", "radiation shielding", "closed loop"],
+    "relatedTopicSlugs": ["in-space-manufacturing", "astrobiology", "propulsion"],
+    "unsolvedProblems": [],
+    "thoughtExperiments": []
+  },
+  {
+    "slug": "nuclear-propulsion",
+    "tier": "standard",
+    "title": "Nuclear Propulsion",
+    "subtitle": "Fission and fusion for deep space",
+    "overview": "Chemical rockets are powerful but inefficient -- they convert less than 1% of their fuel's mass into energy. Nuclear reactions do millions of times better. Fission splits heavy atoms like uranium, releasing energy that can heat a propellant to extreme temperatures for high exhaust velocity. Fusion merges light atoms like hydrogen, releasing even more energy per kilogram. Either approach could cut Mars transit times from months to weeks and make the outer planets reachable in years instead of decades.\n\nNuclear thermal propulsion -- where a fission reactor heats hydrogen propellant -- was actually demonstrated in the 1960s and 70s during Project NERVA, which built and ground-tested working nuclear rocket engines before being canceled. Modern concepts go further: pulsed fission-fusion engines that harness both reactions, lattice confinement fusion that achieves fusion conditions in a metal lattice rather than a massive tokamak, and fission fragment rockets that use the high-velocity products of nuclear fission directly as exhaust. NIAC has funded several of these concepts.\n\nThe engineering challenges are formidable: reactor mass, radiation shielding for crew, thermal management in vacuum, and the political and regulatory hurdles of launching nuclear material. But the physics is unambiguous -- if we want to explore the outer solar system with crewed missions, nuclear propulsion is likely the only realistic option.",
+    "openQuestions": [
+      "Can nuclear thermal propulsion be revived and flight-qualified for crewed Mars missions?",
+      "Is lattice confinement fusion a viable path to compact fusion propulsion?",
+      "How do you shield a crew from the reactor's radiation without adding prohibitive mass?",
+      "Can fission fragment rockets achieve the theoretical specific impulse needed for outer planet missions?",
+      "What regulatory and political frameworks are needed to launch nuclear reactors safely?",
+      "Could a fusion-powered spacecraft reach Pluto in under 5 years?"
+    ],
+    "timeline": [
+      { "year": 1945, "event": "First nuclear fission detonation demonstrates enormous energy release" },
+      { "year": 1955, "event": "Project Rover begins developing nuclear thermal rocket engines at Los Alamos" },
+      { "year": 1958, "event": "Project Orion proposes nuclear pulse propulsion using atomic detonations" },
+      { "year": 1968, "event": "NERVA nuclear thermal engine achieves 845 seconds specific impulse in ground tests" },
+      { "year": 1973, "event": "NERVA program canceled despite successful engine tests -- political, not technical failure" },
+      { "year": 1978, "event": "Project Daedalus designs interstellar probe using inertial confinement fusion" },
+      { "year": 2003, "event": "Project Prometheus revives NASA nuclear propulsion studies (later scaled back)" },
+      { "year": 2020, "event": "NIAC funds Pulsed Fission-Fusion (PuFF) engine concept" },
+      { "year": 2022, "event": "National Ignition Facility achieves fusion ignition -- more energy out than laser energy in" },
+      { "year": 2023, "event": "DARPA and NASA select Lockheed Martin for DRACO nuclear thermal rocket demonstration" },
+      { "year": 2025, "event": "NIAC funds Lattice Confinement Fusion for space propulsion" }
+    ],
+    "media": [
+      {
+        "title": "Nuclear Rockets Are a Terrible Idea (and Might Be Our Best Option)",
+        "source": "Kurzgesagt",
+        "type": "video",
+        "url": "https://www.youtube.com/watch?v=KerJEkVcpMg",
+        "note": "Clear overview of nuclear thermal vs nuclear pulse propulsion and the tradeoffs"
+      },
+      {
+        "title": "Project Orion: The Atomic Spaceship",
+        "source": "PBS Space Time",
+        "type": "video",
+        "url": "https://www.youtube.com/watch?v=Q8Sv5y6iHUM",
+        "note": "The wild history of the nuclear pulse propulsion program and why it was canceled"
+      },
+      {
+        "title": "Fusion Propulsion: Getting to Mars in Weeks",
+        "source": "Fraser Cain / Universe Today",
+        "type": "video",
+        "url": "https://www.youtube.com/watch?v=eK3VGwMfXgU",
+        "note": "Survey of fusion propulsion concepts and their readiness levels"
+      },
+      {
+        "title": "Project Orion: The True Story of the Atomic Spaceship",
+        "source": "George Dyson",
+        "type": "book",
+        "url": "https://www.amazon.com/Project-Orion-Atomic-Spaceship-1957-1965/dp/0805072845",
+        "note": "Definitive account of the most audacious propulsion concept ever seriously funded"
+      }
+    ],
+    "relatedConceptSlugs": [
+      "the-pulsed-fission-fusion-puff-engine-development-status-2020",
+      "lattice-confinement-fusion-fast-fission-for-space-2025",
+      "fusion-enabled-pluto-orbiter-and-lander-2019",
+      "concept-assessment-of-a-fission-fragment-rocket-engine-ffre-propelled-spacecraft-2019"
+    ],
+    "searchTerms": ["nuclear thermal", "fission", "fusion", "NERVA", "nuclear propulsion", "reactor", "Orion", "pulsed fission", "lattice confinement"],
+    "relatedTopicSlugs": ["propulsion", "interstellar-travel", "planetary-habitats"],
+    "unsolvedProblems": [],
+    "thoughtExperiments": []
+  },
+  {
+    "slug": "exoplanet-detection",
+    "tier": "standard",
+    "title": "Exoplanet Detection",
+    "subtitle": "Finding other Earths",
+    "overview": "For most of human history, we had no idea whether planets existed beyond our solar system. The first confirmed exoplanet around a Sun-like star was discovered in 1995, and since then the floodgates have opened: we now know of more than 5,600 confirmed exoplanets, with thousands more candidates awaiting verification. The Kepler mission alone found that planets are more common than stars -- virtually every star in the galaxy hosts at least one planet, and rocky, Earth-sized worlds in their star's habitable zone are not rare.\n\nThe detection methods are ingenious. The transit method watches for the tiny dimming when a planet crosses in front of its star. The radial velocity method detects the subtle wobble a planet's gravity imparts to its star. Direct imaging blocks the starlight to photograph the planet itself. Gravitational microlensing catches the brief brightening when a planet's gravity bends background starlight. Each method has biases -- transits favor large planets on tight orbits, radial velocity favors massive planets -- so building a complete census of exoplanets requires combining them all.\n\nThe next frontier is characterization: not just finding planets but analyzing their atmospheres for biosignatures like oxygen, methane, and water vapor. JWST is already doing this for hot gas giants, and future missions aim to characterize the atmospheres of temperate rocky worlds. The solar gravitational lens concept funded by NIAC could eventually image exoplanet surfaces at kilometer-scale resolution -- seeing continents on a world orbiting another star.",
+    "openQuestions": [
+      "How common are Earth-like planets in the habitable zones of Sun-like stars (the eta-Earth question)?",
+      "Can we detect biosignatures in exoplanet atmospheres with current or near-future technology?",
+      "What atmospheric signatures would unambiguously indicate life rather than abiotic chemistry?",
+      "Can the solar gravitational lens concept actually image an exoplanet's surface features?",
+      "Are there rocky planets with plate tectonics, magnetic fields, and stable climates like Earth's?",
+      "How do we prioritize targets when there are billions of potentially habitable worlds?"
+    ],
+    "timeline": [
+      { "year": 1952, "event": "Otto Struve proposes detecting exoplanets via stellar radial velocity and transits" },
+      { "year": 1992, "event": "First confirmed exoplanets discovered orbiting a pulsar (Wolszczan & Frail)" },
+      { "year": 1995, "event": "Mayor & Queloz discover 51 Pegasi b -- first exoplanet around a Sun-like star" },
+      { "year": 2005, "event": "First direct image of an exoplanet (2M1207 b)" },
+      { "year": 2009, "event": "Kepler space telescope launches, eventually finds thousands of exoplanets" },
+      { "year": 2014, "event": "Kepler confirms first Earth-sized planet in a habitable zone (Kepler-186f)" },
+      { "year": 2016, "event": "Proxima Centauri b discovered -- nearest known exoplanet to Earth" },
+      { "year": 2018, "event": "TESS mission launches to survey bright, nearby stars for transiting planets" },
+      { "year": 2022, "event": "JWST begins characterizing exoplanet atmospheres with unprecedented sensitivity" },
+      { "year": 2025, "event": "NIAC funds solar gravitational lens and hybrid observatory exoplanet imaging concepts" }
+    ],
+    "media": [
+      {
+        "title": "How We Find Exoplanets",
+        "source": "Kurzgesagt",
+        "type": "video",
+        "url": "https://www.youtube.com/watch?v=fgg2tpUVbXQ",
+        "note": "Clear visual explanation of transit, radial velocity, and direct imaging methods"
+      },
+      {
+        "title": "The Most Earthlike Planet Ever Found",
+        "source": "Veritasium",
+        "type": "video",
+        "url": "https://www.youtube.com/watch?v=saWNMPaVnTE",
+        "note": "Deep dive into what makes a planet truly Earth-like and how we assess habitability"
+      },
+      {
+        "title": "Exoplanet Atmospheres",
+        "source": "PBS Space Time",
+        "type": "video",
+        "url": "https://www.youtube.com/watch?v=4IXMJfmMEOQ",
+        "note": "How transmission spectroscopy reveals the composition of alien atmospheres"
+      },
+      {
+        "title": "The Smallest Lights in the Universe",
+        "source": "Sara Seager",
+        "type": "book",
+        "url": "https://www.amazon.com/Smallest-Lights-Universe-Sara-Seager/dp/0525576258",
+        "note": "Personal memoir by the leading exoplanet atmosphere scientist, weaving science with life story"
+      }
+    ],
+    "relatedConceptSlugs": [
+      "direct-multipixel-imaging-and-spectroscopy-of-an-exoplanet-with-a-solar-gravity--2025",
+      "hybrid-observatory-for-earth-like-exoplanets-hoee-2025"
+    ],
+    "searchTerms": ["exoplanet", "transit", "radial velocity", "habitable zone", "biosignature", "Kepler", "TESS", "JWST", "direct imaging"],
+    "relatedTopicSlugs": ["telescopes", "astrobiology", "solar-sails"],
+    "unsolvedProblems": [],
+    "thoughtExperiments": []
+  },
+  {
+    "slug": "space-tethers",
+    "tier": "standard",
+    "title": "Space Tethers & Elevators",
+    "subtitle": "Cables to orbit",
+    "overview": "The idea is deceptively simple: instead of burning fuel to reach orbit, climb a cable. A space elevator would consist of a tether anchored at the equator and extending beyond geostationary orbit (35,786 km), held taut by centrifugal force. Robotic climbers would ascend the cable, carrying payloads to orbit at a fraction of the cost of rockets -- potentially reducing launch costs from thousands of dollars per kilogram to tens. The concept was first described by Tsiolkovsky in 1895 and independently reinvented by Artsutanov in 1960 and Pearson in 1975.\n\nThe fundamental problem is materials: no existing material has the strength-to-weight ratio needed for an Earth-based space elevator cable. Carbon nanotubes have the theoretical tensile strength, but we can produce them only centimeters long, not 100,000 kilometers. However, the concept extends far beyond Earth. A lunar space elevator is feasible with existing materials like Kevlar or Zylon because the Moon's gravity is one-sixth of Earth's. A Martian elevator faces intermediate challenges. And momentum-exchange tethers -- rotating cables in orbit that can catch and throw payloads -- don't need exotic materials at all.\n\nNIAC has funded studies of both space elevator technology and creative tether applications like PHLOTE, which would use a tether at the Mars-Phobos L1 point for efficient transfers between Mars orbit and its moon. Tethers represent a fundamentally different approach to space transportation: infrastructure instead of expendables, capital cost instead of per-launch cost.",
+    "openQuestions": [
+      "Can carbon nanotubes or other materials be manufactured at the lengths and quality needed for an Earth space elevator?",
+      "Is a lunar space elevator buildable with current materials and if so, when?",
+      "How do you protect a space elevator cable from micrometeorite impacts and orbital debris?",
+      "Can momentum-exchange tethers provide economical orbit-raising for commercial satellites?",
+      "What is the risk of catastrophic cable failure and what are the consequences?",
+      "Could a tether system at Mars-Phobos L1 reduce the delta-v cost of Mars surface access?"
+    ],
+    "timeline": [
+      { "year": 1895, "event": "Konstantin Tsiolkovsky imagines a tower extending to geostationary orbit" },
+      { "year": 1960, "event": "Yuri Artsutanov publishes the first realistic space elevator concept" },
+      { "year": 1975, "event": "Jerome Pearson independently derives the space elevator concept with detailed engineering" },
+      { "year": 1979, "event": "Arthur C. Clarke popularizes the space elevator in The Fountains of Paradise" },
+      { "year": 1991, "event": "Carbon nanotubes discovered -- first material with theoretical strength for an Earth elevator" },
+      { "year": 1993, "event": "First momentum-exchange tether experiment (SEDS-1) deploys 20 km tether in orbit" },
+      { "year": 2000, "event": "Bradley Edwards publishes comprehensive space elevator feasibility study for NASA" },
+      { "year": 2005, "event": "NASA funds Centennial Challenge for space elevator climber competition" },
+      { "year": 2019, "event": "NIAC funds Phobos L1 Operational Tether Experiment (PHLOTE) and space elevator concepts" },
+      { "year": 2023, "event": "Graphene and boron nitride nanotube research advances toward elevator-grade materials" }
+    ],
+    "media": [
+      {
+        "title": "Space Elevator -- Science Fiction or the Future?",
+        "source": "Kurzgesagt",
+        "type": "video",
+        "url": "https://www.youtube.com/watch?v=qPQQwqGWktE",
+        "note": "Beautifully animated explanation of how a space elevator would work and the materials challenge"
+      },
+      {
+        "title": "The Space Elevator: A Dream That Could Become Reality",
+        "source": "PBS Space Time",
+        "type": "video",
+        "url": "https://www.youtube.com/watch?v=dc8_AuzeYKE",
+        "note": "Technical deep dive into the physics constraints and potential solutions"
+      },
+      {
+        "title": "The Fountains of Paradise",
+        "source": "Arthur C. Clarke",
+        "type": "book",
+        "url": "https://www.amazon.com/Fountains-Paradise-Arthur-C-Clarke/dp/0446677949",
+        "note": "The classic novel that introduced the space elevator concept to a wide audience"
+      }
+    ],
+    "relatedConceptSlugs": [
+      "phase-1-study-for-the-phobos-l1-operational-tether-experiment-phlote-2019",
+      "technology-development-and-demonstration-concepts-for-the-space-elevator-2019"
+    ],
+    "searchTerms": ["space elevator", "tether", "orbital tether", "momentum exchange", "cable", "carbon nanotube", "PHLOTE", "climber", "geostationary"],
+    "relatedTopicSlugs": ["propulsion", "in-space-manufacturing", "solar-sails"],
+    "unsolvedProblems": [],
+    "thoughtExperiments": []
+  },
+  {
+    "slug": "astrobiology",
+    "tier": "standard",
+    "title": "Astrobiology",
+    "subtitle": "The search for life beyond Earth",
+    "overview": "Astrobiology asks the biggest question science can ask: are we alone? It is an inherently interdisciplinary field, drawing on biology, chemistry, geology, planetary science, and astronomy to understand how life originates, how it evolves, what conditions it requires, and where else in the universe it might exist. On Earth, life has proven astonishingly resilient -- thriving in boiling hydrothermal vents, frozen Antarctic lakes, highly acidic mine drainage, and kilometers below the surface in solid rock. These extremophiles have radically expanded our notion of what counts as a habitable environment.\n\nThe prime targets in our own solar system are Mars, where ancient river channels and subsurface water may harbor fossil or extant microbial life; Europa and Enceladus, whose subsurface oceans are warmed by tidal heating and could host life around hydrothermal vents on their ocean floors; and Titan, whose methane lakes and complex organic chemistry represent a completely alien potential for life. Venus, long dismissed as too hostile, re-entered the conversation after controversial claims of phosphine in its atmosphere in 2020 -- NIAC has funded a sample return mission concept to settle the question.\n\nBeyond the solar system, the search focuses on biosignatures in exoplanet atmospheres: gases like oxygen, methane, and phosphine that might indicate biological activity. The challenge is distinguishing genuine biosignatures from abiotic chemistry -- a problem that requires understanding planetary chemistry far more deeply than we currently do.",
+    "openQuestions": [
+      "Did Mars ever harbor life, and could microbial life persist in its subsurface today?",
+      "Is there life in the subsurface oceans of Europa or Enceladus?",
+      "Could non-water-based life exist in Titan's methane lakes?",
+      "What atmospheric biosignatures would unambiguously indicate life on an exoplanet?",
+      "How did life originate on Earth, and is that process common or extraordinarily rare?",
+      "Is the phosphine signal in Venus's atmosphere real, and if so, is it biological?"
+    ],
+    "timeline": [
+      { "year": 1953, "event": "Miller-Urey experiment produces amino acids from simulated early Earth atmosphere" },
+      { "year": 1976, "event": "Viking landers test for life on Mars -- results ambiguous and still debated" },
+      { "year": 1977, "event": "Deep-sea hydrothermal vents discovered, teeming with life independent of sunlight" },
+      { "year": 1996, "event": "ALH84001 meteorite claimed to contain Martian microfossils (later disputed)" },
+      { "year": 2005, "event": "Cassini discovers water-ice geysers on Enceladus erupting from a subsurface ocean" },
+      { "year": 2008, "event": "Phoenix lander confirms water ice just below Mars surface" },
+      { "year": 2014, "event": "Hubble observes water vapor plumes at Europa" },
+      { "year": 2020, "event": "Phosphine detected in Venus atmosphere (controversial) reignites Venus astrobiology" },
+      { "year": 2023, "event": "JWST begins analyzing exoplanet atmospheres for potential biosignatures" },
+      { "year": 2025, "event": "NIAC funds Venus atmosphere sample return and SPARROW ocean worlds explorer concepts" }
+    ],
+    "media": [
+      {
+        "title": "Why Alien Life Would be our Doom",
+        "source": "Kurzgesagt",
+        "type": "video",
+        "url": "https://www.youtube.com/watch?v=UjtOGPJ0URM",
+        "note": "The Great Filter concept and what finding extraterrestrial life would mean for humanity's future"
+      },
+      {
+        "title": "Is There Life on Venus?",
+        "source": "Veritasium",
+        "type": "video",
+        "url": "https://www.youtube.com/watch?v=TA-VkX9RDGI",
+        "note": "Balanced analysis of the phosphine detection controversy and what it would mean"
+      },
+      {
+        "title": "The Search for Life in the Universe",
+        "source": "Sean Carroll / Mindscape Podcast",
+        "type": "podcast",
+        "url": "https://www.preposterousuniverse.com/podcast/2020/09/28/117-sara-walker-on-the-origins-of-life/",
+        "note": "Deep conversation with Sara Walker on what life actually is and how to detect it"
+      },
+      {
+        "title": "Life's Edge: The Search for What It Means to Be Alive",
+        "source": "Carl Zimmer",
+        "type": "book",
+        "url": "https://www.amazon.com/Lifes-Edge-Search-What-Means/dp/0593182723",
+        "note": "Explores the surprisingly hard question of defining life -- essential context for knowing what to look for"
+      }
+    ],
+    "relatedConceptSlugs": [
+      "venus-atmosphere-and-cloud-particle-sample-return-for-astrobiology-2025",
+      "sparrow-steam-propelled-autonomous-retrieval-robot-for-ocean-worlds-2019"
+    ],
+    "searchTerms": ["astrobiology", "biosignature", "extremophile", "origin of life", "habitable", "Europa", "Enceladus", "Mars life", "exoplanet atmosphere"],
+    "relatedTopicSlugs": ["exoplanet-detection", "planetary-habitats", "telescopes"],
+    "unsolvedProblems": [],
+    "thoughtExperiments": []
+  },
+  {
+    "slug": "interstellar-travel",
+    "tier": "standard",
+    "title": "Interstellar Travel",
+    "subtitle": "Reaching other stars",
+    "overview": "The nearest star system, Alpha Centauri, is 4.37 light-years away -- about 40 trillion kilometers. Our fastest spacecraft, the Parker Solar Probe, travels at roughly 0.05% the speed of light, which would mean a journey of over 6,000 years. Interstellar travel is not a harder version of interplanetary travel; it is a fundamentally different problem that may require fundamentally different physics, engineering, or patience.\n\nThe concepts that have been studied most seriously include laser-propelled lightsails (Breakthrough Starshot aims to send gram-scale probes to Alpha Centauri at 20% light speed), nuclear pulse propulsion (Project Orion's detonation-driven spacecraft), fusion drives (Project Daedalus), and the Bussard ramjet (scooping interstellar hydrogen for fuel). Each faces enormous challenges. Lightsails must survive the initial laser blast and communicate from light-years away. Nuclear concepts require massive ships. The ramjet turns out to create more drag than thrust. And all crewed concepts face the additional problem of keeping humans alive for decades or centuries.\n\nMore speculative ideas include generation ships (multi-generational voyages in self-sustaining habitats), embryo ships (carrying frozen embryos to be raised by AI at the destination), and breakthrough physics concepts like the Alcubierre warp drive (which is consistent with general relativity but requires exotic matter with negative energy density). The 2017 detection of 'Oumuamua -- the first observed interstellar object passing through our solar system -- and NIAC-funded concepts for intercepting future interstellar visitors have added urgency to the question: can we go to the stars, or will the stars have to come to us?",
+    "openQuestions": [
+      "Can laser-propelled lightsails reach Alpha Centauri in 20 years, and can they return useful data?",
+      "Is there any propulsion method that could deliver a crewed ship to another star in a human lifetime?",
+      "Does exotic matter with negative energy density exist, making warp drives or wormholes possible?",
+      "How would we decelerate an interstellar probe upon arrival at its destination?",
+      "Can we intercept and study interstellar objects passing through our solar system?",
+      "What would a self-sustaining generation ship actually need to survive a century-long voyage?",
+      "Are there unknown physics that could make faster-than-light travel possible?"
+    ],
+    "timeline": [
+      { "year": 1903, "event": "Tsiolkovsky speculates about interstellar travel in 'The Exploration of Cosmic Space'" },
+      { "year": 1958, "event": "Project Orion proposes reaching nearby stars via nuclear pulse propulsion" },
+      { "year": 1960, "event": "Robert Bussard proposes the interstellar ramjet" },
+      { "year": 1978, "event": "Project Daedalus completes first rigorous interstellar probe design (fusion-powered)" },
+      { "year": 1984, "event": "Robert Forward proposes laser-pushed lightsails for interstellar travel" },
+      { "year": 1994, "event": "Miguel Alcubierre publishes the warp drive metric -- FTL consistent with GR but requires exotic matter" },
+      { "year": 2016, "event": "Breakthrough Starshot announces $100M program for laser-propelled probes" },
+      { "year": 2017, "event": "'Oumuamua detected -- first observed interstellar object passing through our solar system" },
+      { "year": 2019, "event": "Borisov comet confirmed as second interstellar visitor" },
+      { "year": 2024, "event": "NIAC funds Dynamic Orbital Slingshot for rendezvous with interstellar objects" },
+      { "year": 2025, "event": "NIAC funds diffractionless beamed propulsion and metamaterial solar sails for interstellar concepts" }
+    ],
+    "media": [
+      {
+        "title": "How to Travel to Another Star",
+        "source": "Kurzgesagt",
+        "type": "video",
+        "url": "https://www.youtube.com/watch?v=DAcjV60RnRw",
+        "note": "Comprehensive overview of interstellar propulsion concepts and their feasibility"
+      },
+      {
+        "title": "The Real Science of the Alcubierre Warp Drive",
+        "source": "PBS Space Time",
+        "type": "video",
+        "url": "https://www.youtube.com/watch?v=94ed4v_T6YM",
+        "note": "Honest technical assessment of warp drive physics -- what works and what doesn't"
+      },
+      {
+        "title": "'Oumuamua and Interstellar Objects",
+        "source": "Veritasium",
+        "type": "video",
+        "url": "https://www.youtube.com/watch?v=qX_Bj7064Ms",
+        "note": "The mystery of the first interstellar visitor and what it means for future interceptions"
+      },
+      {
+        "title": "The Starflight Handbook",
+        "source": "Eugene Mallove & Gregory Matloff",
+        "type": "book",
+        "url": "https://www.amazon.com/Starflight-Handbook-Pioneers-Interstellar-Travel/dp/0471619124",
+        "note": "The classic engineering reference for interstellar propulsion concepts"
+      },
+      {
+        "title": "Interstellar Travel and Multi-Generational Spaceships",
+        "source": "Sean Carroll / Mindscape Podcast",
+        "type": "podcast",
+        "url": "https://www.preposterousuniverse.com/podcast/",
+        "note": "Discussions of the physics, biology, and sociology of interstellar voyages"
+      }
+    ],
+    "relatedConceptSlugs": [
+      "procsima-diffractionless-beamed-propulsion-for-breakthrough-interstellar-mission-2019",
+      "dynamic-orbital-slingshot-for-rendezvous-with-interstellar-objects-2024",
+      "extreme-metamaterial-solar-sails-for-breakthrough-space-exploration-niac-phase-i-2025"
+    ],
+    "searchTerms": ["interstellar", "light-year", "Alpha Centauri", "warp drive", "generation ship", "Breakthrough Starshot", "Oumuamua", "Alcubierre", "starship"],
+    "relatedTopicSlugs": ["propulsion", "solar-sails", "nuclear-propulsion"],
+    "unsolvedProblems": [],
+    "thoughtExperiments": []
   }
 ]

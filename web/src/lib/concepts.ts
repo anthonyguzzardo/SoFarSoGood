@@ -13,9 +13,32 @@
 
 import type { Concept, Phase } from "../../../shared/concept.ts";
 import rawConcepts from "../../../data/concepts.json" with { type: "json" };
+import rawEditorial from "../../../data/editorial.json" with { type: "json" };
 
 /** All concepts, in the order produced by ingestion (newest first). */
 export const allConcepts: Concept[] = rawConcepts as Concept[];
+
+/* -------------------------------------------------------------------------- */
+/* Editorial overlay                                                          */
+/* -------------------------------------------------------------------------- */
+
+/**
+ * Merge editorial data (whatIfItWorks, editorialTier) from editorial.json
+ * onto concept objects at module load. Keeps the machine-generated
+ * concepts.json untouched while layering on curated content.
+ */
+const editorial = rawEditorial as Record<
+  string,
+  { whatIfItWorks?: string; editorialTier?: "spotlight" | "highlight" }
+>;
+
+for (const c of allConcepts) {
+  const overlay = editorial[c.slug];
+  if (overlay) {
+    if (overlay.whatIfItWorks) c.whatIfItWorks = overlay.whatIfItWorks;
+    if (overlay.editorialTier) c.editorialTier = overlay.editorialTier;
+  }
+}
 
 /* -------------------------------------------------------------------------- */
 /* Lookups                                                                    */
@@ -34,17 +57,51 @@ export function getConcept(slug: string): Concept | undefined {
 /* -------------------------------------------------------------------------- */
 
 /**
- * The hero concept on the homepage. Picks the first concept whose title or
- * keywords mention "tether" — the through-line of the conversation that
- * birthed this project. Falls back to the first concept overall.
+ * Simple deterministic hash of a string — used to rotate the featured
+ * concept daily without runtime randomness.
+ */
+function simpleHash(s: string): number {
+  let h = 0;
+  for (let i = 0; i < s.length; i++) {
+    h = ((h << 5) - h + s.charCodeAt(i)) | 0;
+  }
+  return Math.abs(h);
+}
+
+/**
+ * The hero concept on the homepage. Rotates daily through editorially curated
+ * "spotlight" concepts. Each build on a new day produces a different hero.
+ * Falls back to the tether heuristic, then to the first concept overall.
  */
 export function getFeaturedConcept(): Concept {
+  const spotlights = allConcepts.filter(
+    (c) => c.editorialTier === "spotlight"
+  );
+  if (spotlights.length > 0) {
+    const today = new Date().toISOString().slice(0, 10);
+    return spotlights[simpleHash(today) % spotlights.length]!;
+  }
   const tetherConcept = allConcepts.find(
     (c) =>
       c.title.toLowerCase().includes("tether") ||
       c.keywords.some((k) => k.includes("tether"))
   );
   return tetherConcept ?? allConcepts[0]!;
+}
+
+/**
+ * Curated "highlight" concepts for the Editor's Picks section on the
+ * homepage. Excludes the current featured concept to avoid repetition.
+ */
+export function getEditorialPicks(exclude?: string, count = 6): Concept[] {
+  return allConcepts
+    .filter(
+      (c) =>
+        (c.editorialTier === "highlight" || c.editorialTier === "spotlight") &&
+        c.slug !== exclude &&
+        c.whatIfItWorks
+    )
+    .slice(0, count);
 }
 
 /* -------------------------------------------------------------------------- */
@@ -152,6 +209,42 @@ export const allTopics: TopicEntry[] = [...topicMap.values()].sort(
   (a, b) => b.count - a.count
 );
 
+/**
+ * Compute keyword co-occurrence edges for the constellation map.
+ * Two keywords are connected if they appear in the same concept.
+ * Returns top N edges by weight for performance.
+ */
+export function computeKeywordCooccurrence(
+  topN = 120
+): Array<{ source: string; target: string; weight: number }> {
+  const edges = new Map<string, number>();
+  const kwSet = new Set(
+    allTopics
+      .filter((t) => t.kind === "keyword" && t.count >= 2)
+      .slice(0, 150)
+      .map((t) => t.label)
+  );
+
+  for (const c of allConcepts) {
+    const cKw = c.keywords.filter((k) => kwSet.has(k));
+    for (let i = 0; i < cKw.length; i++) {
+      for (let j = i + 1; j < cKw.length; j++) {
+        const [a, b] = [cKw[i], cKw[j]].sort();
+        const key = `${a}|||${b}`;
+        edges.set(key, (edges.get(key) ?? 0) + 1);
+      }
+    }
+  }
+
+  return [...edges.entries()]
+    .map(([key, weight]) => {
+      const [source, target] = key.split("|||");
+      return { source: source!, target: target!, weight };
+    })
+    .sort((a, b) => b.weight - a.weight)
+    .slice(0, topN);
+}
+
 /* -------------------------------------------------------------------------- */
 /* Related concepts                                                           */
 /* -------------------------------------------------------------------------- */
@@ -191,6 +284,48 @@ export function getRelatedConcepts(slug: string, k = 5): Concept[] {
     .sort((a, b) => b.score - a.score);
 
   return scored.slice(0, k).map((x) => x.c);
+}
+
+/* -------------------------------------------------------------------------- */
+/* Concept categorization                                                     */
+/* -------------------------------------------------------------------------- */
+
+export type ConceptCategory =
+  | "propulsion"
+  | "telescope"
+  | "habitat"
+  | "planetary"
+  | "life-detection"
+  | "power"
+  | "communication"
+  | "defense"
+  | "robotics"
+  | "manufacturing"
+  | "other";
+
+const categoryPatterns: Array<[ConceptCategory, RegExp]> = [
+  ["propulsion", /propuls|sail|thrust|engine|fission|fusion|tether|electric sail|solar thermal|beamed/i],
+  ["telescope", /telescope|imaging|interferom|optic|observation|aperture|reflector|lens|spectro/i],
+  ["habitat", /habitat|shelter|construction|regolith|mycotect|life support|radiation shield|shielding/i],
+  ["planetary", /venus|mars|titan|pluto|asteroid|lunar|moon|submarine|rover|lander|surface explor/i],
+  ["life-detection", /astrobiol|biosignature|life detect|sample return|ocean world/i],
+  ["power", /power|energy|reactor|nuclear|solar power|radioisotope|battery/i],
+  ["communication", /communicat|navigation|nav\b|signal|antenna|radio/i],
+  ["defense", /impact|asteroid.*threat|deflect|defense|intercept|neo\b/i],
+  ["robotics", /robot|autonomous|swarm|drone|flyer|hopper|shape.?shift/i],
+  ["manufacturing", /manufactur|3d print|additive|fabricat|construction|in.situ/i],
+];
+
+/**
+ * Infer a concept category from its title and keywords. First match wins.
+ * Falls back to "other" if nothing matches.
+ */
+export function categorize(concept: Concept): ConceptCategory {
+  const text = concept.title + " " + concept.keywords.join(" ");
+  for (const [cat, pattern] of categoryPatterns) {
+    if (pattern.test(text)) return cat;
+  }
+  return "other";
 }
 
 /* -------------------------------------------------------------------------- */

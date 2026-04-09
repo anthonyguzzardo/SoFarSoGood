@@ -16,6 +16,10 @@ export interface WishlistEntry {
   importance: "foundational" | "seminal" | "significant" | "notable";
   status: "wanted" | "acquired" | "indexed";
   source: string;
+  /** One-sentence hook connecting this historical work to modern science. */
+  modernRelevance?: string;
+  /** IDs of related wishlist entries for cross-linking. */
+  relatedWishlistIds?: string[];
 }
 
 export const allWishlistEntries: WishlistEntry[] =
@@ -78,6 +82,42 @@ export function fieldLabel(field: string): string {
   };
   return labels[field] ?? field;
 }
+
+/** O(1) lookup by id. */
+const byId = new Map<string, WishlistEntry>();
+for (const e of allWishlistEntries) byId.set(e.id, e);
+
+export function getWishlistEntry(id: string): WishlistEntry | undefined {
+  return byId.get(id);
+}
+
+/** Field-to-color mapping for timeline visualization. */
+export const fieldColors: Record<string, string> = {
+  mathematics: "#60a5fa",   // blue
+  physics: "#ffb84d",       // amber (matches accent)
+  astronomy: "#2dd4bf",     // teal
+  chemistry: "#a78bfa",     // purple
+  biology: "#4ade80",       // green
+  medicine: "#f87171",      // red
+  "computer-science": "#38bdf8", // sky blue
+  "earth-science": "#fb923c",    // orange
+  engineering: "#94a3b8",   // slate
+  philosophy: "#e879f9",    // pink
+  "social-science": "#fbbf24",   // yellow
+};
+
+/** Era-to-color mapping for timeline background bands. */
+export const eraColors: Record<string, string> = {
+  ancient: "rgba(96, 165, 250, 0.06)",
+  medieval: "rgba(167, 139, 250, 0.06)",
+  "early-modern": "rgba(45, 212, 191, 0.06)",
+  enlightenment: "rgba(251, 191, 36, 0.06)",
+  "19th-century": "rgba(248, 113, 113, 0.06)",
+  "20th-century-early": "rgba(56, 189, 248, 0.06)",
+  "20th-century-mid": "rgba(74, 222, 128, 0.06)",
+  "20th-century-late": "rgba(232, 121, 249, 0.06)",
+  "21st-century": "rgba(255, 184, 77, 0.06)",
+};
 
 /** Stats about the wishlist. */
 export const wishlistStats = {
