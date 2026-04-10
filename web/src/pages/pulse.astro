@@ -19,7 +19,6 @@ import {
   activePulseTopics,
   generatedAt,
   getTopSources,
-  pulseStats,
 } from "../lib/pulse.ts";
 import { allConcepts, categorize, piLine } from "../lib/concepts.ts";
 
@@ -83,45 +82,7 @@ const categoryLabel: Record<string, string> = {
   other: "Research",
 };
 
-/* -------------------------------------------------------------------------- */
-/* Narrative pulse summary — auto-generated editorial lede                    */
-/* -------------------------------------------------------------------------- */
-const leader = activePulseTopics[0];
-const biggestMover = activePulseTopics
-  .filter((t) => t.direction === "up" && t.delta > 0)
-  .sort((a, b) => b.delta - a.delta)[0];
-const cooling = activePulseTopics
-  .filter((t) => t.direction === "down" && t.delta < 0)
-  .sort((a, b) => a.delta - b.delta)[0];
-
-function narrativeLede(): string {
-  const parts: string[] = [];
-
-  if (leader) {
-    const topTitle = leader.sources[0]?.title;
-    if (topTitle) {
-      let truncated = topTitle;
-      if (topTitle.length > 90) {
-        truncated = topTitle.slice(0, 90).replace(/\s+\S*$/, "") + "…";
-      }
-      parts.push(`${leader.label} leading the board — "${truncated}"`);
-    } else {
-      parts.push(`${leader.label} leading the board with ${leader.mentions} mentions across platforms`);
-    }
-  }
-
-  if (biggestMover && biggestMover.slug !== leader?.slug) {
-    parts.push(`${biggestMover.label} surging +${biggestMover.delta}%`);
-  }
-
-  if (cooling) {
-    parts.push(`${cooling.label} cooling off`);
-  }
-
-  return parts.join(". ") + ".";
-}
-
-const lede = narrativeLede();
+/* Narrative lede is now reactive inside PulseBoard — updates with time window */
 ---
 
 <BaseLayout title="Pulse — what the world is talking about" nav="pulse">
@@ -148,21 +109,8 @@ const lede = narrativeLede();
         class="hero-line mt-4 font-display text-lg md:text-xl leading-relaxed max-w-2xl"
         style="animation-delay: 0.3s; color: var(--color-ink-dim);"
       >
-        {lede}
+        Aggregated from Reddit + Hacker News. Scored by momentum.
       </p>
-
-      <div
-        class="hero-line mt-5 flex items-center gap-4 text-[0.65rem] font-mono uppercase tracking-widest"
-        style="animation-delay: 0.45s; color: var(--color-ink-faint);"
-      >
-        <span>{pulseStats.totalTopics} active topics</span>
-        <span style="opacity: 0.3;">·</span>
-        <span>{pulseStats.totalMentions} mentions</span>
-        <span style="opacity: 0.3;">·</span>
-        <span>{pulseStats.totalSources} sources</span>
-        <span style="opacity: 0.3;">·</span>
-        <span>Reddit + Hacker News</span>
-      </div>
     </div>
   </section>
 

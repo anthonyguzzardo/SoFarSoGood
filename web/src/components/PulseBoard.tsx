@@ -674,6 +674,54 @@ function recomputeForWindow(
     .sort((a, b) => b.score - a.score);
 }
 
+/* -------------------------------------------------------------------------- */
+/* Reactive narrative lede — updates with time window                        */
+/* -------------------------------------------------------------------------- */
+
+function generateLede(
+  active: PulseTopic[],
+  window: TimeWindow,
+): { lede: string; stats: { topics: number; mentions: number; sources: number } } {
+  const stats = {
+    topics: active.length,
+    mentions: active.reduce((s, t) => s + t.mentions, 0),
+    sources: active.reduce((s, t) => s + t.sources.length, 0),
+  };
+
+  const leader = active[0];
+  const mover = active
+    .filter((t) => t.direction === "up" && t.delta > 0)
+    .sort((a, b) => b.delta - a.delta)[0];
+  const cooling = active
+    .filter((t) => t.direction === "down" && t.delta < 0)
+    .sort((a, b) => a.delta - b.delta)[0];
+
+  const parts: string[] = [];
+
+  if (leader) {
+    const topTitle = leader.sources[0]?.title;
+    if (topTitle) {
+      let truncated = topTitle;
+      if (topTitle.length > 90) {
+        truncated = topTitle.slice(0, 90).replace(/\s+\S*$/, "") + "…";
+      }
+      parts.push(`${leader.label} leading the board — "${truncated}"`);
+    } else {
+      parts.push(`${leader.label} leading the board with ${leader.mentions} mentions across platforms`);
+    }
+  }
+
+  if (mover && mover.slug !== leader?.slug) {
+    parts.push(`${mover.label} surging +${mover.delta}%`);
+  }
+
+  if (cooling) {
+    parts.push(`${cooling.label} cooling off`);
+  }
+
+  return { lede: parts.join(". ") + ".", stats };
+}
+
 export default function PulseBoard({ topics, generatedAt, conceptMap = {} }: Props) {
   const [expanded, setExpanded] = useState<string | null>(null);
   const [showQuiet, setShowQuiet] = useState(false);
@@ -695,6 +743,12 @@ export default function PulseBoard({ topics, generatedAt, conceptMap = {} }: Pro
 
   const activeTopics = windowTopics.filter((t) => t.mentions > 0);
   const quietTopics = windowTopics.filter((t) => t.mentions === 0);
+
+  // Reactive narrative lede — updates when time window changes
+  const { lede, stats } = useMemo(
+    () => generateLede(activeTopics, timeWindow),
+    [activeTopics, timeWindow],
+  );
 
   const biggestMover = activeTopics
     .filter((t) => t.direction === "up" && t.delta > 0)
@@ -747,8 +801,27 @@ export default function PulseBoard({ topics, generatedAt, conceptMap = {} }: Pro
         }
       `}</style>
 
-      {/* Time-window toggle */}
-      <div className="flex items-center justify-end gap-1 px-4 mb-4">
+      {/* Reactive narrative lede + time-window toggle */}
+      <div className="flex items-start justify-between gap-4 px-4 mb-4">
+        <div className="flex-1 min-w-0">
+          <p
+            className="text-sm md:text-base leading-relaxed"
+            style={{ fontFamily: "var(--font-display)", color: "var(--color-ink-dim)" }}
+          >
+            {lede}
+          </p>
+          <div
+            className="mt-2 flex items-center gap-3 text-[0.6rem] font-mono uppercase tracking-widest"
+            style={{ color: "var(--color-ink-faint)" }}
+          >
+            <span>{stats.topics} active</span>
+            <span style={{ opacity: 0.3 }}>·</span>
+            <span>{stats.mentions} mentions</span>
+            <span style={{ opacity: 0.3 }}>·</span>
+            <span>{stats.sources} sources</span>
+          </div>
+        </div>
+        <div className="flex items-center gap-1 shrink-0">
         {(["3d", "7d"] as const).map((w) => (
           <button
             key={w}
@@ -764,6 +837,7 @@ export default function PulseBoard({ topics, generatedAt, conceptMap = {} }: Pro
             {w === "3d" ? "3 days" : "7 days"}
           </button>
         ))}
+        </div>
       </div>
 
       {/* Hero spotlight — #1 topic */}
