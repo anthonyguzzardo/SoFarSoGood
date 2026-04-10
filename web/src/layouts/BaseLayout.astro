@@ -146,6 +146,24 @@ const viewItems = [
       }
     </script>
 
+    {/* Nav click — orbit completes + spring bounce */}
+    <script is:inline>
+      function initNavFire() {
+        var nav = document.querySelector('header nav');
+        if (!nav) return;
+        nav.addEventListener('mousedown', function (e) {
+          var link = e.target.closest('a, button');
+          if (!link) return;
+          link.classList.remove('nav-fired');
+          void link.offsetWidth;
+          link.classList.add('nav-fired');
+          setTimeout(function () { link.classList.remove('nav-fired'); }, 500);
+        });
+      }
+      initNavFire();
+      document.addEventListener('astro:after-swap', initNavFire);
+    </script>
+
     {/* Scroll-reveal observer — watches .reveal elements, adds .revealed on viewport entry. */}
     <script is:inline>
       function initReveals() {

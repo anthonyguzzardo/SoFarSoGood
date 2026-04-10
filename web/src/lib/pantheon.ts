@@ -85,6 +85,28 @@ export function lifespan(t: Titan): string {
   return `${t.born}\u2009\u2013\u2009${t.died ?? "present"}`;
 }
 
+/** Get all titans connected via influences/influenced — resolved to full objects. */
+export function getConnectedTitans(slug: string): { influences: Titan[]; influenced: Titan[] } {
+  const titan = getTitan(slug);
+  if (!titan) return { influences: [], influenced: [] };
+  return {
+    influences: titan.influences.map(getTitan).filter((t): t is Titan => !!t),
+    influenced: titan.influenced.map(getTitan).filter((t): t is Titan => !!t),
+  };
+}
+
+/** Prev/next titan within the same tier, for page navigation. */
+export function titanNavigation(slug: string): { prev: Titan | null; next: Titan | null } {
+  const titan = getTitan(slug);
+  if (!titan) return { prev: null, next: null };
+  const sameTier = allTitans.filter((t) => t.tier === titan.tier);
+  const idx = sameTier.findIndex((t) => t.slug === slug);
+  return {
+    prev: idx > 0 ? sameTier[idx - 1] : null,
+    next: idx < sameTier.length - 1 ? sameTier[idx + 1] : null,
+  };
+}
+
 /** Field badges */
 export function fieldLabel(field: string): string {
   const labels: Record<string, string> = {

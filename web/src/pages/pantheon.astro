@@ -174,7 +174,9 @@ const tierTextColor: Record<TierKey, string> = {
               {/* Header */}
               <div class="mb-4">
                 <h4 class="font-display text-xl md:text-2xl font-semibold tracking-tight">
-                  {t.name}
+                  <a href={`/pantheon/${t.slug}`} class="hover:brightness-125 transition-all">
+                    {t.name}
+                  </a>
                 </h4>
                 <div class="mt-1 flex flex-wrap items-center gap-x-3 gap-y-1">
                   <span class="text-xs font-mono" style="color: var(--color-ink-dim);">
@@ -309,6 +311,16 @@ const tierTextColor: Record<TierKey, string> = {
                   </div>
                 </div>
               )}
+
+              {/* Full profile CTA */}
+              <a
+                href={`/pantheon/${t.slug}`}
+                class="mt-5 pt-4 border-t flex items-center gap-2 text-xs font-mono uppercase tracking-widest transition-all hover:gap-3 group/cta"
+                style={`border-color: ${accent.border}; color: ${textColor};`}
+              >
+                <span>Full profile</span>
+                <span class="transition-transform group-hover/cta:translate-x-1">&rarr;</span>
+              </a>
             </div>
           ))}
         </div>

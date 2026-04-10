@@ -1,0 +1,421 @@
+---
+/**
+ * /pantheon/:slug — individual titan profile page.
+ *
+ * Magazine-style deep profile. The signature equation gets a typographic
+ * moment, power moves are fully expanded, and the influence web becomes
+ * navigable links to other titan pages.
+ */
+
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import {
+  allTitans,
+  getTitan,
+  getConnectedTitans,
+  titanNavigation,
+  lifespan,
+  fieldLabel,
+  tierMeta,
+} from "../../lib/pantheon.ts";
+import type { Titan, TierKey } from "../../lib/pantheon.ts";
+
+export function getStaticPaths() {
+  return allTitans.map((t) => ({ params: { slug: t.slug } }));
+}
+
+const { slug } = Astro.params;
+const titan = getTitan(slug!);
+if (!titan) throw new Error(`Titan not found: ${slug}`);
+
+const { influences, influenced } = getConnectedTitans(slug!);
+const { prev, next } = titanNavigation(slug!);
+const meta = tierMeta[titan.tier];
+const sameTier = allTitans.filter((t) => t.tier === titan.tier && t.slug !== slug);
+
+const tierAccent: Record<TierKey, { border: string; bg: string; glow: string }> = {
+  "untouchable": {
+    border: "rgba(255, 184, 77, 0.35)",
+    bg: "rgba(255, 184, 77, 0.06)",
+    glow: "rgba(255, 184, 77, 0.08)",
+  },
+  "absolute-unit": {
+    border: "rgba(147, 197, 253, 0.3)",
+    bg: "rgba(147, 197, 253, 0.04)",
+    glow: "rgba(147, 197, 253, 0.06)",
+  },
+  "built-different": {
+    border: "rgba(167, 139, 250, 0.3)",
+    bg: "rgba(167, 139, 250, 0.04)",
+    glow: "rgba(167, 139, 250, 0.06)",
+  },
+};
+
+const tierTextColor: Record<TierKey, string> = {
+  "untouchable": "var(--color-accent)",
+  "absolute-unit": "#93c5fd",
+  "built-different": "#a78bfa",
+};
+
+const accent = tierAccent[titan.tier];
+const textColor = tierTextColor[titan.tier];
+---
+
+<BaseLayout
+  title={`${titan.name} — Pantheon`}
+  description={titan.tagline}
+  nav="pantheon"
+>
+  <article>
+    {/* ----------------------------------------------------------------- */}
+    {/* Breadcrumb                                                        */}
+    {/* ----------------------------------------------------------------- */}
+    <a href="/pantheon" class="eyebrow hover:text-white inline-flex items-center gap-1">
+      &larr; Back to Pantheon
+    </a>
+
+    {/* ----------------------------------------------------------------- */}
+    {/* Hero                                                              */}
+    {/* ----------------------------------------------------------------- */}
+    <header class="mt-6 mb-16 max-w-4xl">
+      <div
+        class="hero-line inline-flex items-center gap-2 px-3 py-1.5 rounded-md border text-[0.65rem] font-mono uppercase tracking-widest mb-5"
+        style={`color: ${textColor}; border-color: ${accent.border}; background: ${accent.glow}; animation-delay: 0s;`}
+      >
+        <span>Tier {meta.order}</span>
+        <span style="opacity: 0.4;">&middot;</span>
+        <span>{meta.label}</span>
+      </div>
+
+      <h1
+        class="hero-line font-display text-5xl md:text-7xl font-semibold tracking-tight leading-[1.02]"
+        style="animation-delay: 0.1s;"
+      >
+        {titan.name}
+      </h1>
+
+      {/* Signature equation — the typographic moment */}
+      <div
+        class="hero-line mt-5 font-mono text-2xl md:text-4xl tracking-tight"
+        style={`color: ${textColor}; animation-delay: 0.2s;`}
+      >
+        {titan.signature}
+      </div>
+
+      {/* Meta */}
+      <div
+        class="hero-line mt-6 flex flex-wrap items-center gap-x-4 gap-y-2"
+        style="animation-delay: 0.3s;"
+      >
+        <span class="text-sm font-mono" style="color: var(--color-ink-dim);">
+          {lifespan(titan)}
+        </span>
+        <span class="text-faint">&middot;</span>
+        <span class="text-sm font-mono" style="color: var(--color-ink-dim);">
+          {titan.nationality}
+        </span>
+      </div>
+
+      {/* Field badges */}
+      <div
+        class="hero-line mt-4 flex flex-wrap gap-2"
+        style="animation-delay: 0.35s;"
+      >
+        {titan.fields.map((f) => (
+          <span
+            class="px-2.5 py-1 text-[0.65rem] font-mono uppercase tracking-widest rounded-md border"
+            style={`color: ${textColor}; border-color: ${accent.border}; background: ${accent.glow};`}
+          >
+            {fieldLabel(f)}
+          </span>
+        ))}
+      </div>
+    </header>
+
+    {/* ----------------------------------------------------------------- */}
+    {/* Tagline — the hook                                                */}
+    {/* ----------------------------------------------------------------- */}
+    <section class="mb-16 reveal">
+      <p
+        class="font-display text-xl md:text-2xl leading-relaxed italic max-w-3xl"
+        style="color: var(--color-ink);"
+      >
+        &ldquo;{titan.tagline}&rdquo;
+      </p>
+    </section>
+
+    {/* ----------------------------------------------------------------- */}
+    {/* Quote                                                             */}
+    {/* ----------------------------------------------------------------- */}
+    <section class="mb-16 reveal">
+      <blockquote class="pull-quote max-w-3xl">
+        &ldquo;{titan.quote}&rdquo;
+      </blockquote>
+      <p class="mt-3 pl-5 text-xs font-mono max-w-3xl" style="color: var(--color-ink-faint);">
+        {titan.quoteContext}
+      </p>
+    </section>
+
+    {/* ----------------------------------------------------------------- */}
+    {/* Power Moves — expanded, not collapsible                           */}
+    {/* ----------------------------------------------------------------- */}
+    <section class="mb-16 reveal">
+      <div class="flex items-baseline justify-between mb-6">
+        <h2 class="font-display text-2xl font-semibold">Power Moves</h2>
+        <span class="eyebrow" style={`color: ${textColor};`}>{titan.powerMoves.length} total</span>
+      </div>
+      <ol class="space-y-4 max-w-3xl">
+        {titan.powerMoves.map((move, i) => (
+          <li class="flex gap-4 items-start">
+            <span
+              class="shrink-0 w-8 h-8 rounded-lg flex items-center justify-center text-sm font-mono font-bold mt-0.5"
+              style={`color: ${textColor}; background: ${accent.glow}; border: 1px solid ${accent.border};`}
+            >
+              {i + 1}
+            </span>
+            <p class="text-base leading-relaxed" style="color: var(--color-ink-dim);">
+              {move}
+            </p>
+          </li>
+        ))}
+      </ol>
+    </section>
+
+    {/* ----------------------------------------------------------------- */}
+    {/* Fun Fact                                                          */}
+    {/* ----------------------------------------------------------------- */}
+    <section class="mb-16 reveal">
+      <div
+        class="px-6 py-5 rounded-xl max-w-3xl"
+        style={`background: ${accent.glow}; border: 1px solid ${accent.border};`}
+      >
+        <div class="eyebrow mb-2" style={`color: ${textColor};`}>Fun fact</div>
+        <p class="text-base leading-relaxed" style="color: var(--color-ink-dim);">
+          {titan.funFact}
+        </p>
+      </div>
+    </section>
+
+    {/* ----------------------------------------------------------------- */}
+    {/* Influence Web — the connective tissue                             */}
+    {/* ----------------------------------------------------------------- */}
+    {(influences.length > 0 || influenced.length > 0) && (
+      <section class="mb-16 pt-12 border-t hairline reveal">
+        <h2 class="font-display text-2xl font-semibold mb-8">The Web</h2>
+
+        {influences.length > 0 && (
+          <div class="mb-10">
+            <div class="eyebrow mb-4" style="color: var(--color-ink-dim);">
+              Stood on their shoulders
+            </div>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
+              {influences.map((t) => {
+                const tAccent = tierAccent[t.tier];
+                const tColor = tierTextColor[t.tier];
+                const tMeta = tierMeta[t.tier];
+                return (
+                  <a
+                    href={`/pantheon/${t.slug}`}
+                    class="group flex items-center gap-4 px-4 py-3.5 rounded-lg border transition-all hover:-translate-y-0.5"
+                    style={`border-color: ${tAccent.border}; background: ${tAccent.bg};`}
+                  >
+                    <div
+                      class="shrink-0 w-10 h-10 rounded-lg flex items-center justify-center font-mono text-xs font-bold"
+                      style={`color: ${tColor}; background: ${tAccent.glow}; border: 1px solid ${tAccent.border};`}
+                    >
+                      T{tMeta.order}
+                    </div>
+                    <div class="min-w-0">
+                      <div class="font-display font-semibold text-base leading-snug group-hover:brightness-125 transition-all truncate">
+                        {t.name}
+                      </div>
+                      <div class="text-xs font-mono truncate" style="color: var(--color-ink-faint);">
+                        {t.fields.map(fieldLabel).join(" · ")}
+                      </div>
+                    </div>
+                    <span class="ml-auto text-xs shrink-0 opacity-0 group-hover:opacity-100 transition-opacity" style={`color: ${tColor};`}>
+                      &rarr;
+                    </span>
+                  </a>
+                );
+              })}
+            </div>
+          </div>
+        )}
+
+        {influenced.length > 0 && (
+          <div>
+            <div class="eyebrow mb-4" style="color: var(--color-ink-dim);">
+              Shoulders for others
+            </div>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
+              {influenced.map((t) => {
+                const tAccent = tierAccent[t.tier];
+                const tColor = tierTextColor[t.tier];
+                const tMeta = tierMeta[t.tier];
+                return (
+                  <a
+                    href={`/pantheon/${t.slug}`}
+                    class="group flex items-center gap-4 px-4 py-3.5 rounded-lg border transition-all hover:-translate-y-0.5"
+                    style={`border-color: ${tAccent.border}; background: ${tAccent.bg};`}
+                  >
+                    <div
+                      class="shrink-0 w-10 h-10 rounded-lg flex items-center justify-center font-mono text-xs font-bold"
+                      style={`color: ${tColor}; background: ${tAccent.glow}; border: 1px solid ${tAccent.border};`}
+                    >
+                      T{tMeta.order}
+                    </div>
+                    <div class="min-w-0">
+                      <div class="font-display font-semibold text-base leading-snug group-hover:brightness-125 transition-all truncate">
+                        {t.name}
+                      </div>
+                      <div class="text-xs font-mono truncate" style="color: var(--color-ink-faint);">
+                        {t.fields.map(fieldLabel).join(" · ")}
+                      </div>
+                    </div>
+                    <span class="ml-auto text-xs shrink-0 opacity-0 group-hover:opacity-100 transition-opacity" style={`color: ${tColor};`}>
+                      &rarr;
+                    </span>
+                  </a>
+                );
+              })}
+            </div>
+          </div>
+        )}
+      </section>
+    )}
+
+    {/* ----------------------------------------------------------------- */}
+    {/* Beefs & Rivalries                                                 */}
+    {/* ----------------------------------------------------------------- */}
+    {titan.rivalries.length > 0 && (
+      <section class="mb-16 reveal">
+        <h2 class="font-display text-2xl font-semibold mb-6">Beefs &amp; Rivalries</h2>
+        <div class="space-y-3 max-w-3xl">
+          {titan.rivalries.map((r) => (
+            <div
+              class="px-5 py-4 rounded-lg border text-base leading-relaxed"
+              style={`border-color: ${accent.border}; background: ${accent.bg}; color: var(--color-ink-dim);`}
+            >
+              {r}
+            </div>
+          ))}
+        </div>
+      </section>
+    )}
+
+    {/* ----------------------------------------------------------------- */}
+    {/* Media — bigger gallery                                            */}
+    {/* ----------------------------------------------------------------- */}
+    {titan.media.length > 0 && (
+      <section class="mb-16 reveal">
+        <h2 class="font-display text-2xl font-semibold mb-6">Watch</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 max-w-3xl">
+          {titan.media.map((m) => (
+            <a
+              href={`https://www.youtube.com/watch?v=${m.id}`}
+              target="_blank"
+              rel="noopener"
+              class="group rounded-xl border overflow-hidden transition-all hover:-translate-y-1 hover:shadow-lg"
+              style={`border-color: ${accent.border}; background: ${accent.bg};`}
+            >
+              <div class="relative">
+                <img
+                  src={`https://img.youtube.com/vi/${m.id}/hqdefault.jpg`}
+                  alt=""
+                  class="w-full aspect-video object-cover"
+                  loading="lazy"
+                />
+                <div class="absolute inset-0 flex items-center justify-center bg-black/30 opacity-0 group-hover:opacity-100 transition-opacity">
+                  <div
+                    class="w-12 h-12 rounded-full flex items-center justify-center"
+                    style={`background: ${textColor}; color: var(--color-paper);`}
+                  >
+                    <span class="text-lg ml-0.5">&#9654;</span>
+                  </div>
+                </div>
+              </div>
+              <div class="px-4 py-3">
+                <p class="text-sm font-medium leading-snug group-hover:brightness-125 transition-all" style="color: var(--color-ink-dim);">
+                  {m.title}
+                </p>
+              </div>
+            </a>
+          ))}
+        </div>
+      </section>
+    )}
+
+    {/* ----------------------------------------------------------------- */}
+    {/* More from this tier                                               */}
+    {/* ----------------------------------------------------------------- */}
+    {sameTier.length > 0 && (
+      <section class="mb-16 pt-12 border-t hairline reveal">
+        <div class="flex items-baseline justify-between mb-6">
+          <h2 class="font-display text-2xl font-semibold">
+            More <span style={`color: ${textColor};`}>{meta.label}</span>
+          </h2>
+          <a href="/pantheon" class="eyebrow hover:text-accent transition-colors">
+            Full roster &rarr;
+          </a>
+        </div>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
+          {sameTier.map((t) => (
+            <a
+              href={`/pantheon/${t.slug}`}
+              class="group p-4 rounded-lg border transition-all hover:-translate-y-0.5"
+              style={`border-color: ${accent.border}; background: ${accent.bg};`}
+            >
+              <div class="font-display text-lg font-semibold leading-snug group-hover:brightness-125 transition-all">
+                {t.name}
+              </div>
+              <div class="mt-1 text-xs font-mono" style="color: var(--color-ink-faint);">
+                {lifespan(t)} &middot; {t.nationality}
+              </div>
+              <p class="mt-2 text-sm leading-relaxed line-clamp-2" style="color: var(--color-ink-dim);">
+                {t.tagline}
+              </p>
+            </a>
+          ))}
+        </div>
+      </section>
+    )}
+
+    {/* ----------------------------------------------------------------- */}
+    {/* Prev / Next navigation                                           */}
+    {/* ----------------------------------------------------------------- */}
+    <nav
+      class="flex items-stretch gap-4 pt-12 border-t hairline reveal"
+      style="margin-bottom: 3rem;"
+    >
+      {prev ? (
+        <a
+          href={`/pantheon/${prev.slug}`}
+          class="group flex-1 p-5 rounded-lg border transition-all hover:-translate-y-0.5"
+          style={`border-color: ${accent.border}; background: ${accent.bg};`}
+        >
+          <div class="eyebrow mb-1" style="color: var(--color-ink-faint);">&larr; Previous</div>
+          <div class="font-display text-lg font-semibold group-hover:brightness-125 transition-all">
+            {prev.name}
+          </div>
+        </a>
+      ) : (
+        <div class="flex-1" />
+      )}
+
+      {next ? (
+        <a
+          href={`/pantheon/${next.slug}`}
+          class="group flex-1 p-5 rounded-lg border text-right transition-all hover:-translate-y-0.5"
+          style={`border-color: ${accent.border}; background: ${accent.bg};`}
+        >
+          <div class="eyebrow mb-1" style="color: var(--color-ink-faint);">Next &rarr;</div>
+          <div class="font-display text-lg font-semibold group-hover:brightness-125 transition-all">
+            {next.name}
+          </div>
+        </a>
+      ) : (
+        <div class="flex-1" />
+      )}
+    </nav>
+  </article>
+</BaseLayout>

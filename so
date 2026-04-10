@@ -1,9 +1,9 @@
 #!/bin/bash
 # Quick commit and push for niac-atlas
-# Usage: ./b "commit message"
+# Usage: ./so "commit message"
 
 if [ -z "$1" ]; then
-  echo "Usage: ./n \"commit message\""
+  echo "Usage: ./so \"commit message\""
   exit 1
 fi
 
