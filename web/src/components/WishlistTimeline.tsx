@@ -11,6 +11,7 @@
  */
 
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
+import { createPortal } from "react-dom";
 
 interface Entry {
   id: string;
@@ -72,6 +73,61 @@ function importanceRadius(importance: string): number {
 function displayYear(year: number): string {
   if (year < 0) return `${Math.abs(year)} BCE`;
   return String(year);
+}
+
+/** Tooltip rendered via portal — positioned using the SVG's screen rect. */
+function TimelineTooltip({
+  tooltip,
+  svgEl,
+  svgWidth,
+  fieldColors,
+}: {
+  tooltip: { x: number; y: number; entry: Entry };
+  svgEl: SVGSVGElement;
+  svgWidth: number;
+  fieldColors: Record<string, string>;
+}) {
+  const rect = svgEl.getBoundingClientRect();
+  // Convert SVG-space x% to screen pixels
+  const xPct = tooltip.x / 100;
+  const screenX = rect.left + xPct * rect.width + window.scrollX;
+  const screenY = rect.top + window.scrollY;
+
+  return (
+    <div
+      className="pointer-events-none px-3 py-2 rounded text-xs"
+      style={{
+        position: "absolute",
+        left: screenX,
+        top: screenY - 8,
+        transform: "translateX(-50%) translateY(-100%)",
+        zIndex: 9999,
+        background: "var(--color-paper-raised)",
+        border: "1px solid var(--color-paper-edge)",
+        fontFamily: "var(--font-mono)",
+        maxWidth: "280px",
+        whiteSpace: "normal",
+        wordBreak: "break-word",
+      }}
+    >
+      <div
+        className="font-semibold mb-0.5 leading-snug"
+        style={{ fontFamily: "var(--font-display)", fontSize: "0.8125rem" }}
+      >
+        {tooltip.entry.title}
+      </div>
+      <div style={{ color: "var(--color-ink-dim)" }}>
+        {tooltip.entry.author} · {displayYear(tooltip.entry.year)}
+      </div>
+      <div
+        className="mt-0.5"
+        style={{ color: fieldColors[tooltip.entry.field] ?? "var(--color-ink-dim)" }}
+      >
+        {tooltip.entry.field}
+        {tooltip.entry.importance === "foundational" && " · foundational"}
+      </div>
+    </div>
+  );
 }
 
 export default function WishlistTimeline({
@@ -314,39 +370,15 @@ export default function WishlistTimeline({
         })}
       </svg>
 
-      {/* Tooltip — pinned above chart, slides horizontally with transition */}
-      {tooltip && (
-        <div
-          className="absolute pointer-events-none px-3 py-2 rounded text-xs z-20"
-          style={{
-            left: `${Math.min(Math.max(tooltip.x, 10), 80)}%`,
-            top: 0,
-            transform: "translateX(-50%) translateY(-100%)",
-            transition: "left 0.12s ease-out",
-            background: "var(--color-paper-raised)",
-            border: "1px solid var(--color-paper-edge)",
-            fontFamily: "var(--font-mono)",
-            maxWidth: "260px",
-            whiteSpace: "nowrap",
-          }}
-        >
-          <div
-            className="font-semibold mb-0.5 leading-snug"
-            style={{ fontFamily: "var(--font-display)", fontSize: "0.8125rem" }}
-          >
-            {tooltip.entry.title}
-          </div>
-          <div style={{ color: "var(--color-ink-dim)" }}>
-            {tooltip.entry.author} · {displayYear(tooltip.entry.year)}
-          </div>
-          <div
-            className="mt-0.5"
-            style={{ color: fieldColors[tooltip.entry.field] ?? "var(--color-ink-dim)" }}
-          >
-            {tooltip.entry.field}
-            {tooltip.entry.importance === "foundational" && " · foundational"}
-          </div>
-        </div>
+      {/* Tooltip — portaled to body so it's never clipped by overflow containers */}
+      {tooltip && svgRef.current && createPortal(
+        <TimelineTooltip
+          tooltip={tooltip}
+          svgEl={svgRef.current}
+          svgWidth={WIDTH}
+          fieldColors={fieldColors}
+        />,
+        document.body,
       )}
 
       {/* Field legend */}
