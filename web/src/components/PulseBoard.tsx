@@ -6,12 +6,20 @@
  * (Reddit threads, HN posts) driving the trend.
  */
 
-import { useState, useEffect, useRef, useCallback } from "react";
+import { useState, useEffect, useRef, useCallback, useMemo } from "react";
 import type { PulseTopic, PulseSource } from "../lib/pulse.ts";
+
+type TimeWindow = "3d" | "7d";
+
+interface ConceptInfo {
+  slug: string;
+  title: string;
+}
 
 interface Props {
   topics: PulseTopic[];
   generatedAt: string;
+  conceptMap?: Record<string, ConceptInfo>;
 }
 
 /* -------------------------------------------------------------------------- */
@@ -208,10 +216,9 @@ function HeroSpotlight({
 /* Sparkline — 7-day activity chart from source timestamps                    */
 /* -------------------------------------------------------------------------- */
 
-function Sparkline({ sources, id }: { sources: PulseSource[]; id: string }) {
+function Sparkline({ sources, id, days = 7 }: { sources: PulseSource[]; id: string; days?: number }) {
   const now = Date.now();
   const dayMs = 86400000;
-  const days = 7;
 
   // Bucket sources into daily bins by platform
   const reddit = new Array(days).fill(0);
@@ -429,6 +436,9 @@ function TopicRow({
   onCopyLink,
   copied,
   rowRef,
+  sparklineDays = 7,
+  allSources,
+  conceptMap = {},
 }: {
   topic: PulseTopic;
   rank: number;
@@ -437,6 +447,9 @@ function TopicRow({
   onCopyLink: () => void;
   copied: boolean;
   rowRef: (el: HTMLDivElement | null) => void;
+  sparklineDays?: number;
+  allSources?: PulseSource[];
+  conceptMap?: Record<string, ConceptInfo>;
 }) {
   const topSource = topic.sources[0];
 
@@ -489,7 +502,7 @@ function TopicRow({
 
           {/* Activity sparkline — 7-day heartbeat */}
           <div className="hidden sm:flex items-center shrink-0">
-            <Sparkline sources={topic.sources} id={topic.slug} />
+            <Sparkline sources={allSources ?? topic.sources} id={topic.slug} days={sparklineDays} />
           </div>
 
           {/* Score */}
@@ -539,30 +552,37 @@ function TopicRow({
             ))}
           </div>
           <div className="ml-10 mt-3 flex items-center gap-2 flex-wrap">
-            {topic.relatedConceptSlugs.length > 0 && (
-              <>
-                <span
-                  className="text-[0.6rem] font-mono uppercase tracking-widest"
-                  style={{ color: "var(--color-ink-faint)" }}
-                >
-                  Related in the atlas:
-                </span>
-                {topic.relatedConceptSlugs.map((slug) => (
-                  <a
-                    key={slug}
-                    href={`/concept/${slug}`}
-                    className="text-xs font-mono px-2 py-1 rounded border transition-colors hover:border-amber-400/40"
-                    style={{
-                      color: "var(--color-accent)",
-                      borderColor: "var(--color-paper-edge)",
-                      background: "rgba(255,184,77,0.06)",
-                    }}
+            {topic.relatedConceptSlugs.length > 0 && (() => {
+              const resolved = topic.relatedConceptSlugs
+                .map((s) => conceptMap[s])
+                .filter((c): c is ConceptInfo => !!c);
+              if (resolved.length === 0) return null;
+              return (
+                <>
+                  <span
+                    className="text-[0.6rem] font-mono uppercase tracking-widest"
+                    style={{ color: "var(--color-ink-faint)" }}
                   >
-                    {slug}
-                  </a>
-                ))}
-              </>
-            )}
+                    In the atlas:
+                  </span>
+                  {resolved.map((c) => (
+                    <a
+                      key={c.slug}
+                      href={`/concept/${c.slug}`}
+                      className="text-xs px-2 py-1 rounded border transition-colors hover:border-amber-400/40"
+                      style={{
+                        color: "var(--color-accent)",
+                        borderColor: "var(--color-paper-edge)",
+                        background: "rgba(255,184,77,0.06)",
+                        fontFamily: "var(--font-display)",
+                      }}
+                    >
+                      {c.title.length > 50 ? c.title.slice(0, 50).replace(/\s+\S*$/, "") + "…" : c.title}
+                    </a>
+                  ))}
+                </>
+              );
+            })()}
             <button
               onClick={(e) => { e.stopPropagation(); onCopyLink(); }}
               className="ml-auto text-[0.6rem] font-mono uppercase tracking-widest px-2 py-1 rounded border transition-all hover:border-amber-400/40"
@@ -586,14 +606,95 @@ function TopicRow({
 /* Main component                                                             */
 /* -------------------------------------------------------------------------- */
 
-export default function PulseBoard({ topics, generatedAt }: Props) {
+/* -------------------------------------------------------------------------- */
+/* Time-window recompute — filter sources, re-score, re-rank client-side     */
+/* -------------------------------------------------------------------------- */
+
+function recomputeForWindow(
+  topics: PulseTopic[],
+  window: TimeWindow,
+): PulseTopic[] {
+  if (window === "7d") return topics;
+
+  const now = Date.now();
+  const windowMs = 3 * 86400000; // 3 days
+  const cutoff = now - windowMs;
+
+  return topics
+    .map((t) => {
+      const filtered = t.sources.filter(
+        (s) => new Date(s.publishedAt).getTime() >= cutoff,
+      );
+      if (filtered.length === 0 && t.mentions > 0) {
+        // Topic has activity but none in this window — still show it with 0
+        return { ...t, sources: filtered, score: 0, mentions: 0, delta: -100, direction: "down" as const };
+      }
+      if (filtered.length === 0) return t; // quiet topic, pass through
+
+      // Re-score: Reddit 1x, HN 1.5x, YouTube by reddit score (already split)
+      let score = 0;
+      for (const s of filtered) {
+        if (s.platform === "hackernews") score += s.score * 1.5;
+        else score += s.score;
+      }
+      score = Math.round(score);
+
+      // Delta: compare first half vs second half of the 3-day window
+      const midpoint = cutoff + windowMs / 2;
+      let recentScore = 0;
+      let olderScore = 0;
+      for (const s of filtered) {
+        const ts = new Date(s.publishedAt).getTime();
+        if (ts >= midpoint) recentScore += s.score;
+        else olderScore += s.score;
+      }
+      // Normalize (both halves are 1.5 days)
+      let delta: number;
+      let direction: "up" | "down" | "steady";
+      if (olderScore === 0 && recentScore === 0) {
+        delta = 0;
+        direction = "steady";
+      } else if (olderScore === 0) {
+        delta = 200;
+        direction = "up";
+      } else {
+        delta = Math.round(((recentScore - olderScore) / olderScore) * 100);
+        direction = delta > 15 ? "up" : delta < -15 ? "down" : "steady";
+      }
+
+      return {
+        ...t,
+        sources: filtered,
+        score,
+        mentions: filtered.length,
+        delta,
+        direction,
+      };
+    })
+    .sort((a, b) => b.score - a.score);
+}
+
+export default function PulseBoard({ topics, generatedAt, conceptMap = {} }: Props) {
   const [expanded, setExpanded] = useState<string | null>(null);
   const [showQuiet, setShowQuiet] = useState(false);
   const [copiedSlug, setCopiedSlug] = useState<string | null>(null);
+  const [timeWindow, setTimeWindow] = useState<TimeWindow>("7d");
   const rowRefs = useRef<Map<string, HTMLDivElement>>(new Map());
 
-  const activeTopics = topics.filter((t) => t.mentions > 0);
-  const quietTopics = topics.filter((t) => t.mentions === 0);
+  // Original sources map for sparklines (always show full range)
+  const originalSourcesMap = useMemo(() => {
+    const m = new Map<string, PulseSource[]>();
+    for (const t of topics) m.set(t.slug, t.sources);
+    return m;
+  }, [topics]);
+
+  const windowTopics = useMemo(
+    () => recomputeForWindow(topics, timeWindow),
+    [topics, timeWindow],
+  );
+
+  const activeTopics = windowTopics.filter((t) => t.mentions > 0);
+  const quietTopics = windowTopics.filter((t) => t.mentions === 0);
 
   const biggestMover = activeTopics
     .filter((t) => t.direction === "up" && t.delta > 0)
@@ -646,6 +747,25 @@ export default function PulseBoard({ topics, generatedAt }: Props) {
         }
       `}</style>
 
+      {/* Time-window toggle */}
+      <div className="flex items-center justify-end gap-1 px-4 mb-4">
+        {(["3d", "7d"] as const).map((w) => (
+          <button
+            key={w}
+            onClick={() => setTimeWindow(w)}
+            className="text-[0.65rem] font-mono uppercase tracking-widest px-3 py-1.5 rounded-md transition-all"
+            style={{
+              background: timeWindow === w ? "rgba(255,184,77,0.12)" : "transparent",
+              color: timeWindow === w ? "var(--color-accent)" : "var(--color-ink-faint)",
+              border: timeWindow === w ? "1px solid rgba(255,184,77,0.25)" : "1px solid transparent",
+              cursor: "pointer",
+            }}
+          >
+            {w === "3d" ? "3 days" : "7 days"}
+          </button>
+        ))}
+      </div>
+
       {/* Hero spotlight — #1 topic */}
       {heroTopic && (
         <div
@@ -667,30 +787,37 @@ export default function PulseBoard({ topics, generatedAt }: Props) {
                 ))}
               </div>
               <div className="mt-3 flex items-center gap-2 flex-wrap">
-                {heroTopic.relatedConceptSlugs.length > 0 && (
+                {heroTopic.relatedConceptSlugs.length > 0 && (() => {
+                  const resolved = heroTopic.relatedConceptSlugs
+                    .map((s) => conceptMap[s])
+                    .filter((c): c is ConceptInfo => !!c);
+                  if (resolved.length === 0) return null;
+                  return (
                   <>
                     <span
                       className="text-[0.6rem] font-mono uppercase tracking-widest"
                       style={{ color: "var(--color-ink-faint)" }}
                     >
-                      Related in the atlas:
+                      In the atlas:
                     </span>
-                    {heroTopic.relatedConceptSlugs.map((slug) => (
+                    {resolved.map((c) => (
                       <a
-                        key={slug}
-                        href={`/concept/${slug}`}
-                        className="text-xs font-mono px-2 py-1 rounded border transition-colors hover:border-amber-400/40"
+                        key={c.slug}
+                        href={`/concept/${c.slug}`}
+                        className="text-xs px-2 py-1 rounded border transition-colors hover:border-amber-400/40"
                         style={{
                           color: "var(--color-accent)",
                           borderColor: "var(--color-paper-edge)",
                           background: "rgba(255,184,77,0.06)",
+                          fontFamily: "var(--font-display)",
                         }}
                       >
-                        {slug}
+                        {c.title.length > 50 ? c.title.slice(0, 50).replace(/\s+\S*$/, "") + "…" : c.title}
                       </a>
                     ))}
                   </>
-                )}
+                  );
+                })()}
                 <button
                   onClick={(e) => {
                     e.stopPropagation();
@@ -770,7 +897,7 @@ export default function PulseBoard({ topics, generatedAt }: Props) {
             <span className="w-6 text-right">#</span>
             <span className="w-4" />
             <span className="flex-1">Topic</span>
-            <span className="w-[72px] hidden sm:block text-right">7-day</span>
+            <span className="w-[72px] hidden sm:block text-right">{timeWindow === "3d" ? "3-day" : "7-day"}</span>
             <span className="w-16 text-right">Score</span>
             <span className="w-14 text-right">Change</span>
             <span className="w-8 text-right hidden md:block">Hits</span>
@@ -795,6 +922,9 @@ export default function PulseBoard({ topics, generatedAt }: Props) {
           onToggle={() => toggle(topic.slug)}
           onCopyLink={() => copyLink(topic.slug)}
           copied={copiedSlug === topic.slug}
+          sparklineDays={timeWindow === "3d" ? 3 : 7}
+          allSources={originalSourcesMap.get(topic.slug)}
+          conceptMap={conceptMap}
           rowRef={(el) => {
             if (el) rowRefs.current.set(topic.slug, el);
           }}
@@ -816,7 +946,7 @@ export default function PulseBoard({ topics, generatedAt }: Props) {
             }}
           >
             <span>
-              {quietTopics.length} topics quiet this week
+              {quietTopics.length} topics quiet {timeWindow === "3d" ? "last 3 days" : "this week"}
             </span>
             <span
               className="text-xs transition-transform"

@@ -55,6 +55,20 @@ for (const t of activePulseTopics) {
 
 const risingConcepts = [...risingConceptSet.values()].slice(0, 6);
 
+/* Build a concept resolution map for PulseBoard's expanded row links.
+   Maps short slugs → { fullSlug, title } so the React island can render
+   correct links and human-readable labels. */
+const conceptMap: Record<string, { slug: string; title: string }> = {};
+for (const t of allPulseTopics) {
+  for (const shortSlug of t.relatedConceptSlugs) {
+    if (conceptMap[shortSlug]) continue;
+    const concept = findConceptByShortSlug(shortSlug);
+    if (concept) {
+      conceptMap[shortSlug] = { slug: concept.slug, title: concept.title };
+    }
+  }
+}
+
 const categoryLabel: Record<string, string> = {
   propulsion: "Propulsion",
   telescope: "Optics",
@@ -164,6 +178,7 @@ const lede = narrativeLede();
       <PulseBoard
         topics={allPulseTopics}
         generatedAt={generatedAt}
+        conceptMap={conceptMap}
         client:load
       />
     </div>
