@@ -548,20 +548,35 @@
   }
 </style>
 
-<script>
-  // Assign randomized delays and positions so 100+ equations stagger naturally.
-  // Every word shares ONE cycle duration and is only visible during 5% of it.
-  // The stagger delay offsets each word evenly, keeping ~4-5 visible at any time
-  // — including across infinite loop iterations (delay offsets persist).
-  const words = document.querySelectorAll('.drift-word');
-  const total = words.length;
-  const cycleDuration = total * 2.5; // full cycle all words share
-  words.forEach((el, i) => {
-    const htmlEl = el as HTMLElement;
-    const delay = (i * cycleDuration / total) + (Math.random() * 0.8);
-    const x = Math.random() * 75; // 0-75% from left — wider spread to prevent overlap
-    htmlEl.style.setProperty('--drift-delay', `${delay.toFixed(1)}s`);
-    htmlEl.style.setProperty('--drift-speed', `${cycleDuration.toFixed(1)}s`);
-    htmlEl.style.setProperty('--drift-x', `${x.toFixed(0)}%`);
-  });
+<script is:inline>
+  // Assign randomized delays/positions AND force-restart animations.
+  // Must handle Astro View Transitions: when navigating away and back,
+  // the DOM is swapped but CSS animations are stale/completed, causing
+  // equations to bunch together. We fix this by stripping the animation,
+  // forcing a reflow, then re-applying it with fresh delays.
+  function initFallingEquations() {
+    var words = document.querySelectorAll('.drift-word');
+    if (!words.length) return;
+    var total = words.length;
+    var cycleDuration = total * 2.5;
+    words.forEach(function (el, i) {
+      var htmlEl = el;
+      // 1. Kill the current (possibly stale) animation
+      htmlEl.style.animation = 'none';
+    });
+    // 2. Force reflow so the browser registers the removal
+    document.body.offsetHeight;
+    words.forEach(function (el, i) {
+      var htmlEl = el;
+      var delay = (i * cycleDuration / total) + (Math.random() * 0.8);
+      var x = Math.random() * 75;
+      // 3. Re-apply animation with fresh stagger values
+      htmlEl.style.setProperty('--drift-delay', delay.toFixed(1) + 's');
+      htmlEl.style.setProperty('--drift-speed', cycleDuration.toFixed(1) + 's');
+      htmlEl.style.setProperty('--drift-x', x.toFixed(0) + '%');
+      htmlEl.style.animation = '';
+    });
+  }
+  initFallingEquations();
+  document.addEventListener('astro:after-swap', initFallingEquations);
 </script>

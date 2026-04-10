@@ -7,8 +7,10 @@ dist
 .astro
 .wrangler
 
-# Keep raw API responses out of git but track normalized output
+# Keep raw API responses and cache out of git but track normalized output
 data/raw/
+data/.cache/
+data/archive/
 
 
 # opinionated

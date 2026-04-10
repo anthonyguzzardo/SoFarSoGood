@@ -1,0 +1,239 @@
+---
+/**
+ * /graveyard — The Negative Results Archive.
+ *
+ * Experiments that didn't work, theories that were wrong, and fraud
+ * that got caught. Framed not as failure but as explored territory —
+ * a map that says "we looked here, look elsewhere."
+ *
+ * Inspired by the unified vision doc's argument that negative results
+ * are one of the highest-value, lowest-cost things to make searchable.
+ */
+
+import BaseLayout from "../layouts/BaseLayout.astro";
+import {
+  allNegativeResults,
+  graveyardStats,
+  statusLabel,
+  statusColor,
+} from "../lib/negative-results.ts";
+
+const REPO = "anthonyguzzardo/SoFarSoGood";
+
+const byField = new Map<string, typeof allNegativeResults>();
+for (const r of allNegativeResults) {
+  const list = byField.get(r.field) ?? [];
+  list.push(r);
+  byField.set(r.field, list);
+}
+const fields = [...byField.entries()].sort((a, b) => b[1].length - a[1].length);
+---
+
+<BaseLayout
+  title="The Graveyard — So Far So Good"
+  description={`${graveyardStats.total} experiments that didn't work, theories that were wrong, and why that matters. A map of explored territory.`}
+  nav="graveyard"
+>
+  {/* ----------------------------------------------------------- */}
+  {/* Header                                                      */}
+  {/* ----------------------------------------------------------- */}
+  <section class="pt-4 md:pt-8 pb-12">
+    <div class="max-w-4xl">
+      <p
+        class="hero-line text-accent font-mono text-sm uppercase tracking-[0.2em]"
+        style="animation-delay: 0s"
+      >
+        The Graveyard
+      </p>
+
+      <h2
+        class="hero-line mt-4 font-display text-3xl md:text-5xl font-semibold tracking-tight leading-[1.08]"
+        style="animation-delay: 0.15s"
+      >
+        We looked here. Look elsewhere.
+      </h2>
+
+      <p
+        class="hero-line mt-4 font-display text-lg md:text-xl leading-relaxed max-w-2xl"
+        style="animation-delay: 0.3s; color: var(--color-ink-dim);"
+      >
+        Experiments that failed. Theories that were wrong. Fraud that got caught.
+        This isn't a wall of shame — it's a map of explored territory. Every
+        entry here saved someone from repeating a mistake.
+      </p>
+    </div>
+  </section>
+
+  {/* ----------------------------------------------------------- */}
+  {/* Stats                                                       */}
+  {/* ----------------------------------------------------------- */}
+  <section class="mb-16 reveal">
+    <div
+      class="grid grid-cols-2 md:grid-cols-4 gap-4 p-5 rounded-xl border"
+      style="background: var(--color-paper-raised); border-color: var(--color-paper-edge);"
+    >
+      <div class="text-center">
+        <div class="font-display text-2xl font-semibold tracking-tight" style="color: var(--color-accent);">
+          {graveyardStats.total}
+        </div>
+        <div class="eyebrow mt-1">entries</div>
+      </div>
+      <div class="text-center">
+        <div class="font-display text-2xl font-semibold tracking-tight" style="color: #f87171;">
+          {graveyardStats.debunked}
+        </div>
+        <div class="eyebrow mt-1">debunked</div>
+      </div>
+      <div class="text-center">
+        <div class="font-display text-2xl font-semibold tracking-tight" style="color: #60a5fa;">
+          {graveyardStats.superseded}
+        </div>
+        <div class="eyebrow mt-1">superseded</div>
+      </div>
+      <div class="text-center">
+        <div class="font-display text-2xl font-semibold tracking-tight" style="color: #a78bfa;">
+          {graveyardStats.retracted}
+        </div>
+        <div class="eyebrow mt-1">retracted</div>
+      </div>
+    </div>
+  </section>
+
+  {/* ----------------------------------------------------------- */}
+  {/* The math — why this matters                                 */}
+  {/* ----------------------------------------------------------- */}
+  <section class="mb-16 reveal">
+    <div
+      class="px-6 py-5 rounded-lg border text-sm leading-relaxed"
+      style="background: rgba(255, 184, 77, 0.03); border-color: rgba(255, 184, 77, 0.12); color: var(--color-ink-dim);"
+    >
+      <span class="font-mono text-accent text-xs uppercase tracking-widest">Why this exists</span>
+      <span class="mx-2 text-faint">&middot;</span>
+      Over <strong class="text-accent">$28 billion annually</strong> is lost to irreproducible
+      research in the U.S. alone. Negative results go unpublished. Duplication of effort is rampant.
+      If even 10% of failed experiments were searchable, conservative estimates suggest it would save
+      3&ndash;5 years of redundant work per research domain per decade. This archive is a start.
+    </div>
+  </section>
+
+  {/* ----------------------------------------------------------- */}
+  {/* Entries                                                     */}
+  {/* ----------------------------------------------------------- */}
+  <section class="mb-20">
+    <div class="space-y-8">
+      {allNegativeResults
+        .sort((a, b) => a.year - b.year)
+        .map((r) => {
+          const color = statusColor(r.status);
+          return (
+            <div
+              class="p-6 md:p-8 rounded-xl border transition-all"
+              style={`background: var(--color-paper-raised); border-color: var(--color-paper-edge);`}
+              id={r.id}
+            >
+              {/* Header row */}
+              <div class="flex flex-wrap items-start justify-between gap-3 mb-4">
+                <div>
+                  <div class="eyebrow mb-2">
+                    {r.year} &middot; {r.researchers}
+                    <span class="mx-2 text-faint">&middot;</span>
+                    {r.field}
+                  </div>
+                  <h3 class="font-display text-xl md:text-2xl font-semibold tracking-tight">
+                    {r.title}
+                  </h3>
+                </div>
+                <span
+                  class="shrink-0 px-2.5 py-1 rounded text-xs font-mono uppercase tracking-wider border"
+                  style={`color: ${color}; border-color: ${color}40;`}
+                >
+                  {statusLabel(r.status)}
+                </span>
+              </div>
+
+              {/* Hypothesis */}
+              <div class="mb-4">
+                <div class="text-[0.6rem] font-mono uppercase tracking-widest mb-1.5" style="color: var(--color-accent);">
+                  The hypothesis
+                </div>
+                <p class="text-base leading-relaxed" style="color: var(--color-ink-dim);">
+                  {r.hypothesis}
+                </p>
+              </div>
+
+              {/* What happened */}
+              <div class="mb-4">
+                <div class="text-[0.6rem] font-mono uppercase tracking-widest mb-1.5" style={`color: ${color};`}>
+                  What happened
+                </div>
+                <p class="text-base leading-relaxed" style="color: var(--color-ink-dim);">
+                  {r.whatHappened}
+                </p>
+              </div>
+
+              {/* Why it matters */}
+              <div
+                class="px-5 py-4 rounded-lg"
+                style={`background: ${color}08; border: 1px solid ${color}20;`}
+              >
+                <div class="text-[0.6rem] font-mono uppercase tracking-widest mb-1.5" style={`color: ${color};`}>
+                  Why it matters
+                </div>
+                <p class="text-sm leading-relaxed" style="color: var(--color-ink-dim);">
+                  {r.whyItMatters}
+                </p>
+              </div>
+            </div>
+          );
+        })}
+    </div>
+  </section>
+
+  {/* ----------------------------------------------------------- */}
+  {/* Contribute CTA                                              */}
+  {/* ----------------------------------------------------------- */}
+  <section class="mb-16 reveal">
+    <div
+      class="p-8 rounded-lg border hairline"
+      style="background: var(--color-paper-raised);"
+    >
+      <div class="mb-6">
+        <div class="eyebrow text-accent mb-2">Help build The Graveyard</div>
+        <h3 class="font-display text-2xl font-semibold">
+          Know an experiment that didn't work?
+        </h3>
+        <p class="mt-2 text-sm text-dim max-w-xl leading-relaxed">
+          Famous failures, retracted papers, superseded theories, inconclusive
+          results — if it taught the field something, it belongs here. Submit
+          a pre-filled GitHub issue and we'll add it.
+        </p>
+      </div>
+      <a
+        href={`https://github.com/${REPO}/issues/new?title=${encodeURIComponent("Graveyard entry: [title]")}&body=${encodeURIComponent("**Title:** \n**Researchers:** \n**Year:** \n**Field:** (physics / chemistry / biology / astronomy / psychology / medicine / other)\n**Status:** (debunked / inconclusive / superseded / retracted)\n\n**The hypothesis:**\n\n**What happened:**\n\n**Why it matters:**\n")}&labels=graveyard`}
+        target="_blank"
+        rel="noopener"
+        class="px-4 py-2 text-sm font-mono rounded border hairline hover:border-amber-400 hover:text-accent transition"
+      >
+        Submit a negative result &rarr;
+      </a>
+    </div>
+  </section>
+
+  {/* ----------------------------------------------------------- */}
+  {/* Closing                                                     */}
+  {/* ----------------------------------------------------------- */}
+  <section class="mb-12 pt-12 border-t hairline reveal">
+    <blockquote class="pull-quote max-w-2xl">
+      "An experiment is never a failure solely because it fails to achieve
+      predicted results. An experiment is a failure only when it also fails
+      adequately to test the hypothesis in question, when the data it
+      produces don't prove anything one way or another."
+    </blockquote>
+    <p class="mt-4 eyebrow">— Robert M. Pirsig, Zen and the Art of Motorcycle Maintenance</p>
+    <p class="mt-8 text-base text-dim leading-relaxed max-w-2xl">
+      Science advances not just by discovering what's true, but by mapping
+      what isn't. Every entry here is a signpost that says: we tried this
+      road, it doesn't go where you think. Go around. So far so good.
+    </p>
+  </section>
+</BaseLayout>

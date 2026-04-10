@@ -1,5 +1,5 @@
 /**
- * Fetch trending data from Reddit + Hacker News for topics in the atlas,
+ * Fetch trending data from Reddit + Hacker News + ArXiv for topics in the atlas,
  * compute trending scores, and write data/pulse.json.
  *
  * Run with:  node --experimental-strip-types ingestion/fetch-pulse.ts
@@ -17,20 +17,124 @@
  * ArXiv (export.arxiv.org) are all public.
  */
 
-import { writeFile, readFile, mkdir } from "node:fs/promises";
+import { writeFile, readFile, mkdir, readdir, rename, unlink, stat } from "node:fs/promises";
 import { join, dirname } from "node:path";
 import { fileURLToPath } from "node:url";
 
 const HERE = dirname(fileURLToPath(import.meta.url));
 const DATA_DIR = join(HERE, "..", "data");
+const CACHE_DIR = join(DATA_DIR, ".cache");
+const ARCHIVE_DIR = join(DATA_DIR, "archive");
 const OUT_FILE = join(DATA_DIR, "pulse.json");
 const PREV_FILE = join(DATA_DIR, "pulse-prev.json");
+const META_FILE = join(DATA_DIR, "pulse-meta.json");
+
+/* -------------------------------------------------------------------------- */
+/* Utilities                                                                   */
+/* -------------------------------------------------------------------------- */
+
+function sleep(ms: number): Promise<void> {
+  return new Promise((resolve) => setTimeout(resolve, ms));
+}
+
+/** Retry a function with exponential backoff. */
+async function withRetry<T>(
+  fn: () => Promise<T>,
+  { retries = 2, baseDelay = 1000, label = "" } = {},
+): Promise<T> {
+  for (let attempt = 0; attempt <= retries; attempt++) {
+    try {
+      return await fn();
+    } catch (err) {
+      if (attempt === retries) throw err;
+      const delay = baseDelay * 2 ** attempt;
+      console.warn(`  ↻ retry ${attempt + 1}/${retries} for ${label} in ${delay}ms: ${(err as Error).message}`);
+      await sleep(delay);
+    }
+  }
+  throw new Error("unreachable");
+}
+
+/**
+ * Run async tasks with a concurrency limit.
+ * Returns results in the same order as the input.
+ */
+async function parallelLimit<T, R>(
+  items: T[],
+  concurrency: number,
+  fn: (item: T) => Promise<R>,
+): Promise<R[]> {
+  const results: R[] = new Array(items.length);
+  let nextIndex = 0;
+
+  async function worker() {
+    while (nextIndex < items.length) {
+      const i = nextIndex++;
+      results[i] = await fn(items[i]);
+    }
+  }
+
+  const workers = Array.from({ length: Math.min(concurrency, items.length) }, () => worker());
+  await Promise.all(workers);
+  return results;
+}
+
+/* -------------------------------------------------------------------------- */
+/* Cache layer                                                                 */
+/* -------------------------------------------------------------------------- */
+/* Caches raw API responses to data/.cache/ with a TTL. Avoids re-fetching    */
+/* when the script is re-run within the same day (debugging, manual reruns).  */
+
+const CACHE_TTL_MS = 6 * 60 * 60 * 1000; // 6 hours
+
+function cacheKey(prefix: string, id: string): string {
+  return join(CACHE_DIR, `${prefix}_${id.replace(/[^a-zA-Z0-9_-]/g, "_")}.json`);
+}
+
+async function getCached<T>(key: string): Promise<T | null> {
+  try {
+    const info = await stat(key);
+    if (Date.now() - info.mtimeMs > CACHE_TTL_MS) return null;
+    const raw = await readFile(key, "utf-8");
+    return JSON.parse(raw) as T;
+  } catch {
+    return null;
+  }
+}
+
+async function setCache(key: string, data: unknown): Promise<void> {
+  try {
+    await mkdir(CACHE_DIR, { recursive: true });
+    await writeFile(key, JSON.stringify(data));
+  } catch {
+    // Cache write failure is non-fatal
+  }
+}
+
+/* -------------------------------------------------------------------------- */
+/* Health / meta tracking                                                      */
+/* -------------------------------------------------------------------------- */
+
+interface PulseMeta {
+  lastRun: string;
+  redditPostCount: number;
+  hnHitCount: number;
+  arxivPaperCount: number;
+  topicCount: number;
+  errors: string[];
+  durationMs: number;
+}
+
+const runErrors: string[] = [];
+
+function recordError(msg: string) {
+  console.warn(`  ! ${msg}`);
+  runErrors.push(msg);
+}
 
 /* -------------------------------------------------------------------------- */
 /* Topic keyword map                                                          */
 /* -------------------------------------------------------------------------- */
-/* Each entry maps a human-readable topic label to a set of search terms.     */
-/* The slug is derived from the label. Terms are OR'd when searching.         */
 
 interface TopicDef {
   label: string;
@@ -228,6 +332,10 @@ const SUBREDDITS = [
   "IsaacArthur", "fusion",
 ];
 
+// Reddit multi-sub limit is ~100 subs per request, so we can batch all of ours.
+// We split into chunks of 10 to keep URLs reasonable and avoid 414 errors.
+const MULTI_SUB_CHUNK_SIZE = 10;
+
 interface RedditPost {
   title: string;
   url: string;
@@ -239,50 +347,93 @@ interface RedditPost {
   created_utc: number;
 }
 
-async function fetchRedditSubreddit(
-  subreddit: string,
+async function fetchRedditMultiSub(
+  subs: string[],
+  sort: "top" | "hot",
   timeframe: "day" | "week" | "month" = "week",
 ): Promise<RedditPost[]> {
-  const url = `https://www.reddit.com/r/${subreddit}/top.json?t=${timeframe}&limit=100`;
-  try {
-    const res = await fetch(url, {
-      headers: { "User-Agent": "niac-atlas-pulse/0.1 (research project)" },
-    });
-    if (!res.ok) {
-      console.warn(`  ! Reddit r/${subreddit}: ${res.status}`);
-      return [];
-    }
-    const json = (await res.json()) as any;
-    return (json.data?.children ?? []).map((c: any) => ({
-      title: c.data.title,
-      url: c.data.url,
-      permalink: `https://reddit.com${c.data.permalink}`,
-      score: c.data.score,
-      num_comments: c.data.num_comments,
-      subreddit: c.data.subreddit,
-      author: c.data.author,
-      created_utc: c.data.created_utc,
-    }));
-  } catch (err) {
-    console.warn(`  ! Reddit r/${subreddit}: ${(err as Error).message}`);
-    return [];
+  const multi = subs.join("+");
+  const qs = sort === "top" ? `?t=${timeframe}&limit=100` : "?limit=100";
+  const url = `https://www.reddit.com/r/${multi}/${sort}.json${qs}`;
+  const key = cacheKey("reddit", `${multi}_${sort}_${timeframe}`);
+
+  const cached = await getCached<RedditPost[]>(key);
+  if (cached) {
+    console.log(`  [cache] Reddit r/${subs[0]}+… ${sort}: ${cached.length} posts`);
+    return cached;
   }
+
+  return withRetry(
+    async () => {
+      const res = await fetch(url, {
+        headers: { "User-Agent": "niac-atlas-pulse/0.2 (research project)" },
+      });
+      if (!res.ok) {
+        const msg = `Reddit r/${subs[0]}+… ${sort}: ${res.status}`;
+        if (res.status === 429 || res.status >= 500) throw new Error(msg);
+        recordError(msg);
+        return [];
+      }
+      const json = (await res.json()) as any;
+      const posts: RedditPost[] = (json.data?.children ?? []).map((c: any) => ({
+        title: c.data.title,
+        url: c.data.url,
+        permalink: `https://reddit.com${c.data.permalink}`,
+        score: c.data.score,
+        num_comments: c.data.num_comments,
+        subreddit: c.data.subreddit,
+        author: c.data.author,
+        created_utc: c.data.created_utc,
+      }));
+      await setCache(key, posts);
+      return posts;
+    },
+    { retries: 2, baseDelay: 2000, label: `Reddit ${sort} ${subs[0]}+…` },
+  );
 }
 
+/**
+ * Fetch Reddit posts using multi-sub batches for both /top and /hot.
+ * Deduplicates by permalink across both sorts.
+ */
 async function fetchAllReddit(
   timeframe: "day" | "week" | "month" = "week",
 ): Promise<RedditPost[]> {
-  console.log(`→ fetching Reddit top posts (${timeframe})...`);
-  const all: RedditPost[] = [];
-  // Fetch sequentially to be respectful of Reddit rate limits
-  for (const sub of SUBREDDITS) {
-    const posts = await fetchRedditSubreddit(sub, timeframe);
-    all.push(...posts);
-    console.log(`  r/${sub}: ${posts.length} posts`);
-    // Small delay to avoid rate-limiting
-    await sleep(1200);
+  console.log(`→ fetching Reddit top+hot posts (${timeframe})...`);
+
+  // Split subs into chunks for multi-sub requests
+  const chunks: string[][] = [];
+  for (let i = 0; i < SUBREDDITS.length; i += MULTI_SUB_CHUNK_SIZE) {
+    chunks.push(SUBREDDITS.slice(i, i + MULTI_SUB_CHUNK_SIZE));
   }
-  console.log(`  total: ${all.length} Reddit posts`);
+
+  // Build fetch tasks: each chunk × [top, hot]
+  const tasks = chunks.flatMap((chunk) => [
+    { chunk, sort: "top" as const },
+    { chunk, sort: "hot" as const },
+  ]);
+
+  // Run with concurrency of 3 (respectful to Reddit)
+  const results = await parallelLimit(tasks, 3, async (task) => {
+    const posts = await fetchRedditMultiSub(task.chunk, task.sort, timeframe);
+    console.log(`  r/${task.chunk[0]}+… ${task.sort}: ${posts.length} posts`);
+    await sleep(800); // breathing room between requests
+    return posts;
+  });
+
+  // Dedupe by permalink (same post may appear in top AND hot)
+  const seen = new Set<string>();
+  const all: RedditPost[] = [];
+  for (const batch of results) {
+    for (const post of batch) {
+      if (!seen.has(post.permalink)) {
+        seen.add(post.permalink);
+        all.push(post);
+      }
+    }
+  }
+
+  console.log(`  total: ${all.length} Reddit posts (deduped)`);
   return all;
 }
 
@@ -301,30 +452,40 @@ interface HNHit {
 }
 
 async function searchHN(query: string, lookbackDays = 7): Promise<HNHit[]> {
-  const params = new URLSearchParams({
-    query,
-    tags: "story",
-    restrictSearchableAttributes: "title",
-    numericFilters: `created_at_i>${Math.floor(Date.now() / 1000) - lookbackDays * 86400}`,
-    hitsPerPage: "50",
-  });
-  const url = `https://hn.algolia.com/api/v1/search?${params}`;
-  try {
-    const res = await fetch(url);
-    if (!res.ok) return [];
-    const json = (await res.json()) as any;
-    return (json.hits ?? []).map((h: any) => ({
-      title: h.title,
-      url: h.url,
-      objectID: h.objectID,
-      points: h.points ?? 0,
-      num_comments: h.num_comments ?? 0,
-      author: h.author,
-      created_at_i: h.created_at_i,
-    }));
-  } catch {
-    return [];
-  }
+  const key = cacheKey("hn", `${query}_${lookbackDays}d`);
+  const cached = await getCached<HNHit[]>(key);
+  if (cached) return cached;
+
+  return withRetry(
+    async () => {
+      const params = new URLSearchParams({
+        query,
+        tags: "story",
+        restrictSearchableAttributes: "title",
+        numericFilters: `created_at_i>${Math.floor(Date.now() / 1000) - lookbackDays * 86400}`,
+        hitsPerPage: "50",
+      });
+      const url = `https://hn.algolia.com/api/v1/search?${params}`;
+      const res = await fetch(url);
+      if (!res.ok) {
+        if (res.status === 429 || res.status >= 500) throw new Error(`HN ${res.status}`);
+        return [];
+      }
+      const json = (await res.json()) as any;
+      const hits: HNHit[] = (json.hits ?? []).map((h: any) => ({
+        title: h.title,
+        url: h.url,
+        objectID: h.objectID,
+        points: h.points ?? 0,
+        num_comments: h.num_comments ?? 0,
+        author: h.author,
+        created_at_i: h.created_at_i,
+      }));
+      await setCache(key, hits);
+      return hits;
+    },
+    { retries: 2, baseDelay: 500, label: `HN "${query}"` },
+  );
 }
 
 /**
@@ -344,8 +505,8 @@ async function fetchAllHN(topics: TopicDef[], lookbackDays = 7): Promise<Map<str
   console.log(`→ fetching Hacker News (${lookbackDays}d)...`);
   const map = new Map<string, HNHit[]>();
   for (const topic of topics) {
-    // Search up to 3 terms per topic to catch more coverage
-    const termsToSearch = topic.terms.slice(0, 3);
+    // Search up to 5 terms per topic for better coverage (HN Algolia is generous)
+    const termsToSearch = topic.terms.slice(0, 5);
     const seen = new Set<string>();
     const allHits: HNHit[] = [];
 
@@ -358,7 +519,7 @@ async function fetchAllHN(topics: TopicDef[], lookbackDays = 7): Promise<Map<str
           allHits.push(h);
         }
       }
-      await sleep(300);
+      await sleep(200);
     }
 
     if (allHits.length > 0) {
@@ -400,68 +561,66 @@ function xmlAll(xml: string, tag: string): string[] {
 }
 
 async function searchArXiv(query: string, maxResults = 20): Promise<ArXivPaper[]> {
-  // Quote multi-word queries so ArXiv treats them as phrases, not OR'd terms
-  const quoted = query.includes(" ") ? `"${query}"` : query;
-  const params = new URLSearchParams({
-    search_query: `all:${quoted}`,
-    sortBy: "submittedDate",
-    sortOrder: "descending",
-    max_results: String(maxResults),
-  });
-  const url = `https://export.arxiv.org/api/query?${params}`;
-
-  try {
-    const res = await fetch(url, {
-      headers: { "User-Agent": "niac-atlas-pulse/0.1 (research project)" },
-    });
-    if (!res.ok) {
-      console.warn(`  ! ArXiv query "${query}": ${res.status}`);
-      return [];
-    }
-    const xml = await res.text();
-
-    // Parse <entry> elements
-    const entries = xmlAll(xml, "entry");
-    const papers: ArXivPaper[] = [];
-
-    for (const entry of entries) {
-      const title = xmlText(entry, "title");
-      if (!title) continue;
-
-      // Extract authors
-      const authorBlocks = xmlAll(entry, "author");
-      const authors = authorBlocks.map((a) => xmlText(a, "name")).filter(Boolean);
-
-      // ArXiv ID from <id> tag (e.g. "http://arxiv.org/abs/2404.12345v1")
-      const idUrl = xmlText(entry, "id");
-      const arxivId = idUrl.replace(/.*\/abs\//, "").replace(/v\d+$/, "");
-
-      // Primary category — prefer arxiv:primary_category, fall back to first category
-      const primaryMatch = entry.match(/primary_category\s+term="([^"]+)"/);
-      const catMatch = entry.match(/<category\s+term="([^"]+)"/);
-      const category = primaryMatch?.[1] || catMatch?.[1] || "";
-
-      const published = xmlText(entry, "published");
-      const updated = xmlText(entry, "updated");
-      const summary = xmlText(entry, "summary");
-
-      papers.push({
-        title,
-        authors,
-        summary,
-        arxivId,
-        url: `https://arxiv.org/abs/${arxivId}`,
-        category,
-        published,
-        updated,
-      });
-    }
-
-    return papers;
-  } catch (err) {
-    console.warn(`  ! ArXiv query "${query}": ${(err as Error).message}`);
-    return [];
+  const key = cacheKey("arxiv", query);
+  const cached = await getCached<ArXivPaper[]>(key);
+  if (cached) {
+    console.log(`  [cache] ArXiv "${query}": ${cached.length} papers`);
+    return cached;
   }
+
+  return withRetry(
+    async () => {
+      // Quote multi-word queries so ArXiv treats them as phrases, not OR'd terms
+      const quoted = query.includes(" ") ? `"${query}"` : query;
+      const params = new URLSearchParams({
+        search_query: `all:${quoted}`,
+        sortBy: "submittedDate",
+        sortOrder: "descending",
+        max_results: String(maxResults),
+      });
+      const url = `https://export.arxiv.org/api/query?${params}`;
+
+      const res = await fetch(url, {
+        headers: { "User-Agent": "niac-atlas-pulse/0.2 (research project)" },
+      });
+      if (!res.ok) {
+        const msg = `ArXiv query "${query}": ${res.status}`;
+        if (res.status === 429 || res.status >= 500) throw new Error(msg);
+        recordError(msg);
+        return [];
+      }
+      const xml = await res.text();
+
+      // Parse <entry> elements
+      const entries = xmlAll(xml, "entry");
+      const papers: ArXivPaper[] = [];
+
+      for (const entry of entries) {
+        const title = xmlText(entry, "title");
+        if (!title) continue;
+
+        const authorBlocks = xmlAll(entry, "author");
+        const authors = authorBlocks.map((a) => xmlText(a, "name")).filter(Boolean);
+
+        const idUrl = xmlText(entry, "id");
+        const arxivId = idUrl.replace(/.*\/abs\//, "").replace(/v\d+$/, "");
+
+        const primaryMatch = entry.match(/primary_category\s+term="([^"]+)"/);
+        const catMatch = entry.match(/<category\s+term="([^"]+)"/);
+        const category = primaryMatch?.[1] || catMatch?.[1] || "";
+
+        const published = xmlText(entry, "published");
+        const updated = xmlText(entry, "updated");
+        const summary = xmlText(entry, "summary");
+
+        papers.push({ title, authors, summary, arxivId, url: `https://arxiv.org/abs/${arxivId}`, category, published, updated });
+      }
+
+      await setCache(key, papers);
+      return papers;
+    },
+    { retries: 2, baseDelay: 4000, label: `ArXiv "${query}"` },
+  );
 }
 
 /** Filter ArXiv papers to only recent ones (within lookback window). */
@@ -610,27 +769,68 @@ function computeIntraWindowDelta(
   return { delta, direction };
 }
 
+/**
+ * Deduplicate sources across topics. Each Reddit/HN post is assigned to
+ * the topic where it has the highest term-match density, preventing
+ * double-counting on the leaderboard.
+ */
+function deduplicateCrossTopicSources(
+  topicResults: Map<string, { posts: RedditPost[]; hnHits: HNHit[] }>,
+): void {
+  // Track best topic assignment for each Reddit post (by permalink)
+  const redditBestTopic = new Map<string, { slug: string; matchCount: number }>();
+  // Track best topic assignment for each HN post (by objectID)
+  const hnBestTopic = new Map<string, { slug: string; matchCount: number }>();
+
+  // First pass: find best topic for each source
+  for (const [slug, { posts, hnHits }] of topicResults) {
+    const topic = TOPICS.find((t) => t.slug === slug)!;
+    const patterns = topic.terms.map(
+      (t) => new RegExp(t.replace(/[.*+?^${}()|[\]\\]/g, "\\$&"), "i"),
+    );
+
+    for (const post of posts) {
+      const matchCount = patterns.filter((p) => p.test(post.title)).length;
+      const existing = redditBestTopic.get(post.permalink);
+      if (!existing || matchCount > existing.matchCount) {
+        redditBestTopic.set(post.permalink, { slug, matchCount });
+      }
+    }
+
+    for (const hit of hnHits) {
+      const matchCount = patterns.filter((p) => p.test(hit.title)).length;
+      const existing = hnBestTopic.get(hit.objectID);
+      if (!existing || matchCount > existing.matchCount) {
+        hnBestTopic.set(hit.objectID, { slug, matchCount });
+      }
+    }
+  }
+
+  // Second pass: remove posts that belong to a different topic
+  for (const [slug, data] of topicResults) {
+    data.posts = data.posts.filter((p) => redditBestTopic.get(p.permalink)?.slug === slug);
+    data.hnHits = data.hnHits.filter((h) => hnBestTopic.get(h.objectID)?.slug === slug);
+  }
+}
+
 function scoreTopic(
   topic: TopicDef,
-  redditPosts: RedditPost[],
+  matchedRedditPosts: RedditPost[],
   hnHits: HNHit[],
   arxivPapers: ArXivPaper[] = [],
 ): PulseTopic {
-  const reddit = matchRedditPosts(topic, redditPosts);
-  const hn = hnHits;
-
-  const redditScore = reddit.score;
-  const hnScore = hn.reduce((sum, h) => sum + h.points, 0) * 1.5;
+  const redditScore = matchedRedditPosts.reduce((sum, p) => sum + p.score, 0);
+  const hnScore = hnHits.reduce((sum, h) => sum + h.points, 0) * 1.5;
   // ArXiv: each paper is worth a flat 50 points — scientific authority weight
   const arxivScore = arxivPapers.length * 50;
   const totalScore = Math.round(redditScore + hnScore + arxivScore);
-  const mentions = reddit.posts.length + hn.length + arxivPapers.length;
+  const mentions = matchedRedditPosts.length + hnHits.length + arxivPapers.length;
 
-  // Build sources list, sorted by score, top 10.
+  // Build sources list, sorted by score, top 12.
   // Reddit posts that link to YouTube get split into a YouTube source
   // (with thumbnail) AND the Reddit discussion source.
   const redditSources: PulseSource[] = [];
-  for (const p of reddit.posts) {
+  for (const p of matchedRedditPosts) {
     const ytId = extractYouTubeId(p.url);
     if (ytId) {
       redditSources.push({
@@ -655,7 +855,7 @@ function scoreTopic(
   }
 
   const hnSources: PulseSource[] = [];
-  for (const h of hn) {
+  for (const h of hnHits) {
     const hnUrl = h.url ?? `https://news.ycombinator.com/item?id=${h.objectID}`;
     const ytId = h.url ? extractYouTubeId(h.url) : null;
     if (ytId) {
@@ -745,11 +945,40 @@ function computeDeltas(
 }
 
 /* -------------------------------------------------------------------------- */
-/* Main                                                                       */
+/* Snapshot archival                                                           */
 /* -------------------------------------------------------------------------- */
+/* Moves pulse-YYYY-MM-DD.json files older than MAX_SNAPSHOT_AGE_WEEKS        */
+/* to data/archive/ so the data/ directory doesn't grow unbounded.           */
 
-function sleep(ms: number): Promise<void> {
-  return new Promise((resolve) => setTimeout(resolve, ms));
+const MAX_SNAPSHOT_AGE_WEEKS = 8;
+
+async function archiveOldSnapshots(): Promise<void> {
+  const cutoffMs = Date.now() - MAX_SNAPSHOT_AGE_WEEKS * 7 * 86400000;
+
+  try {
+    const files = await readdir(DATA_DIR);
+    const snapshotFiles = files.filter((f) => /^pulse-\d{4}-\d{2}-\d{2}\.json$/.test(f));
+
+    const toArchive: string[] = [];
+    for (const f of snapshotFiles) {
+      const dateStr = f.replace("pulse-", "").replace(".json", "");
+      const fileDate = new Date(dateStr).getTime();
+      if (fileDate < cutoffMs) {
+        toArchive.push(f);
+      }
+    }
+
+    if (toArchive.length === 0) return;
+
+    await mkdir(ARCHIVE_DIR, { recursive: true });
+    for (const f of toArchive) {
+      await rename(join(DATA_DIR, f), join(ARCHIVE_DIR, f));
+      console.log(`  archived: ${f}`);
+    }
+    console.log(`→ archived ${toArchive.length} old snapshot(s)`);
+  } catch (err) {
+    recordError(`Snapshot archival failed: ${(err as Error).message}`);
+  }
 }
 
 /* -------------------------------------------------------------------------- */
@@ -789,9 +1018,18 @@ function buildWeeklySnapshot(
     if (filtered.length > 0) weekArXiv.set(slug, filtered);
   }
 
-  const topics = TOPICS.map((topic) =>
-    scoreTopic(topic, weekReddit, weekHN.get(topic.slug) ?? [], weekArXiv.get(topic.slug) ?? []),
-  )
+  // Match Reddit posts per topic, then deduplicate across topics
+  const topicResults = new Map<string, { posts: RedditPost[]; hnHits: HNHit[] }>();
+  for (const topic of TOPICS) {
+    const { posts } = matchRedditPosts(topic, weekReddit);
+    topicResults.set(topic.slug, { posts, hnHits: weekHN.get(topic.slug) ?? [] });
+  }
+  deduplicateCrossTopicSources(topicResults);
+
+  const topics = TOPICS.map((topic) => {
+    const matched = topicResults.get(topic.slug)!;
+    return scoreTopic(topic, matched.posts, matched.hnHits, weekArXiv.get(topic.slug) ?? []);
+  })
     .filter((t) => t.mentions > 0 || t.score > 0)
     .sort((a, b) => b.score - a.score);
 
@@ -852,7 +1090,7 @@ async function mainBackdate(): Promise<void> {
     const prevFile = snapshots[i - 1].file;
     const currFile = snapshots[i].file;
     const prev = JSON.parse(await readFile(prevFile, "utf-8")) as { topics: PulseTopic[] };
-    const curr = JSON.parse(await readFile(currFile, "utf-8")) as { topics: PulseTopic[] };
+    const curr = JSON.parse(await readFile(currFile, "utf-8")) as { generatedAt?: string; topics: PulseTopic[] };
     const prevMap = new Map(prev.topics.map((t) => [t.slug, t.score]));
     computeDeltas(curr.topics, prevMap);
     await writeFile(currFile, JSON.stringify({ generatedAt: curr.generatedAt ?? new Date().toISOString(), topics: curr.topics }, null, 2));
@@ -894,7 +1132,11 @@ async function mainBackdate(): Promise<void> {
 const IS_BACKDATE = process.argv.includes("--backdate");
 
 async function main(): Promise<void> {
+  const startTime = Date.now();
   await mkdir(DATA_DIR, { recursive: true });
+
+  // Archive old snapshots before starting
+  await archiveOldSnapshots();
 
   const [redditPosts, hnMap, prevScores] = await Promise.all([
     fetchAllReddit(),
@@ -906,9 +1148,19 @@ async function main(): Promise<void> {
   const arxivMap = await fetchAllArXiv(TOPICS, 30);
 
   console.log("→ scoring topics...");
-  const topics = TOPICS.map((topic) =>
-    scoreTopic(topic, redditPosts, hnMap.get(topic.slug) ?? [], arxivMap.get(topic.slug) ?? []),
-  )
+
+  // Match Reddit posts per topic, then deduplicate across topics
+  const topicResults = new Map<string, { posts: RedditPost[]; hnHits: HNHit[] }>();
+  for (const topic of TOPICS) {
+    const { posts } = matchRedditPosts(topic, redditPosts);
+    topicResults.set(topic.slug, { posts, hnHits: hnMap.get(topic.slug) ?? [] });
+  }
+  deduplicateCrossTopicSources(topicResults);
+
+  const topics = TOPICS.map((topic) => {
+    const matched = topicResults.get(topic.slug)!;
+    return scoreTopic(topic, matched.posts, matched.hnHits, arxivMap.get(topic.slug) ?? []);
+  })
     .filter((t) => t.mentions > 0 || t.score > 0)
     .sort((a, b) => b.score - a.score);
 
@@ -945,7 +1197,27 @@ async function main(): Promise<void> {
   }
 
   await writeFile(OUT_FILE, JSON.stringify(pulse, null, 2));
+
+  // Write health meta file
+  const totalHnHits = Array.from(hnMap.values()).reduce((sum, hits) => sum + hits.length, 0);
+  const totalArxiv = Array.from(arxivMap.values()).reduce((sum, papers) => sum + papers.length, 0);
+  const meta: PulseMeta = {
+    lastRun: new Date().toISOString(),
+    redditPostCount: redditPosts.length,
+    hnHitCount: totalHnHits,
+    arxivPaperCount: totalArxiv,
+    topicCount: topics.filter((t) => t.mentions > 0).length,
+    errors: runErrors,
+    durationMs: Date.now() - startTime,
+  };
+  await writeFile(META_FILE, JSON.stringify(meta, null, 2));
+
   console.log(`\n✓ wrote ${topics.length} topics to ${OUT_FILE}`);
+  console.log(`✓ meta: ${redditPosts.length} reddit, ${totalHnHits} hn, ${totalArxiv} arxiv, ${runErrors.length} errors, ${Math.round(meta.durationMs / 1000)}s`);
+  if (runErrors.length > 0) {
+    console.log(`\n⚠ Errors encountered:`);
+    for (const e of runErrors) console.log(`  - ${e}`);
+  }
   console.log("\nTop trending:");
   for (const t of topics.slice(0, 8)) {
     const dir = t.direction === "up" ? "▲" : t.direction === "down" ? "▼" : "—";

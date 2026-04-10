@@ -1,0 +1,134 @@
+[
+  {
+    "id": "michelson-morley-1887",
+    "title": "Michelson-Morley Experiment",
+    "researchers": "Albert Michelson & Edward Morley",
+    "year": 1887,
+    "field": "physics",
+    "hypothesis": "Light travels through a luminiferous ether that permeates all of space. Earth's motion through the ether should produce a detectable difference in the speed of light measured in different directions.",
+    "whatHappened": "No difference in the speed of light was detected in any direction, despite the experiment's extraordinary precision. The ether didn't exist.",
+    "whyItMatters": "The most famous null result in physics. Directly inspired Einstein's special relativity — the realization that the speed of light is constant in all reference frames. A 'failure' that rewrote the foundations of physics.",
+    "status": "superseded"
+  },
+  {
+    "id": "fleischmann-pons-1989",
+    "title": "Cold Fusion",
+    "researchers": "Martin Fleischmann & Stanley Pons",
+    "year": 1989,
+    "field": "physics",
+    "hypothesis": "Nuclear fusion can occur at room temperature in a palladium electrode immersed in heavy water, producing measurable excess heat.",
+    "whatHappened": "Initial claims of excess heat generation could not be reliably reproduced by other laboratories. Measurement errors and contamination were identified. The scientific community largely rejected the claims after extensive replication attempts.",
+    "whyItMatters": "A cautionary tale about premature announcement and the critical importance of independent replication. The intense public interest and subsequent debunking reshaped how extraordinary claims are treated in physics.",
+    "status": "debunked"
+  },
+  {
+    "id": "opera-ftl-neutrinos-2011",
+    "title": "Faster-Than-Light Neutrinos",
+    "researchers": "OPERA Collaboration",
+    "year": 2011,
+    "field": "physics",
+    "hypothesis": "Neutrinos were observed traveling 60 nanoseconds faster than the speed of light over 730 km from CERN to Gran Sasso.",
+    "whatHappened": "The anomaly was traced to a loose fiber optic cable in the GPS timing system and a clock oscillator ticking too fast. When corrected, neutrino speeds were consistent with the speed of light.",
+    "whyItMatters": "A textbook example of systematic error in precision measurement. The OPERA team handled it well — they published the anomaly asking for help, rather than claiming a discovery. The scientific process worked exactly as it should.",
+    "status": "debunked"
+  },
+  {
+    "id": "polywater-1960s",
+    "title": "Polywater",
+    "researchers": "Nikolai Fedyakin & Boris Derjaguin",
+    "year": 1966,
+    "field": "chemistry",
+    "hypothesis": "Water condensed in narrow glass capillaries forms a new, stable polymerized form with higher density, higher viscosity, and a lower freezing point than normal water.",
+    "whatHappened": "After years of intense research across multiple countries, polywater was shown to be ordinary water contaminated with dissolved silica and organic compounds from the glass capillaries and human sweat. The anomalous properties vanished with proper purification.",
+    "whyItMatters": "Demonstrated how confirmation bias and insufficient controls can sustain a false result across an entire field for years. Hundreds of papers were published before the contamination was identified.",
+    "status": "debunked"
+  },
+  {
+    "id": "n-rays-1903",
+    "title": "N-Rays",
+    "researchers": "Prosper-René Blondlot",
+    "year": 1903,
+    "field": "physics",
+    "hypothesis": "A new form of radiation ('N-rays') emitted by most substances, detectable by the human eye as a subtle brightening of a spark gap.",
+    "whatHappened": "American physicist Robert Wood visited Blondlot's lab and secretly removed a critical prism from the apparatus. Blondlot continued to 'detect' N-rays, proving the observations were subjective. No other laboratory could reproduce the results.",
+    "whyItMatters": "One of the earliest documented cases of experimenter bias in physics. Led to much stricter standards for what counts as an observation, and inspired the development of blinded experimental protocols.",
+    "status": "debunked"
+  },
+  {
+    "id": "piltdown-man-1912",
+    "title": "Piltdown Man",
+    "researchers": "Charles Dawson",
+    "year": 1912,
+    "field": "biology",
+    "hypothesis": "Fossilized skull fragments found in Piltdown, England represented an early human ancestor — the 'missing link' between apes and humans.",
+    "whatHappened": "In 1953, fluorine dating and microscopic analysis proved the skull was a modern human cranium paired with an orangutan jaw, artificially stained to look ancient. The teeth had been filed down. It was an elaborate forgery.",
+    "whyItMatters": "The most famous scientific fraud in history. Misdirected paleoanthropology research for 40 years. Led to much more rigorous authentication standards for fossil evidence and demonstrated the danger of finding what you expect to find.",
+    "status": "retracted"
+  },
+  {
+    "id": "phlogiston-1667",
+    "title": "Phlogiston Theory",
+    "researchers": "Johann Joachim Becher",
+    "year": 1667,
+    "field": "chemistry",
+    "hypothesis": "Combustible materials contain a fire-like element called phlogiston that is released during burning. Metals lose phlogiston when they rust (calcinate).",
+    "whatHappened": "Lavoisier demonstrated that combustion requires oxygen and that materials gain weight when burned — the opposite of what phlogiston theory predicted. The entire framework was replaced by oxygen theory of combustion.",
+    "whyItMatters": "Dominated chemistry for over a century before being overturned. Shows how a wrong theory can still be productive — phlogiston theorists discovered hydrogen, nitrogen, and many chemical reactions while working within a flawed framework.",
+    "status": "superseded"
+  },
+  {
+    "id": "steady-state-cosmology-1948",
+    "title": "Steady-State Cosmology",
+    "researchers": "Fred Hoyle, Thomas Gold & Hermann Bondi",
+    "year": 1948,
+    "field": "astronomy",
+    "hypothesis": "The universe has no beginning and no end. It looks the same at all times because new matter is continuously created to fill the gaps as galaxies move apart.",
+    "whatHappened": "The discovery of the cosmic microwave background radiation in 1965 by Penzias and Wilson provided strong evidence for the Big Bang — a hot, dense beginning that steady-state theory couldn't explain. Quasar distribution also showed the universe looked different in the past.",
+    "whyItMatters": "Fred Hoyle (who coined the term 'Big Bang' as a dismissal) was one of the greatest astrophysicists alive. Even brilliant people can champion wrong theories. The debate sharpened both models and pushed observational cosmology forward.",
+    "status": "superseded"
+  },
+  {
+    "id": "hwang-stem-cells-2004",
+    "title": "Fabricated Human Stem Cell Lines",
+    "researchers": "Hwang Woo-suk",
+    "year": 2004,
+    "field": "biology",
+    "hypothesis": "Patient-specific embryonic stem cells could be created through somatic cell nuclear transfer (therapeutic cloning), as demonstrated by successfully producing 11 stem cell lines.",
+    "whatHappened": "Investigation revealed the data was fabricated. None of the 11 claimed stem cell lines existed. Hwang had also coerced junior researchers into donating eggs. The papers in Science were retracted.",
+    "whyItMatters": "Exposed weaknesses in peer review and the pressure to publish breakthrough results. South Korea's national hero became its greatest scientific fraud. Led to stricter data verification requirements at major journals.",
+    "status": "retracted"
+  },
+  {
+    "id": "martian-canals-1877",
+    "title": "Martian Canals",
+    "researchers": "Giovanni Schiaparelli & Percival Lowell",
+    "year": 1877,
+    "field": "astronomy",
+    "hypothesis": "Linear features observed on Mars through telescopes are artificial canals built by an intelligent civilization to transport water from the polar ice caps to the arid equatorial regions.",
+    "whatHappened": "Better telescopes and eventually spacecraft flybys (Mariner 4, 1965) showed no canals exist. The 'canali' were optical illusions — the human brain connecting random surface features into lines when viewed at the limits of resolution.",
+    "whyItMatters": "Inspired H.G. Wells' War of the Worlds and decades of Mars fascination. A beautiful example of how the desire to find pattern and meaning can override careful observation. Lowell built an entire observatory to study features that weren't there.",
+    "status": "debunked"
+  },
+  {
+    "id": "luminiferous-ether-drag-1818",
+    "title": "Ether Drag Hypothesis",
+    "researchers": "Augustin-Jean Fresnel",
+    "year": 1818,
+    "field": "physics",
+    "hypothesis": "The luminiferous ether is partially dragged along by moving transparent bodies, which would explain why stellar aberration is observed despite Earth moving through the ether.",
+    "whatHappened": "While Fresnel's partial drag coefficient matched some observations, the broader ether framework collapsed with the Michelson-Morley null result and Einstein's special relativity. The speed of light is constant regardless of the observer's motion — no ether needed.",
+    "whyItMatters": "Fresnel's drag coefficient was mathematically correct and was later derived from special relativity without any ether. A wrong physical model producing a correct mathematical result — a reminder that matching data doesn't prove a theory.",
+    "status": "superseded"
+  },
+  {
+    "id": "stanford-prison-replication-2001",
+    "title": "Stanford Prison Experiment Replication Failures",
+    "researchers": "Various (original: Philip Zimbardo, 1971)",
+    "year": 2001,
+    "field": "psychology",
+    "hypothesis": "Assigning people to 'guard' and 'prisoner' roles spontaneously produces abusive behavior — situational forces overwhelm individual character.",
+    "whatHappened": "Replication attempts and archival research revealed the original experiment was heavily coached — Zimbardo instructed guards to be tough, and many participants reported playing along with expected roles rather than experiencing genuine psychological transformation. The BBC Prison Study (2001) found opposite results.",
+    "whyItMatters": "One of the most cited studies in psychology textbooks was fundamentally flawed in design and reporting. Part of the broader replication crisis that revealed how many famous social psychology findings don't hold up under scrutiny.",
+    "status": "debunked"
+  }
+]

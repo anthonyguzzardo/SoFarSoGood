@@ -161,6 +161,37 @@ const { full, standard, stub } = topicsByTier();
   )}
 
   {/* ----------------------------------------------------------------- */}
+  {/* The Graveyard — negative results                                  */}
+  {/* ----------------------------------------------------------------- */}
+  <section class="mb-16 reveal">
+    <a
+      href="/graveyard"
+      class="block group p-8 md:p-10 rounded-lg border hairline border-dashed hover:border-amber-400/40 transition"
+      style="background: var(--color-paper-raised);"
+    >
+      <div class="flex items-start justify-between gap-4">
+        <div>
+          <div class="eyebrow text-accent mb-2">The Graveyard</div>
+          <h3 class="font-display text-2xl md:text-3xl font-semibold leading-snug group-hover:text-accent transition-colors">
+            We looked here. Look elsewhere.
+          </h3>
+          <p class="mt-3 text-base text-dim leading-relaxed max-w-2xl">
+            Experiments that failed, theories that were wrong, fraud that got
+            caught. Not a wall of shame — a map of explored territory.
+          </p>
+          <div class="mt-5 eyebrow text-accent group-hover:gap-3 inline-flex items-center gap-2 transition-all">
+            <span>Explore the archive</span>
+            <span>&rarr;</span>
+          </div>
+        </div>
+        <span class="text-4xl font-display font-semibold shrink-0 opacity-20" style="color: #f87171;">
+          &dagger;
+        </span>
+      </div>
+    </a>
+  </section>
+
+  {/* ----------------------------------------------------------------- */}
   {/* Stub topics — community invitation                                */}
   {/* ----------------------------------------------------------------- */}
   {stub.length > 0 && (

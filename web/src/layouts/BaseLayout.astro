@@ -7,7 +7,7 @@ interface Props {
   title: string;
   description?: string;
   /** Active nav item — drives the underline/highlight in the header. */
-  nav?: "browse" | "pulse" | "timeline" | "subjects" | "atlas" | "explore" | "paths" | "wishlist" | "pantheon" | "mission" | "concept" | null;
+  nav?: "browse" | "pulse" | "timeline" | "subjects" | "atlas" | "explore" | "paths" | "wishlist" | "pantheon" | "graveyard" | "mission" | "concept" | null;
 }
 
 const {
@@ -26,6 +26,8 @@ const navItems = [
   { key: "explore", label: "Explore", href: "/explore" },
   { key: "wishlist", label: "Wishlist", href: "/wishlist" },
   { key: "pantheon", label: "Pantheon", href: "/pantheon" },
+  { key: "graveyard", label: "Graveyard", href: "/graveyard" },
+  { key: "mission", label: "Mission", href: "/mission" },
 ] as const;
 ---
 
@@ -107,6 +109,7 @@ const navItems = [
           <a href="/timeline" class="hover:text-white transition">Timeline</a>
           <a href="/atlas" class="hover:text-white transition">Atlas</a>
           <a href="/subjects" class="hover:text-white transition">Subjects</a>
+          <a href="/graveyard" class="hover:text-white transition">The Graveyard</a>
         </div>
         <p>
           Concepts sourced from

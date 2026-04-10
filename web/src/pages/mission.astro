@@ -1,52 +1,150 @@
 ---
 /**
- * /mission — what this project is, where it's going, and how to help.
+ * /mission — the problem, the principles, and the plan.
  *
- * This is the "about" page with teeth. Not a corporate mission statement —
- * a genuine explanation of what we're trying to build and an invitation
- * to anyone who cares about the same things.
+ * Rewritten to integrate the stronger framing from the unified vision
+ * doc: the "What's Broken" problem statement, the design principles,
+ * and tighter "where we're going" language. Contribution details live
+ * on /contribute — this page is about vision and values.
  */
 
 import BaseLayout from "../layouts/BaseLayout.astro";
 import { stats } from "../lib/concepts.ts";
 import { allTopics } from "../lib/topics.ts";
+import { wishlistStats } from "../lib/wishlist.ts";
+import { graveyardStats } from "../lib/negative-results.ts";
 ---
 
 <BaseLayout
   title="Mission — So Far So Good"
-  description="What we're building, why it matters, and how to help."
+  description="Science doesn't have a knowledge problem. It has an infrastructure problem. We're building the connective tissue."
   nav="mission"
 >
   <article class="max-w-3xl">
     {/* ----------------------------------------------------------- */}
     {/* Header                                                      */}
     {/* ----------------------------------------------------------- */}
-    <header class="mb-16 hero-glow">
+    <header class="mb-20 hero-glow">
       <div class="eyebrow text-accent mb-3">The mission</div>
       <h1
-        class="font-display text-5xl md:text-6xl font-semibold tracking-tight leading-[1.05]"
+        class="font-display text-4xl md:text-6xl font-semibold tracking-tight leading-[1.05]"
       >
-        Make all of human scientific knowledge browsable, connected, and alive.
+        Science doesn't have a knowledge problem. It has an infrastructure problem.
       </h1>
-      <p class="mt-8 text-lg text-dim leading-relaxed">
-        NASA's website is old and clunky. arXiv is a firehose. Wikipedia is
-        flat. Google Scholar is just search. Nowhere on the internet can you
-        start with a black hole, follow a thread through 300 years of physics,
-        watch the best explanation ever filmed, read the original paper, and
-        discover that a NASA-funded team is working on something related
-        right now — all in one place.
-      </p>
-      <p class="mt-4 text-lg text-dim leading-relaxed">
-        We're building that place.
+      <p class="mt-8 text-lg leading-relaxed" style="color: var(--color-ink-dim);">
+        The data exists. The talent exists. The questions exist. But they sit
+        in disconnected silos, locked behind paywalls and misaligned incentives.
+        This platform is the connective tissue.
       </p>
     </header>
+
+    {/* ----------------------------------------------------------- */}
+    {/* What's broken                                               */}
+    {/* ----------------------------------------------------------- */}
+    <section class="mb-20">
+      <div class="eyebrow text-accent mb-4 pb-2 border-b hairline">
+        01 &middot; What's broken
+      </div>
+      <p class="text-base leading-relaxed mb-4">
+        Modern science runs on a publishing model designed in the 17th century.
+        Researchers spend years producing a static PDF, submit it to anonymous
+        gatekeepers, wait months for a verdict, and then — whether accepted or
+        rejected — the underlying data, code, and failed experiments mostly
+        disappear.
+      </p>
+      <p class="text-base leading-relaxed mb-8">
+        The result is staggering waste. Over <strong class="text-accent">$28 billion annually</strong> in
+        the U.S. alone is estimated lost to irreproducible research. Negative
+        results go unpublished. Duplication of effort is rampant. And the
+        incentive structure rewards novelty and volume over truth and rigor.
+      </p>
+
+      {/* Current vs. Needed table */}
+      <div
+        class="rounded-lg border overflow-hidden"
+        style="border-color: var(--color-paper-edge);"
+      >
+        <div
+          class="grid grid-cols-2 text-[0.65rem] font-mono uppercase tracking-widest px-5 py-3"
+          style="background: var(--color-paper-raised); color: var(--color-ink-dim);"
+        >
+          <span>Current model</span>
+          <span>What's needed</span>
+        </div>
+        {[
+          ["Static papers, frozen at publication", "Living documents, continuously updated"],
+          ["Data buried in supplements or lost", "Data, code, and methods inline and executable"],
+          ["Anonymous, one-shot peer review", "Transparent, continuous community evaluation"],
+          ["Credit only for first authors on novel findings", "Credit for every contribution — replication, review, curation"],
+          ["Knowledge stored as disconnected documents", "A structured, queryable graph of claims and evidence"],
+        ].map(([current, needed]) => (
+          <div
+            class="grid grid-cols-2 px-5 py-3.5 border-t text-sm"
+            style="border-color: var(--color-paper-edge);"
+          >
+            <span style="color: var(--color-ink-faint);">{current}</span>
+            <span class="font-medium">{needed}</span>
+          </div>
+        ))}
+      </div>
+    </section>
+
+    {/* ----------------------------------------------------------- */}
+    {/* Design principles                                           */}
+    {/* ----------------------------------------------------------- */}
+    <section class="mb-20">
+      <div class="eyebrow text-accent mb-4 pb-2 border-b hairline">
+        02 &middot; Design principles
+      </div>
+      <p class="text-base leading-relaxed mb-8" style="color: var(--color-ink-dim);">
+        These are the non-negotiable commitments that distinguish this from
+        another academic tool.
+      </p>
+
+      <div class="space-y-6">
+        {[
+          {
+            name: "Truth over attention",
+            body: "The system must make careful, verified, replicated work more rewarding than flashy, unreproducible claims. Every incentive mechanism is tested against this standard.",
+          },
+          {
+            name: "Process over product",
+            body: "Science is not a paper. It's the ongoing cycle of question, experiment, analysis, revision, and challenge. The platform treats this cycle — not the snapshot — as the first-class object.",
+          },
+          {
+            name: "Access without compromise",
+            body: "Free or near-free for researchers everywhere. Multilingual. Lightweight enough for low-bandwidth environments. Independent researchers and small institutions are full citizens, not second-class users.",
+          },
+          {
+            name: "Accountability without gatekeeping",
+            body: "Verified identities for credibility. Pseudonymous contributions allowed with reputation tracking. Transparent history. The goal is trust through transparency, not exclusion through credentials.",
+          },
+          {
+            name: "Speed without recklessness",
+            body: "Publication in minutes, not months. But every claim carries its evidence, its reproducibility score, its review history. Fast publishing paired with continuous, visible evaluation.",
+          },
+        ].map((p) => (
+          <div
+            class="pl-5 border-l-2"
+            style="border-color: var(--color-accent);"
+          >
+            <div class="font-mono text-xs uppercase tracking-widest mb-2 text-accent">
+              {p.name}
+            </div>
+            <p class="text-base leading-relaxed" style="color: var(--color-ink-dim);">
+              {p.body}
+            </p>
+          </div>
+        ))}
+      </div>
+    </section>
 
     {/* ----------------------------------------------------------- */}
     {/* Where we are                                                */}
     {/* ----------------------------------------------------------- */}
     <section class="mb-20">
       <div class="eyebrow text-accent mb-4 pb-2 border-b hairline">
-        Where we are now
+        03 &middot; Where we are now
       </div>
       <p class="text-base leading-relaxed mb-4">
         Right now, we index <strong class="text-accent">{stats.totalConcepts} speculative aerospace concepts</strong> from
@@ -57,10 +155,12 @@ import { allTopics } from "../lib/topics.ts";
       </p>
       <p class="text-base leading-relaxed mb-4">
         We have <a href="/explore" class="text-accent underline hover:text-white">{allTopics.length} curated deep dives</a> into
-        the big scientific questions these concepts touch: black holes,
-        gravity, quantum physics, propulsion, telescopes. Each one pulls
-        together history, open questions, the best explainer videos and books
-        we've found, and the concepts pushing the field forward.
+        the big scientific questions these concepts touch. A <a href="/wishlist" class="text-accent underline hover:text-white">wishlist
+        of {wishlistStats.total} papers</a> spanning {wishlistStats.yearSpan} years.
+        A <a href="/graveyard" class="text-accent underline hover:text-white">graveyard
+        of {graveyardStats.total} negative results</a> that maps explored territory.
+        A <a href="/pulse" class="text-accent underline hover:text-white">live pulse</a> of
+        what the world is talking about in space and science.
       </p>
       <p class="text-base leading-relaxed">
         It's a start. There's a long way to go.
@@ -72,49 +172,33 @@ import { allTopics } from "../lib/topics.ts";
     {/* ----------------------------------------------------------- */}
     <section class="mb-20">
       <div class="eyebrow text-accent mb-4 pb-2 border-b hairline">
-        Where we're going
+        04 &middot; Where we're going
       </div>
 
       <div class="space-y-8">
         <div>
           <h3 class="font-display text-xl font-semibold mb-2">
-            A universal index of scientific knowledge
+            A structured knowledge graph
           </h3>
           <p class="text-base text-dim leading-relaxed">
-            Every paper, every book, every dataset that matters — modern and
-            historical. We want a search for "rotating tether" to return
-            NIAC concepts, arXiv papers, historical texts, and the best
-            explainer videos on the topic. We're starting with NASA. Next:
-            arXiv, OpenAlex, PubMed. Eventually: the deep history —
-            Galileo's notebooks alongside JWST observations.
+            Every claim on the platform becomes a node. Every piece of evidence
+            becomes a node. The edges between them are typed: <em>supports,
+            contradicts, replicates, extends, depends on</em>. When you open
+            any question, you see not a list of papers but a living map — where
+            the evidence clusters, where it conflicts, and where the blank
+            spaces are.
           </p>
         </div>
 
         <div>
           <h3 class="font-display text-xl font-semibold mb-2">
-            Connections that help people discover
+            AI-assisted discovery
           </h3>
           <p class="text-base text-dim leading-relaxed">
-            AI-assisted semantic search and automatic cross-referencing so the
-            platform actively surfaces relationships nobody has drawn before.
-            A 2024 JWST observation connects to a 1905 Einstein paper connects
-            to a 1687 Newton manuscript. The system should help you think, not
-            just search.
-          </p>
-        </div>
-
-        <div>
-          <h3 class="font-display text-xl font-semibold mb-2">
-            A community that builds knowledge together
-          </h3>
-          <p class="text-base text-dim leading-relaxed">
-            The most interesting discourse on the internet happens when
-            curious, intelligent people gather around things they genuinely
-            care about. We want that here — not engagement-optimized noise,
-            but the kind of conversation that makes you smarter for having
-            read it. Discussion, debate, shared research, and the possibility
-            that two people find each other here and go on to work on
-            something that matters.
+            Machine intelligence surfaces what humans miss: connections between
+            distant fields, statistical inconsistencies, overlooked datasets,
+            and hypothesis generation from structured knowledge. AI proposes,
+            humans evaluate. The loop is always human-validated.
           </p>
         </div>
 
@@ -124,11 +208,10 @@ import { allTopics } from "../lib/topics.ts";
           </h3>
           <p class="text-base text-dim leading-relaxed">
             Science communicators like Veritasium, 3Blue1Brown, PBS Space
-            Time, the Dwarkesh Podcast, Quanta Magazine, and many others do
-            extraordinary work making hard ideas accessible. Their
-            explanations should live alongside the papers and data they draw
-            from — so you can go from "that was a great video" to "here's
-            the actual paper" in one click.
+            Time, and Quanta Magazine do extraordinary work making hard ideas
+            accessible. Their explanations should live alongside the papers and
+            data they draw from — so you can go from "that was a great video"
+            to "here's the actual paper" in one click.
           </p>
         </div>
 
@@ -138,148 +221,44 @@ import { allTopics } from "../lib/topics.ts";
           </h3>
           <p class="text-base text-dim leading-relaxed">
             You cannot understand the present without understanding the past.
-            Every modern discovery stands on centuries of prior work. We want
-            to make those lineages visible — so you can see that the concept
-            of a "dark star" predates Einstein by 130 years, that Newton's
-            reflecting telescope begat Hubble begat JWST, that the rocket
-            equation Tsiolkovsky wrote in 1903 is still the constraint every
-            mission designer fights today.
+            We want to make those lineages visible — so you can see that the
+            concept of a "dark star" predates Einstein by 130 years, that the
+            rocket equation Tsiolkovsky wrote in 1903 is still the constraint
+            every mission designer fights today.
           </p>
         </div>
       </div>
     </section>
 
     {/* ----------------------------------------------------------- */}
-    {/* How to help                                                 */}
+    {/* Contribute                                                  */}
     {/* ----------------------------------------------------------- */}
     <section class="mb-20">
       <div class="eyebrow text-accent mb-4 pb-2 border-b hairline">
-        How to contribute
+        05 &middot; How to help
       </div>
-
-      <p class="text-base leading-relaxed mb-8">
-        This is an open-source project and we need help. Here are real things
-        you can do right now, no matter your background.
+      <p class="text-base leading-relaxed mb-6">
+        This is an open-source project and we need help. Curate a topic, tag
+        a concept, suggest a paper, submit a negative result, recommend a
+        video, or write code.
       </p>
-
-      <div class="space-y-6">
-        <div
-          class="p-6 rounded-lg border hairline"
-          style="background: var(--color-paper-raised);"
-        >
-          <div class="flex items-start gap-3">
-            <span class="text-accent font-mono text-lg shrink-0">01</span>
-            <div>
-              <h4 class="font-display text-lg font-semibold mb-1">
-                Curate a topic deep dive
-              </h4>
-              <p class="text-sm text-dim leading-relaxed">
-                Pick a scientific topic you're passionate about. Write a short
-                overview, list the open questions, find the best videos and
-                books, and trace the historical timeline. We'll help you get
-                it into the site. You don't need to be an expert — you need
-                to be curious and thorough.
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <div
-          class="p-6 rounded-lg border hairline"
-          style="background: var(--color-paper-raised);"
-        >
-          <div class="flex items-start gap-3">
-            <span class="text-accent font-mono text-lg shrink-0">02</span>
-            <div>
-              <h4 class="font-display text-lg font-semibold mb-1">
-                Improve the data
-              </h4>
-              <p class="text-sm text-dim leading-relaxed">
-                Our NIAC concept data is good but not perfect. Phase metadata
-                is ~70% detected via keyword sniffing — the rest needs
-                human eyes. Some concepts appear as duplicates across Phase I
-                and Phase II reports. If you have domain knowledge, help us
-                clean and enrich the dataset.
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <div
-          class="p-6 rounded-lg border hairline"
-          style="background: var(--color-paper-raised);"
-        >
-          <div class="flex items-start gap-3">
-            <span class="text-accent font-mono text-lg shrink-0">03</span>
-            <div>
-              <h4 class="font-display text-lg font-semibold mb-1">
-                Digitize historical sources
-              </h4>
-              <p class="text-sm text-dim leading-relaxed">
-                The hardest and most important part of the mission. Pre-1900
-                scientific texts — manuscripts, early journal articles,
-                engineering drawings — need to be scanned, OCR'd, transcribed,
-                and linked to modern work. If you read Latin, German, French,
-                Arabic, or Chinese, your skills are especially valuable. Even
-                English-language historical texts need careful transcription.
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <div
-          class="p-6 rounded-lg border hairline"
-          style="background: var(--color-paper-raised);"
-        >
-          <div class="flex items-start gap-3">
-            <span class="text-accent font-mono text-lg shrink-0">04</span>
-            <div>
-              <h4 class="font-display text-lg font-semibold mb-1">
-                Write code
-              </h4>
-              <p class="text-sm text-dim leading-relaxed">
-                The project is TypeScript (Astro + React), open source, and
-                there's no shortage of engineering work: ingestion pipelines
-                for new data sources (arXiv, OpenAlex, PubMed), semantic
-                search infrastructure, better visualizations, accessibility
-                improvements, and eventually community features. Check the
-                repo and pick up an issue.
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <div
-          class="p-6 rounded-lg border hairline"
-          style="background: var(--color-paper-raised);"
-        >
-          <div class="flex items-start gap-3">
-            <span class="text-accent font-mono text-lg shrink-0">05</span>
-            <div>
-              <h4 class="font-display text-lg font-semibold mb-1">
-                Recommend great science communication
-              </h4>
-              <p class="text-sm text-dim leading-relaxed">
-                Know a video, podcast, book, or article that changed how you
-                think about a scientific topic? We want to know about it.
-                The curated media layer is only as good as the community's
-                collective taste. Send us your favorites.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
+      <a
+        href="/contribute"
+        class="inline-flex items-center gap-2 text-accent eyebrow hover:text-white transition"
+      >
+        <span>See concrete actions on the contribute page</span>
+        <span>&rarr;</span>
+      </a>
     </section>
 
     {/* ----------------------------------------------------------- */}
-    {/* The belief                                                  */}
+    {/* Closing                                                     */}
     {/* ----------------------------------------------------------- */}
     <section class="mb-12 pt-12 border-t hairline">
       <blockquote class="pull-quote max-w-2xl">
-        "The most exciting phrase to hear in science, the one that heralds
-        new discoveries, is not 'Eureka!' but 'That's funny...'"
+        "The best way to predict the future of science is to build its
+        infrastructure."
       </blockquote>
-      <p class="mt-4 eyebrow">— Isaac Asimov (attributed)</p>
       <p class="mt-8 text-base text-dim leading-relaxed max-w-2xl">
         We believe the next great scientific insight is more likely to happen
         when a curious person can wander freely through all of human
@@ -300,7 +279,7 @@ import { allTopics } from "../lib/topics.ts";
         class="inline-flex items-center gap-2 text-accent eyebrow hover:text-white transition"
       >
         <span>View the project on GitHub</span>
-        <span>→</span>
+        <span>&rarr;</span>
       </a>
     </section>
   </article>
