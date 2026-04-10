@@ -20,7 +20,7 @@ const snapshotModules = import.meta.glob<{ default: unknown }>(
 /* -------------------------------------------------------------------------- */
 
 export interface PulseSource {
-  platform: "reddit" | "hackernews" | "youtube";
+  platform: "reddit" | "hackernews" | "youtube" | "arxiv";
   title: string;
   url: string;
   score: number;
@@ -29,6 +29,10 @@ export interface PulseSource {
   thumbnail?: string;
   commentCount?: number;
   publishedAt: string;
+  /** ArXiv-specific: comma-separated author list */
+  authors?: string;
+  /** ArXiv-specific: primary category (e.g. "astro-ph.EP") */
+  arxivCategory?: string;
 }
 
 export interface PulseTopic {

@@ -8,7 +8,7 @@ them by momentum, and presents a Kalshi-style leaderboard with expandable
 source cards.
 
 ### What exists now
-- `ingestion/fetch-pulse.ts` — pulls from 11 subreddits + HN Algolia API, matches to 18 topic keywords, computes scores, writes `data/pulse.json`. Run with `npm run pulse`.
+- `ingestion/fetch-pulse.ts` — pulls from 11 subreddits + HN Algolia API + ArXiv preprints, matches to 24 topic keywords, computes scores, writes `data/pulse.json`. Run with `npm run pulse`.
 - `web/src/lib/pulse.ts` — typed data layer, helpers (getTrendingTopics, getTopSources, formatScore, etc.)
 - `web/src/components/PulseBoard.tsx` — interactive React leaderboard with expandable rows, momentum bars, source cards with YouTube thumbnail support
 - `web/src/pages/pulse.astro` — full page: header stats, leaderboard, top discussions grid, rising concepts

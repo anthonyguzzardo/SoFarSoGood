@@ -31,6 +31,7 @@ jobs:
 
       - name: Fetch fresh pulse data
         run: npm run pulse
+        timeout-minutes: 15
 
       - name: Commit and push if data changed
         run: |

@@ -13,8 +13,8 @@
  *      attach the best sources, and write a static JSON file the web app
  *      can consume at build time.
  *
- * No API keys required — both Reddit (.json suffix) and HN (hn.algolia.com)
- * are public.
+ * No API keys required — Reddit (.json suffix), HN (hn.algolia.com), and
+ * ArXiv (export.arxiv.org) are all public.
  */
 
 import { writeFile, readFile, mkdir } from "node:fs/promises";
@@ -36,6 +36,8 @@ interface TopicDef {
   label: string;
   slug: string;
   terms: string[];
+  /** ArXiv search queries — more academic phrasing for preprint search */
+  arxivTerms?: string[];
   /** Slugs of related NIAC concepts — links the pulse back to the atlas */
   conceptSlugs: string[];
 }
@@ -46,144 +48,168 @@ const TOPICS: TopicDef[] = [
     label: "Starship & SpaceX",
     slug: "starship",
     terms: ["starship", "spacex", "falcon 9", "raptor engine", "super heavy", "falcon heavy"],
+    arxivTerms: ["reusable launch vehicle", "methane rocket engine"],
     conceptSlugs: ["extraterrestrial-regolith-derived-atmospheric-entry-heat-shields", "phase-i-final-report-nasa-institute-for-advanced-concepts-combined-heat-shield-a"],
   },
   {
     label: "Exoplanets",
     slug: "exoplanets",
     terms: ["exoplanet", "habitable zone", "habitable world", "earth-like planet", "super-earth", "exomoon", "TRAPPIST"],
+    arxivTerms: ["exoplanet detection", "habitable zone", "transit spectroscopy", "radial velocity exoplanet"],
     conceptSlugs: ["fluidic-telescope", "orbiting-rainbows"],
   },
   {
     label: "Black Holes",
     slug: "black-holes",
     terms: ["black hole", "event horizon", "hawking radiation", "singularity physics"],
+    arxivTerms: ["black hole", "event horizon telescope", "hawking radiation", "supermassive black hole"],
     conceptSlugs: ["direct-multipixel-imaging-and-spectroscopy-of-an-exoplanet-with-a-solar-gravity", "gravity-observation-and-dark-energy-detection-explorer"],
   },
   {
     label: "Dark Matter & Dark Energy",
     slug: "dark-matter",
     terms: ["dark matter", "dark energy", "WIMP", "dark sector", "cosmological constant"],
+    arxivTerms: ["dark matter", "dark energy", "WIMP detection", "cosmological constant"],
     conceptSlugs: ["gravity-observation-and-dark-energy-detection-explorer", "direct-probe-of-dark-energy-interactions"],
   },
   {
     label: "Gravitational Waves",
     slug: "gravitational-waves",
     terms: ["gravitational wave", "LIGO", "gravitational-wave", "neutron star merger", "LISA mission"],
+    arxivTerms: ["gravitational wave", "LIGO", "neutron star merger", "binary black hole merger"],
     conceptSlugs: ["atom-interferometry-for-detection-of-gravitational-waves"],
   },
   {
     label: "Space Telescopes",
     slug: "space-telescopes",
     terms: ["space telescope", "JWST", "james webb", "hubble", "LUVOIR", "habitable exoplanet observatory", "webb telescope"],
+    arxivTerms: ["JWST", "space telescope", "coronagraph", "starshade"],
     conceptSlugs: ["fluidic-telescope", "orbiting-rainbows"],
   },
   {
     label: "Artemis & Lunar Return",
     slug: "artemis",
     terms: ["artemis moon", "artemis nasa", "artemis mission", "artemis program", "moon landing", "lunar lander", "gateway station", "moon base", "lunar habitat", "lunar colony", "moon habitat", "lunar return"],
+    arxivTerms: ["lunar regolith", "lunar habitat", "cislunar"],
     conceptSlugs: ["mycotecture", "regolith-adaptive-modification-systems"],
   },
   {
     label: "Mars Exploration",
     slug: "mars",
     terms: ["mars rover", "mars colony", "mars colonization", "mars habitat", "mars settlement", "perseverance", "ingenuity helicopter", "mars sample return", "mars base"],
+    arxivTerms: ["mars atmosphere", "mars sample return", "martian regolith"],
     conceptSlugs: ["mycotecture", "breathing-mars-air", "evacuated-airship-for-mars-missions", "marsbee"],
   },
   {
     label: "Astrobiology",
     slug: "astrobiology",
     terms: ["astrobiology", "alien life", "biosignature", "extraterrestrial life", "life detection", "enceladus life", "europa life"],
+    arxivTerms: ["astrobiology", "biosignature", "prebiotic chemistry", "origin of life"],
     conceptSlugs: ["astropharmacy", "venus-atmosphere-and-cloud-particle-sample-return-for-astrobiology"],
   },
   {
     label: "Starlink & Satellite Internet",
     slug: "starlink",
     terms: ["starlink", "satellite internet", "satellite constellation", "kuiper"],
+    arxivTerms: ["mega-constellation", "satellite constellation interference"],
     conceptSlugs: ["sps-alpha"],
   },
   {
     label: "Solar Sails",
     slug: "solar-sails",
     terms: ["solar sail", "light sail", "lightsail", "solar sailing"],
+    arxivTerms: ["solar sail", "radiation pressure propulsion", "light sail"],
     conceptSlugs: ["extreme-metamaterial-solar-sails", "solar-surfing"],
   },
   {
     label: "Fusion Propulsion",
     slug: "fusion-propulsion",
     terms: ["fusion propulsion", "fusion rocket", "fusion drive", "fusion engine", "fusion energy", "fusion reactor", "tokamak", "ITER"],
+    arxivTerms: ["fusion propulsion", "inertial confinement fusion", "magnetic confinement fusion", "tokamak"],
     conceptSlugs: ["gradient-field-imploding-liner-fusion-propulsion", "fusion-enabled-pluto-orbiter", "pulsed-fission-fusion"],
   },
   {
     label: "Space Debris",
     slug: "space-debris",
     terms: ["space debris", "orbital debris", "space junk", "kessler syndrome", "debris removal"],
+    arxivTerms: ["space debris", "orbital debris", "Kessler syndrome"],
     conceptSlugs: ["niac-phase-i-final-report-on-orbit-collision"],
   },
   {
     label: "Nuclear Propulsion",
     slug: "nuclear-thermal",
     terms: ["nuclear thermal propulsion", "nuclear rocket", "nuclear propulsion", "radioisotope", "nuclear thermal rocket"],
+    arxivTerms: ["nuclear thermal propulsion", "radioisotope thermoelectric"],
     conceptSlugs: ["lattice-confinement-fusion", "pulsed-fission-fusion", "direct-energy-conversion-for-nuclear-propulsion"],
   },
   {
     label: "Interstellar Travel",
     slug: "interstellar-travel",
     terms: ["interstellar travel", "interstellar probe", "breakthrough starshot", "interstellar mission", "voyager probe"],
+    arxivTerms: ["interstellar probe", "interstellar travel", "laser propulsion spacecraft"],
     conceptSlugs: ["procsima", "dynamic-orbital-slingshot", "solar-system-escape-architecture"],
   },
   {
     label: "Asteroid Mining",
     slug: "asteroid-mining",
     terms: ["asteroid mining", "space mining", "asteroid resources", "asteroid redirect", "asteroid defense", "planetary defense"],
+    arxivTerms: ["asteroid mining", "near-earth asteroid", "planetary defense"],
     conceptSlugs: ["project-rama", "gravity-poppers"],
   },
   {
     label: "Space Elevators",
     slug: "space-elevators",
     terms: ["space elevator", "orbital tether", "space tether"],
+    arxivTerms: ["space elevator", "carbon nanotube tether"],
     conceptSlugs: ["technology-development-and-demonstration-concepts-for-the-space-elevator", "phase-1-study-for-the-phobos-l1-operational-tether-experiment-phlote"],
   },
   {
     label: "Titan & Ocean Worlds",
     slug: "ocean-worlds",
     terms: ["titan submarine", "titan exploration", "europa ocean", "enceladus ocean", "ocean world", "europa clipper"],
+    arxivTerms: ["titan atmosphere", "europa ocean", "enceladus plume", "ocean world habitability"],
     conceptSlugs: ["titan-submarine"],
   },
   {
     label: "Quantum Communication",
     slug: "quantum-comms",
     terms: ["quantum communication", "quantum internet", "quantum entanglement communication", "quantum key distribution"],
+    arxivTerms: ["quantum key distribution", "quantum communication satellite", "quantum entanglement distribution"],
     conceptSlugs: ["magneto-inductive-communications-for-ocean-worlds"],
   },
   {
     label: "Warp Drives & Exotic Physics",
     slug: "warp-drives",
     terms: ["warp drive", "alcubierre drive", "warp bubble", "FTL", "faster than light"],
+    arxivTerms: ["Alcubierre metric", "warp drive", "exotic matter negative energy"],
     conceptSlugs: ["procsima", "extreme-metamaterial-solar-sails-for-breakthrough-space-exploration"],
   },
   {
     label: "Electric Propulsion",
     slug: "electric-propulsion",
     terms: ["ion thruster", "hall thruster", "electric propulsion", "ion drive", "plasma thruster"],
+    arxivTerms: ["hall thruster", "ion propulsion", "electric propulsion spacecraft"],
     conceptSlugs: ["electric-sail-propulsion", "e-glider", "nasa-innovative-advanced-concepts-niac-heliopause-electrostatic-rapid-transit-sy"],
   },
   {
     label: "Dyson Spheres",
     slug: "dyson-spheres",
     terms: ["dyson sphere", "dyson swarm", "megastructure", "kardashev"],
+    arxivTerms: ["Dyson sphere", "megastructure", "Kardashev"],
     conceptSlugs: ["sps-alpha"],
   },
   {
     label: "Space Solar Power",
     slug: "space-solar-power",
     terms: ["space solar power", "space-based solar", "solar power satellite", "beamed power"],
+    arxivTerms: ["space solar power", "solar power satellite", "wireless power transmission space"],
     conceptSlugs: ["sps-alpha", "the-light-bender-concept-for-power-distribution"],
   },
   {
     label: "AI in Space",
     slug: "ai-space",
     terms: ["AI space", "machine learning astronomy", "AI satellite", "autonomous spacecraft", "AI telescope"],
+    arxivTerms: ["machine learning astronomy", "deep learning astrophysics", "autonomous spacecraft"],
     conceptSlugs: ["starnav", "an-automaton-rover-enabling-long-duration"],
   },
 ];
@@ -344,11 +370,145 @@ async function fetchAllHN(topics: TopicDef[], lookbackDays = 7): Promise<Map<str
 }
 
 /* -------------------------------------------------------------------------- */
+/* ArXiv fetcher                                                              */
+/* -------------------------------------------------------------------------- */
+/* ArXiv API returns Atom XML. We parse it manually (no dependencies).        */
+/* Endpoint: export.arxiv.org/api/query — free, no auth, no key.             */
+
+interface ArXivPaper {
+  title: string;
+  authors: string[];
+  summary: string;
+  arxivId: string;
+  url: string;
+  category: string;
+  published: string; // ISO date
+  updated: string;
+}
+
+/** Extract text content from an XML tag. Simple regex — no parser needed. */
+function xmlText(xml: string, tag: string): string {
+  const re = new RegExp(`<${tag}[^>]*>([\\s\\S]*?)</${tag}>`);
+  const m = xml.match(re);
+  return m ? m[1].trim().replace(/\s+/g, " ") : "";
+}
+
+/** Extract all matches of a tag from XML. */
+function xmlAll(xml: string, tag: string): string[] {
+  const re = new RegExp(`<${tag}[\\s\\S]*?</${tag}>`, "g");
+  return xml.match(re) ?? [];
+}
+
+async function searchArXiv(query: string, maxResults = 20): Promise<ArXivPaper[]> {
+  // Quote multi-word queries so ArXiv treats them as phrases, not OR'd terms
+  const quoted = query.includes(" ") ? `"${query}"` : query;
+  const params = new URLSearchParams({
+    search_query: `all:${quoted}`,
+    sortBy: "submittedDate",
+    sortOrder: "descending",
+    max_results: String(maxResults),
+  });
+  const url = `https://export.arxiv.org/api/query?${params}`;
+
+  try {
+    const res = await fetch(url, {
+      headers: { "User-Agent": "niac-atlas-pulse/0.1 (research project)" },
+    });
+    if (!res.ok) {
+      console.warn(`  ! ArXiv query "${query}": ${res.status}`);
+      return [];
+    }
+    const xml = await res.text();
+
+    // Parse <entry> elements
+    const entries = xmlAll(xml, "entry");
+    const papers: ArXivPaper[] = [];
+
+    for (const entry of entries) {
+      const title = xmlText(entry, "title");
+      if (!title) continue;
+
+      // Extract authors
+      const authorBlocks = xmlAll(entry, "author");
+      const authors = authorBlocks.map((a) => xmlText(a, "name")).filter(Boolean);
+
+      // ArXiv ID from <id> tag (e.g. "http://arxiv.org/abs/2404.12345v1")
+      const idUrl = xmlText(entry, "id");
+      const arxivId = idUrl.replace(/.*\/abs\//, "").replace(/v\d+$/, "");
+
+      // Primary category — prefer arxiv:primary_category, fall back to first category
+      const primaryMatch = entry.match(/primary_category\s+term="([^"]+)"/);
+      const catMatch = entry.match(/<category\s+term="([^"]+)"/);
+      const category = primaryMatch?.[1] || catMatch?.[1] || "";
+
+      const published = xmlText(entry, "published");
+      const updated = xmlText(entry, "updated");
+      const summary = xmlText(entry, "summary");
+
+      papers.push({
+        title,
+        authors,
+        summary,
+        arxivId,
+        url: `https://arxiv.org/abs/${arxivId}`,
+        category,
+        published,
+        updated,
+      });
+    }
+
+    return papers;
+  } catch (err) {
+    console.warn(`  ! ArXiv query "${query}": ${(err as Error).message}`);
+    return [];
+  }
+}
+
+/** Filter ArXiv papers to only recent ones (within lookback window). */
+function filterRecentPapers(papers: ArXivPaper[], lookbackDays: number): ArXivPaper[] {
+  const cutoff = Date.now() - lookbackDays * 86400000;
+  return papers.filter((p) => new Date(p.published).getTime() >= cutoff);
+}
+
+async function fetchAllArXiv(
+  topics: TopicDef[],
+  lookbackDays = 30,
+): Promise<Map<string, ArXivPaper[]>> {
+  console.log(`→ fetching ArXiv preprints (${lookbackDays}d)...`);
+  const map = new Map<string, ArXivPaper[]>();
+
+  for (const topic of topics) {
+    const terms = topic.arxivTerms ?? topic.terms.slice(0, 2);
+    const seen = new Set<string>();
+    const allPapers: ArXivPaper[] = [];
+
+    for (const term of terms.slice(0, 3)) {
+      const papers = filterRecentPapers(await searchArXiv(term, 15), lookbackDays);
+      for (const p of papers) {
+        if (!seen.has(p.arxivId)) {
+          seen.add(p.arxivId);
+          allPapers.push(p);
+        }
+      }
+      // ArXiv asks for max 1 request per 3 seconds
+      await sleep(3500);
+    }
+
+    if (allPapers.length > 0) {
+      map.set(topic.slug, allPapers);
+      console.log(`  ArXiv "${topic.slug}": ${allPapers.length} papers from ${Math.min(terms.length, 3)} terms`);
+    }
+  }
+
+  return map;
+}
+
+/* -------------------------------------------------------------------------- */
 /* Matching + scoring                                                         */
 /* -------------------------------------------------------------------------- */
 
 interface PulseSource {
-  platform: "reddit" | "hackernews" | "youtube";
+  platform: "reddit" | "hackernews" | "youtube" | "arxiv";
   title: string;
   url: string;
   score: number;
@@ -357,6 +517,10 @@ interface PulseSource {
   thumbnail?: string;
   commentCount?: number;
   publishedAt: string;
+  /** ArXiv-specific: comma-separated author list */
+  authors?: string;
+  /** ArXiv-specific: primary category (e.g. "astro-ph.EP") */
+  arxivCategory?: string;
 }
 
 /**
@@ -450,14 +614,17 @@ function scoreTopic(
   topic: TopicDef,
   redditPosts: RedditPost[],
   hnHits: HNHit[],
+  arxivPapers: ArXivPaper[] = [],
 ): PulseTopic {
   const reddit = matchRedditPosts(topic, redditPosts);
   const hn = hnHits;
 
   const redditScore = reddit.score;
   const hnScore = hn.reduce((sum, h) => sum + h.points, 0) * 1.5;
-  const totalScore = Math.round(redditScore + hnScore);
-  const mentions = reddit.posts.length + hn.length;
+  // ArXiv: each paper is worth a flat 50 points — scientific authority weight
+  const arxivScore = arxivPapers.length * 50;
+  const totalScore = Math.round(redditScore + hnScore + arxivScore);
+  const mentions = reddit.posts.length + hn.length + arxivPapers.length;
 
   // Build sources list, sorted by score, top 10.
   // Reddit posts that link to YouTube get split into a YouTube source
@@ -512,7 +679,17 @@ function scoreTopic(
     });
   }
 
-  const sources = [...redditSources, ...hnSources]
+  const arxivSources: PulseSource[] = arxivPapers.map((p) => ({
+    platform: "arxiv" as const,
+    title: p.title,
+    url: p.url,
+    score: 50, // flat authority weight
+    authors: p.authors.slice(0, 3).join(", ") + (p.authors.length > 3 ? " et al." : ""),
+    arxivCategory: p.category,
+    publishedAt: new Date(p.published).toISOString(),
+  }));
+
+  const sources = [...redditSources, ...hnSources, ...arxivSources]
     .sort((a, b) => b.score - a.score)
     .slice(0, 12);
 
@@ -584,6 +761,7 @@ function buildWeeklySnapshot(
   weekEnd: number,
   allReddit: RedditPost[],
   allHN: Map<string, HNHit[]>,
+  allArXiv: Map<string, ArXivPaper[]> = new Map(),
 ): { generatedAt: string; topics: PulseTopic[] } {
   // Filter Reddit posts to this week
   const weekReddit = allReddit.filter((p) => {
@@ -601,8 +779,18 @@ function buildWeeklySnapshot(
     if (filtered.length > 0) weekHN.set(slug, filtered);
   }
 
+  // Filter ArXiv papers to this week
+  const weekArXiv = new Map<string, ArXivPaper[]>();
+  for (const [slug, papers] of allArXiv) {
+    const filtered = papers.filter((p) => {
+      const ts = new Date(p.published).getTime();
+      return ts >= weekStart && ts < weekEnd;
+    });
+    if (filtered.length > 0) weekArXiv.set(slug, filtered);
+  }
+
   const topics = TOPICS.map((topic) =>
-    scoreTopic(topic, weekReddit, weekHN.get(topic.slug) ?? []),
+    scoreTopic(topic, weekReddit, weekHN.get(topic.slug) ?? [], weekArXiv.get(topic.slug) ?? []),
   )
     .filter((t) => t.mentions > 0 || t.score > 0)
     .sort((a, b) => b.score - a.score);
@@ -638,6 +826,7 @@ async function mainBackdate(): Promise<void> {
     fetchAllReddit("month"),
     fetchAllHN(TOPICS, 30),
   ]);
+  const arxivMap = await fetchAllArXiv(TOPICS, 30);
 
   console.log(`\n→ bucketing into ${WEEKS} weekly snapshots...`);
 
@@ -650,7 +839,7 @@ async function mainBackdate(): Promise<void> {
     const weekStart = weekEnd - weekMs;
     const dateLabel = new Date(weekStart).toISOString().slice(0, 10);
 
-    const snapshot = buildWeeklySnapshot(weekStart, weekEnd, redditPosts, hnMap);
+    const snapshot = buildWeeklySnapshot(weekStart, weekEnd, redditPosts, hnMap, arxivMap);
     const active = snapshot.topics.filter((t) => t.mentions > 0).length;
 
     const outFile = join(DATA_DIR, `pulse-${dateLabel}.json`);
@@ -713,9 +902,12 @@ async function main(): Promise<void> {
     loadPreviousPulse(),
   ]);
 
+  // ArXiv runs sequentially (rate limit: 1 req per 3s) so don't parallelize
+  const arxivMap = await fetchAllArXiv(TOPICS, 30);
+
   console.log("→ scoring topics...");
   const topics = TOPICS.map((topic) =>
-    scoreTopic(topic, redditPosts, hnMap.get(topic.slug) ?? []),
+    scoreTopic(topic, redditPosts, hnMap.get(topic.slug) ?? [], arxivMap.get(topic.slug) ?? []),
   )
     .filter((t) => t.mentions > 0 || t.score > 0)
     .sort((a, b) => b.score - a.score);

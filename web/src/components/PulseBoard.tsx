@@ -59,7 +59,9 @@ function platformLabel(platform: string): string {
       ? "Hacker News"
       : platform === "youtube"
         ? "YouTube"
-        : platform;
+        : platform === "arxiv"
+          ? "ArXiv"
+          : platform;
 }
 
 function platformColor(platform: string): { bg: string; fg: string } {
@@ -70,6 +72,8 @@ function platformColor(platform: string): { bg: string; fg: string } {
       return { bg: "rgba(255, 102, 0, 0.15)", fg: "#ff8c00" };
     case "youtube":
       return { bg: "rgba(255, 0, 0, 0.15)", fg: "#ff4444" };
+    case "arxiv":
+      return { bg: "rgba(100, 149, 237, 0.15)", fg: "#6495ed" };
     default:
       return { bg: "rgba(255,255,255,0.1)", fg: "#999" };
   }
@@ -305,6 +309,7 @@ function Sparkline({ sources, id, days = 7 }: { sources: PulseSource[]; id: stri
   const reddit = new Array(days).fill(0);
   const hn = new Array(days).fill(0);
   const yt = new Array(days).fill(0);
+  const arxiv = new Array(days).fill(0);
   for (const s of sources) {
     const age = now - new Date(s.publishedAt).getTime();
     const dayIndex = days - 1 - Math.floor(age / dayMs);
@@ -312,10 +317,11 @@ function Sparkline({ sources, id, days = 7 }: { sources: PulseSource[]; id: stri
       if (s.platform === "reddit") reddit[dayIndex]++;
       else if (s.platform === "hackernews") hn[dayIndex]++;
       else if (s.platform === "youtube") yt[dayIndex]++;
+      else if (s.platform === "arxiv") arxiv[dayIndex]++;
     }
   }
 
-  const totals = reddit.map((r, i) => r + hn[i] + yt[i]);
+  const totals = reddit.map((r, i) => r + hn[i] + yt[i] + arxiv[i]);
   const max = Math.max(...totals, 1);
   const w = 72;
   const h = 20;
@@ -326,6 +332,7 @@ function Sparkline({ sources, id, days = 7 }: { sources: PulseSource[]; id: stri
   const REDDIT_COLOR = "#ff6b35";
   const HN_COLOR = "#ffb84d";
   const YT_COLOR = "#ff4444";
+  const ARXIV_COLOR = "#6495ed";
 
   // Day labels for tooltip
   const dayLabels: string[] = [];
@@ -384,10 +391,11 @@ function Sparkline({ sources, id, days = 7 }: { sources: PulseSource[]; id: stri
           const baseY = h - totalH;
           const opacity = 0.3 + (count / max) * 0.7;
 
-          // Stack: Reddit on bottom, HN in middle, YT on top
+          // Stack: Reddit on bottom, HN, YT, ArXiv on top
           const rH = (reddit[i] / count) * totalH;
           const hH = (hn[i] / count) * totalH;
           const yH = (yt[i] / count) * totalH;
+          const aH = (arxiv[i] / count) * totalH;
 
           // Determine segments bottom-up
           const segments: { y: number; height: number; fill: string }[] = [];
@@ -402,6 +410,10 @@ function Sparkline({ sources, id, days = 7 }: { sources: PulseSource[]; id: stri
           }
           if (yt[i] > 0) {
             segments.push({ y: cursor - yH, height: yH, fill: YT_COLOR });
+            cursor -= yH;
+          }
+          if (arxiv[i] > 0) {
+            segments.push({ y: cursor - aH, height: aH, fill: ARXIV_COLOR });
           }
 
           return (
@@ -488,6 +500,13 @@ function Sparkline({ sources, id, days = 7 }: { sources: PulseSource[]; id: stri
                     <span className="inline-block w-1.5 h-1.5 rounded-sm" style={{ background: YT_COLOR }} />
                     <span>YouTube</span>
                     <span style={{ color: YT_COLOR, marginLeft: "auto" }}>{yt[hovered]}</span>
+                  </div>
+                )}
+                {arxiv[hovered] > 0 && (
+                  <div className="flex items-center gap-1.5">
+                    <span className="inline-block w-1.5 h-1.5 rounded-sm" style={{ background: ARXIV_COLOR }} />
+                    <span>ArXiv</span>
+                    <span style={{ color: ARXIV_COLOR, marginLeft: "auto" }}>{arxiv[hovered]}</span>
                   </div>
                 )}
                 <div
@@ -708,6 +727,14 @@ function SourceCard({ source }: { source: PulseSource }) {
               r/{source.subreddit}
             </span>
           )}
+          {(source as any).arxivCategory && (
+            <span
+              className="text-[0.6rem] font-mono"
+              style={{ color: "var(--color-ink-faint)" }}
+            >
+              {(source as any).arxivCategory}
+            </span>
+          )}
           <span
             className="text-[0.6rem] font-mono ml-auto"
             style={{ color: "var(--color-ink-faint)" }}
@@ -727,18 +754,26 @@ function SourceCard({ source }: { source: PulseSource }) {
           className="mt-2 flex items-center gap-3 text-[0.65rem] font-mono"
           style={{ color: "var(--color-ink-dim)" }}
         >
-          <span>
-            {source.platform === "youtube"
-              ? "▶"
-              : source.platform === "reddit"
-                ? "↑"
-                : "▴"}{" "}
-            {formatScore(source.score)}
-          </span>
-          {source.commentCount != null && (
-            <span>{source.commentCount} comments</span>
+          {source.platform === "arxiv" ? (
+            <>
+              {(source as any).authors && <span>{(source as any).authors}</span>}
+            </>
+          ) : (
+            <>
+              <span>
+                {source.platform === "youtube"
+                  ? "▶"
+                  : source.platform === "reddit"
+                    ? "↑"
+                    : "▴"}{" "}
+                {formatScore(source.score)}
+              </span>
+              {source.commentCount != null && (
+                <span>{source.commentCount} comments</span>
+              )}
+              {source.author && <span>by {source.author}</span>}
+            </>
           )}
-          {source.author && <span>by {source.author}</span>}
         </div>
       </div>
     </a>
@@ -1508,12 +1543,9 @@ export default function PulseBoard({ topics, generatedAt, conceptMap = {}, topic
 
         const featured = topSignalSources[0];
         const rest = topSignalSources.slice(1);
-        const fColor = featured.platform === "reddit"
-          ? { bg: "rgba(255, 69, 0, 0.15)", fg: "#ff6b35", label: "Reddit" }
-          : featured.platform === "youtube"
-            ? { bg: "rgba(255, 0, 0, 0.15)", fg: "#ff4444", label: "YouTube" }
-            : { bg: "rgba(255, 102, 0, 0.15)", fg: "#ff8c00", label: "Hacker News" };
-        const fIcon = featured.platform === "youtube" ? "▶" : featured.platform === "reddit" ? "↑" : "▴";
+        const fColor = platformColor(featured.platform);
+        const fLabel = platformLabel(featured.platform);
+        const fIcon = featured.platform === "youtube" ? "▶" : featured.platform === "reddit" ? "↑" : featured.platform === "arxiv" ? "📄" : "▴";
 
         return (
           <div className="mt-12 px-4">
@@ -1562,7 +1594,7 @@ export default function PulseBoard({ topics, generatedAt, conceptMap = {}, topic
                       className="text-[0.6rem] font-mono uppercase tracking-widest px-2 py-0.5 rounded"
                       style={{ background: fColor.bg, color: fColor.fg }}
                     >
-                      {fColor.label}
+                      {fLabel}
                     </span>
                     {featured.subreddit && (
                       <span
@@ -1615,12 +1647,8 @@ export default function PulseBoard({ topics, generatedAt, conceptMap = {}, topic
                   Also trending
                 </div>
                 {rest.map((source, i) => {
-                  const pColor = source.platform === "reddit"
-                    ? { bg: "rgba(255, 69, 0, 0.15)", fg: "#ff6b35" }
-                    : source.platform === "youtube"
-                      ? { bg: "rgba(255, 0, 0, 0.15)", fg: "#ff4444" }
-                      : { bg: "rgba(255, 102, 0, 0.15)", fg: "#ff8c00" };
-                  const pIcon = source.platform === "reddit" ? "↑" : source.platform === "youtube" ? "▶" : "▴";
+                  const pColor = platformColor(source.platform);
+                  const pIcon = source.platform === "reddit" ? "↑" : source.platform === "youtube" ? "▶" : source.platform === "arxiv" ? "📄" : "▴";
                   return (
                     <a
                       key={source.url}
@@ -1661,11 +1689,19 @@ export default function PulseBoard({ topics, generatedAt, conceptMap = {}, topic
                               ? `r/${source.subreddit || "space"}`
                               : source.platform === "hackernews"
                                 ? "HN"
-                                : "YT"}
+                                : source.platform === "arxiv"
+                                  ? (source as any).arxivCategory || "ArXiv"
+                                  : "YT"}
                           </span>
-                          <span>{pIcon} {source.score.toLocaleString()}</span>
-                          {source.commentCount != null && (
-                            <span>{source.commentCount} comments</span>
+                          {source.platform === "arxiv" ? (
+                            <span>{(source as any).authors || "preprint"}</span>
+                          ) : (
+                            <>
+                              <span>{pIcon} {source.score.toLocaleString()}</span>
+                              {source.commentCount != null && (
+                                <span>{source.commentCount} comments</span>
+                              )}
+                            </>
                           )}
                         </div>
                       </div>
@@ -1684,7 +1720,7 @@ export default function PulseBoard({ topics, generatedAt, conceptMap = {}, topic
         style={{ color: "var(--color-ink-faint)" }}
       >
         <span>
-          Data from Reddit + Hacker News · Updated{" "}
+          Data from Reddit + Hacker News + ArXiv · Updated{" "}
           {new Date(generatedAt).toLocaleDateString("en-US", {
             month: "short",
             day: "numeric",
@@ -1722,6 +1758,10 @@ export default function PulseBoard({ topics, generatedAt, conceptMap = {}, topic
               <span className="flex items-center gap-1">
                 <span className="inline-block w-2 h-2 rounded-sm" style={{ background: "#ff4444" }} />
                 YouTube
+              </span>
+              <span className="flex items-center gap-1">
+                <span className="inline-block w-2 h-2 rounded-sm" style={{ background: "#6495ed" }} />
+                ArXiv
               </span>
             </>
           )}
