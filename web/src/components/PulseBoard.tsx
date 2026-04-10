@@ -849,11 +849,17 @@ function recomputeForWindow(
 function generateLede(
   active: PulseTopic[],
   _window: TimeWindow,
-): { lede: string; stats: { topics: number; mentions: number; sources: number } } {
+  conceptMap: Record<string, ConceptInfo> = {},
+): { lede: string; stats: { topics: number; mentions: number; sources: number; funded: number } } {
+  const fundedCount = active.filter(
+    (t) => t.relatedConceptSlugs.some((s) => conceptMap[s]),
+  ).length;
+
   const stats = {
     topics: active.length,
     mentions: active.reduce((s, t) => s + t.mentions, 0),
     sources: active.reduce((s, t) => s + t.sources.length, 0),
+    funded: fundedCount,
   };
 
   const leader = active[0];
@@ -867,13 +873,20 @@ function generateLede(
   const parts: string[] = [];
 
   if (leader) {
+    const leaderFunded = leader.relatedConceptSlugs.filter((s) => conceptMap[s]).length;
     const topTitle = leader.sources[0]?.title;
     if (topTitle) {
       let truncated = topTitle;
       if (topTitle.length > 90) {
         truncated = topTitle.slice(0, 90).replace(/\s+\S*$/, "") + "…";
       }
-      parts.push(`${leader.label} leading the board — "${truncated}"`);
+      if (leaderFunded > 0) {
+        parts.push(
+          `${leader.label} leading the board — ${leaderFunded} NASA-funded ${leaderFunded === 1 ? "study" : "studies"} in the atlas. "${truncated}"`,
+        );
+      } else {
+        parts.push(`${leader.label} leading the board — social momentum only. "${truncated}"`);
+      }
     } else {
       parts.push(`${leader.label} leading the board with ${leader.mentions} mentions across platforms`);
     }
@@ -914,8 +927,8 @@ export default function PulseBoard({ topics, generatedAt, conceptMap = {} }: Pro
 
   // Reactive narrative lede — updates when time window changes
   const { lede, stats } = useMemo(
-    () => generateLede(activeTopics, timeWindow),
-    [activeTopics, timeWindow],
+    () => generateLede(activeTopics, timeWindow, conceptMap),
+    [activeTopics, timeWindow, conceptMap],
   );
 
   const biggestMover = activeTopics
@@ -987,6 +1000,14 @@ export default function PulseBoard({ topics, generatedAt, conceptMap = {} }: Pro
             <span>{stats.mentions} mentions</span>
             <span style={{ opacity: 0.3 }}>·</span>
             <span>{stats.sources} sources</span>
+            {stats.funded > 0 && (
+              <>
+                <span style={{ opacity: 0.3 }}>·</span>
+                <span style={{ color: "rgba(74, 222, 128, 0.65)" }}>
+                  {stats.funded} with funded research
+                </span>
+              </>
+            )}
           </div>
         </div>
         <div className="flex items-center gap-1 shrink-0">
