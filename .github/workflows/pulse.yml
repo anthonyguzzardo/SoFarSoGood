@@ -1,9 +1,10 @@
-name: Pulse — weekly data refresh
+name: Pulse — trending data refresh
 
 on:
   schedule:
-    # Every Sunday at 06:00 UTC
-    - cron: "0 6 * * 0"
+    # Twice daily: 06:00 and 18:00 UTC
+    - cron: "0 6 * * *"
+    - cron: "0 18 * * *"
   workflow_dispatch: # Manual trigger from GitHub UI
 
 jobs:
@@ -18,30 +19,46 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: "22"
+          cache: "npm"
 
       - name: Install dependencies
         run: npm ci
 
-      - name: Save dated snapshot of current data
-        run: |
-          DATE=$(date -u +%Y-%m-%d)
-          if [ -f data/pulse.json ]; then
-            cp data/pulse.json "data/pulse-${DATE}.json"
-          fi
+      - name: Restore pulse cache
+        uses: actions/cache@v4
+        with:
+          path: data/.cache
+          key: pulse-cache-${{ github.run_id }}
+          restore-keys: pulse-cache-
 
       - name: Fetch fresh pulse data
         run: npm run pulse
         timeout-minutes: 15
 
+      - name: Check health
+        run: |
+          if [ -f data/pulse-meta.json ]; then
+            REDDIT=$(jq '.redditPostCount' data/pulse-meta.json)
+            ERRORS=$(jq '.errors | length' data/pulse-meta.json)
+            DURATION=$(jq '.durationMs' data/pulse-meta.json)
+            echo "Reddit posts: $REDDIT | Errors: $ERRORS | Duration: ${DURATION}ms"
+            if [ "$REDDIT" -lt 10 ]; then
+              echo "::warning::Low Reddit post count ($REDDIT) — possible rate limiting or outage"
+            fi
+            if [ "$ERRORS" -gt 5 ]; then
+              echo "::warning::$ERRORS errors during fetch — check pulse-meta.json"
+            fi
+          fi
+
       - name: Commit and push if data changed
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add data/pulse.json data/pulse-prev.json "data/pulse-*.json"
+          git add data/pulse.json data/pulse-prev.json data/pulse-meta.json "data/pulse-*.json"
           if git diff --staged --quiet; then
             echo "No changes to commit"
           else
             DATE=$(date -u +%Y-%m-%d)
-            git commit -m "pulse: weekly refresh ${DATE}"
+            git commit -m "pulse: refresh ${DATE}"
             git push
           fi
