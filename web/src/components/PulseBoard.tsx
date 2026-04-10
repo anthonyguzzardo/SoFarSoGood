@@ -86,11 +86,13 @@ function HeroSpotlight({
   onToggle,
   isExpanded,
   conceptMap = {},
+  trajectory,
 }: {
   topic: PulseTopic;
   onToggle: () => void;
   isExpanded: boolean;
   conceptMap?: Record<string, ConceptInfo>;
+  trajectory?: number;
 }) {
   const topSource = topic.sources[0];
   const resolvedConcepts = topic.relatedConceptSlugs
@@ -184,6 +186,14 @@ function HeroSpotlight({
                 <span>{topic.mentions} mentions</span>
                 <span style={{ opacity: 0.3 }}>·</span>
                 <span>{topic.sources.length} sources</span>
+                {trajectory != null && (
+                  <>
+                    <span style={{ opacity: 0.3 }}>·</span>
+                    <span style={{ color: trajectory > 0 ? "#4ade80" : "#f87171" }}>
+                      {trajectory > 0 ? `↑${trajectory}` : `↓${Math.abs(trajectory)}`} vs weekly
+                    </span>
+                  </>
+                )}
                 <span
                   className="ml-auto text-xs transition-transform"
                   style={{
@@ -925,6 +935,39 @@ export default function PulseBoard({ topics, generatedAt, conceptMap = {} }: Pro
   const activeTopics = windowTopics.filter((t) => t.mentions > 0);
   const quietTopics = windowTopics.filter((t) => t.mentions === 0);
 
+  // Rank trajectory: compare 7d vs 3d rankings to surface cross-window momentum
+  const trajectoryMap = useMemo(() => {
+    const active7d = recomputeForWindow(topics, "7d").filter(t => t.mentions > 0);
+    const active3d = recomputeForWindow(topics, "3d").filter(t => t.mentions > 0);
+    const rank7d = new Map(active7d.map((t, i) => [t.slug, i + 1] as const));
+    const rank3d = new Map(active3d.map((t, i) => [t.slug, i + 1] as const));
+    const map = new Map<string, number>();
+    for (const [slug, r7] of rank7d) {
+      const r3 = rank3d.get(slug);
+      if (r3 != null && r7 !== r3) {
+        map.set(slug, r7 - r3); // positive = higher rank in 3d = gaining recent momentum
+      }
+    }
+    return map;
+  }, [topics]);
+
+  // Top movers: topics with biggest rank changes between 7d and 3d
+  const movers = useMemo(() => {
+    const entries = [...trajectoryMap.entries()];
+    const findLabel = (slug: string) => topics.find(t => t.slug === slug)?.label ?? slug;
+    const risers = entries
+      .filter(([, d]) => d > 0)
+      .sort(([, a], [, b]) => b - a)
+      .slice(0, 3)
+      .map(([slug, diff]) => ({ slug, label: findLabel(slug), diff }));
+    const fallers = entries
+      .filter(([, d]) => d < 0)
+      .sort(([, a], [, b]) => a - b)
+      .slice(0, 3)
+      .map(([slug, diff]) => ({ slug, label: findLabel(slug), diff }));
+    return { risers, fallers };
+  }, [trajectoryMap, topics]);
+
   // Reactive narrative lede — updates when time window changes
   const { lede, stats } = useMemo(
     () => generateLede(activeTopics, timeWindow, conceptMap),
@@ -1041,6 +1084,7 @@ export default function PulseBoard({ topics, generatedAt, conceptMap = {} }: Pro
             onToggle={() => toggle(heroTopic.slug)}
             isExpanded={expanded === heroTopic.slug}
             conceptMap={conceptMap}
+            trajectory={trajectoryMap.get(heroTopic.slug)}
           />
           {/* Hero expanded sources */}
           {expanded === heroTopic.slug && heroTopic.sources.length > 0 && (
@@ -1148,6 +1192,39 @@ export default function PulseBoard({ topics, generatedAt, conceptMap = {} }: Pro
               — {biggestMover.sources[0].title}
             </span>
           )}
+        </div>
+      )}
+
+      {/* Movers ticker — 3d vs 7d rank trajectory */}
+      {(movers.risers.length > 0 || movers.fallers.length > 0) && (
+        <div
+          className="mx-4 mb-3 px-4 py-2 rounded-lg flex items-center gap-3 flex-wrap"
+          style={{
+            background: "rgba(255,255,255,0.015)",
+            border: "1px solid var(--color-paper-edge)",
+          }}
+        >
+          <span
+            className="text-[0.55rem] font-mono uppercase tracking-widest shrink-0"
+            style={{ color: "var(--color-ink-faint)" }}
+          >
+            3d momentum
+          </span>
+          {movers.risers.map((m) => (
+            <span key={m.slug} className="flex items-center gap-1 text-[0.6rem] font-mono">
+              <span style={{ color: "#4ade80" }}>↑{m.diff}</span>
+              <span style={{ color: "var(--color-ink-dim)", fontFamily: "var(--font-display)" }}>{m.label}</span>
+            </span>
+          ))}
+          {movers.fallers.length > 0 && movers.risers.length > 0 && (
+            <span style={{ color: "var(--color-ink-faint)", opacity: 0.3 }}>·</span>
+          )}
+          {movers.fallers.map((m) => (
+            <span key={m.slug} className="flex items-center gap-1 text-[0.6rem] font-mono">
+              <span style={{ color: "#f87171" }}>↓{Math.abs(m.diff)}</span>
+              <span style={{ color: "var(--color-ink-dim)", fontFamily: "var(--font-display)" }}>{m.label}</span>
+            </span>
+          ))}
         </div>
       )}
 
