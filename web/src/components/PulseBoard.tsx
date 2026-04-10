@@ -70,6 +70,141 @@ function directionColor(dir: string): string {
 }
 
 /* -------------------------------------------------------------------------- */
+/* Hero spotlight — the #1 topic gets a dominant visual treatment              */
+/* -------------------------------------------------------------------------- */
+
+function HeroSpotlight({
+  topic,
+  onToggle,
+  isExpanded,
+}: {
+  topic: PulseTopic;
+  onToggle: () => void;
+  isExpanded: boolean;
+}) {
+  const topSource = topic.sources[0];
+  const topYT = topic.sources.find((s) => s.thumbnail);
+
+  return (
+    <button
+      onClick={onToggle}
+      className="w-full text-left group"
+      style={{ background: "transparent", border: "none", padding: 0 }}
+    >
+      <div
+        className="relative rounded-xl overflow-hidden mb-4 transition-all duration-300"
+        style={{
+          background:
+            "linear-gradient(135deg, rgba(255,184,77,0.06) 0%, rgba(255,184,77,0.02) 50%, rgba(255,184,77,0.04) 100%)",
+          border: "1px solid rgba(255,184,77,0.18)",
+          boxShadow: "0 0 40px rgba(255,184,77,0.04), inset 0 1px 0 rgba(255,184,77,0.08)",
+        }}
+      >
+        {/* Animated glow line at top */}
+        <div
+          className="absolute top-0 left-0 right-0 h-[2px]"
+          style={{
+            background:
+              "linear-gradient(90deg, transparent, var(--color-accent), transparent)",
+            animation: "pulseGlow 3s ease-in-out infinite",
+          }}
+        />
+
+        <div className="p-5 md:p-6">
+          <div className="flex items-start gap-4">
+            {/* Rank badge */}
+            <div
+              className="shrink-0 w-10 h-10 rounded-lg flex items-center justify-center font-mono text-lg font-bold"
+              style={{
+                background: "rgba(255,184,77,0.12)",
+                color: "var(--color-accent)",
+                border: "1px solid rgba(255,184,77,0.2)",
+              }}
+            >
+              1
+            </div>
+
+            <div className="flex-1 min-w-0">
+              {/* Topic name — big */}
+              <div className="flex items-center gap-3 flex-wrap">
+                <h3
+                  className="font-semibold text-xl md:text-2xl tracking-tight group-hover:text-amber-300 transition-colors"
+                  style={{
+                    fontFamily: "var(--font-display)",
+                    color: "var(--color-ink)",
+                  }}
+                >
+                  {topic.label}
+                </h3>
+                <span
+                  className={`text-sm font-mono font-medium ${directionColor(topic.direction)}`}
+                >
+                  {directionArrow(topic.direction)}{" "}
+                  {topic.delta !== 0
+                    ? `${topic.delta > 0 ? "+" : ""}${topic.delta}%`
+                    : "steady"}
+                </span>
+              </div>
+
+              {/* Top headline */}
+              {topSource && (
+                <p
+                  className="mt-2 text-sm leading-relaxed line-clamp-2"
+                  style={{ color: "var(--color-ink-dim)" }}
+                >
+                  "{topSource.title}"
+                </p>
+              )}
+
+              {/* Stats row */}
+              <div
+                className="mt-3 flex items-center gap-4 text-[0.65rem] font-mono uppercase tracking-widest"
+                style={{ color: "var(--color-ink-faint)" }}
+              >
+                <span>
+                  <span style={{ color: "var(--color-accent)" }}>
+                    {formatScore(topic.score)}
+                  </span>{" "}
+                  score
+                </span>
+                <span style={{ opacity: 0.3 }}>·</span>
+                <span>{topic.mentions} mentions</span>
+                <span style={{ opacity: 0.3 }}>·</span>
+                <span>{topic.sources.length} sources</span>
+                <span
+                  className="ml-auto text-xs transition-transform"
+                  style={{
+                    color: "var(--color-ink-faint)",
+                    transform: isExpanded ? "rotate(180deg)" : "rotate(0)",
+                  }}
+                >
+                  ▾
+                </span>
+              </div>
+            </div>
+
+            {/* YouTube thumbnail preview if available */}
+            {topYT && (
+              <div
+                className="hidden md:block shrink-0 w-28 h-20 rounded-lg overflow-hidden"
+                style={{ border: "1px solid var(--color-paper-edge)" }}
+              >
+                <img
+                  src={topYT.thumbnail}
+                  alt=""
+                  className="w-full h-full object-cover opacity-70 group-hover:opacity-90 transition-opacity"
+                  loading="lazy"
+                />
+              </div>
+            )}
+          </div>
+        </div>
+      </div>
+    </button>
+  );
+}
+
+/* -------------------------------------------------------------------------- */
 /* Sparkline — 7-day activity chart from source timestamps                    */
 /* -------------------------------------------------------------------------- */
 
@@ -266,12 +401,12 @@ function TopicRow({
               ? "pulse-row-expanded"
               : "pulse-row-idle"
           }`}
-          style={rank === 1 ? { borderLeft: "2px solid var(--color-accent)" } : undefined}
+          style={rank === 2 ? { borderLeft: "2px solid rgba(255,184,77,0.3)" } : undefined}
         >
           {/* Rank */}
           <span
-            className={`text-sm font-mono w-6 text-right shrink-0 ${rank === 1 ? "font-semibold" : ""}`}
-            style={{ color: rank === 1 ? "var(--color-accent)" : "var(--color-ink-faint)" }}
+            className={`text-sm font-mono w-6 text-right shrink-0 ${rank === 2 ? "font-semibold" : ""}`}
+            style={{ color: rank <= 3 ? "var(--color-accent)" : "var(--color-ink-faint)" }}
           >
             {rank}
           </span>
@@ -445,31 +580,96 @@ export default function PulseBoard({ topics, generatedAt }: Props) {
     });
   }, []);
 
+  const heroTopic = activeTopics[0];
+  const restTopics = activeTopics.slice(1);
+
   return (
     <div>
-      {/* Header row */}
-      <div
-        className="flex items-center gap-4 px-4 py-2 mb-1 text-[0.6rem] font-mono uppercase tracking-widest"
-        style={{ color: "var(--color-ink-faint)" }}
-      >
-        <span className="w-6 text-right">#</span>
-        <span className="w-4" />
-        <span className="flex-1">Topic</span>
-        <span className="w-[72px] hidden sm:block text-right">7-day</span>
-        <span className="w-16 text-right">Score</span>
-        <span className="w-14 text-right">Change</span>
-        <span className="w-8 text-right hidden md:block">Hits</span>
-        <span className="w-4" />
-      </div>
+      {/* Glow animation for hero */}
+      <style>{`
+        @keyframes pulseGlow {
+          0%, 100% { opacity: 0.4; }
+          50% { opacity: 1; }
+        }
+      `}</style>
 
-      {/* Divider */}
-      <div
-        className="mx-4 mb-2"
-        style={{ borderBottom: "1px solid var(--color-paper-edge)" }}
-      />
+      {/* Hero spotlight — #1 topic */}
+      {heroTopic && (
+        <div
+          ref={(el) => {
+            if (el) rowRefs.current.set(heroTopic.slug, el);
+          }}
+        >
+          <HeroSpotlight
+            topic={heroTopic}
+            onToggle={() => toggle(heroTopic.slug)}
+            isExpanded={expanded === heroTopic.slug}
+          />
+          {/* Hero expanded sources */}
+          {expanded === heroTopic.slug && heroTopic.sources.length > 0 && (
+            <div className="px-4 pb-4 -mt-2 mb-4">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
+                {heroTopic.sources.slice(0, 6).map((source, i) => (
+                  <SourceCard key={i} source={source} />
+                ))}
+              </div>
+              <div className="mt-3 flex items-center gap-2 flex-wrap">
+                {heroTopic.relatedConceptSlugs.length > 0 && (
+                  <>
+                    <span
+                      className="text-[0.6rem] font-mono uppercase tracking-widest"
+                      style={{ color: "var(--color-ink-faint)" }}
+                    >
+                      Related in the atlas:
+                    </span>
+                    {heroTopic.relatedConceptSlugs.map((slug) => (
+                      <a
+                        key={slug}
+                        href={`/concept/${slug}`}
+                        className="text-xs font-mono px-2 py-1 rounded border transition-colors hover:border-amber-400/40"
+                        style={{
+                          color: "var(--color-accent)",
+                          borderColor: "var(--color-paper-edge)",
+                          background: "rgba(255,184,77,0.06)",
+                        }}
+                      >
+                        {slug}
+                      </a>
+                    ))}
+                  </>
+                )}
+                <button
+                  onClick={(e) => {
+                    e.stopPropagation();
+                    copyLink(heroTopic.slug);
+                  }}
+                  className="ml-auto text-[0.6rem] font-mono uppercase tracking-widest px-2 py-1 rounded border transition-all hover:border-amber-400/40"
+                  style={{
+                    color:
+                      copiedSlug === heroTopic.slug
+                        ? "var(--color-accent)"
+                        : "var(--color-ink-faint)",
+                    borderColor:
+                      copiedSlug === heroTopic.slug
+                        ? "rgba(255,184,77,0.3)"
+                        : "var(--color-paper-edge)",
+                    background:
+                      copiedSlug === heroTopic.slug
+                        ? "rgba(255,184,77,0.08)"
+                        : "transparent",
+                    cursor: "pointer",
+                  }}
+                >
+                  {copiedSlug === heroTopic.slug ? "Copied!" : "Share link"}
+                </button>
+              </div>
+            </div>
+          )}
+        </div>
+      )}
 
-      {/* Biggest mover callout */}
-      {biggestMover && (
+      {/* Biggest mover callout — only if it's NOT the #1 topic */}
+      {biggestMover && biggestMover.slug !== heroTopic?.slug && (
         <div
           className="mx-4 mb-3 px-4 py-2.5 rounded-lg flex items-center gap-3"
           style={{
@@ -507,12 +707,37 @@ export default function PulseBoard({ topics, generatedAt }: Props) {
         </div>
       )}
 
-      {/* Active topics */}
-      {activeTopics.map((topic, i) => (
+      {/* Header row — for the rest of the board */}
+      {restTopics.length > 0 && (
+        <>
+          <div
+            className="flex items-center gap-4 px-4 py-2 mb-1 text-[0.6rem] font-mono uppercase tracking-widest"
+            style={{ color: "var(--color-ink-faint)" }}
+          >
+            <span className="w-6 text-right">#</span>
+            <span className="w-4" />
+            <span className="flex-1">Topic</span>
+            <span className="w-[72px] hidden sm:block text-right">7-day</span>
+            <span className="w-16 text-right">Score</span>
+            <span className="w-14 text-right">Change</span>
+            <span className="w-8 text-right hidden md:block">Hits</span>
+            <span className="w-4" />
+          </div>
+
+          {/* Divider */}
+          <div
+            className="mx-4 mb-2"
+            style={{ borderBottom: "1px solid var(--color-paper-edge)" }}
+          />
+        </>
+      )}
+
+      {/* Remaining topics (rank 2+) */}
+      {restTopics.map((topic, i) => (
         <TopicRow
           key={topic.slug}
           topic={topic}
-          rank={i + 1}
+          rank={i + 2}
           isExpanded={expanded === topic.slug}
           onToggle={() => toggle(topic.slug)}
           onCopyLink={() => copyLink(topic.slug)}

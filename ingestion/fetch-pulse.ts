@@ -196,6 +196,10 @@ const SUBREDDITS = [
   "space", "spacex", "nasa", "futurology", "physics",
   "aerospace", "science", "engineering", "spaceflight",
   "astrophysics", "cosmology",
+  // Niche subs to fill quiet topics
+  "solarsystem", "mars", "astrobiology", "BlueOrigin",
+  "SpaceXLounge", "nuclearpower", "quantumcomputing",
+  "IsaacArthur", "fusion",
 ];
 
 interface RedditPost {
@@ -312,16 +316,27 @@ async function fetchAllHN(topics: TopicDef[]): Promise<Map<string, HNHit[]>> {
   console.log("→ fetching Hacker News...");
   const map = new Map<string, HNHit[]>();
   for (const topic of topics) {
-    // Search with the first (most specific) term
-    const raw = await searchHN(topic.terms[0]!);
-    // Filter to title matches only — Algolia searches full text which
-    // produces false positives like coding tools under "Black Holes"
-    const hits = filterHNByTitle(raw, topic.terms);
-    if (hits.length > 0) {
-      map.set(topic.slug, hits);
-      console.log(`  HN "${topic.terms[0]}": ${raw.length} raw → ${hits.length} title-matched`);
+    // Search up to 3 terms per topic to catch more coverage
+    const termsToSearch = topic.terms.slice(0, 3);
+    const seen = new Set<string>();
+    const allHits: HNHit[] = [];
+
+    for (const term of termsToSearch) {
+      const raw = await searchHN(term);
+      const hits = filterHNByTitle(raw, topic.terms);
+      for (const h of hits) {
+        if (!seen.has(h.objectID)) {
+          seen.add(h.objectID);
+          allHits.push(h);
+        }
+      }
+      await sleep(300);
     }
-    await sleep(300);
+
+    if (allHits.length > 0) {
+      map.set(topic.slug, allHits);
+      console.log(`  HN "${topic.slug}": ${allHits.length} hits from ${termsToSearch.length} terms`);
+    }
   }
   return map;
 }
