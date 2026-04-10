@@ -70,6 +70,71 @@ function directionColor(dir: string): string {
 }
 
 /* -------------------------------------------------------------------------- */
+/* Sparkline — 7-day activity chart from source timestamps                    */
+/* -------------------------------------------------------------------------- */
+
+function Sparkline({ sources }: { sources: PulseSource[] }) {
+  const now = Date.now();
+  const dayMs = 86400000;
+  const days = 7;
+
+  // Bucket sources into daily bins (index 0 = 7 days ago, 6 = today)
+  const buckets = new Array(days).fill(0);
+  for (const s of sources) {
+    const age = now - new Date(s.publishedAt).getTime();
+    const dayIndex = days - 1 - Math.floor(age / dayMs);
+    if (dayIndex >= 0 && dayIndex < days) {
+      buckets[dayIndex]++;
+    }
+  }
+
+  const max = Math.max(...buckets, 1);
+  const w = 72;
+  const h = 20;
+  const barW = 7;
+  const gap = (w - barW * days) / (days - 1);
+
+  return (
+    <svg
+      width={w}
+      height={h}
+      viewBox={`0 0 ${w} ${h}`}
+      className="shrink-0"
+      style={{ overflow: "visible" }}
+    >
+      {buckets.map((count, i) => {
+        const barH = max > 0 ? (count / max) * (h - 2) : 0;
+        const x = i * (barW + gap);
+        const y = h - barH;
+        const isToday = i === days - 1;
+        const opacity = count === 0 ? 0.08 : 0.3 + (count / max) * 0.7;
+        return (
+          <rect
+            key={i}
+            x={x}
+            y={count === 0 ? h - 2 : y}
+            width={barW}
+            height={count === 0 ? 2 : barH}
+            rx={1.5}
+            fill={isToday && count > 0 ? "#ffb84d" : "#ffb84d"}
+            opacity={opacity}
+          >
+            {isToday && count > 0 && (
+              <animate
+                attributeName="opacity"
+                values={`${opacity};${Math.max(opacity - 0.2, 0.3)};${opacity}`}
+                dur="2s"
+                repeatCount="indefinite"
+              />
+            )}
+          </rect>
+        );
+      })}
+    </svg>
+  );
+}
+
+/* -------------------------------------------------------------------------- */
 /* Source card                                                                 */
 /* -------------------------------------------------------------------------- */
 
@@ -171,17 +236,14 @@ function SourceCard({ source }: { source: PulseSource }) {
 function TopicRow({
   topic,
   rank,
-  maxScore,
   isExpanded,
   onToggle,
 }: {
   topic: PulseTopic;
   rank: number;
-  maxScore: number;
   isExpanded: boolean;
   onToggle: () => void;
 }) {
-  const barWidth = maxScore > 0 ? (topic.score / maxScore) * 100 : 0;
 
   return (
     <div>
@@ -219,21 +281,9 @@ function TopicRow({
             {topic.label}
           </span>
 
-          {/* Momentum bar */}
-          <div className="flex-1 hidden sm:block">
-            <div
-              className="h-2 rounded-full overflow-hidden"
-              style={{ background: "rgba(255,255,255,0.05)" }}
-            >
-              <div
-                className="h-full rounded-full transition-all duration-700"
-                style={{
-                  width: `${barWidth}%`,
-                  background:
-                    "linear-gradient(90deg, rgba(255,184,77,0.4), rgba(255,184,77,0.8))",
-                }}
-              />
-            </div>
+          {/* Activity sparkline — 7-day heartbeat */}
+          <div className="flex-1 hidden sm:flex items-center justify-end">
+            <Sparkline sources={topic.sources} />
           </div>
 
           {/* Score */}
@@ -321,7 +371,6 @@ export default function PulseBoard({ topics, generatedAt }: Props) {
 
   const activeTopics = topics.filter((t) => t.mentions > 0);
   const quietTopics = topics.filter((t) => t.mentions === 0);
-  const maxScore = activeTopics[0]?.score ?? 1;
 
   const toggle = (slug: string) =>
     setExpanded((prev) => (prev === slug ? null : slug));
@@ -336,7 +385,7 @@ export default function PulseBoard({ topics, generatedAt }: Props) {
         <span className="w-6 text-right">#</span>
         <span className="w-4" />
         <span className="min-w-[140px]">Topic</span>
-        <span className="flex-1 hidden sm:block">Momentum</span>
+        <span className="flex-1 hidden sm:block text-right">7-day</span>
         <span className="w-16 text-right">Score</span>
         <span className="w-14 text-right">Change</span>
         <span className="w-8 text-right hidden md:block">Hits</span>
@@ -355,7 +404,6 @@ export default function PulseBoard({ topics, generatedAt }: Props) {
           key={topic.slug}
           topic={topic}
           rank={i + 1}
-          maxScore={maxScore}
           isExpanded={expanded === topic.slug}
           onToggle={() => toggle(topic.slug)}
         />

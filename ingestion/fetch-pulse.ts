@@ -41,6 +41,67 @@ interface TopicDef {
 }
 
 const TOPICS: TopicDef[] = [
+  // --- High-traffic topics (these actually trend on Reddit/HN) ---
+  {
+    label: "Starship & SpaceX",
+    slug: "starship",
+    terms: ["starship", "spacex", "falcon 9", "raptor engine", "super heavy", "falcon heavy"],
+    conceptSlugs: [],
+  },
+  {
+    label: "Exoplanets",
+    slug: "exoplanets",
+    terms: ["exoplanet", "habitable zone", "habitable world", "earth-like planet", "super-earth", "exomoon", "TRAPPIST"],
+    conceptSlugs: ["fluidic-telescope", "orbiting-rainbows"],
+  },
+  {
+    label: "Black Holes",
+    slug: "black-holes",
+    terms: ["black hole", "event horizon", "hawking radiation", "singularity physics"],
+    conceptSlugs: [],
+  },
+  {
+    label: "Dark Matter & Dark Energy",
+    slug: "dark-matter",
+    terms: ["dark matter", "dark energy", "WIMP", "dark sector", "cosmological constant"],
+    conceptSlugs: [],
+  },
+  {
+    label: "Gravitational Waves",
+    slug: "gravitational-waves",
+    terms: ["gravitational wave", "LIGO", "gravitational-wave", "neutron star merger", "LISA mission"],
+    conceptSlugs: [],
+  },
+  {
+    label: "Space Telescopes",
+    slug: "space-telescopes",
+    terms: ["space telescope", "JWST", "james webb", "hubble", "LUVOIR", "habitable exoplanet observatory", "webb telescope"],
+    conceptSlugs: ["fluidic-telescope", "orbiting-rainbows"],
+  },
+  {
+    label: "Artemis & Lunar Return",
+    slug: "artemis",
+    terms: ["artemis moon", "artemis nasa", "artemis mission", "artemis program", "moon landing", "lunar lander", "gateway station", "moon base", "lunar habitat", "lunar colony", "moon habitat", "lunar return"],
+    conceptSlugs: ["mycotecture", "sintered-regolith"],
+  },
+  {
+    label: "Mars Exploration",
+    slug: "mars",
+    terms: ["mars rover", "mars colony", "mars colonization", "mars habitat", "mars settlement", "perseverance", "ingenuity helicopter", "mars sample return", "mars base"],
+    conceptSlugs: ["mycotecture"],
+  },
+  {
+    label: "Astrobiology",
+    slug: "astrobiology",
+    terms: ["astrobiology", "alien life", "biosignature", "extraterrestrial life", "life detection", "enceladus life", "europa life"],
+    conceptSlugs: [],
+  },
+  {
+    label: "Starlink & Satellite Internet",
+    slug: "starlink",
+    terms: ["starlink", "satellite internet", "satellite constellation", "kuiper"],
+    conceptSlugs: [],
+  },
   {
     label: "Solar Sails",
     slug: "solar-sails",
@@ -50,8 +111,32 @@ const TOPICS: TopicDef[] = [
   {
     label: "Fusion Propulsion",
     slug: "fusion-propulsion",
-    terms: ["fusion propulsion", "fusion rocket", "fusion drive", "fusion engine"],
+    terms: ["fusion propulsion", "fusion rocket", "fusion drive", "fusion engine", "fusion energy", "fusion reactor", "tokamak", "ITER"],
     conceptSlugs: ["fusion-driven-rocket", "direct-fusion-drive"],
+  },
+  {
+    label: "Space Debris",
+    slug: "space-debris",
+    terms: ["space debris", "orbital debris", "space junk", "kessler syndrome", "debris removal"],
+    conceptSlugs: [],
+  },
+  {
+    label: "Nuclear Propulsion",
+    slug: "nuclear-thermal",
+    terms: ["nuclear thermal propulsion", "nuclear rocket", "nuclear propulsion", "radioisotope", "nuclear thermal rocket"],
+    conceptSlugs: [],
+  },
+  {
+    label: "Interstellar Travel",
+    slug: "interstellar-travel",
+    terms: ["interstellar travel", "interstellar probe", "breakthrough starshot", "interstellar mission", "voyager probe"],
+    conceptSlugs: [],
+  },
+  {
+    label: "Asteroid Mining",
+    slug: "asteroid-mining",
+    terms: ["asteroid mining", "space mining", "asteroid resources", "asteroid redirect", "asteroid defense", "planetary defense"],
+    conceptSlugs: [],
   },
   {
     label: "Space Elevators",
@@ -60,75 +145,21 @@ const TOPICS: TopicDef[] = [
     conceptSlugs: [],
   },
   {
-    label: "Titan Exploration",
-    slug: "titan-exploration",
-    terms: ["titan submarine", "titan exploration", "titan saturn moon", "titan methane ocean"],
+    label: "Titan & Ocean Worlds",
+    slug: "ocean-worlds",
+    terms: ["titan submarine", "titan exploration", "europa ocean", "enceladus ocean", "ocean world", "europa clipper"],
     conceptSlugs: ["titan-submarine"],
-  },
-  {
-    label: "Lunar Habitats",
-    slug: "lunar-habitats",
-    terms: ["lunar habitat", "moon base", "lunar colony", "moon habitat", "artemis base"],
-    conceptSlugs: ["mycotecture", "sintered-regolith"],
-  },
-  {
-    label: "Nuclear Thermal Propulsion",
-    slug: "nuclear-thermal",
-    terms: ["nuclear thermal propulsion", "nuclear rocket", "NTP rocket", "nuclear thermal rocket"],
-    conceptSlugs: [],
-  },
-  {
-    label: "Asteroid Mining",
-    slug: "asteroid-mining",
-    terms: ["asteroid mining", "space mining", "asteroid resources"],
-    conceptSlugs: [],
-  },
-  {
-    label: "Black Holes",
-    slug: "black-holes",
-    terms: ["black hole", "event horizon", "hawking radiation", "singularity physics"],
-    conceptSlugs: [],
   },
   {
     label: "Quantum Communication",
     slug: "quantum-comms",
-    terms: ["quantum communication", "quantum internet", "quantum entanglement communication", "quantum key distribution space"],
+    terms: ["quantum communication", "quantum internet", "quantum entanglement communication", "quantum key distribution"],
     conceptSlugs: [],
   },
   {
-    label: "Mars Colonization",
-    slug: "mars-colonization",
-    terms: ["mars colony", "mars colonization", "mars habitat", "mars settlement", "mars base"],
-    conceptSlugs: ["mycotecture"],
-  },
-  {
-    label: "Interstellar Travel",
-    slug: "interstellar-travel",
-    terms: ["interstellar travel", "interstellar probe", "breakthrough starshot", "interstellar mission"],
-    conceptSlugs: [],
-  },
-  {
-    label: "Space Telescopes",
-    slug: "space-telescopes",
-    terms: ["space telescope", "JWST", "james webb", "hubble", "LUVOIR", "habitable exoplanet observatory"],
-    conceptSlugs: ["fluidic-telescope", "orbiting-rainbows"],
-  },
-  {
-    label: "Warp Drives",
+    label: "Warp Drives & Exotic Physics",
     slug: "warp-drives",
-    terms: ["warp drive", "alcubierre drive", "warp bubble", "FTL drive"],
-    conceptSlugs: [],
-  },
-  {
-    label: "Astrobiology",
-    slug: "astrobiology",
-    terms: ["astrobiology", "alien life", "biosignature", "extraterrestrial life", "life detection space"],
-    conceptSlugs: [],
-  },
-  {
-    label: "Space Debris",
-    slug: "space-debris",
-    terms: ["space debris", "orbital debris", "space junk", "kessler syndrome", "debris removal"],
+    terms: ["warp drive", "alcubierre drive", "warp bubble", "FTL", "faster than light"],
     conceptSlugs: [],
   },
   {
@@ -140,13 +171,19 @@ const TOPICS: TopicDef[] = [
   {
     label: "Dyson Spheres",
     slug: "dyson-spheres",
-    terms: ["dyson sphere", "dyson swarm", "megastructure", "kardashev scale"],
+    terms: ["dyson sphere", "dyson swarm", "megastructure", "kardashev"],
     conceptSlugs: [],
   },
   {
     label: "Space Solar Power",
     slug: "space-solar-power",
-    terms: ["space solar power", "space-based solar", "solar power satellite", "beamed power space"],
+    terms: ["space solar power", "space-based solar", "solar power satellite", "beamed power"],
+    conceptSlugs: [],
+  },
+  {
+    label: "AI in Space",
+    slug: "ai-space",
+    terms: ["AI space", "machine learning astronomy", "AI satellite", "autonomous spacecraft", "AI telescope"],
     conceptSlugs: [],
   },
 ];
@@ -235,6 +272,7 @@ async function searchHN(query: string): Promise<HNHit[]> {
   const params = new URLSearchParams({
     query,
     tags: "story",
+    restrictSearchableAttributes: "title",
     numericFilters: `created_at_i>${Math.floor(Date.now() / 1000) - 7 * 86400}`,
     hitsPerPage: "50",
   });
@@ -257,15 +295,31 @@ async function searchHN(query: string): Promise<HNHit[]> {
   }
 }
 
+/**
+ * Filter HN hits to only those whose title actually matches at least one
+ * of the topic's search terms.  The Algolia API searches full text, which
+ * returns a huge number of false positives (e.g. "black hole" matching
+ * any post whose *body* mentions "black hole" in passing).
+ */
+function filterHNByTitle(hits: HNHit[], terms: string[]): HNHit[] {
+  const patterns = terms.map(
+    (t) => new RegExp(t.replace(/[.*+?^${}()|[\]\\]/g, "\\$&"), "i"),
+  );
+  return hits.filter((h) => patterns.some((pat) => pat.test(h.title)));
+}
+
 async function fetchAllHN(topics: TopicDef[]): Promise<Map<string, HNHit[]>> {
   console.log("→ fetching Hacker News...");
   const map = new Map<string, HNHit[]>();
   for (const topic of topics) {
     // Search with the first (most specific) term
-    const hits = await searchHN(topic.terms[0]!);
+    const raw = await searchHN(topic.terms[0]!);
+    // Filter to title matches only — Algolia searches full text which
+    // produces false positives like coding tools under "Black Holes"
+    const hits = filterHNByTitle(raw, topic.terms);
     if (hits.length > 0) {
       map.set(topic.slug, hits);
-      console.log(`  HN "${topic.terms[0]}": ${hits.length} hits`);
+      console.log(`  HN "${topic.terms[0]}": ${raw.length} raw → ${hits.length} title-matched`);
     }
     await sleep(300);
   }
@@ -336,6 +390,45 @@ function matchRedditPosts(
   return { posts: matched, score };
 }
 
+/**
+ * Compute intra-window momentum: compare engagement in the recent half
+ * (last 3 days) vs the older half (prior 4 days) of the 7-day window.
+ * This gives meaningful deltas on every single run — no previous data needed.
+ */
+function computeIntraWindowDelta(
+  sources: { score: number; publishedAt: string }[],
+): { delta: number; direction: "up" | "down" | "steady" } {
+  const now = Date.now();
+  const recentCutoff = now - 3 * 86400000; // 3 days ago
+
+  let recentScore = 0;
+  let olderScore = 0;
+
+  for (const s of sources) {
+    const ts = new Date(s.publishedAt).getTime();
+    if (ts >= recentCutoff) {
+      recentScore += s.score;
+    } else {
+      olderScore += s.score;
+    }
+  }
+
+  // Normalize: recent is 3 days, older is 4 days → scale older to 3-day equivalent
+  const olderNormalized = olderScore * (3 / 4);
+
+  if (olderNormalized === 0 && recentScore === 0) {
+    return { delta: 0, direction: "steady" };
+  }
+  if (olderNormalized === 0) {
+    // All activity is recent — strong uptrend
+    return { delta: 200, direction: "up" };
+  }
+
+  const delta = Math.round(((recentScore - olderNormalized) / olderNormalized) * 100);
+  const direction = delta > 15 ? "up" : delta < -15 ? "down" : "steady";
+  return { delta, direction };
+}
+
 function scoreTopic(
   topic: TopicDef,
   redditPosts: RedditPost[],
@@ -356,7 +449,6 @@ function scoreTopic(
   for (const p of reddit.posts) {
     const ytId = extractYouTubeId(p.url);
     if (ytId) {
-      // Add the YouTube video as its own source
       redditSources.push({
         platform: "youtube",
         title: p.title,
@@ -366,7 +458,6 @@ function scoreTopic(
         publishedAt: new Date(p.created_utc * 1000).toISOString(),
       });
     }
-    // Always add the Reddit discussion
     redditSources.push({
       platform: "reddit",
       title: p.title,
@@ -379,7 +470,6 @@ function scoreTopic(
     });
   }
 
-  // HN posts linking to YouTube also get thumbnails
   const hnSources: PulseSource[] = [];
   for (const h of hn) {
     const hnUrl = h.url ?? `https://news.ycombinator.com/item?id=${h.objectID}`;
@@ -409,12 +499,15 @@ function scoreTopic(
     .sort((a, b) => b.score - a.score)
     .slice(0, 12);
 
+  // Compute momentum from source timestamps — no previous run needed
+  const { delta, direction } = computeIntraWindowDelta(sources);
+
   return {
     slug: topic.slug,
     label: topic.label,
     score: totalScore,
-    delta: 0,
-    direction: "steady",
+    delta,
+    direction,
     mentions,
     sources,
     relatedConceptSlugs: topic.conceptSlugs,
@@ -437,6 +530,11 @@ async function loadPreviousPulse(): Promise<Map<string, number> | null> {
   }
 }
 
+/**
+ * Layer cross-run deltas on top of intra-window deltas when previous data
+ * is available. The cross-run delta takes precedence since it compares
+ * distinct time periods.
+ */
 function computeDeltas(
   topics: PulseTopic[],
   prev: Map<string, number> | null,
@@ -445,8 +543,9 @@ function computeDeltas(
   for (const t of topics) {
     const prevScore = prev.get(t.slug);
     if (prevScore && prevScore > 0) {
-      t.delta = Math.round(((t.score - prevScore) / prevScore) * 100);
-      t.direction = t.delta > 10 ? "up" : t.delta < -10 ? "down" : "steady";
+      const crossDelta = Math.round(((t.score - prevScore) / prevScore) * 100);
+      t.delta = crossDelta;
+      t.direction = crossDelta > 15 ? "up" : crossDelta < -15 ? "down" : "steady";
     }
   }
 }
