@@ -335,6 +335,15 @@ button:active,
   border: 1px solid rgba(255, 184, 77, 0.15);
 }
 
+/* Timeline dot pulse — subtle breathing animation for unfound papers. */
+@keyframes timeline-dot-pulse {
+  0%, 100% { opacity: 0; }
+  50% { opacity: 0.35; }
+}
+.timeline-dot-pulse {
+  animation: timeline-dot-pulse 3s ease-in-out infinite;
+}
+
 /* Highlight pulse — used when clicking a timeline dot scrolls to a card. */
 @keyframes highlight-pulse {
   0% { box-shadow: 0 0 0 0 rgba(255, 184, 77, 0.4); }

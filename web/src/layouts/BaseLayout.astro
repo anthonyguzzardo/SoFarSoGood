@@ -7,7 +7,7 @@ interface Props {
   title: string;
   description?: string;
   /** Active nav item — drives the underline/highlight in the header. */
-  nav?: "browse" | "pulse" | "timeline" | "subjects" | "atlas" | "explore" | "paths" | "wishlist" | "mission" | "concept" | null;
+  nav?: "browse" | "pulse" | "timeline" | "subjects" | "atlas" | "explore" | "paths" | "wishlist" | "pantheon" | "mission" | "concept" | null;
 }
 
 const {
@@ -26,6 +26,7 @@ const navItems = [
   { key: "explore", label: "Explore", href: "/explore" },
   { key: "paths", label: "Paths", href: "/paths" },
   { key: "wishlist", label: "Wishlist", href: "/wishlist" },
+  { key: "pantheon", label: "Pantheon", href: "/pantheon" },
   { key: "mission", label: "Mission", href: "/mission" },
 ] as const;
 

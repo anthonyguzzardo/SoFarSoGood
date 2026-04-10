@@ -1,1 +1,1 @@
-for port in $(lsof -iTCP -sTCP:LISTEN -nP | grep localhost | awk '{print $9}' | cut -d: -f2 | sort -u); do kill -9 $(lsof -ti:$port); done
+kill -9 $(lsof -iTCP -sTCP:LISTEN -nP | awk 'NR>1 {print $2}' | sort -u | xargs)

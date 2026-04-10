@@ -28,6 +28,7 @@ interface Props {
   eraColors: Record<string, string>;
   eraLabels: Record<string, string>;
   eras: string[];
+  connectedIds?: string[];
   onSelect?: (id: string) => void;
 }
 
@@ -79,8 +80,10 @@ export default function WishlistTimeline({
   eraColors,
   eraLabels,
   eras,
+  connectedIds = [],
   onSelect,
 }: Props) {
+  const connectedSet = useMemo(() => new Set(connectedIds), [connectedIds]);
   const svgRef = useRef<SVGSVGElement>(null);
   const [hoveredId, setHoveredId] = useState<string | null>(null);
   const [tooltip, setTooltip] = useState<{
@@ -90,9 +93,9 @@ export default function WishlistTimeline({
   } | null>(null);
 
   const WIDTH = 1200;
-  const HEIGHT = 160;
+  const HEIGHT = 190;
   const PAD_X = 40;
-  const PAD_Y = 30;
+  const PAD_Y = 45;
   const PLOT_W = WIDTH - PAD_X * 2;
   const PLOT_H = HEIGHT - PAD_Y * 2;
 
@@ -196,7 +199,7 @@ export default function WishlistTimeline({
         ref={svgRef}
         viewBox={`0 0 ${WIDTH} ${HEIGHT}`}
         className="w-full"
-        style={{ maxHeight: "200px" }}
+        style={{ maxHeight: "240px" }}
       >
         {/* Era background bands */}
         {eraBands.map((band) => (
@@ -246,44 +249,69 @@ export default function WishlistTimeline({
         ))}
 
         {/* Paper dots — two layers: visible dot + larger invisible hit area */}
-        {dots.map((d) => (
-          <g key={d.id}>
-            {/* Visible dot — never changes radius to avoid layout jitter */}
-            <circle
-              cx={d.x}
-              cy={d.y}
-              r={importanceRadius(d.importance)}
-              fill={fieldColors[d.field] ?? "#6a6a72"}
-              opacity={hoveredId && hoveredId !== d.id ? 0.3 : 0.85}
-              style={{ transition: "opacity 0.15s" }}
-              pointerEvents="none"
-            />
-            {/* Highlight ring — only visible on hover */}
-            {hoveredId === d.id && (
+        {dots.map((d) => {
+          const isConnected = connectedSet.has(d.id);
+          const r = importanceRadius(d.importance);
+          return (
+            <g key={d.id}>
+              {/* Pulse ring for unfound papers */}
               <circle
                 cx={d.x}
                 cy={d.y}
-                r={importanceRadius(d.importance) + 2.5}
+                r={r + 3}
                 fill="none"
-                stroke="#fff"
-                strokeWidth={1.5}
-                opacity={0.8}
+                stroke={fieldColors[d.field] ?? "#6a6a72"}
+                strokeWidth={0.5}
+                opacity={0.3}
+                pointerEvents="none"
+                className="timeline-dot-pulse"
+              />
+              {/* Visible dot */}
+              <circle
+                cx={d.x}
+                cy={d.y}
+                r={r}
+                fill={fieldColors[d.field] ?? "#6a6a72"}
+                opacity={hoveredId && hoveredId !== d.id ? 0.3 : 0.85}
+                style={{ transition: "opacity 0.15s" }}
                 pointerEvents="none"
               />
-            )}
-            {/* Invisible hit area — generous size for easy hovering */}
-            <circle
-              cx={d.x}
-              cy={d.y}
-              r={10}
-              fill="transparent"
-              style={{ cursor: "pointer" }}
-              onMouseEnter={() => handleDotHover(d)}
-              onMouseLeave={() => handleDotHover(null)}
-              onClick={() => handleDotClick(d.id)}
-            />
-          </g>
-        ))}
+              {/* Connection diamond marker */}
+              {isConnected && (
+                <polygon
+                  points={`${d.x},${d.y - r - 6} ${d.x + 3},${d.y - r - 9} ${d.x},${d.y - r - 12} ${d.x - 3},${d.y - r - 9}`}
+                  fill="#ffb84d"
+                  opacity={hoveredId && hoveredId !== d.id ? 0.3 : 0.8}
+                  pointerEvents="none"
+                />
+              )}
+              {/* Highlight ring — only visible on hover */}
+              {hoveredId === d.id && (
+                <circle
+                  cx={d.x}
+                  cy={d.y}
+                  r={r + 2.5}
+                  fill="none"
+                  stroke="#fff"
+                  strokeWidth={1.5}
+                  opacity={0.8}
+                  pointerEvents="none"
+                />
+              )}
+              {/* Invisible hit area */}
+              <circle
+                cx={d.x}
+                cy={d.y}
+                r={10}
+                fill="transparent"
+                style={{ cursor: "pointer" }}
+                onMouseEnter={() => handleDotHover(d)}
+                onMouseLeave={() => handleDotHover(null)}
+                onClick={() => handleDotClick(d.id)}
+              />
+            </g>
+          );
+        })}
       </svg>
 
       {/* Tooltip — pinned above chart, slides horizontally with transition */}

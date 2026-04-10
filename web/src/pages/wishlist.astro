@@ -1,11 +1,10 @@
 ---
 /**
- * /wishlist — every paper we want indexed, from 1800 BCE to 2026.
+ * /wishlist — "The Hunt"
  *
- * The most ambitious page on the site. Shows the full scope of what we're
- * trying to build — a complete index of human scientific knowledge — and
- * invites the community to help us get there. Every entry that's "wanted"
- * is a paper we don't have yet. Every entry that's "indexed" is a win.
+ * Every paper we want indexed, from 1800 BCE to 2024. Reframed as an
+ * active quest with progress visualization, sort modes, and a one-field
+ * contribution form. The most ambitious page on the site.
  */
 
 import BaseLayout from "../layouts/BaseLayout.astro";
@@ -23,36 +22,39 @@ import {
   wishlistStats,
   displayYear,
 } from "../lib/wishlist.ts";
+import { connectionsByWishlistId, connectedWishlistIds } from "../lib/connections.ts";
 
 const eraLabels = Object.fromEntries(allEras.map((e) => [e, eraLabel(e)]));
 const fieldLabels = Object.fromEntries(allFields.map((f) => [f, fieldLabel(f)]));
+
+/* Sort fields by count descending for progress bars */
+const sortedFields = [...allFields].sort(
+  (a, b) => (wishlistStats.byField[b] ?? 0) - (wishlistStats.byField[a] ?? 0)
+);
+
+const connectedIds = [...connectedWishlistIds];
 ---
 
 <BaseLayout
-  title="Wishlist — So Far So Good"
-  description={`${wishlistStats.total} scientific papers and writings spanning ${Math.abs(wishlistStats.oldestYear) + wishlistStats.newestYear} years of human knowledge — help us index them all.`}
+  title="The Hunt — So Far So Good"
+  description={`${wishlistStats.total} scientific papers spanning ${Math.abs(wishlistStats.oldestYear) + wishlistStats.newestYear} years — help us find them all.`}
   nav="wishlist"
 >
   {/* ----------------------------------------------------------- */}
   {/* Header                                                      */}
   {/* ----------------------------------------------------------- */}
   <section class="mb-12 reveal">
-    <div class="eyebrow text-accent mb-3">The Wishlist</div>
+    <div class="eyebrow text-accent mb-3">THE HUNT</div>
     <h2
       class="font-display text-4xl md:text-5xl font-semibold tracking-tight leading-tight max-w-4xl"
     >
-      Every scientific paper we're trying to index
+      {wishlistStats.total} papers. {Math.abs(wishlistStats.oldestYear) + wishlistStats.newestYear} years of human knowledge. Help us find them.
     </h2>
     <p class="mt-4 text-base text-dim max-w-3xl leading-relaxed">
-      From a Babylonian clay tablet cataloguing Pythagorean triples in 1800 BCE
-      to DESI dark energy measurements in 2024 — this is the full scope of what
-      we're building. {wishlistStats.total} papers spanning{" "}
-      {Math.abs(wishlistStats.oldestYear) + wishlistStats.newestYear} years of
-      human scientific knowledge. Every entry marked "wanted" is one we haven't
-      indexed yet.{" "}
-      <a href="/mission" class="text-accent underline hover:text-white">
-        Help us get there.
-      </a>
+      From a Babylonian clay tablet in 1800 BCE to DESI dark energy measurements
+      in 2024. Every paper marked "unfound" is one we haven't tracked down yet.
+      Paste a URL, claim a paper, make the index a little more complete.{" "}
+      <span class="text-accent font-mono text-xs uppercase tracking-widest">So far so good.</span>
     </p>
   </section>
 
@@ -63,34 +65,58 @@ const fieldLabels = Object.fromEntries(allFields.map((f) => [f, fieldLabel(f)]))
     <div
       class="surface rounded-lg px-6 py-5 grid grid-cols-2 md:grid-cols-5 gap-y-4 gap-x-6"
     >
-      <Stat value={wishlistStats.total} label="papers listed" />
-      <Stat value={wishlistStats.wanted} label="still wanted" />
-      <Stat value={wishlistStats.indexed} label="indexed" />
+      <Stat value={wishlistStats.total} label="total targets" />
+      <Stat value={wishlistStats.wanted} label="unfound" />
+      <Stat value={wishlistStats.indexed + wishlistStats.acquired} label="recovered" />
       <Stat
         value={`${displayYear(wishlistStats.oldestYear)}–${wishlistStats.newestYear}`}
         label="time span"
       />
-      <Stat value={allFields.length} label="scientific fields" />
+      <Stat value={connectedIds.length} label="linked to NASA concepts" />
     </div>
   </section>
 
   {/* ----------------------------------------------------------- */}
-  {/* Field breakdown                                             */}
+  {/* Field progress bars                                         */}
   {/* ----------------------------------------------------------- */}
   <section class="mb-16 reveal reveal-delay-2">
-    <div class="flex flex-wrap gap-3">
+    <div class="eyebrow text-accent mb-4 pb-2 border-b hairline">
+      Progress by field
+    </div>
+    <div class="space-y-3">
       {
-        allFields.map((f) => (
-          <div
-            class="px-3 py-2 rounded border hairline text-xs font-mono"
-            style="background: var(--color-paper-raised);"
-          >
-            <span class="text-accent">{fieldLabel(f)}</span>
-            <span class="text-dim ml-1">
-              {wishlistStats.byField[f]}
-            </span>
-          </div>
-        ))
+        sortedFields.map((f) => {
+          const progress = wishlistStats.byFieldProgress[f];
+          const total = progress?.total ?? 0;
+          const found = progress?.found ?? 0;
+          const pct = total > 0 ? (found / total) * 100 : 0;
+          const color = fieldColors[f] ?? "var(--color-accent)";
+          return (
+            <div class="flex items-center gap-4">
+              <span
+                class="text-xs font-mono w-28 shrink-0 text-right"
+                style={`color: ${color};`}
+              >
+                {fieldLabel(f)}
+              </span>
+              <div
+                class="flex-1 h-2 rounded-full overflow-hidden"
+                style="background: rgba(255,255,255,0.04);"
+              >
+                <div
+                  class="h-full rounded-full transition-all"
+                  style={`width: ${Math.max(pct, 0)}%; background: ${color}; opacity: 0.7; min-width: ${pct > 0 ? '4px' : '0'};`}
+                />
+              </div>
+              <span
+                class="text-xs font-mono w-14 shrink-0"
+                style="color: var(--color-ink-dim);"
+              >
+                {found}/{total}
+              </span>
+            </div>
+          );
+        })
       }
     </div>
   </section>
@@ -114,6 +140,7 @@ const fieldLabels = Object.fromEntries(allFields.map((f) => [f, fieldLabel(f)]))
         eraColors={eraColors}
         eraLabels={eraLabels}
         eras={allEras}
+        connectedIds={connectedIds}
         client:load
       />
     </div>
@@ -129,7 +156,7 @@ const fieldLabels = Object.fromEntries(allFields.map((f) => [f, fieldLabel(f)]))
       <h3 class="font-display text-2xl font-semibold">
         The full list
       </h3>
-      <span class="eyebrow">search · filter by era · filter by field</span>
+      <span class="eyebrow">search · sort · filter</span>
     </div>
     <WishlistBrowser
       entries={allWishlistEntries}
@@ -137,6 +164,8 @@ const fieldLabels = Object.fromEntries(allFields.map((f) => [f, fieldLabel(f)]))
       fields={allFields}
       eraLabels={eraLabels}
       fieldLabels={fieldLabels}
+      connectionsByPaperId={connectionsByWishlistId}
+      connectedIds={connectedIds}
       client:load
     />
   </section>

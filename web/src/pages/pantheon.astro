@@ -1,0 +1,337 @@
+---
+/**
+ * /pantheon — the GOAT roster of science.
+ *
+ * Tiered. Opinionated. Funny. The Mount Rushmore page for people
+ * who watched every 3Blue1Brown video and need more.
+ *
+ * Structure:
+ *   1. Hero — sets the tone (this is not Wikipedia)
+ *   2. Stats bar — the numbers, because nerds love numbers
+ *   3. Tiered sections — Untouchables, Absolute Units, Built Different
+ *   4. Each card: portrait placeholder, tagline, signature equation,
+ *      expandable power moves, fun fact, rivalries, media links
+ */
+
+import BaseLayout from "../layouts/BaseLayout.astro";
+import {
+  titansByTier,
+  allTitans,
+  lifespan,
+  fieldLabel,
+} from "../lib/pantheon.ts";
+import type { Titan, TierKey } from "../lib/pantheon.ts";
+
+const tiers = titansByTier();
+
+const totalFields = new Set(allTitans.flatMap((t) => t.fields)).size;
+const totalPowerMoves = allTitans.reduce((n, t) => n + t.powerMoves.length, 0);
+const earliestBorn = Math.min(...allTitans.map((t) => t.born));
+const latestAlive = allTitans.find((t) => t.died === null);
+
+/** Tier accent colors for visual hierarchy */
+const tierAccent: Record<TierKey, { border: string; bg: string; glow: string }> = {
+  "untouchable": {
+    border: "rgba(255, 184, 77, 0.35)",
+    bg: "rgba(255, 184, 77, 0.06)",
+    glow: "rgba(255, 184, 77, 0.08)",
+  },
+  "absolute-unit": {
+    border: "rgba(147, 197, 253, 0.3)",
+    bg: "rgba(147, 197, 253, 0.04)",
+    glow: "rgba(147, 197, 253, 0.06)",
+  },
+  "built-different": {
+    border: "rgba(167, 139, 250, 0.3)",
+    bg: "rgba(167, 139, 250, 0.04)",
+    glow: "rgba(167, 139, 250, 0.06)",
+  },
+};
+
+const tierTextColor: Record<TierKey, string> = {
+  "untouchable": "var(--color-accent)",
+  "absolute-unit": "#93c5fd",
+  "built-different": "#a78bfa",
+};
+---
+
+<BaseLayout title="Pantheon — the GOATs of science" nav="pantheon">
+  {/* ----------------------------------------------------------------- */}
+  {/* Hero                                                               */}
+  {/* ----------------------------------------------------------------- */}
+  <section class="pt-4 md:pt-8 pb-6">
+    <div class="max-w-4xl">
+      <p
+        class="hero-line text-accent font-mono text-sm uppercase tracking-[0.2em]"
+        style="animation-delay: 0s"
+      >
+        The Pantheon
+      </p>
+
+      <h2
+        class="hero-line mt-4 font-display text-3xl md:text-5xl font-semibold tracking-tight leading-[1.08]"
+        style="animation-delay: 0.15s"
+      >
+        The greatest minds that ever lived
+      </h2>
+
+      <p
+        class="hero-line mt-4 font-display text-lg md:text-xl leading-relaxed max-w-2xl"
+        style="animation-delay: 0.3s; color: var(--color-ink-dim);"
+      >
+        Not ranked by citations. Ranked by "changed what it means to be human."
+        This is the fan service page. You're welcome.
+      </p>
+    </div>
+  </section>
+
+  {/* ----------------------------------------------------------------- */}
+  {/* Stats bar                                                          */}
+  {/* ----------------------------------------------------------------- */}
+  <section class="mb-16 reveal">
+    <div
+      class="grid grid-cols-2 md:grid-cols-4 gap-4 p-5 rounded-xl border"
+      style="background: var(--color-paper-raised); border-color: var(--color-paper-edge);"
+    >
+      <div class="text-center">
+        <div class="font-display text-2xl font-semibold tracking-tight" style="color: var(--color-accent);">
+          {allTitans.length}
+        </div>
+        <div class="eyebrow mt-1">legends</div>
+      </div>
+      <div class="text-center">
+        <div class="font-display text-2xl font-semibold tracking-tight" style="color: var(--color-accent);">
+          {totalFields}
+        </div>
+        <div class="eyebrow mt-1">fields conquered</div>
+      </div>
+      <div class="text-center">
+        <div class="font-display text-2xl font-semibold tracking-tight" style="color: var(--color-accent);">
+          {totalPowerMoves}
+        </div>
+        <div class="eyebrow mt-1">power moves</div>
+      </div>
+      <div class="text-center">
+        <div class="font-display text-2xl font-semibold tracking-tight" style="color: var(--color-accent);">
+          {earliestBorn}
+        </div>
+        <div class="eyebrow mt-1">oldest birth year</div>
+      </div>
+    </div>
+  </section>
+
+  {/* ----------------------------------------------------------------- */}
+  {/* Disclaimer                                                         */}
+  {/* ----------------------------------------------------------------- */}
+  <section class="mb-16 reveal">
+    <div
+      class="px-5 py-4 rounded-lg border text-sm leading-relaxed"
+      style="background: rgba(255, 184, 77, 0.03); border-color: rgba(255, 184, 77, 0.12); color: var(--color-ink-dim);"
+    >
+      <span class="font-mono text-accent text-xs uppercase tracking-widest">Disclaimer</span>
+      <span class="mx-2 text-faint">·</span>
+      Rankings are vibes-based and non-negotiable. If your favorite isn't here, they're in the next update. Probably.
+      Tier placement was determined by a complex algorithm (one guy's opinion). All complaints can be directed to the nearest black hole.
+    </div>
+  </section>
+
+  {/* ----------------------------------------------------------------- */}
+  {/* Tiered sections                                                    */}
+  {/* ----------------------------------------------------------------- */}
+  {tiers.map(({ tier, meta, titans }) => {
+    const accent = tierAccent[tier];
+    const textColor = tierTextColor[tier];
+
+    return (
+      <section class="mb-24 reveal" id={tier}>
+        {/* Tier header */}
+        <div class="mb-8">
+          <div
+            class="eyebrow mb-2"
+            style={`color: ${textColor};`}
+          >
+            Tier {meta.order}
+          </div>
+          <h3 class="font-display text-3xl md:text-4xl font-semibold tracking-tight">
+            {meta.label}
+          </h3>
+          <p
+            class="mt-2 text-base leading-relaxed max-w-2xl"
+            style="color: var(--color-ink-dim);"
+          >
+            {meta.subtitle}
+          </p>
+        </div>
+
+        {/* Titan cards */}
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+          {titans.map((t: Titan) => (
+            <div
+              class="pantheon-card group rounded-xl border p-6 transition-all hover:-translate-y-0.5"
+              style={`background: ${accent.bg}; border-color: ${accent.border}; --tier-color: ${textColor};`}
+              id={t.slug}
+            >
+              {/* Header */}
+              <div class="mb-4">
+                <h4 class="font-display text-xl md:text-2xl font-semibold tracking-tight">
+                  {t.name}
+                </h4>
+                <div class="mt-1 flex flex-wrap items-center gap-x-3 gap-y-1">
+                  <span class="text-xs font-mono" style="color: var(--color-ink-dim);">
+                    {lifespan(t)}
+                  </span>
+                  <span class="text-faint text-xs">·</span>
+                  <span class="text-xs font-mono" style="color: var(--color-ink-dim);">
+                    {t.nationality}
+                  </span>
+                </div>
+                {/* Field tags + signature equation — inline row */}
+                <div class="mt-2 flex flex-wrap items-center gap-2">
+                  {t.fields.map((f) => (
+                    <span
+                      class="px-2 py-0.5 text-[0.6rem] font-mono uppercase tracking-widest rounded-md border"
+                      style={`color: ${textColor}; border-color: ${accent.border}; background: ${accent.glow};`}
+                    >
+                      {fieldLabel(f)}
+                    </span>
+                  ))}
+                  <span
+                    class="px-2.5 py-0.5 font-mono text-xs rounded-md border overflow-hidden text-ellipsis"
+                    style={`color: ${textColor}; border-color: ${accent.border}; background: ${accent.glow};`}
+                    title={t.signature}
+                  >
+                    {t.signature}
+                  </span>
+                </div>
+              </div>
+
+              {/* Tagline — the hook */}
+              <p class="font-display text-base md:text-lg leading-relaxed mb-4 italic" style="color: var(--color-ink);">
+                "{t.tagline}"
+              </p>
+
+              {/* Quote */}
+              <blockquote
+                class="mb-4 pl-4 border-l-2 text-sm leading-relaxed"
+                style={`border-color: ${accent.border}; color: var(--color-ink-dim);`}
+              >
+                "{t.quote}"
+                <span class="block mt-1 text-xs font-mono" style="color: var(--color-ink-faint);">
+                  {t.quoteContext}
+                </span>
+              </blockquote>
+
+              {/* Power moves — collapsible */}
+              <details class="mb-4 group/details">
+                <summary
+                  class="cursor-pointer text-xs font-mono uppercase tracking-widest py-2 flex items-center gap-2 select-none transition-colors hover:brightness-125"
+                  style={`color: ${textColor};`}
+                >
+                  <span class="transition-transform group-open/details:rotate-90">&#9654;</span>
+                  Power moves ({t.powerMoves.length})
+                </summary>
+                <ol class="mt-2 space-y-2 pl-4">
+                  {t.powerMoves.map((move, i) => (
+                    <li class="text-sm leading-relaxed flex gap-3" style="color: var(--color-ink-dim);">
+                      <span
+                        class="shrink-0 w-5 h-5 rounded flex items-center justify-center text-[0.6rem] font-mono font-bold mt-0.5"
+                        style={`color: ${textColor}; background: ${accent.glow}; border: 1px solid ${accent.border};`}
+                      >
+                        {i + 1}
+                      </span>
+                      <span>{move}</span>
+                    </li>
+                  ))}
+                </ol>
+              </details>
+
+              {/* Fun fact */}
+              <div
+                class="mb-4 px-4 py-3 rounded-lg text-sm leading-relaxed"
+                style={`background: ${accent.glow}; border: 1px solid ${accent.border};`}
+              >
+                <span class="font-mono text-[0.6rem] uppercase tracking-widest" style={`color: ${textColor};`}>
+                  Fun fact
+                </span>
+                <p class="mt-1" style="color: var(--color-ink-dim);">
+                  {t.funFact}
+                </p>
+              </div>
+
+              {/* Rivalries */}
+              {t.rivalries.length > 0 && (
+                <div class="mb-4">
+                  <div class="text-[0.6rem] font-mono uppercase tracking-widest mb-1.5" style="color: var(--color-ink-faint);">
+                    Beefs & Rivalries
+                  </div>
+                  <div class="flex flex-wrap gap-1.5">
+                    {t.rivalries.map((r) => (
+                      <span
+                        class="px-2.5 py-1 text-xs rounded-md border leading-snug"
+                        style={`color: var(--color-ink-dim); border-color: ${accent.border}; background: ${accent.glow};`}
+                      >
+                        {r}
+                      </span>
+                    ))}
+                  </div>
+                </div>
+              )}
+
+              {/* Media links */}
+              {t.media.length > 0 && (
+                <div>
+                  <div class="text-[0.6rem] font-mono uppercase tracking-widest mb-2" style="color: var(--color-ink-faint);">
+                    Watch
+                  </div>
+                  <div class="flex flex-col gap-1.5">
+                    {t.media.map((m) => (
+                      <a
+                        href={`https://www.youtube.com/watch?v=${m.id}`}
+                        target="_blank"
+                        rel="noopener"
+                        class="flex items-center gap-3 px-3 py-2 rounded-lg border text-sm transition-all hover:-translate-y-0.5 hover:brightness-110"
+                        style={`border-color: ${accent.border}; background: ${accent.glow};`}
+                      >
+                        <img
+                          src={`https://img.youtube.com/vi/${m.id}/mqdefault.jpg`}
+                          alt=""
+                          class="w-16 h-9 rounded object-cover shrink-0"
+                          loading="lazy"
+                        />
+                        <span class="truncate" style="color: var(--color-ink-dim);">
+                          {m.title}
+                        </span>
+                        <span class="ml-auto text-xs shrink-0" style={`color: ${textColor};`}>
+                          &#9654;
+                        </span>
+                      </a>
+                    ))}
+                  </div>
+                </div>
+              )}
+            </div>
+          ))}
+        </div>
+      </section>
+    );
+  })}
+
+  {/* ----------------------------------------------------------------- */}
+  {/* Footer quote                                                       */}
+  {/* ----------------------------------------------------------------- */}
+  <section class="mb-12 pt-12 border-t hairline reveal">
+    <blockquote class="pull-quote max-w-2xl">
+      "If I have seen further, it is by standing on the shoulders of giants.
+      And some of those giants were standing on the shoulders of other giants.
+      It's giants all the way down."
+    </blockquote>
+    <p class="mt-4 eyebrow">
+      — Newton (first part), the internet (second part), this website (third part)
+    </p>
+    <p class="mt-8 text-base text-dim leading-relaxed max-w-2xl">
+      These are the people who looked at the universe and said "I think I can figure this out."
+      Most of them were underfunded, underestimated, or actively persecuted.
+      All of them were right. The roster grows. So far so good.
+    </p>
+  </section>
+</BaseLayout>
