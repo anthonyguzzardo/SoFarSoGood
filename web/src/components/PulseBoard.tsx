@@ -6,7 +6,7 @@
  * (Reddit threads, HN posts) driving the trend.
  */
 
-import { useState } from "react";
+import { useState, useEffect, useRef, useCallback } from "react";
 import type { PulseTopic, PulseSource } from "../lib/pulse.ts";
 
 interface Props {
@@ -238,16 +238,22 @@ function TopicRow({
   rank,
   isExpanded,
   onToggle,
+  onCopyLink,
+  copied,
+  rowRef,
 }: {
   topic: PulseTopic;
   rank: number;
   isExpanded: boolean;
   onToggle: () => void;
+  onCopyLink: () => void;
+  copied: boolean;
+  rowRef: (el: HTMLDivElement | null) => void;
 }) {
   const topSource = topic.sources[0];
 
   return (
-    <div>
+    <div ref={rowRef}>
       {/* Main row */}
       <button
         onClick={onToggle}
@@ -344,30 +350,44 @@ function TopicRow({
               <SourceCard key={i} source={source} />
             ))}
           </div>
-          {topic.relatedConceptSlugs.length > 0 && (
-            <div className="ml-10 mt-3 flex items-center gap-2">
-              <span
-                className="text-[0.6rem] font-mono uppercase tracking-widest"
-                style={{ color: "var(--color-ink-faint)" }}
-              >
-                Related in the atlas:
-              </span>
-              {topic.relatedConceptSlugs.map((slug) => (
-                <a
-                  key={slug}
-                  href={`/concept/${slug}`}
-                  className="text-xs font-mono px-2 py-1 rounded border transition-colors hover:border-amber-400/40"
-                  style={{
-                    color: "var(--color-accent)",
-                    borderColor: "var(--color-paper-edge)",
-                    background: "rgba(255,184,77,0.06)",
-                  }}
+          <div className="ml-10 mt-3 flex items-center gap-2 flex-wrap">
+            {topic.relatedConceptSlugs.length > 0 && (
+              <>
+                <span
+                  className="text-[0.6rem] font-mono uppercase tracking-widest"
+                  style={{ color: "var(--color-ink-faint)" }}
                 >
-                  {slug}
-                </a>
-              ))}
-            </div>
-          )}
+                  Related in the atlas:
+                </span>
+                {topic.relatedConceptSlugs.map((slug) => (
+                  <a
+                    key={slug}
+                    href={`/concept/${slug}`}
+                    className="text-xs font-mono px-2 py-1 rounded border transition-colors hover:border-amber-400/40"
+                    style={{
+                      color: "var(--color-accent)",
+                      borderColor: "var(--color-paper-edge)",
+                      background: "rgba(255,184,77,0.06)",
+                    }}
+                  >
+                    {slug}
+                  </a>
+                ))}
+              </>
+            )}
+            <button
+              onClick={(e) => { e.stopPropagation(); onCopyLink(); }}
+              className="ml-auto text-[0.6rem] font-mono uppercase tracking-widest px-2 py-1 rounded border transition-all hover:border-amber-400/40"
+              style={{
+                color: copied ? "var(--color-accent)" : "var(--color-ink-faint)",
+                borderColor: copied ? "rgba(255,184,77,0.3)" : "var(--color-paper-edge)",
+                background: copied ? "rgba(255,184,77,0.08)" : "transparent",
+                cursor: "pointer",
+              }}
+            >
+              {copied ? "Copied!" : "Share link"}
+            </button>
+          </div>
         </div>
       )}
     </div>
@@ -381,6 +401,8 @@ function TopicRow({
 export default function PulseBoard({ topics, generatedAt }: Props) {
   const [expanded, setExpanded] = useState<string | null>(null);
   const [showQuiet, setShowQuiet] = useState(false);
+  const [copiedSlug, setCopiedSlug] = useState<string | null>(null);
+  const rowRefs = useRef<Map<string, HTMLDivElement>>(new Map());
 
   const activeTopics = topics.filter((t) => t.mentions > 0);
   const quietTopics = topics.filter((t) => t.mentions === 0);
@@ -389,8 +411,39 @@ export default function PulseBoard({ topics, generatedAt }: Props) {
     .filter((t) => t.direction === "up" && t.delta > 0)
     .sort((a, b) => b.delta - a.delta)[0] ?? null;
 
-  const toggle = (slug: string) =>
-    setExpanded((prev) => (prev === slug ? null : slug));
+  // Deep links: read hash on mount, auto-expand + scroll
+  useEffect(() => {
+    const hash = window.location.hash.slice(1);
+    if (hash && topics.some((t) => t.slug === hash)) {
+      setExpanded(hash);
+      // Scroll after a tick so the DOM has expanded
+      requestAnimationFrame(() => {
+        const el = rowRefs.current.get(hash);
+        if (el) el.scrollIntoView({ behavior: "smooth", block: "center" });
+      });
+    }
+  }, []);
+
+  const toggle = useCallback((slug: string) => {
+    setExpanded((prev) => {
+      const next = prev === slug ? null : slug;
+      // Update URL hash without scrolling
+      if (next) {
+        history.replaceState(null, "", `#${next}`);
+      } else {
+        history.replaceState(null, "", window.location.pathname);
+      }
+      return next;
+    });
+  }, []);
+
+  const copyLink = useCallback((slug: string) => {
+    const url = `${window.location.origin}${window.location.pathname}#${slug}`;
+    navigator.clipboard.writeText(url).then(() => {
+      setCopiedSlug(slug);
+      setTimeout(() => setCopiedSlug(null), 1500);
+    });
+  }, []);
 
   return (
     <div>
@@ -462,6 +515,11 @@ export default function PulseBoard({ topics, generatedAt }: Props) {
           rank={i + 1}
           isExpanded={expanded === topic.slug}
           onToggle={() => toggle(topic.slug)}
+          onCopyLink={() => copyLink(topic.slug)}
+          copied={copiedSlug === topic.slug}
+          rowRef={(el) => {
+            if (el) rowRefs.current.set(topic.slug, el);
+          }}
         />
       ))}
 
