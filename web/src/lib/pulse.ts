@@ -7,10 +7,13 @@
  */
 
 import rawPulse from "../../../data/pulse.json" with { type: "json" };
-import rawWeek1 from "../../../data/pulse-2026-03-13.json" with { type: "json" };
-import rawWeek2 from "../../../data/pulse-2026-03-20.json" with { type: "json" };
-import rawWeek3 from "../../../data/pulse-2026-03-27.json" with { type: "json" };
-import rawWeek4 from "../../../data/pulse-2026-04-03.json" with { type: "json" };
+
+/* Historical snapshots — auto-discovered via glob so new weekly files are
+   picked up automatically without editing this file. */
+const snapshotModules = import.meta.glob<{ default: unknown }>(
+  "../../../data/pulse-[0-9][0-9][0-9][0-9]-[0-9][0-9]-[0-9][0-9].json",
+  { eager: true },
+);
 
 /* -------------------------------------------------------------------------- */
 /* Types                                                                      */
@@ -151,20 +154,25 @@ export interface TopicWeek {
 
 export type TopicHistory = Record<string, TopicWeek[]>;
 
+/* Build sorted list of historical snapshots from glob results.
+   Each filename is like .../pulse-2026-03-13.json — extract the date,
+   sort chronologically, then append the current pulse.json as the latest. */
+const historicalEntries = Object.entries(snapshotModules)
+  .map(([path, mod]) => {
+    const match = path.match(/pulse-(\d{4}-\d{2}-\d{2})\.json$/);
+    return match ? { date: match[1], data: (mod.default ?? mod) as PulseData } : null;
+  })
+  .filter((e): e is { date: string; data: PulseData } => e !== null)
+  .sort((a, b) => a.date.localeCompare(b.date));
+
 const snapshots: PulseData[] = [
-  rawWeek1 as PulseData,
-  rawWeek2 as PulseData,
-  rawWeek3 as PulseData,
-  rawWeek4 as PulseData,
+  ...historicalEntries.map((e) => e.data),
   pulse,
 ];
 
-const snapshotDates = [
-  "2026-03-13",
-  "2026-03-20",
-  "2026-03-27",
-  "2026-04-03",
-  "2026-04-09", // current
+const snapshotDates: string[] = [
+  ...historicalEntries.map((e) => e.date),
+  new Date(pulse.generatedAt).toISOString().slice(0, 10), // current
 ];
 
 /** Multi-week history for every topic: slug → array of weekly data points. */

@@ -1,0 +1,46 @@
+name: Pulse — weekly data refresh
+
+on:
+  schedule:
+    # Every Sunday at 06:00 UTC
+    - cron: "0 6 * * 0"
+  workflow_dispatch: # Manual trigger from GitHub UI
+
+jobs:
+  pulse:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Save dated snapshot of current data
+        run: |
+          DATE=$(date -u +%Y-%m-%d)
+          if [ -f data/pulse.json ]; then
+            cp data/pulse.json "data/pulse-${DATE}.json"
+          fi
+
+      - name: Fetch fresh pulse data
+        run: npm run pulse
+
+      - name: Commit and push if data changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/pulse.json data/pulse-prev.json "data/pulse-*.json"
+          if git diff --staged --quiet; then
+            echo "No changes to commit"
+          else
+            DATE=$(date -u +%Y-%m-%d)
+            git commit -m "pulse: weekly refresh ${DATE}"
+            git push
+          fi

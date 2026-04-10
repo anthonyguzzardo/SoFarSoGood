@@ -226,7 +226,7 @@ function HeroSpotlight({
                     className="text-[0.55rem] font-mono uppercase tracking-widest shrink-0"
                     style={{ color: "var(--color-ink-faint)" }}
                   >
-                    4-week trend
+                    {weeklyHistory.length - 1}w trend
                   </span>
                   <TrendLine weeks={weeklyHistory} id={`hero-${topic.slug}`} width={120} height={28} />
                 </div>
@@ -518,7 +518,11 @@ function Sparkline({ sources, id, days = 7 }: { sources: PulseSource[]; id: stri
 /* TrendLine — multi-week score trajectory from historical snapshots          */
 /* -------------------------------------------------------------------------- */
 
-const WEEK_LABELS = ["Mar 13", "Mar 20", "Mar 27", "Apr 3", "Now"];
+function formatWeekLabel(date: string, isLast: boolean): string {
+  if (isLast) return "Now";
+  const d = new Date(date + "T00:00:00");
+  return d.toLocaleDateString("en-US", { month: "short", day: "numeric" });
+}
 
 function TrendLine({ weeks, id, width = 72, height = 20 }: { weeks: TopicWeek[]; id: string; width?: number; height?: number }) {
   const [hovered, setHovered] = useState<number | null>(null);
@@ -614,7 +618,7 @@ function TrendLine({ weeks, id, width = 72, height = 20 }: { weeks: TopicWeek[];
             }}
           >
             <div className="font-semibold mb-0.5" style={{ color: "var(--color-ink)" }}>
-              {WEEK_LABELS[hovered]}
+              {formatWeekLabel(weeks[hovered].date, hovered === weeks.length - 1)}
             </div>
             {weeks[hovered].score > 0 ? (
               <div className="flex flex-col gap-0.5">
@@ -1405,7 +1409,7 @@ export default function PulseBoard({ topics, generatedAt, conceptMap = {}, topic
             <span className="w-6 text-right">#</span>
             <span className="w-4" />
             <span className="flex-1">Topic</span>
-            <span className="w-[72px] hidden sm:block text-right">{timeWindow === "3d" ? "3-day" : "4-week"}</span>
+            <span className="w-[72px] hidden sm:block text-right">{timeWindow === "3d" ? "3-day" : "Trend"}</span>
             <span className="w-16 text-right">Score</span>
             <span className="w-14 text-right">Change</span>
             <span className="w-8 text-right hidden md:block">Hits</span>
@@ -1484,6 +1488,195 @@ export default function PulseBoard({ topics, generatedAt, conceptMap = {}, topic
           )}
         </div>
       )}
+
+      {/* The signal — top sources, reactive to time window */}
+      {(() => {
+        // Collect all sources from active topics, deduplicate by URL
+        const allWindowSources: PulseSource[] = [];
+        const seen = new Set<string>();
+        for (const t of activeTopics) {
+          for (const s of t.sources) {
+            if (!seen.has(s.url)) {
+              seen.add(s.url);
+              allWindowSources.push(s);
+            }
+          }
+        }
+        allWindowSources.sort((a, b) => b.score - a.score);
+        const topSignalSources = allWindowSources.slice(0, 6);
+        if (topSignalSources.length === 0) return null;
+
+        const featured = topSignalSources[0];
+        const rest = topSignalSources.slice(1);
+        const fColor = featured.platform === "reddit"
+          ? { bg: "rgba(255, 69, 0, 0.15)", fg: "#ff6b35", label: "Reddit" }
+          : featured.platform === "youtube"
+            ? { bg: "rgba(255, 0, 0, 0.15)", fg: "#ff4444", label: "YouTube" }
+            : { bg: "rgba(255, 102, 0, 0.15)", fg: "#ff8c00", label: "Hacker News" };
+        const fIcon = featured.platform === "youtube" ? "▶" : featured.platform === "reddit" ? "↑" : "▴";
+
+        return (
+          <div className="mt-12 px-4">
+            <div
+              className="text-[0.6rem] font-mono uppercase tracking-[0.2em] mb-6"
+              style={{ color: "var(--color-accent)" }}
+            >
+              The signal {timeWindow === "3d" ? "last 3 days" : "this week"}
+            </div>
+
+            <div className="grid grid-cols-1 lg:grid-cols-5 gap-4">
+              {/* Featured discussion — hero treatment */}
+              <a
+                href={featured.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group lg:col-span-3 rounded-xl border overflow-hidden transition-all hover:border-amber-400/40 hover:-translate-y-0.5 flex flex-col"
+                style={{
+                  background: "var(--color-paper-raised)",
+                  borderColor: "var(--color-paper-edge)",
+                }}
+              >
+                {featured.thumbnail && (
+                  <div className="relative w-full aspect-video overflow-hidden">
+                    <img
+                      src={featured.thumbnail}
+                      alt=""
+                      className="w-full h-full object-cover"
+                      loading="lazy"
+                    />
+                    <div className="absolute inset-0 flex items-center justify-center bg-black/20 group-hover:bg-black/10 transition-colors">
+                      <div
+                        className="w-14 h-14 rounded-full flex items-center justify-center"
+                        style={{ background: "rgba(255,0,0,0.9)" }}
+                      >
+                        <svg viewBox="0 0 24 24" className="w-6 h-6 ml-0.5" fill="white">
+                          <path d="M8 5v14l11-7z" />
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+                )}
+                <div className="p-6 flex flex-col flex-1">
+                  <div className="flex items-center gap-2 mb-3">
+                    <span
+                      className="text-[0.6rem] font-mono uppercase tracking-widest px-2 py-0.5 rounded"
+                      style={{ background: fColor.bg, color: fColor.fg }}
+                    >
+                      {fColor.label}
+                    </span>
+                    {featured.subreddit && (
+                      <span
+                        className="text-[0.6rem] font-mono"
+                        style={{ color: "var(--color-ink-faint)" }}
+                      >
+                        r/{featured.subreddit}
+                      </span>
+                    )}
+                    <span
+                      className="text-[0.55rem] font-mono uppercase tracking-widest ml-auto px-2 py-0.5 rounded"
+                      style={{
+                        background: "rgba(255,184,77,0.08)",
+                        color: "var(--color-accent)",
+                        border: "1px solid rgba(255,184,77,0.15)",
+                      }}
+                    >
+                      Top signal
+                    </span>
+                  </div>
+
+                  <p
+                    className="font-semibold text-lg md:text-xl leading-snug group-hover:text-amber-300 transition-colors flex-1"
+                    style={{ fontFamily: "var(--font-display)", color: "var(--color-ink)" }}
+                  >
+                    {featured.title}
+                  </p>
+
+                  <div
+                    className="mt-4 flex items-center gap-4 text-[0.65rem] font-mono"
+                    style={{ color: "var(--color-ink-dim)" }}
+                  >
+                    <span style={{ color: "var(--color-accent)" }}>
+                      {fIcon} {featured.score.toLocaleString()}
+                    </span>
+                    {featured.commentCount != null && (
+                      <span>{featured.commentCount.toLocaleString()} comments</span>
+                    )}
+                    {featured.author && <span>by {featured.author}</span>}
+                  </div>
+                </div>
+              </a>
+
+              {/* Ranked list of remaining discussions */}
+              <div className="lg:col-span-2 flex flex-col gap-1">
+                <div
+                  className="text-[0.6rem] font-mono uppercase tracking-widest px-3 py-2 mb-1"
+                  style={{ color: "var(--color-ink-faint)" }}
+                >
+                  Also trending
+                </div>
+                {rest.map((source, i) => {
+                  const pColor = source.platform === "reddit"
+                    ? { bg: "rgba(255, 69, 0, 0.15)", fg: "#ff6b35" }
+                    : source.platform === "youtube"
+                      ? { bg: "rgba(255, 0, 0, 0.15)", fg: "#ff4444" }
+                      : { bg: "rgba(255, 102, 0, 0.15)", fg: "#ff8c00" };
+                  const pIcon = source.platform === "reddit" ? "↑" : source.platform === "youtube" ? "▶" : "▴";
+                  return (
+                    <a
+                      key={source.url}
+                      href={source.url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="group flex items-start gap-3 px-3 py-3 rounded-lg transition-all hover:bg-white/[0.02]"
+                    >
+                      <span
+                        className="text-xs font-mono w-4 text-right shrink-0 pt-0.5"
+                        style={{ color: "var(--color-ink-faint)" }}
+                      >
+                        {i + 2}
+                      </span>
+                      <div className="flex-1 min-w-0">
+                        <p
+                          className="text-sm font-medium leading-snug group-hover:text-amber-300 transition-colors"
+                          style={{
+                            fontFamily: "var(--font-display)",
+                            color: "var(--color-ink)",
+                            display: "-webkit-box",
+                            WebkitLineClamp: 2,
+                            WebkitBoxOrient: "vertical",
+                            overflow: "hidden",
+                          }}
+                        >
+                          {source.title}
+                        </p>
+                        <div
+                          className="mt-1 flex items-center gap-2 text-[0.6rem] font-mono"
+                          style={{ color: "var(--color-ink-faint)" }}
+                        >
+                          <span
+                            className="px-1.5 py-0.5 rounded"
+                            style={{ background: pColor.bg, color: pColor.fg }}
+                          >
+                            {source.platform === "reddit"
+                              ? `r/${source.subreddit || "space"}`
+                              : source.platform === "hackernews"
+                                ? "HN"
+                                : "YT"}
+                          </span>
+                          <span>{pIcon} {source.score.toLocaleString()}</span>
+                          {source.commentCount != null && (
+                            <span>{source.commentCount} comments</span>
+                          )}
+                        </div>
+                      </div>
+                    </a>
+                  );
+                })}
+              </div>
+            </div>
+          </div>
+        );
+      })()}
 
       {/* Timestamp + sparkline legend */}
       <div
