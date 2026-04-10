@@ -208,26 +208,36 @@ function HeroSpotlight({
 /* Sparkline — 7-day activity chart from source timestamps                    */
 /* -------------------------------------------------------------------------- */
 
-function Sparkline({ sources }: { sources: PulseSource[] }) {
+function Sparkline({ sources, id }: { sources: PulseSource[]; id: string }) {
   const now = Date.now();
   const dayMs = 86400000;
   const days = 7;
 
-  // Bucket sources into daily bins (index 0 = 7 days ago, 6 = today)
-  const buckets = new Array(days).fill(0);
+  // Bucket sources into daily bins by platform
+  const reddit = new Array(days).fill(0);
+  const hn = new Array(days).fill(0);
+  const yt = new Array(days).fill(0);
   for (const s of sources) {
     const age = now - new Date(s.publishedAt).getTime();
     const dayIndex = days - 1 - Math.floor(age / dayMs);
     if (dayIndex >= 0 && dayIndex < days) {
-      buckets[dayIndex]++;
+      if (s.platform === "reddit") reddit[dayIndex]++;
+      else if (s.platform === "hackernews") hn[dayIndex]++;
+      else if (s.platform === "youtube") yt[dayIndex]++;
     }
   }
 
-  const max = Math.max(...buckets, 1);
+  const totals = reddit.map((r, i) => r + hn[i] + yt[i]);
+  const max = Math.max(...totals, 1);
   const w = 72;
   const h = 20;
   const barW = 7;
   const gap = (w - barW * days) / (days - 1);
+
+  // Platform colors
+  const REDDIT_COLOR = "#ff6b35";
+  const HN_COLOR = "#ffb84d";
+  const YT_COLOR = "#ff4444";
 
   return (
     <svg
@@ -237,24 +247,52 @@ function Sparkline({ sources }: { sources: PulseSource[] }) {
       className="shrink-0"
       style={{ overflow: "visible" }}
     >
-      {buckets.map((count, i) => {
-        const barH = max > 0 ? (count / max) * (h - 2) : 0;
+      {totals.map((count, i) => {
         const x = i * (barW + gap);
-        const y = h - barH;
         const isToday = i === days - 1;
-        const opacity = count === 0 ? 0.08 : 0.3 + (count / max) * 0.7;
+
+        if (count === 0) {
+          return (
+            <rect
+              key={i}
+              x={x}
+              y={h - 2}
+              width={barW}
+              height={2}
+              rx={1.5}
+              fill="#ffb84d"
+              opacity={0.08}
+            />
+          );
+        }
+
+        const totalH = (count / max) * (h - 2);
+        const baseY = h - totalH;
+        const opacity = 0.3 + (count / max) * 0.7;
+
+        // Stack: Reddit on bottom, HN in middle, YT on top
+        const rH = (reddit[i] / count) * totalH;
+        const hH = (hn[i] / count) * totalH;
+        const yH = (yt[i] / count) * totalH;
+
+        // Determine segments bottom-up
+        const segments: { y: number; height: number; fill: string }[] = [];
+        let cursor = h;
+        if (reddit[i] > 0) {
+          segments.push({ y: cursor - rH, height: rH, fill: REDDIT_COLOR });
+          cursor -= rH;
+        }
+        if (hn[i] > 0) {
+          segments.push({ y: cursor - hH, height: hH, fill: HN_COLOR });
+          cursor -= hH;
+        }
+        if (yt[i] > 0) {
+          segments.push({ y: cursor - yH, height: yH, fill: YT_COLOR });
+        }
+
         return (
-          <rect
-            key={i}
-            x={x}
-            y={count === 0 ? h - 2 : y}
-            width={barW}
-            height={count === 0 ? 2 : barH}
-            rx={1.5}
-            fill={isToday && count > 0 ? "#ffb84d" : "#ffb84d"}
-            opacity={opacity}
-          >
-            {isToday && count > 0 && (
+          <g key={i} opacity={opacity}>
+            {isToday && (
               <animate
                 attributeName="opacity"
                 values={`${opacity};${Math.max(opacity - 0.2, 0.3)};${opacity}`}
@@ -262,7 +300,22 @@ function Sparkline({ sources }: { sources: PulseSource[] }) {
                 repeatCount="indefinite"
               />
             )}
-          </rect>
+            <clipPath id={`spark-${id}-${i}`}>
+              <rect x={x} y={baseY} width={barW} height={totalH} rx={1.5} />
+            </clipPath>
+            <g clipPath={`url(#spark-${id}-${i})`}>
+              {segments.map((seg, j) => (
+                <rect
+                  key={j}
+                  x={x}
+                  y={seg.y}
+                  width={barW}
+                  height={seg.height}
+                  fill={seg.fill}
+                />
+              ))}
+            </g>
+          </g>
         );
       })}
     </svg>
@@ -436,7 +489,7 @@ function TopicRow({
 
           {/* Activity sparkline — 7-day heartbeat */}
           <div className="hidden sm:flex items-center shrink-0">
-            <Sparkline sources={topic.sources} />
+            <Sparkline sources={topic.sources} id={topic.slug} />
           </div>
 
           {/* Score */}
@@ -793,19 +846,35 @@ export default function PulseBoard({ topics, generatedAt }: Props) {
         </div>
       )}
 
-      {/* Timestamp */}
+      {/* Timestamp + sparkline legend */}
       <div
-        className="mt-8 px-4 text-[0.6rem] font-mono"
+        className="mt-8 px-4 flex items-center gap-4 flex-wrap text-[0.6rem] font-mono"
         style={{ color: "var(--color-ink-faint)" }}
       >
-        Data from Reddit + Hacker News · Updated{" "}
-        {new Date(generatedAt).toLocaleDateString("en-US", {
-          month: "short",
-          day: "numeric",
-          year: "numeric",
-          hour: "numeric",
-          minute: "2-digit",
-        })}
+        <span>
+          Data from Reddit + Hacker News · Updated{" "}
+          {new Date(generatedAt).toLocaleDateString("en-US", {
+            month: "short",
+            day: "numeric",
+            year: "numeric",
+            hour: "numeric",
+            minute: "2-digit",
+          })}
+        </span>
+        <span className="hidden sm:flex items-center gap-3 ml-auto">
+          <span className="flex items-center gap-1">
+            <span className="inline-block w-2 h-2 rounded-sm" style={{ background: "#ff6b35" }} />
+            Reddit
+          </span>
+          <span className="flex items-center gap-1">
+            <span className="inline-block w-2 h-2 rounded-sm" style={{ background: "#ffb84d" }} />
+            HN
+          </span>
+          <span className="flex items-center gap-1">
+            <span className="inline-block w-2 h-2 rounded-sm" style={{ background: "#ff4444" }} />
+            YouTube
+          </span>
+        </span>
       </div>
     </div>
   );
