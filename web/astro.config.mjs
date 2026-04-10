@@ -6,7 +6,7 @@ import tailwindcss from "@tailwindcss/vite";
 
 // https://astro.build/config
 export default defineConfig({
-  site: "https://niac-atlas.local",
+  site: "https://hactenusbene.com",
   integrations: [react(), mdx()],
   vite: {
     plugins: [tailwindcss()],

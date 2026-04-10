@@ -270,7 +270,7 @@ function HeroSpotlight({
                   className="mt-3 text-[0.6rem] font-mono uppercase tracking-widest"
                   style={{ color: "var(--color-ink-faint)", opacity: 0.6, borderTop: "1px solid rgba(255,255,255,0.04)", paddingTop: "0.75rem" }}
                 >
-                  ⬡ Social momentum only — no funded research in the atlas yet
+                  ⬡ Social momentum only — no funded research indexed yet
                 </div>
               )}
             </div>
@@ -1096,7 +1096,7 @@ function generateLede(
       }
       if (leaderFunded > 0) {
         parts.push(
-          `${leader.label} leading the board — ${leaderFunded} NASA-funded ${leaderFunded === 1 ? "study" : "studies"} in the atlas. "${truncated}"`,
+          `${leader.label} leading the board — ${leaderFunded} NASA-funded ${leaderFunded === 1 ? "study" : "studies"} indexed. "${truncated}"`,
         );
       } else {
         parts.push(`${leader.label} leading the board — social momentum only. "${truncated}"`);

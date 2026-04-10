@@ -49,7 +49,7 @@ export default function WishlistBrowser({
   const [selectedField, setSelectedField] = useState<string>("all");
   const [expandedId, setExpandedId] = useState<string | null>(null);
 
-  const REPO = "anthonyguzzardo/niac-atlas";
+  const REPO = "anthonyguzzardo/SoFarSoGood";
 
   const toggleExpand = useCallback((id: string) => {
     setExpandedId((prev) => (prev === id ? null : id));
@@ -379,12 +379,12 @@ export default function WishlistBrowser({
                           Add context
                         </a>
                         <a
-                          href={`https://github.com/${REPO}/issues/new?title=${encodeURIComponent(`Connection: ${e.title} → [NIAC concept]`)}&body=${encodeURIComponent(`**Historical paper:** ${e.title} (${e.author}, ${displayYear(e.year)})\n\n**Connects to NIAC concept:** [paste concept name]\n\n**How they connect:** `)}&labels=connection`}
+                          href={`https://github.com/${REPO}/issues/new?title=${encodeURIComponent(`Connection: ${e.title} → [concept]`)}&body=${encodeURIComponent(`**Historical paper:** ${e.title} (${e.author}, ${displayYear(e.year)})\n\n**Connects to concept:** [paste concept name]\n\n**How they connect:** `)}&labels=connection`}
                           target="_blank"
                           rel="noopener"
                           className="wishlist-action-btn"
                         >
-                          Link to NIAC concept
+                          Link to concept
                         </a>
                       </div>
                     </div>

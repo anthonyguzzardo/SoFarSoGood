@@ -11,7 +11,7 @@ import BaseLayout from "../layouts/BaseLayout.astro";
 import { allConcepts, stats } from "../lib/concepts.ts";
 import { wishlistStats } from "../lib/wishlist.ts";
 
-const REPO = "anthonyguzzardo/niac-atlas";
+const REPO = "anthonyguzzardo/SoFarSoGood";
 
 // Concepts with unknown phase
 const unknownPhase = allConcepts.filter((c) => c.phase === null);
@@ -19,16 +19,16 @@ const unknownPhase = allConcepts.filter((c) => c.phase === null);
 const missingPayoff = allConcepts.filter((c) => !c.whatIfItWorks);
 ---
 
-<BaseLayout title="Contribute — NIAC Atlas" nav="mission">
+<BaseLayout title="Contribute — So Far So Good" nav="mission">
   <section class="mb-12 reveal">
     <div class="eyebrow text-accent mb-3">Contribute</div>
     <h2
       class="font-display text-4xl md:text-5xl font-semibold tracking-tight leading-tight max-w-4xl"
     >
-      Help build the atlas
+      Help build this
     </h2>
     <p class="mt-4 text-base text-dim max-w-3xl leading-relaxed">
-      Every action here takes less than two minutes and makes the atlas
+      Every action here takes less than two minutes and makes the site
       better for everyone. No setup required — each button opens a
       pre-filled GitHub issue. You just add the details and submit.
     </p>
@@ -94,9 +94,9 @@ const missingPayoff = allConcepts.filter((c) => !c.whatIfItWorks);
           {missingPayoff.length} concepts need payoff lines
         </h3>
         <p class="mt-2 text-sm text-dim max-w-xl leading-relaxed">
-          Every NIAC concept represents speculative technology. We want a
+          Every concept represents speculative technology. We want a
           punchy one-liner that captures the stakes: "If this works, [amazing
-          thing happens]." You write the line, we add it to the atlas.
+          thing happens]." You write the line, we add it to the site.
         </p>
       </div>
       <div class="flex flex-wrap gap-3">
@@ -165,7 +165,7 @@ const missingPayoff = allConcepts.filter((c) => !c.whatIfItWorks);
         <p class="mt-2 text-sm text-dim max-w-xl leading-relaxed">
           Our topic deep dives include curated media — the best videos, podcasts,
           books, and articles for each scientific frontier. If you've found
-          something brilliant that should be in the atlas, tell us.
+          something brilliant that should be here, tell us.
         </p>
       </div>
       <a
@@ -193,7 +193,7 @@ const missingPayoff = allConcepts.filter((c) => !c.whatIfItWorks);
           Build the infrastructure
         </h3>
         <p class="mt-2 text-sm text-dim max-w-xl leading-relaxed">
-          The atlas is TypeScript + Astro + React, open source on GitHub.
+          The site is TypeScript + Astro + React, open source on GitHub.
           If you can write code, check the issues and the roadmap. Semantic
           search, citation graphs, new data sources — there's no shortage
           of interesting problems.

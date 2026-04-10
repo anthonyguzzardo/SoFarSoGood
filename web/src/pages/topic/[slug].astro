@@ -40,7 +40,7 @@ const overviewParagraphs = topic.overview
 ---
 
 <BaseLayout
-  title={`${topic.title} — NIAC Atlas`}
+  title={`${topic.title} — So Far So Good`}
   description={topic.subtitle}
   nav="explore"
 >
@@ -322,7 +322,7 @@ const overviewParagraphs = topic.overview
       concepts.length > 0 && (
         <section class="mb-20">
           <div class="eyebrow text-accent mb-4 pb-2 border-b hairline">
-            From the NIAC Atlas — funded concepts related to {topic.title.toLowerCase()}
+            Funded concepts related to {topic.title.toLowerCase()}
           </div>
           <ul class="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-8 max-w-4xl">
             {concepts.map((c) => (
