@@ -26,7 +26,10 @@ import {
   categorize,
 } from "../lib/concepts.ts";
 import type { ConceptCategory } from "../lib/concepts.ts";
+import { getTrendingTopics, formatScore } from "../lib/pulse.ts";
 import ConceptBrowser from "../components/ConceptBrowser.tsx";
+
+const trending = getTrendingTopics(8);
 
 const featured = getFeaturedConcept();
 const featuredQuote = pullQuote(featured.abstract);
@@ -148,6 +151,57 @@ const categoryLabel: Record<ConceptCategory, string> = {
       })}
     </div>
   </section>
+
+  {/* ----------------------------------------------------------------- */}
+  {/* The Pulse — compact trending strip                                */}
+  {/* ----------------------------------------------------------------- */}
+  {trending.length > 0 && (
+    <section class="mb-24 reveal">
+      <div class="flex items-center justify-between mb-5">
+        <div class="eyebrow text-accent">The pulse</div>
+        <a
+          href="/pulse"
+          class="eyebrow hover:text-accent transition-colors"
+        >
+          See all &rarr;
+        </a>
+      </div>
+      <div class="flex gap-3 overflow-x-auto pb-2 -mx-1 px-1 scrollbar-hide">
+        {trending.map((t) => {
+          const arrow =
+            t.direction === "up" ? "▲" : t.direction === "down" ? "▼" : "";
+          const arrowColor =
+            t.direction === "up"
+              ? "color: #4ade80"
+              : t.direction === "down"
+                ? "color: #f87171"
+                : "";
+          return (
+            <a
+              href={`/pulse`}
+              class="group shrink-0 flex items-center gap-2 px-4 py-2.5 rounded-lg border hairline hover:border-amber-400/40 transition"
+              style="background: var(--color-paper-raised);"
+            >
+              {arrow && (
+                <span class="text-[0.65rem]" style={arrowColor}>
+                  {arrow}
+                </span>
+              )}
+              <span class="text-sm font-medium font-display group-hover:text-accent transition-colors whitespace-nowrap">
+                {t.label}
+              </span>
+              <span
+                class="text-[0.65rem] font-mono"
+                style="color: var(--color-accent);"
+              >
+                {formatScore(t.score)}
+              </span>
+            </a>
+          );
+        })}
+      </div>
+    </section>
+  )}
 
   {/* ----------------------------------------------------------------- */}
   {/* Spotlight — the rotating featured concept                         */}

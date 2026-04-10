@@ -1,0 +1,243 @@
+---
+/**
+ * Pulse — the trending board.
+ *
+ * Shows what the world is talking about across the topics in the atlas.
+ * Data sourced from Reddit and Hacker News, refreshed at build time.
+ *
+ * Structure:
+ *   1. Header with stats
+ *   2. PulseBoard leaderboard (interactive React island)
+ *   3. Top sources grid — best content across platforms
+ *   4. Rising concepts — atlas concepts linked to trending topics
+ */
+
+import BaseLayout from "../layouts/BaseLayout.astro";
+import PulseBoard from "../components/PulseBoard.tsx";
+import {
+  allPulseTopics,
+  activePulseTopics,
+  generatedAt,
+  getTopSources,
+  pulseStats,
+} from "../lib/pulse.ts";
+import { getConcept, categorize, piLine } from "../lib/concepts.ts";
+
+const topSources = getTopSources(undefined, 6);
+
+/* Collect all related concept slugs from active trending topics */
+const risingConceptSlugs = [
+  ...new Set(
+    activePulseTopics.flatMap((t) => t.relatedConceptSlugs),
+  ),
+];
+const risingConcepts = risingConceptSlugs
+  .map((slug) => getConcept(slug))
+  .filter((c): c is NonNullable<typeof c> => c != null)
+  .slice(0, 6);
+
+const categoryLabel: Record<string, string> = {
+  propulsion: "Propulsion",
+  telescope: "Optics",
+  habitat: "Habitat",
+  planetary: "Worlds",
+  "life-detection": "Astrobiology",
+  power: "Energy",
+  communication: "Comms",
+  defense: "Defense",
+  robotics: "Robotics",
+  manufacturing: "Manufacturing",
+  other: "Research",
+};
+---
+
+<BaseLayout title="Pulse — what the world is talking about" nav="pulse">
+  {/* ----------------------------------------------------------------- */}
+  {/* Header                                                            */}
+  {/* ----------------------------------------------------------------- */}
+  <section class="pt-4 md:pt-8 pb-12">
+    <div class="max-w-4xl">
+      <p
+        class="hero-line text-accent font-mono text-sm uppercase tracking-[0.2em]"
+        style="animation-delay: 0s"
+      >
+        The Pulse
+      </p>
+
+      <h2
+        class="hero-line mt-4 font-display text-3xl md:text-5xl font-semibold tracking-tight leading-[1.08]"
+        style="animation-delay: 0.15s"
+      >
+        What the world is thinking about
+      </h2>
+
+      <p
+        class="hero-line mt-4 text-dim text-lg leading-relaxed max-w-2xl font-display"
+        style="animation-delay: 0.3s"
+      >
+        Trending topics across Reddit and Hacker News, matched to the atlas.
+        Click any row to see the discussions driving it.
+      </p>
+
+      <div
+        class="hero-line mt-6 flex flex-wrap gap-6"
+        style="animation-delay: 0.45s"
+      >
+        <div>
+          <div class="font-display text-2xl font-semibold tracking-tight">
+            {pulseStats.totalTopics}
+          </div>
+          <div class="eyebrow mt-1">active topics</div>
+        </div>
+        <div>
+          <div class="font-display text-2xl font-semibold tracking-tight">
+            {pulseStats.totalMentions}
+          </div>
+          <div class="eyebrow mt-1">mentions</div>
+        </div>
+        <div>
+          <div class="font-display text-2xl font-semibold tracking-tight">
+            {pulseStats.totalSources}
+          </div>
+          <div class="eyebrow mt-1">sources</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  {/* ----------------------------------------------------------------- */}
+  {/* The leaderboard                                                   */}
+  {/* ----------------------------------------------------------------- */}
+  <section class="mb-24 reveal">
+    <div class="eyebrow text-accent mb-6">Trending now</div>
+    <div
+      class="rounded-xl border p-2 md:p-4"
+      style="background: var(--color-paper-raised); border-color: var(--color-paper-edge);"
+    >
+      <PulseBoard
+        topics={allPulseTopics}
+        generatedAt={generatedAt}
+        client:load
+      />
+    </div>
+  </section>
+
+  {/* ----------------------------------------------------------------- */}
+  {/* Top sources across platforms                                      */}
+  {/* ----------------------------------------------------------------- */}
+  {topSources.length > 0 && (
+    <section class="mb-24 reveal">
+      <div class="eyebrow text-accent mb-6">Top discussions this week</div>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+        {topSources.map((source) => {
+          const pColor = source.platform === "reddit"
+            ? { bg: "rgba(255, 69, 0, 0.15)", fg: "#ff6b35" }
+            : source.platform === "youtube"
+              ? { bg: "rgba(255, 0, 0, 0.15)", fg: "#ff4444" }
+              : { bg: "rgba(255, 102, 0, 0.15)", fg: "#ff8c00" };
+          const pLabel = source.platform === "reddit"
+            ? "Reddit"
+            : source.platform === "youtube"
+              ? "YouTube"
+              : "Hacker News";
+          return (
+          <a
+            href={source.url}
+            target="_blank"
+            rel="noopener noreferrer"
+            class="group rounded-lg border hairline hover:border-amber-400/40 transition hover:-translate-y-0.5 flex flex-col overflow-hidden"
+            style="background: var(--color-paper-raised);"
+          >
+            {source.thumbnail && (
+              <div class="relative w-full aspect-video overflow-hidden">
+                <img
+                  src={source.thumbnail}
+                  alt=""
+                  class="w-full h-full object-cover"
+                  loading="lazy"
+                />
+                <div class="absolute inset-0 flex items-center justify-center bg-black/20 group-hover:bg-black/10 transition-colors">
+                  <div class="w-12 h-12 rounded-full flex items-center justify-center" style="background: rgba(255,0,0,0.9);">
+                    <svg viewBox="0 0 24 24" class="w-5 h-5 ml-0.5" fill="white"><path d="M8 5v14l11-7z" /></svg>
+                  </div>
+                </div>
+              </div>
+            )}
+            <div class="p-5 flex flex-col flex-1">
+              <div class="flex items-center gap-2 mb-3">
+                <span
+                  class="text-[0.6rem] font-mono uppercase tracking-widest px-2 py-0.5 rounded"
+                  style={`background: ${pColor.bg}; color: ${pColor.fg};`}
+                >
+                  {pLabel}
+                </span>
+                {source.subreddit && (
+                  <span class="text-[0.6rem] font-mono text-faint">
+                    r/{source.subreddit}
+                  </span>
+                )}
+              </div>
+
+              <p class="font-display text-sm font-medium leading-relaxed group-hover:text-accent transition-colors flex-1">
+                {source.title}
+              </p>
+
+              <div class="mt-3 flex items-center gap-3 text-[0.65rem] font-mono text-dim">
+                <span>
+                  {source.platform === "youtube" ? "▶" : source.platform === "reddit" ? "↑" : "▴"} {source.score.toLocaleString()}
+                </span>
+                {source.commentCount != null && (
+                  <span>{source.commentCount} comments</span>
+                )}
+              </div>
+            </div>
+          </a>
+          );
+        })}
+      </div>
+    </section>
+  )}
+
+  {/* ----------------------------------------------------------------- */}
+  {/* Rising concepts — atlas entries linked to trending topics          */}
+  {/* ----------------------------------------------------------------- */}
+  {risingConcepts.length > 0 && (
+    <section class="mb-24 reveal">
+      <div class="eyebrow text-accent mb-6">Related in the atlas</div>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+        {risingConcepts.map((c) => {
+          const cat = categorize(c);
+          return (
+            <a href={`/concept/${c.slug}`} class="concept-card group">
+              <div class="card-tags">
+                <span class="card-tag tag-funded">Funded</span>
+                {c.phase && (
+                  <span class="card-tag tag-meta">Phase {c.phase}</span>
+                )}
+                <span class="card-tag tag-meta">
+                  {categoryLabel[cat] ?? cat}
+                </span>
+              </div>
+              {c.whatIfItWorks ? (
+                <p class="mt-4 font-display text-lg font-semibold leading-snug">
+                  {c.whatIfItWorks}
+                </p>
+              ) : (
+                <p class="mt-4 font-display text-lg font-semibold leading-snug">
+                  {c.title}
+                </p>
+              )}
+              <div class="card-subtitle mt-3">
+                {piLine(c)} · {c.year}
+              </div>
+              <div class="mt-auto pt-4 card-cta">
+                <span>Explore concept</span>
+                <span class="arrow">&rarr;</span>
+              </div>
+            </a>
+          );
+        })}
+      </div>
+    </section>
+  )}
+</BaseLayout>

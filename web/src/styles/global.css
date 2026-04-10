@@ -390,6 +390,40 @@ button:active,
   border-color: var(--color-accent);
 }
 
+/* ----------------------------------------------------------------------- */
+/* Pulse leaderboard row hover                                             */
+/* ----------------------------------------------------------------------- */
+
+.pulse-row-idle {
+  background: transparent;
+}
+.pulse-row:hover .pulse-row-idle {
+  background: var(--color-paper-raised);
+  transform: translateY(-2px);
+  box-shadow:
+    0 4px 12px rgba(0, 0, 0, 0.4),
+    0 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+.pulse-row-expanded {
+  background: var(--color-paper-raised);
+}
+
+.pulse-row:active .pulse-row-idle,
+.pulse-row:active .pulse-row-expanded {
+  transform: translateY(0);
+  box-shadow: none;
+}
+
+/* Hide horizontal scrollbar on the pulse pill strip. */
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
 /* Subtle scroll-bar tweaks — keep it dark to match. */
 ::-webkit-scrollbar {
   width: 10px;

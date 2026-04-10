@@ -1,0 +1,524 @@
+/**
+ * Fetch trending data from Reddit + Hacker News for topics in the atlas,
+ * compute trending scores, and write data/pulse.json.
+ *
+ * Run with:  node --experimental-strip-types ingestion/fetch-pulse.ts
+ *
+ * Strategy:
+ *   1. Define a keyword map that bridges atlas concepts/topics to search terms
+ *      real people use on Reddit and HN.
+ *   2. Hit the public Reddit JSON endpoints (no auth needed) and the free
+ *      Algolia-powered HN Search API.
+ *   3. Score each topic by total engagement, compute deltas where possible,
+ *      attach the best sources, and write a static JSON file the web app
+ *      can consume at build time.
+ *
+ * No API keys required — both Reddit (.json suffix) and HN (hn.algolia.com)
+ * are public.
+ */
+
+import { writeFile, readFile, mkdir } from "node:fs/promises";
+import { join, dirname } from "node:path";
+import { fileURLToPath } from "node:url";
+
+const HERE = dirname(fileURLToPath(import.meta.url));
+const DATA_DIR = join(HERE, "..", "data");
+const OUT_FILE = join(DATA_DIR, "pulse.json");
+const PREV_FILE = join(DATA_DIR, "pulse-prev.json");
+
+/* -------------------------------------------------------------------------- */
+/* Topic keyword map                                                          */
+/* -------------------------------------------------------------------------- */
+/* Each entry maps a human-readable topic label to a set of search terms.     */
+/* The slug is derived from the label. Terms are OR'd when searching.         */
+
+interface TopicDef {
+  label: string;
+  slug: string;
+  terms: string[];
+  /** Slugs of related NIAC concepts — links the pulse back to the atlas */
+  conceptSlugs: string[];
+}
+
+const TOPICS: TopicDef[] = [
+  {
+    label: "Solar Sails",
+    slug: "solar-sails",
+    terms: ["solar sail", "light sail", "lightsail", "solar sailing"],
+    conceptSlugs: ["diffractive-solar-sailing", "solar-surfing"],
+  },
+  {
+    label: "Fusion Propulsion",
+    slug: "fusion-propulsion",
+    terms: ["fusion propulsion", "fusion rocket", "fusion drive", "fusion engine"],
+    conceptSlugs: ["fusion-driven-rocket", "direct-fusion-drive"],
+  },
+  {
+    label: "Space Elevators",
+    slug: "space-elevators",
+    terms: ["space elevator", "orbital tether", "space tether"],
+    conceptSlugs: [],
+  },
+  {
+    label: "Titan Exploration",
+    slug: "titan-exploration",
+    terms: ["titan submarine", "titan exploration", "titan saturn moon", "titan methane ocean"],
+    conceptSlugs: ["titan-submarine"],
+  },
+  {
+    label: "Lunar Habitats",
+    slug: "lunar-habitats",
+    terms: ["lunar habitat", "moon base", "lunar colony", "moon habitat", "artemis base"],
+    conceptSlugs: ["mycotecture", "sintered-regolith"],
+  },
+  {
+    label: "Nuclear Thermal Propulsion",
+    slug: "nuclear-thermal",
+    terms: ["nuclear thermal propulsion", "nuclear rocket", "NTP rocket", "nuclear thermal rocket"],
+    conceptSlugs: [],
+  },
+  {
+    label: "Asteroid Mining",
+    slug: "asteroid-mining",
+    terms: ["asteroid mining", "space mining", "asteroid resources"],
+    conceptSlugs: [],
+  },
+  {
+    label: "Black Holes",
+    slug: "black-holes",
+    terms: ["black hole", "event horizon", "hawking radiation", "singularity physics"],
+    conceptSlugs: [],
+  },
+  {
+    label: "Quantum Communication",
+    slug: "quantum-comms",
+    terms: ["quantum communication", "quantum internet", "quantum entanglement communication", "quantum key distribution space"],
+    conceptSlugs: [],
+  },
+  {
+    label: "Mars Colonization",
+    slug: "mars-colonization",
+    terms: ["mars colony", "mars colonization", "mars habitat", "mars settlement", "mars base"],
+    conceptSlugs: ["mycotecture"],
+  },
+  {
+    label: "Interstellar Travel",
+    slug: "interstellar-travel",
+    terms: ["interstellar travel", "interstellar probe", "breakthrough starshot", "interstellar mission"],
+    conceptSlugs: [],
+  },
+  {
+    label: "Space Telescopes",
+    slug: "space-telescopes",
+    terms: ["space telescope", "JWST", "james webb", "hubble", "LUVOIR", "habitable exoplanet observatory"],
+    conceptSlugs: ["fluidic-telescope", "orbiting-rainbows"],
+  },
+  {
+    label: "Warp Drives",
+    slug: "warp-drives",
+    terms: ["warp drive", "alcubierre drive", "warp bubble", "FTL drive"],
+    conceptSlugs: [],
+  },
+  {
+    label: "Astrobiology",
+    slug: "astrobiology",
+    terms: ["astrobiology", "alien life", "biosignature", "extraterrestrial life", "life detection space"],
+    conceptSlugs: [],
+  },
+  {
+    label: "Space Debris",
+    slug: "space-debris",
+    terms: ["space debris", "orbital debris", "space junk", "kessler syndrome", "debris removal"],
+    conceptSlugs: [],
+  },
+  {
+    label: "Electric Propulsion",
+    slug: "electric-propulsion",
+    terms: ["ion thruster", "hall thruster", "electric propulsion", "ion drive", "plasma thruster"],
+    conceptSlugs: [],
+  },
+  {
+    label: "Dyson Spheres",
+    slug: "dyson-spheres",
+    terms: ["dyson sphere", "dyson swarm", "megastructure", "kardashev scale"],
+    conceptSlugs: [],
+  },
+  {
+    label: "Space Solar Power",
+    slug: "space-solar-power",
+    terms: ["space solar power", "space-based solar", "solar power satellite", "beamed power space"],
+    conceptSlugs: [],
+  },
+];
+
+/* -------------------------------------------------------------------------- */
+/* Reddit fetcher                                                             */
+/* -------------------------------------------------------------------------- */
+
+const SUBREDDITS = [
+  "space", "spacex", "nasa", "futurology", "physics",
+  "aerospace", "science", "engineering", "spaceflight",
+  "astrophysics", "cosmology",
+];
+
+interface RedditPost {
+  title: string;
+  url: string;
+  permalink: string;
+  score: number;
+  num_comments: number;
+  subreddit: string;
+  author: string;
+  created_utc: number;
+}
+
+async function fetchRedditSubreddit(
+  subreddit: string,
+  timeframe: "day" | "week" | "month" = "week",
+): Promise<RedditPost[]> {
+  const url = `https://www.reddit.com/r/${subreddit}/top.json?t=${timeframe}&limit=100`;
+  try {
+    const res = await fetch(url, {
+      headers: { "User-Agent": "niac-atlas-pulse/0.1 (research project)" },
+    });
+    if (!res.ok) {
+      console.warn(`  ! Reddit r/${subreddit}: ${res.status}`);
+      return [];
+    }
+    const json = (await res.json()) as any;
+    return (json.data?.children ?? []).map((c: any) => ({
+      title: c.data.title,
+      url: c.data.url,
+      permalink: `https://reddit.com${c.data.permalink}`,
+      score: c.data.score,
+      num_comments: c.data.num_comments,
+      subreddit: c.data.subreddit,
+      author: c.data.author,
+      created_utc: c.data.created_utc,
+    }));
+  } catch (err) {
+    console.warn(`  ! Reddit r/${subreddit}: ${(err as Error).message}`);
+    return [];
+  }
+}
+
+async function fetchAllReddit(): Promise<RedditPost[]> {
+  console.log("→ fetching Reddit top posts...");
+  const all: RedditPost[] = [];
+  // Fetch sequentially to be respectful of Reddit rate limits
+  for (const sub of SUBREDDITS) {
+    const posts = await fetchRedditSubreddit(sub);
+    all.push(...posts);
+    console.log(`  r/${sub}: ${posts.length} posts`);
+    // Small delay to avoid rate-limiting
+    await sleep(1200);
+  }
+  console.log(`  total: ${all.length} Reddit posts`);
+  return all;
+}
+
+/* -------------------------------------------------------------------------- */
+/* Hacker News fetcher                                                        */
+/* -------------------------------------------------------------------------- */
+
+interface HNHit {
+  title: string;
+  url: string | null;
+  objectID: string;
+  points: number;
+  num_comments: number;
+  author: string;
+  created_at_i: number;
+}
+
+async function searchHN(query: string): Promise<HNHit[]> {
+  const params = new URLSearchParams({
+    query,
+    tags: "story",
+    numericFilters: `created_at_i>${Math.floor(Date.now() / 1000) - 7 * 86400}`,
+    hitsPerPage: "50",
+  });
+  const url = `https://hn.algolia.com/api/v1/search?${params}`;
+  try {
+    const res = await fetch(url);
+    if (!res.ok) return [];
+    const json = (await res.json()) as any;
+    return (json.hits ?? []).map((h: any) => ({
+      title: h.title,
+      url: h.url,
+      objectID: h.objectID,
+      points: h.points ?? 0,
+      num_comments: h.num_comments ?? 0,
+      author: h.author,
+      created_at_i: h.created_at_i,
+    }));
+  } catch {
+    return [];
+  }
+}
+
+async function fetchAllHN(topics: TopicDef[]): Promise<Map<string, HNHit[]>> {
+  console.log("→ fetching Hacker News...");
+  const map = new Map<string, HNHit[]>();
+  for (const topic of topics) {
+    // Search with the first (most specific) term
+    const hits = await searchHN(topic.terms[0]!);
+    if (hits.length > 0) {
+      map.set(topic.slug, hits);
+      console.log(`  HN "${topic.terms[0]}": ${hits.length} hits`);
+    }
+    await sleep(300);
+  }
+  return map;
+}
+
+/* -------------------------------------------------------------------------- */
+/* Matching + scoring                                                         */
+/* -------------------------------------------------------------------------- */
+
+interface PulseSource {
+  platform: "reddit" | "hackernews" | "youtube";
+  title: string;
+  url: string;
+  score: number;
+  author?: string;
+  subreddit?: string;
+  thumbnail?: string;
+  commentCount?: number;
+  publishedAt: string;
+}
+
+/**
+ * Extract a YouTube video ID from a URL. Works with:
+ *   youtube.com/watch?v=ID, youtu.be/ID, youtube.com/embed/ID
+ * Returns null if not a YouTube URL.
+ */
+function extractYouTubeId(url: string): string | null {
+  try {
+    const u = new URL(url);
+    if (u.hostname.includes("youtube.com")) {
+      return u.searchParams.get("v");
+    }
+    if (u.hostname === "youtu.be") {
+      return u.pathname.slice(1) || null;
+    }
+  } catch {}
+  return null;
+}
+
+/** Free YouTube thumbnail — no API key needed. */
+function youtubeThumbnail(videoId: string): string {
+  return `https://img.youtube.com/vi/${videoId}/mqdefault.jpg`;
+}
+
+interface PulseTopic {
+  slug: string;
+  label: string;
+  score: number;
+  delta: number;
+  direction: "up" | "down" | "steady";
+  mentions: number;
+  sources: PulseSource[];
+  relatedConceptSlugs: string[];
+}
+
+function matchRedditPosts(
+  topic: TopicDef,
+  allPosts: RedditPost[],
+): { posts: RedditPost[]; score: number } {
+  const patterns = topic.terms.map(
+    (t) => new RegExp(t.replace(/[.*+?^${}()|[\]\\]/g, "\\$&"), "i"),
+  );
+  const matched = allPosts.filter((p) =>
+    patterns.some((pat) => pat.test(p.title)),
+  );
+  const score = matched.reduce((sum, p) => sum + p.score, 0);
+  return { posts: matched, score };
+}
+
+function scoreTopic(
+  topic: TopicDef,
+  redditPosts: RedditPost[],
+  hnHits: HNHit[],
+): PulseTopic {
+  const reddit = matchRedditPosts(topic, redditPosts);
+  const hn = hnHits;
+
+  const redditScore = reddit.score;
+  const hnScore = hn.reduce((sum, h) => sum + h.points, 0) * 1.5;
+  const totalScore = Math.round(redditScore + hnScore);
+  const mentions = reddit.posts.length + hn.length;
+
+  // Build sources list, sorted by score, top 10.
+  // Reddit posts that link to YouTube get split into a YouTube source
+  // (with thumbnail) AND the Reddit discussion source.
+  const redditSources: PulseSource[] = [];
+  for (const p of reddit.posts) {
+    const ytId = extractYouTubeId(p.url);
+    if (ytId) {
+      // Add the YouTube video as its own source
+      redditSources.push({
+        platform: "youtube",
+        title: p.title,
+        url: p.url,
+        score: p.score,
+        thumbnail: youtubeThumbnail(ytId),
+        publishedAt: new Date(p.created_utc * 1000).toISOString(),
+      });
+    }
+    // Always add the Reddit discussion
+    redditSources.push({
+      platform: "reddit",
+      title: p.title,
+      url: p.permalink,
+      score: p.score,
+      author: p.author,
+      subreddit: p.subreddit,
+      commentCount: p.num_comments,
+      publishedAt: new Date(p.created_utc * 1000).toISOString(),
+    });
+  }
+
+  // HN posts linking to YouTube also get thumbnails
+  const hnSources: PulseSource[] = [];
+  for (const h of hn) {
+    const hnUrl = h.url ?? `https://news.ycombinator.com/item?id=${h.objectID}`;
+    const ytId = h.url ? extractYouTubeId(h.url) : null;
+    if (ytId) {
+      hnSources.push({
+        platform: "youtube",
+        title: h.title,
+        url: h.url!,
+        score: h.points,
+        thumbnail: youtubeThumbnail(ytId),
+        publishedAt: new Date(h.created_at_i * 1000).toISOString(),
+      });
+    }
+    hnSources.push({
+      platform: "hackernews",
+      title: h.title,
+      url: hnUrl,
+      score: h.points,
+      author: h.author,
+      commentCount: h.num_comments,
+      publishedAt: new Date(h.created_at_i * 1000).toISOString(),
+    });
+  }
+
+  const sources = [...redditSources, ...hnSources]
+    .sort((a, b) => b.score - a.score)
+    .slice(0, 12);
+
+  return {
+    slug: topic.slug,
+    label: topic.label,
+    score: totalScore,
+    delta: 0,
+    direction: "steady",
+    mentions,
+    sources,
+    relatedConceptSlugs: topic.conceptSlugs,
+  };
+}
+
+/* -------------------------------------------------------------------------- */
+/* Delta computation                                                          */
+/* -------------------------------------------------------------------------- */
+
+async function loadPreviousPulse(): Promise<Map<string, number> | null> {
+  try {
+    const raw = await readFile(PREV_FILE, "utf-8");
+    const data = JSON.parse(raw) as { topics: PulseTopic[] };
+    const map = new Map<string, number>();
+    for (const t of data.topics) map.set(t.slug, t.score);
+    return map;
+  } catch {
+    return null;
+  }
+}
+
+function computeDeltas(
+  topics: PulseTopic[],
+  prev: Map<string, number> | null,
+): void {
+  if (!prev) return;
+  for (const t of topics) {
+    const prevScore = prev.get(t.slug);
+    if (prevScore && prevScore > 0) {
+      t.delta = Math.round(((t.score - prevScore) / prevScore) * 100);
+      t.direction = t.delta > 10 ? "up" : t.delta < -10 ? "down" : "steady";
+    }
+  }
+}
+
+/* -------------------------------------------------------------------------- */
+/* Main                                                                       */
+/* -------------------------------------------------------------------------- */
+
+function sleep(ms: number): Promise<void> {
+  return new Promise((resolve) => setTimeout(resolve, ms));
+}
+
+async function main(): Promise<void> {
+  await mkdir(DATA_DIR, { recursive: true });
+
+  const [redditPosts, hnMap, prevScores] = await Promise.all([
+    fetchAllReddit(),
+    fetchAllHN(TOPICS),
+    loadPreviousPulse(),
+  ]);
+
+  console.log("→ scoring topics...");
+  const topics = TOPICS.map((topic) =>
+    scoreTopic(topic, redditPosts, hnMap.get(topic.slug) ?? []),
+  )
+    .filter((t) => t.mentions > 0 || t.score > 0)
+    .sort((a, b) => b.score - a.score);
+
+  computeDeltas(topics, prevScores);
+
+  // Include topics with zero matches too, so the UI can show them as "quiet"
+  const scoredSlugs = new Set(topics.map((t) => t.slug));
+  for (const def of TOPICS) {
+    if (!scoredSlugs.has(def.slug)) {
+      topics.push({
+        slug: def.slug,
+        label: def.label,
+        score: 0,
+        delta: 0,
+        direction: "steady",
+        mentions: 0,
+        sources: [],
+        relatedConceptSlugs: def.conceptSlugs,
+      });
+    }
+  }
+
+  const pulse = {
+    generatedAt: new Date().toISOString(),
+    topics,
+  };
+
+  // Save current as previous for next run's delta computation
+  try {
+    const existing = await readFile(OUT_FILE, "utf-8");
+    await writeFile(PREV_FILE, existing);
+  } catch {
+    // No previous file — that's fine
+  }
+
+  await writeFile(OUT_FILE, JSON.stringify(pulse, null, 2));
+  console.log(`\n✓ wrote ${topics.length} topics to ${OUT_FILE}`);
+  console.log("\nTop trending:");
+  for (const t of topics.slice(0, 8)) {
+    const dir = t.direction === "up" ? "▲" : t.direction === "down" ? "▼" : "—";
+    console.log(
+      `  ${dir} ${t.label.padEnd(25)} score: ${String(t.score).padStart(6)}  mentions: ${t.mentions}`,
+    );
+  }
+}
+
+main().catch((err) => {
+  console.error(err);
+  process.exit(1);
+});
