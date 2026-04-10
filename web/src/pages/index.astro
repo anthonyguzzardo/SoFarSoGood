@@ -15,6 +15,7 @@
  */
 
 import BaseLayout from "../layouts/BaseLayout.astro";
+import FallingHero from "../components/FallingHero.astro";
 import {
   allConcepts,
   getFeaturedConcept,
@@ -73,40 +74,19 @@ const categoryLabel: Record<ConceptCategory, string> = {
 
 <BaseLayout title="So Far So Good — speculative aerospace, mapped" nav="browse">
   {/* ----------------------------------------------------------------- */}
-  {/* Hero — the emotional hook, not an info dump                       */}
+  {/* Hero — the falling man                                            */}
   {/* ----------------------------------------------------------------- */}
-  <section class="pt-4 md:pt-8 pb-12">
-    <div class="max-w-4xl">
-      <div class="space-y-2">
-        {resolvedHero.map((h, i) => (
-          <p class="hero-line" style={`animation-delay: ${i * 0.18}s`}>
-            {h.slug ? (
-              <a
-                href={`/concept/${h.slug}`}
-                class="font-display text-3xl md:text-5xl lg:text-6xl font-semibold leading-[1.08] tracking-tight hover:text-accent transition-colors"
-              >
-                {h.text}.
-              </a>
-            ) : (
-              <span class="font-display text-3xl md:text-5xl lg:text-6xl font-semibold leading-[1.08] tracking-tight">
-                {h.text}.
-              </span>
-            )}
-          </p>
-        ))}
-      </div>
+  <FallingHero />
 
-      <p
-        class="hero-line mt-8 text-accent font-mono text-sm uppercase tracking-[0.2em]"
-        style="animation-delay: 0.6s"
-      >
+  {/* ----------------------------------------------------------------- */}
+  {/* Context line — bridges the cinematic intro to the content          */}
+  {/* ----------------------------------------------------------------- */}
+  <section class="pt-8 pb-12 reveal">
+    <div class="max-w-4xl">
+      <p class="text-accent font-mono text-sm uppercase tracking-[0.2em]">
         NASA funded all of them.
       </p>
-
-      <p
-        class="hero-line mt-4 text-dim text-lg leading-relaxed max-w-2xl font-display"
-        style="animation-delay: 0.75s"
-      >
+      <p class="mt-4 text-dim text-lg leading-relaxed max-w-2xl font-display">
         {stats.totalConcepts} speculative aerospace concepts.{" "}
         {stats.totalPIs} principal investigators.{" "}
         {stats.yearMin}&ndash;{stats.yearMax}.

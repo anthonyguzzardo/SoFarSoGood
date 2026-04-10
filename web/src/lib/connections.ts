@@ -33,6 +33,12 @@ export function getWishlistForConcept(conceptSlug: string): Connection[] {
   return byConceptSlug.get(conceptSlug) ?? [];
 }
 
+/** Set of wishlist IDs that have at least one NIAC concept connection. */
+export const connectedWishlistIds: Set<string> = new Set(byWishlistId.keys());
+
+/** Full lookup: wishlistId → Connection[]. Serializable for passing to React. */
+export const connectionsByWishlistId: Record<string, Connection[]> = Object.fromEntries(byWishlistId);
+
 export const connectionStats = {
   total: allConnections.length,
   direct: allConnections.filter((c) => c.strength === "direct").length,

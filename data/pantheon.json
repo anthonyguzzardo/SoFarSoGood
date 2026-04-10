@@ -1,0 +1,441 @@
+{
+  "titans": [
+    {
+      "slug": "newton",
+      "name": "Isaac Newton",
+      "born": 1643,
+      "died": 1727,
+      "fields": ["physics", "mathematics", "optics"],
+      "tier": "untouchable",
+      "nationality": "English",
+      "signature": "F = ma",
+      "tagline": "Invented calculus because he was bored during a plague. You learned to bake banana bread.",
+      "quote": "If I have seen further, it is by standing on the shoulders of giants.",
+      "quoteContext": "Said this to Robert Hooke, who was short. Probably shade.",
+      "powerMoves": [
+        "Invented calculus — independently, during a pandemic, in his 20s, as a side project",
+        "Laws of motion — three rules that govern literally everything you can see",
+        "Universal gravitation — watched an apple fall and figured out why the Moon doesn't",
+        "Built the first reflecting telescope — got bored of chromatic aberration",
+        "Wrote the Principia — arguably the most important book in the history of science"
+      ],
+      "funFact": "Stuck a needle behind his own eyeball to study optics. Also ran the Royal Mint and personally hunted down counterfeiters. Went hard at everything.",
+      "influences": [],
+      "influenced": ["euler", "maxwell", "einstein"],
+      "rivalries": ["Leibniz (calculus beef that lasted centuries)", "Robert Hooke (gravity beef, optics beef, just general beef)"],
+      "media": [
+        { "type": "youtube", "id": "danYFxGnFxQ", "title": "Newton's Laws — Veritasium" },
+        { "type": "youtube", "id": "1r6893ga_So", "title": "But what is the Fourier Transform? — 3Blue1Brown" }
+      ]
+    },
+    {
+      "slug": "einstein",
+      "name": "Albert Einstein",
+      "born": 1879,
+      "died": 1955,
+      "fields": ["physics"],
+      "tier": "untouchable",
+      "nationality": "German-Swiss-American",
+      "signature": "E = mc\u00b2",
+      "tagline": "Patent clerk who casually rewrote the fabric of reality on his lunch breaks.",
+      "quote": "Imagination is more important than knowledge. Knowledge is limited. Imagination encircles the world.",
+      "quoteContext": "From a 1929 interview. He was not kidding.",
+      "powerMoves": [
+        "Special relativity (1905) — time is not what you think it is",
+        "General relativity (1915) — space is not what you think it is either",
+        "Photoelectric effect — won the Nobel for this, not relativity, because the committee couldn't handle it",
+        "Mass-energy equivalence — four letters, one equation, everything changed",
+        "Brownian motion — proved atoms exist, casually, in the same year as relativity"
+      ],
+      "funFact": "1905 is called his 'Annus Mirabilis' — he published four papers that each would have been career-defining. He published them all in one year. While working full-time at a patent office. He was 26.",
+      "influences": ["newton", "maxwell"],
+      "influenced": ["hawking", "dirac", "feynman", "penrose"],
+      "rivalries": ["Niels Bohr (the quantum debate — Einstein kept losing and refused to accept it)"],
+      "media": [
+        { "type": "youtube", "id": "NblR01hHK6U", "title": "Why No One Has Measured The Speed Of Light — Veritasium" },
+        { "type": "youtube", "id": "DYq774z4dws", "title": "General Relativity Explained — PBS Space Time" }
+      ]
+    },
+    {
+      "slug": "euler",
+      "name": "Leonhard Euler",
+      "born": 1707,
+      "died": 1783,
+      "fields": ["mathematics", "physics"],
+      "tier": "untouchable",
+      "nationality": "Swiss",
+      "signature": "e^{i\\pi} + 1 = 0",
+      "tagline": "The most prolific mathematician in history. Went blind. Didn't slow down. Output actually increased.",
+      "quote": "Read Euler, read Euler, he is the master of us all.",
+      "quoteContext": "— Pierre-Simon Laplace. Even other geniuses were fanboys.",
+      "powerMoves": [
+        "Euler's identity — five fundamental constants, one equation, mathematicians literally weep",
+        "Graph theory — solved the Seven Bridges of Konigsberg and invented a field",
+        "Euler's formula for polyhedra — V - E + F = 2, simple, beautiful, everywhere",
+        "Pioneered calculus of variations, number theory, and topology — before lunch apparently",
+        "Published 866 papers and books — a record that stood for over a century"
+      ],
+      "funFact": "Lost vision in his right eye at 28, went fully blind at 59. His mathematical output doubled after going blind because he could finally concentrate without distractions. Absolute unit.",
+      "influences": ["newton"],
+      "influenced": ["gauss", "riemann"],
+      "rivalries": ["Daniel Bernoulli (friendly but intense mathematical competition)"],
+      "media": [
+        { "type": "youtube", "id": "mvmuCPvRoWQ", "title": "Euler's Formula — 3Blue1Brown" },
+        { "type": "youtube", "id": "F_0yfvm0UoU", "title": "Euler: The Greatest Mathematician — Mathologer" }
+      ]
+    },
+    {
+      "slug": "gauss",
+      "name": "Carl Friedrich Gauss",
+      "born": 1777,
+      "died": 1855,
+      "fields": ["mathematics", "physics", "astronomy"],
+      "tier": "untouchable",
+      "nationality": "German",
+      "signature": "\\sum_{k=1}^{n} k = \\frac{n(n+1)}{2}",
+      "tagline": "The 'Prince of Mathematicians.' Discovered things, didn't bother publishing, then got annoyed when others discovered them later.",
+      "quote": "Mathematics is the queen of the sciences and number theory is the queen of mathematics.",
+      "quoteContext": "He meant it. Number theory was his favorite child and he didn't hide it.",
+      "powerMoves": [
+        "Summed 1 to 100 instantly — age 7, in class, to spite his teacher",
+        "Proved the fundamental theorem of algebra — his PhD thesis, done properly",
+        "Gaussian distribution — the bell curve, named after him, used by literally everyone",
+        "Non-Euclidean geometry — figured it out decades before anyone else, didn't publish because he didn't want the drama",
+        "Invented the heliotrope and the magnetometer — physics was his side hustle"
+      ],
+      "funFact": "When told his infant son was dying, reportedly said 'Please tell my wife to wait a moment, I'm almost done' while working on a proof. The quote may be apocryphal but the fact that people believed it tells you everything.",
+      "influences": ["euler", "newton"],
+      "influenced": ["riemann"],
+      "rivalries": ["No one. He was too far ahead. His only rival was his own filing cabinet of unpublished results."],
+      "media": [
+        { "type": "youtube", "id": "pGOe7tESRIY", "title": "Gauss: The Prince of Mathematics — Mathologer" },
+        { "type": "youtube", "id": "HeQX2HjkcNo", "title": "How Gauss Determined the Date of Easter — Numberphile" }
+      ]
+    },
+    {
+      "slug": "maxwell",
+      "name": "James Clerk Maxwell",
+      "born": 1831,
+      "died": 1879,
+      "fields": ["physics"],
+      "tier": "absolute-unit",
+      "nationality": "Scottish",
+      "signature": "\\nabla \\times \\mathbf{E} = -\\frac{\\partial \\mathbf{B}}{\\partial t}",
+      "tagline": "Unified electricity, magnetism, and light into four equations. Einstein kept his photo on his wall. Enough said.",
+      "quote": "What is done by what is called myself is, I feel, done by something greater than myself in me.",
+      "quoteContext": "Humble to a fault. The man who unified electromagnetism thought he was just along for the ride.",
+      "powerMoves": [
+        "Maxwell's equations — four equations that describe all electromagnetic phenomena. All of it.",
+        "Predicted electromagnetic waves — then Hertz proved him right, then we got radio, TV, wifi, everything",
+        "First color photograph — yes, he did that too, in 1861",
+        "Maxwell-Boltzmann distribution — co-founded statistical mechanics for fun",
+        "Proved Saturn's rings must be particles — won the Adams Prize at Cambridge"
+      ],
+      "funFact": "Einstein was once asked what it felt like to be the smartest person alive. He replied: 'I don't know, you'll have to ask Maxwell.' (Maxwell was already dead by then. Einstein still said it.)",
+      "influences": ["newton"],
+      "influenced": ["einstein", "hertz", "boltzmann"],
+      "rivalries": ["Lord Kelvin (who kept insisting Maxwell's theory was wrong — it wasn't)"],
+      "media": [
+        { "type": "youtube", "id": "FTKP0Y9MVus", "title": "Maxwell's Equations — Looking Glass Universe" },
+        { "type": "youtube", "id": "1AAU_bLMMf0", "title": "The Most Important Equations in Physics — Domain of Science" }
+      ]
+    },
+    {
+      "slug": "feynman",
+      "name": "Richard Feynman",
+      "born": 1918,
+      "died": 1988,
+      "fields": ["physics"],
+      "tier": "absolute-unit",
+      "nationality": "American",
+      "signature": "\\int \\mathcal{D}[x(t)]\\, e^{iS[x]/\\hbar}",
+      "tagline": "The Great Explainer. Cracked safes at Los Alamos for fun. Played bongo drums. Won a Nobel.",
+      "quote": "The first principle is that you must not fool yourself — and you are the easiest person to fool.",
+      "quoteContext": "From his Caltech commencement address. Delivered with the energy of a man who also cracked safes for fun.",
+      "powerMoves": [
+        "Feynman diagrams — turned quantum field theory into pictures that actually make sense",
+        "Path integral formulation — reimagined all of quantum mechanics from scratch",
+        "Quantum electrodynamics (QED) — the most precisely tested theory in all of science",
+        "Challenger investigation — dunked an O-ring in ice water on live TV to prove NASA wrong",
+        "The Feynman Lectures — three volumes that made physics accessible to mortals"
+      ],
+      "funFact": "During the Manhattan Project, he learned to crack safes and would leave notes in classified filing cabinets saying 'Guess who?' Security was not amused. Feynman was extremely amused.",
+      "influences": ["einstein", "dirac"],
+      "influenced": [],
+      "rivalries": ["Murray Gell-Mann (office neighbors at Caltech, intellectual frenemies, both won Nobels)"],
+      "media": [
+        { "type": "youtube", "id": "36GT2zI8lVA", "title": "Feynman: Fun to Imagine — BBC" },
+        { "type": "youtube", "id": "P1ww1IXRfTA", "title": "The Character of Physical Law — Feynman" }
+      ]
+    },
+    {
+      "slug": "noether",
+      "name": "Emmy Noether",
+      "born": 1882,
+      "died": 1935,
+      "fields": ["mathematics", "physics"],
+      "tier": "absolute-unit",
+      "nationality": "German",
+      "signature": "symmetry \\Rightarrow conservation\\;law",
+      "tagline": "The most important mathematician most people have never heard of. Einstein called her a genius. She was.",
+      "quote": "My methods are really methods of working and thinking; this is why they have crept in everywhere anonymously.",
+      "quoteContext": "Her ideas were so fundamental they became invisible — baked into the fabric of modern physics.",
+      "powerMoves": [
+        "Noether's theorem — every symmetry in physics has a conservation law. Revolutionized everything.",
+        "Abstract algebra — basically invented the modern version of it",
+        "Proved that conservation of energy comes from time symmetry — mic drop for all of physics",
+        "Ring theory, ideal theory — foundational structures that all of modern algebra uses",
+        "Did all of this while being barred from official university positions because she was a woman"
+      ],
+      "funFact": "Was not allowed to teach at Gottingen under her own name. Hilbert listed her courses under his name and told the faculty senate: 'I do not see that the sex of the candidate is an argument against her admission. After all, we are a university, not a bath house.'",
+      "influences": ["euler", "gauss"],
+      "influenced": [],
+      "rivalries": ["The entire German university system (she won)"],
+      "media": [
+        { "type": "youtube", "id": "CxlHLqJ9I0A", "title": "Noether's Theorem — PBS Space Time" },
+        { "type": "youtube", "id": "04ERSb06dOg", "title": "The Most Beautiful Theorem in Physics — Looking Glass Universe" }
+      ]
+    },
+    {
+      "slug": "dirac",
+      "name": "Paul Dirac",
+      "born": 1902,
+      "died": 1984,
+      "fields": ["physics"],
+      "tier": "absolute-unit",
+      "nationality": "British",
+      "signature": "(i\\gamma^\\mu \\partial_\\mu - m)\\psi = 0",
+      "tagline": "Predicted antimatter exists by staring at an equation and refusing to ignore the negative solution. Barely spoke. Didn't need to.",
+      "quote": "In science one tries to tell people, in such a way as to be understood by everyone, something that no one ever knew before.",
+      "quoteContext": "Ironic coming from a man famously described as having 'no social skills whatsoever.'",
+      "powerMoves": [
+        "The Dirac equation — unified quantum mechanics and special relativity in one stroke",
+        "Predicted antimatter — the equation had a 'negative energy' solution. Everyone said ignore it. He said no. He was right.",
+        "Dirac delta function — not technically a function. Mathematicians were furious. Physicists loved it.",
+        "Quantum field theory foundations — co-created the framework for all of particle physics",
+        "Won the Nobel at 31 — considered declining it because he didn't want the publicity"
+      ],
+      "funFact": "His colleagues at Cambridge defined a unit of measurement called the 'dirac' — one word per hour. When Heisenberg went dancing at a conference, Dirac asked: 'Why do you dance?' Heisenberg said: 'It's pleasant to dance with nice girls.' Dirac replied: 'But how do you know beforehand that the girls are nice?'",
+      "influences": ["einstein"],
+      "influenced": ["feynman"],
+      "rivalries": ["Small talk (his lifelong nemesis)"],
+      "media": [
+        { "type": "youtube", "id": "iIVj1HFnYpw", "title": "Antimatter — PBS Space Time" },
+        { "type": "youtube", "id": "3x-bNhCOB2U", "title": "The Dirac Equation — Looking Glass Universe" }
+      ]
+    },
+    {
+      "slug": "turing",
+      "name": "Alan Turing",
+      "born": 1912,
+      "died": 1954,
+      "fields": ["mathematics", "computer science"],
+      "tier": "absolute-unit",
+      "nationality": "British",
+      "signature": "\\text{Can a machine think?}",
+      "tagline": "Invented the concept of the computer, broke Nazi encryption, was thanked with criminal prosecution. Humanity's greatest L.",
+      "quote": "Sometimes it is the people no one imagines anything of who do the things that no one can imagine.",
+      "quoteContext": "Attributed. Whether he said it or not, it's the truest thing ever written about him.",
+      "powerMoves": [
+        "The Turing machine (1936) — a theoretical device that defined computation itself, before computers existed",
+        "Broke Enigma — cracked the Nazi cipher machine, shortened WWII by an estimated 2 years, saved millions of lives",
+        "The Turing test — proposed the foundational question of artificial intelligence",
+        "Morphogenesis paper — explained how biological patterns form. Published in 1952. Still cited.",
+        "Basically invented computer science — as a concept, as a field, as a thing"
+      ],
+      "funFact": "Was an elite marathon runner with a personal best of 2:46:03 — good enough to nearly qualify for the 1948 Olympics. He used running to deal with stress. The man who invented computing was also almost an Olympian.",
+      "influences": [],
+      "influenced": [],
+      "rivalries": ["The British government (which prosecuted him for being gay, then apologized 59 years too late)"],
+      "media": [
+        { "type": "youtube", "id": "dNRDvLACg5Q", "title": "Turing Machines Explained — Computerphile" },
+        { "type": "youtube", "id": "d2NWPG2gB_A", "title": "How Turing Broke Enigma — Numberphile" }
+      ]
+    },
+    {
+      "slug": "ramanujan",
+      "name": "Srinivasa Ramanujan",
+      "born": 1887,
+      "died": 1920,
+      "fields": ["mathematics"],
+      "tier": "absolute-unit",
+      "nationality": "Indian",
+      "signature": "\\frac{1}{\\pi} = \\frac{2\\sqrt{2}}{9801} \\sum_{k=0}^{\\infty} \\frac{(4k)!(1103+26390k)}{(k!)^4 396^{4k}}",
+      "tagline": "Self-taught genius from Madras who mailed his theorems to Cambridge. Hardy rated him a 100 out of 100. Hardy rated himself a 25.",
+      "quote": "An equation for me has no meaning unless it expresses a thought of God.",
+      "quoteContext": "He was not being metaphorical. He credited his mathematical visions to the goddess Namagiri.",
+      "powerMoves": [
+        "The Ramanujan conjecture — proved to be connected to the deepest structures in mathematics",
+        "Hardy-Ramanujan number (1729) — 'the smallest number expressible as the sum of two cubes in two different ways.' He noticed this about a taxi number. Casually.",
+        "Mock theta functions — invented on his deathbed. Mathematicians are STILL unpacking them 100 years later",
+        "Infinite series for pi — his formulas are used in modern supercomputer calculations",
+        "Produced 3,900 results — most without formal proofs, most later proven correct"
+      ],
+      "funFact": "Mailed unsolicited theorems to G.H. Hardy at Cambridge. Hardy initially thought it was a crank letter, then realized it contained results that were decades ahead of current mathematics. Hardy said discovering Ramanujan was 'the one romantic incident in my life.'",
+      "influences": [],
+      "influenced": [],
+      "rivalries": ["Formal mathematical proofs (he considered them optional)"],
+      "media": [
+        { "type": "youtube", "id": "V_TulH374hw", "title": "Ramanujan: The Man Who Knew Infinity — Numberphile" },
+        { "type": "youtube", "id": "LzjaDKVC4iY", "title": "1729 — Numberphile" }
+      ]
+    },
+    {
+      "slug": "hawking",
+      "name": "Stephen Hawking",
+      "born": 1942,
+      "died": 2018,
+      "fields": ["physics", "cosmology"],
+      "tier": "built-different",
+      "nationality": "British",
+      "signature": "T = \\frac{\\hbar c^3}{8\\pi G M k_B}",
+      "tagline": "Told he had two years to live at 21. Proceeded to rewrite our understanding of the universe for the next 55.",
+      "quote": "Not only does God play dice, but He sometimes throws them where they cannot be seen.",
+      "quoteContext": "A direct response to Einstein's famous 'God does not play dice.' Hawking was not impressed by Einstein's quantum hangups.",
+      "powerMoves": [
+        "Hawking radiation — black holes aren't completely black. They glow. This unified quantum mechanics and general relativity for the first time.",
+        "Singularity theorems (with Penrose) — proved the Big Bang was a real singularity, not just a mathematical artifact",
+        "A Brief History of Time — sold 25 million copies. A book about cosmology. On the bestseller list for 237 weeks.",
+        "Black hole information paradox — posed a problem so deep that physicists are still fighting about it",
+        "Proved black holes have entropy — thermodynamics applies even at the edge of spacetime"
+      ],
+      "funFact": "Placed a bet with Kip Thorne that Cygnus X-1 was NOT a black hole — even though his own work suggested it was. He called it 'insurance.' If black holes didn't exist, at least he'd win the bet (a magazine subscription). He lost. Happily.",
+      "influences": ["einstein", "penrose"],
+      "influenced": [],
+      "rivalries": ["Leonard Susskind (the black hole information war — lasted decades, Hawking eventually conceded)"],
+      "media": [
+        { "type": "youtube", "id": "qPKj0YnKANw", "title": "Hawking Radiation — PBS Space Time" },
+        { "type": "youtube", "id": "DS-v6_96l1g", "title": "A Brief History of Time — documentary" }
+      ]
+    },
+    {
+      "slug": "curie",
+      "name": "Marie Curie",
+      "born": 1867,
+      "died": 1934,
+      "fields": ["physics", "chemistry"],
+      "tier": "built-different",
+      "nationality": "Polish-French",
+      "signature": "radioactivity",
+      "tagline": "Won two Nobel Prizes in two different sciences. Her notebooks are still too radioactive to handle without protective equipment.",
+      "quote": "Nothing in life is to be feared, it is only to be understood. Now is the time to understand more, so that we may fear less.",
+      "quoteContext": "Said by a woman who literally carried test tubes of radium in her pockets.",
+      "powerMoves": [
+        "Discovered polonium AND radium — named one after her homeland, because she never forgot where she came from",
+        "First woman to win a Nobel Prize — then won a second one, in a different field, just to be safe",
+        "Pioneered mobile X-ray units in WWI — drove them to the front lines herself. They called them 'petites Curies.'",
+        "Coined the term 'radioactivity' — named the phenomenon she discovered",
+        "First woman professor at the Sorbonne — took over her dead husband's position and immediately surpassed his work"
+      ],
+      "funFact": "Her personal effects — including her cookbook — are stored in lead-lined boxes at the Bibliotheque nationale de France. You need to sign a liability waiver and wear protective clothing to view them. She's been dead for 90 years. Her stuff is still hot.",
+      "influences": [],
+      "influenced": [],
+      "rivalries": ["The French Academy of Sciences (refused to admit her because she was a woman — she had two Nobels at that point)"],
+      "media": [
+        { "type": "youtube", "id": "w6JFRi0Qm_s", "title": "Marie Curie — Veritasium" },
+        { "type": "youtube", "id": "TQlTmgqe3GM", "title": "Radioactivity — PBS Space Time" }
+      ]
+    },
+    {
+      "slug": "boltzmann",
+      "name": "Ludwig Boltzmann",
+      "born": 1844,
+      "died": 1906,
+      "fields": ["physics"],
+      "tier": "built-different",
+      "nationality": "Austrian",
+      "signature": "S = k_B \\ln W",
+      "tagline": "Proved atoms exist using statistics. Nobody believed him. He was right about everything. The universe literally runs on his equation.",
+      "quote": "If you are out to describe the truth, leave elegance to the tailor.",
+      "quoteContext": "A man who cared about being correct, not being pretty about it.",
+      "powerMoves": [
+        "Boltzmann equation — the foundation of statistical mechanics and kinetic theory",
+        "S = k ln W — entropy defined. So fundamental it's engraved on his tombstone.",
+        "Proved the second law of thermodynamics statistically — entropy always increases, deal with it",
+        "Boltzmann distribution — describes how energy distributes in any system at thermal equilibrium",
+        "Championed atomic theory — when most physicists thought atoms were a useful fiction"
+      ],
+      "funFact": "Was so aggressively right about atoms that the constant stress of being dismissed by the scientific establishment contributed to severe depression. Tragically took his own life in 1906. Three years later, Einstein's Brownian motion paper proved atoms exist beyond all doubt. The universe owed him an apology.",
+      "influences": ["maxwell"],
+      "influenced": ["einstein"],
+      "rivalries": ["Ernst Mach and Wilhelm Ostwald (who denied atoms existed — they were wrong, he was right, it cost him everything)"],
+      "media": [
+        { "type": "youtube", "id": "mYJkMC1fJG4", "title": "Entropy — PBS Space Time" },
+        { "type": "youtube", "id": "DxL2HoqLbyA", "title": "Boltzmann Brains — PBS Space Time" }
+      ]
+    },
+    {
+      "slug": "heisenberg",
+      "name": "Werner Heisenberg",
+      "born": 1901,
+      "died": 1976,
+      "fields": ["physics"],
+      "tier": "built-different",
+      "nationality": "German",
+      "signature": "\\Delta x \\, \\Delta p \\geq \\frac{\\hbar}{2}",
+      "tagline": "Proved that certainty itself has limits. When asked where he was, the answer was fundamentally unknowable. (Not a joke. That's the physics.)",
+      "quote": "What we observe is not nature itself, but nature exposed to our method of questioning.",
+      "quoteContext": "One of the most profound things ever said about the relationship between observer and reality.",
+      "powerMoves": [
+        "Uncertainty principle — you literally cannot know both position and momentum exactly. Not because instruments are bad. Because the universe said no.",
+        "Matrix mechanics — invented a complete formulation of quantum mechanics at 23",
+        "Won the Nobel at 31 — for 'the creation of quantum mechanics'",
+        "S-matrix theory — planted seeds that grew into modern particle physics",
+        "Helgoland breakthrough — reimagined all of atomic physics during an allergy retreat on a barren island"
+      ],
+      "funFact": "Developed matrix mechanics without knowing what matrices were. When Born pointed out he'd independently invented matrix algebra, Heisenberg was annoyed — he thought matrices were an ugly way to describe his beautiful physics.",
+      "influences": ["einstein", "bohr"],
+      "influenced": [],
+      "rivalries": ["The concept of certainty (it lost)"],
+      "media": [
+        { "type": "youtube", "id": "TQKELOE9eY4", "title": "Uncertainty Principle — Veritasium" },
+        { "type": "youtube", "id": "Bfili4sEBuI", "title": "Heisenberg's Microscope — Looking Glass Universe" }
+      ]
+    },
+    {
+      "slug": "penrose",
+      "name": "Roger Penrose",
+      "born": 1931,
+      "died": null,
+      "fields": ["physics", "mathematics"],
+      "tier": "built-different",
+      "nationality": "British",
+      "signature": "\\text{Penrose tiling}",
+      "tagline": "Won the Nobel at 89. Has been correct about black holes since before most physicists were born. Still going.",
+      "quote": "Intelligence cannot be present without understanding. No computer has any awareness of what it does.",
+      "quoteContext": "Controversial take from a man whose mathematical work literally enables the computers he's critiquing.",
+      "powerMoves": [
+        "Penrose singularity theorem — proved black holes MUST form under general relativity. Won the Nobel.",
+        "Penrose diagrams — mapped the causal structure of spacetime so mortals can draw it on paper",
+        "Penrose tiling — aperiodic patterns that tile the plane without repeating. Found in quasicrystals decades later.",
+        "Twistor theory — a radical reimagining of spacetime geometry that's still producing results",
+        "The Road to Reality — a 1,099-page textbook that starts at basic math and ends at the frontier of physics. Light reading."
+      ],
+      "funFact": "His father was a geneticist, his brother a chess champion, his other brother a mathematician. Sunday dinners must have been insufferable if you weren't a genius.",
+      "influences": ["einstein", "hawking"],
+      "influenced": ["hawking"],
+      "rivalries": ["Strong AI proponents (he's been arguing consciousness isn't computable since the 1980s and will not stop)"],
+      "media": [
+        { "type": "youtube", "id": "th3YMEamzmw", "title": "Penrose Tiles — Numberphile" },
+        { "type": "youtube", "id": "OHiMiB3jCzw", "title": "Roger Penrose — Lex Fridman" }
+      ]
+    }
+  ],
+  "tiers": {
+    "untouchable": {
+      "label": "The Untouchables",
+      "subtitle": "The final bosses of science. If knowledge were a video game, these are the devs.",
+      "order": 1
+    },
+    "absolute-unit": {
+      "label": "Absolute Units",
+      "subtitle": "Any one of their contributions would be a career. They had five. Before 30.",
+      "order": 2
+    },
+    "built-different": {
+      "label": "Built Different",
+      "subtitle": "Saw the rules. Broke them. Were proven right. Some posthumously, which is the ultimate flex.",
+      "order": 3
+    }
+  }
+}

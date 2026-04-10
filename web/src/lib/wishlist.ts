@@ -119,6 +119,12 @@ export const eraColors: Record<string, string> = {
   "21st-century": "rgba(255, 184, 77, 0.06)",
 };
 
+/** Check if a paper has a known institutional source (easier to find). */
+export function isEasyWin(entry: WishlistEntry): boolean {
+  const s = entry.source.toLowerCase();
+  return /museum|university|library|archive|collection|institut|observatory|academy|society/i.test(s);
+}
+
 /** Stats about the wishlist. */
 export const wishlistStats = {
   total: allWishlistEntries.length,
@@ -130,12 +136,23 @@ export const wishlistStats = {
   yearSpan:
     Math.max(...allWishlistEntries.map((e) => e.year)) -
     Math.min(...allWishlistEntries.map((e) => e.year)),
+  withModernRelevance: allWishlistEntries.filter((e) => e.modernRelevance).length,
+  withRelated: allWishlistEntries.filter((e) => e.relatedWishlistIds?.length).length,
   byField: Object.fromEntries(
     allFields.map((f) => [
       f,
       allWishlistEntries.filter((e) => e.field === f).length,
     ])
   ),
+  byFieldProgress: Object.fromEntries(
+    allFields.map((f) => {
+      const fieldEntries = allWishlistEntries.filter((e) => e.field === f);
+      return [f, {
+        found: fieldEntries.filter((e) => e.status !== "wanted").length,
+        total: fieldEntries.length,
+      }];
+    })
+  ) as Record<string, { found: number; total: number }>,
   byEra: Object.fromEntries(
     allEras.map((era) => [
       era,

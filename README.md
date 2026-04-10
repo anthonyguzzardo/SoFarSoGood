@@ -1,6 +1,6 @@
 # So Far So Good
 
-> *Jusqu'ici tout va bien.* — A navigable map of imagined futures, and eventually, of all human scientific knowledge.
+> A navigable map of imagined futures, and eventually, of all human scientific knowledge.
 
 Starting with NASA's NIAC (NASA Innovative Advanced Concepts) program: 188
 speculative aerospace concepts, searchable, browsable, connected. Designed to

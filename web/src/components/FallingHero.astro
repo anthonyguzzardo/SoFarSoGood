@@ -1,0 +1,315 @@
+---
+/**
+ * FallingHero — the falling man.
+ *
+ * Full-viewport cinematic intro: a silhouette tumbles through void,
+ * wind lines stream upward, the quote fades in.
+ * Pure CSS animation — no libraries, no JS (except scroll hint dismiss).
+ */
+---
+
+<section class="falling-hero" id="falling-hero">
+  {/* Wind lines — vertical streaks rushing upward to sell the fall */}
+  <div class="wind-lines" aria-hidden="true">
+    <div class="wind-line" style="--x: 8%; --delay: 0s; --speed: 1.1s; --h: 90px;"></div>
+    <div class="wind-line" style="--x: 15%; --delay: 0.7s; --speed: 1.4s; --h: 60px;"></div>
+    <div class="wind-line" style="--x: 23%; --delay: 0.3s; --speed: 0.9s; --h: 110px;"></div>
+    <div class="wind-line" style="--x: 31%; --delay: 1.1s; --speed: 1.3s; --h: 70px;"></div>
+    <div class="wind-line" style="--x: 40%; --delay: 0.5s; --speed: 1.0s; --h: 85px;"></div>
+    <div class="wind-line" style="--x: 52%; --delay: 0.2s; --speed: 1.5s; --h: 55px;"></div>
+    <div class="wind-line" style="--x: 61%; --delay: 0.9s; --speed: 1.1s; --h: 100px;"></div>
+    <div class="wind-line" style="--x: 70%; --delay: 1.3s; --speed: 0.8s; --h: 75px;"></div>
+    <div class="wind-line" style="--x: 78%; --delay: 0.4s; --speed: 1.2s; --h: 65px;"></div>
+    <div class="wind-line" style="--x: 87%; --delay: 0.8s; --speed: 1.0s; --h: 95px;"></div>
+    <div class="wind-line" style="--x: 93%; --delay: 1.5s; --speed: 1.3s; --h: 50px;"></div>
+  </div>
+
+  {/* The falling figure */}
+  <div class="falling-figure" aria-hidden="true">
+    <svg viewBox="0 0 200 520" fill="none" xmlns="http://www.w3.org/2000/svg" class="figure-svg">
+      <!-- Head -->
+      <circle cx="105" cy="42" r="22" fill="currentColor"/>
+
+      <!-- Torso — slightly arched back, arms reaching -->
+      <path d="
+        M 95 62
+        C 90 90, 85 130, 80 170
+        L 70 170
+        C 75 130, 80 90, 85 62
+        Z
+      " fill="currentColor"/>
+
+      <!-- Left arm — flung outward/up -->
+      <path d="
+        M 85 75
+        C 60 60, 30 45, 5 55
+        L 3 48
+        C 28 35, 58 50, 83 68
+        Z
+      " fill="currentColor"/>
+
+      <!-- Right arm — reaching down/out -->
+      <path d="
+        M 95 80
+        C 120 95, 155 120, 185 105
+        L 188 112
+        C 158 130, 122 105, 95 88
+        Z
+      " fill="currentColor"/>
+
+      <!-- Coat/jacket flap — billowing fabric -->
+      <path d="
+        M 80 100
+        C 75 130, 65 165, 55 195
+        C 50 205, 58 208, 65 200
+        C 70 175, 75 145, 80 115
+        Z
+      " fill="currentColor" opacity="0.7"/>
+      <path d="
+        M 72 170
+        C 65 200, 55 240, 45 260
+        C 40 268, 48 272, 55 265
+        C 60 245, 68 210, 74 180
+        Z
+      " fill="currentColor" opacity="0.5"/>
+
+      <!-- Left leg — bent at knee, relaxed -->
+      <path d="
+        M 78 165
+        C 70 210, 55 260, 40 310
+        C 35 330, 25 360, 20 380
+        L 12 378
+        C 18 358, 28 328, 33 308
+        C 48 258, 63 208, 70 168
+        Z
+      " fill="currentColor"/>
+
+      <!-- Left foot -->
+      <path d="
+        M 20 378
+        L 12 378
+        C 5 390, 2 400, 8 405
+        L 22 400
+        C 25 395, 24 388, 20 380
+        Z
+      " fill="currentColor"/>
+
+      <!-- Right leg — extended, trailing -->
+      <path d="
+        M 82 168
+        C 90 220, 100 290, 110 360
+        C 115 400, 120 440, 118 470
+        L 108 468
+        C 110 438, 107 398, 102 358
+        C 92 288, 85 220, 76 170
+        Z
+      " fill="currentColor"/>
+
+      <!-- Right foot -->
+      <path d="
+        M 118 468
+        L 108 468
+        C 106 480, 108 490, 115 495
+        L 125 492
+        C 128 487, 125 478, 118 470
+        Z
+      " fill="currentColor"/>
+    </svg>
+  </div>
+
+  {/* The quote */}
+  <div class="falling-text">
+    <p class="falling-quote font-display">
+      "So far so good."
+    </p>
+  </div>
+
+  {/* Scroll indicator */}
+  <div class="scroll-hint" aria-hidden="true">
+    <div class="scroll-hint-line"></div>
+  </div>
+</section>
+
+<style>
+  /* ===== Container ===== */
+  .falling-hero {
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    margin: -3rem -1.5rem 0;
+    padding: 2rem;
+  }
+
+  /* ===== Wind lines ===== */
+  .wind-lines {
+    position: absolute;
+    inset: 0;
+    overflow: hidden;
+    pointer-events: none;
+  }
+
+  .wind-line {
+    position: absolute;
+    left: var(--x);
+    width: 1px;
+    height: var(--h, 80px);
+    background: linear-gradient(
+      to top,
+      transparent,
+      rgba(255, 255, 255, 0.08) 30%,
+      rgba(255, 255, 255, 0.12) 50%,
+      rgba(255, 255, 255, 0.08) 70%,
+      transparent
+    );
+    animation: wind-rush var(--speed, 1.2s) var(--delay, 0s) linear infinite;
+    opacity: 0;
+  }
+
+  @keyframes wind-rush {
+    0% {
+      bottom: -120px;
+      opacity: 0;
+    }
+    10% {
+      opacity: 1;
+    }
+    80% {
+      opacity: 1;
+    }
+    100% {
+      bottom: 110%;
+      opacity: 0;
+    }
+  }
+
+  /* ===== The falling figure ===== */
+  .falling-figure {
+    position: absolute;
+    color: var(--color-ink);
+    opacity: 0;
+    animation: figure-enter 2s 0.3s ease-out forwards;
+  }
+
+  .figure-svg {
+    width: 120px;
+    height: auto;
+    filter: drop-shadow(0 0 40px rgba(255, 184, 77, 0.08));
+    animation: figure-drift 8s ease-in-out infinite;
+  }
+
+  @keyframes figure-enter {
+    0% {
+      opacity: 0;
+      transform: translateY(-30px) rotate(-8deg);
+    }
+    100% {
+      opacity: 0.85;
+      transform: translateY(0) rotate(0deg);
+    }
+  }
+
+  @keyframes figure-drift {
+    0%, 100% {
+      transform: rotate(-2deg) translateX(0px) translateY(0px);
+    }
+    25% {
+      transform: rotate(1deg) translateX(5px) translateY(-8px);
+    }
+    50% {
+      transform: rotate(-1deg) translateX(-3px) translateY(4px);
+    }
+    75% {
+      transform: rotate(2deg) translateX(4px) translateY(-5px);
+    }
+  }
+
+  /* ===== Text ===== */
+  .falling-text {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    margin-top: 260px;
+  }
+
+  .falling-quote {
+    font-size: clamp(1.8rem, 5vw, 3.5rem);
+    font-style: italic;
+    color: var(--color-ink);
+    opacity: 0;
+    animation: text-fade 1.5s 1.8s ease forwards;
+    letter-spacing: -0.01em;
+    line-height: 1.2;
+  }
+
+  @keyframes text-fade {
+    0% {
+      opacity: 0;
+      transform: translateY(10px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  /* ===== Scroll hint ===== */
+  .scroll-hint {
+    position: absolute;
+    bottom: 2rem;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    animation: text-fade 1s 3.5s ease forwards;
+  }
+
+  .scroll-hint-line {
+    width: 1px;
+    height: 40px;
+    background: linear-gradient(to bottom, var(--color-accent), transparent);
+    animation: scroll-pulse 2s ease-in-out infinite;
+  }
+
+  @keyframes scroll-pulse {
+    0%, 100% {
+      opacity: 0.4;
+      transform: scaleY(1);
+    }
+    50% {
+      opacity: 0.8;
+      transform: scaleY(1.3);
+    }
+  }
+
+  /* ===== Reduced motion ===== */
+  @media (prefers-reduced-motion: reduce) {
+    .wind-line,
+    .falling-figure,
+    .figure-svg,
+    .falling-quote,
+    .scroll-hint,
+    .scroll-hint-line {
+      animation: none;
+      opacity: 1;
+      transform: none;
+    }
+  }
+
+  /* ===== Responsive ===== */
+  @media (min-width: 768px) {
+    .figure-svg {
+      width: 160px;
+    }
+    .falling-text {
+      margin-top: 300px;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .figure-svg {
+      width: 180px;
+    }
+  }
+</style>
