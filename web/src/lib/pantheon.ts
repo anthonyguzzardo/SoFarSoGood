@@ -22,6 +22,7 @@ export type TierKey = "untouchable" | "absolute-unit" | "built-different";
 export interface Titan {
   slug: string;
   name: string;
+  image: string;
   born: number;
   died: number | null;
   fields: string[];

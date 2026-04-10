@@ -117,165 +117,185 @@
     </svg>
   </div>
 
-  {/* Equations, constants, concepts — drifting upward like he's falling past the universe's source code */}
+  {/* Falling through the history of human knowledge — ancient to absurd */}
   <div class="falling-text">
     <div class="word-carousel" aria-hidden="true">
-      {/* === Fundamental equations === */}
-      <span class="drift-word font-display">E = mc²</span>
+
+      {/* ═══ ~3000 BCE — BABYLON & EGYPT ═══ cute, simple, innocent */}
+      <span class="drift-word font-display">1 + 1 = 2</span>
+      <span class="drift-word font-display">A = lw</span>
+      <span class="drift-word font-display">A = ½bh</span>
+      <span class="drift-word font-display">C = πd</span>
+      <span class="drift-word font-display">A = πr²</span>
+
+      {/* ═══ ~500 BCE — PYTHAGORAS, EUCLID ═══ */}
+      <span class="drift-word font-display">a² + b² = c²</span>
+      <span class="drift-word font-display">π ≈ 3.14159...</span>
+      <span class="drift-word font-display">∠A + ∠B + ∠C = 180°</span>
+      <span class="drift-word font-display">V = ⅓πr²h</span>
+      <span class="drift-word font-display">primes: 2, 3, 5, 7, 11, 13...</span>
+
+      {/* ═══ ~250 BCE — ARCHIMEDES ═══ */}
+      <span class="drift-word font-display">F_b = ρVg</span>
+      <span class="drift-word font-display">τ = r × F</span>
+      <span class="drift-word font-display">A = 4πr²</span>
+      <span class="drift-word font-display">V = ⁴⁄₃πr³</span>
+
+      {/* ═══ 1600s — GALILEO ═══ getting warmer */}
+      <span class="drift-word font-display">d = ½gt²</span>
+      <span class="drift-word font-display">v = v₀ + at</span>
+      <span class="drift-word font-display">T = 2π√(l/g)</span>
+
+      {/* ═══ 1600s — KEPLER ═══ */}
+      <span class="drift-word font-display">T² ∝ a³</span>
+      <span class="drift-word font-display">dA/dt = const</span>
+
+      {/* ═══ 1687 — NEWTON ═══ here we go */}
       <span class="drift-word font-display">F = ma</span>
       <span class="drift-word font-display">F = G(m₁m₂)/r²</span>
-      <span class="drift-word font-display">E = hf</span>
-      <span class="drift-word font-display">λ = h/mv</span>
-      <span class="drift-word font-display">PV = nRT</span>
-      <span class="drift-word font-display">S = k ln W</span>
-      <span class="drift-word font-display">∇ × E = −∂B/∂t</span>
-      <span class="drift-word font-display">∇ · E = ρ/ε₀</span>
-      <span class="drift-word font-display">∇ × B = μ₀J + μ₀ε₀∂E/∂t</span>
-      <span class="drift-word font-display">∇ · B = 0</span>
-      <span class="drift-word font-display">iℏ∂ψ/∂t = Ĥψ</span>
-      <span class="drift-word font-display">ΔxΔp ≥ ℏ/2</span>
-      <span class="drift-word font-display">Rμν − ½gμνR = 8πGTμν</span>
-      <span class="drift-word font-display">ds² = −c²dt² + dx² + dy² + dz²</span>
-      <span class="drift-word font-display">t' = t/√(1 − v²/c²)</span>
-      <span class="drift-word font-display">E² = (pc)² + (mc²)²</span>
-      <span class="drift-word font-display">p = mv/√(1 − v²/c²)</span>
-      <span class="drift-word font-display">dS/dt ≥ 0</span>
-      <span class="drift-word font-display">∂ρ/∂t + ∇·(ρv) = 0</span>
-
-      {/* === Lorentz equations & transforms === */}
-      <span class="drift-word font-display">F = q(E + v × B)</span>
-      <span class="drift-word font-display">x' = γ(x − vt)</span>
-      <span class="drift-word font-display">t' = γ(t − vx/c²)</span>
-      <span class="drift-word font-display">γ = 1/√(1 − v²/c²)</span>
-
-      {/* === Photon clock / light === */}
-      <span class="drift-word font-display">c = 299,792,458 m/s</span>
-      <span class="drift-word font-display">Δt = 2L/c</span>
-      <span class="drift-word font-display">E = nhf</span>
-      <span class="drift-word font-display">λmax = b/T</span>
-
-      {/* === Thermodynamics === */}
-      <span class="drift-word font-display">ΔU = Q − W</span>
-      <span class="drift-word font-display">η = 1 − Tc/Th</span>
-      <span class="drift-word font-display">ΔG = ΔH − TΔS</span>
-      <span class="drift-word font-display">F = U − TS</span>
-
-      {/* === Quantum & particle === */}
-      <span class="drift-word font-display">ψ(x,t) = Ae^(ikx−iωt)</span>
-      <span class="drift-word font-display">⟨x⟩ = ∫ψ*xψ dx</span>
-      <span class="drift-word font-display">Ĥ|ψ⟩ = E|ψ⟩</span>
-      <span class="drift-word font-display">[x̂, p̂] = iℏ</span>
-      <span class="drift-word font-display">|ψ⟩ = α|0⟩ + β|1⟩</span>
-      <span class="drift-word font-display">P = |⟨φ|ψ⟩|²</span>
-      <span class="drift-word font-display">ΔEΔt ≥ ℏ/2</span>
-      <span class="drift-word font-display">S = −Tr(ρ ln ρ)</span>
-
-      {/* === Gravity & orbits === */}
+      <span class="drift-word font-display">p = mv</span>
       <span class="drift-word font-display">v = √(GM/r)</span>
       <span class="drift-word font-display">T² = 4π²a³/GM</span>
-      <span class="drift-word font-display">Δφ = 6πGM/ac²</span>
-      <span class="drift-word font-display">rs = 2GM/c²</span>
       <span class="drift-word font-display">g = GM/r²</span>
-      <span class="drift-word font-display">Ω = √(GM/r³)</span>
       <span class="drift-word font-display">L = r × p</span>
-      <span class="drift-word font-display">ε = √(1 + 2EL²/G²M²m³)</span>
+      <span class="drift-word font-display">df/dx = lim(Δx→0) Δf/Δx</span>
+      <span class="drift-word font-display">∫₀¹ x² dx = ⅓</span>
 
-      {/* === Waves & optics === */}
+      {/* ═══ 1700s — EULER, BERNOULLI ═══ */}
+      <span class="drift-word font-display">e^(iπ) + 1 = 0</span>
+      <span class="drift-word font-display">P + ½ρv² + ρgh = const</span>
+      <span class="drift-word font-display">i² = −1</span>
+      <span class="drift-word font-display">φ = 1.61803398...</span>
+
+      {/* ═══ 1800s — THERMODYNAMICS ═══ */}
+      <span class="drift-word font-display">ΔU = Q − W</span>
+      <span class="drift-word font-display">dS/dt ≥ 0</span>
+      <span class="drift-word font-display">PV = nRT</span>
+      <span class="drift-word font-display">S = k ln W</span>
+      <span class="drift-word font-display">η = 1 − Tc/Th</span>
+      <span class="drift-word font-display">ΔG = ΔH − TΔS</span>
+
+      {/* ═══ 1800s — ELECTROMAGNETISM (Faraday, Maxwell) ═══ getting real */}
+      <span class="drift-word font-display">V = IR</span>
+      <span class="drift-word font-display">F = kq₁q₂/r²</span>
+      <span class="drift-word font-display">ε = −dΦ/dt</span>
+      <span class="drift-word font-display">∇ · E = ρ/ε₀</span>
+      <span class="drift-word font-display">∇ · B = 0</span>
+      <span class="drift-word font-display">∇ × E = −∂B/∂t</span>
+      <span class="drift-word font-display">∇ × B = μ₀J + μ₀ε₀∂E/∂t</span>
+      <span class="drift-word font-display">F = q(E + v × B)</span>
+      <span class="drift-word font-display">c = 1/√(μ₀ε₀) = 299,792,458 m/s</span>
+
+      {/* ═══ 1800s — WAVES & OPTICS ═══ */}
       <span class="drift-word font-display">v = fλ</span>
       <span class="drift-word font-display">n₁sinθ₁ = n₂sinθ₂</span>
       <span class="drift-word font-display">d sinθ = mλ</span>
-      <span class="drift-word font-display">I = I₀cos²θ</span>
-      <span class="drift-word font-display">Δλ/λ = v/c</span>
-
-      {/* === Electromagnetism === */}
-      <span class="drift-word font-display">V = IR</span>
-      <span class="drift-word font-display">P = IV</span>
-      <span class="drift-word font-display">Φ = ∮B·dA</span>
-      <span class="drift-word font-display">ε = −dΦ/dt</span>
-      <span class="drift-word font-display">F = kq₁q₂/r²</span>
-      <span class="drift-word font-display">U = ½CV²</span>
-
-      {/* === Fluid dynamics === */}
-      <span class="drift-word font-display">P + ½ρv² + ρgh = const</span>
-      <span class="drift-word font-display">Re = ρvL/μ</span>
-      <span class="drift-word font-display">F = −6πμrv</span>
-
-      {/* === Cosmology === */}
-      <span class="drift-word font-display">H₀ = 67.4 km/s/Mpc</span>
-      <span class="drift-word font-display">v = H₀d</span>
-      <span class="drift-word font-display">ρc = 3H²/8πG</span>
-      <span class="drift-word font-display">Ω = ρ/ρc</span>
-      <span class="drift-word font-display">a(t) ~ e^(Ht)</span>
-      <span class="drift-word font-display">T = 2.725 K</span>
-      <span class="drift-word font-display">z = λobs/λemit − 1</span>
-
-      {/* === Constants === */}
-      <span class="drift-word font-display">G = 6.674 × 10⁻¹¹</span>
-      <span class="drift-word font-display">ℏ = 1.055 × 10⁻³⁴ J·s</span>
-      <span class="drift-word font-display">k = 1.381 × 10⁻²³ J/K</span>
-      <span class="drift-word font-display">e = 1.602 × 10⁻¹⁹ C</span>
-      <span class="drift-word font-display">α = 1/137.036</span>
-      <span class="drift-word font-display">NA = 6.022 × 10²³</span>
-
-      {/* === Famous numbers & ratios === */}
-      <span class="drift-word font-display">π = 3.14159265...</span>
-      <span class="drift-word font-display">φ = 1.61803398...</span>
-      <span class="drift-word font-display">e = 2.71828182...</span>
-      <span class="drift-word font-display">√2 = 1.41421356...</span>
-      <span class="drift-word font-display">i² = −1</span>
-      <span class="drift-word font-display">e^(iπ) + 1 = 0</span>
-
-      {/* === Information & computation === */}
-      <span class="drift-word font-display">H = −Σp log p</span>
-      <span class="drift-word font-display">I = log₂(1/p)</span>
-      <span class="drift-word font-display">C = B log₂(1 + S/N)</span>
-
-      {/* === Chaos & nonlinear === */}
-      <span class="drift-word font-display">dx/dt = σ(y − x)</span>
-      <span class="drift-word font-display">dy/dt = x(ρ − z) − y</span>
-      <span class="drift-word font-display">dz/dt = xy − βz</span>
-      <span class="drift-word font-display">xₙ₊₁ = rxₙ(1 − xₙ)</span>
-      <span class="drift-word font-display">δ = 4.66920...</span>
-
-      {/* === Nuclear & particle === */}
-      <span class="drift-word font-display">E = Δmc²</span>
+      <span class="drift-word font-display">λmax = b/T</span>
       <span class="drift-word font-display">N = N₀e^(−λt)</span>
       <span class="drift-word font-display">t½ = ln2/λ</span>
-      <span class="drift-word font-display">²H + ³H → ⁴He + n</span>
 
-      {/* === Astrophysics === */}
+      {/* ═══ 1900s — PLANCK, BOHR ═══ things start getting weird */}
+      <span class="drift-word font-display">E = hf</span>
+      <span class="drift-word font-display">E = nhf</span>
+      <span class="drift-word font-display">λ = h/mv</span>
+      <span class="drift-word font-display">Δt = 2L/c</span>
+
+      {/* ═══ 1905 — EINSTEIN (special relativity) ═══ buckle up */}
+      <span class="drift-word font-display">— everything is relative —</span>
+      <span class="drift-word font-display">E = mc²</span>
+      <span class="drift-word font-display">t' = t/√(1 − v²/c²)</span>
+      <span class="drift-word font-display">γ = 1/√(1 − v²/c²)</span>
+      <span class="drift-word font-display">x' = γ(x − vt)</span>
+      <span class="drift-word font-display">t' = γ(t − vx/c²)</span>
+      <span class="drift-word font-display">E² = (pc)² + (mc²)²</span>
+      <span class="drift-word font-display">p = mv/√(1 − v²/c²)</span>
+      <span class="drift-word font-display">ds² = −c²dt² + dx² + dy² + dz²</span>
+
+      {/* ═══ 1915 — EINSTEIN (general relativity) ═══ now we're cooking */}
+      <span class="drift-word font-display">Rμν − ½gμνR + Λgμν = 8πG/c⁴ Tμν</span>
+      <span class="drift-word font-display">rs = 2GM/c²</span>
+      <span class="drift-word font-display">Δφ = 6πGM/ac²(1 − e²)</span>
+      <span class="drift-word font-display">ds² = −(1 − rs/r)c²dt² + (1 − rs/r)⁻¹dr² + r²dΩ²</span>
+
+      {/* ═══ 1920s-30s — QUANTUM MECHANICS ═══ reality breaks */}
+      <span class="drift-word font-display">iℏ∂ψ/∂t = Ĥψ</span>
+      <span class="drift-word font-display">ΔxΔp ≥ ℏ/2</span>
+      <span class="drift-word font-display">ΔEΔt ≥ ℏ/2</span>
+      <span class="drift-word font-display">Ĥ|ψ⟩ = E|ψ⟩</span>
+      <span class="drift-word font-display">[x̂, p̂] = iℏ</span>
+      <span class="drift-word font-display">ψ(x,t) = Ae^(ikx−iωt)</span>
+      <span class="drift-word font-display">P = |⟨φ|ψ⟩|²</span>
+      <span class="drift-word font-display">⟨x⟩ = ∫ψ*xψ dx</span>
+      <span class="drift-word font-display">|ψ⟩ = α|0⟩ + β|1⟩</span>
+      <span class="drift-word font-display">|🐱⟩ = α|alive⟩ + β|dead⟩</span>
+      <span class="drift-word font-display">(iγᵘ∂μ − m)ψ = 0</span>
+
+      {/* ═══ 1945 — THE BOMB DROPS ═══ */}
+      <span class="drift-word font-display">²³⁵U + n → ⁹²Kr + ¹⁴¹Ba + 3n + 200 MeV</span>
+      <span class="drift-word font-display">E = Δmc² = 8.4 × 10¹³ J/kg</span>
+      <span class="drift-word font-display">k_eff = k_∞ · P_f · P_th — criticality</span>
+      <span class="drift-word font-display">N(t) = N₀ · e^((k−1)t/l) — chain reaction</span>
+      <span class="drift-word font-display">²H + ³H → ⁴He + n + 17.6 MeV</span>
+      <span class="drift-word font-display">July 16, 1945 — 05:29:45 MWT</span>
+      <span class="drift-word font-display">Y = 21 kt TNT</span>
+
+      {/* ═══ 1948 — SHANNON, INFORMATION ═══ */}
+      <span class="drift-word font-display">H = −Σ p(x) log₂ p(x)</span>
+      <span class="drift-word font-display">C = B log₂(1 + S/N)</span>
+
+      {/* ═══ 1960s-70s — COSMOLOGY, BLACK HOLES ═══ getting long... */}
+      <span class="drift-word font-display">v = H₀d</span>
+      <span class="drift-word font-display">H₀ = 67.4 km/s/Mpc</span>
+      <span class="drift-word font-display">ρc = 3H₀²/8πG</span>
+      <span class="drift-word font-display">T_CMB = 2.72548 ± 0.00057 K</span>
+      <span class="drift-word font-display">S_BH = kc³A/4Għ</span>
+      <span class="drift-word font-display">T_H = ℏc³/8πGMk_B</span>
       <span class="drift-word font-display">L = 4πR²σT⁴</span>
-      <span class="drift-word font-display">M☉ = 1.989 × 10³⁰ kg</span>
-      <span class="drift-word font-display">1 AU = 1.496 × 10¹¹ m</span>
-      <span class="drift-word font-display">1 ly = 9.461 × 10¹⁵ m</span>
-      <span class="drift-word font-display">MCh = 1.4 M☉</span>
+      <span class="drift-word font-display">MCh = 5.83 M☉/μe²</span>
 
-      {/* === Cool concepts as text === */}
-      <span class="drift-word font-display">spacetime</span>
-      <span class="drift-word font-display">entropy</span>
-      <span class="drift-word font-display">singularity</span>
-      <span class="drift-word font-display">event horizon</span>
-      <span class="drift-word font-display">dark energy</span>
-      <span class="drift-word font-display">quantum foam</span>
-      <span class="drift-word font-display">cosmic inflation</span>
-      <span class="drift-word font-display">superposition</span>
-      <span class="drift-word font-display">entanglement</span>
-      <span class="drift-word font-display">antimatter</span>
-      <span class="drift-word font-display">neutron star</span>
-      <span class="drift-word font-display">gravitational waves</span>
-      <span class="drift-word font-display">time dilation</span>
-      <span class="drift-word font-display">frame dragging</span>
-      <span class="drift-word font-display">Hawking radiation</span>
-      <span class="drift-word font-display">Chandrasekhar limit</span>
-      <span class="drift-word font-display">Planck length</span>
-      <span class="drift-word font-display">cosmic microwave background</span>
-      <span class="drift-word font-display">vacuum energy</span>
-      <span class="drift-word font-display">geodesic</span>
-      <span class="drift-word font-display">light cone</span>
-      <span class="drift-word font-display">Fermi paradox</span>
-      <span class="drift-word font-display">Boltzmann brain</span>
-      <span class="drift-word font-display">Penrose process</span>
-      <span class="drift-word font-display">spaghettification</span>
+      {/* ═══ 1970s — STANDARD MODEL ═══ oh no */}
+      <span class="drift-word font-display">ℒ = −¼FᵃμνFᵃᵘᵛ + iψ̄γᵘDμψ + ψ̄ᵢyᵢⱼψⱼφ + h.c. + |Dμφ|² − V(φ)</span>
+      <span class="drift-word font-display">SU(3) × SU(2) × U(1)</span>
+      <span class="drift-word font-display">V(φ) = μ²φ†φ + λ(φ†φ)²</span>
+      <span class="drift-word font-display">m_H = 125.25 ± 0.17 GeV/c²</span>
+
+      {/* ═══ 1980s — CHAOS, LORENZ ═══ */}
+      <span class="drift-word font-display">dx/dt = σ(y − x), dy/dt = x(ρ − z) − y, dz/dt = xy − βz</span>
+      <span class="drift-word font-display">xₙ₊₁ = rxₙ(1 − xₙ)</span>
+      <span class="drift-word font-display">δ = 4.669201609...</span>
+
+      {/* ═══ 1990s-2000s — MODERN COSMOLOGY ═══ */}
+      <span class="drift-word font-display">Ωm + ΩΛ + Ωk = 1, where Ωm ≈ 0.315, ΩΛ ≈ 0.685</span>
+      <span class="drift-word font-display">ds² = −c²dt² + a(t)²[dr²/(1−kr²) + r²dΩ²]</span>
+      <span class="drift-word font-display">(ȧ/a)² = 8πGρ/3 − kc²/a² + Λc²/3</span>
+
+      {/* ═══ QUANTUM FIELD THEORY ═══ lmao good luck */}
+      <span class="drift-word font-display">{"⟨Ω|T{φ(x₁)φ(x₂)...φ(xₙ)}|Ω⟩ = ∫𝒟φ φ(x₁)...φ(xₙ) e^(iS[φ]/ℏ) / ∫𝒟φ e^(iS[φ]/ℏ)"}</span>
+      <span class="drift-word font-display">S = ∫d⁴x [−¼FμνFᵘᵛ + ψ̄(iγᵘDμ − m)ψ]</span>
+      <span class="drift-word font-display">Γ(n→n') = 2π/ℏ |⟨n'|Ĥ'|n⟩|² ρ(E_n')</span>
+      <span class="drift-word font-display">β(g) = μ∂g/∂μ = −(11N−2Nf)/48π² g³ + O(g⁵)</span>
+
+      {/* ═══ EUV LITHOGRAPHY ═══ we made the light do what?? */}
+      <span class="drift-word font-display">λ = 13.5 nm — EUV</span>
+      <span class="drift-word font-display">CD = k₁ · λ/NA — resolution limit</span>
+      <span class="drift-word font-display">Sn plasma → 13.5nm photon → Mo/Si mirror × 11 → 7nm transistor</span>
+      <span class="drift-word font-display">NA = 0.55, 250W source, 160 WPH — High-NA EUV</span>
+
+      {/* ═══ STRING THEORY ═══ absolutely unhinged */}
+      <span class="drift-word font-display">S = −(1/4πα') ∫d²σ √−h hᵃᵇ∂ₐXᵘ∂ᵦXᵛGμν(X)</span>
+      <span class="drift-word font-display">S_IIB = (1/2κ₁₀²) ∫d¹⁰x √−g [e⁻²ᶲ(R + 4(∂φ)² − ½|H₃|²) − ½|F₁|² − ½|F̃₃|² − ¼|F̃₅|²] + S_CS + S_loc</span>
+
+      {/* ═══ AdS/CFT ═══ we've left earth */}
+      <span class="drift-word font-display">Z_string[φ₀] = ⟨exp(∫d⁴x φ₀(x)𝒪(x))⟩_CFT = Z_gravity[φ→φ₀ at boundary]</span>
+      <span class="drift-word font-display">S_EE = Area(γ_A)/4G_N^(d+2) — Ryu-Takayanagi</span>
+
+      {/* ═══ QUANTUM GRAVITY ═══ god help us */}
+      <span class="drift-word font-display">Z = ∫𝒟g_μν 𝒟φ exp(i/ℏ ∫d⁴x √−g [R/16πG + ℒ_matter(φ, g_μν)])</span>
+      <span class="drift-word font-display">Ŝ = (γ₀/4l_P²) Σⱼ √(jⱼ(jⱼ+1)) — LQG area spectrum</span>
+      <span class="drift-word font-display">S_total = (1/16πG)∫d⁴x√−g(R − 2Λ) + ∫d⁴x√−g(−¼FᵃμνFᵃᵘᵛ + iψ̄γᵘDμψ + |Dμφ|² − V(φ) + ψ̄ᵢyᵢⱼψⱼφ) + S_GHY + S_ct</span>
+
+      {/* ═══ THE END ═══ we've gone too far */}
+      <span class="drift-word font-display">42</span>
     </div>
   </div>
 

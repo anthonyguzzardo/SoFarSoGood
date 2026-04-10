@@ -172,7 +172,17 @@ const tierTextColor: Record<TierKey, string> = {
               id={t.slug}
             >
               {/* Header */}
-              <div class="mb-4">
+              <div class="mb-4 flex items-start gap-4">
+                <a href={`/pantheon/${t.slug}`} class="shrink-0">
+                  <img
+                    src={t.image}
+                    alt={t.name}
+                    class="w-16 h-16 md:w-20 md:h-20 rounded-full object-cover border-2 transition-all group-hover:brightness-110"
+                    style={`border-color: ${accent.border};`}
+                    loading="lazy"
+                  />
+                </a>
+                <div>
                 <h4 class="font-display text-xl md:text-2xl font-semibold tracking-tight">
                   <a href={`/pantheon/${t.slug}`} class="hover:brightness-125 transition-all">
                     {t.name}
@@ -205,6 +215,7 @@ const tierTextColor: Record<TierKey, string> = {
                     {t.signature}
                   </span>
                 </div>
+                </div>{/* close text wrapper */}
               </div>
 
               {/* Tagline — the hook */}

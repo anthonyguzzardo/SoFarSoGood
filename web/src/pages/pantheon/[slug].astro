@@ -77,13 +77,22 @@ const textColor = tierTextColor[titan.tier];
     {/* Hero                                                              */}
     {/* ----------------------------------------------------------------- */}
     <header class="mt-6 mb-16 max-w-4xl">
-      <div
-        class="hero-line inline-flex items-center gap-2 px-3 py-1.5 rounded-md border text-[0.65rem] font-mono uppercase tracking-widest mb-5"
-        style={`color: ${textColor}; border-color: ${accent.border}; background: ${accent.glow}; animation-delay: 0s;`}
-      >
-        <span>Tier {meta.order}</span>
-        <span style="opacity: 0.4;">&middot;</span>
-        <span>{meta.label}</span>
+      {/* Portrait + tier badge row */}
+      <div class="hero-line flex items-end gap-6 mb-6" style="animation-delay: 0s;">
+        <img
+          src={titan.image}
+          alt={titan.name}
+          class="w-24 h-24 md:w-32 md:h-32 rounded-2xl object-cover border-2 shadow-lg"
+          style={`border-color: ${accent.border}; box-shadow: 0 8px 30px ${accent.glow};`}
+        />
+        <div
+          class="inline-flex items-center gap-2 px-3 py-1.5 rounded-md border text-[0.65rem] font-mono uppercase tracking-widest"
+          style={`color: ${textColor}; border-color: ${accent.border}; background: ${accent.glow};`}
+        >
+          <span>Tier {meta.order}</span>
+          <span style="opacity: 0.4;">&middot;</span>
+          <span>{meta.label}</span>
+        </div>
       </div>
 
       <h1
@@ -218,12 +227,13 @@ const textColor = tierTextColor[titan.tier];
                     class="group flex items-center gap-4 px-4 py-3.5 rounded-lg border transition-all hover:-translate-y-0.5"
                     style={`border-color: ${tAccent.border}; background: ${tAccent.bg};`}
                   >
-                    <div
-                      class="shrink-0 w-10 h-10 rounded-lg flex items-center justify-center font-mono text-xs font-bold"
-                      style={`color: ${tColor}; background: ${tAccent.glow}; border: 1px solid ${tAccent.border};`}
-                    >
-                      T{tMeta.order}
-                    </div>
+                    <img
+                      src={t.image}
+                      alt={t.name}
+                      class="shrink-0 w-10 h-10 rounded-full object-cover border"
+                      style={`border-color: ${tAccent.border};`}
+                      loading="lazy"
+                    />
                     <div class="min-w-0">
                       <div class="font-display font-semibold text-base leading-snug group-hover:brightness-125 transition-all truncate">
                         {t.name}
@@ -258,12 +268,13 @@ const textColor = tierTextColor[titan.tier];
                     class="group flex items-center gap-4 px-4 py-3.5 rounded-lg border transition-all hover:-translate-y-0.5"
                     style={`border-color: ${tAccent.border}; background: ${tAccent.bg};`}
                   >
-                    <div
-                      class="shrink-0 w-10 h-10 rounded-lg flex items-center justify-center font-mono text-xs font-bold"
-                      style={`color: ${tColor}; background: ${tAccent.glow}; border: 1px solid ${tAccent.border};`}
-                    >
-                      T{tMeta.order}
-                    </div>
+                    <img
+                      src={t.image}
+                      alt={t.name}
+                      class="shrink-0 w-10 h-10 rounded-full object-cover border"
+                      style={`border-color: ${tAccent.border};`}
+                      loading="lazy"
+                    />
                     <div class="min-w-0">
                       <div class="font-display font-semibold text-base leading-snug group-hover:brightness-125 transition-all truncate">
                         {t.name}
