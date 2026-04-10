@@ -85,12 +85,17 @@ function HeroSpotlight({
   topic,
   onToggle,
   isExpanded,
+  conceptMap = {},
 }: {
   topic: PulseTopic;
   onToggle: () => void;
   isExpanded: boolean;
+  conceptMap?: Record<string, ConceptInfo>;
 }) {
   const topSource = topic.sources[0];
+  const resolvedConcepts = topic.relatedConceptSlugs
+    .map((s) => conceptMap[s])
+    .filter((c): c is ConceptInfo => !!c);
   const topYT = topic.sources.find((s) => s.thumbnail);
 
   return (
@@ -189,6 +194,44 @@ function HeroSpotlight({
                   ▾
                 </span>
               </div>
+
+              {/* Reality check — what NASA is actually funding */}
+              {resolvedConcepts.length > 0 ? (
+                <div
+                  className="mt-3 flex items-center gap-2 flex-wrap"
+                  style={{ borderTop: "1px solid rgba(74, 222, 128, 0.08)", paddingTop: "0.75rem" }}
+                >
+                  <span
+                    className="text-[0.6rem] font-mono uppercase tracking-widest shrink-0"
+                    style={{ color: "rgba(74, 222, 128, 0.7)" }}
+                  >
+                    ⬡ NASA funded {resolvedConcepts.length} {resolvedConcepts.length === 1 ? "study" : "studies"}
+                  </span>
+                  {resolvedConcepts.slice(0, 3).map((c) => (
+                    <a
+                      key={c.slug}
+                      href={`/concept/${c.slug}`}
+                      onClick={(e) => e.stopPropagation()}
+                      className="text-[0.65rem] px-2 py-0.5 rounded border transition-colors hover:border-green-400/40"
+                      style={{
+                        color: "rgba(74, 222, 128, 0.85)",
+                        borderColor: "rgba(74, 222, 128, 0.15)",
+                        background: "rgba(74, 222, 128, 0.05)",
+                        fontFamily: "var(--font-display)",
+                      }}
+                    >
+                      {c.title.length > 45 ? c.title.slice(0, 45).replace(/\s+\S*$/, "") + "…" : c.title}
+                    </a>
+                  ))}
+                </div>
+              ) : (
+                <div
+                  className="mt-3 text-[0.6rem] font-mono uppercase tracking-widest"
+                  style={{ color: "var(--color-ink-faint)", opacity: 0.6, borderTop: "1px solid rgba(255,255,255,0.04)", paddingTop: "0.75rem" }}
+                >
+                  ⬡ Social momentum only — no funded research in the atlas yet
+                </div>
+              )}
             </div>
 
             {/* YouTube thumbnail preview if available */}
@@ -587,13 +630,33 @@ function TopicRow({
             {directionArrow(topic.direction)}
           </span>
 
-          {/* Label + headline teaser */}
+          {/* Label + headline teaser + funded indicator */}
           <div className="flex-1 min-w-0">
-            <span
-              className="font-medium text-sm group-hover:text-amber-300 transition-colors block"
-              style={{ fontFamily: "var(--font-display)", color: "var(--color-ink)" }}
-            >
-              {topic.label}
+            <span className="flex items-center gap-2">
+              <span
+                className="font-medium text-sm group-hover:text-amber-300 transition-colors"
+                style={{ fontFamily: "var(--font-display)", color: "var(--color-ink)" }}
+              >
+                {topic.label}
+              </span>
+              {(() => {
+                const fundedCount = topic.relatedConceptSlugs
+                  .filter((s) => conceptMap[s])
+                  .length;
+                if (fundedCount === 0) return null;
+                return (
+                  <span
+                    className="text-[0.5rem] font-mono uppercase tracking-widest px-1.5 py-0.5 rounded shrink-0 hidden sm:inline"
+                    style={{
+                      color: "rgba(74, 222, 128, 0.65)",
+                      background: "rgba(74, 222, 128, 0.06)",
+                      border: "1px solid rgba(74, 222, 128, 0.1)",
+                    }}
+                  >
+                    ⬡ {fundedCount}
+                  </span>
+                );
+              })()}
             </span>
             {topSource && (
               <span
@@ -785,7 +848,7 @@ function recomputeForWindow(
 
 function generateLede(
   active: PulseTopic[],
-  window: TimeWindow,
+  _window: TimeWindow,
 ): { lede: string; stats: { topics: number; mentions: number; sources: number } } {
   const stats = {
     topics: active.length,
@@ -956,6 +1019,7 @@ export default function PulseBoard({ topics, generatedAt, conceptMap = {} }: Pro
             topic={heroTopic}
             onToggle={() => toggle(heroTopic.slug)}
             isExpanded={expanded === heroTopic.slug}
+            conceptMap={conceptMap}
           />
           {/* Hero expanded sources */}
           {expanded === heroTopic.slug && heroTopic.sources.length > 0 && (
