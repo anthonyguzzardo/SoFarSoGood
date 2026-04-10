@@ -26,7 +26,7 @@ import {
   categorize,
 } from "../lib/concepts.ts";
 import type { ConceptCategory } from "../lib/concepts.ts";
-import { getTrendingTopics, formatScore } from "../lib/pulse.ts";
+import { getTrendingTopics, formatScore, formatDelta } from "../lib/pulse.ts";
 import ConceptBrowser from "../components/ConceptBrowser.tsx";
 
 const trending = getTrendingTopics(8);
@@ -166,35 +166,86 @@ const categoryLabel: Record<ConceptCategory, string> = {
           See all &rarr;
         </a>
       </div>
-      <div class="flex gap-3 overflow-x-auto pb-2 -mx-1 px-1 scrollbar-hide">
-        {trending.map((t) => {
+
+      {/* Leader callout — the #1 topic gets a teaser headline */}
+      {(() => {
+        const leader = trending[0];
+        const topTitle = leader?.sources?.[0]?.title;
+        if (!leader || !topTitle) return null;
+        const truncated = topTitle.length > 100
+          ? topTitle.slice(0, 100).replace(/\s+\S*$/, "") + "…"
+          : topTitle;
+        return (
+          <a
+            href={`/pulse#${leader.slug}`}
+            class="group block mb-4 px-4 py-3 rounded-xl border transition-all hover:border-amber-400/40 hover:-translate-y-0.5"
+            style="background: linear-gradient(135deg, rgba(255,184,77,0.06) 0%, rgba(255,184,77,0.02) 100%); border-color: rgba(255,184,77,0.18);"
+          >
+            <div class="flex items-center gap-3">
+              <span
+                class="shrink-0 w-7 h-7 rounded-md flex items-center justify-center font-mono text-xs font-bold"
+                style="background: rgba(255,184,77,0.12); color: var(--color-accent); border: 1px solid rgba(255,184,77,0.2);"
+              >1</span>
+              <span class="font-display font-semibold text-sm group-hover:text-amber-300 transition-colors" style="color: var(--color-ink);">
+                {leader.label}
+              </span>
+              <span class="text-[0.65rem] font-mono" style="color: var(--color-accent);">
+                {formatScore(leader.score)}
+              </span>
+              <span class={`text-[0.65rem] font-mono ${leader.direction === "up" ? "text-green-400" : leader.direction === "down" ? "text-red-400" : "text-zinc-500"}`}>
+                {formatDelta(leader.delta)}
+              </span>
+            </div>
+            <p class="mt-1.5 ml-10 text-[0.75rem] leading-relaxed truncate" style="color: var(--color-ink-dim);">
+              "{truncated}"
+            </p>
+          </a>
+        );
+      })()}
+
+      {/* Ticker strip — ranked pills with deltas */}
+      <div class="flex gap-2.5 overflow-x-auto pb-2 -mx-1 px-1 scrollbar-hide">
+        {trending.slice(1).map((t, i) => {
+          const rank = i + 2;
           const arrow =
             t.direction === "up" ? "▲" : t.direction === "down" ? "▼" : "";
-          const arrowColor =
+          const deltaColor =
             t.direction === "up"
               ? "color: #4ade80"
               : t.direction === "down"
                 ? "color: #f87171"
-                : "";
+                : "color: var(--color-ink-faint)";
           return (
             <a
-              href={`/pulse`}
-              class="group shrink-0 flex items-center gap-2 px-4 py-2.5 rounded-lg border hairline hover:border-amber-400/40 transition"
+              href={`/pulse#${t.slug}`}
+              class="group shrink-0 flex items-center gap-2 px-3.5 py-2 rounded-lg border hairline hover:border-amber-400/40 transition"
               style="background: var(--color-paper-raised);"
             >
+              <span
+                class="text-[0.6rem] font-mono w-4 text-right shrink-0"
+                style={rank <= 3 ? "color: var(--color-accent);" : "color: var(--color-ink-faint);"}
+              >
+                {rank}
+              </span>
               {arrow && (
-                <span class="text-[0.65rem]" style={arrowColor}>
+                <span class="text-[0.6rem]" style={deltaColor}>
                   {arrow}
                 </span>
               )}
-              <span class="text-sm font-medium font-display group-hover:text-accent transition-colors whitespace-nowrap">
+              <span class="text-sm font-medium font-display group-hover:text-accent transition-colors whitespace-nowrap" style="color: var(--color-ink);">
                 {t.label}
               </span>
               <span
-                class="text-[0.65rem] font-mono"
+                class="text-[0.6rem] font-mono"
                 style="color: var(--color-accent);"
               >
                 {formatScore(t.score)}
+              </span>
+              <span
+                class="text-[0.6rem] font-mono"
+                style={deltaColor}
+              >
+                {formatDelta(t.delta)}
               </span>
             </a>
           );
