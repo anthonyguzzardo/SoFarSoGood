@@ -12,7 +12,8 @@
     "build": "npm run build --workspace web",
     "preview": "npm run preview --workspace web",
     "ingest": "node --experimental-strip-types ingestion/fetch-niac.ts",
-    "pulse": "node --experimental-strip-types ingestion/fetch-pulse.ts"
+    "pulse": "node --experimental-strip-types ingestion/fetch-pulse.ts",
+    "pulse:backdate": "node --experimental-strip-types ingestion/fetch-pulse.ts --backdate"
   },
   "devDependencies": {
     "@types/node": "^22.10.0",

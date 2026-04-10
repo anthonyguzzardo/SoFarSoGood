@@ -243,12 +243,14 @@ async function fetchRedditSubreddit(
   }
 }
 
-async function fetchAllReddit(): Promise<RedditPost[]> {
-  console.log("→ fetching Reddit top posts...");
+async function fetchAllReddit(
+  timeframe: "day" | "week" | "month" = "week",
+): Promise<RedditPost[]> {
+  console.log(`→ fetching Reddit top posts (${timeframe})...`);
   const all: RedditPost[] = [];
   // Fetch sequentially to be respectful of Reddit rate limits
   for (const sub of SUBREDDITS) {
-    const posts = await fetchRedditSubreddit(sub);
+    const posts = await fetchRedditSubreddit(sub, timeframe);
     all.push(...posts);
     console.log(`  r/${sub}: ${posts.length} posts`);
     // Small delay to avoid rate-limiting
@@ -272,12 +274,12 @@ interface HNHit {
   created_at_i: number;
 }
 
-async function searchHN(query: string): Promise<HNHit[]> {
+async function searchHN(query: string, lookbackDays = 7): Promise<HNHit[]> {
   const params = new URLSearchParams({
     query,
     tags: "story",
     restrictSearchableAttributes: "title",
-    numericFilters: `created_at_i>${Math.floor(Date.now() / 1000) - 7 * 86400}`,
+    numericFilters: `created_at_i>${Math.floor(Date.now() / 1000) - lookbackDays * 86400}`,
     hitsPerPage: "50",
   });
   const url = `https://hn.algolia.com/api/v1/search?${params}`;
@@ -312,8 +314,8 @@ function filterHNByTitle(hits: HNHit[], terms: string[]): HNHit[] {
   return hits.filter((h) => patterns.some((pat) => pat.test(h.title)));
 }
 
-async function fetchAllHN(topics: TopicDef[]): Promise<Map<string, HNHit[]>> {
-  console.log("→ fetching Hacker News...");
+async function fetchAllHN(topics: TopicDef[], lookbackDays = 7): Promise<Map<string, HNHit[]>> {
+  console.log(`→ fetching Hacker News (${lookbackDays}d)...`);
   const map = new Map<string, HNHit[]>();
   for (const topic of topics) {
     // Search up to 3 terms per topic to catch more coverage
@@ -322,7 +324,7 @@ async function fetchAllHN(topics: TopicDef[]): Promise<Map<string, HNHit[]>> {
     const allHits: HNHit[] = [];
 
     for (const term of termsToSearch) {
-      const raw = await searchHN(term);
+      const raw = await searchHN(term, lookbackDays);
       const hits = filterHNByTitle(raw, topic.terms);
       for (const h of hits) {
         if (!seen.has(h.objectID)) {
@@ -573,6 +575,135 @@ function sleep(ms: number): Promise<void> {
   return new Promise((resolve) => setTimeout(resolve, ms));
 }
 
+/* -------------------------------------------------------------------------- */
+/* Backdate: bucket posts into weekly snapshots                              */
+/* -------------------------------------------------------------------------- */
+
+function buildWeeklySnapshot(
+  weekStart: number,
+  weekEnd: number,
+  allReddit: RedditPost[],
+  allHN: Map<string, HNHit[]>,
+): { generatedAt: string; topics: PulseTopic[] } {
+  // Filter Reddit posts to this week
+  const weekReddit = allReddit.filter((p) => {
+    const ts = p.created_utc * 1000;
+    return ts >= weekStart && ts < weekEnd;
+  });
+
+  // Filter HN hits to this week
+  const weekHN = new Map<string, HNHit[]>();
+  for (const [slug, hits] of allHN) {
+    const filtered = hits.filter((h) => {
+      const ts = h.created_at_i * 1000;
+      return ts >= weekStart && ts < weekEnd;
+    });
+    if (filtered.length > 0) weekHN.set(slug, filtered);
+  }
+
+  const topics = TOPICS.map((topic) =>
+    scoreTopic(topic, weekReddit, weekHN.get(topic.slug) ?? []),
+  )
+    .filter((t) => t.mentions > 0 || t.score > 0)
+    .sort((a, b) => b.score - a.score);
+
+  // Include quiet topics
+  const scoredSlugs = new Set(topics.map((t) => t.slug));
+  for (const def of TOPICS) {
+    if (!scoredSlugs.has(def.slug)) {
+      topics.push({
+        slug: def.slug,
+        label: def.label,
+        score: 0,
+        delta: 0,
+        direction: "steady",
+        mentions: 0,
+        sources: [],
+        relatedConceptSlugs: def.conceptSlugs,
+      });
+    }
+  }
+
+  return { generatedAt: new Date(weekEnd).toISOString(), topics };
+}
+
+async function mainBackdate(): Promise<void> {
+  await mkdir(DATA_DIR, { recursive: true });
+
+  const WEEKS = 4;
+  console.log(`\n⏪ BACKDATING — fetching ${WEEKS} weeks of data\n`);
+
+  // Fetch a full month of data in one pass
+  const [redditPosts, hnMap] = await Promise.all([
+    fetchAllReddit("month"),
+    fetchAllHN(TOPICS, 30),
+  ]);
+
+  console.log(`\n→ bucketing into ${WEEKS} weekly snapshots...`);
+
+  const now = Date.now();
+  const weekMs = 7 * 86400000;
+  const snapshots: { file: string; date: string; active: number }[] = [];
+
+  for (let w = WEEKS - 1; w >= 0; w--) {
+    const weekEnd = now - w * weekMs;
+    const weekStart = weekEnd - weekMs;
+    const dateLabel = new Date(weekStart).toISOString().slice(0, 10);
+
+    const snapshot = buildWeeklySnapshot(weekStart, weekEnd, redditPosts, hnMap);
+    const active = snapshot.topics.filter((t) => t.mentions > 0).length;
+
+    const outFile = join(DATA_DIR, `pulse-${dateLabel}.json`);
+    await writeFile(outFile, JSON.stringify(snapshot, null, 2));
+    snapshots.push({ file: outFile, date: dateLabel, active });
+  }
+
+  // Compute cross-week deltas for each snapshot
+  for (let i = 1; i < snapshots.length; i++) {
+    const prevFile = snapshots[i - 1].file;
+    const currFile = snapshots[i].file;
+    const prev = JSON.parse(await readFile(prevFile, "utf-8")) as { topics: PulseTopic[] };
+    const curr = JSON.parse(await readFile(currFile, "utf-8")) as { topics: PulseTopic[] };
+    const prevMap = new Map(prev.topics.map((t) => [t.slug, t.score]));
+    computeDeltas(curr.topics, prevMap);
+    await writeFile(currFile, JSON.stringify({ generatedAt: curr.generatedAt ?? new Date().toISOString(), topics: curr.topics }, null, 2));
+  }
+
+  // The most recent week becomes pulse.json (with delta from prior week)
+  const latestFile = snapshots[snapshots.length - 1].file;
+  const latest = await readFile(latestFile, "utf-8");
+
+  // Save current pulse.json as pulse-prev.json
+  try {
+    const existing = await readFile(OUT_FILE, "utf-8");
+    await writeFile(PREV_FILE, existing);
+  } catch {}
+
+  await writeFile(OUT_FILE, latest);
+
+  console.log("\n✓ Backdated snapshots:");
+  for (const s of snapshots) {
+    console.log(`  ${s.date}  ${s.active} active topics`);
+  }
+  console.log(`\n✓ Most recent week also written to ${OUT_FILE}`);
+
+  // Print top trending from latest
+  const latestData = JSON.parse(latest) as { topics: PulseTopic[] };
+  console.log("\nTop trending (this week):");
+  for (const t of latestData.topics.slice(0, 8)) {
+    const dir = t.direction === "up" ? "▲" : t.direction === "down" ? "▼" : "—";
+    console.log(
+      `  ${dir} ${t.label.padEnd(25)} score: ${String(t.score).padStart(6)}  mentions: ${t.mentions}`,
+    );
+  }
+}
+
+/* -------------------------------------------------------------------------- */
+/* Main                                                                       */
+/* -------------------------------------------------------------------------- */
+
+const IS_BACKDATE = process.argv.includes("--backdate");
+
 async function main(): Promise<void> {
   await mkdir(DATA_DIR, { recursive: true });
 
@@ -632,7 +763,7 @@ async function main(): Promise<void> {
   }
 }
 
-main().catch((err) => {
+(IS_BACKDATE ? mainBackdate() : main()).catch((err) => {
   console.error(err);
   process.exit(1);
 });
