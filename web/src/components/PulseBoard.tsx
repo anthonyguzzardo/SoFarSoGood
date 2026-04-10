@@ -244,6 +244,7 @@ function TopicRow({
   isExpanded: boolean;
   onToggle: () => void;
 }) {
+  const topSource = topic.sources[0];
 
   return (
     <div>
@@ -259,11 +260,12 @@ function TopicRow({
               ? "pulse-row-expanded"
               : "pulse-row-idle"
           }`}
+          style={rank === 1 ? { borderLeft: "2px solid var(--color-accent)" } : undefined}
         >
           {/* Rank */}
           <span
-            className="text-sm font-mono w-6 text-right shrink-0"
-            style={{ color: "var(--color-ink-faint)" }}
+            className={`text-sm font-mono w-6 text-right shrink-0 ${rank === 1 ? "font-semibold" : ""}`}
+            style={{ color: rank === 1 ? "var(--color-accent)" : "var(--color-ink-faint)" }}
           >
             {rank}
           </span>
@@ -273,16 +275,26 @@ function TopicRow({
             {directionArrow(topic.direction)}
           </span>
 
-          {/* Label */}
-          <span
-            className="font-medium text-sm min-w-[140px] shrink-0 group-hover:text-amber-300 transition-colors"
-            style={{ fontFamily: "var(--font-display)", color: "var(--color-ink)" }}
-          >
-            {topic.label}
-          </span>
+          {/* Label + headline teaser */}
+          <div className="flex-1 min-w-0">
+            <span
+              className="font-medium text-sm group-hover:text-amber-300 transition-colors block"
+              style={{ fontFamily: "var(--font-display)", color: "var(--color-ink)" }}
+            >
+              {topic.label}
+            </span>
+            {topSource && (
+              <span
+                className="text-[0.65rem] leading-tight mt-0.5 block truncate"
+                style={{ color: "var(--color-ink-faint)" }}
+              >
+                {topSource.title}
+              </span>
+            )}
+          </div>
 
           {/* Activity sparkline — 7-day heartbeat */}
-          <div className="flex-1 hidden sm:flex items-center justify-end">
+          <div className="hidden sm:flex items-center shrink-0">
             <Sparkline sources={topic.sources} />
           </div>
 
@@ -368,9 +380,14 @@ function TopicRow({
 
 export default function PulseBoard({ topics, generatedAt }: Props) {
   const [expanded, setExpanded] = useState<string | null>(null);
+  const [showQuiet, setShowQuiet] = useState(false);
 
   const activeTopics = topics.filter((t) => t.mentions > 0);
   const quietTopics = topics.filter((t) => t.mentions === 0);
+
+  const biggestMover = activeTopics
+    .filter((t) => t.direction === "up" && t.delta > 0)
+    .sort((a, b) => b.delta - a.delta)[0] ?? null;
 
   const toggle = (slug: string) =>
     setExpanded((prev) => (prev === slug ? null : slug));
@@ -384,8 +401,8 @@ export default function PulseBoard({ topics, generatedAt }: Props) {
       >
         <span className="w-6 text-right">#</span>
         <span className="w-4" />
-        <span className="min-w-[140px]">Topic</span>
-        <span className="flex-1 hidden sm:block text-right">7-day</span>
+        <span className="flex-1">Topic</span>
+        <span className="w-[72px] hidden sm:block text-right">7-day</span>
         <span className="w-16 text-right">Score</span>
         <span className="w-14 text-right">Change</span>
         <span className="w-8 text-right hidden md:block">Hits</span>
@@ -398,6 +415,45 @@ export default function PulseBoard({ topics, generatedAt }: Props) {
         style={{ borderBottom: "1px solid var(--color-paper-edge)" }}
       />
 
+      {/* Biggest mover callout */}
+      {biggestMover && (
+        <div
+          className="mx-4 mb-3 px-4 py-2.5 rounded-lg flex items-center gap-3"
+          style={{
+            background: "rgba(74, 222, 128, 0.05)",
+            border: "1px solid rgba(74, 222, 128, 0.12)",
+          }}
+        >
+          <span className="text-green-400 text-xs">▲</span>
+          <span
+            className="text-[0.6rem] font-mono uppercase tracking-widest shrink-0"
+            style={{ color: "rgba(74, 222, 128, 0.7)" }}
+          >
+            Biggest mover
+          </span>
+          <span
+            className="text-sm font-medium shrink-0"
+            style={{
+              fontFamily: "var(--font-display)",
+              color: "var(--color-ink)",
+            }}
+          >
+            {biggestMover.label}
+          </span>
+          <span className="text-sm font-mono text-green-400 shrink-0">
+            +{biggestMover.delta}%
+          </span>
+          {biggestMover.sources[0] && (
+            <span
+              className="text-[0.65rem] flex-1 min-w-0 truncate hidden sm:block"
+              style={{ color: "var(--color-ink-faint)" }}
+            >
+              — {biggestMover.sources[0].title}
+            </span>
+          )}
+        </div>
+      )}
+
       {/* Active topics */}
       {activeTopics.map((topic, i) => (
         <TopicRow
@@ -409,29 +465,48 @@ export default function PulseBoard({ topics, generatedAt }: Props) {
         />
       ))}
 
-      {/* Quiet topics */}
+      {/* Quiet topics — collapsed by default */}
       {quietTopics.length > 0 && (
         <div className="mt-6 px-4">
-          <div
-            className="text-[0.6rem] font-mono uppercase tracking-widest mb-2"
-            style={{ color: "var(--color-ink-faint)" }}
+          <button
+            onClick={() => setShowQuiet((v) => !v)}
+            className="text-[0.6rem] font-mono uppercase tracking-widest flex items-center gap-2"
+            style={{
+              color: "var(--color-ink-faint)",
+              background: "none",
+              border: "none",
+              cursor: "pointer",
+              padding: 0,
+            }}
           >
-            Quiet this week
-          </div>
-          <div className="flex flex-wrap gap-2">
-            {quietTopics.map((t) => (
-              <span
-                key={t.slug}
-                className="text-xs font-mono px-2 py-1 rounded"
-                style={{
-                  color: "var(--color-ink-faint)",
-                  background: "rgba(255,255,255,0.03)",
-                }}
-              >
-                {t.label}
-              </span>
-            ))}
-          </div>
+            <span>
+              {quietTopics.length} topics quiet this week
+            </span>
+            <span
+              className="text-xs transition-transform"
+              style={{
+                transform: showQuiet ? "rotate(180deg)" : "rotate(0)",
+              }}
+            >
+              ▾
+            </span>
+          </button>
+          {showQuiet && (
+            <div className="flex flex-wrap gap-2 mt-2">
+              {quietTopics.map((t) => (
+                <span
+                  key={t.slug}
+                  className="text-xs font-mono px-2 py-1 rounded"
+                  style={{
+                    color: "var(--color-ink-faint)",
+                    background: "rgba(255,255,255,0.03)",
+                  }}
+                >
+                  {t.label}
+                </span>
+              ))}
+            </div>
+          )}
         </div>
       )}
 
