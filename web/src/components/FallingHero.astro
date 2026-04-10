@@ -439,14 +439,18 @@
       top: 105%;
       opacity: 0;
     }
-    5% {
+    0.5% {
       opacity: 0.35;
     }
-    50% {
+    2.5% {
       opacity: 0.12;
     }
-    95% {
+    4.5% {
       opacity: 0.35;
+    }
+    5% {
+      top: -8%;
+      opacity: 0;
     }
     100% {
       top: -8%;
@@ -545,18 +549,19 @@
 </style>
 
 <script>
-  // Assign randomized delays and positions so 100+ equations stagger naturally
+  // Assign randomized delays and positions so 100+ equations stagger naturally.
+  // Every word shares ONE cycle duration and is only visible during 5% of it.
+  // The stagger delay offsets each word evenly, keeping ~4-5 visible at any time
+  // — including across infinite loop iterations (delay offsets persist).
   const words = document.querySelectorAll('.drift-word');
   const total = words.length;
-  // Total cycle time — spread all words across this window so ~4-5 are visible at once
-  const cycleDuration = total * 1.1; // seconds between each word appearing
+  const cycleDuration = total * 2.5; // full cycle all words share
   words.forEach((el, i) => {
     const htmlEl = el as HTMLElement;
-    const delay = (i * cycleDuration / total) + (Math.random() * 0.5);
-    const speed = 10 + Math.random() * 6; // 10-16s drift time
+    const delay = (i * cycleDuration / total) + (Math.random() * 0.8);
     const x = Math.random() * 60; // 0-60% from left
     htmlEl.style.setProperty('--drift-delay', `${delay.toFixed(1)}s`);
-    htmlEl.style.setProperty('--drift-speed', `${speed.toFixed(1)}s`);
+    htmlEl.style.setProperty('--drift-speed', `${cycleDuration.toFixed(1)}s`);
     htmlEl.style.setProperty('--drift-x', `${x.toFixed(0)}%`);
   });
 </script>
