@@ -99,6 +99,18 @@ export function getPulseTopic(slug: string): PulseTopic | undefined {
   return pulse.topics.find((t) => t.slug === slug);
 }
 
+/**
+ * Find pulse topics that reference a concept via relatedConceptSlugs.
+ * Concept slugs in pulse are short prefixes (e.g. "fluidic-telescope")
+ * while atlas concept slugs are long (e.g. "fluidic-telescope-flute-nasa-...-2026").
+ * We match via startsWith.
+ */
+export function getPulseForConcept(conceptSlug: string): PulseTopic[] {
+  return activePulseTopics.filter((t) =>
+    t.relatedConceptSlugs.some((shortSlug) => conceptSlug.startsWith(shortSlug)),
+  );
+}
+
 /** Format the delta as a display string like "+340%" or "-15%". */
 export function formatDelta(delta: number): string {
   if (delta === 0) return "—";

@@ -24,6 +24,7 @@ import ConceptNeighborhood from "../../components/ConceptNeighborhood.tsx";
 import { pathsForConcept } from "../../lib/reading-paths.ts";
 import { getWishlistForConcept } from "../../lib/connections.ts";
 import { getWishlistEntry, displayYear } from "../../lib/wishlist.ts";
+import { getPulseForConcept, formatScore, formatDelta } from "../../lib/pulse.ts";
 
 export function getStaticPaths() {
   return allConcepts.map((c) => ({ params: { slug: c.slug } }));
@@ -38,6 +39,7 @@ const related = getRelatedConcepts(concept.slug, 4);
 const readingPaths = pathsForConcept(concept.slug);
 const historicalRoots = getWishlistForConcept(concept.slug);
 const category = categorize(concept);
+const pulseTopics = getPulseForConcept(concept.slug);
 
 // Split abstract into paragraphs at blank lines if any.
 const paragraphs = concept.abstract
@@ -85,6 +87,47 @@ const paragraphs = concept.abstract
         {piLine(concept)}
       </div>
     </header>
+
+    {/* ----------------------------------------------------------- */}
+    {/* Pulse — live trending indicator                             */}
+    {/* ----------------------------------------------------------- */}
+    {pulseTopics.length > 0 && (
+      <div class="my-8 max-w-3xl">
+        {pulseTopics.map((pt) => {
+          const arrow = pt.direction === "up" ? "▲" : pt.direction === "down" ? "▼" : "—";
+          const arrowColor = pt.direction === "up" ? "#4ade80" : pt.direction === "down" ? "#f87171" : "var(--color-ink-faint)";
+          return (
+            <a
+              href={`/pulse#${pt.slug}`}
+              class="group flex items-center gap-3 px-5 py-3 rounded-lg border transition-all hover:border-amber-400/40"
+              style="background: rgba(255,184,77,0.03); border-color: rgba(255,184,77,0.1);"
+            >
+              <span
+                class="text-[0.55rem] font-mono uppercase tracking-widest px-2 py-0.5 rounded shrink-0"
+                style="background: rgba(255,184,77,0.08); color: var(--color-accent); border: 1px solid rgba(255,184,77,0.15);"
+              >
+                Live
+              </span>
+              <span class="text-sm" style="color: var(--color-ink-dim);">
+                <span class="font-display font-medium" style="color: var(--color-ink);">
+                  {pt.label}
+                </span>
+                {" "}is trending — {formatScore(pt.score)} score · {pt.mentions} mentions
+              </span>
+              <span class="text-xs font-mono" style={`color: ${arrowColor};`}>
+                {arrow} {pt.delta !== 0 ? formatDelta(pt.delta) : ""}
+              </span>
+              <span
+                class="ml-auto text-[0.6rem] font-mono uppercase tracking-widest group-hover:text-accent transition-colors shrink-0"
+                style="color: var(--color-ink-faint);"
+              >
+                View on Pulse →
+              </span>
+            </a>
+          );
+        })}
+      </div>
+    )}
 
     {/* ----------------------------------------------------------- */}
     {/* What if it works callout                                    */}
