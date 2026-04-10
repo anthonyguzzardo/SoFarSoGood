@@ -24,16 +24,8 @@ const navItems = [
   { key: "browse", label: "Browse", href: "/" },
   { key: "pulse", label: "Pulse", href: "/pulse" },
   { key: "explore", label: "Explore", href: "/explore" },
-  { key: "paths", label: "Paths", href: "/paths" },
   { key: "wishlist", label: "Wishlist", href: "/wishlist" },
   { key: "pantheon", label: "Pantheon", href: "/pantheon" },
-  { key: "mission", label: "Mission", href: "/mission" },
-] as const;
-
-const viewItems = [
-  { key: "timeline", label: "Timeline", href: "/timeline" },
-  { key: "atlas", label: "Atlas", href: "/atlas" },
-  { key: "subjects", label: "Subjects", href: "/subjects" },
 ] as const;
 ---
 
@@ -43,6 +35,13 @@ const viewItems = [
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content={description} />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="So Far So Good" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content={description} />
     <title>{title}</title>
     <link
       rel="icon"
@@ -84,22 +83,6 @@ const viewItems = [
               </a>
             ))
           }
-          <span class="text-faint mx-1 text-xs">·</span>
-          {
-            viewItems.map((item) => (
-              <a
-                href={item.href}
-                class:list={[
-                  "px-2 py-1.5 text-[0.6rem] uppercase tracking-widest font-mono rounded transition",
-                  nav === item.key
-                    ? "text-accent border hairline-strong"
-                    : "text-faint hover:text-dim border border-transparent",
-                ]}
-              >
-                {item.label}
-              </a>
-            ))
-          }
           <button
             id="random-concept-btn"
             type="button"
@@ -117,6 +100,14 @@ const viewItems = [
 
     <footer class="border-t hairline mt-24 relative z-10">
       <div class="max-w-6xl mx-auto px-6 py-8 text-xs text-dim font-mono">
+        <div class="flex flex-wrap gap-x-6 gap-y-2 mb-4">
+          <a href="/mission" class="hover:text-white transition">Mission</a>
+          <a href="/contribute" class="hover:text-white transition">Contribute</a>
+          <a href="/paths" class="hover:text-white transition">Reading Paths</a>
+          <a href="/timeline" class="hover:text-white transition">Timeline</a>
+          <a href="/atlas" class="hover:text-white transition">Atlas</a>
+          <a href="/subjects" class="hover:text-white transition">Subjects</a>
+        </div>
         <p>
           Concepts sourced from
           <a

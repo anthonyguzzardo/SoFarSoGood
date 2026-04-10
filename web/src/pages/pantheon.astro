@@ -19,6 +19,8 @@ import {
   allTitans,
   lifespan,
   fieldLabel,
+  tierAccent,
+  tierTextColor,
 } from "../lib/pantheon.ts";
 import type { Titan, TierKey } from "../lib/pantheon.ts";
 
@@ -29,30 +31,6 @@ const totalPowerMoves = allTitans.reduce((n, t) => n + t.powerMoves.length, 0);
 const earliestBorn = Math.min(...allTitans.map((t) => t.born));
 const latestAlive = allTitans.find((t) => t.died === null);
 
-/** Tier accent colors for visual hierarchy */
-const tierAccent: Record<TierKey, { border: string; bg: string; glow: string }> = {
-  "untouchable": {
-    border: "rgba(255, 184, 77, 0.35)",
-    bg: "rgba(255, 184, 77, 0.06)",
-    glow: "rgba(255, 184, 77, 0.08)",
-  },
-  "absolute-unit": {
-    border: "rgba(147, 197, 253, 0.3)",
-    bg: "rgba(147, 197, 253, 0.04)",
-    glow: "rgba(147, 197, 253, 0.06)",
-  },
-  "built-different": {
-    border: "rgba(167, 139, 250, 0.3)",
-    bg: "rgba(167, 139, 250, 0.04)",
-    glow: "rgba(167, 139, 250, 0.06)",
-  },
-};
-
-const tierTextColor: Record<TierKey, string> = {
-  "untouchable": "var(--color-accent)",
-  "absolute-unit": "#93c5fd",
-  "built-different": "#a78bfa",
-};
 ---
 
 <BaseLayout title="Pantheon — the GOATs of science" nav="pantheon">
@@ -117,6 +95,25 @@ const tierTextColor: Record<TierKey, string> = {
         </div>
         <div class="eyebrow mt-1">oldest birth year</div>
       </div>
+    </div>
+  </section>
+
+  {/* ----------------------------------------------------------------- */}
+  {/* Search                                                             */}
+  {/* ----------------------------------------------------------------- */}
+  <section class="mb-12 reveal">
+    <div class="relative">
+      <input
+        type="text"
+        id="pantheon-search"
+        placeholder="Search scientists..."
+        class="w-full md:w-96 px-4 py-3 text-sm font-mono rounded-lg border bg-transparent placeholder:text-faint focus:outline-none focus:border-amber-400/60 transition"
+        style="border-color: var(--color-paper-edge); color: var(--color-ink);"
+      />
+      <span
+        class="absolute right-4 top-1/2 -translate-y-1/2 text-faint text-xs font-mono pointer-events-none"
+        id="pantheon-search-count"
+      ></span>
     </div>
   </section>
 
@@ -357,4 +354,31 @@ const tierTextColor: Record<TierKey, string> = {
       All of them were right. The roster grows. So far so good.
     </p>
   </section>
+
+  <script is:inline>
+    function initPantheonSearch() {
+      var input = document.getElementById('pantheon-search');
+      var counter = document.getElementById('pantheon-search-count');
+      if (!input) return;
+
+      input.addEventListener('input', function () {
+        var q = this.value.toLowerCase().trim();
+        var cards = document.querySelectorAll('.pantheon-card');
+        var shown = 0;
+
+        cards.forEach(function (card) {
+          var text = card.textContent.toLowerCase();
+          var match = !q || text.indexOf(q) !== -1;
+          card.style.display = match ? '' : 'none';
+          if (match) shown++;
+        });
+
+        if (counter) {
+          counter.textContent = q ? shown + ' / ' + cards.length : '';
+        }
+      });
+    }
+    initPantheonSearch();
+    document.addEventListener('astro:after-swap', initPantheonSearch);
+  </script>
 </BaseLayout>

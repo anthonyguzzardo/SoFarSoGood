@@ -18,10 +18,32 @@ import { allConcepts } from "../lib/concepts.ts";
       The dense knots are where research communities are forming around an
       idea — usually propulsion, habitats, or far-side astronomy.
     </p>
-    <p class="mt-2 text-xs text-faint font-mono max-w-2xl">
-      placeholder edges from shared keywords + shared PIs · proper
-      embedding-based similarity coming in session 3
-    </p>
+    <div class="flex gap-3 mt-6">
+      <a
+        href="/"
+        class="px-3 py-1.5 text-[0.65rem] uppercase tracking-widest font-mono rounded border border-transparent text-dim hover:text-white hover:border-amber-400/40 transition"
+      >
+        Search
+      </a>
+      <a
+        href="/timeline"
+        class="px-3 py-1.5 text-[0.65rem] uppercase tracking-widest font-mono rounded border border-transparent text-dim hover:text-white hover:border-amber-400/40 transition"
+      >
+        Timeline
+      </a>
+      <span
+        class="px-3 py-1.5 text-[0.65rem] uppercase tracking-widest font-mono rounded border text-accent"
+        style="border-color: var(--color-accent-dim); background: rgba(255, 184, 77, 0.06);"
+      >
+        Atlas
+      </span>
+      <a
+        href="/subjects"
+        class="px-3 py-1.5 text-[0.65rem] uppercase tracking-widest font-mono rounded border border-transparent text-dim hover:text-white hover:border-amber-400/40 transition"
+      >
+        Subjects
+      </a>
+    </div>
   </section>
 
   <Atlas concepts={allConcepts} client:only="react" />

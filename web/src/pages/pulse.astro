@@ -20,7 +20,7 @@ import {
   generatedAt,
   topicHistory,
 } from "../lib/pulse.ts";
-import { allConcepts, categorize, piLine } from "../lib/concepts.ts";
+import { allConcepts, categorize, piLine, categoryLabel } from "../lib/concepts.ts";
 
 /* Collect rising concepts from active trending topics.
    Pulse uses short slugs (e.g. "fluidic-telescope") while the atlas uses
@@ -65,20 +65,6 @@ for (const t of allPulseTopics) {
     }
   }
 }
-
-const categoryLabel: Record<string, string> = {
-  propulsion: "Propulsion",
-  telescope: "Optics",
-  habitat: "Habitat",
-  planetary: "Worlds",
-  "life-detection": "Astrobiology",
-  power: "Energy",
-  communication: "Comms",
-  defense: "Defense",
-  robotics: "Robotics",
-  manufacturing: "Manufacturing",
-  other: "Research",
-};
 
 /* Narrative lede is now reactive inside PulseBoard — updates with time window */
 ---

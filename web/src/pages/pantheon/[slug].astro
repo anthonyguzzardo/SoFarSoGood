@@ -16,6 +16,8 @@ import {
   lifespan,
   fieldLabel,
   tierMeta,
+  tierAccent,
+  tierTextColor,
 } from "../../lib/pantheon.ts";
 import type { Titan, TierKey } from "../../lib/pantheon.ts";
 
@@ -31,30 +33,6 @@ const { influences, influenced } = getConnectedTitans(slug!);
 const { prev, next } = titanNavigation(slug!);
 const meta = tierMeta[titan.tier];
 const sameTier = allTitans.filter((t) => t.tier === titan.tier && t.slug !== slug);
-
-const tierAccent: Record<TierKey, { border: string; bg: string; glow: string }> = {
-  "untouchable": {
-    border: "rgba(255, 184, 77, 0.35)",
-    bg: "rgba(255, 184, 77, 0.06)",
-    glow: "rgba(255, 184, 77, 0.08)",
-  },
-  "absolute-unit": {
-    border: "rgba(147, 197, 253, 0.3)",
-    bg: "rgba(147, 197, 253, 0.04)",
-    glow: "rgba(147, 197, 253, 0.06)",
-  },
-  "built-different": {
-    border: "rgba(167, 139, 250, 0.3)",
-    bg: "rgba(167, 139, 250, 0.04)",
-    glow: "rgba(167, 139, 250, 0.06)",
-  },
-};
-
-const tierTextColor: Record<TierKey, string> = {
-  "untouchable": "var(--color-accent)",
-  "absolute-unit": "#93c5fd",
-  "built-different": "#a78bfa",
-};
 
 const accent = tierAccent[titan.tier];
 const textColor = tierTextColor[titan.tier];

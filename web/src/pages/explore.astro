@@ -8,6 +8,7 @@
 
 import BaseLayout from "../layouts/BaseLayout.astro";
 import { allTopics, topicsByTier } from "../lib/topics.ts";
+import { allReadingPaths } from "../lib/reading-paths.ts";
 
 const { full, standard, stub } = topicsByTier();
 ---
@@ -108,6 +109,49 @@ const { full, standard, stub } = topicsByTier();
               <div class="mt-4 eyebrow text-accent group-hover:gap-3 inline-flex items-center gap-2 transition-all">
                 <span>Explore</span>
                 <span>→</span>
+              </div>
+            </a>
+          </li>
+        ))}
+      </ul>
+    </section>
+  )}
+
+  {/* ----------------------------------------------------------------- */}
+  {/* Reading Paths — curated journeys                                  */}
+  {/* ----------------------------------------------------------------- */}
+  {allReadingPaths.length > 0 && (
+    <section class="mb-16 reveal">
+      <div class="flex items-baseline justify-between mb-4 pb-2 border-b hairline">
+        <div class="eyebrow text-accent">Follow the thread</div>
+        <a href="/paths" class="eyebrow hover:text-accent transition-colors">
+          All {allReadingPaths.length} paths &rarr;
+        </a>
+      </div>
+      <p class="text-sm text-dim mb-6 max-w-2xl leading-relaxed">
+        Curated journeys connecting ancient discoveries to modern NASA research.
+        Each path traces an idea across centuries.
+      </p>
+      <ul class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+        {allReadingPaths.slice(0, 6).map((p) => (
+          <li>
+            <a
+              href={`/path/${p.slug}`}
+              class="block group p-6 rounded-lg border hairline hover:border-amber-400/40 transition h-full"
+              style="background: var(--color-paper-raised);"
+            >
+              <div class="eyebrow text-accent mb-2">
+                {p.steps.length} stops · {p.tags.slice(0, 2).join(" · ")}
+              </div>
+              <h3 class="font-display text-lg font-semibold leading-snug group-hover:text-accent transition-colors">
+                {p.title}
+              </h3>
+              <p class="mt-2 text-sm text-dim leading-relaxed">
+                {p.subtitle}
+              </p>
+              <div class="mt-4 eyebrow text-accent group-hover:gap-3 inline-flex items-center gap-2 transition-all">
+                <span>Follow</span>
+                <span>&rarr;</span>
               </div>
             </a>
           </li>

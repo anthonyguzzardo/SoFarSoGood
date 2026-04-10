@@ -25,6 +25,7 @@ import {
   excerpt,
   stats,
   categorize,
+  categoryLabel,
 } from "../lib/concepts.ts";
 import type { ConceptCategory } from "../lib/concepts.ts";
 import { getTrendingTopics, formatScore, formatDelta } from "../lib/pulse.ts";
@@ -57,19 +58,6 @@ const resolvedHero = heroLines.map((h) => ({
   slug: allConcepts.find((c) => c.slug.includes(h.match))?.slug,
 }));
 
-const categoryLabel: Record<ConceptCategory, string> = {
-  propulsion: "Propulsion",
-  telescope: "Optics",
-  habitat: "Habitat",
-  planetary: "Worlds",
-  "life-detection": "Astrobiology",
-  power: "Energy",
-  communication: "Comms",
-  defense: "Defense",
-  robotics: "Robotics",
-  manufacturing: "Manufacturing",
-  other: "Research",
-};
 ---
 
 <BaseLayout title="So Far So Good — speculative aerospace, mapped" nav="browse">
@@ -404,6 +392,34 @@ const categoryLabel: Record<ConceptCategory, string> = {
             <div class="eyebrow mt-1">investigators</div>
           </div>
         </div>
+      </div>
+
+      {/* View mode tabs — alternate lenses on the same data */}
+      <div class="flex gap-3 mt-6">
+        <span
+          class="px-3 py-1.5 text-[0.65rem] uppercase tracking-widest font-mono rounded border text-accent"
+          style="border-color: var(--color-accent-dim); background: rgba(255, 184, 77, 0.06);"
+        >
+          Search
+        </span>
+        <a
+          href="/timeline"
+          class="px-3 py-1.5 text-[0.65rem] uppercase tracking-widest font-mono rounded border border-transparent text-dim hover:text-white hover:border-amber-400/40 transition"
+        >
+          Timeline
+        </a>
+        <a
+          href="/atlas"
+          class="px-3 py-1.5 text-[0.65rem] uppercase tracking-widest font-mono rounded border border-transparent text-dim hover:text-white hover:border-amber-400/40 transition"
+        >
+          Atlas
+        </a>
+        <a
+          href="/subjects"
+          class="px-3 py-1.5 text-[0.65rem] uppercase tracking-widest font-mono rounded border border-transparent text-dim hover:text-white hover:border-amber-400/40 transition"
+        >
+          Subjects
+        </a>
       </div>
     </div>
     <ConceptBrowser concepts={allConcepts} client:load />

@@ -18,6 +18,32 @@ import { allConcepts, stats } from "../lib/concepts.ts";
       itself — when ideas got proposed, when they hit Phase II, when the
       program leaned hard into a research wave.
     </p>
+    <div class="flex gap-3 mt-6">
+      <a
+        href="/"
+        class="px-3 py-1.5 text-[0.65rem] uppercase tracking-widest font-mono rounded border border-transparent text-dim hover:text-white hover:border-amber-400/40 transition"
+      >
+        Search
+      </a>
+      <span
+        class="px-3 py-1.5 text-[0.65rem] uppercase tracking-widest font-mono rounded border text-accent"
+        style="border-color: var(--color-accent-dim); background: rgba(255, 184, 77, 0.06);"
+      >
+        Timeline
+      </span>
+      <a
+        href="/atlas"
+        class="px-3 py-1.5 text-[0.65rem] uppercase tracking-widest font-mono rounded border border-transparent text-dim hover:text-white hover:border-amber-400/40 transition"
+      >
+        Atlas
+      </a>
+      <a
+        href="/subjects"
+        class="px-3 py-1.5 text-[0.65rem] uppercase tracking-widest font-mono rounded border border-transparent text-dim hover:text-white hover:border-amber-400/40 transition"
+      >
+        Subjects
+      </a>
+    </div>
   </section>
 
   <Timeline concepts={allConcepts} client:load />

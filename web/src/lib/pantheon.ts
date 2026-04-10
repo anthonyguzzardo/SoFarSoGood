@@ -108,6 +108,34 @@ export function titanNavigation(slug: string): { prev: Titan | null; next: Titan
   };
 }
 
+/* -------------------------------------------------------------------------- */
+/* Tier styling constants — shared across gallery + detail pages              */
+/* -------------------------------------------------------------------------- */
+
+export const tierAccent: Record<TierKey, { border: string; bg: string; glow: string }> = {
+  "untouchable": {
+    border: "rgba(255, 184, 77, 0.35)",
+    bg: "rgba(255, 184, 77, 0.06)",
+    glow: "rgba(255, 184, 77, 0.08)",
+  },
+  "absolute-unit": {
+    border: "rgba(147, 197, 253, 0.3)",
+    bg: "rgba(147, 197, 253, 0.04)",
+    glow: "rgba(147, 197, 253, 0.06)",
+  },
+  "built-different": {
+    border: "rgba(167, 139, 250, 0.3)",
+    bg: "rgba(167, 139, 250, 0.04)",
+    glow: "rgba(167, 139, 250, 0.06)",
+  },
+};
+
+export const tierTextColor: Record<TierKey, string> = {
+  "untouchable": "var(--color-accent)",
+  "absolute-unit": "#93c5fd",
+  "built-different": "#a78bfa",
+};
+
 /** Field badges */
 export function fieldLabel(field: string): string {
   const labels: Record<string, string> = {

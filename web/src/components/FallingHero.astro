@@ -430,7 +430,7 @@
     color: var(--color-ink);
     opacity: 0;
     white-space: nowrap;
-    animation: word-drift var(--drift-speed, 12s) var(--drift-delay, 0s) linear infinite;
+    animation: word-drift var(--drift-speed, 12s) var(--drift-delay, 0s) linear forwards;
     left: var(--drift-x, 0%);
   }
 
@@ -559,7 +559,7 @@
   words.forEach((el, i) => {
     const htmlEl = el as HTMLElement;
     const delay = (i * cycleDuration / total) + (Math.random() * 0.8);
-    const x = Math.random() * 60; // 0-60% from left
+    const x = Math.random() * 75; // 0-75% from left — wider spread to prevent overlap
     htmlEl.style.setProperty('--drift-delay', `${delay.toFixed(1)}s`);
     htmlEl.style.setProperty('--drift-speed', `${cycleDuration.toFixed(1)}s`);
     htmlEl.style.setProperty('--drift-x', `${x.toFixed(0)}%`);

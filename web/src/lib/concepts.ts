@@ -303,6 +303,21 @@ export type ConceptCategory =
   | "manufacturing"
   | "other";
 
+/** Human-readable labels for concept categories — shared across pages. */
+export const categoryLabel: Record<ConceptCategory, string> = {
+  propulsion: "Propulsion",
+  telescope: "Optics",
+  habitat: "Habitat",
+  planetary: "Worlds",
+  "life-detection": "Astrobiology",
+  power: "Energy",
+  communication: "Comms",
+  defense: "Defense",
+  robotics: "Robotics",
+  manufacturing: "Manufacturing",
+  other: "Research",
+};
+
 const categoryPatterns: Array<[ConceptCategory, RegExp]> = [
   ["propulsion", /propuls|sail|thrust|engine|fission|fusion|tether|electric sail|solar thermal|beamed/i],
   ["telescope", /telescope|imaging|interferom|optic|observation|aperture|reflector|lens|spectro/i],
