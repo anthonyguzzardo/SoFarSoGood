@@ -21,20 +21,39 @@ import {
   getTopSources,
   pulseStats,
 } from "../lib/pulse.ts";
-import { getConcept, categorize, piLine } from "../lib/concepts.ts";
+import { allConcepts, categorize, piLine } from "../lib/concepts.ts";
 
 const topSources = getTopSources(undefined, 6);
 
-/* Collect all related concept slugs from active trending topics */
-const risingConceptSlugs = [
-  ...new Set(
-    activePulseTopics.flatMap((t) => t.relatedConceptSlugs),
-  ),
-];
-const risingConcepts = risingConceptSlugs
-  .map((slug) => getConcept(slug))
-  .filter((c): c is NonNullable<typeof c> => c != null)
-  .slice(0, 6);
+/* Collect rising concepts from active trending topics.
+   Pulse uses short slugs (e.g. "fluidic-telescope") while the atlas uses
+   long auto-generated slugs. We do a startsWith match to bridge them. */
+type TrendInfo = { topicLabel: string; delta: number; direction: string; score: number };
+const conceptToTrend = new Map<string, TrendInfo>();
+
+function findConceptByShortSlug(shortSlug: string) {
+  return allConcepts.find((c) => c.slug.startsWith(shortSlug));
+}
+
+const risingConceptSet = new Map<string, typeof allConcepts[0]>();
+for (const t of activePulseTopics) {
+  for (const shortSlug of t.relatedConceptSlugs) {
+    const concept = findConceptByShortSlug(shortSlug);
+    if (!concept) continue;
+
+    risingConceptSet.set(concept.slug, concept);
+
+    // Keep the highest-scoring topic association
+    const existing = conceptToTrend.get(concept.slug);
+    if (!existing || t.score > existing.score) {
+      conceptToTrend.set(concept.slug, {
+        topicLabel: t.label, delta: t.delta, direction: t.direction, score: t.score,
+      });
+    }
+  }
+}
+
+const risingConcepts = [...risingConceptSet.values()].slice(0, 6);
 
 const categoryLabel: Record<string, string> = {
   propulsion: "Propulsion",
@@ -151,92 +170,187 @@ const lede = narrativeLede();
   </section>
 
   {/* ----------------------------------------------------------------- */}
-  {/* Top sources across platforms                                      */}
+  {/* Top sources — featured hero + ranked list                         */}
   {/* ----------------------------------------------------------------- */}
-  {topSources.length > 0 && (
+  {topSources.length > 0 && (() => {
+    const featured = topSources[0];
+    const rest = topSources.slice(1);
+    const fColor = featured.platform === "reddit"
+      ? { bg: "rgba(255, 69, 0, 0.15)", fg: "#ff6b35", label: "Reddit" }
+      : featured.platform === "youtube"
+        ? { bg: "rgba(255, 0, 0, 0.15)", fg: "#ff4444", label: "YouTube" }
+        : { bg: "rgba(255, 102, 0, 0.15)", fg: "#ff8c00", label: "Hacker News" };
+
+    return (
     <section class="mb-24 reveal">
-      <div class="eyebrow text-accent mb-6">Top discussions this week</div>
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-        {topSources.map((source) => {
-          const pColor = source.platform === "reddit"
-            ? { bg: "rgba(255, 69, 0, 0.15)", fg: "#ff6b35" }
-            : source.platform === "youtube"
-              ? { bg: "rgba(255, 0, 0, 0.15)", fg: "#ff4444" }
-              : { bg: "rgba(255, 102, 0, 0.15)", fg: "#ff8c00" };
-          const pLabel = source.platform === "reddit"
-            ? "Reddit"
-            : source.platform === "youtube"
-              ? "YouTube"
-              : "Hacker News";
-          return (
-          <a
-            href={source.url}
-            target="_blank"
-            rel="noopener noreferrer"
-            class="group rounded-lg border hairline hover:border-amber-400/40 transition hover:-translate-y-0.5 flex flex-col overflow-hidden"
-            style="background: var(--color-paper-raised);"
-          >
-            {source.thumbnail && (
-              <div class="relative w-full aspect-video overflow-hidden">
-                <img
-                  src={source.thumbnail}
-                  alt=""
-                  class="w-full h-full object-cover"
-                  loading="lazy"
-                />
-                <div class="absolute inset-0 flex items-center justify-center bg-black/20 group-hover:bg-black/10 transition-colors">
-                  <div class="w-12 h-12 rounded-full flex items-center justify-center" style="background: rgba(255,0,0,0.9);">
-                    <svg viewBox="0 0 24 24" class="w-5 h-5 ml-0.5" fill="white"><path d="M8 5v14l11-7z" /></svg>
-                  </div>
+      <div class="eyebrow text-accent mb-6">The signal this week</div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-5 gap-4">
+        {/* Featured discussion — hero treatment */}
+        <a
+          href={featured.url}
+          target="_blank"
+          rel="noopener noreferrer"
+          class="group lg:col-span-3 rounded-xl border overflow-hidden transition-all hover:border-amber-400/40 hover:-translate-y-0.5 flex flex-col"
+          style="background: var(--color-paper-raised); border-color: var(--color-paper-edge);"
+        >
+          {featured.thumbnail && (
+            <div class="relative w-full aspect-video overflow-hidden">
+              <img
+                src={featured.thumbnail}
+                alt=""
+                class="w-full h-full object-cover"
+                loading="lazy"
+              />
+              <div class="absolute inset-0 flex items-center justify-center bg-black/20 group-hover:bg-black/10 transition-colors">
+                <div class="w-14 h-14 rounded-full flex items-center justify-center" style="background: rgba(255,0,0,0.9);">
+                  <svg viewBox="0 0 24 24" class="w-6 h-6 ml-0.5" fill="white"><path d="M8 5v14l11-7z" /></svg>
                 </div>
               </div>
-            )}
-            <div class="p-5 flex flex-col flex-1">
-              <div class="flex items-center gap-2 mb-3">
-                <span
-                  class="text-[0.6rem] font-mono uppercase tracking-widest px-2 py-0.5 rounded"
-                  style={`background: ${pColor.bg}; color: ${pColor.fg};`}
-                >
-                  {pLabel}
-                </span>
-                {source.subreddit && (
-                  <span class="text-[0.6rem] font-mono text-faint">
-                    r/{source.subreddit}
-                  </span>
-                )}
-              </div>
-
-              <p class="font-display text-sm font-medium leading-relaxed group-hover:text-accent transition-colors flex-1">
-                {source.title}
-              </p>
-
-              <div class="mt-3 flex items-center gap-3 text-[0.65rem] font-mono text-dim">
-                <span>
-                  {source.platform === "youtube" ? "▶" : source.platform === "reddit" ? "↑" : "▴"} {source.score.toLocaleString()}
-                </span>
-                {source.commentCount != null && (
-                  <span>{source.commentCount} comments</span>
-                )}
-              </div>
             </div>
-          </a>
-          );
-        })}
+          )}
+          <div class="p-6 flex flex-col flex-1">
+            <div class="flex items-center gap-2 mb-3">
+              <span
+                class="text-[0.6rem] font-mono uppercase tracking-widest px-2 py-0.5 rounded"
+                style={`background: ${fColor.bg}; color: ${fColor.fg};`}
+              >
+                {fColor.label}
+              </span>
+              {featured.subreddit && (
+                <span class="text-[0.6rem] font-mono" style="color: var(--color-ink-faint);">
+                  r/{featured.subreddit}
+                </span>
+              )}
+              <span
+                class="text-[0.55rem] font-mono uppercase tracking-widest ml-auto px-2 py-0.5 rounded"
+                style="background: rgba(255,184,77,0.08); color: var(--color-accent); border: 1px solid rgba(255,184,77,0.15);"
+              >
+                Top signal
+              </span>
+            </div>
+
+            <p class="font-display text-lg md:text-xl font-semibold leading-snug group-hover:text-accent transition-colors flex-1">
+              {featured.title}
+            </p>
+
+            <div class="mt-4 flex items-center gap-4 text-[0.65rem] font-mono" style="color: var(--color-ink-dim);">
+              <span style="color: var(--color-accent);">
+                {featured.platform === "youtube" ? "▶" : featured.platform === "reddit" ? "↑" : "▴"} {featured.score.toLocaleString()}
+              </span>
+              {featured.commentCount != null && (
+                <span>{featured.commentCount.toLocaleString()} comments</span>
+              )}
+              {featured.author && (
+                <span>by {featured.author}</span>
+              )}
+            </div>
+          </div>
+        </a>
+
+        {/* Ranked list of remaining discussions */}
+        <div class="lg:col-span-2 flex flex-col gap-1">
+          <div
+            class="text-[0.6rem] font-mono uppercase tracking-widest px-3 py-2 mb-1"
+            style="color: var(--color-ink-faint);"
+          >
+            Also trending
+          </div>
+          {rest.map((source, i) => {
+            const pColor = source.platform === "reddit"
+              ? { bg: "rgba(255, 69, 0, 0.15)", fg: "#ff6b35" }
+              : source.platform === "youtube"
+                ? { bg: "rgba(255, 0, 0, 0.15)", fg: "#ff4444" }
+                : { bg: "rgba(255, 102, 0, 0.15)", fg: "#ff8c00" };
+            const pIcon = source.platform === "reddit" ? "↑" : source.platform === "youtube" ? "▶" : "▴";
+            return (
+              <a
+                href={source.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                class="group flex items-start gap-3 px-3 py-3 rounded-lg transition-all hover:bg-white/[0.02]"
+              >
+                {/* Rank number */}
+                <span
+                  class="text-xs font-mono w-4 text-right shrink-0 pt-0.5"
+                  style="color: var(--color-ink-faint);"
+                >
+                  {i + 2}
+                </span>
+
+                {/* Content */}
+                <div class="flex-1 min-w-0">
+                  <p
+                    class="text-sm font-medium leading-snug group-hover:text-accent transition-colors line-clamp-2"
+                    style={`font-family: var(--font-display); color: var(--color-ink);`}
+                  >
+                    {source.title}
+                  </p>
+                  <div class="mt-1 flex items-center gap-2 text-[0.6rem] font-mono" style="color: var(--color-ink-faint);">
+                    <span
+                      class="px-1.5 py-0.5 rounded"
+                      style={`background: ${pColor.bg}; color: ${pColor.fg};`}
+                    >
+                      {source.platform === "reddit" ? `r/${source.subreddit || "space"}` : source.platform === "hackernews" ? "HN" : "YT"}
+                    </span>
+                    <span>{pIcon} {source.score.toLocaleString()}</span>
+                    {source.commentCount != null && (
+                      <span>{source.commentCount} comments</span>
+                    )}
+                  </div>
+                </div>
+              </a>
+            );
+          })}
+        </div>
       </div>
     </section>
-  )}
+    );
+  })()}
 
   {/* ----------------------------------------------------------------- */}
   {/* Rising concepts — atlas entries linked to trending topics          */}
   {/* ----------------------------------------------------------------- */}
   {risingConcepts.length > 0 && (
     <section class="mb-24 reveal">
-      <div class="eyebrow text-accent mb-6">Related in the atlas</div>
+      <div class="eyebrow text-accent mb-6">Rising in the atlas</div>
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
         {risingConcepts.map((c) => {
           const cat = categorize(c);
+          const trend = conceptToTrend.get(c.slug);
+          const arrow = trend?.direction === "up" ? "▲" : trend?.direction === "down" ? "▼" : "—";
+          const deltaStr = trend && trend.delta !== 0
+            ? `${trend.delta > 0 ? "+" : ""}${trend.delta}%`
+            : null;
+          const badgeColor = trend?.direction === "up"
+            ? { bg: "rgba(74, 222, 128, 0.10)", border: "rgba(74, 222, 128, 0.25)", text: "#4ade80" }
+            : trend?.direction === "down"
+              ? { bg: "rgba(248, 113, 113, 0.10)", border: "rgba(248, 113, 113, 0.25)", text: "#f87171" }
+              : { bg: "rgba(255, 184, 77, 0.10)", border: "rgba(255, 184, 77, 0.25)", text: "var(--color-accent)" };
+
           return (
-            <a href={`/concept/${c.slug}`} class="concept-card group">
+            <a href={`/concept/${c.slug}`} class="concept-card group relative">
+              {/* Momentum badge — overlaid top-right */}
+              {trend && (
+                <div
+                  class="absolute -top-2 -right-2 z-10 flex items-center gap-1 px-2.5 py-1 rounded-full text-[0.65rem] font-mono font-semibold backdrop-blur-sm"
+                  style={`background: ${badgeColor.bg}; border: 1px solid ${badgeColor.border}; color: ${badgeColor.text}; box-shadow: 0 2px 8px rgba(0,0,0,0.3);`}
+                >
+                  <span>{arrow}</span>
+                  {deltaStr && <span>{deltaStr}</span>}
+                </div>
+              )}
+
+              {/* Trending topic link — what's driving this concept */}
+              {trend && (
+                <div
+                  class="mb-2 text-[0.6rem] font-mono uppercase tracking-widest"
+                  style="color: var(--color-accent); opacity: 0.7;"
+                >
+                  Trending via {trend.topicLabel}
+                </div>
+              )}
+
               <div class="card-tags">
                 <span class="card-tag tag-funded">Funded</span>
                 {c.phase && (
