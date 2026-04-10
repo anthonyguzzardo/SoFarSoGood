@@ -19,6 +19,7 @@ import {
   activePulseTopics,
   generatedAt,
   getTopSources,
+  topicHistory,
 } from "../lib/pulse.ts";
 import { allConcepts, categorize, piLine } from "../lib/concepts.ts";
 
@@ -127,6 +128,7 @@ const categoryLabel: Record<string, string> = {
         topics={allPulseTopics}
         generatedAt={generatedAt}
         conceptMap={conceptMap}
+        topicHistory={topicHistory}
         client:load
       />
     </div>

@@ -16,10 +16,20 @@ interface ConceptInfo {
   title: string;
 }
 
+interface TopicWeek {
+  date: string;
+  score: number;
+  rank: number;
+  mentions: number;
+}
+
+type TopicHistory = Record<string, TopicWeek[]>;
+
 interface Props {
   topics: PulseTopic[];
   generatedAt: string;
   conceptMap?: Record<string, ConceptInfo>;
+  topicHistory?: TopicHistory;
 }
 
 /* -------------------------------------------------------------------------- */
@@ -87,12 +97,16 @@ function HeroSpotlight({
   isExpanded,
   conceptMap = {},
   trajectory,
+  weeklyHistory,
+  showTrendLine,
 }: {
   topic: PulseTopic;
   onToggle: () => void;
   isExpanded: boolean;
   conceptMap?: Record<string, ConceptInfo>;
   trajectory?: number;
+  weeklyHistory?: TopicWeek[];
+  showTrendLine?: boolean;
 }) {
   const topSource = topic.sources[0];
   const resolvedConcepts = topic.relatedConceptSlugs
@@ -204,6 +218,19 @@ function HeroSpotlight({
                   ▾
                 </span>
               </div>
+
+              {/* 4-week trend line */}
+              {showTrendLine && weeklyHistory && (
+                <div className="mt-3 flex items-center gap-3">
+                  <span
+                    className="text-[0.55rem] font-mono uppercase tracking-widest shrink-0"
+                    style={{ color: "var(--color-ink-faint)" }}
+                  >
+                    4-week trend
+                  </span>
+                  <TrendLine weeks={weeklyHistory} id={`hero-${topic.slug}`} width={120} height={28} />
+                </div>
+              )}
 
               {/* Reality check — what NASA is actually funding */}
               {resolvedConcepts.length > 0 ? (
@@ -488,6 +515,138 @@ function Sparkline({ sources, id, days = 7 }: { sources: PulseSource[]; id: stri
 }
 
 /* -------------------------------------------------------------------------- */
+/* TrendLine — multi-week score trajectory from historical snapshots          */
+/* -------------------------------------------------------------------------- */
+
+const WEEK_LABELS = ["Mar 13", "Mar 20", "Mar 27", "Apr 3", "Now"];
+
+function TrendLine({ weeks, id, width = 72, height = 20 }: { weeks: TopicWeek[]; id: string; width?: number; height?: number }) {
+  const [hovered, setHovered] = useState<number | null>(null);
+  const w = width;
+  const h = height;
+  const padY = 2;
+
+  const scores = weeks.map((wk) => wk.score);
+  const max = Math.max(...scores, 1);
+  const hasActivity = scores.some((s) => s > 0);
+
+  if (!hasActivity) {
+    // All zeros — show flat faint line
+    return (
+      <div className="shrink-0" style={{ width: w, height: h }}>
+        <svg width={w} height={h} viewBox={`0 0 ${w} ${h}`}>
+          <line x1={0} y1={h - 1} x2={w} y2={h - 1} stroke="#ffb84d" strokeWidth={1} opacity={0.08} />
+        </svg>
+      </div>
+    );
+  }
+
+  // Compute points
+  const points = scores.map((s, i) => ({
+    x: (i / (scores.length - 1)) * w,
+    y: padY + (1 - s / max) * (h - padY * 2),
+  }));
+
+  const linePath = points.map((p, i) => `${i === 0 ? "M" : "L"}${p.x.toFixed(1)},${p.y.toFixed(1)}`).join(" ");
+  const areaPath = linePath + ` L${w},${h} L0,${h} Z`;
+
+  // Color based on trend direction (last vs first non-zero)
+  const firstNonZero = scores.findIndex((s) => s > 0);
+  const lastScore = scores[scores.length - 1];
+  const refScore = scores[firstNonZero] || 0;
+  const trending = lastScore > refScore ? "up" : lastScore < refScore ? "down" : "flat";
+  const lineColor = trending === "up" ? "#4ade80" : trending === "down" ? "#f87171" : "#ffb84d";
+  const fillColor = trending === "up" ? "rgba(74, 222, 128, 0.12)" : trending === "down" ? "rgba(248, 113, 113, 0.08)" : "rgba(255, 184, 77, 0.08)";
+
+  return (
+    <div
+      className="relative shrink-0"
+      style={{ width: w, height: h }}
+      onMouseLeave={() => setHovered(null)}
+    >
+      <svg width={w} height={h} viewBox={`0 0 ${w} ${h}`} style={{ overflow: "visible" }}>
+        {/* Fill area */}
+        <path d={areaPath} fill={fillColor} />
+        {/* Line */}
+        <path d={linePath} fill="none" stroke={lineColor} strokeWidth={1.5} strokeLinecap="round" strokeLinejoin="round" opacity={0.8} />
+        {/* Data points */}
+        {points.map((p, i) => (
+          <g key={i}>
+            <circle
+              cx={p.x}
+              cy={p.y}
+              r={hovered === i ? 3 : (i === scores.length - 1 ? 2.5 : 1.5)}
+              fill={hovered === i ? lineColor : (i === scores.length - 1 ? lineColor : "var(--color-paper-raised)")}
+              stroke={lineColor}
+              strokeWidth={1}
+              opacity={hovered === i ? 1 : (i === scores.length - 1 ? 1 : 0.6)}
+            />
+            {/* Invisible hover target */}
+            <rect
+              x={p.x - w / (scores.length * 2)}
+              y={0}
+              width={w / scores.length}
+              height={h}
+              fill="transparent"
+              onMouseEnter={() => setHovered(i)}
+            />
+          </g>
+        ))}
+      </svg>
+
+      {/* Tooltip */}
+      {hovered !== null && (
+        <div
+          className="absolute z-50 pointer-events-none"
+          style={{
+            bottom: h + 6,
+            left: points[hovered].x,
+            transform: "translateX(-50%)",
+          }}
+        >
+          <div
+            className="rounded-md px-2.5 py-1.5 text-[0.55rem] font-mono leading-tight whitespace-nowrap"
+            style={{
+              background: "rgba(15, 15, 15, 0.95)",
+              border: "1px solid rgba(255,184,77,0.2)",
+              boxShadow: "0 4px 12px rgba(0,0,0,0.5)",
+              color: "var(--color-ink-dim)",
+            }}
+          >
+            <div className="font-semibold mb-0.5" style={{ color: "var(--color-ink)" }}>
+              {WEEK_LABELS[hovered]}
+            </div>
+            {weeks[hovered].score > 0 ? (
+              <div className="flex flex-col gap-0.5">
+                <div>
+                  Score: <span style={{ color: lineColor }}>{formatScore(weeks[hovered].score)}</span>
+                </div>
+                <div>
+                  Rank: <span style={{ color: "var(--color-accent)" }}>#{weeks[hovered].rank || "—"}</span>
+                </div>
+                <div>
+                  {weeks[hovered].mentions} sources
+                </div>
+              </div>
+            ) : (
+              <div style={{ color: "var(--color-ink-faint)" }}>No activity</div>
+            )}
+          </div>
+          <div
+            className="mx-auto w-0 h-0"
+            style={{
+              borderLeft: "4px solid transparent",
+              borderRight: "4px solid transparent",
+              borderTop: "4px solid rgba(15, 15, 15, 0.95)",
+            }}
+          />
+        </div>
+      )}
+    </div>
+  );
+}
+
+/* -------------------------------------------------------------------------- */
 /* Source card                                                                 */
 /* -------------------------------------------------------------------------- */
 
@@ -597,6 +756,7 @@ function TopicRow({
   sparklineDays = 7,
   allSources,
   conceptMap = {},
+  weeklyHistory,
 }: {
   topic: PulseTopic;
   rank: number;
@@ -608,6 +768,7 @@ function TopicRow({
   sparklineDays?: number;
   allSources?: PulseSource[];
   conceptMap?: Record<string, ConceptInfo>;
+  weeklyHistory?: TopicWeek[];
 }) {
   const topSource = topic.sources[0];
 
@@ -678,9 +839,13 @@ function TopicRow({
             )}
           </div>
 
-          {/* Activity sparkline — 7-day heartbeat */}
+          {/* Trend chart — weekly trend (7d) or daily activity (3d) */}
           <div className="hidden sm:flex items-center shrink-0">
-            <Sparkline sources={allSources ?? topic.sources} id={topic.slug} days={sparklineDays} />
+            {weeklyHistory && sparklineDays === 7 ? (
+              <TrendLine weeks={weeklyHistory} id={topic.slug} />
+            ) : (
+              <Sparkline sources={allSources ?? topic.sources} id={topic.slug} days={sparklineDays} />
+            )}
           </div>
 
           {/* Score */}
@@ -913,7 +1078,7 @@ function generateLede(
   return { lede: parts.join(". ") + ".", stats };
 }
 
-export default function PulseBoard({ topics, generatedAt, conceptMap = {} }: Props) {
+export default function PulseBoard({ topics, generatedAt, conceptMap = {}, topicHistory = {} }: Props) {
   const [expanded, setExpanded] = useState<string | null>(null);
   const [showQuiet, setShowQuiet] = useState(false);
   const [copiedSlug, setCopiedSlug] = useState<string | null>(null);
@@ -1085,6 +1250,8 @@ export default function PulseBoard({ topics, generatedAt, conceptMap = {} }: Pro
             isExpanded={expanded === heroTopic.slug}
             conceptMap={conceptMap}
             trajectory={trajectoryMap.get(heroTopic.slug)}
+            weeklyHistory={topicHistory[heroTopic.slug]}
+            showTrendLine={timeWindow === "7d"}
           />
           {/* Hero expanded sources */}
           {expanded === heroTopic.slug && heroTopic.sources.length > 0 && (
@@ -1238,7 +1405,7 @@ export default function PulseBoard({ topics, generatedAt, conceptMap = {} }: Pro
             <span className="w-6 text-right">#</span>
             <span className="w-4" />
             <span className="flex-1">Topic</span>
-            <span className="w-[72px] hidden sm:block text-right">{timeWindow === "3d" ? "3-day" : "7-day"}</span>
+            <span className="w-[72px] hidden sm:block text-right">{timeWindow === "3d" ? "3-day" : "4-week"}</span>
             <span className="w-16 text-right">Score</span>
             <span className="w-14 text-right">Change</span>
             <span className="w-8 text-right hidden md:block">Hits</span>
@@ -1266,6 +1433,7 @@ export default function PulseBoard({ topics, generatedAt, conceptMap = {} }: Pro
           sparklineDays={timeWindow === "3d" ? 3 : 7}
           allSources={originalSourcesMap.get(topic.slug)}
           conceptMap={conceptMap}
+          weeklyHistory={topicHistory[topic.slug]}
           rowRef={(el) => {
             if (el) rowRefs.current.set(topic.slug, el);
           }}
@@ -1333,18 +1501,37 @@ export default function PulseBoard({ topics, generatedAt, conceptMap = {} }: Pro
           })}
         </span>
         <span className="hidden sm:flex items-center gap-3 ml-auto">
-          <span className="flex items-center gap-1">
-            <span className="inline-block w-2 h-2 rounded-sm" style={{ background: "#ff6b35" }} />
-            Reddit
-          </span>
-          <span className="flex items-center gap-1">
-            <span className="inline-block w-2 h-2 rounded-sm" style={{ background: "#ffb84d" }} />
-            HN
-          </span>
-          <span className="flex items-center gap-1">
-            <span className="inline-block w-2 h-2 rounded-sm" style={{ background: "#ff4444" }} />
-            YouTube
-          </span>
+          {timeWindow === "7d" ? (
+            <>
+              <span className="flex items-center gap-1">
+                <span className="inline-block w-3 h-[2px]" style={{ background: "#4ade80" }} />
+                Rising
+              </span>
+              <span className="flex items-center gap-1">
+                <span className="inline-block w-3 h-[2px]" style={{ background: "#f87171" }} />
+                Falling
+              </span>
+              <span className="flex items-center gap-1">
+                <span className="inline-block w-3 h-[2px]" style={{ background: "#ffb84d" }} />
+                Flat
+              </span>
+            </>
+          ) : (
+            <>
+              <span className="flex items-center gap-1">
+                <span className="inline-block w-2 h-2 rounded-sm" style={{ background: "#ff6b35" }} />
+                Reddit
+              </span>
+              <span className="flex items-center gap-1">
+                <span className="inline-block w-2 h-2 rounded-sm" style={{ background: "#ffb84d" }} />
+                HN
+              </span>
+              <span className="flex items-center gap-1">
+                <span className="inline-block w-2 h-2 rounded-sm" style={{ background: "#ff4444" }} />
+                YouTube
+              </span>
+            </>
+          )}
         </span>
       </div>
     </div>

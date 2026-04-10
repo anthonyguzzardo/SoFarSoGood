@@ -7,6 +7,10 @@
  */
 
 import rawPulse from "../../../data/pulse.json" with { type: "json" };
+import rawWeek1 from "../../../data/pulse-2026-03-13.json" with { type: "json" };
+import rawWeek2 from "../../../data/pulse-2026-03-20.json" with { type: "json" };
+import rawWeek3 from "../../../data/pulse-2026-03-27.json" with { type: "json" };
+import rawWeek4 from "../../../data/pulse-2026-04-03.json" with { type: "json" };
 
 /* -------------------------------------------------------------------------- */
 /* Types                                                                      */
@@ -133,3 +137,63 @@ export const pulseStats = {
   totalSources: activePulseTopics.reduce((s, t) => s + t.sources.length, 0),
   topScore: activePulseTopics[0]?.score ?? 0,
 };
+
+/* -------------------------------------------------------------------------- */
+/* Historical snapshots — multi-week trend data                               */
+/* -------------------------------------------------------------------------- */
+
+export interface TopicWeek {
+  date: string;       // ISO date label for the week
+  score: number;
+  rank: number;       // 1-indexed, 0 = not present
+  mentions: number;
+}
+
+export type TopicHistory = Record<string, TopicWeek[]>;
+
+const snapshots: PulseData[] = [
+  rawWeek1 as PulseData,
+  rawWeek2 as PulseData,
+  rawWeek3 as PulseData,
+  rawWeek4 as PulseData,
+  pulse,
+];
+
+const snapshotDates = [
+  "2026-03-13",
+  "2026-03-20",
+  "2026-03-27",
+  "2026-04-03",
+  "2026-04-09", // current
+];
+
+/** Multi-week history for every topic: slug → array of weekly data points. */
+export const topicHistory: TopicHistory = (() => {
+  const history: TopicHistory = {};
+
+  // Collect all known slugs
+  const allSlugs = new Set<string>();
+  for (const snap of snapshots) {
+    for (const t of snap.topics) allSlugs.add(t.slug);
+  }
+
+  for (const slug of allSlugs) {
+    const weeks: TopicWeek[] = [];
+    for (let i = 0; i < snapshots.length; i++) {
+      const active = snapshots[i].topics
+        .filter((t) => t.mentions > 0)
+        .sort((a, b) => b.score - a.score);
+      const topic = snapshots[i].topics.find((t) => t.slug === slug);
+      const rankIndex = active.findIndex((t) => t.slug === slug);
+      weeks.push({
+        date: snapshotDates[i],
+        score: topic?.score ?? 0,
+        rank: rankIndex >= 0 ? rankIndex + 1 : 0,
+        mentions: topic?.mentions ?? 0,
+      });
+    }
+    history[slug] = weeks;
+  }
+
+  return history;
+})();
