@@ -217,6 +217,7 @@ function HeroSpotlight({
 /* -------------------------------------------------------------------------- */
 
 function Sparkline({ sources, id, days = 7 }: { sources: PulseSource[]; id: string; days?: number }) {
+  const [hovered, setHovered] = useState<number | null>(null);
   const now = Date.now();
   const dayMs = 86400000;
 
@@ -246,86 +247,190 @@ function Sparkline({ sources, id, days = 7 }: { sources: PulseSource[]; id: stri
   const HN_COLOR = "#ffb84d";
   const YT_COLOR = "#ff4444";
 
+  // Day labels for tooltip
+  const dayLabels: string[] = [];
+  for (let i = 0; i < days; i++) {
+    const daysAgo = days - 1 - i;
+    if (daysAgo === 0) dayLabels.push("Today");
+    else if (daysAgo === 1) dayLabels.push("Yesterday");
+    else {
+      const d = new Date(now - daysAgo * dayMs);
+      dayLabels.push(d.toLocaleDateString("en-US", { weekday: "short", month: "short", day: "numeric" }));
+    }
+  }
+
   return (
-    <svg
-      width={w}
-      height={h}
-      viewBox={`0 0 ${w} ${h}`}
-      className="shrink-0"
-      style={{ overflow: "visible" }}
+    <div
+      className="relative shrink-0"
+      style={{ width: w, height: h }}
+      onMouseLeave={() => setHovered(null)}
     >
-      {totals.map((count, i) => {
-        const x = i * (barW + gap);
-        const isToday = i === days - 1;
+      <svg
+        width={w}
+        height={h}
+        viewBox={`0 0 ${w} ${h}`}
+        style={{ overflow: "visible" }}
+      >
+        {totals.map((count, i) => {
+          const x = i * (barW + gap);
+          const isToday = i === days - 1;
 
-        if (count === 0) {
-          return (
-            <rect
-              key={i}
-              x={x}
-              y={h - 2}
-              width={barW}
-              height={2}
-              rx={1.5}
-              fill="#ffb84d"
-              opacity={0.08}
-            />
-          );
-        }
-
-        const totalH = (count / max) * (h - 2);
-        const baseY = h - totalH;
-        const opacity = 0.3 + (count / max) * 0.7;
-
-        // Stack: Reddit on bottom, HN in middle, YT on top
-        const rH = (reddit[i] / count) * totalH;
-        const hH = (hn[i] / count) * totalH;
-        const yH = (yt[i] / count) * totalH;
-
-        // Determine segments bottom-up
-        const segments: { y: number; height: number; fill: string }[] = [];
-        let cursor = h;
-        if (reddit[i] > 0) {
-          segments.push({ y: cursor - rH, height: rH, fill: REDDIT_COLOR });
-          cursor -= rH;
-        }
-        if (hn[i] > 0) {
-          segments.push({ y: cursor - hH, height: hH, fill: HN_COLOR });
-          cursor -= hH;
-        }
-        if (yt[i] > 0) {
-          segments.push({ y: cursor - yH, height: yH, fill: YT_COLOR });
-        }
-
-        return (
-          <g key={i} opacity={opacity}>
-            {isToday && (
-              <animate
-                attributeName="opacity"
-                values={`${opacity};${Math.max(opacity - 0.2, 0.3)};${opacity}`}
-                dur="2s"
-                repeatCount="indefinite"
-              />
-            )}
-            <clipPath id={`spark-${id}-${i}`}>
-              <rect x={x} y={baseY} width={barW} height={totalH} rx={1.5} />
-            </clipPath>
-            <g clipPath={`url(#spark-${id}-${i})`}>
-              {segments.map((seg, j) => (
+          if (count === 0) {
+            return (
+              <g key={i}>
                 <rect
-                  key={j}
                   x={x}
-                  y={seg.y}
+                  y={h - 2}
                   width={barW}
-                  height={seg.height}
-                  fill={seg.fill}
+                  height={2}
+                  rx={1.5}
+                  fill="#ffb84d"
+                  opacity={0.08}
                 />
-              ))}
+                {/* Invisible hover target */}
+                <rect
+                  x={x}
+                  y={0}
+                  width={barW}
+                  height={h}
+                  fill="transparent"
+                  onMouseEnter={() => setHovered(i)}
+                />
+              </g>
+            );
+          }
+
+          const totalH = (count / max) * (h - 2);
+          const baseY = h - totalH;
+          const opacity = 0.3 + (count / max) * 0.7;
+
+          // Stack: Reddit on bottom, HN in middle, YT on top
+          const rH = (reddit[i] / count) * totalH;
+          const hH = (hn[i] / count) * totalH;
+          const yH = (yt[i] / count) * totalH;
+
+          // Determine segments bottom-up
+          const segments: { y: number; height: number; fill: string }[] = [];
+          let cursor = h;
+          if (reddit[i] > 0) {
+            segments.push({ y: cursor - rH, height: rH, fill: REDDIT_COLOR });
+            cursor -= rH;
+          }
+          if (hn[i] > 0) {
+            segments.push({ y: cursor - hH, height: hH, fill: HN_COLOR });
+            cursor -= hH;
+          }
+          if (yt[i] > 0) {
+            segments.push({ y: cursor - yH, height: yH, fill: YT_COLOR });
+          }
+
+          return (
+            <g key={i} opacity={hovered === i ? 1 : opacity}>
+              {isToday && hovered !== i && (
+                <animate
+                  attributeName="opacity"
+                  values={`${opacity};${Math.max(opacity - 0.2, 0.3)};${opacity}`}
+                  dur="2s"
+                  repeatCount="indefinite"
+                />
+              )}
+              <clipPath id={`spark-${id}-${i}`}>
+                <rect x={x} y={baseY} width={barW} height={totalH} rx={1.5} />
+              </clipPath>
+              <g clipPath={`url(#spark-${id}-${i})`}>
+                {segments.map((seg, j) => (
+                  <rect
+                    key={j}
+                    x={x}
+                    y={seg.y}
+                    width={barW}
+                    height={seg.height}
+                    fill={seg.fill}
+                  />
+                ))}
+              </g>
+              {/* Invisible hover target covering full height */}
+              <rect
+                x={x}
+                y={0}
+                width={barW}
+                height={h}
+                fill="transparent"
+                onMouseEnter={() => setHovered(i)}
+              />
             </g>
-          </g>
-        );
-      })}
-    </svg>
+          );
+        })}
+      </svg>
+
+      {/* Tooltip */}
+      {hovered !== null && (
+        <div
+          className="absolute z-50 pointer-events-none"
+          style={{
+            bottom: h + 6,
+            left: hovered * (barW + gap) + barW / 2,
+            transform: "translateX(-50%)",
+          }}
+        >
+          <div
+            className="rounded-md px-2.5 py-1.5 text-[0.55rem] font-mono leading-tight whitespace-nowrap"
+            style={{
+              background: "rgba(15, 15, 15, 0.95)",
+              border: "1px solid rgba(255,184,77,0.2)",
+              boxShadow: "0 4px 12px rgba(0,0,0,0.5)",
+              color: "var(--color-ink-dim)",
+            }}
+          >
+            <div className="font-semibold mb-1" style={{ color: "var(--color-ink)" }}>
+              {dayLabels[hovered]}
+            </div>
+            {totals[hovered] === 0 ? (
+              <div style={{ color: "var(--color-ink-faint)" }}>No activity</div>
+            ) : (
+              <div className="flex flex-col gap-0.5">
+                {reddit[hovered] > 0 && (
+                  <div className="flex items-center gap-1.5">
+                    <span className="inline-block w-1.5 h-1.5 rounded-sm" style={{ background: REDDIT_COLOR }} />
+                    <span>Reddit</span>
+                    <span style={{ color: REDDIT_COLOR, marginLeft: "auto" }}>{reddit[hovered]}</span>
+                  </div>
+                )}
+                {hn[hovered] > 0 && (
+                  <div className="flex items-center gap-1.5">
+                    <span className="inline-block w-1.5 h-1.5 rounded-sm" style={{ background: HN_COLOR }} />
+                    <span>HN</span>
+                    <span style={{ color: HN_COLOR, marginLeft: "auto" }}>{hn[hovered]}</span>
+                  </div>
+                )}
+                {yt[hovered] > 0 && (
+                  <div className="flex items-center gap-1.5">
+                    <span className="inline-block w-1.5 h-1.5 rounded-sm" style={{ background: YT_COLOR }} />
+                    <span>YouTube</span>
+                    <span style={{ color: YT_COLOR, marginLeft: "auto" }}>{yt[hovered]}</span>
+                  </div>
+                )}
+                <div
+                  className="mt-0.5 pt-0.5"
+                  style={{ borderTop: "1px solid rgba(255,255,255,0.06)", color: "var(--color-ink-faint)" }}
+                >
+                  {totals[hovered]} total
+                </div>
+              </div>
+            )}
+          </div>
+          {/* Arrow */}
+          <div
+            className="mx-auto w-0 h-0"
+            style={{
+              borderLeft: "4px solid transparent",
+              borderRight: "4px solid transparent",
+              borderTop: "4px solid rgba(15, 15, 15, 0.95)",
+            }}
+          />
+        </div>
+      )}
+    </div>
   );
 }
 

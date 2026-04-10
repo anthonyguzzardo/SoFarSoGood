@@ -194,16 +194,46 @@ delta = (score_this_period - score_last_period) / score_last_period × 100
 6. **Nav update**
    - Add "Pulse" to BaseLayout nav
 
-### Phase 2 — YouTube + richer cards (1 session)
+### Phase 2 — Temporal depth + data breadth (next)
 
-- Add YouTube Data API integration
-- Thumbnail cards for top videos
-- "Community picks" section (most-recommended media)
+The UI is ready for data it doesn't have yet. This phase is about making
+the data layer worthy of the presentation layer.
 
-### Phase 3 — Live updates (future)
+**Backdated ingestion — give Pulse a memory**
+- Run `fetch-pulse.ts` for past 4-8 weeks using Reddit/HN time-range params
+- Store snapshots as `data/pulse-YYYY-MM-DD.json`
+- Sparklines and deltas computed from real multi-week history
+- A topic *rising from nothing to #1 over three weeks* is the kind of
+  narrative a single snapshot can never show
 
-- Move from build-time to edge function (Cloudflare Workers)
-- Real-time or near-real-time pulse updates
+**New data sources — give Pulse authority**
+- **ArXiv** — free API, preprints for physics/astro. When a topic trends on
+  Reddit AND a new paper dropped on ArXiv the same week, that's signal.
+  Endpoint: `export.arxiv.org/api/query`
+- **NASA NTRS** — we already ingest this for concepts. Press releases and
+  technical reports matching pulse topics would close the loop between
+  "what people are talking about" and "what NASA is actually doing."
+- **ESA** — press releases via RSS. Free, structured, authoritative.
+- **YouTube** — thumbnails already work via img.youtube.com (no API key).
+  Full search needs API key (free tier = 10k units/day, search = 100/call).
+  Worth adding when we have a key.
+
+**The editorial bridge — hype vs. reality**
+The unique value of Pulse is the tension between popular excitement and
+scientific ground truth. Each topic should eventually surface:
+- What the internet is saying (Reddit/HN/YouTube — social sentiment)
+- What scientists are publishing (ArXiv/journals — primary literature)
+- What's actually being funded (NIAC/DARPA concepts — ground truth)
+
+This three-layer view is what no other trending dashboard does. Reddit
+shows you hype. ArXiv shows you papers. Pulse shows you both and asks
+"how close are we really?"
+
+### Phase 3 — Operational pulse (future)
+
+- Automated ingestion via GitHub Actions cron (daily or hourly)
+- Historical trend pages per topic (`/pulse/black-holes` showing weeks of data)
+- Move to edge function (Cloudflare Workers) for near-real-time updates
 - User can "follow" topics for notifications
 
 ---
@@ -211,31 +241,42 @@ delta = (score_this_period - score_last_period) / score_last_period × 100
 ## Design decisions
 
 **Why build-time, not runtime?**
-The atlas is already static/Astro. A daily pulse refresh is plenty for v0 —
+The atlas is already static/Astro. A daily pulse refresh is plenty for v1 —
 trending topics don't change by the minute. This avoids API costs, keeps
 the site fast, and fits the existing architecture. We can move to edge
 functions later.
 
 **Why start with Reddit + HN?**
 Both have free, accessible APIs. Reddit is the richest source for diverse
-discussion. HN adds a technical/scientific quality signal. YouTube and
-Twitter can layer on later.
+discussion. HN adds a technical/scientific quality signal. ArXiv and
+institutional sources layer on next to add epistemic weight.
 
 **Why not just show Reddit posts?**
 The value is in the *synthesis*. Showing "solar sails are trending" backed
-by the best Reddit thread + a YouTube explainer + the related NIAC concept
-is something no single platform does. The atlas becomes the hub.
+by the best Reddit thread + a YouTube explainer + an ArXiv preprint + the
+related NIAC concept is something no single platform does. The atlas
+becomes the hub where popular interest meets scientific reality.
+
+**Why backdate before adding live updates?**
+A trend without history is just a number. "Black Holes: 2.2k score" means
+nothing. "Black Holes: risen from #8 to #1 over three weeks after the
+Nature paper on merging supermassive pairs" — that's a story. History
+first, freshness second.
 
 ---
 
 ## Open questions
 
-- [ ] Reddit API: use official API (requires app registration) or a public
-      archive like Arctic Shift?
+- [x] Reddit API: use official API or public archive? → Using public
+      JSON endpoints (`.json` suffix), works without auth
 - [ ] How often to rebuild? Daily cron via GitHub Actions? On every push?
 - [ ] Should trending scores factor in the atlas's own data (e.g., which
       concepts have the most connections/reading paths)?
 - [ ] Do we want user accounts eventually (to let people "follow" topics)?
+- [ ] ArXiv integration: match by keyword against pulse topics, or use
+      arXiv category codes (astro-ph, gr-qc, hep-th)?
+- [ ] How to present hype-vs-reality without being preachy? The tone
+      should be curious, not corrective.
 
 ---
 
@@ -245,3 +286,10 @@ This should feel like opening Bloomberg Terminal for space nerds — except
 instead of stock tickers, you see which ideas about the future have
 momentum right now. The leaderboard is the hook. The expanded sources are
 the substance. The link back to atlas concepts is the bridge.
+
+The soul of Pulse lives in the gap between what the internet is excited
+about and what's actually being built. Reddit says "warp drives!" and the
+atlas says "here's the actual metamaterial sail study NASA funded for $125k."
+That tension — popular hype meeting scientific ground truth — is what makes
+this more than a dashboard. It's a translation layer between public
+curiosity and real science.
