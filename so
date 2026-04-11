@@ -7,7 +7,10 @@ if [ -z "$1" ]; then
   exit 1
 fi
 
+git add .
+git stash
 git pull origin main --rebase
+git stash pop
 git add .
 git diff --cached --quiet || git commit -m "$1"
 git push origin main
