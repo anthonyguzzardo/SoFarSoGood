@@ -1,97 +1,98 @@
-# Contributing to NIAC Atlas
+# Contributing
 
-First off — thank you. This project exists because curious people care about
-making scientific knowledge more accessible. Every contribution matters.
+You found this repo. You're curious enough to click into the contributing guide.
+That already puts you ahead of most people. Welcome.
 
-## How contributions work
+This project is building a living atlas of scientific knowledge — the kind of
+thing that should have existed ten years ago but didn't because nobody was
+stubborn enough to start it. If you want to help make it better, here's how.
 
-This is a public repo, but **only maintainers can push directly**. Everyone else
-contributes through the fork + pull request workflow:
+## The workflow
 
-1. **Fork** the repo to your own GitHub account
-2. **Clone** your fork locally
-3. **Create a branch** for your work (see naming below)
+Only maintainers push directly. Everyone else:
+
+1. **Fork** the repo
+2. **Clone** your fork
+3. **Branch** off `main` (see naming below)
 4. **Make your changes**, commit, push to your fork
-5. **Open a pull request** back to this repo's `main` branch
+5. **Open a pull request** back to `main`
 
-If you've never done this before, GitHub has a solid
-[guide on forking](https://docs.github.com/en/get-started/quickstart/fork-a-repo).
+Never done this before? GitHub's
+[forking guide](https://docs.github.com/en/get-started/quickstart/fork-a-repo)
+will get you there in five minutes.
 
 ## Branch naming
 
-Use a short prefix so it's obvious what kind of work it is:
+Keep it obvious:
 
-| Prefix | Use |
-|--------|-----|
+| Prefix | When to use it |
+|--------|----------------|
 | `feat/` | New feature or capability |
 | `fix/` | Bug fix |
-| `data/` | Data corrections, new concept entries, metadata fixes |
-| `docs/` | Documentation changes |
-| `refactor/` | Code restructuring without behavior change |
+| `data/` | Data corrections, new entries, metadata fixes |
+| `docs/` | Documentation |
+| `refactor/` | Code restructuring, no behavior change |
 
-Examples: `feat/semantic-search`, `data/fix-phase-labels`, `docs/add-setup-guide`
+Examples: `feat/semantic-search`, `data/fix-phase-labels`, `feat/add-titan-schrodinger`
 
-## Pull request guidelines
+## Pull requests
 
-- **One concern per PR.** Don't mix a bug fix with a new feature. Small, focused
-  PRs get reviewed faster.
-- **Describe what and why.** The title should be concise. The description should
-  explain what changed and why. If it fixes an issue, reference it (`Fixes #42`).
-- **Test your changes locally.** Run `npm run dev` and `npm run build` before
-  submitting. If it doesn't build, it won't get merged.
-- **Screenshots welcome.** If your change is visual, include a before/after
-  screenshot.
+- **One thing per PR.** A bug fix and a feature in the same PR will sit in review
+  limbo. Keep them separate.
+- **Say what and why.** The diff shows *what* changed. The description should
+  explain *why* it matters.
+- **Build before you submit.** Run `npm run dev` and `npm run build`. If it
+  doesn't build, it doesn't ship.
+- **Screenshots if it's visual.** Before/after. Takes thirty seconds. Saves
+  everyone time.
 
 ## Issues
 
-Found a bug? Have an idea? [Open an issue.](../../issues)
+Found something broken? Have an idea? Want to nominate a titan for the Pantheon?
+[Open an issue.](../../issues)
 
-- **Bug reports:** Include what you expected, what happened, and steps to
-  reproduce.
-- **Feature ideas:** Describe the problem you want solved, not just the solution
-  you imagine. Context helps us design the right thing.
-- **Data corrections:** If a NIAC concept has wrong metadata (wrong phase, wrong
-  PI, missing info), open an issue with the concept name and what needs fixing.
+- **Bugs:** What you expected. What happened. Steps to reproduce.
+- **Ideas:** Describe the problem, not just the solution. Context helps us
+  design the right thing instead of the fast thing.
+- **Data corrections:** If a NIAC concept has wrong metadata or a Pantheon entry
+  has bad info, tell us. Accuracy matters — especially in the Tea section.
 
 ## Setting up locally
 
 ```bash
-# Clone your fork
-git clone https://github.com/YOUR_USERNAME/niac-atlas.git
-cd niac-atlas
-
-# Install dependencies
+git clone https://github.com/YOUR_USERNAME/SoFarSoGood.git
+cd SoFarSoGood
 npm install
-
-# Run the dev server
-npm run dev        # → http://localhost:3000
-
-# Build to check for errors
-npm run build
+npm run dev        # -> http://localhost:3000
+npm run build      # check for errors before submitting
 ```
 
-Requires Node 25+ (we use native `.ts` via `--experimental-strip-types`).
+Requires Node 25+ (native `.ts` via `--experimental-strip-types`).
 
-## What we especially need help with
+## Where help matters most
 
-- **Data quality:** Phase labels, PI attribution, and concept metadata are
-  imperfect. If you know NIAC history, your corrections are gold.
-- **Historical NIAC concepts (1998-2016):** We're missing the early years.
-- **Accessibility:** Screen reader support, keyboard navigation, color contrast.
-- **Performance:** Lighthouse audits, bundle size, loading speed.
+- **Data quality.** Phase labels, PI attribution, concept metadata. If you know
+  NIAC history, your corrections are worth more than code.
+- **Historical NIAC concepts (1998-2016).** The early years are missing.
+- **Pantheon research.** New titans, better tea, deeper power moves. Do the
+  reading. Get the details right.
+- **Accessibility.** Screen readers, keyboard nav, color contrast. The atlas
+  should work for everyone.
+- **Performance.** Lighthouse scores, bundle size, load times. The Pantheon
+  gallery page is heavy. Ideas welcome.
 
 ## Code style
 
-- TypeScript everywhere. No `any` unless absolutely necessary.
+- TypeScript everywhere. No `any` unless you can defend it.
 - Astro for pages, React for interactive islands.
-- Tailwind for styling. No custom CSS unless Tailwind can't do it.
-- Keep it simple. Don't over-abstract.
+- Tailwind for styling. Custom CSS only when Tailwind genuinely can't do it.
+- Simple over clever. If a junior dev can't read it in thirty seconds, simplify it.
 
 ## License
 
-By contributing, you agree that your contributions will be licensed under the
-same license as the project.
+By contributing, you agree your work falls under the same license as the project.
 
 ---
 
-Questions? Open an issue or start a discussion. We're friendly.
+Questions? Open an issue. We don't bite. We might tier-rank your pull request
+though.
