@@ -268,6 +268,29 @@ const latestAlive = allTitans.find((t) => t.died === null);
                 </p>
               </div>
 
+              {/* The Tea */}
+              {t.tea && t.tea.length > 0 && (
+                <details class="mb-4 group/tea">
+                  <summary
+                    class="cursor-pointer text-xs font-mono uppercase tracking-widest py-2 flex items-center gap-2 select-none transition-colors hover:brightness-125"
+                    style={`color: ${textColor};`}
+                  >
+                    <span class="transition-transform group-open/tea:rotate-90">&#9654;</span>
+                    The Tea ({t.tea.length})
+                  </summary>
+                  <div class="mt-2 space-y-2">
+                    {t.tea.map((item) => (
+                      <p
+                        class="text-sm leading-relaxed pl-4 border-l-2"
+                        style={`border-color: ${accent.border}; color: var(--color-ink-dim);`}
+                      >
+                        {item}
+                      </p>
+                    ))}
+                  </div>
+                </details>
+              )}
+
               {/* Rivalries */}
               {t.rivalries.length > 0 && (
                 <div class="mb-4">

@@ -183,6 +183,25 @@ const textColor = tierTextColor[titan.tier];
     </section>
 
     {/* ----------------------------------------------------------------- */}
+    {/* The Tea — humanizing contradictions                               */}
+    {/* ----------------------------------------------------------------- */}
+    {titan.tea && titan.tea.length > 0 && (
+      <section class="mb-16 reveal">
+        <h2 class="font-display text-2xl font-semibold mb-6">The Tea</h2>
+        <div class="space-y-4 max-w-3xl">
+          {titan.tea.map((t) => (
+            <div
+              class="px-6 py-5 rounded-xl border text-base leading-relaxed"
+              style={`border-color: ${accent.border}; background: ${accent.bg}; color: var(--color-ink-dim);`}
+            >
+              {t}
+            </div>
+          ))}
+        </div>
+      </section>
+    )}
+
+    {/* ----------------------------------------------------------------- */}
     {/* Influence Web — the connective tissue                             */}
     {/* ----------------------------------------------------------------- */}
     {(influences.length > 0 || influenced.length > 0) && (

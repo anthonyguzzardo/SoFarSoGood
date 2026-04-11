@@ -36,6 +36,7 @@ export interface Titan {
   funFact: string;
   influences: string[];
   influenced: string[];
+  tea?: string[];
   rivalries: string[];
   media: PantheonMedia[];
 }
