@@ -1,24 +1,14 @@
 {
-  "generatedAt": "2026-04-10T17:40:45.280Z",
+  "generatedAt": "2026-04-10T18:57:17.771Z",
   "topics": [
     {
       "slug": "black-holes",
       "label": "Black Holes",
-      "score": 3959,
-      "delta": 6390,
-      "direction": "up",
-      "mentions": 53,
+      "score": 2244,
+      "delta": -50,
+      "direction": "down",
+      "mentions": 49,
       "sources": [
-        {
-          "platform": "reddit",
-          "title": "Direct evidence of a pair of extremely massive black holes orbiting each other very closely, believed to be in the final phase before merging, the duo could merge in as short as 100 years",
-          "url": "https://reddit.com/r/science/comments/1sfoao3/direct_evidence_of_a_pair_of_extremely_massive/",
-          "score": 1700,
-          "author": "Shiny-Tie-126",
-          "subreddit": "science",
-          "commentCount": 123,
-          "publishedAt": "2026-04-08T09:50:02.000Z"
-        },
         {
           "platform": "arxiv",
           "title": "The Heavy Tailed Non-Gaussianity of the Supermassive Black Hole Gravitational Wave Background",
@@ -117,6 +107,15 @@
           "authors": "José Miguel Rojas, Mehrab Momennia",
           "arxivCategory": "gr-qc",
           "publishedAt": "2026-04-08T21:08:16.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Tracing Active Galactic Nuclei Properties Through a Changing-look Event",
+          "url": "https://arxiv.org/abs/2604.07561",
+          "score": 50,
+          "authors": "Joel Carpenter, Sandra Raimundo, Charlotte Angus et al.",
+          "arxivCategory": "astro-ph.GA",
+          "publishedAt": "2026-04-08T20:02:30.000Z"
         }
       ],
       "relatedConceptSlugs": [
@@ -127,10 +126,10 @@
     {
       "slug": "gravitational-waves",
       "label": "Gravitational Waves",
-      "score": 1983,
-      "delta": 6297,
-      "direction": "up",
-      "mentions": 40,
+      "score": 1950,
+      "delta": -2,
+      "direction": "steady",
+      "mentions": 39,
       "sources": [
         {
           "platform": "arxiv",
@@ -249,8 +248,8 @@
       "slug": "space-telescopes",
       "label": "Space Telescopes",
       "score": 1853,
-      "delta": 5691,
-      "direction": "up",
+      "delta": -6,
+      "direction": "steady",
       "mentions": 38,
       "sources": [
         {
@@ -368,137 +367,12 @@
       ]
     },
     {
-      "slug": "fusion-propulsion",
-      "label": "Fusion Propulsion",
-      "score": 1751,
-      "delta": 1763,
-      "direction": "up",
-      "mentions": 20,
-      "sources": [
-        {
-          "platform": "reddit",
-          "title": "Solving the mystery that could help fusion reactors survive decades of use",
-          "url": "https://reddit.com/r/science/comments/1sbrvog/solving_the_mystery_that_could_help_fusion/",
-          "score": 1150,
-          "author": "DavidIsIt",
-          "subreddit": "science",
-          "commentCount": 57,
-          "publishedAt": "2026-04-03T22:27:53.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Monte Carlo Simulations of Suprathermal Enhancement in Advanced Nuclear Fusion Fuels",
-          "url": "https://arxiv.org/abs/2604.06769",
-          "score": 50,
-          "authors": "Marcus Borscz, Thomas A. Mehlhorn, Patrick A. Burr et al.",
-          "arxivCategory": "physics.plasm-ph",
-          "publishedAt": "2026-04-08T07:38:21.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Resolution-Independent Machine Learning Heat Flux Closure for ICF Plasmas",
-          "url": "https://arxiv.org/abs/2604.03439",
-          "score": 50,
-          "authors": "M. Luo, A. R. Bell, F. Miniati et al.",
-          "arxivCategory": "physics.plasm-ph",
-          "publishedAt": "2026-04-03T20:26:41.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Self-subsidizing Mercury Remediation with Fusion Reactors",
-          "url": "https://arxiv.org/abs/2604.02590",
-          "score": 50,
-          "authors": "J. F. Parisi, J. Azad",
-          "arxivCategory": "physics.plasm-ph",
-          "publishedAt": "2026-04-03T00:00:39.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "CMA-Unfold A Covariance Matrix Adaptation unfolding algorithm for stacked calorimeter detectors",
-          "url": "https://arxiv.org/abs/2603.22930",
-          "score": 50,
-          "authors": "G. Fauvel, A. Arefiev, M. Manuel et al.",
-          "arxivCategory": "physics.plasm-ph",
-          "publishedAt": "2026-03-24T08:23:23.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "On the influence of optical smoothing techniques on cross-beam energy transfer",
-          "url": "https://arxiv.org/abs/2603.22180",
-          "score": 50,
-          "authors": "Y. Lalaire, C. Ruyer, A. Debayle et al.",
-          "arxivCategory": "physics.plasm-ph",
-          "publishedAt": "2026-03-23T16:43:16.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Investigation of Laser Plasma Instabilities driven by Coupled High-Power Laser Beams in Magnetized Underdense Plasmas",
-          "url": "https://arxiv.org/abs/2603.15476",
-          "score": 50,
-          "authors": "C. L. C. Lacoste, D. Oportus, J. Béard et al.",
-          "arxivCategory": "physics.plasm-ph",
-          "publishedAt": "2026-03-16T16:09:39.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Enhancement of Proton Acceleration via Geometric Confinement in Near Critical Density-filled Targets",
-          "url": "https://arxiv.org/abs/2603.13838",
-          "score": 50,
-          "authors": "Cheng-Qi Zhang, Yang He, Mamat Ali Bake et al.",
-          "arxivCategory": "physics.plasm-ph",
-          "publishedAt": "2026-03-14T08:45:52.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Multi-Agent Collaboration for Automated Design Exploration on High Performance Computing Systems",
-          "url": "https://arxiv.org/abs/2603.11515",
-          "score": 50,
-          "authors": "Harshitha Menon, Charles F. Jekel, Kevin Korner et al.",
-          "arxivCategory": "cs.AI",
-          "publishedAt": "2026-03-12T04:01:27.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Development of a 3D-CNN-based Prediction Model for Migration Barriers in Plasma-Wall Interactions",
-          "url": "https://arxiv.org/abs/2604.05521",
-          "score": 50,
-          "authors": "Seiki Saito, Keisuke Takeuchi, Hiroaki Nakamura et al.",
-          "arxivCategory": "physics.plasm-ph",
-          "publishedAt": "2026-04-07T07:18:58.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Hydrogen Inventory Simulations for PFCs (HISP)",
-          "url": "https://arxiv.org/abs/2604.04751",
-          "score": 50,
-          "authors": "Kaelyn Dunnell, Adria Lleal, Etienne Augustin Hodille et al.",
-          "arxivCategory": "physics.plasm-ph",
-          "publishedAt": "2026-04-06T15:18:49.000Z"
-        },
-        {
-          "platform": "reddit",
-          "title": "In a meeting with the Biden administration, Sam Altman claimed that by 2026 an extensive network of nuclear-fusion reactors across the United States would power the A.I. boom.",
-          "url": "https://reddit.com/r/fusion/comments/1sdz0wd/in_a_meeting_with_the_biden_administration_sam/",
-          "score": 49,
-          "author": "Baking",
-          "subreddit": "fusion",
-          "commentCount": 22,
-          "publishedAt": "2026-04-06T13:34:08.000Z"
-        }
-      ],
-      "relatedConceptSlugs": [
-        "gradient-field-imploding-liner-fusion-propulsion",
-        "fusion-enabled-pluto-orbiter",
-        "pulsed-fission-fusion"
-      ]
-    },
-    {
       "slug": "dark-matter",
       "label": "Dark Matter & Dark Energy",
       "score": 1450,
-      "delta": 1459,
-      "direction": "up",
-      "mentions": 32,
+      "delta": -5,
+      "direction": "steady",
+      "mentions": 31,
       "sources": [
         {
           "platform": "arxiv",
@@ -617,10 +491,10 @@
     {
       "slug": "astrobiology",
       "label": "Astrobiology",
-      "score": 965,
-      "delta": 6333,
-      "direction": "up",
-      "mentions": 21,
+      "score": 900,
+      "delta": -11,
+      "direction": "steady",
+      "mentions": 18,
       "sources": [
         {
           "platform": "arxiv",
@@ -740,8 +614,8 @@
       "slug": "quantum-comms",
       "label": "Quantum Communication",
       "score": 800,
-      "delta": 39900,
-      "direction": "up",
+      "delta": 0,
+      "direction": "steady",
       "mentions": 16,
       "sources": [
         {
@@ -860,10 +734,10 @@
     {
       "slug": "exoplanets",
       "label": "Exoplanets",
-      "score": 620,
-      "delta": 3547,
-      "direction": "up",
-      "mentions": 14,
+      "score": 600,
+      "delta": -10,
+      "direction": "steady",
+      "mentions": 12,
       "sources": [
         {
           "platform": "arxiv",
@@ -983,8 +857,8 @@
       "slug": "asteroid-mining",
       "label": "Asteroid Mining",
       "score": 550,
-      "delta": -100,
-      "direction": "down",
+      "delta": -15,
+      "direction": "steady",
       "mentions": 11,
       "sources": [
         {
@@ -1093,241 +967,116 @@
       ]
     },
     {
-      "slug": "starship",
-      "label": "Starship & SpaceX",
-      "score": 461,
-      "delta": -52,
+      "slug": "fusion-propulsion",
+      "label": "Fusion Propulsion",
+      "score": 500,
+      "delta": -72,
       "direction": "down",
-      "mentions": 21,
-      "sources": [
-        {
-          "platform": "reddit",
-          "title": "Another SpaceX land swap saga unfolds in South Texas",
-          "url": "https://reddit.com/r/spacex/comments/1sf22fw/another_spacex_land_swap_saga_unfolds_in_south/",
-          "score": 90,
-          "author": "ExpressNews",
-          "subreddit": "spacex",
-          "commentCount": 49,
-          "publishedAt": "2026-04-07T17:07:26.000Z"
-        },
-        {
-          "platform": "reddit",
-          "title": "LA SpaceX Launch - Odd Orb 4/6/26",
-          "url": "https://reddit.com/r/SpaceXLounge/comments/1sekhx5/la_spacex_launch_odd_orb_4626/",
-          "score": 64,
-          "author": "popPOPpopPOPpopPP",
-          "subreddit": "SpaceXLounge",
-          "commentCount": 10,
-          "publishedAt": "2026-04-07T03:19:45.000Z"
-        },
-        {
-          "platform": "reddit",
-          "title": "Teams encapsulated the Cygnus XL spacecraft ahead of Falcon 9’s fourth launch of Northrop Grumman's commercial resupply mission to the ISS.",
-          "url": "https://reddit.com/r/SpaceXLounge/comments/1sgz9ia/teams_encapsulated_the_cygnus_xl_spacecraft_ahead/",
-          "score": 57,
-          "author": "avboden",
-          "subreddit": "SpaceXLounge",
-          "commentCount": 16,
-          "publishedAt": "2026-04-09T19:14:05.000Z"
-        },
-        {
-          "platform": "youtube",
-          "title": "SpaceX and OpenAI: The Mega IPO Grift [video]",
-          "url": "https://www.youtube.com/watch?v=iOyFja87uyw",
-          "score": 26,
-          "thumbnail": "https://img.youtube.com/vi/iOyFja87uyw/mqdefault.jpg",
-          "publishedAt": "2026-04-05T11:14:09.000Z"
-        },
-        {
-          "platform": "hackernews",
-          "title": "SpaceX and OpenAI: The Mega IPO Grift [video]",
-          "url": "https://www.youtube.com/watch?v=iOyFja87uyw",
-          "score": 26,
-          "author": "throw0101c",
-          "commentCount": 10,
-          "publishedAt": "2026-04-05T11:14:09.000Z"
-        },
-        {
-          "platform": "reddit",
-          "title": "Starship landing trajectory",
-          "url": "https://reddit.com/r/SpaceXLounge/comments/1sey968/starship_landing_trajectory/",
-          "score": 24,
-          "author": "Schnollmeister42",
-          "subreddit": "SpaceXLounge",
-          "commentCount": 16,
-          "publishedAt": "2026-04-07T14:52:47.000Z"
-        },
-        {
-          "platform": "hackernews",
-          "title": "Elon Musk insists banks working on SpaceX IPO must buy Grok subscriptions",
-          "url": "https://arstechnica.com/tech-policy/2026/04/elon-musk-insists-banks-working-on-spacex-ipo-must-buy-grok-subscriptions/",
-          "score": 20,
-          "author": "abawany",
-          "commentCount": 5,
-          "publishedAt": "2026-04-03T21:41:56.000Z"
-        },
-        {
-          "platform": "reddit",
-          "title": "With Starship's future lengthening in mind, this 37-engine setup just popped in my head. Other considerations aside, would the center 7 be enough to steer the whole thing with their 15° gimbaling range?",
-          "url": "https://reddit.com/r/SpaceXLounge/comments/1sho9gi/with_starships_future_lengthening_in_mind_this/",
-          "score": 19,
-          "author": "A3bilbaNEO",
-          "subreddit": "SpaceXLounge",
-          "commentCount": 11,
-          "publishedAt": "2026-04-10T14:32:59.000Z"
-        },
-        {
-          "platform": "hackernews",
-          "title": "SpaceX Pushes Back Crucial Starship Test Launch",
-          "url": "https://www.wsj.com/business/spacex-pushes-back-crucial-starship-test-launch-e1fb91f5",
-          "score": 14,
-          "author": "bookmtn",
-          "commentCount": 14,
-          "publishedAt": "2026-04-05T01:19:49.000Z"
-        },
-        {
-          "platform": "hackernews",
-          "title": "Big Banks Seeking a Piece of SpaceX's IPO Must Subscribe to Elon Musk's Grok",
-          "url": "https://www.nytimes.com/2026/04/03/business/spacex-ipo-grok-elon-musk.html",
-          "score": 11,
-          "author": "codydh",
-          "commentCount": 0,
-          "publishedAt": "2026-04-04T20:00:37.000Z"
-        },
-        {
-          "platform": "hackernews",
-          "title": "Musk asks SpaceX IPO banks to buy Grok AI subscriptions, NYT reports",
-          "url": "https://www.reuters.com/business/finance/musk-asks-spacex-ipo-banks-buy-grok-ai-subscriptions-nyt-reports-2026-04-03/",
-          "score": 10,
-          "author": "1vuio0pswjnm7",
-          "commentCount": 0,
-          "publishedAt": "2026-04-06T03:31:58.000Z"
-        },
-        {
-          "platform": "reddit",
-          "title": "r/SpaceX Starlink 17-21 Official Launch Discussion &amp; Updates Thread!",
-          "url": "https://reddit.com/r/spacex/comments/1sgdgm0/rspacex_starlink_1721_official_launch_discussion/",
-          "score": 9,
-          "author": "rSpaceXHosting",
-          "subreddit": "spacex",
-          "commentCount": 1,
-          "publishedAt": "2026-04-09T02:46:00.000Z"
-        }
-      ],
-      "relatedConceptSlugs": [
-        "extraterrestrial-regolith-derived-atmospheric-entry-heat-shields",
-        "phase-i-final-report-nasa-institute-for-advanced-concepts-combined-heat-shield-a"
-      ]
-    },
-    {
-      "slug": "starlink",
-      "label": "Starlink & Satellite Internet",
-      "score": 271,
-      "delta": 984,
-      "direction": "up",
-      "mentions": 9,
+      "mentions": 10,
       "sources": [
         {
           "platform": "arxiv",
-          "title": "Validated Intent Compilation for Constrained Routing in LEO Mega-Constellations",
-          "url": "https://arxiv.org/abs/2604.07264",
+          "title": "Monte Carlo Simulations of Suprathermal Enhancement in Advanced Nuclear Fusion Fuels",
+          "url": "https://arxiv.org/abs/2604.06769",
           "score": 50,
-          "authors": "Yuanhang Li",
-          "arxivCategory": "cs.CR",
-          "publishedAt": "2026-04-08T16:29:25.000Z"
+          "authors": "Marcus Borscz, Thomas A. Mehlhorn, Patrick A. Burr et al.",
+          "arxivCategory": "physics.plasm-ph",
+          "publishedAt": "2026-04-08T07:38:21.000Z"
         },
         {
           "platform": "arxiv",
-          "title": "Coverage and Rate Analysis of Follower-Based LEO Satellite Networks: A Stochastic Geometry Approach",
-          "url": "https://arxiv.org/abs/2604.01265",
+          "title": "Resolution-Independent Machine Learning Heat Flux Closure for ICF Plasmas",
+          "url": "https://arxiv.org/abs/2604.03439",
           "score": 50,
-          "authors": "Juanjuan Ru, Ruibo Wang, Mohamed-Slim Alouini",
-          "arxivCategory": "cs.IT",
-          "publishedAt": "2026-04-01T13:44:19.000Z"
+          "authors": "M. Luo, A. R. Bell, F. Miniati et al.",
+          "arxivCategory": "physics.plasm-ph",
+          "publishedAt": "2026-04-03T20:26:41.000Z"
         },
         {
           "platform": "arxiv",
-          "title": "Hierarchical Battery-Aware Game Algorithm for ISL Power Allocation in LEO Mega-Constellations",
-          "url": "https://arxiv.org/abs/2603.29506",
+          "title": "Self-subsidizing Mercury Remediation with Fusion Reactors",
+          "url": "https://arxiv.org/abs/2604.02590",
           "score": 50,
-          "authors": "Kangkang Sun, Jianhua Li, Xiuzhen Chen et al.",
-          "arxivCategory": "cs.GT",
-          "publishedAt": "2026-03-31T09:47:13.000Z"
+          "authors": "J. F. Parisi, J. Azad",
+          "arxivCategory": "physics.plasm-ph",
+          "publishedAt": "2026-04-03T00:00:39.000Z"
         },
         {
           "platform": "arxiv",
-          "title": "Toward Multi-Satellite Cooperative Transmission: A Joint Framework for CSI Acquisition, Feedback, and Phase Synchronization",
-          "url": "https://arxiv.org/abs/2603.28195",
+          "title": "CMA-Unfold A Covariance Matrix Adaptation unfolding algorithm for stacked calorimeter detectors",
+          "url": "https://arxiv.org/abs/2603.22930",
           "score": 50,
-          "authors": "Yiming Zhu, Yafei Wang, Carla Amatetti et al.",
-          "arxivCategory": "eess.SP",
-          "publishedAt": "2026-03-30T09:03:58.000Z"
+          "authors": "G. Fauvel, A. Arefiev, M. Manuel et al.",
+          "arxivCategory": "physics.plasm-ph",
+          "publishedAt": "2026-03-24T08:23:23.000Z"
         },
         {
           "platform": "arxiv",
-          "title": "jaxsgp4: GPU-accelerated mega-constellation propagation with batch parallelism",
-          "url": "https://arxiv.org/abs/2603.27830",
+          "title": "On the influence of optical smoothing techniques on cross-beam energy transfer",
+          "url": "https://arxiv.org/abs/2603.22180",
           "score": 50,
-          "authors": "Charlotte Priestley, Will Handley",
-          "arxivCategory": "cs.DC",
-          "publishedAt": "2026-03-29T19:39:05.000Z"
+          "authors": "Y. Lalaire, C. Ruyer, A. Debayle et al.",
+          "arxivCategory": "physics.plasm-ph",
+          "publishedAt": "2026-03-23T16:43:16.000Z"
         },
         {
-          "platform": "reddit",
-          "title": "Faster Satellite Internet Speeds for Starlink and Amazon LEO — FCC April 30 Vote Explains Why",
-          "url": "https://reddit.com/r/BlueOrigin/comments/1shac1z/faster_satellite_internet_speeds_for_starlink_and/",
-          "score": 9,
-          "author": "orangechen1115",
-          "subreddit": "BlueOrigin",
-          "commentCount": 3,
-          "publishedAt": "2026-04-10T02:46:32.000Z"
+          "platform": "arxiv",
+          "title": "Investigation of Laser Plasma Instabilities driven by Coupled High-Power Laser Beams in Magnetized Underdense Plasmas",
+          "url": "https://arxiv.org/abs/2603.15476",
+          "score": 50,
+          "authors": "C. L. C. Lacoste, D. Oportus, J. Béard et al.",
+          "arxivCategory": "physics.plasm-ph",
+          "publishedAt": "2026-03-16T16:09:39.000Z"
         },
         {
-          "platform": "hackernews",
-          "title": "Show HN: Lagsim – Simulate real network conditions (3G, WiFi, Starlink)",
-          "url": "https://github.com/rs/lagsim",
-          "score": 4,
-          "author": "poitrus",
-          "commentCount": 0,
-          "publishedAt": "2026-04-05T01:26:35.000Z"
+          "platform": "arxiv",
+          "title": "Enhancement of Proton Acceleration via Geometric Confinement in Near Critical Density-filled Targets",
+          "url": "https://arxiv.org/abs/2603.13838",
+          "score": 50,
+          "authors": "Cheng-Qi Zhang, Yang He, Mamat Ali Bake et al.",
+          "arxivCategory": "physics.plasm-ph",
+          "publishedAt": "2026-03-14T08:45:52.000Z"
         },
         {
-          "platform": "hackernews",
-          "title": "Starlink Replacement: Russia Develops Stratospheric UAV Relay",
-          "url": "https://en.topwar.ru/278156-zamena-starlink-v-rossii-razrabotali-stratosfernyj-bpla-retransljator.html",
-          "score": 2,
-          "author": "B1FF_PSUVM",
-          "commentCount": 0,
-          "publishedAt": "2026-04-04T16:27:13.000Z"
+          "platform": "arxiv",
+          "title": "Multi-Agent Collaboration for Automated Design Exploration on High Performance Computing Systems",
+          "url": "https://arxiv.org/abs/2603.11515",
+          "score": 50,
+          "authors": "Harshitha Menon, Charles F. Jekel, Kevin Korner et al.",
+          "arxivCategory": "cs.AI",
+          "publishedAt": "2026-03-12T04:01:27.000Z"
         },
         {
-          "platform": "youtube",
-          "title": "Eavesdropping on Satellite Internet: Trying the \"Dontlookup\" Code",
-          "url": "https://www.youtube.com/watch?v=VE7S1nk4F04",
-          "score": 2,
-          "thumbnail": "https://img.youtube.com/vi/VE7S1nk4F04/mqdefault.jpg",
-          "publishedAt": "2026-04-09T01:44:23.000Z"
+          "platform": "arxiv",
+          "title": "Development of a 3D-CNN-based Prediction Model for Migration Barriers in Plasma-Wall Interactions",
+          "url": "https://arxiv.org/abs/2604.05521",
+          "score": 50,
+          "authors": "Seiki Saito, Keisuke Takeuchi, Hiroaki Nakamura et al.",
+          "arxivCategory": "physics.plasm-ph",
+          "publishedAt": "2026-04-07T07:18:58.000Z"
         },
         {
-          "platform": "hackernews",
-          "title": "Eavesdropping on Satellite Internet: Trying the \"Dontlookup\" Code",
-          "url": "https://www.youtube.com/watch?v=VE7S1nk4F04",
-          "score": 2,
-          "author": "emsign",
-          "commentCount": 0,
-          "publishedAt": "2026-04-09T01:44:23.000Z"
+          "platform": "arxiv",
+          "title": "Hydrogen Inventory Simulations for PFCs (HISP)",
+          "url": "https://arxiv.org/abs/2604.04751",
+          "score": 50,
+          "authors": "Kaelyn Dunnell, Adria Lleal, Etienne Augustin Hodille et al.",
+          "arxivCategory": "physics.plasm-ph",
+          "publishedAt": "2026-04-06T15:18:49.000Z"
         }
       ],
       "relatedConceptSlugs": [
-        "sps-alpha"
+        "gradient-field-imploding-liner-fusion-propulsion",
+        "fusion-enabled-pluto-orbiter",
+        "pulsed-fission-fusion"
       ]
     },
     {
       "slug": "artemis",
       "label": "Artemis & Lunar Return",
       "score": 265,
-      "delta": 1667,
-      "direction": "up",
+      "delta": -21,
+      "direction": "down",
       "mentions": 8,
       "sources": [
         {
@@ -1409,11 +1158,104 @@
       ]
     },
     {
+      "slug": "starlink",
+      "label": "Starlink & Satellite Internet",
+      "score": 262,
+      "delta": -4,
+      "direction": "steady",
+      "mentions": 8,
+      "sources": [
+        {
+          "platform": "arxiv",
+          "title": "Validated Intent Compilation for Constrained Routing in LEO Mega-Constellations",
+          "url": "https://arxiv.org/abs/2604.07264",
+          "score": 50,
+          "authors": "Yuanhang Li",
+          "arxivCategory": "cs.CR",
+          "publishedAt": "2026-04-08T16:29:25.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Coverage and Rate Analysis of Follower-Based LEO Satellite Networks: A Stochastic Geometry Approach",
+          "url": "https://arxiv.org/abs/2604.01265",
+          "score": 50,
+          "authors": "Juanjuan Ru, Ruibo Wang, Mohamed-Slim Alouini",
+          "arxivCategory": "cs.IT",
+          "publishedAt": "2026-04-01T13:44:19.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Hierarchical Battery-Aware Game Algorithm for ISL Power Allocation in LEO Mega-Constellations",
+          "url": "https://arxiv.org/abs/2603.29506",
+          "score": 50,
+          "authors": "Kangkang Sun, Jianhua Li, Xiuzhen Chen et al.",
+          "arxivCategory": "cs.GT",
+          "publishedAt": "2026-03-31T09:47:13.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Toward Multi-Satellite Cooperative Transmission: A Joint Framework for CSI Acquisition, Feedback, and Phase Synchronization",
+          "url": "https://arxiv.org/abs/2603.28195",
+          "score": 50,
+          "authors": "Yiming Zhu, Yafei Wang, Carla Amatetti et al.",
+          "arxivCategory": "eess.SP",
+          "publishedAt": "2026-03-30T09:03:58.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "jaxsgp4: GPU-accelerated mega-constellation propagation with batch parallelism",
+          "url": "https://arxiv.org/abs/2603.27830",
+          "score": 50,
+          "authors": "Charlotte Priestley, Will Handley",
+          "arxivCategory": "cs.DC",
+          "publishedAt": "2026-03-29T19:39:05.000Z"
+        },
+        {
+          "platform": "hackernews",
+          "title": "Show HN: Lagsim – Simulate real network conditions (3G, WiFi, Starlink)",
+          "url": "https://github.com/rs/lagsim",
+          "score": 4,
+          "author": "poitrus",
+          "commentCount": 0,
+          "publishedAt": "2026-04-05T01:26:35.000Z"
+        },
+        {
+          "platform": "hackernews",
+          "title": "Starlink Replacement: Russia Develops Stratospheric UAV Relay",
+          "url": "https://en.topwar.ru/278156-zamena-starlink-v-rossii-razrabotali-stratosfernyj-bpla-retransljator.html",
+          "score": 2,
+          "author": "B1FF_PSUVM",
+          "commentCount": 0,
+          "publishedAt": "2026-04-04T16:27:13.000Z"
+        },
+        {
+          "platform": "youtube",
+          "title": "Eavesdropping on Satellite Internet: Trying the \"Dontlookup\" Code",
+          "url": "https://www.youtube.com/watch?v=VE7S1nk4F04",
+          "score": 2,
+          "thumbnail": "https://img.youtube.com/vi/VE7S1nk4F04/mqdefault.jpg",
+          "publishedAt": "2026-04-09T01:44:23.000Z"
+        },
+        {
+          "platform": "hackernews",
+          "title": "Eavesdropping on Satellite Internet: Trying the \"Dontlookup\" Code",
+          "url": "https://www.youtube.com/watch?v=VE7S1nk4F04",
+          "score": 2,
+          "author": "emsign",
+          "commentCount": 0,
+          "publishedAt": "2026-04-09T01:44:23.000Z"
+        }
+      ],
+      "relatedConceptSlugs": [
+        "sps-alpha"
+      ]
+    },
+    {
       "slug": "space-debris",
       "label": "Space Debris",
       "score": 250,
-      "delta": -100,
-      "direction": "down",
+      "delta": 0,
+      "direction": "steady",
       "mentions": 5,
       "sources": [
         {
@@ -1467,94 +1309,132 @@
       ]
     },
     {
-      "slug": "warp-drives",
-      "label": "Warp Drives & Exotic Physics",
-      "score": 107,
-      "delta": 215,
-      "direction": "up",
-      "mentions": 3,
+      "slug": "starship",
+      "label": "Starship & SpaceX",
+      "score": 180,
+      "delta": -82,
+      "direction": "down",
+      "mentions": 13,
       "sources": [
         {
-          "platform": "arxiv",
-          "title": "Weakly birefringent screening disfavors fast Hawking-Ellis Type I warp drives via low-velocity cubic tilt scaling",
-          "url": "https://arxiv.org/abs/2603.21352",
-          "score": 50,
-          "authors": "José Rodal",
-          "arxivCategory": "gr-qc",
-          "publishedAt": "2026-03-22T18:24:10.000Z"
-        },
-        {
-          "platform": "reddit",
-          "title": "Fellow Ftl optimists",
-          "url": "https://reddit.com/r/IsaacArthur/comments/1sfa53v/fellow_ftl_optimists/",
-          "score": 36,
-          "author": "Present_Test4157",
-          "subreddit": "IsaacArthur",
-          "commentCount": 83,
-          "publishedAt": "2026-04-07T22:00:28.000Z"
+          "platform": "youtube",
+          "title": "SpaceX and OpenAI: The Mega IPO Grift [video]",
+          "url": "https://www.youtube.com/watch?v=iOyFja87uyw",
+          "score": 26,
+          "thumbnail": "https://img.youtube.com/vi/iOyFja87uyw/mqdefault.jpg",
+          "publishedAt": "2026-04-05T11:14:09.000Z"
         },
         {
           "platform": "hackernews",
-          "title": "Darkness can \"travel\" faster than light speed",
-          "url": "https://www.nature.com/articles/s41586-026-10209-z",
+          "title": "SpaceX and OpenAI: The Mega IPO Grift [video]",
+          "url": "https://www.youtube.com/watch?v=iOyFja87uyw",
+          "score": 26,
+          "author": "throw0101c",
+          "commentCount": 10,
+          "publishedAt": "2026-04-05T11:14:09.000Z"
+        },
+        {
+          "platform": "hackernews",
+          "title": "Elon Musk insists banks working on SpaceX IPO must buy Grok subscriptions",
+          "url": "https://arstechnica.com/tech-policy/2026/04/elon-musk-insists-banks-working-on-spacex-ipo-must-buy-grok-subscriptions/",
+          "score": 20,
+          "author": "abawany",
+          "commentCount": 5,
+          "publishedAt": "2026-04-03T21:41:56.000Z"
+        },
+        {
+          "platform": "hackernews",
+          "title": "SpaceX Pushes Back Crucial Starship Test Launch",
+          "url": "https://www.wsj.com/business/spacex-pushes-back-crucial-starship-test-launch-e1fb91f5",
           "score": 14,
-          "author": "Jimmc414",
-          "commentCount": 8,
-          "publishedAt": "2026-04-03T22:31:11.000Z"
-        }
-      ],
-      "relatedConceptSlugs": [
-        "procsima",
-        "extreme-metamaterial-solar-sails-for-breakthrough-space-exploration"
-      ]
-    },
-    {
-      "slug": "dyson-spheres",
-      "label": "Dyson Spheres",
-      "score": 101,
-      "delta": 1583,
-      "direction": "up",
-      "mentions": 3,
-      "sources": [
-        {
-          "platform": "arxiv",
-          "title": "Motivation and design of a yotta-eV $τ^+τ^-$ collider",
-          "url": "https://arxiv.org/abs/2604.00440",
-          "score": 50,
-          "authors": "Matt Bellis, Matthew Carberg, Chester Gould et al.",
-          "arxivCategory": "hep-ph",
-          "publishedAt": "2026-04-01T03:38:59.000Z"
+          "author": "bookmtn",
+          "commentCount": 14,
+          "publishedAt": "2026-04-05T01:19:49.000Z"
         },
         {
-          "platform": "arxiv",
-          "title": "Kardashev scale Quantum Computing for Bitcoin Mining",
-          "url": "https://arxiv.org/abs/2603.25519",
-          "score": 50,
-          "authors": "Pierre-Luc Dallaire-Demers, BTQ Technologies Team",
-          "arxivCategory": "quant-ph",
-          "publishedAt": "2026-03-26T14:53:46.000Z"
+          "platform": "hackernews",
+          "title": "Big Banks Seeking a Piece of SpaceX's IPO Must Subscribe to Elon Musk's Grok",
+          "url": "https://www.nytimes.com/2026/04/03/business/spacex-ipo-grok-elon-musk.html",
+          "score": 11,
+          "author": "codydh",
+          "commentCount": 0,
+          "publishedAt": "2026-04-04T20:00:37.000Z"
         },
         {
-          "platform": "reddit",
-          "title": "Toroidal Dyson swarms with mass",
-          "url": "https://reddit.com/r/IsaacArthur/comments/1shcu8w/toroidal_dyson_swarms_with_mass/",
-          "score": 1,
-          "author": "burtleburtle",
-          "subreddit": "IsaacArthur",
+          "platform": "hackernews",
+          "title": "Musk asks SpaceX IPO banks to buy Grok AI subscriptions, NYT reports",
+          "url": "https://www.reuters.com/business/finance/musk-asks-spacex-ipo-banks-buy-grok-ai-subscriptions-nyt-reports-2026-04-03/",
+          "score": 10,
+          "author": "1vuio0pswjnm7",
+          "commentCount": 0,
+          "publishedAt": "2026-04-06T03:31:58.000Z"
+        },
+        {
+          "platform": "hackernews",
+          "title": "Elon Musk insists banks working on SpaceX IPO must buy Grok subscriptions",
+          "url": "https://arstechnica.com/tech-policy/2026/04/elon-musk-insists-banks-working-on-spacex-ipo-must-buy-grok-subscriptions/",
+          "score": 8,
+          "author": "abdelhousni",
+          "commentCount": 3,
+          "publishedAt": "2026-04-06T22:58:00.000Z"
+        },
+        {
+          "platform": "hackernews",
+          "title": "Elon Musk insists banks working on SpaceX IPO must buy Grok subscriptions",
+          "url": "https://arstechnica.com/tech-policy/2026/04/elon-musk-insists-banks-working-on-spacex-ipo-must-buy-grok-subscriptions/",
+          "score": 8,
+          "author": "throw0101c",
           "commentCount": 1,
-          "publishedAt": "2026-04-10T04:50:53.000Z"
+          "publishedAt": "2026-04-04T15:37:05.000Z"
+        },
+        {
+          "platform": "hackernews",
+          "title": "SpaceX Files FCC Complaint over Ariane 64 Amazon Leo Launch",
+          "url": "https://europeanspaceflight.com/spacex-files-fcc-complaint-over-ariane-64-amazon-leo-launch/",
+          "score": 6,
+          "author": "riffraff",
+          "commentCount": 1,
+          "publishedAt": "2026-04-03T22:20:45.000Z"
+        },
+        {
+          "platform": "hackernews",
+          "title": "Is SpaceX Worth $2T?",
+          "url": "https://www.profgmedia.com/p/is-spacex-really-worth-2-trillion",
+          "score": 4,
+          "author": "JumpCrisscross",
+          "commentCount": 0,
+          "publishedAt": "2026-04-10T15:27:00.000Z"
+        },
+        {
+          "platform": "hackernews",
+          "title": "Big Banks Seeking a Piece of SpaceX's IPO Must Subscribe to Elon Musk's Grok",
+          "url": "https://www.nytimes.com/2026/04/03/business/spacex-ipo-grok-elon-musk.html",
+          "score": 4,
+          "author": "doener",
+          "commentCount": 0,
+          "publishedAt": "2026-04-04T08:25:40.000Z"
+        },
+        {
+          "platform": "hackernews",
+          "title": "Elon Musk Requires Banks Behind SpaceX IPO to Buy Grok Subscriptions",
+          "url": "https://www.forbes.com/sites/tylerroush/2026/04/03/elon-musk-requires-banks-behind-spacex-ipo-to-buy-grok-subscriptions-report-says/",
+          "score": 4,
+          "author": "CyberMacGyver",
+          "commentCount": 0,
+          "publishedAt": "2026-04-03T20:56:40.000Z"
         }
       ],
       "relatedConceptSlugs": [
-        "sps-alpha"
+        "extraterrestrial-regolith-derived-atmospheric-entry-heat-shields",
+        "phase-i-final-report-nasa-institute-for-advanced-concepts-combined-heat-shield-a"
       ]
     },
     {
       "slug": "interstellar-travel",
       "label": "Interstellar Travel",
       "score": 100,
-      "delta": -100,
-      "direction": "down",
+      "delta": 0,
+      "direction": "steady",
       "mentions": 2,
       "sources": [
         {
@@ -1583,11 +1463,74 @@
       ]
     },
     {
+      "slug": "dyson-spheres",
+      "label": "Dyson Spheres",
+      "score": 100,
+      "delta": -5,
+      "direction": "steady",
+      "mentions": 2,
+      "sources": [
+        {
+          "platform": "arxiv",
+          "title": "Motivation and design of a yotta-eV $τ^+τ^-$ collider",
+          "url": "https://arxiv.org/abs/2604.00440",
+          "score": 50,
+          "authors": "Matt Bellis, Matthew Carberg, Chester Gould et al.",
+          "arxivCategory": "hep-ph",
+          "publishedAt": "2026-04-01T03:38:59.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Kardashev scale Quantum Computing for Bitcoin Mining",
+          "url": "https://arxiv.org/abs/2603.25519",
+          "score": 50,
+          "authors": "Pierre-Luc Dallaire-Demers, BTQ Technologies Team",
+          "arxivCategory": "quant-ph",
+          "publishedAt": "2026-03-26T14:53:46.000Z"
+        }
+      ],
+      "relatedConceptSlugs": [
+        "sps-alpha"
+      ]
+    },
+    {
+      "slug": "warp-drives",
+      "label": "Warp Drives & Exotic Physics",
+      "score": 71,
+      "delta": -13,
+      "direction": "steady",
+      "mentions": 2,
+      "sources": [
+        {
+          "platform": "arxiv",
+          "title": "Weakly birefringent screening disfavors fast Hawking-Ellis Type I warp drives via low-velocity cubic tilt scaling",
+          "url": "https://arxiv.org/abs/2603.21352",
+          "score": 50,
+          "authors": "José Rodal",
+          "arxivCategory": "gr-qc",
+          "publishedAt": "2026-03-22T18:24:10.000Z"
+        },
+        {
+          "platform": "hackernews",
+          "title": "Darkness can \"travel\" faster than light speed",
+          "url": "https://www.nature.com/articles/s41586-026-10209-z",
+          "score": 14,
+          "author": "Jimmc414",
+          "commentCount": 8,
+          "publishedAt": "2026-04-03T22:31:11.000Z"
+        }
+      ],
+      "relatedConceptSlugs": [
+        "procsima",
+        "extreme-metamaterial-solar-sails-for-breakthrough-space-exploration"
+      ]
+    },
+    {
       "slug": "mars",
       "label": "Mars Exploration",
       "score": 50,
-      "delta": -100,
-      "direction": "down",
+      "delta": 0,
+      "direction": "steady",
       "mentions": 1,
       "sources": [
         {
@@ -1611,8 +1554,8 @@
       "slug": "solar-sails",
       "label": "Solar Sails",
       "score": 50,
-      "delta": -100,
-      "direction": "down",
+      "delta": 0,
+      "direction": "steady",
       "mentions": 1,
       "sources": [
         {
@@ -1634,8 +1577,8 @@
       "slug": "electric-propulsion",
       "label": "Electric Propulsion",
       "score": 50,
-      "delta": 733,
-      "direction": "up",
+      "delta": -11,
+      "direction": "steady",
       "mentions": 1,
       "sources": [
         {
