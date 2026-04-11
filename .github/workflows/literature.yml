@@ -1,0 +1,73 @@
+name: Literature — citation & paper enrichment
+
+on:
+  schedule:
+    # Weekly on Sundays at 08:00 UTC — citation data moves slowly,
+    # no need to burn API quota more often than this.
+    - cron: "0 8 * * 0"
+  workflow_dispatch: # Manual trigger from GitHub UI
+
+jobs:
+  literature:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+          cache: "npm"
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Restore literature cache
+        uses: actions/cache@v4
+        with:
+          path: data/.cache
+          key: literature-cache-${{ github.run_id }}
+          restore-keys: literature-cache-
+
+      # ------------------------------------------------------------------
+      # 1. Verify wishlist papers against Semantic Scholar + OpenAlex
+      #    S2: 3.1s between requests, OA: 150ms — generous timeouts needed
+      # ------------------------------------------------------------------
+      - name: Verify wishlist
+        run: npm run literature:verify
+        timeout-minutes: 30
+
+      # ------------------------------------------------------------------
+      # 2. Citation velocity for ArXiv papers currently in pulse.json
+      #    Hits S2 only (3.1s/req). Requires pulse.json to exist.
+      # ------------------------------------------------------------------
+      - name: Citation velocity
+        run: |
+          if [ ! -f data/pulse.json ]; then
+            echo "::warning::data/pulse.json not found — running pulse fetch first"
+            npm run pulse
+          fi
+          npm run literature:citations
+        timeout-minutes: 30
+
+      # ------------------------------------------------------------------
+      # 3. Enrich NIAC concepts with S2 citation data (3.1s/req)
+      # ------------------------------------------------------------------
+      - name: Enrich concepts
+        run: npm run literature:enrich
+        timeout-minutes: 30
+
+      - name: Commit and push if data changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/wishlist.json data/citation-velocity.json data/concept-citations.json
+          if git diff --staged --quiet; then
+            echo "No changes to commit"
+          else
+            DATE=$(date -u +%Y-%m-%d)
+            git commit -m "literature: refresh ${DATE}"
+            git push
+          fi
