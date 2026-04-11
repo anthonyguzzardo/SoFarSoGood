@@ -316,6 +316,43 @@ const TOPICS: TopicDef[] = [
     arxivTerms: ["machine learning astronomy", "deep learning astrophysics", "autonomous spacecraft"],
     conceptSlugs: ["starnav", "an-automaton-rover-enabling-long-duration"],
   },
+
+  // --- Research-serious topics (physicist-demanded) ---
+  {
+    label: "Quantum Computing",
+    slug: "quantum-computing",
+    terms: ["quantum computer", "quantum computing", "qubit", "quantum supremacy", "quantum error correction", "quantum advantage", "topological qubit", "quantum processor"],
+    arxivTerms: ["quantum error correction", "quantum computing", "fault-tolerant quantum", "quantum supremacy", "topological quantum"],
+    conceptSlugs: ["magneto-inductive-communications-for-ocean-worlds"],
+  },
+  {
+    label: "Condensed Matter",
+    slug: "condensed-matter",
+    terms: ["superconductor", "room temperature superconductor", "topological insulator", "quantum material", "graphene", "Bose-Einstein condensate", "superfluid"],
+    arxivTerms: ["high temperature superconductor", "topological insulator", "strongly correlated electron", "quantum phase transition", "Bose-Einstein condensate"],
+    conceptSlugs: ["extreme-metamaterial-solar-sails"],
+  },
+  {
+    label: "Particle Physics",
+    slug: "particle-physics",
+    terms: ["LHC", "CERN", "particle collider", "Higgs boson", "beyond standard model", "dark photon", "neutrino mass", "muon anomaly", "supersymmetry"],
+    arxivTerms: ["beyond standard model", "Higgs boson", "neutrino oscillation", "dark photon", "supersymmetry LHC", "muon g-2"],
+    conceptSlugs: [],
+  },
+  {
+    label: "Cosmology",
+    slug: "cosmology",
+    terms: ["cosmic microwave background", "CMB", "inflation cosmology", "Big Bang", "cosmic expansion", "Hubble tension", "baryon acoustic", "primordial gravitational waves"],
+    arxivTerms: ["cosmic microwave background", "cosmological inflation", "Hubble tension", "baryon acoustic oscillation", "primordial gravitational"],
+    conceptSlugs: ["gravity-observation-and-dark-energy-detection-explorer"],
+  },
+  {
+    label: "Nanotechnology & Metamaterials",
+    slug: "nanotechnology",
+    terms: ["nanotechnology", "metamaterial", "carbon nanotube", "nanostructure", "molecular machine", "nanoscale", "MEMS", "nanorobot"],
+    arxivTerms: ["metamaterial", "carbon nanotube", "nanostructure", "molecular machine", "MEMS"],
+    conceptSlugs: ["extreme-metamaterial-solar-sails", "technology-development-and-demonstration-concepts-for-the-space-elevator"],
+  },
 ];
 
 /* -------------------------------------------------------------------------- */
@@ -330,6 +367,9 @@ const SUBREDDITS = [
   "solarsystem", "mars", "astrobiology", "BlueOrigin",
   "SpaceXLounge", "nuclearpower", "quantumcomputing",
   "IsaacArthur", "fusion",
+  // Research-serious subs (physicist-demanded coverage)
+  "QuantumPhysics", "condensedmatter", "ParticlePhysics",
+  "nanotechnology", "materials", "HEP",
 ];
 
 // Reddit multi-sub limit is ~100 subs per request, so we can batch all of ours.
@@ -819,10 +859,12 @@ function scoreTopic(
   hnHits: HNHit[],
   arxivPapers: ArXivPaper[] = [],
 ): PulseTopic {
-  const redditScore = matchedRedditPosts.reduce((sum, p) => sum + p.score, 0);
-  const hnScore = hnHits.reduce((sum, h) => sum + h.points, 0) * 1.5;
-  // ArXiv: each paper is worth a flat 50 points — scientific authority weight
-  const arxivScore = arxivPapers.length * 50;
+  // Scoring philosophy: primary literature leads, social signal is color.
+  // A Reddit upvote is mass-audience noise. An ArXiv paper is months of work.
+  const redditScore = matchedRedditPosts.reduce((sum, p) => sum + p.score, 0) * 0.3;
+  const hnScore = hnHits.reduce((sum, h) => sum + h.points, 0) * 1.0;
+  // ArXiv: each paper carries heavy weight — this is the actual science
+  const arxivScore = arxivPapers.length * 200;
   const totalScore = Math.round(redditScore + hnScore + arxivScore);
   const mentions = matchedRedditPosts.length + hnHits.length + arxivPapers.length;
 
@@ -883,7 +925,7 @@ function scoreTopic(
     platform: "arxiv" as const,
     title: p.title,
     url: p.url,
-    score: 50, // flat authority weight
+    score: 200, // primary literature — highest authority weight
     authors: p.authors.slice(0, 3).join(", ") + (p.authors.length > 3 ? " et al." : ""),
     arxivCategory: p.category,
     publishedAt: new Date(p.published).toISOString(),

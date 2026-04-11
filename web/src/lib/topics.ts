@@ -46,6 +46,12 @@ export interface Misconception {
   reality: string;
 }
 
+export interface Equation {
+  name: string;       // "Schwarzschild Metric"
+  equation: string;   // Unicode math — "ds² = −(1 − rₛ/r)c²dt² + ..."
+  note: string;       // Brief explanation of what it means
+}
+
 export interface Topic {
   slug: string;
   title: string;
@@ -55,6 +61,7 @@ export interface Topic {
   unsolvedProblems: UnsolvedProblem[];
   thoughtExperiments: ThoughtExperiment[];
   misconceptions?: Misconception[];
+  equations?: Equation[];
   timeline: TimelineEntry[];
   media: MediaEntry[];
   relatedConceptSlugs: string[];

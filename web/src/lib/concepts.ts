@@ -14,6 +14,7 @@
 import type { Concept, Phase } from "../../../shared/concept.ts";
 import rawConcepts from "../../../data/concepts.json" with { type: "json" };
 import rawEditorial from "../../../data/editorial.json" with { type: "json" };
+import rawPhaseOverrides from "../../../data/phase-overrides.json" with { type: "json" };
 
 /** All concepts, in the order produced by ingestion (newest first). */
 export const allConcepts: Concept[] = rawConcepts as Concept[];
@@ -37,6 +38,24 @@ for (const c of allConcepts) {
   if (overlay) {
     if (overlay.whatIfItWorks) c.whatIfItWorks = overlay.whatIfItWorks;
     if (overlay.editorialTier) c.editorialTier = overlay.editorialTier;
+  }
+}
+
+/* -------------------------------------------------------------------------- */
+/* Phase override layer                                                       */
+/* -------------------------------------------------------------------------- */
+
+/**
+ * Apply manually verified phase corrections. The ingestion script detects
+ * phases via keyword sniffing at ~70% accuracy. This overlay fixes the
+ * remaining 30% using hand-verified data from the NIAC website.
+ */
+const phaseOverrides = rawPhaseOverrides as Record<string, string>;
+
+for (const c of allConcepts) {
+  const correctedPhase = phaseOverrides[c.slug];
+  if (correctedPhase && correctedPhase !== "_comment") {
+    c.phase = correctedPhase as Phase;
   }
 }
 

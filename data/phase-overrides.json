@@ -1,0 +1,20 @@
+{
+  "_comment": "Manual phase corrections for NIAC concepts. The ingestion script detects phases via keyword sniffing at ~70% accuracy. These overrides fix the remaining 30%. Format: concept-slug → correct Phase value (I, II, III, or Other). Add entries as you verify phases against the NIAC website.",
+  "fluidic-telescope-flute-nasa-innovative-advanced-concepts-niac-phase-i-final-rep-2026": "I",
+  "direct-multipixel-imaging-and-spectroscopy-of-an-exoplanet-with-a-solar-gravity--2025": "II",
+  "3d-effervescence-modeling-of-a-titan-submarine-2025": "II",
+  "extreme-metamaterial-solar-sails-for-breakthrough-space-exploration-niac-phase-i-2025": "I",
+  "gravity-observation-and-dark-energy-detection-explorer-in-the-solar-system-nasa--2025": "I",
+  "hybrid-observatory-for-earth-like-exoplanets-hoee-2025": "I",
+  "lattice-confinement-fusion-fast-fission-for-space-2025": "II",
+  "lunar-crater-radio-telescope-lcrt-on-the-far-side-of-the-moon-nasa-innovative-ad-2025": "II",
+  "mycotecture-off-planet-phase-ii-final-report-2025": "II",
+  "astropharmacy-phase-i-final-report-2025": "I",
+  "breathing-mars-air-stationary-and-portable-o2-generation-final-report-2025": "I",
+  "biobot-innovative-offloading-of-astronauts-for-more-effective-exploration-niac-p-2025": "I",
+  "crew-hat-cosmic-radiation-extended-warding-using-the-halbach-torus-final-report--2025": "I",
+  "pluto-hop-skip-and-jump-niac-phase-ii-final-report-2025": "II",
+  "spacecraft-scale-magnetospheric-protection-from-galactic-cosmic-radiation-niac-p-2025": "I",
+  "sps-alpha-2024": "III",
+  "procsima-2024": "II"
+}

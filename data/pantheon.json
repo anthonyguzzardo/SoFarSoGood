@@ -28,7 +28,7 @@
         "Had a full nervous breakdown in 1693, possibly from mercury poisoning during his alchemy experiments. Sent paranoid, accusatory letters to friends. The price of sticking needles in your eye and inhaling mercury fumes."
       ],
       "influences": [],
-      "influenced": ["euler", "maxwell", "einstein"],
+      "influenced": ["euler", "maxwell", "einstein", "faraday"],
       "rivalries": ["Leibniz (calculus beef that lasted centuries)", "Robert Hooke (gravity beef, optics beef, just general beef)"],
       "media": [
         { "type": "youtube", "id": "danYFxGnFxQ", "title": "Newton's Laws — Veritasium" },
@@ -64,7 +64,7 @@
         "Abandoned his first daughter Lieserl — born before his marriage to Mileva. Her fate remains unknown. The man who solved the mysteries of the universe left one of his own."
       ],
       "influences": ["newton", "maxwell"],
-      "influenced": ["hawking", "dirac", "feynman", "penrose"],
+      "influenced": ["hawking", "dirac", "feynman", "penrose", "bohr", "schrodinger"],
       "rivalries": ["Niels Bohr (the quantum debate — Einstein kept losing and refused to accept it)"],
       "media": [
         { "type": "youtube", "id": "NblR01hHK6U", "title": "Why No One Has Measured The Speed Of Light — Veritasium" },
@@ -140,7 +140,7 @@
       "born": 1831,
       "died": 1879,
       "fields": ["physics"],
-      "tier": "absolute-unit",
+      "tier": "untouchable",
       "nationality": "Scottish",
       "signature": "\u2207 \u00d7 E = \u2212\u2202B/\u2202t",
       "tagline": "Unified electricity, magnetism, and light into four equations. Einstein kept his photo on his wall. Enough said.",
@@ -154,12 +154,45 @@
         "Proved Saturn's rings must be particles — won the Adams Prize at Cambridge"
       ],
       "funFact": "Einstein was once asked what it felt like to be the smartest person alive. He replied: 'I don't know, you'll have to ask Maxwell.' (Maxwell was already dead by then. Einstein still said it.)",
-      "influences": ["newton"],
+      "influences": ["newton", "faraday"],
       "influenced": ["einstein", "hertz", "boltzmann"],
       "rivalries": ["Lord Kelvin (who kept insisting Maxwell's theory was wrong — it wasn't)"],
       "media": [
         { "type": "youtube", "id": "FTKP0Y9MVus", "title": "Maxwell's Equations — Looking Glass Universe" },
         { "type": "youtube", "id": "1AAU_bLMMf0", "title": "The Most Important Equations in Physics — Domain of Science" }
+      ]
+    },
+    {
+      "slug": "noether",
+      "name": "Emmy Noether",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b5/Emmy_Noether_%283x4_cropped%29.jpg/400px-Emmy_Noether_%283x4_cropped%29.jpg",
+      "born": 1882,
+      "died": 1935,
+      "fields": ["mathematics", "physics"],
+      "tier": "untouchable",
+      "nationality": "German",
+      "signature": "symmetry \u21d2 conservation law",
+      "tagline": "The most important mathematician most people have never heard of. Einstein called her a genius. She was.",
+      "quote": "My methods are really methods of working and thinking; this is why they have crept in everywhere anonymously.",
+      "quoteContext": "Her ideas were so fundamental they became invisible — baked into the fabric of modern physics.",
+      "powerMoves": [
+        "Noether's theorem — every symmetry in physics has a conservation law. Revolutionized everything.",
+        "Abstract algebra — basically invented the modern version of it",
+        "Proved that conservation of energy comes from time symmetry — mic drop for all of physics",
+        "Ring theory, ideal theory — foundational structures that all of modern algebra uses",
+        "Did all of this while being barred from official university positions because she was a woman"
+      ],
+      "funFact": "Was not allowed to teach at Gottingen under her own name. Hilbert listed her courses under his name and told the faculty senate: 'I do not see that the sex of the candidate is an argument against her admission. After all, we are a university, not a bath house.'",
+      "tea": [
+        "Fled Nazi Germany in 1933 after being dismissed from her position for being Jewish. Ended up at Bryn Mawr in Pennsylvania. Einstein wrote her New York Times obituary and called her 'the most significant creative mathematical genius thus far produced since the higher education of women began.' She died two years after arriving, at 53.",
+        "Lived for mathematics so completely that colleagues described her personal life as essentially nonexistent. Not as a tragedy — she genuinely seemed to prefer theorems to everything else. The system kept telling her she couldn't do math. She decided math was all she would do."
+      ],
+      "influences": ["euler", "gauss"],
+      "influenced": [],
+      "rivalries": ["The entire German university system (she won)"],
+      "media": [
+        { "type": "youtube", "id": "CxlHLqJ9I0A", "title": "Noether's Theorem — PBS Space Time" },
+        { "type": "youtube", "id": "04ERSb06dOg", "title": "The Most Beautiful Theorem in Physics — Looking Glass Universe" }
       ]
     },
     {
@@ -188,45 +221,12 @@
         "Frequented strip clubs in Pasadena and did physics on napkins there. Caltech was not thrilled. Feynman did not care. The line between 'eccentric genius' and 'HR liability' was thinner than a Feynman diagram.",
         "His second wife, Mary Louise Bell, cited 'cruelty' in their divorce after two years. She said living with him was like 'living with a whirlwind.' The man who made physics fun to learn was apparently less fun to live with."
       ],
-      "influences": ["einstein", "dirac"],
+      "influences": ["einstein", "dirac", "von-neumann"],
       "influenced": [],
       "rivalries": ["Murray Gell-Mann (office neighbors at Caltech, intellectual frenemies, both won Nobels)"],
       "media": [
         { "type": "youtube", "id": "36GT2zI8lVA", "title": "Feynman: Fun to Imagine — BBC" },
         { "type": "youtube", "id": "P1ww1IXRfTA", "title": "The Character of Physical Law — Feynman" }
-      ]
-    },
-    {
-      "slug": "noether",
-      "name": "Emmy Noether",
-      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b5/Emmy_Noether_%283x4_cropped%29.jpg/400px-Emmy_Noether_%283x4_cropped%29.jpg",
-      "born": 1882,
-      "died": 1935,
-      "fields": ["mathematics", "physics"],
-      "tier": "absolute-unit",
-      "nationality": "German",
-      "signature": "symmetry \u21d2 conservation law",
-      "tagline": "The most important mathematician most people have never heard of. Einstein called her a genius. She was.",
-      "quote": "My methods are really methods of working and thinking; this is why they have crept in everywhere anonymously.",
-      "quoteContext": "Her ideas were so fundamental they became invisible — baked into the fabric of modern physics.",
-      "powerMoves": [
-        "Noether's theorem — every symmetry in physics has a conservation law. Revolutionized everything.",
-        "Abstract algebra — basically invented the modern version of it",
-        "Proved that conservation of energy comes from time symmetry — mic drop for all of physics",
-        "Ring theory, ideal theory — foundational structures that all of modern algebra uses",
-        "Did all of this while being barred from official university positions because she was a woman"
-      ],
-      "funFact": "Was not allowed to teach at Gottingen under her own name. Hilbert listed her courses under his name and told the faculty senate: 'I do not see that the sex of the candidate is an argument against her admission. After all, we are a university, not a bath house.'",
-      "tea": [
-        "Fled Nazi Germany in 1933 after being dismissed from her position for being Jewish. Ended up at Bryn Mawr in Pennsylvania. Einstein wrote her New York Times obituary and called her 'the most significant creative mathematical genius thus far produced since the higher education of women began.' She died two years after arriving, at 53.",
-        "Lived for mathematics so completely that colleagues described her personal life as essentially nonexistent. Not as a tragedy — she genuinely seemed to prefer theorems to everything else. The system kept telling her she couldn't do math. She decided math was all she would do."
-      ],
-      "influences": ["euler", "gauss"],
-      "influenced": [],
-      "rivalries": ["The entire German university system (she won)"],
-      "media": [
-        { "type": "youtube", "id": "CxlHLqJ9I0A", "title": "Noether's Theorem — PBS Space Time" },
-        { "type": "youtube", "id": "04ERSb06dOg", "title": "The Most Beautiful Theorem in Physics — Looking Glass Universe" }
       ]
     },
     {
@@ -254,8 +254,8 @@
         "Said his father's death was 'the greatest liberation of my life.' His father, a Swiss-born French teacher, enforced a rule: Paul could only eat dinner with him if he spoke exclusively in French. Any mistake and he was sent away. Dirac later attributed his legendary silence to this — he learned that speaking leads to punishment.",
         "Married the sister of his colleague Eugene Wigner. When asked how it happened, he reportedly said he'd been looking for someone quiet. The courtship was apparently as efficient as his equations."
       ],
-      "influences": ["einstein"],
-      "influenced": ["feynman"],
+      "influences": ["einstein", "pauli"],
+      "influenced": ["feynman", "fermi"],
       "rivalries": ["Small talk (his lifelong nemesis)"],
       "media": [
         { "type": "youtube", "id": "iIVj1HFnYpw", "title": "Antimatter — PBS Space Time" },
@@ -327,6 +327,176 @@
       "media": [
         { "type": "youtube", "id": "V_TulH374hw", "title": "Ramanujan: The Man Who Knew Infinity — Numberphile" },
         { "type": "youtube", "id": "LzjaDKVC4iY", "title": "1729 — Numberphile" }
+      ]
+    },
+    {
+      "slug": "planck",
+      "name": "Max Planck",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/Max_Planck_%281858-1947%29.jpg/400px-Max_Planck_%281858-1947%29.jpg",
+      "born": 1858,
+      "died": 1947,
+      "fields": ["physics"],
+      "tier": "absolute-unit",
+      "nationality": "German",
+      "signature": "E = hf",
+      "tagline": "Lit the fuse on quantum mechanics. Reluctantly. Spent years trying to blow it out. The fuse didn't care.",
+      "quote": "A new scientific truth does not triumph by convincing its opponents, but rather because its opponents eventually die.",
+      "quoteContext": "Known as Planck's principle. One of the most savage things ever said about academic progress.",
+      "powerMoves": [
+        "Quantized energy (1900) — solved the blackbody radiation problem by assuming energy comes in packets. Physics was never the same.",
+        "Planck constant (h) — the fundamental quantum of action. Appears in every quantum equation ever written.",
+        "Planck units — natural units derived from fundamental constants. The universe's own measurement system.",
+        "Blackbody radiation law — the correct formula that everyone else had failed to derive",
+        "Founded quantum theory — the single most revolutionary idea in 20th century physics, born from desperation"
+      ],
+      "funFact": "Tried desperately to make his own discovery go away. He called quantization 'an act of desperation' and spent years trying to fit the results back into classical physics. The father of quantum theory was its most reluctant parent.",
+      "tea": [
+        "Stayed in Nazi Germany when most Jewish colleagues fled. Attempted to personally appeal to Hitler on behalf of his Jewish friend Fritz Haber. Hitler screamed at him until he nearly collapsed. The meeting accomplished nothing. Planck believed in working within the system. The system didn't care.",
+        "His son Erwin was executed in January 1945 for his involvement in the July 20 plot to assassinate Hitler. Planck was 87 years old. He'd already lost his first son in WWI, his twin daughters in childbirth, and his house to Allied bombing. The man who discovered the quantum — the smallest unit of anything — lost everything on the largest scale imaginable.",
+        "His first wife died in 1909. Three of his five children died before him. He kept working. The quiet, conservative Prussian who accidentally started a revolution in physics endured a life that would have broken most people. He endured it by never stopping."
+      ],
+      "influences": ["maxwell", "boltzmann"],
+      "influenced": ["einstein", "bohr", "heisenberg"],
+      "rivalries": ["His own discovery (he fought quantum theory for years before accepting what he'd done)"],
+      "media": [
+        { "type": "youtube", "id": "FZfERA16gDw", "title": "Quantum Mechanics — PBS Space Time" },
+        { "type": "youtube", "id": "tQSbms5MDvY", "title": "Planck's Constant and The Origin of Quantum Mechanics — Veritasium" }
+      ]
+    },
+    {
+      "slug": "schrodinger",
+      "name": "Erwin Schr\u00f6dinger",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/Erwin_Schr%C3%B6dinger_%281933%29.jpg/400px-Erwin_Schr%C3%B6dinger_%281933%29.jpg",
+      "born": 1887,
+      "died": 1961,
+      "fields": ["physics"],
+      "tier": "absolute-unit",
+      "nationality": "Austrian",
+      "signature": "i\u210f\u2202\u03c8/\u2202t = \u0124\u03c8",
+      "tagline": "Wrote the equation that governs all of non-relativistic quantum mechanics. During a holiday with his mistress. Multitasking.",
+      "quote": "The task is not so much to see what no one has yet seen, but to think what nobody has yet thought about that which everybody sees.",
+      "quoteContext": "From a man who saw wave functions where everyone else saw particles.",
+      "powerMoves": [
+        "Schr\u00f6dinger equation — THE equation of quantum mechanics. Every atom obeys it.",
+        "Wave mechanics — reformulated quantum theory in terms of continuous waves, making it calculable",
+        "The cat thought experiment — the most famous thought experiment in physics, illustrating quantum superposition's absurdity",
+        "'What Is Life?' (1944) — a physics book that inspired Watson and Crick to discover DNA's structure",
+        "Schr\u00f6dinger's cat — originally meant as a critique of Copenhagen interpretation. Became its mascot instead."
+      ],
+      "funFact": "Derived wave mechanics during a Christmas holiday in the Swiss Alps in 1925, accompanied by 'a mysterious lady friend' whose identity historians have never confirmed. The most important equation in quantum physics was apparently a product of alpine air and adultery.",
+      "tea": [
+        "Serial philanderer on a scale that made even his tolerant era uncomfortable. Kept a detailed diary of his affairs. His wife Anny knew and had her own relationship with Hermann Weyl. The household was... unconventional.",
+        "Lived in a m\u00e9nage \u00e0 trois with his wife and another woman, Hilde March (wife of a colleague). Hilde bore his daughter. He tried to get an academic position that would accommodate all three of them living together. 1930s Ireland said no. Actually 1930s everywhere said no.",
+        "Left Austria after the Anschluss, but his personal life caused problems in every country he fled to. Oxford wouldn't tolerate the living arrangements. Dublin eventually took him in — de Valera personally recruited him. Even in Ireland, he fathered children with two other women."
+      ],
+      "influences": ["einstein", "boltzmann"],
+      "influenced": ["dirac"],
+      "rivalries": ["Heisenberg (wave mechanics vs. matrix mechanics — same physics, completely different vibes)"],
+      "media": [
+        { "type": "youtube", "id": "QeUMFo8sODk", "title": "Schr\u00f6dinger's Cat — Veritasium" },
+        { "type": "youtube", "id": "Aq-7VJZyy3Q", "title": "The Schr\u00f6dinger Equation — Looking Glass Universe" }
+      ]
+    },
+    {
+      "slug": "bohr",
+      "name": "Niels Bohr",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Niels_Bohr.jpg/400px-Niels_Bohr.jpg",
+      "born": 1885,
+      "died": 1962,
+      "fields": ["physics"],
+      "tier": "absolute-unit",
+      "nationality": "Danish",
+      "signature": "E_n = -13.6/n\u00b2 eV",
+      "tagline": "Built the first quantum atom. Won the Copenhagen interpretation debate. Made Einstein admit he was wrong. Repeatedly.",
+      "quote": "Anyone who is not shocked by quantum theory has not understood it.",
+      "quoteContext": "He meant it as reassurance. It does not feel reassuring.",
+      "powerMoves": [
+        "Bohr model of the atom — the first quantum model, explained why atoms don't collapse",
+        "Copenhagen interpretation — the dominant interpretation of quantum mechanics for 80 years",
+        "Complementarity principle — wave AND particle, not wave OR particle. Accept it.",
+        "Nuclear fission theory — explained the liquid drop model that made sense of splitting the atom",
+        "The Bohr-Einstein debates — publicly, repeatedly, and correctly proved Einstein wrong about quantum mechanics"
+      ],
+      "funFact": "His brother Harald was an Olympic silver medalist in football (soccer) for Denmark in 1908. Niels was also a talented footballer and reportedly served as goalkeeper. The Bohr family approach to everything was: do it at world-class level or don't bother.",
+      "tea": [
+        "Utterly dominated the quantum mechanics debates of the 1920s-30s. Every thought experiment Einstein devised to disprove quantum mechanics, Bohr dismantled — sometimes overnight. But the Copenhagen interpretation he championed is now considered incomplete by many physicists. He won every battle but may not have won the war.",
+        "During WWII, had a famous meeting with Heisenberg in occupied Copenhagen (1941). What was said remains one of physics' greatest mysteries. Bohr believed Heisenberg was asking for moral permission to build a German bomb. Heisenberg claimed he was trying to signal he'd slow it down. They never agreed on what happened. The friendship never recovered.",
+        "Created an institute in Copenhagen that became the world center of quantum physics. Every major quantum physicist visited or worked there. He was generous, collaborative, and by all accounts beloved — but his intellectual dominance meant an entire generation of physicists defined themselves in relation to him, for better or worse."
+      ],
+      "influences": ["planck", "einstein"],
+      "influenced": ["heisenberg", "pauli"],
+      "rivalries": ["Einstein (the quantum debates — 30 years of the greatest intellectual boxing match in history)"],
+      "media": [
+        { "type": "youtube", "id": "evPsm4CxJDk", "title": "Bohr Model of the Atom — Professor Dave Explains" },
+        { "type": "youtube", "id": "UDwHHmlF1mo", "title": "The Copenhagen Interpretation — Looking Glass Universe" }
+      ]
+    },
+    {
+      "slug": "faraday",
+      "name": "Michael Faraday",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Michael_Faraday_sitting_crop.jpg/400px-Michael_Faraday_sitting_crop.jpg",
+      "born": 1791,
+      "died": 1867,
+      "fields": ["physics", "chemistry"],
+      "tier": "absolute-unit",
+      "nationality": "English",
+      "signature": "\u03b5 = \u2212d\u03a6/dt",
+      "tagline": "Self-taught blacksmith's son who discovered electromagnetic induction. Everything Maxwell formalized, Faraday found first. With his hands.",
+      "quote": "Nothing is too wonderful to be true, if it be consistent with the laws of nature.",
+      "quoteContext": "From his laboratory diary. The man who discovered the motor and the generator still found nature wonderful.",
+      "powerMoves": [
+        "Electromagnetic induction — the principle behind every electric generator and transformer on Earth",
+        "The electric motor — built the first one. Every machine that spins electrically descends from his prototype.",
+        "Faraday's laws of electrolysis — quantified electrochemistry, coined 'ion,' 'electrode,' 'anode,' 'cathode'",
+        "The Faraday cage — showed that electric charge sits on the outside of a conductor. You're using this principle right now.",
+        "Discovered benzene — casually, while doing chemistry on the side of his physics career"
+      ],
+      "funFact": "Had no formal mathematical training. Maxwell later translated Faraday's intuitive field line pictures into the four equations that govern all of electromagnetism. The greatest experimental physicist of the 19th century couldn't read the mathematical version of his own discoveries. He didn't need to.",
+      "tea": [
+        "Turned down a knighthood. Turned down the presidency of the Royal Society. Twice. Turned down the presidency of the Royal Institution. The man who discovered electromagnetic induction didn't want to be in charge of anything. He just wanted to keep doing experiments.",
+        "Born into poverty so extreme that his family sometimes couldn't afford food. Was apprenticed to a bookbinder at 14. Educated himself by reading the books he was binding. Walked into the Royal Institution with hand-copied notes from Humphry Davy's lectures and talked his way into a job. The entire edifice of electrical engineering traces back to a hungry teenager who read the right book.",
+        "His mentor Humphry Davy grew jealous of Faraday's success and tried to block his election to the Royal Society. Faraday was elected anyway. When asked about his greatest discovery, Davy reportedly said 'Michael Faraday.' Whether sincere or bitter, it was correct."
+      ],
+      "influences": ["newton"],
+      "influenced": ["maxwell"],
+      "rivalries": ["Humphry Davy (mentor turned rival — the student surpassed the master and the master couldn't handle it)"],
+      "media": [
+        { "type": "youtube", "id": "shDADQVVPIE", "title": "How Electricity Actually Works — Veritasium" },
+        { "type": "youtube", "id": "NqdOyxJZj0U", "title": "Faraday's Law — 3Blue1Brown" }
+      ]
+    },
+    {
+      "slug": "von-neumann",
+      "name": "John von Neumann",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/JohnvonNeumann-LosAlamos.gif/400px-JohnvonNeumann-LosAlamos.gif",
+      "born": 1903,
+      "died": 1957,
+      "fields": ["mathematics", "physics", "computer science"],
+      "tier": "absolute-unit",
+      "nationality": "Hungarian-American",
+      "signature": "von Neumann architecture",
+      "tagline": "Possibly the fastest mind ever documented. Made contributions to so many fields that no one person can fully appreciate all of them.",
+      "quote": "In mathematics you don't understand things. You just get used to them.",
+      "quoteContext": "Said to a colleague who complained about not understanding a concept. Von Neumann did not have this problem.",
+      "powerMoves": [
+        "Von Neumann architecture — the design every modern computer uses. Literally every one.",
+        "Mathematical foundations of quantum mechanics — put QM on rigorous mathematical footing when physicists couldn't",
+        "Game theory — co-invented an entire field of mathematics that now runs economics, politics, and AI",
+        "Manhattan Project implosion design — calculated the explosive lens geometry for the plutonium bomb",
+        "Self-replicating automata — theorized machines that could reproduce themselves, decades before anyone built one"
+      ],
+      "funFact": "Could divide 8-digit numbers in his head instantly, memorized entire books verbatim, and his colleagues at Princeton (including Einstein) said he was the only person they were genuinely afraid of intellectually. When the first electronic computer was completed, someone asked if it could now do things von Neumann couldn't. The answer was: faster, yes. Better, no.",
+      "tea": [
+        "Enthusiastically worked on the hydrogen bomb after Hiroshima. Not reluctantly. Enthusiastically. While Oppenheimer agonized about the atomic bomb, von Neumann pushed for bigger ones. He advocated for a preemptive nuclear strike against the Soviet Union. The fastest mind of the century had a cold war streak that unsettled even his hawkish colleagues.",
+        "Drove recklessly and crashed constantly — his car was totaled so often that the intersection near his Princeton home was nicknamed 'von Neumann corner.' The man who could calculate missile trajectories in his head couldn't navigate a two-lane road.",
+        "When diagnosed with terminal cancer at 53, was so terrified of death that he converted to Catholicism as a Pascal's Wager. The man who literally invented game theory played the ultimate game at the end. His final months were spent in agony, screaming in terror at the prospect of nonexistence. The greatest intellect of his generation was helpless before the same void that awaits everyone."
+      ],
+      "influences": [],
+      "influenced": ["feynman"],
+      "rivalries": ["Anyone who thought they were fast at mental math (they weren't)"],
+      "media": [
+        { "type": "youtube", "id": "pCLBMpuKWig", "title": "Von Neumann: The Man Who Did Everything — Veritasium" },
+        { "type": "youtube", "id": "6oD9vr6N0Y4", "title": "Game Theory — Numberphile" }
       ]
     },
     {
@@ -404,7 +574,7 @@
       "born": 1844,
       "died": 1906,
       "fields": ["physics"],
-      "tier": "built-different",
+      "tier": "absolute-unit",
       "nationality": "Austrian",
       "signature": "S = k\u1d63 ln W",
       "tagline": "Proved atoms exist using statistics. Nobody believed him. He was right about everything. The universe literally runs on his equation.",
@@ -419,7 +589,7 @@
       ],
       "funFact": "Was so aggressively right about atoms that the constant stress of being dismissed by the scientific establishment contributed to severe depression. Tragically took his own life in 1906. Three years later, Einstein's Brownian motion paper proved atoms exist beyond all doubt. The universe owed him an apology.",
       "influences": ["maxwell"],
-      "influenced": ["einstein"],
+      "influenced": ["einstein", "planck"],
       "rivalries": ["Ernst Mach and Wilhelm Ostwald (who denied atoms existed — they were wrong, he was right, it cost him everything)"],
       "media": [
         { "type": "youtube", "id": "mYJkMC1fJG4", "title": "Entropy — PBS Space Time" },
@@ -451,7 +621,7 @@
         "Stayed in Nazi Germany during WWII and led their nuclear research program. Whether he deliberately sabotaged the German bomb or simply failed to build one is one of the most debated questions in the history of science. The Farm Hall transcripts — secretly recorded after his capture — show him shocked that the Americans succeeded. Make of that what you will.",
         "After the war, he promoted the narrative that he'd intentionally slowed the German program for moral reasons. His former colleagues, particularly Bohr, disputed this vigorously. The man who proved certainty has limits left the biggest uncertainty of his career: was he a secret hero or just a physicist who got the math wrong?"
       ],
-      "influences": ["einstein", "bohr"],
+      "influences": ["planck", "bohr", "einstein"],
       "influenced": [],
       "rivalries": ["The concept of certainty (it lost)"],
       "media": [
@@ -486,6 +656,176 @@
       "media": [
         { "type": "youtube", "id": "th3YMEamzmw", "title": "Penrose Tiles — Numberphile" },
         { "type": "youtube", "id": "OHiMiB3jCzw", "title": "Roger Penrose — Lex Fridman" }
+      ]
+    },
+    {
+      "slug": "chandrasekhar",
+      "name": "Subrahmanyan Chandrasekhar",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/Subrahmanyan_Chandrasekhar.gif/400px-Subrahmanyan_Chandrasekhar.gif",
+      "born": 1910,
+      "died": 1995,
+      "fields": ["physics", "astrophysics"],
+      "tier": "built-different",
+      "nationality": "Indian-American",
+      "signature": "M_Ch \u2248 1.4 M\u2609",
+      "tagline": "Proved white dwarfs have a mass limit at age 19. On a boat. Eddington laughed. The universe didn't.",
+      "quote": "I am not more gifted than anyone else. I am just more curious than the average person and I will not give up on a problem until I have found the proper solution.",
+      "quoteContext": "Modest words from a man who solved stellar death as a teenager.",
+      "powerMoves": [
+        "Chandrasekhar limit — the maximum mass of a white dwarf star. Above it: collapse. Below: stability. Calculated on a steamship at age 19.",
+        "Stellar structure and evolution — wrote the definitive mathematical theory of how stars work",
+        "Radiative transfer theory — how radiation moves through matter. Used in astrophysics, atmospheric science, nuclear engineering.",
+        "Mathematical theory of black holes — his final major work, a complete mathematical treatment published at age 73",
+        "Taught a class with two students — both (Yang and Lee) won the Nobel. Then he won the Nobel."
+      ],
+      "funFact": "Taught a graduate course at the University of Chicago so demanding that only two students enrolled: Chen-Ning Yang and Tsung-Dao Lee. Both won the Nobel Prize for Physics. Then Chandrasekhar won the Nobel Prize. That class had a 100% Nobel rate.",
+      "tea": [
+        "Eddington publicly humiliated him at a Royal Astronomical Society meeting in 1935, dismissing his mass limit calculation with what many historians consider racially motivated contempt. Eddington called the result 'absurd' and mocked the idea that stars could collapse. Chandrasekhar was 24. He was right. Eddington never acknowledged this.",
+        "The wound from Eddington's attack shaped his entire career. He moved to America partly to escape British astronomy's social hierarchies. He never publicly expressed bitterness, but in private letters and late-in-life interviews, it's clear the humiliation never fully healed. The man who proved stars die carried a different kind of collapse inside.",
+        "Won the Nobel in 1983 — nearly 50 years after his most famous result. By then he'd moved through six entirely different fields of physics, each time mastering the subject completely and writing the definitive book before moving on. He didn't wait for the world to validate him. He just kept being right about new things."
+      ],
+      "influences": ["einstein"],
+      "influenced": [],
+      "rivalries": ["Arthur Eddington (who publicly mocked his greatest discovery — history sided with Chandrasekhar)"],
+      "media": [
+        { "type": "youtube", "id": "Ky4G7vCGpuw", "title": "White Dwarfs and the Chandrasekhar Limit — PBS Space Time" },
+        { "type": "youtube", "id": "UkHi9H-k5Ds", "title": "The Life of Subrahmanyan Chandrasekhar — Science Biographies" }
+      ]
+    },
+    {
+      "slug": "fermi",
+      "name": "Enrico Fermi",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Enrico_Fermi_1943-49.jpg/400px-Enrico_Fermi_1943-49.jpg",
+      "born": 1901,
+      "died": 1954,
+      "fields": ["physics"],
+      "tier": "built-different",
+      "nationality": "Italian-American",
+      "signature": "Fermi-Dirac statistics",
+      "tagline": "The last physicist who was world-class in both theory AND experiment. Built a nuclear reactor under a squash court. Safety third.",
+      "quote": "There are two possible outcomes: if the result confirms the hypothesis, then you've made a measurement. If the result is contrary to the hypothesis, then you've made a discovery.",
+      "quoteContext": "The mind of a man for whom failed experiments were just unexpected wins.",
+      "powerMoves": [
+        "Chicago Pile-1 — built the first self-sustaining nuclear chain reaction. Under the bleachers of a squash court. In downtown Chicago.",
+        "Fermi-Dirac statistics — describes the behavior of all fermions (electrons, protons, quarks). Half the particles in the universe follow his rules.",
+        "Beta decay theory — explained weak nuclear interactions, predicted the neutrino's properties before it was found",
+        "Fermi estimation — the art of approximating anything with back-of-envelope calculations. Still taught everywhere.",
+        "The Fermi paradox — 'Where is everybody?' One lunch question that launched an entire field of astrobiology."
+      ],
+      "funFact": "When the first nuclear bomb was tested at Trinity, Fermi dropped torn scraps of paper during the shockwave and used how far they blew to estimate the yield. His estimate: 10 kilotons. Actual yield: 21 kilotons. He was in the right ballpark using confetti and arithmetic while everyone else needed instruments.",
+      "tea": [
+        "Worked on the Manhattan Project with full enthusiasm. Unlike Oppenheimer who agonized, or Szilard who tried to stop the bombing, Fermi seemed to treat the bomb primarily as a fascinating physics problem. His wife Laura wrote about this disconnect — the warmest man at dinner, the coldest when it came to strategic bombing calculations.",
+        "Used his Nobel Prize trip to Stockholm in 1938 as an escape route from Fascist Italy — his wife Laura was Jewish and the racial laws were tightening. He never went back. The prize that honored his work on neutrons literally saved his family's lives.",
+        "Died of stomach cancer at 53, almost certainly caused by radiation exposure. The man who built the first reactor and stood near ground zero at Trinity paid the price that many Manhattan Project physicists paid. He reportedly faced death with the same calm pragmatism he brought to physics problems."
+      ],
+      "influences": ["dirac"],
+      "influenced": [],
+      "rivalries": ["Approximation skeptics (his Fermi estimates were always shockingly close to the real answer)"],
+      "media": [
+        { "type": "youtube", "id": "sNhhvQGsMEc", "title": "The Fermi Paradox — Kurzgesagt" },
+        { "type": "youtube", "id": "Xwn8fQSW7-8", "title": "Chicago Pile-1 — History of the Manhattan Project" }
+      ]
+    },
+    {
+      "slug": "poincare",
+      "name": "Henri Poincar\u00e9",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/Henri_Poincar%C3%A9-2.jpg/400px-Henri_Poincar%C3%A9-2.jpg",
+      "born": 1854,
+      "died": 1912,
+      "fields": ["mathematics", "physics"],
+      "tier": "built-different",
+      "nationality": "French",
+      "signature": "Poincar\u00e9 conjecture",
+      "tagline": "The last universalist. Knew ALL of mathematics. Almost scooped Einstein on relativity. The 'almost' still haunts physics historians.",
+      "quote": "It is by logic that we prove, but by intuition that we discover.",
+      "quoteContext": "From a man who had both in quantities that shouldn't be legal.",
+      "powerMoves": [
+        "Special relativity foundations — had the Lorentz transformations and most of the math before Einstein published. Missed the conceptual leap.",
+        "Chaos theory — discovered sensitive dependence on initial conditions in the three-body problem. Invented a field 70 years early.",
+        "Poincar\u00e9 conjecture — posed in 1904, not proven until 2003 (by Perelman). One of the millennium problems.",
+        "Algebraic topology — essentially created the field, giving mathematics tools to study shapes that persist to this day",
+        "Automorphic functions — unified huge areas of complex analysis and group theory. Mathematicians are still mining this."
+      ],
+      "funFact": "So absent-minded that he once forgot which hand he wrote with. His eyesight was terrible and his physical coordination worse — he reportedly couldn't draw a straight line. The man who described the shape of the universe in mathematics couldn't draw a circle on a blackboard.",
+      "tea": [
+        "The priority dispute with Einstein over special relativity is one of physics' great tragedies. Poincar\u00e9 had the Lorentz transformations, had the math, had the relativity principle — but didn't make the conceptual leap to say 'there is no ether, there is no absolute time.' Einstein did. One insight separated them. History gave Einstein everything and Poincar\u00e9 a footnote.",
+        "Won a prize from the King of Sweden for his work on the three-body problem — then had to publish a correction because he'd found an error that actually made the result MORE important (it contained chaos theory). The correction cost him more than the prize money. He paid it. The error was more valuable than the original answer.",
+        "Died at 58 from complications of surgery. He was at the height of his powers and still productive across half a dozen fields simultaneously. Mathematics lost its last person who could see the whole landscape at once."
+      ],
+      "influences": [],
+      "influenced": [],
+      "rivalries": ["Einstein (the relativity priority question — Poincar\u00e9 had the math, Einstein had the physics, history chose Einstein)"],
+      "media": [
+        { "type": "youtube", "id": "GIw-KUmlnok", "title": "The Poincar\u00e9 Conjecture — Numberphile" },
+        { "type": "youtube", "id": "ovJcsL7vyrk", "title": "Chaos Theory — Veritasium" }
+      ]
+    },
+    {
+      "slug": "pauli",
+      "name": "Wolfgang Pauli",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/43/Wolfgang_Pauli_young.jpg/400px-Wolfgang_Pauli_young.jpg",
+      "born": 1900,
+      "died": 1958,
+      "fields": ["physics"],
+      "tier": "built-different",
+      "nationality": "Austrian-Swiss-American",
+      "signature": "No two electrons can share the same quantum state",
+      "tagline": "The conscience of physics. If your theory was wrong, you'd hear about it. If your theory was not even wrong, God help you.",
+      "quote": "Das ist nicht nur nicht richtig; es ist nicht einmal falsch!",
+      "quoteContext": "'That is not only not right; it is not even wrong!' — the most devastating critique in the history of science. He meant it.",
+      "powerMoves": [
+        "Exclusion principle — two fermions cannot occupy the same quantum state. This is why matter has volume. Why chemistry exists. Why you don't fall through your chair.",
+        "Predicted the neutrino (1930) — postulated an invisible particle to save conservation of energy. Found 26 years later. He was right.",
+        "Pauli matrices — the mathematical description of spin-1/2 particles. Fundamental to all of quantum mechanics.",
+        "Spin-statistics theorem — proved the connection between spin and quantum statistics. Why bosons bunch and fermions don't.",
+        "CPT theorem — the deepest symmetry in particle physics. If you flip charge, parity, and time, physics stays the same."
+      ],
+      "funFact": "The 'Pauli effect' was a running joke in physics: laboratory equipment would spontaneously fail when he entered the room. Experimentalists genuinely would not let him near their apparatus. Once, a piece of equipment at the University of Bern collapsed at the exact moment Pauli's train stopped at the Bern station. He wasn't even in the building.",
+      "tea": [
+        "Brutally critical of colleagues in ways that would get you fired from any modern department. Called a paper 'not even wrong.' Told a young physicist his work was 'so bad it isn't even wrong.' Wrote letters filled with savage intellectual takedowns that make modern peer review look like a compliment sandwich. He was usually right, which made it worse.",
+        "His first marriage lasted less than a year — his wife left him for a chemist, which Pauli found more insulting than the divorce itself. He reportedly said the chemist was the real insult. He subsequently struggled with alcoholism and entered therapy with Carl Jung, leading to a famous scientist-analyst correspondence about the philosophy of physics.",
+        "His godfather was Ernst Mach, the physicist who denied atoms existed. Pauli grew up to work on the quantum theory of atoms. He never publicly noted the irony, but given his personality, he certainly enjoyed it privately."
+      ],
+      "influences": ["bohr", "einstein"],
+      "influenced": ["dirac", "heisenberg"],
+      "rivalries": ["Bad theories (he hunted them with the enthusiasm of a predator)"],
+      "media": [
+        { "type": "youtube", "id": "EK_6ZzljNnM", "title": "The Pauli Exclusion Principle — PBS Space Time" },
+        { "type": "youtube", "id": "0Eeuqh9QfNI", "title": "Quantum Spin — Looking Glass Universe" }
+      ]
+    },
+    {
+      "slug": "kepler",
+      "name": "Johannes Kepler",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Johannes_Kepler_1610.jpg/400px-Johannes_Kepler_1610.jpg",
+      "born": 1571,
+      "died": 1630,
+      "fields": ["astronomy", "mathematics", "physics"],
+      "tier": "built-different",
+      "nationality": "German",
+      "signature": "T\u00b2 \u221d a\u00b3",
+      "tagline": "Discovered the laws of planetary motion. The data forced him to accept ellipses. He found them aesthetically offensive. He accepted them anyway.",
+      "quote": "I measured the skies, now the shadows I measure. Skybound was the mind, earthbound the body rests.",
+      "quoteContext": "His self-composed epitaph. The man who mapped the heavens knew exactly where he belonged.",
+      "powerMoves": [
+        "Three laws of planetary motion — the mathematical foundation of ALL orbital mechanics. Every satellite, every rocket, every planet follows Kepler.",
+        "Kepler's first law — orbits are ellipses, not circles. Destroyed 2,000 years of circular dogma with one observation.",
+        "Rudolphine Tables — the most accurate astronomical tables for over a century. Used real data from Tycho Brahe.",
+        "Kepler's supernova (1604) — observed and documented the last supernova visible to the naked eye in our galaxy",
+        "Foundational optics — explained how the eye works, how telescopes work, laid groundwork for Newton's optics"
+      ],
+      "funFact": "His mother Katharina was accused of witchcraft in 1615. Kepler personally defended her in court for six years — writing legal briefs, cross-examining witnesses, marshaling evidence. She was acquitted in 1621 but died six months later. The man who decoded the laws governing the planets spent six years fighting superstition to save his mother's life.",
+      "tea": [
+        "Spent years trying to fit planetary orbits to the five Platonic solids — a beautiful, mystical geometric theory that was completely wrong. He published it enthusiastically in Mysterium Cosmographicum. The data eventually forced him to abandon it for ellipses, which he considered ugly. Science won over aesthetics, but it took him a long time to let go of the beautiful lie.",
+        "Lived in poverty for most of his life. Was paid irregularly by his patrons, sometimes years late. The man who discovered the laws governing the solar system had to write begging letters for his salary. The Holy Roman Emperor owed him 12,000 florins at the time of his death. He never collected.",
+        "Tycho Brahe's observational data — which Kepler needed for his laws — was obtained through what can only be described as an intellectual heist. Brahe kept his data secret; Kepler maneuvered himself into position as Brahe's assistant, and when Brahe died suddenly in 1601, Kepler secured the data before the family could lock it away. The three laws of planetary motion exist partly because Kepler moved fast when Brahe moved on."
+      ],
+      "influences": [],
+      "influenced": ["newton"],
+      "rivalries": ["Tycho Brahe (employer, data source, and intellectual adversary — a complicated relationship that ended only with death)"],
+      "media": [
+        { "type": "youtube", "id": "fGRGMnhPkOY", "title": "Kepler's Laws — 3Blue1Brown" },
+        { "type": "youtube", "id": "xbU0VB3K_-s", "title": "How Kepler Discovered the Laws of Planetary Motion — SciShow Space" }
       ]
     }
   ],

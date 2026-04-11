@@ -13,7 +13,12 @@
     "preview": "npm run preview --workspace web",
     "ingest": "node --experimental-strip-types ingestion/fetch-niac.ts",
     "pulse": "node --experimental-strip-types ingestion/fetch-pulse.ts",
-    "pulse:backdate": "node --experimental-strip-types ingestion/fetch-pulse.ts --backdate"
+    "pulse:backdate": "node --experimental-strip-types ingestion/fetch-pulse.ts --backdate",
+    "embeddings": "node --experimental-strip-types ingestion/build-embeddings.ts",
+    "embeddings:hf": "node --experimental-strip-types ingestion/build-embeddings.ts --embeddings",
+    "literature:verify": "node --experimental-strip-types ingestion/fetch-literature.ts --verify-wishlist",
+    "literature:citations": "node --experimental-strip-types ingestion/fetch-literature.ts --citation-velocity",
+    "literature:enrich": "node --experimental-strip-types ingestion/fetch-literature.ts --enrich-concepts"
   },
   "devDependencies": {
     "@types/node": "^22.10.0",

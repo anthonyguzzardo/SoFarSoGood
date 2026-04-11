@@ -5,6 +5,38 @@
     "title": "Black Holes",
     "subtitle": "Where spacetime breaks and physics begins again",
     "overview": "What happens when gravity wins completely? A black hole is a region of spacetime where gravity is so extreme that nothing — not even light — can escape once it crosses the event horizon. First predicted by Schwarzschild's 1916 solution to Einstein's field equations, black holes spent decades as mathematical curiosities before astronomers found overwhelming evidence they're everywhere: at the centers of galaxies, in binary star systems, and possibly wandering through interstellar space in the billions. The 2019 Event Horizon Telescope image of M87* and the 2015 LIGO detection of gravitational waves from merging black holes turned them from theoretical objects into observed ones. Yet the deepest questions remain open: what happens at the singularity? Is information truly destroyed? How does gravity behave at the quantum scale?",
+    "equations": [
+      {
+        "name": "Schwarzschild Metric",
+        "equation": "ds² = −(1 − rₛ/r)c²dt² + (1 − rₛ/r)⁻¹dr² + r²dΩ²",
+        "note": "Describes the geometry of spacetime outside a non-rotating, uncharged black hole. The entire event horizon, time dilation, and orbital mechanics follow from this one line."
+      },
+      {
+        "name": "Schwarzschild Radius",
+        "equation": "rₛ = 2GM/c²",
+        "note": "The radius at which the escape velocity equals the speed of light. Cross this boundary and nothing — not light, not information — gets out."
+      },
+      {
+        "name": "Hawking Temperature",
+        "equation": "T_H = ℏc³ / (8πGMk_B)",
+        "note": "Black holes radiate thermally at this temperature. Smaller black holes are hotter. This equation bridges quantum mechanics and general relativity for the first time."
+      },
+      {
+        "name": "Bekenstein–Hawking Entropy",
+        "equation": "S_BH = k_B c³ A / (4Gℏ)",
+        "note": "A black hole's entropy is proportional to its surface area, not its volume. This was the first hint that gravity is holographic — information lives on boundaries, not in bulk."
+      },
+      {
+        "name": "Kerr Parameter",
+        "equation": "a = J / (Mc)",
+        "note": "Real black holes spin. The Kerr parameter measures how much, and determines the size of the ergosphere — the region where spacetime itself is dragged around."
+      },
+      {
+        "name": "Ryu–Takayanagi Formula",
+        "equation": "S_EE = Area(γ_A) / (4G_N)",
+        "note": "Entanglement entropy of a boundary region equals the area of the minimal surface in the bulk. The deepest bridge between quantum information and geometry."
+      }
+    ],
     "openQuestions": [
       "What happens to information that falls into a black hole? (the information paradox)",
       "What replaces the singularity in a quantum theory of gravity?",
@@ -233,6 +265,38 @@
     "title": "Gravity",
     "subtitle": "The force we feel every second and still don't fully understand",
     "overview": "Why does the force we feel every second remain the deepest mystery in physics? Gravity is the most familiar force in the universe and the least understood at a fundamental level. Newton gave us the math to predict orbits in 1687. Einstein replaced it in 1915 with general relativity — gravity isn't a force at all, but the curvature of spacetime caused by mass and energy. This framework predicts gravitational waves, black holes, the expansion of the universe, and GPS timing corrections to nanosecond precision. And yet: general relativity breaks down at singularities, refuses to play nicely with quantum mechanics, and can't explain why the universe's expansion is accelerating (dark energy) or why galaxies hold together better than their visible matter should allow (dark matter). A quantum theory of gravity — one that unifies Einstein's curved spacetime with the quantum world — remains the biggest open problem in physics.",
+    "equations": [
+      {
+        "name": "Einstein Field Equations",
+        "equation": "G_μν + Λg_μν = (8πG/c⁴) T_μν",
+        "note": "The master equation of general relativity. The left side describes spacetime curvature; the right side describes matter and energy. Mass tells space how to curve; space tells mass how to move."
+      },
+      {
+        "name": "Newton's Law of Gravitation",
+        "equation": "F = Gm₁m₂/r²",
+        "note": "The inverse square law that governed physics for 228 years. Still accurate for most engineering purposes. General relativity reduces to this in the weak-field, low-velocity limit."
+      },
+      {
+        "name": "Geodesic Equation",
+        "equation": "d²xᵘ/dτ² + Γᵘ_αβ (dxᵅ/dτ)(dxᵝ/dτ) = 0",
+        "note": "Objects in freefall follow geodesics — the straightest possible paths through curved spacetime. This is why gravity feels like a force but is really geometry."
+      },
+      {
+        "name": "Gravitational Time Dilation",
+        "equation": "Δt' = Δt √(1 − 2GM/rc²)",
+        "note": "Clocks tick slower in stronger gravitational fields. GPS satellites must correct for this — without general relativity, your phone's location would drift by ~10 km per day."
+      },
+      {
+        "name": "Gravitational Wave Strain",
+        "equation": "h ~ (4G/c⁴)(Mv²/r)",
+        "note": "How much spacetime stretches as a gravitational wave passes. LIGO detected strains of 10⁻²¹ — a thousand times smaller than a proton, across a 4 km detector."
+      },
+      {
+        "name": "Friedmann Equation",
+        "equation": "(ȧ/a)² = 8πGρ/3 − kc²/a² + Λc²/3",
+        "note": "Governs the expansion of the universe. The 'a' is the scale factor — how big the universe is. Dark energy (Λ), matter density (ρ), and curvature (k) compete to determine our cosmic fate."
+      }
+    ],
     "openQuestions": [
       "Is gravity fundamentally quantum, or does spacetime resist quantization?",
       "What is dark energy, and why is the universe's expansion accelerating?",
@@ -481,6 +545,43 @@
     "title": "Quantum Physics",
     "subtitle": "The rules that govern everything small — and maybe everything",
     "overview": "Why do the rules governing everything small seem to contradict everything we experience? Quantum mechanics is the framework that describes nature at the smallest scales: atoms, photons, electrons, quarks. Its predictions are the most precisely tested in all of science — the magnetic moment of the electron agrees with theory to 12 decimal places. And yet quantum mechanics is profoundly strange: particles exist in superpositions of states until measured, distant particles can be entangled so that measuring one instantly affects the other, and the act of observation appears to play a fundamental role in determining reality. A century after its founding, physicists still disagree about what quantum mechanics *means*. The measurement problem, the nature of the wave function, and whether quantum mechanics needs to be modified to include gravity are among the deepest open questions in science.",
+    "equations": [
+      {
+        "name": "Schrödinger Equation",
+        "equation": "iℏ ∂ψ/∂t = Ĥψ",
+        "note": "The master equation of non-relativistic quantum mechanics. Every atom, every molecule, every chemical bond obeys this. The wave function ψ contains everything knowable about a quantum system."
+      },
+      {
+        "name": "Heisenberg Uncertainty Principle",
+        "equation": "Δx · Δp ≥ ℏ/2",
+        "note": "Not a statement about measurement errors — a fundamental limit of nature. Position and momentum cannot both be precisely defined simultaneously. The universe itself doesn't know both values."
+      },
+      {
+        "name": "Dirac Equation",
+        "equation": "(iγᵘ∂_μ − m)ψ = 0",
+        "note": "The relativistic equation for spin-½ particles. Predicted antimatter before anyone observed it. Dirac stared at the negative-energy solutions and refused to ignore them. He was right."
+      },
+      {
+        "name": "Born Rule",
+        "equation": "P(a) = |⟨a|ψ⟩|²",
+        "note": "The probability of measuring outcome 'a' is the squared magnitude of the inner product. This is where determinism ends and probability begins in quantum mechanics."
+      },
+      {
+        "name": "Canonical Commutation Relation",
+        "equation": "[x̂, p̂] = iℏ",
+        "note": "Position and momentum operators don't commute — their order matters. This single algebraic fact generates the uncertainty principle, quantized energy levels, and the entire structure of quantum mechanics."
+      },
+      {
+        "name": "Feynman Path Integral",
+        "equation": "⟨x_f|e^{−iĤt/ℏ}|x_i⟩ = ∫𝒟x e^{iS[x]/ℏ}",
+        "note": "A particle takes every possible path between two points simultaneously, each weighted by the classical action. Feynman's reformulation — equivalent to Schrödinger's but far more general."
+      },
+      {
+        "name": "Bell Inequality",
+        "equation": "|E(a,b) − E(a,c)| ≤ 1 + E(b,c)",
+        "note": "If hidden variables exist, this inequality must hold. Quantum mechanics violates it. Experiments confirm the violation. Nature is non-local, or reality is stranger than any classical model allows."
+      }
+    ],
     "openQuestions": [
       "What is the correct interpretation of quantum mechanics? (Copenhagen, Many-Worlds, pilot wave, etc.)",
       "Can quantum computing solve problems that are truly intractable classically?",
@@ -708,6 +809,38 @@
     "title": "Propulsion",
     "subtitle": "How we escape the gravity well — and whether we ever reach the stars",
     "overview": "Why is it so brutally hard to leave Earth — and can we ever reach the stars? Every journey into space begins with the same brutal constraint: you must throw mass behind you to move forward, and you must carry that mass with you. The Tsiolkovsky rocket equation is merciless — to go faster, you need exponentially more fuel, which makes you heavier, which means you need even more fuel. Chemical rockets, for all their drama, can barely get us to Mars. To reach the outer planets in months instead of years, or to reach other stars within a human lifetime, we need fundamentally different approaches: solar sails that ride photon pressure, electric sails that push against the solar wind, fusion drives that burn hydrogen into helium, antimatter engines that convert mass directly into energy, or laser-propelled lightsails that leave the fuel at home entirely. NIAC has funded dozens of these ideas, and some of them might actually work.",
+    "equations": [
+      {
+        "name": "Tsiolkovsky Rocket Equation",
+        "equation": "Δv = I_sp · g₀ · ln(m₀/m_f)",
+        "note": "The tyranny of rocketry. To double your velocity, you need exponentially more fuel. Every mission designer fights this equation. Every propulsion innovation tries to break its grip."
+      },
+      {
+        "name": "Thrust Equation",
+        "equation": "F = ṁ · v_e + (p_e − p_a) · A_e",
+        "note": "Thrust comes from two things: momentum of exhaust and pressure difference at the nozzle. Higher exhaust velocity means more delta-v per kilogram of propellant."
+      },
+      {
+        "name": "Specific Impulse",
+        "equation": "I_sp = v_e / g₀",
+        "note": "The fuel efficiency of a rocket, measured in seconds. Chemical rockets: ~450s. Ion engines: ~3,000s. Fusion: ~100,000s. The higher the I_sp, the less fuel you need."
+      },
+      {
+        "name": "Solar Sail Force",
+        "equation": "F = 2PA cos²θ / c",
+        "note": "A solar sail converts photon momentum into thrust — no fuel required. Force drops with distance squared but never runs out. At 1 AU, sunlight exerts about 9 μN/m²."
+      },
+      {
+        "name": "Relativistic Rocket Equation",
+        "equation": "v/c = 1 − (m_f/m₀)^(2v_e/c) / [1 + (m_f/m₀)^(2v_e/c)]",
+        "note": "At velocities approaching light speed, Newton's rocket equation breaks down. This relativistic version shows that reaching even 10% of c requires extraordinary exhaust velocities."
+      },
+      {
+        "name": "Oberth Effect",
+        "equation": "ΔKE = ½m(v + Δv)² − ½mv² = mΔv(v + Δv/2)",
+        "note": "Burning fuel when you're already moving fast gives you more kinetic energy than the same burn at rest. Gravity assists exploit this — it's free energy from orbital mechanics."
+      }
+    ],
     "openQuestions": [
       "Can fusion propulsion be made practical for crewed missions to Mars and beyond?",
       "Is laser-propelled lightsail travel to Alpha Centauri achievable within 20 years of flight?",
@@ -915,6 +1048,33 @@
     "title": "Telescopes & Observation",
     "subtitle": "The instruments that let us see what we can't touch",
     "overview": "Why has every revolution in astronomy been a revolution in how we see? Everything we know about the universe beyond Earth comes through telescopes. From Galileo's refractor in 1609 to the James Webb Space Telescope orbiting the L2 Lagrange point, every generation has built instruments that revealed a universe bigger, older, and stranger than anyone expected. Modern telescopes don't just see visible light — they observe across the electromagnetic spectrum: radio waves from pulsars, microwaves from the cosmic background radiation, infrared from nascent star systems, ultraviolet from hot young stars, X-rays from neutron star accretion, and gamma rays from the most violent events in the cosmos. The next frontier is multi-messenger astronomy: combining light, gravitational waves, and neutrinos to see the same event through completely different physics. NIAC has funded ambitious concepts including solar gravitational lensing (using the Sun itself as a telescope), lunar-based interferometers, and radically new sensor architectures.",
+    "equations": [
+      {
+        "name": "Diffraction Limit",
+        "equation": "θ = 1.22 λ/D",
+        "note": "The angular resolution of any telescope is set by its wavelength divided by its aperture. Bigger mirrors see finer detail. This is why JWST's 6.5m mirror can see things Hubble's 2.4m mirror cannot."
+      },
+      {
+        "name": "Gravitational Lensing (Einstein Ring)",
+        "equation": "θ_E = √(4GM · D_LS / (c² · D_L · D_S))",
+        "note": "Mass bends light. A massive object between us and a distant source creates a ring of light — the Einstein ring. The Sun itself can act as a gravitational lens with a focal point starting at 550 AU."
+      },
+      {
+        "name": "Signal-to-Noise Ratio",
+        "equation": "SNR ∝ D² · √t · η / √(B + S)",
+        "note": "How well you can detect a signal above noise. Scales with mirror area (D²) and the square root of integration time. There's no shortcut — to see fainter objects, you need bigger mirrors or longer exposures."
+      },
+      {
+        "name": "Planck's Law (Blackbody Spectrum)",
+        "equation": "B(ν, T) = (2hν³/c²) · 1/(e^{hν/k_BT} − 1)",
+        "note": "Every warm object radiates with a spectrum determined by its temperature. This is how telescopes measure the temperature of stars, planets, and the cosmic microwave background."
+      },
+      {
+        "name": "Interferometric Baseline Resolution",
+        "equation": "θ ~ λ / (2B)",
+        "note": "Two telescopes separated by distance B act like a single telescope of that diameter. The Event Horizon Telescope used this — interferometry across Earth to resolve a black hole shadow."
+      }
+    ],
     "openQuestions": [
       "Can we use the Sun's gravitational lens to image exoplanet surfaces in detail?",
       "What will the first direct image of an exoplanet's continents look like?",
@@ -1085,6 +1245,23 @@
     "title": "Solar Sails & Light Propulsion",
     "subtitle": "Sailing on starlight",
     "overview": "Solar sails are spacecraft propelled not by fuel but by the pressure of photons striking a large, reflective surface. The idea dates back to Kepler, who noticed that comet tails always point away from the Sun, and to the early 20th-century Russian pioneers Tsander and Tsiolkovsky, who proposed harnessing this radiation pressure for spaceflight. The physics is simple: every photon carries momentum, and when it bounces off a mirror, it transfers twice its momentum to the sail. The force is tiny -- about 9 micronewtons per square meter at Earth's distance from the Sun -- but it never stops. A solar sail accelerates continuously, day after day, without ever running out of fuel.\n\nJAPAN's IKAROS became the first solar sail to fly in deep space in 2010, and The Planetary Society's LightSail 2 demonstrated controlled solar sailing in Earth orbit in 2019. But the real promise lies in advanced concepts: metamaterial sails engineered to be ultra-reflective and ultra-light, diffractive sails that steer without tilting, and laser-pushed lightsails like Breakthrough Starshot's concept that could reach a significant fraction of the speed of light. Electric sails -- which push against the solar wind's charged particles using a web of charged tethers -- offer a complementary approach that works especially well in the outer solar system.\n\nFor interstellar travel, light propulsion may be the only realistic near-term option. Chemical and even fusion rockets face the tyranny of the rocket equation, but a sail leaves its energy source behind. The challenge is making sails large enough and light enough to achieve useful accelerations, and -- for laser-driven concepts -- building the ground-based laser arrays powerful enough to push them to the stars.",
+    "equations": [
+      {
+        "name": "Radiation Pressure Force",
+        "equation": "F = 2PA cos²θ / c",
+        "note": "Photon momentum transferred to a perfectly reflective sail. The factor of 2 comes from reflection — each photon bounces, delivering twice its momentum."
+      },
+      {
+        "name": "Characteristic Acceleration",
+        "equation": "a_c = 2P / (σc)",
+        "note": "A sail's acceleration at 1 AU, where σ is areal density (mass per area). Lighter sails accelerate faster. The target: σ < 1 g/m² for interstellar missions."
+      },
+      {
+        "name": "Laser-Pushed Sail Velocity",
+        "equation": "v_f = c · [1 − (1 − P_laser · A / (mc³))²]^{1/2}",
+        "note": "For Breakthrough Starshot-style missions: a ground-based laser array pushes a gram-scale sail toward relativistic velocities. The beam divergence is the limiting factor."
+      }
+    ],
     "openQuestions": [
       "Can metamaterial or diffractive sails achieve thrust-to-mass ratios high enough for interstellar precursor missions?",
       "Is laser-pushed lightsail travel to Alpha Centauri achievable with a 20-year flight time?",
@@ -1200,6 +1377,18 @@
     "title": "In-Space Manufacturing",
     "subtitle": "Building in zero gravity",
     "overview": "Every object humans have used in space -- from the International Space Station to the Mars rovers -- was built on Earth and launched at enormous cost. The fundamental constraint is the same one that plagues all spaceflight: getting mass out of Earth's gravity well. But what if we could build structures in space, using materials found in space? In-space manufacturing aims to break the launch bottleneck by constructing everything from satellite components to lunar habitats using local resources and novel fabrication techniques adapted for microgravity and vacuum.\n\nThe approaches range from 3D printing with lunar and Martian regolith, to growing structures from fungal mycelium, to having robotic spiders weave kilometer-scale antenna dishes in orbit. Regolith-based additive manufacturing could produce radiation shielding, landing pads, and structural elements from the dirt already on the Moon and Mars. Biological manufacturing -- using engineered organisms to produce polymers, adhesives, or even building materials from CO2 and water -- offers the tantalizing possibility of factories that grow rather than being assembled.\n\nThe microgravity environment itself offers unique manufacturing advantages: perfect spheres, ultra-pure crystals, and fiber optics impossible to produce under gravity. As humanity establishes permanent presence beyond Earth, the ability to manufacture in situ will shift from novelty to necessity.",
+    "equations": [
+      {
+        "name": "ISRU Mass Savings",
+        "equation": "m_saved = m_structure · (1 − f_imported) · (C_launch / C_ISRU)",
+        "note": "The economics of in-situ resource utilization. Every kilogram you don't launch from Earth saves $2,700–$54,000 depending on destination. This equation is why ISRU matters."
+      },
+      {
+        "name": "Sintering Energy",
+        "equation": "E = ∫₀ᵗ P(T) dt = mc_p(T_sinter − T_ambient) + mL_f",
+        "note": "Energy required to sinter regolith into solid structures. Lunar regolith melts around 1,100–1,200°C. Solar concentrators can provide this without electrical power."
+      }
+    ],
     "openQuestions": [
       "Can regolith-based 3D printing produce structures strong enough for pressurized habitats?",
       "How do you control biological manufacturing processes (mycotecture, biomaterials) in low-gravity environments?",
@@ -1311,6 +1500,18 @@
     "title": "Planetary Habitats",
     "subtitle": "Living on other worlds",
     "overview": "Humans evolved for exactly one environment: sea-level Earth, with its 1g gravity, nitrogen-oxygen atmosphere, magnetic field shielding, and stable temperature range. Every other place in the solar system will kill you -- quickly. Mars has a barely-there atmosphere of CO2, average temperatures of -60C, and no global magnetic field to stop solar radiation. The Moon has no atmosphere at all. Building habitats that keep humans alive, sane, and productive on these worlds is one of the great engineering challenges of the century.\n\nThe solutions being explored are remarkably creative. Inflatable modules could be buried under regolith for radiation protection. Structures grown from fungal mycelium (mycotecture) could self-repair and adapt to their environment. Thirsty Walls could extract water from humid cabin air while simultaneously revitalizing the atmosphere. Oxygen can be pulled from the Martian atmosphere using solid oxide electrolysis. The real challenge is not any single system but making them all work together as a closed or semi-closed life support system that doesn't depend on supply ships from Earth.\n\nBeyond the engineering, there are profound questions about what kind of societies will form in these habitats. Isolated, resource-constrained communities living in artificial environments under extreme stress -- the social dynamics of planetary settlement are as uncharted as the worlds themselves.",
+    "equations": [
+      {
+        "name": "Radiation Dose (Mars Surface)",
+        "equation": "D ≈ 0.67 mSv/day (GCR) + episodic SEP events",
+        "note": "Mars surface radiation is about 0.67 millisieverts per day from galactic cosmic rays — roughly 100× Earth's surface dose. Shielding with 2–3 meters of regolith reduces this to near-Earth levels."
+      },
+      {
+        "name": "Habitat Pressure Vessel",
+        "equation": "t = pR / (σ_y · SF)",
+        "note": "Minimum wall thickness for a pressurized habitat: internal pressure × radius divided by material yield strength and safety factor. Larger habitats need thicker walls or stronger materials."
+      }
+    ],
     "openQuestions": [
       "Can closed-loop life support systems operate reliably for years without resupply from Earth?",
       "How do you protect settlers from cosmic radiation and solar particle events on Mars?",
@@ -1422,6 +1623,23 @@
     "title": "Nuclear Propulsion",
     "subtitle": "Fission and fusion for deep space",
     "overview": "Chemical rockets are powerful but inefficient -- they convert less than 1% of their fuel's mass into energy. Nuclear reactions do millions of times better. Fission splits heavy atoms like uranium, releasing energy that can heat a propellant to extreme temperatures for high exhaust velocity. Fusion merges light atoms like hydrogen, releasing even more energy per kilogram. Either approach could cut Mars transit times from months to weeks and make the outer planets reachable in years instead of decades.\n\nNuclear thermal propulsion -- where a fission reactor heats hydrogen propellant -- was actually demonstrated in the 1960s and 70s during Project NERVA, which built and ground-tested working nuclear rocket engines before being canceled. Modern concepts go further: pulsed fission-fusion engines that harness both reactions, lattice confinement fusion that achieves fusion conditions in a metal lattice rather than a massive tokamak, and fission fragment rockets that use the high-velocity products of nuclear fission directly as exhaust. NIAC has funded several of these concepts.\n\nThe engineering challenges are formidable: reactor mass, radiation shielding for crew, thermal management in vacuum, and the political and regulatory hurdles of launching nuclear material. But the physics is unambiguous -- if we want to explore the outer solar system with crewed missions, nuclear propulsion is likely the only realistic option.",
+    "equations": [
+      {
+        "name": "Nuclear Thermal I_sp",
+        "equation": "I_sp = √(2E_th / m_prop) / g₀ ≈ 900s (H₂ propellant)",
+        "note": "NTR specific impulse is roughly 2× chemical rockets because the reactor heats hydrogen to ~2,700K. NERVA demonstrated this in the 1960s. It works."
+      },
+      {
+        "name": "Fusion Energy Yield",
+        "equation": "²H + ³H → ⁴He + n + 17.6 MeV",
+        "note": "Deuterium-tritium fusion releases 17.6 MeV per reaction — about 4× more energy per nucleon than fission. A fusion drive would have I_sp of 10,000–100,000 seconds."
+      },
+      {
+        "name": "Lawson Criterion",
+        "equation": "nτ_E > 1.5 × 10²⁰ s/m³ (for D-T at 15 keV)",
+        "note": "The minimum density × confinement time needed to sustain fusion. This is why fusion is hard — you need plasma hot enough to fuse AND dense enough AND confined long enough."
+      }
+    ],
     "openQuestions": [
       "Can nuclear thermal propulsion be revived and flight-qualified for crewed Mars missions?",
       "Is lattice confinement fusion a viable path to compact fusion propulsion?",
@@ -1537,6 +1755,23 @@
     "title": "Exoplanet Detection",
     "subtitle": "Finding other Earths",
     "overview": "For most of human history, we had no idea whether planets existed beyond our solar system. The first confirmed exoplanet around a Sun-like star was discovered in 1995, and since then the floodgates have opened: we now know of more than 5,600 confirmed exoplanets, with thousands more candidates awaiting verification. The Kepler mission alone found that planets are more common than stars -- virtually every star in the galaxy hosts at least one planet, and rocky, Earth-sized worlds in their star's habitable zone are not rare.\n\nThe detection methods are ingenious. The transit method watches for the tiny dimming when a planet crosses in front of its star. The radial velocity method detects the subtle wobble a planet's gravity imparts to its star. Direct imaging blocks the starlight to photograph the planet itself. Gravitational microlensing catches the brief brightening when a planet's gravity bends background starlight. Each method has biases -- transits favor large planets on tight orbits, radial velocity favors massive planets -- so building a complete census of exoplanets requires combining them all.\n\nThe next frontier is characterization: not just finding planets but analyzing their atmospheres for biosignatures like oxygen, methane, and water vapor. JWST is already doing this for hot gas giants, and future missions aim to characterize the atmospheres of temperate rocky worlds. The solar gravitational lens concept funded by NIAC could eventually image exoplanet surfaces at kilometer-scale resolution -- seeing continents on a world orbiting another star.",
+    "equations": [
+      {
+        "name": "Transit Depth",
+        "equation": "δ = (R_p / R_★)²",
+        "note": "How much a star dims when a planet transits. An Earth-sized planet crossing a Sun-like star causes a dip of ~84 parts per million. Kepler could measure this."
+      },
+      {
+        "name": "Radial Velocity Semi-amplitude",
+        "equation": "K = (2πG/P)^{1/3} · M_p sin(i) / (M_★ + M_p)^{2/3}",
+        "note": "The wobble speed a planet induces on its star. Earth induces a 9 cm/s wobble on the Sun — current instruments can detect ~30 cm/s. We're almost there."
+      },
+      {
+        "name": "Habitable Zone Boundaries",
+        "equation": "d = √(L_★ / L_☉) · d_HZ,☉",
+        "note": "The distance range where liquid water can exist on a planet's surface scales with the square root of stellar luminosity. For the Sun, roughly 0.95–1.37 AU."
+      }
+    ],
     "openQuestions": [
       "How common are Earth-like planets in the habitable zones of Sun-like stars (the eta-Earth question)?",
       "Can we detect biosignatures in exoplanet atmospheres with current or near-future technology?",
@@ -1646,6 +1881,18 @@
     "title": "Space Tethers & Elevators",
     "subtitle": "Cables to orbit",
     "overview": "The idea is deceptively simple: instead of burning fuel to reach orbit, climb a cable. A space elevator would consist of a tether anchored at the equator and extending beyond geostationary orbit (35,786 km), held taut by centrifugal force. Robotic climbers would ascend the cable, carrying payloads to orbit at a fraction of the cost of rockets -- potentially reducing launch costs from thousands of dollars per kilogram to tens. The concept was first described by Tsiolkovsky in 1895 and independently reinvented by Artsutanov in 1960 and Pearson in 1975.\n\nThe fundamental problem is materials: no existing material has the strength-to-weight ratio needed for an Earth-based space elevator cable. Carbon nanotubes have the theoretical tensile strength, but we can produce them only centimeters long, not 100,000 kilometers. However, the concept extends far beyond Earth. A lunar space elevator is feasible with existing materials like Kevlar or Zylon because the Moon's gravity is one-sixth of Earth's. A Martian elevator faces intermediate challenges. And momentum-exchange tethers -- rotating cables in orbit that can catch and throw payloads -- don't need exotic materials at all.\n\nNIAC has funded studies of both space elevator technology and creative tether applications like PHLOTE, which would use a tether at the Mars-Phobos L1 point for efficient transfers between Mars orbit and its moon. Tethers represent a fundamentally different approach to space transportation: infrastructure instead of expendables, capital cost instead of per-launch cost.",
+    "equations": [
+      {
+        "name": "Tether Characteristic Velocity",
+        "equation": "v_c = √(σ_max / ρ)",
+        "note": "The maximum velocity a tether material can support in rotation — tensile strength divided by density, square-rooted. For steel: ~1.6 km/s. For carbon nanotubes: ~6.9 km/s. LEO orbital velocity: 7.8 km/s."
+      },
+      {
+        "name": "Taper Ratio",
+        "equation": "A(r)/A₀ = exp[(ρ/σ)(½ω²r² − GM/r + const)]",
+        "note": "A space elevator cable must be thickest at GEO and taper toward both ends. The required taper ratio determines whether a material can do the job — carbon nanotubes barely make it."
+      }
+    ],
     "openQuestions": [
       "Can carbon nanotubes or other materials be manufactured at the lengths and quality needed for an Earth space elevator?",
       "Is a lunar space elevator buildable with current materials and if so, when?",
@@ -1748,6 +1995,23 @@
     "title": "Astrobiology",
     "subtitle": "The search for life beyond Earth",
     "overview": "Astrobiology asks the biggest question science can ask: are we alone? It is an inherently interdisciplinary field, drawing on biology, chemistry, geology, planetary science, and astronomy to understand how life originates, how it evolves, what conditions it requires, and where else in the universe it might exist. On Earth, life has proven astonishingly resilient -- thriving in boiling hydrothermal vents, frozen Antarctic lakes, highly acidic mine drainage, and kilometers below the surface in solid rock. These extremophiles have radically expanded our notion of what counts as a habitable environment.\n\nThe prime targets in our own solar system are Mars, where ancient river channels and subsurface water may harbor fossil or extant microbial life; Europa and Enceladus, whose subsurface oceans are warmed by tidal heating and could host life around hydrothermal vents on their ocean floors; and Titan, whose methane lakes and complex organic chemistry represent a completely alien potential for life. Venus, long dismissed as too hostile, re-entered the conversation after controversial claims of phosphine in its atmosphere in 2020 -- NIAC has funded a sample return mission concept to settle the question.\n\nBeyond the solar system, the search focuses on biosignatures in exoplanet atmospheres: gases like oxygen, methane, and phosphine that might indicate biological activity. The challenge is distinguishing genuine biosignatures from abiotic chemistry -- a problem that requires understanding planetary chemistry far more deeply than we currently do.",
+    "equations": [
+      {
+        "name": "Drake Equation",
+        "equation": "N = R★ · f_p · n_e · f_l · f_i · f_c · L",
+        "note": "Estimated number of communicating civilizations in the galaxy. Not a prediction — a framework for organizing our ignorance. Every term except the first is poorly constrained."
+      },
+      {
+        "name": "Tidal Heating (Europa/Enceladus)",
+        "equation": "Ė_tidal ∝ (e² · n⁵ · R⁵) / (G · Q)",
+        "note": "What keeps Europa's ocean liquid: gravitational flexing from Jupiter's tidal forces converts orbital energy into heat. Eccentricity (e) is maintained by resonance with Io and Ganymede."
+      },
+      {
+        "name": "Gibbs Free Energy (Metabolism)",
+        "equation": "ΔG = ΔH − TΔS < 0 for spontaneous processes",
+        "note": "Life is a thermodynamic engine. Any biochemistry — carbon-based or otherwise — must exploit free energy gradients. Where there's a chemical gradient and liquid solvent, life might find a way."
+      }
+    ],
     "openQuestions": [
       "Did Mars ever harbor life, and could microbial life persist in its subsurface today?",
       "Is there life in the subsurface oceans of Europa or Enceladus?",
@@ -1857,6 +2121,23 @@
     "title": "Interstellar Travel",
     "subtitle": "Reaching other stars",
     "overview": "The nearest star system, Alpha Centauri, is 4.37 light-years away -- about 40 trillion kilometers. Our fastest spacecraft, the Parker Solar Probe, travels at roughly 0.05% the speed of light, which would mean a journey of over 6,000 years. Interstellar travel is not a harder version of interplanetary travel; it is a fundamentally different problem that may require fundamentally different physics, engineering, or patience.\n\nThe concepts that have been studied most seriously include laser-propelled lightsails (Breakthrough Starshot aims to send gram-scale probes to Alpha Centauri at 20% light speed), nuclear pulse propulsion (Project Orion's detonation-driven spacecraft), fusion drives (Project Daedalus), and the Bussard ramjet (scooping interstellar hydrogen for fuel). Each faces enormous challenges. Lightsails must survive the initial laser blast and communicate from light-years away. Nuclear concepts require massive ships. The ramjet turns out to create more drag than thrust. And all crewed concepts face the additional problem of keeping humans alive for decades or centuries.\n\nMore speculative ideas include generation ships (multi-generational voyages in self-sustaining habitats), embryo ships (carrying frozen embryos to be raised by AI at the destination), and breakthrough physics concepts like the Alcubierre warp drive (which is consistent with general relativity but requires exotic matter with negative energy density). The 2017 detection of 'Oumuamua -- the first observed interstellar object passing through our solar system -- and NIAC-funded concepts for intercepting future interstellar visitors have added urgency to the question: can we go to the stars, or will the stars have to come to us?",
+    "equations": [
+      {
+        "name": "Relativistic Time Dilation",
+        "equation": "Δt_ship = Δt_Earth · √(1 − v²/c²)",
+        "note": "At 90% light speed, every year on the ship is 2.3 years on Earth. At 99.9%: 22.4 years on Earth per ship-year. Interstellar travel is a time machine — passengers arrive in their destination's future."
+      },
+      {
+        "name": "Relativistic Kinetic Energy",
+        "equation": "KE = (γ − 1)mc²  where γ = 1/√(1 − v²/c²)",
+        "note": "To accelerate a 1,000 kg probe to 20% c requires ~1.9 × 10¹⁸ J — the annual energy output of a small nation. This is why interstellar travel requires fundamentally new energy sources."
+      },
+      {
+        "name": "Alcubierre Metric",
+        "equation": "ds² = −c²dt² + [dx − v_s(t)f(r_s)dt]² + dy² + dz²",
+        "note": "A warp drive that contracts space ahead and expands it behind, moving a bubble of flat spacetime faster than light. Consistent with general relativity but requires exotic matter with negative energy density."
+      }
+    ],
     "openQuestions": [
       "Can laser-propelled lightsails reach Alpha Centauri in 20 years, and can they return useful data?",
       "Is there any propulsion method that could deliver a crewed ship to another star in a human lifetime?",

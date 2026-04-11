@@ -82,6 +82,39 @@ const overviewParagraphs = topic.overview
     </section>
 
     {/* ----------------------------------------------------------- */}
+    {/* The Math — key equations (collapsible)                      */}
+    {/* ----------------------------------------------------------- */}
+    {
+      topic.equations && topic.equations.length > 0 && (
+        <section class="mb-20 max-w-3xl">
+          <details open>
+            <summary class="eyebrow text-accent mb-4 pb-2 border-b hairline cursor-pointer select-none hover:text-white transition">
+              The math — key equations
+            </summary>
+            <div class="grid gap-4 mt-6">
+              {topic.equations.map((eq) => (
+                <div
+                  class="p-5 rounded-lg border hairline"
+                  style="background: var(--color-paper-raised);"
+                >
+                  <div class="font-mono text-[0.65rem] uppercase tracking-[0.18em] mb-3" style="color: var(--color-ink-dim);">
+                    {eq.name}
+                  </div>
+                  <div class="font-display text-lg md:text-xl leading-relaxed py-2 text-center" style="color: var(--color-ink);">
+                    {eq.equation}
+                  </div>
+                  <div class="text-sm leading-relaxed mt-3" style="color: var(--color-ink-dim);">
+                    {eq.note}
+                  </div>
+                </div>
+              ))}
+            </div>
+          </details>
+        </section>
+      )
+    }
+
+    {/* ----------------------------------------------------------- */}
     {/* Open questions                                              */}
     {/* ----------------------------------------------------------- */}
     <section class="mb-20">
