@@ -1,13 +1,13 @@
 {
-  "generatedAt": "2026-04-11T18:49:39.546Z",
+  "generatedAt": "2026-04-12T07:09:24.317Z",
   "topics": [
     {
       "slug": "quantum-computing",
       "label": "Quantum Computing",
       "score": 8530,
-      "delta": -77,
-      "direction": "down",
-      "mentions": 48,
+      "delta": 0,
+      "direction": "steady",
+      "mentions": 47,
       "sources": [
         {
           "platform": "hackernews",
@@ -125,10 +125,10 @@
     {
       "slug": "black-holes",
       "label": "Black Holes",
-      "score": 8431,
-      "delta": 284,
-      "direction": "up",
-      "mentions": 48,
+      "score": 8213,
+      "delta": -8,
+      "direction": "steady",
+      "mentions": 46,
       "sources": [
         {
           "platform": "arxiv",
@@ -248,8 +248,8 @@
       "slug": "gravitational-waves",
       "label": "Gravitational Waves",
       "score": 7800,
-      "delta": 300,
-      "direction": "up",
+      "delta": 0,
+      "direction": "steady",
       "mentions": 39,
       "sources": [
         {
@@ -369,8 +369,8 @@
       "slug": "nanotechnology",
       "label": "Nanotechnology & Metamaterials",
       "score": 7600,
-      "delta": -88,
-      "direction": "down",
+      "delta": 0,
+      "direction": "steady",
       "mentions": 38,
       "sources": [
         {
@@ -490,10 +490,10 @@
     {
       "slug": "space-telescopes",
       "label": "Space Telescopes",
-      "score": 7402,
-      "delta": 299,
-      "direction": "up",
-      "mentions": 38,
+      "score": 7459,
+      "delta": 1,
+      "direction": "steady",
+      "mentions": 39,
       "sources": [
         {
           "platform": "arxiv",
@@ -612,10 +612,10 @@
     {
       "slug": "condensed-matter",
       "label": "Condensed Matter",
-      "score": 7401,
-      "delta": -88,
-      "direction": "down",
-      "mentions": 38,
+      "score": 7201,
+      "delta": -5,
+      "direction": "steady",
+      "mentions": 37,
       "sources": [
         {
           "platform": "arxiv",
@@ -691,15 +691,6 @@
         },
         {
           "platform": "arxiv",
-          "title": "Spectroscopic Studies of two-dimensional Superconductivity",
-          "url": "https://arxiv.org/abs/2603.12570",
-          "score": 200,
-          "authors": "Qiang-Jun Cheng, Xu-Cun Ma, Qi-Kun Xue et al.",
-          "arxivCategory": "cond-mat.supr-con",
-          "publishedAt": "2026-03-13T02:07:29.000Z"
-        },
-        {
-          "platform": "arxiv",
           "title": "Fluctuation Mechanism of Single-Ion Anisotropy of Topological Insulator MnBi$_2$Te$_4$",
           "url": "https://arxiv.org/abs/2604.07852",
           "score": 200,
@@ -724,6 +715,15 @@
           "authors": "Qianjun Wang, Ruqian Wu, Jun Hu",
           "arxivCategory": "cond-mat.mes-hall",
           "publishedAt": "2026-04-07T01:32:36.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "D-instanton Effects on the Holographic Weyl Semimetals",
+          "url": "https://arxiv.org/abs/2604.04424",
+          "score": 200,
+          "authors": "Hwajin Eom, Yunseok Seo",
+          "arxivCategory": "hep-th",
+          "publishedAt": "2026-04-06T05:08:17.000Z"
         }
       ],
       "relatedConceptSlugs": [
@@ -734,8 +734,8 @@
       "slug": "particle-physics",
       "label": "Particle Physics",
       "score": 7200,
-      "delta": -88,
-      "direction": "down",
+      "delta": 0,
+      "direction": "steady",
       "mentions": 36,
       "sources": [
         {
@@ -853,8 +853,8 @@
       "slug": "dark-matter",
       "label": "Dark Matter & Dark Energy",
       "score": 5605,
-      "delta": 287,
-      "direction": "up",
+      "delta": -1,
+      "direction": "steady",
       "mentions": 30,
       "sources": [
         {
@@ -975,8 +975,8 @@
       "slug": "cosmology",
       "label": "Cosmology",
       "score": 5006,
-      "delta": -73,
-      "direction": "down",
+      "delta": -4,
+      "direction": "steady",
       "mentions": 26,
       "sources": [
         {
@@ -1096,8 +1096,8 @@
       "slug": "astrobiology",
       "label": "Astrobiology",
       "score": 3600,
-      "delta": 300,
-      "direction": "up",
+      "delta": 0,
+      "direction": "steady",
       "mentions": 18,
       "sources": [
         {
@@ -1218,8 +1218,8 @@
       "slug": "quantum-comms",
       "label": "Quantum Communication",
       "score": 3200,
-      "delta": 300,
-      "direction": "up",
+      "delta": 0,
+      "direction": "steady",
       "mentions": 16,
       "sources": [
         {
@@ -1336,124 +1336,11 @@
       ]
     },
     {
-      "slug": "exoplanets",
-      "label": "Exoplanets",
-      "score": 2200,
-      "delta": 300,
-      "direction": "up",
-      "mentions": 11,
-      "sources": [
-        {
-          "platform": "arxiv",
-          "title": "Weighing the mass of LHS 3844 b",
-          "url": "https://arxiv.org/abs/2603.28237",
-          "score": 200,
-          "authors": "Alejandro Hacker, Nicola Astudillo-Defru, Rodrigo F. Díaz et al.",
-          "arxivCategory": "astro-ph.EP",
-          "publishedAt": "2026-03-30T09:58:06.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "The JWST Search for Earth-Luna Analogs: Upper Limits on Exomoons and Refined Ephemerides for TOI 700 d and e",
-          "url": "https://arxiv.org/abs/2604.05235",
-          "score": 200,
-          "authors": "Emily K. Pass, David Charbonneau, Andrew Vanderburg et al.",
-          "arxivCategory": "astro-ph.EP",
-          "publishedAt": "2026-04-06T22:59:36.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Interaction between Winds from Weak-lined T Tauri Stars with Exoplanetary Magnetospheres",
-          "url": "https://arxiv.org/abs/2604.03792",
-          "score": 200,
-          "authors": "Y. F. Tamburus, N. F. S. Andrade, G. R. C. Sampaio et al.",
-          "arxivCategory": "astro-ph.SR",
-          "publishedAt": "2026-04-04T16:41:53.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "The PLATO Input Catalogue of targets (tPIC) for the first Long Pointing Field",
-          "url": "https://arxiv.org/abs/2604.03369",
-          "score": 200,
-          "authors": "M. Montalto, G. Piotto, P. M. Marrese et al.",
-          "arxivCategory": "astro-ph.EP",
-          "publishedAt": "2026-04-03T18:00:02.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "The PLATO field selection process III. Selection of the Prime Sample for the LOPS2 field",
-          "url": "https://arxiv.org/abs/2604.03365",
-          "score": 200,
-          "authors": "V. Nascimbeni, G. Piotto, V. Granata et al.",
-          "arxivCategory": "astro-ph.EP",
-          "publishedAt": "2026-04-03T18:00:00.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "First Detection of Exoplanetary Cannabinoids: Evidence for THC and CBD in the Atmosphere of K2-18b",
-          "url": "https://arxiv.org/abs/2603.29700",
-          "score": 200,
-          "authors": "Amie J. Chism, Mary Jane van der Pot, Blaise P. Hasheau et al.",
-          "arxivCategory": "astro-ph.EP",
-          "publishedAt": "2026-03-31T12:56:45.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Flare-driven habitability: Expanding life's potential around low-mass stars",
-          "url": "https://arxiv.org/abs/2603.24944",
-          "score": 200,
-          "authors": "Dong-Yang Gao, Hui-Gen Liu, Ming Yang et al.",
-          "arxivCategory": "astro-ph.EP",
-          "publishedAt": "2026-03-26T02:28:00.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "A Century of Radial Velocity and Astrometric Monitoring of 70 Oph AB: New PFS Data and Constraints on Planetary Companions",
-          "url": "https://arxiv.org/abs/2603.20044",
-          "score": 200,
-          "authors": "Yiting Li, Michael R. Meyer, Skylar D'Angiolillo et al.",
-          "arxivCategory": "astro-ph.EP",
-          "publishedAt": "2026-03-20T15:29:32.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Atmospheric supply of HCN is not the rate limiting step for prebiotic chemistry across rocky exoplanets",
-          "url": "https://arxiv.org/abs/2603.18769",
-          "score": 200,
-          "authors": "Gergely Friss, Paul I. Palmer, Marrick Braam et al.",
-          "arxivCategory": "astro-ph.EP",
-          "publishedAt": "2026-03-19T11:23:04.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Proton Irradiation of Primitive Atmospheres of Young Exoplanets and early Earth: $N_{\\mathrm{2}}O$ Greenhouse Warming and Prebiotic Synthesis",
-          "url": "https://arxiv.org/abs/2603.18206",
-          "score": 200,
-          "authors": "Kensei Kobayashi, Vladimir S. Airapetian, Takumi Udo et al.",
-          "arxivCategory": "astro-ph.EP",
-          "publishedAt": "2026-03-18T18:56:27.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Bridging the Gap: Using Brown Dwarfs to Examine Silicate Clouds in Giant Exoplanet Atmospheres",
-          "url": "https://arxiv.org/abs/2603.12479",
-          "score": 200,
-          "authors": "Emily Calamari, Jacqueline K. Faherty, Channon Visscher et al.",
-          "arxivCategory": "astro-ph.EP",
-          "publishedAt": "2026-03-12T21:58:03.000Z"
-        }
-      ],
-      "relatedConceptSlugs": [
-        "fluidic-telescope",
-        "orbiting-rainbows"
-      ]
-    },
-    {
       "slug": "asteroid-mining",
       "label": "Asteroid Mining",
       "score": 2200,
-      "delta": 300,
-      "direction": "up",
+      "delta": 0,
+      "direction": "steady",
       "mentions": 11,
       "sources": [
         {
@@ -1562,11 +1449,115 @@
       ]
     },
     {
+      "slug": "exoplanets",
+      "label": "Exoplanets",
+      "score": 2000,
+      "delta": -9,
+      "direction": "steady",
+      "mentions": 10,
+      "sources": [
+        {
+          "platform": "arxiv",
+          "title": "Weighing the mass of LHS 3844 b",
+          "url": "https://arxiv.org/abs/2603.28237",
+          "score": 200,
+          "authors": "Alejandro Hacker, Nicola Astudillo-Defru, Rodrigo F. Díaz et al.",
+          "arxivCategory": "astro-ph.EP",
+          "publishedAt": "2026-03-30T09:58:06.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "The JWST Search for Earth-Luna Analogs: Upper Limits on Exomoons and Refined Ephemerides for TOI 700 d and e",
+          "url": "https://arxiv.org/abs/2604.05235",
+          "score": 200,
+          "authors": "Emily K. Pass, David Charbonneau, Andrew Vanderburg et al.",
+          "arxivCategory": "astro-ph.EP",
+          "publishedAt": "2026-04-06T22:59:36.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Interaction between Winds from Weak-lined T Tauri Stars with Exoplanetary Magnetospheres",
+          "url": "https://arxiv.org/abs/2604.03792",
+          "score": 200,
+          "authors": "Y. F. Tamburus, N. F. S. Andrade, G. R. C. Sampaio et al.",
+          "arxivCategory": "astro-ph.SR",
+          "publishedAt": "2026-04-04T16:41:53.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "The PLATO Input Catalogue of targets (tPIC) for the first Long Pointing Field",
+          "url": "https://arxiv.org/abs/2604.03369",
+          "score": 200,
+          "authors": "M. Montalto, G. Piotto, P. M. Marrese et al.",
+          "arxivCategory": "astro-ph.EP",
+          "publishedAt": "2026-04-03T18:00:02.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "The PLATO field selection process III. Selection of the Prime Sample for the LOPS2 field",
+          "url": "https://arxiv.org/abs/2604.03365",
+          "score": 200,
+          "authors": "V. Nascimbeni, G. Piotto, V. Granata et al.",
+          "arxivCategory": "astro-ph.EP",
+          "publishedAt": "2026-04-03T18:00:00.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "First Detection of Exoplanetary Cannabinoids: Evidence for THC and CBD in the Atmosphere of K2-18b",
+          "url": "https://arxiv.org/abs/2603.29700",
+          "score": 200,
+          "authors": "Amie J. Chism, Mary Jane van der Pot, Blaise P. Hasheau et al.",
+          "arxivCategory": "astro-ph.EP",
+          "publishedAt": "2026-03-31T12:56:45.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Flare-driven habitability: Expanding life's potential around low-mass stars",
+          "url": "https://arxiv.org/abs/2603.24944",
+          "score": 200,
+          "authors": "Dong-Yang Gao, Hui-Gen Liu, Ming Yang et al.",
+          "arxivCategory": "astro-ph.EP",
+          "publishedAt": "2026-03-26T02:28:00.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "A Century of Radial Velocity and Astrometric Monitoring of 70 Oph AB: New PFS Data and Constraints on Planetary Companions",
+          "url": "https://arxiv.org/abs/2603.20044",
+          "score": 200,
+          "authors": "Yiting Li, Michael R. Meyer, Skylar D'Angiolillo et al.",
+          "arxivCategory": "astro-ph.EP",
+          "publishedAt": "2026-03-20T15:29:32.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Atmospheric supply of HCN is not the rate limiting step for prebiotic chemistry across rocky exoplanets",
+          "url": "https://arxiv.org/abs/2603.18769",
+          "score": 200,
+          "authors": "Gergely Friss, Paul I. Palmer, Marrick Braam et al.",
+          "arxivCategory": "astro-ph.EP",
+          "publishedAt": "2026-03-19T11:23:04.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Proton Irradiation of Primitive Atmospheres of Young Exoplanets and early Earth: $N_{\\mathrm{2}}O$ Greenhouse Warming and Prebiotic Synthesis",
+          "url": "https://arxiv.org/abs/2603.18206",
+          "score": 200,
+          "authors": "Kensei Kobayashi, Vladimir S. Airapetian, Takumi Udo et al.",
+          "arxivCategory": "astro-ph.EP",
+          "publishedAt": "2026-03-18T18:56:27.000Z"
+        }
+      ],
+      "relatedConceptSlugs": [
+        "fluidic-telescope",
+        "orbiting-rainbows"
+      ]
+    },
+    {
       "slug": "fusion-propulsion",
       "label": "Fusion Propulsion",
       "score": 1800,
-      "delta": 300,
-      "direction": "up",
+      "delta": -9,
+      "direction": "steady",
       "mentions": 9,
       "sources": [
         {
@@ -1658,12 +1649,96 @@
       ]
     },
     {
+      "slug": "starlink",
+      "label": "Starlink & Satellite Internet",
+      "score": 1008,
+      "delta": 0,
+      "direction": "steady",
+      "mentions": 7,
+      "sources": [
+        {
+          "platform": "arxiv",
+          "title": "Validated Intent Compilation for Constrained Routing in LEO Mega-Constellations",
+          "url": "https://arxiv.org/abs/2604.07264",
+          "score": 200,
+          "authors": "Yuanhang Li",
+          "arxivCategory": "cs.CR",
+          "publishedAt": "2026-04-08T16:29:25.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Coverage and Rate Analysis of Follower-Based LEO Satellite Networks: A Stochastic Geometry Approach",
+          "url": "https://arxiv.org/abs/2604.01265",
+          "score": 200,
+          "authors": "Juanjuan Ru, Ruibo Wang, Mohamed-Slim Alouini",
+          "arxivCategory": "cs.IT",
+          "publishedAt": "2026-04-01T13:44:19.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Hierarchical Battery-Aware Game Algorithm for ISL Power Allocation in LEO Mega-Constellations",
+          "url": "https://arxiv.org/abs/2603.29506",
+          "score": 200,
+          "authors": "Kangkang Sun, Jianhua Li, Xiuzhen Chen et al.",
+          "arxivCategory": "cs.GT",
+          "publishedAt": "2026-03-31T09:47:13.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Toward Multi-Satellite Cooperative Transmission: A Joint Framework for CSI Acquisition, Feedback, and Phase Synchronization",
+          "url": "https://arxiv.org/abs/2603.28195",
+          "score": 200,
+          "authors": "Yiming Zhu, Yafei Wang, Carla Amatetti et al.",
+          "arxivCategory": "eess.SP",
+          "publishedAt": "2026-03-30T09:03:58.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "jaxsgp4: GPU-accelerated mega-constellation propagation with batch parallelism",
+          "url": "https://arxiv.org/abs/2603.27830",
+          "score": 200,
+          "authors": "Charlotte Priestley, Will Handley",
+          "arxivCategory": "cs.DC",
+          "publishedAt": "2026-03-29T19:39:05.000Z"
+        },
+        {
+          "platform": "hackernews",
+          "title": "US Mobile now bundles Starlink home internet starting at $47/month",
+          "url": "https://www.usmobile.com/home-internet/starlink",
+          "score": 6,
+          "author": "fastest963",
+          "commentCount": 0,
+          "publishedAt": "2026-04-11T19:50:10.000Z"
+        },
+        {
+          "platform": "youtube",
+          "title": "Eavesdropping on Satellite Internet: Trying the \"Dontlookup\" Code",
+          "url": "https://www.youtube.com/watch?v=VE7S1nk4F04",
+          "score": 2,
+          "thumbnail": "https://img.youtube.com/vi/VE7S1nk4F04/mqdefault.jpg",
+          "publishedAt": "2026-04-09T01:44:23.000Z"
+        },
+        {
+          "platform": "hackernews",
+          "title": "Eavesdropping on Satellite Internet: Trying the \"Dontlookup\" Code",
+          "url": "https://www.youtube.com/watch?v=VE7S1nk4F04",
+          "score": 2,
+          "author": "emsign",
+          "commentCount": 0,
+          "publishedAt": "2026-04-09T01:44:23.000Z"
+        }
+      ],
+      "relatedConceptSlugs": [
+        "sps-alpha"
+      ]
+    },
+    {
       "slug": "artemis",
       "label": "Artemis & Lunar Return",
-      "score": 1009,
-      "delta": 281,
-      "direction": "up",
-      "mentions": 7,
+      "score": 1007,
+      "delta": -7,
+      "direction": "steady",
+      "mentions": 6,
       "sources": [
         {
           "platform": "arxiv",
@@ -1718,15 +1793,6 @@
           "author": "emptybits",
           "commentCount": 0,
           "publishedAt": "2026-04-08T14:59:38.000Z"
-        },
-        {
-          "platform": "hackernews",
-          "title": "Visualisation of the Artemis Mission (German)",
-          "url": "https://www.zeit.de/wissen/2026-04/artemis-2-mondmission-nasa-raumfahrt-visuelle-reise",
-          "score": 2,
-          "author": "wazHFsRy",
-          "commentCount": 1,
-          "publishedAt": "2026-04-05T05:22:11.000Z"
         }
       ],
       "relatedConceptSlugs": [
@@ -1735,95 +1801,11 @@
       ]
     },
     {
-      "slug": "starlink",
-      "label": "Starlink & Satellite Internet",
-      "score": 1006,
-      "delta": 284,
-      "direction": "up",
-      "mentions": 7,
-      "sources": [
-        {
-          "platform": "arxiv",
-          "title": "Validated Intent Compilation for Constrained Routing in LEO Mega-Constellations",
-          "url": "https://arxiv.org/abs/2604.07264",
-          "score": 200,
-          "authors": "Yuanhang Li",
-          "arxivCategory": "cs.CR",
-          "publishedAt": "2026-04-08T16:29:25.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Coverage and Rate Analysis of Follower-Based LEO Satellite Networks: A Stochastic Geometry Approach",
-          "url": "https://arxiv.org/abs/2604.01265",
-          "score": 200,
-          "authors": "Juanjuan Ru, Ruibo Wang, Mohamed-Slim Alouini",
-          "arxivCategory": "cs.IT",
-          "publishedAt": "2026-04-01T13:44:19.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Hierarchical Battery-Aware Game Algorithm for ISL Power Allocation in LEO Mega-Constellations",
-          "url": "https://arxiv.org/abs/2603.29506",
-          "score": 200,
-          "authors": "Kangkang Sun, Jianhua Li, Xiuzhen Chen et al.",
-          "arxivCategory": "cs.GT",
-          "publishedAt": "2026-03-31T09:47:13.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Toward Multi-Satellite Cooperative Transmission: A Joint Framework for CSI Acquisition, Feedback, and Phase Synchronization",
-          "url": "https://arxiv.org/abs/2603.28195",
-          "score": 200,
-          "authors": "Yiming Zhu, Yafei Wang, Carla Amatetti et al.",
-          "arxivCategory": "eess.SP",
-          "publishedAt": "2026-03-30T09:03:58.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "jaxsgp4: GPU-accelerated mega-constellation propagation with batch parallelism",
-          "url": "https://arxiv.org/abs/2603.27830",
-          "score": 200,
-          "authors": "Charlotte Priestley, Will Handley",
-          "arxivCategory": "cs.DC",
-          "publishedAt": "2026-03-29T19:39:05.000Z"
-        },
-        {
-          "platform": "hackernews",
-          "title": "Show HN: Lagsim – Simulate real network conditions (3G, WiFi, Starlink)",
-          "url": "https://github.com/rs/lagsim",
-          "score": 4,
-          "author": "poitrus",
-          "commentCount": 0,
-          "publishedAt": "2026-04-05T01:26:35.000Z"
-        },
-        {
-          "platform": "youtube",
-          "title": "Eavesdropping on Satellite Internet: Trying the \"Dontlookup\" Code",
-          "url": "https://www.youtube.com/watch?v=VE7S1nk4F04",
-          "score": 2,
-          "thumbnail": "https://img.youtube.com/vi/VE7S1nk4F04/mqdefault.jpg",
-          "publishedAt": "2026-04-09T01:44:23.000Z"
-        },
-        {
-          "platform": "hackernews",
-          "title": "Eavesdropping on Satellite Internet: Trying the \"Dontlookup\" Code",
-          "url": "https://www.youtube.com/watch?v=VE7S1nk4F04",
-          "score": 2,
-          "author": "emsign",
-          "commentCount": 0,
-          "publishedAt": "2026-04-09T01:44:23.000Z"
-        }
-      ],
-      "relatedConceptSlugs": [
-        "sps-alpha"
-      ]
-    },
-    {
       "slug": "space-debris",
       "label": "Space Debris",
       "score": 1000,
-      "delta": 300,
-      "direction": "up",
+      "delta": 0,
+      "direction": "steady",
       "mentions": 5,
       "sources": [
         {
@@ -1880,8 +1862,8 @@
       "slug": "interstellar-travel",
       "label": "Interstellar Travel",
       "score": 400,
-      "delta": 300,
-      "direction": "up",
+      "delta": 0,
+      "direction": "steady",
       "mentions": 2,
       "sources": [
         {
@@ -1913,8 +1895,8 @@
       "slug": "dyson-spheres",
       "label": "Dyson Spheres",
       "score": 400,
-      "delta": 300,
-      "direction": "up",
+      "delta": 0,
+      "direction": "steady",
       "mentions": 2,
       "sources": [
         {
@@ -1944,8 +1926,8 @@
       "slug": "mars",
       "label": "Mars Exploration",
       "score": 200,
-      "delta": 300,
-      "direction": "up",
+      "delta": 0,
+      "direction": "steady",
       "mentions": 1,
       "sources": [
         {
@@ -1969,8 +1951,8 @@
       "slug": "solar-sails",
       "label": "Solar Sails",
       "score": 200,
-      "delta": 300,
-      "direction": "up",
+      "delta": 0,
+      "direction": "steady",
       "mentions": 1,
       "sources": [
         {
@@ -1992,8 +1974,8 @@
       "slug": "warp-drives",
       "label": "Warp Drives & Exotic Physics",
       "score": 200,
-      "delta": 300,
-      "direction": "up",
+      "delta": -5,
+      "direction": "steady",
       "mentions": 1,
       "sources": [
         {
@@ -2015,8 +1997,8 @@
       "slug": "electric-propulsion",
       "label": "Electric Propulsion",
       "score": 200,
-      "delta": 300,
-      "direction": "up",
+      "delta": 0,
+      "direction": "steady",
       "mentions": 1,
       "sources": [
         {
@@ -2038,10 +2020,10 @@
     {
       "slug": "starship",
       "label": "Starship & SpaceX",
-      "score": 76,
-      "delta": -42,
+      "score": 51,
+      "delta": -74,
       "direction": "down",
-      "mentions": 7,
+      "mentions": 5,
       "sources": [
         {
           "platform": "youtube",
@@ -2059,24 +2041,6 @@
           "author": "throw0101c",
           "commentCount": 10,
           "publishedAt": "2026-04-05T11:14:09.000Z"
-        },
-        {
-          "platform": "hackernews",
-          "title": "SpaceX Pushes Back Crucial Starship Test Launch",
-          "url": "https://www.wsj.com/business/spacex-pushes-back-crucial-starship-test-launch-e1fb91f5",
-          "score": 14,
-          "author": "bookmtn",
-          "commentCount": 14,
-          "publishedAt": "2026-04-05T01:19:49.000Z"
-        },
-        {
-          "platform": "hackernews",
-          "title": "Big Banks Seeking a Piece of SpaceX's IPO Must Subscribe to Elon Musk's Grok",
-          "url": "https://www.nytimes.com/2026/04/03/business/spacex-ipo-grok-elon-musk.html",
-          "score": 11,
-          "author": "codydh",
-          "commentCount": 0,
-          "publishedAt": "2026-04-04T20:00:37.000Z"
         },
         {
           "platform": "hackernews",
