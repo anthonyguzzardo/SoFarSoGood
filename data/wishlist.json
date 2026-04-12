@@ -175,8 +175,10 @@
     "significance": "First systematic cosmology in Western tradition — geometric model of matter, the world-soul",
     "era": "ancient",
     "importance": "significant",
-    "status": "wanted",
-    "source": "Multiple manuscript traditions; Stephanus pagination"
+    "status": "indexed",
+    "source": "Multiple manuscript traditions; Stephanus pagination",
+    "doi": "10.5840/studphaen2020204",
+    "url": "https://www.semanticscholar.org/paper/61cfcd6c70c89ca959d23c6d30be7238332a02d0"
   },
   {
     "id": "aristotle-physics",
@@ -274,14 +276,15 @@
     "significance": "First known attempt to determine astronomical distances using geometry; also proposed heliocentrism",
     "era": "ancient",
     "importance": "foundational",
-    "status": "wanted",
+    "status": "indexed",
     "source": "Heath edition; Vatican manuscript",
     "modernRelevance": "The geometric parallax technique Aristarchus pioneered is the same method the Gaia spacecraft uses today to measure distances to two billion stars in our galaxy.",
     "relatedWishlistIds": [
       "copernicus-revolutions",
       "kepler-astronomia-nova",
       "eratosthenes-circumference"
-    ]
+    ],
+    "url": "https://www.semanticscholar.org/paper/e70f07e22631f71313b49a4ab618e5c66b27b9c4"
   },
   {
     "id": "archimedes-method",
@@ -563,9 +566,10 @@
     "significance": "First systematic treatment of zero as a number, negative numbers, and quadratic equations with two roots",
     "era": "medieval",
     "importance": "foundational",
-    "status": "wanted",
+    "status": "indexed",
     "source": "Colebrooke translation (1817); Sanskrit manuscripts",
-    "modernRelevance": "Brahmagupta's rules for zero and negative numbers are executed billions of times per second in every computer's arithmetic logic unit -- without his formalization, modern computing would have no foundation."
+    "modernRelevance": "Brahmagupta's rules for zero and negative numbers are executed billions of times per second in every computer's arithmetic logic unit -- without his formalization, modern computing would have no foundation.",
+    "url": "https://www.semanticscholar.org/paper/14931694efed81f15b00d00a85c178af4e438124"
   },
   {
     "id": "bede-de-temporum",
@@ -1928,8 +1932,10 @@
     "significance": "Explained Brownian motion — proved atoms exist as real physical entities, not just theoretical conveniences",
     "era": "20th-century-early",
     "importance": "foundational",
-    "status": "wanted",
-    "source": "Annalen der Physik 17 (1905)"
+    "status": "indexed",
+    "source": "Annalen der Physik 17 (1905)",
+    "doi": "10.1002/ANDP.200590005",
+    "url": "https://www.semanticscholar.org/paper/c4a75fdb23f08e9770cefcbf68de31702e3aca45"
   },
   {
     "id": "einstein-special-relativity",
@@ -1962,9 +1968,11 @@
     "significance": "E = mc² — mass and energy are equivalent. The most famous equation in physics. Foundation of nuclear energy",
     "era": "20th-century-early",
     "importance": "foundational",
-    "status": "wanted",
+    "status": "indexed",
     "source": "Annalen der Physik 18 (1905)",
-    "modernRelevance": "E=mc^2 is the equation behind every nuclear reactor, every PET scan in medicine, and every NIAC fusion propulsion concept -- the Pulsed Fission-Fusion engine and Lattice Confinement Fusion both convert mass to energy per Einstein's formula."
+    "modernRelevance": "E=mc^2 is the equation behind every nuclear reactor, every PET scan in medicine, and every NIAC fusion propulsion concept -- the Pulsed Fission-Fusion engine and Lattice Confinement Fusion both convert mass to energy per Einstein's formula.",
+    "doi": "10.1002/ANDP.200590007",
+    "url": "https://www.semanticscholar.org/paper/db724eabad4e7af7171e61b9766a15be30846c68"
   },
   {
     "id": "minkowski-spacetime",
@@ -2278,9 +2286,10 @@
     "significance": "Explained how stars shine — the carbon-nitrogen-oxygen (CNO) cycle and proton-proton chain fusion reactions",
     "era": "20th-century-early",
     "importance": "foundational",
-    "status": "wanted",
+    "status": "indexed",
     "source": "Physical Review 55 (1939)",
-    "modernRelevance": "Bethe's fusion reaction chains are the same processes that NIF achieved in controlled ignition in 2022, and they inform every NIAC fusion propulsion concept aiming to harness stellar energy for deep-space travel."
+    "modernRelevance": "Bethe's fusion reaction chains are the same processes that NIF achieved in controlled ignition in 2022, and they inform every NIAC fusion propulsion concept aiming to harness stellar energy for deep-space travel.",
+    "url": "https://www.semanticscholar.org/paper/adfd9bca79825ab168926eae6f347ab06377f37c"
   },
   {
     "id": "oppenheimer-snyder",
@@ -2621,8 +2630,10 @@
     "significance": "First superstring revolution — showed string theory is anomaly-free, making it a viable candidate for quantum gravity",
     "era": "20th-century-late",
     "importance": "foundational",
-    "status": "wanted",
-    "source": "Physics Letters B 149 (1984)"
+    "status": "indexed",
+    "source": "Physics Letters B 149 (1984)",
+    "doi": "10.1142/9789814329057_0028",
+    "url": "https://www.semanticscholar.org/paper/9c4c310cb5d5537e2df9742f9ed6f5a36b7c100a"
   },
   {
     "id": "shor-algorithm",
@@ -2942,14 +2953,15 @@
     "significance": "Introduced the Transformer architecture — the foundation of GPT, BERT, Claude, and the entire modern AI revolution",
     "era": "21st-century",
     "importance": "foundational",
-    "status": "wanted",
+    "status": "indexed",
     "source": "Advances in Neural Information Processing Systems 30 (2017)",
     "modernRelevance": "The Transformer architecture introduced in this paper powers GPT, Claude, Gemini, and essentially every large language model -- it is the engine of the current AI revolution.",
     "relatedWishlistIds": [
       "shannon-information",
       "lecun-deep-learning",
       "silver-alphago"
-    ]
+    ],
+    "url": "https://www.semanticscholar.org/paper/204e3073870fae3d05bcbc2f6a8e263d9b72e776"
   },
   {
     "id": "goodfellow-gans",
