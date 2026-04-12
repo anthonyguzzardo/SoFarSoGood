@@ -1,13 +1,13 @@
 {
-  "generatedAt": "2026-04-12T07:09:24.317Z",
+  "generatedAt": "2026-04-12T18:56:09.829Z",
   "topics": [
     {
       "slug": "quantum-computing",
       "label": "Quantum Computing",
-      "score": 8530,
+      "score": 8528,
       "delta": 0,
       "direction": "steady",
-      "mentions": 47,
+      "mentions": 46,
       "sources": [
         {
           "platform": "hackernews",
@@ -125,10 +125,10 @@
     {
       "slug": "black-holes",
       "label": "Black Holes",
-      "score": 8213,
-      "delta": -8,
+      "score": 8013,
+      "delta": -5,
       "direction": "steady",
-      "mentions": 46,
+      "mentions": 45,
       "sources": [
         {
           "platform": "arxiv",
@@ -366,131 +366,9 @@
       ]
     },
     {
-      "slug": "nanotechnology",
-      "label": "Nanotechnology & Metamaterials",
-      "score": 7600,
-      "delta": 0,
-      "direction": "steady",
-      "mentions": 38,
-      "sources": [
-        {
-          "platform": "arxiv",
-          "title": "Spatiotemporal Co-reflection with Spacetime Discontinuities at Moving Interfaces",
-          "url": "https://arxiv.org/abs/2604.08107",
-          "score": 200,
-          "authors": "Yongge Wang, Jingfeng Yao, Chengxun Yuan et al.",
-          "arxivCategory": "physics.optics",
-          "publishedAt": "2026-04-09T11:25:23.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Photon density of states engineering with generative inverse design for scalable 3D photonic metamaterials",
-          "url": "https://arxiv.org/abs/2604.07111",
-          "score": 200,
-          "authors": "Zesen Zhou, Jeevan Rois, Matias Kagias",
-          "arxivCategory": "physics.optics",
-          "publishedAt": "2026-04-08T14:03:48.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Multi-User Symbol Detection with XL Reception: Dynamic Metasurface Antennas with Low Resolution ADCs",
-          "url": "https://arxiv.org/abs/2604.06855",
-          "score": 200,
-          "authors": "Rahul K. Pal, Soumya P. Dash, Barathram Ramkumar et al.",
-          "arxivCategory": "eess.SP",
-          "publishedAt": "2026-04-08T09:18:15.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Two-Dimensional Space-Time Groups: Classification and Applications",
-          "url": "https://arxiv.org/abs/2604.05619",
-          "score": 200,
-          "authors": "Chenhang Ke, Congjun Wu",
-          "arxivCategory": "cond-mat.mes-hall",
-          "publishedAt": "2026-04-07T09:18:42.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Crossovers from nonlinear wave-packet acceleration to wave-mixing and self-trapping in the Hatano-Nelson model",
-          "url": "https://arxiv.org/abs/2604.02263",
-          "score": 200,
-          "authors": "Bertin Many Manda, Vassos Achilleos",
-          "arxivCategory": "cond-mat.dis-nn",
-          "publishedAt": "2026-04-02T16:57:21.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Emergent charge crystallization and frustration in a particle anti-spin Ice",
-          "url": "https://arxiv.org/abs/2603.29389",
-          "score": 200,
-          "authors": "Renaud Baillou, Matthew Terkel, Cristiano Nisoli et al.",
-          "arxivCategory": "cond-mat.soft",
-          "publishedAt": "2026-03-31T07:56:03.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Rounded hard squares confined in a circle",
-          "url": "https://arxiv.org/abs/2603.28609",
-          "score": 200,
-          "authors": "Zhongtian Yuan, Yao Li",
-          "arxivCategory": "cond-mat.soft",
-          "publishedAt": "2026-03-30T15:57:28.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Dirac branch-cut modes",
-          "url": "https://arxiv.org/abs/2603.28127",
-          "score": 200,
-          "authors": "Bofeng Zhu, Chengzhi Ma, Qiang Wang et al.",
-          "arxivCategory": "physics.optics",
-          "publishedAt": "2026-03-30T07:45:17.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Radar Cross-Section Reduction of the Nozzle of an Airborne Platform Using Lightweight Auxetic Metamaterials",
-          "url": "https://arxiv.org/abs/2603.26622",
-          "score": 200,
-          "authors": "A. Phanendra Kumar, Preeti Kumari, Dineshkumar Harursampath et al.",
-          "arxivCategory": "physics.app-ph",
-          "publishedAt": "2026-03-27T17:20:40.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Non-equilibrium Green's function formalism for radiative heat transfer",
-          "url": "https://arxiv.org/abs/2603.26598",
-          "score": 200,
-          "authors": "Yahan Liu, Tao Zhu",
-          "arxivCategory": "cond-mat.stat-mech",
-          "publishedAt": "2026-03-27T16:57:05.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Shape-Dependent, Deep-Learning-Assisted Metamaterial Solid Immersion Lens (mSIL) Super-Resolution Imaging",
-          "url": "https://arxiv.org/abs/2603.24371",
-          "score": 200,
-          "authors": "Baidong Wu, Fiza Khan, Lingya Yu et al.",
-          "arxivCategory": "physics.optics",
-          "publishedAt": "2026-03-25T14:52:41.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Reconfigurable topological valley-Hall interfaces: Asymptotics of arrays of Dirichlet and Neumann inclusions for multiple scattering in metamaterials",
-          "url": "https://arxiv.org/abs/2603.24297",
-          "score": 200,
-          "authors": "Richard Wiltshaw, Henry J. Putley, Christelle Bou Dagher et al.",
-          "arxivCategory": "physics.optics",
-          "publishedAt": "2026-03-25T13:34:47.000Z"
-        }
-      ],
-      "relatedConceptSlugs": [
-        "extreme-metamaterial-solar-sails",
-        "technology-development-and-demonstration-concepts-for-the-space-elevator"
-      ]
-    },
-    {
       "slug": "space-telescopes",
       "label": "Space Telescopes",
-      "score": 7459,
+      "score": 7473,
       "delta": 1,
       "direction": "steady",
       "mentions": 39,
@@ -610,10 +488,132 @@
       ]
     },
     {
+      "slug": "nanotechnology",
+      "label": "Nanotechnology & Metamaterials",
+      "score": 7400,
+      "delta": -3,
+      "direction": "steady",
+      "mentions": 37,
+      "sources": [
+        {
+          "platform": "arxiv",
+          "title": "Spatiotemporal Co-reflection with Spacetime Discontinuities at Moving Interfaces",
+          "url": "https://arxiv.org/abs/2604.08107",
+          "score": 200,
+          "authors": "Yongge Wang, Jingfeng Yao, Chengxun Yuan et al.",
+          "arxivCategory": "physics.optics",
+          "publishedAt": "2026-04-09T11:25:23.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Photon density of states engineering with generative inverse design for scalable 3D photonic metamaterials",
+          "url": "https://arxiv.org/abs/2604.07111",
+          "score": 200,
+          "authors": "Zesen Zhou, Jeevan Rois, Matias Kagias",
+          "arxivCategory": "physics.optics",
+          "publishedAt": "2026-04-08T14:03:48.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Multi-User Symbol Detection with XL Reception: Dynamic Metasurface Antennas with Low Resolution ADCs",
+          "url": "https://arxiv.org/abs/2604.06855",
+          "score": 200,
+          "authors": "Rahul K. Pal, Soumya P. Dash, Barathram Ramkumar et al.",
+          "arxivCategory": "eess.SP",
+          "publishedAt": "2026-04-08T09:18:15.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Two-Dimensional Space-Time Groups: Classification and Applications",
+          "url": "https://arxiv.org/abs/2604.05619",
+          "score": 200,
+          "authors": "Chenhang Ke, Congjun Wu",
+          "arxivCategory": "cond-mat.mes-hall",
+          "publishedAt": "2026-04-07T09:18:42.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Crossovers from nonlinear wave-packet acceleration to wave-mixing and self-trapping in the Hatano-Nelson model",
+          "url": "https://arxiv.org/abs/2604.02263",
+          "score": 200,
+          "authors": "Bertin Many Manda, Vassos Achilleos",
+          "arxivCategory": "cond-mat.dis-nn",
+          "publishedAt": "2026-04-02T16:57:21.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Emergent charge crystallization and frustration in a particle anti-spin Ice",
+          "url": "https://arxiv.org/abs/2603.29389",
+          "score": 200,
+          "authors": "Renaud Baillou, Matthew Terkel, Cristiano Nisoli et al.",
+          "arxivCategory": "cond-mat.soft",
+          "publishedAt": "2026-03-31T07:56:03.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Rounded hard squares confined in a circle",
+          "url": "https://arxiv.org/abs/2603.28609",
+          "score": 200,
+          "authors": "Zhongtian Yuan, Yao Li",
+          "arxivCategory": "cond-mat.soft",
+          "publishedAt": "2026-03-30T15:57:28.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Dirac branch-cut modes",
+          "url": "https://arxiv.org/abs/2603.28127",
+          "score": 200,
+          "authors": "Bofeng Zhu, Chengzhi Ma, Qiang Wang et al.",
+          "arxivCategory": "physics.optics",
+          "publishedAt": "2026-03-30T07:45:17.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Radar Cross-Section Reduction of the Nozzle of an Airborne Platform Using Lightweight Auxetic Metamaterials",
+          "url": "https://arxiv.org/abs/2603.26622",
+          "score": 200,
+          "authors": "A. Phanendra Kumar, Preeti Kumari, Dineshkumar Harursampath et al.",
+          "arxivCategory": "physics.app-ph",
+          "publishedAt": "2026-03-27T17:20:40.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Non-equilibrium Green's function formalism for radiative heat transfer",
+          "url": "https://arxiv.org/abs/2603.26598",
+          "score": 200,
+          "authors": "Yahan Liu, Tao Zhu",
+          "arxivCategory": "cond-mat.stat-mech",
+          "publishedAt": "2026-03-27T16:57:05.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Shape-Dependent, Deep-Learning-Assisted Metamaterial Solid Immersion Lens (mSIL) Super-Resolution Imaging",
+          "url": "https://arxiv.org/abs/2603.24371",
+          "score": 200,
+          "authors": "Baidong Wu, Fiza Khan, Lingya Yu et al.",
+          "arxivCategory": "physics.optics",
+          "publishedAt": "2026-03-25T14:52:41.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Reconfigurable topological valley-Hall interfaces: Asymptotics of arrays of Dirichlet and Neumann inclusions for multiple scattering in metamaterials",
+          "url": "https://arxiv.org/abs/2603.24297",
+          "score": 200,
+          "authors": "Richard Wiltshaw, Henry J. Putley, Christelle Bou Dagher et al.",
+          "arxivCategory": "physics.optics",
+          "publishedAt": "2026-03-25T13:34:47.000Z"
+        }
+      ],
+      "relatedConceptSlugs": [
+        "extreme-metamaterial-solar-sails",
+        "technology-development-and-demonstration-concepts-for-the-space-elevator"
+      ]
+    },
+    {
       "slug": "condensed-matter",
       "label": "Condensed Matter",
       "score": 7201,
-      "delta": -5,
+      "delta": -3,
       "direction": "steady",
       "mentions": 37,
       "sources": [
@@ -852,10 +852,10 @@
     {
       "slug": "dark-matter",
       "label": "Dark Matter & Dark Energy",
-      "score": 5605,
-      "delta": -1,
+      "score": 5601,
+      "delta": 0,
       "direction": "steady",
-      "mentions": 30,
+      "mentions": 29,
       "sources": [
         {
           "platform": "arxiv",
@@ -975,7 +975,7 @@
       "slug": "cosmology",
       "label": "Cosmology",
       "score": 5006,
-      "delta": -4,
+      "delta": 0,
       "direction": "steady",
       "mentions": 26,
       "sources": [
@@ -1556,7 +1556,7 @@
       "slug": "fusion-propulsion",
       "label": "Fusion Propulsion",
       "score": 1800,
-      "delta": -9,
+      "delta": 0,
       "direction": "steady",
       "mentions": 9,
       "sources": [
@@ -1736,7 +1736,7 @@
       "slug": "artemis",
       "label": "Artemis & Lunar Return",
       "score": 1007,
-      "delta": -7,
+      "delta": 0,
       "direction": "steady",
       "mentions": 6,
       "sources": [
@@ -1974,7 +1974,7 @@
       "slug": "warp-drives",
       "label": "Warp Drives & Exotic Physics",
       "score": 200,
-      "delta": -5,
+      "delta": 0,
       "direction": "steady",
       "mentions": 1,
       "sources": [
@@ -2020,28 +2020,11 @@
     {
       "slug": "starship",
       "label": "Starship & SpaceX",
-      "score": 51,
-      "delta": -74,
+      "score": 34,
+      "delta": -55,
       "direction": "down",
       "mentions": 5,
       "sources": [
-        {
-          "platform": "youtube",
-          "title": "SpaceX and OpenAI: The Mega IPO Grift [video]",
-          "url": "https://www.youtube.com/watch?v=iOyFja87uyw",
-          "score": 26,
-          "thumbnail": "https://img.youtube.com/vi/iOyFja87uyw/mqdefault.jpg",
-          "publishedAt": "2026-04-05T11:14:09.000Z"
-        },
-        {
-          "platform": "hackernews",
-          "title": "SpaceX and OpenAI: The Mega IPO Grift [video]",
-          "url": "https://www.youtube.com/watch?v=iOyFja87uyw",
-          "score": 26,
-          "author": "throw0101c",
-          "commentCount": 10,
-          "publishedAt": "2026-04-05T11:14:09.000Z"
-        },
         {
           "platform": "hackernews",
           "title": "Musk asks SpaceX IPO banks to buy Grok AI subscriptions, NYT reports",
@@ -2050,6 +2033,15 @@
           "author": "1vuio0pswjnm7",
           "commentCount": 0,
           "publishedAt": "2026-04-06T03:31:58.000Z"
+        },
+        {
+          "platform": "hackernews",
+          "title": "SpaceX holds $603M in Bitcoin despite $5B loss stemming from xAI",
+          "url": "https://www.coindesk.com/markets/2026/04/11/musk-s-spacex-holds-usd603-million-in-bitcoin-despite-usd5-billion-loss-stemming-from-xai",
+          "score": 9,
+          "author": "lexandstuff",
+          "commentCount": 3,
+          "publishedAt": "2026-04-12T16:16:54.000Z"
         },
         {
           "platform": "hackernews",
