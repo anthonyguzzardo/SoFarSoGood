@@ -1,13 +1,13 @@
 {
-  "generatedAt": "2026-04-15T07:24:10.336Z",
+  "generatedAt": "2026-04-15T19:23:46.204Z",
   "topics": [
     {
       "slug": "black-holes",
       "label": "Black Holes",
-      "score": 8415,
-      "delta": 0,
+      "score": 8213,
+      "delta": -2,
       "direction": "steady",
-      "mentions": 48,
+      "mentions": 46,
       "sources": [
         {
           "platform": "arxiv",
@@ -126,10 +126,10 @@
     {
       "slug": "quantum-computing",
       "label": "Quantum Computing",
-      "score": 7826,
+      "score": 7828,
       "delta": -9,
       "direction": "steady",
-      "mentions": 44,
+      "mentions": 43,
       "sources": [
         {
           "platform": "arxiv",
@@ -490,10 +490,10 @@
     {
       "slug": "condensed-matter",
       "label": "Condensed Matter",
-      "score": 7201,
-      "delta": 0,
+      "score": 7001,
+      "delta": -3,
       "direction": "steady",
-      "mentions": 37,
+      "mentions": 36,
       "sources": [
         {
           "platform": "arxiv",
@@ -560,15 +560,6 @@
         },
         {
           "platform": "arxiv",
-          "title": "Quench Protection in Insulated REBCO Conductors: Design Optimization and Fast Detection via REBCO SQD",
-          "url": "https://arxiv.org/abs/2603.15244",
-          "score": 200,
-          "authors": "Hajar Zgour, Walid Abdel Maksoud, Bertrand Baudouy et al.",
-          "arxivCategory": "cond-mat.supr-con",
-          "publishedAt": "2026-03-16T13:15:54.000Z"
-        },
-        {
-          "platform": "arxiv",
           "title": "Statistical Signatures of Majorana Zero Modes in Disordered Topological Superconductor Antidot Vortices",
           "url": "https://arxiv.org/abs/2604.11692",
           "score": 200,
@@ -602,6 +593,15 @@
           "authors": "Ruo-Yu Ning, Yong-Kun Wang, Shifeng Qian et al.",
           "arxivCategory": "cond-mat.mtrl-sci",
           "publishedAt": "2026-04-10T03:14:15.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Fluctuation Mechanism of Single-Ion Anisotropy of Topological Insulator MnBi$_2$Te$_4$",
+          "url": "https://arxiv.org/abs/2604.07852",
+          "score": 200,
+          "authors": "V. V. Val'kov, A. O. Zlotnikov, A. Gamov",
+          "arxivCategory": "cond-mat.str-el",
+          "publishedAt": "2026-04-09T06:11:04.000Z"
         }
       ],
       "relatedConceptSlugs": [
@@ -611,10 +611,10 @@
     {
       "slug": "nanotechnology",
       "label": "Nanotechnology & Metamaterials",
-      "score": 7200,
-      "delta": -3,
+      "score": 7000,
+      "delta": -5,
       "direction": "steady",
-      "mentions": 36,
+      "mentions": 35,
       "sources": [
         {
           "platform": "arxiv",
@@ -733,10 +733,10 @@
     {
       "slug": "particle-physics",
       "label": "Particle Physics",
-      "score": 7004,
-      "delta": 0,
+      "score": 6804,
+      "delta": -3,
       "direction": "steady",
-      "mentions": 36,
+      "mentions": 35,
       "sources": [
         {
           "platform": "arxiv",
@@ -773,15 +773,6 @@
           "authors": "Michele Cicoli, Francesco D'Eramo, Luca Di Luzio et al.",
           "arxivCategory": "hep-ph",
           "publishedAt": "2026-03-18T18:06:04.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Probing keV mass QCD axions with the SACLA X-ray free electron laser",
-          "url": "https://arxiv.org/abs/2603.15808",
-          "score": 200,
-          "authors": "Charles Heaton, Jack W. D. Halliday, Taito Osaka et al.",
-          "arxivCategory": "hep-ph",
-          "publishedAt": "2026-03-16T18:40:22.000Z"
         },
         {
           "platform": "arxiv",
@@ -845,6 +836,15 @@
           "authors": "Hsiang-nan Li",
           "arxivCategory": "hep-ph",
           "publishedAt": "2026-04-08T13:45:21.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Higgs Bosons at 95 and 125 GeV in the $U(1)_X$VLFM",
+          "url": "https://arxiv.org/abs/2604.06781",
+          "score": 200,
+          "authors": "Rong-Zhi Sun, Shu-Min Zhao, Meng-Zi Cao et al.",
+          "arxivCategory": "hep-ph",
+          "publishedAt": "2026-04-08T07:51:34.000Z"
         }
       ],
       "relatedConceptSlugs": []
@@ -1582,10 +1582,10 @@
     {
       "slug": "fusion-propulsion",
       "label": "Fusion Propulsion",
-      "score": 2200,
-      "delta": 0,
+      "score": 2000,
+      "delta": -9,
       "direction": "steady",
-      "mentions": 11,
+      "mentions": 10,
       "sources": [
         {
           "platform": "arxiv",
@@ -1643,15 +1643,6 @@
         },
         {
           "platform": "arxiv",
-          "title": "Investigation of Laser Plasma Instabilities driven by Coupled High-Power Laser Beams in Magnetized Underdense Plasmas",
-          "url": "https://arxiv.org/abs/2603.15476",
-          "score": 200,
-          "authors": "C. L. C. Lacoste, D. Oportus, J. Béard et al.",
-          "arxivCategory": "physics.plasm-ph",
-          "publishedAt": "2026-03-16T16:09:39.000Z"
-        },
-        {
-          "platform": "arxiv",
           "title": "FIREFLY: heat load and particle exhaust approximations for rapid evaluation of divertor designs",
           "url": "https://arxiv.org/abs/2604.11497",
           "score": 200,
@@ -1696,10 +1687,10 @@
     {
       "slug": "starlink",
       "label": "Starlink & Satellite Internet",
-      "score": 1225,
-      "delta": 1,
+      "score": 1231,
+      "delta": 2,
       "direction": "steady",
-      "mentions": 11,
+      "mentions": 12,
       "sources": [
         {
           "platform": "arxiv",
@@ -1759,9 +1750,9 @@
           "platform": "hackernews",
           "title": "Why Amazon Is Buying Starlink Rival Globalstar in $11B Deal",
           "url": "https://www.wsj.com/tech/amazon-to-acquire-globalstar-in-satellite-cellular-connection-push-448d5a16",
-          "score": 13,
+          "score": 18,
           "author": "JumpCrisscross",
-          "commentCount": 6,
+          "commentCount": 8,
           "publishedAt": "2026-04-14T19:31:56.000Z"
         },
         {
@@ -1816,10 +1807,10 @@
     {
       "slug": "artemis",
       "label": "Artemis & Lunar Return",
-      "score": 1010,
-      "delta": -16,
+      "score": 1003,
+      "delta": -17,
       "direction": "down",
-      "mentions": 8,
+      "mentions": 7,
       "sources": [
         {
           "platform": "arxiv",
@@ -1865,15 +1856,6 @@
           "authors": "Maaninee Gupta, Kyle J. DeMars",
           "arxivCategory": "math.DS",
           "publishedAt": "2026-03-20T16:34:56.000Z"
-        },
-        {
-          "platform": "hackernews",
-          "title": "VLC media player is onboard the Artemis mission",
-          "url": "https://twitter.com/videolan/status/2041794439257944197",
-          "score": 7,
-          "author": "emptybits",
-          "commentCount": 0,
-          "publishedAt": "2026-04-08T14:59:38.000Z"
         },
         {
           "platform": "hackernews",
@@ -2104,18 +2086,18 @@
     {
       "slug": "starship",
       "label": "Starship & SpaceX",
-      "score": 83,
-      "delta": 137,
+      "score": 103,
+      "delta": 194,
       "direction": "up",
-      "mentions": 4,
+      "mentions": 5,
       "sources": [
         {
           "platform": "hackernews",
           "title": "SpaceX Is Basically a Huge Meme Stock",
           "url": "https://www.theatlantic.com/ideas/2026/04/spacex-ipo-elon-musk/686793/",
-          "score": 48,
+          "score": 62,
           "author": "breve",
-          "commentCount": 13,
+          "commentCount": 25,
           "publishedAt": "2026-04-14T20:57:24.000Z"
         },
         {
@@ -2126,6 +2108,15 @@
           "author": "lexandstuff",
           "commentCount": 9,
           "publishedAt": "2026-04-12T16:16:54.000Z"
+        },
+        {
+          "platform": "hackernews",
+          "title": "Space Force looks at moving \"significant number\" of launches from ULA to SpaceX",
+          "url": "https://arstechnica.com/space/2026/04/space-force-looks-at-moving-significant-number-of-launches-from-ula-to-spacex/",
+          "score": 6,
+          "author": "Bender",
+          "commentCount": 2,
+          "publishedAt": "2026-04-15T18:39:11.000Z"
         },
         {
           "platform": "hackernews",
