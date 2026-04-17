@@ -60,5 +60,6 @@ jobs:
           else
             DATE=$(date -u +%Y-%m-%d)
             git commit -m "pulse: refresh ${DATE}"
+            git pull --rebase
             git push
           fi

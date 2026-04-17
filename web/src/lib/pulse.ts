@@ -35,6 +35,18 @@ export interface PulseSource {
   arxivCategory?: string;
 }
 
+export type Quadrant = "real-deal" | "hype-cycle" | "sleeping-giant" | "dead-zone";
+
+export interface ResonanceSignals {
+  conceptDepth: number;
+  editorial: number;
+  connections: number;
+  convergence: number;
+  deepTopic: number;
+  pantheon: number;
+  graveyard: number;
+}
+
 export interface PulseTopic {
   slug: string;
   label: string;
@@ -44,6 +56,9 @@ export interface PulseTopic {
   mentions: number;
   sources: PulseSource[];
   relatedConceptSlugs: string[];
+  resonance?: number;
+  quadrant?: Quadrant;
+  resonanceSignals?: ResonanceSignals;
 }
 
 export interface PulseData {
@@ -221,3 +236,40 @@ export const topicHistory: TopicHistory = (() => {
 
   return history;
 })();
+
+/* -------------------------------------------------------------------------- */
+/* Resonance helpers                                                          */
+/* -------------------------------------------------------------------------- */
+
+const QUADRANT_LABELS: Record<Quadrant, string> = {
+  "real-deal": "Real Deal",
+  "hype-cycle": "Hype Cycle",
+  "sleeping-giant": "Sleeping Giant",
+  "dead-zone": "Dead Zone",
+};
+
+const QUADRANT_COLORS: Record<Quadrant, string> = {
+  "real-deal": "rgba(74, 222, 128, 0.85)",   // green
+  "hype-cycle": "rgba(251, 191, 36, 0.85)",  // amber
+  "sleeping-giant": "rgba(96, 165, 250, 0.85)", // blue
+  "dead-zone": "rgba(148, 163, 184, 0.6)",   // slate
+};
+
+const QUADRANT_BG: Record<Quadrant, string> = {
+  "real-deal": "rgba(74, 222, 128, 0.08)",
+  "hype-cycle": "rgba(251, 191, 36, 0.08)",
+  "sleeping-giant": "rgba(96, 165, 250, 0.08)",
+  "dead-zone": "rgba(148, 163, 184, 0.05)",
+};
+
+export function quadrantLabel(q: Quadrant): string {
+  return QUADRANT_LABELS[q] ?? q;
+}
+
+export function quadrantColor(q: Quadrant): string {
+  return QUADRANT_COLORS[q] ?? QUADRANT_COLORS["dead-zone"];
+}
+
+export function quadrantBg(q: Quadrant): string {
+  return QUADRANT_BG[q] ?? QUADRANT_BG["dead-zone"];
+}

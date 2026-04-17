@@ -356,6 +356,290 @@ const TOPICS: TopicDef[] = [
 ];
 
 /* -------------------------------------------------------------------------- */
+/* Resonance — knowledge-graph correlation                                    */
+/* -------------------------------------------------------------------------- */
+
+/** Maps pulse topic slugs to deep topic slugs in topics.json */
+const PULSE_TO_DEEP_TOPIC: Record<string, string> = {
+  "black-holes": "black-holes",
+  "exoplanets": "exoplanet-detection",
+  "solar-sails": "solar-sails",
+  "fusion-propulsion": "propulsion",
+  "nuclear-thermal": "nuclear-propulsion",
+  "interstellar-travel": "interstellar-travel",
+  "space-telescopes": "telescopes",
+  "space-elevators": "space-tethers",
+  "gravitational-waves": "gravity",
+  "dark-matter": "gravity",
+  "quantum-computing": "quantum-physics",
+  "quantum-comms": "quantum-physics",
+  "astrobiology": "astrobiology",
+  "mars": "planetary-habitats",
+  "artemis": "planetary-habitats",
+  "nanotechnology": "in-space-manufacturing",
+  "starship": "propulsion",
+  "electric-propulsion": "propulsion",
+  "ocean-worlds": "astrobiology",
+};
+
+/** Maps pulse topic slugs to scientific fields (for pantheon matching) */
+const TOPIC_TO_FIELDS: Record<string, string[]> = {
+  "black-holes": ["physics", "astrophysics", "cosmology"],
+  "gravitational-waves": ["physics", "astrophysics"],
+  "dark-matter": ["physics", "cosmology"],
+  "quantum-computing": ["physics", "mathematics", "computer science"],
+  "quantum-comms": ["physics"],
+  "cosmology": ["physics", "cosmology", "astrophysics"],
+  "particle-physics": ["physics"],
+  "condensed-matter": ["physics"],
+  "exoplanets": ["astronomy", "astrophysics"],
+  "space-telescopes": ["optics", "astronomy", "astrophysics"],
+  "nanotechnology": ["physics", "chemistry"],
+  "fusion-propulsion": ["physics"],
+  "nuclear-thermal": ["physics"],
+  "solar-sails": ["physics"],
+  "electric-propulsion": ["physics"],
+  "warp-drives": ["physics"],
+  "interstellar-travel": ["physics", "astronomy"],
+  "astrobiology": ["chemistry", "biology"],
+  "mars": ["astronomy"],
+  "artemis": ["astronomy"],
+  "ocean-worlds": ["astronomy", "chemistry"],
+  "starship": ["physics"],
+  "starlink": [],
+  "space-debris": [],
+  "asteroid-mining": ["astronomy"],
+  "space-elevators": ["physics"],
+  "dyson-spheres": ["physics", "astronomy"],
+  "space-solar-power": ["physics"],
+  "ai-space": ["computer science", "mathematics"],
+};
+
+// Lightweight types for knowledge graph data (only fields we need)
+interface KGConcept { slug: string; phase: string | null }
+interface KGConnection { conceptSlug: string; strength: "direct" | "thematic" }
+interface KGEditorialEntry { whatIfItWorks?: string; editorialTier?: "spotlight" | "highlight" }
+interface KGNegativeResult { id: string; title: string; field: string; hypothesis: string; whatHappened: string; status: string }
+interface KGSimilarityEdge { source: string; target: string; similarity: number }
+interface KGDeepTopic { slug: string; tier: string; openQuestions?: unknown[]; unsolvedProblems?: unknown[] }
+interface KGTitan { slug: string; fields: string[] }
+
+interface KnowledgeGraph {
+  concepts: KGConcept[];
+  connections: KGConnection[];
+  editorial: Record<string, KGEditorialEntry>;
+  negativeResults: KGNegativeResult[];
+  similarities: KGSimilarityEdge[];
+  deepTopics: KGDeepTopic[];
+  titans: KGTitan[];
+}
+
+async function loadKnowledgeGraph(): Promise<KnowledgeGraph> {
+  const load = async (name: string) => {
+    try {
+      return JSON.parse(await readFile(join(DATA_DIR, name), "utf-8"));
+    } catch {
+      console.warn(`  ! Could not load ${name} for resonance — using empty default`);
+      return null;
+    }
+  };
+
+  const [conceptsRaw, connectionsRaw, editorialRaw, negativeRaw, simRaw, topicsRaw, pantheonRaw] =
+    await Promise.all([
+      load("concepts.json"),
+      load("connections.json"),
+      load("editorial.json"),
+      load("negative-results.json"),
+      load("concept-similarities.json"),
+      load("topics.json"),
+      load("pantheon.json"),
+    ]);
+
+  // concepts.json is an array of full concept objects — extract slug + phase
+  const concepts: KGConcept[] = Array.isArray(conceptsRaw)
+    ? conceptsRaw.map((c: { slug: string; phase?: string | null }) => ({ slug: c.slug, phase: c.phase ?? null }))
+    : [];
+
+  return {
+    concepts,
+    connections: Array.isArray(connectionsRaw) ? connectionsRaw : [],
+    editorial: editorialRaw && typeof editorialRaw === "object" && !Array.isArray(editorialRaw) ? editorialRaw : {},
+    negativeResults: Array.isArray(negativeRaw) ? negativeRaw : [],
+    similarities: simRaw?.edges && Array.isArray(simRaw.edges) ? simRaw.edges : [],
+    deepTopics: Array.isArray(topicsRaw) ? topicsRaw.map((t: { slug: string; tier?: string; openQuestions?: unknown[]; unsolvedProblems?: unknown[] }) => ({
+      slug: t.slug, tier: t.tier ?? "standard", openQuestions: t.openQuestions, unsolvedProblems: t.unsolvedProblems,
+    })) : [],
+    titans: pantheonRaw?.titans ? pantheonRaw.titans.map((t: { slug: string; fields: string[] }) => ({ slug: t.slug, fields: t.fields })) : [],
+  };
+}
+
+/** Resolve short concept slugs (from TopicDef) to full concept records */
+function resolveConceptSlugs(shortSlugs: string[], allConcepts: KGConcept[]): KGConcept[] {
+  return shortSlugs.flatMap((short) =>
+    allConcepts.filter((c) => c.slug.startsWith(short)),
+  );
+}
+
+function median(arr: number[]): number {
+  if (arr.length === 0) return 0;
+  const sorted = [...arr].sort((a, b) => a - b);
+  const mid = Math.floor(sorted.length / 2);
+  return sorted.length % 2 !== 0 ? sorted[mid] : (sorted[mid - 1] + sorted[mid]) / 2;
+}
+
+interface RawResonanceResult {
+  conceptDepth: number;
+  editorial: number;
+  connections: number;
+  convergence: number;
+  deepTopic: number;
+  pantheon: number;
+  graveyard: number;
+}
+
+function computeRawResonance(topic: TopicDef, kg: KnowledgeGraph): RawResonanceResult {
+  const resolved = resolveConceptSlugs(topic.conceptSlugs, kg.concepts);
+  const resolvedSlugs = new Set(resolved.map((c) => c.slug));
+
+  // 1. Concept depth: phase-weighted count (I=1, II=2, III=3), log-compressed
+  const phaseWeight: Record<string, number> = { I: 1, II: 2, III: 3, Other: 0.5 };
+  const rawDepth = resolved.reduce((sum, c) => sum + (phaseWeight[c.phase ?? ""] ?? 0.5), 0);
+  const conceptDepth = Math.log(1 + rawDepth);
+
+  // 2. Editorial endorsement: max tier across linked concepts
+  let editorial = 0;
+  for (const c of resolved) {
+    const ed = kg.editorial[c.slug];
+    if (ed?.editorialTier === "spotlight") { editorial = 1.0; break; }
+    if (ed?.editorialTier === "highlight" && editorial < 0.7) editorial = 0.7;
+    else if (ed?.whatIfItWorks && editorial < 0.4) editorial = 0.4;
+  }
+
+  // 3. Historical connections: direct=1.0, thematic=0.5
+  let connections = 0;
+  for (const conn of kg.connections) {
+    if (resolvedSlugs.has(conn.conceptSlug)) {
+      connections += conn.strength === "direct" ? 1.0 : 0.5;
+    }
+  }
+
+  // 4. Convergence: similarity edges touching this topic's concepts
+  let convergence = 0;
+  for (const edge of kg.similarities) {
+    const srcIn = resolvedSlugs.has(edge.source);
+    const tgtIn = resolvedSlugs.has(edge.target);
+    if (srcIn && tgtIn) convergence += 2; // intra-topic
+    else if (srcIn || tgtIn) convergence += 1; // cross-topic reach
+  }
+
+  // 5. Deep topic coverage
+  let deepTopic = 0;
+  const deepSlug = PULSE_TO_DEEP_TOPIC[topic.slug];
+  if (deepSlug) {
+    const dt = kg.deepTopics.find((t) => t.slug === deepSlug);
+    if (dt) {
+      const hasUnsolved = (dt.unsolvedProblems?.length ?? 0) > 0;
+      const hasOpen = (dt.openQuestions?.length ?? 0) > 0;
+      deepTopic = hasUnsolved ? 1.0 : hasOpen ? 0.8 : 0.6;
+    }
+  }
+
+  // 6. Pantheon alignment
+  const topicFields = TOPIC_TO_FIELDS[topic.slug] ?? [];
+  let pantheon = 0;
+  if (topicFields.length > 0) {
+    for (const titan of kg.titans) {
+      if (titan.fields.some((f) => topicFields.includes(f))) pantheon += 1;
+    }
+  }
+
+  // 7. Graveyard anti-signal
+  let graveyard = 0;
+  const termPatterns = topic.terms.map(
+    (t) => new RegExp(t.replace(/[.*+?^${}()|[\]\\]/g, "\\$&"), "i"),
+  );
+  for (const nr of kg.negativeResults) {
+    const text = `${nr.title} ${nr.hypothesis} ${nr.whatHappened}`;
+    const matches = termPatterns.filter((p) => p.test(text)).length;
+    if (matches > 0) {
+      const statusWeight = nr.status === "debunked" ? 1.0 : nr.status === "retracted" ? 0.8 : 0.3;
+      graveyard += statusWeight * Math.min(matches, 3) / 3;
+    }
+  }
+  graveyard = Math.min(graveyard, 1);
+
+  return { conceptDepth, editorial, connections, convergence, deepTopic, pantheon, graveyard };
+}
+
+/** Normalize count-based signals across all topics, compute final resonance, classify quadrant */
+function applyResonance(topics: PulseTopic[], topicDefs: TopicDef[], kg: KnowledgeGraph): void {
+  const rawResults = topicDefs.map((def) => computeRawResonance(def, kg));
+
+  // Find maxes for normalization (avoid division by zero)
+  const maxConceptDepth = Math.max(...rawResults.map((r) => r.conceptDepth), 0.001);
+  const maxConnections = Math.max(...rawResults.map((r) => r.connections), 0.001);
+  const maxConvergence = Math.max(...rawResults.map((r) => r.convergence), 0.001);
+  const maxPantheon = Math.max(...rawResults.map((r) => r.pantheon), 0.001);
+
+  // Build slug→raw map
+  const rawBySlug = new Map<string, RawResonanceResult>();
+  for (let i = 0; i < topicDefs.length; i++) {
+    rawBySlug.set(topicDefs[i].slug, rawResults[i]);
+  }
+
+  // Weights
+  const W = { conceptDepth: 30, editorial: 20, connections: 15, convergence: 15, deepTopic: 10, pantheon: 5, graveyard: 5 };
+
+  for (const topic of topics) {
+    const raw = rawBySlug.get(topic.slug);
+    if (!raw) {
+      topic.resonance = 0;
+      topic.quadrant = "dead-zone";
+      topic.resonanceSignals = { conceptDepth: 0, editorial: 0, connections: 0, convergence: 0, deepTopic: 0, pantheon: 0, graveyard: 0 };
+      continue;
+    }
+
+    const signals: ResonanceSignals = {
+      conceptDepth: raw.conceptDepth / maxConceptDepth,
+      editorial: raw.editorial,
+      connections: raw.connections / maxConnections,
+      convergence: raw.convergence / maxConvergence,
+      deepTopic: raw.deepTopic,
+      pantheon: raw.pantheon / maxPantheon,
+      graveyard: raw.graveyard,
+    };
+
+    const resonance = Math.round(Math.max(0, Math.min(100,
+      signals.conceptDepth * W.conceptDepth +
+      signals.editorial * W.editorial +
+      signals.connections * W.connections +
+      signals.convergence * W.convergence +
+      signals.deepTopic * W.deepTopic +
+      signals.pantheon * W.pantheon -
+      signals.graveyard * W.graveyard,
+    )));
+
+    topic.resonance = resonance;
+    topic.resonanceSignals = signals;
+    // quadrant assigned below after all resonance scores computed
+  }
+
+  // Classify quadrants using medians
+  const activeScores = topics.filter((t) => t.score > 0).map((t) => t.score);
+  const pulseMedian = median(activeScores);
+  const resonanceMedian = median(topics.map((t) => t.resonance));
+
+  for (const topic of topics) {
+    const highPulse = topic.score >= pulseMedian;
+    const highResonance = topic.resonance >= resonanceMedian;
+    if (highPulse && highResonance) topic.quadrant = "real-deal";
+    else if (highPulse && !highResonance) topic.quadrant = "hype-cycle";
+    else if (!highPulse && highResonance) topic.quadrant = "sleeping-giant";
+    else topic.quadrant = "dead-zone";
+  }
+}
+
+/* -------------------------------------------------------------------------- */
 /* Reddit fetcher                                                             */
 /* -------------------------------------------------------------------------- */
 
@@ -745,6 +1029,18 @@ function youtubeThumbnail(videoId: string): string {
   return `https://img.youtube.com/vi/${videoId}/mqdefault.jpg`;
 }
 
+type Quadrant = "real-deal" | "hype-cycle" | "sleeping-giant" | "dead-zone";
+
+interface ResonanceSignals {
+  conceptDepth: number;
+  editorial: number;
+  connections: number;
+  convergence: number;
+  deepTopic: number;
+  pantheon: number;
+  graveyard: number;
+}
+
 interface PulseTopic {
   slug: string;
   label: string;
@@ -754,6 +1050,9 @@ interface PulseTopic {
   mentions: number;
   sources: PulseSource[];
   relatedConceptSlugs: string[];
+  resonance: number;
+  quadrant: Quadrant;
+  resonanceSignals: ResonanceSignals;
 }
 
 function matchRedditPosts(
@@ -947,6 +1246,9 @@ function scoreTopic(
     mentions,
     sources,
     relatedConceptSlugs: topic.conceptSlugs,
+    resonance: 0,
+    quadrant: "dead-zone" as Quadrant,
+    resonanceSignals: { conceptDepth: 0, editorial: 0, connections: 0, convergence: 0, deepTopic: 0, pantheon: 0, graveyard: 0 },
   };
 }
 
@@ -1033,6 +1335,7 @@ function buildWeeklySnapshot(
   allReddit: RedditPost[],
   allHN: Map<string, HNHit[]>,
   allArXiv: Map<string, ArXivPaper[]> = new Map(),
+  kg?: KnowledgeGraph,
 ): { generatedAt: string; topics: PulseTopic[] } {
   // Filter Reddit posts to this week
   const weekReddit = allReddit.filter((p) => {
@@ -1088,9 +1391,14 @@ function buildWeeklySnapshot(
         mentions: 0,
         sources: [],
         relatedConceptSlugs: def.conceptSlugs,
+        resonance: 0,
+        quadrant: "dead-zone" as Quadrant,
+        resonanceSignals: { conceptDepth: 0, editorial: 0, connections: 0, convergence: 0, deepTopic: 0, pantheon: 0, graveyard: 0 },
       });
     }
   }
+
+  if (kg) applyResonance(topics, TOPICS, kg);
 
   return { generatedAt: new Date(weekEnd).toISOString(), topics };
 }
@@ -1108,6 +1416,9 @@ async function mainBackdate(): Promise<void> {
   ]);
   const arxivMap = await fetchAllArXiv(TOPICS, 30);
 
+  console.log("→ loading knowledge graph for resonance...");
+  const kg = await loadKnowledgeGraph();
+
   console.log(`\n→ bucketing into ${WEEKS} weekly snapshots...`);
 
   const now = Date.now();
@@ -1119,7 +1430,7 @@ async function mainBackdate(): Promise<void> {
     const weekStart = weekEnd - weekMs;
     const dateLabel = new Date(weekStart).toISOString().slice(0, 10);
 
-    const snapshot = buildWeeklySnapshot(weekStart, weekEnd, redditPosts, hnMap, arxivMap);
+    const snapshot = buildWeeklySnapshot(weekStart, weekEnd, redditPosts, hnMap, arxivMap, kg);
     const active = snapshot.topics.filter((t) => t.mentions > 0).length;
 
     const outFile = join(DATA_DIR, `pulse-${dateLabel}.json`);
@@ -1221,9 +1532,21 @@ async function main(): Promise<void> {
         mentions: 0,
         sources: [],
         relatedConceptSlugs: def.conceptSlugs,
+        resonance: 0,
+        quadrant: "dead-zone" as Quadrant,
+        resonanceSignals: { conceptDepth: 0, editorial: 0, connections: 0, convergence: 0, deepTopic: 0, pantheon: 0, graveyard: 0 },
       });
     }
   }
+
+  // --- Resonance: cross-reference with knowledge graph ---
+  console.log("→ computing resonance scores...");
+  const kg = await loadKnowledgeGraph();
+  applyResonance(topics, TOPICS, kg);
+
+  const quadrantCounts = { "real-deal": 0, "hype-cycle": 0, "sleeping-giant": 0, "dead-zone": 0 };
+  for (const t of topics) quadrantCounts[t.quadrant]++;
+  console.log(`  resonance: ${JSON.stringify(quadrantCounts)}`);
 
   const pulse = {
     generatedAt: new Date().toISOString(),
@@ -1264,7 +1587,7 @@ async function main(): Promise<void> {
   for (const t of topics.slice(0, 8)) {
     const dir = t.direction === "up" ? "▲" : t.direction === "down" ? "▼" : "—";
     console.log(
-      `  ${dir} ${t.label.padEnd(25)} score: ${String(t.score).padStart(6)}  mentions: ${t.mentions}`,
+      `  ${dir} ${t.label.padEnd(25)} score: ${String(t.score).padStart(6)}  res: ${String(t.resonance).padStart(3)}  [${t.quadrant}]`,
     );
   }
 }

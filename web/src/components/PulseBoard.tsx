@@ -7,7 +7,7 @@
  */
 
 import { useState, useEffect, useRef, useCallback, useMemo } from "react";
-import type { PulseTopic, PulseSource } from "../lib/pulse.ts";
+import type { PulseTopic, PulseSource, Quadrant } from "../lib/pulse.ts";
 
 type TimeWindow = "3d" | "7d";
 
@@ -91,6 +91,45 @@ function directionColor(dir: string): string {
       : "text-zinc-500";
 }
 
+const QUADRANT_STYLE: Record<Quadrant, { color: string; bg: string; label: string }> = {
+  "real-deal":       { color: "rgba(74, 222, 128, 0.85)",  bg: "rgba(74, 222, 128, 0.08)",  label: "Real Deal" },
+  "hype-cycle":      { color: "rgba(251, 191, 36, 0.85)",  bg: "rgba(251, 191, 36, 0.08)",  label: "Hype Cycle" },
+  "sleeping-giant":  { color: "rgba(96, 165, 250, 0.85)",  bg: "rgba(96, 165, 250, 0.08)",  label: "Sleeping Giant" },
+  "dead-zone":       { color: "rgba(148, 163, 184, 0.6)",  bg: "rgba(148, 163, 184, 0.05)", label: "Dead Zone" },
+};
+
+function QuadrantBadge({ quadrant }: { quadrant?: Quadrant }) {
+  if (!quadrant) return null;
+  const style = QUADRANT_STYLE[quadrant];
+  return (
+    <span
+      className="text-[0.5rem] font-mono uppercase tracking-widest px-1.5 py-0.5 rounded shrink-0"
+      style={{ color: style.color, background: style.bg, border: `1px solid ${style.color.replace(/[\d.]+\)$/, "0.2)")}` }}
+    >
+      {style.label}
+    </span>
+  );
+}
+
+function QuadrantSummary({ topics }: { topics: PulseTopic[] }) {
+  const counts: Record<Quadrant, number> = { "real-deal": 0, "hype-cycle": 0, "sleeping-giant": 0, "dead-zone": 0 };
+  for (const t of topics) {
+    const q = t.quadrant ?? "dead-zone";
+    counts[q]++;
+  }
+  return (
+    <div className="flex flex-wrap items-center gap-x-4 gap-y-1 text-[0.6rem] font-mono" style={{ color: "var(--color-ink-dim)" }}>
+      {(Object.entries(QUADRANT_STYLE) as [Quadrant, typeof QUADRANT_STYLE[Quadrant]][]).map(([q, s]) => (
+        <span key={q} className="flex items-center gap-1">
+          <span className="inline-block w-1.5 h-1.5 rounded-full" style={{ background: s.color }} />
+          <span style={{ color: s.color }}>{counts[q]}</span>
+          <span>{s.label}</span>
+        </span>
+      ))}
+    </div>
+  );
+}
+
 /* -------------------------------------------------------------------------- */
 /* Hero spotlight — the #1 topic gets a dominant visual treatment              */
 /* -------------------------------------------------------------------------- */
@@ -169,6 +208,7 @@ function HeroSpotlight({
                 >
                   {topic.label}
                 </h3>
+                <QuadrantBadge quadrant={topic.quadrant as Quadrant | undefined} />
                 <span
                   className={`text-sm font-mono font-medium ${directionColor(topic.direction)}`}
                 >
@@ -204,6 +244,14 @@ function HeroSpotlight({
                 <span>{topic.mentions} mentions</span>
                 <span style={{ opacity: 0.3 }}>·</span>
                 <span>{topic.sources.length} sources</span>
+                {topic.resonance != null && topic.resonance > 0 && (
+                  <>
+                    <span style={{ opacity: 0.3 }}>·</span>
+                    <span style={{ color: QUADRANT_STYLE[topic.quadrant as Quadrant ?? "dead-zone"]?.color ?? "var(--color-ink-dim)" }}>
+                      {topic.resonance} resonance
+                    </span>
+                  </>
+                )}
                 {trajectory != null && (
                   <>
                     <span style={{ opacity: 0.3 }}>·</span>
@@ -236,7 +284,7 @@ function HeroSpotlight({
                 </div>
               )}
 
-              {/* Reality check — what NASA is actually funding */}
+              {/* Reality check — what NASA is actually funding + resonance context */}
               {resolvedConcepts.length > 0 ? (
                 <div
                   className="mt-3 flex items-center gap-2 flex-wrap"
@@ -246,7 +294,9 @@ function HeroSpotlight({
                     className="text-[0.6rem] font-mono uppercase tracking-widest shrink-0"
                     style={{ color: "rgba(74, 222, 128, 0.7)" }}
                   >
-                    ⬡ NASA funded {resolvedConcepts.length} {resolvedConcepts.length === 1 ? "study" : "studies"}
+                    {topic.quadrant === "real-deal"
+                      ? `Knowledge-backed — ${resolvedConcepts.length} NASA ${resolvedConcepts.length === 1 ? "study" : "studies"}`
+                      : `⬡ NASA funded ${resolvedConcepts.length} ${resolvedConcepts.length === 1 ? "study" : "studies"}`}
                   </span>
                   {resolvedConcepts.slice(0, 3).map((c) => (
                     <a
@@ -268,9 +318,18 @@ function HeroSpotlight({
               ) : (
                 <div
                   className="mt-3 text-[0.6rem] font-mono uppercase tracking-widest"
-                  style={{ color: "var(--color-ink-faint)", opacity: 0.6, borderTop: "1px solid rgba(255,255,255,0.04)", paddingTop: "0.75rem" }}
+                  style={{
+                    color: topic.quadrant === "hype-cycle"
+                      ? "rgba(251, 191, 36, 0.7)"
+                      : "var(--color-ink-faint)",
+                    opacity: topic.quadrant === "hype-cycle" ? 1 : 0.6,
+                    borderTop: "1px solid rgba(255,255,255,0.04)",
+                    paddingTop: "0.75rem",
+                  }}
                 >
-                  ⬡ Social momentum only — no funded research indexed yet
+                  {topic.quadrant === "hype-cycle"
+                    ? "Trending, but shallow — no deep knowledge backing yet"
+                    : "⬡ Social momentum only — no funded research indexed yet"}
                 </div>
               )}
             </div>
@@ -867,6 +926,9 @@ function TopicRow({
                   </span>
                 );
               })()}
+              <span className="hidden sm:inline">
+                <QuadrantBadge quadrant={topic.quadrant as Quadrant | undefined} />
+              </span>
             </span>
             {topSource && (
               <span
@@ -1361,6 +1423,11 @@ export default function PulseBoard({ topics, generatedAt, conceptMap = {}, topic
           )}
         </div>
       )}
+
+      {/* Quadrant summary */}
+      <div className="mx-4 mb-3">
+        <QuadrantSummary topics={windowTopics} />
+      </div>
 
       {/* Biggest mover callout — only if it's NOT the #1 topic */}
       {biggestMover && biggestMover.slug !== heroTopic?.slug && (
