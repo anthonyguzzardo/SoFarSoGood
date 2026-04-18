@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-04-17T19:06:53.724Z",
+  "generatedAt": "2026-04-18T07:02:41.273Z",
   "topics": [
     {
       "slug": "black-holes",
       "label": "Black Holes",
-      "score": 8608,
+      "score": 8610,
       "delta": 200,
       "direction": "up",
       "mentions": 47,
@@ -267,12 +267,144 @@
       }
     },
     {
+      "slug": "quantum-computing",
+      "label": "Quantum Computing",
+      "score": 7241,
+      "delta": 567,
+      "direction": "up",
+      "mentions": 44,
+      "sources": [
+        {
+          "platform": "arxiv",
+          "title": "Universal quantum state purification with energy-preserving operations",
+          "url": "https://arxiv.org/abs/2604.15228",
+          "score": 200,
+          "authors": "Xing-Chen Guo, Benchi Zhao, Xin Wang",
+          "arxivCategory": "quant-ph",
+          "publishedAt": "2026-04-16T17:07:18.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "O3LS: Optimizing Lattice Surgery via Automatic Layout Searching and Loose Scheduling",
+          "url": "https://arxiv.org/abs/2604.15099",
+          "score": 200,
+          "authors": "Chenghong Zhu, Xian Wu, Jiahan Chen et al.",
+          "arxivCategory": "quant-ph",
+          "publishedAt": "2026-04-16T14:57:58.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "SyQMA: A memory-efficient, symbolic and exact universal simulator for quantum error correction",
+          "url": "https://arxiv.org/abs/2604.15043",
+          "score": 200,
+          "authors": "George Umbrarescu, David Amaro",
+          "arxivCategory": "quant-ph",
+          "publishedAt": "2026-04-16T14:10:29.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Runtime-efficient zero-noise extrapolation from mixed physical and logical data",
+          "url": "https://arxiv.org/abs/2604.15014",
+          "score": 200,
+          "authors": "D. V. Babukhin, W. V. Pogosov",
+          "arxivCategory": "quant-ph",
+          "publishedAt": "2026-04-16T13:42:05.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Learning to Concatenate Quantum Codes",
+          "url": "https://arxiv.org/abs/2604.14931",
+          "score": 200,
+          "authors": "Nico Meyer, Christopher Mutschler, Dominik Seuß et al.",
+          "arxivCategory": "quant-ph",
+          "publishedAt": "2026-04-16T12:20:21.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Low-valency scalable quantum error correction with a dynamic compass code",
+          "url": "https://arxiv.org/abs/2604.14299",
+          "score": 200,
+          "authors": "Jun Zen, Xanda C. Kolesnikow, Campbell K. McLauchlan et al.",
+          "arxivCategory": "quant-ph",
+          "publishedAt": "2026-04-15T18:00:23.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Scalable quantum error correction tailored for a heavy-hex qubit array",
+          "url": "https://arxiv.org/abs/2604.14296",
+          "score": 200,
+          "authors": "Seok-Hyung Lee, Xanda C. Kolesnikow, Jun Zen et al.",
+          "arxivCategory": "quant-ph",
+          "publishedAt": "2026-04-15T18:00:21.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "AI-Enabled Decoding of Qubit Loss for Quantum Error-Correcting Codes",
+          "url": "https://arxiv.org/abs/2604.14269",
+          "score": 200,
+          "authors": "Yuqing Wang, Xiaotian Nie, Jiale Dai et al.",
+          "arxivCategory": "quant-ph",
+          "publishedAt": "2026-04-15T17:59:35.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Dimensioning of Quantum Memories for Distilled Quantum EPR Packets",
+          "url": "https://arxiv.org/abs/2604.13964",
+          "score": 200,
+          "authors": "Lorenzo Valentini, Diego Forlivesi, Andrea Talarico et al.",
+          "arxivCategory": "quant-ph",
+          "publishedAt": "2026-04-15T15:14:41.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Quantum secret sharing in tripartite superconducting network",
+          "url": "https://arxiv.org/abs/2604.13643",
+          "score": 200,
+          "authors": "W. K. Yam, C. Wilkinson, S. Gandorfer et al.",
+          "arxivCategory": "quant-ph",
+          "publishedAt": "2026-04-15T09:11:39.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Stabilization of finite-energy grid states of a quantum harmonic oscillator by reservoir engineering with two dissipation channels",
+          "url": "https://arxiv.org/abs/2604.13529",
+          "score": 200,
+          "authors": "Rémi Robin, Pierre Rouchon, Lev-Arcady Sellem",
+          "arxivCategory": "quant-ph",
+          "publishedAt": "2026-04-15T06:24:28.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Quasi-Orthogonal Stabilizer Design for Efficient Quantum Error Suppression",
+          "url": "https://arxiv.org/abs/2604.12684",
+          "score": 200,
+          "authors": "Valentine Nyirahafashimana, Sharifah Kartini Said Husain, Umair Abdul Halim et al.",
+          "arxivCategory": "quant-ph",
+          "publishedAt": "2026-04-14T12:53:00.000Z"
+        }
+      ],
+      "relatedConceptSlugs": [
+        "magneto-inductive-communications-for-ocean-worlds"
+      ],
+      "resonance": 30,
+      "quadrant": "hype-cycle",
+      "resonanceSignals": {
+        "conceptDepth": 0.22629438553091683,
+        "editorial": 0.4,
+        "connections": 0,
+        "convergence": 0.025,
+        "deepTopic": 1,
+        "pantheon": 1,
+        "graveyard": 0
+      }
+    },
+    {
       "slug": "space-telescopes",
       "label": "Space Telescopes",
-      "score": 7275,
-      "delta": 1367,
+      "score": 7075,
+      "delta": 300,
       "direction": "up",
-      "mentions": 37,
+      "mentions": 36,
       "sources": [
         {
           "platform": "arxiv",
@@ -396,138 +528,6 @@
         "convergence": 0.15,
         "deepTopic": 1,
         "pantheon": 0.16,
-        "graveyard": 0
-      }
-    },
-    {
-      "slug": "quantum-computing",
-      "label": "Quantum Computing",
-      "score": 7238,
-      "delta": 1367,
-      "direction": "up",
-      "mentions": 43,
-      "sources": [
-        {
-          "platform": "arxiv",
-          "title": "Universal quantum state purification with energy-preserving operations",
-          "url": "https://arxiv.org/abs/2604.15228",
-          "score": 200,
-          "authors": "Xing-Chen Guo, Benchi Zhao, Xin Wang",
-          "arxivCategory": "quant-ph",
-          "publishedAt": "2026-04-16T17:07:18.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "O3LS: Optimizing Lattice Surgery via Automatic Layout Searching and Loose Scheduling",
-          "url": "https://arxiv.org/abs/2604.15099",
-          "score": 200,
-          "authors": "Chenghong Zhu, Xian Wu, Jiahan Chen et al.",
-          "arxivCategory": "quant-ph",
-          "publishedAt": "2026-04-16T14:57:58.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "SyQMA: A memory-efficient, symbolic and exact universal simulator for quantum error correction",
-          "url": "https://arxiv.org/abs/2604.15043",
-          "score": 200,
-          "authors": "George Umbrarescu, David Amaro",
-          "arxivCategory": "quant-ph",
-          "publishedAt": "2026-04-16T14:10:29.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Runtime-efficient zero-noise extrapolation from mixed physical and logical data",
-          "url": "https://arxiv.org/abs/2604.15014",
-          "score": 200,
-          "authors": "D. V. Babukhin, W. V. Pogosov",
-          "arxivCategory": "quant-ph",
-          "publishedAt": "2026-04-16T13:42:05.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Learning to Concatenate Quantum Codes",
-          "url": "https://arxiv.org/abs/2604.14931",
-          "score": 200,
-          "authors": "Nico Meyer, Christopher Mutschler, Dominik Seuß et al.",
-          "arxivCategory": "quant-ph",
-          "publishedAt": "2026-04-16T12:20:21.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Low-valency scalable quantum error correction with a dynamic compass code",
-          "url": "https://arxiv.org/abs/2604.14299",
-          "score": 200,
-          "authors": "Jun Zen, Xanda C. Kolesnikow, Campbell K. McLauchlan et al.",
-          "arxivCategory": "quant-ph",
-          "publishedAt": "2026-04-15T18:00:23.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Scalable quantum error correction tailored for a heavy-hex qubit array",
-          "url": "https://arxiv.org/abs/2604.14296",
-          "score": 200,
-          "authors": "Seok-Hyung Lee, Xanda C. Kolesnikow, Jun Zen et al.",
-          "arxivCategory": "quant-ph",
-          "publishedAt": "2026-04-15T18:00:21.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "AI-Enabled Decoding of Qubit Loss for Quantum Error-Correcting Codes",
-          "url": "https://arxiv.org/abs/2604.14269",
-          "score": 200,
-          "authors": "Yuqing Wang, Xiaotian Nie, Jiale Dai et al.",
-          "arxivCategory": "quant-ph",
-          "publishedAt": "2026-04-15T17:59:35.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Dimensioning of Quantum Memories for Distilled Quantum EPR Packets",
-          "url": "https://arxiv.org/abs/2604.13964",
-          "score": 200,
-          "authors": "Lorenzo Valentini, Diego Forlivesi, Andrea Talarico et al.",
-          "arxivCategory": "quant-ph",
-          "publishedAt": "2026-04-15T15:14:41.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Quantum secret sharing in tripartite superconducting network",
-          "url": "https://arxiv.org/abs/2604.13643",
-          "score": 200,
-          "authors": "W. K. Yam, C. Wilkinson, S. Gandorfer et al.",
-          "arxivCategory": "quant-ph",
-          "publishedAt": "2026-04-15T09:11:39.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Stabilization of finite-energy grid states of a quantum harmonic oscillator by reservoir engineering with two dissipation channels",
-          "url": "https://arxiv.org/abs/2604.13529",
-          "score": 200,
-          "authors": "Rémi Robin, Pierre Rouchon, Lev-Arcady Sellem",
-          "arxivCategory": "quant-ph",
-          "publishedAt": "2026-04-15T06:24:28.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Quasi-Orthogonal Stabilizer Design for Efficient Quantum Error Suppression",
-          "url": "https://arxiv.org/abs/2604.12684",
-          "score": 200,
-          "authors": "Valentine Nyirahafashimana, Sharifah Kartini Said Husain, Umair Abdul Halim et al.",
-          "arxivCategory": "quant-ph",
-          "publishedAt": "2026-04-14T12:53:00.000Z"
-        }
-      ],
-      "relatedConceptSlugs": [
-        "magneto-inductive-communications-for-ocean-worlds"
-      ],
-      "resonance": 30,
-      "quadrant": "hype-cycle",
-      "resonanceSignals": {
-        "conceptDepth": 0.22629438553091683,
-        "editorial": 0.4,
-        "connections": 0,
-        "convergence": 0.025,
-        "deepTopic": 1,
-        "pantheon": 1,
         "graveyard": 0
       }
     },
@@ -1063,8 +1063,8 @@
       "slug": "cosmology",
       "label": "Cosmology",
       "score": 5400,
-      "delta": 167,
-      "direction": "up",
+      "delta": -5,
+      "direction": "steady",
       "mentions": 27,
       "sources": [
         {
@@ -1194,10 +1194,10 @@
     {
       "slug": "astrobiology",
       "label": "Astrobiology",
-      "score": 4200,
+      "score": 4000,
       "delta": -88,
       "direction": "down",
-      "mentions": 21,
+      "mentions": 20,
       "sources": [
         {
           "platform": "arxiv",
@@ -1593,7 +1593,7 @@
       "slug": "asteroid-mining",
       "label": "Asteroid Mining",
       "score": 2400,
-      "delta": -73,
+      "delta": -88,
       "direction": "down",
       "mentions": 12,
       "sources": [
@@ -1841,10 +1841,10 @@
     {
       "slug": "starlink",
       "label": "Starlink & Satellite Internet",
-      "score": 1231,
-      "delta": -97,
+      "score": 1236,
+      "delta": -99,
       "direction": "down",
-      "mentions": 11,
+      "mentions": 12,
       "sources": [
         {
           "platform": "arxiv",
@@ -1920,6 +1920,15 @@
         },
         {
           "platform": "hackernews",
+          "title": "Diving into Starlink's User Terminal Firmware",
+          "url": "https://blog.quarkslab.com/starlink.html",
+          "score": 5,
+          "author": "techgq",
+          "commentCount": 1,
+          "publishedAt": "2026-04-18T01:37:13.000Z"
+        },
+        {
+          "platform": "hackernews",
           "title": "Argentina Graph of the Day: Starlink Connects People",
           "url": "https://www.cato.org/blog/argentina-graph-day-starlink-connects-millions-people",
           "score": 2,
@@ -1964,10 +1973,10 @@
     {
       "slug": "artemis",
       "label": "Artemis & Lunar Return",
-      "score": 1003,
+      "score": 1006,
       "delta": -100,
       "direction": "down",
-      "mentions": 7,
+      "mentions": 8,
       "sources": [
         {
           "platform": "arxiv",
@@ -2013,6 +2022,15 @@
           "authors": "Maaninee Gupta, Kyle J. DeMars",
           "arxivCategory": "math.DS",
           "publishedAt": "2026-03-20T16:34:56.000Z"
+        },
+        {
+          "platform": "hackernews",
+          "title": "China surfaces details of spacecraft for Moon landing by 2030",
+          "url": "https://jatan.space/moon-monday-issue-267/",
+          "score": 3,
+          "author": "tcp_handshaker",
+          "commentCount": 0,
+          "publishedAt": "2026-04-17T19:22:47.000Z"
         },
         {
           "platform": "hackernews",
@@ -2250,6 +2268,121 @@
       }
     },
     {
+      "slug": "starship",
+      "label": "Starship & SpaceX",
+      "score": 227,
+      "delta": 89,
+      "direction": "up",
+      "mentions": 10,
+      "sources": [
+        {
+          "platform": "hackernews",
+          "title": "Tesla Cybertruck sales inflated: SpaceX bought 1,279 units",
+          "url": "https://electrek.co/2026/04/16/tesla-cybertruck-spacex-1279-q4-sales-inflated/",
+          "score": 68,
+          "author": "doener",
+          "commentCount": 23,
+          "publishedAt": "2026-04-17T18:56:12.000Z"
+        },
+        {
+          "platform": "hackernews",
+          "title": "SpaceX Is Basically a Huge Meme Stock",
+          "url": "https://www.theatlantic.com/ideas/2026/04/spacex-ipo-elon-musk/686793/",
+          "score": 64,
+          "author": "breve",
+          "commentCount": 26,
+          "publishedAt": "2026-04-14T20:57:24.000Z"
+        },
+        {
+          "platform": "hackernews",
+          "title": "Starlink outage hit drone tests, exposing Pentagon's growing reliance on SpaceX",
+          "url": "https://www.reuters.com/business/media-telecom/starlink-outage-hit-drone-tests-exposing-pentagons-growing-reliance-spacex-2026-04-16/",
+          "score": 28,
+          "author": "petethomas",
+          "commentCount": 2,
+          "publishedAt": "2026-04-17T00:27:18.000Z"
+        },
+        {
+          "platform": "hackernews",
+          "title": "SpaceX holds $603M in Bitcoin despite $5B loss stemming from xAI",
+          "url": "https://www.coindesk.com/markets/2026/04/11/musk-s-spacex-holds-usd603-million-in-bitcoin-despite-usd5-billion-loss-stemming-from-xai",
+          "score": 27,
+          "author": "lexandstuff",
+          "commentCount": 9,
+          "publishedAt": "2026-04-12T16:16:54.000Z"
+        },
+        {
+          "platform": "hackernews",
+          "title": "Space Force looks at moving \"significant number\" of launches from ULA to SpaceX",
+          "url": "https://arstechnica.com/space/2026/04/space-force-looks-at-moving-significant-number-of-launches-from-ula-to-spacex/",
+          "score": 20,
+          "author": "Bender",
+          "commentCount": 5,
+          "publishedAt": "2026-04-15T18:39:11.000Z"
+        },
+        {
+          "platform": "hackernews",
+          "title": "Investors salivate over SpaceX's mega IPO, the company reportedly lost $5B",
+          "url": "https://moneywise.com/investing/stocks/as-investors-await-spacexs-ipo-elon-musks-aerospace-company-reportedly-lost-5-billion-last-year",
+          "score": 11,
+          "author": "rawgabbit",
+          "commentCount": 1,
+          "publishedAt": "2026-04-17T23:33:43.000Z"
+        },
+        {
+          "platform": "hackernews",
+          "title": "Starlink outage hit drone tests, exposing Pentagon's growing reliance on SpaceX",
+          "url": "https://www.reuters.com/business/media-telecom/starlink-outage-hit-drone-tests-exposing-pentagons-growing-reliance-spacex-2026-04-16/",
+          "score": 4,
+          "author": "ilamont",
+          "commentCount": 0,
+          "publishedAt": "2026-04-16T16:13:30.000Z"
+        },
+        {
+          "platform": "hackernews",
+          "title": "SpaceX alumni found Critical Loop to enable private distribution grid upgrades",
+          "url": "https://www.latitudemedia.com/news/how-critical-loop-uses-microgrids-to-unlock-industrial-load/",
+          "score": 3,
+          "author": "malchow",
+          "commentCount": 0,
+          "publishedAt": "2026-04-13T16:25:34.000Z"
+        },
+        {
+          "platform": "hackernews",
+          "title": "The \"SpaceX Mafia\": Fostering Innovation Across Industries(2023)",
+          "url": "https://www.spacetalent.org/resources/spacex-mafia-fostering-innovation",
+          "score": 1,
+          "author": "num42",
+          "commentCount": 0,
+          "publishedAt": "2026-04-17T05:24:19.000Z"
+        },
+        {
+          "platform": "hackernews",
+          "title": "SpaceX Moves Up Vesting Schedule for Employee Shares Before IPO",
+          "url": "https://www.bloomberg.com/news/articles/2026-04-16/spacex-moves-up-vesting-schedule-for-employee-shares-before-ipo",
+          "score": 1,
+          "author": "petethomas",
+          "commentCount": 0,
+          "publishedAt": "2026-04-17T00:07:05.000Z"
+        }
+      ],
+      "relatedConceptSlugs": [
+        "extraterrestrial-regolith-derived-atmospheric-entry-heat-shields",
+        "phase-i-final-report-nasa-institute-for-advanced-concepts-combined-heat-shield-a"
+      ],
+      "resonance": 43,
+      "quadrant": "dead-zone",
+      "resonanceSignals": {
+        "conceptDepth": 0.5113915944693856,
+        "editorial": 0.4,
+        "connections": 0,
+        "convergence": 0.35,
+        "deepTopic": 1,
+        "pantheon": 0.92,
+        "graveyard": 0
+      }
+    },
+    {
       "slug": "solar-sails",
       "label": "Solar Sails",
       "score": 200,
@@ -2313,112 +2446,6 @@
         "connections": 0.3333333333333333,
         "convergence": 0.15,
         "deepTopic": 0,
-        "pantheon": 0.92,
-        "graveyard": 0
-      }
-    },
-    {
-      "slug": "starship",
-      "label": "Starship & SpaceX",
-      "score": 149,
-      "delta": 429,
-      "direction": "up",
-      "mentions": 9,
-      "sources": [
-        {
-          "platform": "hackernews",
-          "title": "SpaceX Is Basically a Huge Meme Stock",
-          "url": "https://www.theatlantic.com/ideas/2026/04/spacex-ipo-elon-musk/686793/",
-          "score": 64,
-          "author": "breve",
-          "commentCount": 26,
-          "publishedAt": "2026-04-14T20:57:24.000Z"
-        },
-        {
-          "platform": "hackernews",
-          "title": "Starlink outage hit drone tests, exposing Pentagon's growing reliance on SpaceX",
-          "url": "https://www.reuters.com/business/media-telecom/starlink-outage-hit-drone-tests-exposing-pentagons-growing-reliance-spacex-2026-04-16/",
-          "score": 28,
-          "author": "petethomas",
-          "commentCount": 2,
-          "publishedAt": "2026-04-17T00:27:18.000Z"
-        },
-        {
-          "platform": "hackernews",
-          "title": "SpaceX holds $603M in Bitcoin despite $5B loss stemming from xAI",
-          "url": "https://www.coindesk.com/markets/2026/04/11/musk-s-spacex-holds-usd603-million-in-bitcoin-despite-usd5-billion-loss-stemming-from-xai",
-          "score": 27,
-          "author": "lexandstuff",
-          "commentCount": 9,
-          "publishedAt": "2026-04-12T16:16:54.000Z"
-        },
-        {
-          "platform": "hackernews",
-          "title": "Space Force looks at moving \"significant number\" of launches from ULA to SpaceX",
-          "url": "https://arstechnica.com/space/2026/04/space-force-looks-at-moving-significant-number-of-launches-from-ula-to-spacex/",
-          "score": 20,
-          "author": "Bender",
-          "commentCount": 5,
-          "publishedAt": "2026-04-15T18:39:11.000Z"
-        },
-        {
-          "platform": "hackernews",
-          "title": "Starlink outage hit drone tests, exposing Pentagon's growing reliance on SpaceX",
-          "url": "https://www.reuters.com/business/media-telecom/starlink-outage-hit-drone-tests-exposing-pentagons-growing-reliance-spacex-2026-04-16/",
-          "score": 4,
-          "author": "ilamont",
-          "commentCount": 0,
-          "publishedAt": "2026-04-16T16:13:30.000Z"
-        },
-        {
-          "platform": "hackernews",
-          "title": "SpaceX alumni found Critical Loop to enable private distribution grid upgrades",
-          "url": "https://www.latitudemedia.com/news/how-critical-loop-uses-microgrids-to-unlock-industrial-load/",
-          "score": 3,
-          "author": "malchow",
-          "commentCount": 0,
-          "publishedAt": "2026-04-13T16:25:34.000Z"
-        },
-        {
-          "platform": "hackernews",
-          "title": "Tesla Cybertruck sales inflated: SpaceX bought 1,279 units",
-          "url": "https://electrek.co/2026/04/16/tesla-cybertruck-spacex-1279-q4-sales-inflated/",
-          "score": 1,
-          "author": "doener",
-          "commentCount": 0,
-          "publishedAt": "2026-04-17T18:56:12.000Z"
-        },
-        {
-          "platform": "hackernews",
-          "title": "The \"SpaceX Mafia\": Fostering Innovation Across Industries(2023)",
-          "url": "https://www.spacetalent.org/resources/spacex-mafia-fostering-innovation",
-          "score": 1,
-          "author": "num42",
-          "commentCount": 0,
-          "publishedAt": "2026-04-17T05:24:19.000Z"
-        },
-        {
-          "platform": "hackernews",
-          "title": "SpaceX Moves Up Vesting Schedule for Employee Shares Before IPO",
-          "url": "https://www.bloomberg.com/news/articles/2026-04-16/spacex-moves-up-vesting-schedule-for-employee-shares-before-ipo",
-          "score": 1,
-          "author": "petethomas",
-          "commentCount": 0,
-          "publishedAt": "2026-04-17T00:07:05.000Z"
-        }
-      ],
-      "relatedConceptSlugs": [
-        "extraterrestrial-regolith-derived-atmospheric-entry-heat-shields",
-        "phase-i-final-report-nasa-institute-for-advanced-concepts-combined-heat-shield-a"
-      ],
-      "resonance": 43,
-      "quadrant": "dead-zone",
-      "resonanceSignals": {
-        "conceptDepth": 0.5113915944693856,
-        "editorial": 0.4,
-        "connections": 0,
-        "convergence": 0.35,
-        "deepTopic": 1,
         "pantheon": 0.92,
         "graveyard": 0
       }
