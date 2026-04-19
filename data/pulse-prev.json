@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-04-18T18:58:02.868Z",
+  "generatedAt": "2026-04-19T07:12:20.718Z",
   "topics": [
     {
       "slug": "gravitational-waves",
@@ -269,7 +269,7 @@
     {
       "slug": "quantum-computing",
       "label": "Quantum Computing",
-      "score": 7242,
+      "score": 7240,
       "delta": 0,
       "direction": "steady",
       "mentions": 44,
@@ -401,10 +401,10 @@
     {
       "slug": "space-telescopes",
       "label": "Space Telescopes",
-      "score": 7076,
-      "delta": -3,
+      "score": 7001,
+      "delta": -1,
       "direction": "steady",
-      "mentions": 37,
+      "mentions": 36,
       "sources": [
         {
           "platform": "arxiv",
@@ -1195,7 +1195,7 @@
       "slug": "astrobiology",
       "label": "Astrobiology",
       "score": 3600,
-      "delta": -14,
+      "delta": -10,
       "direction": "steady",
       "mentions": 18,
       "sources": [
@@ -1841,10 +1841,10 @@
     {
       "slug": "starlink",
       "label": "Starlink & Satellite Internet",
-      "score": 1236,
+      "score": 1230,
       "delta": 0,
       "direction": "steady",
-      "mentions": 12,
+      "mentions": 11,
       "sources": [
         {
           "platform": "arxiv",
@@ -1908,15 +1908,6 @@
           "author": "JumpCrisscross",
           "commentCount": 9,
           "publishedAt": "2026-04-14T19:31:56.000Z"
-        },
-        {
-          "platform": "hackernews",
-          "title": "US Mobile now bundles Starlink home internet starting at $47/month",
-          "url": "https://www.usmobile.com/home-internet/starlink",
-          "score": 6,
-          "author": "fastest963",
-          "commentCount": 0,
-          "publishedAt": "2026-04-11T19:50:10.000Z"
         },
         {
           "platform": "hackernews",
@@ -2139,10 +2130,10 @@
     {
       "slug": "mars",
       "label": "Mars Exploration",
-      "score": 400,
+      "score": 401,
       "delta": 0,
       "direction": "steady",
-      "mentions": 2,
+      "mentions": 3,
       "sources": [
         {
           "platform": "arxiv",
@@ -2161,6 +2152,15 @@
           "authors": "E. S. Kite, A. Essunfeld, M. H. Hecht et al.",
           "arxivCategory": "astro-ph.IM",
           "publishedAt": "2026-04-02T16:33:39.000Z"
+        },
+        {
+          "platform": "hackernews",
+          "title": "NASA selects Falcon Heavy to launch ESA Mars rover mission despite budget threat",
+          "url": "https://spacenews.com/nasa-selects-falcon-heavy-to-launch-esa-mars-rover-mission-despite-budget-threat/",
+          "score": 1,
+          "author": "bookmtn",
+          "commentCount": 0,
+          "publishedAt": "2026-04-19T01:28:05.000Z"
         }
       ],
       "relatedConceptSlugs": [
@@ -2270,18 +2270,18 @@
     {
       "slug": "starship",
       "label": "Starship & SpaceX",
-      "score": 244,
-      "delta": 64,
-      "direction": "up",
+      "score": 247,
+      "delta": 9,
+      "direction": "steady",
       "mentions": 11,
       "sources": [
         {
           "platform": "hackernews",
           "title": "Tesla Cybertruck sales inflated: SpaceX bought 1,279 units",
           "url": "https://electrek.co/2026/04/16/tesla-cybertruck-spacex-1279-q4-sales-inflated/",
-          "score": 79,
+          "score": 81,
           "author": "doener",
-          "commentCount": 25,
+          "commentCount": 26,
           "publishedAt": "2026-04-17T18:56:12.000Z"
         },
         {
@@ -2331,21 +2331,21 @@
         },
         {
           "platform": "hackernews",
+          "title": "SpaceX Files FCC Complaint over Ariane 64 Amazon Leo Launch",
+          "url": "https://europeanspaceflight.com/spacex-files-fcc-complaint-over-ariane-64-amazon-leo-launch/",
+          "score": 4,
+          "author": "tcp_handshaker",
+          "commentCount": 0,
+          "publishedAt": "2026-04-18T17:24:36.000Z"
+        },
+        {
+          "platform": "hackernews",
           "title": "Starlink outage hit drone tests, exposing Pentagon's growing reliance on SpaceX",
           "url": "https://www.reuters.com/business/media-telecom/starlink-outage-hit-drone-tests-exposing-pentagons-growing-reliance-spacex-2026-04-16/",
           "score": 4,
           "author": "ilamont",
           "commentCount": 0,
           "publishedAt": "2026-04-16T16:13:30.000Z"
-        },
-        {
-          "platform": "hackernews",
-          "title": "SpaceX Files FCC Complaint over Ariane 64 Amazon Leo Launch",
-          "url": "https://europeanspaceflight.com/spacex-files-fcc-complaint-over-ariane-64-amazon-leo-launch/",
-          "score": 3,
-          "author": "tcp_handshaker",
-          "commentCount": 0,
-          "publishedAt": "2026-04-18T17:24:36.000Z"
         },
         {
           "platform": "hackernews",
