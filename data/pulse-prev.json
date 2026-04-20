@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-04-19T07:12:20.718Z",
+  "generatedAt": "2026-04-19T18:57:48.780Z",
   "topics": [
     {
       "slug": "gravitational-waves",
@@ -137,7 +137,7 @@
       "slug": "black-holes",
       "label": "Black Holes",
       "score": 8409,
-      "delta": -2,
+      "delta": 0,
       "direction": "steady",
       "mentions": 46,
       "sources": [
@@ -269,7 +269,7 @@
     {
       "slug": "quantum-computing",
       "label": "Quantum Computing",
-      "score": 7240,
+      "score": 7242,
       "delta": 0,
       "direction": "steady",
       "mentions": 44,
@@ -665,7 +665,7 @@
       "slug": "nanotechnology",
       "label": "Nanotechnology & Metamaterials",
       "score": 6800,
-      "delta": -3,
+      "delta": 0,
       "direction": "steady",
       "mentions": 34,
       "sources": [
@@ -797,10 +797,10 @@
     {
       "slug": "condensed-matter",
       "label": "Condensed Matter",
-      "score": 6602,
+      "score": 6202,
       "delta": -6,
       "direction": "steady",
-      "mentions": 34,
+      "mentions": 32,
       "sources": [
         {
           "platform": "arxiv",
@@ -1194,10 +1194,10 @@
     {
       "slug": "astrobiology",
       "label": "Astrobiology",
-      "score": 3600,
-      "delta": -10,
+      "score": 3400,
+      "delta": -6,
       "direction": "steady",
-      "mentions": 18,
+      "mentions": 17,
       "sources": [
         {
           "platform": "arxiv",
@@ -1457,139 +1457,6 @@
       }
     },
     {
-      "slug": "exoplanets",
-      "label": "Exoplanets",
-      "score": 2404,
-      "delta": -8,
-      "direction": "steady",
-      "mentions": 13,
-      "sources": [
-        {
-          "platform": "arxiv",
-          "title": "Recent development in high-precision high-fidelity spectrographs for exoplanet research and characterization",
-          "url": "https://arxiv.org/abs/2604.09020",
-          "score": 200,
-          "authors": "François Bouchy, Francesco Pepe, Xavier Dumusque et al.",
-          "arxivCategory": "astro-ph.IM",
-          "publishedAt": "2026-04-10T06:34:01.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Weighing the mass of LHS 3844 b",
-          "url": "https://arxiv.org/abs/2603.28237",
-          "score": 200,
-          "authors": "Alejandro Hacker, Nicola Astudillo-Defru, Rodrigo F. Díaz et al.",
-          "arxivCategory": "astro-ph.EP",
-          "publishedAt": "2026-03-30T09:58:06.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Combining spectroscopy and wavefront control at deep contrast with photonic lanterns",
-          "url": "https://arxiv.org/abs/2604.14276",
-          "score": 200,
-          "authors": "Mona El Morsy, Olivier Guyon, Barnaby Norris et al.",
-          "arxivCategory": "astro-ph.IM",
-          "publishedAt": "2026-04-15T18:00:00.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "The RoPES project with HARPS and HARPS-N III. Two candidate planets orbiting the G-type star HD 161098",
-          "url": "https://arxiv.org/abs/2604.11516",
-          "score": 200,
-          "authors": "N. Nari, A. Suárez Mascareño, J. I. González Hernández et al.",
-          "arxivCategory": "astro-ph.EP",
-          "publishedAt": "2026-04-13T14:20:19.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Spectral signatures from the habitable zone",
-          "url": "https://arxiv.org/abs/2604.08993",
-          "score": 200,
-          "authors": "Vincent Kofman",
-          "arxivCategory": "astro-ph.EP",
-          "publishedAt": "2026-04-10T05:57:46.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "The JWST Search for Earth-Luna Analogs: Upper Limits on Exomoons and Refined Ephemerides for TOI 700 d and e",
-          "url": "https://arxiv.org/abs/2604.05235",
-          "score": 200,
-          "authors": "Emily K. Pass, David Charbonneau, Andrew Vanderburg et al.",
-          "arxivCategory": "astro-ph.EP",
-          "publishedAt": "2026-04-06T22:59:36.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Interaction between Winds from Weak-lined T Tauri Stars with Exoplanetary Magnetospheres",
-          "url": "https://arxiv.org/abs/2604.03792",
-          "score": 200,
-          "authors": "Y. F. Tamburus, N. F. S. Andrade, G. R. C. Sampaio et al.",
-          "arxivCategory": "astro-ph.SR",
-          "publishedAt": "2026-04-04T16:41:53.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "The PLATO Input Catalogue of targets (tPIC) for the first Long Pointing Field",
-          "url": "https://arxiv.org/abs/2604.03369",
-          "score": 200,
-          "authors": "M. Montalto, G. Piotto, P. M. Marrese et al.",
-          "arxivCategory": "astro-ph.EP",
-          "publishedAt": "2026-04-03T18:00:02.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "The PLATO field selection process III. Selection of the Prime Sample for the LOPS2 field",
-          "url": "https://arxiv.org/abs/2604.03365",
-          "score": 200,
-          "authors": "V. Nascimbeni, G. Piotto, V. Granata et al.",
-          "arxivCategory": "astro-ph.EP",
-          "publishedAt": "2026-04-03T18:00:00.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "First Detection of Exoplanetary Cannabinoids: Evidence for THC and CBD in the Atmosphere of K2-18b",
-          "url": "https://arxiv.org/abs/2603.29700",
-          "score": 200,
-          "authors": "Amie J. Chism, Mary Jane van der Pot, Blaise P. Hasheau et al.",
-          "arxivCategory": "astro-ph.EP",
-          "publishedAt": "2026-03-31T12:56:45.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Flare-driven habitability: Expanding life's potential around low-mass stars",
-          "url": "https://arxiv.org/abs/2603.24944",
-          "score": 200,
-          "authors": "Dong-Yang Gao, Hui-Gen Liu, Ming Yang et al.",
-          "arxivCategory": "astro-ph.EP",
-          "publishedAt": "2026-03-26T02:28:00.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "A Century of Radial Velocity and Astrometric Monitoring of 70 Oph AB: New PFS Data and Constraints on Planetary Companions",
-          "url": "https://arxiv.org/abs/2603.20044",
-          "score": 200,
-          "authors": "Yiting Li, Michael R. Meyer, Skylar D'Angiolillo et al.",
-          "arxivCategory": "astro-ph.EP",
-          "publishedAt": "2026-03-20T15:29:32.000Z"
-        }
-      ],
-      "relatedConceptSlugs": [
-        "fluidic-telescope",
-        "orbiting-rainbows"
-      ],
-      "resonance": 51,
-      "quadrant": "real-deal",
-      "resonanceSignals": {
-        "conceptDepth": 0.5113915944693856,
-        "editorial": 1,
-        "connections": 0.3333333333333333,
-        "convergence": 0.15,
-        "deepTopic": 0.8,
-        "pantheon": 0.12,
-        "graveyard": 0
-      }
-    },
-    {
       "slug": "asteroid-mining",
       "label": "Asteroid Mining",
       "score": 2400,
@@ -1711,7 +1578,7 @@
         "gravity-poppers"
       ],
       "resonance": 43,
-      "quadrant": "dead-zone",
+      "quadrant": "hype-cycle",
       "resonanceSignals": {
         "conceptDepth": 0.6131471927654584,
         "editorial": 1,
@@ -1719,6 +1586,139 @@
         "convergence": 0.3,
         "deepTopic": 0,
         "pantheon": 0.08,
+        "graveyard": 0
+      }
+    },
+    {
+      "slug": "exoplanets",
+      "label": "Exoplanets",
+      "score": 2204,
+      "delta": -8,
+      "direction": "steady",
+      "mentions": 12,
+      "sources": [
+        {
+          "platform": "arxiv",
+          "title": "Recent development in high-precision high-fidelity spectrographs for exoplanet research and characterization",
+          "url": "https://arxiv.org/abs/2604.09020",
+          "score": 200,
+          "authors": "François Bouchy, Francesco Pepe, Xavier Dumusque et al.",
+          "arxivCategory": "astro-ph.IM",
+          "publishedAt": "2026-04-10T06:34:01.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Weighing the mass of LHS 3844 b",
+          "url": "https://arxiv.org/abs/2603.28237",
+          "score": 200,
+          "authors": "Alejandro Hacker, Nicola Astudillo-Defru, Rodrigo F. Díaz et al.",
+          "arxivCategory": "astro-ph.EP",
+          "publishedAt": "2026-03-30T09:58:06.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Combining spectroscopy and wavefront control at deep contrast with photonic lanterns",
+          "url": "https://arxiv.org/abs/2604.14276",
+          "score": 200,
+          "authors": "Mona El Morsy, Olivier Guyon, Barnaby Norris et al.",
+          "arxivCategory": "astro-ph.IM",
+          "publishedAt": "2026-04-15T18:00:00.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "The RoPES project with HARPS and HARPS-N III. Two candidate planets orbiting the G-type star HD 161098",
+          "url": "https://arxiv.org/abs/2604.11516",
+          "score": 200,
+          "authors": "N. Nari, A. Suárez Mascareño, J. I. González Hernández et al.",
+          "arxivCategory": "astro-ph.EP",
+          "publishedAt": "2026-04-13T14:20:19.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Spectral signatures from the habitable zone",
+          "url": "https://arxiv.org/abs/2604.08993",
+          "score": 200,
+          "authors": "Vincent Kofman",
+          "arxivCategory": "astro-ph.EP",
+          "publishedAt": "2026-04-10T05:57:46.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "The JWST Search for Earth-Luna Analogs: Upper Limits on Exomoons and Refined Ephemerides for TOI 700 d and e",
+          "url": "https://arxiv.org/abs/2604.05235",
+          "score": 200,
+          "authors": "Emily K. Pass, David Charbonneau, Andrew Vanderburg et al.",
+          "arxivCategory": "astro-ph.EP",
+          "publishedAt": "2026-04-06T22:59:36.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Interaction between Winds from Weak-lined T Tauri Stars with Exoplanetary Magnetospheres",
+          "url": "https://arxiv.org/abs/2604.03792",
+          "score": 200,
+          "authors": "Y. F. Tamburus, N. F. S. Andrade, G. R. C. Sampaio et al.",
+          "arxivCategory": "astro-ph.SR",
+          "publishedAt": "2026-04-04T16:41:53.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "The PLATO Input Catalogue of targets (tPIC) for the first Long Pointing Field",
+          "url": "https://arxiv.org/abs/2604.03369",
+          "score": 200,
+          "authors": "M. Montalto, G. Piotto, P. M. Marrese et al.",
+          "arxivCategory": "astro-ph.EP",
+          "publishedAt": "2026-04-03T18:00:02.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "The PLATO field selection process III. Selection of the Prime Sample for the LOPS2 field",
+          "url": "https://arxiv.org/abs/2604.03365",
+          "score": 200,
+          "authors": "V. Nascimbeni, G. Piotto, V. Granata et al.",
+          "arxivCategory": "astro-ph.EP",
+          "publishedAt": "2026-04-03T18:00:00.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "First Detection of Exoplanetary Cannabinoids: Evidence for THC and CBD in the Atmosphere of K2-18b",
+          "url": "https://arxiv.org/abs/2603.29700",
+          "score": 200,
+          "authors": "Amie J. Chism, Mary Jane van der Pot, Blaise P. Hasheau et al.",
+          "arxivCategory": "astro-ph.EP",
+          "publishedAt": "2026-03-31T12:56:45.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Flare-driven habitability: Expanding life's potential around low-mass stars",
+          "url": "https://arxiv.org/abs/2603.24944",
+          "score": 200,
+          "authors": "Dong-Yang Gao, Hui-Gen Liu, Ming Yang et al.",
+          "arxivCategory": "astro-ph.EP",
+          "publishedAt": "2026-03-26T02:28:00.000Z"
+        },
+        {
+          "platform": "hackernews",
+          "title": "A catalogue of rocky exoplanets in the habitable zone",
+          "url": "https://academic.oup.com/mnras/article/547/3/stag028/8526432",
+          "score": 4,
+          "author": "simonebrunozzi",
+          "commentCount": 0,
+          "publishedAt": "2026-04-16T18:56:15.000Z"
+        }
+      ],
+      "relatedConceptSlugs": [
+        "fluidic-telescope",
+        "orbiting-rainbows"
+      ],
+      "resonance": 51,
+      "quadrant": "sleeping-giant",
+      "resonanceSignals": {
+        "conceptDepth": 0.5113915944693856,
+        "editorial": 1,
+        "connections": 0.3333333333333333,
+        "convergence": 0.15,
+        "deepTopic": 0.8,
+        "pantheon": 0.12,
         "graveyard": 0
       }
     },
@@ -1964,10 +1964,10 @@
     {
       "slug": "artemis",
       "label": "Artemis & Lunar Return",
-      "score": 1006,
-      "delta": 0,
-      "direction": "steady",
-      "mentions": 8,
+      "score": 806,
+      "delta": -20,
+      "direction": "down",
+      "mentions": 7,
       "sources": [
         {
           "platform": "arxiv",
@@ -2004,15 +2004,6 @@
           "authors": "Smriti Nandan Paul, Siwei Fan",
           "arxivCategory": "cs.RO",
           "publishedAt": "2026-03-21T00:25:34.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Cislunar State and Uncertainty Propagation via the Modified Generalized Equinoctial Orbital Elements",
-          "url": "https://arxiv.org/abs/2603.20110",
-          "score": 200,
-          "authors": "Maaninee Gupta, Kyle J. DeMars",
-          "arxivCategory": "math.DS",
-          "publishedAt": "2026-03-20T16:34:56.000Z"
         },
         {
           "platform": "hackernews",
@@ -2270,8 +2261,8 @@
     {
       "slug": "starship",
       "label": "Starship & SpaceX",
-      "score": 247,
-      "delta": 9,
+      "score": 225,
+      "delta": -8,
       "direction": "steady",
       "mentions": 11,
       "sources": [
@@ -2279,9 +2270,9 @@
           "platform": "hackernews",
           "title": "Tesla Cybertruck sales inflated: SpaceX bought 1,279 units",
           "url": "https://electrek.co/2026/04/16/tesla-cybertruck-spacex-1279-q4-sales-inflated/",
-          "score": 81,
+          "score": 82,
           "author": "doener",
-          "commentCount": 26,
+          "commentCount": 27,
           "publishedAt": "2026-04-17T18:56:12.000Z"
         },
         {
@@ -2304,15 +2295,6 @@
         },
         {
           "platform": "hackernews",
-          "title": "SpaceX holds $603M in Bitcoin despite $5B loss stemming from xAI",
-          "url": "https://www.coindesk.com/markets/2026/04/11/musk-s-spacex-holds-usd603-million-in-bitcoin-despite-usd5-billion-loss-stemming-from-xai",
-          "score": 27,
-          "author": "lexandstuff",
-          "commentCount": 9,
-          "publishedAt": "2026-04-12T16:16:54.000Z"
-        },
-        {
-          "platform": "hackernews",
           "title": "Space Force looks at moving \"significant number\" of launches from ULA to SpaceX",
           "url": "https://arstechnica.com/space/2026/04/space-force-looks-at-moving-significant-number-of-launches-from-ula-to-spacex/",
           "score": 20,
@@ -2328,6 +2310,15 @@
           "author": "rawgabbit",
           "commentCount": 4,
           "publishedAt": "2026-04-17T23:33:43.000Z"
+        },
+        {
+          "platform": "hackernews",
+          "title": "Musk's SpaceX urges Trump to crack down on EU satellites",
+          "url": "https://www.telegraph.co.uk/business/2026/04/19/musks-spacex-urges-trump-to-crackdown-on-eu-satellites/?WT.mc_id=tmgoff_tw_post_to-crackdown-on-eu-satellites/",
+          "score": 4,
+          "author": "doener",
+          "commentCount": 0,
+          "publishedAt": "2026-04-19T17:59:03.000Z"
         },
         {
           "platform": "hackernews",
