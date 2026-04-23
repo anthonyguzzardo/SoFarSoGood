@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-04-23T07:27:50.539Z",
+  "generatedAt": "2026-04-23T19:13:40.369Z",
   "topics": [
     {
       "slug": "gravitational-waves",
       "label": "Gravitational Waves",
       "score": 8400,
-      "delta": 8,
+      "delta": 5,
       "direction": "steady",
       "mentions": 42,
       "sources": [
@@ -137,7 +137,7 @@
       "slug": "black-holes",
       "label": "Black Holes",
       "score": 8205,
-      "delta": 2,
+      "delta": 0,
       "direction": "steady",
       "mentions": 43,
       "sources": [
@@ -269,8 +269,8 @@
     {
       "slug": "quantum-computing",
       "label": "Quantum Computing",
-      "score": 7937,
-      "delta": -2,
+      "score": 7938,
+      "delta": 0,
       "direction": "steady",
       "mentions": 50,
       "sources": [
@@ -278,7 +278,7 @@
           "platform": "hackernews",
           "title": "Quantum Computers Are Not a Threat to 128-Bit Symmetric Keys",
           "url": "https://words.filippo.io/128-bits/",
-          "score": 303,
+          "score": 304,
           "author": "hasheddan",
           "commentCount": 108,
           "publishedAt": "2026-04-20T16:37:48.000Z"
@@ -402,7 +402,7 @@
       "slug": "space-telescopes",
       "label": "Space Telescopes",
       "score": 7210,
-      "delta": -3,
+      "delta": -5,
       "direction": "steady",
       "mentions": 38,
       "sources": [
@@ -797,18 +797,18 @@
     {
       "slug": "condensed-matter",
       "label": "Condensed Matter",
-      "score": 6660,
-      "delta": 4,
+      "score": 6263,
+      "delta": -6,
       "direction": "steady",
-      "mentions": 34,
+      "mentions": 32,
       "sources": [
         {
           "platform": "hackernews",
           "title": "Original GrapheneOS responses to WIRED fact checker",
           "url": "https://discuss.grapheneos.org/d/34369-original-grapheneos-responses-to-wired-fact-checker",
-          "score": 258,
+          "score": 261,
           "author": "ChrisArchitect",
-          "commentCount": 242,
+          "commentCount": 234,
           "publishedAt": "2026-04-21T15:04:24.000Z"
         },
         {
@@ -1194,10 +1194,10 @@
     {
       "slug": "astrobiology",
       "label": "Astrobiology",
-      "score": 4200,
-      "delta": -5,
+      "score": 4202,
+      "delta": 0,
       "direction": "steady",
-      "mentions": 21,
+      "mentions": 22,
       "sources": [
         {
           "platform": "arxiv",
@@ -1327,10 +1327,10 @@
     {
       "slug": "exoplanets",
       "label": "Exoplanets",
-      "score": 3404,
+      "score": 3400,
       "delta": 6,
       "direction": "steady",
-      "mentions": 18,
+      "mentions": 17,
       "sources": [
         {
           "platform": "arxiv",
@@ -1593,7 +1593,7 @@
       "slug": "asteroid-mining",
       "label": "Asteroid Mining",
       "score": 2800,
-      "delta": 8,
+      "delta": -7,
       "direction": "steady",
       "mentions": 14,
       "sources": [
@@ -1725,10 +1725,10 @@
     {
       "slug": "fusion-propulsion",
       "label": "Fusion Propulsion",
-      "score": 1800,
-      "delta": -10,
+      "score": 1600,
+      "delta": -11,
       "direction": "steady",
-      "mentions": 9,
+      "mentions": 8,
       "sources": [
         {
           "platform": "arxiv",
@@ -1765,15 +1765,6 @@
           "authors": "J. F. Parisi, J. Azad",
           "arxivCategory": "physics.plasm-ph",
           "publishedAt": "2026-04-03T00:00:39.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "CMA-Unfold A Covariance Matrix Adaptation unfolding algorithm for stacked calorimeter detectors",
-          "url": "https://arxiv.org/abs/2603.22930",
-          "score": 200,
-          "authors": "G. Fauvel, A. Arefiev, M. Manuel et al.",
-          "arxivCategory": "physics.plasm-ph",
-          "publishedAt": "2026-03-24T08:23:23.000Z"
         },
         {
           "platform": "arxiv",
@@ -1832,27 +1823,27 @@
     {
       "slug": "starship",
       "label": "Starship & SpaceX",
-      "score": 1530,
-      "delta": 386,
-      "direction": "up",
-      "mentions": 37,
+      "score": 1543,
+      "delta": 4,
+      "direction": "steady",
+      "mentions": 39,
       "sources": [
         {
           "platform": "hackernews",
           "title": "SpaceX says it has agreement to acquire Cursor for $60B",
           "url": "https://twitter.com/spacex/status/2046713419978453374",
-          "score": 801,
+          "score": 808,
           "author": "dmarcos",
-          "commentCount": 959,
+          "commentCount": 964,
           "publishedAt": "2026-04-21T22:13:18.000Z"
         },
         {
           "platform": "hackernews",
           "title": "FBI looks into dead or missing scientists tied to NASA, Blue Origin, SpaceX",
           "url": "https://fortune.com/2026/04/21/scientists-disappear-die-nasa-space-blue-origin-spacex/",
-          "score": 222,
+          "score": 225,
           "author": "ineedasername",
-          "commentCount": 153,
+          "commentCount": 159,
           "publishedAt": "2026-04-22T02:49:40.000Z"
         },
         {
@@ -1965,10 +1956,10 @@
     {
       "slug": "starlink",
       "label": "Starlink & Satellite Internet",
-      "score": 1412,
-      "delta": -1,
+      "score": 1415,
+      "delta": 0,
       "direction": "steady",
-      "mentions": 9,
+      "mentions": 10,
       "sources": [
         {
           "platform": "arxiv",
@@ -2058,6 +2049,23 @@
           "author": "techgq",
           "commentCount": 1,
           "publishedAt": "2026-04-18T01:37:13.000Z"
+        },
+        {
+          "platform": "youtube",
+          "title": "Is Starlink a Secret Radar Constellation? [video]",
+          "url": "https://www.youtube.com/watch?v=jbp3kdJZ1_A",
+          "score": 3,
+          "thumbnail": "https://img.youtube.com/vi/jbp3kdJZ1_A/mqdefault.jpg",
+          "publishedAt": "2026-04-23T09:02:41.000Z"
+        },
+        {
+          "platform": "hackernews",
+          "title": "Is Starlink a Secret Radar Constellation? [video]",
+          "url": "https://www.youtube.com/watch?v=jbp3kdJZ1_A",
+          "score": 3,
+          "author": "msuniverse2026",
+          "commentCount": 0,
+          "publishedAt": "2026-04-23T09:02:41.000Z"
         }
       ],
       "relatedConceptSlugs": [
@@ -2259,10 +2267,10 @@
     {
       "slug": "mars",
       "label": "Mars Exploration",
-      "score": 401,
+      "score": 402,
       "delta": 0,
       "direction": "steady",
-      "mentions": 3,
+      "mentions": 4,
       "sources": [
         {
           "platform": "arxiv",
@@ -2281,6 +2289,15 @@
           "authors": "E. S. Kite, A. Essunfeld, M. H. Hecht et al.",
           "arxivCategory": "astro-ph.IM",
           "publishedAt": "2026-04-02T16:33:39.000Z"
+        },
+        {
+          "platform": "hackernews",
+          "title": "Mars rover detects never-before-seen organic compounds in new experiment",
+          "url": "https://phys.org/news/2026-04-mars-rover-compounds.html",
+          "score": 1,
+          "author": "benkan",
+          "commentCount": 0,
+          "publishedAt": "2026-04-23T18:39:33.000Z"
         },
         {
           "platform": "hackernews",
@@ -2358,8 +2375,8 @@
       "slug": "ai-space",
       "label": "AI in Space",
       "score": 400,
-      "delta": 100,
-      "direction": "up",
+      "delta": 0,
+      "direction": "steady",
       "mentions": 2,
       "sources": [
         {
