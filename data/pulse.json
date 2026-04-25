@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-04-24T18:57:52.199Z",
+  "generatedAt": "2026-04-25T07:08:20.217Z",
   "topics": [
     {
       "slug": "gravitational-waves",
       "label": "Gravitational Waves",
       "score": 8800,
-      "delta": 5,
+      "delta": 0,
       "direction": "steady",
       "mentions": 44,
       "sources": [
@@ -137,7 +137,7 @@
       "slug": "black-holes",
       "label": "Black Holes",
       "score": 7802,
-      "delta": -5,
+      "delta": 0,
       "direction": "steady",
       "mentions": 40,
       "sources": [
@@ -269,16 +269,16 @@
     {
       "slug": "quantum-computing",
       "label": "Quantum Computing",
-      "score": 7732,
-      "delta": -3,
+      "score": 7730,
+      "delta": 0,
       "direction": "steady",
-      "mentions": 49,
+      "mentions": 48,
       "sources": [
         {
           "platform": "hackernews",
           "title": "Quantum Computers Are Not a Threat to 128-Bit Symmetric Keys",
           "url": "https://words.filippo.io/128-bits/",
-          "score": 306,
+          "score": 307,
           "author": "hasheddan",
           "commentCount": 109,
           "publishedAt": "2026-04-20T16:37:48.000Z"
@@ -535,7 +535,7 @@
       "slug": "space-telescopes",
       "label": "Space Telescopes",
       "score": 6810,
-      "delta": -6,
+      "delta": -3,
       "direction": "steady",
       "mentions": 36,
       "sources": [
@@ -667,10 +667,10 @@
     {
       "slug": "particle-physics",
       "label": "Particle Physics",
-      "score": 6800,
-      "delta": 0,
+      "score": 6600,
+      "delta": -3,
       "direction": "steady",
-      "mentions": 34,
+      "mentions": 33,
       "sources": [
         {
           "platform": "arxiv",
@@ -698,15 +698,6 @@
           "authors": "Simone Franchini, Giampiero Bardella",
           "arxivCategory": "cond-mat.stat-mech",
           "publishedAt": "2026-04-06T23:25:41.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Diffractive and photon-induced processes at the LHC: from the odderon discovery, the evidence for saturation to the search for axion-like particles",
-          "url": "https://arxiv.org/abs/2603.24808",
-          "score": 200,
-          "authors": "C. Royon",
-          "arxivCategory": "hep-ex",
-          "publishedAt": "2026-03-25T20:41:39.000Z"
         },
         {
           "platform": "arxiv",
@@ -779,6 +770,15 @@
           "authors": "CMS Collaboration",
           "arxivCategory": "hep-ex",
           "publishedAt": "2026-04-10T18:33:27.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Constraining new physics in charm quark associated Higgs boson production events using the Standard Model effective field theory approach",
+          "url": "https://arxiv.org/abs/2604.09225",
+          "score": 200,
+          "authors": "Nordin Breugelmans, Felix Heyen, Jorgen D'Hondt et al.",
+          "arxivCategory": "hep-ph",
+          "publishedAt": "2026-04-10T11:34:20.000Z"
         }
       ],
       "relatedConceptSlugs": [],
@@ -797,7 +797,7 @@
     {
       "slug": "condensed-matter",
       "label": "Condensed Matter",
-      "score": 6272,
+      "score": 6273,
       "delta": 0,
       "direction": "steady",
       "mentions": 33,
@@ -930,7 +930,7 @@
       "slug": "cosmology",
       "label": "Cosmology",
       "score": 5819,
-      "delta": 4,
+      "delta": 0,
       "direction": "steady",
       "mentions": 30,
       "sources": [
@@ -1062,7 +1062,7 @@
       "slug": "dark-matter",
       "label": "Dark Matter & Dark Energy",
       "score": 5202,
-      "delta": -7,
+      "delta": 0,
       "direction": "steady",
       "mentions": 27,
       "sources": [
@@ -1194,10 +1194,10 @@
     {
       "slug": "astrobiology",
       "label": "Astrobiology",
-      "score": 4002,
-      "delta": -5,
-      "direction": "steady",
-      "mentions": 21,
+      "score": 3602,
+      "delta": -18,
+      "direction": "down",
+      "mentions": 19,
       "sources": [
         {
           "platform": "arxiv",
@@ -1225,15 +1225,6 @@
           "authors": "Erica Bisesi, Giuseppe Murante, Antonello Provenzale et al.",
           "arxivCategory": "astro-ph.EP",
           "publishedAt": "2026-03-26T11:09:30.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "On the importance of laboratory experiments for interpreting exoplanet observations",
-          "url": "https://arxiv.org/abs/2603.24809",
-          "score": 200,
-          "authors": "Maggie A. Thompson",
-          "arxivCategory": "astro-ph.EP",
-          "publishedAt": "2026-03-25T20:45:47.000Z"
         },
         {
           "platform": "arxiv",
@@ -1306,6 +1297,15 @@
           "authors": "Yuan Bian, Donglin Zeng, Hyun-Joon Yang et al.",
           "arxivCategory": "stat.ME",
           "publishedAt": "2026-04-12T16:12:14.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Spectral signatures from the habitable zone",
+          "url": "https://arxiv.org/abs/2604.08993",
+          "score": 200,
+          "authors": "Vincent Kofman",
+          "arxivCategory": "astro-ph.EP",
+          "publishedAt": "2026-04-10T05:57:46.000Z"
         }
       ],
       "relatedConceptSlugs": [
@@ -1327,10 +1327,10 @@
     {
       "slug": "exoplanets",
       "label": "Exoplanets",
-      "score": 3400,
-      "delta": 0,
+      "score": 3200,
+      "delta": -6,
       "direction": "steady",
-      "mentions": 17,
+      "mentions": 16,
       "sources": [
         {
           "platform": "arxiv",
@@ -1460,10 +1460,10 @@
     {
       "slug": "quantum-comms",
       "label": "Quantum Communication",
-      "score": 3200,
-      "delta": 0,
+      "score": 3000,
+      "delta": -6,
       "direction": "steady",
-      "mentions": 16,
+      "mentions": 15,
       "sources": [
         {
           "platform": "arxiv",
@@ -1823,16 +1823,16 @@
     {
       "slug": "starship",
       "label": "Starship & SpaceX",
-      "score": 1522,
-      "delta": -1,
+      "score": 1440,
+      "delta": -5,
       "direction": "steady",
-      "mentions": 36,
+      "mentions": 37,
       "sources": [
         {
           "platform": "hackernews",
           "title": "SpaceX says it has agreement to acquire Cursor for $60B",
           "url": "https://twitter.com/spacex/status/2046713419978453374",
-          "score": 813,
+          "score": 814,
           "author": "dmarcos",
           "commentCount": 974,
           "publishedAt": "2026-04-21T22:13:18.000Z"
@@ -1841,9 +1841,9 @@
           "platform": "hackernews",
           "title": "FBI looks into dead or missing scientists tied to NASA, Blue Origin, SpaceX",
           "url": "https://fortune.com/2026/04/21/scientists-disappear-die-nasa-space-blue-origin-spacex/",
-          "score": 226,
+          "score": 227,
           "author": "ineedasername",
-          "commentCount": 160,
+          "commentCount": 161,
           "publishedAt": "2026-04-22T02:49:40.000Z"
         },
         {
@@ -1866,15 +1866,6 @@
         },
         {
           "platform": "hackernews",
-          "title": "Tesla Cybertruck sales inflated: SpaceX bought 1,279 units",
-          "url": "https://electrek.co/2026/04/16/tesla-cybertruck-spacex-1279-q4-sales-inflated/",
-          "score": 88,
-          "author": "doener",
-          "commentCount": 28,
-          "publishedAt": "2026-04-17T18:56:12.000Z"
-        },
-        {
-          "platform": "hackernews",
           "title": "Anduril, Palantir and SpaceX are changing how America wages war",
           "url": "https://www.economist.com/business/2026/04/20/anduril-palantir-and-spacex-are-changing-how-america-wages-war",
           "score": 74,
@@ -1884,12 +1875,12 @@
         },
         {
           "platform": "hackernews",
-          "title": "Investors salivate over SpaceX's mega IPO, the company reportedly lost $5B",
-          "url": "https://moneywise.com/investing/stocks/as-investors-await-spacexs-ipo-elon-musks-aerospace-company-reportedly-lost-5-billion-last-year",
+          "title": "SpaceX to develop space-based interceptor weapon prototypes",
+          "url": "https://www.bloomberg.com/news/articles/2026-04-24/spacex-anduril-among-companies-to-win-space-interceptor-deals",
           "score": 14,
-          "author": "rawgabbit",
-          "commentCount": 4,
-          "publishedAt": "2026-04-17T23:33:43.000Z"
+          "author": "infinitewars",
+          "commentCount": 3,
+          "publishedAt": "2026-04-24T20:18:07.000Z"
         },
         {
           "platform": "hackernews",
@@ -1935,6 +1926,15 @@
           "author": "consumer451",
           "commentCount": 3,
           "publishedAt": "2026-04-23T08:52:03.000Z"
+        },
+        {
+          "platform": "hackernews",
+          "title": "SpaceX's S-1 Filing",
+          "url": "https://www.sec.gov/Archives/edgar/data/1860160/000119312525284786/d191739ds1.htm",
+          "score": 5,
+          "author": "flinner",
+          "commentCount": 1,
+          "publishedAt": "2026-04-22T16:20:39.000Z"
         }
       ],
       "relatedConceptSlugs": [
@@ -1956,10 +1956,10 @@
     {
       "slug": "starlink",
       "label": "Starlink & Satellite Internet",
-      "score": 1416,
+      "score": 1411,
       "delta": 0,
       "direction": "steady",
-      "mentions": 10,
+      "mentions": 9,
       "sources": [
         {
           "platform": "arxiv",
@@ -2040,15 +2040,6 @@
           "author": "vpmadd52huq",
           "commentCount": 1,
           "publishedAt": "2026-04-22T18:01:17.000Z"
-        },
-        {
-          "platform": "hackernews",
-          "title": "Diving into Starlink's User Terminal Firmware",
-          "url": "https://blog.quarkslab.com/starlink.html",
-          "score": 5,
-          "author": "techgq",
-          "commentCount": 1,
-          "publishedAt": "2026-04-18T01:37:13.000Z"
         },
         {
           "platform": "youtube",
@@ -2146,10 +2137,10 @@
     {
       "slug": "artemis",
       "label": "Artemis & Lunar Return",
-      "score": 606,
-      "delta": 0,
+      "score": 602,
+      "delta": -1,
       "direction": "steady",
-      "mentions": 5,
+      "mentions": 4,
       "sources": [
         {
           "platform": "arxiv",
@@ -2177,15 +2168,6 @@
           "authors": "Qi Li, Yuhui Zhao, Chengxing Zhai et al.",
           "arxivCategory": "astro-ph.IM",
           "publishedAt": "2026-03-27T13:57:06.000Z"
-        },
-        {
-          "platform": "hackernews",
-          "title": "China surfaces details of spacecraft for Moon landing by 2030",
-          "url": "https://jatan.space/moon-monday-issue-267/",
-          "score": 4,
-          "author": "tcp_handshaker",
-          "commentCount": 0,
-          "publishedAt": "2026-04-17T19:22:47.000Z"
         },
         {
           "platform": "hackernews",
