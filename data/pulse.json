@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-04-25T07:08:20.217Z",
+  "generatedAt": "2026-04-25T18:58:46.927Z",
   "topics": [
     {
       "slug": "gravitational-waves",
@@ -136,10 +136,10 @@
     {
       "slug": "black-holes",
       "label": "Black Holes",
-      "score": 7802,
+      "score": 7800,
       "delta": 0,
       "direction": "steady",
-      "mentions": 40,
+      "mentions": 39,
       "sources": [
         {
           "platform": "arxiv",
@@ -534,10 +534,10 @@
     {
       "slug": "space-telescopes",
       "label": "Space Telescopes",
-      "score": 6810,
+      "score": 6609,
       "delta": -3,
       "direction": "steady",
-      "mentions": 36,
+      "mentions": 34,
       "sources": [
         {
           "platform": "arxiv",
@@ -797,7 +797,7 @@
     {
       "slug": "condensed-matter",
       "label": "Condensed Matter",
-      "score": 6273,
+      "score": 6275,
       "delta": 0,
       "direction": "steady",
       "mentions": 33,
@@ -806,9 +806,9 @@
           "platform": "hackernews",
           "title": "Original GrapheneOS responses to WIRED fact checker",
           "url": "https://discuss.grapheneos.org/d/34369-original-grapheneos-responses-to-wired-fact-checker",
-          "score": 261,
+          "score": 262,
           "author": "ChrisArchitect",
-          "commentCount": 237,
+          "commentCount": 238,
           "publishedAt": "2026-04-21T15:04:24.000Z"
         },
         {
@@ -1194,10 +1194,10 @@
     {
       "slug": "astrobiology",
       "label": "Astrobiology",
-      "score": 3602,
-      "delta": -18,
-      "direction": "down",
-      "mentions": 19,
+      "score": 3402,
+      "delta": -15,
+      "direction": "steady",
+      "mentions": 18,
       "sources": [
         {
           "platform": "arxiv",
@@ -1216,15 +1216,6 @@
           "authors": "Arslan Siddique, Dev Chauhan, Alethea Dutton et al.",
           "arxivCategory": "cond-mat.soft",
           "publishedAt": "2026-04-06T22:39:12.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Interaction between vegetation and Snowball phases in the late Proterozoic Earth",
-          "url": "https://arxiv.org/abs/2603.25321",
-          "score": 200,
-          "authors": "Erica Bisesi, Giuseppe Murante, Antonello Provenzale et al.",
-          "arxivCategory": "astro-ph.EP",
-          "publishedAt": "2026-03-26T11:09:30.000Z"
         },
         {
           "platform": "arxiv",
@@ -1306,6 +1297,15 @@
           "authors": "Vincent Kofman",
           "arxivCategory": "astro-ph.EP",
           "publishedAt": "2026-04-10T05:57:46.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "First Detection of Exoplanetary Cannabinoids: Evidence for THC and CBD in the Atmosphere of K2-18b",
+          "url": "https://arxiv.org/abs/2603.29700",
+          "score": 200,
+          "authors": "Amie J. Chism, Mary Jane van der Pot, Blaise P. Hasheau et al.",
+          "arxivCategory": "astro-ph.EP",
+          "publishedAt": "2026-03-31T12:56:45.000Z"
         }
       ],
       "relatedConceptSlugs": [
@@ -1823,27 +1823,27 @@
     {
       "slug": "starship",
       "label": "Starship & SpaceX",
-      "score": 1440,
+      "score": 1451,
       "delta": -5,
       "direction": "steady",
-      "mentions": 37,
+      "mentions": 38,
       "sources": [
         {
           "platform": "hackernews",
           "title": "SpaceX says it has agreement to acquire Cursor for $60B",
           "url": "https://twitter.com/spacex/status/2046713419978453374",
-          "score": 814,
+          "score": 816,
           "author": "dmarcos",
-          "commentCount": 974,
+          "commentCount": 976,
           "publishedAt": "2026-04-21T22:13:18.000Z"
         },
         {
           "platform": "hackernews",
           "title": "FBI looks into dead or missing scientists tied to NASA, Blue Origin, SpaceX",
           "url": "https://fortune.com/2026/04/21/scientists-disappear-die-nasa-space-blue-origin-spacex/",
-          "score": 227,
+          "score": 228,
           "author": "ineedasername",
-          "commentCount": 161,
+          "commentCount": 164,
           "publishedAt": "2026-04-22T02:49:40.000Z"
         },
         {
@@ -1870,16 +1870,16 @@
           "url": "https://www.economist.com/business/2026/04/20/anduril-palantir-and-spacex-are-changing-how-america-wages-war",
           "score": 74,
           "author": "andsoitis",
-          "commentCount": 91,
+          "commentCount": 92,
           "publishedAt": "2026-04-20T18:55:44.000Z"
         },
         {
           "platform": "hackernews",
           "title": "SpaceX to develop space-based interceptor weapon prototypes",
           "url": "https://www.bloomberg.com/news/articles/2026-04-24/spacex-anduril-among-companies-to-win-space-interceptor-deals",
-          "score": 14,
+          "score": 15,
           "author": "infinitewars",
-          "commentCount": 3,
+          "commentCount": 4,
           "publishedAt": "2026-04-24T20:18:07.000Z"
         },
         {
@@ -1920,21 +1920,21 @@
         },
         {
           "platform": "hackernews",
+          "title": "How Elon Musk Used SpaceX to Benefit Himself and His Businesses",
+          "url": "https://www.nytimes.com/2026/04/24/technology/elon-musk-spacex-loans.html",
+          "score": 6,
+          "author": "1vuio0pswjnm7",
+          "commentCount": 0,
+          "publishedAt": "2026-04-25T16:54:09.000Z"
+        },
+        {
+          "platform": "hackernews",
           "title": "SpaceX and Cursor have explored a team-up with Mistral to take on AI rivals",
           "url": "https://www.businessinsider.com/elon-musk-xai-explored-collaborating-with-mistral-cursor-2026-4",
           "score": 5,
           "author": "consumer451",
           "commentCount": 3,
           "publishedAt": "2026-04-23T08:52:03.000Z"
-        },
-        {
-          "platform": "hackernews",
-          "title": "SpaceX's S-1 Filing",
-          "url": "https://www.sec.gov/Archives/edgar/data/1860160/000119312525284786/d191739ds1.htm",
-          "score": 5,
-          "author": "flinner",
-          "commentCount": 1,
-          "publishedAt": "2026-04-22T16:20:39.000Z"
         }
       ],
       "relatedConceptSlugs": [
@@ -2196,57 +2196,6 @@
       }
     },
     {
-      "slug": "dyson-spheres",
-      "label": "Dyson Spheres",
-      "score": 600,
-      "delta": 0,
-      "direction": "steady",
-      "mentions": 3,
-      "sources": [
-        {
-          "platform": "arxiv",
-          "title": "Kardashev's Conundrum: Statistical Falsification of the Standard Kardashev Model and the Kardashev--Sagan--Nakamoto Resolution",
-          "url": "https://arxiv.org/abs/2604.17516",
-          "score": 200,
-          "authors": "Sebastian Gurovich",
-          "arxivCategory": "astro-ph.IM",
-          "publishedAt": "2026-04-19T16:19:28.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Motivation and design of a yotta-eV $τ^+τ^-$ collider",
-          "url": "https://arxiv.org/abs/2604.00440",
-          "score": 200,
-          "authors": "Matt Bellis, Matthew Carberg, Chester Gould et al.",
-          "arxivCategory": "hep-ph",
-          "publishedAt": "2026-04-01T03:38:59.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Kardashev scale Quantum Computing for Bitcoin Mining",
-          "url": "https://arxiv.org/abs/2603.25519",
-          "score": 200,
-          "authors": "Pierre-Luc Dallaire-Demers, BTQ Technologies Team",
-          "arxivCategory": "quant-ph",
-          "publishedAt": "2026-03-26T14:53:46.000Z"
-        }
-      ],
-      "relatedConceptSlugs": [
-        "sps-alpha"
-      ],
-      "resonance": 25,
-      "quadrant": "dead-zone",
-      "resonanceSignals": {
-        "conceptDepth": 0.22629438553091683,
-        "editorial": 0.7,
-        "connections": 0,
-        "convergence": 0,
-        "deepTopic": 0,
-        "pantheon": 0.92,
-        "graveyard": 0
-      }
-    },
-    {
       "slug": "mars",
       "label": "Mars Exploration",
       "score": 402,
@@ -2349,6 +2298,48 @@
         "connections": 0,
         "convergence": 0.125,
         "deepTopic": 0.8,
+        "pantheon": 0.92,
+        "graveyard": 0
+      }
+    },
+    {
+      "slug": "dyson-spheres",
+      "label": "Dyson Spheres",
+      "score": 400,
+      "delta": -33,
+      "direction": "down",
+      "mentions": 2,
+      "sources": [
+        {
+          "platform": "arxiv",
+          "title": "Kardashev's Conundrum: Statistical Falsification of the Standard Kardashev Model and the Kardashev--Sagan--Nakamoto Resolution",
+          "url": "https://arxiv.org/abs/2604.17516",
+          "score": 200,
+          "authors": "Sebastian Gurovich",
+          "arxivCategory": "astro-ph.IM",
+          "publishedAt": "2026-04-19T16:19:28.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Motivation and design of a yotta-eV $τ^+τ^-$ collider",
+          "url": "https://arxiv.org/abs/2604.00440",
+          "score": 200,
+          "authors": "Matt Bellis, Matthew Carberg, Chester Gould et al.",
+          "arxivCategory": "hep-ph",
+          "publishedAt": "2026-04-01T03:38:59.000Z"
+        }
+      ],
+      "relatedConceptSlugs": [
+        "sps-alpha"
+      ],
+      "resonance": 25,
+      "quadrant": "dead-zone",
+      "resonanceSignals": {
+        "conceptDepth": 0.22629438553091683,
+        "editorial": 0.7,
+        "connections": 0,
+        "convergence": 0,
+        "deepTopic": 0,
         "pantheon": 0.92,
         "graveyard": 0
       }
