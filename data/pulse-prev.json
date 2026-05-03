@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-05-02T19:05:13.826Z",
+  "generatedAt": "2026-05-03T07:52:54.052Z",
   "topics": [
     {
       "slug": "gravitational-waves",
       "label": "Gravitational Waves",
       "score": 8400,
-      "delta": -2,
+      "delta": 0,
       "direction": "steady",
       "mentions": 42,
       "sources": [
@@ -269,10 +269,10 @@
     {
       "slug": "quantum-computing",
       "label": "Quantum Computing",
-      "score": 8028,
+      "score": 8030,
       "delta": 0,
       "direction": "steady",
-      "mentions": 47,
+      "mentions": 48,
       "sources": [
         {
           "platform": "arxiv",
@@ -402,7 +402,7 @@
       "slug": "space-telescopes",
       "label": "Space Telescopes",
       "score": 7200,
-      "delta": -3,
+      "delta": 0,
       "direction": "steady",
       "mentions": 36,
       "sources": [
@@ -928,138 +928,6 @@
       }
     },
     {
-      "slug": "condensed-matter",
-      "label": "Condensed Matter",
-      "score": 5813,
-      "delta": -9,
-      "direction": "steady",
-      "mentions": 30,
-      "sources": [
-        {
-          "platform": "arxiv",
-          "title": "Revisiting confinement scalings and fusion performance with a perspective optimized for extrapolation",
-          "url": "https://arxiv.org/abs/2604.22728",
-          "score": 200,
-          "authors": "Jalal Butt, Geert Verdoolaege, Stanley M. Kaye et al.",
-          "arxivCategory": "physics.plasm-ph",
-          "publishedAt": "2026-04-24T17:26:25.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Pairing Mechanism in Bilayer Nickelate La$_3$Ni$_2$O$_7$ Superconductors",
-          "url": "https://arxiv.org/abs/2604.17181",
-          "score": 200,
-          "authors": "Xianxin Wu, Tao Xiang, Jiangping Hu",
-          "arxivCategory": "cond-mat.supr-con",
-          "publishedAt": "2026-04-19T00:56:00.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Kinetic instability and superconductivity in Li$_2$AuH$_6$ and Li$_2$AgH$_6$ at ambient pressure",
-          "url": "https://arxiv.org/abs/2604.12367",
-          "score": 200,
-          "authors": "Yucheng Ding, Haoran Chen, Junren Shi",
-          "arxivCategory": "cond-mat.supr-con",
-          "publishedAt": "2026-04-14T06:56:19.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Rf spectra and pseudogap in ultracold Fermi gases across the BCS-BEC crossover from pairing fluctuation theory",
-          "url": "https://arxiv.org/abs/2604.06004",
-          "score": 200,
-          "authors": "Chuping Li, Lin Sun, Kaichao Zhang et al.",
-          "arxivCategory": "cond-mat.quant-gas",
-          "publishedAt": "2026-04-07T15:38:39.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Collective spin excitations in trilayer nickelate La$_4$Ni$_3$O$_{10}$",
-          "url": "https://arxiv.org/abs/2604.04643",
-          "score": 200,
-          "authors": "Ying Chan, Yuehong Li, Yujie Yan et al.",
-          "arxivCategory": "cond-mat.supr-con",
-          "publishedAt": "2026-04-06T12:51:35.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Theory of quantum decoherence in macroscopic topological insulators",
-          "url": "https://arxiv.org/abs/2604.27946",
-          "score": 200,
-          "authors": "Xian-Peng Zhang, Yan-Qing Feng, Wanxiang Feng et al.",
-          "arxivCategory": "cond-mat.mes-hall",
-          "publishedAt": "2026-04-30T14:44:38.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Second harmonic generation and third harmonic generation in topological insulator-based van der Waals metamaterials",
-          "url": "https://arxiv.org/abs/2604.27864",
-          "score": 200,
-          "authors": "Alessandra Di Gaspare, Sara Ghayeb, Craig Knox et al.",
-          "arxivCategory": "physics.optics",
-          "publishedAt": "2026-04-30T13:47:04.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Metalization of topological insulators",
-          "url": "https://arxiv.org/abs/2604.26698",
-          "score": 200,
-          "authors": "Xian-Peng Zhang, Yan-Qing Feng, Ji-Feng Shao et al.",
-          "arxivCategory": "cond-mat.mes-hall",
-          "publishedAt": "2026-04-29T14:03:44.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Negative magnetoresistance in strained $α$-Sn and $α$-SnGe films in an in-plane magnetic field",
-          "url": "https://arxiv.org/abs/2604.26168",
-          "score": 200,
-          "authors": "Sunny Phan, Andrei Kogan, Jesse Thompson et al.",
-          "arxivCategory": "cond-mat.mtrl-sci",
-          "publishedAt": "2026-04-28T23:21:34.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Bismuth Films on EuO(111) as a Platform for Proximity-Induced Topological States",
-          "url": "https://arxiv.org/abs/2604.21862",
-          "score": 200,
-          "authors": "Subham Naskar, Sujit Manna",
-          "arxivCategory": "cond-mat.mes-hall",
-          "publishedAt": "2026-04-23T16:58:51.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Disorder-induced crossover from phase-averaging to mode-mixing regimes in magnetic domain walls of a second-order topological insulator",
-          "url": "https://arxiv.org/abs/2604.21702",
-          "score": 200,
-          "authors": "Dong Zhou, Zhe Hou",
-          "arxivCategory": "cond-mat.mes-hall",
-          "publishedAt": "2026-04-23T14:11:32.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Magnetic-flux tunable electronic transport through domain walls in a three-dimensional second-order topological insulator",
-          "url": "https://arxiv.org/abs/2604.21562",
-          "score": 200,
-          "authors": "Zhe Hou, Ai-Min Guo",
-          "arxivCategory": "cond-mat.mes-hall",
-          "publishedAt": "2026-04-23T11:33:37.000Z"
-        }
-      ],
-      "relatedConceptSlugs": [
-        "extreme-metamaterial-solar-sails"
-      ],
-      "resonance": 50,
-      "quadrant": "real-deal",
-      "resonanceSignals": {
-        "conceptDepth": 0.6131471927654584,
-        "editorial": 1,
-        "connections": 0.3333333333333333,
-        "convergence": 0.15,
-        "deepTopic": 0,
-        "pantheon": 0.92,
-        "graveyard": 0
-      }
-    },
-    {
       "slug": "cosmology",
       "label": "Cosmology",
       "score": 5800,
@@ -1189,6 +1057,138 @@
         "deepTopic": 0,
         "pantheon": 0.92,
         "graveyard": 0.19999999999999998
+      }
+    },
+    {
+      "slug": "condensed-matter",
+      "label": "Condensed Matter",
+      "score": 5414,
+      "delta": -10,
+      "direction": "steady",
+      "mentions": 28,
+      "sources": [
+        {
+          "platform": "arxiv",
+          "title": "Revisiting confinement scalings and fusion performance with a perspective optimized for extrapolation",
+          "url": "https://arxiv.org/abs/2604.22728",
+          "score": 200,
+          "authors": "Jalal Butt, Geert Verdoolaege, Stanley M. Kaye et al.",
+          "arxivCategory": "physics.plasm-ph",
+          "publishedAt": "2026-04-24T17:26:25.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Pairing Mechanism in Bilayer Nickelate La$_3$Ni$_2$O$_7$ Superconductors",
+          "url": "https://arxiv.org/abs/2604.17181",
+          "score": 200,
+          "authors": "Xianxin Wu, Tao Xiang, Jiangping Hu",
+          "arxivCategory": "cond-mat.supr-con",
+          "publishedAt": "2026-04-19T00:56:00.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Kinetic instability and superconductivity in Li$_2$AuH$_6$ and Li$_2$AgH$_6$ at ambient pressure",
+          "url": "https://arxiv.org/abs/2604.12367",
+          "score": 200,
+          "authors": "Yucheng Ding, Haoran Chen, Junren Shi",
+          "arxivCategory": "cond-mat.supr-con",
+          "publishedAt": "2026-04-14T06:56:19.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Rf spectra and pseudogap in ultracold Fermi gases across the BCS-BEC crossover from pairing fluctuation theory",
+          "url": "https://arxiv.org/abs/2604.06004",
+          "score": 200,
+          "authors": "Chuping Li, Lin Sun, Kaichao Zhang et al.",
+          "arxivCategory": "cond-mat.quant-gas",
+          "publishedAt": "2026-04-07T15:38:39.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Collective spin excitations in trilayer nickelate La$_4$Ni$_3$O$_{10}$",
+          "url": "https://arxiv.org/abs/2604.04643",
+          "score": 200,
+          "authors": "Ying Chan, Yuehong Li, Yujie Yan et al.",
+          "arxivCategory": "cond-mat.supr-con",
+          "publishedAt": "2026-04-06T12:51:35.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Theory of quantum decoherence in macroscopic topological insulators",
+          "url": "https://arxiv.org/abs/2604.27946",
+          "score": 200,
+          "authors": "Xian-Peng Zhang, Yan-Qing Feng, Wanxiang Feng et al.",
+          "arxivCategory": "cond-mat.mes-hall",
+          "publishedAt": "2026-04-30T14:44:38.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Second harmonic generation and third harmonic generation in topological insulator-based van der Waals metamaterials",
+          "url": "https://arxiv.org/abs/2604.27864",
+          "score": 200,
+          "authors": "Alessandra Di Gaspare, Sara Ghayeb, Craig Knox et al.",
+          "arxivCategory": "physics.optics",
+          "publishedAt": "2026-04-30T13:47:04.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Metalization of topological insulators",
+          "url": "https://arxiv.org/abs/2604.26698",
+          "score": 200,
+          "authors": "Xian-Peng Zhang, Yan-Qing Feng, Ji-Feng Shao et al.",
+          "arxivCategory": "cond-mat.mes-hall",
+          "publishedAt": "2026-04-29T14:03:44.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Negative magnetoresistance in strained $α$-Sn and $α$-SnGe films in an in-plane magnetic field",
+          "url": "https://arxiv.org/abs/2604.26168",
+          "score": 200,
+          "authors": "Sunny Phan, Andrei Kogan, Jesse Thompson et al.",
+          "arxivCategory": "cond-mat.mtrl-sci",
+          "publishedAt": "2026-04-28T23:21:34.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Bismuth Films on EuO(111) as a Platform for Proximity-Induced Topological States",
+          "url": "https://arxiv.org/abs/2604.21862",
+          "score": 200,
+          "authors": "Subham Naskar, Sujit Manna",
+          "arxivCategory": "cond-mat.mes-hall",
+          "publishedAt": "2026-04-23T16:58:51.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Disorder-induced crossover from phase-averaging to mode-mixing regimes in magnetic domain walls of a second-order topological insulator",
+          "url": "https://arxiv.org/abs/2604.21702",
+          "score": 200,
+          "authors": "Dong Zhou, Zhe Hou",
+          "arxivCategory": "cond-mat.mes-hall",
+          "publishedAt": "2026-04-23T14:11:32.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Magnetic-flux tunable electronic transport through domain walls in a three-dimensional second-order topological insulator",
+          "url": "https://arxiv.org/abs/2604.21562",
+          "score": 200,
+          "authors": "Zhe Hou, Ai-Min Guo",
+          "arxivCategory": "cond-mat.mes-hall",
+          "publishedAt": "2026-04-23T11:33:37.000Z"
+        }
+      ],
+      "relatedConceptSlugs": [
+        "extreme-metamaterial-solar-sails"
+      ],
+      "resonance": 50,
+      "quadrant": "real-deal",
+      "resonanceSignals": {
+        "conceptDepth": 0.6131471927654584,
+        "editorial": 1,
+        "connections": 0.3333333333333333,
+        "convergence": 0.15,
+        "deepTopic": 0,
+        "pantheon": 0.92,
+        "graveyard": 0
       }
     },
     {
@@ -1593,7 +1593,7 @@
       "slug": "asteroid-mining",
       "label": "Asteroid Mining",
       "score": 2200,
-      "delta": -8,
+      "delta": 0,
       "direction": "steady",
       "mentions": 11,
       "sources": [
@@ -1716,10 +1716,10 @@
     {
       "slug": "fusion-propulsion",
       "label": "Fusion Propulsion",
-      "score": 2000,
-      "delta": 0,
+      "score": 1800,
+      "delta": -10,
       "direction": "steady",
-      "mentions": 10,
+      "mentions": 9,
       "sources": [
         {
           "platform": "arxiv",
@@ -1756,15 +1756,6 @@
           "authors": "M. Luo, A. R. Bell, F. Miniati et al.",
           "arxivCategory": "physics.plasm-ph",
           "publishedAt": "2026-04-03T20:26:41.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Self-subsidizing Mercury Remediation with Fusion Reactors",
-          "url": "https://arxiv.org/abs/2604.02590",
-          "score": 200,
-          "authors": "J. F. Parisi, J. Azad",
-          "arxivCategory": "physics.plasm-ph",
-          "publishedAt": "2026-04-03T00:00:39.000Z"
         },
         {
           "platform": "arxiv",
@@ -1832,10 +1823,10 @@
     {
       "slug": "starlink",
       "label": "Starlink & Satellite Internet",
-      "score": 809,
-      "delta": -20,
-      "direction": "down",
-      "mentions": 6,
+      "score": 968,
+      "delta": 20,
+      "direction": "up",
+      "mentions": 7,
       "sources": [
         {
           "platform": "arxiv",
@@ -1872,6 +1863,15 @@
           "authors": "Yuanhang Li",
           "arxivCategory": "cs.CR",
           "publishedAt": "2026-04-08T16:29:25.000Z"
+        },
+        {
+          "platform": "hackernews",
+          "title": "A network smuggling Starlink tech into Iran to beat internet blackout",
+          "url": "https://www.bbc.com/news/articles/cvgzk91leweo",
+          "score": 159,
+          "author": "1659447091",
+          "commentCount": 92,
+          "publishedAt": "2026-05-03T01:22:41.000Z"
         },
         {
           "platform": "hackernews",
@@ -1956,57 +1956,6 @@
         "convergence": 0.025,
         "deepTopic": 0.8,
         "pantheon": 0.08,
-        "graveyard": 0
-      }
-    },
-    {
-      "slug": "space-debris",
-      "label": "Space Debris",
-      "score": 600,
-      "delta": 0,
-      "direction": "steady",
-      "mentions": 3,
-      "sources": [
-        {
-          "platform": "arxiv",
-          "title": "Conceptual Design and Analysis of a NanoTug Swarm for Active Debris Removal",
-          "url": "https://arxiv.org/abs/2604.19214",
-          "score": 200,
-          "authors": "F. Alnaqbi, S. Biktimirov, G. Gaias",
-          "arxivCategory": "astro-ph.EP",
-          "publishedAt": "2026-04-21T08:20:27.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Collapse-Free Prototype Readout Layer for Transformer Encoders",
-          "url": "https://arxiv.org/abs/2604.03850",
-          "score": 200,
-          "authors": "Giansalvo Cirrincione, Rahul Ranjeev Kumar",
-          "arxivCategory": "cs.LG",
-          "publishedAt": "2026-04-04T20:23:21.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Geomagnetic storm suppression of photographic plate transient detections in the POSS-I archive: an independent physical variable strengthening the nuclear test correlation",
-          "url": "https://arxiv.org/abs/2604.04950",
-          "score": 200,
-          "authors": "Kevin Cann",
-          "arxivCategory": "astro-ph.IM",
-          "publishedAt": "2026-04-02T21:25:38.000Z"
-        }
-      ],
-      "relatedConceptSlugs": [
-        "niac-phase-i-final-report-on-orbit-collision"
-      ],
-      "resonance": 20,
-      "quadrant": "dead-zone",
-      "resonanceSignals": {
-        "conceptDepth": 0.3868528072345416,
-        "editorial": 0.4,
-        "connections": 0,
-        "convergence": 0,
-        "deepTopic": 0,
-        "pantheon": 0,
         "graveyard": 0
       }
     },
@@ -2168,6 +2117,48 @@
       }
     },
     {
+      "slug": "space-debris",
+      "label": "Space Debris",
+      "score": 400,
+      "delta": -33,
+      "direction": "down",
+      "mentions": 2,
+      "sources": [
+        {
+          "platform": "arxiv",
+          "title": "Conceptual Design and Analysis of a NanoTug Swarm for Active Debris Removal",
+          "url": "https://arxiv.org/abs/2604.19214",
+          "score": 200,
+          "authors": "F. Alnaqbi, S. Biktimirov, G. Gaias",
+          "arxivCategory": "astro-ph.EP",
+          "publishedAt": "2026-04-21T08:20:27.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Collapse-Free Prototype Readout Layer for Transformer Encoders",
+          "url": "https://arxiv.org/abs/2604.03850",
+          "score": 200,
+          "authors": "Giansalvo Cirrincione, Rahul Ranjeev Kumar",
+          "arxivCategory": "cs.LG",
+          "publishedAt": "2026-04-04T20:23:21.000Z"
+        }
+      ],
+      "relatedConceptSlugs": [
+        "niac-phase-i-final-report-on-orbit-collision"
+      ],
+      "resonance": 20,
+      "quadrant": "dead-zone",
+      "resonanceSignals": {
+        "conceptDepth": 0.3868528072345416,
+        "editorial": 0.4,
+        "connections": 0,
+        "convergence": 0,
+        "deepTopic": 0,
+        "pantheon": 0,
+        "graveyard": 0
+      }
+    },
+    {
       "slug": "electric-propulsion",
       "label": "Electric Propulsion",
       "score": 200,
@@ -2205,10 +2196,10 @@
     {
       "slug": "starship",
       "label": "Starship & SpaceX",
-      "score": 146,
-      "delta": 24,
+      "score": 177,
+      "delta": 44,
       "direction": "up",
-      "mentions": 16,
+      "mentions": 18,
       "sources": [
         {
           "platform": "hackernews",
@@ -2216,8 +2207,17 @@
           "url": "https://www.theregister.com/2026/05/01/spacex_debris_landing/",
           "score": 61,
           "author": "beardyw",
-          "commentCount": 56,
+          "commentCount": 59,
           "publishedAt": "2026-05-01T11:31:52.000Z"
+        },
+        {
+          "platform": "hackernews",
+          "title": "Elon Musk gets an apology from California regulators as a SpaceX lawsuit settled",
+          "url": "https://apnews.com/article/california-coastal-commission-spacex-elon-musk-33065c34cc0555faa91ca2571924e4b3",
+          "score": 30,
+          "author": "db48x",
+          "commentCount": 6,
+          "publishedAt": "2026-05-03T02:31:09.000Z"
         },
         {
           "platform": "hackernews",
@@ -2307,15 +2307,6 @@
           "score": 2,
           "thumbnail": "https://img.youtube.com/vi/ANe_HW4X8oc/mqdefault.jpg",
           "publishedAt": "2026-04-29T23:32:07.000Z"
-        },
-        {
-          "platform": "hackernews",
-          "title": "Starship – Test Like You Fly",
-          "url": "https://www.youtube.com/watch?v=ANe_HW4X8oc",
-          "score": 2,
-          "author": "tiziano88",
-          "commentCount": 0,
-          "publishedAt": "2026-04-29T23:32:07.000Z"
         }
       ],
       "relatedConceptSlugs": [
@@ -2338,7 +2329,7 @@
       "slug": "warp-drives",
       "label": "Warp Drives & Exotic Physics",
       "score": 4,
-      "delta": 200,
+      "delta": 33,
       "direction": "up",
       "mentions": 1,
       "sources": [
