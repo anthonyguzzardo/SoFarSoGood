@@ -445,8 +445,9 @@
     "significance": "Describes the aeolipile (first known steam engine), siphons, force pumps, and automata",
     "era": "ancient",
     "importance": "significant",
-    "status": "wanted",
-    "source": "Schmidt edition; Greenwood translation"
+    "status": "indexed",
+    "source": "Schmidt edition; Greenwood translation",
+    "url": "https://www.semanticscholar.org/paper/d24b224f3b9ac88dc8f4b1e38e10cdee2c2a2a1b"
   },
   {
     "id": "hero-metrica",
@@ -917,14 +918,16 @@
     "significance": "The heliocentric model — Earth orbits the Sun. Launched the Copernican Revolution and modern astronomy",
     "era": "early-modern",
     "importance": "foundational",
-    "status": "wanted",
+    "status": "indexed",
     "source": "Nuremberg first edition; multiple facsimiles",
     "modernRelevance": "The heliocentric shift Copernicus launched is so fundamental that 'Copernican revolution' is still the metaphor scientists use when an entire field's assumptions get overturned.",
     "relatedWishlistIds": [
       "kepler-astronomia-nova",
       "galileo-dialogue",
       "galileo-sidereus"
-    ]
+    ],
+    "doi": "10.1515/9783486776515",
+    "url": "https://www.semanticscholar.org/paper/b0349fb009a2a93257fbda8e09bbfe1d29cec16a"
   },
   {
     "id": "vesalius-fabrica",
@@ -936,9 +939,11 @@
     "significance": "First accurate human anatomy based on dissection rather than Galen's authority — stunning illustrations, empirical method",
     "era": "early-modern",
     "importance": "foundational",
-    "status": "wanted",
+    "status": "indexed",
     "source": "Basel first edition; multiple facsimiles",
-    "modernRelevance": "Vesalius's principle that anatomy must be learned by direct observation, not authority, is the same empirical standard modern medical schools follow, and his detailed illustrations pioneered the anatomical atlases now rendered in 3D for surgical planning."
+    "modernRelevance": "Vesalius's principle that anatomy must be learned by direct observation, not authority, is the same empirical standard modern medical schools follow, and his detailed illustrations pioneered the anatomical atlases now rendered in 3D for surgical planning.",
+    "doi": "10.4067/s0717-95022025000401402",
+    "url": "https://www.semanticscholar.org/paper/13682e892950a7c681c20e52c363e9939e238adf"
   },
   {
     "id": "cardano-ars-magna",
@@ -1645,14 +1650,16 @@
     "significance": "Riemannian geometry — curved spaces of arbitrary dimension. The mathematical framework Einstein later used for general relativity",
     "era": "19th-century",
     "importance": "foundational",
-    "status": "wanted",
+    "status": "indexed",
     "source": "Habilitationsschrift, Göttingen 1854; published 1868",
     "modernRelevance": "Every GPS satellite computes corrections for general-relativistic time dilation using Riemannian geometry -- curved spacetime math runs in your phone's location chip.",
     "relatedWishlistIds": [
       "einstein-general-relativity",
       "lobachevsky-geometry",
       "euclid-elements"
-    ]
+    ],
+    "doi": "10.1007/978-3-642-35121-1",
+    "url": "https://www.semanticscholar.org/paper/7e9334f63dfb2d1ddec50a6604b2656c3f2bafe2"
   },
   {
     "id": "riemann-zeta",
@@ -2370,8 +2377,10 @@
     "significance": "Covariant formulation of QED — renormalization made rigorous. Shared Nobel with Feynman and Tomonaga",
     "era": "20th-century-mid",
     "importance": "foundational",
-    "status": "wanted",
-    "source": "Physical Review 73-76 (1948-1949)"
+    "status": "indexed",
+    "source": "Physical Review 73-76 (1948-1949)",
+    "doi": "10.1007/s00016-007-0326-6",
+    "url": "https://www.semanticscholar.org/paper/d58c0912ea3249914fd5a09fbbf133abc11e6ce2"
   },
   {
     "id": "alpher-bethe-gamow",
@@ -2557,8 +2566,10 @@
     "significance": "Unified electromagnetic and weak nuclear forces — the electroweak theory. Cornerstone of the Standard Model",
     "era": "20th-century-mid",
     "importance": "foundational",
-    "status": "wanted",
-    "source": "Physical Review Letters 19 (1967)"
+    "status": "indexed",
+    "source": "Physical Review Letters 19 (1967)",
+    "doi": "10.1103/PHYSREVLETT.19.1264",
+    "url": "https://www.semanticscholar.org/paper/98341657b54c8d593ffca2149d9403a99e23be40"
   },
   {
     "id": "wheeler-dewitt",
@@ -2932,8 +2943,10 @@
     "significance": "First controlled fusion ignition — more energy out of the fusion reaction than laser energy in. Major milestone toward fusion energy",
     "era": "21st-century",
     "importance": "foundational",
-    "status": "wanted",
-    "source": "Physical Review Letters 132 (2024)"
+    "status": "indexed",
+    "source": "Physical Review Letters 132 (2024)",
+    "doi": "10.1103/physrevlett.132.065102",
+    "url": "https://www.semanticscholar.org/paper/cc75544bd1ab62c0b199b1c47e135550c5fd8610"
   },
   {
     "id": "nanograv-gravitational-background",
@@ -2958,8 +2971,10 @@
     "significance": "Hints that dark energy may vary over time — not a constant. If confirmed, could overturn the simplest cosmological models",
     "era": "21st-century",
     "importance": "significant",
-    "status": "wanted",
-    "source": "arXiv:2404.03002 (2024)"
+    "status": "indexed",
+    "source": "arXiv:2404.03002 (2024)",
+    "doi": "10.1088/1475-7516/2025/02/021",
+    "url": "https://www.semanticscholar.org/paper/940bb380d1af07daeb5fd7a78810536fd17155fe"
   },
   {
     "id": "google-willow",
@@ -3030,7 +3045,8 @@
     "significance": "Definitive review of deep learning by its three pioneers (Nobel Prize 2024). Marked the moment the field achieved mainstream scientific recognition",
     "era": "21st-century",
     "importance": "foundational",
-    "status": "wanted",
-    "source": "Nature 521 (2015)"
+    "status": "indexed",
+    "source": "Nature 521 (2015)",
+    "url": "https://www.semanticscholar.org/paper/2913c2bf3f92b5ae369400a42b2d27cc5bc05ecb"
   }
 ]
