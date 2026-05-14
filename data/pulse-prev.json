@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-05-13T08:38:46.112Z",
+  "generatedAt": "2026-05-13T19:59:57.508Z",
   "topics": [
     {
       "slug": "black-holes",
       "label": "Black Holes",
-      "score": 7806,
-      "delta": 0,
+      "score": 7808,
+      "delta": 3,
       "direction": "steady",
       "mentions": 41,
       "sources": [
@@ -138,7 +138,7 @@
       "slug": "space-telescopes",
       "label": "Space Telescopes",
       "score": 7806,
-      "delta": 8,
+      "delta": 3,
       "direction": "steady",
       "mentions": 41,
       "sources": [
@@ -268,142 +268,10 @@
       }
     },
     {
-      "slug": "gravitational-waves",
-      "label": "Gravitational Waves",
-      "score": 7200,
-      "delta": -10,
-      "direction": "steady",
-      "mentions": 36,
-      "sources": [
-        {
-          "platform": "arxiv",
-          "title": "Impact of coalescence signals on the search for continuous gravitational waves with Einstein Telescope",
-          "url": "https://arxiv.org/abs/2605.12249",
-          "score": 200,
-          "authors": "Elena Codazzo, Lorenzo Mirasola, Matteo Di Giovanni et al.",
-          "arxivCategory": "gr-qc",
-          "publishedAt": "2026-05-12T15:18:32.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Inferring host environment properties and gravitational-wave decay time from the eccentricity measurement of dynamically captured binaries",
-          "url": "https://arxiv.org/abs/2605.11947",
-          "score": 200,
-          "authors": "A. Vincent Paul, Parthapratim Mahapatra, Marc Favata et al.",
-          "arxivCategory": "astro-ph.HE",
-          "publishedAt": "2026-05-12T10:56:35.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "GW240925 and GW250207: Astrophysical Calibration of Gravitational-wave Detectors",
-          "url": "https://arxiv.org/abs/2605.11703",
-          "score": 200,
-          "authors": "The LIGO Scientific Collaboration, the Virgo Collaboration, the KAGRA Collaboration et al.",
-          "arxivCategory": "gr-qc",
-          "publishedAt": "2026-05-12T07:58:35.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Secondary-Mass Features improve Spectral-Siren $H_0$ Constraints",
-          "url": "https://arxiv.org/abs/2605.11474",
-          "score": 200,
-          "authors": "Yin-Jie Li, Yi-Ying Wang, Yuan-Zhu Wang et al.",
-          "arxivCategory": "astro-ph.CO",
-          "publishedAt": "2026-05-12T03:43:43.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Revisiting GW170817 at milliarcsecond scale: high-precision constraints on jet geometry and $H_0$",
-          "url": "https://arxiv.org/abs/2605.11437",
-          "score": 200,
-          "authors": "Kelly Gourdji, Adam T. Deller, Chris Flynn et al.",
-          "arxivCategory": "astro-ph.HE",
-          "publishedAt": "2026-05-12T02:39:53.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Evolution of Crab Pulsar: Magnetic Inclination Angle and Spin",
-          "url": "https://arxiv.org/abs/2605.11425",
-          "score": 200,
-          "authors": "Cong-Xing Liu, Jian-Min Dong",
-          "arxivCategory": "astro-ph.HE",
-          "publishedAt": "2026-05-12T02:21:09.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Black Hole Binary Detection Landscape for the Laser Interferometer Lunar Antenna (LILA): Signal-to-Noise Calculations &amp; Science Cases",
-          "url": "https://arxiv.org/abs/2605.11283",
-          "score": 200,
-          "authors": "Tintin Nguyen, Anjali Yelikar, Ryan Nowicki et al.",
-          "arxivCategory": "astro-ph.HE",
-          "publishedAt": "2026-05-11T22:09:59.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Discovery of Interpretable Surrogates via Agentic AI: Application to Gravitational Waves",
-          "url": "https://arxiv.org/abs/2605.11280",
-          "score": 200,
-          "authors": "Tousif Islam, Digvijay Wadekar, Tejaswi Venumadhav et al.",
-          "arxivCategory": "gr-qc",
-          "publishedAt": "2026-05-11T22:09:34.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "End-to-End Population Inference from Gravitational-Wave Strain using Transformers",
-          "url": "https://arxiv.org/abs/2605.11274",
-          "score": 200,
-          "authors": "Konstantin Leyde, Stephen R. Green, Maximilian Dax et al.",
-          "arxivCategory": "gr-qc",
-          "publishedAt": "2026-05-11T21:54:39.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "gwBenchmarks: Stress-Testing LLM Agents on High-Precision Gravitational Wave Astronomy",
-          "url": "https://arxiv.org/abs/2605.11269",
-          "score": 200,
-          "authors": "Tousif Islam, Digvijay Wadekar, Zihan Zhou",
-          "arxivCategory": "gr-qc",
-          "publishedAt": "2026-05-11T21:47:22.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Prospects for multi-messenger discovery of the gravitational-wave background anisotropies via cross-correlation with galaxies",
-          "url": "https://arxiv.org/abs/2605.11193",
-          "score": 200,
-          "authors": "Raphael Bertrand-Delgado, Felipe Andrade-Oliveira, Michael Ebersold et al.",
-          "arxivCategory": "astro-ph.CO",
-          "publishedAt": "2026-05-11T19:58:55.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Electromagnetic Follow-up of the Sub-Solar Mass Gravitational Wave Candidate S251112cm: Kilonova Constraints and a Coincident IIb Supernova",
-          "url": "https://arxiv.org/abs/2605.10940",
-          "score": 200,
-          "authors": "Xander J. Hall, Tomas Ahumada, Julius Gassert et al.",
-          "arxivCategory": "astro-ph.HE",
-          "publishedAt": "2026-05-11T17:59:36.000Z"
-        }
-      ],
-      "relatedConceptSlugs": [
-        "atom-interferometry-for-detection-of-gravitational-waves"
-      ],
-      "resonance": 41,
-      "quadrant": "hype-cycle",
-      "resonanceSignals": {
-        "conceptDepth": 0.3868528072345416,
-        "editorial": 0.7,
-        "connections": 0,
-        "convergence": 0.05,
-        "deepTopic": 1,
-        "pantheon": 0.92,
-        "graveyard": 0
-      }
-    },
-    {
       "slug": "quantum-computing",
       "label": "Quantum Computing",
-      "score": 7009,
-      "delta": -3,
+      "score": 7010,
+      "delta": 0,
       "direction": "steady",
       "mentions": 39,
       "sources": [
@@ -528,6 +396,138 @@
         "convergence": 0.025,
         "deepTopic": 1,
         "pantheon": 1,
+        "graveyard": 0
+      }
+    },
+    {
+      "slug": "gravitational-waves",
+      "label": "Gravitational Waves",
+      "score": 7000,
+      "delta": -12,
+      "direction": "steady",
+      "mentions": 35,
+      "sources": [
+        {
+          "platform": "arxiv",
+          "title": "Impact of coalescence signals on the search for continuous gravitational waves with Einstein Telescope",
+          "url": "https://arxiv.org/abs/2605.12249",
+          "score": 200,
+          "authors": "Elena Codazzo, Lorenzo Mirasola, Matteo Di Giovanni et al.",
+          "arxivCategory": "gr-qc",
+          "publishedAt": "2026-05-12T15:18:32.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Inferring host environment properties and gravitational-wave decay time from the eccentricity measurement of dynamically captured binaries",
+          "url": "https://arxiv.org/abs/2605.11947",
+          "score": 200,
+          "authors": "A. Vincent Paul, Parthapratim Mahapatra, Marc Favata et al.",
+          "arxivCategory": "astro-ph.HE",
+          "publishedAt": "2026-05-12T10:56:35.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "GW240925 and GW250207: Astrophysical Calibration of Gravitational-wave Detectors",
+          "url": "https://arxiv.org/abs/2605.11703",
+          "score": 200,
+          "authors": "The LIGO Scientific Collaboration, the Virgo Collaboration, the KAGRA Collaboration et al.",
+          "arxivCategory": "gr-qc",
+          "publishedAt": "2026-05-12T07:58:35.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Secondary-Mass Features improve Spectral-Siren $H_0$ Constraints",
+          "url": "https://arxiv.org/abs/2605.11474",
+          "score": 200,
+          "authors": "Yin-Jie Li, Yi-Ying Wang, Yuan-Zhu Wang et al.",
+          "arxivCategory": "astro-ph.CO",
+          "publishedAt": "2026-05-12T03:43:43.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Revisiting GW170817 at milliarcsecond scale: high-precision constraints on jet geometry and $H_0$",
+          "url": "https://arxiv.org/abs/2605.11437",
+          "score": 200,
+          "authors": "Kelly Gourdji, Adam T. Deller, Chris Flynn et al.",
+          "arxivCategory": "astro-ph.HE",
+          "publishedAt": "2026-05-12T02:39:53.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Evolution of Crab Pulsar: Magnetic Inclination Angle and Spin",
+          "url": "https://arxiv.org/abs/2605.11425",
+          "score": 200,
+          "authors": "Cong-Xing Liu, Jian-Min Dong",
+          "arxivCategory": "astro-ph.HE",
+          "publishedAt": "2026-05-12T02:21:09.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Black Hole Binary Detection Landscape for the Laser Interferometer Lunar Antenna (LILA): Signal-to-Noise Calculations &amp; Science Cases",
+          "url": "https://arxiv.org/abs/2605.11283",
+          "score": 200,
+          "authors": "Tintin Nguyen, Anjali Yelikar, Ryan Nowicki et al.",
+          "arxivCategory": "astro-ph.HE",
+          "publishedAt": "2026-05-11T22:09:59.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Discovery of Interpretable Surrogates via Agentic AI: Application to Gravitational Waves",
+          "url": "https://arxiv.org/abs/2605.11280",
+          "score": 200,
+          "authors": "Tousif Islam, Digvijay Wadekar, Tejaswi Venumadhav et al.",
+          "arxivCategory": "gr-qc",
+          "publishedAt": "2026-05-11T22:09:34.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "End-to-End Population Inference from Gravitational-Wave Strain using Transformers",
+          "url": "https://arxiv.org/abs/2605.11274",
+          "score": 200,
+          "authors": "Konstantin Leyde, Stephen R. Green, Maximilian Dax et al.",
+          "arxivCategory": "gr-qc",
+          "publishedAt": "2026-05-11T21:54:39.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "gwBenchmarks: Stress-Testing LLM Agents on High-Precision Gravitational Wave Astronomy",
+          "url": "https://arxiv.org/abs/2605.11269",
+          "score": 200,
+          "authors": "Tousif Islam, Digvijay Wadekar, Zihan Zhou",
+          "arxivCategory": "gr-qc",
+          "publishedAt": "2026-05-11T21:47:22.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Prospects for multi-messenger discovery of the gravitational-wave background anisotropies via cross-correlation with galaxies",
+          "url": "https://arxiv.org/abs/2605.11193",
+          "score": 200,
+          "authors": "Raphael Bertrand-Delgado, Felipe Andrade-Oliveira, Michael Ebersold et al.",
+          "arxivCategory": "astro-ph.CO",
+          "publishedAt": "2026-05-11T19:58:55.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Electromagnetic Follow-up of the Sub-Solar Mass Gravitational Wave Candidate S251112cm: Kilonova Constraints and a Coincident IIb Supernova",
+          "url": "https://arxiv.org/abs/2605.10940",
+          "score": 200,
+          "authors": "Xander J. Hall, Tomas Ahumada, Julius Gassert et al.",
+          "arxivCategory": "astro-ph.HE",
+          "publishedAt": "2026-05-11T17:59:36.000Z"
+        }
+      ],
+      "relatedConceptSlugs": [
+        "atom-interferometry-for-detection-of-gravitational-waves"
+      ],
+      "resonance": 41,
+      "quadrant": "hype-cycle",
+      "resonanceSignals": {
+        "conceptDepth": 0.3868528072345416,
+        "editorial": 0.7,
+        "connections": 0,
+        "convergence": 0.05,
+        "deepTopic": 1,
+        "pantheon": 0.92,
         "graveyard": 0
       }
     },
@@ -667,7 +667,7 @@
     {
       "slug": "particle-physics",
       "label": "Particle Physics",
-      "score": 6236,
+      "score": 6237,
       "delta": 0,
       "direction": "steady",
       "mentions": 34,
@@ -798,7 +798,7 @@
       "slug": "dark-matter",
       "label": "Dark Matter & Dark Energy",
       "score": 5800,
-      "delta": -3,
+      "delta": 0,
       "direction": "steady",
       "mentions": 29,
       "sources": [
@@ -1063,7 +1063,7 @@
       "slug": "cosmology",
       "label": "Cosmology",
       "score": 5600,
-      "delta": 4,
+      "delta": 0,
       "direction": "steady",
       "mentions": 28,
       "sources": [
@@ -1194,10 +1194,10 @@
     {
       "slug": "astrobiology",
       "label": "Astrobiology",
-      "score": 3407,
+      "score": 3408,
       "delta": 6,
       "direction": "steady",
-      "mentions": 18,
+      "mentions": 19,
       "sources": [
         {
           "platform": "arxiv",
@@ -1327,10 +1327,10 @@
     {
       "slug": "exoplanets",
       "label": "Exoplanets",
-      "score": 3406,
-      "delta": 6,
+      "score": 3206,
+      "delta": 0,
       "direction": "steady",
-      "mentions": 19,
+      "mentions": 18,
       "sources": [
         {
           "platform": "arxiv",
@@ -1461,7 +1461,7 @@
       "slug": "quantum-comms",
       "label": "Quantum Communication",
       "score": 3000,
-      "delta": -2,
+      "delta": 0,
       "direction": "steady",
       "mentions": 15,
       "sources": [
@@ -1698,10 +1698,10 @@
     {
       "slug": "fusion-propulsion",
       "label": "Fusion Propulsion",
-      "score": 1200,
-      "delta": 19,
-      "direction": "up",
-      "mentions": 6,
+      "score": 1000,
+      "delta": -17,
+      "direction": "down",
+      "mentions": 5,
       "sources": [
         {
           "platform": "arxiv",
@@ -1747,15 +1747,6 @@
           "authors": "Akinobu Matsuyama",
           "arxivCategory": "physics.plasm-ph",
           "publishedAt": "2026-04-28T09:34:03.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "FIREFLY: heat load and particle exhaust approximations for rapid evaluation of divertor designs",
-          "url": "https://arxiv.org/abs/2604.11497",
-          "score": 200,
-          "authors": "Heinke Frerichs, Dieter Boeyaert, Yuhe Feng et al.",
-          "arxivCategory": "physics.plasm-ph",
-          "publishedAt": "2026-04-13T14:03:58.000Z"
         }
       ],
       "relatedConceptSlugs": [
@@ -1776,29 +1767,279 @@
       }
     },
     {
+      "slug": "ai-space",
+      "label": "AI in Space",
+      "score": 800,
+      "delta": 0,
+      "direction": "steady",
+      "mentions": 4,
+      "sources": [
+        {
+          "platform": "arxiv",
+          "title": "Neural Backward Reach-Avoid Tubes with MPC Supervision for High-Dimensional Systems: An Application to Safe Spacecraft Docking",
+          "url": "https://arxiv.org/abs/2605.02021",
+          "score": 200,
+          "authors": "Santiago Thorup, Luca Castelletto, Zeyuan Feng et al.",
+          "arxivCategory": "cs.RO",
+          "publishedAt": "2026-05-03T19:00:06.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Star-Fusion: A Multi-modal Transformer Architecture for Discrete Celestial Orientation via Spherical Topology",
+          "url": "https://arxiv.org/abs/2604.26582",
+          "score": 200,
+          "authors": "May Hammad, Menatallh Hammad",
+          "arxivCategory": "cs.CV",
+          "publishedAt": "2026-04-29T12:01:41.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Pulsar Selection Criteria and Performance Evaluation of Autonomous X-ray Pulsar Navigation Systems",
+          "url": "https://arxiv.org/abs/2604.18844",
+          "score": 200,
+          "authors": "Sui Chen, Emilie Parent, Nanda Rea et al.",
+          "arxivCategory": "astro-ph.IM",
+          "publishedAt": "2026-04-20T21:10:22.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Intent-aligned Autonomous Spacecraft Guidance via Reasoning Models",
+          "url": "https://arxiv.org/abs/2604.17176",
+          "score": 200,
+          "authors": "Yuji Takubo, Simone D'Amico",
+          "arxivCategory": "eess.SY",
+          "publishedAt": "2026-04-19T00:25:54.000Z"
+        }
+      ],
+      "relatedConceptSlugs": [
+        "starnav",
+        "an-automaton-rover-enabling-long-duration"
+      ],
+      "resonance": 37,
+      "quadrant": "dead-zone",
+      "resonanceSignals": {
+        "conceptDepth": 0.5113915944693856,
+        "editorial": 0.7,
+        "connections": 0.3333333333333333,
+        "convergence": 0.025,
+        "deepTopic": 0,
+        "pantheon": 0.4,
+        "graveyard": 0
+      }
+    },
+    {
+      "slug": "starlink",
+      "label": "Starlink & Satellite Internet",
+      "score": 613,
+      "delta": 1,
+      "direction": "steady",
+      "mentions": 7,
+      "sources": [
+        {
+          "platform": "arxiv",
+          "title": "The Case for Space-Based Particle Colliders: Orbital Infrastructure as a Path to Grand Unification Energy Scales",
+          "url": "https://arxiv.org/abs/2605.08239",
+          "score": 200,
+          "authors": "Viktor Danchev, Alex Dyer, Sebastian Grau et al.",
+          "arxivCategory": "physics.acc-ph",
+          "publishedAt": "2026-05-07T05:03:56.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Toward Scalable SDN for LEO Mega-Constellations: A Graph Learning Approach",
+          "url": "https://arxiv.org/abs/2604.27478",
+          "score": 200,
+          "authors": "Sivaram Krishnan, Bassel Al Homssi, Zhouyou Gu et al.",
+          "arxivCategory": "cs.LG",
+          "publishedAt": "2026-04-30T06:19:46.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "CroSatFL: Energy-Efficient Federated Learning with Cross-Aggregation for Satellite Edge Computing",
+          "url": "https://arxiv.org/abs/2604.15779",
+          "score": 200,
+          "authors": "Nan Yang, Bahman Javadi, Rodrigo Neves Calheiros et al.",
+          "arxivCategory": "cs.DC",
+          "publishedAt": "2026-04-17T07:37:16.000Z"
+        },
+        {
+          "platform": "hackernews",
+          "title": "Israeli Tech Exposes Users of Musk's Starlink Satellite-Based Internet",
+          "url": "https://www.haaretz.com/israel-news/security-aviation/2026-05-12/ty-article-magazine/.premium/starlink-users-beware-israeli-tech-can-reveal-your-identity/",
+          "score": 6,
+          "author": "pnw",
+          "commentCount": 0,
+          "publishedAt": "2026-05-12T18:11:22.000Z"
+        },
+        {
+          "platform": "hackernews",
+          "title": "Starlink users can be located and sometimes identified through terminal mapping",
+          "url": "https://www.haaretz.com/israel-news/security-aviation/2026-05-12/ty-article-magazine/.premium/starlink-users-beware-israeli-tech-can-reveal-your-identity/0000019e-17f1-d618-adde-17f3e27d0000",
+          "score": 3,
+          "author": "puttycat",
+          "commentCount": 2,
+          "publishedAt": "2026-05-12T19:26:11.000Z"
+        },
+        {
+          "platform": "hackernews",
+          "title": "Rassvet, Russia's Answer to Starlink",
+          "url": "https://www.wired.com/story/meet-rassvet-russias-answer-to-starlink/",
+          "score": 3,
+          "author": "smurda",
+          "commentCount": 0,
+          "publishedAt": "2026-05-11T17:22:58.000Z"
+        },
+        {
+          "platform": "hackernews",
+          "title": "Resurfaced 2025 clip fuels false Musk-Ramaphosa snub claim amid Starlink row",
+          "url": "https://factcheck.afp.com/doc.afp.com.A9WB89E",
+          "score": 1,
+          "author": "lschueller",
+          "commentCount": 0,
+          "publishedAt": "2026-05-07T14:44:04.000Z"
+        }
+      ],
+      "relatedConceptSlugs": [
+        "sps-alpha"
+      ],
+      "resonance": 21,
+      "quadrant": "dead-zone",
+      "resonanceSignals": {
+        "conceptDepth": 0.22629438553091683,
+        "editorial": 0.7,
+        "connections": 0,
+        "convergence": 0,
+        "deepTopic": 0,
+        "pantheon": 0,
+        "graveyard": 0
+      }
+    },
+    {
+      "slug": "space-debris",
+      "label": "Space Debris",
+      "score": 605,
+      "delta": 0,
+      "direction": "steady",
+      "mentions": 4,
+      "sources": [
+        {
+          "platform": "arxiv",
+          "title": "StreakMind: AI detection and analysis of satellite streaks in astronomical images with automated database integration",
+          "url": "https://arxiv.org/abs/2605.03429",
+          "score": 200,
+          "authors": "Rafael Carrillo Navarro, René Duffard, Pablo García-Martín et al.",
+          "arxivCategory": "astro-ph.IM",
+          "publishedAt": "2026-05-05T07:11:58.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "In-Orbit Optical SSA Using Proliferated LEO Satellites for Space Traffic Monitoring: An Analytical Framework",
+          "url": "https://arxiv.org/abs/2605.01241",
+          "score": 200,
+          "authors": "Dianle Gong, Peng Hu",
+          "arxivCategory": "eess.SY",
+          "publishedAt": "2026-05-02T04:46:21.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Conceptual Design and Analysis of a NanoTug Swarm for Active Debris Removal",
+          "url": "https://arxiv.org/abs/2604.19214",
+          "score": 200,
+          "authors": "F. Alnaqbi, S. Biktimirov, G. Gaias",
+          "arxivCategory": "astro-ph.EP",
+          "publishedAt": "2026-04-21T08:20:27.000Z"
+        },
+        {
+          "platform": "hackernews",
+          "title": "Almost half of everything orbiting Earth is space junk",
+          "url": "https://www.popsci.com/science/space-junk-around-earth/",
+          "score": 5,
+          "author": "speckx",
+          "commentCount": 0,
+          "publishedAt": "2026-05-13T17:12:51.000Z"
+        }
+      ],
+      "relatedConceptSlugs": [
+        "niac-phase-i-final-report-on-orbit-collision"
+      ],
+      "resonance": 20,
+      "quadrant": "dead-zone",
+      "resonanceSignals": {
+        "conceptDepth": 0.3868528072345416,
+        "editorial": 0.4,
+        "connections": 0,
+        "convergence": 0,
+        "deepTopic": 0,
+        "pantheon": 0,
+        "graveyard": 0
+      }
+    },
+    {
+      "slug": "dyson-spheres",
+      "label": "Dyson Spheres",
+      "score": 600,
+      "delta": 0,
+      "direction": "steady",
+      "mentions": 3,
+      "sources": [
+        {
+          "platform": "arxiv",
+          "title": "Isolating Broadband Radio Technosignatures (BRaTs): A Framework for Detecting Planetary-Scale Leakage",
+          "url": "https://arxiv.org/abs/2605.10212",
+          "score": 200,
+          "authors": "Michael A. Garrett",
+          "arxivCategory": "astro-ph.IM",
+          "publishedAt": "2026-05-11T08:55:20.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "AI Hastens Limits to Exponential Growth",
+          "url": "https://arxiv.org/abs/2604.23026",
+          "score": 200,
+          "authors": "Robert T. Nachtrieb, Steven J. Smith",
+          "arxivCategory": "physics.soc-ph",
+          "publishedAt": "2026-04-24T21:30:11.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Kardashev's Conundrum: Statistical Falsification of the Standard Kardashev Model and the Kardashev--Sagan--Nakamoto Resolution",
+          "url": "https://arxiv.org/abs/2604.17516",
+          "score": 200,
+          "authors": "Sebastian Gurovich",
+          "arxivCategory": "astro-ph.IM",
+          "publishedAt": "2026-04-19T16:19:28.000Z"
+        }
+      ],
+      "relatedConceptSlugs": [
+        "sps-alpha"
+      ],
+      "resonance": 25,
+      "quadrant": "dead-zone",
+      "resonanceSignals": {
+        "conceptDepth": 0.22629438553091683,
+        "editorial": 0.7,
+        "connections": 0,
+        "convergence": 0,
+        "deepTopic": 0,
+        "pantheon": 0.92,
+        "graveyard": 0
+      }
+    },
+    {
       "slug": "starship",
       "label": "Starship & SpaceX",
-      "score": 951,
-      "delta": 30,
-      "direction": "up",
+      "score": 478,
+      "delta": -35,
+      "direction": "down",
       "mentions": 27,
       "sources": [
         {
           "platform": "hackernews",
-          "title": "Higher usage limits for Claude and a compute deal with SpaceX",
-          "url": "https://www.anthropic.com/news/higher-limits-spacex",
-          "score": 509,
-          "author": "meetpateltech",
-          "commentCount": 483,
-          "publishedAt": "2026-05-06T16:17:33.000Z"
-        },
-        {
-          "platform": "hackernews",
           "title": "Starship V3",
           "url": "https://www.spacex.com/updates#starship-v3",
-          "score": 208,
+          "score": 300,
           "author": "fprog",
-          "commentCount": 274,
+          "commentCount": 521,
           "publishedAt": "2026-05-13T01:29:31.000Z"
         },
         {
@@ -1807,17 +2048,8 @@
           "url": "https://www.cbc.ca/news/science/spacex-data-centre-one-million-satellites-9.7117772",
           "score": 60,
           "author": "billybuckwheat",
-          "commentCount": 140,
+          "commentCount": 142,
           "publishedAt": "2026-05-10T19:56:05.000Z"
-        },
-        {
-          "platform": "hackernews",
-          "title": "SpaceXAI will provide Anthropic with access to Colossus 1",
-          "url": "https://twitter.com/xai/status/2052060350770515978",
-          "score": 58,
-          "author": "droidjj",
-          "commentCount": 16,
-          "publishedAt": "2026-05-06T16:28:25.000Z"
         },
         {
           "platform": "hackernews",
@@ -1890,6 +2122,24 @@
           "author": "andsoitis",
           "commentCount": 0,
           "publishedAt": "2026-05-07T11:29:17.000Z"
+        },
+        {
+          "platform": "hackernews",
+          "title": "SpaceX is starting to move on from the most successful rocket",
+          "url": "https://arstechnica.com/space/2026/05/spacex-is-starting-to-move-on-from-the-worlds-most-successful-rocket/",
+          "score": 4,
+          "author": "LorenDB",
+          "commentCount": 0,
+          "publishedAt": "2026-05-07T02:24:08.000Z"
+        },
+        {
+          "platform": "hackernews",
+          "title": "SpaceX targets May 19 for debut of Starship Version 3, Launch Pad 2",
+          "url": "https://spaceflightnow.com/2026/05/12/spacex-targets-may-19-for-debut-of-starship-super-heavy-version-3-launch-pad-2/",
+          "score": 3,
+          "author": "bookmtn",
+          "commentCount": 1,
+          "publishedAt": "2026-05-13T16:13:59.000Z"
         }
       ],
       "relatedConceptSlugs": [
@@ -1904,265 +2154,6 @@
         "connections": 0,
         "convergence": 0.35,
         "deepTopic": 1,
-        "pantheon": 0.92,
-        "graveyard": 0
-      }
-    },
-    {
-      "slug": "ai-space",
-      "label": "AI in Space",
-      "score": 800,
-      "delta": 0,
-      "direction": "steady",
-      "mentions": 4,
-      "sources": [
-        {
-          "platform": "arxiv",
-          "title": "Neural Backward Reach-Avoid Tubes with MPC Supervision for High-Dimensional Systems: An Application to Safe Spacecraft Docking",
-          "url": "https://arxiv.org/abs/2605.02021",
-          "score": 200,
-          "authors": "Santiago Thorup, Luca Castelletto, Zeyuan Feng et al.",
-          "arxivCategory": "cs.RO",
-          "publishedAt": "2026-05-03T19:00:06.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Star-Fusion: A Multi-modal Transformer Architecture for Discrete Celestial Orientation via Spherical Topology",
-          "url": "https://arxiv.org/abs/2604.26582",
-          "score": 200,
-          "authors": "May Hammad, Menatallh Hammad",
-          "arxivCategory": "cs.CV",
-          "publishedAt": "2026-04-29T12:01:41.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Pulsar Selection Criteria and Performance Evaluation of Autonomous X-ray Pulsar Navigation Systems",
-          "url": "https://arxiv.org/abs/2604.18844",
-          "score": 200,
-          "authors": "Sui Chen, Emilie Parent, Nanda Rea et al.",
-          "arxivCategory": "astro-ph.IM",
-          "publishedAt": "2026-04-20T21:10:22.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Intent-aligned Autonomous Spacecraft Guidance via Reasoning Models",
-          "url": "https://arxiv.org/abs/2604.17176",
-          "score": 200,
-          "authors": "Yuji Takubo, Simone D'Amico",
-          "arxivCategory": "eess.SY",
-          "publishedAt": "2026-04-19T00:25:54.000Z"
-        }
-      ],
-      "relatedConceptSlugs": [
-        "starnav",
-        "an-automaton-rover-enabling-long-duration"
-      ],
-      "resonance": 37,
-      "quadrant": "dead-zone",
-      "resonanceSignals": {
-        "conceptDepth": 0.5113915944693856,
-        "editorial": 0.7,
-        "connections": 0.3333333333333333,
-        "convergence": 0.025,
-        "deepTopic": 0,
-        "pantheon": 0.4,
-        "graveyard": 0
-      }
-    },
-    {
-      "slug": "starlink",
-      "label": "Starlink & Satellite Internet",
-      "score": 612,
-      "delta": 51,
-      "direction": "up",
-      "mentions": 7,
-      "sources": [
-        {
-          "platform": "arxiv",
-          "title": "The Case for Space-Based Particle Colliders: Orbital Infrastructure as a Path to Grand Unification Energy Scales",
-          "url": "https://arxiv.org/abs/2605.08239",
-          "score": 200,
-          "authors": "Viktor Danchev, Alex Dyer, Sebastian Grau et al.",
-          "arxivCategory": "physics.acc-ph",
-          "publishedAt": "2026-05-07T05:03:56.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Toward Scalable SDN for LEO Mega-Constellations: A Graph Learning Approach",
-          "url": "https://arxiv.org/abs/2604.27478",
-          "score": 200,
-          "authors": "Sivaram Krishnan, Bassel Al Homssi, Zhouyou Gu et al.",
-          "arxivCategory": "cs.LG",
-          "publishedAt": "2026-04-30T06:19:46.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "CroSatFL: Energy-Efficient Federated Learning with Cross-Aggregation for Satellite Edge Computing",
-          "url": "https://arxiv.org/abs/2604.15779",
-          "score": 200,
-          "authors": "Nan Yang, Bahman Javadi, Rodrigo Neves Calheiros et al.",
-          "arxivCategory": "cs.DC",
-          "publishedAt": "2026-04-17T07:37:16.000Z"
-        },
-        {
-          "platform": "hackernews",
-          "title": "Israeli Tech Exposes Users of Musk's Starlink Satellite-Based Internet",
-          "url": "https://www.haaretz.com/israel-news/security-aviation/2026-05-12/ty-article-magazine/.premium/starlink-users-beware-israeli-tech-can-reveal-your-identity/",
-          "score": 6,
-          "author": "pnw",
-          "commentCount": 0,
-          "publishedAt": "2026-05-12T18:11:22.000Z"
-        },
-        {
-          "platform": "hackernews",
-          "title": "Rassvet, Russia's Answer to Starlink",
-          "url": "https://www.wired.com/story/meet-rassvet-russias-answer-to-starlink/",
-          "score": 3,
-          "author": "smurda",
-          "commentCount": 0,
-          "publishedAt": "2026-05-11T17:22:58.000Z"
-        },
-        {
-          "platform": "hackernews",
-          "title": "Starlink users can be located and sometimes identified through terminal mapping",
-          "url": "https://www.haaretz.com/israel-news/security-aviation/2026-05-12/ty-article-magazine/.premium/starlink-users-beware-israeli-tech-can-reveal-your-identity/0000019e-17f1-d618-adde-17f3e27d0000",
-          "score": 2,
-          "author": "puttycat",
-          "commentCount": 2,
-          "publishedAt": "2026-05-12T19:26:11.000Z"
-        },
-        {
-          "platform": "hackernews",
-          "title": "Resurfaced 2025 clip fuels false Musk-Ramaphosa snub claim amid Starlink row",
-          "url": "https://factcheck.afp.com/doc.afp.com.A9WB89E",
-          "score": 1,
-          "author": "lschueller",
-          "commentCount": 0,
-          "publishedAt": "2026-05-07T14:44:04.000Z"
-        }
-      ],
-      "relatedConceptSlugs": [
-        "sps-alpha"
-      ],
-      "resonance": 21,
-      "quadrant": "dead-zone",
-      "resonanceSignals": {
-        "conceptDepth": 0.22629438553091683,
-        "editorial": 0.7,
-        "connections": 0,
-        "convergence": 0,
-        "deepTopic": 0,
-        "pantheon": 0,
-        "graveyard": 0
-      }
-    },
-    {
-      "slug": "space-debris",
-      "label": "Space Debris",
-      "score": 603,
-      "delta": 0,
-      "direction": "steady",
-      "mentions": 4,
-      "sources": [
-        {
-          "platform": "arxiv",
-          "title": "StreakMind: AI detection and analysis of satellite streaks in astronomical images with automated database integration",
-          "url": "https://arxiv.org/abs/2605.03429",
-          "score": 200,
-          "authors": "Rafael Carrillo Navarro, René Duffard, Pablo García-Martín et al.",
-          "arxivCategory": "astro-ph.IM",
-          "publishedAt": "2026-05-05T07:11:58.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "In-Orbit Optical SSA Using Proliferated LEO Satellites for Space Traffic Monitoring: An Analytical Framework",
-          "url": "https://arxiv.org/abs/2605.01241",
-          "score": 200,
-          "authors": "Dianle Gong, Peng Hu",
-          "arxivCategory": "eess.SY",
-          "publishedAt": "2026-05-02T04:46:21.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Conceptual Design and Analysis of a NanoTug Swarm for Active Debris Removal",
-          "url": "https://arxiv.org/abs/2604.19214",
-          "score": 200,
-          "authors": "F. Alnaqbi, S. Biktimirov, G. Gaias",
-          "arxivCategory": "astro-ph.EP",
-          "publishedAt": "2026-04-21T08:20:27.000Z"
-        },
-        {
-          "platform": "hackernews",
-          "title": "Solar activity above 67% peak makes space debris fall faster",
-          "url": "https://www.frontiersin.org/news/2026/05/06/frontiers-astronomy-space-sciences-space-debris-orbital-decay-solar-activity-threshold",
-          "score": 3,
-          "author": "giuliomagnifico",
-          "commentCount": 1,
-          "publishedAt": "2026-05-06T13:08:43.000Z"
-        }
-      ],
-      "relatedConceptSlugs": [
-        "niac-phase-i-final-report-on-orbit-collision"
-      ],
-      "resonance": 20,
-      "quadrant": "dead-zone",
-      "resonanceSignals": {
-        "conceptDepth": 0.3868528072345416,
-        "editorial": 0.4,
-        "connections": 0,
-        "convergence": 0,
-        "deepTopic": 0,
-        "pantheon": 0,
-        "graveyard": 0
-      }
-    },
-    {
-      "slug": "dyson-spheres",
-      "label": "Dyson Spheres",
-      "score": 600,
-      "delta": 50,
-      "direction": "up",
-      "mentions": 3,
-      "sources": [
-        {
-          "platform": "arxiv",
-          "title": "Isolating Broadband Radio Technosignatures (BRaTs): A Framework for Detecting Planetary-Scale Leakage",
-          "url": "https://arxiv.org/abs/2605.10212",
-          "score": 200,
-          "authors": "Michael A. Garrett",
-          "arxivCategory": "astro-ph.IM",
-          "publishedAt": "2026-05-11T08:55:20.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "AI Hastens Limits to Exponential Growth",
-          "url": "https://arxiv.org/abs/2604.23026",
-          "score": 200,
-          "authors": "Robert T. Nachtrieb, Steven J. Smith",
-          "arxivCategory": "physics.soc-ph",
-          "publishedAt": "2026-04-24T21:30:11.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Kardashev's Conundrum: Statistical Falsification of the Standard Kardashev Model and the Kardashev--Sagan--Nakamoto Resolution",
-          "url": "https://arxiv.org/abs/2604.17516",
-          "score": 200,
-          "authors": "Sebastian Gurovich",
-          "arxivCategory": "astro-ph.IM",
-          "publishedAt": "2026-04-19T16:19:28.000Z"
-        }
-      ],
-      "relatedConceptSlugs": [
-        "sps-alpha"
-      ],
-      "resonance": 25,
-      "quadrant": "dead-zone",
-      "resonanceSignals": {
-        "conceptDepth": 0.22629438553091683,
-        "editorial": 0.7,
-        "connections": 0,
-        "convergence": 0,
-        "deepTopic": 0,
         "pantheon": 0.92,
         "graveyard": 0
       }
@@ -2209,6 +2200,49 @@
         "convergence": 0.075,
         "deepTopic": 0.8,
         "pantheon": 0.08,
+        "graveyard": 0
+      }
+    },
+    {
+      "slug": "warp-drives",
+      "label": "Warp Drives & Exotic Physics",
+      "score": 205,
+      "delta": 3,
+      "direction": "steady",
+      "mentions": 2,
+      "sources": [
+        {
+          "platform": "arxiv",
+          "title": "Novel Realizations of Warp Drive Spacetimes as Solutions of General Relativity",
+          "url": "https://arxiv.org/abs/2605.03653",
+          "score": 200,
+          "authors": "Thomas Buchert, Antony Frackowiak",
+          "arxivCategory": "gr-qc",
+          "publishedAt": "2026-05-05T11:37:43.000Z"
+        },
+        {
+          "platform": "hackernews",
+          "title": "Free Energy from the Vacuum? Warp Drive Pioneer Unveils Battery-Free MicroSparc",
+          "url": "https://thedebrief.org/free-energy-from-the-vacuum-warp-drive-pioneer-unveils-battery-free-microsparc-that-allegedly-draws-power-from-the-quantum-vacuum/",
+          "score": 5,
+          "author": "speckx",
+          "commentCount": 2,
+          "publishedAt": "2026-05-13T13:22:03.000Z"
+        }
+      ],
+      "relatedConceptSlugs": [
+        "procsima",
+        "extreme-metamaterial-solar-sails-for-breakthrough-space-exploration"
+      ],
+      "resonance": 53,
+      "quadrant": "sleeping-giant",
+      "resonanceSignals": {
+        "conceptDepth": 0.6991803252671503,
+        "editorial": 1,
+        "connections": 0.3333333333333333,
+        "convergence": 0.15,
+        "deepTopic": 0,
+        "pantheon": 0.92,
         "graveyard": 0
       }
     },
@@ -2311,40 +2345,6 @@
         "connections": 0,
         "convergence": 0.125,
         "deepTopic": 0.8,
-        "pantheon": 0.92,
-        "graveyard": 0
-      }
-    },
-    {
-      "slug": "warp-drives",
-      "label": "Warp Drives & Exotic Physics",
-      "score": 200,
-      "delta": 0,
-      "direction": "steady",
-      "mentions": 1,
-      "sources": [
-        {
-          "platform": "arxiv",
-          "title": "Novel Realizations of Warp Drive Spacetimes as Solutions of General Relativity",
-          "url": "https://arxiv.org/abs/2605.03653",
-          "score": 200,
-          "authors": "Thomas Buchert, Antony Frackowiak",
-          "arxivCategory": "gr-qc",
-          "publishedAt": "2026-05-05T11:37:43.000Z"
-        }
-      ],
-      "relatedConceptSlugs": [
-        "procsima",
-        "extreme-metamaterial-solar-sails-for-breakthrough-space-exploration"
-      ],
-      "resonance": 53,
-      "quadrant": "sleeping-giant",
-      "resonanceSignals": {
-        "conceptDepth": 0.6991803252671503,
-        "editorial": 1,
-        "connections": 0.3333333333333333,
-        "convergence": 0.15,
-        "deepTopic": 0,
         "pantheon": 0.92,
         "graveyard": 0
       }
