@@ -1,13 +1,13 @@
 {
-  "generatedAt": "2026-05-15T19:34:18.224Z",
+  "generatedAt": "2026-05-16T07:54:37.750Z",
   "topics": [
     {
       "slug": "quantum-computing",
       "label": "Quantum Computing",
-      "score": 7808,
-      "delta": 11,
+      "score": 7809,
+      "delta": 0,
       "direction": "steady",
-      "mentions": 42,
+      "mentions": 43,
       "sources": [
         {
           "platform": "arxiv",
@@ -270,7 +270,7 @@
       "slug": "gravitational-waves",
       "label": "Gravitational Waves",
       "score": 7600,
-      "delta": 9,
+      "delta": 6,
       "direction": "steady",
       "mentions": 38,
       "sources": [
@@ -668,7 +668,7 @@
       "slug": "particle-physics",
       "label": "Particle Physics",
       "score": 6203,
-      "delta": -1,
+      "delta": 0,
       "direction": "steady",
       "mentions": 32,
       "sources": [
@@ -798,7 +798,7 @@
       "slug": "dark-matter",
       "label": "Dark Matter & Dark Energy",
       "score": 6001,
-      "delta": 3,
+      "delta": 0,
       "direction": "steady",
       "mentions": 31,
       "sources": [
@@ -930,10 +930,10 @@
     {
       "slug": "condensed-matter",
       "label": "Condensed Matter",
-      "score": 5599,
-      "delta": -3,
+      "score": 5556,
+      "delta": -1,
       "direction": "steady",
-      "mentions": 30,
+      "mentions": 29,
       "sources": [
         {
           "platform": "hackernews",
@@ -1195,7 +1195,7 @@
       "slug": "exoplanets",
       "label": "Exoplanets",
       "score": 3206,
-      "delta": 0,
+      "delta": -6,
       "direction": "steady",
       "mentions": 18,
       "sources": [
@@ -1593,8 +1593,8 @@
       "slug": "asteroid-mining",
       "label": "Asteroid Mining",
       "score": 1400,
-      "delta": -22,
-      "direction": "down",
+      "delta": -12,
+      "direction": "steady",
       "mentions": 7,
       "sources": [
         {
@@ -1813,7 +1813,7 @@
       "slug": "starlink",
       "label": "Starlink & Satellite Internet",
       "score": 633,
-      "delta": 3,
+      "delta": 0,
       "direction": "steady",
       "mentions": 8,
       "sources": [
@@ -1909,7 +1909,7 @@
       "slug": "space-debris",
       "label": "Space Debris",
       "score": 612,
-      "delta": 1,
+      "delta": 0,
       "direction": "steady",
       "mentions": 4,
       "sources": [
@@ -2019,10 +2019,10 @@
     {
       "slug": "starship",
       "label": "Starship & SpaceX",
-      "score": 506,
-      "delta": 6,
+      "score": 520,
+      "delta": 7,
       "direction": "steady",
-      "mentions": 18,
+      "mentions": 22,
       "sources": [
         {
           "platform": "hackernews",
@@ -2030,7 +2030,7 @@
           "url": "https://www.spacex.com/updates#starship-v3",
           "score": 323,
           "author": "fprog",
-          "commentCount": 621,
+          "commentCount": 628,
           "publishedAt": "2026-05-13T01:29:31.000Z"
         },
         {
@@ -2068,6 +2068,15 @@
           "author": "gmays",
           "commentCount": 0,
           "publishedAt": "2026-05-14T21:36:53.000Z"
+        },
+        {
+          "platform": "hackernews",
+          "title": "SpaceX Is Aiming to Go Public on June 12 in What Stands to Be Biggest IPO",
+          "url": "https://www.wsj.com/finance/spacex-is-aiming-to-go-public-on-june-12-in-what-stands-to-be-biggest-ipo-ever-2662311b",
+          "score": 5,
+          "author": "JumpCrisscross",
+          "commentCount": 2,
+          "publishedAt": "2026-05-15T20:31:04.000Z"
         },
         {
           "platform": "hackernews",
@@ -2122,15 +2131,6 @@
           "author": "1vuio0pswjnm7",
           "commentCount": 1,
           "publishedAt": "2026-05-13T14:36:45.000Z"
-        },
-        {
-          "platform": "hackernews",
-          "title": "SpaceX backs Anthropic with data centre deal amidst Musk's OpenAI lawsuit",
-          "url": "https://www.aljazeera.com/economy/2026/5/6/spacex-backs-anthropic-with-data-centre-deal-amidst-musks-openai-lawsuit",
-          "score": 3,
-          "author": "billybuckwheat",
-          "commentCount": 0,
-          "publishedAt": "2026-05-12T20:44:33.000Z"
         }
       ],
       "relatedConceptSlugs": [
@@ -2198,7 +2198,7 @@
       "slug": "warp-drives",
       "label": "Warp Drives & Exotic Physics",
       "score": 207,
-      "delta": 1,
+      "delta": 0,
       "direction": "steady",
       "mentions": 2,
       "sources": [
