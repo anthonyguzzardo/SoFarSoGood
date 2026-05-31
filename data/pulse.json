@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-30T19:20:22.637Z",
+  "generatedAt": "2026-05-31T08:39:19.927Z",
   "topics": [
     {
       "slug": "gravitational-waves",
@@ -136,10 +136,10 @@
     {
       "slug": "quantum-computing",
       "label": "Quantum Computing",
-      "score": 7979,
-      "delta": 1,
+      "score": 7975,
+      "delta": 0,
       "direction": "steady",
-      "mentions": 52,
+      "mentions": 51,
       "sources": [
         {
           "platform": "arxiv",
@@ -268,7 +268,7 @@
     {
       "slug": "nanotechnology",
       "label": "Nanotechnology & Metamaterials",
-      "score": 7805,
+      "score": 7808,
       "delta": 0,
       "direction": "steady",
       "mentions": 41,
@@ -401,10 +401,10 @@
     {
       "slug": "black-holes",
       "label": "Black Holes",
-      "score": 7409,
-      "delta": 3,
+      "score": 7421,
+      "delta": 0,
       "direction": "steady",
-      "mentions": 40,
+      "mentions": 41,
       "sources": [
         {
           "platform": "arxiv",
@@ -535,7 +535,7 @@
       "slug": "space-telescopes",
       "label": "Space Telescopes",
       "score": 6600,
-      "delta": -3,
+      "delta": 0,
       "direction": "steady",
       "mentions": 33,
       "sources": [
@@ -668,7 +668,7 @@
       "slug": "dark-matter",
       "label": "Dark Matter & Dark Energy",
       "score": 6002,
-      "delta": 7,
+      "delta": 0,
       "direction": "steady",
       "mentions": 31,
       "sources": [
@@ -931,7 +931,7 @@
       "slug": "cosmology",
       "label": "Cosmology",
       "score": 5400,
-      "delta": -7,
+      "delta": -4,
       "direction": "steady",
       "mentions": 27,
       "sources": [
@@ -1459,10 +1459,10 @@
     {
       "slug": "exoplanets",
       "label": "Exoplanets",
-      "score": 2200,
-      "delta": -15,
+      "score": 2000,
+      "delta": -9,
       "direction": "steady",
-      "mentions": 11,
+      "mentions": 10,
       "sources": [
         {
           "platform": "arxiv",
@@ -1544,15 +1544,6 @@
           "authors": "Kyle Batra, Stephanie Olson, Edward Schwieterman",
           "arxivCategory": "astro-ph.EP",
           "publishedAt": "2026-05-05T17:15:00.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Smaller Than Earth Habitability Model (STEHM): The Lower Size Limit for Atmosphere Retention in the Habitable Zone",
-          "url": "https://arxiv.org/abs/2605.00170",
-          "score": 200,
-          "authors": "Michelle L. Hill, Stephen R. Kane, Bradford J. Foley et al.",
-          "arxivCategory": "astro-ph.EP",
-          "publishedAt": "2026-04-30T19:43:18.000Z"
         },
         {
           "platform": "arxiv",
@@ -1672,27 +1663,27 @@
     {
       "slug": "starship",
       "label": "Starship & SpaceX",
-      "score": 893,
-      "delta": 12,
+      "score": 942,
+      "delta": 10,
       "direction": "steady",
-      "mentions": 38,
+      "mentions": 36,
       "sources": [
         {
           "platform": "hackernews",
           "title": "Danish pension fund excludes SpaceX citing governance and valuation",
           "url": "https://www.reuters.com/legal/transactional/danish-pension-fund-excludes-spacex-citing-governance-valuation-2026-05-29/",
-          "score": 439,
+          "score": 458,
           "author": "vrganj",
-          "commentCount": 332,
+          "commentCount": 12,
           "publishedAt": "2026-05-30T08:00:20.000Z"
         },
         {
           "platform": "hackernews",
           "title": "Danish Pension Blacklists SpaceX over 'Catastrophic Governance'",
           "url": "https://www.bloomberg.com/news/articles/2026-05-29/danish-pension-fund-blacklists-spacex-citing-governance-issues",
-          "score": 256,
+          "score": 267,
           "author": "leopoldj",
-          "commentCount": 156,
+          "commentCount": 499,
           "publishedAt": "2026-05-29T15:11:23.000Z"
         },
         {
@@ -1706,12 +1697,30 @@
         },
         {
           "platform": "hackernews",
+          "title": "Danish pension fund blacklists SpaceX, says way overvalued with bad governance",
+          "url": "https://thenextweb.com/news/danish-pension-spacex-blacklist-governance-overvalued",
+          "score": 19,
+          "author": "NewCzech",
+          "commentCount": 0,
+          "publishedAt": "2026-05-30T15:40:58.000Z"
+        },
+        {
+          "platform": "hackernews",
           "title": "It's not just SpaceX: Big Tech is dominating bond markets too",
           "url": "https://www.ft.com/content/ae38705c-993c-4680-8500-86d0642f85e4",
           "score": 15,
           "author": "1vuio0pswjnm7",
           "commentCount": 1,
           "publishedAt": "2026-05-26T17:29:25.000Z"
+        },
+        {
+          "platform": "hackernews",
+          "title": "The SpaceX IPO is great for Elon Musk and terrible for you",
+          "url": "https://www.theverge.com/ai-artificial-intelligence/940001/elon-musk-spacex-ipo-ai",
+          "score": 14,
+          "author": "1vuio0pswjnm7",
+          "commentCount": 3,
+          "publishedAt": "2026-05-31T05:34:42.000Z"
         },
         {
           "platform": "hackernews",
@@ -1765,24 +1774,6 @@
           "author": "davidw",
           "commentCount": 1,
           "publishedAt": "2026-05-26T18:18:12.000Z"
-        },
-        {
-          "platform": "hackernews",
-          "title": "SpaceX's index fund debut will look nothing like what most investors expect",
-          "url": "https://www.investmentnews.com/practice-management/spacexs-index-fund-debut-will-look-nothing-like-what-most-investors-expect-says-jacob-friedman/266776",
-          "score": 6,
-          "author": "avidiax",
-          "commentCount": 2,
-          "publishedAt": "2026-05-29T17:29:21.000Z"
-        },
-        {
-          "platform": "hackernews",
-          "title": "Musk says US Military suicide drones used Starlink in violation of SpaceX rules",
-          "url": "https://arstechnica.com/tech-policy/2026/05/musk-says-us-military-suicide-drones-used-starlink-in-violation-of-spacex-rules/",
-          "score": 6,
-          "author": "ForHackernews",
-          "commentCount": 1,
-          "publishedAt": "2026-05-27T17:58:41.000Z"
         }
       ],
       "relatedConceptSlugs": [
@@ -1805,8 +1796,8 @@
       "slug": "space-debris",
       "label": "Space Debris",
       "score": 800,
-      "delta": 33,
-      "direction": "up",
+      "delta": 0,
+      "direction": "steady",
       "mentions": 4,
       "sources": [
         {
@@ -1925,8 +1916,8 @@
       "slug": "asteroid-mining",
       "label": "Asteroid Mining",
       "score": 600,
-      "delta": -25,
-      "direction": "down",
+      "delta": 0,
+      "direction": "steady",
       "mentions": 3,
       "sources": [
         {
@@ -2306,8 +2297,8 @@
       "slug": "ai-space",
       "label": "AI in Space",
       "score": 200,
-      "delta": -50,
-      "direction": "down",
+      "delta": 0,
+      "direction": "steady",
       "mentions": 1,
       "sources": [
         {

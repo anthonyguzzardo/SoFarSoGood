@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-29T20:30:42.828Z",
+  "generatedAt": "2026-05-30T19:20:22.637Z",
   "topics": [
     {
       "slug": "gravitational-waves",
@@ -136,10 +136,10 @@
     {
       "slug": "quantum-computing",
       "label": "Quantum Computing",
-      "score": 7946,
+      "score": 7979,
       "delta": 1,
       "direction": "steady",
-      "mentions": 50,
+      "mentions": 52,
       "sources": [
         {
           "platform": "arxiv",
@@ -268,7 +268,7 @@
     {
       "slug": "nanotechnology",
       "label": "Nanotechnology & Metamaterials",
-      "score": 7804,
+      "score": 7805,
       "delta": 0,
       "direction": "steady",
       "mentions": 41,
@@ -401,10 +401,10 @@
     {
       "slug": "black-holes",
       "label": "Black Holes",
-      "score": 7411,
-      "delta": 0,
+      "score": 7409,
+      "delta": 3,
       "direction": "steady",
-      "mentions": 41,
+      "mentions": 40,
       "sources": [
         {
           "platform": "arxiv",
@@ -535,7 +535,7 @@
       "slug": "space-telescopes",
       "label": "Space Telescopes",
       "score": 6600,
-      "delta": -6,
+      "delta": -3,
       "direction": "steady",
       "mentions": 33,
       "sources": [
@@ -662,136 +662,6 @@
         "deepTopic": 1,
         "pantheon": 0.16,
         "graveyard": 0
-      }
-    },
-    {
-      "slug": "particle-physics",
-      "label": "Particle Physics",
-      "score": 6004,
-      "delta": -3,
-      "direction": "steady",
-      "mentions": 31,
-      "sources": [
-        {
-          "platform": "arxiv",
-          "title": "Zeeman Pumping of Higgs Bosons in the Balian--Werthamer State",
-          "url": "https://arxiv.org/abs/2605.29746",
-          "score": 200,
-          "authors": "Qiao-Ru Xu",
-          "arxivCategory": "cond-mat.mes-hall",
-          "publishedAt": "2026-05-28T10:44:21.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Alignment and Enhanced Multi-Higgs Production",
-          "url": "https://arxiv.org/abs/2605.29345",
-          "score": 200,
-          "authors": "Subhojit Roy, Carlos E. M. Wagner",
-          "arxivCategory": "hep-ph",
-          "publishedAt": "2026-05-28T04:35:46.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Two-loop QCD corrections to $ H \\rightarrow b + \\bar{b} + g $ at higher powers in the dimensional regulator",
-          "url": "https://arxiv.org/abs/2605.28590",
-          "score": 200,
-          "authors": "Pulak Banerjee, Chinmoy Dey, M. C. Kumar et al.",
-          "arxivCategory": "hep-ph",
-          "publishedAt": "2026-05-27T15:11:08.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Search for pair-produced vector-like $T$-quarks decaying into $Ht$ final states in the lepton-plus-jets channel in $pp$ collisions at $\\sqrt{s}$=13 TeV with the ATLAS detector",
-          "url": "https://arxiv.org/abs/2605.28538",
-          "score": 200,
-          "authors": "The ATLAS Collaboration",
-          "arxivCategory": "hep-ex",
-          "publishedAt": "2026-05-27T14:33:13.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "A first extraction of gluon TMDs from Higgs data at the LHC",
-          "url": "https://arxiv.org/abs/2605.28216",
-          "score": 200,
-          "authors": "Simone Anedda, Valerio Bertone, Giuseppe Bozzi et al.",
-          "arxivCategory": "hep-ph",
-          "publishedAt": "2026-05-27T09:33:11.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Search for light scalar particles produced in Higgs boson decays in exclusive final states with two muons and two hadrons in proton-proton collisions at $\\sqrt{s}$ = 13 TeV",
-          "url": "https://arxiv.org/abs/2605.27875",
-          "score": 200,
-          "authors": "CMS Collaboration",
-          "arxivCategory": "hep-ex",
-          "publishedAt": "2026-05-27T02:51:39.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Testing lepton-flavor-violating decay of doubly charged Higgs bosons in type-II seesaw via photon fusion at the high-energy LHC",
-          "url": "https://arxiv.org/abs/2605.26487",
-          "score": 200,
-          "authors": "Hang Zhou, Ning Liu",
-          "arxivCategory": "hep-ph",
-          "publishedAt": "2026-05-26T02:56:07.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Search for a new heavy scalar resonance decaying to a pair of Z bosons in the four-lepton final state in proton-proton collisions at $\\sqrt{s}$ = 13 TeV",
-          "url": "https://arxiv.org/abs/2605.26462",
-          "score": 200,
-          "authors": "CMS Collaboration",
-          "arxivCategory": "hep-ex",
-          "publishedAt": "2026-05-26T02:19:32.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Deep Neural Networks for Heavy Lepton-Flavor-Violating Higgs Searches at the LHC",
-          "url": "https://arxiv.org/abs/2605.21870",
-          "score": 200,
-          "authors": "Akmal Ferdiyan, Reinard Primulando, Fiki Taufik Akbar et al.",
-          "arxivCategory": "hep-ph",
-          "publishedAt": "2026-05-21T01:32:44.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Search for soft unclustered energy patterns containing muons in the final state in $pp$ collisions at $\\sqrt{s}$ = 13 TeV with the ATLAS detector",
-          "url": "https://arxiv.org/abs/2605.20015",
-          "score": 200,
-          "authors": "ATLAS Collaboration",
-          "arxivCategory": "hep-ex",
-          "publishedAt": "2026-05-19T15:43:37.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Hypothesis Tests for Observing Quantum Entanglement in HWW at the LHC",
-          "url": "https://arxiv.org/abs/2605.19754",
-          "score": 200,
-          "authors": "Vincent Alexander Croft, Lennart Voelz, Andrii Vak et al.",
-          "arxivCategory": "hep-ex",
-          "publishedAt": "2026-05-19T12:25:10.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Search for Higgs boson decays into two neutral scalars with unequal masses in final states with b quarks and tau leptons in proton-proton collisions at $\\sqrt{s}$ = 13 TeV",
-          "url": "https://arxiv.org/abs/2605.19144",
-          "score": 200,
-          "authors": "CMS Collaboration",
-          "arxivCategory": "hep-ex",
-          "publishedAt": "2026-05-18T21:51:39.000Z"
-        }
-      ],
-      "relatedConceptSlugs": [],
-      "resonance": 3,
-      "quadrant": "hype-cycle",
-      "resonanceSignals": {
-        "conceptDepth": 0,
-        "editorial": 0,
-        "connections": 0,
-        "convergence": 0,
-        "deepTopic": 0,
-        "pantheon": 0.92,
-        "graveyard": 0.3333333333333333
       }
     },
     {
@@ -928,12 +798,142 @@
       }
     },
     {
+      "slug": "particle-physics",
+      "label": "Particle Physics",
+      "score": 6000,
+      "delta": 0,
+      "direction": "steady",
+      "mentions": 30,
+      "sources": [
+        {
+          "platform": "arxiv",
+          "title": "Zeeman Pumping of Higgs Bosons in the Balian--Werthamer State",
+          "url": "https://arxiv.org/abs/2605.29746",
+          "score": 200,
+          "authors": "Qiao-Ru Xu",
+          "arxivCategory": "cond-mat.mes-hall",
+          "publishedAt": "2026-05-28T10:44:21.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Alignment and Enhanced Multi-Higgs Production",
+          "url": "https://arxiv.org/abs/2605.29345",
+          "score": 200,
+          "authors": "Subhojit Roy, Carlos E. M. Wagner",
+          "arxivCategory": "hep-ph",
+          "publishedAt": "2026-05-28T04:35:46.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Two-loop QCD corrections to $ H \\rightarrow b + \\bar{b} + g $ at higher powers in the dimensional regulator",
+          "url": "https://arxiv.org/abs/2605.28590",
+          "score": 200,
+          "authors": "Pulak Banerjee, Chinmoy Dey, M. C. Kumar et al.",
+          "arxivCategory": "hep-ph",
+          "publishedAt": "2026-05-27T15:11:08.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Search for pair-produced vector-like $T$-quarks decaying into $Ht$ final states in the lepton-plus-jets channel in $pp$ collisions at $\\sqrt{s}$=13 TeV with the ATLAS detector",
+          "url": "https://arxiv.org/abs/2605.28538",
+          "score": 200,
+          "authors": "The ATLAS Collaboration",
+          "arxivCategory": "hep-ex",
+          "publishedAt": "2026-05-27T14:33:13.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "A first extraction of gluon TMDs from Higgs data at the LHC",
+          "url": "https://arxiv.org/abs/2605.28216",
+          "score": 200,
+          "authors": "Simone Anedda, Valerio Bertone, Giuseppe Bozzi et al.",
+          "arxivCategory": "hep-ph",
+          "publishedAt": "2026-05-27T09:33:11.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Search for light scalar particles produced in Higgs boson decays in exclusive final states with two muons and two hadrons in proton-proton collisions at $\\sqrt{s}$ = 13 TeV",
+          "url": "https://arxiv.org/abs/2605.27875",
+          "score": 200,
+          "authors": "CMS Collaboration",
+          "arxivCategory": "hep-ex",
+          "publishedAt": "2026-05-27T02:51:39.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Testing lepton-flavor-violating decay of doubly charged Higgs bosons in type-II seesaw via photon fusion at the high-energy LHC",
+          "url": "https://arxiv.org/abs/2605.26487",
+          "score": 200,
+          "authors": "Hang Zhou, Ning Liu",
+          "arxivCategory": "hep-ph",
+          "publishedAt": "2026-05-26T02:56:07.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Search for a new heavy scalar resonance decaying to a pair of Z bosons in the four-lepton final state in proton-proton collisions at $\\sqrt{s}$ = 13 TeV",
+          "url": "https://arxiv.org/abs/2605.26462",
+          "score": 200,
+          "authors": "CMS Collaboration",
+          "arxivCategory": "hep-ex",
+          "publishedAt": "2026-05-26T02:19:32.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Deep Neural Networks for Heavy Lepton-Flavor-Violating Higgs Searches at the LHC",
+          "url": "https://arxiv.org/abs/2605.21870",
+          "score": 200,
+          "authors": "Akmal Ferdiyan, Reinard Primulando, Fiki Taufik Akbar et al.",
+          "arxivCategory": "hep-ph",
+          "publishedAt": "2026-05-21T01:32:44.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Search for soft unclustered energy patterns containing muons in the final state in $pp$ collisions at $\\sqrt{s}$ = 13 TeV with the ATLAS detector",
+          "url": "https://arxiv.org/abs/2605.20015",
+          "score": 200,
+          "authors": "ATLAS Collaboration",
+          "arxivCategory": "hep-ex",
+          "publishedAt": "2026-05-19T15:43:37.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Hypothesis Tests for Observing Quantum Entanglement in HWW at the LHC",
+          "url": "https://arxiv.org/abs/2605.19754",
+          "score": 200,
+          "authors": "Vincent Alexander Croft, Lennart Voelz, Andrii Vak et al.",
+          "arxivCategory": "hep-ex",
+          "publishedAt": "2026-05-19T12:25:10.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Search for Higgs boson decays into two neutral scalars with unequal masses in final states with b quarks and tau leptons in proton-proton collisions at $\\sqrt{s}$ = 13 TeV",
+          "url": "https://arxiv.org/abs/2605.19144",
+          "score": 200,
+          "authors": "CMS Collaboration",
+          "arxivCategory": "hep-ex",
+          "publishedAt": "2026-05-18T21:51:39.000Z"
+        }
+      ],
+      "relatedConceptSlugs": [],
+      "resonance": 3,
+      "quadrant": "hype-cycle",
+      "resonanceSignals": {
+        "conceptDepth": 0,
+        "editorial": 0,
+        "connections": 0,
+        "convergence": 0,
+        "deepTopic": 0,
+        "pantheon": 0.92,
+        "graveyard": 0.3333333333333333
+      }
+    },
+    {
       "slug": "cosmology",
       "label": "Cosmology",
-      "score": 5600,
-      "delta": -10,
+      "score": 5400,
+      "delta": -7,
       "direction": "steady",
-      "mentions": 28,
+      "mentions": 27,
       "sources": [
         {
           "platform": "arxiv",
@@ -1062,10 +1062,10 @@
     {
       "slug": "condensed-matter",
       "label": "Condensed Matter",
-      "score": 5000,
+      "score": 5002,
       "delta": 0,
       "direction": "steady",
-      "mentions": 25,
+      "mentions": 26,
       "sources": [
         {
           "platform": "arxiv",
@@ -1583,10 +1583,10 @@
     {
       "slug": "fusion-propulsion",
       "label": "Fusion Propulsion",
-      "score": 1405,
-      "delta": 0,
+      "score": 1205,
+      "delta": -14,
       "direction": "steady",
-      "mentions": 8,
+      "mentions": 7,
       "sources": [
         {
           "platform": "arxiv",
@@ -1623,15 +1623,6 @@
           "authors": "Luca Pennati, Erik M. Åsgrim, Jeremy J. Williams et al.",
           "arxivCategory": "cs.ET",
           "publishedAt": "2026-05-08T13:25:47.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Human-in-the-Loop Meta Bayesian Optimization for Fusion Energy and Scientific Applications",
-          "url": "https://arxiv.org/abs/2605.00068",
-          "score": 200,
-          "authors": "Ricardo Luna Gutierrez, Sahand Ghorbanpour, Ejaz Rahman et al.",
-          "arxivCategory": "cs.LG",
-          "publishedAt": "2026-04-30T10:06:56.000Z"
         },
         {
           "platform": "arxiv",
@@ -1681,27 +1672,27 @@
     {
       "slug": "starship",
       "label": "Starship & SpaceX",
-      "score": 858,
-      "delta": -2,
+      "score": 893,
+      "delta": 12,
       "direction": "steady",
       "mentions": 38,
       "sources": [
         {
           "platform": "hackernews",
-          "title": "SpaceX launches Starship v3 rocket",
-          "url": "https://www.space.com/space-exploration/launches-spacecraft/spacex-starship-v3-megarocket-first-test-flight",
-          "score": 441,
-          "author": "busymom0",
-          "commentCount": 313,
-          "publishedAt": "2026-05-22T23:41:55.000Z"
+          "title": "Danish pension fund excludes SpaceX citing governance and valuation",
+          "url": "https://www.reuters.com/legal/transactional/danish-pension-fund-excludes-spacex-citing-governance-valuation-2026-05-29/",
+          "score": 439,
+          "author": "vrganj",
+          "commentCount": 332,
+          "publishedAt": "2026-05-30T08:00:20.000Z"
         },
         {
           "platform": "hackernews",
           "title": "Danish Pension Blacklists SpaceX over 'Catastrophic Governance'",
           "url": "https://www.bloomberg.com/news/articles/2026-05-29/danish-pension-fund-blacklists-spacex-citing-governance-issues",
-          "score": 224,
+          "score": 256,
           "author": "leopoldj",
-          "commentCount": 144,
+          "commentCount": 156,
           "publishedAt": "2026-05-29T15:11:23.000Z"
         },
         {
@@ -1726,7 +1717,7 @@
           "platform": "hackernews",
           "title": "SpaceX's IPO Filing Shows Elon's Twitter 'Business Genius' Was a Fantasy",
           "url": "https://www.techdirt.com/2026/05/22/spacexs-ipo-filing-shows-elons-twitter-business-genius-was-a-fantasy/",
-          "score": 11,
+          "score": 12,
           "author": "velik_m",
           "commentCount": 2,
           "publishedAt": "2026-05-25T19:50:59.000Z"
@@ -1750,21 +1741,21 @@
         },
         {
           "platform": "hackernews",
-          "title": "SpaceX skeptics' added reason for concern: Musk comments diverge from IPO filing",
-          "url": "https://www.cnbc.com/2026/05/29/spacex-skeptics-concerned-as-musk-comments-diverge-from-ipo-filing.html",
-          "score": 8,
-          "author": "1vuio0pswjnm7",
-          "commentCount": 0,
-          "publishedAt": "2026-05-29T17:30:18.000Z"
-        },
-        {
-          "platform": "hackernews",
           "title": "SpaceX and the 'Enshittification' of Markets",
           "url": "https://www.ft.com/content/f724d500-fd45-4f38-86b8-549b5cae88ba",
-          "score": 8,
+          "score": 10,
           "author": "avidiax",
           "commentCount": 0,
           "publishedAt": "2026-05-29T17:19:21.000Z"
+        },
+        {
+          "platform": "hackernews",
+          "title": "SpaceX skeptics' added reason for concern: Musk comments diverge from IPO filing",
+          "url": "https://www.cnbc.com/2026/05/29/spacex-skeptics-concerned-as-musk-comments-diverge-from-ipo-filing.html",
+          "score": 9,
+          "author": "1vuio0pswjnm7",
+          "commentCount": 0,
+          "publishedAt": "2026-05-29T17:30:18.000Z"
         },
         {
           "platform": "hackernews",
@@ -1776,21 +1767,22 @@
           "publishedAt": "2026-05-26T18:18:12.000Z"
         },
         {
-          "platform": "youtube",
-          "title": "Starship Launch – Everyday Astronaut [video]",
-          "url": "https://www.youtube.com/watch?v=odWYDx3u8A4",
+          "platform": "hackernews",
+          "title": "SpaceX's index fund debut will look nothing like what most investors expect",
+          "url": "https://www.investmentnews.com/practice-management/spacexs-index-fund-debut-will-look-nothing-like-what-most-investors-expect-says-jacob-friedman/266776",
           "score": 6,
-          "thumbnail": "https://img.youtube.com/vi/odWYDx3u8A4/mqdefault.jpg",
-          "publishedAt": "2026-05-22T22:21:20.000Z"
+          "author": "avidiax",
+          "commentCount": 2,
+          "publishedAt": "2026-05-29T17:29:21.000Z"
         },
         {
           "platform": "hackernews",
-          "title": "Starship Launch – Everyday Astronaut [video]",
-          "url": "https://www.youtube.com/watch?v=odWYDx3u8A4",
+          "title": "Musk says US Military suicide drones used Starlink in violation of SpaceX rules",
+          "url": "https://arstechnica.com/tech-policy/2026/05/musk-says-us-military-suicide-drones-used-starlink-in-violation-of-spacex-rules/",
           "score": 6,
-          "author": "cwillu",
-          "commentCount": 0,
-          "publishedAt": "2026-05-22T22:21:20.000Z"
+          "author": "ForHackernews",
+          "commentCount": 1,
+          "publishedAt": "2026-05-27T17:58:41.000Z"
         }
       ],
       "relatedConceptSlugs": [
@@ -1930,12 +1922,64 @@
       }
     },
     {
+      "slug": "asteroid-mining",
+      "label": "Asteroid Mining",
+      "score": 600,
+      "delta": -25,
+      "direction": "down",
+      "mentions": 3,
+      "sources": [
+        {
+          "platform": "arxiv",
+          "title": "The dynamical structure of the Earth co-orbital region and implications for the near-Earth asteroid population",
+          "url": "https://arxiv.org/abs/2605.27683",
+          "score": 200,
+          "authors": "Marco Fenucci, Óscar Rodríguez, Melaine Saillenfest et al.",
+          "arxivCategory": "astro-ph.EP",
+          "publishedAt": "2026-05-26T21:02:14.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Accessible does not mean exploitable: HiPERCAM reveals the ultra-fast rotation of 2022 OB$_5$",
+          "url": "https://arxiv.org/abs/2605.04784",
+          "score": 200,
+          "authors": "Miguel R. Alarcon, Javier Licandro, Miquel Serra-Ricart et al.",
+          "arxivCategory": "astro-ph.EP",
+          "publishedAt": "2026-05-06T11:37:55.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "JWST Observations of Asteroid 2024 YR4 Rule Out a 2032 Lunar Impact and Demonstrate a New Regime for Planetary Defense Follow-up",
+          "url": "https://arxiv.org/abs/2605.20498",
+          "score": 200,
+          "authors": "Julien de Wit, Andrew S. Rivkin, Marco Micheli et al.",
+          "arxivCategory": "astro-ph.EP",
+          "publishedAt": "2026-05-19T21:06:11.000Z"
+        }
+      ],
+      "relatedConceptSlugs": [
+        "project-rama",
+        "gravity-poppers"
+      ],
+      "resonance": 43,
+      "quadrant": "dead-zone",
+      "resonanceSignals": {
+        "conceptDepth": 0.6131471927654584,
+        "editorial": 1,
+        "connections": 0,
+        "convergence": 0.3,
+        "deepTopic": 0,
+        "pantheon": 0.08,
+        "graveyard": 0
+      }
+    },
+    {
       "slug": "starlink",
       "label": "Starlink & Satellite Internet",
-      "score": 615,
-      "delta": 0,
-      "direction": "steady",
-      "mentions": 7,
+      "score": 415,
+      "delta": -33,
+      "direction": "down",
+      "mentions": 6,
       "sources": [
         {
           "platform": "arxiv",
@@ -1954,15 +1998,6 @@
           "authors": "Viktor Danchev, Alex Dyer, Sebastian Grau et al.",
           "arxivCategory": "physics.acc-ph",
           "publishedAt": "2026-05-07T05:03:56.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Toward Scalable SDN for LEO Mega-Constellations: A Graph Learning Approach",
-          "url": "https://arxiv.org/abs/2604.27478",
-          "score": 200,
-          "authors": "Sivaram Krishnan, Bassel Al Homssi, Zhouyou Gu et al.",
-          "arxivCategory": "cs.LG",
-          "publishedAt": "2026-04-30T06:19:46.000Z"
         },
         {
           "platform": "hackernews",
@@ -2019,20 +2054,11 @@
     {
       "slug": "artemis",
       "label": "Artemis & Lunar Return",
-      "score": 603,
-      "delta": 0,
-      "direction": "steady",
-      "mentions": 4,
+      "score": 403,
+      "delta": -33,
+      "direction": "down",
+      "mentions": 3,
       "sources": [
-        {
-          "platform": "arxiv",
-          "title": "Comparison of two laser wavelengths for LIBS bioimaging of plants grown in lunar regolith",
-          "url": "https://arxiv.org/abs/2604.27941",
-          "score": 200,
-          "authors": "T. Vozár, L. Čechová, J. Buday et al.",
-          "arxivCategory": "physics.optics",
-          "publishedAt": "2026-04-30T14:41:02.000Z"
-        },
         {
           "platform": "arxiv",
           "title": "Efficient Nonlinear Uncertainty Quantification for Spaceflight Leveraging Nonlinear Expansions",
@@ -2073,58 +2099,6 @@
         "connections": 0,
         "convergence": 0.025,
         "deepTopic": 0.8,
-        "pantheon": 0.08,
-        "graveyard": 0
-      }
-    },
-    {
-      "slug": "asteroid-mining",
-      "label": "Asteroid Mining",
-      "score": 600,
-      "delta": -25,
-      "direction": "down",
-      "mentions": 3,
-      "sources": [
-        {
-          "platform": "arxiv",
-          "title": "The dynamical structure of the Earth co-orbital region and implications for the near-Earth asteroid population",
-          "url": "https://arxiv.org/abs/2605.27683",
-          "score": 200,
-          "authors": "Marco Fenucci, Óscar Rodríguez, Melaine Saillenfest et al.",
-          "arxivCategory": "astro-ph.EP",
-          "publishedAt": "2026-05-26T21:02:14.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Accessible does not mean exploitable: HiPERCAM reveals the ultra-fast rotation of 2022 OB$_5$",
-          "url": "https://arxiv.org/abs/2605.04784",
-          "score": 200,
-          "authors": "Miguel R. Alarcon, Javier Licandro, Miquel Serra-Ricart et al.",
-          "arxivCategory": "astro-ph.EP",
-          "publishedAt": "2026-05-06T11:37:55.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "JWST Observations of Asteroid 2024 YR4 Rule Out a 2032 Lunar Impact and Demonstrate a New Regime for Planetary Defense Follow-up",
-          "url": "https://arxiv.org/abs/2605.20498",
-          "score": 200,
-          "authors": "Julien de Wit, Andrew S. Rivkin, Marco Micheli et al.",
-          "arxivCategory": "astro-ph.EP",
-          "publishedAt": "2026-05-19T21:06:11.000Z"
-        }
-      ],
-      "relatedConceptSlugs": [
-        "project-rama",
-        "gravity-poppers"
-      ],
-      "resonance": 43,
-      "quadrant": "dead-zone",
-      "resonanceSignals": {
-        "conceptDepth": 0.6131471927654584,
-        "editorial": 1,
-        "connections": 0,
-        "convergence": 0.3,
-        "deepTopic": 0,
         "pantheon": 0.08,
         "graveyard": 0
       }
@@ -2262,10 +2236,10 @@
     {
       "slug": "mars",
       "label": "Mars Exploration",
-      "score": 204,
-      "delta": -1,
+      "score": 200,
+      "delta": -2,
       "direction": "steady",
-      "mentions": 2,
+      "mentions": 1,
       "sources": [
         {
           "platform": "arxiv",
@@ -2275,15 +2249,6 @@
           "authors": "Jiandong Liu, François Forget, Ehouarn Millour et al.",
           "arxivCategory": "astro-ph.EP",
           "publishedAt": "2026-05-20T20:44:20.000Z"
-        },
-        {
-          "platform": "hackernews",
-          "title": "Bruce Balfour's favorite science fiction novels about Mars colonization",
-          "url": "https://bookdna.com/best-books/science-fiction-about-mars-colonization",
-          "score": 4,
-          "author": "bwb",
-          "commentCount": 1,
-          "publishedAt": "2026-05-23T11:23:31.000Z"
         }
       ],
       "relatedConceptSlugs": [
