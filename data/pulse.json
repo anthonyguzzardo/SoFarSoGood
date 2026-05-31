@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-31T08:39:19.927Z",
+  "generatedAt": "2026-05-31T19:22:25.043Z",
   "topics": [
     {
       "slug": "gravitational-waves",
@@ -136,10 +136,10 @@
     {
       "slug": "quantum-computing",
       "label": "Quantum Computing",
-      "score": 7975,
+      "score": 7976,
       "delta": 0,
       "direction": "steady",
-      "mentions": 51,
+      "mentions": 52,
       "sources": [
         {
           "platform": "arxiv",
@@ -268,10 +268,10 @@
     {
       "slug": "nanotechnology",
       "label": "Nanotechnology & Metamaterials",
-      "score": 7808,
-      "delta": 0,
+      "score": 7609,
+      "delta": -3,
       "direction": "steady",
-      "mentions": 41,
+      "mentions": 40,
       "sources": [
         {
           "platform": "arxiv",
@@ -401,10 +401,10 @@
     {
       "slug": "black-holes",
       "label": "Black Holes",
-      "score": 7421,
+      "score": 7419,
       "delta": 0,
       "direction": "steady",
-      "mentions": 41,
+      "mentions": 40,
       "sources": [
         {
           "platform": "arxiv",
@@ -534,10 +534,10 @@
     {
       "slug": "space-telescopes",
       "label": "Space Telescopes",
-      "score": 6600,
+      "score": 6603,
       "delta": 0,
       "direction": "steady",
-      "mentions": 33,
+      "mentions": 34,
       "sources": [
         {
           "platform": "arxiv",
@@ -931,7 +931,7 @@
       "slug": "cosmology",
       "label": "Cosmology",
       "score": 5400,
-      "delta": -4,
+      "delta": 0,
       "direction": "steady",
       "mentions": 27,
       "sources": [
@@ -1062,10 +1062,10 @@
     {
       "slug": "condensed-matter",
       "label": "Condensed Matter",
-      "score": 5002,
-      "delta": 0,
+      "score": 4602,
+      "delta": -8,
       "direction": "steady",
-      "mentions": 26,
+      "mentions": 24,
       "sources": [
         {
           "platform": "arxiv",
@@ -1102,15 +1102,6 @@
           "authors": "Jiu Hui Wu, Hua Tian, Kejiang Zhou",
           "arxivCategory": "cond-mat.supr-con",
           "publishedAt": "2026-05-04T14:10:30.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Model-agnostic cooling algorithms for strongly interacting fermions",
-          "url": "https://arxiv.org/abs/2605.01029",
-          "score": 200,
-          "authors": "Henning Schlömer, Liyuan Chen, Susanne F. Yelin et al.",
-          "arxivCategory": "cond-mat.str-el",
-          "publishedAt": "2026-05-01T18:50:29.000Z"
         },
         {
           "platform": "arxiv",
@@ -1174,6 +1165,15 @@
           "authors": "Matthias Kronseder, Thomas Mayer, Jan Minár et al.",
           "arxivCategory": "cond-mat.mtrl-sci",
           "publishedAt": "2026-05-21T12:01:42.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Topological semimetals: surface transport and spin effects",
+          "url": "https://arxiv.org/abs/2605.22278",
+          "score": 200,
+          "authors": "E. V. Deviatov",
+          "arxivCategory": "cond-mat.mes-hall",
+          "publishedAt": "2026-05-21T10:24:33.000Z"
         }
       ],
       "relatedConceptSlugs": [
@@ -1575,7 +1575,7 @@
       "slug": "fusion-propulsion",
       "label": "Fusion Propulsion",
       "score": 1205,
-      "delta": -14,
+      "delta": 0,
       "direction": "steady",
       "mentions": 7,
       "sources": [
@@ -1663,16 +1663,16 @@
     {
       "slug": "starship",
       "label": "Starship & SpaceX",
-      "score": 942,
-      "delta": 10,
+      "score": 966,
+      "delta": 8,
       "direction": "steady",
-      "mentions": 36,
+      "mentions": 37,
       "sources": [
         {
           "platform": "hackernews",
           "title": "Danish pension fund excludes SpaceX citing governance and valuation",
           "url": "https://www.reuters.com/legal/transactional/danish-pension-fund-excludes-spacex-citing-governance-valuation-2026-05-29/",
-          "score": 458,
+          "score": 461,
           "author": "vrganj",
           "commentCount": 12,
           "publishedAt": "2026-05-30T08:00:20.000Z"
@@ -1681,9 +1681,9 @@
           "platform": "hackernews",
           "title": "Danish Pension Blacklists SpaceX over 'Catastrophic Governance'",
           "url": "https://www.bloomberg.com/news/articles/2026-05-29/danish-pension-fund-blacklists-spacex-citing-governance-issues",
-          "score": 267,
+          "score": 274,
           "author": "leopoldj",
-          "commentCount": 499,
+          "commentCount": 505,
           "publishedAt": "2026-05-29T15:11:23.000Z"
         },
         {
@@ -1699,10 +1699,19 @@
           "platform": "hackernews",
           "title": "Danish pension fund blacklists SpaceX, says way overvalued with bad governance",
           "url": "https://thenextweb.com/news/danish-pension-spacex-blacklist-governance-overvalued",
-          "score": 19,
+          "score": 21,
           "author": "NewCzech",
           "commentCount": 0,
           "publishedAt": "2026-05-30T15:40:58.000Z"
+        },
+        {
+          "platform": "hackernews",
+          "title": "The SpaceX IPO is great for Elon Musk and terrible for you",
+          "url": "https://www.theverge.com/ai-artificial-intelligence/940001/elon-musk-spacex-ipo-ai",
+          "score": 20,
+          "author": "1vuio0pswjnm7",
+          "commentCount": 4,
+          "publishedAt": "2026-05-31T05:34:42.000Z"
         },
         {
           "platform": "hackernews",
@@ -1712,15 +1721,6 @@
           "author": "1vuio0pswjnm7",
           "commentCount": 1,
           "publishedAt": "2026-05-26T17:29:25.000Z"
-        },
-        {
-          "platform": "hackernews",
-          "title": "The SpaceX IPO is great for Elon Musk and terrible for you",
-          "url": "https://www.theverge.com/ai-artificial-intelligence/940001/elon-musk-spacex-ipo-ai",
-          "score": 14,
-          "author": "1vuio0pswjnm7",
-          "commentCount": 3,
-          "publishedAt": "2026-05-31T05:34:42.000Z"
         },
         {
           "platform": "hackernews",
@@ -1968,8 +1968,8 @@
       "slug": "starlink",
       "label": "Starlink & Satellite Internet",
       "score": 415,
-      "delta": -33,
-      "direction": "down",
+      "delta": 0,
+      "direction": "steady",
       "mentions": 6,
       "sources": [
         {
@@ -2046,8 +2046,8 @@
       "slug": "artemis",
       "label": "Artemis & Lunar Return",
       "score": 403,
-      "delta": -33,
-      "direction": "down",
+      "delta": 0,
+      "direction": "steady",
       "mentions": 3,
       "sources": [
         {
@@ -2228,7 +2228,7 @@
       "slug": "mars",
       "label": "Mars Exploration",
       "score": 200,
-      "delta": -2,
+      "delta": 0,
       "direction": "steady",
       "mentions": 1,
       "sources": [
