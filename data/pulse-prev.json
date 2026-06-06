@@ -1,13 +1,13 @@
 {
-  "generatedAt": "2026-06-05T19:59:28.827Z",
+  "generatedAt": "2026-06-06T08:28:59.269Z",
   "topics": [
     {
       "slug": "nanotechnology",
       "label": "Nanotechnology & Metamaterials",
-      "score": 8400,
-      "delta": 10,
+      "score": 8200,
+      "delta": 5,
       "direction": "steady",
-      "mentions": 42,
+      "mentions": 41,
       "sources": [
         {
           "platform": "arxiv",
@@ -138,7 +138,7 @@
       "slug": "black-holes",
       "label": "Black Holes",
       "score": 7432,
-      "delta": 0,
+      "delta": 3,
       "direction": "steady",
       "mentions": 45,
       "sources": [
@@ -402,10 +402,10 @@
     {
       "slug": "quantum-computing",
       "label": "Quantum Computing",
-      "score": 7089,
-      "delta": -11,
+      "score": 7073,
+      "delta": -9,
       "direction": "steady",
-      "mentions": 46,
+      "mentions": 44,
       "sources": [
         {
           "platform": "arxiv",
@@ -535,7 +535,7 @@
       "slug": "space-telescopes",
       "label": "Space Telescopes",
       "score": 6808,
-      "delta": 3,
+      "delta": 0,
       "direction": "steady",
       "mentions": 36,
       "sources": [
@@ -668,7 +668,7 @@
       "slug": "particle-physics",
       "label": "Particle Physics",
       "score": 6272,
-      "delta": 5,
+      "delta": 1,
       "direction": "steady",
       "mentions": 34,
       "sources": [
@@ -792,138 +792,6 @@
         "deepTopic": 0,
         "pantheon": 0.92,
         "graveyard": 0.3333333333333333
-      }
-    },
-    {
-      "slug": "cosmology",
-      "label": "Cosmology",
-      "score": 6000,
-      "delta": 11,
-      "direction": "steady",
-      "mentions": 30,
-      "sources": [
-        {
-          "platform": "arxiv",
-          "title": "The Atacama Cosmology Telescope: Probing new signatures of ultralight axions with gravitational lensing",
-          "url": "https://arxiv.org/abs/2606.06410",
-          "score": 200,
-          "authors": "Alex Laguë, Keir K. Rogers, Mathew S. Madhavacheril et al.",
-          "arxivCategory": "astro-ph.CO",
-          "publishedAt": "2026-06-04T17:14:22.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "On the potential for inhomogeneities to mimic an evolving dark energy",
-          "url": "https://arxiv.org/abs/2606.05479",
-          "score": 200,
-          "authors": "Hayley J. Macpherson, Georgios Valogiannis",
-          "arxivCategory": "astro-ph.CO",
-          "publishedAt": "2026-06-03T21:57:07.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "The DESI results impact the local determination of $H_0$",
-          "url": "https://arxiv.org/abs/2606.05358",
-          "score": 200,
-          "authors": "Michael S. Turner, Dragan Huterer",
-          "arxivCategory": "astro-ph.CO",
-          "publishedAt": "2026-06-03T19:02:37.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "CMB Bounds on Primordial Black Holes via Radiation Capture",
-          "url": "https://arxiv.org/abs/2606.05133",
-          "score": 200,
-          "authors": "Marzieh Farhang, S. M. S. Movahed",
-          "arxivCategory": "astro-ph.CO",
-          "publishedAt": "2026-06-03T17:38:04.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Neutrino mass constraints in interacting dark energy models after DESI DR2",
-          "url": "https://arxiv.org/abs/2606.05005",
-          "score": 200,
-          "authors": "Hui Li, Guo-Hong Du, Tian-Nuo Li et al.",
-          "arxivCategory": "astro-ph.CO",
-          "publishedAt": "2026-06-03T15:26:36.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Field-level constraints on cosmic birefringence with a hybrid $E$-$B$ internal linear combination",
-          "url": "https://arxiv.org/abs/2606.02897",
-          "score": 200,
-          "authors": "Mathieu Remazeilles",
-          "arxivCategory": "astro-ph.CO",
-          "publishedAt": "2026-06-01T21:12:20.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "A short review on Quintom dark energy theory",
-          "url": "https://arxiv.org/abs/2606.01360",
-          "score": 200,
-          "authors": "Xin Ren, Si-Yu Li, Yang Liu et al.",
-          "arxivCategory": "astro-ph.CO",
-          "publishedAt": "2026-05-31T17:31:59.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "The Radio--X-ray Correlation of High-Redshift AGN: A Numerical Study of Inverse-Compton Scattering of the CMB Photons in Relativistic Jets",
-          "url": "https://arxiv.org/abs/2606.00721",
-          "score": 200,
-          "authors": "Aditya Sharma, Bhargav Vaidya, Silvia Belladitta et al.",
-          "arxivCategory": "astro-ph.HE",
-          "publishedAt": "2026-05-30T13:18:16.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "The sound of dynamical dark energy and modified gravity",
-          "url": "https://arxiv.org/abs/2606.00411",
-          "score": 200,
-          "authors": "João Rebouças, Guilherme Brando, Felipe T. Falciano et al.",
-          "arxivCategory": "astro-ph.CO",
-          "publishedAt": "2026-05-29T23:05:25.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Constraining Extragalactic Proper Motion with Gaia Astrometry",
-          "url": "https://arxiv.org/abs/2606.00280",
-          "score": 200,
-          "authors": "Sean Maloney, Tianqing Zhang, Rupert Croft et al.",
-          "arxivCategory": "astro-ph.GA",
-          "publishedAt": "2026-05-29T19:16:56.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Late-time Quantum Vacuum Decay and its Cosmological Implications",
-          "url": "https://arxiv.org/abs/2605.30259",
-          "score": 200,
-          "authors": "Yang Bai, Sida Lu, Nicholas Orlofsky",
-          "arxivCategory": "astro-ph.CO",
-          "publishedAt": "2026-05-28T17:22:19.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "The Ellis and Baldwin test of the Cosmic Dipole: Exploring the impact of multiple flux density cuts",
-          "url": "https://arxiv.org/abs/2605.27520",
-          "score": 200,
-          "authors": "Vasudev Mittal, Geraint F. Lewis",
-          "arxivCategory": "astro-ph.CO",
-          "publishedAt": "2026-05-26T18:00:08.000Z"
-        }
-      ],
-      "relatedConceptSlugs": [
-        "gravity-observation-and-dark-energy-detection-explorer"
-      ],
-      "resonance": 48,
-      "quadrant": "hype-cycle",
-      "resonanceSignals": {
-        "conceptDepth": 0.6131471927654584,
-        "editorial": 1,
-        "connections": 0.3333333333333333,
-        "convergence": 0.1,
-        "deepTopic": 0,
-        "pantheon": 0.92,
-        "graveyard": 0.19999999999999998
       }
     },
     {
@@ -1060,10 +928,142 @@
       }
     },
     {
+      "slug": "cosmology",
+      "label": "Cosmology",
+      "score": 5800,
+      "delta": 7,
+      "direction": "steady",
+      "mentions": 29,
+      "sources": [
+        {
+          "platform": "arxiv",
+          "title": "The Atacama Cosmology Telescope: Probing new signatures of ultralight axions with gravitational lensing",
+          "url": "https://arxiv.org/abs/2606.06410",
+          "score": 200,
+          "authors": "Alex Laguë, Keir K. Rogers, Mathew S. Madhavacheril et al.",
+          "arxivCategory": "astro-ph.CO",
+          "publishedAt": "2026-06-04T17:14:22.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "On the potential for inhomogeneities to mimic an evolving dark energy",
+          "url": "https://arxiv.org/abs/2606.05479",
+          "score": 200,
+          "authors": "Hayley J. Macpherson, Georgios Valogiannis",
+          "arxivCategory": "astro-ph.CO",
+          "publishedAt": "2026-06-03T21:57:07.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "The DESI results impact the local determination of $H_0$",
+          "url": "https://arxiv.org/abs/2606.05358",
+          "score": 200,
+          "authors": "Michael S. Turner, Dragan Huterer",
+          "arxivCategory": "astro-ph.CO",
+          "publishedAt": "2026-06-03T19:02:37.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "CMB Bounds on Primordial Black Holes via Radiation Capture",
+          "url": "https://arxiv.org/abs/2606.05133",
+          "score": 200,
+          "authors": "Marzieh Farhang, S. M. S. Movahed",
+          "arxivCategory": "astro-ph.CO",
+          "publishedAt": "2026-06-03T17:38:04.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Neutrino mass constraints in interacting dark energy models after DESI DR2",
+          "url": "https://arxiv.org/abs/2606.05005",
+          "score": 200,
+          "authors": "Hui Li, Guo-Hong Du, Tian-Nuo Li et al.",
+          "arxivCategory": "astro-ph.CO",
+          "publishedAt": "2026-06-03T15:26:36.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Field-level constraints on cosmic birefringence with a hybrid $E$-$B$ internal linear combination",
+          "url": "https://arxiv.org/abs/2606.02897",
+          "score": 200,
+          "authors": "Mathieu Remazeilles",
+          "arxivCategory": "astro-ph.CO",
+          "publishedAt": "2026-06-01T21:12:20.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "A short review on Quintom dark energy theory",
+          "url": "https://arxiv.org/abs/2606.01360",
+          "score": 200,
+          "authors": "Xin Ren, Si-Yu Li, Yang Liu et al.",
+          "arxivCategory": "astro-ph.CO",
+          "publishedAt": "2026-05-31T17:31:59.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "The Radio--X-ray Correlation of High-Redshift AGN: A Numerical Study of Inverse-Compton Scattering of the CMB Photons in Relativistic Jets",
+          "url": "https://arxiv.org/abs/2606.00721",
+          "score": 200,
+          "authors": "Aditya Sharma, Bhargav Vaidya, Silvia Belladitta et al.",
+          "arxivCategory": "astro-ph.HE",
+          "publishedAt": "2026-05-30T13:18:16.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "The sound of dynamical dark energy and modified gravity",
+          "url": "https://arxiv.org/abs/2606.00411",
+          "score": 200,
+          "authors": "João Rebouças, Guilherme Brando, Felipe T. Falciano et al.",
+          "arxivCategory": "astro-ph.CO",
+          "publishedAt": "2026-05-29T23:05:25.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Constraining Extragalactic Proper Motion with Gaia Astrometry",
+          "url": "https://arxiv.org/abs/2606.00280",
+          "score": 200,
+          "authors": "Sean Maloney, Tianqing Zhang, Rupert Croft et al.",
+          "arxivCategory": "astro-ph.GA",
+          "publishedAt": "2026-05-29T19:16:56.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Late-time Quantum Vacuum Decay and its Cosmological Implications",
+          "url": "https://arxiv.org/abs/2605.30259",
+          "score": 200,
+          "authors": "Yang Bai, Sida Lu, Nicholas Orlofsky",
+          "arxivCategory": "astro-ph.CO",
+          "publishedAt": "2026-05-28T17:22:19.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "The Ellis and Baldwin test of the Cosmic Dipole: Exploring the impact of multiple flux density cuts",
+          "url": "https://arxiv.org/abs/2605.27520",
+          "score": 200,
+          "authors": "Vasudev Mittal, Geraint F. Lewis",
+          "arxivCategory": "astro-ph.CO",
+          "publishedAt": "2026-05-26T18:00:08.000Z"
+        }
+      ],
+      "relatedConceptSlugs": [
+        "gravity-observation-and-dark-energy-detection-explorer"
+      ],
+      "resonance": 48,
+      "quadrant": "hype-cycle",
+      "resonanceSignals": {
+        "conceptDepth": 0.6131471927654584,
+        "editorial": 1,
+        "connections": 0.3333333333333333,
+        "convergence": 0.1,
+        "deepTopic": 0,
+        "pantheon": 0.92,
+        "graveyard": 0.19999999999999998
+      }
+    },
+    {
       "slug": "condensed-matter",
       "label": "Condensed Matter",
-      "score": 5128,
-      "delta": 11,
+      "score": 4937,
+      "delta": -6,
       "direction": "steady",
       "mentions": 27,
       "sources": [
@@ -1194,10 +1194,10 @@
     {
       "slug": "astrobiology",
       "label": "Astrobiology",
-      "score": 4005,
-      "delta": 43,
+      "score": 3805,
+      "delta": 36,
       "direction": "up",
-      "mentions": 21,
+      "mentions": 20,
       "sources": [
         {
           "platform": "arxiv",
@@ -1327,8 +1327,8 @@
     {
       "slug": "starship",
       "label": "Starship & SpaceX",
-      "score": 3094,
-      "delta": 220,
+      "score": 3153,
+      "delta": 212,
       "direction": "up",
       "mentions": 51,
       "sources": [
@@ -1336,9 +1336,9 @@
           "platform": "hackernews",
           "title": "SpaceX, Other Mega IPOs Denied Fast Index Entry by S&P",
           "url": "https://www.bloomberg.com/news/articles/2026-06-04/s-p-dow-jones-keeps-megacap-ipo-rules-as-is-after-consultation",
-          "score": 894,
+          "score": 990,
           "author": "tristanj",
-          "commentCount": 475,
+          "commentCount": 500,
           "publishedAt": "2026-06-04T22:48:19.000Z"
         },
         {
@@ -1347,17 +1347,17 @@
           "url": "https://www.economist.com/finance-and-economics/2026/06/01/can-the-stockmarket-swallow-anthropic-spacex-and-openai",
           "score": 717,
           "author": "1vuio0pswjnm7",
-          "commentCount": 1264,
+          "commentCount": 1265,
           "publishedAt": "2026-06-01T23:45:46.000Z"
         },
         {
           "platform": "hackernews",
-          "title": "Danish pension fund excludes SpaceX citing governance and valuation",
-          "url": "https://www.reuters.com/legal/transactional/danish-pension-fund-excludes-spacex-citing-governance-valuation-2026-05-29/",
-          "score": 470,
-          "author": "vrganj",
-          "commentCount": 12,
-          "publishedAt": "2026-05-30T08:00:20.000Z"
+          "title": "S&P 500 rejects SpaceX, also blocking entry for OpenAI and Anthropic",
+          "url": "https://arstechnica.com/tech-policy/2026/06/sp-500-blocks-fast-spacex-entry-wont-waive-rule-for-unprofitable-ai-firms/",
+          "score": 320,
+          "author": "maltalex",
+          "commentCount": 95,
+          "publishedAt": "2026-06-06T04:38:36.000Z"
         },
         {
           "platform": "hackernews",
@@ -1372,7 +1372,7 @@
           "platform": "hackernews",
           "title": "The SpaceX IPO will be the theft of the century",
           "url": "https://montanaskeptic.substack.com/p/the-spacex-ipo-will-be-the-theft",
-          "score": 140,
+          "score": 141,
           "author": "400thecat",
           "commentCount": 121,
           "publishedAt": "2026-06-04T04:52:37.000Z"
@@ -1397,6 +1397,15 @@
         },
         {
           "platform": "hackernews",
+          "title": "Google to pay SpaceX $920M a month for compute capacity at xAI data centers",
+          "url": "https://www.cnbc.com/2026/06/05/google-to-pay-spacex-920-million-a-month-for-xai-compute-capacity.html",
+          "score": 75,
+          "author": "toephu2",
+          "commentCount": 95,
+          "publishedAt": "2026-06-05T20:06:36.000Z"
+        },
+        {
+          "platform": "hackernews",
           "title": "S&P Global keeps fast index entry rules unchanged as SpaceX listing looms",
           "url": "https://www.reuters.com/business/finance/sp-global-keeps-fast-entry-proposal-unchanged-spacex-listing-looms-2026-06-04/",
           "score": 49,
@@ -1414,30 +1423,21 @@
           "publishedAt": "2026-06-05T03:59:29.000Z"
         },
         {
+          "platform": "hackernews",
+          "title": "Google Buying Computing from SpaceX in $920M-a-Month Deal",
+          "url": "https://www.bloomberg.com/news/articles/2026-06-05/google-buying-computing-from-spacex-in-920-million-a-month-deal",
+          "score": 36,
+          "author": "berlianta",
+          "commentCount": 3,
+          "publishedAt": "2026-06-05T19:15:50.000Z"
+        },
+        {
           "platform": "youtube",
           "title": "We Uncovered a Hidden Wealth Transfer in the SpaceX IPO. You're Holding the Bag [video]",
           "url": "https://www.youtube.com/watch?v=sYA-z0Y8WRQ",
-          "score": 27,
+          "score": 29,
           "thumbnail": "https://img.youtube.com/vi/sYA-z0Y8WRQ/mqdefault.jpg",
           "publishedAt": "2026-06-03T22:32:44.000Z"
-        },
-        {
-          "platform": "hackernews",
-          "title": "We Uncovered a Hidden Wealth Transfer in the SpaceX IPO. You're Holding the Bag [video]",
-          "url": "https://www.youtube.com/watch?v=sYA-z0Y8WRQ",
-          "score": 27,
-          "author": "CharlesW",
-          "commentCount": 7,
-          "publishedAt": "2026-06-03T22:32:44.000Z"
-        },
-        {
-          "platform": "hackernews",
-          "title": "How Not to Buy SpaceX Stock (It's Harder Than You Think)",
-          "url": "https://cranberries.medium.com/how-not-to-buy-spacex-stock-its-harder-than-you-think-a37610cb8bd3",
-          "score": 22,
-          "author": "clktmr",
-          "commentCount": 7,
-          "publishedAt": "2026-06-01T08:50:39.000Z"
         }
       ],
       "relatedConceptSlugs": [
@@ -1591,10 +1591,10 @@
     {
       "slug": "exoplanets",
       "label": "Exoplanets",
-      "score": 2414,
-      "delta": 21,
-      "direction": "up",
-      "mentions": 15,
+      "score": 2215,
+      "delta": 11,
+      "direction": "steady",
+      "mentions": 14,
       "sources": [
         {
           "platform": "arxiv",
@@ -1613,15 +1613,6 @@
           "authors": "Luigi Santamaria Amato, Danilo Triggiani, Cosmo Lupo",
           "arxivCategory": "quant-ph",
           "publishedAt": "2026-05-15T13:12:00.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Finding Alien Worlds in Queensland -- A Decade of MINERVA-Australis",
-          "url": "https://arxiv.org/abs/2605.05449",
-          "score": 200,
-          "authors": "Jonathan Horner, Robert A. Wittenmyer, Stephen R. Kane et al.",
-          "arxivCategory": "astro-ph.EP",
-          "publishedAt": "2026-05-06T21:22:10.000Z"
         },
         {
           "platform": "arxiv",
@@ -1703,6 +1694,15 @@
           "authors": "Songtao Huang, Xingyu Li, Jianyi Chen et al.",
           "arxivCategory": "cond-mat.quant-gas",
           "publishedAt": "2026-05-07T17:59:55.000Z"
+        },
+        {
+          "platform": "hackernews",
+          "title": "'An equal and habitable world is possible' Vision for planetary survival",
+          "url": "https://www.theguardian.com/environment/2026/jun/04/world-inequality-lab-equality-academics-planetary-survival",
+          "score": 8,
+          "author": "defrost",
+          "commentCount": 1,
+          "publishedAt": "2026-06-04T06:23:34.000Z"
         }
       ],
       "relatedConceptSlugs": [
@@ -1725,7 +1725,7 @@
       "slug": "fusion-propulsion",
       "label": "Fusion Propulsion",
       "score": 2000,
-      "delta": 66,
+      "delta": 42,
       "direction": "up",
       "mentions": 10,
       "sources": [
@@ -1838,75 +1838,6 @@
       }
     },
     {
-      "slug": "starlink",
-      "label": "Starlink & Satellite Internet",
-      "score": 1000,
-      "delta": 141,
-      "direction": "up",
-      "mentions": 5,
-      "sources": [
-        {
-          "platform": "arxiv",
-          "title": "CLIF: Cross-layer LEO-ISL Fingerprinting for Physical and Network Attack Detection in Dense LEO Constellations",
-          "url": "https://arxiv.org/abs/2606.04901",
-          "score": 200,
-          "authors": "Varun Kohli, Arijit Bhattacharjee, Samar Shailendra et al.",
-          "arxivCategory": "cs.CR",
-          "publishedAt": "2026-06-03T14:01:27.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Consistent Distributed Cooperative Localization for Ultra Large-Scale Multi-agent Systems",
-          "url": "https://arxiv.org/abs/2606.04872",
-          "score": 200,
-          "authors": "Leonardo Pedroso, W. P. M. H. Heemels, Pedro Batista",
-          "arxivCategory": "eess.SY",
-          "publishedAt": "2026-06-03T13:36:53.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Dynamic FDD for Spectrum Sharing in Non-Terrestrial Networks",
-          "url": "https://arxiv.org/abs/2606.04849",
-          "score": 200,
-          "authors": "Sourav Mukherjee, Bho Matthiesen, Armin Dekorsy et al.",
-          "arxivCategory": "cs.IT",
-          "publishedAt": "2026-06-03T13:16:00.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Impact of Satellite Constellations on Observations with the 80-cm Telescope and the Mini-SiTian at the Xinglong Observatory, NAOC",
-          "url": "https://arxiv.org/abs/2605.17948",
-          "score": 200,
-          "authors": "Jing Ren, Zhou Fan, Hong-rui Gu et al.",
-          "arxivCategory": "astro-ph.IM",
-          "publishedAt": "2026-05-18T07:05:29.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "The Case for Space-Based Particle Colliders: Orbital Infrastructure as a Path to Grand Unification Energy Scales",
-          "url": "https://arxiv.org/abs/2605.08239",
-          "score": 200,
-          "authors": "Viktor Danchev, Alex Dyer, Sebastian Grau et al.",
-          "arxivCategory": "physics.acc-ph",
-          "publishedAt": "2026-05-07T05:03:56.000Z"
-        }
-      ],
-      "relatedConceptSlugs": [
-        "sps-alpha"
-      ],
-      "resonance": 21,
-      "quadrant": "dead-zone",
-      "resonanceSignals": {
-        "conceptDepth": 0.22629438553091683,
-        "editorial": 0.7,
-        "connections": 0,
-        "convergence": 0,
-        "deepTopic": 0,
-        "pantheon": 0,
-        "graveyard": 0
-      }
-    },
-    {
       "slug": "dyson-spheres",
       "label": "Dyson Spheres",
       "score": 805,
@@ -1996,7 +1927,7 @@
       "slug": "artemis",
       "label": "Artemis & Lunar Return",
       "score": 800,
-      "delta": 99,
+      "delta": 100,
       "direction": "up",
       "mentions": 4,
       "sources": [
@@ -2054,11 +1985,71 @@
       }
     },
     {
+      "slug": "starlink",
+      "label": "Starlink & Satellite Internet",
+      "score": 800,
+      "delta": 93,
+      "direction": "up",
+      "mentions": 4,
+      "sources": [
+        {
+          "platform": "arxiv",
+          "title": "CLIF: Cross-layer LEO-ISL Fingerprinting for Physical and Network Attack Detection in Dense LEO Constellations",
+          "url": "https://arxiv.org/abs/2606.04901",
+          "score": 200,
+          "authors": "Varun Kohli, Arijit Bhattacharjee, Samar Shailendra et al.",
+          "arxivCategory": "cs.CR",
+          "publishedAt": "2026-06-03T14:01:27.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Consistent Distributed Cooperative Localization for Ultra Large-Scale Multi-agent Systems",
+          "url": "https://arxiv.org/abs/2606.04872",
+          "score": 200,
+          "authors": "Leonardo Pedroso, W. P. M. H. Heemels, Pedro Batista",
+          "arxivCategory": "eess.SY",
+          "publishedAt": "2026-06-03T13:36:53.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Dynamic FDD for Spectrum Sharing in Non-Terrestrial Networks",
+          "url": "https://arxiv.org/abs/2606.04849",
+          "score": 200,
+          "authors": "Sourav Mukherjee, Bho Matthiesen, Armin Dekorsy et al.",
+          "arxivCategory": "cs.IT",
+          "publishedAt": "2026-06-03T13:16:00.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Impact of Satellite Constellations on Observations with the 80-cm Telescope and the Mini-SiTian at the Xinglong Observatory, NAOC",
+          "url": "https://arxiv.org/abs/2605.17948",
+          "score": 200,
+          "authors": "Jing Ren, Zhou Fan, Hong-rui Gu et al.",
+          "arxivCategory": "astro-ph.IM",
+          "publishedAt": "2026-05-18T07:05:29.000Z"
+        }
+      ],
+      "relatedConceptSlugs": [
+        "sps-alpha"
+      ],
+      "resonance": 21,
+      "quadrant": "dead-zone",
+      "resonanceSignals": {
+        "conceptDepth": 0.22629438553091683,
+        "editorial": 0.7,
+        "connections": 0,
+        "convergence": 0,
+        "deepTopic": 0,
+        "pantheon": 0,
+        "graveyard": 0
+      }
+    },
+    {
       "slug": "asteroid-mining",
       "label": "Asteroid Mining",
       "score": 800,
-      "delta": 33,
-      "direction": "up",
+      "delta": 0,
+      "direction": "steady",
       "mentions": 4,
       "sources": [
         {
@@ -2118,8 +2109,8 @@
       "slug": "space-debris",
       "label": "Space Debris",
       "score": 602,
-      "delta": -25,
-      "direction": "down",
+      "delta": 0,
+      "direction": "steady",
       "mentions": 4,
       "sources": [
         {
