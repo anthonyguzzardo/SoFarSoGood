@@ -1,13 +1,13 @@
 {
-  "generatedAt": "2026-06-09T09:04:30.075Z",
+  "generatedAt": "2026-06-09T20:12:34.391Z",
   "topics": [
     {
       "slug": "black-holes",
       "label": "Black Holes",
-      "score": 8236,
+      "score": 8231,
       "delta": 8,
       "direction": "steady",
-      "mentions": 51,
+      "mentions": 49,
       "sources": [
         {
           "platform": "arxiv",
@@ -930,7 +930,7 @@
       "slug": "condensed-matter",
       "label": "Condensed Matter",
       "score": 5878,
-      "delta": 1,
+      "delta": 4,
       "direction": "steady",
       "mentions": 31,
       "sources": [
@@ -940,7 +940,7 @@
           "url": "https://discuss.grapheneos.org/d/36134-grapheneos-user-reported-to-authorities-for-using-grapheneos",
           "score": 459,
           "author": "Cider9986",
-          "commentCount": 487,
+          "commentCount": 490,
           "publishedAt": "2026-06-06T08:43:59.000Z"
         },
         {
@@ -1194,18 +1194,18 @@
     {
       "slug": "starship",
       "label": "Starship & SpaceX",
-      "score": 4461,
-      "delta": -10,
-      "direction": "steady",
+      "score": 4171,
+      "delta": -16,
+      "direction": "down",
       "mentions": 51,
       "sources": [
         {
           "platform": "hackernews",
           "title": "S&P 500 rejects SpaceX, also blocking entry for OpenAI and Anthropic",
           "url": "https://arstechnica.com/tech-policy/2026/06/sp-500-blocks-fast-spacex-entry-wont-waive-rule-for-unprofitable-ai-firms/",
-          "score": 1469,
+          "score": 1470,
           "author": "maltalex",
-          "commentCount": 498,
+          "commentCount": 499,
           "publishedAt": "2026-06-06T04:38:36.000Z"
         },
         {
@@ -1230,28 +1230,19 @@
           "platform": "hackernews",
           "title": "Google to pay SpaceX $920M a month for compute capacity at xAI data centers",
           "url": "https://www.cnbc.com/2026/06/05/google-to-pay-spacex-920-million-a-month-for-xai-compute-capacity.html",
-          "score": 316,
+          "score": 319,
           "author": "toephu2",
-          "commentCount": 923,
+          "commentCount": 928,
           "publishedAt": "2026-06-05T20:06:36.000Z"
         },
         {
           "platform": "hackernews",
           "title": "We Think the SpaceX IPO Is Overvalued",
           "url": "https://www.morningstar.com/stocks/why-we-think-spacex-ipo-is-overvalued?content_id=20768396545",
-          "score": 215,
+          "score": 252,
           "author": "0xedb",
-          "commentCount": 216,
+          "commentCount": 257,
           "publishedAt": "2026-06-09T01:56:40.000Z"
-        },
-        {
-          "platform": "hackernews",
-          "title": "Morningstar values SpaceX at $780B, half its IPO target",
-          "url": "https://www.reuters.com/business/media-telecom/morningstar-values-spacex-780-billion-half-its-ipo-target-2026-06-02/",
-          "score": 211,
-          "author": "berkeleyjunk",
-          "commentCount": 197,
-          "publishedAt": "2026-06-02T18:09:53.000Z"
         },
         {
           "platform": "hackernews",
@@ -1261,15 +1252,6 @@
           "author": "400thecat",
           "commentCount": 120,
           "publishedAt": "2026-06-04T04:52:37.000Z"
-        },
-        {
-          "platform": "hackernews",
-          "title": "Michael Burry says neither SpaceX nor Anthropic is worth $1T",
-          "url": "https://www.businessinsider.com/big-short-michael-burry-spacex-anthropic-ipo-ai-bubble-claude-2026-6",
-          "score": 134,
-          "author": "mgh2",
-          "commentCount": 155,
-          "publishedAt": "2026-06-02T10:09:21.000Z"
         },
         {
           "platform": "hackernews",
@@ -1306,6 +1288,23 @@
           "author": "berlianta",
           "commentCount": 3,
           "publishedAt": "2026-06-05T19:15:50.000Z"
+        },
+        {
+          "platform": "youtube",
+          "title": "We Uncovered a Hidden Wealth Transfer in the SpaceX IPO. You're Holding the Bag [video]",
+          "url": "https://www.youtube.com/watch?v=sYA-z0Y8WRQ",
+          "score": 29,
+          "thumbnail": "https://img.youtube.com/vi/sYA-z0Y8WRQ/mqdefault.jpg",
+          "publishedAt": "2026-06-03T22:32:44.000Z"
+        },
+        {
+          "platform": "hackernews",
+          "title": "We Uncovered a Hidden Wealth Transfer in the SpaceX IPO. You're Holding the Bag [video]",
+          "url": "https://www.youtube.com/watch?v=sYA-z0Y8WRQ",
+          "score": 29,
+          "author": "CharlesW",
+          "commentCount": 7,
+          "publishedAt": "2026-06-03T22:32:44.000Z"
         }
       ],
       "relatedConceptSlugs": [
@@ -1327,10 +1326,10 @@
     {
       "slug": "astrobiology",
       "label": "Astrobiology",
-      "score": 3805,
+      "score": 3800,
       "delta": 0,
       "direction": "steady",
-      "mentions": 20,
+      "mentions": 19,
       "sources": [
         {
           "platform": "arxiv",
@@ -1592,10 +1591,10 @@
     {
       "slug": "exoplanets",
       "label": "Exoplanets",
-      "score": 2215,
+      "score": 2212,
       "delta": 0,
       "direction": "steady",
-      "mentions": 14,
+      "mentions": 13,
       "sources": [
         {
           "platform": "arxiv",
@@ -1928,10 +1927,10 @@
     {
       "slug": "artemis",
       "label": "Artemis & Lunar Return",
-      "score": 1000,
+      "score": 1001,
       "delta": 25,
       "direction": "up",
-      "mentions": 5,
+      "mentions": 6,
       "sources": [
         {
           "platform": "arxiv",
@@ -1977,6 +1976,15 @@
           "authors": "Giacomo Acciarini, Dario Izzo, Zhong Zhang",
           "arxivCategory": "eess.SY",
           "publishedAt": "2026-05-22T15:40:39.000Z"
+        },
+        {
+          "platform": "hackernews",
+          "title": "NASA names Artemis III crew in next step to Moon landing",
+          "url": "https://www.bbc.com/news/live/c932y0gx4zdt",
+          "score": 1,
+          "author": "xoxxala",
+          "commentCount": 0,
+          "publishedAt": "2026-06-09T16:20:16.000Z"
         }
       ],
       "relatedConceptSlugs": [
@@ -2084,10 +2092,10 @@
     {
       "slug": "starlink",
       "label": "Starlink & Satellite Internet",
-      "score": 804,
+      "score": 805,
       "delta": 0,
       "direction": "steady",
-      "mentions": 5,
+      "mentions": 6,
       "sources": [
         {
           "platform": "arxiv",
@@ -2133,6 +2141,15 @@
           "author": "pinewurst",
           "commentCount": 0,
           "publishedAt": "2026-06-07T16:33:04.000Z"
+        },
+        {
+          "platform": "hackernews",
+          "title": "xAI Taps Starlink Staffer to Run Grok Training Team",
+          "url": "https://www.bloomberg.com/news/articles/2026-06-09/musk-s-xai-taps-starlink-staffer-to-run-grok-training-team",
+          "score": 1,
+          "author": "petethomas",
+          "commentCount": 0,
+          "publishedAt": "2026-06-09T12:34:09.000Z"
         }
       ],
       "relatedConceptSlugs": [
