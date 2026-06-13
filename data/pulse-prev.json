@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-12T20:15:45.268Z",
+  "generatedAt": "2026-06-13T08:51:59.733Z",
   "topics": [
     {
       "slug": "gravitational-waves",
@@ -136,10 +136,10 @@
     {
       "slug": "quantum-computing",
       "label": "Quantum Computing",
-      "score": 8411,
-      "delta": 2,
+      "score": 8413,
+      "delta": 0,
       "direction": "steady",
-      "mentions": 46,
+      "mentions": 48,
       "sources": [
         {
           "platform": "arxiv",
@@ -535,7 +535,7 @@
       "slug": "space-telescopes",
       "label": "Space Telescopes",
       "score": 7213,
-      "delta": 3,
+      "delta": 0,
       "direction": "steady",
       "mentions": 39,
       "sources": [
@@ -668,7 +668,7 @@
       "slug": "cosmology",
       "label": "Cosmology",
       "score": 6603,
-      "delta": 3,
+      "delta": 0,
       "direction": "steady",
       "mentions": 34,
       "sources": [
@@ -794,138 +794,6 @@
         "deepTopic": 0,
         "pantheon": 0.92,
         "graveyard": 0.19999999999999998
-      }
-    },
-    {
-      "slug": "condensed-matter",
-      "label": "Condensed Matter",
-      "score": 6480,
-      "delta": 0,
-      "direction": "steady",
-      "mentions": 34,
-      "sources": [
-        {
-          "platform": "hackernews",
-          "title": "GrapheneOS user reported to authorities for using GrapheneOS",
-          "url": "https://discuss.grapheneos.org/d/36134-grapheneos-user-reported-to-authorities-for-using-grapheneos",
-          "score": 461,
-          "author": "Cider9986",
-          "commentCount": 491,
-          "publishedAt": "2026-06-06T08:43:59.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Structural Changes and Transport Properties of $\\mathrm{YBa_2Cu_3O_7}$ Locally Modified by a He$^+$ Focused Ion Beam",
-          "url": "https://arxiv.org/abs/2606.12145",
-          "score": 200,
-          "authors": "Ross Carter, Robin Hutt, Paul Zimmermann et al.",
-          "arxivCategory": "cond-mat.supr-con",
-          "publishedAt": "2026-06-10T14:37:55.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Unveiling the Interplay of Charge and Magnetic Excitations in HgBa$_2$Ca$_2$Cu$_3$O$_{8+δ}$",
-          "url": "https://arxiv.org/abs/2606.11524",
-          "score": 200,
-          "authors": "Karn Rongrueangkul, Martina Fedele, Leonardo Martinelli et al.",
-          "arxivCategory": "cond-mat.supr-con",
-          "publishedAt": "2026-06-10T00:01:35.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Impact of mechanical constraints on tokamak design and implications for high field power plants",
-          "url": "https://arxiv.org/abs/2606.07201",
-          "score": 200,
-          "authors": "Timothe Auclair, Baptiste Boudes, Jean-Luc Duchateau et al.",
-          "arxivCategory": "physics.plasm-ph",
-          "publishedAt": "2026-06-05T12:10:11.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "What controls the superconducting dome of electron-doped FeSe?",
-          "url": "https://arxiv.org/abs/2605.31459",
-          "score": 200,
-          "authors": "Paul T. Malinowski, Chad J. Mowers, Yaoju Tarn et al.",
-          "arxivCategory": "cond-mat.supr-con",
-          "publishedAt": "2026-05-29T15:51:35.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Compact Experimental Negative TriAngUlarity Reactor (CENTAUR): A design study for a compact, affordable breakeven tokamak",
-          "url": "https://arxiv.org/abs/2605.27549",
-          "score": 200,
-          "authors": "The CENTAUR Collaboration, Samuel W. Freiberger, Evan Bursch et al.",
-          "arxivCategory": "physics.plasm-ph",
-          "publishedAt": "2026-05-26T18:17:36.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Signatures of Gaussian superconducting fluctuations in nonlocal noise magnetometry",
-          "url": "https://arxiv.org/abs/2605.18970",
-          "score": 200,
-          "authors": "Dror Orgad",
-          "arxivCategory": "cond-mat.supr-con",
-          "publishedAt": "2026-05-18T18:00:43.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Superconductivity in the pressure-amorphized topological insulator CrP$_4$",
-          "url": "https://arxiv.org/abs/2606.12241",
-          "score": 200,
-          "authors": "Chutong Zhang, Xiangzhuo Xing, Na Zuo et al.",
-          "arxivCategory": "cond-mat.supr-con",
-          "publishedAt": "2026-06-10T15:44:19.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Order parameters and ground-state phase diagram of the interacting topological Su-Schrieffer-Heeger model with extended-range hoppings",
-          "url": "https://arxiv.org/abs/2606.09201",
-          "score": 200,
-          "authors": "Tsz Hin Hui, Pedro D. Sacramento, Wing Chi Yu",
-          "arxivCategory": "cond-mat.str-el",
-          "publishedAt": "2026-06-08T08:33:11.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Nearly ballistic transport and high magnetic-field sensitivity in a $\\text{Bi}_4\\text{Br}_4$ topological Josephson weak link",
-          "url": "https://arxiv.org/abs/2606.08333",
-          "score": 200,
-          "authors": "Enamul Haque, Javier Cerrillo",
-          "arxivCategory": "cond-mat.supr-con",
-          "publishedAt": "2026-06-06T20:52:06.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Correlated $\\mathcal{PT}$-Symmetric Antiferromagnetic Topological Insulators with Giant Nonlinear Anomalous Thermoelectrics",
-          "url": "https://arxiv.org/abs/2606.08235",
-          "score": 200,
-          "authors": "Heng-Yu Di, Zhen-Gang Zhu, Gang Su",
-          "arxivCategory": "cond-mat.mes-hall",
-          "publishedAt": "2026-06-06T15:45:26.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Quantum Hall effect in vacancy-engineered $β$-Ag$_2$Te",
-          "url": "https://arxiv.org/abs/2606.05128",
-          "score": 200,
-          "authors": "Mizuki Ohno, Veronica Show, Reiley Dorrian et al.",
-          "arxivCategory": "cond-mat.mes-hall",
-          "publishedAt": "2026-06-03T17:32:10.000Z"
-        }
-      ],
-      "relatedConceptSlugs": [
-        "extreme-metamaterial-solar-sails"
-      ],
-      "resonance": 50,
-      "quadrant": "real-deal",
-      "resonanceSignals": {
-        "conceptDepth": 0.6131471927654584,
-        "editorial": 1,
-        "connections": 0.3333333333333333,
-        "convergence": 0.15,
-        "deepTopic": 0,
-        "pantheon": 0.92,
-        "graveyard": 0
       }
     },
     {
@@ -1059,10 +927,142 @@
       }
     },
     {
+      "slug": "condensed-matter",
+      "label": "Condensed Matter",
+      "score": 6007,
+      "delta": -10,
+      "direction": "steady",
+      "mentions": 32,
+      "sources": [
+        {
+          "platform": "arxiv",
+          "title": "Structural Changes and Transport Properties of $\\mathrm{YBa_2Cu_3O_7}$ Locally Modified by a He$^+$ Focused Ion Beam",
+          "url": "https://arxiv.org/abs/2606.12145",
+          "score": 200,
+          "authors": "Ross Carter, Robin Hutt, Paul Zimmermann et al.",
+          "arxivCategory": "cond-mat.supr-con",
+          "publishedAt": "2026-06-10T14:37:55.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Unveiling the Interplay of Charge and Magnetic Excitations in HgBa$_2$Ca$_2$Cu$_3$O$_{8+δ}$",
+          "url": "https://arxiv.org/abs/2606.11524",
+          "score": 200,
+          "authors": "Karn Rongrueangkul, Martina Fedele, Leonardo Martinelli et al.",
+          "arxivCategory": "cond-mat.supr-con",
+          "publishedAt": "2026-06-10T00:01:35.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Impact of mechanical constraints on tokamak design and implications for high field power plants",
+          "url": "https://arxiv.org/abs/2606.07201",
+          "score": 200,
+          "authors": "Timothe Auclair, Baptiste Boudes, Jean-Luc Duchateau et al.",
+          "arxivCategory": "physics.plasm-ph",
+          "publishedAt": "2026-06-05T12:10:11.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "What controls the superconducting dome of electron-doped FeSe?",
+          "url": "https://arxiv.org/abs/2605.31459",
+          "score": 200,
+          "authors": "Paul T. Malinowski, Chad J. Mowers, Yaoju Tarn et al.",
+          "arxivCategory": "cond-mat.supr-con",
+          "publishedAt": "2026-05-29T15:51:35.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Compact Experimental Negative TriAngUlarity Reactor (CENTAUR): A design study for a compact, affordable breakeven tokamak",
+          "url": "https://arxiv.org/abs/2605.27549",
+          "score": 200,
+          "authors": "The CENTAUR Collaboration, Samuel W. Freiberger, Evan Bursch et al.",
+          "arxivCategory": "physics.plasm-ph",
+          "publishedAt": "2026-05-26T18:17:36.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Signatures of Gaussian superconducting fluctuations in nonlocal noise magnetometry",
+          "url": "https://arxiv.org/abs/2605.18970",
+          "score": 200,
+          "authors": "Dror Orgad",
+          "arxivCategory": "cond-mat.supr-con",
+          "publishedAt": "2026-05-18T18:00:43.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Superconductivity in the pressure-amorphized topological insulator CrP$_4$",
+          "url": "https://arxiv.org/abs/2606.12241",
+          "score": 200,
+          "authors": "Chutong Zhang, Xiangzhuo Xing, Na Zuo et al.",
+          "arxivCategory": "cond-mat.supr-con",
+          "publishedAt": "2026-06-10T15:44:19.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Order parameters and ground-state phase diagram of the interacting topological Su-Schrieffer-Heeger model with extended-range hoppings",
+          "url": "https://arxiv.org/abs/2606.09201",
+          "score": 200,
+          "authors": "Tsz Hin Hui, Pedro D. Sacramento, Wing Chi Yu",
+          "arxivCategory": "cond-mat.str-el",
+          "publishedAt": "2026-06-08T08:33:11.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Nearly ballistic transport and high magnetic-field sensitivity in a $\\text{Bi}_4\\text{Br}_4$ topological Josephson weak link",
+          "url": "https://arxiv.org/abs/2606.08333",
+          "score": 200,
+          "authors": "Enamul Haque, Javier Cerrillo",
+          "arxivCategory": "cond-mat.supr-con",
+          "publishedAt": "2026-06-06T20:52:06.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Correlated $\\mathcal{PT}$-Symmetric Antiferromagnetic Topological Insulators with Giant Nonlinear Anomalous Thermoelectrics",
+          "url": "https://arxiv.org/abs/2606.08235",
+          "score": 200,
+          "authors": "Heng-Yu Di, Zhen-Gang Zhu, Gang Su",
+          "arxivCategory": "cond-mat.mes-hall",
+          "publishedAt": "2026-06-06T15:45:26.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Quantum Hall effect in vacancy-engineered $β$-Ag$_2$Te",
+          "url": "https://arxiv.org/abs/2606.05128",
+          "score": 200,
+          "authors": "Mizuki Ohno, Veronica Show, Reiley Dorrian et al.",
+          "arxivCategory": "cond-mat.mes-hall",
+          "publishedAt": "2026-06-03T17:32:10.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Coexistence of dipolar and quadrupolar higher-order topology",
+          "url": "https://arxiv.org/abs/2606.03950",
+          "score": 200,
+          "authors": "Konstantin Rodionenko, Maxim Mazanov, Maxim A. Gorlach",
+          "arxivCategory": "physics.optics",
+          "publishedAt": "2026-06-02T17:38:57.000Z"
+        }
+      ],
+      "relatedConceptSlugs": [
+        "extreme-metamaterial-solar-sails"
+      ],
+      "resonance": 50,
+      "quadrant": "real-deal",
+      "resonanceSignals": {
+        "conceptDepth": 0.6131471927654584,
+        "editorial": 1,
+        "connections": 0.3333333333333333,
+        "convergence": 0.15,
+        "deepTopic": 0,
+        "pantheon": 0.92,
+        "graveyard": 0
+      }
+    },
+    {
       "slug": "dark-matter",
       "label": "Dark Matter & Dark Energy",
       "score": 6001,
-      "delta": 3,
+      "delta": 0,
       "direction": "steady",
       "mentions": 31,
       "sources": [
@@ -1457,139 +1457,6 @@
       }
     },
     {
-      "slug": "starship",
-      "label": "Starship & SpaceX",
-      "score": 2740,
-      "delta": -33,
-      "direction": "down",
-      "mentions": 51,
-      "sources": [
-        {
-          "platform": "hackernews",
-          "title": "S&P 500 rejects SpaceX, also blocking entry for OpenAI and Anthropic",
-          "url": "https://arstechnica.com/tech-policy/2026/06/sp-500-blocks-fast-spacex-entry-wont-waive-rule-for-unprofitable-ai-firms/",
-          "score": 1477,
-          "author": "maltalex",
-          "commentCount": 501,
-          "publishedAt": "2026-06-06T04:38:36.000Z"
-        },
-        {
-          "platform": "hackernews",
-          "title": "Google will pay SpaceX $920M per month for compute",
-          "url": "https://techcrunch.com/2026/06/05/google-will-pay-spacex-920m-per-month-for-compute/",
-          "score": 415,
-          "author": "ramanan",
-          "commentCount": 2,
-          "publishedAt": "2026-06-06T11:46:15.000Z"
-        },
-        {
-          "platform": "hackernews",
-          "title": "We Think the SpaceX IPO Is Overvalued",
-          "url": "https://www.morningstar.com/stocks/why-we-think-spacex-ipo-is-overvalued?content_id=20768396545",
-          "score": 266,
-          "author": "0xedb",
-          "commentCount": 291,
-          "publishedAt": "2026-06-09T01:56:40.000Z"
-        },
-        {
-          "platform": "hackernews",
-          "title": "Why SpaceX 2040 Revenue FCST $4.3T in highly unlikely",
-          "url": "https://www.matteast.io/spacex-escape-velocity.html",
-          "score": 183,
-          "author": "meast",
-          "commentCount": 198,
-          "publishedAt": "2026-06-10T17:44:59.000Z"
-        },
-        {
-          "platform": "hackernews",
-          "title": "SpaceX's president is floating a Tesla merger as the company begins trading",
-          "url": "https://qz.com/spacex-tesla-merger-gwynne-shotwell-ipo-061226",
-          "score": 66,
-          "author": "andsoitis",
-          "commentCount": 102,
-          "publishedAt": "2026-06-12T13:47:21.000Z"
-        },
-        {
-          "platform": "hackernews",
-          "title": "Elon Musk Becomes First Trillionaire as SpaceX Starts Trading",
-          "url": "https://www.nytimes.com/live/2026/06/12/business/spacex-ipo-elon-musk/heres-the-latest",
-          "score": 22,
-          "author": "droidjj",
-          "commentCount": 36,
-          "publishedAt": "2026-06-12T16:13:49.000Z"
-        },
-        {
-          "platform": "hackernews",
-          "title": "Musk's SpaceX IPO Narrative Is a Whole New Level of Bullshit",
-          "url": "https://text.tchncs.de/chronik-des-laufenden-wahnsinns/h1elon-musk-has-spouted-his-fair-share-of-bullshit-but-his-latest-claims-about",
-          "score": 20,
-          "author": "doener",
-          "commentCount": 1,
-          "publishedAt": "2026-06-07T16:24:21.000Z"
-        },
-        {
-          "platform": "hackernews",
-          "title": "SpaceX increases almost 30% after biggest IPO",
-          "url": "https://www.cnbc.com/2026/06/12/spacex-ipo-spcx-live-updates.html",
-          "score": 19,
-          "author": "somenameforme",
-          "commentCount": 3,
-          "publishedAt": "2026-06-12T17:10:07.000Z"
-        },
-        {
-          "platform": "hackernews",
-          "title": "SpaceX officially prices shares at $135 in the largest IPO ever",
-          "url": "https://techcrunch.com/2026/06/11/spacex-officially-prices-shares-at-135-in-the-largest-ipo-ever/",
-          "score": 13,
-          "author": "7777777phil",
-          "commentCount": 1,
-          "publishedAt": "2026-06-11T22:36:35.000Z"
-        },
-        {
-          "platform": "hackernews",
-          "title": "SpaceX vaults over $2T valuation as stock jumps after record IPO",
-          "url": "https://www.reuters.com/legal/transactional/after-record-ipo-musks-spacex-faces-next-test-market-debut-2026-06-12/",
-          "score": 13,
-          "author": "JumpCrisscross",
-          "commentCount": 0,
-          "publishedAt": "2026-06-12T16:39:48.000Z"
-        },
-        {
-          "platform": "hackernews",
-          "title": "Musk's SpaceX prices record $75B IPO at $135 a share",
-          "url": "https://www.reuters.com/world/musks-spacex-prices-record-75-billion-ipo-135-share-2026-06-11/",
-          "score": 12,
-          "author": "TechTechTech",
-          "commentCount": 9,
-          "publishedAt": "2026-06-11T20:53:40.000Z"
-        },
-        {
-          "platform": "hackernews",
-          "title": "Google will pay SpaceX $920M per month for compute capacity",
-          "url": "https://twitter.com/JackKuhr/status/2062975800488394777",
-          "score": 12,
-          "author": "bear_with_me",
-          "commentCount": 4,
-          "publishedAt": "2026-06-06T01:28:50.000Z"
-        }
-      ],
-      "relatedConceptSlugs": [
-        "extraterrestrial-regolith-derived-atmospheric-entry-heat-shields",
-        "phase-i-final-report-nasa-institute-for-advanced-concepts-combined-heat-shield-a"
-      ],
-      "resonance": 43,
-      "quadrant": "hype-cycle",
-      "resonanceSignals": {
-        "conceptDepth": 0.5113915944693856,
-        "editorial": 0.4,
-        "connections": 0,
-        "convergence": 0.35,
-        "deepTopic": 1,
-        "pantheon": 0.92,
-        "graveyard": 0
-      }
-    },
-    {
       "slug": "fusion-propulsion",
       "label": "Fusion Propulsion",
       "score": 2202,
@@ -1836,7 +1703,7 @@
         "orbiting-rainbows"
       ],
       "resonance": 51,
-      "quadrant": "sleeping-giant",
+      "quadrant": "real-deal",
       "resonanceSignals": {
         "conceptDepth": 0.5113915944693856,
         "editorial": 1,
@@ -1844,6 +1711,139 @@
         "convergence": 0.15,
         "deepTopic": 0.8,
         "pantheon": 0.12,
+        "graveyard": 0
+      }
+    },
+    {
+      "slug": "starship",
+      "label": "Starship & SpaceX",
+      "score": 1302,
+      "delta": -56,
+      "direction": "down",
+      "mentions": 51,
+      "sources": [
+        {
+          "platform": "hackernews",
+          "title": "Google will pay SpaceX $920M per month for compute",
+          "url": "https://techcrunch.com/2026/06/05/google-will-pay-spacex-920m-per-month-for-compute/",
+          "score": 415,
+          "author": "ramanan",
+          "commentCount": 2,
+          "publishedAt": "2026-06-06T11:46:15.000Z"
+        },
+        {
+          "platform": "hackernews",
+          "title": "We Think the SpaceX IPO Is Overvalued",
+          "url": "https://www.morningstar.com/stocks/why-we-think-spacex-ipo-is-overvalued?content_id=20768396545",
+          "score": 266,
+          "author": "0xedb",
+          "commentCount": 293,
+          "publishedAt": "2026-06-09T01:56:40.000Z"
+        },
+        {
+          "platform": "hackernews",
+          "title": "Why SpaceX 2040 Revenue FCST $4.3T in highly unlikely",
+          "url": "https://www.matteast.io/spacex-escape-velocity.html",
+          "score": 184,
+          "author": "meast",
+          "commentCount": 198,
+          "publishedAt": "2026-06-10T17:44:59.000Z"
+        },
+        {
+          "platform": "hackernews",
+          "title": "SpaceX's president is floating a Tesla merger as the company begins trading",
+          "url": "https://qz.com/spacex-tesla-merger-gwynne-shotwell-ipo-061226",
+          "score": 71,
+          "author": "andsoitis",
+          "commentCount": 111,
+          "publishedAt": "2026-06-12T13:47:21.000Z"
+        },
+        {
+          "platform": "hackernews",
+          "title": "Elon Musk Becomes First Trillionaire as SpaceX Starts Trading",
+          "url": "https://www.nytimes.com/live/2026/06/12/business/spacex-ipo-elon-musk/heres-the-latest",
+          "score": 44,
+          "author": "droidjj",
+          "commentCount": 59,
+          "publishedAt": "2026-06-12T16:13:49.000Z"
+        },
+        {
+          "platform": "hackernews",
+          "title": "SpaceX increases almost 30% after biggest IPO",
+          "url": "https://www.cnbc.com/2026/06/12/spacex-ipo-spcx-live-updates.html",
+          "score": 30,
+          "author": "somenameforme",
+          "commentCount": 28,
+          "publishedAt": "2026-06-12T17:10:07.000Z"
+        },
+        {
+          "platform": "hackernews",
+          "title": "Musk's SpaceX IPO Narrative Is a Whole New Level of Bullshit",
+          "url": "https://text.tchncs.de/chronik-des-laufenden-wahnsinns/h1elon-musk-has-spouted-his-fair-share-of-bullshit-but-his-latest-claims-about",
+          "score": 20,
+          "author": "doener",
+          "commentCount": 1,
+          "publishedAt": "2026-06-07T16:24:21.000Z"
+        },
+        {
+          "platform": "hackernews",
+          "title": "Musk's SpaceX prices record $75B IPO at $135 a share",
+          "url": "https://www.reuters.com/world/musks-spacex-prices-record-75-billion-ipo-135-share-2026-06-11/",
+          "score": 13,
+          "author": "TechTechTech",
+          "commentCount": 9,
+          "publishedAt": "2026-06-11T20:53:40.000Z"
+        },
+        {
+          "platform": "hackernews",
+          "title": "SpaceX officially prices shares at $135 in the largest IPO ever",
+          "url": "https://techcrunch.com/2026/06/11/spacex-officially-prices-shares-at-135-in-the-largest-ipo-ever/",
+          "score": 13,
+          "author": "7777777phil",
+          "commentCount": 1,
+          "publishedAt": "2026-06-11T22:36:35.000Z"
+        },
+        {
+          "platform": "hackernews",
+          "title": "SpaceX vaults over $2T valuation as stock jumps after record IPO",
+          "url": "https://www.reuters.com/legal/transactional/after-record-ipo-musks-spacex-faces-next-test-market-debut-2026-06-12/",
+          "score": 13,
+          "author": "JumpCrisscross",
+          "commentCount": 0,
+          "publishedAt": "2026-06-12T16:39:48.000Z"
+        },
+        {
+          "platform": "hackernews",
+          "title": "Why Morningstar believes the SpaceX IPO is overvalued",
+          "url": "https://www.morningstar.com/stocks/why-we-think-spacex-ipo-is-overvalued",
+          "score": 12,
+          "author": "ForHackernews",
+          "commentCount": 1,
+          "publishedAt": "2026-06-08T20:07:20.000Z"
+        },
+        {
+          "platform": "hackernews",
+          "title": "SpaceX IPO demand is approaching four times oversubscribed",
+          "url": "https://www.reuters.com/world/spacex-ipo-demand-is-approaching-four-times-oversubscribed-source-says-2026-06-09/",
+          "score": 11,
+          "author": "ironyman",
+          "commentCount": 6,
+          "publishedAt": "2026-06-09T21:38:46.000Z"
+        }
+      ],
+      "relatedConceptSlugs": [
+        "extraterrestrial-regolith-derived-atmospheric-entry-heat-shields",
+        "phase-i-final-report-nasa-institute-for-advanced-concepts-combined-heat-shield-a"
+      ],
+      "resonance": 43,
+      "quadrant": "dead-zone",
+      "resonanceSignals": {
+        "conceptDepth": 0.5113915944693856,
+        "editorial": 0.4,
+        "connections": 0,
+        "convergence": 0.35,
+        "deepTopic": 1,
+        "pantheon": 0.92,
         "graveyard": 0
       }
     },
@@ -2016,7 +2016,7 @@
     {
       "slug": "starlink",
       "label": "Starlink & Satellite Internet",
-      "score": 861,
+      "score": 862,
       "delta": 1,
       "direction": "steady",
       "mentions": 10,
@@ -2070,7 +2070,7 @@
           "platform": "hackernews",
           "title": "Musk's Starlink hooked rural customers. Then came the price increases",
           "url": "https://www.washingtonpost.com/technology/2026/06/11/starlink-is-star-spacex-ipo-is-it-monopolizing-rural-internet/",
-          "score": 8,
+          "score": 9,
           "author": "1vuio0pswjnm7",
           "commentCount": 1,
           "publishedAt": "2026-06-12T16:04:59.000Z"
@@ -2189,6 +2189,57 @@
       }
     },
     {
+      "slug": "dyson-spheres",
+      "label": "Dyson Spheres",
+      "score": 401,
+      "delta": 0,
+      "direction": "steady",
+      "mentions": 3,
+      "sources": [
+        {
+          "platform": "arxiv",
+          "title": "Competition for Survival and the Maximum Entropy Production Principle in Self-Organized Silver Particle Chains",
+          "url": "https://arxiv.org/abs/2605.27457",
+          "score": 200,
+          "authors": "Albert Han, Jiri Kataman-Kustwan, Alexey Bezryadin",
+          "arxivCategory": "cond-mat.stat-mech",
+          "publishedAt": "2026-05-25T16:47:34.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "The Search for Technosignatures: a Review of Possibilities",
+          "url": "https://arxiv.org/abs/2605.21093",
+          "score": 200,
+          "authors": "Clément Vidal, Benji L. Fields, Damian R. Sowinski et al.",
+          "arxivCategory": "astro-ph.EP",
+          "publishedAt": "2026-05-20T12:25:16.000Z"
+        },
+        {
+          "platform": "hackernews",
+          "title": "Show HN: Kardashev Labs – live US grid data (LMP, curtailment, queues, demand)",
+          "url": "https://www.kardashevlabs.org/",
+          "score": 1,
+          "author": "AShoeToast",
+          "commentCount": 0,
+          "publishedAt": "2026-06-12T22:22:38.000Z"
+        }
+      ],
+      "relatedConceptSlugs": [
+        "sps-alpha"
+      ],
+      "resonance": 25,
+      "quadrant": "dead-zone",
+      "resonanceSignals": {
+        "conceptDepth": 0.22629438553091683,
+        "editorial": 0.7,
+        "connections": 0,
+        "convergence": 0,
+        "deepTopic": 0,
+        "pantheon": 0.92,
+        "graveyard": 0
+      }
+    },
+    {
       "slug": "solar-sails",
       "label": "Solar Sails",
       "score": 400,
@@ -2276,90 +2327,6 @@
       }
     },
     {
-      "slug": "ocean-worlds",
-      "label": "Titan & Ocean Worlds",
-      "score": 400,
-      "delta": 100,
-      "direction": "up",
-      "mentions": 2,
-      "sources": [
-        {
-          "platform": "arxiv",
-          "title": "An unidentified absorption feature at 5.11 $μ$m on the surface of Titan and Pluto from JWST spectroscopy",
-          "url": "https://arxiv.org/abs/2606.13350",
-          "score": 200,
-          "authors": "B. Bézard, E. Lellouch, M. Camarca et al.",
-          "arxivCategory": "astro-ph.EP",
-          "publishedAt": "2026-06-11T13:39:36.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Observation of spontaneous N-bearing PAH formation using ion trap: a new formation pathway in the interstellar medium",
-          "url": "https://arxiv.org/abs/2605.14424",
-          "score": 200,
-          "authors": "Siddhartha S. Payra, Pratikkumar Thakkar, Shiv Gupta et al.",
-          "arxivCategory": "astro-ph.GA",
-          "publishedAt": "2026-05-14T06:14:07.000Z"
-        }
-      ],
-      "relatedConceptSlugs": [
-        "titan-submarine"
-      ],
-      "resonance": 18,
-      "quadrant": "dead-zone",
-      "resonanceSignals": {
-        "conceptDepth": 0.22629438553091683,
-        "editorial": 0,
-        "connections": 0,
-        "convergence": 0.15,
-        "deepTopic": 0.8,
-        "pantheon": 0.16,
-        "graveyard": 0
-      }
-    },
-    {
-      "slug": "dyson-spheres",
-      "label": "Dyson Spheres",
-      "score": 400,
-      "delta": -2,
-      "direction": "steady",
-      "mentions": 2,
-      "sources": [
-        {
-          "platform": "arxiv",
-          "title": "Competition for Survival and the Maximum Entropy Production Principle in Self-Organized Silver Particle Chains",
-          "url": "https://arxiv.org/abs/2605.27457",
-          "score": 200,
-          "authors": "Albert Han, Jiri Kataman-Kustwan, Alexey Bezryadin",
-          "arxivCategory": "cond-mat.stat-mech",
-          "publishedAt": "2026-05-25T16:47:34.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "The Search for Technosignatures: a Review of Possibilities",
-          "url": "https://arxiv.org/abs/2605.21093",
-          "score": 200,
-          "authors": "Clément Vidal, Benji L. Fields, Damian R. Sowinski et al.",
-          "arxivCategory": "astro-ph.EP",
-          "publishedAt": "2026-05-20T12:25:16.000Z"
-        }
-      ],
-      "relatedConceptSlugs": [
-        "sps-alpha"
-      ],
-      "resonance": 25,
-      "quadrant": "dead-zone",
-      "resonanceSignals": {
-        "conceptDepth": 0.22629438553091683,
-        "editorial": 0.7,
-        "connections": 0,
-        "convergence": 0,
-        "deepTopic": 0,
-        "pantheon": 0.92,
-        "graveyard": 0
-      }
-    },
-    {
       "slug": "ai-space",
       "label": "AI in Space",
       "score": 400,
@@ -2435,6 +2402,39 @@
         "convergence": 0.075,
         "deepTopic": 0.8,
         "pantheon": 0.08,
+        "graveyard": 0
+      }
+    },
+    {
+      "slug": "ocean-worlds",
+      "label": "Titan & Ocean Worlds",
+      "score": 200,
+      "delta": -50,
+      "direction": "down",
+      "mentions": 1,
+      "sources": [
+        {
+          "platform": "arxiv",
+          "title": "An unidentified absorption feature at 5.11 $μ$m on the surface of Titan and Pluto from JWST spectroscopy",
+          "url": "https://arxiv.org/abs/2606.13350",
+          "score": 200,
+          "authors": "B. Bézard, E. Lellouch, M. Camarca et al.",
+          "arxivCategory": "astro-ph.EP",
+          "publishedAt": "2026-06-11T13:39:36.000Z"
+        }
+      ],
+      "relatedConceptSlugs": [
+        "titan-submarine"
+      ],
+      "resonance": 18,
+      "quadrant": "dead-zone",
+      "resonanceSignals": {
+        "conceptDepth": 0.22629438553091683,
+        "editorial": 0,
+        "connections": 0,
+        "convergence": 0.15,
+        "deepTopic": 0.8,
+        "pantheon": 0.16,
         "graveyard": 0
       }
     },
