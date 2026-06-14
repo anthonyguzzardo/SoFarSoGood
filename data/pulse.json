@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-14T09:06:28.819Z",
+  "generatedAt": "2026-06-14T19:31:30.402Z",
   "topics": [
     {
       "slug": "gravitational-waves",
@@ -401,8 +401,8 @@
     {
       "slug": "black-holes",
       "label": "Black Holes",
-      "score": 7619,
-      "delta": -7,
+      "score": 7621,
+      "delta": -5,
       "direction": "steady",
       "mentions": 42,
       "sources": [
@@ -799,7 +799,7 @@
     {
       "slug": "particle-physics",
       "label": "Particle Physics",
-      "score": 6203,
+      "score": 6204,
       "delta": 0,
       "direction": "steady",
       "mentions": 32,
@@ -929,7 +929,7 @@
     {
       "slug": "condensed-matter",
       "label": "Condensed Matter",
-      "score": 6026,
+      "score": 6027,
       "delta": 0,
       "direction": "steady",
       "mentions": 32,
@@ -1327,7 +1327,7 @@
       "slug": "astrobiology",
       "label": "Astrobiology",
       "score": 3200,
-      "delta": -6,
+      "delta": 0,
       "direction": "steady",
       "mentions": 16,
       "sources": [
@@ -1593,10 +1593,10 @@
     {
       "slug": "exoplanets",
       "label": "Exoplanets",
-      "score": 2003,
-      "delta": 0,
-      "direction": "steady",
-      "mentions": 11,
+      "score": 1603,
+      "delta": -20,
+      "direction": "down",
+      "mentions": 9,
       "sources": [
         {
           "platform": "arxiv",
@@ -1615,15 +1615,6 @@
           "authors": "Conaire Deagan, Benjamin T. Montet, P. Tuthill et al.",
           "arxivCategory": "astro-ph.SR",
           "publishedAt": "2026-05-18T18:00:03.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Experimental subdiffraction source discrimination enabled by spatial demultiplexing and single-photon detectors",
-          "url": "https://arxiv.org/abs/2605.15929",
-          "score": 200,
-          "authors": "Luigi Santamaria Amato, Danilo Triggiani, Cosmo Lupo",
-          "arxivCategory": "quant-ph",
-          "publishedAt": "2026-05-15T13:12:00.000Z"
         },
         {
           "platform": "arxiv",
@@ -1669,15 +1660,6 @@
           "authors": "Ravi Kopparapu",
           "arxivCategory": "astro-ph.EP",
           "publishedAt": "2026-05-15T22:26:19.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "A Revised Mass and Period for the Habitable Zone super-Earth GJ 3378b: A Planet Straddling the Cosmic Shoreline",
-          "url": "https://arxiv.org/abs/2605.16499",
-          "score": 200,
-          "authors": "Paul Robertson, Michael Endl, William D. Cochran et al.",
-          "arxivCategory": "astro-ph.EP",
-          "publishedAt": "2026-05-15T18:00:14.000Z"
         },
         {
           "platform": "arxiv",
@@ -1883,16 +1865,16 @@
     {
       "slug": "starship",
       "label": "Starship & SpaceX",
-      "score": 916,
-      "delta": -30,
-      "direction": "down",
+      "score": 907,
+      "delta": 0,
+      "direction": "steady",
       "mentions": 51,
       "sources": [
         {
           "platform": "hackernews",
           "title": "We Think the SpaceX IPO Is Overvalued",
           "url": "https://www.morningstar.com/stocks/why-we-think-spacex-ipo-is-overvalued?content_id=20768396545",
-          "score": 267,
+          "score": 268,
           "author": "0xedb",
           "commentCount": 293,
           "publishedAt": "2026-06-09T01:56:40.000Z"
@@ -1921,7 +1903,7 @@
           "url": "https://www.nytimes.com/live/2026/06/12/business/spacex-ipo-elon-musk/heres-the-latest",
           "score": 48,
           "author": "droidjj",
-          "commentCount": 71,
+          "commentCount": 74,
           "publishedAt": "2026-06-12T16:13:49.000Z"
         },
         {
@@ -1932,15 +1914,6 @@
           "author": "somenameforme",
           "commentCount": 31,
           "publishedAt": "2026-06-12T17:10:07.000Z"
-        },
-        {
-          "platform": "hackernews",
-          "title": "Musk's SpaceX IPO Narrative Is a Whole New Level of Bullshit",
-          "url": "https://text.tchncs.de/chronik-des-laufenden-wahnsinns/h1elon-musk-has-spouted-his-fair-share-of-bullshit-but-his-latest-claims-about",
-          "score": 20,
-          "author": "doener",
-          "commentCount": 1,
-          "publishedAt": "2026-06-07T16:24:21.000Z"
         },
         {
           "platform": "hackernews",
@@ -1995,6 +1968,15 @@
           "author": "borski",
           "commentCount": 0,
           "publishedAt": "2026-06-11T06:10:26.000Z"
+        },
+        {
+          "platform": "hackernews",
+          "title": "SpaceX IPO made Musk a trillionaire. The old rules of capitalism no longer apply",
+          "url": "https://www.theguardian.com/commentisfree/2026/jun/12/spacex-ipo-elon-musk-trillionaire",
+          "score": 10,
+          "author": "jmngomes",
+          "commentCount": 5,
+          "publishedAt": "2026-06-13T16:09:45.000Z"
         }
       ],
       "relatedConceptSlugs": [
@@ -2016,10 +1998,10 @@
     {
       "slug": "starlink",
       "label": "Starlink & Satellite Internet",
-      "score": 862,
+      "score": 858,
       "delta": 0,
       "direction": "steady",
-      "mentions": 10,
+      "mentions": 9,
       "sources": [
         {
           "platform": "arxiv",
@@ -2083,15 +2065,6 @@
           "author": "hbarka",
           "commentCount": 2,
           "publishedAt": "2026-06-10T06:24:55.000Z"
-        },
-        {
-          "platform": "hackernews",
-          "title": "Russia's new 'Starlink‑Style' Rassvet fleet loses first satellite after weeks",
-          "url": "https://www.tomshardware.com/tech-industry/russias-rassvet-constellation-loses-its-first-satellite-to-orbital-decay",
-          "score": 4,
-          "author": "pinewurst",
-          "commentCount": 0,
-          "publishedAt": "2026-06-07T16:33:04.000Z"
         },
         {
           "platform": "hackernews",
@@ -2192,7 +2165,7 @@
       "slug": "interstellar-travel",
       "label": "Interstellar Travel",
       "score": 405,
-      "delta": 1,
+      "delta": 0,
       "direction": "steady",
       "mentions": 3,
       "sources": [
@@ -2382,7 +2355,7 @@
       "slug": "warp-drives",
       "label": "Warp Drives & Exotic Physics",
       "score": 201,
-      "delta": 1,
+      "delta": 0,
       "direction": "steady",
       "mentions": 2,
       "sources": [
