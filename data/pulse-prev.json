@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-13T08:51:59.733Z",
+  "generatedAt": "2026-06-13T19:30:20.387Z",
   "topics": [
     {
       "slug": "gravitational-waves",
@@ -136,10 +136,10 @@
     {
       "slug": "quantum-computing",
       "label": "Quantum Computing",
-      "score": 8413,
+      "score": 8419,
       "delta": 0,
       "direction": "steady",
-      "mentions": 48,
+      "mentions": 49,
       "sources": [
         {
           "platform": "arxiv",
@@ -268,10 +268,10 @@
     {
       "slug": "black-holes",
       "label": "Black Holes",
-      "score": 8223,
-      "delta": 0,
+      "score": 8022,
+      "delta": -2,
       "direction": "steady",
-      "mentions": 46,
+      "mentions": 44,
       "sources": [
         {
           "platform": "arxiv",
@@ -929,8 +929,8 @@
     {
       "slug": "condensed-matter",
       "label": "Condensed Matter",
-      "score": 6007,
-      "delta": -10,
+      "score": 6021,
+      "delta": -7,
       "direction": "steady",
       "mentions": 32,
       "sources": [
@@ -1192,12 +1192,144 @@
       }
     },
     {
-      "slug": "astrobiology",
-      "label": "Astrobiology",
-      "score": 3400,
+      "slug": "quantum-comms",
+      "label": "Quantum Communication",
+      "score": 3204,
       "delta": 0,
       "direction": "steady",
       "mentions": 17,
+      "sources": [
+        {
+          "platform": "arxiv",
+          "title": "Reconfigurable MDI-QKD and BB84 over 20 km optical channels via EOM-tailored weak coherent states",
+          "url": "https://arxiv.org/abs/2606.10306",
+          "score": 200,
+          "authors": "Jaesung Lim, Yonggi Jo, Nam Hun Park et al.",
+          "arxivCategory": "quant-ph",
+          "publishedAt": "2026-06-09T01:51:18.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "A Bell-State Extension of Loop-Back Quantum Key Distribution",
+          "url": "https://arxiv.org/abs/2606.09723",
+          "score": 200,
+          "authors": "Luis Adrián Lizama-Pérez",
+          "arxivCategory": "quant-ph",
+          "publishedAt": "2026-06-08T16:46:22.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Satellite-Based Quantum Communication: Performance Evaluation of Discrete-Variable Quantum Key Distribution Protocols",
+          "url": "https://arxiv.org/abs/2606.09217",
+          "score": 200,
+          "authors": "Muskan",
+          "arxivCategory": "quant-ph",
+          "publishedAt": "2026-06-08T08:51:25.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Experimental Demonstration of Free-Space Unidimensional Continuous-Variable Quantum Key Distribution Under High Detector Noise",
+          "url": "https://arxiv.org/abs/2606.07206",
+          "score": 200,
+          "authors": "Rachita Nandan, Jayanth Ramakrishnan, Shashi Prabhakar et al.",
+          "arxivCategory": "quant-ph",
+          "publishedAt": "2026-06-05T12:17:17.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Deployed trusted-node quantum key distribution over 300 km with a multi-core fiber access link",
+          "url": "https://arxiv.org/abs/2606.06107",
+          "score": 200,
+          "authors": "Martin Clason, Joakim Argillander, Didrik Bergström et al.",
+          "arxivCategory": "quant-ph",
+          "publishedAt": "2026-06-04T12:53:46.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Phase-correlation-free quantum key distribution source operating at gigahertz rates",
+          "url": "https://arxiv.org/abs/2606.04947",
+          "score": 200,
+          "authors": "Shashank Kumar, Alessandro Marcomini, Loïc Millet et al.",
+          "arxivCategory": "quant-ph",
+          "publishedAt": "2026-06-03T14:35:59.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "An Effective Pauli-Channel Model for Passive-User Loop-Back QKD",
+          "url": "https://arxiv.org/abs/2606.04247",
+          "score": 200,
+          "authors": "Luis Adrián Lizama-Pérez",
+          "arxivCategory": "cs.IT",
+          "publishedAt": "2026-06-02T21:53:50.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "High-Dimensional Quantum Key Distribution via full Core-mode Encoding over Deployed Multicore Fibers",
+          "url": "https://arxiv.org/abs/2606.04211",
+          "score": 200,
+          "authors": "G. H. dos Santos, K. B. Sawada, N. Villalba et al.",
+          "arxivCategory": "quant-ph",
+          "publishedAt": "2026-06-02T20:58:35.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Multidimensional Reconciliation in Continuous-Variable QKD: Review, Coding Schemes, and Open Source Simulation",
+          "url": "https://arxiv.org/abs/2606.02323",
+          "score": 200,
+          "authors": "Lucien Martial, Alexis Rosio, Eleni Diamanti et al.",
+          "arxivCategory": "cs.IT",
+          "publishedAt": "2026-06-01T14:36:12.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Quantum resonance encryption for secure data storage and communication with quantum kicked top",
+          "url": "https://arxiv.org/abs/2606.01953",
+          "score": 200,
+          "authors": "Sreeram PG, M. S. Santhanam",
+          "arxivCategory": "quant-ph",
+          "publishedAt": "2026-06-01T09:13:16.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Large Alphabet Set Time-bin Encoded Measurement-Device-Independent Quantum Key Distribution",
+          "url": "https://arxiv.org/abs/2606.01262",
+          "score": 200,
+          "authors": "Gokul Agasthilingam, Harinee Natarajan, Varun Raghunathan",
+          "arxivCategory": "quant-ph",
+          "publishedAt": "2026-05-31T14:29:00.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Finite-key feasibility of geostationary quantum key distribution",
+          "url": "https://arxiv.org/abs/2605.29706",
+          "score": 200,
+          "authors": "Vaisakh Mannalath, Víctor Zapatero, Marcos Curty",
+          "arxivCategory": "quant-ph",
+          "publishedAt": "2026-05-28T10:04:37.000Z"
+        }
+      ],
+      "relatedConceptSlugs": [
+        "magneto-inductive-communications-for-ocean-worlds"
+      ],
+      "resonance": 30,
+      "quadrant": "hype-cycle",
+      "resonanceSignals": {
+        "conceptDepth": 0.22629438553091683,
+        "editorial": 0.4,
+        "connections": 0,
+        "convergence": 0.025,
+        "deepTopic": 1,
+        "pantheon": 0.92,
+        "graveyard": 0
+      }
+    },
+    {
+      "slug": "astrobiology",
+      "label": "Astrobiology",
+      "score": 3200,
+      "delta": -6,
+      "direction": "steady",
+      "mentions": 16,
       "sources": [
         {
           "platform": "arxiv",
@@ -1321,138 +1453,6 @@
         "convergence": 0.275,
         "deepTopic": 0.8,
         "pantheon": 0.08,
-        "graveyard": 0
-      }
-    },
-    {
-      "slug": "quantum-comms",
-      "label": "Quantum Communication",
-      "score": 3200,
-      "delta": 0,
-      "direction": "steady",
-      "mentions": 16,
-      "sources": [
-        {
-          "platform": "arxiv",
-          "title": "Reconfigurable MDI-QKD and BB84 over 20 km optical channels via EOM-tailored weak coherent states",
-          "url": "https://arxiv.org/abs/2606.10306",
-          "score": 200,
-          "authors": "Jaesung Lim, Yonggi Jo, Nam Hun Park et al.",
-          "arxivCategory": "quant-ph",
-          "publishedAt": "2026-06-09T01:51:18.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "A Bell-State Extension of Loop-Back Quantum Key Distribution",
-          "url": "https://arxiv.org/abs/2606.09723",
-          "score": 200,
-          "authors": "Luis Adrián Lizama-Pérez",
-          "arxivCategory": "quant-ph",
-          "publishedAt": "2026-06-08T16:46:22.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Satellite-Based Quantum Communication: Performance Evaluation of Discrete-Variable Quantum Key Distribution Protocols",
-          "url": "https://arxiv.org/abs/2606.09217",
-          "score": 200,
-          "authors": "Muskan",
-          "arxivCategory": "quant-ph",
-          "publishedAt": "2026-06-08T08:51:25.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Experimental Demonstration of Free-Space Unidimensional Continuous-Variable Quantum Key Distribution Under High Detector Noise",
-          "url": "https://arxiv.org/abs/2606.07206",
-          "score": 200,
-          "authors": "Rachita Nandan, Jayanth Ramakrishnan, Shashi Prabhakar et al.",
-          "arxivCategory": "quant-ph",
-          "publishedAt": "2026-06-05T12:17:17.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Deployed trusted-node quantum key distribution over 300 km with a multi-core fiber access link",
-          "url": "https://arxiv.org/abs/2606.06107",
-          "score": 200,
-          "authors": "Martin Clason, Joakim Argillander, Didrik Bergström et al.",
-          "arxivCategory": "quant-ph",
-          "publishedAt": "2026-06-04T12:53:46.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Phase-correlation-free quantum key distribution source operating at gigahertz rates",
-          "url": "https://arxiv.org/abs/2606.04947",
-          "score": 200,
-          "authors": "Shashank Kumar, Alessandro Marcomini, Loïc Millet et al.",
-          "arxivCategory": "quant-ph",
-          "publishedAt": "2026-06-03T14:35:59.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "An Effective Pauli-Channel Model for Passive-User Loop-Back QKD",
-          "url": "https://arxiv.org/abs/2606.04247",
-          "score": 200,
-          "authors": "Luis Adrián Lizama-Pérez",
-          "arxivCategory": "cs.IT",
-          "publishedAt": "2026-06-02T21:53:50.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "High-Dimensional Quantum Key Distribution via full Core-mode Encoding over Deployed Multicore Fibers",
-          "url": "https://arxiv.org/abs/2606.04211",
-          "score": 200,
-          "authors": "G. H. dos Santos, K. B. Sawada, N. Villalba et al.",
-          "arxivCategory": "quant-ph",
-          "publishedAt": "2026-06-02T20:58:35.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Multidimensional Reconciliation in Continuous-Variable QKD: Review, Coding Schemes, and Open Source Simulation",
-          "url": "https://arxiv.org/abs/2606.02323",
-          "score": 200,
-          "authors": "Lucien Martial, Alexis Rosio, Eleni Diamanti et al.",
-          "arxivCategory": "cs.IT",
-          "publishedAt": "2026-06-01T14:36:12.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Quantum resonance encryption for secure data storage and communication with quantum kicked top",
-          "url": "https://arxiv.org/abs/2606.01953",
-          "score": 200,
-          "authors": "Sreeram PG, M. S. Santhanam",
-          "arxivCategory": "quant-ph",
-          "publishedAt": "2026-06-01T09:13:16.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Large Alphabet Set Time-bin Encoded Measurement-Device-Independent Quantum Key Distribution",
-          "url": "https://arxiv.org/abs/2606.01262",
-          "score": 200,
-          "authors": "Gokul Agasthilingam, Harinee Natarajan, Varun Raghunathan",
-          "arxivCategory": "quant-ph",
-          "publishedAt": "2026-05-31T14:29:00.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Finite-key feasibility of geostationary quantum key distribution",
-          "url": "https://arxiv.org/abs/2605.29706",
-          "score": 200,
-          "authors": "Vaisakh Mannalath, Víctor Zapatero, Marcos Curty",
-          "arxivCategory": "quant-ph",
-          "publishedAt": "2026-05-28T10:04:37.000Z"
-        }
-      ],
-      "relatedConceptSlugs": [
-        "magneto-inductive-communications-for-ocean-worlds"
-      ],
-      "resonance": 30,
-      "quadrant": "hype-cycle",
-      "resonanceSignals": {
-        "conceptDepth": 0.22629438553091683,
-        "editorial": 0.4,
-        "connections": 0,
-        "convergence": 0.025,
-        "deepTopic": 1,
-        "pantheon": 0.92,
         "graveyard": 0
       }
     },
@@ -1715,139 +1715,6 @@
       }
     },
     {
-      "slug": "starship",
-      "label": "Starship & SpaceX",
-      "score": 1302,
-      "delta": -56,
-      "direction": "down",
-      "mentions": 51,
-      "sources": [
-        {
-          "platform": "hackernews",
-          "title": "Google will pay SpaceX $920M per month for compute",
-          "url": "https://techcrunch.com/2026/06/05/google-will-pay-spacex-920m-per-month-for-compute/",
-          "score": 415,
-          "author": "ramanan",
-          "commentCount": 2,
-          "publishedAt": "2026-06-06T11:46:15.000Z"
-        },
-        {
-          "platform": "hackernews",
-          "title": "We Think the SpaceX IPO Is Overvalued",
-          "url": "https://www.morningstar.com/stocks/why-we-think-spacex-ipo-is-overvalued?content_id=20768396545",
-          "score": 266,
-          "author": "0xedb",
-          "commentCount": 293,
-          "publishedAt": "2026-06-09T01:56:40.000Z"
-        },
-        {
-          "platform": "hackernews",
-          "title": "Why SpaceX 2040 Revenue FCST $4.3T in highly unlikely",
-          "url": "https://www.matteast.io/spacex-escape-velocity.html",
-          "score": 184,
-          "author": "meast",
-          "commentCount": 198,
-          "publishedAt": "2026-06-10T17:44:59.000Z"
-        },
-        {
-          "platform": "hackernews",
-          "title": "SpaceX's president is floating a Tesla merger as the company begins trading",
-          "url": "https://qz.com/spacex-tesla-merger-gwynne-shotwell-ipo-061226",
-          "score": 71,
-          "author": "andsoitis",
-          "commentCount": 111,
-          "publishedAt": "2026-06-12T13:47:21.000Z"
-        },
-        {
-          "platform": "hackernews",
-          "title": "Elon Musk Becomes First Trillionaire as SpaceX Starts Trading",
-          "url": "https://www.nytimes.com/live/2026/06/12/business/spacex-ipo-elon-musk/heres-the-latest",
-          "score": 44,
-          "author": "droidjj",
-          "commentCount": 59,
-          "publishedAt": "2026-06-12T16:13:49.000Z"
-        },
-        {
-          "platform": "hackernews",
-          "title": "SpaceX increases almost 30% after biggest IPO",
-          "url": "https://www.cnbc.com/2026/06/12/spacex-ipo-spcx-live-updates.html",
-          "score": 30,
-          "author": "somenameforme",
-          "commentCount": 28,
-          "publishedAt": "2026-06-12T17:10:07.000Z"
-        },
-        {
-          "platform": "hackernews",
-          "title": "Musk's SpaceX IPO Narrative Is a Whole New Level of Bullshit",
-          "url": "https://text.tchncs.de/chronik-des-laufenden-wahnsinns/h1elon-musk-has-spouted-his-fair-share-of-bullshit-but-his-latest-claims-about",
-          "score": 20,
-          "author": "doener",
-          "commentCount": 1,
-          "publishedAt": "2026-06-07T16:24:21.000Z"
-        },
-        {
-          "platform": "hackernews",
-          "title": "Musk's SpaceX prices record $75B IPO at $135 a share",
-          "url": "https://www.reuters.com/world/musks-spacex-prices-record-75-billion-ipo-135-share-2026-06-11/",
-          "score": 13,
-          "author": "TechTechTech",
-          "commentCount": 9,
-          "publishedAt": "2026-06-11T20:53:40.000Z"
-        },
-        {
-          "platform": "hackernews",
-          "title": "SpaceX officially prices shares at $135 in the largest IPO ever",
-          "url": "https://techcrunch.com/2026/06/11/spacex-officially-prices-shares-at-135-in-the-largest-ipo-ever/",
-          "score": 13,
-          "author": "7777777phil",
-          "commentCount": 1,
-          "publishedAt": "2026-06-11T22:36:35.000Z"
-        },
-        {
-          "platform": "hackernews",
-          "title": "SpaceX vaults over $2T valuation as stock jumps after record IPO",
-          "url": "https://www.reuters.com/legal/transactional/after-record-ipo-musks-spacex-faces-next-test-market-debut-2026-06-12/",
-          "score": 13,
-          "author": "JumpCrisscross",
-          "commentCount": 0,
-          "publishedAt": "2026-06-12T16:39:48.000Z"
-        },
-        {
-          "platform": "hackernews",
-          "title": "Why Morningstar believes the SpaceX IPO is overvalued",
-          "url": "https://www.morningstar.com/stocks/why-we-think-spacex-ipo-is-overvalued",
-          "score": 12,
-          "author": "ForHackernews",
-          "commentCount": 1,
-          "publishedAt": "2026-06-08T20:07:20.000Z"
-        },
-        {
-          "platform": "hackernews",
-          "title": "SpaceX IPO demand is approaching four times oversubscribed",
-          "url": "https://www.reuters.com/world/spacex-ipo-demand-is-approaching-four-times-oversubscribed-source-says-2026-06-09/",
-          "score": 11,
-          "author": "ironyman",
-          "commentCount": 6,
-          "publishedAt": "2026-06-09T21:38:46.000Z"
-        }
-      ],
-      "relatedConceptSlugs": [
-        "extraterrestrial-regolith-derived-atmospheric-entry-heat-shields",
-        "phase-i-final-report-nasa-institute-for-advanced-concepts-combined-heat-shield-a"
-      ],
-      "resonance": 43,
-      "quadrant": "dead-zone",
-      "resonanceSignals": {
-        "conceptDepth": 0.5113915944693856,
-        "editorial": 0.4,
-        "connections": 0,
-        "convergence": 0.35,
-        "deepTopic": 1,
-        "pantheon": 0.92,
-        "graveyard": 0
-      }
-    },
-    {
       "slug": "artemis",
       "label": "Artemis & Lunar Return",
       "score": 1201,
@@ -2014,10 +1881,143 @@
       }
     },
     {
+      "slug": "starship",
+      "label": "Starship & SpaceX",
+      "score": 904,
+      "delta": -67,
+      "direction": "down",
+      "mentions": 51,
+      "sources": [
+        {
+          "platform": "hackernews",
+          "title": "We Think the SpaceX IPO Is Overvalued",
+          "url": "https://www.morningstar.com/stocks/why-we-think-spacex-ipo-is-overvalued?content_id=20768396545",
+          "score": 267,
+          "author": "0xedb",
+          "commentCount": 293,
+          "publishedAt": "2026-06-09T01:56:40.000Z"
+        },
+        {
+          "platform": "hackernews",
+          "title": "Why SpaceX 2040 Revenue FCST $4.3T in highly unlikely",
+          "url": "https://www.matteast.io/spacex-escape-velocity.html",
+          "score": 185,
+          "author": "meast",
+          "commentCount": 198,
+          "publishedAt": "2026-06-10T17:44:59.000Z"
+        },
+        {
+          "platform": "hackernews",
+          "title": "SpaceX's president is floating a Tesla merger as the company begins trading",
+          "url": "https://qz.com/spacex-tesla-merger-gwynne-shotwell-ipo-061226",
+          "score": 71,
+          "author": "andsoitis",
+          "commentCount": 114,
+          "publishedAt": "2026-06-12T13:47:21.000Z"
+        },
+        {
+          "platform": "hackernews",
+          "title": "Elon Musk Becomes First Trillionaire as SpaceX Starts Trading",
+          "url": "https://www.nytimes.com/live/2026/06/12/business/spacex-ipo-elon-musk/heres-the-latest",
+          "score": 46,
+          "author": "droidjj",
+          "commentCount": 67,
+          "publishedAt": "2026-06-12T16:13:49.000Z"
+        },
+        {
+          "platform": "hackernews",
+          "title": "SpaceX increases almost 30% after biggest IPO",
+          "url": "https://www.cnbc.com/2026/06/12/spacex-ipo-spcx-live-updates.html",
+          "score": 31,
+          "author": "somenameforme",
+          "commentCount": 31,
+          "publishedAt": "2026-06-12T17:10:07.000Z"
+        },
+        {
+          "platform": "hackernews",
+          "title": "Musk's SpaceX IPO Narrative Is a Whole New Level of Bullshit",
+          "url": "https://text.tchncs.de/chronik-des-laufenden-wahnsinns/h1elon-musk-has-spouted-his-fair-share-of-bullshit-but-his-latest-claims-about",
+          "score": 20,
+          "author": "doener",
+          "commentCount": 1,
+          "publishedAt": "2026-06-07T16:24:21.000Z"
+        },
+        {
+          "platform": "hackernews",
+          "title": "Musk's SpaceX prices record $75B IPO at $135 a share",
+          "url": "https://www.reuters.com/world/musks-spacex-prices-record-75-billion-ipo-135-share-2026-06-11/",
+          "score": 13,
+          "author": "TechTechTech",
+          "commentCount": 9,
+          "publishedAt": "2026-06-11T20:53:40.000Z"
+        },
+        {
+          "platform": "hackernews",
+          "title": "SpaceX officially prices shares at $135 in the largest IPO ever",
+          "url": "https://techcrunch.com/2026/06/11/spacex-officially-prices-shares-at-135-in-the-largest-ipo-ever/",
+          "score": 13,
+          "author": "7777777phil",
+          "commentCount": 1,
+          "publishedAt": "2026-06-11T22:36:35.000Z"
+        },
+        {
+          "platform": "hackernews",
+          "title": "SpaceX vaults over $2T valuation as stock jumps after record IPO",
+          "url": "https://www.reuters.com/legal/transactional/after-record-ipo-musks-spacex-faces-next-test-market-debut-2026-06-12/",
+          "score": 13,
+          "author": "JumpCrisscross",
+          "commentCount": 0,
+          "publishedAt": "2026-06-12T16:39:48.000Z"
+        },
+        {
+          "platform": "hackernews",
+          "title": "Why Morningstar believes the SpaceX IPO is overvalued",
+          "url": "https://www.morningstar.com/stocks/why-we-think-spacex-ipo-is-overvalued",
+          "score": 12,
+          "author": "ForHackernews",
+          "commentCount": 1,
+          "publishedAt": "2026-06-08T20:07:20.000Z"
+        },
+        {
+          "platform": "hackernews",
+          "title": "SpaceX IPO demand is approaching four times oversubscribed",
+          "url": "https://www.reuters.com/world/spacex-ipo-demand-is-approaching-four-times-oversubscribed-source-says-2026-06-09/",
+          "score": 11,
+          "author": "ironyman",
+          "commentCount": 6,
+          "publishedAt": "2026-06-09T21:38:46.000Z"
+        },
+        {
+          "platform": "hackernews",
+          "title": "Elizabeth Warren Asks the SEC to Delay the SpaceX IPO",
+          "url": "https://www.businessinsider.com/elizabeth-warren-spacex-ipo-delay-letter-sec-2026-6",
+          "score": 11,
+          "author": "borski",
+          "commentCount": 0,
+          "publishedAt": "2026-06-11T06:10:26.000Z"
+        }
+      ],
+      "relatedConceptSlugs": [
+        "extraterrestrial-regolith-derived-atmospheric-entry-heat-shields",
+        "phase-i-final-report-nasa-institute-for-advanced-concepts-combined-heat-shield-a"
+      ],
+      "resonance": 43,
+      "quadrant": "dead-zone",
+      "resonanceSignals": {
+        "conceptDepth": 0.5113915944693856,
+        "editorial": 0.4,
+        "connections": 0,
+        "convergence": 0.35,
+        "deepTopic": 1,
+        "pantheon": 0.92,
+        "graveyard": 0
+      }
+    },
+    {
       "slug": "starlink",
       "label": "Starlink & Satellite Internet",
       "score": 862,
-      "delta": 1,
+      "delta": 0,
       "direction": "steady",
       "mentions": 10,
       "sources": [
@@ -2189,10 +2189,63 @@
       }
     },
     {
+      "slug": "interstellar-travel",
+      "label": "Interstellar Travel",
+      "score": 405,
+      "delta": 1,
+      "direction": "steady",
+      "mentions": 3,
+      "sources": [
+        {
+          "platform": "arxiv",
+          "title": "Relativistic Lightsail Propulsion Dynamics",
+          "url": "https://arxiv.org/abs/2606.04052",
+          "score": 200,
+          "authors": "Chao Shen, Jiaze Li",
+          "arxivCategory": "astro-ph.IM",
+          "publishedAt": "2026-06-02T09:30:40.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "The Search for Technosignatures: a Review of Possibilities",
+          "url": "https://arxiv.org/abs/2605.21093",
+          "score": 200,
+          "authors": "Clément Vidal, Benji L. Fields, Damian R. Sowinski et al.",
+          "arxivCategory": "astro-ph.EP",
+          "publishedAt": "2026-05-20T12:25:16.000Z"
+        },
+        {
+          "platform": "hackernews",
+          "title": "The Physics of Interstellar Travel",
+          "url": "https://www.centauri-dreams.org/2026/06/11/the-physics-of-interstellar-travel/",
+          "score": 5,
+          "author": "JPLeRouzic",
+          "commentCount": 0,
+          "publishedAt": "2026-06-13T14:19:33.000Z"
+        }
+      ],
+      "relatedConceptSlugs": [
+        "procsima",
+        "dynamic-orbital-slingshot",
+        "solar-system-escape-architecture"
+      ],
+      "resonance": 53,
+      "quadrant": "sleeping-giant",
+      "resonanceSignals": {
+        "conceptDepth": 0.6131471927654584,
+        "editorial": 1,
+        "connections": 0,
+        "convergence": 0.125,
+        "deepTopic": 0.8,
+        "pantheon": 0.92,
+        "graveyard": 0
+      }
+    },
+    {
       "slug": "dyson-spheres",
       "label": "Dyson Spheres",
-      "score": 401,
-      "delta": 0,
+      "score": 402,
+      "delta": 1,
       "direction": "steady",
       "mentions": 3,
       "sources": [
@@ -2218,7 +2271,7 @@
           "platform": "hackernews",
           "title": "Show HN: Kardashev Labs – live US grid data (LMP, curtailment, queues, demand)",
           "url": "https://www.kardashevlabs.org/",
-          "score": 1,
+          "score": 2,
           "author": "AShoeToast",
           "commentCount": 0,
           "publishedAt": "2026-06-12T22:22:38.000Z"
@@ -2283,50 +2336,6 @@
       }
     },
     {
-      "slug": "interstellar-travel",
-      "label": "Interstellar Travel",
-      "score": 400,
-      "delta": 0,
-      "direction": "steady",
-      "mentions": 2,
-      "sources": [
-        {
-          "platform": "arxiv",
-          "title": "Relativistic Lightsail Propulsion Dynamics",
-          "url": "https://arxiv.org/abs/2606.04052",
-          "score": 200,
-          "authors": "Chao Shen, Jiaze Li",
-          "arxivCategory": "astro-ph.IM",
-          "publishedAt": "2026-06-02T09:30:40.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "The Search for Technosignatures: a Review of Possibilities",
-          "url": "https://arxiv.org/abs/2605.21093",
-          "score": 200,
-          "authors": "Clément Vidal, Benji L. Fields, Damian R. Sowinski et al.",
-          "arxivCategory": "astro-ph.EP",
-          "publishedAt": "2026-05-20T12:25:16.000Z"
-        }
-      ],
-      "relatedConceptSlugs": [
-        "procsima",
-        "dynamic-orbital-slingshot",
-        "solar-system-escape-architecture"
-      ],
-      "resonance": 53,
-      "quadrant": "sleeping-giant",
-      "resonanceSignals": {
-        "conceptDepth": 0.6131471927654584,
-        "editorial": 1,
-        "connections": 0,
-        "convergence": 0.125,
-        "deepTopic": 0.8,
-        "pantheon": 0.92,
-        "graveyard": 0
-      }
-    },
-    {
       "slug": "ai-space",
       "label": "AI in Space",
       "score": 400,
@@ -2366,6 +2375,49 @@
         "convergence": 0.025,
         "deepTopic": 0,
         "pantheon": 0.4,
+        "graveyard": 0
+      }
+    },
+    {
+      "slug": "warp-drives",
+      "label": "Warp Drives & Exotic Physics",
+      "score": 201,
+      "delta": 1,
+      "direction": "steady",
+      "mentions": 2,
+      "sources": [
+        {
+          "platform": "arxiv",
+          "title": "On the boundary cost of source-consistent warp shells",
+          "url": "https://arxiv.org/abs/2605.25417",
+          "score": 200,
+          "authors": "An T. Le",
+          "arxivCategory": "gr-qc",
+          "publishedAt": "2026-05-25T04:33:42.000Z"
+        },
+        {
+          "platform": "hackernews",
+          "title": "Show HN: We're make a FTL-like game combined with inventory-based autobattler",
+          "url": "https://store.steampowered.com/app/4659480/Cosmo_Cargo_Demo/",
+          "score": 1,
+          "author": "valryon",
+          "commentCount": 0,
+          "publishedAt": "2026-06-13T17:26:04.000Z"
+        }
+      ],
+      "relatedConceptSlugs": [
+        "procsima",
+        "extreme-metamaterial-solar-sails-for-breakthrough-space-exploration"
+      ],
+      "resonance": 53,
+      "quadrant": "sleeping-giant",
+      "resonanceSignals": {
+        "conceptDepth": 0.6991803252671503,
+        "editorial": 1,
+        "connections": 0.3333333333333333,
+        "convergence": 0.15,
+        "deepTopic": 0,
+        "pantheon": 0.92,
         "graveyard": 0
       }
     },
@@ -2435,40 +2487,6 @@
         "convergence": 0.15,
         "deepTopic": 0.8,
         "pantheon": 0.16,
-        "graveyard": 0
-      }
-    },
-    {
-      "slug": "warp-drives",
-      "label": "Warp Drives & Exotic Physics",
-      "score": 200,
-      "delta": 0,
-      "direction": "steady",
-      "mentions": 1,
-      "sources": [
-        {
-          "platform": "arxiv",
-          "title": "On the boundary cost of source-consistent warp shells",
-          "url": "https://arxiv.org/abs/2605.25417",
-          "score": 200,
-          "authors": "An T. Le",
-          "arxivCategory": "gr-qc",
-          "publishedAt": "2026-05-25T04:33:42.000Z"
-        }
-      ],
-      "relatedConceptSlugs": [
-        "procsima",
-        "extreme-metamaterial-solar-sails-for-breakthrough-space-exploration"
-      ],
-      "resonance": 53,
-      "quadrant": "sleeping-giant",
-      "resonanceSignals": {
-        "conceptDepth": 0.6991803252671503,
-        "editorial": 1,
-        "connections": 0.3333333333333333,
-        "convergence": 0.15,
-        "deepTopic": 0,
-        "pantheon": 0.92,
         "graveyard": 0
       }
     },
