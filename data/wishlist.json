@@ -560,9 +560,11 @@
     "significance": "Indian mathematical masterwork — sine tables, place-value system, Earth's rotation, planetary periods",
     "era": "medieval",
     "importance": "foundational",
-    "status": "wanted",
+    "status": "indexed",
     "source": "Multiple Sanskrit manuscripts; Shukla & Sarma edition",
-    "modernRelevance": "Aryabhata's sine tables and place-value system traveled west through Arab mathematicians and became the computational infrastructure of modern science -- every digital calculator descends from his notation."
+    "modernRelevance": "Aryabhata's sine tables and place-value system traveled west through Arab mathematicians and became the computational infrastructure of modern science -- every digital calculator descends from his notation.",
+    "doi": "10.5530/irc.3.1.11",
+    "url": "https://www.semanticscholar.org/paper/ffbfc3cab1bb660e13175b56e4ece5c07e2e5f46"
   },
   {
     "id": "brahmagupta-brahmasphuta",
@@ -834,8 +836,9 @@
     "significance": "Graphed velocity against time — first use of coordinate geometry, anticipated Descartes by 300 years; proved the mean speed theorem",
     "era": "medieval",
     "importance": "foundational",
-    "status": "wanted",
-    "source": "Clagett edition (1968)"
+    "status": "indexed",
+    "source": "Clagett edition (1968)",
+    "url": "https://www.semanticscholar.org/paper/b57bb079041b468d9fd9da617dae85eb1e33d116"
   },
   {
     "id": "madhava-series",
@@ -1495,14 +1498,15 @@
     "significance": "Foundation of modern number theory — quadratic reciprocity, modular arithmetic, construction of regular polygons",
     "era": "19th-century",
     "importance": "foundational",
-    "status": "wanted",
+    "status": "indexed",
     "source": "Leipzig 1801; multiple translations",
     "modernRelevance": "Gauss's modular arithmetic is the mathematical engine inside every modern encryption system, from AES to elliptic-curve cryptography protecting billions of internet connections.",
     "relatedWishlistIds": [
       "riemann-zeta",
       "wiles-fermat",
       "euler-formula"
-    ]
+    ],
+    "url": "https://www.semanticscholar.org/paper/cbac696de59f61a99b078365b7cc922eca91e357"
   },
   {
     "id": "young-double-slit",
@@ -2015,8 +2019,10 @@
     "significance": "Reformulated special relativity as geometry of 4D spacetime — 'Henceforth space by itself, and time by itself, are doomed to fade away'",
     "era": "20th-century-early",
     "importance": "foundational",
-    "status": "wanted",
-    "source": "Göttinger Nachrichten (1908)"
+    "status": "indexed",
+    "source": "Göttinger Nachrichten (1908)",
+    "doi": "10.1007/BF01455871",
+    "url": "https://www.semanticscholar.org/paper/8c26458aaf7973f2e065d4bc1a8051c2172636f1"
   },
   {
     "id": "rutherford-nucleus",
@@ -2417,14 +2423,16 @@
     "significance": "The double helix structure of DNA — 'It has not escaped our notice that the specific pairing we have postulated immediately suggests a possible copying mechanism'",
     "era": "20th-century-mid",
     "importance": "foundational",
-    "status": "wanted",
+    "status": "indexed",
     "source": "Nature 171 (1953)",
     "modernRelevance": "The double-helix structure Watson and Crick described is now read by sequencing machines that can decode a full human genome in under 8 hours for roughly $200.",
     "relatedWishlistIds": [
       "human-genome",
       "doudna-charpentier-crispr",
       "mendel-genetics"
-    ]
+    ],
+    "doi": "10.1001/jama.269.15.1966",
+    "url": "https://www.semanticscholar.org/paper/8b285532d36ddbc14465f7ea38c595ed54712b35"
   },
   {
     "id": "yang-mills",
