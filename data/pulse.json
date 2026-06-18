@@ -1,13 +1,13 @@
 {
-  "generatedAt": "2026-06-18T10:09:20.537Z",
+  "generatedAt": "2026-06-18T20:30:43.418Z",
   "topics": [
     {
       "slug": "quantum-computing",
       "label": "Quantum Computing",
-      "score": 8214,
-      "delta": 2,
+      "score": 8215,
+      "delta": 3,
       "direction": "steady",
-      "mentions": 46,
+      "mentions": 47,
       "sources": [
         {
           "platform": "arxiv",
@@ -136,7 +136,7 @@
     {
       "slug": "space-telescopes",
       "label": "Space Telescopes",
-      "score": 8211,
+      "score": 8213,
       "delta": 0,
       "direction": "steady",
       "mentions": 44,
@@ -269,8 +269,8 @@
     {
       "slug": "condensed-matter",
       "label": "Condensed Matter",
-      "score": 8098,
-      "delta": 9,
+      "score": 8188,
+      "delta": 6,
       "direction": "steady",
       "mentions": 37,
       "sources": [
@@ -278,18 +278,18 @@
           "platform": "hackernews",
           "title": "GrapheneOS has been ported to Android 17",
           "url": "https://discuss.grapheneos.org/d/36469-grapheneos-has-been-ported-to-android-17-and-official-releases-are-coming-soon",
-          "score": 989,
+          "score": 1002,
           "author": "Cider9986",
-          "commentCount": 580,
+          "commentCount": 590,
           "publishedAt": "2026-06-16T20:34:35.000Z"
         },
         {
           "platform": "hackernews",
           "title": "Volkswagen started blocking GrapheneOS users",
           "url": "https://discuss.grapheneos.org/d/35949-volkswagen-app?page=3",
-          "score": 681,
+          "score": 758,
           "author": "microtonal",
-          "commentCount": 409,
+          "commentCount": 450,
           "publishedAt": "2026-06-17T15:04:47.000Z"
         },
         {
@@ -394,139 +394,6 @@
         "connections": 0.3333333333333333,
         "convergence": 0.15,
         "deepTopic": 0,
-        "pantheon": 0.92,
-        "graveyard": 0
-      }
-    },
-    {
-      "slug": "black-holes",
-      "label": "Black Holes",
-      "score": 8016,
-      "delta": 0,
-      "direction": "steady",
-      "mentions": 44,
-      "sources": [
-        {
-          "platform": "arxiv",
-          "title": "GRMHD and GRRT Simulations of Black Hole Accretion: Flares, Precession, and Complex Spacetimes",
-          "url": "https://arxiv.org/abs/2606.19320",
-          "score": 200,
-          "authors": "Hong-Xuan Jiang",
-          "arxivCategory": "astro-ph.HE",
-          "publishedAt": "2026-06-17T17:47:45.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "A Potential Black Hole Mimicker From Non-Minimal Coupling",
-          "url": "https://arxiv.org/abs/2606.19291",
-          "score": 200,
-          "authors": "Debanjan Debnath, Rikpratik Sengupta, Kaushik Bhattacharya",
-          "arxivCategory": "gr-qc",
-          "publishedAt": "2026-06-17T17:12:17.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Direct Tests of Black Hole Accretion Rate Prescriptions: I. Bondi Accretion at Different Scales",
-          "url": "https://arxiv.org/abs/2606.19285",
-          "score": 200,
-          "authors": "James Agostino, Ming-Yi Lin, Natasha Jones et al.",
-          "arxivCategory": "astro-ph.GA",
-          "publishedAt": "2026-06-17T17:04:21.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Universal Closed Form for Dynamical Love Numbers of Black Holes",
-          "url": "https://arxiv.org/abs/2606.19281",
-          "score": 200,
-          "authors": "Mikhail P. Solon",
-          "arxivCategory": "hep-th",
-          "publishedAt": "2026-06-17T16:58:55.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Distinct Near-Horizon Trend of Synchrotron Polarization in Kerr Spacetime",
-          "url": "https://arxiv.org/abs/2606.19229",
-          "score": 200,
-          "authors": "Yehui Hou, Jiewei Huang, Bin Chen",
-          "arxivCategory": "gr-qc",
-          "publishedAt": "2026-06-17T16:05:34.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Impact of the Einstein Telescope's duty cycle on the estimation of binary black holes parameters",
-          "url": "https://arxiv.org/abs/2606.19201",
-          "score": 200,
-          "authors": "Luca Negri, Thomas C. K. Ng, Thibeau Wouters et al.",
-          "arxivCategory": "gr-qc",
-          "publishedAt": "2026-06-17T15:40:01.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Kiselev black hole and the ultra-slow evaporating behavior",
-          "url": "https://arxiv.org/abs/2606.19110",
-          "score": 200,
-          "authors": "Chen-Hao Wu, Xiao Liang, Ya-Peng Hu",
-          "arxivCategory": "gr-qc",
-          "publishedAt": "2026-06-17T14:23:45.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Computing resonances of perturbed Schrödinger equations: Application to Reissner-Norsdtröm-de Sitter black holes",
-          "url": "https://arxiv.org/abs/2606.18770",
-          "score": 200,
-          "authors": "Valentin Arrigoni, Geneviève Dusson",
-          "arxivCategory": "math.NA",
-          "publishedAt": "2026-06-17T07:30:43.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Tunable Chaos in the Finite Mean SYK Model",
-          "url": "https://arxiv.org/abs/2606.18529",
-          "score": 200,
-          "authors": "Arkaprava Mukherjee, Sumilan Banerjee, Sandip P. Trivedi et al.",
-          "arxivCategory": "cond-mat.str-el",
-          "publishedAt": "2026-06-16T22:50:49.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Thermodynamic Stability and Fluctuations of the (2+1)-dimensional GMG Warped Black Hole",
-          "url": "https://arxiv.org/abs/2606.18432",
-          "score": 200,
-          "authors": "Tsvetan Vetsov",
-          "arxivCategory": "hep-th",
-          "publishedAt": "2026-06-16T19:26:59.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "The Contribution of Disrupted Dense Star Clusters to Gaia's Compact Object Binaries",
-          "url": "https://arxiv.org/abs/2606.18419",
-          "score": 200,
-          "authors": "Aryanna Schiebelbein-Zwack, Claire S. Ye, Marta Reina-Campos et al.",
-          "arxivCategory": "astro-ph.GA",
-          "publishedAt": "2026-06-16T19:13:05.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "TNG SAM: Bridging Hydrodynamical Complexity and Semi-Analytic Efficiency to Model Galaxy Formation",
-          "url": "https://arxiv.org/abs/2606.18352",
-          "score": 200,
-          "authors": "Osase Omoruyi, Bryan A. Terrazas, Yossi Oren et al.",
-          "arxivCategory": "astro-ph.GA",
-          "publishedAt": "2026-06-16T18:00:17.000Z"
-        }
-      ],
-      "relatedConceptSlugs": [
-        "direct-multipixel-imaging-and-spectroscopy-of-an-exoplanet-with-a-solar-gravity",
-        "gravity-observation-and-dark-energy-detection-explorer"
-      ],
-      "resonance": 80,
-      "quadrant": "real-deal",
-      "resonanceSignals": {
-        "conceptDepth": 0.8982444017039272,
-        "editorial": 1,
-        "connections": 1,
-        "convergence": 0.2,
-        "deepTopic": 1,
         "pantheon": 0.92,
         "graveyard": 0
       }
@@ -664,10 +531,143 @@
       }
     },
     {
+      "slug": "black-holes",
+      "label": "Black Holes",
+      "score": 7811,
+      "delta": -3,
+      "direction": "steady",
+      "mentions": 42,
+      "sources": [
+        {
+          "platform": "arxiv",
+          "title": "GRMHD and GRRT Simulations of Black Hole Accretion: Flares, Precession, and Complex Spacetimes",
+          "url": "https://arxiv.org/abs/2606.19320",
+          "score": 200,
+          "authors": "Hong-Xuan Jiang",
+          "arxivCategory": "astro-ph.HE",
+          "publishedAt": "2026-06-17T17:47:45.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "A Potential Black Hole Mimicker From Non-Minimal Coupling",
+          "url": "https://arxiv.org/abs/2606.19291",
+          "score": 200,
+          "authors": "Debanjan Debnath, Rikpratik Sengupta, Kaushik Bhattacharya",
+          "arxivCategory": "gr-qc",
+          "publishedAt": "2026-06-17T17:12:17.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Direct Tests of Black Hole Accretion Rate Prescriptions: I. Bondi Accretion at Different Scales",
+          "url": "https://arxiv.org/abs/2606.19285",
+          "score": 200,
+          "authors": "James Agostino, Ming-Yi Lin, Natasha Jones et al.",
+          "arxivCategory": "astro-ph.GA",
+          "publishedAt": "2026-06-17T17:04:21.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Universal Closed Form for Dynamical Love Numbers of Black Holes",
+          "url": "https://arxiv.org/abs/2606.19281",
+          "score": 200,
+          "authors": "Mikhail P. Solon",
+          "arxivCategory": "hep-th",
+          "publishedAt": "2026-06-17T16:58:55.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Distinct Near-Horizon Trend of Synchrotron Polarization in Kerr Spacetime",
+          "url": "https://arxiv.org/abs/2606.19229",
+          "score": 200,
+          "authors": "Yehui Hou, Jiewei Huang, Bin Chen",
+          "arxivCategory": "gr-qc",
+          "publishedAt": "2026-06-17T16:05:34.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Impact of the Einstein Telescope's duty cycle on the estimation of binary black holes parameters",
+          "url": "https://arxiv.org/abs/2606.19201",
+          "score": 200,
+          "authors": "Luca Negri, Thomas C. K. Ng, Thibeau Wouters et al.",
+          "arxivCategory": "gr-qc",
+          "publishedAt": "2026-06-17T15:40:01.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Kiselev black hole and the ultra-slow evaporating behavior",
+          "url": "https://arxiv.org/abs/2606.19110",
+          "score": 200,
+          "authors": "Chen-Hao Wu, Xiao Liang, Ya-Peng Hu",
+          "arxivCategory": "gr-qc",
+          "publishedAt": "2026-06-17T14:23:45.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Computing resonances of perturbed Schrödinger equations: Application to Reissner-Norsdtröm-de Sitter black holes",
+          "url": "https://arxiv.org/abs/2606.18770",
+          "score": 200,
+          "authors": "Valentin Arrigoni, Geneviève Dusson",
+          "arxivCategory": "math.NA",
+          "publishedAt": "2026-06-17T07:30:43.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Tunable Chaos in the Finite Mean SYK Model",
+          "url": "https://arxiv.org/abs/2606.18529",
+          "score": 200,
+          "authors": "Arkaprava Mukherjee, Sumilan Banerjee, Sandip P. Trivedi et al.",
+          "arxivCategory": "cond-mat.str-el",
+          "publishedAt": "2026-06-16T22:50:49.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Thermodynamic Stability and Fluctuations of the (2+1)-dimensional GMG Warped Black Hole",
+          "url": "https://arxiv.org/abs/2606.18432",
+          "score": 200,
+          "authors": "Tsvetan Vetsov",
+          "arxivCategory": "hep-th",
+          "publishedAt": "2026-06-16T19:26:59.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "The Contribution of Disrupted Dense Star Clusters to Gaia's Compact Object Binaries",
+          "url": "https://arxiv.org/abs/2606.18419",
+          "score": 200,
+          "authors": "Aryanna Schiebelbein-Zwack, Claire S. Ye, Marta Reina-Campos et al.",
+          "arxivCategory": "astro-ph.GA",
+          "publishedAt": "2026-06-16T19:13:05.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "TNG SAM: Bridging Hydrodynamical Complexity and Semi-Analytic Efficiency to Model Galaxy Formation",
+          "url": "https://arxiv.org/abs/2606.18352",
+          "score": 200,
+          "authors": "Osase Omoruyi, Bryan A. Terrazas, Yossi Oren et al.",
+          "arxivCategory": "astro-ph.GA",
+          "publishedAt": "2026-06-16T18:00:17.000Z"
+        }
+      ],
+      "relatedConceptSlugs": [
+        "direct-multipixel-imaging-and-spectroscopy-of-an-exoplanet-with-a-solar-gravity",
+        "gravity-observation-and-dark-energy-detection-explorer"
+      ],
+      "resonance": 80,
+      "quadrant": "real-deal",
+      "resonanceSignals": {
+        "conceptDepth": 0.8982444017039272,
+        "editorial": 1,
+        "connections": 1,
+        "convergence": 0.2,
+        "deepTopic": 1,
+        "pantheon": 0.92,
+        "graveyard": 0
+      }
+    },
+    {
       "slug": "nanotechnology",
       "label": "Nanotechnology & Metamaterials",
       "score": 7800,
-      "delta": -3,
+      "delta": 0,
       "direction": "steady",
       "mentions": 39,
       "sources": [
@@ -1061,10 +1061,10 @@
     {
       "slug": "dark-matter",
       "label": "Dark Matter & Dark Energy",
-      "score": 5802,
+      "score": 5809,
       "delta": 0,
       "direction": "steady",
-      "mentions": 30,
+      "mentions": 33,
       "sources": [
         {
           "platform": "arxiv",
@@ -1326,10 +1326,10 @@
     {
       "slug": "astrobiology",
       "label": "Astrobiology",
-      "score": 3003,
-      "delta": -6,
+      "score": 2803,
+      "delta": -12,
       "direction": "steady",
-      "mentions": 16,
+      "mentions": 15,
       "sources": [
         {
           "platform": "arxiv",
@@ -1432,12 +1432,12 @@
         },
         {
           "platform": "arxiv",
-          "title": "The Era of Extremely Large Optical Telescopes: The ELT",
-          "url": "https://arxiv.org/abs/2605.20305",
+          "title": "First Detection of HC5N in a Class II Disk around TW Hya",
+          "url": "https://arxiv.org/abs/2606.02815",
           "score": 200,
-          "authors": "Priya Hasan",
-          "arxivCategory": "physics.pop-ph",
-          "publishedAt": "2026-05-19T15:05:23.000Z"
+          "authors": "Steven C. Wampler, Ryan A. Loomis, Amina Diop et al.",
+          "arxivCategory": "astro-ph.SR",
+          "publishedAt": "2026-06-01T19:33:03.000Z"
         }
       ],
       "relatedConceptSlugs": [
@@ -1459,10 +1459,10 @@
     {
       "slug": "fusion-propulsion",
       "label": "Fusion Propulsion",
-      "score": 2600,
-      "delta": 0,
+      "score": 2400,
+      "delta": -8,
       "direction": "steady",
-      "mentions": 13,
+      "mentions": 12,
       "sources": [
         {
           "platform": "arxiv",
@@ -1529,15 +1529,6 @@
         },
         {
           "platform": "arxiv",
-          "title": "NeSST: A Python Tool for Neutron Spectra and Synthetic Diagnostics in Inertial Confinement Fusion",
-          "url": "https://arxiv.org/abs/2605.20432",
-          "score": 200,
-          "authors": "Aidan Crilly",
-          "arxivCategory": "physics.plasm-ph",
-          "publishedAt": "2026-05-19T19:28:26.000Z"
-        },
-        {
-          "platform": "arxiv",
           "title": "Understanding and Quantifying Banana Coil Magnetic Fields and Forces for Enhanced Optimisation",
           "url": "https://arxiv.org/abs/2606.18029",
           "score": 200,
@@ -1571,6 +1562,15 @@
           "authors": "Seiki Saito, Keisuke Takeuchi, Hiroaki Nakamura et al.",
           "arxivCategory": "cond-mat.mtrl-sci",
           "publishedAt": "2026-06-01T11:15:33.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Gyrokinetic global simulation of Alfvenic ion temperature gradient mode in reversed magnetic shear",
+          "url": "https://arxiv.org/abs/2605.31313",
+          "score": 200,
+          "authors": "Gengxian Li, Zhixin Lu, Philipp Lauber et al.",
+          "arxivCategory": "physics.plasm-ph",
+          "publishedAt": "2026-05-29T13:45:08.000Z"
         }
       ],
       "relatedConceptSlugs": [
@@ -1593,18 +1593,18 @@
     {
       "slug": "starship",
       "label": "Starship & SpaceX",
-      "score": 2010,
-      "delta": 0,
+      "score": 2019,
+      "delta": 6,
       "direction": "steady",
-      "mentions": 51,
+      "mentions": 50,
       "sources": [
         {
           "platform": "hackernews",
           "title": "SpaceX to buy Cursor for $60B",
           "url": "https://www.reuters.com/legal/transactional/spacex-buy-anysphere-60-billion-2026-06-16/",
-          "score": 1124,
+          "score": 1131,
           "author": "itsmarcelg",
-          "commentCount": 1652,
+          "commentCount": 1673,
           "publishedAt": "2026-06-16T10:44:24.000Z"
         },
         {
@@ -1620,9 +1620,9 @@
           "platform": "hackernews",
           "title": "With Wall Street’s help, you’re about to be forced to buy stock in SpaceX",
           "url": "https://paulkrugman.substack.com/p/elon-musk-human-ponzi-scheme",
-          "score": 100,
+          "score": 110,
           "author": "aanet",
-          "commentCount": 73,
+          "commentCount": 86,
           "publishedAt": "2026-06-17T20:07:47.000Z"
         },
         {
@@ -1726,10 +1726,10 @@
     {
       "slug": "exoplanets",
       "label": "Exoplanets",
-      "score": 1803,
-      "delta": 0,
+      "score": 1800,
+      "delta": 12,
       "direction": "steady",
-      "mentions": 10,
+      "mentions": 9,
       "sources": [
         {
           "platform": "arxiv",
@@ -1811,15 +1811,6 @@
           "authors": "GREX-PLUS Science Team, :, Shunsuke Baba et al.",
           "arxivCategory": "astro-ph.IM",
           "publishedAt": "2026-06-03T04:42:32.000Z"
-        },
-        {
-          "platform": "hackernews",
-          "title": "JWST reveals dawn-dusk atmosphere split on ultra-hot exoplanet WASP-121B",
-          "url": "https://phys.org/news/2026-06-jwst-reveals-dawn-dusk-atmosphere.html",
-          "score": 3,
-          "author": "wglb",
-          "commentCount": 1,
-          "publishedAt": "2026-06-11T13:00:43.000Z"
         }
       ],
       "relatedConceptSlugs": [
