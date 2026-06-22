@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-21T09:40:35.475Z",
+  "generatedAt": "2026-06-21T19:45:18.653Z",
   "topics": [
     {
       "slug": "gravitational-waves",
@@ -136,10 +136,10 @@
     {
       "slug": "condensed-matter",
       "label": "Condensed Matter",
-      "score": 8604,
+      "score": 8606,
       "delta": 0,
       "direction": "steady",
-      "mentions": 38,
+      "mentions": 39,
       "sources": [
         {
           "platform": "hackernews",
@@ -154,7 +154,7 @@
           "platform": "hackernews",
           "title": "Volkswagen started blocking GrapheneOS users",
           "url": "https://discuss.grapheneos.org/d/35949-volkswagen-app?page=3",
-          "score": 782,
+          "score": 783,
           "author": "microtonal",
           "commentCount": 477,
           "publishedAt": "2026-06-17T15:04:47.000Z"
@@ -1061,7 +1061,7 @@
     {
       "slug": "dark-matter",
       "label": "Dark Matter & Dark Energy",
-      "score": 5616,
+      "score": 5617,
       "delta": 0,
       "direction": "steady",
       "mentions": 33,
@@ -1593,8 +1593,8 @@
     {
       "slug": "starship",
       "label": "Starship & SpaceX",
-      "score": 2127,
-      "delta": 2,
+      "score": 2131,
+      "delta": 1,
       "direction": "steady",
       "mentions": 50,
       "sources": [
@@ -1602,9 +1602,9 @@
           "platform": "hackernews",
           "title": "SpaceX to buy Cursor for $60B",
           "url": "https://www.reuters.com/legal/transactional/spacex-buy-anysphere-60-billion-2026-06-16/",
-          "score": 1145,
+          "score": 1147,
           "author": "itsmarcelg",
-          "commentCount": 1697,
+          "commentCount": 1698,
           "publishedAt": "2026-06-16T10:44:24.000Z"
         },
         {
@@ -1620,9 +1620,9 @@
           "platform": "hackernews",
           "title": "Americans express unease over SpaceX's influence on retirement savings",
           "url": "https://www.theguardian.com/science/2026/jun/19/spacex-retirement-savings-elon-musk",
-          "score": 247,
+          "score": 251,
           "author": "ValentineC",
-          "commentCount": 140,
+          "commentCount": 142,
           "publishedAt": "2026-06-19T22:45:20.000Z"
         },
         {
@@ -1699,12 +1699,12 @@
         },
         {
           "platform": "hackernews",
-          "title": "SpaceX IPO Is a Giant Unworkable Con",
-          "url": "https://karlbode.com/the-spacex-ipo-is-a-giant-unworkable-con-orchestrated-by-an-overt-white-supremacist-huckster/",
+          "title": "The Myth of SpaceX",
+          "url": "https://www.theatlantic.com/technology/2026/06/spacex-starlink-ipo-elon-musk-trillionaire/687651/",
           "score": 11,
-          "author": "only_in_america",
-          "commentCount": 3,
-          "publishedAt": "2026-06-16T08:30:21.000Z"
+          "author": "paulpauper",
+          "commentCount": 6,
+          "publishedAt": "2026-06-20T18:30:11.000Z"
         }
       ],
       "relatedConceptSlugs": [
@@ -1832,10 +1832,10 @@
     {
       "slug": "artemis",
       "label": "Artemis & Lunar Return",
-      "score": 1400,
-      "delta": 0,
-      "direction": "steady",
-      "mentions": 7,
+      "score": 1000,
+      "delta": -29,
+      "direction": "down",
+      "mentions": 5,
       "sources": [
         {
           "platform": "arxiv",
@@ -1881,24 +1881,6 @@
           "authors": "Ishan Paranjape, Tarun Hejmadi, Utkarsh Ranjan Mishra et al.",
           "arxivCategory": "astro-ph.EP",
           "publishedAt": "2026-06-03T01:24:30.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Efficient Nonlinear Uncertainty Quantification for Spaceflight Leveraging Nonlinear Expansions",
-          "url": "https://arxiv.org/abs/2605.24147",
-          "score": 200,
-          "authors": "Ethan R. Burnett, Spencer Boone",
-          "arxivCategory": "eess.SY",
-          "publishedAt": "2026-05-22T19:10:40.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Reachability for Low-Thrust Trajectories via Maximum Initial Mass",
-          "url": "https://arxiv.org/abs/2605.23770",
-          "score": 200,
-          "authors": "Giacomo Acciarini, Dario Izzo, Zhong Zhang",
-          "arxivCategory": "eess.SY",
-          "publishedAt": "2026-05-22T15:40:39.000Z"
         }
       ],
       "relatedConceptSlugs": [
@@ -2190,7 +2172,7 @@
       "slug": "interstellar-travel",
       "label": "Interstellar Travel",
       "score": 600,
-      "delta": -1,
+      "delta": 0,
       "direction": "steady",
       "mentions": 3,
       "sources": [
@@ -2234,49 +2216,6 @@
         "editorial": 1,
         "connections": 0,
         "convergence": 0.125,
-        "deepTopic": 0.8,
-        "pantheon": 0.92,
-        "graveyard": 0
-      }
-    },
-    {
-      "slug": "solar-sails",
-      "label": "Solar Sails",
-      "score": 400,
-      "delta": 0,
-      "direction": "steady",
-      "mentions": 2,
-      "sources": [
-        {
-          "platform": "arxiv",
-          "title": "Station-Keeping Approach for Extremely Low Lunar Orbits with Solar Sailing",
-          "url": "https://arxiv.org/abs/2606.05601",
-          "score": 200,
-          "authors": "Jack Yarndley, Gregory Lantoine, Roberto Armellin",
-          "arxivCategory": "astro-ph.IM",
-          "publishedAt": "2026-06-04T02:25:16.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Reachability for Low-Thrust Trajectories via Maximum Initial Mass",
-          "url": "https://arxiv.org/abs/2605.23770",
-          "score": 200,
-          "authors": "Giacomo Acciarini, Dario Izzo, Zhong Zhang",
-          "arxivCategory": "eess.SY",
-          "publishedAt": "2026-05-22T15:40:39.000Z"
-        }
-      ],
-      "relatedConceptSlugs": [
-        "extreme-metamaterial-solar-sails",
-        "solar-surfing"
-      ],
-      "resonance": 68,
-      "quadrant": "sleeping-giant",
-      "resonanceSignals": {
-        "conceptDepth": 0.8982444017039272,
-        "editorial": 1,
-        "connections": 0.3333333333333333,
-        "convergence": 0.25,
         "deepTopic": 0.8,
         "pantheon": 0.92,
         "graveyard": 0
@@ -2447,10 +2386,44 @@
       }
     },
     {
+      "slug": "solar-sails",
+      "label": "Solar Sails",
+      "score": 200,
+      "delta": -50,
+      "direction": "down",
+      "mentions": 1,
+      "sources": [
+        {
+          "platform": "arxiv",
+          "title": "Station-Keeping Approach for Extremely Low Lunar Orbits with Solar Sailing",
+          "url": "https://arxiv.org/abs/2606.05601",
+          "score": 200,
+          "authors": "Jack Yarndley, Gregory Lantoine, Roberto Armellin",
+          "arxivCategory": "astro-ph.IM",
+          "publishedAt": "2026-06-04T02:25:16.000Z"
+        }
+      ],
+      "relatedConceptSlugs": [
+        "extreme-metamaterial-solar-sails",
+        "solar-surfing"
+      ],
+      "resonance": 68,
+      "quadrant": "sleeping-giant",
+      "resonanceSignals": {
+        "conceptDepth": 0.8982444017039272,
+        "editorial": 1,
+        "connections": 0.3333333333333333,
+        "convergence": 0.25,
+        "deepTopic": 0.8,
+        "pantheon": 0.92,
+        "graveyard": 0
+      }
+    },
+    {
       "slug": "warp-drives",
       "label": "Warp Drives & Exotic Physics",
       "score": 200,
-      "delta": -1,
+      "delta": 0,
       "direction": "steady",
       "mentions": 1,
       "sources": [
