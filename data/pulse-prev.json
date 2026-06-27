@@ -1,13 +1,13 @@
 {
-  "generatedAt": "2026-06-26T08:55:22.606Z",
+  "generatedAt": "2026-06-26T19:52:34.366Z",
   "topics": [
     {
       "slug": "space-telescopes",
       "label": "Space Telescopes",
-      "score": 8808,
+      "score": 8804,
       "delta": 0,
       "direction": "steady",
-      "mentions": 47,
+      "mentions": 46,
       "sources": [
         {
           "platform": "arxiv",
@@ -269,7 +269,7 @@
     {
       "slug": "black-holes",
       "label": "Black Holes",
-      "score": 8207,
+      "score": 8205,
       "delta": 5,
       "direction": "steady",
       "mentions": 43,
@@ -402,10 +402,10 @@
     {
       "slug": "nanotechnology",
       "label": "Nanotechnology & Metamaterials",
-      "score": 8000,
-      "delta": 0,
+      "score": 7800,
+      "delta": -2,
       "direction": "steady",
-      "mentions": 40,
+      "mentions": 39,
       "sources": [
         {
           "platform": "arxiv",
@@ -535,10 +535,10 @@
     {
       "slug": "quantum-computing",
       "label": "Quantum Computing",
-      "score": 7613,
+      "score": 7619,
       "delta": 0,
       "direction": "steady",
-      "mentions": 42,
+      "mentions": 44,
       "sources": [
         {
           "platform": "arxiv",
@@ -668,7 +668,7 @@
       "slug": "condensed-matter",
       "label": "Condensed Matter",
       "score": 7223,
-      "delta": -3,
+      "delta": 0,
       "direction": "steady",
       "mentions": 38,
       "sources": [
@@ -1195,7 +1195,7 @@
       "slug": "astrobiology",
       "label": "Astrobiology",
       "score": 3200,
-      "delta": 0,
+      "delta": 7,
       "direction": "steady",
       "mentions": 16,
       "sources": [
@@ -1459,7 +1459,7 @@
     {
       "slug": "exoplanets",
       "label": "Exoplanets",
-      "score": 2602,
+      "score": 2603,
       "delta": 8,
       "direction": "steady",
       "mentions": 14,
@@ -1823,10 +1823,10 @@
     {
       "slug": "space-debris",
       "label": "Space Debris",
-      "score": 1400,
-      "delta": -12,
-      "direction": "steady",
-      "mentions": 7,
+      "score": 1200,
+      "delta": -25,
+      "direction": "down",
+      "mentions": 6,
       "sources": [
         {
           "platform": "arxiv",
@@ -1863,15 +1863,6 @@
           "authors": "Tu Do, Shannon Ryan, Santu Rana",
           "arxivCategory": "cs.LG",
           "publishedAt": "2026-06-08T06:02:08.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Designing Active Tether-Net Systems for Space Debris Capture with Graph-Learning-Aided Mixed-Combinatorial Optimization",
-          "url": "https://arxiv.org/abs/2605.29021",
-          "score": 200,
-          "authors": "Feng Liu, Achira Boonrath, Gishnu Madhu et al.",
-          "arxivCategory": "cs.LG",
-          "publishedAt": "2026-05-27T19:19:42.000Z"
         },
         {
           "platform": "arxiv",
@@ -2165,8 +2156,8 @@
     {
       "slug": "starship",
       "label": "Starship & SpaceX",
-      "score": 851,
-      "delta": -1,
+      "score": 878,
+      "delta": 0,
       "direction": "steady",
       "mentions": 33,
       "sources": [
@@ -2185,7 +2176,7 @@
           "url": "https://fortune.com/2026/06/24/reid-hoffman-spacex-musk-openai-anthropic-gen-z-mistake/",
           "score": 236,
           "author": "1vuio0pswjnm7",
-          "commentCount": 266,
+          "commentCount": 269,
           "publishedAt": "2026-06-24T12:23:59.000Z"
         },
         {
@@ -2208,12 +2199,21 @@
         },
         {
           "platform": "hackernews",
-          "title": "The average SpaceX buyer post-IPO is almost under water after two-day slide",
-          "url": "https://www.cnbc.com/2026/06/18/the-average-spacex-buyer-post-ipo-is-almost-under-water-after-two-day-slide.html",
-          "score": 40,
-          "author": "1vuio0pswjnm7",
-          "commentCount": 19,
-          "publishedAt": "2026-06-19T13:48:28.000Z"
+          "title": "SpaceX plans to launch Starlink mobile service in the US",
+          "url": "https://arstechnica.com/space/2026/06/spacex-plans-to-launch-starlink-mobile-service-in-the-us/",
+          "score": 52,
+          "author": "LorenDB",
+          "commentCount": 1,
+          "publishedAt": "2026-06-26T16:59:47.000Z"
+        },
+        {
+          "platform": "hackernews",
+          "title": "SpaceX's Starfall Demo Mission",
+          "url": "https://www.spacex.com/launches/starfalldemo",
+          "score": 25,
+          "author": "caseysoftware",
+          "commentCount": 0,
+          "publishedAt": "2026-06-26T18:29:58.000Z"
         },
         {
           "platform": "hackernews",
@@ -2262,18 +2262,9 @@
         },
         {
           "platform": "hackernews",
-          "title": "SpaceX raises $25B in debt sale less than two weeks after IPO",
-          "url": "https://www.cnbc.com/2026/06/23/spacex-debt-bond-market-ipo.html",
-          "score": 10,
-          "author": "1vuio0pswjnm7",
-          "commentCount": 3,
-          "publishedAt": "2026-06-24T01:27:46.000Z"
-        },
-        {
-          "platform": "hackernews",
           "title": "With Starfall, SpaceX eyes an edge in global cargo delivery from orbit",
           "url": "https://arstechnica.com/space/2026/06/with-starfall-spacex-eyes-an-edge-in-global-cargo-delivery-from-orbit/",
-          "score": 9,
+          "score": 10,
           "author": "MemoryHoleHQ",
           "commentCount": 7,
           "publishedAt": "2026-06-24T11:47:30.000Z"
