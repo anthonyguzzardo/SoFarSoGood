@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-28T08:45:28.229Z",
+  "generatedAt": "2026-06-28T19:24:16.229Z",
   "topics": [
     {
       "slug": "space-telescopes",
@@ -271,7 +271,7 @@
       "slug": "gravitational-waves",
       "label": "Gravitational Waves",
       "score": 8000,
-      "delta": -5,
+      "delta": -2,
       "direction": "steady",
       "mentions": 40,
       "sources": [
@@ -667,10 +667,10 @@
     {
       "slug": "condensed-matter",
       "label": "Condensed Matter",
-      "score": 7023,
-      "delta": -3,
+      "score": 6623,
+      "delta": -8,
       "direction": "steady",
-      "mentions": 37,
+      "mentions": 35,
       "sources": [
         {
           "platform": "arxiv",
@@ -737,15 +737,6 @@
         },
         {
           "platform": "arxiv",
-          "title": "What controls the superconducting dome of electron-doped FeSe?",
-          "url": "https://arxiv.org/abs/2605.31459",
-          "score": 200,
-          "authors": "Paul T. Malinowski, Chad J. Mowers, Yaoju Tarn et al.",
-          "arxivCategory": "cond-mat.supr-con",
-          "publishedAt": "2026-05-29T15:51:35.000Z"
-        },
-        {
-          "platform": "arxiv",
           "title": "Geometric bulk-edge correspondence for $\\mathbb{Z}_2$-topological insulators",
           "url": "https://arxiv.org/abs/2606.27318",
           "score": 200,
@@ -779,6 +770,15 @@
           "authors": "Jingwen Li, Arpita Dutta, Kush Saha et al.",
           "arxivCategory": "cond-mat.str-el",
           "publishedAt": "2026-06-24T04:26:48.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Observation of fractality-induced topology in photonic crystals",
+          "url": "https://arxiv.org/abs/2606.24505",
+          "score": 200,
+          "authors": "Bei Yan, Yingfeng Qi, Xiang Xi et al.",
+          "arxivCategory": "physics.optics",
+          "publishedAt": "2026-06-23T12:34:02.000Z"
         }
       ],
       "relatedConceptSlugs": [
@@ -800,7 +800,7 @@
       "slug": "particle-physics",
       "label": "Particle Physics",
       "score": 6603,
-      "delta": -3,
+      "delta": 0,
       "direction": "steady",
       "mentions": 34,
       "sources": [
@@ -1592,10 +1592,10 @@
     {
       "slug": "fusion-propulsion",
       "label": "Fusion Propulsion",
-      "score": 2600,
-      "delta": 0,
+      "score": 2400,
+      "delta": -8,
       "direction": "steady",
-      "mentions": 13,
+      "mentions": 12,
       "sources": [
         {
           "platform": "arxiv",
@@ -2007,8 +2007,8 @@
       "slug": "asteroid-mining",
       "label": "Asteroid Mining",
       "score": 1000,
-      "delta": -17,
-      "direction": "down",
+      "delta": 0,
+      "direction": "steady",
       "mentions": 5,
       "sources": [
         {
@@ -2210,10 +2210,10 @@
     {
       "slug": "starship",
       "label": "Starship & SpaceX",
-      "score": 617,
-      "delta": -3,
+      "score": 606,
+      "delta": -1,
       "direction": "steady",
-      "mentions": 31,
+      "mentions": 30,
       "sources": [
         {
           "platform": "hackernews",
@@ -2289,15 +2289,6 @@
         },
         {
           "platform": "hackernews",
-          "title": "SpaceX handed lowest possible ESG rating by MSCI",
-          "url": "https://www.ft.com/content/a0dd4ea7-ef3d-4460-a96c-8c6975a053e3",
-          "score": 11,
-          "author": "mkl95",
-          "commentCount": 1,
-          "publishedAt": "2026-06-21T14:35:01.000Z"
-        },
-        {
-          "platform": "hackernews",
           "title": "With Starfall, SpaceX eyes an edge in global cargo delivery from orbit",
           "url": "https://arstechnica.com/space/2026/06/with-starfall-spacex-eyes-an-edge-in-global-cargo-delivery-from-orbit/",
           "score": 10,
@@ -2322,6 +2313,15 @@
           "author": "voxadam",
           "commentCount": 2,
           "publishedAt": "2026-06-22T23:52:10.000Z"
+        },
+        {
+          "platform": "hackernews",
+          "title": "SpaceX bonds sell off days after AI and rocket group's $25B debt deal",
+          "url": "https://www.ft.com/content/04f98e21-4ce7-43d2-8651-44557e12c31c",
+          "score": 8,
+          "author": "JumpCrisscross",
+          "commentCount": 0,
+          "publishedAt": "2026-06-26T21:21:17.000Z"
         }
       ],
       "relatedConceptSlugs": [
