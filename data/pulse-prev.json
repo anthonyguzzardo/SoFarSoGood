@@ -1,13 +1,13 @@
 {
-  "generatedAt": "2026-06-30T09:01:42.806Z",
+  "generatedAt": "2026-06-30T20:02:19.123Z",
   "topics": [
     {
       "slug": "space-telescopes",
       "label": "Space Telescopes",
-      "score": 9010,
+      "score": 9006,
       "delta": 0,
       "direction": "steady",
-      "mentions": 48,
+      "mentions": 46,
       "sources": [
         {
           "platform": "arxiv",
@@ -536,7 +536,7 @@
       "slug": "quantum-computing",
       "label": "Quantum Computing",
       "score": 8015,
-      "delta": 3,
+      "delta": 2,
       "direction": "steady",
       "mentions": 46,
       "sources": [
@@ -667,7 +667,7 @@
     {
       "slug": "condensed-matter",
       "label": "Condensed Matter",
-      "score": 6632,
+      "score": 6634,
       "delta": 0,
       "direction": "steady",
       "mentions": 36,
@@ -799,7 +799,7 @@
     {
       "slug": "particle-physics",
       "label": "Particle Physics",
-      "score": 6621,
+      "score": 6631,
       "delta": 0,
       "direction": "steady",
       "mentions": 35,
@@ -2272,10 +2272,10 @@
     {
       "slug": "starship",
       "label": "Starship & SpaceX",
-      "score": 463,
-      "delta": -26,
+      "score": 449,
+      "delta": -19,
       "direction": "down",
-      "mentions": 27,
+      "mentions": 26,
       "sources": [
         {
           "platform": "hackernews",
@@ -2310,17 +2310,8 @@
           "url": "https://moneywise.com/news/top-stories/spacex-401k-anthropic-openai-ipo-index-fund-rules",
           "score": 14,
           "author": "voxadam",
-          "commentCount": 3,
+          "commentCount": 4,
           "publishedAt": "2026-06-29T03:25:05.000Z"
-        },
-        {
-          "platform": "hackernews",
-          "title": "SpaceX launches $25B notes offering, source says",
-          "url": "https://www.reuters.com/legal/transactional/spacex-launches-25-billion-notes-offering-source-says-2026-06-23/",
-          "score": 12,
-          "author": "onemoresoop",
-          "commentCount": 3,
-          "publishedAt": "2026-06-23T18:28:54.000Z"
         },
         {
           "platform": "hackernews",
@@ -2384,6 +2375,15 @@
           "author": "vrganj",
           "commentCount": 0,
           "publishedAt": "2026-06-25T11:09:53.000Z"
+        },
+        {
+          "platform": "hackernews",
+          "title": "Rocket Lab Buys Satellite Operator Iridium in Bid to Challenge SpaceX",
+          "url": "https://www.wsj.com/business/telecom/rocket-lab-buys-satellite-operator-iridium-in-bid-to-challenge-spacex-d3a35be7",
+          "score": 6,
+          "author": "JumpCrisscross",
+          "commentCount": 2,
+          "publishedAt": "2026-06-29T12:11:27.000Z"
         }
       ],
       "relatedConceptSlugs": [
@@ -2492,7 +2492,7 @@
       "slug": "warp-drives",
       "label": "Warp Drives & Exotic Physics",
       "score": 204,
-      "delta": 2,
+      "delta": 0,
       "direction": "steady",
       "mentions": 2,
       "sources": [
