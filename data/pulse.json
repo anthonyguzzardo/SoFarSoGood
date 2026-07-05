@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-04T19:17:07.602Z",
+  "generatedAt": "2026-07-05T08:45:28.600Z",
   "topics": [
     {
       "slug": "gravitational-waves",
@@ -269,10 +269,10 @@
     {
       "slug": "black-holes",
       "label": "Black Holes",
-      "score": 8007,
-      "delta": -2,
+      "score": 8009,
+      "delta": 0,
       "direction": "steady",
-      "mentions": 43,
+      "mentions": 44,
       "sources": [
         {
           "platform": "arxiv",
@@ -535,7 +535,7 @@
     {
       "slug": "quantum-computing",
       "label": "Quantum Computing",
-      "score": 7616,
+      "score": 7619,
       "delta": 0,
       "direction": "steady",
       "mentions": 45,
@@ -667,10 +667,10 @@
     {
       "slug": "condensed-matter",
       "label": "Condensed Matter",
-      "score": 6621,
+      "score": 6628,
       "delta": 0,
       "direction": "steady",
-      "mentions": 35,
+      "mentions": 36,
       "sources": [
         {
           "platform": "arxiv",
@@ -799,10 +799,10 @@
     {
       "slug": "particle-physics",
       "label": "Particle Physics",
-      "score": 6526,
-      "delta": -8,
+      "score": 6523,
+      "delta": -6,
       "direction": "steady",
-      "mentions": 34,
+      "mentions": 33,
       "sources": [
         {
           "platform": "hackernews",
@@ -1326,10 +1326,10 @@
     {
       "slug": "exoplanets",
       "label": "Exoplanets",
-      "score": 2800,
-      "delta": 0,
+      "score": 2600,
+      "delta": -7,
       "direction": "steady",
-      "mentions": 14,
+      "mentions": 13,
       "sources": [
         {
           "platform": "arxiv",
@@ -1375,15 +1375,6 @@
           "authors": "Leif Bauer, Daien He, Sathwik Bharadwaj et al.",
           "arxivCategory": "cond-mat.supr-con",
           "publishedAt": "2026-06-15T18:15:35.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "A Compact, Ultra-High Resolution VIPA Spectrograph for Solar Spectroscopic Observations: Astrocomb Characterization and First Light",
-          "url": "https://arxiv.org/abs/2606.06793",
-          "score": 200,
-          "authors": "Yutao Wang, Xiaoming Zhu, Xiaoli Yan et al.",
-          "arxivCategory": "astro-ph.SR",
-          "publishedAt": "2026-06-05T00:41:41.000Z"
         },
         {
           "platform": "arxiv",
@@ -1438,6 +1429,15 @@
           "authors": "Dimitra Atri",
           "arxivCategory": "astro-ph.EP",
           "publishedAt": "2026-06-22T15:28:44.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Tidal locking as a negative feedback on Earth-like planetary dynamos: Consequences for magnetic shielding and habitability",
+          "url": "https://arxiv.org/abs/2606.14508",
+          "score": 200,
+          "authors": "J. P. Hidalgo, D. R. G Schleicher",
+          "arxivCategory": "astro-ph.EP",
+          "publishedAt": "2026-06-12T14:40:19.000Z"
         }
       ],
       "relatedConceptSlugs": [
@@ -1460,7 +1460,7 @@
       "slug": "astrobiology",
       "label": "Astrobiology",
       "score": 2400,
-      "delta": -8,
+      "delta": 0,
       "direction": "steady",
       "mentions": 12,
       "sources": [
@@ -1590,126 +1590,10 @@
       }
     },
     {
-      "slug": "fusion-propulsion",
-      "label": "Fusion Propulsion",
-      "score": 2000,
-      "delta": 0,
-      "direction": "steady",
-      "mentions": 10,
-      "sources": [
-        {
-          "platform": "arxiv",
-          "title": "Denoising ICF Images with Multiplicative Uniform Noise: A Self-Supervised Study Based on the Log-Domain Noisier2Inverse Framework",
-          "url": "https://arxiv.org/abs/2606.27635",
-          "score": 200,
-          "authors": "Gyeongha Hwang, Bradley Thomas Wolfe, Naima Naheed",
-          "arxivCategory": "cs.CV",
-          "publishedAt": "2026-06-26T01:16:51.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Too cheap to meter? A stochastic analysis of projected future fusion costs",
-          "url": "https://arxiv.org/abs/2606.26536",
-          "score": 200,
-          "authors": "Stefania Böhnlein, Fanny Böse, Christian von Hirschhausen et al.",
-          "arxivCategory": "econ.GN",
-          "publishedAt": "2026-06-25T02:21:51.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Single-Shot Intensity-Correlation Diffractive X-ray Imaging of ICF Plasmas",
-          "url": "https://arxiv.org/abs/2606.26198",
-          "score": 200,
-          "authors": "Kenan Qu, Daniel Bhatti, Nathaniel J. Fisch",
-          "arxivCategory": "physics.plasm-ph",
-          "publishedAt": "2026-06-24T16:11:43.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Observation of stopping power reduction at strong ion-plasma coupling",
-          "url": "https://arxiv.org/abs/2606.23109",
-          "score": 200,
-          "authors": "Yun Liu, Jieru Ren, Zhigang Deng et al.",
-          "arxivCategory": "physics.plasm-ph",
-          "publishedAt": "2026-06-22T09:52:09.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Lattice Matching Dictates the Growth Mode and Quality of Deuterium Crystallization in Confined Spherical Shells",
-          "url": "https://arxiv.org/abs/2606.16550",
-          "score": 200,
-          "authors": "Peng Bi, Yu-Shen Wan, Wei Zhang et al.",
-          "arxivCategory": "cond-mat.mtrl-sci",
-          "publishedAt": "2026-06-15T10:52:15.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "High-dimensional inverse design of inertial fusion implosions via differentiable simulation",
-          "url": "https://arxiv.org/abs/2606.08827",
-          "score": 200,
-          "authors": "A. J. Crilly, P. Travis, J. P. Brodrick et al.",
-          "arxivCategory": "physics.plasm-ph",
-          "publishedAt": "2026-06-07T20:40:43.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Asymptotic behavior of the shear flow reactivity enhancement effect",
-          "url": "https://arxiv.org/abs/2606.06973",
-          "score": 200,
-          "authors": "Henry Fetsch, Nathaniel J. Fisch",
-          "arxivCategory": "physics.plasm-ph",
-          "publishedAt": "2026-06-05T07:04:12.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Understanding and Quantifying Banana Coil Magnetic Fields and Forces for Enhanced Optimisation",
-          "url": "https://arxiv.org/abs/2606.18029",
-          "score": 200,
-          "authors": "Annika Zettl, Tobias Schuett, Sophia Henneberg",
-          "arxivCategory": "physics.plasm-ph",
-          "publishedAt": "2026-06-16T15:06:05.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Towards Data-Efficient Cross-Device Generalization of Grad-Shafranov Equilibria via Transfer Learning Neural Operator",
-          "url": "https://arxiv.org/abs/2606.15512",
-          "score": 200,
-          "authors": "Jay Phil Yoo, William Howes, Yashika Ghai et al.",
-          "arxivCategory": "cs.LG",
-          "publishedAt": "2026-06-13T23:47:19.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Curved Mesh Adaptation for High-Order Finite Element Simulations",
-          "url": "https://arxiv.org/abs/2606.10763",
-          "score": 200,
-          "authors": "Aditya Yogesh Joshi, Mark S. Shephard",
-          "arxivCategory": "cs.CE",
-          "publishedAt": "2026-06-09T12:15:48.000Z"
-        }
-      ],
-      "relatedConceptSlugs": [
-        "gradient-field-imploding-liner-fusion-propulsion",
-        "fusion-enabled-pluto-orbiter",
-        "pulsed-fission-fusion"
-      ],
-      "resonance": 64,
-      "quadrant": "real-deal",
-      "resonanceSignals": {
-        "conceptDepth": 0.6991803252671503,
-        "editorial": 0.7,
-        "connections": 0,
-        "convergence": 0.975,
-        "deepTopic": 1,
-        "pantheon": 0.92,
-        "graveyard": 0
-      }
-    },
-    {
       "slug": "artemis",
       "label": "Artemis & Lunar Return",
       "score": 1800,
-      "delta": -10,
+      "delta": 0,
       "direction": "steady",
       "mentions": 9,
       "sources": [
@@ -1800,7 +1684,7 @@
         "regolith-adaptive-modification-systems"
       ],
       "resonance": 52,
-      "quadrant": "sleeping-giant",
+      "quadrant": "real-deal",
       "resonanceSignals": {
         "conceptDepth": 0.7737056144690831,
         "editorial": 1,
@@ -1808,6 +1692,113 @@
         "convergence": 0.025,
         "deepTopic": 0.8,
         "pantheon": 0.08,
+        "graveyard": 0
+      }
+    },
+    {
+      "slug": "fusion-propulsion",
+      "label": "Fusion Propulsion",
+      "score": 1800,
+      "delta": -10,
+      "direction": "steady",
+      "mentions": 9,
+      "sources": [
+        {
+          "platform": "arxiv",
+          "title": "Denoising ICF Images with Multiplicative Uniform Noise: A Self-Supervised Study Based on the Log-Domain Noisier2Inverse Framework",
+          "url": "https://arxiv.org/abs/2606.27635",
+          "score": 200,
+          "authors": "Gyeongha Hwang, Bradley Thomas Wolfe, Naima Naheed",
+          "arxivCategory": "cs.CV",
+          "publishedAt": "2026-06-26T01:16:51.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Too cheap to meter? A stochastic analysis of projected future fusion costs",
+          "url": "https://arxiv.org/abs/2606.26536",
+          "score": 200,
+          "authors": "Stefania Böhnlein, Fanny Böse, Christian von Hirschhausen et al.",
+          "arxivCategory": "econ.GN",
+          "publishedAt": "2026-06-25T02:21:51.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Single-Shot Intensity-Correlation Diffractive X-ray Imaging of ICF Plasmas",
+          "url": "https://arxiv.org/abs/2606.26198",
+          "score": 200,
+          "authors": "Kenan Qu, Daniel Bhatti, Nathaniel J. Fisch",
+          "arxivCategory": "physics.plasm-ph",
+          "publishedAt": "2026-06-24T16:11:43.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Observation of stopping power reduction at strong ion-plasma coupling",
+          "url": "https://arxiv.org/abs/2606.23109",
+          "score": 200,
+          "authors": "Yun Liu, Jieru Ren, Zhigang Deng et al.",
+          "arxivCategory": "physics.plasm-ph",
+          "publishedAt": "2026-06-22T09:52:09.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Lattice Matching Dictates the Growth Mode and Quality of Deuterium Crystallization in Confined Spherical Shells",
+          "url": "https://arxiv.org/abs/2606.16550",
+          "score": 200,
+          "authors": "Peng Bi, Yu-Shen Wan, Wei Zhang et al.",
+          "arxivCategory": "cond-mat.mtrl-sci",
+          "publishedAt": "2026-06-15T10:52:15.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "High-dimensional inverse design of inertial fusion implosions via differentiable simulation",
+          "url": "https://arxiv.org/abs/2606.08827",
+          "score": 200,
+          "authors": "A. J. Crilly, P. Travis, J. P. Brodrick et al.",
+          "arxivCategory": "physics.plasm-ph",
+          "publishedAt": "2026-06-07T20:40:43.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Understanding and Quantifying Banana Coil Magnetic Fields and Forces for Enhanced Optimisation",
+          "url": "https://arxiv.org/abs/2606.18029",
+          "score": 200,
+          "authors": "Annika Zettl, Tobias Schuett, Sophia Henneberg",
+          "arxivCategory": "physics.plasm-ph",
+          "publishedAt": "2026-06-16T15:06:05.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Towards Data-Efficient Cross-Device Generalization of Grad-Shafranov Equilibria via Transfer Learning Neural Operator",
+          "url": "https://arxiv.org/abs/2606.15512",
+          "score": 200,
+          "authors": "Jay Phil Yoo, William Howes, Yashika Ghai et al.",
+          "arxivCategory": "cs.LG",
+          "publishedAt": "2026-06-13T23:47:19.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Curved Mesh Adaptation for High-Order Finite Element Simulations",
+          "url": "https://arxiv.org/abs/2606.10763",
+          "score": 200,
+          "authors": "Aditya Yogesh Joshi, Mark S. Shephard",
+          "arxivCategory": "cs.CE",
+          "publishedAt": "2026-06-09T12:15:48.000Z"
+        }
+      ],
+      "relatedConceptSlugs": [
+        "gradient-field-imploding-liner-fusion-propulsion",
+        "fusion-enabled-pluto-orbiter",
+        "pulsed-fission-fusion"
+      ],
+      "resonance": 64,
+      "quadrant": "real-deal",
+      "resonanceSignals": {
+        "conceptDepth": 0.6991803252671503,
+        "editorial": 0.7,
+        "connections": 0,
+        "convergence": 0.975,
+        "deepTopic": 1,
+        "pantheon": 0.92,
         "graveyard": 0
       }
     },
@@ -2087,18 +2078,18 @@
     {
       "slug": "starlink",
       "label": "Starlink & Satellite Internet",
-      "score": 647,
-      "delta": 46,
-      "direction": "up",
+      "score": 650,
+      "delta": 9,
+      "direction": "steady",
       "mentions": 5,
       "sources": [
         {
           "platform": "hackernews",
           "title": "Africans Are Turning to Starlink",
           "url": "https://www.economist.com/middle-east-and-africa/2026/07/02/africans-are-turning-to-starlink",
-          "score": 200,
+          "score": 203,
           "author": "bookofjoe",
-          "commentCount": 234,
+          "commentCount": 253,
           "publishedAt": "2026-07-03T21:08:37.000Z"
         },
         {
@@ -2125,7 +2116,7 @@
           "url": "https://www.theverge.com/science/960563/amazon-leo-service-tipping-point",
           "score": 35,
           "author": "root-parent",
-          "commentCount": 23,
+          "commentCount": 24,
           "publishedAt": "2026-07-03T11:50:20.000Z"
         },
         {
@@ -2253,8 +2244,8 @@
       "slug": "ai-space",
       "label": "AI in Space",
       "score": 202,
-      "delta": -50,
-      "direction": "down",
+      "delta": 0,
+      "direction": "steady",
       "mentions": 2,
       "sources": [
         {
@@ -2296,8 +2287,8 @@
       "slug": "solar-sails",
       "label": "Solar Sails",
       "score": 200,
-      "delta": -50,
-      "direction": "down",
+      "delta": 0,
+      "direction": "steady",
       "mentions": 1,
       "sources": [
         {
@@ -2395,11 +2386,20 @@
     {
       "slug": "starship",
       "label": "Starship & SpaceX",
-      "score": 111,
-      "delta": 19,
+      "score": 118,
+      "delta": 24,
       "direction": "up",
       "mentions": 17,
       "sources": [
+        {
+          "platform": "hackernews",
+          "title": "Elon Musk posted twice as often on UK race and immigration as about SpaceX IPO",
+          "url": "https://www.theguardian.com/technology/2026/jul/04/elon-musk-uk-race-immigration-spacex-ipo",
+          "score": 23,
+          "author": "iamflimflam1",
+          "commentCount": 4,
+          "publishedAt": "2026-07-04T17:18:19.000Z"
+        },
         {
           "platform": "hackernews",
           "title": "Tech giants lose $2T in SpaceX's IPO month",
@@ -2408,15 +2408,6 @@
           "author": "01-_-",
           "commentCount": 9,
           "publishedAt": "2026-07-01T17:14:01.000Z"
-        },
-        {
-          "platform": "hackernews",
-          "title": "Elon Musk posted twice as often on UK race and immigration as about SpaceX IPO",
-          "url": "https://www.theguardian.com/technology/2026/jul/04/elon-musk-uk-race-immigration-spacex-ipo",
-          "score": 16,
-          "author": "iamflimflam1",
-          "commentCount": 0,
-          "publishedAt": "2026-07-04T17:18:19.000Z"
         },
         {
           "platform": "hackernews",
