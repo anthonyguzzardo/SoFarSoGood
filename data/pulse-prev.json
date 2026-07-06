@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-05T08:45:28.600Z",
+  "generatedAt": "2026-07-05T19:22:50.441Z",
   "topics": [
     {
       "slug": "gravitational-waves",
@@ -403,7 +403,7 @@
       "slug": "nanotechnology",
       "label": "Nanotechnology & Metamaterials",
       "score": 7800,
-      "delta": -2,
+      "delta": 0,
       "direction": "steady",
       "mentions": 39,
       "sources": [
@@ -535,10 +535,10 @@
     {
       "slug": "quantum-computing",
       "label": "Quantum Computing",
-      "score": 7619,
+      "score": 7626,
       "delta": 0,
       "direction": "steady",
-      "mentions": 45,
+      "mentions": 46,
       "sources": [
         {
           "platform": "arxiv",
@@ -665,142 +665,10 @@
       }
     },
     {
-      "slug": "condensed-matter",
-      "label": "Condensed Matter",
-      "score": 6628,
-      "delta": 0,
-      "direction": "steady",
-      "mentions": 36,
-      "sources": [
-        {
-          "platform": "arxiv",
-          "title": "Dispersion Suppression for Wedge-Based Final Cooling at a 10 TeV Muon Collider",
-          "url": "https://arxiv.org/abs/2606.25944",
-          "score": 200,
-          "authors": "Inci Karaaslan, Karri DiPetrillo, David Neuffer et al.",
-          "arxivCategory": "physics.acc-ph",
-          "publishedAt": "2026-06-24T15:20:29.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Universal behavior of the condensation energy of Superconducting BCS Bose gases",
-          "url": "https://arxiv.org/abs/2606.25316",
-          "score": 200,
-          "authors": "Juan José Valencia Acevedo, Miguel Ángel Solís Atala, Patricia Salas Casales et al.",
-          "arxivCategory": "cond-mat.supr-con",
-          "publishedAt": "2026-06-24T02:28:20.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Persistent structural distortions and absent superconductivity in trilayer nickelate thin films",
-          "url": "https://arxiv.org/abs/2606.20941",
-          "score": 200,
-          "authors": "Abigail Y. Jiang, Maria Bambrick-Santoyo, Lopa Bhatt et al.",
-          "arxivCategory": "cond-mat.mtrl-sci",
-          "publishedAt": "2026-06-18T21:08:54.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Orbital-selective band evolution and out-of-plane correlation in the FeGe-family kagome antiferromagnet ScFe$_6$Ge$_6$",
-          "url": "https://arxiv.org/abs/2606.16245",
-          "score": 200,
-          "authors": "Jae Hyuck Lee, Ze Yan, Tongrui Li et al.",
-          "arxivCategory": "cond-mat.str-el",
-          "publishedAt": "2026-06-15T05:48:24.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Structural Changes and Transport Properties of $\\mathrm{YBa_2Cu_3O_7}$ Locally Modified by a He$^+$ Focused Ion Beam",
-          "url": "https://arxiv.org/abs/2606.12145",
-          "score": 200,
-          "authors": "Ross Carter, Robin Hutt, Paul Zimmermann et al.",
-          "arxivCategory": "cond-mat.supr-con",
-          "publishedAt": "2026-06-10T14:37:55.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Unveiling the Interplay of Charge and Magnetic Excitations in HgBa$_2$Ca$_2$Cu$_3$O$_{8+δ}$",
-          "url": "https://arxiv.org/abs/2606.11524",
-          "score": 200,
-          "authors": "Karn Rongrueangkul, Martina Fedele, Leonardo Martinelli et al.",
-          "arxivCategory": "cond-mat.supr-con",
-          "publishedAt": "2026-06-10T00:01:35.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Impact of mechanical constraints on tokamak design and implications for high field power plants",
-          "url": "https://arxiv.org/abs/2606.07201",
-          "score": 200,
-          "authors": "Timothe Auclair, Baptiste Boudes, Jean-Luc Duchateau et al.",
-          "arxivCategory": "physics.plasm-ph",
-          "publishedAt": "2026-06-05T12:10:11.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Localization and Topological Properties of SU(3) Fermions in non-Abelian Gauge Fields: Color-Orbit Coupling and Color-Flip Fields",
-          "url": "https://arxiv.org/abs/2607.02274",
-          "score": 200,
-          "authors": "Bar Alluf, C. A. R. Sá de Melo",
-          "arxivCategory": "cond-mat.quant-gas",
-          "publishedAt": "2026-07-02T14:56:44.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Fabrication of high-quality topological insulator nanodevices from bulk-insulating air-sensitive Sb-Bi$_2$Se$_3$",
-          "url": "https://arxiv.org/abs/2607.01439",
-          "score": 200,
-          "authors": "Linh T. Dang, Ayushi Solanki, Yongjian Wang et al.",
-          "arxivCategory": "cond-mat.mes-hall",
-          "publishedAt": "2026-07-01T20:01:14.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "A scheme for topological phases of the Weyl $C^*$-algebra",
-          "url": "https://arxiv.org/abs/2607.01183",
-          "score": 200,
-          "authors": "Giuseppe De Nittis, Santiago G. Rendel",
-          "arxivCategory": "math-ph",
-          "publishedAt": "2026-07-01T17:15:33.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Fabric Phononic Crystals for Passive Vibration Control",
-          "url": "https://arxiv.org/abs/2607.01092",
-          "score": 200,
-          "authors": "Michael Y Wang, Hridyesh Tewani, Marianne Fairbanks et al.",
-          "arxivCategory": "physics.app-ph",
-          "publishedAt": "2026-07-01T15:46:59.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Facet-selective ballistic supercurrent in a weak topological insulator",
-          "url": "https://arxiv.org/abs/2607.00683",
-          "score": 200,
-          "authors": "Prasanna Rout, Ankit Khola, Lalit Pandey et al.",
-          "arxivCategory": "cond-mat.mes-hall",
-          "publishedAt": "2026-07-01T09:25:54.000Z"
-        }
-      ],
-      "relatedConceptSlugs": [
-        "extreme-metamaterial-solar-sails"
-      ],
-      "resonance": 50,
-      "quadrant": "real-deal",
-      "resonanceSignals": {
-        "conceptDepth": 0.6131471927654584,
-        "editorial": 1,
-        "connections": 0.3333333333333333,
-        "convergence": 0.15,
-        "deepTopic": 0,
-        "pantheon": 0.92,
-        "graveyard": 0
-      }
-    },
-    {
       "slug": "particle-physics",
       "label": "Particle Physics",
       "score": 6523,
-      "delta": -6,
+      "delta": 0,
       "direction": "steady",
       "mentions": 33,
       "sources": [
@@ -927,144 +795,144 @@
       }
     },
     {
-      "slug": "cosmology",
-      "label": "Cosmology",
-      "score": 5800,
-      "delta": 0,
+      "slug": "condensed-matter",
+      "label": "Condensed Matter",
+      "score": 6228,
+      "delta": -6,
       "direction": "steady",
-      "mentions": 29,
+      "mentions": 34,
       "sources": [
         {
           "platform": "arxiv",
-          "title": "Can Primordial Black Holes Be Seeds for Early Galaxies in Models Satisfying the Covariant Entropy Bound?",
-          "url": "https://arxiv.org/abs/2607.01292",
+          "title": "Dispersion Suppression for Wedge-Based Final Cooling at a 10 TeV Muon Collider",
+          "url": "https://arxiv.org/abs/2606.25944",
           "score": 200,
-          "authors": "Sidan A, Tom Banks, Willy Fischler",
-          "arxivCategory": "hep-ph",
-          "publishedAt": "2026-07-01T12:55:37.000Z"
+          "authors": "Inci Karaaslan, Karri DiPetrillo, David Neuffer et al.",
+          "arxivCategory": "physics.acc-ph",
+          "publishedAt": "2026-06-24T15:20:29.000Z"
         },
         {
           "platform": "arxiv",
-          "title": "The Simons Observatory: Overview of the Cryogenic Half-wave Plate Polarization Modulators",
-          "url": "https://arxiv.org/abs/2607.00265",
+          "title": "Universal behavior of the condensation energy of Superconducting BCS Bose gases",
+          "url": "https://arxiv.org/abs/2606.25316",
           "score": 200,
-          "authors": "Junna Sugiyama, Kyohei Yamada, Bryce Bixler et al.",
-          "arxivCategory": "astro-ph.IM",
-          "publishedAt": "2026-06-30T23:28:34.000Z"
+          "authors": "Juan José Valencia Acevedo, Miguel Ángel Solís Atala, Patricia Salas Casales et al.",
+          "arxivCategory": "cond-mat.supr-con",
+          "publishedAt": "2026-06-24T02:28:20.000Z"
         },
         {
           "platform": "arxiv",
-          "title": "Particle Cosmology",
-          "url": "https://arxiv.org/abs/2606.31812",
+          "title": "Persistent structural distortions and absent superconductivity in trilayer nickelate thin films",
+          "url": "https://arxiv.org/abs/2606.20941",
           "score": 200,
-          "authors": "Venus Keus",
-          "arxivCategory": "hep-ph",
-          "publishedAt": "2026-06-30T15:27:18.000Z"
+          "authors": "Abigail Y. Jiang, Maria Bambrick-Santoyo, Lopa Bhatt et al.",
+          "arxivCategory": "cond-mat.mtrl-sci",
+          "publishedAt": "2026-06-18T21:08:54.000Z"
         },
         {
           "platform": "arxiv",
-          "title": "Setting requirements on out-of-band rejection for next-generation CMB experiments. Application to the LiteBIRD instrument",
-          "url": "https://arxiv.org/abs/2606.31778",
+          "title": "Orbital-selective band evolution and out-of-plane correlation in the FeGe-family kagome antiferromagnet ScFe$_6$Ge$_6$",
+          "url": "https://arxiv.org/abs/2606.16245",
           "score": 200,
-          "authors": "L. Mousset, L. Montier, J. Aumont et al.",
-          "arxivCategory": "astro-ph.IM",
-          "publishedAt": "2026-06-30T14:58:42.000Z"
+          "authors": "Jae Hyuck Lee, Ze Yan, Tongrui Li et al.",
+          "arxivCategory": "cond-mat.str-el",
+          "publishedAt": "2026-06-15T05:48:24.000Z"
         },
         {
           "platform": "arxiv",
-          "title": "A simulation-based analytic model of radio galaxies II: self-consistent radiative losses",
-          "url": "https://arxiv.org/abs/2606.31486",
+          "title": "Structural Changes and Transport Properties of $\\mathrm{YBa_2Cu_3O_7}$ Locally Modified by a He$^+$ Focused Ion Beam",
+          "url": "https://arxiv.org/abs/2606.12145",
           "score": 200,
-          "authors": "M. J. Hardcastle",
-          "arxivCategory": "astro-ph.GA",
-          "publishedAt": "2026-06-30T11:00:51.000Z"
+          "authors": "Ross Carter, Robin Hutt, Paul Zimmermann et al.",
+          "arxivCategory": "cond-mat.supr-con",
+          "publishedAt": "2026-06-10T14:37:55.000Z"
         },
         {
           "platform": "arxiv",
-          "title": "Running into tension: primordial black holes from ultra-slow-roll inflation, spectral running, and the Hubble tension",
-          "url": "https://arxiv.org/abs/2606.31362",
+          "title": "Unveiling the Interplay of Charge and Magnetic Excitations in HgBa$_2$Ca$_2$Cu$_3$O$_{8+δ}$",
+          "url": "https://arxiv.org/abs/2606.11524",
           "score": 200,
-          "authors": "Miguel A. Sabogal, Antonio J. Iovino, Sunny Vagnozzi",
-          "arxivCategory": "astro-ph.CO",
-          "publishedAt": "2026-06-30T08:57:18.000Z"
+          "authors": "Karn Rongrueangkul, Martina Fedele, Leonardo Martinelli et al.",
+          "arxivCategory": "cond-mat.supr-con",
+          "publishedAt": "2026-06-10T00:01:35.000Z"
         },
         {
           "platform": "arxiv",
-          "title": "Cosmological Concordance in an Especially Opaque Universe: A Tentative Cosmological Detection of Physical Neutrino Mass in $Λ$CDM",
-          "url": "https://arxiv.org/abs/2606.30903",
+          "title": "Localization and Topological Properties of SU(3) Fermions in non-Abelian Gauge Fields: Color-Orbit Coupling and Color-Flip Fields",
+          "url": "https://arxiv.org/abs/2607.02274",
           "score": 200,
-          "authors": "James M. Sullivan, Roger de Belsunce, Mikhail M. Ivanov",
-          "arxivCategory": "astro-ph.CO",
-          "publishedAt": "2026-06-29T20:49:45.000Z"
+          "authors": "Bar Alluf, C. A. R. Sá de Melo",
+          "arxivCategory": "cond-mat.quant-gas",
+          "publishedAt": "2026-07-02T14:56:44.000Z"
         },
         {
           "platform": "arxiv",
-          "title": "Sub-Kelvin Cryogenics for a Super-Pressure Balloon-Borne CMB Polarimeter: Taurus",
-          "url": "https://arxiv.org/abs/2606.29485",
+          "title": "Fabrication of high-quality topological insulator nanodevices from bulk-insulating air-sensitive Sb-Bi$_2$Se$_3$",
+          "url": "https://arxiv.org/abs/2607.01439",
           "score": 200,
-          "authors": "Jared L. May, Alexandre E. Adler, Jason E. Austermann et al.",
-          "arxivCategory": "astro-ph.IM",
-          "publishedAt": "2026-06-28T16:32:44.000Z"
+          "authors": "Linh T. Dang, Ayushi Solanki, Yongjian Wang et al.",
+          "arxivCategory": "cond-mat.mes-hall",
+          "publishedAt": "2026-07-01T20:01:14.000Z"
         },
         {
           "platform": "arxiv",
-          "title": "CMB Test of the Higgs Origin of Dark-Photon Dark Matter",
-          "url": "https://arxiv.org/abs/2606.29197",
+          "title": "A scheme for topological phases of the Weyl $C^*$-algebra",
+          "url": "https://arxiv.org/abs/2607.01183",
           "score": 200,
-          "authors": "Imtiaz Khan, Salvatore Capozziello, G. Mustafa et al.",
-          "arxivCategory": "hep-ph",
-          "publishedAt": "2026-06-28T04:50:56.000Z"
+          "authors": "Giuseppe De Nittis, Santiago G. Rendel",
+          "arxivCategory": "math-ph",
+          "publishedAt": "2026-07-01T17:15:33.000Z"
         },
         {
           "platform": "arxiv",
-          "title": "Strongest constraints on dark acoustic oscillations from the Lyman-alpha forest",
-          "url": "https://arxiv.org/abs/2606.28482",
+          "title": "Fabric Phononic Crystals for Passive Vibration Control",
+          "url": "https://arxiv.org/abs/2607.01092",
           "score": 200,
-          "authors": "Zhihan Yuan, Caleb Gemmell, Keir K. Rogers et al.",
-          "arxivCategory": "astro-ph.CO",
-          "publishedAt": "2026-06-26T18:00:00.000Z"
+          "authors": "Michael Y Wang, Hridyesh Tewani, Marianne Fairbanks et al.",
+          "arxivCategory": "physics.app-ph",
+          "publishedAt": "2026-07-01T15:46:59.000Z"
         },
         {
           "platform": "arxiv",
-          "title": "Constraining primordial oscillations and inflationary particle production with Planck, ACT DR6, and DESI DR2",
-          "url": "https://arxiv.org/abs/2606.28310",
+          "title": "Facet-selective ballistic supercurrent in a weak topological insulator",
+          "url": "https://arxiv.org/abs/2607.00683",
           "score": 200,
-          "authors": "Simran K. Nerval, Renee Hlozek, Hidde T. Jense et al.",
-          "arxivCategory": "astro-ph.CO",
-          "publishedAt": "2026-06-26T17:54:48.000Z"
+          "authors": "Prasanna Rout, Ankit Khola, Lalit Pandey et al.",
+          "arxivCategory": "cond-mat.mes-hall",
+          "publishedAt": "2026-07-01T09:25:54.000Z"
         },
         {
           "platform": "arxiv",
-          "title": "Searching for primordial features with radio surveys: synergy between the power spectrum and bispectrum",
-          "url": "https://arxiv.org/abs/2606.28172",
+          "title": "Proximity-Induced Skyrmion Stabilization at the Cu2OSeO3/Bi2Se3 Interface",
+          "url": "https://arxiv.org/abs/2606.31896",
           "score": 200,
-          "authors": "Dionysios Karagiannis, Mario Ballardini, Roy Maartens",
-          "arxivCategory": "astro-ph.CO",
-          "publishedAt": "2026-06-26T15:04:26.000Z"
+          "authors": "Sina Mehboodi, Victor Ukleev, Chen Luo et al.",
+          "arxivCategory": "cond-mat.mtrl-sci",
+          "publishedAt": "2026-06-30T16:05:07.000Z"
         }
       ],
       "relatedConceptSlugs": [
-        "gravity-observation-and-dark-energy-detection-explorer"
+        "extreme-metamaterial-solar-sails"
       ],
-      "resonance": 48,
-      "quadrant": "hype-cycle",
+      "resonance": 50,
+      "quadrant": "real-deal",
       "resonanceSignals": {
         "conceptDepth": 0.6131471927654584,
         "editorial": 1,
         "connections": 0.3333333333333333,
-        "convergence": 0.1,
+        "convergence": 0.15,
         "deepTopic": 0,
         "pantheon": 0.92,
-        "graveyard": 0.19999999999999998
+        "graveyard": 0
       }
     },
     {
       "slug": "dark-matter",
       "label": "Dark Matter & Dark Energy",
-      "score": 5604,
+      "score": 5606,
       "delta": 0,
       "direction": "steady",
-      "mentions": 30,
+      "mentions": 31,
       "sources": [
         {
           "platform": "arxiv",
@@ -1189,6 +1057,138 @@
         "deepTopic": 1,
         "pantheon": 0.92,
         "graveyard": 0
+      }
+    },
+    {
+      "slug": "cosmology",
+      "label": "Cosmology",
+      "score": 5600,
+      "delta": -3,
+      "direction": "steady",
+      "mentions": 28,
+      "sources": [
+        {
+          "platform": "arxiv",
+          "title": "Can Primordial Black Holes Be Seeds for Early Galaxies in Models Satisfying the Covariant Entropy Bound?",
+          "url": "https://arxiv.org/abs/2607.01292",
+          "score": 200,
+          "authors": "Sidan A, Tom Banks, Willy Fischler",
+          "arxivCategory": "hep-ph",
+          "publishedAt": "2026-07-01T12:55:37.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "The Simons Observatory: Overview of the Cryogenic Half-wave Plate Polarization Modulators",
+          "url": "https://arxiv.org/abs/2607.00265",
+          "score": 200,
+          "authors": "Junna Sugiyama, Kyohei Yamada, Bryce Bixler et al.",
+          "arxivCategory": "astro-ph.IM",
+          "publishedAt": "2026-06-30T23:28:34.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Particle Cosmology",
+          "url": "https://arxiv.org/abs/2606.31812",
+          "score": 200,
+          "authors": "Venus Keus",
+          "arxivCategory": "hep-ph",
+          "publishedAt": "2026-06-30T15:27:18.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Setting requirements on out-of-band rejection for next-generation CMB experiments. Application to the LiteBIRD instrument",
+          "url": "https://arxiv.org/abs/2606.31778",
+          "score": 200,
+          "authors": "L. Mousset, L. Montier, J. Aumont et al.",
+          "arxivCategory": "astro-ph.IM",
+          "publishedAt": "2026-06-30T14:58:42.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "A simulation-based analytic model of radio galaxies II: self-consistent radiative losses",
+          "url": "https://arxiv.org/abs/2606.31486",
+          "score": 200,
+          "authors": "M. J. Hardcastle",
+          "arxivCategory": "astro-ph.GA",
+          "publishedAt": "2026-06-30T11:00:51.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Running into tension: primordial black holes from ultra-slow-roll inflation, spectral running, and the Hubble tension",
+          "url": "https://arxiv.org/abs/2606.31362",
+          "score": 200,
+          "authors": "Miguel A. Sabogal, Antonio J. Iovino, Sunny Vagnozzi",
+          "arxivCategory": "astro-ph.CO",
+          "publishedAt": "2026-06-30T08:57:18.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Cosmological Concordance in an Especially Opaque Universe: A Tentative Cosmological Detection of Physical Neutrino Mass in $Λ$CDM",
+          "url": "https://arxiv.org/abs/2606.30903",
+          "score": 200,
+          "authors": "James M. Sullivan, Roger de Belsunce, Mikhail M. Ivanov",
+          "arxivCategory": "astro-ph.CO",
+          "publishedAt": "2026-06-29T20:49:45.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Sub-Kelvin Cryogenics for a Super-Pressure Balloon-Borne CMB Polarimeter: Taurus",
+          "url": "https://arxiv.org/abs/2606.29485",
+          "score": 200,
+          "authors": "Jared L. May, Alexandre E. Adler, Jason E. Austermann et al.",
+          "arxivCategory": "astro-ph.IM",
+          "publishedAt": "2026-06-28T16:32:44.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "CMB Test of the Higgs Origin of Dark-Photon Dark Matter",
+          "url": "https://arxiv.org/abs/2606.29197",
+          "score": 200,
+          "authors": "Imtiaz Khan, Salvatore Capozziello, G. Mustafa et al.",
+          "arxivCategory": "hep-ph",
+          "publishedAt": "2026-06-28T04:50:56.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Strongest constraints on dark acoustic oscillations from the Lyman-alpha forest",
+          "url": "https://arxiv.org/abs/2606.28482",
+          "score": 200,
+          "authors": "Zhihan Yuan, Caleb Gemmell, Keir K. Rogers et al.",
+          "arxivCategory": "astro-ph.CO",
+          "publishedAt": "2026-06-26T18:00:00.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Constraining primordial oscillations and inflationary particle production with Planck, ACT DR6, and DESI DR2",
+          "url": "https://arxiv.org/abs/2606.28310",
+          "score": 200,
+          "authors": "Simran K. Nerval, Renee Hlozek, Hidde T. Jense et al.",
+          "arxivCategory": "astro-ph.CO",
+          "publishedAt": "2026-06-26T17:54:48.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Searching for primordial features with radio surveys: synergy between the power spectrum and bispectrum",
+          "url": "https://arxiv.org/abs/2606.28172",
+          "score": 200,
+          "authors": "Dionysios Karagiannis, Mario Ballardini, Roy Maartens",
+          "arxivCategory": "astro-ph.CO",
+          "publishedAt": "2026-06-26T15:04:26.000Z"
+        }
+      ],
+      "relatedConceptSlugs": [
+        "gravity-observation-and-dark-energy-detection-explorer"
+      ],
+      "resonance": 48,
+      "quadrant": "hype-cycle",
+      "resonanceSignals": {
+        "conceptDepth": 0.6131471927654584,
+        "editorial": 1,
+        "connections": 0.3333333333333333,
+        "convergence": 0.1,
+        "deepTopic": 0,
+        "pantheon": 0.92,
+        "graveyard": 0.19999999999999998
       }
     },
     {
@@ -2078,18 +2078,18 @@
     {
       "slug": "starlink",
       "label": "Starlink & Satellite Internet",
-      "score": 650,
-      "delta": 9,
+      "score": 655,
+      "delta": 1,
       "direction": "steady",
-      "mentions": 5,
+      "mentions": 6,
       "sources": [
         {
           "platform": "hackernews",
           "title": "Africans Are Turning to Starlink",
           "url": "https://www.economist.com/middle-east-and-africa/2026/07/02/africans-are-turning-to-starlink",
-          "score": 203,
+          "score": 207,
           "author": "bookofjoe",
-          "commentCount": 253,
+          "commentCount": 261,
           "publishedAt": "2026-07-03T21:08:37.000Z"
         },
         {
@@ -2127,6 +2127,15 @@
           "author": "Brajeshwar",
           "commentCount": 3,
           "publishedAt": "2026-07-02T16:01:29.000Z"
+        },
+        {
+          "platform": "hackernews",
+          "title": "Unofficial Starlink Global Gateways and Pops",
+          "url": "https://www.google.com/maps/d/viewer?mid=1805q6rlePY4WZd8QMOaNe2BqAgFkYBY&hl=en",
+          "score": 1,
+          "author": "jenders",
+          "commentCount": 0,
+          "publishedAt": "2026-07-05T12:05:33.000Z"
         }
       ],
       "relatedConceptSlugs": [
@@ -2387,8 +2396,8 @@
       "slug": "starship",
       "label": "Starship & SpaceX",
       "score": 118,
-      "delta": 24,
-      "direction": "up",
+      "delta": 6,
+      "direction": "steady",
       "mentions": 17,
       "sources": [
         {

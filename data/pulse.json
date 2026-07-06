@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-05T19:22:50.441Z",
+  "generatedAt": "2026-07-06T09:59:54.921Z",
   "topics": [
     {
       "slug": "gravitational-waves",
@@ -535,7 +535,7 @@
     {
       "slug": "quantum-computing",
       "label": "Quantum Computing",
-      "score": 7626,
+      "score": 7628,
       "delta": 0,
       "direction": "steady",
       "mentions": 46,
@@ -797,10 +797,10 @@
     {
       "slug": "condensed-matter",
       "label": "Condensed Matter",
-      "score": 6228,
-      "delta": -6,
+      "score": 6028,
+      "delta": -9,
       "direction": "steady",
-      "mentions": 34,
+      "mentions": 33,
       "sources": [
         {
           "platform": "arxiv",
@@ -929,7 +929,7 @@
     {
       "slug": "dark-matter",
       "label": "Dark Matter & Dark Energy",
-      "score": 5606,
+      "score": 5607,
       "delta": 0,
       "direction": "steady",
       "mentions": 31,
@@ -1062,10 +1062,10 @@
     {
       "slug": "cosmology",
       "label": "Cosmology",
-      "score": 5600,
+      "score": 5602,
       "delta": -3,
       "direction": "steady",
-      "mentions": 28,
+      "mentions": 29,
       "sources": [
         {
           "platform": "arxiv",
@@ -1327,7 +1327,7 @@
       "slug": "exoplanets",
       "label": "Exoplanets",
       "score": 2600,
-      "delta": -7,
+      "delta": 0,
       "direction": "steady",
       "mentions": 13,
       "sources": [
@@ -1699,7 +1699,7 @@
       "slug": "fusion-propulsion",
       "label": "Fusion Propulsion",
       "score": 1800,
-      "delta": -10,
+      "delta": 0,
       "direction": "steady",
       "mentions": 9,
       "sources": [
@@ -1805,10 +1805,10 @@
     {
       "slug": "space-debris",
       "label": "Space Debris",
-      "score": 1200,
-      "delta": 0,
+      "score": 1208,
+      "delta": 1,
       "direction": "steady",
-      "mentions": 6,
+      "mentions": 7,
       "sources": [
         {
           "platform": "arxiv",
@@ -1863,6 +1863,15 @@
           "authors": "Yema Paul, Diogo Sousa, Albert Servitje et al.",
           "arxivCategory": "math.NA",
           "publishedAt": "2026-06-24T14:40:41.000Z"
+        },
+        {
+          "platform": "hackernews",
+          "title": "Strange Balls found on Queensland beaches could be toxic 'space debris': experts",
+          "url": "https://www.inkl.com/news/strange-balls-found-on-queensland-beaches-could-be-toxic-space-debris-experts-warn",
+          "score": 8,
+          "author": "ivewonyoung",
+          "commentCount": 7,
+          "publishedAt": "2026-07-05T23:58:43.000Z"
         }
       ],
       "relatedConceptSlugs": [
@@ -2078,7 +2087,7 @@
     {
       "slug": "starlink",
       "label": "Starlink & Satellite Internet",
-      "score": 655,
+      "score": 656,
       "delta": 1,
       "direction": "steady",
       "mentions": 6,
@@ -2087,9 +2096,9 @@
           "platform": "hackernews",
           "title": "Africans Are Turning to Starlink",
           "url": "https://www.economist.com/middle-east-and-africa/2026/07/02/africans-are-turning-to-starlink",
-          "score": 207,
+          "score": 208,
           "author": "bookofjoe",
-          "commentCount": 261,
+          "commentCount": 264,
           "publishedAt": "2026-07-03T21:08:37.000Z"
         },
         {
@@ -2395,10 +2404,10 @@
     {
       "slug": "starship",
       "label": "Starship & SpaceX",
-      "score": 118,
-      "delta": 6,
-      "direction": "steady",
-      "mentions": 17,
+      "score": 96,
+      "delta": -19,
+      "direction": "down",
+      "mentions": 15,
       "sources": [
         {
           "platform": "hackernews",
@@ -2420,30 +2429,12 @@
         },
         {
           "platform": "hackernews",
-          "title": "SpaceX just landed in 401(k)s due to key index rule changes",
-          "url": "https://moneywise.com/news/top-stories/spacex-401k-anthropic-openai-ipo-index-fund-rules",
-          "score": 14,
-          "author": "voxadam",
-          "commentCount": 4,
-          "publishedAt": "2026-06-29T03:25:05.000Z"
-        },
-        {
-          "platform": "hackernews",
           "title": "SpaceX Is Junk. That's What the Bond Market Says",
           "url": "https://www.bloomberg.com/opinion/articles/2026-07-02/spacex-is-junk-that-s-what-the-bond-market-says",
           "score": 13,
           "author": "petethomas",
           "commentCount": 1,
           "publishedAt": "2026-07-03T23:47:02.000Z"
-        },
-        {
-          "platform": "hackernews",
-          "title": "'The cult of Elon': SpaceX investors grapple with volatility amid big swings",
-          "url": "https://www.cnbc.com/2026/06/26/spacex-volatility.html",
-          "score": 8,
-          "author": "1vuio0pswjnm7",
-          "commentCount": 1,
-          "publishedAt": "2026-06-29T02:48:57.000Z"
         },
         {
           "platform": "hackernews",
@@ -2507,6 +2498,24 @@
           "author": "cwwc",
           "commentCount": 0,
           "publishedAt": "2026-06-30T14:16:50.000Z"
+        },
+        {
+          "platform": "hackernews",
+          "title": "SpaceX reportedly working on an AI phone",
+          "url": "https://www.theverge.com/science/960442/spacex-phone-prototype-elon-musk",
+          "score": 2,
+          "author": "mandeepj",
+          "commentCount": 7,
+          "publishedAt": "2026-07-02T04:48:55.000Z"
+        },
+        {
+          "platform": "hackernews",
+          "title": "Meta to sell excess compute, like SpaceX",
+          "url": "https://techcrunch.com/2026/07/01/meta-like-spacex-looks-to-turn-excess-ai-compute-into-cash/",
+          "score": 2,
+          "author": "noashavit",
+          "commentCount": 2,
+          "publishedAt": "2026-07-02T03:15:40.000Z"
         }
       ],
       "relatedConceptSlugs": [
