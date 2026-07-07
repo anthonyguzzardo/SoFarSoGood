@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-06T09:59:54.921Z",
+  "generatedAt": "2026-07-06T20:01:05.709Z",
   "topics": [
     {
       "slug": "gravitational-waves",
@@ -136,7 +136,7 @@
     {
       "slug": "space-telescopes",
       "label": "Space Telescopes",
-      "score": 8016,
+      "score": 8012,
       "delta": 0,
       "direction": "steady",
       "mentions": 44,
@@ -269,10 +269,10 @@
     {
       "slug": "black-holes",
       "label": "Black Holes",
-      "score": 8009,
+      "score": 8007,
       "delta": 0,
       "direction": "steady",
-      "mentions": 44,
+      "mentions": 43,
       "sources": [
         {
           "platform": "arxiv",
@@ -535,10 +535,10 @@
     {
       "slug": "quantum-computing",
       "label": "Quantum Computing",
-      "score": 7628,
+      "score": 7626,
       "delta": 0,
       "direction": "steady",
-      "mentions": 46,
+      "mentions": 45,
       "sources": [
         {
           "platform": "arxiv",
@@ -667,20 +667,11 @@
     {
       "slug": "particle-physics",
       "label": "Particle Physics",
-      "score": 6523,
-      "delta": 0,
+      "score": 6206,
+      "delta": -5,
       "direction": "steady",
-      "mentions": 33,
+      "mentions": 32,
       "sources": [
-        {
-          "platform": "hackernews",
-          "title": "CERN bids farewell to the LHC and enters Long Shutdown 3",
-          "url": "https://home.cern/cern-bids-farewell-to-the-lhc-and-enters-long-shutdown-3/",
-          "score": 317,
-          "author": "HelloUsername",
-          "commentCount": 105,
-          "publishedAt": "2026-06-29T18:52:25.000Z"
-        },
         {
           "platform": "arxiv",
           "title": "An introduction to Hammer v2: Helicity Amplitude Module for Matrix Element Reweighting",
@@ -779,6 +770,15 @@
           "authors": "Marco Bonetti, Gudrun Heinrich, Philipp Rendler et al.",
           "arxivCategory": "hep-ph",
           "publishedAt": "2026-06-24T15:06:24.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Search for long-lived particles decaying into muons in proton-proton collisions at $\\sqrt{s}$ = 13.6 TeV using data scouting",
+          "url": "https://arxiv.org/abs/2606.25840",
+          "score": 200,
+          "authors": "CMS Collaboration",
+          "arxivCategory": "hep-ex",
+          "publishedAt": "2026-06-24T13:51:53.000Z"
         }
       ],
       "relatedConceptSlugs": [],
@@ -797,10 +797,10 @@
     {
       "slug": "condensed-matter",
       "label": "Condensed Matter",
-      "score": 6028,
-      "delta": -9,
+      "score": 6024,
+      "delta": -3,
       "direction": "steady",
-      "mentions": 33,
+      "mentions": 32,
       "sources": [
         {
           "platform": "arxiv",
@@ -1063,7 +1063,7 @@
       "slug": "cosmology",
       "label": "Cosmology",
       "score": 5602,
-      "delta": -3,
+      "delta": 0,
       "direction": "steady",
       "mentions": 29,
       "sources": [
@@ -1805,10 +1805,10 @@
     {
       "slug": "space-debris",
       "label": "Space Debris",
-      "score": 1208,
+      "score": 1210,
       "delta": 1,
       "direction": "steady",
-      "mentions": 7,
+      "mentions": 8,
       "sources": [
         {
           "platform": "arxiv",
@@ -1868,10 +1868,19 @@
           "platform": "hackernews",
           "title": "Strange Balls found on Queensland beaches could be toxic 'space debris': experts",
           "url": "https://www.inkl.com/news/strange-balls-found-on-queensland-beaches-could-be-toxic-space-debris-experts-warn",
-          "score": 8,
+          "score": 9,
           "author": "ivewonyoung",
           "commentCount": 7,
           "publishedAt": "2026-07-05T23:58:43.000Z"
+        },
+        {
+          "platform": "hackernews",
+          "title": "Space JUNK Mysterious 'space balls' that washed up on Australian beach spark pro",
+          "url": "https://www.thesun.co.uk/news/39654579/mysterious-space-balls-australian-beach-toxic/",
+          "score": 1,
+          "author": "bookmtn",
+          "commentCount": 0,
+          "publishedAt": "2026-07-06T19:49:58.000Z"
         }
       ],
       "relatedConceptSlugs": [
@@ -2087,10 +2096,10 @@
     {
       "slug": "starlink",
       "label": "Starlink & Satellite Internet",
-      "score": 656,
-      "delta": 1,
+      "score": 658,
+      "delta": 0,
       "direction": "steady",
-      "mentions": 6,
+      "mentions": 7,
       "sources": [
         {
           "platform": "hackernews",
@@ -2136,6 +2145,23 @@
           "author": "Brajeshwar",
           "commentCount": 3,
           "publishedAt": "2026-07-02T16:01:29.000Z"
+        },
+        {
+          "platform": "youtube",
+          "title": "Is Starlink a Secret Radar Constellation? [video]",
+          "url": "https://www.youtube.com/watch?v=jbp3kdJZ1_A",
+          "score": 2,
+          "thumbnail": "https://img.youtube.com/vi/jbp3kdJZ1_A/mqdefault.jpg",
+          "publishedAt": "2026-07-06T09:54:05.000Z"
+        },
+        {
+          "platform": "hackernews",
+          "title": "Is Starlink a Secret Radar Constellation? [video]",
+          "url": "https://www.youtube.com/watch?v=jbp3kdJZ1_A",
+          "score": 2,
+          "author": "TMWNN",
+          "commentCount": 0,
+          "publishedAt": "2026-07-06T09:54:05.000Z"
         },
         {
           "platform": "hackernews",
@@ -2211,49 +2237,6 @@
         "connections": 0,
         "convergence": 0.125,
         "deepTopic": 0.8,
-        "pantheon": 0.92,
-        "graveyard": 0
-      }
-    },
-    {
-      "slug": "warp-drives",
-      "label": "Warp Drives & Exotic Physics",
-      "score": 204,
-      "delta": 0,
-      "direction": "steady",
-      "mentions": 2,
-      "sources": [
-        {
-          "platform": "arxiv",
-          "title": "Steering a warp drive without exotic matter",
-          "url": "https://arxiv.org/abs/2606.22531",
-          "score": 200,
-          "authors": "An T. Le",
-          "arxivCategory": "gr-qc",
-          "publishedAt": "2026-06-21T14:42:06.000Z"
-        },
-        {
-          "platform": "hackernews",
-          "title": "Show HN: Context Warp Drive – deterministic folding for LLM agents",
-          "url": "https://github.com/dogtorjonah/context-warp-drive",
-          "score": 4,
-          "author": "VoxxoAI",
-          "commentCount": 0,
-          "publishedAt": "2026-06-29T18:02:38.000Z"
-        }
-      ],
-      "relatedConceptSlugs": [
-        "procsima",
-        "extreme-metamaterial-solar-sails-for-breakthrough-space-exploration"
-      ],
-      "resonance": 53,
-      "quadrant": "sleeping-giant",
-      "resonanceSignals": {
-        "conceptDepth": 0.6991803252671503,
-        "editorial": 1,
-        "connections": 0.3333333333333333,
-        "convergence": 0.15,
-        "deepTopic": 0,
         "pantheon": 0.92,
         "graveyard": 0
       }
@@ -2369,6 +2352,40 @@
       }
     },
     {
+      "slug": "warp-drives",
+      "label": "Warp Drives & Exotic Physics",
+      "score": 200,
+      "delta": -2,
+      "direction": "steady",
+      "mentions": 1,
+      "sources": [
+        {
+          "platform": "arxiv",
+          "title": "Steering a warp drive without exotic matter",
+          "url": "https://arxiv.org/abs/2606.22531",
+          "score": 200,
+          "authors": "An T. Le",
+          "arxivCategory": "gr-qc",
+          "publishedAt": "2026-06-21T14:42:06.000Z"
+        }
+      ],
+      "relatedConceptSlugs": [
+        "procsima",
+        "extreme-metamaterial-solar-sails-for-breakthrough-space-exploration"
+      ],
+      "resonance": 53,
+      "quadrant": "sleeping-giant",
+      "resonanceSignals": {
+        "conceptDepth": 0.6991803252671503,
+        "editorial": 1,
+        "connections": 0.3333333333333333,
+        "convergence": 0.15,
+        "deepTopic": 0,
+        "pantheon": 0.92,
+        "graveyard": 0
+      }
+    },
+    {
       "slug": "dyson-spheres",
       "label": "Dyson Spheres",
       "score": 200,
@@ -2404,10 +2421,10 @@
     {
       "slug": "starship",
       "label": "Starship & SpaceX",
-      "score": 96,
-      "delta": -19,
+      "score": 86,
+      "delta": -27,
       "direction": "down",
-      "mentions": 15,
+      "mentions": 13,
       "sources": [
         {
           "platform": "hackernews",
@@ -2438,15 +2455,6 @@
         },
         {
           "platform": "hackernews",
-          "title": "Rocket Lab Buys Satellite Operator Iridium in Bid to Challenge SpaceX",
-          "url": "https://www.wsj.com/business/telecom/rocket-lab-buys-satellite-operator-iridium-in-bid-to-challenge-spacex-d3a35be7",
-          "score": 6,
-          "author": "JumpCrisscross",
-          "commentCount": 2,
-          "publishedAt": "2026-06-29T12:11:27.000Z"
-        },
-        {
-          "platform": "hackernews",
           "title": "SpaceX Showed Investors Prototype of Elon Musk's New AI Device",
           "url": "https://www.wsj.com/tech/ai/spacex-showed-investors-prototype-of-elon-musks-new-ai-device-b445c57b",
           "score": 6,
@@ -2462,15 +2470,6 @@
           "author": "1vuio0pswjnm7",
           "commentCount": 1,
           "publishedAt": "2026-07-02T03:08:38.000Z"
-        },
-        {
-          "platform": "hackernews",
-          "title": "Musk says SpaceX is putting top Starship and Starlink engineers to work on Grok",
-          "url": "https://www.businessinsider.com/grok-4-5-starship-starlink-engineers-elon-musk-ai-cursor-2026-6",
-          "score": 4,
-          "author": "dansquizsoft",
-          "commentCount": 0,
-          "publishedAt": "2026-06-29T12:57:35.000Z"
         },
         {
           "platform": "hackernews",
@@ -2516,6 +2515,24 @@
           "author": "noashavit",
           "commentCount": 2,
           "publishedAt": "2026-07-02T03:15:40.000Z"
+        },
+        {
+          "platform": "hackernews",
+          "title": "A chatbot told us SpaceX never went public, 20 days after their IPO",
+          "url": "https://www.quoin.ai/",
+          "score": 2,
+          "author": "quoinai",
+          "commentCount": 1,
+          "publishedAt": "2026-07-03T16:49:16.000Z"
+        },
+        {
+          "platform": "hackernews",
+          "title": "Donald Trump confident Elon Musk will donate SpaceX stock to Trump accounts",
+          "url": "https://www.msn.com/en-us/money/news/donald-trump-signals-confidence-elon-musk-will-donate-spacex-stock-to-trump-accounts-i-have-a-very-good-relationship-with-elon/ar-AA276kwy",
+          "score": 2,
+          "author": "petethomas",
+          "commentCount": 0,
+          "publishedAt": "2026-07-03T23:45:22.000Z"
         }
       ],
       "relatedConceptSlugs": [
