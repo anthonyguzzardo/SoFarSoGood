@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-07-09T09:25:21.875Z",
+  "generatedAt": "2026-07-09T19:50:43.490Z",
   "topics": [
     {
       "slug": "gravitational-waves",
       "label": "Gravitational Waves",
       "score": 8400,
-      "delta": 0,
+      "delta": -5,
       "direction": "steady",
       "mentions": 42,
       "sources": [
@@ -137,7 +137,7 @@
       "slug": "nanotechnology",
       "label": "Nanotechnology & Metamaterials",
       "score": 8207,
-      "delta": 0,
+      "delta": -2,
       "direction": "steady",
       "mentions": 42,
       "sources": [
@@ -270,7 +270,7 @@
       "slug": "space-telescopes",
       "label": "Space Telescopes",
       "score": 8004,
-      "delta": 0,
+      "delta": 5,
       "direction": "steady",
       "mentions": 41,
       "sources": [
@@ -400,12 +400,144 @@
       }
     },
     {
+      "slug": "quantum-computing",
+      "label": "Quantum Computing",
+      "score": 7436,
+      "delta": 0,
+      "direction": "steady",
+      "mentions": 47,
+      "sources": [
+        {
+          "platform": "arxiv",
+          "title": "Covariant Approximate Quantum Codes for Protected Analog Computation",
+          "url": "https://arxiv.org/abs/2607.07607",
+          "score": 200,
+          "authors": "Mariia Elovenkova, Hong-Ye Hu, Susanne F. Yelin",
+          "arxivCategory": "quant-ph",
+          "publishedAt": "2026-07-08T16:25:25.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Quantum error correction of a grid-state qubit with state preparation and measurement errors below $10^{-3}$",
+          "url": "https://arxiv.org/abs/2607.06718",
+          "score": 200,
+          "authors": "Sara Turcotte, Lucas St-Jean, Amélie L. Pessonneaux et al.",
+          "arxivCategory": "quant-ph",
+          "publishedAt": "2026-07-07T18:34:42.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Bosonic quantum error-correcting codes with finite stellar rank",
+          "url": "https://arxiv.org/abs/2607.06404",
+          "score": 200,
+          "authors": "Rui Wang, Adithi Udupa, Timo Hillmann et al.",
+          "arxivCategory": "quant-ph",
+          "publishedAt": "2026-07-07T15:34:20.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Learning to Reconstruct Wigner Functions in Phase Space",
+          "url": "https://arxiv.org/abs/2607.06232",
+          "score": 200,
+          "authors": "Xinyu Tang, Yi-hsin Lin, Yan Zhu et al.",
+          "arxivCategory": "quant-ph",
+          "publishedAt": "2026-07-07T13:00:28.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Latency-Constrained Hardware-Aware Quantum Error Correction Co-Design with Adaptive Confidence-Gated Neural Decoding for the Rotated Surface Code",
+          "url": "https://arxiv.org/abs/2607.05814",
+          "score": 200,
+          "authors": "Sumit Chongder",
+          "arxivCategory": "quant-ph",
+          "publishedAt": "2026-07-07T04:18:42.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Low-Overhead Error-Corrected QCNNs Using Bivariate Bicycle Codes",
+          "url": "https://arxiv.org/abs/2607.05724",
+          "score": 200,
+          "authors": "Alejandro Rosales, Animesh Yadav",
+          "arxivCategory": "cs.LG",
+          "publishedAt": "2026-07-07T01:12:38.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Complementary 3D color codes for transversal quantum logic",
+          "url": "https://arxiv.org/abs/2607.05107",
+          "score": 200,
+          "authors": "Friederike Butt, Luis Colmenarez, Erik Weilandt et al.",
+          "arxivCategory": "quant-ph",
+          "publishedAt": "2026-07-06T14:01:07.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Genuine Multipartite Entanglement between Logical Qubits via Cross-Code Lattice Surgery",
+          "url": "https://arxiv.org/abs/2607.04227",
+          "score": 200,
+          "authors": "Alex Steiner, Tomasz Andrzejewski, Phila Rembold et al.",
+          "arxivCategory": "quant-ph",
+          "publishedAt": "2026-07-05T11:01:11.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "A Cross-Platform Analysis of High-Performance Quantum Error Correction Codes",
+          "url": "https://arxiv.org/abs/2607.04082",
+          "score": 200,
+          "authors": "Bryan Pan, Yufeng Xin",
+          "arxivCategory": "quant-ph",
+          "publishedAt": "2026-07-05T02:25:45.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "The Delayed Stabilizer ZX-Calculus",
+          "url": "https://arxiv.org/abs/2607.04015",
+          "score": 200,
+          "authors": "Cole Comfort, Giovanni de Felice",
+          "arxivCategory": "quant-ph",
+          "publishedAt": "2026-07-04T20:21:27.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "The Hermitian Hull Dimensions for a Class of (L,P)-Twisted Generalized Reed-Solomon Codes",
+          "url": "https://arxiv.org/abs/2607.03802",
+          "score": 200,
+          "authors": "Chenlu Jia, Zhonghao Liang, Yue Huang et al.",
+          "arxivCategory": "cs.IT",
+          "publishedAt": "2026-07-04T10:19:45.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Fault-tolerant quantum computation with static atomic buses",
+          "url": "https://arxiv.org/abs/2607.02804",
+          "score": 200,
+          "authors": "Matteo Bergonzoni, Laura Pecorari, Sam Norrell et al.",
+          "arxivCategory": "quant-ph",
+          "publishedAt": "2026-07-02T22:34:55.000Z"
+        }
+      ],
+      "relatedConceptSlugs": [
+        "magneto-inductive-communications-for-ocean-worlds"
+      ],
+      "resonance": 30,
+      "quadrant": "hype-cycle",
+      "resonanceSignals": {
+        "conceptDepth": 0.22629438553091683,
+        "editorial": 0.4,
+        "connections": 0,
+        "convergence": 0.025,
+        "deepTopic": 1,
+        "pantheon": 1,
+        "graveyard": 0
+      }
+    },
+    {
       "slug": "black-holes",
       "label": "Black Holes",
-      "score": 7607,
-      "delta": -3,
+      "score": 7405,
+      "delta": -5,
       "direction": "steady",
-      "mentions": 41,
+      "mentions": 39,
       "sources": [
         {
           "platform": "arxiv",
@@ -529,138 +661,6 @@
         "convergence": 0.2,
         "deepTopic": 1,
         "pantheon": 0.92,
-        "graveyard": 0
-      }
-    },
-    {
-      "slug": "quantum-computing",
-      "label": "Quantum Computing",
-      "score": 7433,
-      "delta": 6,
-      "direction": "steady",
-      "mentions": 46,
-      "sources": [
-        {
-          "platform": "arxiv",
-          "title": "Covariant Approximate Quantum Codes for Protected Analog Computation",
-          "url": "https://arxiv.org/abs/2607.07607",
-          "score": 200,
-          "authors": "Mariia Elovenkova, Hong-Ye Hu, Susanne F. Yelin",
-          "arxivCategory": "quant-ph",
-          "publishedAt": "2026-07-08T16:25:25.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Quantum error correction of a grid-state qubit with state preparation and measurement errors below $10^{-3}$",
-          "url": "https://arxiv.org/abs/2607.06718",
-          "score": 200,
-          "authors": "Sara Turcotte, Lucas St-Jean, Amélie L. Pessonneaux et al.",
-          "arxivCategory": "quant-ph",
-          "publishedAt": "2026-07-07T18:34:42.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Bosonic quantum error-correcting codes with finite stellar rank",
-          "url": "https://arxiv.org/abs/2607.06404",
-          "score": 200,
-          "authors": "Rui Wang, Adithi Udupa, Timo Hillmann et al.",
-          "arxivCategory": "quant-ph",
-          "publishedAt": "2026-07-07T15:34:20.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Learning to Reconstruct Wigner Functions in Phase Space",
-          "url": "https://arxiv.org/abs/2607.06232",
-          "score": 200,
-          "authors": "Xinyu Tang, Yi-hsin Lin, Yan Zhu et al.",
-          "arxivCategory": "quant-ph",
-          "publishedAt": "2026-07-07T13:00:28.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Latency-Constrained Hardware-Aware Quantum Error Correction Co-Design with Adaptive Confidence-Gated Neural Decoding for the Rotated Surface Code",
-          "url": "https://arxiv.org/abs/2607.05814",
-          "score": 200,
-          "authors": "Sumit Chongder",
-          "arxivCategory": "quant-ph",
-          "publishedAt": "2026-07-07T04:18:42.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Low-Overhead Error-Corrected QCNNs Using Bivariate Bicycle Codes",
-          "url": "https://arxiv.org/abs/2607.05724",
-          "score": 200,
-          "authors": "Alejandro Rosales, Animesh Yadav",
-          "arxivCategory": "cs.LG",
-          "publishedAt": "2026-07-07T01:12:38.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Complementary 3D color codes for transversal quantum logic",
-          "url": "https://arxiv.org/abs/2607.05107",
-          "score": 200,
-          "authors": "Friederike Butt, Luis Colmenarez, Erik Weilandt et al.",
-          "arxivCategory": "quant-ph",
-          "publishedAt": "2026-07-06T14:01:07.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Genuine Multipartite Entanglement between Logical Qubits via Cross-Code Lattice Surgery",
-          "url": "https://arxiv.org/abs/2607.04227",
-          "score": 200,
-          "authors": "Alex Steiner, Tomasz Andrzejewski, Phila Rembold et al.",
-          "arxivCategory": "quant-ph",
-          "publishedAt": "2026-07-05T11:01:11.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "A Cross-Platform Analysis of High-Performance Quantum Error Correction Codes",
-          "url": "https://arxiv.org/abs/2607.04082",
-          "score": 200,
-          "authors": "Bryan Pan, Yufeng Xin",
-          "arxivCategory": "quant-ph",
-          "publishedAt": "2026-07-05T02:25:45.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "The Delayed Stabilizer ZX-Calculus",
-          "url": "https://arxiv.org/abs/2607.04015",
-          "score": 200,
-          "authors": "Cole Comfort, Giovanni de Felice",
-          "arxivCategory": "quant-ph",
-          "publishedAt": "2026-07-04T20:21:27.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "The Hermitian Hull Dimensions for a Class of (L,P)-Twisted Generalized Reed-Solomon Codes",
-          "url": "https://arxiv.org/abs/2607.03802",
-          "score": 200,
-          "authors": "Chenlu Jia, Zhonghao Liang, Yue Huang et al.",
-          "arxivCategory": "cs.IT",
-          "publishedAt": "2026-07-04T10:19:45.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Fault-tolerant quantum computation with static atomic buses",
-          "url": "https://arxiv.org/abs/2607.02804",
-          "score": 200,
-          "authors": "Matteo Bergonzoni, Laura Pecorari, Sam Norrell et al.",
-          "arxivCategory": "quant-ph",
-          "publishedAt": "2026-07-02T22:34:55.000Z"
-        }
-      ],
-      "relatedConceptSlugs": [
-        "magneto-inductive-communications-for-ocean-worlds"
-      ],
-      "resonance": 30,
-      "quadrant": "hype-cycle",
-      "resonanceSignals": {
-        "conceptDepth": 0.22629438553091683,
-        "editorial": 0.4,
-        "connections": 0,
-        "convergence": 0.025,
-        "deepTopic": 1,
-        "pantheon": 1,
         "graveyard": 0
       }
     },
@@ -797,10 +797,10 @@
     {
       "slug": "condensed-matter",
       "label": "Condensed Matter",
-      "score": 6426,
-      "delta": 3,
+      "score": 6027,
+      "delta": -6,
       "direction": "steady",
-      "mentions": 36,
+      "mentions": 34,
       "sources": [
         {
           "platform": "arxiv",
@@ -1195,7 +1195,7 @@
       "slug": "astrobiology",
       "label": "Astrobiology",
       "score": 3000,
-      "delta": 15,
+      "delta": 7,
       "direction": "steady",
       "mentions": 15,
       "sources": [
@@ -1592,10 +1592,10 @@
     {
       "slug": "artemis",
       "label": "Artemis & Lunar Return",
-      "score": 1801,
-      "delta": 0,
+      "score": 1602,
+      "delta": -11,
       "direction": "steady",
-      "mentions": 10,
+      "mentions": 9,
       "sources": [
         {
           "platform": "arxiv",
@@ -1670,19 +1670,10 @@
           "publishedAt": "2026-06-12T13:03:41.000Z"
         },
         {
-          "platform": "arxiv",
-          "title": "Spectral Koopman Approach for Reconstructing State-space Geometry of Cislunar Restricted 3-Body Problem",
-          "url": "https://arxiv.org/abs/2606.10941",
-          "score": 200,
-          "authors": "Subhrajit Sinha, Sriram S. K. S. Narayanan, Raktim Bhattacharya et al.",
-          "arxivCategory": "math.DS",
-          "publishedAt": "2026-06-09T14:47:45.000Z"
-        },
-        {
           "platform": "hackernews",
           "title": "Ex-NASA boss points out small flaw in Moon landing plan: No lander",
           "url": "https://www.theregister.com/science/2026/07/08/ex-nasa-boss-points-out-small-flaw-in-moon-landing-plan-no-lander/5268341",
-          "score": 1,
+          "score": 2,
           "author": "tcp_handshaker",
           "commentCount": 0,
           "publishedAt": "2026-07-08T13:47:51.000Z"
@@ -1707,10 +1698,10 @@
     {
       "slug": "fusion-propulsion",
       "label": "Fusion Propulsion",
-      "score": 1600,
-      "delta": -11,
+      "score": 1400,
+      "delta": -12,
       "direction": "steady",
-      "mentions": 8,
+      "mentions": 7,
       "sources": [
         {
           "platform": "arxiv",
@@ -1774,15 +1765,6 @@
           "authors": "Jay Phil Yoo, William Howes, Yashika Ghai et al.",
           "arxivCategory": "cs.LG",
           "publishedAt": "2026-06-13T23:47:19.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Curved Mesh Adaptation for High-Order Finite Element Simulations",
-          "url": "https://arxiv.org/abs/2606.10763",
-          "score": 200,
-          "authors": "Aditya Yogesh Joshi, Mark S. Shephard",
-          "arxivCategory": "cs.CE",
-          "publishedAt": "2026-06-09T12:15:48.000Z"
         }
       ],
       "relatedConceptSlugs": [
@@ -2114,10 +2096,10 @@
     {
       "slug": "starlink",
       "label": "Starlink & Satellite Internet",
-      "score": 658,
+      "score": 657,
       "delta": 0,
       "direction": "steady",
-      "mentions": 7,
+      "mentions": 8,
       "sources": [
         {
           "platform": "hackernews",
@@ -2157,12 +2139,21 @@
         },
         {
           "platform": "hackernews",
-          "title": "Amazon has enough satellites to launch its Starlink competitor",
-          "url": "https://www.theverge.com/science/960563/amazon-leo-service-tipping-point",
-          "score": 12,
-          "author": "Brajeshwar",
-          "commentCount": 3,
-          "publishedAt": "2026-07-02T16:01:29.000Z"
+          "title": "Shooting Starlink: The \"no limits\" partnership between Russia and China",
+          "url": "https://theins.press/en/inv/294635",
+          "score": 6,
+          "author": "harscoat",
+          "commentCount": 0,
+          "publishedAt": "2026-07-09T11:00:58.000Z"
+        },
+        {
+          "platform": "hackernews",
+          "title": "Leak Reveals Possible Secret Russia-China Military Plan to Disable Starlink",
+          "url": "https://united24media.com/world/leaked-documents-reveal-possible-secret-russia-china-military-plan-to-disable-starlink-20627",
+          "score": 5,
+          "author": "greesil",
+          "commentCount": 1,
+          "publishedAt": "2026-07-09T19:11:57.000Z"
         },
         {
           "platform": "youtube",
@@ -2304,7 +2295,7 @@
     {
       "slug": "warp-drives",
       "label": "Warp Drives & Exotic Physics",
-      "score": 211,
+      "score": 212,
       "delta": 2,
       "direction": "steady",
       "mentions": 2,
@@ -2322,7 +2313,7 @@
           "platform": "hackernews",
           "title": "Show HN: Context Warp Drive – Deterministic context folding for AI agents",
           "url": "https://github.com/dogtorjonah/context-warp-drive",
-          "score": 11,
+          "score": 12,
           "author": "Dr_Jonah",
           "commentCount": 5,
           "publishedAt": "2026-07-07T15:18:36.000Z"
@@ -2448,10 +2439,10 @@
     {
       "slug": "starship",
       "label": "Starship & SpaceX",
-      "score": 172,
-      "delta": 85,
+      "score": 180,
+      "delta": 35,
       "direction": "up",
-      "mentions": 14,
+      "mentions": 16,
       "sources": [
         {
           "platform": "hackernews",
@@ -2459,7 +2450,7 @@
           "url": "https://www.ft.com/content/09a62ed4-16af-433c-adb7-c877d1975388",
           "score": 70,
           "author": "iamflimflam1",
-          "commentCount": 110,
+          "commentCount": 113,
           "publishedAt": "2026-07-08T07:18:26.000Z"
         },
         {
@@ -2518,6 +2509,24 @@
         },
         {
           "platform": "hackernews",
+          "title": "SpaceX and AI startup wealth fuels demand for private jets",
+          "url": "https://www.reuters.com/legal/government/spacex-ai-startup-wealth-fuels-demand-private-jets-2026-07-09/",
+          "score": 4,
+          "author": "adithyaharish",
+          "commentCount": 0,
+          "publishedAt": "2026-07-09T10:46:42.000Z"
+        },
+        {
+          "platform": "hackernews",
+          "title": "SpaceX closes below debut price in two-day slide after Nasdaq-100 inclusion",
+          "url": "https://www.cnbc.com/2026/07/08/spacex-stock-nasdaq-100-ipo.html",
+          "score": 4,
+          "author": "1vuio0pswjnm7",
+          "commentCount": 0,
+          "publishedAt": "2026-07-09T05:39:57.000Z"
+        },
+        {
+          "platform": "hackernews",
           "title": "Wall Street warms to SpaceX ahead of Nasdaq 100 inclusion",
           "url": "https://www.reuters.com/business/wall-street-warms-spacex-ahead-nasdaq-100-inclusion-2026-07-07/",
           "score": 4,
@@ -2527,39 +2536,21 @@
         },
         {
           "platform": "hackernews",
+          "title": "SpaceXAI launches Grok 4.5 model for coding, agentic tasks",
+          "url": "https://www.reuters.com/business/media-telecom/spacexai-launches-grok-45-model-coding-agentic-tasks-2026-07-08/",
+          "score": 3,
+          "author": "adithyaharish",
+          "commentCount": 1,
+          "publishedAt": "2026-07-09T13:09:30.000Z"
+        },
+        {
+          "platform": "hackernews",
           "title": "xAI Is Now SpaceXAI",
           "url": "https://x.ai",
           "score": 3,
           "author": "EvanZhouDev",
           "commentCount": 1,
           "publishedAt": "2026-07-06T20:08:19.000Z"
-        },
-        {
-          "platform": "hackernews",
-          "title": "SpaceX closes below debut price in two-day slide after Nasdaq-100 inclusion",
-          "url": "https://www.cnbc.com/2026/07/08/spacex-stock-nasdaq-100-ipo.html",
-          "score": 3,
-          "author": "1vuio0pswjnm7",
-          "commentCount": 0,
-          "publishedAt": "2026-07-09T05:39:57.000Z"
-        },
-        {
-          "platform": "hackernews",
-          "title": "Wall Street banks are buying the SpaceX hype, but investors remain cautious",
-          "url": "https://www.fastcompany.com/91570357/spacex-wall-street-analysts-elon-musk",
-          "score": 3,
-          "author": "1vuio0pswjnm7",
-          "commentCount": 0,
-          "publishedAt": "2026-07-08T19:21:01.000Z"
-        },
-        {
-          "platform": "hackernews",
-          "title": "A chatbot told us SpaceX never went public, 20 days after their IPO",
-          "url": "https://www.quoin.ai/",
-          "score": 2,
-          "author": "quoinai",
-          "commentCount": 1,
-          "publishedAt": "2026-07-03T16:49:16.000Z"
         }
       ],
       "relatedConceptSlugs": [
