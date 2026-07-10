@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-10T09:06:54.045Z",
+  "generatedAt": "2026-07-10T19:31:40.288Z",
   "topics": [
     {
       "slug": "space-telescopes",
@@ -131,139 +131,6 @@
         "convergence": 0.15,
         "deepTopic": 1,
         "pantheon": 0.16,
-        "graveyard": 0
-      }
-    },
-    {
-      "slug": "nanotechnology",
-      "label": "Nanotechnology & Metamaterials",
-      "score": 8007,
-      "delta": -2,
-      "direction": "steady",
-      "mentions": 41,
-      "sources": [
-        {
-          "platform": "arxiv",
-          "title": "Predicting Multi-Order Magnetic Polariton Resonances for Radiative Properties Tailoring by Distributed Circuit Model",
-          "url": "https://arxiv.org/abs/2607.07657",
-          "score": 200,
-          "authors": "Hangjie Li, Junming Zhao",
-          "arxivCategory": "physics.optics",
-          "publishedAt": "2026-07-08T17:13:54.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Distributed Circuit Model for Predicting the Quality Factor of Magnetic Polariton Resonance",
-          "url": "https://arxiv.org/abs/2607.07633",
-          "score": 200,
-          "authors": "Hangjie Li, Junming Zhao",
-          "arxivCategory": "physics.app-ph",
-          "publishedAt": "2026-07-08T16:49:43.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Transmissibility, boundary-guided waves, and representative unit cell choice in finite-sized metamaterials",
-          "url": "https://arxiv.org/abs/2607.07349",
-          "score": 200,
-          "authors": "Plastiras Demetriou, Gianluca Rizzi",
-          "arxivCategory": "physics.optics",
-          "publishedAt": "2026-07-08T12:38:41.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Bound states in the continuum in multilayered time-varying metasurfaces",
-          "url": "https://arxiv.org/abs/2607.06469",
-          "score": 200,
-          "authors": "Puneet Garg, Michael Plum, Carsten Rockstuhl",
-          "arxivCategory": "physics.optics",
-          "publishedAt": "2026-07-07T16:28:12.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "From Active to Odd to Smart Matter",
-          "url": "https://arxiv.org/abs/2607.06051",
-          "score": 200,
-          "authors": "Olivier Dauchot",
-          "arxivCategory": "cond-mat.soft",
-          "publishedAt": "2026-07-07T09:26:49.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Single-photon polarization tomography with an integrated metal-superconductor nanowire array",
-          "url": "https://arxiv.org/abs/2607.06047",
-          "score": 200,
-          "authors": "Pierre Brosseau, Jiawei Wang, Giorgio Adamo et al.",
-          "arxivCategory": "physics.optics",
-          "publishedAt": "2026-07-07T09:25:33.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "CertMix: Certified, Data-Efficient Metamaterial Design by Affine Mixing of Aligned Neural-Implicit Weight Spaces",
-          "url": "https://arxiv.org/abs/2607.04123",
-          "score": 200,
-          "authors": "Yifan Wang",
-          "arxivCategory": "cs.LG",
-          "publishedAt": "2026-07-05T05:40:01.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Analytic Theory of Phase Transitions in Optical Metamaterials",
-          "url": "https://arxiv.org/abs/2607.03471",
-          "score": 200,
-          "authors": "Jiahao Yan, Xiaoshui Lin, Junpeng Hou et al.",
-          "arxivCategory": "physics.optics",
-          "publishedAt": "2026-07-03T16:32:39.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "The Swiss Roll Metamaterial Revisited",
-          "url": "https://arxiv.org/abs/2607.02758",
-          "score": 200,
-          "authors": "Zachary Fritts, Anthony Grbic",
-          "arxivCategory": "physics.app-ph",
-          "publishedAt": "2026-07-02T20:53:44.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Ultrafast All-Optical Polarization Control via Symmetry Breaking in an Au Nanorod Dimer Metamaterial",
-          "url": "https://arxiv.org/abs/2607.02733",
-          "score": 200,
-          "authors": "Nikolaos Matthaiakakis, Lea Teste, George Kakarantzas",
-          "arxivCategory": "physics.optics",
-          "publishedAt": "2026-07-02T19:55:45.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Fabric Phononic Crystals for Passive Vibration Control",
-          "url": "https://arxiv.org/abs/2607.01092",
-          "score": 200,
-          "authors": "Michael Y Wang, Hridyesh Tewani, Marianne Fairbanks et al.",
-          "arxivCategory": "physics.app-ph",
-          "publishedAt": "2026-07-01T15:46:59.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "A Spectral Solver for Acoustic Scattering by Multiple Quasi-Axisymmetric Structures",
-          "url": "https://arxiv.org/abs/2606.31380",
-          "score": 200,
-          "authors": "Jun Lai, Yuxin Li",
-          "arxivCategory": "math.NA",
-          "publishedAt": "2026-06-30T09:09:48.000Z"
-        }
-      ],
-      "relatedConceptSlugs": [
-        "extreme-metamaterial-solar-sails",
-        "technology-development-and-demonstration-concepts-for-the-space-elevator"
-      ],
-      "resonance": 61,
-      "quadrant": "real-deal",
-      "resonanceSignals": {
-        "conceptDepth": 0.6991803252671503,
-        "editorial": 1,
-        "connections": 0.3333333333333333,
-        "convergence": 0.15,
-        "deepTopic": 0.8,
-        "pantheon": 0.92,
         "graveyard": 0
       }
     },
@@ -400,10 +267,143 @@
       }
     },
     {
+      "slug": "nanotechnology",
+      "label": "Nanotechnology & Metamaterials",
+      "score": 7807,
+      "delta": -5,
+      "direction": "steady",
+      "mentions": 40,
+      "sources": [
+        {
+          "platform": "arxiv",
+          "title": "Predicting Multi-Order Magnetic Polariton Resonances for Radiative Properties Tailoring by Distributed Circuit Model",
+          "url": "https://arxiv.org/abs/2607.07657",
+          "score": 200,
+          "authors": "Hangjie Li, Junming Zhao",
+          "arxivCategory": "physics.optics",
+          "publishedAt": "2026-07-08T17:13:54.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Distributed Circuit Model for Predicting the Quality Factor of Magnetic Polariton Resonance",
+          "url": "https://arxiv.org/abs/2607.07633",
+          "score": 200,
+          "authors": "Hangjie Li, Junming Zhao",
+          "arxivCategory": "physics.app-ph",
+          "publishedAt": "2026-07-08T16:49:43.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Transmissibility, boundary-guided waves, and representative unit cell choice in finite-sized metamaterials",
+          "url": "https://arxiv.org/abs/2607.07349",
+          "score": 200,
+          "authors": "Plastiras Demetriou, Gianluca Rizzi",
+          "arxivCategory": "physics.optics",
+          "publishedAt": "2026-07-08T12:38:41.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Bound states in the continuum in multilayered time-varying metasurfaces",
+          "url": "https://arxiv.org/abs/2607.06469",
+          "score": 200,
+          "authors": "Puneet Garg, Michael Plum, Carsten Rockstuhl",
+          "arxivCategory": "physics.optics",
+          "publishedAt": "2026-07-07T16:28:12.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "From Active to Odd to Smart Matter",
+          "url": "https://arxiv.org/abs/2607.06051",
+          "score": 200,
+          "authors": "Olivier Dauchot",
+          "arxivCategory": "cond-mat.soft",
+          "publishedAt": "2026-07-07T09:26:49.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Single-photon polarization tomography with an integrated metal-superconductor nanowire array",
+          "url": "https://arxiv.org/abs/2607.06047",
+          "score": 200,
+          "authors": "Pierre Brosseau, Jiawei Wang, Giorgio Adamo et al.",
+          "arxivCategory": "physics.optics",
+          "publishedAt": "2026-07-07T09:25:33.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "CertMix: Certified, Data-Efficient Metamaterial Design by Affine Mixing of Aligned Neural-Implicit Weight Spaces",
+          "url": "https://arxiv.org/abs/2607.04123",
+          "score": 200,
+          "authors": "Yifan Wang",
+          "arxivCategory": "cs.LG",
+          "publishedAt": "2026-07-05T05:40:01.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Analytic Theory of Phase Transitions in Optical Metamaterials",
+          "url": "https://arxiv.org/abs/2607.03471",
+          "score": 200,
+          "authors": "Jiahao Yan, Xiaoshui Lin, Junpeng Hou et al.",
+          "arxivCategory": "physics.optics",
+          "publishedAt": "2026-07-03T16:32:39.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "The Swiss Roll Metamaterial Revisited",
+          "url": "https://arxiv.org/abs/2607.02758",
+          "score": 200,
+          "authors": "Zachary Fritts, Anthony Grbic",
+          "arxivCategory": "physics.app-ph",
+          "publishedAt": "2026-07-02T20:53:44.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Ultrafast All-Optical Polarization Control via Symmetry Breaking in an Au Nanorod Dimer Metamaterial",
+          "url": "https://arxiv.org/abs/2607.02733",
+          "score": 200,
+          "authors": "Nikolaos Matthaiakakis, Lea Teste, George Kakarantzas",
+          "arxivCategory": "physics.optics",
+          "publishedAt": "2026-07-02T19:55:45.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Fabric Phononic Crystals for Passive Vibration Control",
+          "url": "https://arxiv.org/abs/2607.01092",
+          "score": 200,
+          "authors": "Michael Y Wang, Hridyesh Tewani, Marianne Fairbanks et al.",
+          "arxivCategory": "physics.app-ph",
+          "publishedAt": "2026-07-01T15:46:59.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "A Spectral Solver for Acoustic Scattering by Multiple Quasi-Axisymmetric Structures",
+          "url": "https://arxiv.org/abs/2606.31380",
+          "score": 200,
+          "authors": "Jun Lai, Yuxin Li",
+          "arxivCategory": "math.NA",
+          "publishedAt": "2026-06-30T09:09:48.000Z"
+        }
+      ],
+      "relatedConceptSlugs": [
+        "extreme-metamaterial-solar-sails",
+        "technology-development-and-demonstration-concepts-for-the-space-elevator"
+      ],
+      "resonance": 61,
+      "quadrant": "real-deal",
+      "resonanceSignals": {
+        "conceptDepth": 0.6991803252671503,
+        "editorial": 1,
+        "connections": 0.3333333333333333,
+        "convergence": 0.15,
+        "deepTopic": 0.8,
+        "pantheon": 0.92,
+        "graveyard": 0
+      }
+    },
+    {
       "slug": "black-holes",
       "label": "Black Holes",
       "score": 7605,
-      "delta": 0,
+      "delta": 3,
       "direction": "steady",
       "mentions": 40,
       "sources": [
@@ -538,7 +538,7 @@
       "score": 7036,
       "delta": -5,
       "direction": "steady",
-      "mentions": 45,
+      "mentions": 44,
       "sources": [
         {
           "platform": "arxiv",
@@ -797,10 +797,10 @@
     {
       "slug": "condensed-matter",
       "label": "Condensed Matter",
-      "score": 6227,
-      "delta": -3,
+      "score": 6027,
+      "delta": 0,
       "direction": "steady",
-      "mentions": 35,
+      "mentions": 34,
       "sources": [
         {
           "platform": "arxiv",
@@ -846,15 +846,6 @@
           "authors": "Jae Hyuck Lee, Ze Yan, Tongrui Li et al.",
           "arxivCategory": "cond-mat.str-el",
           "publishedAt": "2026-06-15T05:48:24.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Structural Changes and Transport Properties of $\\mathrm{YBa_2Cu_3O_7}$ Locally Modified by a He$^+$ Focused Ion Beam",
-          "url": "https://arxiv.org/abs/2606.12145",
-          "score": 200,
-          "authors": "Ross Carter, Robin Hutt, Paul Zimmermann et al.",
-          "arxivCategory": "cond-mat.supr-con",
-          "publishedAt": "2026-06-10T14:37:55.000Z"
         },
         {
           "platform": "arxiv",
@@ -909,6 +900,15 @@
           "authors": "Heitor da Silva, Sergey K. Ivanov, Isaac Suárez et al.",
           "arxivCategory": "physics.optics",
           "publishedAt": "2026-07-03T09:26:00.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Electrically tunable interfacial thermal conduction via electronic structure engineering in ${Au}$/$Bi_{1-x}$$Sb_{x}$ topological insulators",
+          "url": "https://arxiv.org/abs/2607.02899",
+          "score": 200,
+          "authors": "Min Young Kim, Joon Sang Kang, Jangwoo Ha et al.",
+          "arxivCategory": "cond-mat.mes-hall",
+          "publishedAt": "2026-07-03T02:50:34.000Z"
         }
       ],
       "relatedConceptSlugs": [
@@ -1061,10 +1061,10 @@
     {
       "slug": "dark-matter",
       "label": "Dark Matter & Dark Energy",
-      "score": 5809,
+      "score": 5805,
       "delta": 0,
       "direction": "steady",
-      "mentions": 33,
+      "mentions": 31,
       "sources": [
         {
           "platform": "arxiv",
@@ -1593,7 +1593,7 @@
       "slug": "artemis",
       "label": "Artemis & Lunar Return",
       "score": 1602,
-      "delta": -11,
+      "delta": 0,
       "direction": "steady",
       "mentions": 9,
       "sources": [
@@ -1699,7 +1699,7 @@
       "slug": "fusion-propulsion",
       "label": "Fusion Propulsion",
       "score": 1400,
-      "delta": -12,
+      "delta": 0,
       "direction": "steady",
       "mentions": 7,
       "sources": [
@@ -2096,10 +2096,10 @@
     {
       "slug": "starlink",
       "label": "Starlink & Satellite Internet",
-      "score": 659,
-      "delta": 0,
+      "score": 624,
+      "delta": -5,
       "direction": "steady",
-      "mentions": 8,
+      "mentions": 7,
       "sources": [
         {
           "platform": "hackernews",
@@ -2127,15 +2127,6 @@
           "authors": "Lingkai Zhao, Zhe Chen, Kun Qiu et al.",
           "arxivCategory": "cs.NI",
           "publishedAt": "2026-06-12T06:24:48.000Z"
-        },
-        {
-          "platform": "hackernews",
-          "title": "Amazon has enough satellites to launch its Starlink competitor",
-          "url": "https://www.theverge.com/science/960563/amazon-leo-service-tipping-point",
-          "score": 35,
-          "author": "root-parent",
-          "commentCount": 24,
-          "publishedAt": "2026-07-03T11:50:20.000Z"
         },
         {
           "platform": "hackernews",
@@ -2304,7 +2295,7 @@
     {
       "slug": "warp-drives",
       "label": "Warp Drives & Exotic Physics",
-      "score": 212,
+      "score": 213,
       "delta": 0,
       "direction": "steady",
       "mentions": 2,
@@ -2322,7 +2313,7 @@
           "platform": "hackernews",
           "title": "Show HN: Context Warp Drive – Deterministic context folding for AI agents",
           "url": "https://github.com/dogtorjonah/context-warp-drive",
-          "score": 12,
+          "score": 13,
           "author": "Dr_Jonah",
           "commentCount": 5,
           "publishedAt": "2026-07-07T15:18:36.000Z"
@@ -2340,6 +2331,139 @@
         "connections": 0.3333333333333333,
         "convergence": 0.15,
         "deepTopic": 0,
+        "pantheon": 0.92,
+        "graveyard": 0
+      }
+    },
+    {
+      "slug": "starship",
+      "label": "Starship & SpaceX",
+      "score": 207,
+      "delta": 15,
+      "direction": "steady",
+      "mentions": 17,
+      "sources": [
+        {
+          "platform": "hackernews",
+          "title": "The space bit of SpaceX is worth $8 a share, says Morgan Stanley",
+          "url": "https://www.ft.com/content/09a62ed4-16af-433c-adb7-c877d1975388",
+          "score": 72,
+          "author": "iamflimflam1",
+          "commentCount": 113,
+          "publishedAt": "2026-07-08T07:18:26.000Z"
+        },
+        {
+          "platform": "hackernews",
+          "title": "Elon Musk posted twice as often on UK race and immigration as about SpaceX IPO",
+          "url": "https://www.theguardian.com/technology/2026/jul/04/elon-musk-uk-race-immigration-spacex-ipo",
+          "score": 24,
+          "author": "iamflimflam1",
+          "commentCount": 4,
+          "publishedAt": "2026-07-04T17:18:19.000Z"
+        },
+        {
+          "platform": "hackernews",
+          "title": "SpaceX wants to launch 100k more Starlink satellites – for 100x the bandwidth",
+          "url": "https://www.zdnet.com/home-and-office/networking/spacex-wants-to-launch-100000-more-starlink-satellites/",
+          "score": 23,
+          "author": "CrankyBear",
+          "commentCount": 65,
+          "publishedAt": "2026-07-10T17:51:07.000Z"
+        },
+        {
+          "platform": "hackernews",
+          "title": "Bond Traders Stunned as Losses on SpaceX's New Debt Keep Growing",
+          "url": "https://www.bloomberg.com/news/articles/2026-06-26/bond-traders-stunned-as-losses-on-spacex-s-new-debt-keep-growing",
+          "score": 21,
+          "author": "1vuio0pswjnm7",
+          "commentCount": 2,
+          "publishedAt": "2026-07-07T23:14:03.000Z"
+        },
+        {
+          "platform": "hackernews",
+          "title": "SpaceX Shares Stumble in Nasdaq-100 Debut",
+          "url": "https://www.wsj.com/finance/stocks/spacex-shares-stumble-in-nasdaq-100-debut-9ec10565",
+          "score": 16,
+          "author": "JumpCrisscross",
+          "commentCount": 2,
+          "publishedAt": "2026-07-07T22:00:45.000Z"
+        },
+        {
+          "platform": "hackernews",
+          "title": "SpaceX Is Junk. That's What the Bond Market Says",
+          "url": "https://www.bloomberg.com/opinion/articles/2026-07-02/spacex-is-junk-that-s-what-the-bond-market-says",
+          "score": 13,
+          "author": "petethomas",
+          "commentCount": 1,
+          "publishedAt": "2026-07-03T23:47:02.000Z"
+        },
+        {
+          "platform": "hackernews",
+          "title": "xAI makes its rebrand to SpaceXAI complete with a new logo",
+          "url": "https://www.businessinsider.com/xai-rebrand-spacexai-new-logo-x-handle-spacex-2026-7",
+          "score": 6,
+          "author": "enlightpixel",
+          "commentCount": 0,
+          "publishedAt": "2026-07-06T21:57:23.000Z"
+        },
+        {
+          "platform": "hackernews",
+          "title": "Alphaville LLC initiates coverage of SpaceX with Buy recommendation",
+          "url": "https://www.ft.com/content/1344d22b-ee64-488d-bd02-170fe0c9de2b",
+          "score": 5,
+          "author": "petethomas",
+          "commentCount": 2,
+          "publishedAt": "2026-07-08T20:32:03.000Z"
+        },
+        {
+          "platform": "hackernews",
+          "title": "SpaceXAI launches Grok 4.5 model for coding, agentic tasks",
+          "url": "https://www.reuters.com/business/media-telecom/spacexai-launches-grok-45-model-coding-agentic-tasks-2026-07-08/",
+          "score": 4,
+          "author": "adithyaharish",
+          "commentCount": 1,
+          "publishedAt": "2026-07-09T13:09:30.000Z"
+        },
+        {
+          "platform": "hackernews",
+          "title": "SpaceX and AI startup wealth fuels demand for private jets",
+          "url": "https://www.reuters.com/legal/government/spacex-ai-startup-wealth-fuels-demand-private-jets-2026-07-09/",
+          "score": 4,
+          "author": "adithyaharish",
+          "commentCount": 0,
+          "publishedAt": "2026-07-09T10:46:42.000Z"
+        },
+        {
+          "platform": "hackernews",
+          "title": "SpaceX closes below debut price in two-day slide after Nasdaq-100 inclusion",
+          "url": "https://www.cnbc.com/2026/07/08/spacex-stock-nasdaq-100-ipo.html",
+          "score": 4,
+          "author": "1vuio0pswjnm7",
+          "commentCount": 0,
+          "publishedAt": "2026-07-09T05:39:57.000Z"
+        },
+        {
+          "platform": "hackernews",
+          "title": "Wall Street warms to SpaceX ahead of Nasdaq 100 inclusion",
+          "url": "https://www.reuters.com/business/wall-street-warms-spacex-ahead-nasdaq-100-inclusion-2026-07-07/",
+          "score": 4,
+          "author": "adithyaharish",
+          "commentCount": 0,
+          "publishedAt": "2026-07-07T08:27:31.000Z"
+        }
+      ],
+      "relatedConceptSlugs": [
+        "extraterrestrial-regolith-derived-atmospheric-entry-heat-shields",
+        "phase-i-final-report-nasa-institute-for-advanced-concepts-combined-heat-shield-a"
+      ],
+      "resonance": 43,
+      "quadrant": "dead-zone",
+      "resonanceSignals": {
+        "conceptDepth": 0.5113915944693856,
+        "editorial": 0.4,
+        "connections": 0,
+        "convergence": 0.35,
+        "deepTopic": 1,
         "pantheon": 0.92,
         "graveyard": 0
       }
@@ -2442,139 +2566,6 @@
         "convergence": 0.025,
         "deepTopic": 0,
         "pantheon": 0.4,
-        "graveyard": 0
-      }
-    },
-    {
-      "slug": "starship",
-      "label": "Starship & SpaceX",
-      "score": 181,
-      "delta": 5,
-      "direction": "steady",
-      "mentions": 16,
-      "sources": [
-        {
-          "platform": "hackernews",
-          "title": "The space bit of SpaceX is worth $8 a share, says Morgan Stanley",
-          "url": "https://www.ft.com/content/09a62ed4-16af-433c-adb7-c877d1975388",
-          "score": 71,
-          "author": "iamflimflam1",
-          "commentCount": 113,
-          "publishedAt": "2026-07-08T07:18:26.000Z"
-        },
-        {
-          "platform": "hackernews",
-          "title": "Elon Musk posted twice as often on UK race and immigration as about SpaceX IPO",
-          "url": "https://www.theguardian.com/technology/2026/jul/04/elon-musk-uk-race-immigration-spacex-ipo",
-          "score": 23,
-          "author": "iamflimflam1",
-          "commentCount": 4,
-          "publishedAt": "2026-07-04T17:18:19.000Z"
-        },
-        {
-          "platform": "hackernews",
-          "title": "Bond Traders Stunned as Losses on SpaceX's New Debt Keep Growing",
-          "url": "https://www.bloomberg.com/news/articles/2026-06-26/bond-traders-stunned-as-losses-on-spacex-s-new-debt-keep-growing",
-          "score": 21,
-          "author": "1vuio0pswjnm7",
-          "commentCount": 2,
-          "publishedAt": "2026-07-07T23:14:03.000Z"
-        },
-        {
-          "platform": "hackernews",
-          "title": "SpaceX Shares Stumble in Nasdaq-100 Debut",
-          "url": "https://www.wsj.com/finance/stocks/spacex-shares-stumble-in-nasdaq-100-debut-9ec10565",
-          "score": 16,
-          "author": "JumpCrisscross",
-          "commentCount": 2,
-          "publishedAt": "2026-07-07T22:00:45.000Z"
-        },
-        {
-          "platform": "hackernews",
-          "title": "SpaceX Is Junk. That's What the Bond Market Says",
-          "url": "https://www.bloomberg.com/opinion/articles/2026-07-02/spacex-is-junk-that-s-what-the-bond-market-says",
-          "score": 13,
-          "author": "petethomas",
-          "commentCount": 1,
-          "publishedAt": "2026-07-03T23:47:02.000Z"
-        },
-        {
-          "platform": "hackernews",
-          "title": "xAI makes its rebrand to SpaceXAI complete with a new logo",
-          "url": "https://www.businessinsider.com/xai-rebrand-spacexai-new-logo-x-handle-spacex-2026-7",
-          "score": 6,
-          "author": "enlightpixel",
-          "commentCount": 0,
-          "publishedAt": "2026-07-06T21:57:23.000Z"
-        },
-        {
-          "platform": "hackernews",
-          "title": "Alphaville LLC initiates coverage of SpaceX with Buy recommendation",
-          "url": "https://www.ft.com/content/1344d22b-ee64-488d-bd02-170fe0c9de2b",
-          "score": 5,
-          "author": "petethomas",
-          "commentCount": 2,
-          "publishedAt": "2026-07-08T20:32:03.000Z"
-        },
-        {
-          "platform": "hackernews",
-          "title": "SpaceX and AI startup wealth fuels demand for private jets",
-          "url": "https://www.reuters.com/legal/government/spacex-ai-startup-wealth-fuels-demand-private-jets-2026-07-09/",
-          "score": 4,
-          "author": "adithyaharish",
-          "commentCount": 0,
-          "publishedAt": "2026-07-09T10:46:42.000Z"
-        },
-        {
-          "platform": "hackernews",
-          "title": "SpaceX closes below debut price in two-day slide after Nasdaq-100 inclusion",
-          "url": "https://www.cnbc.com/2026/07/08/spacex-stock-nasdaq-100-ipo.html",
-          "score": 4,
-          "author": "1vuio0pswjnm7",
-          "commentCount": 0,
-          "publishedAt": "2026-07-09T05:39:57.000Z"
-        },
-        {
-          "platform": "hackernews",
-          "title": "Wall Street warms to SpaceX ahead of Nasdaq 100 inclusion",
-          "url": "https://www.reuters.com/business/wall-street-warms-spacex-ahead-nasdaq-100-inclusion-2026-07-07/",
-          "score": 4,
-          "author": "adithyaharish",
-          "commentCount": 0,
-          "publishedAt": "2026-07-07T08:27:31.000Z"
-        },
-        {
-          "platform": "hackernews",
-          "title": "SpaceXAI launches Grok 4.5 model for coding, agentic tasks",
-          "url": "https://www.reuters.com/business/media-telecom/spacexai-launches-grok-45-model-coding-agentic-tasks-2026-07-08/",
-          "score": 3,
-          "author": "adithyaharish",
-          "commentCount": 1,
-          "publishedAt": "2026-07-09T13:09:30.000Z"
-        },
-        {
-          "platform": "hackernews",
-          "title": "xAI Is Now SpaceXAI",
-          "url": "https://x.ai",
-          "score": 3,
-          "author": "EvanZhouDev",
-          "commentCount": 1,
-          "publishedAt": "2026-07-06T20:08:19.000Z"
-        }
-      ],
-      "relatedConceptSlugs": [
-        "extraterrestrial-regolith-derived-atmospheric-entry-heat-shields",
-        "phase-i-final-report-nasa-institute-for-advanced-concepts-combined-heat-shield-a"
-      ],
-      "resonance": 43,
-      "quadrant": "dead-zone",
-      "resonanceSignals": {
-        "conceptDepth": 0.5113915944693856,
-        "editorial": 0.4,
-        "connections": 0,
-        "convergence": 0.35,
-        "deepTopic": 1,
-        "pantheon": 0.92,
         "graveyard": 0
       }
     },
