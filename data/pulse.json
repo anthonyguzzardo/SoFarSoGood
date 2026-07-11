@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-07-10T19:31:40.288Z",
+  "generatedAt": "2026-07-11T07:44:38.020Z",
   "topics": [
     {
       "slug": "space-telescopes",
       "label": "Space Telescopes",
       "score": 8204,
-      "delta": 2,
+      "delta": 0,
       "direction": "steady",
       "mentions": 42,
       "sources": [
@@ -138,7 +138,7 @@
       "slug": "gravitational-waves",
       "label": "Gravitational Waves",
       "score": 8000,
-      "delta": -5,
+      "delta": 0,
       "direction": "steady",
       "mentions": 40,
       "sources": [
@@ -269,10 +269,10 @@
     {
       "slug": "nanotechnology",
       "label": "Nanotechnology & Metamaterials",
-      "score": 7807,
-      "delta": -5,
+      "score": 7811,
+      "delta": -2,
       "direction": "steady",
-      "mentions": 40,
+      "mentions": 41,
       "sources": [
         {
           "platform": "arxiv",
@@ -402,10 +402,10 @@
     {
       "slug": "black-holes",
       "label": "Black Holes",
-      "score": 7605,
-      "delta": 3,
+      "score": 7402,
+      "delta": -3,
       "direction": "steady",
-      "mentions": 40,
+      "mentions": 38,
       "sources": [
         {
           "platform": "arxiv",
@@ -536,7 +536,7 @@
       "slug": "quantum-computing",
       "label": "Quantum Computing",
       "score": 7036,
-      "delta": -5,
+      "delta": 0,
       "direction": "steady",
       "mentions": 44,
       "sources": [
@@ -797,10 +797,10 @@
     {
       "slug": "condensed-matter",
       "label": "Condensed Matter",
-      "score": 6027,
-      "delta": 0,
+      "score": 5827,
+      "delta": -6,
       "direction": "steady",
-      "mentions": 34,
+      "mentions": 33,
       "sources": [
         {
           "platform": "arxiv",
@@ -924,138 +924,6 @@
         "deepTopic": 0,
         "pantheon": 0.92,
         "graveyard": 0
-      }
-    },
-    {
-      "slug": "cosmology",
-      "label": "Cosmology",
-      "score": 6002,
-      "delta": 3,
-      "direction": "steady",
-      "mentions": 31,
-      "sources": [
-        {
-          "platform": "arxiv",
-          "title": "HETDEX [OII] galaxies at $z \\le 0.48$: Volume-limited samples and their power spectra",
-          "url": "https://arxiv.org/abs/2607.08453",
-          "score": 200,
-          "authors": "Jeongin Moon, Eiichiro Komatsu, Robin Ciardullo et al.",
-          "arxivCategory": "astro-ph.CO",
-          "publishedAt": "2026-07-09T13:16:20.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Phantom crossing from the Standard Model and General Relativity",
-          "url": "https://arxiv.org/abs/2607.08120",
-          "score": 200,
-          "authors": "Jinglong Liu, Tucker Manton, Yifu Cai et al.",
-          "arxivCategory": "astro-ph.CO",
-          "publishedAt": "2026-07-09T05:35:21.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Higgs boson mass and thermal wino dark matter from Starobinsky supergravity with the MSSM",
-          "url": "https://arxiv.org/abs/2607.07193",
-          "score": 200,
-          "authors": "Daniel Frolovsky, Alexander Belyaev, Sergei V. Ketov",
-          "arxivCategory": "hep-ph",
-          "publishedAt": "2026-07-08T09:27:52.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Systematic Light Propagation Bias from the Heliosphere and Its Impact on the Hubble Tension",
-          "url": "https://arxiv.org/abs/2607.07741",
-          "score": 200,
-          "authors": "Behnam Pourhassan, İzzet Sakallı, Sudhaker Upadhyay et al.",
-          "arxivCategory": "gr-qc",
-          "publishedAt": "2026-07-08T06:38:31.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "CMB Lensing Reconstruction Using Two Years of Temperature Data from the SPT-3G Summer Survey",
-          "url": "https://arxiv.org/abs/2607.05784",
-          "score": 200,
-          "authors": "K. Levy, S. Raghunathan, F. Guidi et al.",
-          "arxivCategory": "astro-ph.CO",
-          "publishedAt": "2026-07-07T03:20:43.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Alleviating the Hubble Tension with Smooth Sign-Switching Dark Energy: Full CMB Constraints with DESI and PantheonPlus",
-          "url": "https://arxiv.org/abs/2607.05044",
-          "score": 200,
-          "authors": "Mariam Bouhmadi-López, Hsu-Wen Chiang, Beñat Ibarra-Uriondo",
-          "arxivCategory": "astro-ph.CO",
-          "publishedAt": "2026-07-06T13:21:04.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "In-Band Scattering and Absorption of Infrared Blocking Foam Filters for Millimeter-wave Cameras",
-          "url": "https://arxiv.org/abs/2607.05003",
-          "score": 200,
-          "authors": "Alex Thomas, Bugao Zou, Shreya Sutariya et al.",
-          "arxivCategory": "astro-ph.IM",
-          "publishedAt": "2026-07-06T12:42:29.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "The heating rate of the Intergalactic Medium by Lyman-$α$ photon scattering",
-          "url": "https://arxiv.org/abs/2607.03400",
-          "score": 200,
-          "authors": "Avery Meiksin",
-          "arxivCategory": "astro-ph.CO",
-          "publishedAt": "2026-07-03T15:01:45.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Neutrino mass constraints in the Schwarzschild-de Sitter black-hole dark energy model with ACT DR6 and DESI DR2 data",
-          "url": "https://arxiv.org/abs/2607.03183",
-          "score": 200,
-          "authors": "Sheng-Han Zhou, Tian-Nuo Li, Guo-Hong Du et al.",
-          "arxivCategory": "astro-ph.CO",
-          "publishedAt": "2026-07-03T10:38:35.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Limits on global cosmic birefringence using radio sources",
-          "url": "https://arxiv.org/abs/2607.02664",
-          "score": 200,
-          "authors": "Richard A. Battye, Neal Jackson, Ian Browne",
-          "arxivCategory": "astro-ph.CO",
-          "publishedAt": "2026-07-02T18:00:08.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Can Primordial Black Holes Be Seeds for Early Galaxies in Models Satisfying the Covariant Entropy Bound?",
-          "url": "https://arxiv.org/abs/2607.01292",
-          "score": 200,
-          "authors": "Sidan A, Tom Banks, Willy Fischler",
-          "arxivCategory": "hep-ph",
-          "publishedAt": "2026-07-01T12:55:37.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "The Simons Observatory: Overview of the Cryogenic Half-wave Plate Polarization Modulators",
-          "url": "https://arxiv.org/abs/2607.00265",
-          "score": 200,
-          "authors": "Junna Sugiyama, Kyohei Yamada, Bryce Bixler et al.",
-          "arxivCategory": "astro-ph.IM",
-          "publishedAt": "2026-06-30T23:28:34.000Z"
-        }
-      ],
-      "relatedConceptSlugs": [
-        "gravity-observation-and-dark-energy-detection-explorer"
-      ],
-      "resonance": 48,
-      "quadrant": "hype-cycle",
-      "resonanceSignals": {
-        "conceptDepth": 0.6131471927654584,
-        "editorial": 1,
-        "connections": 0.3333333333333333,
-        "convergence": 0.1,
-        "deepTopic": 0,
-        "pantheon": 0.92,
-        "graveyard": 0.19999999999999998
       }
     },
     {
@@ -1192,10 +1060,142 @@
       }
     },
     {
+      "slug": "cosmology",
+      "label": "Cosmology",
+      "score": 5802,
+      "delta": -3,
+      "direction": "steady",
+      "mentions": 30,
+      "sources": [
+        {
+          "platform": "arxiv",
+          "title": "HETDEX [OII] galaxies at $z \\le 0.48$: Volume-limited samples and their power spectra",
+          "url": "https://arxiv.org/abs/2607.08453",
+          "score": 200,
+          "authors": "Jeongin Moon, Eiichiro Komatsu, Robin Ciardullo et al.",
+          "arxivCategory": "astro-ph.CO",
+          "publishedAt": "2026-07-09T13:16:20.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Phantom crossing from the Standard Model and General Relativity",
+          "url": "https://arxiv.org/abs/2607.08120",
+          "score": 200,
+          "authors": "Jinglong Liu, Tucker Manton, Yifu Cai et al.",
+          "arxivCategory": "astro-ph.CO",
+          "publishedAt": "2026-07-09T05:35:21.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Higgs boson mass and thermal wino dark matter from Starobinsky supergravity with the MSSM",
+          "url": "https://arxiv.org/abs/2607.07193",
+          "score": 200,
+          "authors": "Daniel Frolovsky, Alexander Belyaev, Sergei V. Ketov",
+          "arxivCategory": "hep-ph",
+          "publishedAt": "2026-07-08T09:27:52.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Systematic Light Propagation Bias from the Heliosphere and Its Impact on the Hubble Tension",
+          "url": "https://arxiv.org/abs/2607.07741",
+          "score": 200,
+          "authors": "Behnam Pourhassan, İzzet Sakallı, Sudhaker Upadhyay et al.",
+          "arxivCategory": "gr-qc",
+          "publishedAt": "2026-07-08T06:38:31.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "CMB Lensing Reconstruction Using Two Years of Temperature Data from the SPT-3G Summer Survey",
+          "url": "https://arxiv.org/abs/2607.05784",
+          "score": 200,
+          "authors": "K. Levy, S. Raghunathan, F. Guidi et al.",
+          "arxivCategory": "astro-ph.CO",
+          "publishedAt": "2026-07-07T03:20:43.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Alleviating the Hubble Tension with Smooth Sign-Switching Dark Energy: Full CMB Constraints with DESI and PantheonPlus",
+          "url": "https://arxiv.org/abs/2607.05044",
+          "score": 200,
+          "authors": "Mariam Bouhmadi-López, Hsu-Wen Chiang, Beñat Ibarra-Uriondo",
+          "arxivCategory": "astro-ph.CO",
+          "publishedAt": "2026-07-06T13:21:04.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "In-Band Scattering and Absorption of Infrared Blocking Foam Filters for Millimeter-wave Cameras",
+          "url": "https://arxiv.org/abs/2607.05003",
+          "score": 200,
+          "authors": "Alex Thomas, Bugao Zou, Shreya Sutariya et al.",
+          "arxivCategory": "astro-ph.IM",
+          "publishedAt": "2026-07-06T12:42:29.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "The heating rate of the Intergalactic Medium by Lyman-$α$ photon scattering",
+          "url": "https://arxiv.org/abs/2607.03400",
+          "score": 200,
+          "authors": "Avery Meiksin",
+          "arxivCategory": "astro-ph.CO",
+          "publishedAt": "2026-07-03T15:01:45.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Neutrino mass constraints in the Schwarzschild-de Sitter black-hole dark energy model with ACT DR6 and DESI DR2 data",
+          "url": "https://arxiv.org/abs/2607.03183",
+          "score": 200,
+          "authors": "Sheng-Han Zhou, Tian-Nuo Li, Guo-Hong Du et al.",
+          "arxivCategory": "astro-ph.CO",
+          "publishedAt": "2026-07-03T10:38:35.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Limits on global cosmic birefringence using radio sources",
+          "url": "https://arxiv.org/abs/2607.02664",
+          "score": 200,
+          "authors": "Richard A. Battye, Neal Jackson, Ian Browne",
+          "arxivCategory": "astro-ph.CO",
+          "publishedAt": "2026-07-02T18:00:08.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Can Primordial Black Holes Be Seeds for Early Galaxies in Models Satisfying the Covariant Entropy Bound?",
+          "url": "https://arxiv.org/abs/2607.01292",
+          "score": 200,
+          "authors": "Sidan A, Tom Banks, Willy Fischler",
+          "arxivCategory": "hep-ph",
+          "publishedAt": "2026-07-01T12:55:37.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "The Simons Observatory: Overview of the Cryogenic Half-wave Plate Polarization Modulators",
+          "url": "https://arxiv.org/abs/2607.00265",
+          "score": 200,
+          "authors": "Junna Sugiyama, Kyohei Yamada, Bryce Bixler et al.",
+          "arxivCategory": "astro-ph.IM",
+          "publishedAt": "2026-06-30T23:28:34.000Z"
+        }
+      ],
+      "relatedConceptSlugs": [
+        "gravity-observation-and-dark-energy-detection-explorer"
+      ],
+      "resonance": 48,
+      "quadrant": "hype-cycle",
+      "resonanceSignals": {
+        "conceptDepth": 0.6131471927654584,
+        "editorial": 1,
+        "connections": 0.3333333333333333,
+        "convergence": 0.1,
+        "deepTopic": 0,
+        "pantheon": 0.92,
+        "graveyard": 0.19999999999999998
+      }
+    },
+    {
       "slug": "exoplanets",
       "label": "Exoplanets",
       "score": 3009,
-      "delta": 7,
+      "delta": 0,
       "direction": "steady",
       "mentions": 16,
       "sources": [
@@ -2094,101 +2094,6 @@
       }
     },
     {
-      "slug": "starlink",
-      "label": "Starlink & Satellite Internet",
-      "score": 624,
-      "delta": -5,
-      "direction": "steady",
-      "mentions": 7,
-      "sources": [
-        {
-          "platform": "hackernews",
-          "title": "Africans Are Turning to Starlink",
-          "url": "https://www.economist.com/middle-east-and-africa/2026/07/02/africans-are-turning-to-starlink",
-          "score": 208,
-          "author": "bookofjoe",
-          "commentCount": 265,
-          "publishedAt": "2026-07-03T21:08:37.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Analysis of Laser-Satellite Deconfliction for Astronomical Observatories",
-          "url": "https://arxiv.org/abs/2606.25238",
-          "score": 200,
-          "authors": "Christoph Baranec, Reed Riddle, Yuhei Takagi et al.",
-          "arxivCategory": "astro-ph.IM",
-          "publishedAt": "2026-06-23T23:42:54.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Aidos: A Hybrid Optimization Algorithm for Beam Hopping Scheduling in NGSO Mega-Constellations",
-          "url": "https://arxiv.org/abs/2606.14151",
-          "score": 200,
-          "authors": "Lingkai Zhao, Zhe Chen, Kun Qiu et al.",
-          "arxivCategory": "cs.NI",
-          "publishedAt": "2026-06-12T06:24:48.000Z"
-        },
-        {
-          "platform": "hackernews",
-          "title": "Leak Reveals Possible Secret Russia-China Military Plan to Disable Starlink",
-          "url": "https://united24media.com/world/leaked-documents-reveal-possible-secret-russia-china-military-plan-to-disable-starlink-20627",
-          "score": 7,
-          "author": "greesil",
-          "commentCount": 3,
-          "publishedAt": "2026-07-09T19:11:57.000Z"
-        },
-        {
-          "platform": "hackernews",
-          "title": "Shooting Starlink: The \"no limits\" partnership between Russia and China",
-          "url": "https://theins.press/en/inv/294635",
-          "score": 6,
-          "author": "harscoat",
-          "commentCount": 0,
-          "publishedAt": "2026-07-09T11:00:58.000Z"
-        },
-        {
-          "platform": "youtube",
-          "title": "Is Starlink a Secret Radar Constellation? [video]",
-          "url": "https://www.youtube.com/watch?v=jbp3kdJZ1_A",
-          "score": 2,
-          "thumbnail": "https://img.youtube.com/vi/jbp3kdJZ1_A/mqdefault.jpg",
-          "publishedAt": "2026-07-06T09:54:05.000Z"
-        },
-        {
-          "platform": "hackernews",
-          "title": "Is Starlink a Secret Radar Constellation? [video]",
-          "url": "https://www.youtube.com/watch?v=jbp3kdJZ1_A",
-          "score": 2,
-          "author": "TMWNN",
-          "commentCount": 0,
-          "publishedAt": "2026-07-06T09:54:05.000Z"
-        },
-        {
-          "platform": "hackernews",
-          "title": "Unofficial Starlink Global Gateways and Pops",
-          "url": "https://www.google.com/maps/d/viewer?mid=1805q6rlePY4WZd8QMOaNe2BqAgFkYBY&hl=en",
-          "score": 1,
-          "author": "jenders",
-          "commentCount": 0,
-          "publishedAt": "2026-07-05T12:05:33.000Z"
-        }
-      ],
-      "relatedConceptSlugs": [
-        "sps-alpha"
-      ],
-      "resonance": 21,
-      "quadrant": "dead-zone",
-      "resonanceSignals": {
-        "conceptDepth": 0.22629438553091683,
-        "editorial": 0.7,
-        "connections": 0,
-        "convergence": 0,
-        "deepTopic": 0,
-        "pantheon": 0,
-        "graveyard": 0
-      }
-    },
-    {
       "slug": "interstellar-travel",
       "label": "Interstellar Travel",
       "score": 600,
@@ -2245,8 +2150,8 @@
       "slug": "dyson-spheres",
       "label": "Dyson Spheres",
       "score": 600,
-      "delta": 50,
-      "direction": "up",
+      "delta": 0,
+      "direction": "steady",
       "mentions": 3,
       "sources": [
         {
@@ -2293,56 +2198,126 @@
       }
     },
     {
-      "slug": "warp-drives",
-      "label": "Warp Drives & Exotic Physics",
-      "score": 213,
-      "delta": 0,
-      "direction": "steady",
-      "mentions": 2,
+      "slug": "starlink",
+      "label": "Starlink & Satellite Internet",
+      "score": 426,
+      "delta": -35,
+      "direction": "down",
+      "mentions": 8,
       "sources": [
         {
           "platform": "arxiv",
-          "title": "Steering a warp drive without exotic matter",
-          "url": "https://arxiv.org/abs/2606.22531",
+          "title": "Analysis of Laser-Satellite Deconfliction for Astronomical Observatories",
+          "url": "https://arxiv.org/abs/2606.25238",
           "score": 200,
-          "authors": "An T. Le",
-          "arxivCategory": "gr-qc",
-          "publishedAt": "2026-06-21T14:42:06.000Z"
+          "authors": "Christoph Baranec, Reed Riddle, Yuhei Takagi et al.",
+          "arxivCategory": "astro-ph.IM",
+          "publishedAt": "2026-06-23T23:42:54.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Aidos: A Hybrid Optimization Algorithm for Beam Hopping Scheduling in NGSO Mega-Constellations",
+          "url": "https://arxiv.org/abs/2606.14151",
+          "score": 200,
+          "authors": "Lingkai Zhao, Zhe Chen, Kun Qiu et al.",
+          "arxivCategory": "cs.NI",
+          "publishedAt": "2026-06-12T06:24:48.000Z"
         },
         {
           "platform": "hackernews",
-          "title": "Show HN: Context Warp Drive – Deterministic context folding for AI agents",
-          "url": "https://github.com/dogtorjonah/context-warp-drive",
-          "score": 13,
-          "author": "Dr_Jonah",
-          "commentCount": 5,
-          "publishedAt": "2026-07-07T15:18:36.000Z"
+          "title": "Shooting Starlink: The \"no limits\" partnership between Russia and China",
+          "url": "https://theins.press/en/inv/294635",
+          "score": 9,
+          "author": "uxhacker",
+          "commentCount": 7,
+          "publishedAt": "2026-07-10T19:33:45.000Z"
+        },
+        {
+          "platform": "hackernews",
+          "title": "Leak Reveals Possible Secret Russia-China Military Plan to Disable Starlink",
+          "url": "https://united24media.com/world/leaked-documents-reveal-possible-secret-russia-china-military-plan-to-disable-starlink-20627",
+          "score": 7,
+          "author": "greesil",
+          "commentCount": 3,
+          "publishedAt": "2026-07-09T19:11:57.000Z"
+        },
+        {
+          "platform": "hackernews",
+          "title": "Shooting Starlink: The \"no limits\" partnership between Russia and China",
+          "url": "https://theins.press/en/inv/294635",
+          "score": 6,
+          "author": "harscoat",
+          "commentCount": 0,
+          "publishedAt": "2026-07-09T11:00:58.000Z"
+        },
+        {
+          "platform": "youtube",
+          "title": "Is Starlink a Secret Radar Constellation? [video]",
+          "url": "https://www.youtube.com/watch?v=jbp3kdJZ1_A",
+          "score": 2,
+          "thumbnail": "https://img.youtube.com/vi/jbp3kdJZ1_A/mqdefault.jpg",
+          "publishedAt": "2026-07-06T09:54:05.000Z"
+        },
+        {
+          "platform": "hackernews",
+          "title": "Is Starlink a Secret Radar Constellation? [video]",
+          "url": "https://www.youtube.com/watch?v=jbp3kdJZ1_A",
+          "score": 2,
+          "author": "TMWNN",
+          "commentCount": 0,
+          "publishedAt": "2026-07-06T09:54:05.000Z"
+        },
+        {
+          "platform": "hackernews",
+          "title": "Why is Starlink so big?",
+          "url": "https://www.fool.com/investing/2026/06/29/spacex-secret-launch-subsidy-makes-starlink-profit/",
+          "score": 1,
+          "author": "sawyers",
+          "commentCount": 3,
+          "publishedAt": "2026-07-11T07:04:14.000Z"
+        },
+        {
+          "platform": "hackernews",
+          "title": "Unofficial Starlink Global Gateways and Pops",
+          "url": "https://www.google.com/maps/d/viewer?mid=1805q6rlePY4WZd8QMOaNe2BqAgFkYBY&hl=en",
+          "score": 1,
+          "author": "jenders",
+          "commentCount": 0,
+          "publishedAt": "2026-07-05T12:05:33.000Z"
         }
       ],
       "relatedConceptSlugs": [
-        "procsima",
-        "extreme-metamaterial-solar-sails-for-breakthrough-space-exploration"
+        "sps-alpha"
       ],
-      "resonance": 53,
-      "quadrant": "sleeping-giant",
+      "resonance": 21,
+      "quadrant": "dead-zone",
       "resonanceSignals": {
-        "conceptDepth": 0.6991803252671503,
-        "editorial": 1,
-        "connections": 0.3333333333333333,
-        "convergence": 0.15,
+        "conceptDepth": 0.22629438553091683,
+        "editorial": 0.7,
+        "connections": 0,
+        "convergence": 0,
         "deepTopic": 0,
-        "pantheon": 0.92,
+        "pantheon": 0,
         "graveyard": 0
       }
     },
     {
       "slug": "starship",
       "label": "Starship & SpaceX",
-      "score": 207,
-      "delta": 15,
-      "direction": "steady",
+      "score": 326,
+      "delta": 80,
+      "direction": "up",
       "mentions": 17,
       "sources": [
+        {
+          "platform": "hackernews",
+          "title": "SpaceX wants to launch 100k more Starlink satellites for 100x the bandwidth",
+          "url": "https://www.zdnet.com/home-and-office/networking/spacex-wants-to-launch-100000-more-starlink-satellites/",
+          "score": 150,
+          "author": "CrankyBear",
+          "commentCount": 445,
+          "publishedAt": "2026-07-10T17:51:07.000Z"
+        },
         {
           "platform": "hackernews",
           "title": "The space bit of SpaceX is worth $8 a share, says Morgan Stanley",
@@ -2360,15 +2335,6 @@
           "author": "iamflimflam1",
           "commentCount": 4,
           "publishedAt": "2026-07-04T17:18:19.000Z"
-        },
-        {
-          "platform": "hackernews",
-          "title": "SpaceX wants to launch 100k more Starlink satellites – for 100x the bandwidth",
-          "url": "https://www.zdnet.com/home-and-office/networking/spacex-wants-to-launch-100000-more-starlink-satellites/",
-          "score": 23,
-          "author": "CrankyBear",
-          "commentCount": 65,
-          "publishedAt": "2026-07-10T17:51:07.000Z"
         },
         {
           "platform": "hackernews",
@@ -2390,12 +2356,12 @@
         },
         {
           "platform": "hackernews",
-          "title": "SpaceX Is Junk. That's What the Bond Market Says",
-          "url": "https://www.bloomberg.com/opinion/articles/2026-07-02/spacex-is-junk-that-s-what-the-bond-market-says",
-          "score": 13,
-          "author": "petethomas",
-          "commentCount": 1,
-          "publishedAt": "2026-07-03T23:47:02.000Z"
+          "title": "China takes a page from SpaceX and recaptures first stage of rocket to reuse it",
+          "url": "https://apnews.com/article/china-rocket-space-reuse-6d695fcad64a101dc3991c1bfa0e7357",
+          "score": 6,
+          "author": "tocs3",
+          "commentCount": 0,
+          "publishedAt": "2026-07-10T22:37:10.000Z"
         },
         {
           "platform": "hackernews",
@@ -2464,6 +2430,49 @@
         "connections": 0,
         "convergence": 0.35,
         "deepTopic": 1,
+        "pantheon": 0.92,
+        "graveyard": 0
+      }
+    },
+    {
+      "slug": "warp-drives",
+      "label": "Warp Drives & Exotic Physics",
+      "score": 213,
+      "delta": 0,
+      "direction": "steady",
+      "mentions": 2,
+      "sources": [
+        {
+          "platform": "arxiv",
+          "title": "Steering a warp drive without exotic matter",
+          "url": "https://arxiv.org/abs/2606.22531",
+          "score": 200,
+          "authors": "An T. Le",
+          "arxivCategory": "gr-qc",
+          "publishedAt": "2026-06-21T14:42:06.000Z"
+        },
+        {
+          "platform": "hackernews",
+          "title": "Show HN: Context Warp Drive – Deterministic context folding for AI agents",
+          "url": "https://github.com/dogtorjonah/context-warp-drive",
+          "score": 13,
+          "author": "Dr_Jonah",
+          "commentCount": 5,
+          "publishedAt": "2026-07-07T15:18:36.000Z"
+        }
+      ],
+      "relatedConceptSlugs": [
+        "procsima",
+        "extreme-metamaterial-solar-sails-for-breakthrough-space-exploration"
+      ],
+      "resonance": 53,
+      "quadrant": "sleeping-giant",
+      "resonanceSignals": {
+        "conceptDepth": 0.6991803252671503,
+        "editorial": 1,
+        "connections": 0.3333333333333333,
+        "convergence": 0.15,
+        "deepTopic": 0,
         "pantheon": 0.92,
         "graveyard": 0
       }
