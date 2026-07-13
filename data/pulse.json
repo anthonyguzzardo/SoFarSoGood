@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-13T08:52:09.206Z",
+  "generatedAt": "2026-07-13T19:27:53.893Z",
   "topics": [
     {
       "slug": "gravitational-waves",
@@ -269,10 +269,10 @@
     {
       "slug": "space-telescopes",
       "label": "Space Telescopes",
-      "score": 7804,
+      "score": 7800,
       "delta": -5,
       "direction": "steady",
-      "mentions": 40,
+      "mentions": 39,
       "sources": [
         {
           "platform": "arxiv",
@@ -535,10 +535,10 @@
     {
       "slug": "quantum-computing",
       "label": "Quantum Computing",
-      "score": 7030,
+      "score": 7028,
       "delta": 0,
       "direction": "steady",
-      "mentions": 43,
+      "mentions": 42,
       "sources": [
         {
           "platform": "arxiv",
@@ -1459,10 +1459,10 @@
     {
       "slug": "exoplanets",
       "label": "Exoplanets",
-      "score": 2809,
-      "delta": -7,
+      "score": 2810,
+      "delta": 0,
       "direction": "steady",
-      "mentions": 15,
+      "mentions": 16,
       "sources": [
         {
           "platform": "arxiv",
@@ -1593,7 +1593,7 @@
       "slug": "artemis",
       "label": "Artemis & Lunar Return",
       "score": 1602,
-      "delta": 0,
+      "delta": 14,
       "direction": "steady",
       "mentions": 9,
       "sources": [
@@ -2026,8 +2026,8 @@
       "slug": "electric-propulsion",
       "label": "Electric Propulsion",
       "score": 800,
-      "delta": -20,
-      "direction": "down",
+      "delta": 0,
+      "direction": "steady",
       "mentions": 4,
       "sources": [
         {
@@ -2088,7 +2088,7 @@
       "slug": "dyson-spheres",
       "label": "Dyson Spheres",
       "score": 604,
-      "delta": 51,
+      "delta": 50,
       "direction": "up",
       "mentions": 4,
       "sources": [
@@ -2147,18 +2147,18 @@
     {
       "slug": "starship",
       "label": "Starship & SpaceX",
-      "score": 503,
-      "delta": 10,
+      "score": 509,
+      "delta": 8,
       "direction": "steady",
-      "mentions": 21,
+      "mentions": 22,
       "sources": [
         {
           "platform": "hackernews",
           "title": "SpaceX wants to launch 100k more Starlink satellites for 100x the bandwidth",
           "url": "https://www.zdnet.com/home-and-office/networking/spacex-wants-to-launch-100000-more-starlink-satellites/",
-          "score": 315,
+          "score": 317,
           "author": "CrankyBear",
-          "commentCount": 1198,
+          "commentCount": 1218,
           "publishedAt": "2026-07-10T17:51:07.000Z"
         },
         {
@@ -2167,16 +2167,16 @@
           "url": "https://www.ft.com/content/09a62ed4-16af-433c-adb7-c877d1975388",
           "score": 72,
           "author": "iamflimflam1",
-          "commentCount": 115,
+          "commentCount": 116,
           "publishedAt": "2026-07-08T07:18:26.000Z"
         },
         {
           "platform": "hackernews",
           "title": "SpaceX built to separate retail investors from their money",
           "url": "https://seekingalpha.com/news/4613058-spacex-built-to-separate-retail-investors-from-their-money-george-noble",
-          "score": 29,
+          "score": 32,
           "author": "nothrowaways",
-          "commentCount": 8,
+          "commentCount": 10,
           "publishedAt": "2026-07-12T20:08:49.000Z"
         },
         {
@@ -2280,8 +2280,8 @@
     {
       "slug": "starlink",
       "label": "Starlink & Satellite Internet",
-      "score": 240,
-      "delta": 3,
+      "score": 252,
+      "delta": 6,
       "direction": "steady",
       "mentions": 9,
       "sources": [
@@ -2293,6 +2293,15 @@
           "authors": "Christoph Baranec, Reed Riddle, Yuhei Takagi et al.",
           "arxivCategory": "astro-ph.IM",
           "publishedAt": "2026-06-23T23:42:54.000Z"
+        },
+        {
+          "platform": "hackernews",
+          "title": "Musk's Starlink Socks Customers with $1500 'High Demand' Surcharge",
+          "url": "https://www.techdirt.com/2026/07/13/musks-starlink-socks-customers-with-1500-high-demand-surcharge/",
+          "score": 13,
+          "author": "defrost",
+          "commentCount": 0,
+          "publishedAt": "2026-07-13T12:44:00.000Z"
         },
         {
           "platform": "hackernews",
@@ -2352,27 +2361,10 @@
           "platform": "hackernews",
           "title": "Shooting Starlink: The \"no limits\" partnership between Russia and China is takin",
           "url": "https://theins.press/en/inv/294635",
-          "score": 2,
+          "score": 3,
           "author": "arunc",
           "commentCount": 0,
           "publishedAt": "2026-07-13T05:31:31.000Z"
-        },
-        {
-          "platform": "youtube",
-          "title": "Is Starlink a Secret Radar Constellation? [video]",
-          "url": "https://www.youtube.com/watch?v=jbp3kdJZ1_A",
-          "score": 2,
-          "thumbnail": "https://img.youtube.com/vi/jbp3kdJZ1_A/mqdefault.jpg",
-          "publishedAt": "2026-07-06T09:54:05.000Z"
-        },
-        {
-          "platform": "hackernews",
-          "title": "Is Starlink a Secret Radar Constellation? [video]",
-          "url": "https://www.youtube.com/watch?v=jbp3kdJZ1_A",
-          "score": 2,
-          "author": "TMWNN",
-          "commentCount": 0,
-          "publishedAt": "2026-07-06T09:54:05.000Z"
         }
       ],
       "relatedConceptSlugs": [
@@ -2437,7 +2429,7 @@
       "slug": "ai-space",
       "label": "AI in Space",
       "score": 204,
-      "delta": 2,
+      "delta": 1,
       "direction": "steady",
       "mentions": 2,
       "sources": [
