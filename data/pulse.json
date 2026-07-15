@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-15T07:54:59.769Z",
+  "generatedAt": "2026-07-15T19:15:14.656Z",
   "topics": [
     {
       "slug": "black-holes",
@@ -130,139 +130,6 @@
         "connections": 1,
         "convergence": 0.2,
         "deepTopic": 1,
-        "pantheon": 0.92,
-        "graveyard": 0
-      }
-    },
-    {
-      "slug": "nanotechnology",
-      "label": "Nanotechnology & Metamaterials",
-      "score": 8009,
-      "delta": -3,
-      "direction": "steady",
-      "mentions": 41,
-      "sources": [
-        {
-          "platform": "arxiv",
-          "title": "Tunable Signal Penetration and Response Plateaus in Bistable Mechanical Media",
-          "url": "https://arxiv.org/abs/2607.12405",
-          "score": 200,
-          "authors": "Sven Pattloch, Joachim Dzubiella",
-          "arxivCategory": "cond-mat.soft",
-          "publishedAt": "2026-07-14T06:24:41.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Uncertainty-Aware Structure-Property Mapping of Spinodoid Metamaterials via Heteroscedastic Gaussian Process Regression",
-          "url": "https://arxiv.org/abs/2607.11209",
-          "score": 200,
-          "authors": "Minwoo Park, Junseo Park, Mingyu Lee et al.",
-          "arxivCategory": "physics.comp-ph",
-          "publishedAt": "2026-07-13T08:02:14.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Vectorial driving of multistable materials: singularities, pt-graphs, and non-generic paths",
-          "url": "https://arxiv.org/abs/2607.11179",
-          "score": 200,
-          "authors": "Colin M. Meulblok, Martin van Hecke",
-          "arxivCategory": "cond-mat.soft",
-          "publishedAt": "2026-07-13T07:22:09.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Multiple Band-Gaps through the Coupling of Unit Cells from the Same Metamaterial: the Dual Cell method",
-          "url": "https://arxiv.org/abs/2607.10916",
-          "score": 200,
-          "authors": "Plastiras Demetriou",
-          "arxivCategory": "physics.app-ph",
-          "publishedAt": "2026-07-12T20:43:38.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "On subwavelength guided seismic waves in Matryoshka-type elastic media with ring defects",
-          "url": "https://arxiv.org/abs/2607.09147",
-          "score": 200,
-          "authors": "Lingzheng Kong",
-          "arxivCategory": "math.AP",
-          "publishedAt": "2026-07-10T07:02:50.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Chiral switching of elastic spin via dynamic encirclement of exceptional points",
-          "url": "https://arxiv.org/abs/2607.09083",
-          "score": 200,
-          "authors": "Chenwen Yang, Shubo Wang",
-          "arxivCategory": "physics.class-ph",
-          "publishedAt": "2026-07-10T04:01:45.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Impedance-Guided Programmable Transmission of Localized Deformation in Modular Soft Metamaterials",
-          "url": "https://arxiv.org/abs/2607.08966",
-          "score": 200,
-          "authors": "Weiyun Xu, Daewon Hong, Zhi Zhao et al.",
-          "arxivCategory": "cs.CE",
-          "publishedAt": "2026-07-09T22:04:01.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Predicting Multi-Order Magnetic Polariton Resonances for Radiative Properties Tailoring by Distributed Circuit Model",
-          "url": "https://arxiv.org/abs/2607.07657",
-          "score": 200,
-          "authors": "Hangjie Li, Junming Zhao",
-          "arxivCategory": "physics.optics",
-          "publishedAt": "2026-07-08T17:13:54.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Distributed Circuit Model for Predicting the Quality Factor of Magnetic Polariton Resonance",
-          "url": "https://arxiv.org/abs/2607.07633",
-          "score": 200,
-          "authors": "Hangjie Li, Junming Zhao",
-          "arxivCategory": "physics.app-ph",
-          "publishedAt": "2026-07-08T16:49:43.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Transmissibility, boundary-guided waves, and representative unit cell choice in finite-sized metamaterials",
-          "url": "https://arxiv.org/abs/2607.07349",
-          "score": 200,
-          "authors": "Plastiras Demetriou, Gianluca Rizzi",
-          "arxivCategory": "physics.optics",
-          "publishedAt": "2026-07-08T12:38:41.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Bound states in the continuum in multilayered time-varying metasurfaces",
-          "url": "https://arxiv.org/abs/2607.06469",
-          "score": 200,
-          "authors": "Puneet Garg, Michael Plum, Carsten Rockstuhl",
-          "arxivCategory": "physics.optics",
-          "publishedAt": "2026-07-07T16:28:12.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "From Active to Odd to Smart Matter",
-          "url": "https://arxiv.org/abs/2607.06051",
-          "score": 200,
-          "authors": "Olivier Dauchot",
-          "arxivCategory": "cond-mat.soft",
-          "publishedAt": "2026-07-07T09:26:49.000Z"
-        }
-      ],
-      "relatedConceptSlugs": [
-        "extreme-metamaterial-solar-sails",
-        "technology-development-and-demonstration-concepts-for-the-space-elevator"
-      ],
-      "resonance": 61,
-      "quadrant": "real-deal",
-      "resonanceSignals": {
-        "conceptDepth": 0.6991803252671503,
-        "editorial": 1,
-        "connections": 0.3333333333333333,
-        "convergence": 0.15,
-        "deepTopic": 0.8,
         "pantheon": 0.92,
         "graveyard": 0
       }
@@ -533,12 +400,145 @@
       }
     },
     {
+      "slug": "nanotechnology",
+      "label": "Nanotechnology & Metamaterials",
+      "score": 7809,
+      "delta": -5,
+      "direction": "steady",
+      "mentions": 40,
+      "sources": [
+        {
+          "platform": "arxiv",
+          "title": "Tunable Signal Penetration and Response Plateaus in Bistable Mechanical Media",
+          "url": "https://arxiv.org/abs/2607.12405",
+          "score": 200,
+          "authors": "Sven Pattloch, Joachim Dzubiella",
+          "arxivCategory": "cond-mat.soft",
+          "publishedAt": "2026-07-14T06:24:41.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Uncertainty-Aware Structure-Property Mapping of Spinodoid Metamaterials via Heteroscedastic Gaussian Process Regression",
+          "url": "https://arxiv.org/abs/2607.11209",
+          "score": 200,
+          "authors": "Minwoo Park, Junseo Park, Mingyu Lee et al.",
+          "arxivCategory": "physics.comp-ph",
+          "publishedAt": "2026-07-13T08:02:14.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Vectorial driving of multistable materials: singularities, pt-graphs, and non-generic paths",
+          "url": "https://arxiv.org/abs/2607.11179",
+          "score": 200,
+          "authors": "Colin M. Meulblok, Martin van Hecke",
+          "arxivCategory": "cond-mat.soft",
+          "publishedAt": "2026-07-13T07:22:09.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Multiple Band-Gaps through the Coupling of Unit Cells from the Same Metamaterial: the Dual Cell method",
+          "url": "https://arxiv.org/abs/2607.10916",
+          "score": 200,
+          "authors": "Plastiras Demetriou",
+          "arxivCategory": "physics.app-ph",
+          "publishedAt": "2026-07-12T20:43:38.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "On subwavelength guided seismic waves in Matryoshka-type elastic media with ring defects",
+          "url": "https://arxiv.org/abs/2607.09147",
+          "score": 200,
+          "authors": "Lingzheng Kong",
+          "arxivCategory": "math.AP",
+          "publishedAt": "2026-07-10T07:02:50.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Chiral switching of elastic spin via dynamic encirclement of exceptional points",
+          "url": "https://arxiv.org/abs/2607.09083",
+          "score": 200,
+          "authors": "Chenwen Yang, Shubo Wang",
+          "arxivCategory": "physics.class-ph",
+          "publishedAt": "2026-07-10T04:01:45.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Impedance-Guided Programmable Transmission of Localized Deformation in Modular Soft Metamaterials",
+          "url": "https://arxiv.org/abs/2607.08966",
+          "score": 200,
+          "authors": "Weiyun Xu, Daewon Hong, Zhi Zhao et al.",
+          "arxivCategory": "cs.CE",
+          "publishedAt": "2026-07-09T22:04:01.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Predicting Multi-Order Magnetic Polariton Resonances for Radiative Properties Tailoring by Distributed Circuit Model",
+          "url": "https://arxiv.org/abs/2607.07657",
+          "score": 200,
+          "authors": "Hangjie Li, Junming Zhao",
+          "arxivCategory": "physics.optics",
+          "publishedAt": "2026-07-08T17:13:54.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Distributed Circuit Model for Predicting the Quality Factor of Magnetic Polariton Resonance",
+          "url": "https://arxiv.org/abs/2607.07633",
+          "score": 200,
+          "authors": "Hangjie Li, Junming Zhao",
+          "arxivCategory": "physics.app-ph",
+          "publishedAt": "2026-07-08T16:49:43.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Transmissibility, boundary-guided waves, and representative unit cell choice in finite-sized metamaterials",
+          "url": "https://arxiv.org/abs/2607.07349",
+          "score": 200,
+          "authors": "Plastiras Demetriou, Gianluca Rizzi",
+          "arxivCategory": "physics.optics",
+          "publishedAt": "2026-07-08T12:38:41.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Bound states in the continuum in multilayered time-varying metasurfaces",
+          "url": "https://arxiv.org/abs/2607.06469",
+          "score": 200,
+          "authors": "Puneet Garg, Michael Plum, Carsten Rockstuhl",
+          "arxivCategory": "physics.optics",
+          "publishedAt": "2026-07-07T16:28:12.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "From Active to Odd to Smart Matter",
+          "url": "https://arxiv.org/abs/2607.06051",
+          "score": 200,
+          "authors": "Olivier Dauchot",
+          "arxivCategory": "cond-mat.soft",
+          "publishedAt": "2026-07-07T09:26:49.000Z"
+        }
+      ],
+      "relatedConceptSlugs": [
+        "extreme-metamaterial-solar-sails",
+        "technology-development-and-demonstration-concepts-for-the-space-elevator"
+      ],
+      "resonance": 61,
+      "quadrant": "real-deal",
+      "resonanceSignals": {
+        "conceptDepth": 0.6991803252671503,
+        "editorial": 1,
+        "connections": 0.3333333333333333,
+        "convergence": 0.15,
+        "deepTopic": 0.8,
+        "pantheon": 0.92,
+        "graveyard": 0
+      }
+    },
+    {
       "slug": "quantum-computing",
       "label": "Quantum Computing",
-      "score": 7619,
+      "score": 7620,
       "delta": -3,
       "direction": "steady",
-      "mentions": 44,
+      "mentions": 43,
       "sources": [
         {
           "platform": "arxiv",
@@ -667,7 +667,7 @@
     {
       "slug": "particle-physics",
       "label": "Particle Physics",
-      "score": 7002,
+      "score": 7003,
       "delta": 0,
       "direction": "steady",
       "mentions": 36,
@@ -797,10 +797,10 @@
     {
       "slug": "condensed-matter",
       "label": "Condensed Matter",
-      "score": 6000,
-      "delta": -4,
+      "score": 5800,
+      "delta": -7,
       "direction": "steady",
-      "mentions": 30,
+      "mentions": 29,
       "sources": [
         {
           "platform": "arxiv",
@@ -1325,139 +1325,6 @@
       }
     },
     {
-      "slug": "exoplanets",
-      "label": "Exoplanets",
-      "score": 3013,
-      "delta": 7,
-      "direction": "steady",
-      "mentions": 17,
-      "sources": [
-        {
-          "platform": "arxiv",
-          "title": "RedDots: Magnetic field of the nearby active M dwarf GJ 729, and a search for companions",
-          "url": "https://arxiv.org/abs/2607.08050",
-          "score": 200,
-          "authors": "E. L. Brown, S. V. Jeffers, S. C. Marsden et al.",
-          "arxivCategory": "astro-ph.SR",
-          "publishedAt": "2026-07-09T02:00:14.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Exoplanet Detection Using Adaptive Quantum-Optimal Measurement",
-          "url": "https://arxiv.org/abs/2607.06931",
-          "score": 200,
-          "authors": "Hyunsoo Choi, Hyoung Won Baac, Zubin Jacob et al.",
-          "arxivCategory": "physics.optics",
-          "publishedAt": "2026-07-08T02:50:38.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Quantum-optimal coronagraphy with spatial mode sorting for direct exoplanet observations",
-          "url": "https://arxiv.org/abs/2607.02065",
-          "score": 200,
-          "authors": "Yinzi Xin, Sebastiaan Haffert, Yoo Jung Kim et al.",
-          "arxivCategory": "astro-ph.IM",
-          "publishedAt": "2026-07-02T11:58:59.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Magnetic activity in cool stars: manifestations and relevance to exoplanets",
-          "url": "https://arxiv.org/abs/2606.31617",
-          "score": 200,
-          "authors": "E. Işık, A. Valio, A. Strugarek et al.",
-          "arxivCategory": "astro-ph.SR",
-          "publishedAt": "2026-06-30T13:05:31.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Machine Learning and Deep Learning for Exoplanet Detection and Atmospheric Characterization with JWST and the Upcoming Ariel Mission",
-          "url": "https://arxiv.org/abs/2606.23766",
-          "score": 200,
-          "authors": "Muallim Yakubu, Vwavware Oruaode Jude",
-          "arxivCategory": "astro-ph.IM",
-          "publishedAt": "2026-06-22T15:26:04.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Modeling Doppler Shifts in Radial-Velocity Data with Deep Learning toward Earth-mass Exoplanet Detection",
-          "url": "https://arxiv.org/abs/2606.18464",
-          "score": 200,
-          "authors": "Isidro Gómez-Vargas, Xavier Dumusque, Yinan Zhao et al.",
-          "arxivCategory": "astro-ph.IM",
-          "publishedAt": "2026-06-16T20:16:16.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Hybrid Ferromagnet-SNSPDs: Single photon induced order-to-disorder transition in ferromagnets coupled to thin film superconductors",
-          "url": "https://arxiv.org/abs/2606.17177",
-          "score": 200,
-          "authors": "Leif Bauer, Daien He, Sathwik Bharadwaj et al.",
-          "arxivCategory": "cond-mat.supr-con",
-          "publishedAt": "2026-06-15T18:15:35.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Biosignature detectability on transiting habitable worlds with ELT/ANDES",
-          "url": "https://arxiv.org/abs/2607.12017",
-          "score": 200,
-          "authors": "E. Kurzawa-Ferrandez, A. Bello-Arufe, R. Hu",
-          "arxivCategory": "astro-ph.EP",
-          "publishedAt": "2026-07-13T18:00:01.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Climates of temperate rocky planets with He-dominated atmospheres",
-          "url": "https://arxiv.org/abs/2607.06857",
-          "score": 200,
-          "authors": "Viviane Kuss, Robin Wordsworth, Collin Cherubim et al.",
-          "arxivCategory": "astro-ph.EP",
-          "publishedAt": "2026-07-07T23:18:16.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Formation and evolution pathways of planets. I. Comparison between theory and observations",
-          "url": "https://arxiv.org/abs/2606.31017",
-          "score": 200,
-          "authors": "Yasuhiro Hasegawa, Renyu Hu, Amine Bouzerzour",
-          "arxivCategory": "astro-ph.EP",
-          "publishedAt": "2026-06-30T01:09:23.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Differentiable design of the PIAA-ZWFS: a flexible wavefront sensor that approaches the fundamental limit",
-          "url": "https://arxiv.org/abs/2606.28136",
-          "score": 200,
-          "authors": "A. K. Taras, S. Y. Haffert, L. Desdoigts",
-          "arxivCategory": "astro-ph.IM",
-          "publishedAt": "2026-06-26T14:36:12.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Nautilus: Fast Time-Resolved Spectroscopy of GKM Stellar Flares and Their Implications for Planetary Habitability",
-          "url": "https://arxiv.org/abs/2606.26462",
-          "score": 200,
-          "authors": "Chia-Lung Lin, Adina D. Feinstein, Jeff Valenti et al.",
-          "arxivCategory": "astro-ph.SR",
-          "publishedAt": "2026-06-24T23:44:27.000Z"
-        }
-      ],
-      "relatedConceptSlugs": [
-        "fluidic-telescope",
-        "orbiting-rainbows"
-      ],
-      "resonance": 51,
-      "quadrant": "real-deal",
-      "resonanceSignals": {
-        "conceptDepth": 0.5113915944693856,
-        "editorial": 1,
-        "connections": 0.3333333333333333,
-        "convergence": 0.15,
-        "deepTopic": 0.8,
-        "pantheon": 0.12,
-        "graveyard": 0
-      }
-    },
-    {
       "slug": "quantum-comms",
       "label": "Quantum Communication",
       "score": 3000,
@@ -1590,12 +1457,145 @@
       }
     },
     {
+      "slug": "exoplanets",
+      "label": "Exoplanets",
+      "score": 2804,
+      "delta": 0,
+      "direction": "steady",
+      "mentions": 15,
+      "sources": [
+        {
+          "platform": "arxiv",
+          "title": "RedDots: Magnetic field of the nearby active M dwarf GJ 729, and a search for companions",
+          "url": "https://arxiv.org/abs/2607.08050",
+          "score": 200,
+          "authors": "E. L. Brown, S. V. Jeffers, S. C. Marsden et al.",
+          "arxivCategory": "astro-ph.SR",
+          "publishedAt": "2026-07-09T02:00:14.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Exoplanet Detection Using Adaptive Quantum-Optimal Measurement",
+          "url": "https://arxiv.org/abs/2607.06931",
+          "score": 200,
+          "authors": "Hyunsoo Choi, Hyoung Won Baac, Zubin Jacob et al.",
+          "arxivCategory": "physics.optics",
+          "publishedAt": "2026-07-08T02:50:38.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Quantum-optimal coronagraphy with spatial mode sorting for direct exoplanet observations",
+          "url": "https://arxiv.org/abs/2607.02065",
+          "score": 200,
+          "authors": "Yinzi Xin, Sebastiaan Haffert, Yoo Jung Kim et al.",
+          "arxivCategory": "astro-ph.IM",
+          "publishedAt": "2026-07-02T11:58:59.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Magnetic activity in cool stars: manifestations and relevance to exoplanets",
+          "url": "https://arxiv.org/abs/2606.31617",
+          "score": 200,
+          "authors": "E. Işık, A. Valio, A. Strugarek et al.",
+          "arxivCategory": "astro-ph.SR",
+          "publishedAt": "2026-06-30T13:05:31.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Machine Learning and Deep Learning for Exoplanet Detection and Atmospheric Characterization with JWST and the Upcoming Ariel Mission",
+          "url": "https://arxiv.org/abs/2606.23766",
+          "score": 200,
+          "authors": "Muallim Yakubu, Vwavware Oruaode Jude",
+          "arxivCategory": "astro-ph.IM",
+          "publishedAt": "2026-06-22T15:26:04.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Modeling Doppler Shifts in Radial-Velocity Data with Deep Learning toward Earth-mass Exoplanet Detection",
+          "url": "https://arxiv.org/abs/2606.18464",
+          "score": 200,
+          "authors": "Isidro Gómez-Vargas, Xavier Dumusque, Yinan Zhao et al.",
+          "arxivCategory": "astro-ph.IM",
+          "publishedAt": "2026-06-16T20:16:16.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Biosignature detectability on transiting habitable worlds with ELT/ANDES",
+          "url": "https://arxiv.org/abs/2607.12017",
+          "score": 200,
+          "authors": "E. Kurzawa-Ferrandez, A. Bello-Arufe, R. Hu",
+          "arxivCategory": "astro-ph.EP",
+          "publishedAt": "2026-07-13T18:00:01.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Climates of temperate rocky planets with He-dominated atmospheres",
+          "url": "https://arxiv.org/abs/2607.06857",
+          "score": 200,
+          "authors": "Viviane Kuss, Robin Wordsworth, Collin Cherubim et al.",
+          "arxivCategory": "astro-ph.EP",
+          "publishedAt": "2026-07-07T23:18:16.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Formation and evolution pathways of planets. I. Comparison between theory and observations",
+          "url": "https://arxiv.org/abs/2606.31017",
+          "score": 200,
+          "authors": "Yasuhiro Hasegawa, Renyu Hu, Amine Bouzerzour",
+          "arxivCategory": "astro-ph.EP",
+          "publishedAt": "2026-06-30T01:09:23.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Differentiable design of the PIAA-ZWFS: a flexible wavefront sensor that approaches the fundamental limit",
+          "url": "https://arxiv.org/abs/2606.28136",
+          "score": 200,
+          "authors": "A. K. Taras, S. Y. Haffert, L. Desdoigts",
+          "arxivCategory": "astro-ph.IM",
+          "publishedAt": "2026-06-26T14:36:12.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Nautilus: Fast Time-Resolved Spectroscopy of GKM Stellar Flares and Their Implications for Planetary Habitability",
+          "url": "https://arxiv.org/abs/2606.26462",
+          "score": 200,
+          "authors": "Chia-Lung Lin, Adina D. Feinstein, Jeff Valenti et al.",
+          "arxivCategory": "astro-ph.SR",
+          "publishedAt": "2026-06-24T23:44:27.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "An Agnostic Machine Learning Model of Photosynthetic Habitability",
+          "url": "https://arxiv.org/abs/2606.24458",
+          "score": 200,
+          "authors": "Callum Gray, Cassandra Hall, Stefano Santabarbara et al.",
+          "arxivCategory": "astro-ph.EP",
+          "publishedAt": "2026-06-23T11:45:54.000Z"
+        }
+      ],
+      "relatedConceptSlugs": [
+        "fluidic-telescope",
+        "orbiting-rainbows"
+      ],
+      "resonance": 51,
+      "quadrant": "real-deal",
+      "resonanceSignals": {
+        "conceptDepth": 0.5113915944693856,
+        "editorial": 1,
+        "connections": 0.3333333333333333,
+        "convergence": 0.15,
+        "deepTopic": 0.8,
+        "pantheon": 0.12,
+        "graveyard": 0
+      }
+    },
+    {
       "slug": "artemis",
       "label": "Artemis & Lunar Return",
-      "score": 2402,
+      "score": 2400,
       "delta": 20,
       "direction": "up",
-      "mentions": 13,
+      "mentions": 12,
       "sources": [
         {
           "platform": "arxiv",
@@ -1723,104 +1723,6 @@
       }
     },
     {
-      "slug": "fusion-propulsion",
-      "label": "Fusion Propulsion",
-      "score": 1600,
-      "delta": 0,
-      "direction": "steady",
-      "mentions": 8,
-      "sources": [
-        {
-          "platform": "arxiv",
-          "title": "Efficient hot electron generation via low-coherence lasers",
-          "url": "https://arxiv.org/abs/2607.11045",
-          "score": 200,
-          "authors": "Huiya Liu, Yao Zhao, Ning Kang et al.",
-          "arxivCategory": "physics.plasm-ph",
-          "publishedAt": "2026-07-13T03:17:15.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Co4ICF: Co-evolving Physics-Informed Surrogate and RL-based Pulse Optimizer for Inertial Confinement Fusion",
-          "url": "https://arxiv.org/abs/2607.10366",
-          "score": 200,
-          "authors": "Jiatong Zhao, Tengyue Zhang, Yuhan Wang et al.",
-          "arxivCategory": "cs.AI",
-          "publishedAt": "2026-07-11T15:43:27.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Denoising ICF Images with Multiplicative Uniform Noise: A Self-Supervised Study Based on the Log-Domain Noisier2Inverse Framework",
-          "url": "https://arxiv.org/abs/2606.27635",
-          "score": 200,
-          "authors": "Gyeongha Hwang, Bradley Thomas Wolfe, Naima Naheed",
-          "arxivCategory": "cs.CV",
-          "publishedAt": "2026-06-26T01:16:51.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Too cheap to meter? A stochastic analysis of projected future fusion costs",
-          "url": "https://arxiv.org/abs/2606.26536",
-          "score": 200,
-          "authors": "Stefania Böhnlein, Fanny Böse, Christian von Hirschhausen et al.",
-          "arxivCategory": "econ.GN",
-          "publishedAt": "2026-06-25T02:21:51.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Single-Shot Intensity-Correlation Diffractive X-ray Imaging of ICF Plasmas",
-          "url": "https://arxiv.org/abs/2606.26198",
-          "score": 200,
-          "authors": "Kenan Qu, Daniel Bhatti, Nathaniel J. Fisch",
-          "arxivCategory": "physics.plasm-ph",
-          "publishedAt": "2026-06-24T16:11:43.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Observation of stopping power reduction at strong ion-plasma coupling",
-          "url": "https://arxiv.org/abs/2606.23109",
-          "score": 200,
-          "authors": "Yun Liu, Jieru Ren, Zhigang Deng et al.",
-          "arxivCategory": "physics.plasm-ph",
-          "publishedAt": "2026-06-22T09:52:09.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Lattice Matching Dictates the Growth Mode and Quality of Deuterium Crystallization in Confined Spherical Shells",
-          "url": "https://arxiv.org/abs/2606.16550",
-          "score": 200,
-          "authors": "Peng Bi, Yu-Shen Wan, Wei Zhang et al.",
-          "arxivCategory": "cond-mat.mtrl-sci",
-          "publishedAt": "2026-06-15T10:52:15.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Understanding and Quantifying Banana Coil Magnetic Fields and Forces for Enhanced Optimisation",
-          "url": "https://arxiv.org/abs/2606.18029",
-          "score": 200,
-          "authors": "Annika Zettl, Tobias Schuett, Sophia Henneberg",
-          "arxivCategory": "physics.plasm-ph",
-          "publishedAt": "2026-06-16T15:06:05.000Z"
-        }
-      ],
-      "relatedConceptSlugs": [
-        "gradient-field-imploding-liner-fusion-propulsion",
-        "fusion-enabled-pluto-orbiter",
-        "pulsed-fission-fusion"
-      ],
-      "resonance": 64,
-      "quadrant": "real-deal",
-      "resonanceSignals": {
-        "conceptDepth": 0.6991803252671503,
-        "editorial": 0.7,
-        "connections": 0,
-        "convergence": 0.975,
-        "deepTopic": 1,
-        "pantheon": 0.92,
-        "graveyard": 0
-      }
-    },
-    {
       "slug": "space-debris",
       "label": "Space Debris",
       "score": 1402,
@@ -1905,7 +1807,7 @@
         "niac-phase-i-final-report-on-orbit-collision"
       ],
       "resonance": 20,
-      "quadrant": "dead-zone",
+      "quadrant": "hype-cycle",
       "resonanceSignals": {
         "conceptDepth": 0.3868528072345416,
         "editorial": 0.4,
@@ -1917,12 +1819,233 @@
       }
     },
     {
+      "slug": "fusion-propulsion",
+      "label": "Fusion Propulsion",
+      "score": 1400,
+      "delta": -12,
+      "direction": "steady",
+      "mentions": 7,
+      "sources": [
+        {
+          "platform": "arxiv",
+          "title": "Efficient hot electron generation via low-coherence lasers",
+          "url": "https://arxiv.org/abs/2607.11045",
+          "score": 200,
+          "authors": "Huiya Liu, Yao Zhao, Ning Kang et al.",
+          "arxivCategory": "physics.plasm-ph",
+          "publishedAt": "2026-07-13T03:17:15.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Co4ICF: Co-evolving Physics-Informed Surrogate and RL-based Pulse Optimizer for Inertial Confinement Fusion",
+          "url": "https://arxiv.org/abs/2607.10366",
+          "score": 200,
+          "authors": "Jiatong Zhao, Tengyue Zhang, Yuhan Wang et al.",
+          "arxivCategory": "cs.AI",
+          "publishedAt": "2026-07-11T15:43:27.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Denoising ICF Images with Multiplicative Uniform Noise: A Self-Supervised Study Based on the Log-Domain Noisier2Inverse Framework",
+          "url": "https://arxiv.org/abs/2606.27635",
+          "score": 200,
+          "authors": "Gyeongha Hwang, Bradley Thomas Wolfe, Naima Naheed",
+          "arxivCategory": "cs.CV",
+          "publishedAt": "2026-06-26T01:16:51.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Too cheap to meter? A stochastic analysis of projected future fusion costs",
+          "url": "https://arxiv.org/abs/2606.26536",
+          "score": 200,
+          "authors": "Stefania Böhnlein, Fanny Böse, Christian von Hirschhausen et al.",
+          "arxivCategory": "econ.GN",
+          "publishedAt": "2026-06-25T02:21:51.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Single-Shot Intensity-Correlation Diffractive X-ray Imaging of ICF Plasmas",
+          "url": "https://arxiv.org/abs/2606.26198",
+          "score": 200,
+          "authors": "Kenan Qu, Daniel Bhatti, Nathaniel J. Fisch",
+          "arxivCategory": "physics.plasm-ph",
+          "publishedAt": "2026-06-24T16:11:43.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Observation of stopping power reduction at strong ion-plasma coupling",
+          "url": "https://arxiv.org/abs/2606.23109",
+          "score": 200,
+          "authors": "Yun Liu, Jieru Ren, Zhigang Deng et al.",
+          "arxivCategory": "physics.plasm-ph",
+          "publishedAt": "2026-06-22T09:52:09.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Understanding and Quantifying Banana Coil Magnetic Fields and Forces for Enhanced Optimisation",
+          "url": "https://arxiv.org/abs/2606.18029",
+          "score": 200,
+          "authors": "Annika Zettl, Tobias Schuett, Sophia Henneberg",
+          "arxivCategory": "physics.plasm-ph",
+          "publishedAt": "2026-06-16T15:06:05.000Z"
+        }
+      ],
+      "relatedConceptSlugs": [
+        "gradient-field-imploding-liner-fusion-propulsion",
+        "fusion-enabled-pluto-orbiter",
+        "pulsed-fission-fusion"
+      ],
+      "resonance": 64,
+      "quadrant": "sleeping-giant",
+      "resonanceSignals": {
+        "conceptDepth": 0.6991803252671503,
+        "editorial": 0.7,
+        "connections": 0,
+        "convergence": 0.975,
+        "deepTopic": 1,
+        "pantheon": 0.92,
+        "graveyard": 0
+      }
+    },
+    {
+      "slug": "starship",
+      "label": "Starship & SpaceX",
+      "score": 1134,
+      "delta": 60,
+      "direction": "up",
+      "mentions": 25,
+      "sources": [
+        {
+          "platform": "hackernews",
+          "title": "SpaceX bond worth 10% less than issue price – heading for junk bond status",
+          "url": "https://www.ft.com/content/3a023b95-66c3-41e1-b0ce-df752a499541",
+          "score": 490,
+          "author": "youngtaff",
+          "commentCount": 447,
+          "publishedAt": "2026-07-15T12:59:09.000Z"
+        },
+        {
+          "platform": "hackernews",
+          "title": "SpaceX wants to launch 100k more Starlink satellites for 100x the bandwidth",
+          "url": "https://www.zdnet.com/home-and-office/networking/spacex-wants-to-launch-100000-more-starlink-satellites/",
+          "score": 318,
+          "author": "CrankyBear",
+          "commentCount": 1237,
+          "publishedAt": "2026-07-10T17:51:07.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Saturation-Aware Robust Trajectory Optimization for Reusable Launch Vehicles via Differentiable Physics",
+          "url": "https://arxiv.org/abs/2607.09736",
+          "score": 200,
+          "authors": "Liwei Chen, Tong Qin",
+          "arxivCategory": "cs.RO",
+          "publishedAt": "2026-07-02T14:30:37.000Z"
+        },
+        {
+          "platform": "hackernews",
+          "title": "SpaceX built to separate retail investors from their money",
+          "url": "https://seekingalpha.com/news/4613058-spacex-built-to-separate-retail-investors-from-their-money-george-noble",
+          "score": 35,
+          "author": "nothrowaways",
+          "commentCount": 10,
+          "publishedAt": "2026-07-12T20:08:49.000Z"
+        },
+        {
+          "platform": "hackernews",
+          "title": "SpaceX stock sinks below $135 IPO price for the first time",
+          "url": "https://www.cnbc.com/2026/07/15/spacex-spcx-stock-ipo-price.html",
+          "score": 22,
+          "author": "abduhl",
+          "commentCount": 6,
+          "publishedAt": "2026-07-15T16:30:41.000Z"
+        },
+        {
+          "platform": "hackernews",
+          "title": "China takes a page from SpaceX and recaptures first stage of rocket to reuse it",
+          "url": "https://apnews.com/article/china-rocket-space-reuse-6d695fcad64a101dc3991c1bfa0e7357",
+          "score": 8,
+          "author": "tocs3",
+          "commentCount": 0,
+          "publishedAt": "2026-07-10T22:37:10.000Z"
+        },
+        {
+          "platform": "youtube",
+          "title": "Starship – Critical Path [video]",
+          "url": "https://www.youtube.com/watch?v=-a0ecQMq-rM",
+          "score": 7,
+          "thumbnail": "https://img.youtube.com/vi/-a0ecQMq-rM/mqdefault.jpg",
+          "publishedAt": "2026-07-13T21:39:11.000Z"
+        },
+        {
+          "platform": "hackernews",
+          "title": "Starship – Critical Path [video]",
+          "url": "https://www.youtube.com/watch?v=-a0ecQMq-rM",
+          "score": 7,
+          "author": "throwitaway222",
+          "commentCount": 0,
+          "publishedAt": "2026-07-13T21:39:11.000Z"
+        },
+        {
+          "platform": "hackernews",
+          "title": "SpaceX stock sinks for a second-straight day, nearing $135 IPO price",
+          "url": "https://www.cnbc.com/2026/07/13/spacex-spcx-stock-ipo-price.html",
+          "score": 7,
+          "author": "1vuio0pswjnm7",
+          "commentCount": 0,
+          "publishedAt": "2026-07-15T12:32:40.000Z"
+        },
+        {
+          "platform": "hackernews",
+          "title": "Alphaville LLC initiates coverage of SpaceX with Buy recommendation",
+          "url": "https://www.ft.com/content/1344d22b-ee64-488d-bd02-170fe0c9de2b",
+          "score": 5,
+          "author": "petethomas",
+          "commentCount": 2,
+          "publishedAt": "2026-07-08T20:32:03.000Z"
+        },
+        {
+          "platform": "hackernews",
+          "title": "SpaceXAI's Unpermitted Data Center Power Project Impacts Black Communities",
+          "url": "https://gizmodo.com/spacexais-unpermitted-data-center-power-project-impacts-black-communities-analysis-finds-2000785429",
+          "score": 5,
+          "author": "baranul",
+          "commentCount": 0,
+          "publishedAt": "2026-07-15T07:30:36.000Z"
+        },
+        {
+          "platform": "hackernews",
+          "title": "Musk: \"All user data that was uploaded to SpaceXAI before now will be deleted\"",
+          "url": "https://twitter.com/elonmusk/status/2076739687658496209",
+          "score": 5,
+          "author": "JumpCrisscross",
+          "commentCount": 0,
+          "publishedAt": "2026-07-15T06:30:49.000Z"
+        }
+      ],
+      "relatedConceptSlugs": [
+        "extraterrestrial-regolith-derived-atmospheric-entry-heat-shields",
+        "phase-i-final-report-nasa-institute-for-advanced-concepts-combined-heat-shield-a"
+      ],
+      "resonance": 43,
+      "quadrant": "dead-zone",
+      "resonanceSignals": {
+        "conceptDepth": 0.5113915944693856,
+        "editorial": 0.4,
+        "connections": 0,
+        "convergence": 0.35,
+        "deepTopic": 1,
+        "pantheon": 0.92,
+        "graveyard": 0
+      }
+    },
+    {
       "slug": "asteroid-mining",
       "label": "Asteroid Mining",
-      "score": 1200,
-      "delta": 0,
-      "direction": "steady",
-      "mentions": 6,
+      "score": 1000,
+      "delta": -17,
+      "direction": "down",
+      "mentions": 5,
       "sources": [
         {
           "platform": "arxiv",
@@ -1959,15 +2082,6 @@
           "authors": "Benjamin N. L Sharkey, Vishnu Reddy, John W. Noonan et al.",
           "arxivCategory": "astro-ph.EP",
           "publishedAt": "2026-06-22T23:45:10.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Simultaneous Tricolor Video Observations of Three Tiny Near-Earth Asteroids with Sub-Minute Rotation Periods",
-          "url": "https://arxiv.org/abs/2606.17047",
-          "score": 200,
-          "authors": "Jin Beniyama, Ryou Ohsawa, Shigeyuki Sako et al.",
-          "arxivCategory": "astro-ph.EP",
-          "publishedAt": "2026-06-15T17:58:13.000Z"
         },
         {
           "platform": "arxiv",
@@ -2052,138 +2166,6 @@
         "editorial": 0.4,
         "connections": 0,
         "convergence": 0.575,
-        "deepTopic": 1,
-        "pantheon": 0.92,
-        "graveyard": 0
-      }
-    },
-    {
-      "slug": "starship",
-      "label": "Starship & SpaceX",
-      "score": 608,
-      "delta": -14,
-      "direction": "steady",
-      "mentions": 22,
-      "sources": [
-        {
-          "platform": "hackernews",
-          "title": "SpaceX wants to launch 100k more Starlink satellites for 100x the bandwidth",
-          "url": "https://www.zdnet.com/home-and-office/networking/spacex-wants-to-launch-100000-more-starlink-satellites/",
-          "score": 317,
-          "author": "CrankyBear",
-          "commentCount": 1234,
-          "publishedAt": "2026-07-10T17:51:07.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Saturation-Aware Robust Trajectory Optimization for Reusable Launch Vehicles via Differentiable Physics",
-          "url": "https://arxiv.org/abs/2607.09736",
-          "score": 200,
-          "authors": "Liwei Chen, Tong Qin",
-          "arxivCategory": "cs.RO",
-          "publishedAt": "2026-07-02T14:30:37.000Z"
-        },
-        {
-          "platform": "hackernews",
-          "title": "SpaceX built to separate retail investors from their money",
-          "url": "https://seekingalpha.com/news/4613058-spacex-built-to-separate-retail-investors-from-their-money-george-noble",
-          "score": 34,
-          "author": "nothrowaways",
-          "commentCount": 10,
-          "publishedAt": "2026-07-12T20:08:49.000Z"
-        },
-        {
-          "platform": "hackernews",
-          "title": "China takes a page from SpaceX and recaptures first stage of rocket to reuse it",
-          "url": "https://apnews.com/article/china-rocket-space-reuse-6d695fcad64a101dc3991c1bfa0e7357",
-          "score": 8,
-          "author": "tocs3",
-          "commentCount": 0,
-          "publishedAt": "2026-07-10T22:37:10.000Z"
-        },
-        {
-          "platform": "youtube",
-          "title": "Starship – Critical Path [video]",
-          "url": "https://www.youtube.com/watch?v=-a0ecQMq-rM",
-          "score": 7,
-          "thumbnail": "https://img.youtube.com/vi/-a0ecQMq-rM/mqdefault.jpg",
-          "publishedAt": "2026-07-13T21:39:11.000Z"
-        },
-        {
-          "platform": "hackernews",
-          "title": "Starship – Critical Path [video]",
-          "url": "https://www.youtube.com/watch?v=-a0ecQMq-rM",
-          "score": 7,
-          "author": "throwitaway222",
-          "commentCount": 0,
-          "publishedAt": "2026-07-13T21:39:11.000Z"
-        },
-        {
-          "platform": "hackernews",
-          "title": "Alphaville LLC initiates coverage of SpaceX with Buy recommendation",
-          "url": "https://www.ft.com/content/1344d22b-ee64-488d-bd02-170fe0c9de2b",
-          "score": 5,
-          "author": "petethomas",
-          "commentCount": 2,
-          "publishedAt": "2026-07-08T20:32:03.000Z"
-        },
-        {
-          "platform": "hackernews",
-          "title": "SpaceXAI launches Grok 4.5 model for coding, agentic tasks",
-          "url": "https://www.reuters.com/business/media-telecom/spacexai-launches-grok-45-model-coding-agentic-tasks-2026-07-08/",
-          "score": 4,
-          "author": "adithyaharish",
-          "commentCount": 1,
-          "publishedAt": "2026-07-09T13:09:30.000Z"
-        },
-        {
-          "platform": "hackernews",
-          "title": "SpaceX and AI startup wealth fuels demand for private jets",
-          "url": "https://www.reuters.com/legal/government/spacex-ai-startup-wealth-fuels-demand-private-jets-2026-07-09/",
-          "score": 4,
-          "author": "adithyaharish",
-          "commentCount": 0,
-          "publishedAt": "2026-07-09T10:46:42.000Z"
-        },
-        {
-          "platform": "hackernews",
-          "title": "SpaceX closes below debut price in two-day slide after Nasdaq-100 inclusion",
-          "url": "https://www.cnbc.com/2026/07/08/spacex-stock-nasdaq-100-ipo.html",
-          "score": 4,
-          "author": "1vuio0pswjnm7",
-          "commentCount": 0,
-          "publishedAt": "2026-07-09T05:39:57.000Z"
-        },
-        {
-          "platform": "hackernews",
-          "title": "SpaceX is gearing up for Starship's 13th test flight later this week",
-          "url": "https://arstechnica.com/space/2026/07/spacex-is-gearing-up-for-starships-13th-test-flight-later-this-week/",
-          "score": 3,
-          "author": "rbanffy",
-          "commentCount": 0,
-          "publishedAt": "2026-07-14T12:43:49.000Z"
-        },
-        {
-          "platform": "hackernews",
-          "title": "Musk: \"All user data that was uploaded to SpaceXAI before now will be deleted\"",
-          "url": "https://twitter.com/elonmusk/status/2076739687658496209",
-          "score": 3,
-          "author": "JumpCrisscross",
-          "commentCount": 0,
-          "publishedAt": "2026-07-15T06:30:49.000Z"
-        }
-      ],
-      "relatedConceptSlugs": [
-        "extraterrestrial-regolith-derived-atmospheric-entry-heat-shields",
-        "phase-i-final-report-nasa-institute-for-advanced-concepts-combined-heat-shield-a"
-      ],
-      "resonance": 43,
-      "quadrant": "dead-zone",
-      "resonanceSignals": {
-        "conceptDepth": 0.5113915944693856,
-        "editorial": 0.4,
-        "connections": 0,
-        "convergence": 0.35,
         "deepTopic": 1,
         "pantheon": 0.92,
         "graveyard": 0
@@ -2306,10 +2288,10 @@
     {
       "slug": "starlink",
       "label": "Starlink & Satellite Internet",
-      "score": 432,
-      "delta": 29,
+      "score": 543,
+      "delta": 31,
       "direction": "up",
-      "mentions": 14,
+      "mentions": 16,
       "sources": [
         {
           "platform": "arxiv",
@@ -2324,10 +2306,19 @@
           "platform": "hackernews",
           "title": "Satellite Tracker – Live Map of Starlink and 30k Satellites",
           "url": "https://satellitemap.space/",
-          "score": 159,
+          "score": 162,
           "author": "rolph",
-          "commentCount": 95,
+          "commentCount": 98,
           "publishedAt": "2026-07-14T01:55:24.000Z"
+        },
+        {
+          "platform": "hackernews",
+          "title": "Starlink unlimited aviation plan to rise from $10k/month to $20k",
+          "url": "https://www.corporatejetinvestor.com/news/starlink-price-rise-reckless-says-correnti/",
+          "score": 107,
+          "author": "r2sk5t",
+          "commentCount": 158,
+          "publishedAt": "2026-07-15T16:22:43.000Z"
         },
         {
           "platform": "hackernews",
@@ -2398,7 +2389,7 @@
           "url": "https://starlink.com/specifications/10",
           "score": 4,
           "author": "jtraglia",
-          "commentCount": 0,
+          "commentCount": 1,
           "publishedAt": "2026-07-15T02:43:36.000Z"
         },
         {
@@ -2409,15 +2400,6 @@
           "author": "sawyers",
           "commentCount": 8,
           "publishedAt": "2026-07-11T07:04:14.000Z"
-        },
-        {
-          "platform": "hackernews",
-          "title": "Shooting Starlink: The \"no limits\" partnership between Russia and China is takin",
-          "url": "https://theins.press/en/inv/294635",
-          "score": 3,
-          "author": "arunc",
-          "commentCount": 0,
-          "publishedAt": "2026-07-13T05:31:31.000Z"
         }
       ],
       "relatedConceptSlugs": [
@@ -2525,7 +2507,7 @@
       "slug": "warp-drives",
       "label": "Warp Drives & Exotic Physics",
       "score": 202,
-      "delta": -6,
+      "delta": 0,
       "direction": "steady",
       "mentions": 2,
       "sources": [
