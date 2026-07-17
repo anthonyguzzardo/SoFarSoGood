@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-17T07:57:32.918Z",
+  "generatedAt": "2026-07-17T19:12:30.005Z",
   "topics": [
     {
       "slug": "gravitational-waves",
@@ -130,139 +130,6 @@
         "convergence": 0.05,
         "deepTopic": 1,
         "pantheon": 0.92,
-        "graveyard": 0
-      }
-    },
-    {
-      "slug": "space-telescopes",
-      "label": "Space Telescopes",
-      "score": 8400,
-      "delta": 0,
-      "direction": "steady",
-      "mentions": 42,
-      "sources": [
-        {
-          "platform": "arxiv",
-          "title": "Sulfur photochemistry observationally traces mantle redox states of rocky planets",
-          "url": "https://arxiv.org/abs/2607.15204",
-          "score": 200,
-          "authors": "Ioannis Panagiotou, Tim Lichtenberg, Shang-Min Tsai et al.",
-          "arxivCategory": "astro-ph.EP",
-          "publishedAt": "2026-07-16T17:01:27.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Flow-Driven Limb-Asymmetry of Haze Distribution Part I: An Analytical Framework for Predicting the Size Distribution of Photochemical Hazes Across the Two Limbs of hot-Jupiters",
-          "url": "https://arxiv.org/abs/2607.14845",
-          "score": 200,
-          "authors": "Mei Ting Mak, Thaddeus D. Komacek, Nathan J. Mayne et al.",
-          "arxivCategory": "astro-ph.EP",
-          "publishedAt": "2026-07-16T11:12:58.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "VENUS: an ultra-faint galaxy hosting the metal-poor type II supernova at $z=5.13$ Witnessing the initial metal enrichment with extremely frequent core-collapse supernovae?",
-          "url": "https://arxiv.org/abs/2607.14355",
-          "score": 200,
-          "authors": "Yoshihisa Asada, Seiji Fujimoto, Joseph F. V. Allingham et al.",
-          "arxivCategory": "astro-ph.GA",
-          "publishedAt": "2026-07-15T20:40:46.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Charting the expansion of the Universe from z$\\sim$0 to z$\\sim$14 with HII galaxies",
-          "url": "https://arxiv.org/abs/2607.14254",
-          "score": 200,
-          "authors": "R. Chávez, R. Terlevich, A. L. González-Morán et al.",
-          "arxivCategory": "astro-ph.CO",
-          "publishedAt": "2026-07-15T18:12:40.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "The Expected Yield of Venus Zone Terrestrial Planets from PLATO",
-          "url": "https://arxiv.org/abs/2607.14225",
-          "score": 200,
-          "authors": "Stephen R. Kane, Emma L. Miles, Colby M. Ostberg et al.",
-          "arxivCategory": "astro-ph.EP",
-          "publishedAt": "2026-07-15T18:00:30.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Supermagnified Stars in Lensing Clusters and Small-Scale Structure in the Dark Matter",
-          "url": "https://arxiv.org/abs/2607.14034",
-          "score": 200,
-          "authors": "Gabriel Torralba, Jordi Miralda-Escudé",
-          "arxivCategory": "astro-ph.CO",
-          "publishedAt": "2026-07-15T17:02:28.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "COSMOS2025: A Machine Learning Census of Massive Quiescent Galaxies at $2.5 &lt; \\text{z} &lt; 5$",
-          "url": "https://arxiv.org/abs/2607.13269",
-          "score": 200,
-          "authors": "Vahid Asadi, Hosein Haghi, Akram Hasani Zonoozi",
-          "arxivCategory": "astro-ph.GA",
-          "publishedAt": "2026-07-14T21:07:41.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Piercing through the Haze: Characterizing Titan-like terrestrial exoplanets with JWST",
-          "url": "https://arxiv.org/abs/2607.13255",
-          "score": 200,
-          "authors": "L. C. Mayorga, Jacob Lustig-Yaeger, Andrew P. Lincowski et al.",
-          "arxivCategory": "astro-ph.EP",
-          "publishedAt": "2026-07-14T20:39:20.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Probing Planet Formation with JWST Spectroscopy of IC348: Sustained Diversity but Limited Chemical Evolution and Pebble Drift",
-          "url": "https://arxiv.org/abs/2607.13167",
-          "score": 200,
-          "authors": "John S. Carr, Joan R. Najita",
-          "arxivCategory": "astro-ph.EP",
-          "publishedAt": "2026-07-14T18:18:42.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Photometric Variability and Rotation of Beta Pictoris b from JWST NIRCam Coronagraphic Imaging",
-          "url": "https://arxiv.org/abs/2607.13133",
-          "score": 200,
-          "authors": "Yifan Zhou, Beth A. Biller, Aarynn L. Carter et al.",
-          "arxivCategory": "astro-ph.EP",
-          "publishedAt": "2026-07-14T18:00:00.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "On the Detectability of Volcanic Exo-Ios That May Fuel Auroras on Super-Jupiters",
-          "url": "https://arxiv.org/abs/2607.13030",
-          "score": 200,
-          "authors": "Brooke Kotten, Mary Anne Limbach, Johanna M. Vos et al.",
-          "arxivCategory": "astro-ph.EP",
-          "publishedAt": "2026-07-14T17:59:16.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Discovery of a gravitational arc candidate at photometric redshift 4.4 in MACS J0308.9+2645 from a catalogue-based search of JWST imaging",
-          "url": "https://arxiv.org/abs/2607.12129",
-          "score": 200,
-          "authors": "Homer Dávila Gutiérrez",
-          "arxivCategory": "astro-ph.GA",
-          "publishedAt": "2026-07-13T20:24:11.000Z"
-        }
-      ],
-      "relatedConceptSlugs": [
-        "fluidic-telescope",
-        "orbiting-rainbows"
-      ],
-      "resonance": 53,
-      "quadrant": "real-deal",
-      "resonanceSignals": {
-        "conceptDepth": 0.5113915944693856,
-        "editorial": 1,
-        "connections": 0.3333333333333333,
-        "convergence": 0.15,
-        "deepTopic": 1,
-        "pantheon": 0.16,
         "graveyard": 0
       }
     },
@@ -400,9 +267,142 @@
       }
     },
     {
+      "slug": "space-telescopes",
+      "label": "Space Telescopes",
+      "score": 8200,
+      "delta": -2,
+      "direction": "steady",
+      "mentions": 41,
+      "sources": [
+        {
+          "platform": "arxiv",
+          "title": "Sulfur photochemistry observationally traces mantle redox states of rocky planets",
+          "url": "https://arxiv.org/abs/2607.15204",
+          "score": 200,
+          "authors": "Ioannis Panagiotou, Tim Lichtenberg, Shang-Min Tsai et al.",
+          "arxivCategory": "astro-ph.EP",
+          "publishedAt": "2026-07-16T17:01:27.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Flow-Driven Limb-Asymmetry of Haze Distribution Part I: An Analytical Framework for Predicting the Size Distribution of Photochemical Hazes Across the Two Limbs of hot-Jupiters",
+          "url": "https://arxiv.org/abs/2607.14845",
+          "score": 200,
+          "authors": "Mei Ting Mak, Thaddeus D. Komacek, Nathan J. Mayne et al.",
+          "arxivCategory": "astro-ph.EP",
+          "publishedAt": "2026-07-16T11:12:58.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "VENUS: an ultra-faint galaxy hosting the metal-poor type II supernova at $z=5.13$ Witnessing the initial metal enrichment with extremely frequent core-collapse supernovae?",
+          "url": "https://arxiv.org/abs/2607.14355",
+          "score": 200,
+          "authors": "Yoshihisa Asada, Seiji Fujimoto, Joseph F. V. Allingham et al.",
+          "arxivCategory": "astro-ph.GA",
+          "publishedAt": "2026-07-15T20:40:46.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Charting the expansion of the Universe from z$\\sim$0 to z$\\sim$14 with HII galaxies",
+          "url": "https://arxiv.org/abs/2607.14254",
+          "score": 200,
+          "authors": "R. Chávez, R. Terlevich, A. L. González-Morán et al.",
+          "arxivCategory": "astro-ph.CO",
+          "publishedAt": "2026-07-15T18:12:40.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "The Expected Yield of Venus Zone Terrestrial Planets from PLATO",
+          "url": "https://arxiv.org/abs/2607.14225",
+          "score": 200,
+          "authors": "Stephen R. Kane, Emma L. Miles, Colby M. Ostberg et al.",
+          "arxivCategory": "astro-ph.EP",
+          "publishedAt": "2026-07-15T18:00:30.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Supermagnified Stars in Lensing Clusters and Small-Scale Structure in the Dark Matter",
+          "url": "https://arxiv.org/abs/2607.14034",
+          "score": 200,
+          "authors": "Gabriel Torralba, Jordi Miralda-Escudé",
+          "arxivCategory": "astro-ph.CO",
+          "publishedAt": "2026-07-15T17:02:28.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "COSMOS2025: A Machine Learning Census of Massive Quiescent Galaxies at $2.5 &lt; \\text{z} &lt; 5$",
+          "url": "https://arxiv.org/abs/2607.13269",
+          "score": 200,
+          "authors": "Vahid Asadi, Hosein Haghi, Akram Hasani Zonoozi",
+          "arxivCategory": "astro-ph.GA",
+          "publishedAt": "2026-07-14T21:07:41.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Piercing through the Haze: Characterizing Titan-like terrestrial exoplanets with JWST",
+          "url": "https://arxiv.org/abs/2607.13255",
+          "score": 200,
+          "authors": "L. C. Mayorga, Jacob Lustig-Yaeger, Andrew P. Lincowski et al.",
+          "arxivCategory": "astro-ph.EP",
+          "publishedAt": "2026-07-14T20:39:20.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Probing Planet Formation with JWST Spectroscopy of IC348: Sustained Diversity but Limited Chemical Evolution and Pebble Drift",
+          "url": "https://arxiv.org/abs/2607.13167",
+          "score": 200,
+          "authors": "John S. Carr, Joan R. Najita",
+          "arxivCategory": "astro-ph.EP",
+          "publishedAt": "2026-07-14T18:18:42.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Photometric Variability and Rotation of Beta Pictoris b from JWST NIRCam Coronagraphic Imaging",
+          "url": "https://arxiv.org/abs/2607.13133",
+          "score": 200,
+          "authors": "Yifan Zhou, Beth A. Biller, Aarynn L. Carter et al.",
+          "arxivCategory": "astro-ph.EP",
+          "publishedAt": "2026-07-14T18:00:00.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "On the Detectability of Volcanic Exo-Ios That May Fuel Auroras on Super-Jupiters",
+          "url": "https://arxiv.org/abs/2607.13030",
+          "score": 200,
+          "authors": "Brooke Kotten, Mary Anne Limbach, Johanna M. Vos et al.",
+          "arxivCategory": "astro-ph.EP",
+          "publishedAt": "2026-07-14T17:59:16.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Discovery of a gravitational arc candidate at photometric redshift 4.4 in MACS J0308.9+2645 from a catalogue-based search of JWST imaging",
+          "url": "https://arxiv.org/abs/2607.12129",
+          "score": 200,
+          "authors": "Homer Dávila Gutiérrez",
+          "arxivCategory": "astro-ph.GA",
+          "publishedAt": "2026-07-13T20:24:11.000Z"
+        }
+      ],
+      "relatedConceptSlugs": [
+        "fluidic-telescope",
+        "orbiting-rainbows"
+      ],
+      "resonance": 53,
+      "quadrant": "real-deal",
+      "resonanceSignals": {
+        "conceptDepth": 0.5113915944693856,
+        "editorial": 1,
+        "connections": 0.3333333333333333,
+        "convergence": 0.15,
+        "deepTopic": 1,
+        "pantheon": 0.16,
+        "graveyard": 0
+      }
+    },
+    {
       "slug": "quantum-computing",
       "label": "Quantum Computing",
-      "score": 7815,
+      "score": 7813,
       "delta": -3,
       "direction": "steady",
       "mentions": 43,
@@ -797,8 +797,8 @@
     {
       "slug": "condensed-matter",
       "label": "Condensed Matter",
-      "score": 6127,
-      "delta": 2,
+      "score": 6186,
+      "delta": 3,
       "direction": "steady",
       "mentions": 32,
       "sources": [
@@ -1194,11 +1194,20 @@
     {
       "slug": "exoplanets",
       "label": "Exoplanets",
-      "score": 3300,
-      "delta": 18,
+      "score": 3568,
+      "delta": 27,
       "direction": "up",
-      "mentions": 18,
+      "mentions": 22,
       "sources": [
+        {
+          "platform": "hackernews",
+          "title": "First atmosphere found on Earth-like planet in habitable zone of distant star",
+          "url": "https://www.bbc.com/news/articles/cy4kdd1e0ejo",
+          "score": 217,
+          "author": "neversaydie",
+          "commentCount": 152,
+          "publishedAt": "2026-07-17T14:06:13.000Z"
+        },
         {
           "platform": "arxiv",
           "title": "RedDots: Magnetic field of the nearby active M dwarf GJ 729, and a search for companions",
@@ -1297,15 +1306,6 @@
           "authors": "Yasuhiro Hasegawa, Renyu Hu, Amine Bouzerzour",
           "arxivCategory": "astro-ph.EP",
           "publishedAt": "2026-06-30T01:09:23.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Differentiable design of the PIAA-ZWFS: a flexible wavefront sensor that approaches the fundamental limit",
-          "url": "https://arxiv.org/abs/2606.28136",
-          "score": 200,
-          "authors": "A. K. Taras, S. Y. Haffert, L. Desdoigts",
-          "arxivCategory": "astro-ph.IM",
-          "publishedAt": "2026-06-26T14:36:12.000Z"
         }
       ],
       "relatedConceptSlugs": [
@@ -1723,143 +1723,11 @@
       }
     },
     {
-      "slug": "starship",
-      "label": "Starship & SpaceX",
-      "score": 1549,
-      "delta": 30,
-      "direction": "up",
-      "mentions": 29,
-      "sources": [
-        {
-          "platform": "hackernews",
-          "title": "SpaceX bond worth 10% less than issue price – heading for junk bond status",
-          "url": "https://www.ft.com/content/3a023b95-66c3-41e1-b0ce-df752a499541",
-          "score": 560,
-          "author": "youngtaff",
-          "commentCount": 581,
-          "publishedAt": "2026-07-15T12:59:09.000Z"
-        },
-        {
-          "platform": "hackernews",
-          "title": "SpaceX wants to launch 100k more Starlink satellites for 100x the bandwidth",
-          "url": "https://www.zdnet.com/home-and-office/networking/spacex-wants-to-launch-100000-more-starlink-satellites/",
-          "score": 319,
-          "author": "CrankyBear",
-          "commentCount": 1242,
-          "publishedAt": "2026-07-10T17:51:07.000Z"
-        },
-        {
-          "platform": "hackernews",
-          "title": "SpaceX stock erases all its gains and slides below IPO price in intraday trading",
-          "url": "https://www.latimes.com/business/story/2026-07-16/spacex-stock-erases-gains-slides-below-ipo-price-in-intraday-trading",
-          "score": 293,
-          "author": "1vuio0pswjnm7",
-          "commentCount": 255,
-          "publishedAt": "2026-07-16T12:02:11.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Saturation-Aware Robust Trajectory Optimization for Reusable Launch Vehicles via Differentiable Physics",
-          "url": "https://arxiv.org/abs/2607.09736",
-          "score": 200,
-          "authors": "Liwei Chen, Tong Qin",
-          "arxivCategory": "cs.RO",
-          "publishedAt": "2026-07-02T14:30:37.000Z"
-        },
-        {
-          "platform": "hackernews",
-          "title": "SpaceX stock sinks below $135 IPO price for the first time",
-          "url": "https://www.cnbc.com/2026/07/15/spacex-spcx-stock-ipo-price.html",
-          "score": 38,
-          "author": "abduhl",
-          "commentCount": 7,
-          "publishedAt": "2026-07-15T16:30:41.000Z"
-        },
-        {
-          "platform": "hackernews",
-          "title": "SpaceX built to separate retail investors from their money",
-          "url": "https://seekingalpha.com/news/4613058-spacex-built-to-separate-retail-investors-from-their-money-george-noble",
-          "score": 35,
-          "author": "nothrowaways",
-          "commentCount": 10,
-          "publishedAt": "2026-07-12T20:08:49.000Z"
-        },
-        {
-          "platform": "hackernews",
-          "title": "SpaceX shares slide below IPO price for first time as blistering rally unravels",
-          "url": "https://www.reuters.com/legal/transactional/spacex-shares-slide-below-ipo-price-blistering-rally-unravels-2026-07-15/",
-          "score": 12,
-          "author": "1vuio0pswjnm7",
-          "commentCount": 7,
-          "publishedAt": "2026-07-16T11:22:39.000Z"
-        },
-        {
-          "platform": "hackernews",
-          "title": "SpaceX sell-off wipes $1T from Elon Musk's rocket group",
-          "url": "https://www.ft.com/content/94959f40-1874-4ece-b629-b18f43aa3ede",
-          "score": 10,
-          "author": "JumpCrisscross",
-          "commentCount": 1,
-          "publishedAt": "2026-07-15T21:25:57.000Z"
-        },
-        {
-          "platform": "hackernews",
-          "title": "Starship's Thirteenth Flight Test",
-          "url": "https://www.spacex.com/launches/starship-flight-13",
-          "score": 9,
-          "author": "janpot",
-          "commentCount": 4,
-          "publishedAt": "2026-07-16T18:25:04.000Z"
-        },
-        {
-          "platform": "hackernews",
-          "title": "SpaceX Starship Flight 13 scrubbed",
-          "url": "https://x.com/i/broadcasts/1MKgNNXAZdmxL",
-          "score": 9,
-          "author": "elinear",
-          "commentCount": 2,
-          "publishedAt": "2026-07-16T22:58:02.000Z"
-        },
-        {
-          "platform": "hackernews",
-          "title": "China takes a page from SpaceX and recaptures first stage of rocket to reuse it",
-          "url": "https://apnews.com/article/china-rocket-space-reuse-6d695fcad64a101dc3991c1bfa0e7357",
-          "score": 8,
-          "author": "tocs3",
-          "commentCount": 0,
-          "publishedAt": "2026-07-10T22:37:10.000Z"
-        },
-        {
-          "platform": "youtube",
-          "title": "Starship – Critical Path [video]",
-          "url": "https://www.youtube.com/watch?v=-a0ecQMq-rM",
-          "score": 7,
-          "thumbnail": "https://img.youtube.com/vi/-a0ecQMq-rM/mqdefault.jpg",
-          "publishedAt": "2026-07-13T21:39:11.000Z"
-        }
-      ],
-      "relatedConceptSlugs": [
-        "extraterrestrial-regolith-derived-atmospheric-entry-heat-shields",
-        "phase-i-final-report-nasa-institute-for-advanced-concepts-combined-heat-shield-a"
-      ],
-      "resonance": 43,
-      "quadrant": "hype-cycle",
-      "resonanceSignals": {
-        "conceptDepth": 0.5113915944693856,
-        "editorial": 0.4,
-        "connections": 0,
-        "convergence": 0.35,
-        "deepTopic": 1,
-        "pantheon": 0.92,
-        "graveyard": 0
-      }
-    },
-    {
       "slug": "space-debris",
       "label": "Space Debris",
       "score": 1402,
-      "delta": 0,
-      "direction": "steady",
+      "delta": 17,
+      "direction": "up",
       "mentions": 8,
       "sources": [
         {
@@ -1939,7 +1807,7 @@
         "niac-phase-i-final-report-on-orbit-collision"
       ],
       "resonance": 20,
-      "quadrant": "dead-zone",
+      "quadrant": "hype-cycle",
       "resonanceSignals": {
         "conceptDepth": 0.3868528072345416,
         "editorial": 0.4,
@@ -1951,10 +1819,143 @@
       }
     },
     {
+      "slug": "starship",
+      "label": "Starship & SpaceX",
+      "score": 1362,
+      "delta": -9,
+      "direction": "steady",
+      "mentions": 33,
+      "sources": [
+        {
+          "platform": "hackernews",
+          "title": "SpaceX bond worth 10% less than issue price – heading for junk bond status",
+          "url": "https://www.ft.com/content/3a023b95-66c3-41e1-b0ce-df752a499541",
+          "score": 561,
+          "author": "youngtaff",
+          "commentCount": 584,
+          "publishedAt": "2026-07-15T12:59:09.000Z"
+        },
+        {
+          "platform": "hackernews",
+          "title": "SpaceX stock erases all its gains and slides below IPO price in intraday trading",
+          "url": "https://www.latimes.com/business/story/2026-07-16/spacex-stock-erases-gains-slides-below-ipo-price-in-intraday-trading",
+          "score": 308,
+          "author": "1vuio0pswjnm7",
+          "commentCount": 274,
+          "publishedAt": "2026-07-16T12:02:11.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Saturation-Aware Robust Trajectory Optimization for Reusable Launch Vehicles via Differentiable Physics",
+          "url": "https://arxiv.org/abs/2607.09736",
+          "score": 200,
+          "authors": "Liwei Chen, Tong Qin",
+          "arxivCategory": "cs.RO",
+          "publishedAt": "2026-07-02T14:30:37.000Z"
+        },
+        {
+          "platform": "hackernews",
+          "title": "Short sellers notch $8.7B profit as SpaceX shares dip to IPO price",
+          "url": "https://www.reuters.com/business/media-telecom/short-sellers-rack-up-87-bln-profit-spacex-slips-below-ipo-price-ortex-2026-07-16/",
+          "score": 78,
+          "author": "1vuio0pswjnm7",
+          "commentCount": 44,
+          "publishedAt": "2026-07-17T15:17:54.000Z"
+        },
+        {
+          "platform": "hackernews",
+          "title": "SpaceX stock sinks below $135 IPO price for the first time",
+          "url": "https://www.cnbc.com/2026/07/15/spacex-spcx-stock-ipo-price.html",
+          "score": 38,
+          "author": "abduhl",
+          "commentCount": 7,
+          "publishedAt": "2026-07-15T16:30:41.000Z"
+        },
+        {
+          "platform": "hackernews",
+          "title": "SpaceX built to separate retail investors from their money",
+          "url": "https://seekingalpha.com/news/4613058-spacex-built-to-separate-retail-investors-from-their-money-george-noble",
+          "score": 35,
+          "author": "nothrowaways",
+          "commentCount": 10,
+          "publishedAt": "2026-07-12T20:08:49.000Z"
+        },
+        {
+          "platform": "hackernews",
+          "title": "SpaceX shares slide below IPO price for first time as blistering rally unravels",
+          "url": "https://www.reuters.com/legal/transactional/spacex-shares-slide-below-ipo-price-blistering-rally-unravels-2026-07-15/",
+          "score": 13,
+          "author": "1vuio0pswjnm7",
+          "commentCount": 7,
+          "publishedAt": "2026-07-16T11:22:39.000Z"
+        },
+        {
+          "platform": "hackernews",
+          "title": "Starship's Thirteenth Flight Test",
+          "url": "https://www.spacex.com/launches/starship-flight-13",
+          "score": 10,
+          "author": "janpot",
+          "commentCount": 4,
+          "publishedAt": "2026-07-16T18:25:04.000Z"
+        },
+        {
+          "platform": "hackernews",
+          "title": "SpaceX Starship Flight 13 scrubbed",
+          "url": "https://x.com/i/broadcasts/1MKgNNXAZdmxL",
+          "score": 10,
+          "author": "elinear",
+          "commentCount": 2,
+          "publishedAt": "2026-07-16T22:58:02.000Z"
+        },
+        {
+          "platform": "hackernews",
+          "title": "SpaceX stock drops to a new low and loses $1T in value in a month",
+          "url": "https://www.businessinsider.com/spacex-stock-drops-new-low-ipo-price-starship-launch-scrubbed-2026-7",
+          "score": 10,
+          "author": "01-_-",
+          "commentCount": 3,
+          "publishedAt": "2026-07-17T18:26:02.000Z"
+        },
+        {
+          "platform": "hackernews",
+          "title": "SpaceX sell-off wipes $1T from Elon Musk's rocket group",
+          "url": "https://www.ft.com/content/94959f40-1874-4ece-b629-b18f43aa3ede",
+          "score": 10,
+          "author": "JumpCrisscross",
+          "commentCount": 1,
+          "publishedAt": "2026-07-15T21:25:57.000Z"
+        },
+        {
+          "platform": "hackernews",
+          "title": "SpaceX declared a military target by Iran",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/spacex-spcx-faces-risk-iran-121423559.html",
+          "score": 8,
+          "author": "binyu",
+          "commentCount": 4,
+          "publishedAt": "2026-07-17T14:58:59.000Z"
+        }
+      ],
+      "relatedConceptSlugs": [
+        "extraterrestrial-regolith-derived-atmospheric-entry-heat-shields",
+        "phase-i-final-report-nasa-institute-for-advanced-concepts-combined-heat-shield-a"
+      ],
+      "resonance": 43,
+      "quadrant": "dead-zone",
+      "resonanceSignals": {
+        "conceptDepth": 0.5113915944693856,
+        "editorial": 0.4,
+        "connections": 0,
+        "convergence": 0.35,
+        "deepTopic": 1,
+        "pantheon": 0.92,
+        "graveyard": 0
+      }
+    },
+    {
       "slug": "fusion-propulsion",
       "label": "Fusion Propulsion",
       "score": 1200,
-      "delta": -14,
+      "delta": 0,
       "direction": "steady",
       "mentions": 6,
       "sources": [
@@ -2163,6 +2164,138 @@
       }
     },
     {
+      "slug": "starlink",
+      "label": "Starlink & Satellite Internet",
+      "score": 625,
+      "delta": 9,
+      "direction": "steady",
+      "mentions": 19,
+      "sources": [
+        {
+          "platform": "arxiv",
+          "title": "Analysis of Laser-Satellite Deconfliction for Astronomical Observatories",
+          "url": "https://arxiv.org/abs/2606.25238",
+          "score": 200,
+          "authors": "Christoph Baranec, Reed Riddle, Yuhei Takagi et al.",
+          "arxivCategory": "astro-ph.IM",
+          "publishedAt": "2026-06-23T23:42:54.000Z"
+        },
+        {
+          "platform": "hackernews",
+          "title": "Satellite Tracker – Live Map of Starlink and 30k Satellites",
+          "url": "https://satellitemap.space/",
+          "score": 164,
+          "author": "rolph",
+          "commentCount": 100,
+          "publishedAt": "2026-07-14T01:55:24.000Z"
+        },
+        {
+          "platform": "hackernews",
+          "title": "Starlink unlimited aviation plan to rise from $10k/month to $20k",
+          "url": "https://www.corporatejetinvestor.com/news/starlink-price-rise-reckless-says-correnti/",
+          "score": 122,
+          "author": "r2sk5t",
+          "commentCount": 214,
+          "publishedAt": "2026-07-15T16:22:43.000Z"
+        },
+        {
+          "platform": "hackernews",
+          "title": "Starlink from 1984",
+          "url": "https://nemanjatrifunovic.substack.com/p/starlink-from-1984",
+          "score": 63,
+          "author": "ingve",
+          "commentCount": 28,
+          "publishedAt": "2026-07-11T23:26:32.000Z"
+        },
+        {
+          "platform": "hackernews",
+          "title": "Musk's Starlink Socks Customers with $1500 'High Demand' Surcharge",
+          "url": "https://www.techdirt.com/2026/07/13/musks-starlink-socks-customers-with-1500-high-demand-surcharge/",
+          "score": 15,
+          "author": "defrost",
+          "commentCount": 0,
+          "publishedAt": "2026-07-13T12:44:00.000Z"
+        },
+        {
+          "platform": "hackernews",
+          "title": "Musk's Starlink Socks Customers with $1500 'High Demand' Surcharge",
+          "url": "https://www.techdirt.com/2026/07/13/musks-starlink-socks-customers-with-1500-high-demand-surcharge/",
+          "score": 11,
+          "author": "lemonberry",
+          "commentCount": 0,
+          "publishedAt": "2026-07-13T22:50:04.000Z"
+        },
+        {
+          "platform": "hackernews",
+          "title": "Shooting Starlink: The \"no limits\" partnership between Russia and China",
+          "url": "https://theins.press/en/inv/294635",
+          "score": 9,
+          "author": "uxhacker",
+          "commentCount": 9,
+          "publishedAt": "2026-07-10T19:33:45.000Z"
+        },
+        {
+          "platform": "hackernews",
+          "title": "Starlink V5",
+          "url": "https://www.tomshardware.com/networking/routers/elon-musks-starlink-releases-smaller-and-lighter-v5-residential-kit-offers-speeds-of-up-to-375-mbps-and-almost-half-the-power-consumption-of-v4",
+          "score": 6,
+          "author": "porridgeraisin",
+          "commentCount": 0,
+          "publishedAt": "2026-07-15T20:00:08.000Z"
+        },
+        {
+          "platform": "hackernews",
+          "title": "Leaked Documents Reveal Secret Russia-China Military Plan to Disable Starlink",
+          "url": "https://united24media.com/world/leaked-documents-reveal-possible-secret-russia-china-military-plan-to-disable-starlink-20627",
+          "score": 5,
+          "author": "vrganj",
+          "commentCount": 1,
+          "publishedAt": "2026-07-12T09:32:45.000Z"
+        },
+        {
+          "platform": "hackernews",
+          "title": "Could China and Russia Destroy Starlink? Only with a Boomerang",
+          "url": "https://arstechnica.com/space/2026/07/could-china-and-russia-really-destroy-starlink-only-with-a-boomerang/",
+          "score": 4,
+          "author": "kyrofa",
+          "commentCount": 1,
+          "publishedAt": "2026-07-16T18:31:52.000Z"
+        },
+        {
+          "platform": "hackernews",
+          "title": "Starlink V5",
+          "url": "https://starlink.com/specifications/10",
+          "score": 4,
+          "author": "jtraglia",
+          "commentCount": 1,
+          "publishedAt": "2026-07-15T02:43:36.000Z"
+        },
+        {
+          "platform": "hackernews",
+          "title": "Starlink from 1984 – By Nemanja Trifunovic",
+          "url": "https://nemanjatrifunovic.substack.com/p/starlink-from-1984",
+          "score": 4,
+          "author": "rbanffy",
+          "commentCount": 0,
+          "publishedAt": "2026-07-16T14:25:47.000Z"
+        }
+      ],
+      "relatedConceptSlugs": [
+        "sps-alpha"
+      ],
+      "resonance": 21,
+      "quadrant": "dead-zone",
+      "resonanceSignals": {
+        "conceptDepth": 0.22629438553091683,
+        "editorial": 0.7,
+        "connections": 0,
+        "convergence": 0,
+        "deepTopic": 0,
+        "pantheon": 0,
+        "graveyard": 0
+      }
+    },
+    {
       "slug": "dyson-spheres",
       "label": "Dyson Spheres",
       "score": 604,
@@ -2273,138 +2406,6 @@
         "convergence": 0.075,
         "deepTopic": 0.8,
         "pantheon": 0.08,
-        "graveyard": 0
-      }
-    },
-    {
-      "slug": "starlink",
-      "label": "Starlink & Satellite Internet",
-      "score": 587,
-      "delta": 4,
-      "direction": "steady",
-      "mentions": 18,
-      "sources": [
-        {
-          "platform": "arxiv",
-          "title": "Analysis of Laser-Satellite Deconfliction for Astronomical Observatories",
-          "url": "https://arxiv.org/abs/2606.25238",
-          "score": 200,
-          "authors": "Christoph Baranec, Reed Riddle, Yuhei Takagi et al.",
-          "arxivCategory": "astro-ph.IM",
-          "publishedAt": "2026-06-23T23:42:54.000Z"
-        },
-        {
-          "platform": "hackernews",
-          "title": "Satellite Tracker – Live Map of Starlink and 30k Satellites",
-          "url": "https://satellitemap.space/",
-          "score": 164,
-          "author": "rolph",
-          "commentCount": 100,
-          "publishedAt": "2026-07-14T01:55:24.000Z"
-        },
-        {
-          "platform": "hackernews",
-          "title": "Starlink unlimited aviation plan to rise from $10k/month to $20k",
-          "url": "https://www.corporatejetinvestor.com/news/starlink-price-rise-reckless-says-correnti/",
-          "score": 122,
-          "author": "r2sk5t",
-          "commentCount": 212,
-          "publishedAt": "2026-07-15T16:22:43.000Z"
-        },
-        {
-          "platform": "hackernews",
-          "title": "Starlink from 1984",
-          "url": "https://nemanjatrifunovic.substack.com/p/starlink-from-1984",
-          "score": 26,
-          "author": "ingve",
-          "commentCount": 3,
-          "publishedAt": "2026-07-11T23:26:32.000Z"
-        },
-        {
-          "platform": "hackernews",
-          "title": "Musk's Starlink Socks Customers with $1500 'High Demand' Surcharge",
-          "url": "https://www.techdirt.com/2026/07/13/musks-starlink-socks-customers-with-1500-high-demand-surcharge/",
-          "score": 15,
-          "author": "defrost",
-          "commentCount": 0,
-          "publishedAt": "2026-07-13T12:44:00.000Z"
-        },
-        {
-          "platform": "hackernews",
-          "title": "Musk's Starlink Socks Customers with $1500 'High Demand' Surcharge",
-          "url": "https://www.techdirt.com/2026/07/13/musks-starlink-socks-customers-with-1500-high-demand-surcharge/",
-          "score": 11,
-          "author": "lemonberry",
-          "commentCount": 0,
-          "publishedAt": "2026-07-13T22:50:04.000Z"
-        },
-        {
-          "platform": "hackernews",
-          "title": "Shooting Starlink: The \"no limits\" partnership between Russia and China",
-          "url": "https://theins.press/en/inv/294635",
-          "score": 9,
-          "author": "uxhacker",
-          "commentCount": 9,
-          "publishedAt": "2026-07-10T19:33:45.000Z"
-        },
-        {
-          "platform": "hackernews",
-          "title": "Starlink V5",
-          "url": "https://www.tomshardware.com/networking/routers/elon-musks-starlink-releases-smaller-and-lighter-v5-residential-kit-offers-speeds-of-up-to-375-mbps-and-almost-half-the-power-consumption-of-v4",
-          "score": 6,
-          "author": "porridgeraisin",
-          "commentCount": 0,
-          "publishedAt": "2026-07-15T20:00:08.000Z"
-        },
-        {
-          "platform": "hackernews",
-          "title": "Leaked Documents Reveal Secret Russia-China Military Plan to Disable Starlink",
-          "url": "https://united24media.com/world/leaked-documents-reveal-possible-secret-russia-china-military-plan-to-disable-starlink-20627",
-          "score": 5,
-          "author": "vrganj",
-          "commentCount": 1,
-          "publishedAt": "2026-07-12T09:32:45.000Z"
-        },
-        {
-          "platform": "hackernews",
-          "title": "Could China and Russia Destroy Starlink? Only with a Boomerang",
-          "url": "https://arstechnica.com/space/2026/07/could-china-and-russia-really-destroy-starlink-only-with-a-boomerang/",
-          "score": 4,
-          "author": "kyrofa",
-          "commentCount": 1,
-          "publishedAt": "2026-07-16T18:31:52.000Z"
-        },
-        {
-          "platform": "hackernews",
-          "title": "Starlink V5",
-          "url": "https://starlink.com/specifications/10",
-          "score": 4,
-          "author": "jtraglia",
-          "commentCount": 1,
-          "publishedAt": "2026-07-15T02:43:36.000Z"
-        },
-        {
-          "platform": "hackernews",
-          "title": "Starlink from 1984 – By Nemanja Trifunovic",
-          "url": "https://nemanjatrifunovic.substack.com/p/starlink-from-1984",
-          "score": 4,
-          "author": "rbanffy",
-          "commentCount": 0,
-          "publishedAt": "2026-07-16T14:25:47.000Z"
-        }
-      ],
-      "relatedConceptSlugs": [
-        "sps-alpha"
-      ],
-      "resonance": 21,
-      "quadrant": "dead-zone",
-      "resonanceSignals": {
-        "conceptDepth": 0.22629438553091683,
-        "editorial": 0.7,
-        "connections": 0,
-        "convergence": 0,
-        "deepTopic": 0,
-        "pantheon": 0,
         "graveyard": 0
       }
     },
