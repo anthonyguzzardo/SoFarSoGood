@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-19T08:03:16.734Z",
+  "generatedAt": "2026-07-19T19:10:11.270Z",
   "topics": [
     {
       "slug": "gravitational-waves",
@@ -269,10 +269,10 @@
     {
       "slug": "quantum-computing",
       "label": "Quantum Computing",
-      "score": 7814,
+      "score": 7806,
       "delta": 0,
       "direction": "steady",
-      "mentions": 43,
+      "mentions": 42,
       "sources": [
         {
           "platform": "arxiv",
@@ -534,7 +534,7 @@
     {
       "slug": "black-holes",
       "label": "Black Holes",
-      "score": 7414,
+      "score": 7419,
       "delta": -10,
       "direction": "steady",
       "mentions": 41,
@@ -667,10 +667,10 @@
     {
       "slug": "particle-physics",
       "label": "Particle Physics",
-      "score": 6803,
-      "delta": 0,
+      "score": 6603,
+      "delta": -3,
       "direction": "steady",
-      "mentions": 35,
+      "mentions": 34,
       "sources": [
         {
           "platform": "arxiv",
@@ -698,15 +698,6 @@
           "authors": "Mariia Khelashvili, Takeshi Kobayashi, Andrew J. Long",
           "arxivCategory": "hep-ph",
           "publishedAt": "2026-06-24T18:00:01.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Asymptotically safe quantum gravity and its phenomenology -- a review",
-          "url": "https://arxiv.org/abs/2606.21522",
-          "score": 200,
-          "authors": "Astrid Eichhorn",
-          "arxivCategory": "hep-th",
-          "publishedAt": "2026-06-19T15:19:48.000Z"
         },
         {
           "platform": "arxiv",
@@ -779,6 +770,15 @@
           "authors": "Daniel Stremmer",
           "arxivCategory": "hep-ph",
           "publishedAt": "2026-07-07T10:13:05.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Searching for charged Higgs bosons in top decays via the $t^*b$ channel",
+          "url": "https://arxiv.org/abs/2607.05499",
+          "score": 200,
+          "authors": "Saiyad Ashanujjaman, Guglielmo Coloretti, Andreas Crivellin et al.",
+          "arxivCategory": "hep-ph",
+          "publishedAt": "2026-07-06T18:00:01.000Z"
         }
       ],
       "relatedConceptSlugs": [],
@@ -1062,10 +1062,10 @@
     {
       "slug": "condensed-matter",
       "label": "Condensed Matter",
-      "score": 5792,
-      "delta": -6,
+      "score": 5592,
+      "delta": -10,
       "direction": "steady",
-      "mentions": 30,
+      "mentions": 29,
       "sources": [
         {
           "platform": "arxiv",
@@ -1194,8 +1194,8 @@
     {
       "slug": "exoplanets",
       "label": "Exoplanets",
-      "score": 3883,
-      "delta": 9,
+      "score": 3889,
+      "delta": 3,
       "direction": "steady",
       "mentions": 22,
       "sources": [
@@ -1203,9 +1203,9 @@
           "platform": "hackernews",
           "title": "First atmosphere found on Earth-like planet in habitable zone of distant star",
           "url": "https://www.bbc.com/news/articles/cy4kdd1e0ejo",
-          "score": 524,
+          "score": 530,
           "author": "neversaydie",
-          "commentCount": 303,
+          "commentCount": 306,
           "publishedAt": "2026-07-17T14:06:13.000Z"
         },
         {
@@ -1725,10 +1725,10 @@
     {
       "slug": "starship",
       "label": "Starship & SpaceX",
-      "score": 1637,
-      "delta": 20,
-      "direction": "up",
-      "mentions": 35,
+      "score": 1647,
+      "delta": 8,
+      "direction": "steady",
+      "mentions": 36,
       "sources": [
         {
           "platform": "hackernews",
@@ -1745,7 +1745,7 @@
           "url": "https://www.latimes.com/business/story/2026-07-16/spacex-stock-erases-gains-slides-below-ipo-price-in-intraday-trading",
           "score": 312,
           "author": "1vuio0pswjnm7",
-          "commentCount": 278,
+          "commentCount": 282,
           "publishedAt": "2026-07-16T12:02:11.000Z"
         },
         {
@@ -1761,16 +1761,16 @@
           "platform": "hackernews",
           "title": "Short sellers notch $8.7B profit as SpaceX shares dip to IPO price",
           "url": "https://www.reuters.com/business/media-telecom/short-sellers-rack-up-87-bln-profit-spacex-slips-below-ipo-price-ortex-2026-07-16/",
-          "score": 166,
+          "score": 167,
           "author": "1vuio0pswjnm7",
-          "commentCount": 180,
+          "commentCount": 181,
           "publishedAt": "2026-07-17T15:17:54.000Z"
         },
         {
           "platform": "hackernews",
           "title": "SpaceX stock drops to a new low and loses $1T in value in a month",
           "url": "https://www.businessinsider.com/spacex-stock-drops-new-low-ipo-price-starship-launch-scrubbed-2026-7",
-          "score": 71,
+          "score": 72,
           "author": "01-_-",
           "commentCount": 67,
           "publishedAt": "2026-07-17T18:26:02.000Z"
@@ -1779,18 +1779,18 @@
           "platform": "hackernews",
           "title": "Traders are increasingly betting against SpaceX just weeks after IPO",
           "url": "https://www.ft.com/content/2b96703d-440b-46db-8d86-9fff9ecc59d5",
-          "score": 51,
+          "score": 54,
           "author": "ethanhawksley",
-          "commentCount": 25,
+          "commentCount": 27,
           "publishedAt": "2026-07-18T15:26:13.000Z"
         },
         {
           "platform": "hackernews",
           "title": "SpaceX and the myth of independent Wall St research",
           "url": "https://www.ft.com/content/ce345155-d897-4f49-b7c8-13680e3b5434",
-          "score": 46,
+          "score": 49,
           "author": "JumpCrisscross",
-          "commentCount": 43,
+          "commentCount": 46,
           "publishedAt": "2026-07-18T20:13:56.000Z"
         },
         {
@@ -1844,7 +1844,7 @@
         "phase-i-final-report-nasa-institute-for-advanced-concepts-combined-heat-shield-a"
       ],
       "resonance": 43,
-      "quadrant": "hype-cycle",
+      "quadrant": "dead-zone",
       "resonanceSignals": {
         "conceptDepth": 0.5113915944693856,
         "editorial": 0.4,
@@ -2093,66 +2093,6 @@
       }
     },
     {
-      "slug": "dyson-spheres",
-      "label": "Dyson Spheres",
-      "score": 604,
-      "delta": 0,
-      "direction": "steady",
-      "mentions": 4,
-      "sources": [
-        {
-          "platform": "arxiv",
-          "title": "Project Hephaistos -- IV. James Webb Space Telescope Observations of Two Dyson Sphere Candidates",
-          "url": "https://arxiv.org/abs/2607.09460",
-          "score": 200,
-          "authors": "Erik Zackrisson, Arjan Bik, Anita Ali Asgar et al.",
-          "arxivCategory": "astro-ph.GA",
-          "publishedAt": "2026-07-10T14:32:43.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Stellar J-Harvesting: a novel angular momentum technosignature and first search in the Kepler field",
-          "url": "https://arxiv.org/abs/2607.07781",
-          "score": 200,
-          "authors": "Sahin Torlakcik",
-          "arxivCategory": "astro-ph.SR",
-          "publishedAt": "2026-07-08T17:56:40.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Archival Diagnostics for Potential Background Contaminantsof Project Hephaistos Dyson Sphere Candidates",
-          "url": "https://arxiv.org/abs/2607.03619",
-          "score": 200,
-          "authors": "Tongtian Ren, Michael A. Garrett, Erik Zackrisson et al.",
-          "arxivCategory": "astro-ph.SR",
-          "publishedAt": "2026-07-03T22:31:21.000Z"
-        },
-        {
-          "platform": "hackernews",
-          "title": "Scientists Solve Mystery of Bizarre 'Alien Megastructure' Star",
-          "url": "https://www.404media.co/scientists-solve-mystery-of-bizarre-alien-megastructure-star/",
-          "score": 4,
-          "author": "Brajeshwar",
-          "commentCount": 0,
-          "publishedAt": "2026-07-12T11:41:44.000Z"
-        }
-      ],
-      "relatedConceptSlugs": [
-        "sps-alpha"
-      ],
-      "resonance": 25,
-      "quadrant": "dead-zone",
-      "resonanceSignals": {
-        "conceptDepth": 0.22629438553091683,
-        "editorial": 0.7,
-        "connections": 0,
-        "convergence": 0,
-        "deepTopic": 0,
-        "pantheon": 0.92,
-        "graveyard": 0
-      }
-    },
-    {
       "slug": "mars",
       "label": "Mars Exploration",
       "score": 600,
@@ -2207,54 +2147,52 @@
       }
     },
     {
-      "slug": "electric-propulsion",
-      "label": "Electric Propulsion",
+      "slug": "dyson-spheres",
+      "label": "Dyson Spheres",
       "score": 600,
-      "delta": -25,
-      "direction": "down",
+      "delta": -1,
+      "direction": "steady",
       "mentions": 3,
       "sources": [
         {
           "platform": "arxiv",
-          "title": "Simulation Study of Coupling Effects Between a Hall Thruster and a Power Processing Unit",
-          "url": "https://arxiv.org/abs/2606.28743",
+          "title": "Project Hephaistos -- IV. James Webb Space Telescope Observations of Two Dyson Sphere Candidates",
+          "url": "https://arxiv.org/abs/2607.09460",
           "score": 200,
-          "authors": "Zirui Fan, Yinjian Zhao, Jingjing Li et al.",
-          "arxivCategory": "physics.plasm-ph",
-          "publishedAt": "2026-06-27T05:39:11.000Z"
+          "authors": "Erik Zackrisson, Arjan Bik, Anita Ali Asgar et al.",
+          "arxivCategory": "astro-ph.GA",
+          "publishedAt": "2026-07-10T14:32:43.000Z"
         },
         {
           "platform": "arxiv",
-          "title": "A possible approach to overcome the saturation of the neutron yield in a Plasma Focus and to achieve breakeven",
-          "url": "https://arxiv.org/abs/2606.27108",
+          "title": "Stellar J-Harvesting: a novel angular momentum technosignature and first search in the Kepler field",
+          "url": "https://arxiv.org/abs/2607.07781",
           "score": 200,
-          "authors": "Andrea Di Vita",
-          "arxivCategory": "physics.plasm-ph",
-          "publishedAt": "2026-06-25T14:44:09.000Z"
+          "authors": "Sahin Torlakcik",
+          "arxivCategory": "astro-ph.SR",
+          "publishedAt": "2026-07-08T17:56:40.000Z"
         },
         {
           "platform": "arxiv",
-          "title": "Semi-local Floquet theory for active azimuthal magnetic modulation of Hall-thruster high-frequency instabilities",
-          "url": "https://arxiv.org/abs/2606.21265",
+          "title": "Archival Diagnostics for Potential Background Contaminantsof Project Hephaistos Dyson Sphere Candidates",
+          "url": "https://arxiv.org/abs/2607.03619",
           "score": 200,
-          "authors": "Yinjian Zhao, Changzheng Hu",
-          "arxivCategory": "physics.plasm-ph",
-          "publishedAt": "2026-06-19T09:40:38.000Z"
+          "authors": "Tongtian Ren, Michael A. Garrett, Erik Zackrisson et al.",
+          "arxivCategory": "astro-ph.SR",
+          "publishedAt": "2026-07-03T22:31:21.000Z"
         }
       ],
       "relatedConceptSlugs": [
-        "electric-sail-propulsion",
-        "e-glider",
-        "nasa-innovative-advanced-concepts-niac-heliopause-electrostatic-rapid-transit-sy"
+        "sps-alpha"
       ],
-      "resonance": 50,
-      "quadrant": "sleeping-giant",
+      "resonance": 25,
+      "quadrant": "dead-zone",
       "resonanceSignals": {
-        "conceptDepth": 0.6131471927654584,
-        "editorial": 0.4,
+        "conceptDepth": 0.22629438553091683,
+        "editorial": 0.7,
         "connections": 0,
-        "convergence": 0.575,
-        "deepTopic": 1,
+        "convergence": 0,
+        "deepTopic": 0,
         "pantheon": 0.92,
         "graveyard": 0
       }
@@ -2262,10 +2200,10 @@
     {
       "slug": "starlink",
       "label": "Starlink & Satellite Internet",
-      "score": 553,
+      "score": 549,
       "delta": -12,
       "direction": "steady",
-      "mentions": 17,
+      "mentions": 16,
       "sources": [
         {
           "platform": "arxiv",
@@ -2291,7 +2229,7 @@
           "url": "https://www.corporatejetinvestor.com/news/starlink-price-rise-reckless-says-correnti/",
           "score": 122,
           "author": "r2sk5t",
-          "commentCount": 216,
+          "commentCount": 218,
           "publishedAt": "2026-07-15T16:22:43.000Z"
         },
         {
@@ -2320,15 +2258,6 @@
           "author": "porridgeraisin",
           "commentCount": 0,
           "publishedAt": "2026-07-15T20:00:08.000Z"
-        },
-        {
-          "platform": "hackernews",
-          "title": "Leaked Documents Reveal Secret Russia-China Military Plan to Disable Starlink",
-          "url": "https://united24media.com/world/leaked-documents-reveal-possible-secret-russia-china-military-plan-to-disable-starlink-20627",
-          "score": 5,
-          "author": "vrganj",
-          "commentCount": 1,
-          "publishedAt": "2026-07-12T09:32:45.000Z"
         },
         {
           "platform": "hackernews",
@@ -2374,6 +2303,15 @@
           "author": "rbanffy",
           "commentCount": 0,
           "publishedAt": "2026-07-15T17:36:30.000Z"
+        },
+        {
+          "platform": "hackernews",
+          "title": "Shooting Starlink: The \"no limits\" partnership between Russia and China is takin",
+          "url": "https://theins.press/en/inv/294635",
+          "score": 3,
+          "author": "arunc",
+          "commentCount": 0,
+          "publishedAt": "2026-07-13T05:31:31.000Z"
         }
       ],
       "relatedConceptSlugs": [
@@ -2488,6 +2426,50 @@
       }
     },
     {
+      "slug": "electric-propulsion",
+      "label": "Electric Propulsion",
+      "score": 400,
+      "delta": -50,
+      "direction": "down",
+      "mentions": 2,
+      "sources": [
+        {
+          "platform": "arxiv",
+          "title": "Simulation Study of Coupling Effects Between a Hall Thruster and a Power Processing Unit",
+          "url": "https://arxiv.org/abs/2606.28743",
+          "score": 200,
+          "authors": "Zirui Fan, Yinjian Zhao, Jingjing Li et al.",
+          "arxivCategory": "physics.plasm-ph",
+          "publishedAt": "2026-06-27T05:39:11.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "A possible approach to overcome the saturation of the neutron yield in a Plasma Focus and to achieve breakeven",
+          "url": "https://arxiv.org/abs/2606.27108",
+          "score": 200,
+          "authors": "Andrea Di Vita",
+          "arxivCategory": "physics.plasm-ph",
+          "publishedAt": "2026-06-25T14:44:09.000Z"
+        }
+      ],
+      "relatedConceptSlugs": [
+        "electric-sail-propulsion",
+        "e-glider",
+        "nasa-innovative-advanced-concepts-niac-heliopause-electrostatic-rapid-transit-sy"
+      ],
+      "resonance": 50,
+      "quadrant": "sleeping-giant",
+      "resonanceSignals": {
+        "conceptDepth": 0.6131471927654584,
+        "editorial": 0.4,
+        "connections": 0,
+        "convergence": 0.575,
+        "deepTopic": 1,
+        "pantheon": 0.92,
+        "graveyard": 0
+      }
+    },
+    {
       "slug": "warp-drives",
       "label": "Warp Drives & Exotic Physics",
       "score": 202,
@@ -2561,40 +2543,6 @@
         "convergence": 0.05,
         "deepTopic": 0,
         "pantheon": 0.92,
-        "graveyard": 0
-      }
-    },
-    {
-      "slug": "ai-space",
-      "label": "AI in Space",
-      "score": 4,
-      "delta": 0,
-      "direction": "steady",
-      "mentions": 1,
-      "sources": [
-        {
-          "platform": "hackernews",
-          "title": "Show HN: Dr. Wong – an AI space for journaling and self-reflection",
-          "url": "https://www.drwongai.com",
-          "score": 4,
-          "author": "superyuan",
-          "commentCount": 1,
-          "publishedAt": "2026-07-12T11:07:09.000Z"
-        }
-      ],
-      "relatedConceptSlugs": [
-        "starnav",
-        "an-automaton-rover-enabling-long-duration"
-      ],
-      "resonance": 37,
-      "quadrant": "dead-zone",
-      "resonanceSignals": {
-        "conceptDepth": 0.5113915944693856,
-        "editorial": 0.7,
-        "connections": 0.3333333333333333,
-        "convergence": 0.025,
-        "deepTopic": 0,
-        "pantheon": 0.4,
         "graveyard": 0
       }
     },
@@ -2677,6 +2625,30 @@
         "convergence": 0.15,
         "deepTopic": 0.8,
         "pantheon": 0.16,
+        "graveyard": 0
+      }
+    },
+    {
+      "slug": "ai-space",
+      "label": "AI in Space",
+      "score": 0,
+      "delta": 0,
+      "direction": "steady",
+      "mentions": 0,
+      "sources": [],
+      "relatedConceptSlugs": [
+        "starnav",
+        "an-automaton-rover-enabling-long-duration"
+      ],
+      "resonance": 37,
+      "quadrant": "dead-zone",
+      "resonanceSignals": {
+        "conceptDepth": 0.5113915944693856,
+        "editorial": 0.7,
+        "connections": 0.3333333333333333,
+        "convergence": 0.025,
+        "deepTopic": 0,
+        "pantheon": 0.4,
         "graveyard": 0
       }
     }
