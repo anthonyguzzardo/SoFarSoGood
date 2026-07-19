@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-07-17T19:12:30.005Z",
+  "generatedAt": "2026-07-18T07:32:55.810Z",
   "topics": [
     {
       "slug": "gravitational-waves",
       "label": "Gravitational Waves",
       "score": 8600,
-      "delta": 2,
+      "delta": 0,
       "direction": "steady",
       "mentions": 43,
       "sources": [
@@ -136,10 +136,10 @@
     {
       "slug": "black-holes",
       "label": "Black Holes",
-      "score": 8211,
-      "delta": 2,
+      "score": 8213,
+      "delta": 0,
       "direction": "steady",
-      "mentions": 43,
+      "mentions": 44,
       "sources": [
         {
           "platform": "arxiv",
@@ -269,10 +269,10 @@
     {
       "slug": "space-telescopes",
       "label": "Space Telescopes",
-      "score": 8200,
+      "score": 8202,
       "delta": -2,
       "direction": "steady",
-      "mentions": 41,
+      "mentions": 42,
       "sources": [
         {
           "platform": "arxiv",
@@ -402,8 +402,8 @@
     {
       "slug": "quantum-computing",
       "label": "Quantum Computing",
-      "score": 7813,
-      "delta": -3,
+      "score": 7814,
+      "delta": 0,
       "direction": "steady",
       "mentions": 43,
       "sources": [
@@ -534,10 +534,10 @@
     {
       "slug": "nanotechnology",
       "label": "Nanotechnology & Metamaterials",
-      "score": 7809,
+      "score": 7800,
       "delta": 0,
       "direction": "steady",
-      "mentions": 40,
+      "mentions": 39,
       "sources": [
         {
           "platform": "arxiv",
@@ -668,7 +668,7 @@
       "slug": "particle-physics",
       "label": "Particle Physics",
       "score": 6803,
-      "delta": -3,
+      "delta": 0,
       "direction": "steady",
       "mentions": 35,
       "sources": [
@@ -797,8 +797,8 @@
     {
       "slug": "condensed-matter",
       "label": "Condensed Matter",
-      "score": 6186,
-      "delta": 3,
+      "score": 6190,
+      "delta": 1,
       "direction": "steady",
       "mentions": 32,
       "sources": [
@@ -929,10 +929,10 @@
     {
       "slug": "dark-matter",
       "label": "Dark Matter & Dark Energy",
-      "score": 5800,
+      "score": 5804,
       "delta": 0,
       "direction": "steady",
-      "mentions": 29,
+      "mentions": 30,
       "sources": [
         {
           "platform": "arxiv",
@@ -1063,7 +1063,7 @@
       "slug": "cosmology",
       "label": "Cosmology",
       "score": 5800,
-      "delta": 7,
+      "delta": 0,
       "direction": "steady",
       "mentions": 29,
       "sources": [
@@ -1194,18 +1194,18 @@
     {
       "slug": "exoplanets",
       "label": "Exoplanets",
-      "score": 3568,
-      "delta": 27,
-      "direction": "up",
+      "score": 3793,
+      "delta": 15,
+      "direction": "steady",
       "mentions": 22,
       "sources": [
         {
           "platform": "hackernews",
           "title": "First atmosphere found on Earth-like planet in habitable zone of distant star",
           "url": "https://www.bbc.com/news/articles/cy4kdd1e0ejo",
-          "score": 217,
+          "score": 435,
           "author": "neversaydie",
-          "commentCount": 152,
+          "commentCount": 256,
           "publishedAt": "2026-07-17T14:06:13.000Z"
         },
         {
@@ -1723,11 +1723,144 @@
       }
     },
     {
+      "slug": "starship",
+      "label": "Starship & SpaceX",
+      "score": 1518,
+      "delta": -2,
+      "direction": "steady",
+      "mentions": 34,
+      "sources": [
+        {
+          "platform": "hackernews",
+          "title": "SpaceX bond worth 10% less than issue price – heading for junk bond status",
+          "url": "https://www.ft.com/content/3a023b95-66c3-41e1-b0ce-df752a499541",
+          "score": 562,
+          "author": "youngtaff",
+          "commentCount": 587,
+          "publishedAt": "2026-07-15T12:59:09.000Z"
+        },
+        {
+          "platform": "hackernews",
+          "title": "SpaceX stock erases all its gains and slides below IPO price in intraday trading",
+          "url": "https://www.latimes.com/business/story/2026-07-16/spacex-stock-erases-gains-slides-below-ipo-price-in-intraday-trading",
+          "score": 312,
+          "author": "1vuio0pswjnm7",
+          "commentCount": 276,
+          "publishedAt": "2026-07-16T12:02:11.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Saturation-Aware Robust Trajectory Optimization for Reusable Launch Vehicles via Differentiable Physics",
+          "url": "https://arxiv.org/abs/2607.09736",
+          "score": 200,
+          "authors": "Liwei Chen, Tong Qin",
+          "arxivCategory": "cs.RO",
+          "publishedAt": "2026-07-02T14:30:37.000Z"
+        },
+        {
+          "platform": "hackernews",
+          "title": "Short sellers notch $8.7B profit as SpaceX shares dip to IPO price",
+          "url": "https://www.reuters.com/business/media-telecom/short-sellers-rack-up-87-bln-profit-spacex-slips-below-ipo-price-ortex-2026-07-16/",
+          "score": 157,
+          "author": "1vuio0pswjnm7",
+          "commentCount": 167,
+          "publishedAt": "2026-07-17T15:17:54.000Z"
+        },
+        {
+          "platform": "hackernews",
+          "title": "SpaceX stock drops to a new low and loses $1T in value in a month",
+          "url": "https://www.businessinsider.com/spacex-stock-drops-new-low-ipo-price-starship-launch-scrubbed-2026-7",
+          "score": 67,
+          "author": "01-_-",
+          "commentCount": 63,
+          "publishedAt": "2026-07-17T18:26:02.000Z"
+        },
+        {
+          "platform": "hackernews",
+          "title": "SpaceX stock sinks below $135 IPO price for the first time",
+          "url": "https://www.cnbc.com/2026/07/15/spacex-spcx-stock-ipo-price.html",
+          "score": 39,
+          "author": "abduhl",
+          "commentCount": 7,
+          "publishedAt": "2026-07-15T16:30:41.000Z"
+        },
+        {
+          "platform": "hackernews",
+          "title": "SpaceX built to separate retail investors from their money",
+          "url": "https://seekingalpha.com/news/4613058-spacex-built-to-separate-retail-investors-from-their-money-george-noble",
+          "score": 35,
+          "author": "nothrowaways",
+          "commentCount": 10,
+          "publishedAt": "2026-07-12T20:08:49.000Z"
+        },
+        {
+          "platform": "hackernews",
+          "title": "SpaceX and the myth of independent Wall St research",
+          "url": "https://www.ft.com/content/ce345155-d897-4f49-b7c8-13680e3b5434",
+          "score": 14,
+          "author": "aanet",
+          "commentCount": 3,
+          "publishedAt": "2026-07-17T21:22:05.000Z"
+        },
+        {
+          "platform": "hackernews",
+          "title": "SpaceX shares slide below IPO price for first time as blistering rally unravels",
+          "url": "https://www.reuters.com/legal/transactional/spacex-shares-slide-below-ipo-price-blistering-rally-unravels-2026-07-15/",
+          "score": 13,
+          "author": "1vuio0pswjnm7",
+          "commentCount": 7,
+          "publishedAt": "2026-07-16T11:22:39.000Z"
+        },
+        {
+          "platform": "hackernews",
+          "title": "Starship's Thirteenth Flight Test",
+          "url": "https://www.spacex.com/launches/starship-flight-13",
+          "score": 10,
+          "author": "janpot",
+          "commentCount": 4,
+          "publishedAt": "2026-07-16T18:25:04.000Z"
+        },
+        {
+          "platform": "hackernews",
+          "title": "SpaceX Starship Flight 13 scrubbed",
+          "url": "https://x.com/i/broadcasts/1MKgNNXAZdmxL",
+          "score": 10,
+          "author": "elinear",
+          "commentCount": 2,
+          "publishedAt": "2026-07-16T22:58:02.000Z"
+        },
+        {
+          "platform": "hackernews",
+          "title": "SpaceX sell-off wipes $1T from Elon Musk's rocket group",
+          "url": "https://www.ft.com/content/94959f40-1874-4ece-b629-b18f43aa3ede",
+          "score": 10,
+          "author": "JumpCrisscross",
+          "commentCount": 1,
+          "publishedAt": "2026-07-15T21:25:57.000Z"
+        }
+      ],
+      "relatedConceptSlugs": [
+        "extraterrestrial-regolith-derived-atmospheric-entry-heat-shields",
+        "phase-i-final-report-nasa-institute-for-advanced-concepts-combined-heat-shield-a"
+      ],
+      "resonance": 43,
+      "quadrant": "hype-cycle",
+      "resonanceSignals": {
+        "conceptDepth": 0.5113915944693856,
+        "editorial": 0.4,
+        "connections": 0,
+        "convergence": 0.35,
+        "deepTopic": 1,
+        "pantheon": 0.92,
+        "graveyard": 0
+      }
+    },
+    {
       "slug": "space-debris",
       "label": "Space Debris",
       "score": 1402,
-      "delta": 17,
-      "direction": "up",
+      "delta": 0,
+      "direction": "steady",
       "mentions": 8,
       "sources": [
         {
@@ -1807,7 +1940,7 @@
         "niac-phase-i-final-report-on-orbit-collision"
       ],
       "resonance": 20,
-      "quadrant": "hype-cycle",
+      "quadrant": "dead-zone",
       "resonanceSignals": {
         "conceptDepth": 0.3868528072345416,
         "editorial": 0.4,
@@ -1815,139 +1948,6 @@
         "convergence": 0,
         "deepTopic": 0,
         "pantheon": 0,
-        "graveyard": 0
-      }
-    },
-    {
-      "slug": "starship",
-      "label": "Starship & SpaceX",
-      "score": 1362,
-      "delta": -9,
-      "direction": "steady",
-      "mentions": 33,
-      "sources": [
-        {
-          "platform": "hackernews",
-          "title": "SpaceX bond worth 10% less than issue price – heading for junk bond status",
-          "url": "https://www.ft.com/content/3a023b95-66c3-41e1-b0ce-df752a499541",
-          "score": 561,
-          "author": "youngtaff",
-          "commentCount": 584,
-          "publishedAt": "2026-07-15T12:59:09.000Z"
-        },
-        {
-          "platform": "hackernews",
-          "title": "SpaceX stock erases all its gains and slides below IPO price in intraday trading",
-          "url": "https://www.latimes.com/business/story/2026-07-16/spacex-stock-erases-gains-slides-below-ipo-price-in-intraday-trading",
-          "score": 308,
-          "author": "1vuio0pswjnm7",
-          "commentCount": 274,
-          "publishedAt": "2026-07-16T12:02:11.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Saturation-Aware Robust Trajectory Optimization for Reusable Launch Vehicles via Differentiable Physics",
-          "url": "https://arxiv.org/abs/2607.09736",
-          "score": 200,
-          "authors": "Liwei Chen, Tong Qin",
-          "arxivCategory": "cs.RO",
-          "publishedAt": "2026-07-02T14:30:37.000Z"
-        },
-        {
-          "platform": "hackernews",
-          "title": "Short sellers notch $8.7B profit as SpaceX shares dip to IPO price",
-          "url": "https://www.reuters.com/business/media-telecom/short-sellers-rack-up-87-bln-profit-spacex-slips-below-ipo-price-ortex-2026-07-16/",
-          "score": 78,
-          "author": "1vuio0pswjnm7",
-          "commentCount": 44,
-          "publishedAt": "2026-07-17T15:17:54.000Z"
-        },
-        {
-          "platform": "hackernews",
-          "title": "SpaceX stock sinks below $135 IPO price for the first time",
-          "url": "https://www.cnbc.com/2026/07/15/spacex-spcx-stock-ipo-price.html",
-          "score": 38,
-          "author": "abduhl",
-          "commentCount": 7,
-          "publishedAt": "2026-07-15T16:30:41.000Z"
-        },
-        {
-          "platform": "hackernews",
-          "title": "SpaceX built to separate retail investors from their money",
-          "url": "https://seekingalpha.com/news/4613058-spacex-built-to-separate-retail-investors-from-their-money-george-noble",
-          "score": 35,
-          "author": "nothrowaways",
-          "commentCount": 10,
-          "publishedAt": "2026-07-12T20:08:49.000Z"
-        },
-        {
-          "platform": "hackernews",
-          "title": "SpaceX shares slide below IPO price for first time as blistering rally unravels",
-          "url": "https://www.reuters.com/legal/transactional/spacex-shares-slide-below-ipo-price-blistering-rally-unravels-2026-07-15/",
-          "score": 13,
-          "author": "1vuio0pswjnm7",
-          "commentCount": 7,
-          "publishedAt": "2026-07-16T11:22:39.000Z"
-        },
-        {
-          "platform": "hackernews",
-          "title": "Starship's Thirteenth Flight Test",
-          "url": "https://www.spacex.com/launches/starship-flight-13",
-          "score": 10,
-          "author": "janpot",
-          "commentCount": 4,
-          "publishedAt": "2026-07-16T18:25:04.000Z"
-        },
-        {
-          "platform": "hackernews",
-          "title": "SpaceX Starship Flight 13 scrubbed",
-          "url": "https://x.com/i/broadcasts/1MKgNNXAZdmxL",
-          "score": 10,
-          "author": "elinear",
-          "commentCount": 2,
-          "publishedAt": "2026-07-16T22:58:02.000Z"
-        },
-        {
-          "platform": "hackernews",
-          "title": "SpaceX stock drops to a new low and loses $1T in value in a month",
-          "url": "https://www.businessinsider.com/spacex-stock-drops-new-low-ipo-price-starship-launch-scrubbed-2026-7",
-          "score": 10,
-          "author": "01-_-",
-          "commentCount": 3,
-          "publishedAt": "2026-07-17T18:26:02.000Z"
-        },
-        {
-          "platform": "hackernews",
-          "title": "SpaceX sell-off wipes $1T from Elon Musk's rocket group",
-          "url": "https://www.ft.com/content/94959f40-1874-4ece-b629-b18f43aa3ede",
-          "score": 10,
-          "author": "JumpCrisscross",
-          "commentCount": 1,
-          "publishedAt": "2026-07-15T21:25:57.000Z"
-        },
-        {
-          "platform": "hackernews",
-          "title": "SpaceX declared a military target by Iran",
-          "url": "https://finance.yahoo.com/markets/stocks/articles/spacex-spcx-faces-risk-iran-121423559.html",
-          "score": 8,
-          "author": "binyu",
-          "commentCount": 4,
-          "publishedAt": "2026-07-17T14:58:59.000Z"
-        }
-      ],
-      "relatedConceptSlugs": [
-        "extraterrestrial-regolith-derived-atmospheric-entry-heat-shields",
-        "phase-i-final-report-nasa-institute-for-advanced-concepts-combined-heat-shield-a"
-      ],
-      "resonance": 43,
-      "quadrant": "dead-zone",
-      "resonanceSignals": {
-        "conceptDepth": 0.5113915944693856,
-        "editorial": 0.4,
-        "connections": 0,
-        "convergence": 0.35,
-        "deepTopic": 1,
-        "pantheon": 0.92,
         "graveyard": 0
       }
     },
@@ -2166,10 +2166,10 @@
     {
       "slug": "starlink",
       "label": "Starlink & Satellite Internet",
-      "score": 625,
-      "delta": 9,
+      "score": 621,
+      "delta": 6,
       "direction": "steady",
-      "mentions": 19,
+      "mentions": 17,
       "sources": [
         {
           "platform": "arxiv",
@@ -2184,7 +2184,7 @@
           "platform": "hackernews",
           "title": "Satellite Tracker – Live Map of Starlink and 30k Satellites",
           "url": "https://satellitemap.space/",
-          "score": 164,
+          "score": 165,
           "author": "rolph",
           "commentCount": 100,
           "publishedAt": "2026-07-14T01:55:24.000Z"
@@ -2202,9 +2202,9 @@
           "platform": "hackernews",
           "title": "Starlink from 1984",
           "url": "https://nemanjatrifunovic.substack.com/p/starlink-from-1984",
-          "score": 63,
+          "score": 70,
           "author": "ingve",
-          "commentCount": 28,
+          "commentCount": 33,
           "publishedAt": "2026-07-11T23:26:32.000Z"
         },
         {
@@ -2224,15 +2224,6 @@
           "author": "lemonberry",
           "commentCount": 0,
           "publishedAt": "2026-07-13T22:50:04.000Z"
-        },
-        {
-          "platform": "hackernews",
-          "title": "Shooting Starlink: The \"no limits\" partnership between Russia and China",
-          "url": "https://theins.press/en/inv/294635",
-          "score": 9,
-          "author": "uxhacker",
-          "commentCount": 9,
-          "publishedAt": "2026-07-10T19:33:45.000Z"
         },
         {
           "platform": "hackernews",
@@ -2278,6 +2269,15 @@
           "author": "rbanffy",
           "commentCount": 0,
           "publishedAt": "2026-07-16T14:25:47.000Z"
+        },
+        {
+          "platform": "hackernews",
+          "title": "Amazon Leo to power satellite internet for South Africa's largest ISP",
+          "url": "https://www.aboutamazon.com/news/amazon-leo/amazon-leo-south-africa-herotel-evry",
+          "score": 4,
+          "author": "wmf",
+          "commentCount": 0,
+          "publishedAt": "2026-07-15T21:01:41.000Z"
         }
       ],
       "relatedConceptSlugs": [
