@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-21T08:12:18.713Z",
+  "generatedAt": "2026-07-21T19:26:02.618Z",
   "topics": [
     {
       "slug": "black-holes",
@@ -535,10 +535,10 @@
     {
       "slug": "quantum-computing",
       "label": "Quantum Computing",
-      "score": 7209,
+      "score": 7214,
       "delta": 3,
       "direction": "steady",
-      "mentions": 41,
+      "mentions": 42,
       "sources": [
         {
           "platform": "arxiv",
@@ -667,10 +667,10 @@
     {
       "slug": "particle-physics",
       "label": "Particle Physics",
-      "score": 6806,
+      "score": 6800,
       "delta": 3,
       "direction": "steady",
-      "mentions": 36,
+      "mentions": 34,
       "sources": [
         {
           "platform": "arxiv",
@@ -797,10 +797,10 @@
     {
       "slug": "condensed-matter",
       "label": "Condensed Matter",
-      "score": 6201,
+      "score": 6209,
       "delta": 7,
       "direction": "steady",
-      "mentions": 33,
+      "mentions": 34,
       "sources": [
         {
           "platform": "arxiv",
@@ -1725,10 +1725,10 @@
     {
       "slug": "starship",
       "label": "Starship & SpaceX",
-      "score": 1618,
+      "score": 1614,
       "delta": 0,
       "direction": "steady",
-      "mentions": 34,
+      "mentions": 32,
       "sources": [
         {
           "platform": "hackernews",
@@ -1763,7 +1763,7 @@
           "url": "https://www.reuters.com/business/media-telecom/short-sellers-rack-up-87-bln-profit-spacex-slips-below-ipo-price-ortex-2026-07-16/",
           "score": 168,
           "author": "1vuio0pswjnm7",
-          "commentCount": 185,
+          "commentCount": 186,
           "publishedAt": "2026-07-17T15:17:54.000Z"
         },
         {
@@ -1844,7 +1844,7 @@
         "phase-i-final-report-nasa-institute-for-advanced-concepts-combined-heat-shield-a"
       ],
       "resonance": 43,
-      "quadrant": "hype-cycle",
+      "quadrant": "dead-zone",
       "resonanceSignals": {
         "conceptDepth": 0.5113915944693856,
         "editorial": 0.4,
@@ -1858,10 +1858,10 @@
     {
       "slug": "space-debris",
       "label": "Space Debris",
-      "score": 1402,
+      "score": 1400,
       "delta": 0,
       "direction": "steady",
-      "mentions": 8,
+      "mentions": 7,
       "sources": [
         {
           "platform": "arxiv",
@@ -1925,15 +1925,6 @@
           "authors": "Yema Paul, Diogo Sousa, Albert Servitje et al.",
           "arxivCategory": "math.NA",
           "publishedAt": "2026-06-24T14:40:41.000Z"
-        },
-        {
-          "platform": "hackernews",
-          "title": "Astronomers Found a Swarm of Space Junk Threatening Earth's Most Valuable Orbit",
-          "url": "https://gizmodo.com/astronomers-found-a-hidden-swarm-of-space-junk-threatening-earths-most-valuable-orbit-2000785323",
-          "score": 2,
-          "author": "thunderbong",
-          "commentCount": 1,
-          "publishedAt": "2026-07-14T17:06:53.000Z"
         }
       ],
       "relatedConceptSlugs": [
@@ -2206,6 +2197,59 @@
       }
     },
     {
+      "slug": "electric-propulsion",
+      "label": "Electric Propulsion",
+      "score": 405,
+      "delta": 1,
+      "direction": "steady",
+      "mentions": 3,
+      "sources": [
+        {
+          "platform": "arxiv",
+          "title": "Simulation Study of Coupling Effects Between a Hall Thruster and a Power Processing Unit",
+          "url": "https://arxiv.org/abs/2606.28743",
+          "score": 200,
+          "authors": "Zirui Fan, Yinjian Zhao, Jingjing Li et al.",
+          "arxivCategory": "physics.plasm-ph",
+          "publishedAt": "2026-06-27T05:39:11.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "A possible approach to overcome the saturation of the neutron yield in a Plasma Focus and to achieve breakeven",
+          "url": "https://arxiv.org/abs/2606.27108",
+          "score": 200,
+          "authors": "Andrea Di Vita",
+          "arxivCategory": "physics.plasm-ph",
+          "publishedAt": "2026-06-25T14:44:09.000Z"
+        },
+        {
+          "platform": "hackernews",
+          "title": "GE Aerospace flies hybrid-electric propulsion above 30k feet",
+          "url": "https://www.geaerospace.com/news/press-releases/ge-aerospace-partners-nasa-beta-technologies-and-boeing-worlds-first-high-altitude",
+          "score": 5,
+          "author": "MarcoDewey",
+          "commentCount": 0,
+          "publishedAt": "2026-07-21T16:13:54.000Z"
+        }
+      ],
+      "relatedConceptSlugs": [
+        "electric-sail-propulsion",
+        "e-glider",
+        "nasa-innovative-advanced-concepts-niac-heliopause-electrostatic-rapid-transit-sy"
+      ],
+      "resonance": 50,
+      "quadrant": "sleeping-giant",
+      "resonanceSignals": {
+        "conceptDepth": 0.6131471927654584,
+        "editorial": 0.4,
+        "connections": 0,
+        "convergence": 0.575,
+        "deepTopic": 1,
+        "pantheon": 0.92,
+        "graveyard": 0
+      }
+    },
+    {
       "slug": "mars",
       "label": "Mars Exploration",
       "score": 400,
@@ -2294,56 +2338,12 @@
       }
     },
     {
-      "slug": "electric-propulsion",
-      "label": "Electric Propulsion",
-      "score": 400,
-      "delta": 0,
-      "direction": "steady",
-      "mentions": 2,
-      "sources": [
-        {
-          "platform": "arxiv",
-          "title": "Simulation Study of Coupling Effects Between a Hall Thruster and a Power Processing Unit",
-          "url": "https://arxiv.org/abs/2606.28743",
-          "score": 200,
-          "authors": "Zirui Fan, Yinjian Zhao, Jingjing Li et al.",
-          "arxivCategory": "physics.plasm-ph",
-          "publishedAt": "2026-06-27T05:39:11.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "A possible approach to overcome the saturation of the neutron yield in a Plasma Focus and to achieve breakeven",
-          "url": "https://arxiv.org/abs/2606.27108",
-          "score": 200,
-          "authors": "Andrea Di Vita",
-          "arxivCategory": "physics.plasm-ph",
-          "publishedAt": "2026-06-25T14:44:09.000Z"
-        }
-      ],
-      "relatedConceptSlugs": [
-        "electric-sail-propulsion",
-        "e-glider",
-        "nasa-innovative-advanced-concepts-niac-heliopause-electrostatic-rapid-transit-sy"
-      ],
-      "resonance": 50,
-      "quadrant": "sleeping-giant",
-      "resonanceSignals": {
-        "conceptDepth": 0.6131471927654584,
-        "editorial": 0.4,
-        "connections": 0,
-        "convergence": 0.575,
-        "deepTopic": 1,
-        "pantheon": 0.92,
-        "graveyard": 0
-      }
-    },
-    {
       "slug": "starlink",
       "label": "Starlink & Satellite Internet",
-      "score": 355,
-      "delta": -35,
+      "score": 359,
+      "delta": -32,
       "direction": "down",
-      "mentions": 12,
+      "mentions": 13,
       "sources": [
         {
           "platform": "arxiv",
@@ -2410,6 +2410,15 @@
         },
         {
           "platform": "hackernews",
+          "title": "Kuiper Q-Q plot: are these the same?",
+          "url": "https://entropicthoughts.com/kuiper-q-q-plot",
+          "score": 4,
+          "author": "ibobev",
+          "commentCount": 0,
+          "publishedAt": "2026-07-21T08:57:32.000Z"
+        },
+        {
+          "platform": "hackernews",
           "title": "Starlink from 1984 – By Nemanja Trifunovic",
           "url": "https://nemanjatrifunovic.substack.com/p/starlink-from-1984",
           "score": 3,
@@ -2443,15 +2452,6 @@
           "author": "toomuchtodo",
           "commentCount": 1,
           "publishedAt": "2026-07-14T20:17:26.000Z"
-        },
-        {
-          "platform": "hackernews",
-          "title": "Starlink V3 Satalites",
-          "url": "https://starlink.com/updates/starlink-version-3-satellites",
-          "score": 1,
-          "author": "jtraglia",
-          "commentCount": 1,
-          "publishedAt": "2026-07-17T08:37:36.000Z"
         }
       ],
       "relatedConceptSlugs": [
@@ -2466,40 +2466,6 @@
         "convergence": 0,
         "deepTopic": 0,
         "pantheon": 0,
-        "graveyard": 0
-      }
-    },
-    {
-      "slug": "warp-drives",
-      "label": "Warp Drives & Exotic Physics",
-      "score": 200,
-      "delta": -1,
-      "direction": "steady",
-      "mentions": 1,
-      "sources": [
-        {
-          "platform": "arxiv",
-          "title": "Steering a warp drive without exotic matter",
-          "url": "https://arxiv.org/abs/2606.22531",
-          "score": 200,
-          "authors": "An T. Le",
-          "arxivCategory": "gr-qc",
-          "publishedAt": "2026-06-21T14:42:06.000Z"
-        }
-      ],
-      "relatedConceptSlugs": [
-        "procsima",
-        "extreme-metamaterial-solar-sails-for-breakthrough-space-exploration"
-      ],
-      "resonance": 53,
-      "quadrant": "sleeping-giant",
-      "resonanceSignals": {
-        "conceptDepth": 0.6991803252671503,
-        "editorial": 1,
-        "connections": 0.3333333333333333,
-        "convergence": 0.15,
-        "deepTopic": 0,
-        "pantheon": 0.92,
         "graveyard": 0
       }
     },
@@ -2650,6 +2616,30 @@
         "convergence": 0.15,
         "deepTopic": 0.8,
         "pantheon": 0.16,
+        "graveyard": 0
+      }
+    },
+    {
+      "slug": "warp-drives",
+      "label": "Warp Drives & Exotic Physics",
+      "score": 0,
+      "delta": 0,
+      "direction": "steady",
+      "mentions": 0,
+      "sources": [],
+      "relatedConceptSlugs": [
+        "procsima",
+        "extreme-metamaterial-solar-sails-for-breakthrough-space-exploration"
+      ],
+      "resonance": 53,
+      "quadrant": "sleeping-giant",
+      "resonanceSignals": {
+        "conceptDepth": 0.6991803252671503,
+        "editorial": 1,
+        "connections": 0.3333333333333333,
+        "convergence": 0.15,
+        "deepTopic": 0,
+        "pantheon": 0.92,
         "graveyard": 0
       }
     }
