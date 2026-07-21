@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-20T08:44:01.845Z",
+  "generatedAt": "2026-07-20T19:48:36.567Z",
   "topics": [
     {
       "slug": "space-telescopes",
@@ -535,10 +535,10 @@
     {
       "slug": "quantum-computing",
       "label": "Quantum Computing",
-      "score": 7007,
+      "score": 7009,
       "delta": -10,
       "direction": "steady",
-      "mentions": 39,
+      "mentions": 40,
       "sources": [
         {
           "platform": "arxiv",
@@ -668,7 +668,7 @@
       "slug": "particle-physics",
       "label": "Particle Physics",
       "score": 6606,
-      "delta": -3,
+      "delta": 0,
       "direction": "steady",
       "mentions": 35,
       "sources": [
@@ -1062,8 +1062,8 @@
     {
       "slug": "condensed-matter",
       "label": "Condensed Matter",
-      "score": 5798,
-      "delta": 0,
+      "score": 5800,
+      "delta": 4,
       "direction": "steady",
       "mentions": 31,
       "sources": [
@@ -1194,18 +1194,18 @@
     {
       "slug": "exoplanets",
       "label": "Exoplanets",
-      "score": 3893,
+      "score": 3896,
       "delta": 0,
       "direction": "steady",
-      "mentions": 23,
+      "mentions": 22,
       "sources": [
         {
           "platform": "hackernews",
           "title": "First atmosphere found on Earth-like planet in habitable zone of distant star",
           "url": "https://www.bbc.com/news/articles/cy4kdd1e0ejo",
-          "score": 532,
+          "score": 536,
           "author": "neversaydie",
-          "commentCount": 306,
+          "commentCount": 310,
           "publishedAt": "2026-07-17T14:06:13.000Z"
         },
         {
@@ -1725,10 +1725,10 @@
     {
       "slug": "starship",
       "label": "Starship & SpaceX",
-      "score": 1614,
-      "delta": -1,
+      "score": 1615,
+      "delta": -2,
       "direction": "steady",
-      "mentions": 35,
+      "mentions": 34,
       "sources": [
         {
           "platform": "hackernews",
@@ -1743,7 +1743,7 @@
           "platform": "hackernews",
           "title": "SpaceX stock erases all its gains and slides below IPO price in intraday trading",
           "url": "https://www.latimes.com/business/story/2026-07-16/spacex-stock-erases-gains-slides-below-ipo-price-in-intraday-trading",
-          "score": 312,
+          "score": 313,
           "author": "1vuio0pswjnm7",
           "commentCount": 282,
           "publishedAt": "2026-07-16T12:02:11.000Z"
@@ -1763,14 +1763,14 @@
           "url": "https://www.reuters.com/business/media-telecom/short-sellers-rack-up-87-bln-profit-spacex-slips-below-ipo-price-ortex-2026-07-16/",
           "score": 167,
           "author": "1vuio0pswjnm7",
-          "commentCount": 183,
+          "commentCount": 184,
           "publishedAt": "2026-07-17T15:17:54.000Z"
         },
         {
           "platform": "hackernews",
           "title": "SpaceX stock drops to a new low and loses $1T in value in a month",
           "url": "https://www.businessinsider.com/spacex-stock-drops-new-low-ipo-price-starship-launch-scrubbed-2026-7",
-          "score": 72,
+          "score": 73,
           "author": "01-_-",
           "commentCount": 67,
           "publishedAt": "2026-07-17T18:26:02.000Z"
@@ -1781,7 +1781,7 @@
           "url": "https://www.ft.com/content/2b96703d-440b-46db-8d86-9fff9ecc59d5",
           "score": 55,
           "author": "ethanhawksley",
-          "commentCount": 28,
+          "commentCount": 30,
           "publishedAt": "2026-07-18T15:26:13.000Z"
         },
         {
@@ -2105,7 +2105,7 @@
       "slug": "dyson-spheres",
       "label": "Dyson Spheres",
       "score": 600,
-      "delta": -1,
+      "delta": 0,
       "direction": "steady",
       "mentions": 3,
       "sources": [
@@ -2155,10 +2155,10 @@
     {
       "slug": "starlink",
       "label": "Starlink & Satellite Internet",
-      "score": 546,
-      "delta": -1,
+      "score": 531,
+      "delta": -3,
       "direction": "steady",
-      "mentions": 15,
+      "mentions": 14,
       "sources": [
         {
           "platform": "arxiv",
@@ -2186,15 +2186,6 @@
           "author": "r2sk5t",
           "commentCount": 218,
           "publishedAt": "2026-07-15T16:22:43.000Z"
-        },
-        {
-          "platform": "hackernews",
-          "title": "Musk's Starlink Socks Customers with $1500 'High Demand' Surcharge",
-          "url": "https://www.techdirt.com/2026/07/13/musks-starlink-socks-customers-with-1500-high-demand-surcharge/",
-          "score": 15,
-          "author": "defrost",
-          "commentCount": 0,
-          "publishedAt": "2026-07-13T12:44:00.000Z"
         },
         {
           "platform": "hackernews",
@@ -2267,6 +2258,15 @@
           "author": "ryanmerket",
           "commentCount": 0,
           "publishedAt": "2026-07-19T02:26:15.000Z"
+        },
+        {
+          "platform": "hackernews",
+          "title": "Starlink 'Gen 3' to Span 100K Satellites, for Gigabit Broadband but Also AI",
+          "url": "https://uk.pcmag.com/networking/166041/starlink-gen-3-to-span-100k-satellites-for-gigabit-broadband-but-also-ai",
+          "score": 2,
+          "author": "rbanffy",
+          "commentCount": 1,
+          "publishedAt": "2026-07-14T21:00:01.000Z"
         }
       ],
       "relatedConceptSlugs": [
@@ -2429,8 +2429,8 @@
       "slug": "electric-propulsion",
       "label": "Electric Propulsion",
       "score": 400,
-      "delta": -33,
-      "direction": "down",
+      "delta": 0,
+      "direction": "steady",
       "mentions": 2,
       "sources": [
         {
