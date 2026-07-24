@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-24T08:11:35.222Z",
+  "generatedAt": "2026-07-24T19:29:30.528Z",
   "topics": [
     {
       "slug": "black-holes",
@@ -535,10 +535,10 @@
     {
       "slug": "quantum-computing",
       "label": "Quantum Computing",
-      "score": 7624,
+      "score": 7611,
       "delta": 0,
       "direction": "steady",
-      "mentions": 43,
+      "mentions": 42,
       "sources": [
         {
           "platform": "arxiv",
@@ -667,10 +667,10 @@
     {
       "slug": "particle-physics",
       "label": "Particle Physics",
-      "score": 7000,
-      "delta": 0,
+      "score": 6800,
+      "delta": -3,
       "direction": "steady",
-      "mentions": 35,
+      "mentions": 34,
       "sources": [
         {
           "platform": "arxiv",
@@ -707,15 +707,6 @@
           "authors": "Dorian W. P. Amaral, Lei Cong, Tim M. Fuchs et al.",
           "arxivCategory": "hep-ph",
           "publishedAt": "2026-06-29T18:10:17.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Magnetic monopole plasma oscillations and implications for TeV blazars",
-          "url": "https://arxiv.org/abs/2606.26229",
-          "score": 200,
-          "authors": "Mariia Khelashvili, Takeshi Kobayashi, Andrew J. Long",
-          "arxivCategory": "hep-ph",
-          "publishedAt": "2026-06-24T18:00:01.000Z"
         },
         {
           "platform": "arxiv",
@@ -779,6 +770,15 @@
           "authors": "Xiao-Jie Hu, Hai-Bin Zhang, Tai-Fu Feng",
           "arxivCategory": "hep-ph",
           "publishedAt": "2026-07-16T15:20:24.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "$V/H$+Jet Production with the Cambridge/Aachen Algorithm",
+          "url": "https://arxiv.org/abs/2607.13962",
+          "score": 200,
+          "authors": "K. Khelifa-Kerfa",
+          "arxivCategory": "hep-ph",
+          "publishedAt": "2026-07-15T15:48:06.000Z"
         }
       ],
       "relatedConceptSlugs": [],
@@ -797,18 +797,18 @@
     {
       "slug": "condensed-matter",
       "label": "Condensed Matter",
-      "score": 6278,
-      "delta": -8,
+      "score": 6081,
+      "delta": -9,
       "direction": "steady",
-      "mentions": 35,
+      "mentions": 34,
       "sources": [
         {
           "platform": "hackernews",
           "title": "Roblox Officially Supports GrapheneOS",
           "url": "https://en.help.roblox.com/hc/en-us/articles/49648939984916-Android-Remote-Attestation",
-          "score": 257,
+          "score": 260,
           "author": "Cider9986",
-          "commentCount": 85,
+          "commentCount": 101,
           "publishedAt": "2026-07-21T16:39:30.000Z"
         },
         {
@@ -837,15 +837,6 @@
           "authors": "Lanke Fu, Alan A. Kaptanoglu",
           "arxivCategory": "physics.plasm-ph",
           "publishedAt": "2026-07-07T02:11:39.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Dispersion Suppression for Wedge-Based Final Cooling at a 10 TeV Muon Collider",
-          "url": "https://arxiv.org/abs/2606.25944",
-          "score": 200,
-          "authors": "Inci Karaaslan, Karri DiPetrillo, David Neuffer et al.",
-          "arxivCategory": "physics.acc-ph",
-          "publishedAt": "2026-06-24T15:20:29.000Z"
         },
         {
           "platform": "arxiv",
@@ -909,6 +900,15 @@
           "authors": "Yogesh Kumar, Pushpendra Gupta, Xinyan Li et al.",
           "arxivCategory": "cond-mat.mes-hall",
           "publishedAt": "2026-07-15T16:58:29.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Polariton Topological Insulators with Disclinations",
+          "url": "https://arxiv.org/abs/2607.13948",
+          "score": 200,
+          "authors": "Khalil Sabour, Yaroslav V. Kartashov",
+          "arxivCategory": "physics.optics",
+          "publishedAt": "2026-07-15T15:38:40.000Z"
         }
       ],
       "relatedConceptSlugs": [
@@ -929,7 +929,7 @@
     {
       "slug": "dark-matter",
       "label": "Dark Matter & Dark Energy",
-      "score": 6021,
+      "score": 6022,
       "delta": 11,
       "direction": "steady",
       "mentions": 35,
@@ -1192,139 +1192,6 @@
       }
     },
     {
-      "slug": "exoplanets",
-      "label": "Exoplanets",
-      "score": 3153,
-      "delta": -10,
-      "direction": "steady",
-      "mentions": 20,
-      "sources": [
-        {
-          "platform": "hackernews",
-          "title": "First atmosphere found on Earth-like planet in habitable zone of distant star",
-          "url": "https://www.bbc.com/news/articles/cy4kdd1e0ejo",
-          "score": 536,
-          "author": "neversaydie",
-          "commentCount": 310,
-          "publishedAt": "2026-07-17T14:06:13.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Optimal mode-sorting coronagraphy: limits of single-moded measurements for the Habitable Worlds Observatory",
-          "url": "https://arxiv.org/abs/2607.17637",
-          "score": 200,
-          "authors": "Yinzi Xin, Sebastiaan Haffert, Rico Landman",
-          "arxivCategory": "astro-ph.IM",
-          "publishedAt": "2026-07-20T07:46:30.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "RedDots: Magnetic field of the nearby active M dwarf GJ 729, and a search for companions",
-          "url": "https://arxiv.org/abs/2607.08050",
-          "score": 200,
-          "authors": "E. L. Brown, S. V. Jeffers, S. C. Marsden et al.",
-          "arxivCategory": "astro-ph.SR",
-          "publishedAt": "2026-07-09T02:00:14.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Exoplanet Detection Using Adaptive Quantum-Optimal Measurement",
-          "url": "https://arxiv.org/abs/2607.06931",
-          "score": 200,
-          "authors": "Hyunsoo Choi, Hyoung Won Baac, Zubin Jacob et al.",
-          "arxivCategory": "physics.optics",
-          "publishedAt": "2026-07-08T02:50:38.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Quantum-optimal coronagraphy with spatial mode sorting for direct exoplanet observations",
-          "url": "https://arxiv.org/abs/2607.02065",
-          "score": 200,
-          "authors": "Yinzi Xin, Sebastiaan Haffert, Yoo Jung Kim et al.",
-          "arxivCategory": "astro-ph.IM",
-          "publishedAt": "2026-07-02T11:58:59.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Magnetic activity in cool stars: manifestations and relevance to exoplanets",
-          "url": "https://arxiv.org/abs/2606.31617",
-          "score": 200,
-          "authors": "E. Işık, A. Valio, A. Strugarek et al.",
-          "arxivCategory": "astro-ph.SR",
-          "publishedAt": "2026-06-30T13:05:31.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "The exozodi spectral effect: Residual habitable zone dust may bias exoEarth characterization",
-          "url": "https://arxiv.org/abs/2607.14329",
-          "score": 200,
-          "authors": "Miles H. Currie, Christopher C. Stark, Eleonora Alei et al.",
-          "arxivCategory": "astro-ph.EP",
-          "publishedAt": "2026-07-15T19:47:30.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Helium escaping from the atmosphere of a nearby rocky exoplanet orbiting in a habitable zone",
-          "url": "https://arxiv.org/abs/2607.14326",
-          "score": 200,
-          "authors": "Collin Cherubim, Shreyas Vissapragada, Tim Cunningham et al.",
-          "arxivCategory": "astro-ph.EP",
-          "publishedAt": "2026-07-15T19:45:28.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Tidal evolution of packed moon systems around an Earth-mass planet",
-          "url": "https://arxiv.org/abs/2607.14323",
-          "score": 200,
-          "authors": "Alan Briseño, Billy Quarles, Marialis Rosario-Franco",
-          "arxivCategory": "astro-ph.EP",
-          "publishedAt": "2026-07-15T19:41:59.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Biosignature detectability on transiting habitable worlds with ELT/ANDES",
-          "url": "https://arxiv.org/abs/2607.12017",
-          "score": 200,
-          "authors": "E. Kurzawa-Ferrandez, A. Bello-Arufe, R. Hu",
-          "arxivCategory": "astro-ph.EP",
-          "publishedAt": "2026-07-13T18:00:01.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Climates of temperate rocky planets with He-dominated atmospheres",
-          "url": "https://arxiv.org/abs/2607.06857",
-          "score": 200,
-          "authors": "Viviane Kuss, Robin Wordsworth, Collin Cherubim et al.",
-          "arxivCategory": "astro-ph.EP",
-          "publishedAt": "2026-07-07T23:18:16.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Formation and evolution pathways of planets. I. Comparison between theory and observations",
-          "url": "https://arxiv.org/abs/2606.31017",
-          "score": 200,
-          "authors": "Yasuhiro Hasegawa, Renyu Hu, Amine Bouzerzour",
-          "arxivCategory": "astro-ph.EP",
-          "publishedAt": "2026-06-30T01:09:23.000Z"
-        }
-      ],
-      "relatedConceptSlugs": [
-        "fluidic-telescope",
-        "orbiting-rainbows"
-      ],
-      "resonance": 51,
-      "quadrant": "real-deal",
-      "resonanceSignals": {
-        "conceptDepth": 0.5113915944693856,
-        "editorial": 1,
-        "connections": 0.3333333333333333,
-        "convergence": 0.15,
-        "deepTopic": 0.8,
-        "pantheon": 0.12,
-        "graveyard": 0
-      }
-    },
-    {
       "slug": "quantum-comms",
       "label": "Quantum Communication",
       "score": 3000,
@@ -1457,10 +1324,143 @@
       }
     },
     {
+      "slug": "exoplanets",
+      "label": "Exoplanets",
+      "score": 2614,
+      "delta": -21,
+      "direction": "down",
+      "mentions": 17,
+      "sources": [
+        {
+          "platform": "arxiv",
+          "title": "Optimal mode-sorting coronagraphy: limits of single-moded measurements for the Habitable Worlds Observatory",
+          "url": "https://arxiv.org/abs/2607.17637",
+          "score": 200,
+          "authors": "Yinzi Xin, Sebastiaan Haffert, Rico Landman",
+          "arxivCategory": "astro-ph.IM",
+          "publishedAt": "2026-07-20T07:46:30.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "RedDots: Magnetic field of the nearby active M dwarf GJ 729, and a search for companions",
+          "url": "https://arxiv.org/abs/2607.08050",
+          "score": 200,
+          "authors": "E. L. Brown, S. V. Jeffers, S. C. Marsden et al.",
+          "arxivCategory": "astro-ph.SR",
+          "publishedAt": "2026-07-09T02:00:14.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Exoplanet Detection Using Adaptive Quantum-Optimal Measurement",
+          "url": "https://arxiv.org/abs/2607.06931",
+          "score": 200,
+          "authors": "Hyunsoo Choi, Hyoung Won Baac, Zubin Jacob et al.",
+          "arxivCategory": "physics.optics",
+          "publishedAt": "2026-07-08T02:50:38.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Quantum-optimal coronagraphy with spatial mode sorting for direct exoplanet observations",
+          "url": "https://arxiv.org/abs/2607.02065",
+          "score": 200,
+          "authors": "Yinzi Xin, Sebastiaan Haffert, Yoo Jung Kim et al.",
+          "arxivCategory": "astro-ph.IM",
+          "publishedAt": "2026-07-02T11:58:59.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Magnetic activity in cool stars: manifestations and relevance to exoplanets",
+          "url": "https://arxiv.org/abs/2606.31617",
+          "score": 200,
+          "authors": "E. Işık, A. Valio, A. Strugarek et al.",
+          "arxivCategory": "astro-ph.SR",
+          "publishedAt": "2026-06-30T13:05:31.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "The exozodi spectral effect: Residual habitable zone dust may bias exoEarth characterization",
+          "url": "https://arxiv.org/abs/2607.14329",
+          "score": 200,
+          "authors": "Miles H. Currie, Christopher C. Stark, Eleonora Alei et al.",
+          "arxivCategory": "astro-ph.EP",
+          "publishedAt": "2026-07-15T19:47:30.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Helium escaping from the atmosphere of a nearby rocky exoplanet orbiting in a habitable zone",
+          "url": "https://arxiv.org/abs/2607.14326",
+          "score": 200,
+          "authors": "Collin Cherubim, Shreyas Vissapragada, Tim Cunningham et al.",
+          "arxivCategory": "astro-ph.EP",
+          "publishedAt": "2026-07-15T19:45:28.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Tidal evolution of packed moon systems around an Earth-mass planet",
+          "url": "https://arxiv.org/abs/2607.14323",
+          "score": 200,
+          "authors": "Alan Briseño, Billy Quarles, Marialis Rosario-Franco",
+          "arxivCategory": "astro-ph.EP",
+          "publishedAt": "2026-07-15T19:41:59.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Biosignature detectability on transiting habitable worlds with ELT/ANDES",
+          "url": "https://arxiv.org/abs/2607.12017",
+          "score": 200,
+          "authors": "E. Kurzawa-Ferrandez, A. Bello-Arufe, R. Hu",
+          "arxivCategory": "astro-ph.EP",
+          "publishedAt": "2026-07-13T18:00:01.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Climates of temperate rocky planets with He-dominated atmospheres",
+          "url": "https://arxiv.org/abs/2607.06857",
+          "score": 200,
+          "authors": "Viviane Kuss, Robin Wordsworth, Collin Cherubim et al.",
+          "arxivCategory": "astro-ph.EP",
+          "publishedAt": "2026-07-07T23:18:16.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Formation and evolution pathways of planets. I. Comparison between theory and observations",
+          "url": "https://arxiv.org/abs/2606.31017",
+          "score": 200,
+          "authors": "Yasuhiro Hasegawa, Renyu Hu, Amine Bouzerzour",
+          "arxivCategory": "astro-ph.EP",
+          "publishedAt": "2026-06-30T01:09:23.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Differentiable design of the PIAA-ZWFS: a flexible wavefront sensor that approaches the fundamental limit",
+          "url": "https://arxiv.org/abs/2606.28136",
+          "score": 200,
+          "authors": "A. K. Taras, S. Y. Haffert, L. Desdoigts",
+          "arxivCategory": "astro-ph.IM",
+          "publishedAt": "2026-06-26T14:36:12.000Z"
+        }
+      ],
+      "relatedConceptSlugs": [
+        "fluidic-telescope",
+        "orbiting-rainbows"
+      ],
+      "resonance": 51,
+      "quadrant": "real-deal",
+      "resonanceSignals": {
+        "conceptDepth": 0.5113915944693856,
+        "editorial": 1,
+        "connections": 0.3333333333333333,
+        "convergence": 0.15,
+        "deepTopic": 0.8,
+        "pantheon": 0.12,
+        "graveyard": 0
+      }
+    },
+    {
       "slug": "astrobiology",
       "label": "Astrobiology",
       "score": 2400,
-      "delta": -8,
+      "delta": 0,
       "direction": "steady",
       "mentions": 12,
       "sources": [
@@ -1716,10 +1716,10 @@
     {
       "slug": "space-debris",
       "label": "Space Debris",
-      "score": 1200,
-      "delta": -14,
-      "direction": "steady",
-      "mentions": 6,
+      "score": 1000,
+      "delta": -17,
+      "direction": "down",
+      "mentions": 5,
       "sources": [
         {
           "platform": "arxiv",
@@ -1765,15 +1765,6 @@
           "authors": "Yacob Medhin, Simone Servadio",
           "arxivCategory": "astro-ph.EP",
           "publishedAt": "2026-07-10T17:29:38.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "A Physics-Informed Statistical Learning Model for Long-Term Fragmentation Cloud Propagation",
-          "url": "https://arxiv.org/abs/2606.25893",
-          "score": 200,
-          "authors": "Yema Paul, Diogo Sousa, Albert Servitje et al.",
-          "arxivCategory": "math.NA",
-          "publishedAt": "2026-06-24T14:40:41.000Z"
         }
       ],
       "relatedConceptSlugs": [
@@ -1794,10 +1785,10 @@
     {
       "slug": "fusion-propulsion",
       "label": "Fusion Propulsion",
-      "score": 1000,
-      "delta": 0,
-      "direction": "steady",
-      "mentions": 5,
+      "score": 800,
+      "delta": -20,
+      "direction": "down",
+      "mentions": 4,
       "sources": [
         {
           "platform": "arxiv",
@@ -1834,15 +1825,6 @@
           "authors": "Stefania Böhnlein, Fanny Böse, Christian von Hirschhausen et al.",
           "arxivCategory": "econ.GN",
           "publishedAt": "2026-06-25T02:21:51.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Single-Shot Intensity-Correlation Diffractive X-ray Imaging of ICF Plasmas",
-          "url": "https://arxiv.org/abs/2606.26198",
-          "score": 200,
-          "authors": "Kenan Qu, Daniel Bhatti, Nathaniel J. Fisch",
-          "arxivCategory": "physics.plasm-ph",
-          "publishedAt": "2026-06-24T16:11:43.000Z"
         }
       ],
       "relatedConceptSlugs": [
@@ -1857,139 +1839,6 @@
         "editorial": 0.7,
         "connections": 0,
         "convergence": 0.975,
-        "deepTopic": 1,
-        "pantheon": 0.92,
-        "graveyard": 0
-      }
-    },
-    {
-      "slug": "starship",
-      "label": "Starship & SpaceX",
-      "score": 648,
-      "delta": -35,
-      "direction": "down",
-      "mentions": 23,
-      "sources": [
-        {
-          "platform": "arxiv",
-          "title": "Saturation-Aware Robust Trajectory Optimization for Reusable Launch Vehicles via Differentiable Physics",
-          "url": "https://arxiv.org/abs/2607.09736",
-          "score": 200,
-          "authors": "Liwei Chen, Tong Qin",
-          "arxivCategory": "cs.RO",
-          "publishedAt": "2026-07-02T14:30:37.000Z"
-        },
-        {
-          "platform": "hackernews",
-          "title": "Short sellers notch $8.7B profit as SpaceX shares dip to IPO price",
-          "url": "https://www.reuters.com/business/media-telecom/short-sellers-rack-up-87-bln-profit-spacex-slips-below-ipo-price-ortex-2026-07-16/",
-          "score": 168,
-          "author": "1vuio0pswjnm7",
-          "commentCount": 187,
-          "publishedAt": "2026-07-17T15:17:54.000Z"
-        },
-        {
-          "platform": "hackernews",
-          "title": "SpaceX stock drops to a new low and loses $1T in value in a month",
-          "url": "https://www.businessinsider.com/spacex-stock-drops-new-low-ipo-price-starship-launch-scrubbed-2026-7",
-          "score": 74,
-          "author": "01-_-",
-          "commentCount": 67,
-          "publishedAt": "2026-07-17T18:26:02.000Z"
-        },
-        {
-          "platform": "hackernews",
-          "title": "Traders are increasingly betting against SpaceX just weeks after IPO",
-          "url": "https://www.ft.com/content/2b96703d-440b-46db-8d86-9fff9ecc59d5",
-          "score": 55,
-          "author": "ethanhawksley",
-          "commentCount": 30,
-          "publishedAt": "2026-07-18T15:26:13.000Z"
-        },
-        {
-          "platform": "hackernews",
-          "title": "SpaceX and the myth of independent Wall St research",
-          "url": "https://www.ft.com/content/ce345155-d897-4f49-b7c8-13680e3b5434",
-          "score": 49,
-          "author": "JumpCrisscross",
-          "commentCount": 47,
-          "publishedAt": "2026-07-18T20:13:56.000Z"
-        },
-        {
-          "platform": "hackernews",
-          "title": "SpaceX and the myth of independent Wall St research",
-          "url": "https://www.ft.com/content/ce345155-d897-4f49-b7c8-13680e3b5434",
-          "score": 14,
-          "author": "aanet",
-          "commentCount": 3,
-          "publishedAt": "2026-07-17T21:22:05.000Z"
-        },
-        {
-          "platform": "hackernews",
-          "title": "Short positions in SpaceX reach 32% of float",
-          "url": "https://www.cnbc.com/2026/07/21/bets-against-spacex-grow-to-32percent-of-float-as-elon-musk-warns-short-sellers-wont-survive.html",
-          "score": 11,
-          "author": "darth_avocado",
-          "commentCount": 4,
-          "publishedAt": "2026-07-21T21:11:30.000Z"
-        },
-        {
-          "platform": "hackernews",
-          "title": "Elon Musk Runs from Interview at Last Minute as SpaceX Stock Crashed [video]",
-          "url": "https://www.youtube.com/shorts/TFpF7ZzHc3w",
-          "score": 10,
-          "author": "root-parent",
-          "commentCount": 3,
-          "publishedAt": "2026-07-18T20:30:33.000Z"
-        },
-        {
-          "platform": "hackernews",
-          "title": "Unplanned impact: NASA says SpaceX rocket parts could hit Moon",
-          "url": "https://www.euronews.com/my-europe/2026/07/20/unplanned-impact-nasa-says-spacex-rocket-parts-could-hit-moon",
-          "score": 9,
-          "author": "devonnull",
-          "commentCount": 3,
-          "publishedAt": "2026-07-20T20:13:26.000Z"
-        },
-        {
-          "platform": "hackernews",
-          "title": "SpaceX IPO Earns Millions for US Small Business Administration Head",
-          "url": "https://www.reuters.com/business/media-telecom/spacex-ipo-earns-millions-us-small-business-administration-head-kelly-loeffler-2026-07-17/",
-          "score": 9,
-          "author": "1vuio0pswjnm7",
-          "commentCount": 0,
-          "publishedAt": "2026-07-17T13:58:44.000Z"
-        },
-        {
-          "platform": "hackernews",
-          "title": "SpaceX declared a military target by Iran",
-          "url": "https://finance.yahoo.com/markets/stocks/articles/spacex-spcx-faces-risk-iran-121423559.html",
-          "score": 8,
-          "author": "binyu",
-          "commentCount": 4,
-          "publishedAt": "2026-07-17T14:58:59.000Z"
-        },
-        {
-          "platform": "hackernews",
-          "title": "SpaceX scrubs Starship launch after some of its engines didn't start",
-          "url": "https://arstechnica.com/space/2026/07/spacex-scrubs-starship-launch-after-some-of-its-engines-didnt-start/",
-          "score": 6,
-          "author": "rbanffy",
-          "commentCount": 0,
-          "publishedAt": "2026-07-17T09:57:50.000Z"
-        }
-      ],
-      "relatedConceptSlugs": [
-        "extraterrestrial-regolith-derived-atmospheric-entry-heat-shields",
-        "phase-i-final-report-nasa-institute-for-advanced-concepts-combined-heat-shield-a"
-      ],
-      "resonance": 43,
-      "quadrant": "dead-zone",
-      "resonanceSignals": {
-        "conceptDepth": 0.5113915944693856,
-        "editorial": 0.4,
-        "connections": 0,
-        "convergence": 0.35,
         "deepTopic": 1,
         "pantheon": 0.92,
         "graveyard": 0
@@ -2042,6 +1891,139 @@
         "connections": 0,
         "convergence": 0,
         "deepTopic": 0,
+        "pantheon": 0.92,
+        "graveyard": 0
+      }
+    },
+    {
+      "slug": "starship",
+      "label": "Starship & SpaceX",
+      "score": 412,
+      "delta": -38,
+      "direction": "down",
+      "mentions": 20,
+      "sources": [
+        {
+          "platform": "arxiv",
+          "title": "Saturation-Aware Robust Trajectory Optimization for Reusable Launch Vehicles via Differentiable Physics",
+          "url": "https://arxiv.org/abs/2607.09736",
+          "score": 200,
+          "authors": "Liwei Chen, Tong Qin",
+          "arxivCategory": "cs.RO",
+          "publishedAt": "2026-07-02T14:30:37.000Z"
+        },
+        {
+          "platform": "hackernews",
+          "title": "Traders are increasingly betting against SpaceX just weeks after IPO",
+          "url": "https://www.ft.com/content/2b96703d-440b-46db-8d86-9fff9ecc59d5",
+          "score": 55,
+          "author": "ethanhawksley",
+          "commentCount": 30,
+          "publishedAt": "2026-07-18T15:26:13.000Z"
+        },
+        {
+          "platform": "hackernews",
+          "title": "SpaceX and the myth of independent Wall St research",
+          "url": "https://www.ft.com/content/ce345155-d897-4f49-b7c8-13680e3b5434",
+          "score": 49,
+          "author": "JumpCrisscross",
+          "commentCount": 47,
+          "publishedAt": "2026-07-18T20:13:56.000Z"
+        },
+        {
+          "platform": "hackernews",
+          "title": "SpaceX and the myth of independent Wall St research",
+          "url": "https://www.ft.com/content/ce345155-d897-4f49-b7c8-13680e3b5434",
+          "score": 14,
+          "author": "aanet",
+          "commentCount": 3,
+          "publishedAt": "2026-07-17T21:22:05.000Z"
+        },
+        {
+          "platform": "hackernews",
+          "title": "SpaceX at $100 Would Imply Zero AI Value, Morgan Stanley Says",
+          "url": "https://www.bloomberg.com/news/articles/2026-07-24/spacex-at-100-would-imply-zero-ai-value-says-morgan-stanley",
+          "score": 13,
+          "author": "toomuchtodo",
+          "commentCount": 10,
+          "publishedAt": "2026-07-24T18:34:16.000Z"
+        },
+        {
+          "platform": "hackernews",
+          "title": "Reality Bites Elon Musk and His Tesla, SpaceX Believers",
+          "url": "https://www.wsj.com/finance/stocks/reality-bites-elon-musk-and-his-tesla-spacex-believers-1b639591",
+          "score": 13,
+          "author": "doener",
+          "commentCount": 0,
+          "publishedAt": "2026-07-24T10:59:51.000Z"
+        },
+        {
+          "platform": "hackernews",
+          "title": "Short positions in SpaceX reach 32% of float",
+          "url": "https://www.cnbc.com/2026/07/21/bets-against-spacex-grow-to-32percent-of-float-as-elon-musk-warns-short-sellers-wont-survive.html",
+          "score": 11,
+          "author": "darth_avocado",
+          "commentCount": 4,
+          "publishedAt": "2026-07-21T21:11:30.000Z"
+        },
+        {
+          "platform": "hackernews",
+          "title": "Elon Musk Runs from Interview at Last Minute as SpaceX Stock Crashed [video]",
+          "url": "https://www.youtube.com/shorts/TFpF7ZzHc3w",
+          "score": 10,
+          "author": "root-parent",
+          "commentCount": 3,
+          "publishedAt": "2026-07-18T20:30:33.000Z"
+        },
+        {
+          "platform": "hackernews",
+          "title": "Unplanned impact: NASA says SpaceX rocket parts could hit Moon",
+          "url": "https://www.euronews.com/my-europe/2026/07/20/unplanned-impact-nasa-says-spacex-rocket-parts-could-hit-moon",
+          "score": 9,
+          "author": "devonnull",
+          "commentCount": 3,
+          "publishedAt": "2026-07-20T20:13:26.000Z"
+        },
+        {
+          "platform": "hackernews",
+          "title": "Google Discloses $94.1B in SpaceX Stock, Marking 6% Stake",
+          "url": "https://www.wsj.com/tech/google-discloses-94-1-billion-in-spacex-stock-marking-6-stake-91655d7c",
+          "score": 8,
+          "author": "2OEH8eoCRo0",
+          "commentCount": 0,
+          "publishedAt": "2026-07-23T17:22:12.000Z"
+        },
+        {
+          "platform": "hackernews",
+          "title": "NASA Taps SpaceX's Starlink to Deliver Artemis III Imagery from Orion",
+          "url": "https://www.nasa.gov/blogs/missions/2026/07/16/nasa-taps-spacexs-starlink-to-deliver-artemis-iii-imagery-from-orion/",
+          "score": 6,
+          "author": "connicpu",
+          "commentCount": 0,
+          "publishedAt": "2026-07-17T23:18:06.000Z"
+        },
+        {
+          "platform": "hackernews",
+          "title": "Short sellers notch $15.5B profit as SpaceX shares slip -Ortex",
+          "url": "https://www.reuters.com/business/media-telecom/short-sellers-notch-155-bln-profit-spacex-shares-slip-ortex-2026-07-23/",
+          "score": 4,
+          "author": "1vuio0pswjnm7",
+          "commentCount": 1,
+          "publishedAt": "2026-07-23T13:11:44.000Z"
+        }
+      ],
+      "relatedConceptSlugs": [
+        "extraterrestrial-regolith-derived-atmospheric-entry-heat-shields",
+        "phase-i-final-report-nasa-institute-for-advanced-concepts-combined-heat-shield-a"
+      ],
+      "resonance": 43,
+      "quadrant": "dead-zone",
+      "resonanceSignals": {
+        "conceptDepth": 0.5113915944693856,
+        "editorial": 0.4,
+        "connections": 0,
+        "convergence": 0.35,
+        "deepTopic": 1,
         "pantheon": 0.92,
         "graveyard": 0
       }
@@ -2363,7 +2345,7 @@
       "score": 12,
       "delta": -94,
       "direction": "down",
-      "mentions": 5,
+      "mentions": 4,
       "sources": [
         {
           "platform": "hackernews",
@@ -2394,18 +2376,9 @@
         },
         {
           "platform": "hackernews",
-          "title": "Starlink V3 Satalites",
-          "url": "https://starlink.com/updates/starlink-version-3-satellites",
-          "score": 1,
-          "author": "jtraglia",
-          "commentCount": 1,
-          "publishedAt": "2026-07-17T08:37:36.000Z"
-        },
-        {
-          "platform": "hackernews",
           "title": "Starlink v5 flat vs. v4 flat (standard) dimension and weight comparison",
           "url": "https://starlink.com/bl/support/article/5465736f-fa8d-3ac1-dd3a-7a259d12fa8d",
-          "score": 1,
+          "score": 2,
           "author": "walrus01",
           "commentCount": 0,
           "publishedAt": "2026-07-24T03:47:18.000Z"
