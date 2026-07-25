@@ -1,13 +1,13 @@
 {
-  "generatedAt": "2026-07-24T19:29:30.528Z",
+  "generatedAt": "2026-07-25T07:55:00.477Z",
   "topics": [
     {
       "slug": "black-holes",
       "label": "Black Holes",
-      "score": 9014,
+      "score": 9012,
       "delta": 0,
       "direction": "steady",
-      "mentions": 49,
+      "mentions": 48,
       "sources": [
         {
           "platform": "arxiv",
@@ -137,10 +137,10 @@
     {
       "slug": "space-telescopes",
       "label": "Space Telescopes",
-      "score": 8209,
+      "score": 8204,
       "delta": 0,
       "direction": "steady",
-      "mentions": 44,
+      "mentions": 43,
       "sources": [
         {
           "platform": "arxiv",
@@ -271,7 +271,7 @@
       "slug": "gravitational-waves",
       "label": "Gravitational Waves",
       "score": 8203,
-      "delta": 2,
+      "delta": 0,
       "direction": "steady",
       "mentions": 42,
       "sources": [
@@ -797,8 +797,8 @@
     {
       "slug": "condensed-matter",
       "label": "Condensed Matter",
-      "score": 6081,
-      "delta": -9,
+      "score": 6083,
+      "delta": -3,
       "direction": "steady",
       "mentions": 34,
       "sources": [
@@ -806,7 +806,7 @@
           "platform": "hackernews",
           "title": "Roblox Officially Supports GrapheneOS",
           "url": "https://en.help.roblox.com/hc/en-us/articles/49648939984916-Android-Remote-Attestation",
-          "score": 260,
+          "score": 262,
           "author": "Cider9986",
           "commentCount": 101,
           "publishedAt": "2026-07-21T16:39:30.000Z"
@@ -929,8 +929,8 @@
     {
       "slug": "dark-matter",
       "label": "Dark Matter & Dark Energy",
-      "score": 6022,
-      "delta": 11,
+      "score": 6019,
+      "delta": 0,
       "direction": "steady",
       "mentions": 35,
       "sources": [
@@ -1063,7 +1063,7 @@
       "slug": "cosmology",
       "label": "Cosmology",
       "score": 5801,
-      "delta": -3,
+      "delta": 0,
       "direction": "steady",
       "mentions": 30,
       "sources": [
@@ -1326,10 +1326,10 @@
     {
       "slug": "exoplanets",
       "label": "Exoplanets",
-      "score": 2614,
-      "delta": -21,
+      "score": 2414,
+      "delta": -23,
       "direction": "down",
-      "mentions": 17,
+      "mentions": 16,
       "sources": [
         {
           "platform": "arxiv",
@@ -1592,10 +1592,10 @@
     {
       "slug": "artemis",
       "label": "Artemis & Lunar Return",
-      "score": 2200,
-      "delta": 0,
+      "score": 2000,
+      "delta": -9,
       "direction": "steady",
-      "mentions": 11,
+      "mentions": 10,
       "sources": [
         {
           "platform": "arxiv",
@@ -1686,15 +1686,6 @@
           "authors": "Shuyue Fu, Wenxuan Zhang, Di Wu et al.",
           "arxivCategory": "math.OC",
           "publishedAt": "2026-06-26T15:58:37.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "The Astrodynamics Primer on Cislunar and Translunar Space",
-          "url": "https://arxiv.org/abs/2606.26367",
-          "score": 200,
-          "authors": "Aaron J. Rosengren, Anjali Rawat, Bhanu Kumar et al.",
-          "arxivCategory": "astro-ph.EP",
-          "publishedAt": "2026-06-24T20:27:42.000Z"
         }
       ],
       "relatedConceptSlugs": [
@@ -1785,10 +1776,10 @@
     {
       "slug": "fusion-propulsion",
       "label": "Fusion Propulsion",
-      "score": 800,
-      "delta": -20,
+      "score": 600,
+      "delta": -40,
       "direction": "down",
-      "mentions": 4,
+      "mentions": 3,
       "sources": [
         {
           "platform": "arxiv",
@@ -1816,15 +1807,6 @@
           "authors": "Gyeongha Hwang, Bradley Thomas Wolfe, Naima Naheed",
           "arxivCategory": "cs.CV",
           "publishedAt": "2026-06-26T01:16:51.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Too cheap to meter? A stochastic analysis of projected future fusion costs",
-          "url": "https://arxiv.org/abs/2606.26536",
-          "score": 200,
-          "authors": "Stefania Böhnlein, Fanny Böse, Christian von Hirschhausen et al.",
-          "arxivCategory": "econ.GN",
-          "publishedAt": "2026-06-25T02:21:51.000Z"
         }
       ],
       "relatedConceptSlugs": [
@@ -1898,10 +1880,10 @@
     {
       "slug": "starship",
       "label": "Starship & SpaceX",
-      "score": 412,
-      "delta": -38,
+      "score": 520,
+      "delta": -20,
       "direction": "down",
-      "mentions": 20,
+      "mentions": 19,
       "sources": [
         {
           "platform": "arxiv",
@@ -1911,6 +1893,15 @@
           "authors": "Liwei Chen, Tong Qin",
           "arxivCategory": "cs.RO",
           "publishedAt": "2026-07-02T14:30:37.000Z"
+        },
+        {
+          "platform": "hackernews",
+          "title": "SpaceX Starship Flight 13 livestream [video]",
+          "url": "https://www.spacex.com/launches/starship-flight-13",
+          "score": 108,
+          "author": "cryptoz",
+          "commentCount": 140,
+          "publishedAt": "2026-07-24T22:44:38.000Z"
         },
         {
           "platform": "hackernews",
@@ -1932,27 +1923,18 @@
         },
         {
           "platform": "hackernews",
-          "title": "SpaceX and the myth of independent Wall St research",
-          "url": "https://www.ft.com/content/ce345155-d897-4f49-b7c8-13680e3b5434",
-          "score": 14,
-          "author": "aanet",
-          "commentCount": 3,
-          "publishedAt": "2026-07-17T21:22:05.000Z"
-        },
-        {
-          "platform": "hackernews",
           "title": "SpaceX at $100 Would Imply Zero AI Value, Morgan Stanley Says",
           "url": "https://www.bloomberg.com/news/articles/2026-07-24/spacex-at-100-would-imply-zero-ai-value-says-morgan-stanley",
-          "score": 13,
+          "score": 31,
           "author": "toomuchtodo",
-          "commentCount": 10,
+          "commentCount": 27,
           "publishedAt": "2026-07-24T18:34:16.000Z"
         },
         {
           "platform": "hackernews",
           "title": "Reality Bites Elon Musk and His Tesla, SpaceX Believers",
           "url": "https://www.wsj.com/finance/stocks/reality-bites-elon-musk-and-his-tesla-spacex-believers-1b639591",
-          "score": 13,
+          "score": 14,
           "author": "doener",
           "commentCount": 0,
           "publishedAt": "2026-07-24T10:59:51.000Z"
@@ -1995,12 +1977,12 @@
         },
         {
           "platform": "hackernews",
-          "title": "NASA Taps SpaceX's Starlink to Deliver Artemis III Imagery from Orion",
-          "url": "https://www.nasa.gov/blogs/missions/2026/07/16/nasa-taps-spacexs-starlink-to-deliver-artemis-iii-imagery-from-orion/",
-          "score": 6,
-          "author": "connicpu",
+          "title": "SpaceX Delays Major Flight Test Again in Post-IPO Spotlight",
+          "url": "https://www.bloomberg.com/news/articles/2026-07-23/spacex-attempts-major-flight-test-again-in-post-ipo-spotlight",
+          "score": 5,
+          "author": "1vuio0pswjnm7",
           "commentCount": 0,
-          "publishedAt": "2026-07-17T23:18:06.000Z"
+          "publishedAt": "2026-07-24T13:20:06.000Z"
         },
         {
           "platform": "hackernews",
@@ -2129,8 +2111,8 @@
       "slug": "asteroid-mining",
       "label": "Asteroid Mining",
       "score": 400,
-      "delta": -50,
-      "direction": "down",
+      "delta": 0,
+      "direction": "steady",
       "mentions": 2,
       "sources": [
         {
@@ -2208,8 +2190,8 @@
       "slug": "solar-sails",
       "label": "Solar Sails",
       "score": 200,
-      "delta": -50,
-      "direction": "down",
+      "delta": 0,
+      "direction": "steady",
       "mentions": 1,
       "sources": [
         {
@@ -2242,8 +2224,8 @@
       "slug": "ocean-worlds",
       "label": "Titan & Ocean Worlds",
       "score": 200,
-      "delta": 200,
-      "direction": "up",
+      "delta": 0,
+      "direction": "steady",
       "mentions": 1,
       "sources": [
         {
@@ -2342,11 +2324,20 @@
     {
       "slug": "starlink",
       "label": "Starlink & Satellite Internet",
-      "score": 12,
-      "delta": -94,
-      "direction": "down",
-      "mentions": 4,
+      "score": 21,
+      "delta": 75,
+      "direction": "up",
+      "mentions": 5,
       "sources": [
+        {
+          "platform": "hackernews",
+          "title": "Ukraine' Simple But Effective Protection Against Russian Starlink Jamming (2023)",
+          "url": "https://www.technology.org/2023/08/01/did-russia-learn-to-jam-starlink-satellites-ukraine-is-already-using-a-simple-but-effective-protection/",
+          "score": 9,
+          "author": "pinkmuffinere",
+          "commentCount": 0,
+          "publishedAt": "2026-07-25T00:48:41.000Z"
+        },
         {
           "platform": "hackernews",
           "title": "Kuiper Q-Q plot: are these the same?",
