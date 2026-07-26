@@ -1,13 +1,13 @@
 {
-  "generatedAt": "2026-07-25T07:55:00.477Z",
+  "generatedAt": "2026-07-25T19:11:09.171Z",
   "topics": [
     {
       "slug": "black-holes",
       "label": "Black Holes",
-      "score": 9012,
+      "score": 9016,
       "delta": 0,
       "direction": "steady",
-      "mentions": 48,
+      "mentions": 50,
       "sources": [
         {
           "platform": "arxiv",
@@ -131,139 +131,6 @@
         "convergence": 0.2,
         "deepTopic": 1,
         "pantheon": 0.92,
-        "graveyard": 0
-      }
-    },
-    {
-      "slug": "space-telescopes",
-      "label": "Space Telescopes",
-      "score": 8204,
-      "delta": 0,
-      "direction": "steady",
-      "mentions": 43,
-      "sources": [
-        {
-          "platform": "arxiv",
-          "title": "When galaxies burst II. Implications of enhanced burstiness for the 21-cm Cosmic Dawn signal",
-          "url": "https://arxiv.org/abs/2607.20651",
-          "score": 200,
-          "authors": "Hovav Lazare, Sarah Libanore, Eleonora Vanzan et al.",
-          "arxivCategory": "astro-ph.CO",
-          "publishedAt": "2026-07-22T18:24:26.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Outflows in the Early Universe: Neutral gas Absorption in Galaxies at z &gt; 3 from low-resolution JWST Spectroscopy",
-          "url": "https://arxiv.org/abs/2607.20606",
-          "score": 200,
-          "authors": "Matteo Sapori, Sirio Belli, Letizia Bugiani et al.",
-          "arxivCategory": "astro-ph.GA",
-          "publishedAt": "2026-07-22T18:00:00.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Planetesimal Formation Across the Stellar Mass Spectrum and its Influence on Exoplanet-Inherited Volatile Budgets",
-          "url": "https://arxiv.org/abs/2607.20271",
-          "score": 200,
-          "authors": "Joe Williams, Sebastiaan Krijt, Joanna Drążkowska et al.",
-          "arxivCategory": "astro-ph.EP",
-          "publishedAt": "2026-07-22T15:23:01.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Dust and Gas Transport in Substructured Nonideal MHD Wind-Launching Disks with Embedded Planets",
-          "url": "https://arxiv.org/abs/2607.20158",
-          "score": 200,
-          "authors": "Chun-Yen Hsu, Zhi-Yun Li, Xiao Hu et al.",
-          "arxivCategory": "astro-ph.EP",
-          "publishedAt": "2026-07-22T13:55:07.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Anharmonic Infrared Emission of Cyano-Substituted Polycyclic Aromatic Hydrocarbon Molecules: Cyanonaphthalenes as a Case Study",
-          "url": "https://arxiv.org/abs/2607.20015",
-          "score": 200,
-          "authors": "Tao Chen, Kaijun Li, Aigen Li",
-          "arxivCategory": "astro-ph.GA",
-          "publishedAt": "2026-07-22T10:58:00.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Nebular continuum in high-redshift galaxies with JWST",
-          "url": "https://arxiv.org/abs/2607.19970",
-          "score": 200,
-          "authors": "Henrique Miranda, Ciro Pappalardo, José Afonso et al.",
-          "arxivCategory": "astro-ph.GA",
-          "publishedAt": "2026-07-22T09:53:52.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Swing amplification in star-gas disks",
-          "url": "https://arxiv.org/abs/2607.19540",
-          "score": 200,
-          "authors": "Abhishek Hegade K. R., Chris Hamilton",
-          "arxivCategory": "astro-ph.GA",
-          "publishedAt": "2026-07-21T19:41:07.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Mid-Infrared Colors Vary with Galactic Environment: Contrasting Star-Forming Disks, Young Centers, and Quiescent Star-Formation Deserts",
-          "url": "https://arxiv.org/abs/2607.19512",
-          "score": 200,
-          "authors": "Debosmita Pathak, Karin M. Sandstrom, Adam K. Leroy et al.",
-          "arxivCategory": "astro-ph.GA",
-          "publishedAt": "2026-07-21T18:55:13.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Rapid growth in a dual AGN during a gas-rich merger at z~4.5",
-          "url": "https://arxiv.org/abs/2607.19491",
-          "score": 200,
-          "authors": "Hyewon Suh, Roberto Decarli, Emanuele Paolo Farina et al.",
-          "arxivCategory": "astro-ph.GA",
-          "publishedAt": "2026-07-21T18:08:58.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Cosmic CORALS: Timing the Universe with high-z star clusters",
-          "url": "https://arxiv.org/abs/2607.19472",
-          "score": 200,
-          "authors": "Elena Tomasetti, Martin Millon, Licia Verde et al.",
-          "arxivCategory": "astro-ph.CO",
-          "publishedAt": "2026-07-21T18:00:04.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "The first dusty galaxies across $6 \\lesssim z \\lesssim 14$: Blue monsters, red monsters, and the bimodality of dust content in early galaxies",
-          "url": "https://arxiv.org/abs/2607.19471",
-          "score": 200,
-          "authors": "Sergio Martínez-González, Casiana Muñoz-Tuñón, Santiago Jiménez",
-          "arxivCategory": "astro-ph.GA",
-          "publishedAt": "2026-07-21T18:00:03.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "An (in)complete NIRSpec census of Balmer absorption in Type 1 AGN -- radiation-driven outflows in little red dots, quasars and variable stars",
-          "url": "https://arxiv.org/abs/2607.19057",
-          "score": 200,
-          "authors": "Ignas Juodžbalis, Xihan Ji, Francesco D'Eugenio et al.",
-          "arxivCategory": "astro-ph.GA",
-          "publishedAt": "2026-07-21T12:45:36.000Z"
-        }
-      ],
-      "relatedConceptSlugs": [
-        "fluidic-telescope",
-        "orbiting-rainbows"
-      ],
-      "resonance": 53,
-      "quadrant": "real-deal",
-      "resonanceSignals": {
-        "conceptDepth": 0.5113915944693856,
-        "editorial": 1,
-        "connections": 0.3333333333333333,
-        "convergence": 0.15,
-        "deepTopic": 1,
-        "pantheon": 0.16,
         "graveyard": 0
       }
     },
@@ -533,12 +400,145 @@
       }
     },
     {
-      "slug": "quantum-computing",
-      "label": "Quantum Computing",
-      "score": 7611,
-      "delta": 0,
+      "slug": "space-telescopes",
+      "label": "Space Telescopes",
+      "score": 8004,
+      "delta": -2,
       "direction": "steady",
       "mentions": 42,
+      "sources": [
+        {
+          "platform": "arxiv",
+          "title": "When galaxies burst II. Implications of enhanced burstiness for the 21-cm Cosmic Dawn signal",
+          "url": "https://arxiv.org/abs/2607.20651",
+          "score": 200,
+          "authors": "Hovav Lazare, Sarah Libanore, Eleonora Vanzan et al.",
+          "arxivCategory": "astro-ph.CO",
+          "publishedAt": "2026-07-22T18:24:26.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Outflows in the Early Universe: Neutral gas Absorption in Galaxies at z &gt; 3 from low-resolution JWST Spectroscopy",
+          "url": "https://arxiv.org/abs/2607.20606",
+          "score": 200,
+          "authors": "Matteo Sapori, Sirio Belli, Letizia Bugiani et al.",
+          "arxivCategory": "astro-ph.GA",
+          "publishedAt": "2026-07-22T18:00:00.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Planetesimal Formation Across the Stellar Mass Spectrum and its Influence on Exoplanet-Inherited Volatile Budgets",
+          "url": "https://arxiv.org/abs/2607.20271",
+          "score": 200,
+          "authors": "Joe Williams, Sebastiaan Krijt, Joanna Drążkowska et al.",
+          "arxivCategory": "astro-ph.EP",
+          "publishedAt": "2026-07-22T15:23:01.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Dust and Gas Transport in Substructured Nonideal MHD Wind-Launching Disks with Embedded Planets",
+          "url": "https://arxiv.org/abs/2607.20158",
+          "score": 200,
+          "authors": "Chun-Yen Hsu, Zhi-Yun Li, Xiao Hu et al.",
+          "arxivCategory": "astro-ph.EP",
+          "publishedAt": "2026-07-22T13:55:07.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Anharmonic Infrared Emission of Cyano-Substituted Polycyclic Aromatic Hydrocarbon Molecules: Cyanonaphthalenes as a Case Study",
+          "url": "https://arxiv.org/abs/2607.20015",
+          "score": 200,
+          "authors": "Tao Chen, Kaijun Li, Aigen Li",
+          "arxivCategory": "astro-ph.GA",
+          "publishedAt": "2026-07-22T10:58:00.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Nebular continuum in high-redshift galaxies with JWST",
+          "url": "https://arxiv.org/abs/2607.19970",
+          "score": 200,
+          "authors": "Henrique Miranda, Ciro Pappalardo, José Afonso et al.",
+          "arxivCategory": "astro-ph.GA",
+          "publishedAt": "2026-07-22T09:53:52.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Swing amplification in star-gas disks",
+          "url": "https://arxiv.org/abs/2607.19540",
+          "score": 200,
+          "authors": "Abhishek Hegade K. R., Chris Hamilton",
+          "arxivCategory": "astro-ph.GA",
+          "publishedAt": "2026-07-21T19:41:07.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Mid-Infrared Colors Vary with Galactic Environment: Contrasting Star-Forming Disks, Young Centers, and Quiescent Star-Formation Deserts",
+          "url": "https://arxiv.org/abs/2607.19512",
+          "score": 200,
+          "authors": "Debosmita Pathak, Karin M. Sandstrom, Adam K. Leroy et al.",
+          "arxivCategory": "astro-ph.GA",
+          "publishedAt": "2026-07-21T18:55:13.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Rapid growth in a dual AGN during a gas-rich merger at z~4.5",
+          "url": "https://arxiv.org/abs/2607.19491",
+          "score": 200,
+          "authors": "Hyewon Suh, Roberto Decarli, Emanuele Paolo Farina et al.",
+          "arxivCategory": "astro-ph.GA",
+          "publishedAt": "2026-07-21T18:08:58.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Cosmic CORALS: Timing the Universe with high-z star clusters",
+          "url": "https://arxiv.org/abs/2607.19472",
+          "score": 200,
+          "authors": "Elena Tomasetti, Martin Millon, Licia Verde et al.",
+          "arxivCategory": "astro-ph.CO",
+          "publishedAt": "2026-07-21T18:00:04.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "The first dusty galaxies across $6 \\lesssim z \\lesssim 14$: Blue monsters, red monsters, and the bimodality of dust content in early galaxies",
+          "url": "https://arxiv.org/abs/2607.19471",
+          "score": 200,
+          "authors": "Sergio Martínez-González, Casiana Muñoz-Tuñón, Santiago Jiménez",
+          "arxivCategory": "astro-ph.GA",
+          "publishedAt": "2026-07-21T18:00:03.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "An (in)complete NIRSpec census of Balmer absorption in Type 1 AGN -- radiation-driven outflows in little red dots, quasars and variable stars",
+          "url": "https://arxiv.org/abs/2607.19057",
+          "score": 200,
+          "authors": "Ignas Juodžbalis, Xihan Ji, Francesco D'Eugenio et al.",
+          "arxivCategory": "astro-ph.GA",
+          "publishedAt": "2026-07-21T12:45:36.000Z"
+        }
+      ],
+      "relatedConceptSlugs": [
+        "fluidic-telescope",
+        "orbiting-rainbows"
+      ],
+      "resonance": 53,
+      "quadrant": "real-deal",
+      "resonanceSignals": {
+        "conceptDepth": 0.5113915944693856,
+        "editorial": 1,
+        "connections": 0.3333333333333333,
+        "convergence": 0.15,
+        "deepTopic": 1,
+        "pantheon": 0.16,
+        "graveyard": 0
+      }
+    },
+    {
+      "slug": "quantum-computing",
+      "label": "Quantum Computing",
+      "score": 7614,
+      "delta": 0,
+      "direction": "steady",
+      "mentions": 43,
       "sources": [
         {
           "platform": "arxiv",
@@ -667,10 +667,10 @@
     {
       "slug": "particle-physics",
       "label": "Particle Physics",
-      "score": 6800,
-      "delta": -3,
+      "score": 6803,
+      "delta": 0,
       "direction": "steady",
-      "mentions": 34,
+      "mentions": 35,
       "sources": [
         {
           "platform": "arxiv",
@@ -797,18 +797,18 @@
     {
       "slug": "condensed-matter",
       "label": "Condensed Matter",
-      "score": 6083,
-      "delta": -3,
+      "score": 6097,
+      "delta": 0,
       "direction": "steady",
-      "mentions": 34,
+      "mentions": 36,
       "sources": [
         {
           "platform": "hackernews",
           "title": "Roblox Officially Supports GrapheneOS",
           "url": "https://en.help.roblox.com/hc/en-us/articles/49648939984916-Android-Remote-Attestation",
-          "score": 262,
+          "score": 264,
           "author": "Cider9986",
-          "commentCount": 101,
+          "commentCount": 102,
           "publishedAt": "2026-07-21T16:39:30.000Z"
         },
         {
@@ -929,7 +929,7 @@
     {
       "slug": "dark-matter",
       "label": "Dark Matter & Dark Energy",
-      "score": 6019,
+      "score": 6021,
       "delta": 0,
       "direction": "steady",
       "mentions": 35,
@@ -1062,10 +1062,10 @@
     {
       "slug": "cosmology",
       "label": "Cosmology",
-      "score": 5801,
+      "score": 5800,
       "delta": 0,
       "direction": "steady",
-      "mentions": 30,
+      "mentions": 29,
       "sources": [
         {
           "platform": "arxiv",
@@ -1327,8 +1327,8 @@
       "slug": "exoplanets",
       "label": "Exoplanets",
       "score": 2414,
-      "delta": -23,
-      "direction": "down",
+      "delta": -8,
+      "direction": "steady",
       "mentions": 16,
       "sources": [
         {
@@ -1459,10 +1459,10 @@
     {
       "slug": "astrobiology",
       "label": "Astrobiology",
-      "score": 2400,
-      "delta": 0,
+      "score": 2200,
+      "delta": -8,
       "direction": "steady",
-      "mentions": 12,
+      "mentions": 11,
       "sources": [
         {
           "platform": "arxiv",
@@ -1562,15 +1562,6 @@
           "authors": "Adriana E. Candia, Sindy J. Rodríguez, Vanina G. Franco et al.",
           "arxivCategory": "cond-mat.mtrl-sci",
           "publishedAt": "2026-06-29T21:30:38.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Chemical Complexity in the Early Stages of Star Formation in the SKAO Era",
-          "url": "https://arxiv.org/abs/2606.27184",
-          "score": 200,
-          "authors": "Eleonora Bianchi, Mathilde Bouvier, Claudio Codella et al.",
-          "arxivCategory": "astro-ph.SR",
-          "publishedAt": "2026-06-25T15:48:18.000Z"
         }
       ],
       "relatedConceptSlugs": [
@@ -1708,8 +1699,8 @@
       "slug": "space-debris",
       "label": "Space Debris",
       "score": 1000,
-      "delta": -17,
-      "direction": "down",
+      "delta": 0,
+      "direction": "steady",
       "mentions": 5,
       "sources": [
         {
@@ -1777,7 +1768,7 @@
       "slug": "fusion-propulsion",
       "label": "Fusion Propulsion",
       "score": 600,
-      "delta": -40,
+      "delta": -25,
       "direction": "down",
       "mentions": 3,
       "sources": [
@@ -1880,9 +1871,9 @@
     {
       "slug": "starship",
       "label": "Starship & SpaceX",
-      "score": 520,
-      "delta": -20,
-      "direction": "down",
+      "score": 490,
+      "delta": 19,
+      "direction": "up",
       "mentions": 19,
       "sources": [
         {
@@ -1898,19 +1889,10 @@
           "platform": "hackernews",
           "title": "SpaceX Starship Flight 13 livestream [video]",
           "url": "https://www.spacex.com/launches/starship-flight-13",
-          "score": 108,
+          "score": 118,
           "author": "cryptoz",
-          "commentCount": 140,
+          "commentCount": 162,
           "publishedAt": "2026-07-24T22:44:38.000Z"
-        },
-        {
-          "platform": "hackernews",
-          "title": "Traders are increasingly betting against SpaceX just weeks after IPO",
-          "url": "https://www.ft.com/content/2b96703d-440b-46db-8d86-9fff9ecc59d5",
-          "score": 55,
-          "author": "ethanhawksley",
-          "commentCount": 30,
-          "publishedAt": "2026-07-18T15:26:13.000Z"
         },
         {
           "platform": "hackernews",
@@ -1925,16 +1907,16 @@
           "platform": "hackernews",
           "title": "SpaceX at $100 Would Imply Zero AI Value, Morgan Stanley Says",
           "url": "https://www.bloomberg.com/news/articles/2026-07-24/spacex-at-100-would-imply-zero-ai-value-says-morgan-stanley",
-          "score": 31,
+          "score": 34,
           "author": "toomuchtodo",
-          "commentCount": 27,
+          "commentCount": 29,
           "publishedAt": "2026-07-24T18:34:16.000Z"
         },
         {
           "platform": "hackernews",
           "title": "Reality Bites Elon Musk and His Tesla, SpaceX Believers",
           "url": "https://www.wsj.com/finance/stocks/reality-bites-elon-musk-and-his-tesla-spacex-believers-1b639591",
-          "score": 14,
+          "score": 15,
           "author": "doener",
           "commentCount": 0,
           "publishedAt": "2026-07-24T10:59:51.000Z"
@@ -1977,6 +1959,15 @@
         },
         {
           "platform": "hackernews",
+          "title": "Reality Bites Elon Musk and His Tesla, SpaceX Believers",
+          "url": "https://www.wsj.com/finance/stocks/reality-bites-elon-musk-and-his-tesla-spacex-believers-1b639591",
+          "score": 7,
+          "author": "1vuio0pswjnm7",
+          "commentCount": 7,
+          "publishedAt": "2026-07-25T13:37:48.000Z"
+        },
+        {
+          "platform": "hackernews",
           "title": "SpaceX Delays Major Flight Test Again in Post-IPO Spotlight",
           "url": "https://www.bloomberg.com/news/articles/2026-07-23/spacex-attempts-major-flight-test-again-in-post-ipo-spotlight",
           "score": 5,
@@ -1986,12 +1977,12 @@
         },
         {
           "platform": "hackernews",
-          "title": "Short sellers notch $15.5B profit as SpaceX shares slip -Ortex",
-          "url": "https://www.reuters.com/business/media-telecom/short-sellers-notch-155-bln-profit-spacex-shares-slip-ortex-2026-07-23/",
+          "title": "Lucky 13 Starship sends out satellites and stays intact",
+          "url": "https://cosmiclog.com/2026/07/24/lucky-13-starship-sends-out-satellites-and-stays-intact/",
           "score": 4,
-          "author": "1vuio0pswjnm7",
-          "commentCount": 1,
-          "publishedAt": "2026-07-23T13:11:44.000Z"
+          "author": "ColinWright",
+          "commentCount": 3,
+          "publishedAt": "2026-07-25T08:00:27.000Z"
         }
       ],
       "relatedConceptSlugs": [
@@ -2005,59 +1996,6 @@
         "editorial": 0.4,
         "connections": 0,
         "convergence": 0.35,
-        "deepTopic": 1,
-        "pantheon": 0.92,
-        "graveyard": 0
-      }
-    },
-    {
-      "slug": "electric-propulsion",
-      "label": "Electric Propulsion",
-      "score": 407,
-      "delta": 0,
-      "direction": "steady",
-      "mentions": 3,
-      "sources": [
-        {
-          "platform": "arxiv",
-          "title": "Simulation Study of Coupling Effects Between a Hall Thruster and a Power Processing Unit",
-          "url": "https://arxiv.org/abs/2606.28743",
-          "score": 200,
-          "authors": "Zirui Fan, Yinjian Zhao, Jingjing Li et al.",
-          "arxivCategory": "physics.plasm-ph",
-          "publishedAt": "2026-06-27T05:39:11.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "A possible approach to overcome the saturation of the neutron yield in a Plasma Focus and to achieve breakeven",
-          "url": "https://arxiv.org/abs/2606.27108",
-          "score": 200,
-          "authors": "Andrea Di Vita",
-          "arxivCategory": "physics.plasm-ph",
-          "publishedAt": "2026-06-25T14:44:09.000Z"
-        },
-        {
-          "platform": "hackernews",
-          "title": "GE Aerospace flies hybrid-electric propulsion above 30k feet",
-          "url": "https://www.geaerospace.com/news/press-releases/ge-aerospace-partners-nasa-beta-technologies-and-boeing-worlds-first-high-altitude",
-          "score": 7,
-          "author": "MarcoDewey",
-          "commentCount": 0,
-          "publishedAt": "2026-07-21T16:13:54.000Z"
-        }
-      ],
-      "relatedConceptSlugs": [
-        "electric-sail-propulsion",
-        "e-glider",
-        "nasa-innovative-advanced-concepts-niac-heliopause-electrostatic-rapid-transit-sy"
-      ],
-      "resonance": 50,
-      "quadrant": "sleeping-giant",
-      "resonanceSignals": {
-        "conceptDepth": 0.6131471927654584,
-        "editorial": 0.4,
-        "connections": 0,
-        "convergence": 0.575,
         "deepTopic": 1,
         "pantheon": 0.92,
         "graveyard": 0
@@ -2151,38 +2089,46 @@
       }
     },
     {
-      "slug": "mars",
-      "label": "Mars Exploration",
-      "score": 200,
-      "delta": 0,
-      "direction": "steady",
-      "mentions": 1,
+      "slug": "electric-propulsion",
+      "label": "Electric Propulsion",
+      "score": 207,
+      "delta": -49,
+      "direction": "down",
+      "mentions": 2,
       "sources": [
         {
           "platform": "arxiv",
-          "title": "Influence of Park's Two-Temperature Model Control Temperature on the Flow Properties in Hypersonic Reentry Conditions",
-          "url": "https://arxiv.org/abs/2606.26906",
+          "title": "Simulation Study of Coupling Effects Between a Hall Thruster and a Power Processing Unit",
+          "url": "https://arxiv.org/abs/2606.28743",
           "score": 200,
-          "authors": "Gibson De Marchi Poltronieri, Farney C. Moreira, João Luiz F. Azevedo",
-          "arxivCategory": "physics.flu-dyn",
-          "publishedAt": "2026-06-25T11:39:29.000Z"
+          "authors": "Zirui Fan, Yinjian Zhao, Jingjing Li et al.",
+          "arxivCategory": "physics.plasm-ph",
+          "publishedAt": "2026-06-27T05:39:11.000Z"
+        },
+        {
+          "platform": "hackernews",
+          "title": "GE Aerospace flies hybrid-electric propulsion above 30k feet",
+          "url": "https://www.geaerospace.com/news/press-releases/ge-aerospace-partners-nasa-beta-technologies-and-boeing-worlds-first-high-altitude",
+          "score": 7,
+          "author": "MarcoDewey",
+          "commentCount": 0,
+          "publishedAt": "2026-07-21T16:13:54.000Z"
         }
       ],
       "relatedConceptSlugs": [
-        "mycotecture",
-        "breathing-mars-air",
-        "evacuated-airship-for-mars-missions",
-        "marsbee"
+        "electric-sail-propulsion",
+        "e-glider",
+        "nasa-innovative-advanced-concepts-niac-heliopause-electrostatic-rapid-transit-sy"
       ],
-      "resonance": 60,
+      "resonance": 50,
       "quadrant": "sleeping-giant",
       "resonanceSignals": {
-        "conceptDepth": 1,
-        "editorial": 1,
+        "conceptDepth": 0.6131471927654584,
+        "editorial": 0.4,
         "connections": 0,
-        "convergence": 0.075,
-        "deepTopic": 0.8,
-        "pantheon": 0.08,
+        "convergence": 0.575,
+        "deepTopic": 1,
+        "pantheon": 0.92,
         "graveyard": 0
       }
     },
@@ -2324,8 +2270,8 @@
     {
       "slug": "starlink",
       "label": "Starlink & Satellite Internet",
-      "score": 21,
-      "delta": 75,
+      "score": 26,
+      "delta": 117,
       "direction": "up",
       "mentions": 5,
       "sources": [
@@ -2333,7 +2279,7 @@
           "platform": "hackernews",
           "title": "Ukraine' Simple But Effective Protection Against Russian Starlink Jamming (2023)",
           "url": "https://www.technology.org/2023/08/01/did-russia-learn-to-jam-starlink-satellites-ukraine-is-already-using-a-simple-but-effective-protection/",
-          "score": 9,
+          "score": 14,
           "author": "pinkmuffinere",
           "commentCount": 0,
           "publishedAt": "2026-07-25T00:48:41.000Z"
@@ -2387,6 +2333,32 @@
         "convergence": 0,
         "deepTopic": 0,
         "pantheon": 0,
+        "graveyard": 0
+      }
+    },
+    {
+      "slug": "mars",
+      "label": "Mars Exploration",
+      "score": 0,
+      "delta": 0,
+      "direction": "steady",
+      "mentions": 0,
+      "sources": [],
+      "relatedConceptSlugs": [
+        "mycotecture",
+        "breathing-mars-air",
+        "evacuated-airship-for-mars-missions",
+        "marsbee"
+      ],
+      "resonance": 60,
+      "quadrant": "sleeping-giant",
+      "resonanceSignals": {
+        "conceptDepth": 1,
+        "editorial": 1,
+        "connections": 0,
+        "convergence": 0.075,
+        "deepTopic": 0.8,
+        "pantheon": 0.08,
         "graveyard": 0
       }
     },
