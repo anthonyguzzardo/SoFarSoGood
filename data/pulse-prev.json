@@ -1,13 +1,13 @@
 {
-  "generatedAt": "2026-07-25T19:11:09.171Z",
+  "generatedAt": "2026-07-26T08:12:32.002Z",
   "topics": [
     {
       "slug": "black-holes",
       "label": "Black Holes",
-      "score": 9016,
+      "score": 9011,
       "delta": 0,
       "direction": "steady",
-      "mentions": 50,
+      "mentions": 49,
       "sources": [
         {
           "platform": "arxiv",
@@ -797,10 +797,10 @@
     {
       "slug": "condensed-matter",
       "label": "Condensed Matter",
-      "score": 6097,
-      "delta": 0,
+      "score": 6116,
+      "delta": 1,
       "direction": "steady",
-      "mentions": 36,
+      "mentions": 38,
       "sources": [
         {
           "platform": "hackernews",
@@ -1194,10 +1194,10 @@
     {
       "slug": "quantum-comms",
       "label": "Quantum Communication",
-      "score": 3000,
+      "score": 3007,
       "delta": 0,
       "direction": "steady",
-      "mentions": 15,
+      "mentions": 16,
       "sources": [
         {
           "platform": "arxiv",
@@ -1326,10 +1326,10 @@
     {
       "slug": "exoplanets",
       "label": "Exoplanets",
-      "score": 2414,
-      "delta": -8,
+      "score": 2419,
+      "delta": 0,
       "direction": "steady",
-      "mentions": 16,
+      "mentions": 17,
       "sources": [
         {
           "platform": "arxiv",
@@ -1457,134 +1457,10 @@
       }
     },
     {
-      "slug": "astrobiology",
-      "label": "Astrobiology",
-      "score": 2200,
-      "delta": -8,
-      "direction": "steady",
-      "mentions": 11,
-      "sources": [
-        {
-          "platform": "arxiv",
-          "title": "A search for narrowband technosignatures from LTT 3780 with the Allen Telescope Array and the Karl G. Jansky Very Large Array",
-          "url": "https://arxiv.org/abs/2607.07182",
-          "score": 200,
-          "authors": "Chenoa D. Tremblay, Sofia Z. Sheikh, Vishal Gajjar et al.",
-          "arxivCategory": "astro-ph.IM",
-          "publishedAt": "2026-07-08T09:15:28.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "White Paper on Phototrophic Biosignatures: Research Priorities for the Search for Life on Other Worlds",
-          "url": "https://arxiv.org/abs/2607.03106",
-          "score": 200,
-          "authors": "Nancy Y. Kiang, Christopher Gisriel, Robert E. Blankenship et al.",
-          "arxivCategory": "astro-ph.IM",
-          "publishedAt": "2026-07-03T08:41:52.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Signs and Signatures of Intelligence",
-          "url": "https://arxiv.org/abs/2606.28437",
-          "score": 200,
-          "authors": "Julia DeMarines",
-          "arxivCategory": "physics.pop-ph",
-          "publishedAt": "2026-06-26T07:00:03.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Biosignature detectability on transiting habitable worlds with ELT/ANDES",
-          "url": "https://arxiv.org/abs/2607.12017",
-          "score": 200,
-          "authors": "E. Kurzawa-Ferrandez, A. Bello-Arufe, R. Hu",
-          "arxivCategory": "astro-ph.EP",
-          "publishedAt": "2026-07-13T18:00:01.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "High Resolution Optical Methane Linelist from observations of Titan for Cross-Correlation studies",
-          "url": "https://arxiv.org/abs/2607.10250",
-          "score": 200,
-          "authors": "Rafael Rianço-Silva, Pedro Machado, Clara Sousa Silva et al.",
-          "arxivCategory": "astro-ph.EP",
-          "publishedAt": "2026-07-11T10:32:14.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Decolonizing technosignatures: Reimagining technosignatures through an Indigenist lens",
-          "url": "https://arxiv.org/abs/2607.07592",
-          "score": 200,
-          "authors": "Hilding R. Neilson",
-          "arxivCategory": "astro-ph.IM",
-          "publishedAt": "2026-07-08T16:12:54.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "A generalised microbial cell model for methane biosignature predictions",
-          "url": "https://arxiv.org/abs/2607.06366",
-          "score": 200,
-          "authors": "Arwen E. Nicholson, Nathan J. Mayne",
-          "arxivCategory": "astro-ph.EP",
-          "publishedAt": "2026-07-07T15:01:57.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Substrate-Agnostic 3x: Biosignatures, Technosignatures, Ecologies",
-          "url": "https://arxiv.org/abs/2607.01664",
-          "score": 200,
-          "authors": "Lukáš Likavčan",
-          "arxivCategory": "physics.gen-ph",
-          "publishedAt": "2026-07-02T03:44:13.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "A Covariance-Aware Framework for Spatially Resolved Exoplanet Biosignature Inference with the Solar Gravitational Lens",
-          "url": "https://arxiv.org/abs/2606.29138",
-          "score": 200,
-          "authors": "Slava G. Turyshev",
-          "arxivCategory": "astro-ph.IM",
-          "publishedAt": "2026-06-28T00:55:47.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Searching for Extraterrestrial Intelligence with the SKA",
-          "url": "https://arxiv.org/abs/2606.27565",
-          "score": 200,
-          "authors": "Chenoa D. Tremblay, Alex Andersson, Joe Bright et al.",
-          "arxivCategory": "astro-ph.IM",
-          "publishedAt": "2026-06-25T21:49:02.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Prebiotic Chemistry Assemblies of L-Cysteine on Defect-Free Pyrite Terraces",
-          "url": "https://arxiv.org/abs/2606.30929",
-          "score": 200,
-          "authors": "Adriana E. Candia, Sindy J. Rodríguez, Vanina G. Franco et al.",
-          "arxivCategory": "cond-mat.mtrl-sci",
-          "publishedAt": "2026-06-29T21:30:38.000Z"
-        }
-      ],
-      "relatedConceptSlugs": [
-        "astropharmacy",
-        "venus-atmosphere-and-cloud-particle-sample-return-for-astrobiology"
-      ],
-      "resonance": 53,
-      "quadrant": "real-deal",
-      "resonanceSignals": {
-        "conceptDepth": 0.5113915944693856,
-        "editorial": 1,
-        "connections": 0.3333333333333333,
-        "convergence": 0.275,
-        "deepTopic": 0.8,
-        "pantheon": 0.08,
-        "graveyard": 0
-      }
-    },
-    {
       "slug": "artemis",
       "label": "Artemis & Lunar Return",
       "score": 2000,
-      "delta": -9,
+      "delta": 0,
       "direction": "steady",
       "mentions": 10,
       "sources": [
@@ -1696,6 +1572,112 @@
       }
     },
     {
+      "slug": "astrobiology",
+      "label": "Astrobiology",
+      "score": 1800,
+      "delta": -25,
+      "direction": "down",
+      "mentions": 9,
+      "sources": [
+        {
+          "platform": "arxiv",
+          "title": "A search for narrowband technosignatures from LTT 3780 with the Allen Telescope Array and the Karl G. Jansky Very Large Array",
+          "url": "https://arxiv.org/abs/2607.07182",
+          "score": 200,
+          "authors": "Chenoa D. Tremblay, Sofia Z. Sheikh, Vishal Gajjar et al.",
+          "arxivCategory": "astro-ph.IM",
+          "publishedAt": "2026-07-08T09:15:28.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "White Paper on Phototrophic Biosignatures: Research Priorities for the Search for Life on Other Worlds",
+          "url": "https://arxiv.org/abs/2607.03106",
+          "score": 200,
+          "authors": "Nancy Y. Kiang, Christopher Gisriel, Robert E. Blankenship et al.",
+          "arxivCategory": "astro-ph.IM",
+          "publishedAt": "2026-07-03T08:41:52.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Biosignature detectability on transiting habitable worlds with ELT/ANDES",
+          "url": "https://arxiv.org/abs/2607.12017",
+          "score": 200,
+          "authors": "E. Kurzawa-Ferrandez, A. Bello-Arufe, R. Hu",
+          "arxivCategory": "astro-ph.EP",
+          "publishedAt": "2026-07-13T18:00:01.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "High Resolution Optical Methane Linelist from observations of Titan for Cross-Correlation studies",
+          "url": "https://arxiv.org/abs/2607.10250",
+          "score": 200,
+          "authors": "Rafael Rianço-Silva, Pedro Machado, Clara Sousa Silva et al.",
+          "arxivCategory": "astro-ph.EP",
+          "publishedAt": "2026-07-11T10:32:14.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Decolonizing technosignatures: Reimagining technosignatures through an Indigenist lens",
+          "url": "https://arxiv.org/abs/2607.07592",
+          "score": 200,
+          "authors": "Hilding R. Neilson",
+          "arxivCategory": "astro-ph.IM",
+          "publishedAt": "2026-07-08T16:12:54.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "A generalised microbial cell model for methane biosignature predictions",
+          "url": "https://arxiv.org/abs/2607.06366",
+          "score": 200,
+          "authors": "Arwen E. Nicholson, Nathan J. Mayne",
+          "arxivCategory": "astro-ph.EP",
+          "publishedAt": "2026-07-07T15:01:57.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Substrate-Agnostic 3x: Biosignatures, Technosignatures, Ecologies",
+          "url": "https://arxiv.org/abs/2607.01664",
+          "score": 200,
+          "authors": "Lukáš Likavčan",
+          "arxivCategory": "physics.gen-ph",
+          "publishedAt": "2026-07-02T03:44:13.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "A Covariance-Aware Framework for Spatially Resolved Exoplanet Biosignature Inference with the Solar Gravitational Lens",
+          "url": "https://arxiv.org/abs/2606.29138",
+          "score": 200,
+          "authors": "Slava G. Turyshev",
+          "arxivCategory": "astro-ph.IM",
+          "publishedAt": "2026-06-28T00:55:47.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Prebiotic Chemistry Assemblies of L-Cysteine on Defect-Free Pyrite Terraces",
+          "url": "https://arxiv.org/abs/2606.30929",
+          "score": 200,
+          "authors": "Adriana E. Candia, Sindy J. Rodríguez, Vanina G. Franco et al.",
+          "arxivCategory": "cond-mat.mtrl-sci",
+          "publishedAt": "2026-06-29T21:30:38.000Z"
+        }
+      ],
+      "relatedConceptSlugs": [
+        "astropharmacy",
+        "venus-atmosphere-and-cloud-particle-sample-return-for-astrobiology"
+      ],
+      "resonance": 53,
+      "quadrant": "real-deal",
+      "resonanceSignals": {
+        "conceptDepth": 0.5113915944693856,
+        "editorial": 1,
+        "connections": 0.3333333333333333,
+        "convergence": 0.275,
+        "deepTopic": 0.8,
+        "pantheon": 0.08,
+        "graveyard": 0
+      }
+    },
+    {
       "slug": "space-debris",
       "label": "Space Debris",
       "score": 1000,
@@ -1765,59 +1747,6 @@
       }
     },
     {
-      "slug": "fusion-propulsion",
-      "label": "Fusion Propulsion",
-      "score": 600,
-      "delta": -25,
-      "direction": "down",
-      "mentions": 3,
-      "sources": [
-        {
-          "platform": "arxiv",
-          "title": "Efficient hot electron generation via low-coherence lasers",
-          "url": "https://arxiv.org/abs/2607.11045",
-          "score": 200,
-          "authors": "Huiya Liu, Yao Zhao, Ning Kang et al.",
-          "arxivCategory": "physics.plasm-ph",
-          "publishedAt": "2026-07-13T03:17:15.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Co4ICF: Co-evolving Physics-Informed Surrogate and RL-based Pulse Optimizer for Inertial Confinement Fusion",
-          "url": "https://arxiv.org/abs/2607.10366",
-          "score": 200,
-          "authors": "Jiatong Zhao, Tengyue Zhang, Yuhan Wang et al.",
-          "arxivCategory": "cs.AI",
-          "publishedAt": "2026-07-11T15:43:27.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Denoising ICF Images with Multiplicative Uniform Noise: A Self-Supervised Study Based on the Log-Domain Noisier2Inverse Framework",
-          "url": "https://arxiv.org/abs/2606.27635",
-          "score": 200,
-          "authors": "Gyeongha Hwang, Bradley Thomas Wolfe, Naima Naheed",
-          "arxivCategory": "cs.CV",
-          "publishedAt": "2026-06-26T01:16:51.000Z"
-        }
-      ],
-      "relatedConceptSlugs": [
-        "gradient-field-imploding-liner-fusion-propulsion",
-        "fusion-enabled-pluto-orbiter",
-        "pulsed-fission-fusion"
-      ],
-      "resonance": 64,
-      "quadrant": "sleeping-giant",
-      "resonanceSignals": {
-        "conceptDepth": 0.6991803252671503,
-        "editorial": 0.7,
-        "connections": 0,
-        "convergence": 0.975,
-        "deepTopic": 1,
-        "pantheon": 0.92,
-        "graveyard": 0
-      }
-    },
-    {
       "slug": "dyson-spheres",
       "label": "Dyson Spheres",
       "score": 600,
@@ -1871,10 +1800,10 @@
     {
       "slug": "starship",
       "label": "Starship & SpaceX",
-      "score": 490,
-      "delta": 19,
-      "direction": "up",
-      "mentions": 19,
+      "score": 437,
+      "delta": -16,
+      "direction": "down",
+      "mentions": 17,
       "sources": [
         {
           "platform": "arxiv",
@@ -1891,17 +1820,8 @@
           "url": "https://www.spacex.com/launches/starship-flight-13",
           "score": 118,
           "author": "cryptoz",
-          "commentCount": 162,
+          "commentCount": 185,
           "publishedAt": "2026-07-24T22:44:38.000Z"
-        },
-        {
-          "platform": "hackernews",
-          "title": "SpaceX and the myth of independent Wall St research",
-          "url": "https://www.ft.com/content/ce345155-d897-4f49-b7c8-13680e3b5434",
-          "score": 49,
-          "author": "JumpCrisscross",
-          "commentCount": 47,
-          "publishedAt": "2026-07-18T20:13:56.000Z"
         },
         {
           "platform": "hackernews",
@@ -1923,21 +1843,21 @@
         },
         {
           "platform": "hackernews",
+          "title": "Reality Bites Elon Musk and His Tesla, SpaceX Believers",
+          "url": "https://www.wsj.com/finance/stocks/reality-bites-elon-musk-and-his-tesla-spacex-believers-1b639591",
+          "score": 12,
+          "author": "1vuio0pswjnm7",
+          "commentCount": 7,
+          "publishedAt": "2026-07-25T13:37:48.000Z"
+        },
+        {
+          "platform": "hackernews",
           "title": "Short positions in SpaceX reach 32% of float",
           "url": "https://www.cnbc.com/2026/07/21/bets-against-spacex-grow-to-32percent-of-float-as-elon-musk-warns-short-sellers-wont-survive.html",
           "score": 11,
           "author": "darth_avocado",
           "commentCount": 4,
           "publishedAt": "2026-07-21T21:11:30.000Z"
-        },
-        {
-          "platform": "hackernews",
-          "title": "Elon Musk Runs from Interview at Last Minute as SpaceX Stock Crashed [video]",
-          "url": "https://www.youtube.com/shorts/TFpF7ZzHc3w",
-          "score": 10,
-          "author": "root-parent",
-          "commentCount": 3,
-          "publishedAt": "2026-07-18T20:30:33.000Z"
         },
         {
           "platform": "hackernews",
@@ -1959,12 +1879,12 @@
         },
         {
           "platform": "hackernews",
-          "title": "Reality Bites Elon Musk and His Tesla, SpaceX Believers",
-          "url": "https://www.wsj.com/finance/stocks/reality-bites-elon-musk-and-his-tesla-spacex-believers-1b639591",
-          "score": 7,
-          "author": "1vuio0pswjnm7",
-          "commentCount": 7,
-          "publishedAt": "2026-07-25T13:37:48.000Z"
+          "title": "Starship's Thirteenth Test Flight",
+          "url": "https://www.spacex.com/launches/starship-flight-13v",
+          "score": 5,
+          "author": "JumpCrisscross",
+          "commentCount": 1,
+          "publishedAt": "2026-07-25T01:44:59.000Z"
         },
         {
           "platform": "hackernews",
@@ -1981,8 +1901,17 @@
           "url": "https://cosmiclog.com/2026/07/24/lucky-13-starship-sends-out-satellites-and-stays-intact/",
           "score": 4,
           "author": "ColinWright",
-          "commentCount": 3,
+          "commentCount": 5,
           "publishedAt": "2026-07-25T08:00:27.000Z"
+        },
+        {
+          "platform": "hackernews",
+          "title": "Short sellers notch $15.5B profit as SpaceX shares slip -Ortex",
+          "url": "https://www.reuters.com/business/media-telecom/short-sellers-notch-155-bln-profit-spacex-shares-slip-ortex-2026-07-23/",
+          "score": 4,
+          "author": "1vuio0pswjnm7",
+          "commentCount": 1,
+          "publishedAt": "2026-07-23T13:11:44.000Z"
         }
       ],
       "relatedConceptSlugs": [
@@ -1996,6 +1925,50 @@
         "editorial": 0.4,
         "connections": 0,
         "convergence": 0.35,
+        "deepTopic": 1,
+        "pantheon": 0.92,
+        "graveyard": 0
+      }
+    },
+    {
+      "slug": "fusion-propulsion",
+      "label": "Fusion Propulsion",
+      "score": 400,
+      "delta": -33,
+      "direction": "down",
+      "mentions": 2,
+      "sources": [
+        {
+          "platform": "arxiv",
+          "title": "Efficient hot electron generation via low-coherence lasers",
+          "url": "https://arxiv.org/abs/2607.11045",
+          "score": 200,
+          "authors": "Huiya Liu, Yao Zhao, Ning Kang et al.",
+          "arxivCategory": "physics.plasm-ph",
+          "publishedAt": "2026-07-13T03:17:15.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Co4ICF: Co-evolving Physics-Informed Surrogate and RL-based Pulse Optimizer for Inertial Confinement Fusion",
+          "url": "https://arxiv.org/abs/2607.10366",
+          "score": 200,
+          "authors": "Jiatong Zhao, Tengyue Zhang, Yuhan Wang et al.",
+          "arxivCategory": "cs.AI",
+          "publishedAt": "2026-07-11T15:43:27.000Z"
+        }
+      ],
+      "relatedConceptSlugs": [
+        "gradient-field-imploding-liner-fusion-propulsion",
+        "fusion-enabled-pluto-orbiter",
+        "pulsed-fission-fusion"
+      ],
+      "resonance": 64,
+      "quadrant": "sleeping-giant",
+      "resonanceSignals": {
+        "conceptDepth": 0.6991803252671503,
+        "editorial": 0.7,
+        "connections": 0,
+        "convergence": 0.975,
         "deepTopic": 1,
         "pantheon": 0.92,
         "graveyard": 0
@@ -2270,10 +2243,10 @@
     {
       "slug": "starlink",
       "label": "Starlink & Satellite Internet",
-      "score": 26,
-      "delta": 117,
-      "direction": "up",
-      "mentions": 5,
+      "score": 23,
+      "delta": 10,
+      "direction": "steady",
+      "mentions": 4,
       "sources": [
         {
           "platform": "hackernews",
@@ -2301,15 +2274,6 @@
           "author": "gumby",
           "commentCount": 0,
           "publishedAt": "2026-07-23T16:20:45.000Z"
-        },
-        {
-          "platform": "hackernews",
-          "title": "Novo Space builds modular computers for satellite constellations",
-          "url": "https://runtimewire.com/article/startup-spotlight-novo-space-builds-modular-computers-for-satellite-constellatio",
-          "score": 3,
-          "author": "ryanmerket",
-          "commentCount": 0,
-          "publishedAt": "2026-07-19T02:26:15.000Z"
         },
         {
           "platform": "hackernews",
