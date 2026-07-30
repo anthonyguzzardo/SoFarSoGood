@@ -1,13 +1,13 @@
 {
-  "generatedAt": "2026-07-29T08:24:05.019Z",
+  "generatedAt": "2026-07-29T19:19:50.944Z",
   "topics": [
     {
       "slug": "black-holes",
       "label": "Black Holes",
-      "score": 9277,
-      "delta": 2,
+      "score": 8879,
+      "delta": -2,
       "direction": "steady",
-      "mentions": 47,
+      "mentions": 46,
       "sources": [
         {
           "platform": "hackernews",
@@ -15,7 +15,7 @@
           "url": "https://blackhole.plav.in",
           "score": 472,
           "author": "aplavin",
-          "commentCount": 183,
+          "commentCount": 186,
           "publishedAt": "2026-07-23T13:29:24.000Z"
         },
         {
@@ -269,10 +269,10 @@
     {
       "slug": "space-telescopes",
       "label": "Space Telescopes",
-      "score": 8306,
-      "delta": 1,
+      "score": 8342,
+      "delta": 2,
       "direction": "steady",
-      "mentions": 44,
+      "mentions": 42,
       "sources": [
         {
           "platform": "arxiv",
@@ -534,8 +534,8 @@
     {
       "slug": "condensed-matter",
       "label": "Condensed Matter",
-      "score": 8051,
-      "delta": 3,
+      "score": 8087,
+      "delta": 5,
       "direction": "steady",
       "mentions": 40,
       "sources": [
@@ -543,16 +543,16 @@
           "platform": "hackernews",
           "title": "US citizen charged after GrapheneOS phone wipes during airport search",
           "url": "https://www.techspot.com/news/113236-us-prosecutors-charge-atlanta-man-after-grapheneos-phone.html",
-          "score": 1318,
+          "score": 1326,
           "author": "eecc",
-          "commentCount": 1104,
+          "commentCount": 1107,
           "publishedAt": "2026-07-26T22:21:41.000Z"
         },
         {
           "platform": "hackernews",
           "title": "GrapheneOS protections against data extraction from locked devices",
           "url": "https://discuss.grapheneos.org/d/40700-grapheneos-protections-against-data-extraction-from-locked-devices",
-          "score": 444,
+          "score": 445,
           "author": "Cider9986",
           "commentCount": 256,
           "publishedAt": "2026-07-26T05:57:22.000Z"
@@ -561,9 +561,9 @@
           "platform": "hackernews",
           "title": "Donate to GrapheneOS",
           "url": "https://grapheneos.org/donate",
-          "score": 242,
+          "score": 250,
           "author": "charliebwrites",
-          "commentCount": 78,
+          "commentCount": 83,
           "publishedAt": "2026-07-28T19:06:10.000Z"
         },
         {
@@ -666,10 +666,10 @@
     {
       "slug": "nanotechnology",
       "label": "Nanotechnology & Metamaterials",
-      "score": 8000,
-      "delta": 0,
+      "score": 7800,
+      "delta": -2,
       "direction": "steady",
-      "mentions": 40,
+      "mentions": 39,
       "sources": [
         {
           "platform": "arxiv",
@@ -799,10 +799,10 @@
     {
       "slug": "particle-physics",
       "label": "Particle Physics",
-      "score": 7403,
-      "delta": 3,
+      "score": 7203,
+      "delta": 0,
       "direction": "steady",
-      "mentions": 38,
+      "mentions": 37,
       "sources": [
         {
           "platform": "arxiv",
@@ -860,15 +860,6 @@
         },
         {
           "platform": "arxiv",
-          "title": "A Levitated-Magnet Vector Force Sensor for Spin-Dependent Exotic Interactions",
-          "url": "https://arxiv.org/abs/2606.30781",
-          "score": 200,
-          "authors": "Dorian W. P. Amaral, Lei Cong, Tim M. Fuchs et al.",
-          "arxivCategory": "hep-ph",
-          "publishedAt": "2026-06-29T18:10:17.000Z"
-        },
-        {
-          "platform": "arxiv",
           "title": "The 95 GeV Excess in Models with Two Higgs Doublets plus One Singlet: Model Distinction via Four-top Final States and Triple Higgs Couplings",
           "url": "https://arxiv.org/abs/2607.25670",
           "score": 200,
@@ -911,6 +902,15 @@
           "authors": "ATLAS Collaboration",
           "arxivCategory": "hep-ex",
           "publishedAt": "2026-07-24T11:07:48.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Probing Lorentz invariance via diphoton decays of the Higgs boson",
+          "url": "https://arxiv.org/abs/2607.21766",
+          "score": 200,
+          "authors": "Alan Kostelecky, Connor A. Petway, Nathaniel Sherrill",
+          "arxivCategory": "hep-ph",
+          "publishedAt": "2026-07-23T19:32:29.000Z"
         }
       ],
       "relatedConceptSlugs": [],
@@ -929,10 +929,10 @@
     {
       "slug": "dark-matter",
       "label": "Dark Matter & Dark Energy",
-      "score": 5820,
-      "delta": 4,
+      "score": 5816,
+      "delta": 3,
       "direction": "steady",
-      "mentions": 34,
+      "mentions": 33,
       "sources": [
         {
           "platform": "arxiv",
@@ -1326,7 +1326,7 @@
     {
       "slug": "exoplanets",
       "label": "Exoplanets",
-      "score": 2618,
+      "score": 2619,
       "delta": 0,
       "direction": "steady",
       "mentions": 18,
@@ -1696,79 +1696,10 @@
       }
     },
     {
-      "slug": "space-debris",
-      "label": "Space Debris",
-      "score": 1000,
-      "delta": 0,
-      "direction": "steady",
-      "mentions": 5,
-      "sources": [
-        {
-          "platform": "arxiv",
-          "title": "Observational planning for the 2026 August 5 Falcon 9 Upper Stage lunar impact",
-          "url": "https://arxiv.org/abs/2607.14625",
-          "score": 200,
-          "authors": "Benjamin Fernando, Jennifer Heldmann, Bill Grey et al.",
-          "arxivCategory": "astro-ph.EP",
-          "publishedAt": "2026-07-16T06:42:17.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "The Impact of Space Debris on Optical Astronomy",
-          "url": "https://arxiv.org/abs/2607.05480",
-          "score": 200,
-          "authors": "Anthony Mallama, Sergey Karpov, Richard E. Cole",
-          "arxivCategory": "astro-ph.IM",
-          "publishedAt": "2026-07-06T15:31:13.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Streak detection in the VST/OmegaCAM archive using deep learning",
-          "url": "https://arxiv.org/abs/2606.30286",
-          "score": 200,
-          "authors": "Elisabeth Rachith, Stephan Hellmich, Vincent Fiszbin et al.",
-          "arxivCategory": "astro-ph.IM",
-          "publishedAt": "2026-06-29T13:27:55.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Debris Evolution from Spacecraft Fragmentation in Earth-Moon Distant Retrograde Orbits",
-          "url": "https://arxiv.org/abs/2607.15709",
-          "score": 200,
-          "authors": "Yuyan Wu, Peng Shu, Yuqiang Li",
-          "arxivCategory": "astro-ph.EP",
-          "publishedAt": "2026-07-17T07:43:59.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Beyond the Cube: Overlapping Grid Methods for Debris Collision Risk Assessment",
-          "url": "https://arxiv.org/abs/2607.09634",
-          "score": 200,
-          "authors": "Yacob Medhin, Simone Servadio",
-          "arxivCategory": "astro-ph.EP",
-          "publishedAt": "2026-07-10T17:29:38.000Z"
-        }
-      ],
-      "relatedConceptSlugs": [
-        "niac-phase-i-final-report-on-orbit-collision"
-      ],
-      "resonance": 20,
-      "quadrant": "dead-zone",
-      "resonanceSignals": {
-        "conceptDepth": 0.3868528072345416,
-        "editorial": 0.4,
-        "connections": 0,
-        "convergence": 0,
-        "deepTopic": 0,
-        "pantheon": 0,
-        "graveyard": 0
-      }
-    },
-    {
       "slug": "starship",
       "label": "Starship & SpaceX",
-      "score": 805,
-      "delta": 3,
+      "score": 806,
+      "delta": 0,
       "direction": "steady",
       "mentions": 23,
       "sources": [
@@ -1839,7 +1770,7 @@
           "platform": "hackernews",
           "title": "SpaceXAI sues Minnesota AG over ban on nudifying apps",
           "url": "https://gizmodo.com/grok-creator-spacexai-sues-minnesota-ag-to-stop-ban-on-nudification-2000792143",
-          "score": 10,
+          "score": 11,
           "author": "pseudosavant",
           "commentCount": 0,
           "publishedAt": "2026-07-29T02:23:32.000Z"
@@ -1894,6 +1825,66 @@
         "convergence": 0.35,
         "deepTopic": 1,
         "pantheon": 0.92,
+        "graveyard": 0
+      }
+    },
+    {
+      "slug": "space-debris",
+      "label": "Space Debris",
+      "score": 800,
+      "delta": -20,
+      "direction": "down",
+      "mentions": 4,
+      "sources": [
+        {
+          "platform": "arxiv",
+          "title": "Observational planning for the 2026 August 5 Falcon 9 Upper Stage lunar impact",
+          "url": "https://arxiv.org/abs/2607.14625",
+          "score": 200,
+          "authors": "Benjamin Fernando, Jennifer Heldmann, Bill Grey et al.",
+          "arxivCategory": "astro-ph.EP",
+          "publishedAt": "2026-07-16T06:42:17.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "The Impact of Space Debris on Optical Astronomy",
+          "url": "https://arxiv.org/abs/2607.05480",
+          "score": 200,
+          "authors": "Anthony Mallama, Sergey Karpov, Richard E. Cole",
+          "arxivCategory": "astro-ph.IM",
+          "publishedAt": "2026-07-06T15:31:13.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Debris Evolution from Spacecraft Fragmentation in Earth-Moon Distant Retrograde Orbits",
+          "url": "https://arxiv.org/abs/2607.15709",
+          "score": 200,
+          "authors": "Yuyan Wu, Peng Shu, Yuqiang Li",
+          "arxivCategory": "astro-ph.EP",
+          "publishedAt": "2026-07-17T07:43:59.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Beyond the Cube: Overlapping Grid Methods for Debris Collision Risk Assessment",
+          "url": "https://arxiv.org/abs/2607.09634",
+          "score": 200,
+          "authors": "Yacob Medhin, Simone Servadio",
+          "arxivCategory": "astro-ph.EP",
+          "publishedAt": "2026-07-10T17:29:38.000Z"
+        }
+      ],
+      "relatedConceptSlugs": [
+        "niac-phase-i-final-report-on-orbit-collision"
+      ],
+      "resonance": 20,
+      "quadrant": "dead-zone",
+      "resonanceSignals": {
+        "conceptDepth": 0.3868528072345416,
+        "editorial": 0.4,
+        "connections": 0,
+        "convergence": 0,
+        "deepTopic": 0,
+        "pantheon": 0,
         "graveyard": 0
       }
     },
@@ -2281,7 +2272,7 @@
       "slug": "starlink",
       "label": "Starlink & Satellite Internet",
       "score": 36,
-      "delta": 57,
+      "delta": 50,
       "direction": "up",
       "mentions": 4,
       "sources": [
@@ -2340,8 +2331,8 @@
     {
       "slug": "electric-propulsion",
       "label": "Electric Propulsion",
-      "score": 13,
-      "delta": 86,
+      "score": 15,
+      "delta": 200,
       "direction": "up",
       "mentions": 1,
       "sources": [
@@ -2349,7 +2340,7 @@
           "platform": "hackernews",
           "title": "ICE Arrests Surge at Airports, Opening New Front in Deportation Drive",
           "url": "https://www.nytimes.com/2026/07/28/us/ice-arrests-airports-visa-overstay.html",
-          "score": 13,
+          "score": 15,
           "author": "mizzao",
           "commentCount": 1,
           "publishedAt": "2026-07-28T20:06:00.000Z"
