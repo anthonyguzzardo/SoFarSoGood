@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-07-31T19:28:46.773Z",
+  "generatedAt": "2026-08-01T08:08:19.476Z",
   "topics": [
     {
       "slug": "black-holes",
       "label": "Black Holes",
-      "score": 8420,
+      "score": 8421,
       "delta": 0,
       "direction": "steady",
       "mentions": 47,
@@ -137,10 +137,10 @@
     {
       "slug": "condensed-matter",
       "label": "Condensed Matter",
-      "score": 8095,
-      "delta": 3,
+      "score": 8097,
+      "delta": 0,
       "direction": "steady",
-      "mentions": 40,
+      "mentions": 41,
       "sources": [
         {
           "platform": "hackernews",
@@ -270,7 +270,7 @@
       "slug": "gravitational-waves",
       "label": "Gravitational Waves",
       "score": 8000,
-      "delta": -5,
+      "delta": 0,
       "direction": "steady",
       "mentions": 40,
       "sources": [
@@ -402,7 +402,7 @@
       "slug": "nanotechnology",
       "label": "Nanotechnology & Metamaterials",
       "score": 8000,
-      "delta": 0,
+      "delta": -2,
       "direction": "steady",
       "mentions": 40,
       "sources": [
@@ -535,7 +535,7 @@
       "slug": "space-telescopes",
       "label": "Space Telescopes",
       "score": 7952,
-      "delta": -5,
+      "delta": 0,
       "direction": "steady",
       "mentions": 41,
       "sources": [
@@ -667,10 +667,10 @@
     {
       "slug": "particle-physics",
       "label": "Particle Physics",
-      "score": 7203,
-      "delta": 0,
+      "score": 7003,
+      "delta": -3,
       "direction": "steady",
-      "mentions": 37,
+      "mentions": 36,
       "sources": [
         {
           "platform": "arxiv",
@@ -716,15 +716,6 @@
           "authors": "Daine L. Danielson, Netta Engelhardt, Lindley A. Winslow",
           "arxivCategory": "hep-ex",
           "publishedAt": "2026-07-20T09:39:33.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "An introduction to Hammer v2: Helicity Amplitude Module for Matrix Element Reweighting",
-          "url": "https://arxiv.org/abs/2607.01459",
-          "score": 200,
-          "authors": "Michele Papucci, Dean J. Robinson",
-          "arxivCategory": "hep-ph",
-          "publishedAt": "2026-07-01T20:30:28.000Z"
         },
         {
           "platform": "arxiv",
@@ -779,6 +770,15 @@
           "authors": "Michał Banacki, Misaki Ohta, Abhyoudai S. Shaleena et al.",
           "arxivCategory": "quant-ph",
           "publishedAt": "2026-07-28T18:00:00.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "The 95 GeV Excess in Models with Two Higgs Doublets plus One Singlet: Model Distinction via Four-top Final States and Triple Higgs Couplings",
+          "url": "https://arxiv.org/abs/2607.25670",
+          "score": 200,
+          "authors": "S. Heinemeyer, C. Li, G. Moortgat-Pick et al.",
+          "arxivCategory": "hep-ph",
+          "publishedAt": "2026-07-28T12:50:36.000Z"
         }
       ],
       "relatedConceptSlugs": [],
@@ -798,8 +798,8 @@
       "slug": "quantum-computing",
       "label": "Quantum Computing",
       "score": 6419,
-      "delta": -20,
-      "direction": "down",
+      "delta": 0,
+      "direction": "steady",
       "mentions": 40,
       "sources": [
         {
@@ -930,7 +930,7 @@
       "slug": "cosmology",
       "label": "Cosmology",
       "score": 5800,
-      "delta": 4,
+      "delta": 0,
       "direction": "steady",
       "mentions": 29,
       "sources": [
@@ -1062,9 +1062,9 @@
       "slug": "dark-matter",
       "label": "Dark Matter & Dark Energy",
       "score": 5435,
-      "delta": -3,
+      "delta": 1,
       "direction": "steady",
-      "mentions": 30,
+      "mentions": 29,
       "sources": [
         {
           "platform": "arxiv",
@@ -1326,8 +1326,8 @@
     {
       "slug": "exoplanets",
       "label": "Exoplanets",
-      "score": 2613,
-      "delta": 8,
+      "score": 2614,
+      "delta": 0,
       "direction": "steady",
       "mentions": 17,
       "sources": [
@@ -1460,7 +1460,7 @@
       "slug": "artemis",
       "label": "Artemis & Lunar Return",
       "score": 2000,
-      "delta": -9,
+      "delta": 0,
       "direction": "steady",
       "mentions": 10,
       "sources": [
@@ -1574,10 +1574,10 @@
     {
       "slug": "astrobiology",
       "label": "Astrobiology",
-      "score": 2000,
-      "delta": 25,
-      "direction": "up",
-      "mentions": 10,
+      "score": 1800,
+      "delta": -10,
+      "direction": "steady",
+      "mentions": 9,
       "sources": [
         {
           "platform": "arxiv",
@@ -1659,15 +1659,6 @@
           "authors": "Arwen E. Nicholson, Nathan J. Mayne",
           "arxivCategory": "astro-ph.EP",
           "publishedAt": "2026-07-07T15:01:57.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Substrate-Agnostic 3x: Biosignatures, Technosignatures, Ecologies",
-          "url": "https://arxiv.org/abs/2607.01664",
-          "score": 200,
-          "authors": "Lukáš Likavčan",
-          "arxivCategory": "physics.gen-ph",
-          "publishedAt": "2026-07-02T03:44:13.000Z"
         }
       ],
       "relatedConceptSlugs": [
@@ -1689,10 +1680,10 @@
     {
       "slug": "space-debris",
       "label": "Space Debris",
-      "score": 809,
-      "delta": 1,
+      "score": 812,
+      "delta": 2,
       "direction": "steady",
-      "mentions": 5,
+      "mentions": 6,
       "sources": [
         {
           "platform": "arxiv",
@@ -1734,10 +1725,19 @@
           "platform": "hackernews",
           "title": "A Ton of Space Junk Tumbles Unpredictably to Earth Every Week",
           "url": "https://www.nytimes.com/2026/07/31/world/asia/space-debris-falling-crashing-earth-risk.html",
-          "score": 9,
+          "score": 10,
           "author": "bicepjai",
           "commentCount": 4,
           "publishedAt": "2026-07-31T14:49:56.000Z"
+        },
+        {
+          "platform": "hackernews",
+          "title": "A Ton of Space Junk Tumbles Unpredictably to Earth Every Week",
+          "url": "https://www.nytimes.com/2026/07/31/world/asia/space-debris-falling-crashing-earth-risk.html",
+          "score": 2,
+          "author": "0in",
+          "commentCount": 0,
+          "publishedAt": "2026-08-01T06:12:17.000Z"
         }
       ],
       "relatedConceptSlugs": [
@@ -1880,16 +1880,16 @@
     {
       "slug": "starship",
       "label": "Starship & SpaceX",
-      "score": 767,
-      "delta": -4,
-      "direction": "steady",
-      "mentions": 23,
+      "score": 642,
+      "delta": -20,
+      "direction": "down",
+      "mentions": 21,
       "sources": [
         {
           "platform": "hackernews",
           "title": "Google Discloses $94.1B in SpaceX Stock, Marking 6% Stake",
           "url": "https://www.wsj.com/tech/google-discloses-94-1-billion-in-spacex-stock-marking-6-stake-91655d7c",
-          "score": 341,
+          "score": 342,
           "author": "1vuio0pswjnm7",
           "commentCount": 329,
           "publishedAt": "2026-07-26T12:43:21.000Z"
@@ -1902,15 +1902,6 @@
           "authors": "Liwei Chen, Tong Qin",
           "arxivCategory": "cs.RO",
           "publishedAt": "2026-07-02T14:30:37.000Z"
-        },
-        {
-          "platform": "hackernews",
-          "title": "SpaceX Starship Flight 13 livestream [video]",
-          "url": "https://www.spacex.com/launches/starship-flight-13",
-          "score": 123,
-          "author": "cryptoz",
-          "commentCount": 199,
-          "publishedAt": "2026-07-24T22:44:38.000Z"
         },
         {
           "platform": "hackernews",
@@ -1961,19 +1952,19 @@
           "platform": "hackernews",
           "title": "Drifting SpaceX rocket heading for accidental collision with moon",
           "url": "https://www.theguardian.com/science/2026/jul/31/spacex-rocket-moon-collision",
-          "score": 6,
+          "score": 7,
           "author": "root-parent",
           "commentCount": 0,
           "publishedAt": "2026-07-31T15:44:37.000Z"
         },
         {
           "platform": "hackernews",
-          "title": "Starship's Thirteenth Test Flight",
-          "url": "https://www.spacex.com/launches/starship-flight-13v",
+          "title": "A discarded SpaceX rocket is on a high-speed collision course with the moon",
+          "url": "https://phys.org/news/2026-07-discarded-spacex-rocket-high-collision.html",
           "score": 5,
-          "author": "JumpCrisscross",
-          "commentCount": 1,
-          "publishedAt": "2026-07-25T01:44:59.000Z"
+          "author": "0in",
+          "commentCount": 2,
+          "publishedAt": "2026-07-31T17:41:31.000Z"
         },
         {
           "platform": "hackernews",
@@ -1986,12 +1977,21 @@
         },
         {
           "platform": "hackernews",
-          "title": "Lucky 13 Starship sends out satellites and stays intact",
-          "url": "https://cosmiclog.com/2026/07/24/lucky-13-starship-sends-out-satellites-and-stays-intact/",
+          "title": "Experts warn current Starship heat shield tech is a \"dead end\" for rapid reuse",
+          "url": "https://arstechnica.com/space/2026/07/despite-recent-successes-rapid-reuse-of-starship-remains-a-tough-nut-to-crack/",
           "score": 4,
-          "author": "ColinWright",
-          "commentCount": 6,
-          "publishedAt": "2026-07-25T08:00:27.000Z"
+          "author": "rbanffy",
+          "commentCount": 0,
+          "publishedAt": "2026-07-28T08:37:32.000Z"
+        },
+        {
+          "platform": "hackernews",
+          "title": "SpaceX eyes tower catch for next Starship after auspicious end to 13th flight",
+          "url": "https://arstechnica.com/space/2026/07/spacex-eyes-tower-catch-for-next-starship-after-auspicious-end-to-13th-flight/",
+          "score": 4,
+          "author": "Brajeshwar",
+          "commentCount": 0,
+          "publishedAt": "2026-07-26T15:14:08.000Z"
         }
       ],
       "relatedConceptSlugs": [
@@ -2153,8 +2153,8 @@
     {
       "slug": "ai-space",
       "label": "AI in Space",
-      "score": 201,
-      "delta": 1,
+      "score": 205,
+      "delta": 3,
       "direction": "steady",
       "mentions": 2,
       "sources": [
@@ -2171,7 +2171,7 @@
           "platform": "hackernews",
           "title": "Google pauses AI satellite images, after fears of deepfakes in the sky",
           "url": "https://www.npr.org/2026/07/31/nx-s1-5914652/google-adds-ai-to-satellite-images-raising-fears-of-deepfakes-in-the-sky",
-          "score": 1,
+          "score": 5,
           "author": "Jimmc414",
           "commentCount": 0,
           "publishedAt": "2026-07-31T18:53:59.000Z"
@@ -2298,10 +2298,10 @@
     {
       "slug": "starlink",
       "label": "Starlink & Satellite Internet",
-      "score": 32,
-      "delta": -3,
-      "direction": "steady",
-      "mentions": 2,
+      "score": 18,
+      "delta": -42,
+      "direction": "down",
+      "mentions": 1,
       "sources": [
         {
           "platform": "hackernews",
@@ -2311,15 +2311,6 @@
           "author": "logickkk1",
           "commentCount": 0,
           "publishedAt": "2026-07-28T19:05:39.000Z"
-        },
-        {
-          "platform": "hackernews",
-          "title": "Ukraine' Simple But Effective Protection Against Russian Starlink Jamming (2023)",
-          "url": "https://www.technology.org/2023/08/01/did-russia-learn-to-jam-starlink-satellites-ukraine-is-already-using-a-simple-but-effective-protection/",
-          "score": 14,
-          "author": "pinkmuffinere",
-          "commentCount": 0,
-          "publishedAt": "2026-07-25T00:48:41.000Z"
         }
       ],
       "relatedConceptSlugs": [
