@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-01T19:12:20.663Z",
+  "generatedAt": "2026-08-02T08:09:47.310Z",
   "topics": [
     {
       "slug": "black-holes",
@@ -130,138 +130,6 @@
         "connections": 1,
         "convergence": 0.2,
         "deepTopic": 1,
-        "pantheon": 0.92,
-        "graveyard": 0
-      }
-    },
-    {
-      "slug": "condensed-matter",
-      "label": "Condensed Matter",
-      "score": 8081,
-      "delta": 0,
-      "direction": "steady",
-      "mentions": 39,
-      "sources": [
-        {
-          "platform": "hackernews",
-          "title": "US citizen charged after GrapheneOS phone wipes during airport search",
-          "url": "https://www.techspot.com/news/113236-us-prosecutors-charge-atlanta-man-after-grapheneos-phone.html",
-          "score": 1334,
-          "author": "eecc",
-          "commentCount": 1113,
-          "publishedAt": "2026-07-26T22:21:41.000Z"
-        },
-        {
-          "platform": "hackernews",
-          "title": "GrapheneOS protections against data extraction from locked devices",
-          "url": "https://discuss.grapheneos.org/d/40700-grapheneos-protections-against-data-extraction-from-locked-devices",
-          "score": 448,
-          "author": "Cider9986",
-          "commentCount": 257,
-          "publishedAt": "2026-07-26T05:57:22.000Z"
-        },
-        {
-          "platform": "hackernews",
-          "title": "Donate to GrapheneOS",
-          "url": "https://grapheneos.org/donate",
-          "score": 252,
-          "author": "charliebwrites",
-          "commentCount": 93,
-          "publishedAt": "2026-07-28T19:06:10.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "How to measure loop currents in scanning tunneling microscopy",
-          "url": "https://arxiv.org/abs/2607.20030",
-          "score": 200,
-          "authors": "Victoire Morisseau, Luke C. Rhodes, Peter Wahl et al.",
-          "arxivCategory": "cond-mat.str-el",
-          "publishedAt": "2026-07-22T11:16:39.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "The muon collider: expected physics, technological solutions, and the prospect of a 21 km ring at the UNK site",
-          "url": "https://arxiv.org/abs/2607.16904",
-          "score": 200,
-          "authors": "L. V. Dudko",
-          "arxivCategory": "hep-ph",
-          "publishedAt": "2026-07-18T17:40:49.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Towards joint optimization of stellarator coils and support structures",
-          "url": "https://arxiv.org/abs/2607.05749",
-          "score": 200,
-          "authors": "Lanke Fu, Alan A. Kaptanoglu",
-          "arxivCategory": "physics.plasm-ph",
-          "publishedAt": "2026-07-07T02:11:39.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Drumhead Surface States of Rhombohedral Graphite with Near Ideal Quantum Geometry Condition",
-          "url": "https://arxiv.org/abs/2607.28491",
-          "score": 200,
-          "authors": "Lin-Lin Wang",
-          "arxivCategory": "cond-mat.mtrl-sci",
-          "publishedAt": "2026-07-30T16:40:22.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Consistent symmetry breaking and topological phases",
-          "url": "https://arxiv.org/abs/2607.28181",
-          "score": 200,
-          "authors": "Yuezhao Li, Guo Chuan Thiang",
-          "arxivCategory": "math-ph",
-          "publishedAt": "2026-07-30T13:19:17.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Flat-band formation and chiral superconductivity in driven topological insulators",
-          "url": "https://arxiv.org/abs/2607.27355",
-          "score": 200,
-          "authors": "Suman Jyoti De, Leo Goutte, Kartiek Agarwal et al.",
-          "arxivCategory": "cond-mat.str-el",
-          "publishedAt": "2026-07-29T18:10:13.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Angular Momentum Transfer in Magnetic Weyl Semimetal Spheres",
-          "url": "https://arxiv.org/abs/2607.27086",
-          "score": 200,
-          "authors": "Adriano Biondo, Francesco M. D. Pellegrino",
-          "arxivCategory": "cond-mat.mes-hall",
-          "publishedAt": "2026-07-29T16:09:34.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Giant Bulk-Rashba Splitting in Polar Topological Insulator BiSbTeSe$_2$",
-          "url": "https://arxiv.org/abs/2607.26311",
-          "score": 200,
-          "authors": "Ritam Chakraborty",
-          "arxivCategory": "cond-mat.mes-hall",
-          "publishedAt": "2026-07-28T22:14:45.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Everything is a Spin: The Secret Lives of SU(2)",
-          "url": "https://arxiv.org/abs/2607.25212",
-          "score": 200,
-          "authors": "Avik W Ghosh",
-          "arxivCategory": "cond-mat.mes-hall",
-          "publishedAt": "2026-07-28T02:34:29.000Z"
-        }
-      ],
-      "relatedConceptSlugs": [
-        "extreme-metamaterial-solar-sails"
-      ],
-      "resonance": 50,
-      "quadrant": "real-deal",
-      "resonanceSignals": {
-        "conceptDepth": 0.6131471927654584,
-        "editorial": 1,
-        "connections": 0.3333333333333333,
-        "convergence": 0.15,
-        "deepTopic": 0,
         "pantheon": 0.92,
         "graveyard": 0
       }
@@ -665,10 +533,142 @@
       }
     },
     {
+      "slug": "condensed-matter",
+      "label": "Condensed Matter",
+      "score": 7615,
+      "delta": -6,
+      "direction": "steady",
+      "mentions": 37,
+      "sources": [
+        {
+          "platform": "hackernews",
+          "title": "US citizen charged after GrapheneOS phone wipes during airport search",
+          "url": "https://www.techspot.com/news/113236-us-prosecutors-charge-atlanta-man-after-grapheneos-phone.html",
+          "score": 1336,
+          "author": "eecc",
+          "commentCount": 1113,
+          "publishedAt": "2026-07-26T22:21:41.000Z"
+        },
+        {
+          "platform": "hackernews",
+          "title": "Donate to GrapheneOS",
+          "url": "https://grapheneos.org/donate",
+          "score": 252,
+          "author": "charliebwrites",
+          "commentCount": 93,
+          "publishedAt": "2026-07-28T19:06:10.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "How to measure loop currents in scanning tunneling microscopy",
+          "url": "https://arxiv.org/abs/2607.20030",
+          "score": 200,
+          "authors": "Victoire Morisseau, Luke C. Rhodes, Peter Wahl et al.",
+          "arxivCategory": "cond-mat.str-el",
+          "publishedAt": "2026-07-22T11:16:39.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "The muon collider: expected physics, technological solutions, and the prospect of a 21 km ring at the UNK site",
+          "url": "https://arxiv.org/abs/2607.16904",
+          "score": 200,
+          "authors": "L. V. Dudko",
+          "arxivCategory": "hep-ph",
+          "publishedAt": "2026-07-18T17:40:49.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Towards joint optimization of stellarator coils and support structures",
+          "url": "https://arxiv.org/abs/2607.05749",
+          "score": 200,
+          "authors": "Lanke Fu, Alan A. Kaptanoglu",
+          "arxivCategory": "physics.plasm-ph",
+          "publishedAt": "2026-07-07T02:11:39.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Drumhead Surface States of Rhombohedral Graphite with Near Ideal Quantum Geometry Condition",
+          "url": "https://arxiv.org/abs/2607.28491",
+          "score": 200,
+          "authors": "Lin-Lin Wang",
+          "arxivCategory": "cond-mat.mtrl-sci",
+          "publishedAt": "2026-07-30T16:40:22.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Consistent symmetry breaking and topological phases",
+          "url": "https://arxiv.org/abs/2607.28181",
+          "score": 200,
+          "authors": "Yuezhao Li, Guo Chuan Thiang",
+          "arxivCategory": "math-ph",
+          "publishedAt": "2026-07-30T13:19:17.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Flat-band formation and chiral superconductivity in driven topological insulators",
+          "url": "https://arxiv.org/abs/2607.27355",
+          "score": 200,
+          "authors": "Suman Jyoti De, Leo Goutte, Kartiek Agarwal et al.",
+          "arxivCategory": "cond-mat.str-el",
+          "publishedAt": "2026-07-29T18:10:13.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Angular Momentum Transfer in Magnetic Weyl Semimetal Spheres",
+          "url": "https://arxiv.org/abs/2607.27086",
+          "score": 200,
+          "authors": "Adriano Biondo, Francesco M. D. Pellegrino",
+          "arxivCategory": "cond-mat.mes-hall",
+          "publishedAt": "2026-07-29T16:09:34.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Giant Bulk-Rashba Splitting in Polar Topological Insulator BiSbTeSe$_2$",
+          "url": "https://arxiv.org/abs/2607.26311",
+          "score": 200,
+          "authors": "Ritam Chakraborty",
+          "arxivCategory": "cond-mat.mes-hall",
+          "publishedAt": "2026-07-28T22:14:45.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Everything is a Spin: The Secret Lives of SU(2)",
+          "url": "https://arxiv.org/abs/2607.25212",
+          "score": 200,
+          "authors": "Avik W Ghosh",
+          "arxivCategory": "cond-mat.mes-hall",
+          "publishedAt": "2026-07-28T02:34:29.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Field-Induced Dissociation Reveals Excitonic Long-Range Photocarrier Transport in Bulk-Insulating Bi2Se3 Nanoribbons",
+          "url": "https://arxiv.org/abs/2607.25128",
+          "score": 200,
+          "authors": "Rodrigo Becerra Silva, Xiang Yi, Ziyi Song et al.",
+          "arxivCategory": "cond-mat.mes-hall",
+          "publishedAt": "2026-07-27T22:46:42.000Z"
+        }
+      ],
+      "relatedConceptSlugs": [
+        "extreme-metamaterial-solar-sails"
+      ],
+      "resonance": 50,
+      "quadrant": "real-deal",
+      "resonanceSignals": {
+        "conceptDepth": 0.6131471927654584,
+        "editorial": 1,
+        "connections": 0.3333333333333333,
+        "convergence": 0.15,
+        "deepTopic": 0,
+        "pantheon": 0.92,
+        "graveyard": 0
+      }
+    },
+    {
       "slug": "particle-physics",
       "label": "Particle Physics",
       "score": 7000,
-      "delta": -3,
+      "delta": 0,
       "direction": "steady",
       "mentions": 35,
       "sources": [
@@ -797,7 +797,7 @@
     {
       "slug": "quantum-computing",
       "label": "Quantum Computing",
-      "score": 6422,
+      "score": 6423,
       "delta": 0,
       "direction": "steady",
       "mentions": 41,
@@ -1194,10 +1194,10 @@
     {
       "slug": "quantum-comms",
       "label": "Quantum Communication",
-      "score": 3008,
+      "score": 3000,
       "delta": 0,
       "direction": "steady",
-      "mentions": 16,
+      "mentions": 15,
       "sources": [
         {
           "platform": "arxiv",
@@ -1326,10 +1326,10 @@
     {
       "slug": "exoplanets",
       "label": "Exoplanets",
-      "score": 2414,
+      "score": 2409,
       "delta": -8,
       "direction": "steady",
-      "mentions": 16,
+      "mentions": 15,
       "sources": [
         {
           "platform": "arxiv",
@@ -1575,7 +1575,7 @@
       "slug": "astrobiology",
       "label": "Astrobiology",
       "score": 1800,
-      "delta": -10,
+      "delta": 0,
       "direction": "steady",
       "mentions": 9,
       "sources": [
@@ -1681,7 +1681,7 @@
       "slug": "space-debris",
       "label": "Space Debris",
       "score": 822,
-      "delta": 2,
+      "delta": 1,
       "direction": "steady",
       "mentions": 6,
       "sources": [
@@ -1932,10 +1932,10 @@
     {
       "slug": "starship",
       "label": "Starship & SpaceX",
-      "score": 436,
-      "delta": -43,
+      "score": 446,
+      "delta": -31,
       "direction": "down",
-      "mentions": 20,
+      "mentions": 22,
       "sources": [
         {
           "platform": "hackernews",
@@ -2002,6 +2002,15 @@
         },
         {
           "platform": "hackernews",
+          "title": "A discarded SpaceX rocket is on a high-speed collision course with the moon",
+          "url": "https://phys.org/news/2026-07-discarded-spacex-rocket-high-collision.html",
+          "score": 6,
+          "author": "bookmtn",
+          "commentCount": 0,
+          "publishedAt": "2026-08-01T22:11:50.000Z"
+        },
+        {
+          "platform": "hackernews",
           "title": "U.S. exempts SpaceX's Starlink from FCC ban on foreign-made routers",
           "url": "https://arstechnica.com/tech-policy/2026/07/starlink-gets-exemption-from-fcc-ban-on-routers-made-outside-the-us/",
           "score": 5,
@@ -2035,15 +2044,6 @@
           "author": "Brajeshwar",
           "commentCount": 0,
           "publishedAt": "2026-07-26T15:14:08.000Z"
-        },
-        {
-          "platform": "hackernews",
-          "title": "Tesla Weighs China Unit Sale Ahead of SpaceX Deal",
-          "url": "https://www.bloomberg.com/news/articles/2026-07-31/tesla-weighs-china-unit-sale-ahead-of-spacex-deal-wsj-says",
-          "score": 4,
-          "author": "chollida1",
-          "commentCount": 0,
-          "publishedAt": "2026-07-31T15:05:09.000Z"
         }
       ],
       "relatedConceptSlugs": [
@@ -2154,7 +2154,7 @@
       "slug": "ai-space",
       "label": "AI in Space",
       "score": 205,
-      "delta": 2,
+      "delta": 0,
       "direction": "steady",
       "mentions": 2,
       "sources": [
@@ -2298,9 +2298,9 @@
     {
       "slug": "starlink",
       "label": "Starlink & Satellite Internet",
-      "score": 19,
-      "delta": -41,
-      "direction": "down",
+      "score": 31,
+      "delta": 72,
+      "direction": "up",
       "mentions": 2,
       "sources": [
         {
@@ -2316,9 +2316,9 @@
           "platform": "hackernews",
           "title": "Signal Structure of the Starlink Ku-Band Downlink (2023) [pdf]",
           "url": "https://radionavlab.ae.utexas.edu/wp-content/uploads/starlink_structure.pdf",
-          "score": 1,
+          "score": 13,
           "author": "peter_d_sherman",
-          "commentCount": 0,
+          "commentCount": 1,
           "publishedAt": "2026-08-01T18:59:35.000Z"
         }
       ],
