@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-08-02T08:09:47.310Z",
+  "generatedAt": "2026-08-02T19:13:53.938Z",
   "topics": [
     {
       "slug": "black-holes",
       "label": "Black Holes",
-      "score": 8216,
-      "delta": -2,
+      "score": 8217,
+      "delta": 0,
       "direction": "steady",
       "mentions": 44,
       "sources": [
@@ -400,12 +400,144 @@
       }
     },
     {
+      "slug": "condensed-matter",
+      "label": "Condensed Matter",
+      "score": 7616,
+      "delta": -6,
+      "direction": "steady",
+      "mentions": 37,
+      "sources": [
+        {
+          "platform": "hackernews",
+          "title": "US citizen charged after GrapheneOS phone wipes during airport search",
+          "url": "https://www.techspot.com/news/113236-us-prosecutors-charge-atlanta-man-after-grapheneos-phone.html",
+          "score": 1336,
+          "author": "eecc",
+          "commentCount": 1114,
+          "publishedAt": "2026-07-26T22:21:41.000Z"
+        },
+        {
+          "platform": "hackernews",
+          "title": "Donate to GrapheneOS",
+          "url": "https://grapheneos.org/donate",
+          "score": 252,
+          "author": "charliebwrites",
+          "commentCount": 93,
+          "publishedAt": "2026-07-28T19:06:10.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "How to measure loop currents in scanning tunneling microscopy",
+          "url": "https://arxiv.org/abs/2607.20030",
+          "score": 200,
+          "authors": "Victoire Morisseau, Luke C. Rhodes, Peter Wahl et al.",
+          "arxivCategory": "cond-mat.str-el",
+          "publishedAt": "2026-07-22T11:16:39.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "The muon collider: expected physics, technological solutions, and the prospect of a 21 km ring at the UNK site",
+          "url": "https://arxiv.org/abs/2607.16904",
+          "score": 200,
+          "authors": "L. V. Dudko",
+          "arxivCategory": "hep-ph",
+          "publishedAt": "2026-07-18T17:40:49.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Towards joint optimization of stellarator coils and support structures",
+          "url": "https://arxiv.org/abs/2607.05749",
+          "score": 200,
+          "authors": "Lanke Fu, Alan A. Kaptanoglu",
+          "arxivCategory": "physics.plasm-ph",
+          "publishedAt": "2026-07-07T02:11:39.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Drumhead Surface States of Rhombohedral Graphite with Near Ideal Quantum Geometry Condition",
+          "url": "https://arxiv.org/abs/2607.28491",
+          "score": 200,
+          "authors": "Lin-Lin Wang",
+          "arxivCategory": "cond-mat.mtrl-sci",
+          "publishedAt": "2026-07-30T16:40:22.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Consistent symmetry breaking and topological phases",
+          "url": "https://arxiv.org/abs/2607.28181",
+          "score": 200,
+          "authors": "Yuezhao Li, Guo Chuan Thiang",
+          "arxivCategory": "math-ph",
+          "publishedAt": "2026-07-30T13:19:17.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Flat-band formation and chiral superconductivity in driven topological insulators",
+          "url": "https://arxiv.org/abs/2607.27355",
+          "score": 200,
+          "authors": "Suman Jyoti De, Leo Goutte, Kartiek Agarwal et al.",
+          "arxivCategory": "cond-mat.str-el",
+          "publishedAt": "2026-07-29T18:10:13.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Angular Momentum Transfer in Magnetic Weyl Semimetal Spheres",
+          "url": "https://arxiv.org/abs/2607.27086",
+          "score": 200,
+          "authors": "Adriano Biondo, Francesco M. D. Pellegrino",
+          "arxivCategory": "cond-mat.mes-hall",
+          "publishedAt": "2026-07-29T16:09:34.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Giant Bulk-Rashba Splitting in Polar Topological Insulator BiSbTeSe$_2$",
+          "url": "https://arxiv.org/abs/2607.26311",
+          "score": 200,
+          "authors": "Ritam Chakraborty",
+          "arxivCategory": "cond-mat.mes-hall",
+          "publishedAt": "2026-07-28T22:14:45.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Everything is a Spin: The Secret Lives of SU(2)",
+          "url": "https://arxiv.org/abs/2607.25212",
+          "score": 200,
+          "authors": "Avik W Ghosh",
+          "arxivCategory": "cond-mat.mes-hall",
+          "publishedAt": "2026-07-28T02:34:29.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Field-Induced Dissociation Reveals Excitonic Long-Range Photocarrier Transport in Bulk-Insulating Bi2Se3 Nanoribbons",
+          "url": "https://arxiv.org/abs/2607.25128",
+          "score": 200,
+          "authors": "Rodrigo Becerra Silva, Xiang Yi, Ziyi Song et al.",
+          "arxivCategory": "cond-mat.mes-hall",
+          "publishedAt": "2026-07-27T22:46:42.000Z"
+        }
+      ],
+      "relatedConceptSlugs": [
+        "extreme-metamaterial-solar-sails"
+      ],
+      "resonance": 50,
+      "quadrant": "real-deal",
+      "resonanceSignals": {
+        "conceptDepth": 0.6131471927654584,
+        "editorial": 1,
+        "connections": 0.3333333333333333,
+        "convergence": 0.15,
+        "deepTopic": 0,
+        "pantheon": 0.92,
+        "graveyard": 0
+      }
+    },
+    {
       "slug": "nanotechnology",
       "label": "Nanotechnology & Metamaterials",
-      "score": 7800,
-      "delta": -2,
+      "score": 7600,
+      "delta": -3,
       "direction": "steady",
-      "mentions": 39,
+      "mentions": 38,
       "sources": [
         {
           "platform": "arxiv",
@@ -528,138 +660,6 @@
         "connections": 0.3333333333333333,
         "convergence": 0.15,
         "deepTopic": 0.8,
-        "pantheon": 0.92,
-        "graveyard": 0
-      }
-    },
-    {
-      "slug": "condensed-matter",
-      "label": "Condensed Matter",
-      "score": 7615,
-      "delta": -6,
-      "direction": "steady",
-      "mentions": 37,
-      "sources": [
-        {
-          "platform": "hackernews",
-          "title": "US citizen charged after GrapheneOS phone wipes during airport search",
-          "url": "https://www.techspot.com/news/113236-us-prosecutors-charge-atlanta-man-after-grapheneos-phone.html",
-          "score": 1336,
-          "author": "eecc",
-          "commentCount": 1113,
-          "publishedAt": "2026-07-26T22:21:41.000Z"
-        },
-        {
-          "platform": "hackernews",
-          "title": "Donate to GrapheneOS",
-          "url": "https://grapheneos.org/donate",
-          "score": 252,
-          "author": "charliebwrites",
-          "commentCount": 93,
-          "publishedAt": "2026-07-28T19:06:10.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "How to measure loop currents in scanning tunneling microscopy",
-          "url": "https://arxiv.org/abs/2607.20030",
-          "score": 200,
-          "authors": "Victoire Morisseau, Luke C. Rhodes, Peter Wahl et al.",
-          "arxivCategory": "cond-mat.str-el",
-          "publishedAt": "2026-07-22T11:16:39.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "The muon collider: expected physics, technological solutions, and the prospect of a 21 km ring at the UNK site",
-          "url": "https://arxiv.org/abs/2607.16904",
-          "score": 200,
-          "authors": "L. V. Dudko",
-          "arxivCategory": "hep-ph",
-          "publishedAt": "2026-07-18T17:40:49.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Towards joint optimization of stellarator coils and support structures",
-          "url": "https://arxiv.org/abs/2607.05749",
-          "score": 200,
-          "authors": "Lanke Fu, Alan A. Kaptanoglu",
-          "arxivCategory": "physics.plasm-ph",
-          "publishedAt": "2026-07-07T02:11:39.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Drumhead Surface States of Rhombohedral Graphite with Near Ideal Quantum Geometry Condition",
-          "url": "https://arxiv.org/abs/2607.28491",
-          "score": 200,
-          "authors": "Lin-Lin Wang",
-          "arxivCategory": "cond-mat.mtrl-sci",
-          "publishedAt": "2026-07-30T16:40:22.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Consistent symmetry breaking and topological phases",
-          "url": "https://arxiv.org/abs/2607.28181",
-          "score": 200,
-          "authors": "Yuezhao Li, Guo Chuan Thiang",
-          "arxivCategory": "math-ph",
-          "publishedAt": "2026-07-30T13:19:17.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Flat-band formation and chiral superconductivity in driven topological insulators",
-          "url": "https://arxiv.org/abs/2607.27355",
-          "score": 200,
-          "authors": "Suman Jyoti De, Leo Goutte, Kartiek Agarwal et al.",
-          "arxivCategory": "cond-mat.str-el",
-          "publishedAt": "2026-07-29T18:10:13.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Angular Momentum Transfer in Magnetic Weyl Semimetal Spheres",
-          "url": "https://arxiv.org/abs/2607.27086",
-          "score": 200,
-          "authors": "Adriano Biondo, Francesco M. D. Pellegrino",
-          "arxivCategory": "cond-mat.mes-hall",
-          "publishedAt": "2026-07-29T16:09:34.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Giant Bulk-Rashba Splitting in Polar Topological Insulator BiSbTeSe$_2$",
-          "url": "https://arxiv.org/abs/2607.26311",
-          "score": 200,
-          "authors": "Ritam Chakraborty",
-          "arxivCategory": "cond-mat.mes-hall",
-          "publishedAt": "2026-07-28T22:14:45.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Everything is a Spin: The Secret Lives of SU(2)",
-          "url": "https://arxiv.org/abs/2607.25212",
-          "score": 200,
-          "authors": "Avik W Ghosh",
-          "arxivCategory": "cond-mat.mes-hall",
-          "publishedAt": "2026-07-28T02:34:29.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Field-Induced Dissociation Reveals Excitonic Long-Range Photocarrier Transport in Bulk-Insulating Bi2Se3 Nanoribbons",
-          "url": "https://arxiv.org/abs/2607.25128",
-          "score": 200,
-          "authors": "Rodrigo Becerra Silva, Xiang Yi, Ziyi Song et al.",
-          "arxivCategory": "cond-mat.mes-hall",
-          "publishedAt": "2026-07-27T22:46:42.000Z"
-        }
-      ],
-      "relatedConceptSlugs": [
-        "extreme-metamaterial-solar-sails"
-      ],
-      "resonance": 50,
-      "quadrant": "real-deal",
-      "resonanceSignals": {
-        "conceptDepth": 0.6131471927654584,
-        "editorial": 1,
-        "connections": 0.3333333333333333,
-        "convergence": 0.15,
-        "deepTopic": 0,
         "pantheon": 0.92,
         "graveyard": 0
       }
@@ -1061,10 +1061,10 @@
     {
       "slug": "dark-matter",
       "label": "Dark Matter & Dark Energy",
-      "score": 5436,
+      "score": 5432,
       "delta": 0,
       "direction": "steady",
-      "mentions": 29,
+      "mentions": 28,
       "sources": [
         {
           "platform": "arxiv",
@@ -1327,7 +1327,7 @@
       "slug": "exoplanets",
       "label": "Exoplanets",
       "score": 2409,
-      "delta": -8,
+      "delta": 0,
       "direction": "steady",
       "mentions": 15,
       "sources": [
@@ -1459,8 +1459,8 @@
     {
       "slug": "artemis",
       "label": "Artemis & Lunar Return",
-      "score": 2000,
-      "delta": 0,
+      "score": 1803,
+      "delta": -10,
       "direction": "steady",
       "mentions": 10,
       "sources": [
@@ -1546,13 +1546,13 @@
           "publishedAt": "2026-07-11T03:24:09.000Z"
         },
         {
-          "platform": "arxiv",
-          "title": "An Efficient Non-Gaussian Chance Constraint Method for Stochastic Nonlinear Problems in Spaceflight",
-          "url": "https://arxiv.org/abs/2607.03424",
-          "score": 200,
-          "authors": "Ethan R. Burnett, Spencer Boone, Niccolo Michelotti",
-          "arxivCategory": "eess.SY",
-          "publishedAt": "2026-07-03T15:37:24.000Z"
+          "platform": "hackernews",
+          "title": "Moon landing anniversary, former astronauts say voting is Americans' mission",
+          "url": "https://www.dailynews.com/2026/07/20/on-anniversary-of-moon-landing-former-astronauts-say-voting-is-americans-mission/",
+          "score": 3,
+          "author": "rbanffy",
+          "commentCount": 0,
+          "publishedAt": "2026-08-02T10:07:12.000Z"
         }
       ],
       "relatedConceptSlugs": [
@@ -1574,10 +1574,10 @@
     {
       "slug": "astrobiology",
       "label": "Astrobiology",
-      "score": 1800,
-      "delta": 0,
+      "score": 1600,
+      "delta": -11,
       "direction": "steady",
-      "mentions": 9,
+      "mentions": 8,
       "sources": [
         {
           "platform": "arxiv",
@@ -1596,15 +1596,6 @@
           "authors": "Chenoa D. Tremblay, Sofia Z. Sheikh, Vishal Gajjar et al.",
           "arxivCategory": "astro-ph.IM",
           "publishedAt": "2026-07-08T09:15:28.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "White Paper on Phototrophic Biosignatures: Research Priorities for the Search for Life on Other Worlds",
-          "url": "https://arxiv.org/abs/2607.03106",
-          "score": 200,
-          "authors": "Nancy Y. Kiang, Christopher Gisriel, Robert E. Blankenship et al.",
-          "arxivCategory": "astro-ph.IM",
-          "publishedAt": "2026-07-03T08:41:52.000Z"
         },
         {
           "platform": "arxiv",
@@ -1681,7 +1672,7 @@
       "slug": "space-debris",
       "label": "Space Debris",
       "score": 822,
-      "delta": 1,
+      "delta": 0,
       "direction": "steady",
       "mentions": 6,
       "sources": [
@@ -1878,191 +1869,6 @@
       }
     },
     {
-      "slug": "asteroid-mining",
-      "label": "Asteroid Mining",
-      "score": 600,
-      "delta": 0,
-      "direction": "steady",
-      "mentions": 3,
-      "sources": [
-        {
-          "platform": "arxiv",
-          "title": "Will AstroForge Collapse the PGM Market?",
-          "url": "https://arxiv.org/abs/2607.06806",
-          "score": 200,
-          "authors": "Robert T. Nachtrieb, Steven J. Smith",
-          "arxivCategory": "physics.soc-ph",
-          "publishedAt": "2026-07-07T21:08:02.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "B-spline shaping for low-thrust interplanetary rendezvous",
-          "url": "https://arxiv.org/abs/2607.23790",
-          "score": 200,
-          "authors": "Julio C. Sanchez",
-          "arxivCategory": "eess.SY",
-          "publishedAt": "2026-07-26T18:27:11.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Refined rotational state and shape model of (98943) Torifune ahead of the Hayabusa2# flyby",
-          "url": "https://arxiv.org/abs/2607.03276",
-          "score": 200,
-          "authors": "P. Fatka, P. Pravec, P. Scheirich et al.",
-          "arxivCategory": "astro-ph.EP",
-          "publishedAt": "2026-07-03T12:45:12.000Z"
-        }
-      ],
-      "relatedConceptSlugs": [
-        "project-rama",
-        "gravity-poppers"
-      ],
-      "resonance": 43,
-      "quadrant": "dead-zone",
-      "resonanceSignals": {
-        "conceptDepth": 0.6131471927654584,
-        "editorial": 1,
-        "connections": 0,
-        "convergence": 0.3,
-        "deepTopic": 0,
-        "pantheon": 0.08,
-        "graveyard": 0
-      }
-    },
-    {
-      "slug": "starship",
-      "label": "Starship & SpaceX",
-      "score": 446,
-      "delta": -31,
-      "direction": "down",
-      "mentions": 22,
-      "sources": [
-        {
-          "platform": "hackernews",
-          "title": "Google Discloses $94.1B in SpaceX Stock, Marking 6% Stake",
-          "url": "https://www.wsj.com/tech/google-discloses-94-1-billion-in-spacex-stock-marking-6-stake-91655d7c",
-          "score": 342,
-          "author": "1vuio0pswjnm7",
-          "commentCount": 329,
-          "publishedAt": "2026-07-26T12:43:21.000Z"
-        },
-        {
-          "platform": "hackernews",
-          "title": "SpaceXAI sues Minnesota AG over ban on nudifying apps",
-          "url": "https://gizmodo.com/grok-creator-spacexai-sues-minnesota-ag-to-stop-ban-on-nudification-2000792143",
-          "score": 12,
-          "author": "pseudosavant",
-          "commentCount": 0,
-          "publishedAt": "2026-07-29T02:23:32.000Z"
-        },
-        {
-          "platform": "hackernews",
-          "title": "SpaceX at $100 could mean investors see zero value in its AI",
-          "url": "https://www.latimes.com/business/story/2026-07-27/spacex-at-100-could-mean-investors-see-zero-value-in-its-ai",
-          "score": 11,
-          "author": "1vuio0pswjnm7",
-          "commentCount": 2,
-          "publishedAt": "2026-07-28T15:25:58.000Z"
-        },
-        {
-          "platform": "hackernews",
-          "title": "A discarded SpaceX rocket is on a high-speed collision course with the moon",
-          "url": "https://apnews.com/article/spacex-rocket-moon-crash-512c4dd708b4cda1160d30b764f9fdb5",
-          "score": 9,
-          "author": "everybodyknows",
-          "commentCount": 0,
-          "publishedAt": "2026-07-31T15:37:00.000Z"
-        },
-        {
-          "platform": "hackernews",
-          "title": "Tesla Weighs Sale of China Business to Pave Way for Potential SpaceX Merger",
-          "url": "https://www.wsj.com/business/autos/tesla-weighs-sale-of-china-business-to-pave-way-for-potential-spacex-merger-5ae26026",
-          "score": 9,
-          "author": "JumpCrisscross",
-          "commentCount": 0,
-          "publishedAt": "2026-07-31T01:30:37.000Z"
-        },
-        {
-          "platform": "hackernews",
-          "title": "Drifting SpaceX rocket heading for accidental collision with moon",
-          "url": "https://www.theguardian.com/science/2026/jul/31/spacex-rocket-moon-collision",
-          "score": 7,
-          "author": "root-parent",
-          "commentCount": 0,
-          "publishedAt": "2026-07-31T15:44:37.000Z"
-        },
-        {
-          "platform": "hackernews",
-          "title": "A discarded SpaceX rocket is on a high-speed collision course with the moon",
-          "url": "https://phys.org/news/2026-07-discarded-spacex-rocket-high-collision.html",
-          "score": 6,
-          "author": "0in",
-          "commentCount": 2,
-          "publishedAt": "2026-07-31T17:41:31.000Z"
-        },
-        {
-          "platform": "hackernews",
-          "title": "A discarded SpaceX rocket is on a high-speed collision course with the moon",
-          "url": "https://phys.org/news/2026-07-discarded-spacex-rocket-high-collision.html",
-          "score": 6,
-          "author": "bookmtn",
-          "commentCount": 0,
-          "publishedAt": "2026-08-01T22:11:50.000Z"
-        },
-        {
-          "platform": "hackernews",
-          "title": "U.S. exempts SpaceX's Starlink from FCC ban on foreign-made routers",
-          "url": "https://arstechnica.com/tech-policy/2026/07/starlink-gets-exemption-from-fcc-ban-on-routers-made-outside-the-us/",
-          "score": 5,
-          "author": "JumpCrisscross",
-          "commentCount": 0,
-          "publishedAt": "2026-08-01T12:44:29.000Z"
-        },
-        {
-          "platform": "hackernews",
-          "title": "SpaceX stock-purchasing by Congress members fuels conflict concerns",
-          "url": "https://www.cnbc.com/2026/07/28/spacex-stock-congress-lawmakers-ipo-conflict-of-interest.html",
-          "score": 5,
-          "author": "1vuio0pswjnm7",
-          "commentCount": 0,
-          "publishedAt": "2026-07-28T11:17:20.000Z"
-        },
-        {
-          "platform": "hackernews",
-          "title": "Experts warn current Starship heat shield tech is a \"dead end\" for rapid reuse",
-          "url": "https://arstechnica.com/space/2026/07/despite-recent-successes-rapid-reuse-of-starship-remains-a-tough-nut-to-crack/",
-          "score": 4,
-          "author": "rbanffy",
-          "commentCount": 0,
-          "publishedAt": "2026-07-28T08:37:32.000Z"
-        },
-        {
-          "platform": "hackernews",
-          "title": "SpaceX eyes tower catch for next Starship after auspicious end to 13th flight",
-          "url": "https://arstechnica.com/space/2026/07/spacex-eyes-tower-catch-for-next-starship-after-auspicious-end-to-13th-flight/",
-          "score": 4,
-          "author": "Brajeshwar",
-          "commentCount": 0,
-          "publishedAt": "2026-07-26T15:14:08.000Z"
-        }
-      ],
-      "relatedConceptSlugs": [
-        "extraterrestrial-regolith-derived-atmospheric-entry-heat-shields",
-        "phase-i-final-report-nasa-institute-for-advanced-concepts-combined-heat-shield-a"
-      ],
-      "resonance": 43,
-      "quadrant": "dead-zone",
-      "resonanceSignals": {
-        "conceptDepth": 0.5113915944693856,
-        "editorial": 0.4,
-        "connections": 0,
-        "convergence": 0.35,
-        "deepTopic": 1,
-        "pantheon": 0.92,
-        "graveyard": 0
-      }
-    },
-    {
       "slug": "solar-sails",
       "label": "Solar Sails",
       "score": 400,
@@ -2102,6 +1908,49 @@
         "convergence": 0.25,
         "deepTopic": 0.8,
         "pantheon": 0.92,
+        "graveyard": 0
+      }
+    },
+    {
+      "slug": "asteroid-mining",
+      "label": "Asteroid Mining",
+      "score": 400,
+      "delta": -33,
+      "direction": "down",
+      "mentions": 2,
+      "sources": [
+        {
+          "platform": "arxiv",
+          "title": "Will AstroForge Collapse the PGM Market?",
+          "url": "https://arxiv.org/abs/2607.06806",
+          "score": 200,
+          "authors": "Robert T. Nachtrieb, Steven J. Smith",
+          "arxivCategory": "physics.soc-ph",
+          "publishedAt": "2026-07-07T21:08:02.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "B-spline shaping for low-thrust interplanetary rendezvous",
+          "url": "https://arxiv.org/abs/2607.23790",
+          "score": 200,
+          "authors": "Julio C. Sanchez",
+          "arxivCategory": "eess.SY",
+          "publishedAt": "2026-07-26T18:27:11.000Z"
+        }
+      ],
+      "relatedConceptSlugs": [
+        "project-rama",
+        "gravity-poppers"
+      ],
+      "resonance": 43,
+      "quadrant": "dead-zone",
+      "resonanceSignals": {
+        "conceptDepth": 0.6131471927654584,
+        "editorial": 1,
+        "connections": 0,
+        "convergence": 0.3,
+        "deepTopic": 0,
+        "pantheon": 0.08,
         "graveyard": 0
       }
     },
@@ -2296,10 +2145,143 @@
       }
     },
     {
+      "slug": "starship",
+      "label": "Starship & SpaceX",
+      "score": 102,
+      "delta": -77,
+      "direction": "down",
+      "mentions": 21,
+      "sources": [
+        {
+          "platform": "hackernews",
+          "title": "SpaceXAI sues Minnesota AG over ban on nudifying apps",
+          "url": "https://gizmodo.com/grok-creator-spacexai-sues-minnesota-ag-to-stop-ban-on-nudification-2000792143",
+          "score": 12,
+          "author": "pseudosavant",
+          "commentCount": 0,
+          "publishedAt": "2026-07-29T02:23:32.000Z"
+        },
+        {
+          "platform": "hackernews",
+          "title": "SpaceX at $100 could mean investors see zero value in its AI",
+          "url": "https://www.latimes.com/business/story/2026-07-27/spacex-at-100-could-mean-investors-see-zero-value-in-its-ai",
+          "score": 11,
+          "author": "1vuio0pswjnm7",
+          "commentCount": 2,
+          "publishedAt": "2026-07-28T15:25:58.000Z"
+        },
+        {
+          "platform": "hackernews",
+          "title": "A discarded SpaceX rocket is on a high-speed collision course with the moon",
+          "url": "https://apnews.com/article/spacex-rocket-moon-crash-512c4dd708b4cda1160d30b764f9fdb5",
+          "score": 9,
+          "author": "everybodyknows",
+          "commentCount": 0,
+          "publishedAt": "2026-07-31T15:37:00.000Z"
+        },
+        {
+          "platform": "hackernews",
+          "title": "Tesla Weighs Sale of China Business to Pave Way for Potential SpaceX Merger",
+          "url": "https://www.wsj.com/business/autos/tesla-weighs-sale-of-china-business-to-pave-way-for-potential-spacex-merger-5ae26026",
+          "score": 9,
+          "author": "JumpCrisscross",
+          "commentCount": 0,
+          "publishedAt": "2026-07-31T01:30:37.000Z"
+        },
+        {
+          "platform": "hackernews",
+          "title": "Drifting SpaceX rocket heading for accidental collision with moon",
+          "url": "https://www.theguardian.com/science/2026/jul/31/spacex-rocket-moon-collision",
+          "score": 7,
+          "author": "root-parent",
+          "commentCount": 0,
+          "publishedAt": "2026-07-31T15:44:37.000Z"
+        },
+        {
+          "platform": "hackernews",
+          "title": "A discarded SpaceX rocket is on a high-speed collision course with the moon",
+          "url": "https://phys.org/news/2026-07-discarded-spacex-rocket-high-collision.html",
+          "score": 6,
+          "author": "0in",
+          "commentCount": 2,
+          "publishedAt": "2026-07-31T17:41:31.000Z"
+        },
+        {
+          "platform": "hackernews",
+          "title": "A discarded SpaceX rocket is on a high-speed collision course with the moon",
+          "url": "https://phys.org/news/2026-07-discarded-spacex-rocket-high-collision.html",
+          "score": 6,
+          "author": "bookmtn",
+          "commentCount": 0,
+          "publishedAt": "2026-08-01T22:11:50.000Z"
+        },
+        {
+          "platform": "hackernews",
+          "title": "U.S. exempts SpaceX's Starlink from FCC ban on foreign-made routers",
+          "url": "https://arstechnica.com/tech-policy/2026/07/starlink-gets-exemption-from-fcc-ban-on-routers-made-outside-the-us/",
+          "score": 5,
+          "author": "JumpCrisscross",
+          "commentCount": 0,
+          "publishedAt": "2026-08-01T12:44:29.000Z"
+        },
+        {
+          "platform": "hackernews",
+          "title": "SpaceX stock-purchasing by Congress members fuels conflict concerns",
+          "url": "https://www.cnbc.com/2026/07/28/spacex-stock-congress-lawmakers-ipo-conflict-of-interest.html",
+          "score": 5,
+          "author": "1vuio0pswjnm7",
+          "commentCount": 0,
+          "publishedAt": "2026-07-28T11:17:20.000Z"
+        },
+        {
+          "platform": "hackernews",
+          "title": "Experts warn current Starship heat shield tech is a \"dead end\" for rapid reuse",
+          "url": "https://arstechnica.com/space/2026/07/despite-recent-successes-rapid-reuse-of-starship-remains-a-tough-nut-to-crack/",
+          "score": 4,
+          "author": "rbanffy",
+          "commentCount": 0,
+          "publishedAt": "2026-07-28T08:37:32.000Z"
+        },
+        {
+          "platform": "hackernews",
+          "title": "Drifting SpaceX rocket heading for collision with Moon",
+          "url": "https://www.theguardian.com/science/2026/jul/31/spacex-rocket-moon-collision",
+          "score": 4,
+          "author": "qprofyeh",
+          "commentCount": 0,
+          "publishedAt": "2026-08-01T20:55:10.000Z"
+        },
+        {
+          "platform": "hackernews",
+          "title": "Tesla Weighs China Unit Sale Ahead of SpaceX Deal",
+          "url": "https://www.bloomberg.com/news/articles/2026-07-31/tesla-weighs-china-unit-sale-ahead-of-spacex-deal-wsj-says",
+          "score": 4,
+          "author": "chollida1",
+          "commentCount": 0,
+          "publishedAt": "2026-07-31T15:05:09.000Z"
+        }
+      ],
+      "relatedConceptSlugs": [
+        "extraterrestrial-regolith-derived-atmospheric-entry-heat-shields",
+        "phase-i-final-report-nasa-institute-for-advanced-concepts-combined-heat-shield-a"
+      ],
+      "resonance": 43,
+      "quadrant": "dead-zone",
+      "resonanceSignals": {
+        "conceptDepth": 0.5113915944693856,
+        "editorial": 0.4,
+        "connections": 0,
+        "convergence": 0.35,
+        "deepTopic": 1,
+        "pantheon": 0.92,
+        "graveyard": 0
+      }
+    },
+    {
       "slug": "starlink",
       "label": "Starlink & Satellite Internet",
-      "score": 31,
-      "delta": 72,
+      "score": 32,
+      "delta": 68,
       "direction": "up",
       "mentions": 2,
       "sources": [
@@ -2316,7 +2298,7 @@
           "platform": "hackernews",
           "title": "Signal Structure of the Starlink Ku-Band Downlink (2023) [pdf]",
           "url": "https://radionavlab.ae.utexas.edu/wp-content/uploads/starlink_structure.pdf",
-          "score": 13,
+          "score": 14,
           "author": "peter_d_sherman",
           "commentCount": 1,
           "publishedAt": "2026-08-01T18:59:35.000Z"
