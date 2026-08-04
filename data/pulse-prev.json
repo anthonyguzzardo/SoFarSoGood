@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-03T09:24:53.911Z",
+  "generatedAt": "2026-08-03T19:34:11.810Z",
   "topics": [
     {
       "slug": "gravitational-waves",
@@ -269,7 +269,7 @@
     {
       "slug": "space-telescopes",
       "label": "Space Telescopes",
-      "score": 7952,
+      "score": 7953,
       "delta": 0,
       "direction": "steady",
       "mentions": 41,
@@ -403,7 +403,7 @@
       "slug": "nanotechnology",
       "label": "Nanotechnology & Metamaterials",
       "score": 7600,
-      "delta": -3,
+      "delta": 0,
       "direction": "steady",
       "mentions": 38,
       "sources": [
@@ -535,7 +535,7 @@
     {
       "slug": "quantum-computing",
       "label": "Quantum Computing",
-      "score": 7423,
+      "score": 7422,
       "delta": 16,
       "direction": "up",
       "mentions": 46,
@@ -797,10 +797,10 @@
     {
       "slug": "condensed-matter",
       "label": "Condensed Matter",
-      "score": 6280,
+      "score": 6275,
       "delta": -18,
       "direction": "down",
-      "mentions": 36,
+      "mentions": 35,
       "sources": [
         {
           "platform": "hackernews",
@@ -1326,10 +1326,10 @@
     {
       "slug": "exoplanets",
       "label": "Exoplanets",
-      "score": 2409,
+      "score": 2406,
       "delta": 0,
       "direction": "steady",
-      "mentions": 15,
+      "mentions": 14,
       "sources": [
         {
           "platform": "arxiv",
@@ -1460,7 +1460,7 @@
       "slug": "artemis",
       "label": "Artemis & Lunar Return",
       "score": 1803,
-      "delta": -10,
+      "delta": 0,
       "direction": "steady",
       "mentions": 10,
       "sources": [
@@ -1575,7 +1575,7 @@
       "slug": "astrobiology",
       "label": "Astrobiology",
       "score": 1600,
-      "delta": -11,
+      "delta": 0,
       "direction": "steady",
       "mentions": 8,
       "sources": [
@@ -1821,8 +1821,8 @@
       "slug": "asteroid-mining",
       "label": "Asteroid Mining",
       "score": 600,
-      "delta": 0,
-      "direction": "steady",
+      "delta": 50,
+      "direction": "up",
       "mentions": 3,
       "sources": [
         {
@@ -2156,11 +2156,20 @@
     {
       "slug": "starship",
       "label": "Starship & SpaceX",
-      "score": 104,
-      "delta": -77,
-      "direction": "down",
+      "score": 126,
+      "delta": 24,
+      "direction": "up",
       "mentions": 22,
       "sources": [
+        {
+          "platform": "hackernews",
+          "title": "SpaceX wins $1.6B Space Force contract for 18 Falcon 9 launches",
+          "url": "https://spacenews.com/spacex-wins-1-6-billion-in-launch-orders-for-military-satellite-networks/",
+          "score": 21,
+          "author": "MarcoDewey",
+          "commentCount": 50,
+          "publishedAt": "2026-08-03T13:33:04.000Z"
+        },
         {
           "platform": "hackernews",
           "title": "SpaceXAI sues Minnesota AG over ban on nudifying apps",
@@ -2253,21 +2262,12 @@
         },
         {
           "platform": "hackernews",
-          "title": "Drifting SpaceX rocket heading for collision with Moon",
-          "url": "https://www.theguardian.com/science/2026/jul/31/spacex-rocket-moon-collision",
+          "title": "SpaceX's post-IPO plunge sets tense backdrop for first earnings report",
+          "url": "https://www.cnbc.com/2026/08/03/spacexs-post-ipo-plunge-sets-tense-backdrop-for-first-earnings-report.html",
           "score": 4,
-          "author": "qprofyeh",
-          "commentCount": 0,
-          "publishedAt": "2026-08-01T20:55:10.000Z"
-        },
-        {
-          "platform": "hackernews",
-          "title": "Tesla Weighs China Unit Sale Ahead of SpaceX Deal",
-          "url": "https://www.bloomberg.com/news/articles/2026-07-31/tesla-weighs-china-unit-sale-ahead-of-spacex-deal-wsj-says",
-          "score": 4,
-          "author": "chollida1",
-          "commentCount": 0,
-          "publishedAt": "2026-07-31T15:05:09.000Z"
+          "author": "root-parent",
+          "commentCount": 3,
+          "publishedAt": "2026-08-03T17:39:52.000Z"
         }
       ],
       "relatedConceptSlugs": [
@@ -2290,7 +2290,7 @@
       "slug": "starlink",
       "label": "Starlink & Satellite Internet",
       "score": 32,
-      "delta": 3,
+      "delta": 0,
       "direction": "steady",
       "mentions": 2,
       "sources": [
@@ -2309,7 +2309,7 @@
           "url": "https://radionavlab.ae.utexas.edu/wp-content/uploads/starlink_structure.pdf",
           "score": 14,
           "author": "peter_d_sherman",
-          "commentCount": 1,
+          "commentCount": 2,
           "publishedAt": "2026-08-01T18:59:35.000Z"
         }
       ],
