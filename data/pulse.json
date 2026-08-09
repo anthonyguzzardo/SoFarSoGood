@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-08T18:41:12.272Z",
+  "generatedAt": "2026-08-09T06:43:25.943Z",
   "topics": [
     {
       "slug": "gravitational-waves",
@@ -136,10 +136,10 @@
     {
       "slug": "black-holes",
       "label": "Black Holes",
-      "score": 8079,
-      "delta": -1,
+      "score": 7882,
+      "delta": -5,
       "direction": "steady",
-      "mentions": 41,
+      "mentions": 40,
       "sources": [
         {
           "platform": "arxiv",
@@ -1327,7 +1327,7 @@
       "slug": "exoplanets",
       "label": "Exoplanets",
       "score": 2800,
-      "delta": -7,
+      "delta": 0,
       "direction": "steady",
       "mentions": 14,
       "sources": [
@@ -1459,10 +1459,10 @@
     {
       "slug": "artemis",
       "label": "Artemis & Lunar Return",
-      "score": 2403,
-      "delta": 0,
+      "score": 2203,
+      "delta": -8,
       "direction": "steady",
-      "mentions": 13,
+      "mentions": 12,
       "sources": [
         {
           "platform": "arxiv",
@@ -1490,15 +1490,6 @@
           "authors": "Willow Smith, Jonathan C. Pober, Bang D. Nahn et al.",
           "arxivCategory": "astro-ph.IM",
           "publishedAt": "2026-07-10T15:57:49.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Benchmarking Universal Machine Learning Force Fields for Molecular Dynamics of Lunar Regolith Minerals",
-          "url": "https://arxiv.org/abs/2607.09005",
-          "score": 200,
-          "authors": "Ziyu Huang, Ken-ichi Nomura",
-          "arxivCategory": "physics.geo-ph",
-          "publishedAt": "2026-07-10T00:19:43.000Z"
         },
         {
           "platform": "arxiv",
@@ -1571,6 +1562,15 @@
           "authors": "Niccolò Michelotti, Ethan R. Burnett, Francesco Topputo",
           "arxivCategory": "eess.SY",
           "publishedAt": "2026-07-11T03:24:09.000Z"
+        },
+        {
+          "platform": "hackernews",
+          "title": "Moon landing anniversary, former astronauts say voting is Americans' mission",
+          "url": "https://www.dailynews.com/2026/07/20/on-anniversary-of-moon-landing-former-astronauts-say-voting-is-americans-mission/",
+          "score": 3,
+          "author": "rbanffy",
+          "commentCount": 0,
+          "publishedAt": "2026-08-02T10:07:12.000Z"
         }
       ],
       "relatedConceptSlugs": [
@@ -1796,8 +1796,8 @@
     {
       "slug": "space-debris",
       "label": "Space Debris",
-      "score": 807,
-      "delta": -1,
+      "score": 808,
+      "delta": 0,
       "direction": "steady",
       "mentions": 6,
       "sources": [
@@ -1850,7 +1850,7 @@
           "platform": "hackernews",
           "title": "How Cleaning up space debris could grow to become a big business",
           "url": "https://www.cnbc.com/2026/08/08/space-debris-junk-spacex-rocket-moon-crash.html",
-          "score": 2,
+          "score": 3,
           "author": "ck2",
           "commentCount": 1,
           "publishedAt": "2026-08-08T13:12:47.000Z"
@@ -1996,8 +1996,8 @@
     {
       "slug": "starship",
       "label": "Starship & SpaceX",
-      "score": 468,
-      "delta": 2,
+      "score": 467,
+      "delta": 0,
       "direction": "steady",
       "mentions": 53,
       "sources": [
@@ -2084,6 +2084,15 @@
         },
         {
           "platform": "hackernews",
+          "title": "SpaceX Earnings Reveal X's Shrinking Ad Biz",
+          "url": "https://www.mediapost.com/publications/article/417046/spacex-q2-earnings-show-xs-shrunken-ad-biz.html",
+          "score": 8,
+          "author": "keeda",
+          "commentCount": 1,
+          "publishedAt": "2026-08-08T22:26:19.000Z"
+        },
+        {
+          "platform": "hackernews",
           "title": "SpaceX spooks investors with debut earnings report",
           "url": "https://arstechnica.com/ai/2026/08/spacex-spooks-investors-with-debut-earnings-report/",
           "score": 8,
@@ -2099,15 +2108,6 @@
           "author": "tosh",
           "commentCount": 0,
           "publishedAt": "2026-08-05T08:13:59.000Z"
-        },
-        {
-          "platform": "hackernews",
-          "title": "SpaceX's post-IPO plunge sets tense backdrop for first earnings report",
-          "url": "https://www.cnbc.com/2026/08/03/spacexs-post-ipo-plunge-sets-tense-backdrop-for-first-earnings-report.html",
-          "score": 7,
-          "author": "root-parent",
-          "commentCount": 4,
-          "publishedAt": "2026-08-03T17:39:52.000Z"
         }
       ],
       "relatedConceptSlugs": [
@@ -2361,20 +2361,11 @@
     {
       "slug": "starlink",
       "label": "Starlink & Satellite Internet",
-      "score": 21,
-      "delta": 50,
-      "direction": "up",
-      "mentions": 2,
+      "score": 7,
+      "delta": -65,
+      "direction": "down",
+      "mentions": 1,
       "sources": [
-        {
-          "platform": "hackernews",
-          "title": "Signal Structure of the Starlink Ku-Band Downlink (2023) [pdf]",
-          "url": "https://radionavlab.ae.utexas.edu/wp-content/uploads/starlink_structure.pdf",
-          "score": 14,
-          "author": "peter_d_sherman",
-          "commentCount": 4,
-          "publishedAt": "2026-08-01T18:59:35.000Z"
-        },
         {
           "platform": "hackernews",
           "title": "Musk Refuses Ukrainian Request to Enable Starlink for Deep Strikes Inside Russia",
