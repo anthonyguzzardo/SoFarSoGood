@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-09T06:43:25.943Z",
+  "generatedAt": "2026-08-09T18:44:17.138Z",
   "topics": [
     {
       "slug": "gravitational-waves",
@@ -136,8 +136,8 @@
     {
       "slug": "black-holes",
       "label": "Black Holes",
-      "score": 7882,
-      "delta": -5,
+      "score": 7883,
+      "delta": -2,
       "direction": "steady",
       "mentions": 40,
       "sources": [
@@ -402,10 +402,10 @@
     {
       "slug": "nanotechnology",
       "label": "Nanotechnology & Metamaterials",
-      "score": 7600,
-      "delta": 0,
+      "score": 7400,
+      "delta": -3,
       "direction": "steady",
-      "mentions": 38,
+      "mentions": 37,
       "sources": [
         {
           "platform": "arxiv",
@@ -1063,7 +1063,7 @@
       "slug": "condensed-matter",
       "label": "Condensed Matter",
       "score": 5408,
-      "delta": -4,
+      "delta": 0,
       "direction": "steady",
       "mentions": 29,
       "sources": [
@@ -1459,10 +1459,10 @@
     {
       "slug": "artemis",
       "label": "Artemis & Lunar Return",
-      "score": 2203,
-      "delta": -8,
-      "direction": "steady",
-      "mentions": 12,
+      "score": 2000,
+      "delta": -17,
+      "direction": "down",
+      "mentions": 10,
       "sources": [
         {
           "platform": "arxiv",
@@ -1481,15 +1481,6 @@
           "authors": "Zimo Hu, Leyun Gao, Zhengyun You et al.",
           "arxivCategory": "astro-ph.EP",
           "publishedAt": "2026-07-11T17:04:32.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Quantifying Foreground Contamination in the Dark Ages 21 cm Power Spectrum Using an Electromagnetically Simulated Dipole Antenna Atop a Dielectric Surface",
-          "url": "https://arxiv.org/abs/2607.11929",
-          "score": 200,
-          "authors": "Willow Smith, Jonathan C. Pober, Bang D. Nahn et al.",
-          "arxivCategory": "astro-ph.IM",
-          "publishedAt": "2026-07-10T15:57:49.000Z"
         },
         {
           "platform": "arxiv",
@@ -1562,15 +1553,6 @@
           "authors": "Niccolò Michelotti, Ethan R. Burnett, Francesco Topputo",
           "arxivCategory": "eess.SY",
           "publishedAt": "2026-07-11T03:24:09.000Z"
-        },
-        {
-          "platform": "hackernews",
-          "title": "Moon landing anniversary, former astronauts say voting is Americans' mission",
-          "url": "https://www.dailynews.com/2026/07/20/on-anniversary-of-moon-landing-former-astronauts-say-voting-is-americans-mission/",
-          "score": 3,
-          "author": "rbanffy",
-          "commentCount": 0,
-          "publishedAt": "2026-08-02T10:07:12.000Z"
         }
       ],
       "relatedConceptSlugs": [
@@ -1699,10 +1681,10 @@
     {
       "slug": "astrobiology",
       "label": "Astrobiology",
-      "score": 1403,
-      "delta": 0,
+      "score": 1203,
+      "delta": -14,
       "direction": "steady",
-      "mentions": 8,
+      "mentions": 7,
       "sources": [
         {
           "platform": "arxiv",
@@ -1759,15 +1741,6 @@
           "publishedAt": "2026-07-11T10:32:14.000Z"
         },
         {
-          "platform": "arxiv",
-          "title": "New Hydrolysis Rate Constants Reveal Longest Cyanide Persistence in Cool, Neutral Waters",
-          "url": "https://arxiv.org/abs/2608.00025",
-          "score": 200,
-          "authors": "Sai Shruthi Murali, Skyla B. White, Paul B. Rimmer",
-          "arxivCategory": "physics.chem-ph",
-          "publishedAt": "2026-07-10T11:24:35.000Z"
-        },
-        {
           "platform": "hackernews",
           "title": "Scientists Designed a Virtual Alien Lifeform to Hunt for Extraterrestrials",
           "url": "https://www.404media.co/scientists-designed-a-virtual-alien-lifeform-to-hunt-for-extraterrestrials/",
@@ -1790,84 +1763,6 @@
         "convergence": 0.275,
         "deepTopic": 0.8,
         "pantheon": 0.08,
-        "graveyard": 0
-      }
-    },
-    {
-      "slug": "space-debris",
-      "label": "Space Debris",
-      "score": 808,
-      "delta": 0,
-      "direction": "steady",
-      "mentions": 6,
-      "sources": [
-        {
-          "platform": "arxiv",
-          "title": "Observational planning for the 2026 August 5 Falcon 9 Upper Stage lunar impact",
-          "url": "https://arxiv.org/abs/2607.14625",
-          "score": 200,
-          "authors": "Benjamin Fernando, Jennifer Heldmann, Bill Grey et al.",
-          "arxivCategory": "astro-ph.EP",
-          "publishedAt": "2026-07-16T06:42:17.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Critical Sizes of Satellite Constellations",
-          "url": "https://arxiv.org/abs/2607.29644",
-          "score": 200,
-          "authors": "Hugh G. Lewis",
-          "arxivCategory": "astro-ph.EP",
-          "publishedAt": "2026-07-31T17:20:09.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Debris Evolution from Spacecraft Fragmentation in Earth-Moon Distant Retrograde Orbits",
-          "url": "https://arxiv.org/abs/2607.15709",
-          "score": 200,
-          "authors": "Yuyan Wu, Peng Shu, Yuqiang Li",
-          "arxivCategory": "astro-ph.EP",
-          "publishedAt": "2026-07-17T07:43:59.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Beyond the Cube: Overlapping Grid Methods for Debris Collision Risk Assessment",
-          "url": "https://arxiv.org/abs/2607.09634",
-          "score": 200,
-          "authors": "Yacob Medhin, Simone Servadio",
-          "arxivCategory": "astro-ph.EP",
-          "publishedAt": "2026-07-10T17:29:38.000Z"
-        },
-        {
-          "platform": "hackernews",
-          "title": "Planned satellite megaconstellations could generate runaway space debris",
-          "url": "https://www.science.org/content/article/planned-satellite-megaconstellations-could-generate-runaway-space-debris",
-          "score": 5,
-          "author": "sbulaev",
-          "commentCount": 0,
-          "publishedAt": "2026-08-07T18:07:07.000Z"
-        },
-        {
-          "platform": "hackernews",
-          "title": "How Cleaning up space debris could grow to become a big business",
-          "url": "https://www.cnbc.com/2026/08/08/space-debris-junk-spacex-rocket-moon-crash.html",
-          "score": 3,
-          "author": "ck2",
-          "commentCount": 1,
-          "publishedAt": "2026-08-08T13:12:47.000Z"
-        }
-      ],
-      "relatedConceptSlugs": [
-        "niac-phase-i-final-report-on-orbit-collision"
-      ],
-      "resonance": 20,
-      "quadrant": "dead-zone",
-      "resonanceSignals": {
-        "conceptDepth": 0.3868528072345416,
-        "editorial": 0.4,
-        "connections": 0,
-        "convergence": 0,
-        "deepTopic": 0,
-        "pantheon": 0,
         "graveyard": 0
       }
     },
@@ -1929,6 +1824,75 @@
         "convergence": 0.3,
         "deepTopic": 0,
         "pantheon": 0.08,
+        "graveyard": 0
+      }
+    },
+    {
+      "slug": "space-debris",
+      "label": "Space Debris",
+      "score": 609,
+      "delta": -25,
+      "direction": "down",
+      "mentions": 5,
+      "sources": [
+        {
+          "platform": "arxiv",
+          "title": "Observational planning for the 2026 August 5 Falcon 9 Upper Stage lunar impact",
+          "url": "https://arxiv.org/abs/2607.14625",
+          "score": 200,
+          "authors": "Benjamin Fernando, Jennifer Heldmann, Bill Grey et al.",
+          "arxivCategory": "astro-ph.EP",
+          "publishedAt": "2026-07-16T06:42:17.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Critical Sizes of Satellite Constellations",
+          "url": "https://arxiv.org/abs/2607.29644",
+          "score": 200,
+          "authors": "Hugh G. Lewis",
+          "arxivCategory": "astro-ph.EP",
+          "publishedAt": "2026-07-31T17:20:09.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Debris Evolution from Spacecraft Fragmentation in Earth-Moon Distant Retrograde Orbits",
+          "url": "https://arxiv.org/abs/2607.15709",
+          "score": 200,
+          "authors": "Yuyan Wu, Peng Shu, Yuqiang Li",
+          "arxivCategory": "astro-ph.EP",
+          "publishedAt": "2026-07-17T07:43:59.000Z"
+        },
+        {
+          "platform": "hackernews",
+          "title": "Planned satellite megaconstellations could generate runaway space debris",
+          "url": "https://www.science.org/content/article/planned-satellite-megaconstellations-could-generate-runaway-space-debris",
+          "score": 5,
+          "author": "sbulaev",
+          "commentCount": 0,
+          "publishedAt": "2026-08-07T18:07:07.000Z"
+        },
+        {
+          "platform": "hackernews",
+          "title": "How Cleaning up space debris could grow to become a big business",
+          "url": "https://www.cnbc.com/2026/08/08/space-debris-junk-spacex-rocket-moon-crash.html",
+          "score": 4,
+          "author": "ck2",
+          "commentCount": 1,
+          "publishedAt": "2026-08-08T13:12:47.000Z"
+        }
+      ],
+      "relatedConceptSlugs": [
+        "niac-phase-i-final-report-on-orbit-collision"
+      ],
+      "resonance": 20,
+      "quadrant": "dead-zone",
+      "resonanceSignals": {
+        "conceptDepth": 0.3868528072345416,
+        "editorial": 0.4,
+        "connections": 0,
+        "convergence": 0,
+        "deepTopic": 0,
+        "pantheon": 0,
         "graveyard": 0
       }
     },
@@ -1999,7 +1963,7 @@
       "score": 467,
       "delta": 0,
       "direction": "steady",
-      "mentions": 53,
+      "mentions": 52,
       "sources": [
         {
           "platform": "hackernews",
@@ -2066,6 +2030,15 @@
         },
         {
           "platform": "hackernews",
+          "title": "SpaceX Earnings Reveal X's Shrinking Ad Biz",
+          "url": "https://www.mediapost.com/publications/article/417046/spacex-q2-earnings-show-xs-shrunken-ad-biz.html",
+          "score": 10,
+          "author": "keeda",
+          "commentCount": 1,
+          "publishedAt": "2026-08-08T22:26:19.000Z"
+        },
+        {
+          "platform": "hackernews",
           "title": "Elon Musk's SpaceX unnerves investors with lavish AI spending plans",
           "url": "https://www.ft.com/content/41f7963b-dd50-4f27-a085-771ddec4a8ca",
           "score": 10,
@@ -2081,15 +2054,6 @@
           "author": "mapping365",
           "commentCount": 2,
           "publishedAt": "2026-08-05T02:12:39.000Z"
-        },
-        {
-          "platform": "hackernews",
-          "title": "SpaceX Earnings Reveal X's Shrinking Ad Biz",
-          "url": "https://www.mediapost.com/publications/article/417046/spacex-q2-earnings-show-xs-shrunken-ad-biz.html",
-          "score": 8,
-          "author": "keeda",
-          "commentCount": 1,
-          "publishedAt": "2026-08-08T22:26:19.000Z"
         },
         {
           "platform": "hackernews",
@@ -2122,48 +2086,6 @@
         "connections": 0,
         "convergence": 0.35,
         "deepTopic": 1,
-        "pantheon": 0.92,
-        "graveyard": 0
-      }
-    },
-    {
-      "slug": "dyson-spheres",
-      "label": "Dyson Spheres",
-      "score": 400,
-      "delta": 0,
-      "direction": "steady",
-      "mentions": 2,
-      "sources": [
-        {
-          "platform": "arxiv",
-          "title": "Project Hephaistos -- III. Characterizing anomalous infrared sources identified as Dyson-sphere candidates",
-          "url": "https://arxiv.org/abs/2607.25701",
-          "score": 200,
-          "authors": "Andreas J. Korn, Matías Suazo, Erik Zackrisson et al.",
-          "arxivCategory": "astro-ph.SR",
-          "publishedAt": "2026-07-28T13:23:18.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Project Hephaistos -- IV. James Webb Space Telescope Observations of Two Dyson Sphere Candidates",
-          "url": "https://arxiv.org/abs/2607.09460",
-          "score": 200,
-          "authors": "Erik Zackrisson, Arjan Bik, Anita Ali Asgar et al.",
-          "arxivCategory": "astro-ph.GA",
-          "publishedAt": "2026-07-10T14:32:43.000Z"
-        }
-      ],
-      "relatedConceptSlugs": [
-        "sps-alpha"
-      ],
-      "resonance": 25,
-      "quadrant": "dead-zone",
-      "resonanceSignals": {
-        "conceptDepth": 0.22629438553091683,
-        "editorial": 0.7,
-        "connections": 0,
-        "convergence": 0,
-        "deepTopic": 0,
         "pantheon": 0.92,
         "graveyard": 0
       }
@@ -2214,7 +2136,7 @@
     {
       "slug": "mars",
       "label": "Mars Exploration",
-      "score": 203,
+      "score": 204,
       "delta": 0,
       "direction": "steady",
       "mentions": 2,
@@ -2232,7 +2154,7 @@
           "platform": "hackernews",
           "title": "NASA's Curiosity Mars Rover Discovers Field of Honeycomb Textures",
           "url": "https://www.nasa.gov/missions/mars-science-laboratory/curiosity-rover/nasas-curiosity-mars-rover-discovers-field-of-honeycomb-textures/",
-          "score": 3,
+          "score": 4,
           "author": "Tomte",
           "commentCount": 0,
           "publishedAt": "2026-08-05T15:46:47.000Z"
@@ -2253,6 +2175,49 @@
         "convergence": 0.075,
         "deepTopic": 0.8,
         "pantheon": 0.08,
+        "graveyard": 0
+      }
+    },
+    {
+      "slug": "space-solar-power",
+      "label": "Space Solar Power",
+      "score": 203,
+      "delta": 2,
+      "direction": "steady",
+      "mentions": 2,
+      "sources": [
+        {
+          "platform": "arxiv",
+          "title": "Full-Path Nonlinear Modeling of Microwave Power Transmission Through Ionospheric Plasma for Space Solar Power Station",
+          "url": "https://arxiv.org/abs/2607.12294",
+          "score": 200,
+          "authors": "Pengan Guo, Lei Chang, Yuhan Chen et al.",
+          "arxivCategory": "physics.plasm-ph",
+          "publishedAt": "2026-07-14T03:05:26.000Z"
+        },
+        {
+          "platform": "hackernews",
+          "title": "Open-source federated AI framework for Space Solar power routing",
+          "url": "https://github.com/WVGlobal/Planetary-Energy-Routing-Protocol",
+          "score": 3,
+          "author": "WVGlobal",
+          "commentCount": 0,
+          "publishedAt": "2026-08-09T06:58:38.000Z"
+        }
+      ],
+      "relatedConceptSlugs": [
+        "sps-alpha",
+        "the-light-bender-concept-for-power-distribution"
+      ],
+      "resonance": 35,
+      "quadrant": "dead-zone",
+      "resonanceSignals": {
+        "conceptDepth": 0.5113915944693856,
+        "editorial": 0.7,
+        "connections": 0,
+        "convergence": 0.05,
+        "deepTopic": 0,
+        "pantheon": 0.92,
         "graveyard": 0
       }
     },
@@ -2325,34 +2290,33 @@
       }
     },
     {
-      "slug": "space-solar-power",
-      "label": "Space Solar Power",
+      "slug": "dyson-spheres",
+      "label": "Dyson Spheres",
       "score": 200,
-      "delta": 0,
-      "direction": "steady",
+      "delta": -50,
+      "direction": "down",
       "mentions": 1,
       "sources": [
         {
           "platform": "arxiv",
-          "title": "Full-Path Nonlinear Modeling of Microwave Power Transmission Through Ionospheric Plasma for Space Solar Power Station",
-          "url": "https://arxiv.org/abs/2607.12294",
+          "title": "Project Hephaistos -- III. Characterizing anomalous infrared sources identified as Dyson-sphere candidates",
+          "url": "https://arxiv.org/abs/2607.25701",
           "score": 200,
-          "authors": "Pengan Guo, Lei Chang, Yuhan Chen et al.",
-          "arxivCategory": "physics.plasm-ph",
-          "publishedAt": "2026-07-14T03:05:26.000Z"
+          "authors": "Andreas J. Korn, Matías Suazo, Erik Zackrisson et al.",
+          "arxivCategory": "astro-ph.SR",
+          "publishedAt": "2026-07-28T13:23:18.000Z"
         }
       ],
       "relatedConceptSlugs": [
-        "sps-alpha",
-        "the-light-bender-concept-for-power-distribution"
+        "sps-alpha"
       ],
-      "resonance": 35,
+      "resonance": 25,
       "quadrant": "dead-zone",
       "resonanceSignals": {
-        "conceptDepth": 0.5113915944693856,
+        "conceptDepth": 0.22629438553091683,
         "editorial": 0.7,
         "connections": 0,
-        "convergence": 0.05,
+        "convergence": 0,
         "deepTopic": 0,
         "pantheon": 0.92,
         "graveyard": 0
@@ -2361,11 +2325,20 @@
     {
       "slug": "starlink",
       "label": "Starlink & Satellite Internet",
-      "score": 7,
-      "delta": -65,
+      "score": 17,
+      "delta": -19,
       "direction": "down",
-      "mentions": 1,
+      "mentions": 3,
       "sources": [
+        {
+          "platform": "hackernews",
+          "title": "Delta Passed on Starlink Wi-Fi. United and Virgin Atlantic Are Seeing the Payoff",
+          "url": "https://www.inc.com/connor-jewiss/delta-passed-on-starlinks-fast-in-flight-wi-fi-united-and-virgin-atlantic-are-already-seeing-the-payoff/91387025",
+          "score": 7,
+          "author": "mlindner",
+          "commentCount": 0,
+          "publishedAt": "2026-08-09T06:58:16.000Z"
+        },
         {
           "platform": "hackernews",
           "title": "Musk Refuses Ukrainian Request to Enable Starlink for Deep Strikes Inside Russia",
@@ -2374,6 +2347,15 @@
           "author": "CharlesW",
           "commentCount": 0,
           "publishedAt": "2026-08-07T22:23:54.000Z"
+        },
+        {
+          "platform": "hackernews",
+          "title": "Russia's Starlink replacement. What is known about the Rassvet system?",
+          "url": "https://www.pravda.com.ua/eng/articles/2026/08/08/8047858/",
+          "score": 3,
+          "author": "uxhacker",
+          "commentCount": 0,
+          "publishedAt": "2026-08-09T14:07:04.000Z"
         }
       ],
       "relatedConceptSlugs": [
