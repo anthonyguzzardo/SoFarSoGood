@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-10T07:14:34.391Z",
+  "generatedAt": "2026-08-10T19:02:13.896Z",
   "topics": [
     {
       "slug": "gravitational-waves",
@@ -130,138 +130,6 @@
         "convergence": 0.05,
         "deepTopic": 1,
         "pantheon": 0.92,
-        "graveyard": 0
-      }
-    },
-    {
-      "slug": "quantum-computing",
-      "label": "Quantum Computing",
-      "score": 7810,
-      "delta": 8,
-      "direction": "steady",
-      "mentions": 45,
-      "sources": [
-        {
-          "platform": "arxiv",
-          "title": "Designer Codes from GALA: Compact, Self-Dual, and Rate-1/2 QEC on Reconfigurable Atom Arrays",
-          "url": "https://arxiv.org/abs/2608.07431",
-          "score": 200,
-          "authors": "Willers Yang, Casey Duckering, Arpit Dua",
-          "arxivCategory": "quant-ph",
-          "publishedAt": "2026-08-07T17:17:22.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Time-Reversal Selection Rules for Quantum Error Correction",
-          "url": "https://arxiv.org/abs/2608.06304",
-          "score": 200,
-          "authors": "Eric Kubischta, Ian Teixeira",
-          "arxivCategory": "quant-ph",
-          "publishedAt": "2026-08-06T17:21:55.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Approximate Quantum Error Correction at Chiral Topological Edges",
-          "url": "https://arxiv.org/abs/2608.06258",
-          "score": 200,
-          "authors": "Yuntai Song, Zejun Liu, Zhencheng Wang et al.",
-          "arxivCategory": "quant-ph",
-          "publishedAt": "2026-08-06T16:48:36.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Exponential logical-error reduction in quantum memories via optimal syndrome-measurement timing",
-          "url": "https://arxiv.org/abs/2608.06242",
-          "score": 200,
-          "authors": "Tobias Haug, Kishor Bharti, Leandro Aolita",
-          "arxivCategory": "quant-ph",
-          "publishedAt": "2026-08-06T16:27:55.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Towards fault-tolerance with universal phase-error-transparent gates for high-spin cat codes",
-          "url": "https://arxiv.org/abs/2608.05992",
-          "score": 200,
-          "authors": "Kelvin Onggadinata, Si Yan Koh, Arghya Maity et al.",
-          "arxivCategory": "quant-ph",
-          "publishedAt": "2026-08-06T13:04:40.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Quantum error correction with global control",
-          "url": "https://arxiv.org/abs/2608.05821",
-          "score": 200,
-          "authors": "Roberto Menta, Lindsay Bassman Oftelie, Ashkan Abedi et al.",
-          "arxivCategory": "quant-ph",
-          "publishedAt": "2026-08-06T09:50:45.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Provably Efficient Self-Calibrating Quantum Fault Tolerance",
-          "url": "https://arxiv.org/abs/2608.05686",
-          "score": 200,
-          "authors": "Weiyuan Gong, Hong-Ye Hu",
-          "arxivCategory": "quant-ph",
-          "publishedAt": "2026-08-06T07:22:20.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Quantum information loss",
-          "url": "https://arxiv.org/abs/2608.05535",
-          "score": 200,
-          "authors": "James Fullwood, Wu-zhong Guo, Boyu Yang",
-          "arxivCategory": "quant-ph",
-          "publishedAt": "2026-08-06T02:29:24.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "X-Z Round Scheduling for the Surface Code with Defects under Biased Noise",
-          "url": "https://arxiv.org/abs/2608.05518",
-          "score": 200,
-          "authors": "Lakshika Rathi, Pau Escofet, Joshua Viszlai et al.",
-          "arxivCategory": "quant-ph",
-          "publishedAt": "2026-08-06T01:46:14.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Neutral Atom Quantum Computing: Principles, Routes, Progress, and Challenges",
-          "url": "https://arxiv.org/abs/2608.05010",
-          "score": 200,
-          "authors": "Junchao Wang, Zeyuan Wang, Lei Li et al.",
-          "arxivCategory": "quant-ph",
-          "publishedAt": "2026-08-05T16:15:06.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Diffusive Speed Limits for U(1)-Covariant Quantum Error Correction",
-          "url": "https://arxiv.org/abs/2608.04953",
-          "score": 200,
-          "authors": "Jianqi Sheng",
-          "arxivCategory": "quant-ph",
-          "publishedAt": "2026-08-05T15:24:27.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Quantum States Protection under Environmental Noise",
-          "url": "https://arxiv.org/abs/2608.04822",
-          "score": 200,
-          "authors": "Kai Wang, Zhen-Yang Peng",
-          "arxivCategory": "quant-ph",
-          "publishedAt": "2026-08-05T13:26:00.000Z"
-        }
-      ],
-      "relatedConceptSlugs": [
-        "magneto-inductive-communications-for-ocean-worlds"
-      ],
-      "resonance": 30,
-      "quadrant": "hype-cycle",
-      "resonanceSignals": {
-        "conceptDepth": 0.22629438553091683,
-        "editorial": 0.4,
-        "connections": 0,
-        "convergence": 0.025,
-        "deepTopic": 1,
-        "pantheon": 1,
         "graveyard": 0
       }
     },
@@ -399,9 +267,141 @@
       }
     },
     {
+      "slug": "quantum-computing",
+      "label": "Quantum Computing",
+      "score": 7809,
+      "delta": 8,
+      "direction": "steady",
+      "mentions": 44,
+      "sources": [
+        {
+          "platform": "arxiv",
+          "title": "Designer Codes from GALA: Compact, Self-Dual, and Rate-1/2 QEC on Reconfigurable Atom Arrays",
+          "url": "https://arxiv.org/abs/2608.07431",
+          "score": 200,
+          "authors": "Willers Yang, Casey Duckering, Arpit Dua",
+          "arxivCategory": "quant-ph",
+          "publishedAt": "2026-08-07T17:17:22.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Time-Reversal Selection Rules for Quantum Error Correction",
+          "url": "https://arxiv.org/abs/2608.06304",
+          "score": 200,
+          "authors": "Eric Kubischta, Ian Teixeira",
+          "arxivCategory": "quant-ph",
+          "publishedAt": "2026-08-06T17:21:55.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Approximate Quantum Error Correction at Chiral Topological Edges",
+          "url": "https://arxiv.org/abs/2608.06258",
+          "score": 200,
+          "authors": "Yuntai Song, Zejun Liu, Zhencheng Wang et al.",
+          "arxivCategory": "quant-ph",
+          "publishedAt": "2026-08-06T16:48:36.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Exponential logical-error reduction in quantum memories via optimal syndrome-measurement timing",
+          "url": "https://arxiv.org/abs/2608.06242",
+          "score": 200,
+          "authors": "Tobias Haug, Kishor Bharti, Leandro Aolita",
+          "arxivCategory": "quant-ph",
+          "publishedAt": "2026-08-06T16:27:55.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Towards fault-tolerance with universal phase-error-transparent gates for high-spin cat codes",
+          "url": "https://arxiv.org/abs/2608.05992",
+          "score": 200,
+          "authors": "Kelvin Onggadinata, Si Yan Koh, Arghya Maity et al.",
+          "arxivCategory": "quant-ph",
+          "publishedAt": "2026-08-06T13:04:40.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Quantum error correction with global control",
+          "url": "https://arxiv.org/abs/2608.05821",
+          "score": 200,
+          "authors": "Roberto Menta, Lindsay Bassman Oftelie, Ashkan Abedi et al.",
+          "arxivCategory": "quant-ph",
+          "publishedAt": "2026-08-06T09:50:45.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Provably Efficient Self-Calibrating Quantum Fault Tolerance",
+          "url": "https://arxiv.org/abs/2608.05686",
+          "score": 200,
+          "authors": "Weiyuan Gong, Hong-Ye Hu",
+          "arxivCategory": "quant-ph",
+          "publishedAt": "2026-08-06T07:22:20.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Quantum information loss",
+          "url": "https://arxiv.org/abs/2608.05535",
+          "score": 200,
+          "authors": "James Fullwood, Wu-zhong Guo, Boyu Yang",
+          "arxivCategory": "quant-ph",
+          "publishedAt": "2026-08-06T02:29:24.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "X-Z Round Scheduling for the Surface Code with Defects under Biased Noise",
+          "url": "https://arxiv.org/abs/2608.05518",
+          "score": 200,
+          "authors": "Lakshika Rathi, Pau Escofet, Joshua Viszlai et al.",
+          "arxivCategory": "quant-ph",
+          "publishedAt": "2026-08-06T01:46:14.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Neutral Atom Quantum Computing: Principles, Routes, Progress, and Challenges",
+          "url": "https://arxiv.org/abs/2608.05010",
+          "score": 200,
+          "authors": "Junchao Wang, Zeyuan Wang, Lei Li et al.",
+          "arxivCategory": "quant-ph",
+          "publishedAt": "2026-08-05T16:15:06.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Diffusive Speed Limits for U(1)-Covariant Quantum Error Correction",
+          "url": "https://arxiv.org/abs/2608.04953",
+          "score": 200,
+          "authors": "Jianqi Sheng",
+          "arxivCategory": "quant-ph",
+          "publishedAt": "2026-08-05T15:24:27.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Quantum States Protection under Environmental Noise",
+          "url": "https://arxiv.org/abs/2608.04822",
+          "score": 200,
+          "authors": "Kai Wang, Zhen-Yang Peng",
+          "arxivCategory": "quant-ph",
+          "publishedAt": "2026-08-05T13:26:00.000Z"
+        }
+      ],
+      "relatedConceptSlugs": [
+        "magneto-inductive-communications-for-ocean-worlds"
+      ],
+      "resonance": 30,
+      "quadrant": "hype-cycle",
+      "resonanceSignals": {
+        "conceptDepth": 0.22629438553091683,
+        "editorial": 0.4,
+        "connections": 0,
+        "convergence": 0.025,
+        "deepTopic": 1,
+        "pantheon": 1,
+        "graveyard": 0
+      }
+    },
+    {
       "slug": "black-holes",
       "label": "Black Holes",
-      "score": 7485,
+      "score": 7487,
       "delta": -5,
       "direction": "steady",
       "mentions": 38,
@@ -535,7 +535,7 @@
       "slug": "nanotechnology",
       "label": "Nanotechnology & Metamaterials",
       "score": 7400,
-      "delta": -3,
+      "delta": 0,
       "direction": "steady",
       "mentions": 37,
       "sources": [
@@ -1062,7 +1062,7 @@
     {
       "slug": "condensed-matter",
       "label": "Condensed Matter",
-      "score": 5408,
+      "score": 5409,
       "delta": 0,
       "direction": "steady",
       "mentions": 29,
@@ -1459,10 +1459,10 @@
     {
       "slug": "artemis",
       "label": "Artemis & Lunar Return",
-      "score": 2000,
-      "delta": -9,
+      "score": 1800,
+      "delta": -10,
       "direction": "steady",
-      "mentions": 10,
+      "mentions": 9,
       "sources": [
         {
           "platform": "arxiv",
@@ -1472,15 +1472,6 @@
           "authors": "Harshala Gaonkar, A. Ilker Topuz",
           "arxivCategory": "physics.ins-det",
           "publishedAt": "2026-07-15T12:25:36.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "The muon Moonshot: Moon subsurface tomography with upward-going muons",
-          "url": "https://arxiv.org/abs/2607.10403",
-          "score": 200,
-          "authors": "Zimo Hu, Leyun Gao, Zhengyun You et al.",
-          "arxivCategory": "astro-ph.EP",
-          "publishedAt": "2026-07-11T17:04:32.000Z"
         },
         {
           "platform": "arxiv",
@@ -1574,10 +1565,10 @@
     {
       "slug": "fusion-propulsion",
       "label": "Fusion Propulsion",
-      "score": 1800,
-      "delta": 0,
+      "score": 1600,
+      "delta": -11,
       "direction": "steady",
-      "mentions": 9,
+      "mentions": 8,
       "sources": [
         {
           "platform": "arxiv",
@@ -1614,15 +1605,6 @@
           "authors": "Huiya Liu, Yao Zhao, Ning Kang et al.",
           "arxivCategory": "physics.plasm-ph",
           "publishedAt": "2026-07-13T03:17:15.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Co4ICF: Co-evolving Physics-Informed Surrogate and RL-based Pulse Optimizer for Inertial Confinement Fusion",
-          "url": "https://arxiv.org/abs/2607.10366",
-          "score": 200,
-          "authors": "Jiatong Zhao, Tengyue Zhang, Yuhan Wang et al.",
-          "arxivCategory": "cs.AI",
-          "publishedAt": "2026-07-11T15:43:27.000Z"
         },
         {
           "platform": "arxiv",
@@ -1681,10 +1663,10 @@
     {
       "slug": "astrobiology",
       "label": "Astrobiology",
-      "score": 1403,
+      "score": 1203,
       "delta": 0,
       "direction": "steady",
-      "mentions": 8,
+      "mentions": 7,
       "sources": [
         {
           "platform": "arxiv",
@@ -1739,15 +1721,6 @@
           "authors": "E. Kurzawa-Ferrandez, A. Bello-Arufe, R. Hu",
           "arxivCategory": "astro-ph.EP",
           "publishedAt": "2026-07-13T18:00:01.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "High Resolution Optical Methane Linelist from observations of Titan for Cross-Correlation studies",
-          "url": "https://arxiv.org/abs/2607.10250",
-          "score": 200,
-          "authors": "Rafael Rianço-Silva, Pedro Machado, Clara Sousa Silva et al.",
-          "arxivCategory": "astro-ph.EP",
-          "publishedAt": "2026-07-11T10:32:14.000Z"
         },
         {
           "platform": "hackernews",
@@ -1849,8 +1822,8 @@
       "slug": "space-debris",
       "label": "Space Debris",
       "score": 609,
-      "delta": -25,
-      "direction": "down",
+      "delta": 0,
+      "direction": "steady",
       "mentions": 5,
       "sources": [
         {
@@ -1917,10 +1890,10 @@
     {
       "slug": "starship",
       "label": "Starship & SpaceX",
-      "score": 466,
-      "delta": 0,
+      "score": 424,
+      "delta": -9,
       "direction": "steady",
-      "mentions": 52,
+      "mentions": 48,
       "sources": [
         {
           "platform": "hackernews",
@@ -1930,15 +1903,6 @@
           "author": "speckx",
           "commentCount": 120,
           "publishedAt": "2026-08-06T19:38:45.000Z"
-        },
-        {
-          "platform": "hackernews",
-          "title": "SpaceX wins $1.6B Space Force contract for 18 Falcon 9 launches",
-          "url": "https://spacenews.com/spacex-wins-1-6-billion-in-launch-orders-for-military-satellite-networks/",
-          "score": 30,
-          "author": "MarcoDewey",
-          "commentCount": 91,
-          "publishedAt": "2026-08-03T13:33:04.000Z"
         },
         {
           "platform": "hackernews",
@@ -2029,6 +1993,15 @@
           "author": "tosh",
           "commentCount": 0,
           "publishedAt": "2026-08-05T08:13:59.000Z"
+        },
+        {
+          "platform": "hackernews",
+          "title": "The Investors Whose SpaceX Shares Vanished Before They Could Cash In",
+          "url": "https://www.wsj.com/finance/stocks/spacex-ipo-spv-investors-2698a174",
+          "score": 7,
+          "author": "chirau",
+          "commentCount": 2,
+          "publishedAt": "2026-08-07T00:37:09.000Z"
         }
       ],
       "relatedConceptSlugs": [
@@ -2191,7 +2164,7 @@
       "slug": "space-solar-power",
       "label": "Space Solar Power",
       "score": 203,
-      "delta": 2,
+      "delta": 0,
       "direction": "steady",
       "mentions": 2,
       "sources": [
@@ -2302,8 +2275,8 @@
       "slug": "dyson-spheres",
       "label": "Dyson Spheres",
       "score": 200,
-      "delta": -50,
-      "direction": "down",
+      "delta": 0,
+      "direction": "steady",
       "mentions": 1,
       "sources": [
         {
@@ -2334,16 +2307,16 @@
     {
       "slug": "starlink",
       "label": "Starlink & Satellite Internet",
-      "score": 18,
-      "delta": 157,
-      "direction": "up",
+      "score": 19,
+      "delta": 12,
+      "direction": "steady",
       "mentions": 3,
       "sources": [
         {
           "platform": "hackernews",
           "title": "Delta Passed on Starlink Wi-Fi. United and Virgin Atlantic Are Seeing the Payoff",
           "url": "https://www.inc.com/connor-jewiss/delta-passed-on-starlinks-fast-in-flight-wi-fi-united-and-virgin-atlantic-are-already-seeing-the-payoff/91387025",
-          "score": 8,
+          "score": 9,
           "author": "mlindner",
           "commentCount": 0,
           "publishedAt": "2026-08-09T06:58:16.000Z"
