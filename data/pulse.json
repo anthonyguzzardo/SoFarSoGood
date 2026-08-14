@@ -1,13 +1,13 @@
 {
-  "generatedAt": "2026-08-14T07:12:49.027Z",
+  "generatedAt": "2026-08-14T18:58:31.638Z",
   "topics": [
     {
       "slug": "space-telescopes",
       "label": "Space Telescopes",
-      "score": 8400,
+      "score": 8403,
       "delta": 5,
       "direction": "steady",
-      "mentions": 42,
+      "mentions": 43,
       "sources": [
         {
           "platform": "arxiv",
@@ -137,10 +137,10 @@
     {
       "slug": "black-holes",
       "label": "Black Holes",
-      "score": 8205,
-      "delta": 3,
+      "score": 7816,
+      "delta": -2,
       "direction": "steady",
-      "mentions": 45,
+      "mentions": 43,
       "sources": [
         {
           "platform": "arxiv",
@@ -665,10 +665,10 @@
     {
       "slug": "quantum-computing",
       "label": "Quantum Computing",
-      "score": 7412,
+      "score": 7409,
       "delta": -5,
       "direction": "steady",
-      "mentions": 43,
+      "mentions": 42,
       "sources": [
         {
           "platform": "arxiv",
@@ -1062,10 +1062,10 @@
     {
       "slug": "condensed-matter",
       "label": "Condensed Matter",
-      "score": 5609,
-      "delta": 0,
+      "score": 5401,
+      "delta": -4,
       "direction": "steady",
-      "mentions": 30,
+      "mentions": 28,
       "sources": [
         {
           "platform": "arxiv",
@@ -1459,20 +1459,11 @@
     {
       "slug": "artemis",
       "label": "Artemis & Lunar Return",
-      "score": 1800,
-      "delta": 0,
+      "score": 1600,
+      "delta": -11,
       "direction": "steady",
-      "mentions": 9,
+      "mentions": 8,
       "sources": [
-        {
-          "platform": "arxiv",
-          "title": "Contribution of cosmic alphas to generation of albedo neutrons and gammas in lunar regolith: A computational study based on GEANT4 simulations",
-          "url": "https://arxiv.org/abs/2607.24816",
-          "score": 200,
-          "authors": "Harshala Gaonkar, A. Ilker Topuz",
-          "arxivCategory": "physics.ins-det",
-          "publishedAt": "2026-07-15T12:25:36.000Z"
-        },
         {
           "platform": "arxiv",
           "title": "Variable Emissivity Modeling for Sustainable Lunar Surface Habitats",
@@ -1654,10 +1645,10 @@
     {
       "slug": "space-debris",
       "label": "Space Debris",
-      "score": 1212,
+      "score": 1207,
       "delta": 0,
       "direction": "steady",
-      "mentions": 9,
+      "mentions": 8,
       "sources": [
         {
           "platform": "arxiv",
@@ -1715,15 +1706,6 @@
         },
         {
           "platform": "hackernews",
-          "title": "Planned satellite megaconstellations could generate runaway space debris",
-          "url": "https://www.science.org/content/article/planned-satellite-megaconstellations-could-generate-runaway-space-debris",
-          "score": 5,
-          "author": "sbulaev",
-          "commentCount": 0,
-          "publishedAt": "2026-08-07T18:07:07.000Z"
-        },
-        {
-          "platform": "hackernews",
           "title": "How Cleaning up space debris could grow to become a big business",
           "url": "https://www.cnbc.com/2026/08/08/space-debris-junk-spacex-rocket-moon-crash.html",
           "score": 4,
@@ -1759,10 +1741,10 @@
     {
       "slug": "astrobiology",
       "label": "Astrobiology",
-      "score": 1203,
+      "score": 1200,
       "delta": 0,
       "direction": "steady",
-      "mentions": 7,
+      "mentions": 6,
       "sources": [
         {
           "platform": "arxiv",
@@ -1817,15 +1799,6 @@
           "authors": "Sarah Rugheimer, Aiden Weatherbee, James Fecanin et al.",
           "arxivCategory": "astro-ph.IM",
           "publishedAt": "2026-07-23T14:11:16.000Z"
-        },
-        {
-          "platform": "hackernews",
-          "title": "Scientists Designed a Virtual Alien Lifeform to Hunt for Extraterrestrials",
-          "url": "https://www.404media.co/scientists-designed-a-virtual-alien-lifeform-to-hunt-for-extraterrestrials/",
-          "score": 3,
-          "author": "Brajeshwar",
-          "commentCount": 0,
-          "publishedAt": "2026-08-07T15:49:04.000Z"
         }
       ],
       "relatedConceptSlugs": [
@@ -2237,11 +2210,20 @@
     {
       "slug": "starship",
       "label": "Starship & SpaceX",
-      "score": 221,
-      "delta": -46,
+      "score": 304,
+      "delta": -21,
       "direction": "down",
-      "mentions": 18,
+      "mentions": 20,
       "sources": [
+        {
+          "platform": "hackernews",
+          "title": "Cursor is now a part of SpaceX",
+          "url": "https://cursor.com/blog/joining-spacex",
+          "score": 79,
+          "author": "billy_jones_75",
+          "commentCount": 74,
+          "publishedAt": "2026-08-14T13:10:12.000Z"
+        },
         {
           "platform": "hackernews",
           "title": "Grok Bot by SpaceXAI",
@@ -2307,18 +2289,9 @@
         },
         {
           "platform": "hackernews",
-          "title": "Tesla and SpaceX to invest $16.8B for Terafab chip factory in Texas",
-          "url": "https://techcrunch.com/2026/08/06/tesla-and-spacex-will-invest-16-8b-to-start-building-terafab-chip-factory-in-texas/",
-          "score": 7,
-          "author": "joering2",
-          "commentCount": 0,
-          "publishedAt": "2026-08-07T17:07:39.000Z"
-        },
-        {
-          "platform": "hackernews",
           "title": "SpaceX 10GW in 2027 – Why It's Real, Will Drive $300B ARR for SpaceX",
           "url": "https://newsletter.semianalysis.com/p/spacex-10gw-in-2027-why-its-real",
-          "score": 6,
+          "score": 7,
           "author": "rajivjain",
           "commentCount": 3,
           "publishedAt": "2026-08-08T01:02:50.000Z"
