@@ -1,13 +1,13 @@
 {
-  "generatedAt": "2026-08-15T18:33:03.768Z",
+  "generatedAt": "2026-08-16T06:26:54.416Z",
   "topics": [
     {
       "slug": "space-telescopes",
       "label": "Space Telescopes",
-      "score": 8403,
+      "score": 8407,
       "delta": 0,
       "direction": "steady",
-      "mentions": 43,
+      "mentions": 44,
       "sources": [
         {
           "platform": "arxiv",
@@ -1062,10 +1062,10 @@
     {
       "slug": "condensed-matter",
       "label": "Condensed Matter",
-      "score": 5401,
-      "delta": 0,
+      "score": 5202,
+      "delta": -4,
       "direction": "steady",
-      "mentions": 28,
+      "mentions": 27,
       "sources": [
         {
           "platform": "arxiv",
@@ -1327,8 +1327,8 @@
       "slug": "exoplanets",
       "label": "Exoplanets",
       "score": 2800,
-      "delta": -18,
-      "direction": "down",
+      "delta": 0,
+      "direction": "steady",
       "mentions": 14,
       "sources": [
         {
@@ -1934,7 +1934,7 @@
       "slug": "starlink",
       "label": "Starlink & Satellite Internet",
       "score": 414,
-      "delta": -2,
+      "delta": 0,
       "direction": "steady",
       "mentions": 6,
       "sources": [
@@ -2192,18 +2192,18 @@
     {
       "slug": "starship",
       "label": "Starship & SpaceX",
-      "score": 338,
-      "delta": 11,
+      "score": 331,
+      "delta": 0,
       "direction": "steady",
-      "mentions": 22,
+      "mentions": 21,
       "sources": [
         {
           "platform": "hackernews",
           "title": "Cursor is now a part of SpaceX",
           "url": "https://cursor.com/blog/joining-spacex",
-          "score": 99,
+          "score": 100,
           "author": "billy_jones_75",
-          "commentCount": 116,
+          "commentCount": 120,
           "publishedAt": "2026-08-14T13:10:12.000Z"
         },
         {
@@ -2262,15 +2262,6 @@
         },
         {
           "platform": "hackernews",
-          "title": "SpaceX Earnings Reveal X's Shrinking Ad Biz",
-          "url": "https://www.mediapost.com/publications/article/417046/spacex-q2-earnings-show-xs-shrunken-ad-biz.html",
-          "score": 10,
-          "author": "keeda",
-          "commentCount": 1,
-          "publishedAt": "2026-08-08T22:26:19.000Z"
-        },
-        {
-          "platform": "hackernews",
           "title": "SpaceX's Earnings Show Elon Wiped Out Two-Thirds of Twitter's Ad Business",
           "url": "https://www.techdirt.com/2026/08/10/spacexs-earnings-show-elon-wiped-out-two-thirds-of-twitters-ad-business/",
           "score": 9,
@@ -2304,6 +2295,15 @@
           "author": "countbinface",
           "commentCount": 0,
           "publishedAt": "2026-08-13T17:16:14.000Z"
+        },
+        {
+          "platform": "hackernews",
+          "title": "SpaceX plan for rocket launch site on Louisiana coast sparks backlash",
+          "url": "https://www.theguardian.com/us-news/2026/aug/10/spacex-rocket-launch-site-louisiana-backlash",
+          "score": 5,
+          "author": "jethronethro",
+          "commentCount": 0,
+          "publishedAt": "2026-08-10T19:28:33.000Z"
         }
       ],
       "relatedConceptSlugs": [
