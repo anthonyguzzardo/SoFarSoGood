@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-18T06:29:48.088Z",
+  "generatedAt": "2026-08-18T18:42:07.753Z",
   "topics": [
     {
       "slug": "gravitational-waves",
@@ -136,10 +136,10 @@
     {
       "slug": "black-holes",
       "label": "Black Holes",
-      "score": 7631,
+      "score": 7637,
       "delta": 6,
       "direction": "steady",
-      "mentions": 45,
+      "mentions": 46,
       "sources": [
         {
           "platform": "arxiv",
@@ -269,7 +269,7 @@
     {
       "slug": "space-telescopes",
       "label": "Space Telescopes",
-      "score": 7608,
+      "score": 7609,
       "delta": -10,
       "direction": "steady",
       "mentions": 40,
@@ -402,10 +402,10 @@
     {
       "slug": "quantum-computing",
       "label": "Quantum Computing",
-      "score": 7606,
+      "score": 7608,
       "delta": -3,
       "direction": "steady",
-      "mentions": 41,
+      "mentions": 42,
       "sources": [
         {
           "platform": "arxiv",
@@ -664,10 +664,10 @@
     {
       "slug": "nanotechnology",
       "label": "Nanotechnology & Metamaterials",
-      "score": 7206,
+      "score": 7208,
       "delta": 0,
       "direction": "steady",
-      "mentions": 38,
+      "mentions": 39,
       "sources": [
         {
           "platform": "arxiv",
@@ -1063,7 +1063,7 @@
       "slug": "condensed-matter",
       "label": "Condensed Matter",
       "score": 5405,
-      "delta": 4,
+      "delta": 8,
       "direction": "steady",
       "mentions": 29,
       "sources": [
@@ -1917,8 +1917,8 @@
     {
       "slug": "starlink",
       "label": "Starlink & Satellite Internet",
-      "score": 419,
-      "delta": 4,
+      "score": 421,
+      "delta": 2,
       "direction": "steady",
       "mentions": 6,
       "sources": [
@@ -1953,7 +1953,7 @@
           "platform": "hackernews",
           "title": "Using Starlink's Satellites to Study Earth's Upper Atmosphere",
           "url": "https://hackaday.com/2026/08/17/using-starlinks-satellites-to-study-earths-upper-atmosphere/",
-          "score": 7,
+          "score": 9,
           "author": "toomuchtodo",
           "commentCount": 0,
           "publishedAt": "2026-08-18T03:41:13.000Z"
@@ -2174,10 +2174,10 @@
     {
       "slug": "starship",
       "label": "Starship & SpaceX",
-      "score": 340,
-      "delta": -11,
-      "direction": "steady",
-      "mentions": 17,
+      "score": 269,
+      "delta": -31,
+      "direction": "down",
+      "mentions": 15,
       "sources": [
         {
           "platform": "hackernews",
@@ -2190,30 +2190,12 @@
         },
         {
           "platform": "hackernews",
-          "title": "Grok Bot by SpaceXAI",
-          "url": "https://x.ai/news/introducing-grok-bot",
-          "score": 59,
-          "author": "colesantiago",
-          "commentCount": 14,
-          "publishedAt": "2026-08-11T17:24:49.000Z"
-        },
-        {
-          "platform": "hackernews",
           "title": "Nvidia discloses $21B stake in SpaceX at end of second quarter",
           "url": "https://www.cnbc.com/2026/08/14/nvidia-discloses-21-billion-stake-in-spacex-at-end-of-second-quarter.html",
-          "score": 46,
+          "score": 47,
           "author": "johnbarron",
           "commentCount": 30,
           "publishedAt": "2026-08-16T18:40:54.000Z"
-        },
-        {
-          "platform": "hackernews",
-          "title": "The SpaceX Sham",
-          "url": "https://dissentmagazine.org/online_articles/spacex-ipo-elon-musk-trillionaire/",
-          "score": 39,
-          "author": "cdrnsf",
-          "commentCount": 47,
-          "publishedAt": "2026-08-11T17:47:03.000Z"
         },
         {
           "platform": "hackernews",
@@ -2223,6 +2205,15 @@
           "author": "theanonymousone",
           "commentCount": 1,
           "publishedAt": "2026-08-12T15:55:09.000Z"
+        },
+        {
+          "platform": "hackernews",
+          "title": "Nvidia discloses $21B stake in SpaceX",
+          "url": "https://arstechnica.com/information-technology/2026/08/nvidia-discloses-21b-stake-in-spacex/",
+          "score": 28,
+          "author": "joozio",
+          "commentCount": 14,
+          "publishedAt": "2026-08-18T07:02:04.000Z"
         },
         {
           "platform": "hackernews",
@@ -2286,6 +2277,15 @@
           "author": "johnbarron",
           "commentCount": 0,
           "publishedAt": "2026-08-14T17:07:23.000Z"
+        },
+        {
+          "platform": "hackernews",
+          "title": "Cursor and SpaceXAI: the fastest iterating team wins",
+          "url": "https://www.a16z.news/p/cursor-spacexai-fastest-iterating-team",
+          "score": 4,
+          "author": "jbredeche",
+          "commentCount": 0,
+          "publishedAt": "2026-08-14T14:22:06.000Z"
         }
       ],
       "relatedConceptSlugs": [
