@@ -1,13 +1,13 @@
 {
-  "generatedAt": "2026-08-20T06:31:49.122Z",
+  "generatedAt": "2026-08-20T18:42:25.561Z",
   "topics": [
     {
       "slug": "black-holes",
       "label": "Black Holes",
-      "score": 8025,
-      "delta": 2,
+      "score": 7833,
+      "delta": 0,
       "direction": "steady",
-      "mentions": 45,
+      "mentions": 47,
       "sources": [
         {
           "platform": "arxiv",
@@ -403,7 +403,7 @@
       "slug": "particle-physics",
       "label": "Particle Physics",
       "score": 7206,
-      "delta": -5,
+      "delta": -3,
       "direction": "steady",
       "mentions": 37,
       "sources": [
@@ -532,10 +532,10 @@
     {
       "slug": "space-telescopes",
       "label": "Space Telescopes",
-      "score": 6818,
+      "score": 6821,
       "delta": 3,
       "direction": "steady",
-      "mentions": 37,
+      "mentions": 38,
       "sources": [
         {
           "platform": "arxiv",
@@ -665,10 +665,10 @@
     {
       "slug": "quantum-computing",
       "label": "Quantum Computing",
-      "score": 6610,
+      "score": 6613,
       "delta": -8,
       "direction": "steady",
-      "mentions": 38,
+      "mentions": 39,
       "sources": [
         {
           "platform": "arxiv",
@@ -927,12 +927,144 @@
       }
     },
     {
+      "slug": "condensed-matter",
+      "label": "Condensed Matter",
+      "score": 6035,
+      "delta": 6,
+      "direction": "steady",
+      "mentions": 32,
+      "sources": [
+        {
+          "platform": "hackernews",
+          "title": "Devices with GrapheneOS support should be available in 2027",
+          "url": "https://grapheneos.social/@GrapheneOS/117078064184215730",
+          "score": 625,
+          "author": "exceptione",
+          "commentCount": 396,
+          "publishedAt": "2026-08-19T11:46:58.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Superconducting Hydride Mg2RhH6 Experimentally Achieved at Lower Pressure",
+          "url": "https://arxiv.org/abs/2608.15745",
+          "score": 200,
+          "authors": "Linjing Wu, Zelong Wang, Guiqi Liu et al.",
+          "arxivCategory": "cond-mat.supr-con",
+          "publishedAt": "2026-08-16T13:51:02.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Josephson network as a~model for high-temperature superconductor and beyond: Macroscopic quantum coherence probed by microwave absorption",
+          "url": "https://arxiv.org/abs/2608.15441",
+          "score": 200,
+          "authors": "Adam Rycerz",
+          "arxivCategory": "cond-mat.supr-con",
+          "publishedAt": "2026-08-15T22:52:11.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Thickness-Driven Superconductor-Insulator Transition in (Cu,C)-1234 and Proximity-Induced Superconductivity Recovery in (Cu,C)-1234/YBCO Heterostructure",
+          "url": "https://arxiv.org/abs/2608.11707",
+          "score": 200,
+          "authors": "Zhihang Xu, Detian Yang, Ping Zhu et al.",
+          "arxivCategory": "cond-mat.supr-con",
+          "publishedAt": "2026-08-12T06:37:06.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Some features of high-temperature superconductivity on flat bands",
+          "url": "https://arxiv.org/abs/2608.10231",
+          "score": 200,
+          "authors": "V. R. Shaginyan, A. Z. Msezane, S. A. Artamonov",
+          "arxivCategory": "cond-mat.str-el",
+          "publishedAt": "2026-08-10T21:08:33.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "How to measure loop currents in scanning tunneling microscopy",
+          "url": "https://arxiv.org/abs/2607.20030",
+          "score": 200,
+          "authors": "Victoire Morisseau, Luke C. Rhodes, Peter Wahl et al.",
+          "arxivCategory": "cond-mat.str-el",
+          "publishedAt": "2026-07-22T11:16:39.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Chern insulator boundary criticality",
+          "url": "https://arxiv.org/abs/2608.18199",
+          "score": 200,
+          "authors": "Benjamin Moy, Eduardo Fradkin",
+          "arxivCategory": "cond-mat.str-el",
+          "publishedAt": "2026-08-18T18:00:00.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Growth of Altermagnetic α-MnTe Films: Substrate Variation and Surface Modification",
+          "url": "https://arxiv.org/abs/2608.17513",
+          "score": 200,
+          "authors": "M. Dittmar, L. Hirnet, H. Haberkamm et al.",
+          "arxivCategory": "cond-mat.mtrl-sci",
+          "publishedAt": "2026-08-18T08:38:32.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Flux-tunable global and local superconductivity in a topological insulator nano-SQUID",
+          "url": "https://arxiv.org/abs/2608.17404",
+          "score": 200,
+          "authors": "Ella Nikodem, Jakob Schluck, Michał Papaj et al.",
+          "arxivCategory": "cond-mat.mes-hall",
+          "publishedAt": "2026-08-18T05:59:05.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Topological insulator realization induced by fermionic interaction through BF mediators",
+          "url": "https://arxiv.org/abs/2608.16660",
+          "score": 200,
+          "authors": "G. B. de Gracia, R. da Rocha, A. A. Nogueira et al.",
+          "arxivCategory": "cond-mat.mes-hall",
+          "publishedAt": "2026-08-17T14:53:55.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Temperature-Dependent Spin-Orbit Torque Generation in Perpendicularly Magnetized Topological Insulator-Magnetic Multilayer Heterostructures",
+          "url": "https://arxiv.org/abs/2608.15232",
+          "score": 200,
+          "authors": "Soumyarup Hait, Benjamin A. Brereton, Ahmet Yagmur et al.",
+          "arxivCategory": "cond-mat.mes-hall",
+          "publishedAt": "2026-08-15T13:42:03.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Full-field and Bloch-periodic-factor discretizations: Accuracy and phantom modes",
+          "url": "https://arxiv.org/abs/2608.14348",
+          "score": 200,
+          "authors": "Igor Tsukerman",
+          "arxivCategory": "physics.optics",
+          "publishedAt": "2026-08-14T14:42:09.000Z"
+        }
+      ],
+      "relatedConceptSlugs": [
+        "extreme-metamaterial-solar-sails"
+      ],
+      "resonance": 50,
+      "quadrant": "real-deal",
+      "resonanceSignals": {
+        "conceptDepth": 0.6131471927654584,
+        "editorial": 1,
+        "connections": 0.3333333333333333,
+        "convergence": 0.15,
+        "deepTopic": 0,
+        "pantheon": 0.92,
+        "graveyard": 0
+      }
+    },
+    {
       "slug": "dark-matter",
       "label": "Dark Matter & Dark Energy",
-      "score": 6003,
+      "score": 6006,
       "delta": 0,
       "direction": "steady",
-      "mentions": 31,
+      "mentions": 32,
       "sources": [
         {
           "platform": "arxiv",
@@ -1060,142 +1192,10 @@
       }
     },
     {
-      "slug": "condensed-matter",
-      "label": "Condensed Matter",
-      "score": 5999,
-      "delta": 15,
-      "direction": "steady",
-      "mentions": 31,
-      "sources": [
-        {
-          "platform": "hackernews",
-          "title": "Devices with GrapheneOS support should be available in 2027",
-          "url": "https://grapheneos.social/@GrapheneOS/117078064184215730",
-          "score": 593,
-          "author": "exceptione",
-          "commentCount": 375,
-          "publishedAt": "2026-08-19T11:46:58.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Superconducting Hydride Mg2RhH6 Experimentally Achieved at Lower Pressure",
-          "url": "https://arxiv.org/abs/2608.15745",
-          "score": 200,
-          "authors": "Linjing Wu, Zelong Wang, Guiqi Liu et al.",
-          "arxivCategory": "cond-mat.supr-con",
-          "publishedAt": "2026-08-16T13:51:02.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Josephson network as a~model for high-temperature superconductor and beyond: Macroscopic quantum coherence probed by microwave absorption",
-          "url": "https://arxiv.org/abs/2608.15441",
-          "score": 200,
-          "authors": "Adam Rycerz",
-          "arxivCategory": "cond-mat.supr-con",
-          "publishedAt": "2026-08-15T22:52:11.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Thickness-Driven Superconductor-Insulator Transition in (Cu,C)-1234 and Proximity-Induced Superconductivity Recovery in (Cu,C)-1234/YBCO Heterostructure",
-          "url": "https://arxiv.org/abs/2608.11707",
-          "score": 200,
-          "authors": "Zhihang Xu, Detian Yang, Ping Zhu et al.",
-          "arxivCategory": "cond-mat.supr-con",
-          "publishedAt": "2026-08-12T06:37:06.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Some features of high-temperature superconductivity on flat bands",
-          "url": "https://arxiv.org/abs/2608.10231",
-          "score": 200,
-          "authors": "V. R. Shaginyan, A. Z. Msezane, S. A. Artamonov",
-          "arxivCategory": "cond-mat.str-el",
-          "publishedAt": "2026-08-10T21:08:33.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "How to measure loop currents in scanning tunneling microscopy",
-          "url": "https://arxiv.org/abs/2607.20030",
-          "score": 200,
-          "authors": "Victoire Morisseau, Luke C. Rhodes, Peter Wahl et al.",
-          "arxivCategory": "cond-mat.str-el",
-          "publishedAt": "2026-07-22T11:16:39.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Chern insulator boundary criticality",
-          "url": "https://arxiv.org/abs/2608.18199",
-          "score": 200,
-          "authors": "Benjamin Moy, Eduardo Fradkin",
-          "arxivCategory": "cond-mat.str-el",
-          "publishedAt": "2026-08-18T18:00:00.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Growth of Altermagnetic α-MnTe Films: Substrate Variation and Surface Modification",
-          "url": "https://arxiv.org/abs/2608.17513",
-          "score": 200,
-          "authors": "M. Dittmar, L. Hirnet, H. Haberkamm et al.",
-          "arxivCategory": "cond-mat.mtrl-sci",
-          "publishedAt": "2026-08-18T08:38:32.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Flux-tunable global and local superconductivity in a topological insulator nano-SQUID",
-          "url": "https://arxiv.org/abs/2608.17404",
-          "score": 200,
-          "authors": "Ella Nikodem, Jakob Schluck, Michał Papaj et al.",
-          "arxivCategory": "cond-mat.mes-hall",
-          "publishedAt": "2026-08-18T05:59:05.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Topological insulator realization induced by fermionic interaction through BF mediators",
-          "url": "https://arxiv.org/abs/2608.16660",
-          "score": 200,
-          "authors": "G. B. de Gracia, R. da Rocha, A. A. Nogueira et al.",
-          "arxivCategory": "cond-mat.mes-hall",
-          "publishedAt": "2026-08-17T14:53:55.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Temperature-Dependent Spin-Orbit Torque Generation in Perpendicularly Magnetized Topological Insulator-Magnetic Multilayer Heterostructures",
-          "url": "https://arxiv.org/abs/2608.15232",
-          "score": 200,
-          "authors": "Soumyarup Hait, Benjamin A. Brereton, Ahmet Yagmur et al.",
-          "arxivCategory": "cond-mat.mes-hall",
-          "publishedAt": "2026-08-15T13:42:03.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Full-field and Bloch-periodic-factor discretizations: Accuracy and phantom modes",
-          "url": "https://arxiv.org/abs/2608.14348",
-          "score": 200,
-          "authors": "Igor Tsukerman",
-          "arxivCategory": "physics.optics",
-          "publishedAt": "2026-08-14T14:42:09.000Z"
-        }
-      ],
-      "relatedConceptSlugs": [
-        "extreme-metamaterial-solar-sails"
-      ],
-      "resonance": 50,
-      "quadrant": "real-deal",
-      "resonanceSignals": {
-        "conceptDepth": 0.6131471927654584,
-        "editorial": 1,
-        "connections": 0.3333333333333333,
-        "convergence": 0.15,
-        "deepTopic": 0,
-        "pantheon": 0.92,
-        "graveyard": 0
-      }
-    },
-    {
       "slug": "exoplanets",
       "label": "Exoplanets",
       "score": 3200,
-      "delta": 7,
+      "delta": 14,
       "direction": "steady",
       "mentions": 16,
       "sources": [
@@ -2174,8 +2174,8 @@
     {
       "slug": "starship",
       "label": "Starship & SpaceX",
-      "score": 285,
-      "delta": -2,
+      "score": 289,
+      "delta": 7,
       "direction": "steady",
       "mentions": 24,
       "sources": [
@@ -2201,7 +2201,7 @@
           "platform": "hackernews",
           "title": "Nvidia discloses $21B stake in SpaceX",
           "url": "https://arstechnica.com/information-technology/2026/08/nvidia-discloses-21b-stake-in-spacex/",
-          "score": 30,
+          "score": 31,
           "author": "joozio",
           "commentCount": 15,
           "publishedAt": "2026-08-18T07:02:04.000Z"
@@ -2235,6 +2235,15 @@
         },
         {
           "platform": "hackernews",
+          "title": "SpaceX Attempted to Acquire AI Coding Startup Cognition",
+          "url": "https://www.bloomberg.com/news/articles/2026-08-19/spacex-attempted-to-acquire-ai-coding-startup-cognition",
+          "score": 7,
+          "author": "forthwall",
+          "commentCount": 1,
+          "publishedAt": "2026-08-19T19:25:10.000Z"
+        },
+        {
+          "platform": "hackernews",
           "title": "SpaceX tugs Starship into port after 24 days at sea",
           "url": "https://arstechnica.com/space/2026/08/its-christmastime-at-spacex-as-company-salvages-starship-from-indian-ocean/",
           "score": 6,
@@ -2244,21 +2253,21 @@
         },
         {
           "platform": "hackernews",
-          "title": "SpaceX Attempted to Acquire AI Coding Startup Cognition",
-          "url": "https://www.bloomberg.com/news/articles/2026-08-19/spacex-attempted-to-acquire-ai-coding-startup-cognition",
-          "score": 6,
-          "author": "forthwall",
-          "commentCount": 1,
-          "publishedAt": "2026-08-19T19:25:10.000Z"
-        },
-        {
-          "platform": "hackernews",
           "title": "Starship arrives at Christmas Island after 24-day ocean ordeal",
           "url": "https://www.space.com/space-exploration/launches-spacecraft/starship-lives-spacex-craft-arrives-at-christmas-island-after-24-day-ocean-ordeal",
           "score": 5,
           "author": "T-A",
           "commentCount": 0,
           "publishedAt": "2026-08-18T20:43:57.000Z"
+        },
+        {
+          "platform": "hackernews",
+          "title": "China lands its Zhuque-3 rocket, rivaling Blue Origin and SpaceX",
+          "url": "https://www.scientificamerican.com/article/china-successfully-lands-its-zhuque-3-rocket-rivaling-blue-origin-and-spacex/",
+          "score": 5,
+          "author": "beardyw",
+          "commentCount": 0,
+          "publishedAt": "2026-08-20T17:23:40.000Z"
         },
         {
           "platform": "hackernews",
@@ -2277,15 +2286,6 @@
           "author": "sbulaev",
           "commentCount": 0,
           "publishedAt": "2026-08-15T10:07:06.000Z"
-        },
-        {
-          "platform": "hackernews",
-          "title": "SpaceXAI debuts Grok 4.6, overtaking Kimi K3's and matching GPT-5.6 Sol",
-          "url": "https://tracking.tldrnewsletter.com/CL0/https:%2F%2Fventurebeat.com%2Ftechnology%2Fspacexai-debuts-grok-4-6-overtaking-kimi-k3s-performance-and-matching-gpt-5-6-sol-for-worlds-third-best-on-artificial-analysis%3Futm_source=tldrnewsletter/1/0100019ffaca2225-a9854eeb-9a81-45e8-9557-a33c9a0a0340-000000/5ZecTH6mmwZ5ww72zhFtIoqVy7zetdCvXSOQxrHGNJs=452",
-          "score": 5,
-          "author": "countbinface",
-          "commentCount": 0,
-          "publishedAt": "2026-08-13T17:16:14.000Z"
         }
       ],
       "relatedConceptSlugs": [
@@ -2376,7 +2376,7 @@
     {
       "slug": "nuclear-thermal",
       "label": "Nuclear Propulsion",
-      "score": 3,
+      "score": 4,
       "delta": 200,
       "direction": "up",
       "mentions": 1,
@@ -2385,7 +2385,7 @@
           "platform": "hackernews",
           "title": "Firefly Aerospace to fly Zeno Power radioisotope heater on lunar lander mission",
           "url": "https://spacenews.com/firefly-aerospace-to-fly-zeno-power-radioisotope-heating-unit-on-lunar-lander-mission/",
-          "score": 3,
+          "score": 4,
           "author": "rbanffy",
           "commentCount": 0,
           "publishedAt": "2026-08-19T21:08:33.000Z"
