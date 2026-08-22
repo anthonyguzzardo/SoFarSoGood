@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-08-21T18:40:12.327Z",
+  "generatedAt": "2026-08-22T06:26:21.645Z",
   "topics": [
     {
       "slug": "black-holes",
       "label": "Black Holes",
       "score": 8037,
-      "delta": 3,
+      "delta": 0,
       "direction": "steady",
       "mentions": 48,
       "sources": [
@@ -138,7 +138,7 @@
       "slug": "quantum-computing",
       "label": "Quantum Computing",
       "score": 7611,
-      "delta": 15,
+      "delta": 0,
       "direction": "steady",
       "mentions": 43,
       "sources": [
@@ -270,7 +270,7 @@
       "slug": "gravitational-waves",
       "label": "Gravitational Waves",
       "score": 7600,
-      "delta": -3,
+      "delta": 0,
       "direction": "steady",
       "mentions": 38,
       "sources": [
@@ -534,10 +534,10 @@
     {
       "slug": "particle-physics",
       "label": "Particle Physics",
-      "score": 7206,
+      "score": 7200,
       "delta": 0,
       "direction": "steady",
-      "mentions": 37,
+      "mentions": 36,
       "sources": [
         {
           "platform": "arxiv",
@@ -664,10 +664,10 @@
     {
       "slug": "space-telescopes",
       "label": "Space Telescopes",
-      "score": 7110,
-      "delta": 4,
+      "score": 7135,
+      "delta": 2,
       "direction": "steady",
-      "mentions": 40,
+      "mentions": 41,
       "sources": [
         {
           "platform": "arxiv",
@@ -797,18 +797,18 @@
     {
       "slug": "condensed-matter",
       "label": "Condensed Matter",
-      "score": 5649,
+      "score": 5657,
       "delta": -6,
       "direction": "steady",
-      "mentions": 30,
+      "mentions": 31,
       "sources": [
         {
           "platform": "hackernews",
           "title": "Devices with GrapheneOS support should be available in 2027",
           "url": "https://grapheneos.social/@GrapheneOS/117078064184215730",
-          "score": 639,
+          "score": 641,
           "author": "exceptione",
-          "commentCount": 399,
+          "commentCount": 400,
           "publishedAt": "2026-08-19T11:46:58.000Z"
         },
         {
@@ -929,8 +929,8 @@
     {
       "slug": "dark-matter",
       "label": "Dark Matter & Dark Energy",
-      "score": 5619,
-      "delta": -6,
+      "score": 5620,
+      "delta": 0,
       "direction": "steady",
       "mentions": 31,
       "sources": [
@@ -1195,7 +1195,7 @@
       "slug": "exoplanets",
       "label": "Exoplanets",
       "score": 3600,
-      "delta": 13,
+      "delta": 0,
       "direction": "steady",
       "mentions": 18,
       "sources": [
@@ -1460,7 +1460,7 @@
       "slug": "astrobiology",
       "label": "Astrobiology",
       "score": 2000,
-      "delta": 11,
+      "delta": 0,
       "direction": "steady",
       "mentions": 10,
       "sources": [
@@ -2261,10 +2261,10 @@
     {
       "slug": "starship",
       "label": "Starship & SpaceX",
-      "score": 186,
-      "delta": -36,
+      "score": 172,
+      "delta": -42,
       "direction": "down",
-      "mentions": 22,
+      "mentions": 21,
       "sources": [
         {
           "platform": "hackernews",
@@ -2283,15 +2283,6 @@
           "author": "joozio",
           "commentCount": 15,
           "publishedAt": "2026-08-18T07:02:04.000Z"
-        },
-        {
-          "platform": "hackernews",
-          "title": "Nvidia discloses $21B stake in SpaceX",
-          "url": "https://www.ft.com/content/6f66a76d-0b2d-4301-886c-87ecc046731b",
-          "score": 15,
-          "author": "JumpCrisscross",
-          "commentCount": 2,
-          "publishedAt": "2026-08-15T01:02:55.000Z"
         },
         {
           "platform": "hackernews",
@@ -2373,6 +2364,15 @@
           "author": "sbulaev",
           "commentCount": 0,
           "publishedAt": "2026-08-15T10:07:06.000Z"
+        },
+        {
+          "platform": "hackernews",
+          "title": "Musk fumbles the timetable for first Starship catch",
+          "url": "https://www.theregister.com/offbeat/2026/08/21/musk-fumbles-the-timetable-for-first-starship-catch/5291201",
+          "score": 4,
+          "author": "DemiGuru",
+          "commentCount": 0,
+          "publishedAt": "2026-08-21T17:36:34.000Z"
         }
       ],
       "relatedConceptSlugs": [
