@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-08-22T06:26:21.645Z",
+  "generatedAt": "2026-08-22T18:33:54.427Z",
   "topics": [
     {
       "slug": "black-holes",
       "label": "Black Holes",
-      "score": 8037,
+      "score": 8038,
       "delta": 0,
       "direction": "steady",
       "mentions": 48,
@@ -137,10 +137,10 @@
     {
       "slug": "quantum-computing",
       "label": "Quantum Computing",
-      "score": 7611,
+      "score": 7617,
       "delta": 0,
       "direction": "steady",
-      "mentions": 43,
+      "mentions": 44,
       "sources": [
         {
           "platform": "arxiv",
@@ -401,10 +401,10 @@
     {
       "slug": "nanotechnology",
       "label": "Nanotechnology & Metamaterials",
-      "score": 7207,
+      "score": 7209,
       "delta": 0,
       "direction": "steady",
-      "mentions": 38,
+      "mentions": 39,
       "sources": [
         {
           "platform": "arxiv",
@@ -664,8 +664,8 @@
     {
       "slug": "space-telescopes",
       "label": "Space Telescopes",
-      "score": 7135,
-      "delta": 2,
+      "score": 7144,
+      "delta": 0,
       "direction": "steady",
       "mentions": 41,
       "sources": [
@@ -797,8 +797,8 @@
     {
       "slug": "condensed-matter",
       "label": "Condensed Matter",
-      "score": 5657,
-      "delta": -6,
+      "score": 5661,
+      "delta": 0,
       "direction": "steady",
       "mentions": 31,
       "sources": [
@@ -806,9 +806,9 @@
           "platform": "hackernews",
           "title": "Devices with GrapheneOS support should be available in 2027",
           "url": "https://grapheneos.social/@GrapheneOS/117078064184215730",
-          "score": 641,
+          "score": 644,
           "author": "exceptione",
-          "commentCount": 400,
+          "commentCount": 401,
           "publishedAt": "2026-08-19T11:46:58.000Z"
         },
         {
@@ -929,7 +929,7 @@
     {
       "slug": "dark-matter",
       "label": "Dark Matter & Dark Energy",
-      "score": 5620,
+      "score": 5625,
       "delta": 0,
       "direction": "steady",
       "mentions": 31,
@@ -1062,10 +1062,10 @@
     {
       "slug": "cosmology",
       "label": "Cosmology",
-      "score": 5400,
-      "delta": -13,
+      "score": 5000,
+      "delta": -7,
       "direction": "steady",
-      "mentions": 27,
+      "mentions": 25,
       "sources": [
         {
           "platform": "arxiv",
@@ -1457,121 +1457,6 @@
       }
     },
     {
-      "slug": "astrobiology",
-      "label": "Astrobiology",
-      "score": 2000,
-      "delta": 0,
-      "direction": "steady",
-      "mentions": 10,
-      "sources": [
-        {
-          "platform": "arxiv",
-          "title": "Astrobiology and the Transformation of Scientific Epistemology",
-          "url": "https://arxiv.org/abs/2608.17728",
-          "score": 200,
-          "authors": "Kristina Šekrst",
-          "arxivCategory": "physics.hist-ph",
-          "publishedAt": "2026-08-18T12:52:35.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "The Early Career Astrobiology Workforce Under Strain Survey Evidence from 2025-2026",
-          "url": "https://arxiv.org/abs/2608.06431",
-          "score": 200,
-          "authors": "Katherine Dzurilla, Gabby Rizzo, Perianne Johnson et al.",
-          "arxivCategory": "astro-ph.IM",
-          "publishedAt": "2026-08-06T01:03:14.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Setting the Stage: The Early History of the Solar System",
-          "url": "https://arxiv.org/abs/2607.27543",
-          "score": 200,
-          "authors": "Antgona Segura, Rachel L. Smith, Myriam Telus et al.",
-          "arxivCategory": "astro-ph.EP",
-          "publishedAt": "2026-07-30T00:28:10.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "The Effects of M Star Age Dependent Ultraviolet Emission on Detecting and Interpreting Exoplanet Biosignatures",
-          "url": "https://arxiv.org/abs/2608.19328",
-          "score": 200,
-          "authors": "C. Evan Davis, Victoria S. Meadows, Evgenya L. Shkolnik et al.",
-          "arxivCategory": "astro-ph.EP",
-          "publishedAt": "2026-08-19T18:00:07.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "The Viability of Life in Helium-Dominated Exoplanet Atmospheres",
-          "url": "https://arxiv.org/abs/2608.15679",
-          "score": 200,
-          "authors": "Sara Seager, Janusz J. Petkowski",
-          "arxivCategory": "astro-ph.EP",
-          "publishedAt": "2026-08-16T11:13:44.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Early Exploration of the Scientific Discovery Space for the Habitable Worlds Observatory",
-          "url": "https://arxiv.org/abs/2608.11294",
-          "score": 200,
-          "authors": "Courtney D. Dressing, Danica Adams, Evelyne Alecian et al.",
-          "arxivCategory": "astro-ph.IM",
-          "publishedAt": "2026-08-11T17:36:36.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Life 2.0: A Scalable Distributed Space-Telescope Array for Biosignature Spectroscopy",
-          "url": "https://arxiv.org/abs/2608.04342",
-          "score": 200,
-          "authors": "Jian Ge, Zhangqi Dang, Ziru Zhang et al.",
-          "arxivCategory": "astro-ph.IM",
-          "publishedAt": "2026-08-05T01:40:39.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Characterizing the oxidation state of rocky exoplanets with the Large Interferometer for Exoplanets (LIFE)",
-          "url": "https://arxiv.org/abs/2607.28121",
-          "score": 200,
-          "authors": "Lorenzo Cesario, Tim Lichtenberg, Michiel Min et al.",
-          "arxivCategory": "astro-ph.EP",
-          "publishedAt": "2026-07-30T12:29:18.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Detecting habitable exoplanet atmospheres with LIFE, the Large Interferometer for Exoplanets",
-          "url": "https://arxiv.org/abs/2607.21683",
-          "score": 200,
-          "authors": "Sarah Rugheimer, Aiden Weatherbee, James Fecanin et al.",
-          "arxivCategory": "astro-ph.IM",
-          "publishedAt": "2026-07-23T14:11:16.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "The Galactic Centre G+0.633-0.0604 Molecular Cloud: A New Gold Mine for Astrochemistry",
-          "url": "https://arxiv.org/abs/2608.14381",
-          "score": 200,
-          "authors": "D. San Andrés, V. M. Rivilla, L. Colzi et al.",
-          "arxivCategory": "astro-ph.GA",
-          "publishedAt": "2026-08-14T15:20:57.000Z"
-        }
-      ],
-      "relatedConceptSlugs": [
-        "astropharmacy",
-        "venus-atmosphere-and-cloud-particle-sample-return-for-astrobiology"
-      ],
-      "resonance": 53,
-      "quadrant": "real-deal",
-      "resonanceSignals": {
-        "conceptDepth": 0.5113915944693856,
-        "editorial": 1,
-        "connections": 0.3333333333333333,
-        "convergence": 0.275,
-        "deepTopic": 0.8,
-        "pantheon": 0.08,
-        "graveyard": 0
-      }
-    },
-    {
       "slug": "artemis",
       "label": "Artemis & Lunar Return",
       "score": 1800,
@@ -1672,6 +1557,112 @@
         "editorial": 1,
         "connections": 0,
         "convergence": 0.025,
+        "deepTopic": 0.8,
+        "pantheon": 0.08,
+        "graveyard": 0
+      }
+    },
+    {
+      "slug": "astrobiology",
+      "label": "Astrobiology",
+      "score": 1800,
+      "delta": -10,
+      "direction": "steady",
+      "mentions": 9,
+      "sources": [
+        {
+          "platform": "arxiv",
+          "title": "Astrobiology and the Transformation of Scientific Epistemology",
+          "url": "https://arxiv.org/abs/2608.17728",
+          "score": 200,
+          "authors": "Kristina Šekrst",
+          "arxivCategory": "physics.hist-ph",
+          "publishedAt": "2026-08-18T12:52:35.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "The Early Career Astrobiology Workforce Under Strain Survey Evidence from 2025-2026",
+          "url": "https://arxiv.org/abs/2608.06431",
+          "score": 200,
+          "authors": "Katherine Dzurilla, Gabby Rizzo, Perianne Johnson et al.",
+          "arxivCategory": "astro-ph.IM",
+          "publishedAt": "2026-08-06T01:03:14.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Setting the Stage: The Early History of the Solar System",
+          "url": "https://arxiv.org/abs/2607.27543",
+          "score": 200,
+          "authors": "Antgona Segura, Rachel L. Smith, Myriam Telus et al.",
+          "arxivCategory": "astro-ph.EP",
+          "publishedAt": "2026-07-30T00:28:10.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "The Effects of M Star Age Dependent Ultraviolet Emission on Detecting and Interpreting Exoplanet Biosignatures",
+          "url": "https://arxiv.org/abs/2608.19328",
+          "score": 200,
+          "authors": "C. Evan Davis, Victoria S. Meadows, Evgenya L. Shkolnik et al.",
+          "arxivCategory": "astro-ph.EP",
+          "publishedAt": "2026-08-19T18:00:07.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "The Viability of Life in Helium-Dominated Exoplanet Atmospheres",
+          "url": "https://arxiv.org/abs/2608.15679",
+          "score": 200,
+          "authors": "Sara Seager, Janusz J. Petkowski",
+          "arxivCategory": "astro-ph.EP",
+          "publishedAt": "2026-08-16T11:13:44.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Early Exploration of the Scientific Discovery Space for the Habitable Worlds Observatory",
+          "url": "https://arxiv.org/abs/2608.11294",
+          "score": 200,
+          "authors": "Courtney D. Dressing, Danica Adams, Evelyne Alecian et al.",
+          "arxivCategory": "astro-ph.IM",
+          "publishedAt": "2026-08-11T17:36:36.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Life 2.0: A Scalable Distributed Space-Telescope Array for Biosignature Spectroscopy",
+          "url": "https://arxiv.org/abs/2608.04342",
+          "score": 200,
+          "authors": "Jian Ge, Zhangqi Dang, Ziru Zhang et al.",
+          "arxivCategory": "astro-ph.IM",
+          "publishedAt": "2026-08-05T01:40:39.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Characterizing the oxidation state of rocky exoplanets with the Large Interferometer for Exoplanets (LIFE)",
+          "url": "https://arxiv.org/abs/2607.28121",
+          "score": 200,
+          "authors": "Lorenzo Cesario, Tim Lichtenberg, Michiel Min et al.",
+          "arxivCategory": "astro-ph.EP",
+          "publishedAt": "2026-07-30T12:29:18.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "The Galactic Centre G+0.633-0.0604 Molecular Cloud: A New Gold Mine for Astrochemistry",
+          "url": "https://arxiv.org/abs/2608.14381",
+          "score": 200,
+          "authors": "D. San Andrés, V. M. Rivilla, L. Colzi et al.",
+          "arxivCategory": "astro-ph.GA",
+          "publishedAt": "2026-08-14T15:20:57.000Z"
+        }
+      ],
+      "relatedConceptSlugs": [
+        "astropharmacy",
+        "venus-atmosphere-and-cloud-particle-sample-return-for-astrobiology"
+      ],
+      "resonance": 53,
+      "quadrant": "real-deal",
+      "resonanceSignals": {
+        "conceptDepth": 0.5113915944693856,
+        "editorial": 1,
+        "connections": 0.3333333333333333,
+        "convergence": 0.275,
         "deepTopic": 0.8,
         "pantheon": 0.08,
         "graveyard": 0
@@ -1787,10 +1778,10 @@
     {
       "slug": "space-debris",
       "label": "Space Debris",
-      "score": 1206,
+      "score": 1200,
       "delta": 0,
       "direction": "steady",
-      "mentions": 7,
+      "mentions": 6,
       "sources": [
         {
           "platform": "arxiv",
@@ -1845,15 +1836,6 @@
           "authors": "Hugh G. Lewis",
           "arxivCategory": "astro-ph.EP",
           "publishedAt": "2026-07-31T17:20:09.000Z"
-        },
-        {
-          "platform": "hackernews",
-          "title": "Kessler Syndrome",
-          "url": "https://en.wikipedia.org/wiki/Kessler_syndrome",
-          "score": 6,
-          "author": "chistev",
-          "commentCount": 1,
-          "publishedAt": "2026-08-15T10:12:30.000Z"
         }
       ],
       "relatedConceptSlugs": [
@@ -2226,45 +2208,12 @@
       }
     },
     {
-      "slug": "ocean-worlds",
-      "label": "Titan & Ocean Worlds",
-      "score": 200,
-      "delta": 0,
-      "direction": "steady",
-      "mentions": 1,
-      "sources": [
-        {
-          "platform": "arxiv",
-          "title": "Experimental Measurements of Benzene Ice Critical Saturation Ratios on Titan Tholins and Impact on the Microphysical Modeling of Titan's South Polar Benzene Cloud",
-          "url": "https://arxiv.org/abs/2607.21415",
-          "score": 200,
-          "authors": "David Dubois, Erika Barth, Laura T. Iraci et al.",
-          "arxivCategory": "astro-ph.EP",
-          "publishedAt": "2026-07-23T15:18:27.000Z"
-        }
-      ],
-      "relatedConceptSlugs": [
-        "titan-submarine"
-      ],
-      "resonance": 18,
-      "quadrant": "dead-zone",
-      "resonanceSignals": {
-        "conceptDepth": 0.22629438553091683,
-        "editorial": 0,
-        "connections": 0,
-        "convergence": 0.15,
-        "deepTopic": 0.8,
-        "pantheon": 0.16,
-        "graveyard": 0
-      }
-    },
-    {
       "slug": "starship",
       "label": "Starship & SpaceX",
-      "score": 172,
-      "delta": -42,
-      "direction": "down",
-      "mentions": 21,
+      "score": 161,
+      "delta": -13,
+      "direction": "steady",
+      "mentions": 18,
       "sources": [
         {
           "platform": "hackernews",
@@ -2358,21 +2307,21 @@
         },
         {
           "platform": "hackernews",
-          "title": "Nvidia Has $21B SpaceX Stake, $30B in Intel Shares",
-          "url": "https://www.bloomberg.com/news/articles/2026-08-14/nvidia-has-21-billion-spacex-stake-30-billion-in-intel-shares",
-          "score": 5,
-          "author": "sbulaev",
-          "commentCount": 0,
-          "publishedAt": "2026-08-15T10:07:06.000Z"
-        },
-        {
-          "platform": "hackernews",
           "title": "Musk fumbles the timetable for first Starship catch",
           "url": "https://www.theregister.com/offbeat/2026/08/21/musk-fumbles-the-timetable-for-first-starship-catch/5291201",
           "score": 4,
           "author": "DemiGuru",
           "commentCount": 0,
           "publishedAt": "2026-08-21T17:36:34.000Z"
+        },
+        {
+          "platform": "hackernews",
+          "title": "Cognition CEO denies report that SpaceX tried to acquire the startup",
+          "url": "https://techcrunch.com/2026/08/19/cognition-ceo-denies-report-that-spacex-tried-to-acquire-the-startup/",
+          "score": 4,
+          "author": "ocamoss",
+          "commentCount": 1,
+          "publishedAt": "2026-08-20T00:31:01.000Z"
         }
       ],
       "relatedConceptSlugs": [
@@ -2472,6 +2421,29 @@
         "convergence": 0,
         "deepTopic": 0.8,
         "pantheon": 0.92,
+        "graveyard": 0
+      }
+    },
+    {
+      "slug": "ocean-worlds",
+      "label": "Titan & Ocean Worlds",
+      "score": 0,
+      "delta": 0,
+      "direction": "steady",
+      "mentions": 0,
+      "sources": [],
+      "relatedConceptSlugs": [
+        "titan-submarine"
+      ],
+      "resonance": 18,
+      "quadrant": "dead-zone",
+      "resonanceSignals": {
+        "conceptDepth": 0.22629438553091683,
+        "editorial": 0,
+        "connections": 0,
+        "convergence": 0.15,
+        "deepTopic": 0.8,
+        "pantheon": 0.16,
         "graveyard": 0
       }
     },
