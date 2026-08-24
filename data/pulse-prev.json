@@ -1,13 +1,13 @@
 {
-  "generatedAt": "2026-08-23T06:27:46.087Z",
+  "generatedAt": "2026-08-23T18:33:09.485Z",
   "topics": [
     {
       "slug": "black-holes",
       "label": "Black Holes",
-      "score": 8038,
+      "score": 8033,
       "delta": 0,
       "direction": "steady",
-      "mentions": 48,
+      "mentions": 47,
       "sources": [
         {
           "platform": "arxiv",
@@ -137,10 +137,10 @@
     {
       "slug": "quantum-computing",
       "label": "Quantum Computing",
-      "score": 7617,
+      "score": 7618,
       "delta": 0,
       "direction": "steady",
-      "mentions": 44,
+      "mentions": 45,
       "sources": [
         {
           "platform": "arxiv",
@@ -401,10 +401,10 @@
     {
       "slug": "nanotechnology",
       "label": "Nanotechnology & Metamaterials",
-      "score": 7209,
+      "score": 7205,
       "delta": 0,
       "direction": "steady",
-      "mentions": 39,
+      "mentions": 38,
       "sources": [
         {
           "platform": "arxiv",
@@ -529,136 +529,6 @@
         "deepTopic": 0.8,
         "pantheon": 0.92,
         "graveyard": 0
-      }
-    },
-    {
-      "slug": "particle-physics",
-      "label": "Particle Physics",
-      "score": 7200,
-      "delta": 0,
-      "direction": "steady",
-      "mentions": 36,
-      "sources": [
-        {
-          "platform": "arxiv",
-          "title": "Levitated Milligram-scale Ferromagnetic Magnetometer at Room Temperature",
-          "url": "https://arxiv.org/abs/2608.08544",
-          "score": 200,
-          "authors": "Yuanji Sheng, Kenan Tian, Rui Li et al.",
-          "arxivCategory": "quant-ph",
-          "publishedAt": "2026-08-09T07:44:54.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "A $Γ_{3}$ modular symmetric approach for two-zero textures in left-right symmetric model",
-          "url": "https://arxiv.org/abs/2608.07623",
-          "score": 200,
-          "authors": "Ankita Kakoti, Happy Borgohain",
-          "arxivCategory": "hep-ph",
-          "publishedAt": "2026-08-07T09:47:26.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Hadron Structure from the Hierarchy of Quantum Correlations in Deep-Inelastic Scattering",
-          "url": "https://arxiv.org/abs/2607.28724",
-          "score": 200,
-          "authors": "Henry Bloss, TJ Hobbs, Navin McGinnis",
-          "arxivCategory": "hep-ph",
-          "publishedAt": "2026-07-30T18:00:01.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Gravitational wave constraints on corrections to Bekenstein-Hawking Area Formula in classical F(R) gravity and quantum GR : implications for theory parameters",
-          "url": "https://arxiv.org/abs/2607.25513",
-          "score": 200,
-          "authors": "Parthasarathi Majumdar",
-          "arxivCategory": "gr-qc",
-          "publishedAt": "2026-07-28T09:51:44.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Gravity-Aligned Vertical Electron-Positron Linear Collider",
-          "url": "https://arxiv.org/abs/2607.24179",
-          "score": 200,
-          "authors": "Tetsuo Abe",
-          "arxivCategory": "physics.acc-ph",
-          "publishedAt": "2026-07-27T09:03:30.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "$\\texttt{SNuDD}$: Solar Neutrinos for Direct Detection",
-          "url": "https://arxiv.org/abs/2607.22817",
-          "score": 200,
-          "authors": "Dorian W. P. Amaral, David Cerdeño, Andrew Cheek et al.",
-          "arxivCategory": "hep-ph",
-          "publishedAt": "2026-07-24T18:00:05.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Electroweak Baryogenesis in Top-Philic Type-III Two-Higgs-Doublet Model motivated by the $t\\bar{t}$ Excess at the LHC",
-          "url": "https://arxiv.org/abs/2608.19651",
-          "score": 200,
-          "authors": "Yoshiki Matsuoka",
-          "arxivCategory": "hep-ph",
-          "publishedAt": "2026-08-20T05:40:33.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Identifying the origin of the 146-GeV excess at the LHC",
-          "url": "https://arxiv.org/abs/2608.18738",
-          "score": 200,
-          "authors": "P. Uttayarat, J. Julio, R. Primulando",
-          "arxivCategory": "hep-ph",
-          "publishedAt": "2026-08-19T09:44:06.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Axion-like particle at the 10 GeV scale: Higgs decays to wide jets and photons",
-          "url": "https://arxiv.org/abs/2608.18506",
-          "score": 200,
-          "authors": "Bogdan A. Dobrescu, Subhojit Roy",
-          "arxivCategory": "hep-ph",
-          "publishedAt": "2026-08-19T03:52:22.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Performance of heavy-flavour jet identification in the CMS high-level trigger in proton-proton collisions at $\\sqrt{s}$ = 13.6 TeV",
-          "url": "https://arxiv.org/abs/2608.18331",
-          "score": 200,
-          "authors": "CMS Collaboration",
-          "arxivCategory": "hep-ex",
-          "publishedAt": "2026-08-18T21:31:34.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Can $γγ$ collisions rival $e^-e^+$ in probing doubly charged Higgs bosons?",
-          "url": "https://arxiv.org/abs/2608.18023",
-          "score": 200,
-          "authors": "Abdesslam Arhrib, Rachid Benbrik, Mohammed Boukidi et al.",
-          "arxivCategory": "hep-ph",
-          "publishedAt": "2026-08-18T17:18:32.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Quadruple-Higgs boson production at the high-luminosity LHC",
-          "url": "https://arxiv.org/abs/2608.16998",
-          "score": 200,
-          "authors": "Andreas Papaefstathiou, Gilberto Tetlalmatzi-Xolocotzi",
-          "arxivCategory": "hep-ph",
-          "publishedAt": "2026-08-17T18:00:41.000Z"
-        }
-      ],
-      "relatedConceptSlugs": [],
-      "resonance": 3,
-      "quadrant": "hype-cycle",
-      "resonanceSignals": {
-        "conceptDepth": 0,
-        "editorial": 0,
-        "connections": 0,
-        "convergence": 0,
-        "deepTopic": 0,
-        "pantheon": 0.92,
-        "graveyard": 0.3333333333333333
       }
     },
     {
@@ -795,9 +665,139 @@
       }
     },
     {
+      "slug": "particle-physics",
+      "label": "Particle Physics",
+      "score": 7002,
+      "delta": -3,
+      "direction": "steady",
+      "mentions": 36,
+      "sources": [
+        {
+          "platform": "arxiv",
+          "title": "Levitated Milligram-scale Ferromagnetic Magnetometer at Room Temperature",
+          "url": "https://arxiv.org/abs/2608.08544",
+          "score": 200,
+          "authors": "Yuanji Sheng, Kenan Tian, Rui Li et al.",
+          "arxivCategory": "quant-ph",
+          "publishedAt": "2026-08-09T07:44:54.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "A $Γ_{3}$ modular symmetric approach for two-zero textures in left-right symmetric model",
+          "url": "https://arxiv.org/abs/2608.07623",
+          "score": 200,
+          "authors": "Ankita Kakoti, Happy Borgohain",
+          "arxivCategory": "hep-ph",
+          "publishedAt": "2026-08-07T09:47:26.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Hadron Structure from the Hierarchy of Quantum Correlations in Deep-Inelastic Scattering",
+          "url": "https://arxiv.org/abs/2607.28724",
+          "score": 200,
+          "authors": "Henry Bloss, TJ Hobbs, Navin McGinnis",
+          "arxivCategory": "hep-ph",
+          "publishedAt": "2026-07-30T18:00:01.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Gravitational wave constraints on corrections to Bekenstein-Hawking Area Formula in classical F(R) gravity and quantum GR : implications for theory parameters",
+          "url": "https://arxiv.org/abs/2607.25513",
+          "score": 200,
+          "authors": "Parthasarathi Majumdar",
+          "arxivCategory": "gr-qc",
+          "publishedAt": "2026-07-28T09:51:44.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Gravity-Aligned Vertical Electron-Positron Linear Collider",
+          "url": "https://arxiv.org/abs/2607.24179",
+          "score": 200,
+          "authors": "Tetsuo Abe",
+          "arxivCategory": "physics.acc-ph",
+          "publishedAt": "2026-07-27T09:03:30.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Electroweak Baryogenesis in Top-Philic Type-III Two-Higgs-Doublet Model motivated by the $t\\bar{t}$ Excess at the LHC",
+          "url": "https://arxiv.org/abs/2608.19651",
+          "score": 200,
+          "authors": "Yoshiki Matsuoka",
+          "arxivCategory": "hep-ph",
+          "publishedAt": "2026-08-20T05:40:33.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Identifying the origin of the 146-GeV excess at the LHC",
+          "url": "https://arxiv.org/abs/2608.18738",
+          "score": 200,
+          "authors": "P. Uttayarat, J. Julio, R. Primulando",
+          "arxivCategory": "hep-ph",
+          "publishedAt": "2026-08-19T09:44:06.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Axion-like particle at the 10 GeV scale: Higgs decays to wide jets and photons",
+          "url": "https://arxiv.org/abs/2608.18506",
+          "score": 200,
+          "authors": "Bogdan A. Dobrescu, Subhojit Roy",
+          "arxivCategory": "hep-ph",
+          "publishedAt": "2026-08-19T03:52:22.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Performance of heavy-flavour jet identification in the CMS high-level trigger in proton-proton collisions at $\\sqrt{s}$ = 13.6 TeV",
+          "url": "https://arxiv.org/abs/2608.18331",
+          "score": 200,
+          "authors": "CMS Collaboration",
+          "arxivCategory": "hep-ex",
+          "publishedAt": "2026-08-18T21:31:34.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Can $γγ$ collisions rival $e^-e^+$ in probing doubly charged Higgs bosons?",
+          "url": "https://arxiv.org/abs/2608.18023",
+          "score": 200,
+          "authors": "Abdesslam Arhrib, Rachid Benbrik, Mohammed Boukidi et al.",
+          "arxivCategory": "hep-ph",
+          "publishedAt": "2026-08-18T17:18:32.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Quadruple-Higgs boson production at the high-luminosity LHC",
+          "url": "https://arxiv.org/abs/2608.16998",
+          "score": 200,
+          "authors": "Andreas Papaefstathiou, Gilberto Tetlalmatzi-Xolocotzi",
+          "arxivCategory": "hep-ph",
+          "publishedAt": "2026-08-17T18:00:41.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "The Higgs boson decay $h \\to bs$ in the Generational Three-Higgs-Doublet Model",
+          "url": "https://arxiv.org/abs/2608.15162",
+          "score": 200,
+          "authors": "Hao-Ran Ma, Ti-Bin Hou, Jin-Lei Yang et al.",
+          "arxivCategory": "hep-ph",
+          "publishedAt": "2026-08-15T10:37:12.000Z"
+        }
+      ],
+      "relatedConceptSlugs": [],
+      "resonance": 3,
+      "quadrant": "hype-cycle",
+      "resonanceSignals": {
+        "conceptDepth": 0,
+        "editorial": 0,
+        "connections": 0,
+        "convergence": 0,
+        "deepTopic": 0,
+        "pantheon": 0.92,
+        "graveyard": 0.3333333333333333
+      }
+    },
+    {
       "slug": "condensed-matter",
       "label": "Condensed Matter",
-      "score": 5663,
+      "score": 5664,
       "delta": 0,
       "direction": "steady",
       "mentions": 31,
@@ -806,7 +806,7 @@
           "platform": "hackernews",
           "title": "Devices with GrapheneOS support should be available in 2027",
           "url": "https://grapheneos.social/@GrapheneOS/117078064184215730",
-          "score": 646,
+          "score": 647,
           "author": "exceptione",
           "commentCount": 403,
           "publishedAt": "2026-08-19T11:46:58.000Z"
@@ -929,7 +929,7 @@
     {
       "slug": "dark-matter",
       "label": "Dark Matter & Dark Energy",
-      "score": 5654,
+      "score": 5657,
       "delta": 1,
       "direction": "steady",
       "mentions": 31,
@@ -1062,10 +1062,10 @@
     {
       "slug": "cosmology",
       "label": "Cosmology",
-      "score": 5000,
-      "delta": -7,
+      "score": 4800,
+      "delta": -4,
       "direction": "steady",
-      "mentions": 25,
+      "mentions": 24,
       "sources": [
         {
           "platform": "arxiv",
@@ -1194,10 +1194,10 @@
     {
       "slug": "exoplanets",
       "label": "Exoplanets",
-      "score": 3600,
-      "delta": 0,
+      "score": 3400,
+      "delta": -6,
       "direction": "steady",
-      "mentions": 18,
+      "mentions": 17,
       "sources": [
         {
           "platform": "arxiv",
@@ -1225,15 +1225,6 @@
           "authors": "Anusha Pai Asnodkar, Nemanja Jovanovic, Harry-Dean Kenchington Goldsmith et al.",
           "arxivCategory": "astro-ph.IM",
           "publishedAt": "2026-07-28T18:17:58.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "First results of a continuous monitoring campaign of the PLATO Southern field",
-          "url": "https://arxiv.org/abs/2607.22181",
-          "score": 200,
-          "authors": "Thomas Granzer, Jorg Weingrill, Klaus G. Strassmeier et al.",
-          "arxivCategory": "astro-ph.EP",
-          "publishedAt": "2026-07-24T10:44:38.000Z"
         },
         {
           "platform": "arxiv",
@@ -1306,6 +1297,15 @@
           "authors": "Harper Rosenthal, Lisa Kaltenegger, Ryan J. MacDonald et al.",
           "arxivCategory": "astro-ph.EP",
           "publishedAt": "2026-08-06T16:01:11.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "A broad exploration of climate and observability of close-in rocky exoplanets: applications to Ross 128 b",
+          "url": "https://arxiv.org/abs/2608.03857",
+          "score": 200,
+          "authors": "Mathilde Houelle, Emeline Bolmont, Christophe Lovis et al.",
+          "arxivCategory": "astro-ph.EP",
+          "publishedAt": "2026-08-04T15:59:16.000Z"
         }
       ],
       "relatedConceptSlugs": [
@@ -1566,7 +1566,7 @@
       "slug": "astrobiology",
       "label": "Astrobiology",
       "score": 1800,
-      "delta": -10,
+      "delta": 0,
       "direction": "steady",
       "mentions": 9,
       "sources": [
@@ -2210,10 +2210,10 @@
     {
       "slug": "starship",
       "label": "Starship & SpaceX",
-      "score": 163,
-      "delta": -5,
+      "score": 162,
+      "delta": 1,
       "direction": "steady",
-      "mentions": 19,
+      "mentions": 18,
       "sources": [
         {
           "platform": "hackernews",
@@ -2298,6 +2298,15 @@
         },
         {
           "platform": "hackernews",
+          "title": "Before-and-after images show where SpaceX rocket crashed into the moon",
+          "url": "https://www.washingtonpost.com/technology/2026/08/19/nasa-images-show-spacex-crash-site-moon/",
+          "score": 5,
+          "author": "1vuio0pswjnm7",
+          "commentCount": 0,
+          "publishedAt": "2026-08-23T05:16:20.000Z"
+        },
+        {
+          "platform": "hackernews",
           "title": "NASA estimates the size of the hole SpaceX made in the moon",
           "url": "https://www.theregister.com/offbeat/2026/08/19/nasa-estimates-the-size-of-the-hole-spacex-made-in-the-moon/5289425",
           "score": 5,
@@ -2313,15 +2322,6 @@
           "author": "DemiGuru",
           "commentCount": 0,
           "publishedAt": "2026-08-21T17:36:34.000Z"
-        },
-        {
-          "platform": "hackernews",
-          "title": "Cognition CEO denies report that SpaceX tried to acquire the startup",
-          "url": "https://techcrunch.com/2026/08/19/cognition-ceo-denies-report-that-spacex-tried-to-acquire-the-startup/",
-          "score": 4,
-          "author": "ocamoss",
-          "commentCount": 1,
-          "publishedAt": "2026-08-20T00:31:01.000Z"
         }
       ],
       "relatedConceptSlugs": [
