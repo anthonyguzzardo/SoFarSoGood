@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-08-28T17:57:19.763Z",
+  "generatedAt": "2026-08-29T01:35:40.087Z",
   "topics": [
     {
       "slug": "black-holes",
       "label": "Black Holes",
       "score": 9107,
-      "delta": 2,
+      "delta": 0,
       "direction": "steady",
       "mentions": 48,
       "sources": [
@@ -15,7 +15,7 @@
           "url": "https://arxiv.org/abs/2608.21590",
           "score": 298,
           "author": "raattgift",
-          "commentCount": 217,
+          "commentCount": 219,
           "publishedAt": "2026-08-25T17:02:49.000Z"
         },
         {
@@ -137,10 +137,10 @@
     {
       "slug": "gravitational-waves",
       "label": "Gravitational Waves",
-      "score": 8603,
-      "delta": 2,
+      "score": 8606,
+      "delta": -2,
       "direction": "steady",
-      "mentions": 44,
+      "mentions": 45,
       "sources": [
         {
           "platform": "arxiv",
@@ -269,8 +269,8 @@
     {
       "slug": "space-telescopes",
       "label": "Space Telescopes",
-      "score": 8412,
-      "delta": 6,
+      "score": 8415,
+      "delta": -4,
       "direction": "steady",
       "mentions": 45,
       "sources": [
@@ -402,8 +402,8 @@
     {
       "slug": "quantum-computing",
       "label": "Quantum Computing",
-      "score": 7622,
-      "delta": 3,
+      "score": 7623,
+      "delta": 9,
       "direction": "steady",
       "mentions": 46,
       "sources": [
@@ -668,7 +668,7 @@
       "slug": "particle-physics",
       "label": "Particle Physics",
       "score": 6604,
-      "delta": -3,
+      "delta": 0,
       "direction": "steady",
       "mentions": 34,
       "sources": [
@@ -867,20 +867,20 @@
         },
         {
           "platform": "arxiv",
-          "title": "The origin of the stellar mass-size relation of satellite galaxies in the COLIBRE simulations",
-          "url": "https://arxiv.org/abs/2608.26275",
-          "score": 200,
-          "authors": "Bruno M. Celiz, Julio F. Navarro, Joop Schaye et al.",
-          "arxivCategory": "astro-ph.GA",
-          "publishedAt": "2026-08-26T18:00:49.000Z"
-        },
-        {
-          "platform": "arxiv",
           "title": "Effects of the interaction of dark matter and neutron-star matter on extreme and intermediate mass-ratio inspirals",
           "url": "https://arxiv.org/abs/2608.26274",
           "score": 200,
           "authors": "Benjamin A. Wade, Julian Heeck, David A. Nichols",
           "arxivCategory": "gr-qc",
+          "publishedAt": "2026-08-26T18:00:49.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "The origin of the stellar mass-size relation of satellite galaxies in the COLIBRE simulations",
+          "url": "https://arxiv.org/abs/2608.26275",
+          "score": 200,
+          "authors": "Bruno M. Celiz, Julio F. Navarro, Joop Schaye et al.",
+          "arxivCategory": "astro-ph.GA",
           "publishedAt": "2026-08-26T18:00:49.000Z"
         },
         {
@@ -930,18 +930,18 @@
     {
       "slug": "condensed-matter",
       "label": "Condensed Matter",
-      "score": 5530,
-      "delta": 10,
+      "score": 5528,
+      "delta": 2,
       "direction": "steady",
-      "mentions": 35,
+      "mentions": 34,
       "sources": [
         {
           "platform": "hackernews",
           "title": "Tell HN: PayPal blocks GrapheneOS",
           "url": "https://news.ycombinator.com/item?id=49462253",
-          "score": 498,
+          "score": 503,
           "author": "leumon",
-          "commentCount": 322,
+          "commentCount": 323,
           "publishedAt": "2026-08-27T09:56:54.000Z"
         },
         {
@@ -1062,10 +1062,10 @@
     {
       "slug": "cosmology",
       "label": "Cosmology",
-      "score": 5200,
-      "delta": 4,
+      "score": 5000,
+      "delta": 0,
       "direction": "steady",
-      "mentions": 26,
+      "mentions": 25,
       "sources": [
         {
           "platform": "arxiv",
@@ -1459,10 +1459,10 @@
     {
       "slug": "astrobiology",
       "label": "Astrobiology",
-      "score": 2800,
-      "delta": 40,
-      "direction": "up",
-      "mentions": 14,
+      "score": 2600,
+      "delta": 0,
+      "direction": "steady",
+      "mentions": 13,
       "sources": [
         {
           "platform": "arxiv",
@@ -1499,15 +1499,6 @@
           "authors": "Katherine Dzurilla, Gabby Rizzo, Perianne Johnson et al.",
           "arxivCategory": "astro-ph.IM",
           "publishedAt": "2026-08-06T01:03:14.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Setting the Stage: The Early History of the Solar System",
-          "url": "https://arxiv.org/abs/2607.27543",
-          "score": 200,
-          "authors": "Antgona Segura, Rachel L. Smith, Myriam Telus et al.",
-          "arxivCategory": "astro-ph.EP",
-          "publishedAt": "2026-07-30T00:28:10.000Z"
         },
         {
           "platform": "arxiv",
@@ -1571,6 +1562,15 @@
           "authors": "Jian Ge, Zhangqi Dang, Ziru Zhang et al.",
           "arxivCategory": "astro-ph.IM",
           "publishedAt": "2026-08-05T01:40:39.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Characterizing the oxidation state of rocky exoplanets with the Large Interferometer for Exoplanets (LIFE)",
+          "url": "https://arxiv.org/abs/2607.28121",
+          "score": 200,
+          "authors": "Lorenzo Cesario, Tim Lichtenberg, Michiel Min et al.",
+          "arxivCategory": "astro-ph.EP",
+          "publishedAt": "2026-07-30T12:29:18.000Z"
         }
       ],
       "relatedConceptSlugs": [
@@ -1593,7 +1593,7 @@
       "slug": "artemis",
       "label": "Artemis & Lunar Return",
       "score": 1600,
-      "delta": 0,
+      "delta": 14,
       "direction": "steady",
       "mentions": 8,
       "sources": [
@@ -2107,9 +2107,9 @@
     {
       "slug": "dyson-spheres",
       "label": "Dyson Spheres",
-      "score": 215,
-      "delta": -46,
-      "direction": "down",
+      "score": 217,
+      "delta": 9,
+      "direction": "steady",
       "mentions": 2,
       "sources": [
         {
@@ -2125,9 +2125,9 @@
           "platform": "hackernews",
           "title": "Webb Telescope Rules Out Two New Dyson Sphere Candidates",
           "url": "https://www.universetoday.com/articles/nasas-webb-telescope-rules-out-two-new-dyson-sphere-candidates",
-          "score": 15,
+          "score": 17,
           "author": "root-parent",
-          "commentCount": 2,
+          "commentCount": 6,
           "publishedAt": "2026-08-28T15:10:09.000Z"
         }
       ],
@@ -2253,10 +2253,10 @@
     {
       "slug": "starship",
       "label": "Starship & SpaceX",
-      "score": 58,
-      "delta": -2,
+      "score": 62,
+      "delta": -7,
       "direction": "steady",
-      "mentions": 12,
+      "mentions": 13,
       "sources": [
         {
           "platform": "hackernews",
@@ -2287,6 +2287,15 @@
         },
         {
           "platform": "hackernews",
+          "title": "SpaceX Considered as a Leasing Company",
+          "url": "https://www.ft.com/content/a5c1460d-631a-4c4e-8c51-32536de09b80",
+          "score": 7,
+          "author": "root-parent",
+          "commentCount": 2,
+          "publishedAt": "2026-08-28T15:39:56.000Z"
+        },
+        {
+          "platform": "hackernews",
           "title": "SpaceXAI Adopts Nvidia Vera CPU to Accelerate Agentic AI at Scale",
           "url": "https://nvidianews.nvidia.com/news/spacexai-adopts-nvidia-vera-cpu-to-accelerate-agentic-ai-at-massive-scale",
           "score": 6,
@@ -2302,15 +2311,6 @@
           "author": "ksec",
           "commentCount": 1,
           "publishedAt": "2026-08-27T15:45:39.000Z"
-        },
-        {
-          "platform": "hackernews",
-          "title": "SpaceX Considered as a Leasing Company",
-          "url": "https://www.ft.com/content/a5c1460d-631a-4c4e-8c51-32536de09b80",
-          "score": 5,
-          "author": "root-parent",
-          "commentCount": 2,
-          "publishedAt": "2026-08-28T15:39:56.000Z"
         },
         {
           "platform": "hackernews",
@@ -2350,21 +2350,21 @@
         },
         {
           "platform": "hackernews",
+          "title": "Would SpaceXAI Acquire Vercel?",
+          "url": "https://twitter.com/jessethanley/status/2093298774949146796",
+          "score": 2,
+          "author": "eyehurtsme",
+          "commentCount": 0,
+          "publishedAt": "2026-08-28T18:01:28.000Z"
+        },
+        {
+          "platform": "hackernews",
           "title": "Starship is coming home SpaceX loads floating spacecraft onto ship in the",
           "url": "https://www.space.com/space-exploration/launches-spacecraft/starship-is-coming-home-spacex-loads-floating-spacecraft-onto-huge-ship-in-the-indian-ocean-photos",
           "score": 1,
           "author": "bookmtn",
           "commentCount": 0,
           "publishedAt": "2026-08-28T16:46:27.000Z"
-        },
-        {
-          "platform": "hackernews",
-          "title": "SpaceX Shares Sink on AI Spending Plans",
-          "url": "https://www.wsj.com/tech/ai/spacex-says-spending-spree-is-supercharging-ai-revenues-ea750ff3",
-          "score": 1,
-          "author": "gmays",
-          "commentCount": 0,
-          "publishedAt": "2026-08-24T21:52:52.000Z"
         }
       ],
       "relatedConceptSlugs": [
