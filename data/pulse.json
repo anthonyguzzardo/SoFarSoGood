@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-29T01:35:40.087Z",
+  "generatedAt": "2026-08-29T12:04:01.047Z",
   "topics": [
     {
       "slug": "black-holes",
@@ -15,7 +15,7 @@
           "url": "https://arxiv.org/abs/2608.21590",
           "score": 298,
           "author": "raattgift",
-          "commentCount": 219,
+          "commentCount": 220,
           "publishedAt": "2026-08-25T17:02:49.000Z"
         },
         {
@@ -137,8 +137,8 @@
     {
       "slug": "gravitational-waves",
       "label": "Gravitational Waves",
-      "score": 8606,
-      "delta": -2,
+      "score": 8607,
+      "delta": 0,
       "direction": "steady",
       "mentions": 45,
       "sources": [
@@ -269,8 +269,8 @@
     {
       "slug": "space-telescopes",
       "label": "Space Telescopes",
-      "score": 8415,
-      "delta": -4,
+      "score": 8417,
+      "delta": 0,
       "direction": "steady",
       "mentions": 45,
       "sources": [
@@ -402,10 +402,10 @@
     {
       "slug": "quantum-computing",
       "label": "Quantum Computing",
-      "score": 7623,
-      "delta": 9,
+      "score": 7617,
+      "delta": 0,
       "direction": "steady",
-      "mentions": 46,
+      "mentions": 45,
       "sources": [
         {
           "platform": "arxiv",
@@ -534,10 +534,10 @@
     {
       "slug": "nanotechnology",
       "label": "Nanotechnology & Metamaterials",
-      "score": 6803,
-      "delta": -3,
+      "score": 6800,
+      "delta": 0,
       "direction": "steady",
-      "mentions": 35,
+      "mentions": 34,
       "sources": [
         {
           "platform": "arxiv",
@@ -798,7 +798,7 @@
       "slug": "dark-matter",
       "label": "Dark Matter & Dark Energy",
       "score": 6006,
-      "delta": 2,
+      "delta": 0,
       "direction": "steady",
       "mentions": 31,
       "sources": [
@@ -867,20 +867,20 @@
         },
         {
           "platform": "arxiv",
-          "title": "Effects of the interaction of dark matter and neutron-star matter on extreme and intermediate mass-ratio inspirals",
-          "url": "https://arxiv.org/abs/2608.26274",
-          "score": 200,
-          "authors": "Benjamin A. Wade, Julian Heeck, David A. Nichols",
-          "arxivCategory": "gr-qc",
-          "publishedAt": "2026-08-26T18:00:49.000Z"
-        },
-        {
-          "platform": "arxiv",
           "title": "The origin of the stellar mass-size relation of satellite galaxies in the COLIBRE simulations",
           "url": "https://arxiv.org/abs/2608.26275",
           "score": 200,
           "authors": "Bruno M. Celiz, Julio F. Navarro, Joop Schaye et al.",
           "arxivCategory": "astro-ph.GA",
+          "publishedAt": "2026-08-26T18:00:49.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Effects of the interaction of dark matter and neutron-star matter on extreme and intermediate mass-ratio inspirals",
+          "url": "https://arxiv.org/abs/2608.26274",
+          "score": 200,
+          "authors": "Benjamin A. Wade, Julian Heeck, David A. Nichols",
+          "arxivCategory": "gr-qc",
           "publishedAt": "2026-08-26T18:00:49.000Z"
         },
         {
@@ -930,18 +930,18 @@
     {
       "slug": "condensed-matter",
       "label": "Condensed Matter",
-      "score": 5528,
-      "delta": 2,
+      "score": 5332,
+      "delta": -4,
       "direction": "steady",
-      "mentions": 34,
+      "mentions": 33,
       "sources": [
         {
           "platform": "hackernews",
           "title": "Tell HN: PayPal blocks GrapheneOS",
           "url": "https://news.ycombinator.com/item?id=49462253",
-          "score": 503,
+          "score": 507,
           "author": "leumon",
-          "commentCount": 323,
+          "commentCount": 324,
           "publishedAt": "2026-08-27T09:56:54.000Z"
         },
         {
@@ -1063,7 +1063,7 @@
       "slug": "cosmology",
       "label": "Cosmology",
       "score": 5000,
-      "delta": 0,
+      "delta": -4,
       "direction": "steady",
       "mentions": 25,
       "sources": [
@@ -1460,7 +1460,7 @@
       "slug": "astrobiology",
       "label": "Astrobiology",
       "score": 2600,
-      "delta": 0,
+      "delta": -7,
       "direction": "steady",
       "mentions": 13,
       "sources": [
@@ -1593,7 +1593,7 @@
       "slug": "artemis",
       "label": "Artemis & Lunar Return",
       "score": 1600,
-      "delta": 14,
+      "delta": 0,
       "direction": "steady",
       "mentions": 8,
       "sources": [
@@ -1690,8 +1690,8 @@
       "slug": "fusion-propulsion",
       "label": "Fusion Propulsion",
       "score": 1600,
-      "delta": -20,
-      "direction": "down",
+      "delta": 0,
+      "direction": "steady",
       "mentions": 8,
       "sources": [
         {
@@ -1933,6 +1933,139 @@
       }
     },
     {
+      "slug": "starship",
+      "label": "Starship & SpaceX",
+      "score": 638,
+      "delta": 1000,
+      "direction": "up",
+      "mentions": 15,
+      "sources": [
+        {
+          "platform": "hackernews",
+          "title": "Our decision on Cursor following its acquisition by SpaceX",
+          "url": "https://openai.com/index/our-decision-on-cursor-following-its-acquisition-by-spacex/",
+          "score": 575,
+          "author": "meetpateltech",
+          "commentCount": 324,
+          "publishedAt": "2026-08-29T01:47:53.000Z"
+        },
+        {
+          "platform": "hackernews",
+          "title": "Russian-speaking cybercriminals used SpaceX's Cursor AI to hack seven companies",
+          "url": "https://www.reuters.com/world/russian-speaking-cybercriminals-used-spacexs-cursor-ai-tool-hack-seven-companies-2026-08-27/",
+          "score": 10,
+          "author": "tartoran",
+          "commentCount": 0,
+          "publishedAt": "2026-08-27T15:01:52.000Z"
+        },
+        {
+          "platform": "hackernews",
+          "title": "Musk's SpaceX to build $100B launch facility in Louisiana",
+          "url": "https://www.bbc.com/news/articles/cq5xel4v642o",
+          "score": 9,
+          "author": "nativeit",
+          "commentCount": 9,
+          "publishedAt": "2026-08-26T02:20:05.000Z"
+        },
+        {
+          "platform": "hackernews",
+          "title": "SpaceX, Nvidia designed a space-optimized Vera Rubin NVL72 (orbit launch in Q4)",
+          "url": "https://twitter.com/elonmusk/status/2091939113008238838",
+          "score": 7,
+          "author": "tosh",
+          "commentCount": 16,
+          "publishedAt": "2026-08-24T18:06:08.000Z"
+        },
+        {
+          "platform": "hackernews",
+          "title": "SpaceX Considered as a Leasing Company",
+          "url": "https://www.ft.com/content/a5c1460d-631a-4c4e-8c51-32536de09b80",
+          "score": 7,
+          "author": "root-parent",
+          "commentCount": 2,
+          "publishedAt": "2026-08-28T15:39:56.000Z"
+        },
+        {
+          "platform": "hackernews",
+          "title": "SpaceXAI Adopts Nvidia Vera CPU to Accelerate Agentic AI at Scale",
+          "url": "https://nvidianews.nvidia.com/news/spacexai-adopts-nvidia-vera-cpu-to-accelerate-agentic-ai-at-massive-scale",
+          "score": 6,
+          "author": "ryzvonusef",
+          "commentCount": 4,
+          "publishedAt": "2026-08-24T18:48:46.000Z"
+        },
+        {
+          "platform": "hackernews",
+          "title": "Musk's SpaceX to build $100B launch facility in Louisiana",
+          "url": "https://www.bbc.com/news/articles/cq5xel4v642o",
+          "score": 6,
+          "author": "ksec",
+          "commentCount": 1,
+          "publishedAt": "2026-08-27T15:45:39.000Z"
+        },
+        {
+          "platform": "hackernews",
+          "title": "Before-and-after images show where SpaceX rocket crashed into the moon",
+          "url": "https://www.washingtonpost.com/technology/2026/08/19/nasa-images-show-spacex-crash-site-moon/",
+          "score": 5,
+          "author": "1vuio0pswjnm7",
+          "commentCount": 0,
+          "publishedAt": "2026-08-23T05:16:20.000Z"
+        },
+        {
+          "platform": "hackernews",
+          "title": "'It seems crazy': SpaceX's orbital data centre bet tests physics and finance",
+          "url": "https://www.ft.com/content/41e60b41-5f13-4d72-8dfc-9bab83f57fb3",
+          "score": 4,
+          "author": "doener",
+          "commentCount": 0,
+          "publishedAt": "2026-08-26T10:28:42.000Z"
+        },
+        {
+          "platform": "hackernews",
+          "title": "OpenAI to end agreement with SpaceX's AI coding tool Cursor",
+          "url": "https://www.reuters.com/business/media-telecom/openai-end-partnership-with-spacexs-cursor-2026-08-29/",
+          "score": 2,
+          "author": "tartoran",
+          "commentCount": 1,
+          "publishedAt": "2026-08-29T05:27:09.000Z"
+        },
+        {
+          "platform": "hackernews",
+          "title": "SpaceX plans a $100B spaceport built for launches a year",
+          "url": "https://thenextweb.com/news/spacex-louisiana-spaceport-100bn-europe-launch-cadence",
+          "score": 2,
+          "author": "ksec",
+          "commentCount": 1,
+          "publishedAt": "2026-08-27T05:46:20.000Z"
+        },
+        {
+          "platform": "hackernews",
+          "title": "SpaceX intends to invest up to $100B in Louisiana spaceport",
+          "url": "https://arstechnica.com/space/2026/08/spacex-intends-to-invest-up-to-100-billion-in-massive-louisiana-spaceport/",
+          "score": 2,
+          "author": "rbanffy",
+          "commentCount": 1,
+          "publishedAt": "2026-08-26T13:38:28.000Z"
+        }
+      ],
+      "relatedConceptSlugs": [
+        "extraterrestrial-regolith-derived-atmospheric-entry-heat-shields",
+        "phase-i-final-report-nasa-institute-for-advanced-concepts-combined-heat-shield-a"
+      ],
+      "resonance": 43,
+      "quadrant": "dead-zone",
+      "resonanceSignals": {
+        "conceptDepth": 0.5113915944693856,
+        "editorial": 0.4,
+        "connections": 0,
+        "convergence": 0.35,
+        "deepTopic": 1,
+        "pantheon": 0.92,
+        "graveyard": 0
+      }
+    },
+    {
       "slug": "starlink",
       "label": "Starlink & Satellite Internet",
       "score": 611,
@@ -2107,8 +2240,8 @@
     {
       "slug": "dyson-spheres",
       "label": "Dyson Spheres",
-      "score": 217,
-      "delta": 9,
+      "score": 218,
+      "delta": 1,
       "direction": "steady",
       "mentions": 2,
       "sources": [
@@ -2125,7 +2258,7 @@
           "platform": "hackernews",
           "title": "Webb Telescope Rules Out Two New Dyson Sphere Candidates",
           "url": "https://www.universetoday.com/articles/nasas-webb-telescope-rules-out-two-new-dyson-sphere-candidates",
-          "score": 17,
+          "score": 18,
           "author": "root-parent",
           "commentCount": 6,
           "publishedAt": "2026-08-28T15:10:09.000Z"
@@ -2246,139 +2379,6 @@
         "connections": 0,
         "convergence": 0.05,
         "deepTopic": 0,
-        "pantheon": 0.92,
-        "graveyard": 0
-      }
-    },
-    {
-      "slug": "starship",
-      "label": "Starship & SpaceX",
-      "score": 62,
-      "delta": -7,
-      "direction": "steady",
-      "mentions": 13,
-      "sources": [
-        {
-          "platform": "hackernews",
-          "title": "Russian-speaking cybercriminals used SpaceX's Cursor AI to hack seven companies",
-          "url": "https://www.reuters.com/world/russian-speaking-cybercriminals-used-spacexs-cursor-ai-tool-hack-seven-companies-2026-08-27/",
-          "score": 10,
-          "author": "tartoran",
-          "commentCount": 0,
-          "publishedAt": "2026-08-27T15:01:52.000Z"
-        },
-        {
-          "platform": "hackernews",
-          "title": "Musk's SpaceX to build $100B launch facility in Louisiana",
-          "url": "https://www.bbc.com/news/articles/cq5xel4v642o",
-          "score": 9,
-          "author": "nativeit",
-          "commentCount": 9,
-          "publishedAt": "2026-08-26T02:20:05.000Z"
-        },
-        {
-          "platform": "hackernews",
-          "title": "SpaceX, Nvidia designed a space-optimized Vera Rubin NVL72 (orbit launch in Q4)",
-          "url": "https://twitter.com/elonmusk/status/2091939113008238838",
-          "score": 7,
-          "author": "tosh",
-          "commentCount": 15,
-          "publishedAt": "2026-08-24T18:06:08.000Z"
-        },
-        {
-          "platform": "hackernews",
-          "title": "SpaceX Considered as a Leasing Company",
-          "url": "https://www.ft.com/content/a5c1460d-631a-4c4e-8c51-32536de09b80",
-          "score": 7,
-          "author": "root-parent",
-          "commentCount": 2,
-          "publishedAt": "2026-08-28T15:39:56.000Z"
-        },
-        {
-          "platform": "hackernews",
-          "title": "SpaceXAI Adopts Nvidia Vera CPU to Accelerate Agentic AI at Scale",
-          "url": "https://nvidianews.nvidia.com/news/spacexai-adopts-nvidia-vera-cpu-to-accelerate-agentic-ai-at-massive-scale",
-          "score": 6,
-          "author": "ryzvonusef",
-          "commentCount": 4,
-          "publishedAt": "2026-08-24T18:48:46.000Z"
-        },
-        {
-          "platform": "hackernews",
-          "title": "Musk's SpaceX to build $100B launch facility in Louisiana",
-          "url": "https://www.bbc.com/news/articles/cq5xel4v642o",
-          "score": 6,
-          "author": "ksec",
-          "commentCount": 1,
-          "publishedAt": "2026-08-27T15:45:39.000Z"
-        },
-        {
-          "platform": "hackernews",
-          "title": "Before-and-after images show where SpaceX rocket crashed into the moon",
-          "url": "https://www.washingtonpost.com/technology/2026/08/19/nasa-images-show-spacex-crash-site-moon/",
-          "score": 5,
-          "author": "1vuio0pswjnm7",
-          "commentCount": 0,
-          "publishedAt": "2026-08-23T05:16:20.000Z"
-        },
-        {
-          "platform": "hackernews",
-          "title": "'It seems crazy': SpaceX's orbital data centre bet tests physics and finance",
-          "url": "https://www.ft.com/content/41e60b41-5f13-4d72-8dfc-9bab83f57fb3",
-          "score": 4,
-          "author": "doener",
-          "commentCount": 0,
-          "publishedAt": "2026-08-26T10:28:42.000Z"
-        },
-        {
-          "platform": "hackernews",
-          "title": "SpaceX plans a $100B spaceport built for launches a year",
-          "url": "https://thenextweb.com/news/spacex-louisiana-spaceport-100bn-europe-launch-cadence",
-          "score": 2,
-          "author": "ksec",
-          "commentCount": 1,
-          "publishedAt": "2026-08-27T05:46:20.000Z"
-        },
-        {
-          "platform": "hackernews",
-          "title": "SpaceX intends to invest up to $100B in Louisiana spaceport",
-          "url": "https://arstechnica.com/space/2026/08/spacex-intends-to-invest-up-to-100-billion-in-massive-louisiana-spaceport/",
-          "score": 2,
-          "author": "rbanffy",
-          "commentCount": 1,
-          "publishedAt": "2026-08-26T13:38:28.000Z"
-        },
-        {
-          "platform": "hackernews",
-          "title": "Would SpaceXAI Acquire Vercel?",
-          "url": "https://twitter.com/jessethanley/status/2093298774949146796",
-          "score": 2,
-          "author": "eyehurtsme",
-          "commentCount": 0,
-          "publishedAt": "2026-08-28T18:01:28.000Z"
-        },
-        {
-          "platform": "hackernews",
-          "title": "Starship is coming home SpaceX loads floating spacecraft onto ship in the",
-          "url": "https://www.space.com/space-exploration/launches-spacecraft/starship-is-coming-home-spacex-loads-floating-spacecraft-onto-huge-ship-in-the-indian-ocean-photos",
-          "score": 1,
-          "author": "bookmtn",
-          "commentCount": 0,
-          "publishedAt": "2026-08-28T16:46:27.000Z"
-        }
-      ],
-      "relatedConceptSlugs": [
-        "extraterrestrial-regolith-derived-atmospheric-entry-heat-shields",
-        "phase-i-final-report-nasa-institute-for-advanced-concepts-combined-heat-shield-a"
-      ],
-      "resonance": 43,
-      "quadrant": "dead-zone",
-      "resonanceSignals": {
-        "conceptDepth": 0.5113915944693856,
-        "editorial": 0.4,
-        "connections": 0,
-        "convergence": 0.35,
-        "deepTopic": 1,
         "pantheon": 0.92,
         "graveyard": 0
       }
