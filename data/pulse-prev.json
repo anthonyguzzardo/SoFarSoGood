@@ -1,146 +1,13 @@
 {
-  "generatedAt": "2026-09-01T10:50:07.934Z",
+  "generatedAt": "2026-09-01T20:43:04.750Z",
   "topics": [
-    {
-      "slug": "black-holes",
-      "label": "Black Holes",
-      "score": 8907,
-      "delta": 0,
-      "direction": "steady",
-      "mentions": 46,
-      "sources": [
-        {
-          "platform": "hackernews",
-          "title": "Black hole singularity is a surface not a point",
-          "url": "https://arxiv.org/abs/2608.21590",
-          "score": 300,
-          "author": "raattgift",
-          "commentCount": 223,
-          "publishedAt": "2026-08-25T17:02:49.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Bekenstein--Hod Bound: A $3.3σ$ Confirmation from GW250114",
-          "url": "https://arxiv.org/abs/2608.31039",
-          "score": 200,
-          "authors": "Hai-Tian Wang, Shao-Peng Tang, Yi-Zhong Fan",
-          "arxivCategory": "gr-qc",
-          "publishedAt": "2026-08-31T16:15:41.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "ALMA CO(2-1) Gas Dynamics in NGC 315: A Multi-Method Benchmark for Supermassive Black Hole Mass Measurement",
-          "url": "https://arxiv.org/abs/2608.31015",
-          "score": 200,
-          "authors": "Dieu D. Nguyen, Benjamin D. Boizelle, Hai N. Ngo et al.",
-          "arxivCategory": "astro-ph.GA",
-          "publishedAt": "2026-08-31T15:58:44.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Constraining equation of state of neutron star using neutron star-black hole mergers",
-          "url": "https://arxiv.org/abs/2608.30995",
-          "score": 200,
-          "authors": "Vasudev Dubey, Rahul Kashyap, Yugesh Bhoge",
-          "arxivCategory": "gr-qc",
-          "publishedAt": "2026-08-31T15:46:53.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Gravitational-Wave Echoes from Layered Compact Objects: A Double-Shell Model",
-          "url": "https://arxiv.org/abs/2608.30784",
-          "score": 200,
-          "authors": "Qi Su, Ding-Fang Zeng",
-          "arxivCategory": "gr-qc",
-          "publishedAt": "2026-08-31T13:41:09.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Cascades from ultra-high-energy neutrinos",
-          "url": "https://arxiv.org/abs/2608.30562",
-          "score": 200,
-          "authors": "Gaetano Di Marco, Rhorry Gauld, Rafael Alves Batista et al.",
-          "arxivCategory": "astro-ph.HE",
-          "publishedAt": "2026-08-31T10:38:25.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Black hole correspondences of quasi-topological gravity : Shadows, quasinormal modes, graybody factors",
-          "url": "https://arxiv.org/abs/2608.30169",
-          "score": 200,
-          "authors": "Sihao Fan, Chen Wu, Wenjun Guo",
-          "arxivCategory": "gr-qc",
-          "publishedAt": "2026-08-31T02:45:46.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Periodic orbits around a magnetically charged black hole in $f(R,T)$ gravity coupled with Euler-Heisenberg electrodynamics",
-          "url": "https://arxiv.org/abs/2608.30049",
-          "score": 200,
-          "authors": "Jun-Long Huang, Chen-Kai Qiao, Jun Tao",
-          "arxivCategory": "gr-qc",
-          "publishedAt": "2026-08-30T21:23:56.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Advancing Fundamental Physics and Cosmology with high-resolution X-ray imaging",
-          "url": "https://arxiv.org/abs/2608.30042",
-          "score": 200,
-          "authors": "Sara Turriziani, Herman L. Marshall, Daryl Haggard et al.",
-          "arxivCategory": "astro-ph.HE",
-          "publishedAt": "2026-08-30T21:02:22.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Exotic Spinor Deformation of a Schwarzschild Black Hole: Perturbations and Stability",
-          "url": "https://arxiv.org/abs/2608.30024",
-          "score": 200,
-          "authors": "Luís Rodolfo dos Santos Filho, Bertha Cuadros-Melgar",
-          "arxivCategory": "gr-qc",
-          "publishedAt": "2026-08-30T20:29:21.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Two Languages for the Same Resonance: From Nuclear Decay to Black-Hole Ringdown",
-          "url": "https://arxiv.org/abs/2608.29806",
-          "score": 200,
-          "authors": "Okuto Morikawa",
-          "arxivCategory": "gr-qc",
-          "publishedAt": "2026-08-30T14:13:13.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Primordial Black Hole Seeds for Little Red Dots in $f(R)$ Gravity",
-          "url": "https://arxiv.org/abs/2608.29727",
-          "score": 200,
-          "authors": "Saeed Fakhry",
-          "arxivCategory": "astro-ph.GA",
-          "publishedAt": "2026-08-30T11:33:11.000Z"
-        }
-      ],
-      "relatedConceptSlugs": [
-        "direct-multipixel-imaging-and-spectroscopy-of-an-exoplanet-with-a-solar-gravity",
-        "gravity-observation-and-dark-energy-detection-explorer"
-      ],
-      "resonance": 80,
-      "quadrant": "real-deal",
-      "resonanceSignals": {
-        "conceptDepth": 0.8982444017039272,
-        "editorial": 1,
-        "connections": 1,
-        "convergence": 0.2,
-        "deepTopic": 1,
-        "pantheon": 0.92,
-        "graveyard": 0
-      }
-    },
     {
       "slug": "quantum-computing",
       "label": "Quantum Computing",
-      "score": 8619,
+      "score": 8614,
       "delta": 2,
       "direction": "steady",
-      "mentions": 50,
+      "mentions": 48,
       "sources": [
         {
           "platform": "arxiv",
@@ -263,6 +130,139 @@
         "convergence": 0.025,
         "deepTopic": 1,
         "pantheon": 1,
+        "graveyard": 0
+      }
+    },
+    {
+      "slug": "black-holes",
+      "label": "Black Holes",
+      "score": 8607,
+      "delta": -3,
+      "direction": "steady",
+      "mentions": 45,
+      "sources": [
+        {
+          "platform": "arxiv",
+          "title": "Bekenstein--Hod Bound: A $3.3σ$ Confirmation from GW250114",
+          "url": "https://arxiv.org/abs/2608.31039",
+          "score": 200,
+          "authors": "Hai-Tian Wang, Shao-Peng Tang, Yi-Zhong Fan",
+          "arxivCategory": "gr-qc",
+          "publishedAt": "2026-08-31T16:15:41.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "ALMA CO(2-1) Gas Dynamics in NGC 315: A Multi-Method Benchmark for Supermassive Black Hole Mass Measurement",
+          "url": "https://arxiv.org/abs/2608.31015",
+          "score": 200,
+          "authors": "Dieu D. Nguyen, Benjamin D. Boizelle, Hai N. Ngo et al.",
+          "arxivCategory": "astro-ph.GA",
+          "publishedAt": "2026-08-31T15:58:44.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Constraining equation of state of neutron star using neutron star-black hole mergers",
+          "url": "https://arxiv.org/abs/2608.30995",
+          "score": 200,
+          "authors": "Vasudev Dubey, Rahul Kashyap, Yugesh Bhoge",
+          "arxivCategory": "gr-qc",
+          "publishedAt": "2026-08-31T15:46:53.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Gravitational-Wave Echoes from Layered Compact Objects: A Double-Shell Model",
+          "url": "https://arxiv.org/abs/2608.30784",
+          "score": 200,
+          "authors": "Qi Su, Ding-Fang Zeng",
+          "arxivCategory": "gr-qc",
+          "publishedAt": "2026-08-31T13:41:09.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Cascades from ultra-high-energy neutrinos",
+          "url": "https://arxiv.org/abs/2608.30562",
+          "score": 200,
+          "authors": "Gaetano Di Marco, Rhorry Gauld, Rafael Alves Batista et al.",
+          "arxivCategory": "astro-ph.HE",
+          "publishedAt": "2026-08-31T10:38:25.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Black hole correspondences of quasi-topological gravity : Shadows, quasinormal modes, graybody factors",
+          "url": "https://arxiv.org/abs/2608.30169",
+          "score": 200,
+          "authors": "Sihao Fan, Chen Wu, Wenjun Guo",
+          "arxivCategory": "gr-qc",
+          "publishedAt": "2026-08-31T02:45:46.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Periodic orbits around a magnetically charged black hole in $f(R,T)$ gravity coupled with Euler-Heisenberg electrodynamics",
+          "url": "https://arxiv.org/abs/2608.30049",
+          "score": 200,
+          "authors": "Jun-Long Huang, Chen-Kai Qiao, Jun Tao",
+          "arxivCategory": "gr-qc",
+          "publishedAt": "2026-08-30T21:23:56.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Advancing Fundamental Physics and Cosmology with high-resolution X-ray imaging",
+          "url": "https://arxiv.org/abs/2608.30042",
+          "score": 200,
+          "authors": "Sara Turriziani, Herman L. Marshall, Daryl Haggard et al.",
+          "arxivCategory": "astro-ph.HE",
+          "publishedAt": "2026-08-30T21:02:22.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Exotic Spinor Deformation of a Schwarzschild Black Hole: Perturbations and Stability",
+          "url": "https://arxiv.org/abs/2608.30024",
+          "score": 200,
+          "authors": "Luís Rodolfo dos Santos Filho, Bertha Cuadros-Melgar",
+          "arxivCategory": "gr-qc",
+          "publishedAt": "2026-08-30T20:29:21.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Two Languages for the Same Resonance: From Nuclear Decay to Black-Hole Ringdown",
+          "url": "https://arxiv.org/abs/2608.29806",
+          "score": 200,
+          "authors": "Okuto Morikawa",
+          "arxivCategory": "gr-qc",
+          "publishedAt": "2026-08-30T14:13:13.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Primordial Black Hole Seeds for Little Red Dots in $f(R)$ Gravity",
+          "url": "https://arxiv.org/abs/2608.29727",
+          "score": 200,
+          "authors": "Saeed Fakhry",
+          "arxivCategory": "astro-ph.GA",
+          "publishedAt": "2026-08-30T11:33:11.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "The multi-frequency radio light curve of the sub-pc SMBH binary candidate PG 1302-102",
+          "url": "https://arxiv.org/abs/2608.29682",
+          "score": 200,
+          "authors": "Sayan Basu, Roger P. Deane, Keith W. Bannister",
+          "arxivCategory": "astro-ph.GA",
+          "publishedAt": "2026-08-30T09:30:36.000Z"
+        }
+      ],
+      "relatedConceptSlugs": [
+        "direct-multipixel-imaging-and-spectroscopy-of-an-exoplanet-with-a-solar-gravity",
+        "gravity-observation-and-dark-energy-detection-explorer"
+      ],
+      "resonance": 80,
+      "quadrant": "real-deal",
+      "resonanceSignals": {
+        "conceptDepth": 0.8982444017039272,
+        "editorial": 1,
+        "connections": 1,
+        "convergence": 0.2,
+        "deepTopic": 1,
+        "pantheon": 0.92,
         "graveyard": 0
       }
     },
@@ -401,10 +401,10 @@
     {
       "slug": "space-telescopes",
       "label": "Space Telescopes",
-      "score": 8174,
+      "score": 8169,
       "delta": -5,
       "direction": "steady",
-      "mentions": 45,
+      "mentions": 44,
       "sources": [
         {
           "platform": "hackernews",
@@ -412,7 +412,7 @@
           "url": "https://science.nasa.gov/mission/roman-space-telescope/",
           "score": 294,
           "author": "JumpCrisscross",
-          "commentCount": 104,
+          "commentCount": 103,
           "publishedAt": "2026-08-29T15:48:02.000Z"
         },
         {
@@ -797,27 +797,36 @@
     {
       "slug": "condensed-matter",
       "label": "Condensed Matter",
-      "score": 5847,
-      "delta": 4,
+      "score": 6285,
+      "delta": 11,
       "direction": "steady",
-      "mentions": 32,
+      "mentions": 33,
       "sources": [
         {
           "platform": "hackernews",
           "title": "Tell HN: PayPal blocks GrapheneOS",
           "url": "https://news.ycombinator.com/item?id=49462253",
-          "score": 514,
+          "score": 516,
           "author": "leumon",
           "commentCount": 325,
           "publishedAt": "2026-08-27T09:56:54.000Z"
         },
         {
           "platform": "hackernews",
+          "title": "Play Store blocks AuroraStore, hurting GrapheneOS users",
+          "url": "https://gitlab.com/AuroraOSS/AuroraStore/-/work_items/1566",
+          "score": 400,
+          "author": "erikvanoosten",
+          "commentCount": 156,
+          "publishedAt": "2026-09-01T15:55:53.000Z"
+        },
+        {
+          "platform": "hackernews",
           "title": "GrapheneOS project: pixel 11 no longer supports hardware memory tagging (MTE)",
           "url": "https://bsky.app/profile/grapheneos.org/post/3mua32q4ds22e",
-          "score": 319,
+          "score": 323,
           "author": "400thecat",
-          "commentCount": 190,
+          "commentCount": 192,
           "publishedAt": "2026-08-29T15:26:28.000Z"
         },
         {
@@ -900,15 +909,6 @@
           "authors": "Bartłomiej Turowski, Wojciech Brzezicki, Ondřej Caha et al.",
           "arxivCategory": "cond-mat.mtrl-sci",
           "publishedAt": "2026-08-25T21:08:22.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Antidot superlattices in two-dimensional topological insulators",
-          "url": "https://arxiv.org/abs/2608.22831",
-          "score": 200,
-          "authors": "Haolin Huang, Jackson S. Smith, Fabio Taddei et al.",
-          "arxivCategory": "cond-mat.mes-hall",
-          "publishedAt": "2026-08-24T05:48:50.000Z"
         }
       ],
       "relatedConceptSlugs": [
@@ -929,10 +929,10 @@
     {
       "slug": "dark-matter",
       "label": "Dark Matter & Dark Energy",
-      "score": 5600,
-      "delta": -7,
+      "score": 5616,
+      "delta": -6,
       "direction": "steady",
-      "mentions": 28,
+      "mentions": 33,
       "sources": [
         {
           "platform": "arxiv",
@@ -1675,7 +1675,7 @@
         "regolith-adaptive-modification-systems"
       ],
       "resonance": 52,
-      "quadrant": "sleeping-giant",
+      "quadrant": "real-deal",
       "resonanceSignals": {
         "conceptDepth": 0.7737056144690831,
         "editorial": 1,
@@ -1689,10 +1689,10 @@
     {
       "slug": "fusion-propulsion",
       "label": "Fusion Propulsion",
-      "score": 1600,
-      "delta": -11,
+      "score": 1400,
+      "delta": -12,
       "direction": "steady",
-      "mentions": 8,
+      "mentions": 7,
       "sources": [
         {
           "platform": "arxiv",
@@ -1756,15 +1756,6 @@
           "authors": "Rahul Gaur, Sanket Patil, Prateek Gupta et al.",
           "arxivCategory": "physics.plasm-ph",
           "publishedAt": "2026-08-03T06:16:49.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Two-fluid boundary turbulence simulations in reversed field pinch plasmas",
-          "url": "https://arxiv.org/abs/2608.01232",
-          "score": 200,
-          "authors": "M. Giacomin, B. Momo, I. Predebon et al.",
-          "arxivCategory": "physics.plasm-ph",
-          "publishedAt": "2026-08-02T13:32:02.000Z"
         }
       ],
       "relatedConceptSlugs": [
@@ -1874,18 +1865,18 @@
     {
       "slug": "starship",
       "label": "Starship & SpaceX",
-      "score": 912,
+      "score": 918,
       "delta": 1,
       "direction": "steady",
-      "mentions": 15,
+      "mentions": 17,
       "sources": [
         {
           "platform": "hackernews",
           "title": "Our decision on Cursor following its acquisition by SpaceX",
           "url": "https://openai.com/index/our-decision-on-cursor-following-its-acquisition-by-spacex/",
-          "score": 844,
+          "score": 845,
           "author": "meetpateltech",
-          "commentCount": 539,
+          "commentCount": 540,
           "publishedAt": "2026-08-29T01:47:53.000Z"
         },
         {
@@ -1910,9 +1901,9 @@
           "platform": "hackernews",
           "title": "SpaceX designed an orbital Vera Rubin. Radiation comes next",
           "url": "https://thenewstack.io/spacex-nvidia-orbital-ai/",
-          "score": 8,
+          "score": 9,
           "author": "CrankyBear",
-          "commentCount": 1,
+          "commentCount": 2,
           "publishedAt": "2026-08-31T20:06:22.000Z"
         },
         {
@@ -1971,21 +1962,21 @@
         },
         {
           "platform": "hackernews",
+          "title": "OpenAI Cuts Off Cursor's Model Access After SpaceX Acquisition",
+          "url": "https://devops.com/openai-cuts-off-cursors-model-access-after-spacex-acquisition/",
+          "score": 3,
+          "author": "CrankyBear",
+          "commentCount": 1,
+          "publishedAt": "2026-09-01T17:05:36.000Z"
+        },
+        {
+          "platform": "hackernews",
           "title": "OpenAI to end agreement with SpaceX's AI coding tool Cursor",
           "url": "https://www.reuters.com/business/media-telecom/openai-end-partnership-with-spacexs-cursor-2026-08-29/",
           "score": 3,
           "author": "tartoran",
           "commentCount": 1,
           "publishedAt": "2026-08-29T05:27:09.000Z"
-        },
-        {
-          "platform": "hackernews",
-          "title": "SpaceX recovers Starship from the Indian Ocean a month after launch and is shipp",
-          "url": "https://phys.org/news/2026-08-spacex-recovers-starship-indian-ocean.html",
-          "score": 2,
-          "author": "bookmtn",
-          "commentCount": 0,
-          "publishedAt": "2026-08-29T10:42:00.000Z"
         }
       ],
       "relatedConceptSlugs": [
@@ -2066,6 +2057,69 @@
       }
     },
     {
+      "slug": "mars",
+      "label": "Mars Exploration",
+      "score": 616,
+      "delta": 54,
+      "direction": "up",
+      "mentions": 4,
+      "sources": [
+        {
+          "platform": "arxiv",
+          "title": "Horizon-Dependent Tube MPC for Elliptical-Orbit Rendezvous Under Mass Uncertainty",
+          "url": "https://arxiv.org/abs/2608.27659",
+          "score": 200,
+          "authors": "Omer Burak Iskender, Keck-Voon Ling",
+          "arxivCategory": "eess.SY",
+          "publishedAt": "2026-08-27T19:46:35.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Horizon-Dependent Tube MPC for Spacecraft Rendezvous on Elliptical Orbits with Conditional Robust Constraint Satisfaction",
+          "url": "https://arxiv.org/abs/2608.08921",
+          "score": 200,
+          "authors": "Omer Burak Iskender",
+          "arxivCategory": "eess.SY",
+          "publishedAt": "2026-08-09T21:23:36.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Geochemical Hazard Assessment of Martian Regolith for Future Human Exploration",
+          "url": "https://arxiv.org/abs/2608.28805",
+          "score": 200,
+          "authors": "Mavia Anjum, Gwendolyn D. Bart",
+          "arxivCategory": "q-bio.OT",
+          "publishedAt": "2026-08-28T19:17:54.000Z"
+        },
+        {
+          "platform": "hackernews",
+          "title": "NASA's Perseverance Rover Captures Mars Vista as Clear as Day",
+          "url": "https://www.jpl.nasa.gov/news/nasas-perseverance-rover-captures-mars-vista-as-clear-as-day/",
+          "score": 16,
+          "author": "thunderbong",
+          "commentCount": 4,
+          "publishedAt": "2026-09-01T16:39:58.000Z"
+        }
+      ],
+      "relatedConceptSlugs": [
+        "mycotecture",
+        "breathing-mars-air",
+        "evacuated-airship-for-mars-missions",
+        "marsbee"
+      ],
+      "resonance": 60,
+      "quadrant": "sleeping-giant",
+      "resonanceSignals": {
+        "conceptDepth": 1,
+        "editorial": 1,
+        "connections": 0,
+        "convergence": 0.075,
+        "deepTopic": 0.8,
+        "pantheon": 0.08,
+        "graveyard": 0
+      }
+    },
+    {
       "slug": "starlink",
       "label": "Starlink & Satellite Internet",
       "score": 614,
@@ -2131,60 +2185,6 @@
         "convergence": 0,
         "deepTopic": 0,
         "pantheon": 0,
-        "graveyard": 0
-      }
-    },
-    {
-      "slug": "mars",
-      "label": "Mars Exploration",
-      "score": 600,
-      "delta": 50,
-      "direction": "up",
-      "mentions": 3,
-      "sources": [
-        {
-          "platform": "arxiv",
-          "title": "Horizon-Dependent Tube MPC for Elliptical-Orbit Rendezvous Under Mass Uncertainty",
-          "url": "https://arxiv.org/abs/2608.27659",
-          "score": 200,
-          "authors": "Omer Burak Iskender, Keck-Voon Ling",
-          "arxivCategory": "eess.SY",
-          "publishedAt": "2026-08-27T19:46:35.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Horizon-Dependent Tube MPC for Spacecraft Rendezvous on Elliptical Orbits with Conditional Robust Constraint Satisfaction",
-          "url": "https://arxiv.org/abs/2608.08921",
-          "score": 200,
-          "authors": "Omer Burak Iskender",
-          "arxivCategory": "eess.SY",
-          "publishedAt": "2026-08-09T21:23:36.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Geochemical Hazard Assessment of Martian Regolith for Future Human Exploration",
-          "url": "https://arxiv.org/abs/2608.28805",
-          "score": 200,
-          "authors": "Mavia Anjum, Gwendolyn D. Bart",
-          "arxivCategory": "q-bio.OT",
-          "publishedAt": "2026-08-28T19:17:54.000Z"
-        }
-      ],
-      "relatedConceptSlugs": [
-        "mycotecture",
-        "breathing-mars-air",
-        "evacuated-airship-for-mars-missions",
-        "marsbee"
-      ],
-      "resonance": 60,
-      "quadrant": "sleeping-giant",
-      "resonanceSignals": {
-        "conceptDepth": 1,
-        "editorial": 1,
-        "connections": 0,
-        "convergence": 0.075,
-        "deepTopic": 0.8,
-        "pantheon": 0.08,
         "graveyard": 0
       }
     },
@@ -2385,6 +2385,41 @@
       }
     },
     {
+      "slug": "interstellar-travel",
+      "label": "Interstellar Travel",
+      "score": 1,
+      "delta": 200,
+      "direction": "up",
+      "mentions": 1,
+      "sources": [
+        {
+          "platform": "hackernews",
+          "title": "Can AI help crack interstellar travel?",
+          "url": "https://www.thedeepview.com/articles/can-ai-crack-interstellar-travel",
+          "score": 1,
+          "author": "ilreb",
+          "commentCount": 0,
+          "publishedAt": "2026-09-01T14:56:11.000Z"
+        }
+      ],
+      "relatedConceptSlugs": [
+        "procsima",
+        "dynamic-orbital-slingshot",
+        "solar-system-escape-architecture"
+      ],
+      "resonance": 53,
+      "quadrant": "sleeping-giant",
+      "resonanceSignals": {
+        "conceptDepth": 0.6131471927654584,
+        "editorial": 1,
+        "connections": 0,
+        "convergence": 0.125,
+        "deepTopic": 0.8,
+        "pantheon": 0.92,
+        "graveyard": 0
+      }
+    },
+    {
       "slug": "nuclear-thermal",
       "label": "Nuclear Propulsion",
       "score": 0,
@@ -2404,31 +2439,6 @@
         "editorial": 1,
         "connections": 0.3333333333333333,
         "convergence": 1,
-        "deepTopic": 0.8,
-        "pantheon": 0.92,
-        "graveyard": 0
-      }
-    },
-    {
-      "slug": "interstellar-travel",
-      "label": "Interstellar Travel",
-      "score": 0,
-      "delta": 0,
-      "direction": "steady",
-      "mentions": 0,
-      "sources": [],
-      "relatedConceptSlugs": [
-        "procsima",
-        "dynamic-orbital-slingshot",
-        "solar-system-escape-architecture"
-      ],
-      "resonance": 53,
-      "quadrant": "sleeping-giant",
-      "resonanceSignals": {
-        "conceptDepth": 0.6131471927654584,
-        "editorial": 1,
-        "connections": 0,
-        "convergence": 0.125,
         "deepTopic": 0.8,
         "pantheon": 0.92,
         "graveyard": 0
