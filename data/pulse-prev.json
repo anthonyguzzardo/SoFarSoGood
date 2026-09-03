@@ -1,13 +1,13 @@
 {
-  "generatedAt": "2026-09-02T10:15:46.646Z",
+  "generatedAt": "2026-09-02T20:38:07.574Z",
   "topics": [
     {
       "slug": "black-holes",
       "label": "Black Holes",
-      "score": 9007,
-      "delta": 1,
+      "score": 9012,
+      "delta": 5,
       "direction": "steady",
-      "mentions": 47,
+      "mentions": 49,
       "sources": [
         {
           "platform": "arxiv",
@@ -137,10 +137,10 @@
     {
       "slug": "quantum-computing",
       "label": "Quantum Computing",
-      "score": 8814,
+      "score": 8821,
       "delta": 2,
       "direction": "steady",
-      "mentions": 49,
+      "mentions": 51,
       "sources": [
         {
           "platform": "arxiv",
@@ -280,7 +280,7 @@
           "url": "https://science.nasa.gov/mission/roman-space-telescope/",
           "score": 294,
           "author": "JumpCrisscross",
-          "commentCount": 103,
+          "commentCount": 102,
           "publishedAt": "2026-08-29T15:48:02.000Z"
         },
         {
@@ -534,10 +534,10 @@
     {
       "slug": "particle-physics",
       "label": "Particle Physics",
-      "score": 6620,
+      "score": 6628,
       "delta": 0,
       "direction": "steady",
-      "mentions": 34,
+      "mentions": 35,
       "sources": [
         {
           "platform": "arxiv",
@@ -659,138 +659,6 @@
         "deepTopic": 0,
         "pantheon": 0.92,
         "graveyard": 0.3333333333333333
-      }
-    },
-    {
-      "slug": "condensed-matter",
-      "label": "Condensed Matter",
-      "score": 6414,
-      "delta": 10,
-      "direction": "steady",
-      "mentions": 32,
-      "sources": [
-        {
-          "platform": "hackernews",
-          "title": "Play Store blocks AuroraStore, hurting GrapheneOS users",
-          "url": "https://gitlab.com/AuroraOSS/AuroraStore/-/work_items/1566",
-          "score": 527,
-          "author": "erikvanoosten",
-          "commentCount": 227,
-          "publishedAt": "2026-09-01T15:55:53.000Z"
-        },
-        {
-          "platform": "hackernews",
-          "title": "Tell HN: PayPal blocks GrapheneOS",
-          "url": "https://news.ycombinator.com/item?id=49462253",
-          "score": 516,
-          "author": "leumon",
-          "commentCount": 325,
-          "publishedAt": "2026-08-27T09:56:54.000Z"
-        },
-        {
-          "platform": "hackernews",
-          "title": "GrapheneOS project: pixel 11 no longer supports hardware memory tagging (MTE)",
-          "url": "https://bsky.app/profile/grapheneos.org/post/3mua32q4ds22e",
-          "score": 327,
-          "author": "400thecat",
-          "commentCount": 192,
-          "publishedAt": "2026-08-29T15:26:28.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Microwave-Induced Optomagnetism in High-Temperature Superconductors",
-          "url": "https://arxiv.org/abs/2608.31127",
-          "score": 200,
-          "authors": "Anoop Dhillon, Amir Borji, Hamed Majedi",
-          "arxivCategory": "cond-mat.supr-con",
-          "publishedAt": "2026-08-31T17:40:24.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Superconducting Hydride Mg2RhH6 Experimentally Achieved at Lower Pressure",
-          "url": "https://arxiv.org/abs/2608.15745",
-          "score": 200,
-          "authors": "Linjing Wu, Zelong Wang, Guiqi Liu et al.",
-          "arxivCategory": "cond-mat.supr-con",
-          "publishedAt": "2026-08-16T13:51:02.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Josephson network as a~model for high-temperature superconductor and beyond: Macroscopic quantum coherence probed by microwave absorption",
-          "url": "https://arxiv.org/abs/2608.15441",
-          "score": 200,
-          "authors": "Adam Rycerz",
-          "arxivCategory": "cond-mat.supr-con",
-          "publishedAt": "2026-08-15T22:52:11.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Thickness-Driven Superconductor-Insulator Transition in (Cu,C)-1234 and Proximity-Induced Superconductivity Recovery in (Cu,C)-1234/YBCO Heterostructure",
-          "url": "https://arxiv.org/abs/2608.11707",
-          "score": 200,
-          "authors": "Zhihang Xu, Detian Yang, Ping Zhu et al.",
-          "arxivCategory": "cond-mat.supr-con",
-          "publishedAt": "2026-08-12T06:37:06.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Some features of high-temperature superconductivity on flat bands",
-          "url": "https://arxiv.org/abs/2608.10231",
-          "score": 200,
-          "authors": "V. R. Shaginyan, A. Z. Msezane, S. A. Artamonov",
-          "arxivCategory": "cond-mat.str-el",
-          "publishedAt": "2026-08-10T21:08:33.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Inversion-symmetric topological insulators in cut-and-project binary chains",
-          "url": "https://arxiv.org/abs/2609.01312",
-          "score": 200,
-          "authors": "Zhipeng Zeng, Yuge Chen, Jean-Noël Fuchs et al.",
-          "arxivCategory": "cond-mat.other",
-          "publishedAt": "2026-09-01T14:36:16.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Multiple chiral Majorana states in proximitized magnetic topological insulator heterostructures",
-          "url": "https://arxiv.org/abs/2609.01243",
-          "score": 200,
-          "authors": "Alejandro S. Gómez, Rafael A. Molina, Pablo Burset et al.",
-          "arxivCategory": "cond-mat.mes-hall",
-          "publishedAt": "2026-09-01T13:43:16.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Anti-higher-order Weyl semimetal",
-          "url": "https://arxiv.org/abs/2609.00784",
-          "score": 200,
-          "authors": "Cheng-Ming Miao, Yu-Hao Wan, Qing-Feng Sun",
-          "arxivCategory": "cond-mat.mes-hall",
-          "publishedAt": "2026-09-01T06:28:13.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Anti-higher-order topological insulators",
-          "url": "https://arxiv.org/abs/2609.00780",
-          "score": 200,
-          "authors": "Cheng-Ming Miao, Yu-Hao Wan, Ying-Tao Zhang et al.",
-          "arxivCategory": "cond-mat.mes-hall",
-          "publishedAt": "2026-09-01T06:20:38.000Z"
-        }
-      ],
-      "relatedConceptSlugs": [
-        "extreme-metamaterial-solar-sails"
-      ],
-      "resonance": 50,
-      "quadrant": "real-deal",
-      "resonanceSignals": {
-        "conceptDepth": 0.6131471927654584,
-        "editorial": 1,
-        "connections": 0.3333333333333333,
-        "convergence": 0.15,
-        "deepTopic": 0,
-        "pantheon": 0.92,
-        "graveyard": 0
       }
     },
     {
@@ -927,13 +795,154 @@
       }
     },
     {
+      "slug": "condensed-matter",
+      "label": "Condensed Matter",
+      "score": 6395,
+      "delta": 2,
+      "direction": "steady",
+      "mentions": 32,
+      "sources": [
+        {
+          "platform": "hackernews",
+          "title": "Play Store blocks AuroraStore, hurting GrapheneOS users",
+          "url": "https://gitlab.com/AuroraOSS/AuroraStore/-/work_items/1566",
+          "score": 544,
+          "author": "erikvanoosten",
+          "commentCount": 247,
+          "publishedAt": "2026-09-01T15:55:53.000Z"
+        },
+        {
+          "platform": "hackernews",
+          "title": "Tell HN: PayPal blocks GrapheneOS",
+          "url": "https://news.ycombinator.com/item?id=49462253",
+          "score": 516,
+          "author": "leumon",
+          "commentCount": 325,
+          "publishedAt": "2026-08-27T09:56:54.000Z"
+        },
+        {
+          "platform": "hackernews",
+          "title": "GrapheneOS project: pixel 11 no longer supports hardware memory tagging (MTE)",
+          "url": "https://bsky.app/profile/grapheneos.org/post/3mua32q4ds22e",
+          "score": 327,
+          "author": "400thecat",
+          "commentCount": 192,
+          "publishedAt": "2026-08-29T15:26:28.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Microwave-Induced Optomagnetism in High-Temperature Superconductors",
+          "url": "https://arxiv.org/abs/2608.31127",
+          "score": 200,
+          "authors": "Anoop Dhillon, Amir Borji, Hamed Majedi",
+          "arxivCategory": "cond-mat.supr-con",
+          "publishedAt": "2026-08-31T17:40:24.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Superconducting Hydride Mg2RhH6 Experimentally Achieved at Lower Pressure",
+          "url": "https://arxiv.org/abs/2608.15745",
+          "score": 200,
+          "authors": "Linjing Wu, Zelong Wang, Guiqi Liu et al.",
+          "arxivCategory": "cond-mat.supr-con",
+          "publishedAt": "2026-08-16T13:51:02.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Josephson network as a~model for high-temperature superconductor and beyond: Macroscopic quantum coherence probed by microwave absorption",
+          "url": "https://arxiv.org/abs/2608.15441",
+          "score": 200,
+          "authors": "Adam Rycerz",
+          "arxivCategory": "cond-mat.supr-con",
+          "publishedAt": "2026-08-15T22:52:11.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Thickness-Driven Superconductor-Insulator Transition in (Cu,C)-1234 and Proximity-Induced Superconductivity Recovery in (Cu,C)-1234/YBCO Heterostructure",
+          "url": "https://arxiv.org/abs/2608.11707",
+          "score": 200,
+          "authors": "Zhihang Xu, Detian Yang, Ping Zhu et al.",
+          "arxivCategory": "cond-mat.supr-con",
+          "publishedAt": "2026-08-12T06:37:06.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Some features of high-temperature superconductivity on flat bands",
+          "url": "https://arxiv.org/abs/2608.10231",
+          "score": 200,
+          "authors": "V. R. Shaginyan, A. Z. Msezane, S. A. Artamonov",
+          "arxivCategory": "cond-mat.str-el",
+          "publishedAt": "2026-08-10T21:08:33.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Inversion-symmetric topological insulators in cut-and-project binary chains",
+          "url": "https://arxiv.org/abs/2609.01312",
+          "score": 200,
+          "authors": "Zhipeng Zeng, Yuge Chen, Jean-Noël Fuchs et al.",
+          "arxivCategory": "cond-mat.other",
+          "publishedAt": "2026-09-01T14:36:16.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Multiple chiral Majorana states in proximitized magnetic topological insulator heterostructures",
+          "url": "https://arxiv.org/abs/2609.01243",
+          "score": 200,
+          "authors": "Alejandro S. Gómez, Rafael A. Molina, Pablo Burset et al.",
+          "arxivCategory": "cond-mat.mes-hall",
+          "publishedAt": "2026-09-01T13:43:16.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Anti-higher-order Weyl semimetal",
+          "url": "https://arxiv.org/abs/2609.00784",
+          "score": 200,
+          "authors": "Cheng-Ming Miao, Yu-Hao Wan, Qing-Feng Sun",
+          "arxivCategory": "cond-mat.mes-hall",
+          "publishedAt": "2026-09-01T06:28:13.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Anti-higher-order topological insulators",
+          "url": "https://arxiv.org/abs/2609.00780",
+          "score": 200,
+          "authors": "Cheng-Ming Miao, Yu-Hao Wan, Ying-Tao Zhang et al.",
+          "arxivCategory": "cond-mat.mes-hall",
+          "publishedAt": "2026-09-01T06:20:38.000Z"
+        }
+      ],
+      "relatedConceptSlugs": [
+        "extreme-metamaterial-solar-sails"
+      ],
+      "resonance": 50,
+      "quadrant": "real-deal",
+      "resonanceSignals": {
+        "conceptDepth": 0.6131471927654584,
+        "editorial": 1,
+        "connections": 0.3333333333333333,
+        "convergence": 0.15,
+        "deepTopic": 0,
+        "pantheon": 0.92,
+        "graveyard": 0
+      }
+    },
+    {
       "slug": "dark-matter",
       "label": "Dark Matter & Dark Energy",
-      "score": 6048,
-      "delta": 8,
+      "score": 6264,
+      "delta": 12,
       "direction": "steady",
-      "mentions": 39,
+      "mentions": 41,
       "sources": [
+        {
+          "platform": "hackernews",
+          "title": "Biggest dark matter detector spots a single weird particle",
+          "url": "https://www.science.org/content/article/world-s-biggest-dark-matter-detector-spots-single-weird-particle",
+          "score": 208,
+          "author": "randycupertino",
+          "commentCount": 58,
+          "publishedAt": "2026-09-02T13:40:29.000Z"
+        },
         {
           "platform": "arxiv",
           "title": "Fermionic Dark Matter Absorption and the High-Energy Event in LUX-ZEPLIN",
@@ -1031,15 +1040,6 @@
           "score": 200,
           "authors": "Junehyoung Jeon, Volker Bromm, Michael Boylan-Kolchin et al.",
           "arxivCategory": "astro-ph.GA",
-          "publishedAt": "2026-08-31T18:00:00.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Solar Spin-Dependent Dark Matter-Neutron Cross Section Constraints: The Lost Case",
-          "url": "https://arxiv.org/abs/2609.00118",
-          "score": 200,
-          "authors": "Thong T. Q. Nguyen, Carlos Blanco, Tim Linden",
-          "arxivCategory": "hep-ph",
           "publishedAt": "2026-08-31T18:00:00.000Z"
         }
       ],
@@ -1690,7 +1690,7 @@
       "slug": "fusion-propulsion",
       "label": "Fusion Propulsion",
       "score": 1400,
-      "delta": -12,
+      "delta": 0,
       "direction": "steady",
       "mentions": 7,
       "sources": [
@@ -1865,19 +1865,28 @@
     {
       "slug": "starship",
       "label": "Starship & SpaceX",
-      "score": 909,
-      "delta": 0,
+      "score": 907,
+      "delta": -1,
       "direction": "steady",
-      "mentions": 16,
+      "mentions": 14,
       "sources": [
         {
           "platform": "hackernews",
           "title": "Our decision on Cursor following its acquisition by SpaceX",
           "url": "https://openai.com/index/our-decision-on-cursor-following-its-acquisition-by-spacex/",
-          "score": 845,
+          "score": 847,
           "author": "meetpateltech",
           "commentCount": 540,
           "publishedAt": "2026-08-29T01:47:53.000Z"
+        },
+        {
+          "platform": "hackernews",
+          "title": "SpaceX designed an orbital Vera Rubin. Radiation comes next",
+          "url": "https://thenewstack.io/spacex-nvidia-orbital-ai/",
+          "score": 10,
+          "author": "CrankyBear",
+          "commentCount": 2,
+          "publishedAt": "2026-08-31T20:06:22.000Z"
         },
         {
           "platform": "hackernews",
@@ -1890,15 +1899,6 @@
         },
         {
           "platform": "hackernews",
-          "title": "SpaceX designed an orbital Vera Rubin. Radiation comes next",
-          "url": "https://thenewstack.io/spacex-nvidia-orbital-ai/",
-          "score": 9,
-          "author": "CrankyBear",
-          "commentCount": 2,
-          "publishedAt": "2026-08-31T20:06:22.000Z"
-        },
-        {
-          "platform": "hackernews",
           "title": "SpaceX Considered as a Leasing Company",
           "url": "https://www.ft.com/content/a5c1460d-631a-4c4e-8c51-32536de09b80",
           "score": 7,
@@ -1908,21 +1908,21 @@
         },
         {
           "platform": "hackernews",
+          "title": "OpenAI to Cut Off AI Models for SpaceX-Owned Cursor",
+          "url": "https://www.reuters.com/business/media-telecom/openai-end-partnership-with-spacexs-cursor-2026-08-29/",
+          "score": 6,
+          "author": "m463",
+          "commentCount": 2,
+          "publishedAt": "2026-09-01T00:43:31.000Z"
+        },
+        {
+          "platform": "hackernews",
           "title": "Musk's SpaceX to build $100B launch facility in Louisiana",
           "url": "https://www.bbc.com/news/articles/cq5xel4v642o",
           "score": 6,
           "author": "ksec",
           "commentCount": 1,
           "publishedAt": "2026-08-27T15:45:39.000Z"
-        },
-        {
-          "platform": "hackernews",
-          "title": "OpenAI to Cut Off AI Models for SpaceX-Owned Cursor",
-          "url": "https://www.reuters.com/business/media-telecom/openai-end-partnership-with-spacexs-cursor-2026-08-29/",
-          "score": 5,
-          "author": "m463",
-          "commentCount": 2,
-          "publishedAt": "2026-09-01T00:43:31.000Z"
         },
         {
           "platform": "hackernews",
@@ -1941,15 +1941,6 @@
           "author": "benkan",
           "commentCount": 1,
           "publishedAt": "2026-08-31T15:40:40.000Z"
-        },
-        {
-          "platform": "hackernews",
-          "title": "'It seems crazy': SpaceX's orbital data centre bet tests physics and finance",
-          "url": "https://www.ft.com/content/41e60b41-5f13-4d72-8dfc-9bab83f57fb3",
-          "score": 4,
-          "author": "doener",
-          "commentCount": 0,
-          "publishedAt": "2026-08-26T10:28:42.000Z"
         },
         {
           "platform": "hackernews",
@@ -1977,6 +1968,15 @@
           "author": "bookmtn",
           "commentCount": 0,
           "publishedAt": "2026-08-29T10:42:00.000Z"
+        },
+        {
+          "platform": "hackernews",
+          "title": "SpaceX plans a $100B spaceport built for launches a year",
+          "url": "https://thenextweb.com/news/spacex-louisiana-spaceport-100bn-europe-launch-cadence",
+          "score": 2,
+          "author": "ksec",
+          "commentCount": 0,
+          "publishedAt": "2026-08-27T05:46:20.000Z"
         }
       ],
       "relatedConceptSlugs": [
@@ -1998,10 +1998,10 @@
     {
       "slug": "starlink",
       "label": "Starlink & Satellite Internet",
-      "score": 805,
-      "delta": 31,
+      "score": 810,
+      "delta": 32,
       "direction": "up",
-      "mentions": 5,
+      "mentions": 7,
       "sources": [
         {
           "platform": "arxiv",
@@ -2047,6 +2047,24 @@
           "author": "grinich",
           "commentCount": 0,
           "publishedAt": "2026-08-31T21:12:09.000Z"
+        },
+        {
+          "platform": "hackernews",
+          "title": "Is Russia's rival to Starlink failing?",
+          "url": "https://arstechnica.com/space/2026/09/rassvet-russias-rival-to-starlink-is-getting-off-to-a-slow-start/",
+          "score": 3,
+          "author": "pinewurst",
+          "commentCount": 0,
+          "publishedAt": "2026-09-02T15:01:32.000Z"
+        },
+        {
+          "platform": "hackernews",
+          "title": "All 16 New Russian Starlink-Rival Satellites Short of Target Orbit",
+          "url": "https://www.businessinsider.com/all-16-new-russian-starlink-rival-satellites-short-target-orbit-2026-9",
+          "score": 2,
+          "author": "pavel_lishin",
+          "commentCount": 0,
+          "publishedAt": "2026-09-02T15:10:45.000Z"
         }
       ],
       "relatedConceptSlugs": [
@@ -2065,71 +2083,10 @@
       }
     },
     {
-      "slug": "asteroid-mining",
-      "label": "Asteroid Mining",
-      "score": 800,
-      "delta": 0,
-      "direction": "steady",
-      "mentions": 4,
-      "sources": [
-        {
-          "platform": "arxiv",
-          "title": "Diffractive Sail H-Reversal Trajectory: Theoretical Feasibility, Design Strategies, and Applications",
-          "url": "https://arxiv.org/abs/2608.04596",
-          "score": 200,
-          "authors": "Jinkai Zhang, Shuyue Fu, Di Wu et al.",
-          "arxivCategory": "astro-ph.EP",
-          "publishedAt": "2026-08-05T09:03:19.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Rotation, spectral type, and albedo of the potentially hazardous asteroid (153814) 2001 WN$_{\\text 5}$ Prior to the 2028 June close approach",
-          "url": "https://arxiv.org/abs/2608.02577",
-          "score": 200,
-          "authors": "Jin Beniyama, Alexey V. Sergeyev, Konstantinos Odysseas Xenos et al.",
-          "arxivCategory": "astro-ph.EP",
-          "publishedAt": "2026-08-03T17:51:51.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Probing the Taxonomic Diversity of the Small Near-Earth Object Population",
-          "url": "https://arxiv.org/abs/2608.28779",
-          "score": 200,
-          "authors": "Andy J. López-Oquendo, David E. Trilling, Michael Mommert et al.",
-          "arxivCategory": "astro-ph.EP",
-          "publishedAt": "2026-08-28T18:35:55.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Asteroid Disruption and Deflection Simulations for Multi-Modal Planetary Defense",
-          "url": "https://arxiv.org/abs/2608.06494",
-          "score": 200,
-          "authors": "Alexander N. Cohen, Philip Lubin, Darrel Robertson et al.",
-          "arxivCategory": "astro-ph.EP",
-          "publishedAt": "2026-08-06T18:34:04.000Z"
-        }
-      ],
-      "relatedConceptSlugs": [
-        "project-rama",
-        "gravity-poppers"
-      ],
-      "resonance": 43,
-      "quadrant": "dead-zone",
-      "resonanceSignals": {
-        "conceptDepth": 0.6131471927654584,
-        "editorial": 1,
-        "connections": 0,
-        "convergence": 0.3,
-        "deepTopic": 0,
-        "pantheon": 0.08,
-        "graveyard": 0
-      }
-    },
-    {
       "slug": "mars",
       "label": "Mars Exploration",
       "score": 619,
-      "delta": 3,
+      "delta": 0,
       "direction": "steady",
       "mentions": 4,
       "sources": [
@@ -2184,6 +2141,58 @@
         "connections": 0,
         "convergence": 0.075,
         "deepTopic": 0.8,
+        "pantheon": 0.08,
+        "graveyard": 0
+      }
+    },
+    {
+      "slug": "asteroid-mining",
+      "label": "Asteroid Mining",
+      "score": 600,
+      "delta": -25,
+      "direction": "down",
+      "mentions": 3,
+      "sources": [
+        {
+          "platform": "arxiv",
+          "title": "Diffractive Sail H-Reversal Trajectory: Theoretical Feasibility, Design Strategies, and Applications",
+          "url": "https://arxiv.org/abs/2608.04596",
+          "score": 200,
+          "authors": "Jinkai Zhang, Shuyue Fu, Di Wu et al.",
+          "arxivCategory": "astro-ph.EP",
+          "publishedAt": "2026-08-05T09:03:19.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Probing the Taxonomic Diversity of the Small Near-Earth Object Population",
+          "url": "https://arxiv.org/abs/2608.28779",
+          "score": 200,
+          "authors": "Andy J. López-Oquendo, David E. Trilling, Michael Mommert et al.",
+          "arxivCategory": "astro-ph.EP",
+          "publishedAt": "2026-08-28T18:35:55.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Asteroid Disruption and Deflection Simulations for Multi-Modal Planetary Defense",
+          "url": "https://arxiv.org/abs/2608.06494",
+          "score": 200,
+          "authors": "Alexander N. Cohen, Philip Lubin, Darrel Robertson et al.",
+          "arxivCategory": "astro-ph.EP",
+          "publishedAt": "2026-08-06T18:34:04.000Z"
+        }
+      ],
+      "relatedConceptSlugs": [
+        "project-rama",
+        "gravity-poppers"
+      ],
+      "resonance": 43,
+      "quadrant": "dead-zone",
+      "resonanceSignals": {
+        "conceptDepth": 0.6131471927654584,
+        "editorial": 1,
+        "connections": 0,
+        "convergence": 0.3,
+        "deepTopic": 0,
         "pantheon": 0.08,
         "graveyard": 0
       }
@@ -2406,8 +2415,8 @@
       "slug": "interstellar-travel",
       "label": "Interstellar Travel",
       "score": 1,
-      "delta": 200,
-      "direction": "up",
+      "delta": 0,
+      "direction": "steady",
       "mentions": 1,
       "sources": [
         {
