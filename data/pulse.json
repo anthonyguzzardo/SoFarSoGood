@@ -1,13 +1,13 @@
 {
-  "generatedAt": "2026-09-04T10:16:23.813Z",
+  "generatedAt": "2026-09-04T20:26:16.664Z",
   "topics": [
     {
       "slug": "black-holes",
       "label": "Black Holes",
-      "score": 9007,
+      "score": 9013,
       "delta": 2,
       "direction": "steady",
-      "mentions": 47,
+      "mentions": 48,
       "sources": [
         {
           "platform": "arxiv",
@@ -269,16 +269,16 @@
     {
       "slug": "space-telescopes",
       "label": "Space Telescopes",
-      "score": 8370,
-      "delta": 0,
+      "score": 8302,
+      "delta": -1,
       "direction": "steady",
-      "mentions": 46,
+      "mentions": 44,
       "sources": [
         {
           "platform": "hackernews",
           "title": "Nancy Grace Roman Space Telescope",
           "url": "https://science.nasa.gov/mission/roman-space-telescope/",
-          "score": 294,
+          "score": 295,
           "author": "JumpCrisscross",
           "commentCount": 102,
           "publishedAt": "2026-08-29T15:48:02.000Z"
@@ -402,10 +402,10 @@
     {
       "slug": "quantum-computing",
       "label": "Quantum Computing",
-      "score": 7822,
+      "score": 7816,
       "delta": -5,
       "direction": "steady",
-      "mentions": 44,
+      "mentions": 43,
       "sources": [
         {
           "platform": "arxiv",
@@ -534,8 +534,8 @@
     {
       "slug": "particle-physics",
       "label": "Particle Physics",
-      "score": 6845,
-      "delta": 3,
+      "score": 6880,
+      "delta": 4,
       "direction": "steady",
       "mentions": 41,
       "sources": [
@@ -797,8 +797,8 @@
     {
       "slug": "condensed-matter",
       "label": "Condensed Matter",
-      "score": 6333,
-      "delta": 4,
+      "score": 6334,
+      "delta": 7,
       "direction": "steady",
       "mentions": 33,
       "sources": [
@@ -808,7 +808,7 @@
           "url": "https://gitlab.com/AuroraOSS/AuroraStore/-/work_items/1566",
           "score": 560,
           "author": "erikvanoosten",
-          "commentCount": 264,
+          "commentCount": 270,
           "publishedAt": "2026-09-01T15:55:53.000Z"
         },
         {
@@ -817,7 +817,7 @@
           "url": "https://bsky.app/profile/grapheneos.org/post/3mua32q4ds22e",
           "score": 328,
           "author": "400thecat",
-          "commentCount": 192,
+          "commentCount": 195,
           "publishedAt": "2026-08-29T15:26:28.000Z"
         },
         {
@@ -929,18 +929,18 @@
     {
       "slug": "dark-matter",
       "label": "Dark Matter & Dark Energy",
-      "score": 6209,
-      "delta": -2,
+      "score": 6213,
+      "delta": -3,
       "direction": "steady",
-      "mentions": 43,
+      "mentions": 44,
       "sources": [
         {
           "platform": "hackernews",
           "title": "Biggest dark matter detector spots a single weird particle",
           "url": "https://www.science.org/content/article/world-s-biggest-dark-matter-detector-spots-single-weird-particle",
-          "score": 342,
+          "score": 344,
           "author": "randycupertino",
-          "commentCount": 137,
+          "commentCount": 142,
           "publishedAt": "2026-09-02T13:40:29.000Z"
         },
         {
@@ -1786,10 +1786,10 @@
     {
       "slug": "artemis",
       "label": "Artemis & Lunar Return",
-      "score": 1400,
-      "delta": 0,
+      "score": 1200,
+      "delta": -14,
       "direction": "steady",
-      "mentions": 7,
+      "mentions": 6,
       "sources": [
         {
           "platform": "arxiv",
@@ -1844,15 +1844,6 @@
           "authors": "Jun Maruyama, Simone Servadio",
           "arxivCategory": "astro-ph.EP",
           "publishedAt": "2026-08-06T20:14:29.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "A Knowledge-Centric Communication For Autonomous Cislunar Networks",
-          "url": "https://arxiv.org/abs/2608.04817",
-          "score": 200,
-          "authors": "Afan Ali, Daniel Benevides da Costa, Ali Arshad Nasir",
-          "arxivCategory": "eess.SP",
-          "publishedAt": "2026-08-05T13:22:26.000Z"
         }
       ],
       "relatedConceptSlugs": [
@@ -2040,18 +2031,18 @@
     {
       "slug": "starship",
       "label": "Starship & SpaceX",
-      "score": 901,
-      "delta": -1,
+      "score": 896,
+      "delta": 0,
       "direction": "steady",
-      "mentions": 14,
+      "mentions": 13,
       "sources": [
         {
           "platform": "hackernews",
           "title": "Our decision on Cursor following its acquisition by SpaceX",
           "url": "https://openai.com/index/our-decision-on-cursor-following-its-acquisition-by-spacex/",
-          "score": 849,
+          "score": 851,
           "author": "meetpateltech",
-          "commentCount": 542,
+          "commentCount": 544,
           "publishedAt": "2026-08-29T01:47:53.000Z"
         },
         {
@@ -2062,15 +2053,6 @@
           "author": "CrankyBear",
           "commentCount": 2,
           "publishedAt": "2026-08-31T20:06:22.000Z"
-        },
-        {
-          "platform": "hackernews",
-          "title": "SpaceX Considered as a Leasing Company",
-          "url": "https://www.ft.com/content/a5c1460d-631a-4c4e-8c51-32536de09b80",
-          "score": 7,
-          "author": "root-parent",
-          "commentCount": 2,
-          "publishedAt": "2026-08-28T15:39:56.000Z"
         },
         {
           "platform": "hackernews",
@@ -2145,13 +2127,21 @@
           "publishedAt": "2026-08-29T10:42:00.000Z"
         },
         {
-          "platform": "hackernews",
-          "title": "Starship is coming home SpaceX loads floating spacecraft onto ship in the",
-          "url": "https://www.space.com/space-exploration/launches-spacecraft/starship-is-coming-home-spacex-loads-floating-spacecraft-onto-huge-ship-in-the-indian-ocean-photos",
+          "platform": "youtube",
+          "title": "The Technology That Makes SpaceX's Raptor 3 Possible [video]",
+          "url": "https://www.youtube.com/watch?v=_meDQry3sf8",
           "score": 1,
-          "author": "bookmtn",
+          "thumbnail": "https://img.youtube.com/vi/_meDQry3sf8/mqdefault.jpg",
+          "publishedAt": "2026-09-04T13:52:17.000Z"
+        },
+        {
+          "platform": "hackernews",
+          "title": "The Technology That Makes SpaceX's Raptor 3 Possible [video]",
+          "url": "https://www.youtube.com/watch?v=_meDQry3sf8",
+          "score": 1,
+          "author": "o4c",
           "commentCount": 0,
-          "publishedAt": "2026-08-28T16:46:27.000Z"
+          "publishedAt": "2026-09-04T13:52:17.000Z"
         }
       ],
       "relatedConceptSlugs": [
@@ -2288,10 +2278,10 @@
     {
       "slug": "warp-drives",
       "label": "Warp Drives & Exotic Physics",
-      "score": 400,
+      "score": 401,
       "delta": 0,
       "direction": "steady",
-      "mentions": 2,
+      "mentions": 3,
       "sources": [
         {
           "platform": "arxiv",
@@ -2310,6 +2300,15 @@
           "authors": "Lucas Timotheo Sanches, Max Morris, Steven Robert Brandt",
           "arxivCategory": "gr-qc",
           "publishedAt": "2026-08-08T16:16:16.000Z"
+        },
+        {
+          "platform": "hackernews",
+          "title": "Word Warp Drive – An Interactive LLM Explainer, Star Trek TNG Style",
+          "url": "https://marklevy.info/blog/word-warp-drive/",
+          "score": 1,
+          "author": "marktl",
+          "commentCount": 0,
+          "publishedAt": "2026-09-04T17:42:46.000Z"
         }
       ],
       "relatedConceptSlugs": [
@@ -2323,48 +2322,6 @@
         "editorial": 1,
         "connections": 0.3333333333333333,
         "convergence": 0.15,
-        "deepTopic": 0,
-        "pantheon": 0.92,
-        "graveyard": 0
-      }
-    },
-    {
-      "slug": "dyson-spheres",
-      "label": "Dyson Spheres",
-      "score": 219,
-      "delta": 0,
-      "direction": "steady",
-      "mentions": 2,
-      "sources": [
-        {
-          "platform": "arxiv",
-          "title": "The Ĝ Infrared Search for Extraterrestrial Civilizations with Large Energy Supplies. V. When Galaxies Glow with Industry",
-          "url": "https://arxiv.org/abs/2608.12458",
-          "score": 200,
-          "authors": "Olivia Curtis, Aidan J. Rowland, Jason T. Wright et al.",
-          "arxivCategory": "astro-ph.GA",
-          "publishedAt": "2026-08-12T18:00:00.000Z"
-        },
-        {
-          "platform": "hackernews",
-          "title": "Webb Telescope Rules Out Two New Dyson Sphere Candidates",
-          "url": "https://www.universetoday.com/articles/nasas-webb-telescope-rules-out-two-new-dyson-sphere-candidates",
-          "score": 19,
-          "author": "root-parent",
-          "commentCount": 6,
-          "publishedAt": "2026-08-28T15:10:09.000Z"
-        }
-      ],
-      "relatedConceptSlugs": [
-        "sps-alpha"
-      ],
-      "resonance": 25,
-      "quadrant": "dead-zone",
-      "resonanceSignals": {
-        "conceptDepth": 0.22629438553091683,
-        "editorial": 0.7,
-        "connections": 0,
-        "convergence": 0,
         "deepTopic": 0,
         "pantheon": 0.92,
         "graveyard": 0
@@ -2479,6 +2436,39 @@
         "connections": 0,
         "convergence": 0.575,
         "deepTopic": 1,
+        "pantheon": 0.92,
+        "graveyard": 0
+      }
+    },
+    {
+      "slug": "dyson-spheres",
+      "label": "Dyson Spheres",
+      "score": 200,
+      "delta": -9,
+      "direction": "steady",
+      "mentions": 1,
+      "sources": [
+        {
+          "platform": "arxiv",
+          "title": "The Ĝ Infrared Search for Extraterrestrial Civilizations with Large Energy Supplies. V. When Galaxies Glow with Industry",
+          "url": "https://arxiv.org/abs/2608.12458",
+          "score": 200,
+          "authors": "Olivia Curtis, Aidan J. Rowland, Jason T. Wright et al.",
+          "arxivCategory": "astro-ph.GA",
+          "publishedAt": "2026-08-12T18:00:00.000Z"
+        }
+      ],
+      "relatedConceptSlugs": [
+        "sps-alpha"
+      ],
+      "resonance": 25,
+      "quadrant": "dead-zone",
+      "resonanceSignals": {
+        "conceptDepth": 0.22629438553091683,
+        "editorial": 0.7,
+        "connections": 0,
+        "convergence": 0,
+        "deepTopic": 0,
         "pantheon": 0.92,
         "graveyard": 0
       }
