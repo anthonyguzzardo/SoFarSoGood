@@ -1,13 +1,13 @@
 {
-  "generatedAt": "2026-09-03T10:28:21.629Z",
+  "generatedAt": "2026-09-03T20:39:16.824Z",
   "topics": [
     {
       "slug": "black-holes",
       "label": "Black Holes",
-      "score": 8813,
+      "score": 8812,
       "delta": -2,
       "direction": "steady",
-      "mentions": 48,
+      "mentions": 47,
       "sources": [
         {
           "platform": "arxiv",
@@ -269,10 +269,10 @@
     {
       "slug": "space-telescopes",
       "label": "Space Telescopes",
-      "score": 8369,
+      "score": 8370,
       "delta": -5,
       "direction": "steady",
-      "mentions": 45,
+      "mentions": 46,
       "sources": [
         {
           "platform": "hackernews",
@@ -402,7 +402,7 @@
     {
       "slug": "quantum-computing",
       "label": "Quantum Computing",
-      "score": 8222,
+      "score": 8223,
       "delta": -7,
       "direction": "steady",
       "mentions": 46,
@@ -534,10 +534,10 @@
     {
       "slug": "particle-physics",
       "label": "Particle Physics",
-      "score": 6631,
+      "score": 6638,
       "delta": 0,
       "direction": "steady",
-      "mentions": 36,
+      "mentions": 38,
       "sources": [
         {
           "platform": "arxiv",
@@ -797,8 +797,8 @@
     {
       "slug": "dark-matter",
       "label": "Dark Matter & Dark Energy",
-      "score": 6361,
-      "delta": 5,
+      "score": 6399,
+      "delta": 2,
       "direction": "steady",
       "mentions": 43,
       "sources": [
@@ -806,9 +806,9 @@
           "platform": "hackernews",
           "title": "Biggest dark matter detector spots a single weird particle",
           "url": "https://www.science.org/content/article/world-s-biggest-dark-matter-detector-spots-single-weird-particle",
-          "score": 299,
+          "score": 337,
           "author": "randycupertino",
-          "commentCount": 105,
+          "commentCount": 131,
           "publishedAt": "2026-09-02T13:40:29.000Z"
         },
         {
@@ -930,25 +930,25 @@
     {
       "slug": "condensed-matter",
       "label": "Condensed Matter",
-      "score": 6113,
-      "delta": -5,
+      "score": 5931,
+      "delta": -7,
       "direction": "steady",
-      "mentions": 31,
+      "mentions": 30,
       "sources": [
         {
           "platform": "hackernews",
           "title": "Play Store blocks AuroraStore, hurting GrapheneOS users",
           "url": "https://gitlab.com/AuroraOSS/AuroraStore/-/work_items/1566",
-          "score": 553,
+          "score": 559,
           "author": "erikvanoosten",
-          "commentCount": 253,
+          "commentCount": 261,
           "publishedAt": "2026-09-01T15:55:53.000Z"
         },
         {
           "platform": "hackernews",
           "title": "GrapheneOS project: pixel 11 no longer supports hardware memory tagging (MTE)",
           "url": "https://bsky.app/profile/grapheneos.org/post/3mua32q4ds22e",
-          "score": 327,
+          "score": 328,
           "author": "400thecat",
           "commentCount": 192,
           "publishedAt": "2026-08-29T15:26:28.000Z"
@@ -1865,8 +1865,8 @@
     {
       "slug": "starlink",
       "label": "Starlink & Satellite Internet",
-      "score": 1012,
-      "delta": 26,
+      "score": 1013,
+      "delta": 25,
       "direction": "up",
       "mentions": 8,
       "sources": [
@@ -1917,21 +1917,21 @@
         },
         {
           "platform": "hackernews",
+          "title": "Is Russia's rival to Starlink failing?",
+          "url": "https://arstechnica.com/space/2026/09/rassvet-russias-rival-to-starlink-is-getting-off-to-a-slow-start/",
+          "score": 5,
+          "author": "pinewurst",
+          "commentCount": 0,
+          "publishedAt": "2026-09-02T15:01:32.000Z"
+        },
+        {
+          "platform": "hackernews",
           "title": "Is Starlink a secret radar constellation?",
           "url": "https://how-radar-sees.pages.dev/",
           "score": 5,
           "author": "grinich",
           "commentCount": 0,
           "publishedAt": "2026-08-31T21:12:09.000Z"
-        },
-        {
-          "platform": "hackernews",
-          "title": "Is Russia's rival to Starlink failing?",
-          "url": "https://arstechnica.com/space/2026/09/rassvet-russias-rival-to-starlink-is-getting-off-to-a-slow-start/",
-          "score": 4,
-          "author": "pinewurst",
-          "commentCount": 0,
-          "publishedAt": "2026-09-02T15:01:32.000Z"
         },
         {
           "platform": "hackernews",
@@ -1962,7 +1962,7 @@
       "slug": "asteroid-mining",
       "label": "Asteroid Mining",
       "score": 1000,
-      "delta": 25,
+      "delta": 67,
       "direction": "up",
       "mentions": 5,
       "sources": [
@@ -2031,16 +2031,16 @@
     {
       "slug": "starship",
       "label": "Starship & SpaceX",
-      "score": 906,
-      "delta": 0,
+      "score": 897,
+      "delta": -1,
       "direction": "steady",
-      "mentions": 14,
+      "mentions": 13,
       "sources": [
         {
           "platform": "hackernews",
           "title": "Our decision on Cursor following its acquisition by SpaceX",
           "url": "https://openai.com/index/our-decision-on-cursor-following-its-acquisition-by-spacex/",
-          "score": 847,
+          "score": 848,
           "author": "meetpateltech",
           "commentCount": 541,
           "publishedAt": "2026-08-29T01:47:53.000Z"
@@ -2056,15 +2056,6 @@
         },
         {
           "platform": "hackernews",
-          "title": "Russian-speaking cybercriminals used SpaceX's Cursor AI to hack seven companies",
-          "url": "https://www.reuters.com/world/russian-speaking-cybercriminals-used-spacexs-cursor-ai-tool-hack-seven-companies-2026-08-27/",
-          "score": 10,
-          "author": "tartoran",
-          "commentCount": 0,
-          "publishedAt": "2026-08-27T15:01:52.000Z"
-        },
-        {
-          "platform": "hackernews",
           "title": "SpaceX Considered as a Leasing Company",
           "url": "https://www.ft.com/content/a5c1460d-631a-4c4e-8c51-32536de09b80",
           "score": 7,
@@ -2074,21 +2065,21 @@
         },
         {
           "platform": "hackernews",
+          "title": "Ask HN: Is SpaceXAI taking Claude down too?",
+          "url": "https://news.ycombinator.com/item?id=49549795",
+          "score": 6,
+          "author": "redm",
+          "commentCount": 2,
+          "publishedAt": "2026-09-03T13:38:58.000Z"
+        },
+        {
+          "platform": "hackernews",
           "title": "OpenAI to Cut Off AI Models for SpaceX-Owned Cursor",
           "url": "https://www.reuters.com/business/media-telecom/openai-end-partnership-with-spacexs-cursor-2026-08-29/",
           "score": 6,
           "author": "m463",
           "commentCount": 2,
           "publishedAt": "2026-09-01T00:43:31.000Z"
-        },
-        {
-          "platform": "hackernews",
-          "title": "Musk's SpaceX to build $100B launch facility in Louisiana",
-          "url": "https://www.bbc.com/news/articles/cq5xel4v642o",
-          "score": 6,
-          "author": "ksec",
-          "commentCount": 1,
-          "publishedAt": "2026-08-27T15:45:39.000Z"
         },
         {
           "platform": "hackernews",
@@ -2143,6 +2134,15 @@
           "author": "bookmtn",
           "commentCount": 0,
           "publishedAt": "2026-08-28T16:46:27.000Z"
+        },
+        {
+          "platform": "hackernews",
+          "title": "NASA delays Crew-13 launch after leak found on SpaceX Dragon",
+          "url": "https://www.sciencedaily.com/releases/2026/09/260901010705.htm",
+          "score": 1,
+          "author": "bookmtn",
+          "commentCount": 0,
+          "publishedAt": "2026-09-02T22:22:26.000Z"
         }
       ],
       "relatedConceptSlugs": [
