@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-05T09:45:19.214Z",
+  "generatedAt": "2026-09-05T20:03:54.736Z",
   "topics": [
     {
       "slug": "black-holes",
@@ -269,20 +269,11 @@
     {
       "slug": "space-telescopes",
       "label": "Space Telescopes",
-      "score": 8302,
-      "delta": -1,
+      "score": 8003,
+      "delta": -4,
       "direction": "steady",
-      "mentions": 44,
+      "mentions": 42,
       "sources": [
-        {
-          "platform": "hackernews",
-          "title": "Nancy Grace Roman Space Telescope",
-          "url": "https://science.nasa.gov/mission/roman-space-telescope/",
-          "score": 295,
-          "author": "JumpCrisscross",
-          "commentCount": 102,
-          "publishedAt": "2026-08-29T15:48:02.000Z"
-        },
         {
           "platform": "arxiv",
           "title": "Detection of hydrocarbons in Titan using high-resolution cross-correlation spectroscopy",
@@ -381,6 +372,15 @@
           "authors": "V. Almendros-Abad, M. G. Guarcello, K. Muzic et al.",
           "arxivCategory": "astro-ph.GA",
           "publishedAt": "2026-09-01T21:25:26.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "JWST Reveals a Candidate Supermassive Black Hole Binary at z=4.3 in the Brightest Sub-millimeter Galaxy in COSMOS-Web",
+          "url": "https://arxiv.org/abs/2609.01711",
+          "score": 200,
+          "authors": "Jed McKinney, Ansh Gupta, Julian B. Munoz et al.",
+          "arxivCategory": "astro-ph.GA",
+          "publishedAt": "2026-09-01T18:00:01.000Z"
         }
       ],
       "relatedConceptSlugs": [
@@ -402,10 +402,10 @@
     {
       "slug": "quantum-computing",
       "label": "Quantum Computing",
-      "score": 7816,
+      "score": 7814,
       "delta": 0,
       "direction": "steady",
-      "mentions": 43,
+      "mentions": 42,
       "sources": [
         {
           "platform": "arxiv",
@@ -534,8 +534,8 @@
     {
       "slug": "particle-physics",
       "label": "Particle Physics",
-      "score": 6882,
-      "delta": 1,
+      "score": 6883,
+      "delta": 0,
       "direction": "steady",
       "mentions": 41,
       "sources": [
@@ -795,141 +795,9 @@
       }
     },
     {
-      "slug": "condensed-matter",
-      "label": "Condensed Matter",
-      "score": 6335,
-      "delta": 0,
-      "direction": "steady",
-      "mentions": 33,
-      "sources": [
-        {
-          "platform": "hackernews",
-          "title": "Play Store blocks AuroraStore, hurting GrapheneOS users",
-          "url": "https://gitlab.com/AuroraOSS/AuroraStore/-/work_items/1566",
-          "score": 561,
-          "author": "erikvanoosten",
-          "commentCount": 269,
-          "publishedAt": "2026-09-01T15:55:53.000Z"
-        },
-        {
-          "platform": "hackernews",
-          "title": "GrapheneOS project: pixel 11 no longer supports hardware memory tagging (MTE)",
-          "url": "https://bsky.app/profile/grapheneos.org/post/3mua32q4ds22e",
-          "score": 328,
-          "author": "400thecat",
-          "commentCount": 197,
-          "publishedAt": "2026-08-29T15:26:28.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Direct Validation of Superconductivity through Contact-Free Detection of Persistent Supercurrents Using Room-Temperature Quantum Magnetometry",
-          "url": "https://arxiv.org/abs/2609.02995",
-          "score": 200,
-          "authors": "Xinyi Zeng, Chengzhen Qin, Bowen Fan et al.",
-          "arxivCategory": "cond-mat.supr-con",
-          "publishedAt": "2026-09-02T16:34:48.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Microwave-Induced Optomagnetism in High-Temperature Superconductors",
-          "url": "https://arxiv.org/abs/2608.31127",
-          "score": 200,
-          "authors": "Anoop Dhillon, Amir Borji, Hamed Majedi",
-          "arxivCategory": "cond-mat.supr-con",
-          "publishedAt": "2026-08-31T17:40:24.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Superconducting Hydride Mg2RhH6 Experimentally Achieved at Lower Pressure",
-          "url": "https://arxiv.org/abs/2608.15745",
-          "score": 200,
-          "authors": "Linjing Wu, Zelong Wang, Guiqi Liu et al.",
-          "arxivCategory": "cond-mat.supr-con",
-          "publishedAt": "2026-08-16T13:51:02.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Josephson network as a~model for high-temperature superconductor and beyond: Macroscopic quantum coherence probed by microwave absorption",
-          "url": "https://arxiv.org/abs/2608.15441",
-          "score": 200,
-          "authors": "Adam Rycerz",
-          "arxivCategory": "cond-mat.supr-con",
-          "publishedAt": "2026-08-15T22:52:11.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Thickness-Driven Superconductor-Insulator Transition in (Cu,C)-1234 and Proximity-Induced Superconductivity Recovery in (Cu,C)-1234/YBCO Heterostructure",
-          "url": "https://arxiv.org/abs/2608.11707",
-          "score": 200,
-          "authors": "Zhihang Xu, Detian Yang, Ping Zhu et al.",
-          "arxivCategory": "cond-mat.supr-con",
-          "publishedAt": "2026-08-12T06:37:06.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Some features of high-temperature superconductivity on flat bands",
-          "url": "https://arxiv.org/abs/2608.10231",
-          "score": 200,
-          "authors": "V. R. Shaginyan, A. Z. Msezane, S. A. Artamonov",
-          "arxivCategory": "cond-mat.str-el",
-          "publishedAt": "2026-08-10T21:08:33.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Real-space Floquet topology written by the orbital angular momentum of light",
-          "url": "https://arxiv.org/abs/2609.03752",
-          "score": 200,
-          "authors": "Mohammad Shafiei, Milorad V. Milošević",
-          "arxivCategory": "cond-mat.mes-hall",
-          "publishedAt": "2026-09-03T12:21:12.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Topological Boundary States and the Edge Chain in Semi-Infinite Two-Dimensional Insulators",
-          "url": "https://arxiv.org/abs/2609.03173",
-          "score": 200,
-          "authors": "Ilya Iakoub, Nicolas Levasseur, Richard MacKenzie",
-          "arxivCategory": "cond-mat.mes-hall",
-          "publishedAt": "2026-09-02T21:26:10.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Topological Lithography via External Field: Creating Topological States Anywhere Beyond the Edge",
-          "url": "https://arxiv.org/abs/2609.02670",
-          "score": 200,
-          "authors": "Haoran Nie, Chaoran Jiang, Xiangying Shen et al.",
-          "arxivCategory": "cond-mat.other",
-          "publishedAt": "2026-09-02T14:45:36.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "EuIn2Sb2: epitaxially stabilized axion insulator candidate with strong spin-orbit coupling",
-          "url": "https://arxiv.org/abs/2609.02114",
-          "score": 200,
-          "authors": "Hsiang Lee, Shinichi Nishihaya, Markus Kriener et al.",
-          "arxivCategory": "cond-mat.mtrl-sci",
-          "publishedAt": "2026-09-02T05:08:18.000Z"
-        }
-      ],
-      "relatedConceptSlugs": [
-        "extreme-metamaterial-solar-sails"
-      ],
-      "resonance": 50,
-      "quadrant": "real-deal",
-      "resonanceSignals": {
-        "conceptDepth": 0.6131471927654584,
-        "editorial": 1,
-        "connections": 0.3333333333333333,
-        "convergence": 0.15,
-        "deepTopic": 0,
-        "pantheon": 0.92,
-        "graveyard": 0
-      }
-    },
-    {
       "slug": "dark-matter",
       "label": "Dark Matter & Dark Energy",
-      "score": 6216,
+      "score": 6217,
       "delta": 0,
       "direction": "steady",
       "mentions": 45,
@@ -1060,12 +928,144 @@
       }
     },
     {
+      "slug": "condensed-matter",
+      "label": "Condensed Matter",
+      "score": 6008,
+      "delta": -5,
+      "direction": "steady",
+      "mentions": 32,
+      "sources": [
+        {
+          "platform": "hackernews",
+          "title": "Play Store blocks AuroraStore, hurting GrapheneOS users",
+          "url": "https://gitlab.com/AuroraOSS/AuroraStore/-/work_items/1566",
+          "score": 562,
+          "author": "erikvanoosten",
+          "commentCount": 269,
+          "publishedAt": "2026-09-01T15:55:53.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Direct Validation of Superconductivity through Contact-Free Detection of Persistent Supercurrents Using Room-Temperature Quantum Magnetometry",
+          "url": "https://arxiv.org/abs/2609.02995",
+          "score": 200,
+          "authors": "Xinyi Zeng, Chengzhen Qin, Bowen Fan et al.",
+          "arxivCategory": "cond-mat.supr-con",
+          "publishedAt": "2026-09-02T16:34:48.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Microwave-Induced Optomagnetism in High-Temperature Superconductors",
+          "url": "https://arxiv.org/abs/2608.31127",
+          "score": 200,
+          "authors": "Anoop Dhillon, Amir Borji, Hamed Majedi",
+          "arxivCategory": "cond-mat.supr-con",
+          "publishedAt": "2026-08-31T17:40:24.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Superconducting Hydride Mg2RhH6 Experimentally Achieved at Lower Pressure",
+          "url": "https://arxiv.org/abs/2608.15745",
+          "score": 200,
+          "authors": "Linjing Wu, Zelong Wang, Guiqi Liu et al.",
+          "arxivCategory": "cond-mat.supr-con",
+          "publishedAt": "2026-08-16T13:51:02.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Josephson network as a~model for high-temperature superconductor and beyond: Macroscopic quantum coherence probed by microwave absorption",
+          "url": "https://arxiv.org/abs/2608.15441",
+          "score": 200,
+          "authors": "Adam Rycerz",
+          "arxivCategory": "cond-mat.supr-con",
+          "publishedAt": "2026-08-15T22:52:11.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Thickness-Driven Superconductor-Insulator Transition in (Cu,C)-1234 and Proximity-Induced Superconductivity Recovery in (Cu,C)-1234/YBCO Heterostructure",
+          "url": "https://arxiv.org/abs/2608.11707",
+          "score": 200,
+          "authors": "Zhihang Xu, Detian Yang, Ping Zhu et al.",
+          "arxivCategory": "cond-mat.supr-con",
+          "publishedAt": "2026-08-12T06:37:06.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Some features of high-temperature superconductivity on flat bands",
+          "url": "https://arxiv.org/abs/2608.10231",
+          "score": 200,
+          "authors": "V. R. Shaginyan, A. Z. Msezane, S. A. Artamonov",
+          "arxivCategory": "cond-mat.str-el",
+          "publishedAt": "2026-08-10T21:08:33.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Real-space Floquet topology written by the orbital angular momentum of light",
+          "url": "https://arxiv.org/abs/2609.03752",
+          "score": 200,
+          "authors": "Mohammad Shafiei, Milorad V. Milošević",
+          "arxivCategory": "cond-mat.mes-hall",
+          "publishedAt": "2026-09-03T12:21:12.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Topological Boundary States and the Edge Chain in Semi-Infinite Two-Dimensional Insulators",
+          "url": "https://arxiv.org/abs/2609.03173",
+          "score": 200,
+          "authors": "Ilya Iakoub, Nicolas Levasseur, Richard MacKenzie",
+          "arxivCategory": "cond-mat.mes-hall",
+          "publishedAt": "2026-09-02T21:26:10.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Topological Lithography via External Field: Creating Topological States Anywhere Beyond the Edge",
+          "url": "https://arxiv.org/abs/2609.02670",
+          "score": 200,
+          "authors": "Haoran Nie, Chaoran Jiang, Xiangying Shen et al.",
+          "arxivCategory": "cond-mat.other",
+          "publishedAt": "2026-09-02T14:45:36.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "EuIn2Sb2: epitaxially stabilized axion insulator candidate with strong spin-orbit coupling",
+          "url": "https://arxiv.org/abs/2609.02114",
+          "score": 200,
+          "authors": "Hsiang Lee, Shinichi Nishihaya, Markus Kriener et al.",
+          "arxivCategory": "cond-mat.mtrl-sci",
+          "publishedAt": "2026-09-02T05:08:18.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Inversion-symmetric topological insulators in cut-and-project binary chains",
+          "url": "https://arxiv.org/abs/2609.01312",
+          "score": 200,
+          "authors": "Zhipeng Zeng, Yuge Chen, Jean-Noël Fuchs et al.",
+          "arxivCategory": "cond-mat.other",
+          "publishedAt": "2026-09-01T14:36:16.000Z"
+        }
+      ],
+      "relatedConceptSlugs": [
+        "extreme-metamaterial-solar-sails"
+      ],
+      "resonance": 50,
+      "quadrant": "real-deal",
+      "resonanceSignals": {
+        "conceptDepth": 0.6131471927654584,
+        "editorial": 1,
+        "connections": 0.3333333333333333,
+        "convergence": 0.15,
+        "deepTopic": 0,
+        "pantheon": 0.92,
+        "graveyard": 0
+      }
+    },
+    {
       "slug": "cosmology",
       "label": "Cosmology",
-      "score": 5002,
-      "delta": 0,
+      "score": 4802,
+      "delta": -4,
       "direction": "steady",
-      "mentions": 26,
+      "mentions": 25,
       "sources": [
         {
           "platform": "arxiv",
@@ -1194,10 +1194,10 @@
     {
       "slug": "exoplanets",
       "label": "Exoplanets",
-      "score": 4400,
-      "delta": 0,
+      "score": 4200,
+      "delta": -5,
       "direction": "steady",
-      "mentions": 22,
+      "mentions": 21,
       "sources": [
         {
           "platform": "arxiv",
@@ -1459,7 +1459,7 @@
     {
       "slug": "astrobiology",
       "label": "Astrobiology",
-      "score": 2601,
+      "score": 2602,
       "delta": -7,
       "direction": "steady",
       "mentions": 14,
@@ -1689,7 +1689,7 @@
       "slug": "artemis",
       "label": "Artemis & Lunar Return",
       "score": 1200,
-      "delta": -14,
+      "delta": 0,
       "direction": "steady",
       "mentions": 6,
       "sources": [
@@ -1847,10 +1847,10 @@
     {
       "slug": "starlink",
       "label": "Starlink & Satellite Internet",
-      "score": 1013,
+      "score": 1016,
       "delta": 0,
       "direction": "steady",
-      "mentions": 8,
+      "mentions": 9,
       "sources": [
         {
           "platform": "arxiv",
@@ -1917,6 +1917,15 @@
         },
         {
           "platform": "hackernews",
+          "title": "Is Russia's rival to Starlink failing? Here's what we know",
+          "url": "https://arstechnica.com/space/2026/09/rassvet-russias-rival-to-starlink-is-getting-off-to-a-slow-start/",
+          "score": 3,
+          "author": "gumby",
+          "commentCount": 0,
+          "publishedAt": "2026-09-05T09:58:37.000Z"
+        },
+        {
+          "platform": "hackernews",
           "title": "All 16 New Russian Starlink-Rival Satellites Short of Target Orbit",
           "url": "https://www.businessinsider.com/all-16-new-russian-starlink-rival-satellites-short-target-orbit-2026-9",
           "score": 3,
@@ -1943,10 +1952,10 @@
     {
       "slug": "asteroid-mining",
       "label": "Asteroid Mining",
-      "score": 1000,
-      "delta": 0,
-      "direction": "steady",
-      "mentions": 5,
+      "score": 800,
+      "delta": -20,
+      "direction": "down",
+      "mentions": 4,
       "sources": [
         {
           "platform": "arxiv",
@@ -1983,15 +1992,6 @@
           "authors": "Andy J. López-Oquendo, David E. Trilling, Michael Mommert et al.",
           "arxivCategory": "astro-ph.EP",
           "publishedAt": "2026-08-28T18:35:55.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Asteroid Disruption and Deflection Simulations for Multi-Modal Planetary Defense",
-          "url": "https://arxiv.org/abs/2608.06494",
-          "score": 200,
-          "authors": "Alexander N. Cohen, Philip Lubin, Darrel Robertson et al.",
-          "arxivCategory": "astro-ph.EP",
-          "publishedAt": "2026-08-06T18:34:04.000Z"
         }
       ],
       "relatedConceptSlugs": [
@@ -2294,7 +2294,7 @@
       "slug": "dyson-spheres",
       "label": "Dyson Spheres",
       "score": 200,
-      "delta": -9,
+      "delta": 0,
       "direction": "steady",
       "mentions": 1,
       "sources": [
@@ -2360,7 +2360,7 @@
     {
       "slug": "starship",
       "label": "Starship & SpaceX",
-      "score": 42,
+      "score": 43,
       "delta": -95,
       "direction": "down",
       "mentions": 11,
@@ -2412,6 +2412,15 @@
         },
         {
           "platform": "hackernews",
+          "title": "SpaceX is building its own gas turbine blade factory to power AI faster",
+          "url": "https://qz.com/spacex-turbine-blade-foundry-ai-data-centers-090226",
+          "score": 3,
+          "author": "JumpCrisscross",
+          "commentCount": 3,
+          "publishedAt": "2026-09-05T14:29:00.000Z"
+        },
+        {
+          "platform": "hackernews",
           "title": "OpenAI Cuts Off Cursor's Model Access After SpaceX Acquisition",
           "url": "https://devops.com/openai-cuts-off-cursors-model-access-after-spacex-acquisition/",
           "score": 3,
@@ -2427,15 +2436,6 @@
           "author": "cdrnsf",
           "commentCount": 0,
           "publishedAt": "2026-09-03T22:39:51.000Z"
-        },
-        {
-          "platform": "hackernews",
-          "title": "SpaceX recovers Starship from the Indian Ocean a month after launch and is shipp",
-          "url": "https://phys.org/news/2026-08-spacex-recovers-starship-indian-ocean.html",
-          "score": 2,
-          "author": "bookmtn",
-          "commentCount": 0,
-          "publishedAt": "2026-08-29T10:42:00.000Z"
         },
         {
           "platform": "youtube",

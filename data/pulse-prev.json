@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-09-04T20:26:16.664Z",
+  "generatedAt": "2026-09-05T09:45:19.214Z",
   "topics": [
     {
       "slug": "black-holes",
       "label": "Black Holes",
       "score": 9013,
-      "delta": 2,
+      "delta": 0,
       "direction": "steady",
       "mentions": 48,
       "sources": [
@@ -138,7 +138,7 @@
       "slug": "gravitational-waves",
       "label": "Gravitational Waves",
       "score": 8800,
-      "delta": 5,
+      "delta": 0,
       "direction": "steady",
       "mentions": 44,
       "sources": [
@@ -403,7 +403,7 @@
       "slug": "quantum-computing",
       "label": "Quantum Computing",
       "score": 7816,
-      "delta": -5,
+      "delta": 0,
       "direction": "steady",
       "mentions": 43,
       "sources": [
@@ -534,8 +534,8 @@
     {
       "slug": "particle-physics",
       "label": "Particle Physics",
-      "score": 6880,
-      "delta": 4,
+      "score": 6882,
+      "delta": 1,
       "direction": "steady",
       "mentions": 41,
       "sources": [
@@ -797,8 +797,8 @@
     {
       "slug": "condensed-matter",
       "label": "Condensed Matter",
-      "score": 6334,
-      "delta": 7,
+      "score": 6335,
+      "delta": 0,
       "direction": "steady",
       "mentions": 33,
       "sources": [
@@ -806,9 +806,9 @@
           "platform": "hackernews",
           "title": "Play Store blocks AuroraStore, hurting GrapheneOS users",
           "url": "https://gitlab.com/AuroraOSS/AuroraStore/-/work_items/1566",
-          "score": 560,
+          "score": 561,
           "author": "erikvanoosten",
-          "commentCount": 270,
+          "commentCount": 269,
           "publishedAt": "2026-09-01T15:55:53.000Z"
         },
         {
@@ -817,7 +817,7 @@
           "url": "https://bsky.app/profile/grapheneos.org/post/3mua32q4ds22e",
           "score": 328,
           "author": "400thecat",
-          "commentCount": 195,
+          "commentCount": 197,
           "publishedAt": "2026-08-29T15:26:28.000Z"
         },
         {
@@ -929,10 +929,10 @@
     {
       "slug": "dark-matter",
       "label": "Dark Matter & Dark Energy",
-      "score": 6213,
-      "delta": -3,
+      "score": 6216,
+      "delta": 0,
       "direction": "steady",
-      "mentions": 44,
+      "mentions": 45,
       "sources": [
         {
           "platform": "hackernews",
@@ -940,7 +940,7 @@
           "url": "https://www.science.org/content/article/world-s-biggest-dark-matter-detector-spots-single-weird-particle",
           "score": 344,
           "author": "randycupertino",
-          "commentCount": 142,
+          "commentCount": 143,
           "publishedAt": "2026-09-02T13:40:29.000Z"
         },
         {
@@ -1459,8 +1459,8 @@
     {
       "slug": "astrobiology",
       "label": "Astrobiology",
-      "score": 2800,
-      "delta": 0,
+      "score": 2601,
+      "delta": -7,
       "direction": "steady",
       "mentions": 14,
       "sources": [
@@ -1499,15 +1499,6 @@
           "authors": "Kristina Šekrst",
           "arxivCategory": "physics.hist-ph",
           "publishedAt": "2026-08-18T12:52:35.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "The Early Career Astrobiology Workforce Under Strain Survey Evidence from 2025-2026",
-          "url": "https://arxiv.org/abs/2608.06431",
-          "score": 200,
-          "authors": "Katherine Dzurilla, Gabby Rizzo, Perianne Johnson et al.",
-          "arxivCategory": "astro-ph.IM",
-          "publishedAt": "2026-08-06T01:03:14.000Z"
         },
         {
           "platform": "arxiv",
@@ -1571,6 +1562,15 @@
           "authors": "Sara Seager, Janusz J. Petkowski",
           "arxivCategory": "astro-ph.EP",
           "publishedAt": "2026-08-16T11:13:44.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Early Exploration of the Scientific Discovery Space for the Habitable Worlds Observatory",
+          "url": "https://arxiv.org/abs/2608.11294",
+          "score": 200,
+          "authors": "Courtney D. Dressing, Danica Adams, Evelyne Alecian et al.",
+          "arxivCategory": "astro-ph.IM",
+          "publishedAt": "2026-08-11T17:36:36.000Z"
         }
       ],
       "relatedConceptSlugs": [
@@ -1590,108 +1590,10 @@
       }
     },
     {
-      "slug": "fusion-propulsion",
-      "label": "Fusion Propulsion",
-      "score": 1600,
-      "delta": 0,
-      "direction": "steady",
-      "mentions": 8,
-      "sources": [
-        {
-          "platform": "arxiv",
-          "title": "Bridging the local and the global: a physically constrained buoyancy--drag model for unified prediction of Rayleigh--Taylor and Richtmyer--Meshkov mixing widths across density ratios",
-          "url": "https://arxiv.org/abs/2609.02128",
-          "score": 200,
-          "authors": "You-Sheng Zhang, Ya-Feng Li, Meng-Juan Xiao et al.",
-          "arxivCategory": "physics.flu-dyn",
-          "publishedAt": "2026-09-02T05:35:38.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Science Of Nuclear Fusion: Insights and Ideas",
-          "url": "https://arxiv.org/abs/2609.01366",
-          "score": 200,
-          "authors": "Johann Rafelski, Andrew Steinmetz",
-          "arxivCategory": "nucl-th",
-          "publishedAt": "2026-09-01T15:05:34.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "On the degradation of hot spot performance due to mid-to-high-mode hydrodynamic instabilities",
-          "url": "https://arxiv.org/abs/2608.21785",
-          "score": 200,
-          "authors": "Dongxue Liu, Jiaqin Dong, Yunxing Liu et al.",
-          "arxivCategory": "physics.flu-dyn",
-          "publishedAt": "2026-08-22T05:35:23.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Reinforcement-learning control of turbulence transition in the modified Hasegawa-Wakatani system",
-          "url": "https://arxiv.org/abs/2608.27845",
-          "score": 200,
-          "authors": "Luning Sun, Ben Zhu, Xin-Yang Liu et al.",
-          "arxivCategory": "physics.plasm-ph",
-          "publishedAt": "2026-08-28T02:25:52.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Power-law-anchored residual learning for H-mode energy confinement time in tokamaks: interpolation and parameter-defined extrapolation",
-          "url": "https://arxiv.org/abs/2608.20684",
-          "score": 200,
-          "authors": "Zhaokun Wang, Tianyuan Liu, Jianguo Chen et al.",
-          "arxivCategory": "physics.plasm-ph",
-          "publishedAt": "2026-08-21T02:44:04.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "An Efficient Solver for Finite Element-based Constrained Transport in 3D Magnetohydrodynamics Applied to Magnetic Confinement Fusion",
-          "url": "https://arxiv.org/abs/2608.13829",
-          "score": 200,
-          "authors": "Golo A. Wimmer, Konstantin Lipnikov, Ben S. Southworth et al.",
-          "arxivCategory": "math.NA",
-          "publishedAt": "2026-08-13T23:35:35.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "SafeDivertor: Faithful Divertor Heat Flux Reconstruction from Macroscopic Plasma State Signals via Time-Frequency Prior Exploitation",
-          "url": "https://arxiv.org/abs/2608.05669",
-          "score": 200,
-          "authors": "Hao Si, Zehua Chen, Qingquan Yang et al.",
-          "arxivCategory": "physics.plasm-ph",
-          "publishedAt": "2026-08-06T07:05:58.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Millisecond-Scale Neural Operator Surrogates for Double-Null Free-Boundary Grad-Shafranov Equilibria",
-          "url": "https://arxiv.org/abs/2608.05555",
-          "score": 200,
-          "authors": "Plamen G. Krastev",
-          "arxivCategory": "physics.plasm-ph",
-          "publishedAt": "2026-08-06T03:21:18.000Z"
-        }
-      ],
-      "relatedConceptSlugs": [
-        "gradient-field-imploding-liner-fusion-propulsion",
-        "fusion-enabled-pluto-orbiter",
-        "pulsed-fission-fusion"
-      ],
-      "resonance": 64,
-      "quadrant": "real-deal",
-      "resonanceSignals": {
-        "conceptDepth": 0.6991803252671503,
-        "editorial": 0.7,
-        "connections": 0,
-        "convergence": 0.975,
-        "deepTopic": 1,
-        "pantheon": 0.92,
-        "graveyard": 0
-      }
-    },
-    {
       "slug": "space-debris",
       "label": "Space Debris",
       "score": 1600,
-      "delta": 14,
+      "delta": 0,
       "direction": "steady",
       "mentions": 8,
       "sources": [
@@ -1851,7 +1753,7 @@
         "regolith-adaptive-modification-systems"
       ],
       "resonance": 52,
-      "quadrant": "sleeping-giant",
+      "quadrant": "real-deal",
       "resonanceSignals": {
         "conceptDepth": 0.7737056144690831,
         "editorial": 1,
@@ -1859,6 +1761,86 @@
         "convergence": 0.025,
         "deepTopic": 0.8,
         "pantheon": 0.08,
+        "graveyard": 0
+      }
+    },
+    {
+      "slug": "fusion-propulsion",
+      "label": "Fusion Propulsion",
+      "score": 1200,
+      "delta": -25,
+      "direction": "down",
+      "mentions": 6,
+      "sources": [
+        {
+          "platform": "arxiv",
+          "title": "Bridging the local and the global: a physically constrained buoyancy--drag model for unified prediction of Rayleigh--Taylor and Richtmyer--Meshkov mixing widths across density ratios",
+          "url": "https://arxiv.org/abs/2609.02128",
+          "score": 200,
+          "authors": "You-Sheng Zhang, Ya-Feng Li, Meng-Juan Xiao et al.",
+          "arxivCategory": "physics.flu-dyn",
+          "publishedAt": "2026-09-02T05:35:38.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Science Of Nuclear Fusion: Insights and Ideas",
+          "url": "https://arxiv.org/abs/2609.01366",
+          "score": 200,
+          "authors": "Johann Rafelski, Andrew Steinmetz",
+          "arxivCategory": "nucl-th",
+          "publishedAt": "2026-09-01T15:05:34.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "On the degradation of hot spot performance due to mid-to-high-mode hydrodynamic instabilities",
+          "url": "https://arxiv.org/abs/2608.21785",
+          "score": 200,
+          "authors": "Dongxue Liu, Jiaqin Dong, Yunxing Liu et al.",
+          "arxivCategory": "physics.flu-dyn",
+          "publishedAt": "2026-08-22T05:35:23.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Reinforcement-learning control of turbulence transition in the modified Hasegawa-Wakatani system",
+          "url": "https://arxiv.org/abs/2608.27845",
+          "score": 200,
+          "authors": "Luning Sun, Ben Zhu, Xin-Yang Liu et al.",
+          "arxivCategory": "physics.plasm-ph",
+          "publishedAt": "2026-08-28T02:25:52.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Power-law-anchored residual learning for H-mode energy confinement time in tokamaks: interpolation and parameter-defined extrapolation",
+          "url": "https://arxiv.org/abs/2608.20684",
+          "score": 200,
+          "authors": "Zhaokun Wang, Tianyuan Liu, Jianguo Chen et al.",
+          "arxivCategory": "physics.plasm-ph",
+          "publishedAt": "2026-08-21T02:44:04.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "An Efficient Solver for Finite Element-based Constrained Transport in 3D Magnetohydrodynamics Applied to Magnetic Confinement Fusion",
+          "url": "https://arxiv.org/abs/2608.13829",
+          "score": 200,
+          "authors": "Golo A. Wimmer, Konstantin Lipnikov, Ben S. Southworth et al.",
+          "arxivCategory": "math.NA",
+          "publishedAt": "2026-08-13T23:35:35.000Z"
+        }
+      ],
+      "relatedConceptSlugs": [
+        "gradient-field-imploding-liner-fusion-propulsion",
+        "fusion-enabled-pluto-orbiter",
+        "pulsed-fission-fusion"
+      ],
+      "resonance": 64,
+      "quadrant": "real-deal",
+      "resonanceSignals": {
+        "conceptDepth": 0.6991803252671503,
+        "editorial": 0.7,
+        "connections": 0,
+        "convergence": 0.975,
+        "deepTopic": 1,
+        "pantheon": 0.92,
         "graveyard": 0
       }
     },
@@ -2025,138 +2007,6 @@
         "convergence": 0.3,
         "deepTopic": 0,
         "pantheon": 0.08,
-        "graveyard": 0
-      }
-    },
-    {
-      "slug": "starship",
-      "label": "Starship & SpaceX",
-      "score": 896,
-      "delta": 0,
-      "direction": "steady",
-      "mentions": 13,
-      "sources": [
-        {
-          "platform": "hackernews",
-          "title": "Our decision on Cursor following its acquisition by SpaceX",
-          "url": "https://openai.com/index/our-decision-on-cursor-following-its-acquisition-by-spacex/",
-          "score": 851,
-          "author": "meetpateltech",
-          "commentCount": 544,
-          "publishedAt": "2026-08-29T01:47:53.000Z"
-        },
-        {
-          "platform": "hackernews",
-          "title": "SpaceX designed an orbital Vera Rubin. Radiation comes next",
-          "url": "https://thenewstack.io/spacex-nvidia-orbital-ai/",
-          "score": 10,
-          "author": "CrankyBear",
-          "commentCount": 2,
-          "publishedAt": "2026-08-31T20:06:22.000Z"
-        },
-        {
-          "platform": "hackernews",
-          "title": "Ask HN: Is SpaceXAI taking Claude down too?",
-          "url": "https://news.ycombinator.com/item?id=49549795",
-          "score": 6,
-          "author": "redm",
-          "commentCount": 2,
-          "publishedAt": "2026-09-03T13:38:58.000Z"
-        },
-        {
-          "platform": "hackernews",
-          "title": "OpenAI to Cut Off AI Models for SpaceX-Owned Cursor",
-          "url": "https://www.reuters.com/business/media-telecom/openai-end-partnership-with-spacexs-cursor-2026-08-29/",
-          "score": 6,
-          "author": "m463",
-          "commentCount": 2,
-          "publishedAt": "2026-09-01T00:43:31.000Z"
-        },
-        {
-          "platform": "hackernews",
-          "title": "NASA's Roman Space Telescope Launches on a SpaceX Falcon Heavy Rocket",
-          "url": "https://www.space.com/space-exploration/launches-spacecraft/nasa-roman-space-telescope-launch-success-on-a-spacex-falcon-heavy-rocket-spectacular-launch-video",
-          "score": 5,
-          "author": "OrvalWintermute",
-          "commentCount": 0,
-          "publishedAt": "2026-08-30T15:51:44.000Z"
-        },
-        {
-          "platform": "hackernews",
-          "title": "OpenAI to cut off AI models for SpaceX-owned Cursor, escalating feud with Musk",
-          "url": "https://www.reuters.com/business/media-telecom/openai-end-partnership-with-spacexs-cursor-2026-08-29/",
-          "score": 4,
-          "author": "benkan",
-          "commentCount": 1,
-          "publishedAt": "2026-08-31T15:40:40.000Z"
-        },
-        {
-          "platform": "hackernews",
-          "title": "OpenAI Cuts Off Cursor's Model Access After SpaceX Acquisition",
-          "url": "https://devops.com/openai-cuts-off-cursors-model-access-after-spacex-acquisition/",
-          "score": 3,
-          "author": "CrankyBear",
-          "commentCount": 1,
-          "publishedAt": "2026-09-01T17:05:36.000Z"
-        },
-        {
-          "platform": "hackernews",
-          "title": "OpenAI to end agreement with SpaceX's AI coding tool Cursor",
-          "url": "https://www.reuters.com/business/media-telecom/openai-end-partnership-with-spacexs-cursor-2026-08-29/",
-          "score": 3,
-          "author": "tartoran",
-          "commentCount": 1,
-          "publishedAt": "2026-08-29T05:27:09.000Z"
-        },
-        {
-          "platform": "hackernews",
-          "title": "SpaceXAI apologizes for outage that affected Grok and other 'compute partners'",
-          "url": "https://www.engadget.com/2250789/spacexai-apologizes-for-outage-that-affected-grok-and-other-compute-partners/",
-          "score": 3,
-          "author": "cdrnsf",
-          "commentCount": 0,
-          "publishedAt": "2026-09-03T22:39:51.000Z"
-        },
-        {
-          "platform": "hackernews",
-          "title": "SpaceX recovers Starship from the Indian Ocean a month after launch and is shipp",
-          "url": "https://phys.org/news/2026-08-spacex-recovers-starship-indian-ocean.html",
-          "score": 2,
-          "author": "bookmtn",
-          "commentCount": 0,
-          "publishedAt": "2026-08-29T10:42:00.000Z"
-        },
-        {
-          "platform": "youtube",
-          "title": "The Technology That Makes SpaceX's Raptor 3 Possible [video]",
-          "url": "https://www.youtube.com/watch?v=_meDQry3sf8",
-          "score": 1,
-          "thumbnail": "https://img.youtube.com/vi/_meDQry3sf8/mqdefault.jpg",
-          "publishedAt": "2026-09-04T13:52:17.000Z"
-        },
-        {
-          "platform": "hackernews",
-          "title": "The Technology That Makes SpaceX's Raptor 3 Possible [video]",
-          "url": "https://www.youtube.com/watch?v=_meDQry3sf8",
-          "score": 1,
-          "author": "o4c",
-          "commentCount": 0,
-          "publishedAt": "2026-09-04T13:52:17.000Z"
-        }
-      ],
-      "relatedConceptSlugs": [
-        "extraterrestrial-regolith-derived-atmospheric-entry-heat-shields",
-        "phase-i-final-report-nasa-institute-for-advanced-concepts-combined-heat-shield-a"
-      ],
-      "resonance": 43,
-      "quadrant": "dead-zone",
-      "resonanceSignals": {
-        "conceptDepth": 0.5113915944693856,
-        "editorial": 0.4,
-        "connections": 0,
-        "convergence": 0.35,
-        "deepTopic": 1,
-        "pantheon": 0.92,
         "graveyard": 0
       }
     },
@@ -2331,8 +2181,8 @@
       "slug": "solar-sails",
       "label": "Solar Sails",
       "score": 201,
-      "delta": -50,
-      "direction": "down",
+      "delta": 0,
+      "direction": "steady",
       "mentions": 2,
       "sources": [
         {
@@ -2503,6 +2353,138 @@
         "connections": 0,
         "convergence": 0.05,
         "deepTopic": 0,
+        "pantheon": 0.92,
+        "graveyard": 0
+      }
+    },
+    {
+      "slug": "starship",
+      "label": "Starship & SpaceX",
+      "score": 42,
+      "delta": -95,
+      "direction": "down",
+      "mentions": 11,
+      "sources": [
+        {
+          "platform": "hackernews",
+          "title": "SpaceX designed an orbital Vera Rubin. Radiation comes next",
+          "url": "https://thenewstack.io/spacex-nvidia-orbital-ai/",
+          "score": 10,
+          "author": "CrankyBear",
+          "commentCount": 2,
+          "publishedAt": "2026-08-31T20:06:22.000Z"
+        },
+        {
+          "platform": "hackernews",
+          "title": "Ask HN: Is SpaceXAI taking Claude down too?",
+          "url": "https://news.ycombinator.com/item?id=49549795",
+          "score": 6,
+          "author": "redm",
+          "commentCount": 2,
+          "publishedAt": "2026-09-03T13:38:58.000Z"
+        },
+        {
+          "platform": "hackernews",
+          "title": "OpenAI to Cut Off AI Models for SpaceX-Owned Cursor",
+          "url": "https://www.reuters.com/business/media-telecom/openai-end-partnership-with-spacexs-cursor-2026-08-29/",
+          "score": 6,
+          "author": "m463",
+          "commentCount": 2,
+          "publishedAt": "2026-09-01T00:43:31.000Z"
+        },
+        {
+          "platform": "hackernews",
+          "title": "NASA's Roman Space Telescope Launches on a SpaceX Falcon Heavy Rocket",
+          "url": "https://www.space.com/space-exploration/launches-spacecraft/nasa-roman-space-telescope-launch-success-on-a-spacex-falcon-heavy-rocket-spectacular-launch-video",
+          "score": 5,
+          "author": "OrvalWintermute",
+          "commentCount": 0,
+          "publishedAt": "2026-08-30T15:51:44.000Z"
+        },
+        {
+          "platform": "hackernews",
+          "title": "OpenAI to cut off AI models for SpaceX-owned Cursor, escalating feud with Musk",
+          "url": "https://www.reuters.com/business/media-telecom/openai-end-partnership-with-spacexs-cursor-2026-08-29/",
+          "score": 4,
+          "author": "benkan",
+          "commentCount": 1,
+          "publishedAt": "2026-08-31T15:40:40.000Z"
+        },
+        {
+          "platform": "hackernews",
+          "title": "OpenAI Cuts Off Cursor's Model Access After SpaceX Acquisition",
+          "url": "https://devops.com/openai-cuts-off-cursors-model-access-after-spacex-acquisition/",
+          "score": 3,
+          "author": "CrankyBear",
+          "commentCount": 1,
+          "publishedAt": "2026-09-01T17:05:36.000Z"
+        },
+        {
+          "platform": "hackernews",
+          "title": "SpaceXAI apologizes for outage that affected Grok and other 'compute partners'",
+          "url": "https://www.engadget.com/2250789/spacexai-apologizes-for-outage-that-affected-grok-and-other-compute-partners/",
+          "score": 3,
+          "author": "cdrnsf",
+          "commentCount": 0,
+          "publishedAt": "2026-09-03T22:39:51.000Z"
+        },
+        {
+          "platform": "hackernews",
+          "title": "SpaceX recovers Starship from the Indian Ocean a month after launch and is shipp",
+          "url": "https://phys.org/news/2026-08-spacex-recovers-starship-indian-ocean.html",
+          "score": 2,
+          "author": "bookmtn",
+          "commentCount": 0,
+          "publishedAt": "2026-08-29T10:42:00.000Z"
+        },
+        {
+          "platform": "youtube",
+          "title": "The Technology That Makes SpaceX's Raptor 3 Possible [video]",
+          "url": "https://www.youtube.com/watch?v=_meDQry3sf8",
+          "score": 1,
+          "thumbnail": "https://img.youtube.com/vi/_meDQry3sf8/mqdefault.jpg",
+          "publishedAt": "2026-09-04T13:52:17.000Z"
+        },
+        {
+          "platform": "hackernews",
+          "title": "The Technology That Makes SpaceX's Raptor 3 Possible [video]",
+          "url": "https://www.youtube.com/watch?v=_meDQry3sf8",
+          "score": 1,
+          "author": "o4c",
+          "commentCount": 0,
+          "publishedAt": "2026-09-04T13:52:17.000Z"
+        },
+        {
+          "platform": "hackernews",
+          "title": "NASA delays Crew-13 launch after leak found on SpaceX Dragon",
+          "url": "https://www.sciencedaily.com/releases/2026/09/260901010705.htm",
+          "score": 1,
+          "author": "bookmtn",
+          "commentCount": 0,
+          "publishedAt": "2026-09-02T22:22:26.000Z"
+        },
+        {
+          "platform": "hackernews",
+          "title": "OpenAI is pulling its models from Cursor after the SpaceX acquisition",
+          "url": "https://opengeni.substack.com/p/why-every-company-needs-to-own-its",
+          "score": 1,
+          "author": "davletdz",
+          "commentCount": 0,
+          "publishedAt": "2026-09-01T12:34:25.000Z"
+        }
+      ],
+      "relatedConceptSlugs": [
+        "extraterrestrial-regolith-derived-atmospheric-entry-heat-shields",
+        "phase-i-final-report-nasa-institute-for-advanced-concepts-combined-heat-shield-a"
+      ],
+      "resonance": 43,
+      "quadrant": "dead-zone",
+      "resonanceSignals": {
+        "conceptDepth": 0.5113915944693856,
+        "editorial": 0.4,
+        "connections": 0,
+        "convergence": 0.35,
+        "deepTopic": 1,
         "pantheon": 0.92,
         "graveyard": 0
       }
