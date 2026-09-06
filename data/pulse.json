@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-06T10:00:35.512Z",
+  "generatedAt": "2026-09-06T20:10:11.878Z",
   "topics": [
     {
       "slug": "gravitational-waves",
@@ -136,10 +136,10 @@
     {
       "slug": "black-holes",
       "label": "Black Holes",
-      "score": 8613,
-      "delta": -4,
+      "score": 8413,
+      "delta": -7,
       "direction": "steady",
-      "mentions": 46,
+      "mentions": 45,
       "sources": [
         {
           "platform": "arxiv",
@@ -269,10 +269,10 @@
     {
       "slug": "space-telescopes",
       "label": "Space Telescopes",
-      "score": 8003,
-      "delta": -4,
+      "score": 8001,
+      "delta": 0,
       "direction": "steady",
-      "mentions": 42,
+      "mentions": 41,
       "sources": [
         {
           "platform": "arxiv",
@@ -402,10 +402,10 @@
     {
       "slug": "quantum-computing",
       "label": "Quantum Computing",
-      "score": 7814,
+      "score": 7815,
       "delta": 0,
       "direction": "steady",
-      "mentions": 42,
+      "mentions": 43,
       "sources": [
         {
           "platform": "arxiv",
@@ -534,7 +534,7 @@
     {
       "slug": "particle-physics",
       "label": "Particle Physics",
-      "score": 6684,
+      "score": 6685,
       "delta": -3,
       "direction": "steady",
       "mentions": 40,
@@ -797,10 +797,10 @@
     {
       "slug": "dark-matter",
       "label": "Dark Matter & Dark Energy",
-      "score": 6219,
+      "score": 6225,
       "delta": 0,
       "direction": "steady",
-      "mentions": 45,
+      "mentions": 47,
       "sources": [
         {
           "platform": "hackernews",
@@ -931,7 +931,7 @@
       "slug": "condensed-matter",
       "label": "Condensed Matter",
       "score": 6008,
-      "delta": -5,
+      "delta": 0,
       "direction": "steady",
       "mentions": 32,
       "sources": [
@@ -941,7 +941,7 @@
           "url": "https://gitlab.com/AuroraOSS/AuroraStore/-/work_items/1566",
           "score": 562,
           "author": "erikvanoosten",
-          "commentCount": 269,
+          "commentCount": 270,
           "publishedAt": "2026-09-01T15:55:53.000Z"
         },
         {
@@ -1062,10 +1062,10 @@
     {
       "slug": "cosmology",
       "label": "Cosmology",
-      "score": 4802,
+      "score": 4600,
       "delta": -4,
       "direction": "steady",
-      "mentions": 25,
+      "mentions": 23,
       "sources": [
         {
           "platform": "arxiv",
@@ -1195,7 +1195,7 @@
       "slug": "exoplanets",
       "label": "Exoplanets",
       "score": 4200,
-      "delta": -5,
+      "delta": 0,
       "direction": "steady",
       "mentions": 21,
       "sources": [
@@ -1944,8 +1944,8 @@
       "slug": "asteroid-mining",
       "label": "Asteroid Mining",
       "score": 800,
-      "delta": -20,
-      "direction": "down",
+      "delta": 0,
+      "direction": "steady",
       "mentions": 4,
       "sources": [
         {
@@ -2351,8 +2351,8 @@
     {
       "slug": "starship",
       "label": "Starship & SpaceX",
-      "score": 43,
-      "delta": 2,
+      "score": 40,
+      "delta": -7,
       "direction": "steady",
       "mentions": 11,
       "sources": [
@@ -2385,21 +2385,21 @@
         },
         {
           "platform": "hackernews",
-          "title": "NASA's Roman Space Telescope Launches on a SpaceX Falcon Heavy Rocket",
-          "url": "https://www.space.com/space-exploration/launches-spacecraft/nasa-roman-space-telescope-launch-success-on-a-spacex-falcon-heavy-rocket-spectacular-launch-video",
-          "score": 5,
-          "author": "OrvalWintermute",
-          "commentCount": 0,
-          "publishedAt": "2026-08-30T15:51:44.000Z"
-        },
-        {
-          "platform": "hackernews",
           "title": "OpenAI to cut off AI models for SpaceX-owned Cursor, escalating feud with Musk",
           "url": "https://www.reuters.com/business/media-telecom/openai-end-partnership-with-spacexs-cursor-2026-08-29/",
           "score": 4,
           "author": "benkan",
           "commentCount": 1,
           "publishedAt": "2026-08-31T15:40:40.000Z"
+        },
+        {
+          "platform": "hackernews",
+          "title": "SpaceXAI apologizes for outage that affected Grok and other 'compute partners'",
+          "url": "https://www.engadget.com/2250789/spacexai-apologizes-for-outage-that-affected-grok-and-other-compute-partners/",
+          "score": 4,
+          "author": "cdrnsf",
+          "commentCount": 0,
+          "publishedAt": "2026-09-03T22:39:51.000Z"
         },
         {
           "platform": "hackernews",
@@ -2421,12 +2421,12 @@
         },
         {
           "platform": "hackernews",
-          "title": "SpaceXAI apologizes for outage that affected Grok and other 'compute partners'",
-          "url": "https://www.engadget.com/2250789/spacexai-apologizes-for-outage-that-affected-grok-and-other-compute-partners/",
-          "score": 3,
-          "author": "cdrnsf",
+          "title": "Scott Galloway issues grim SpaceX stock price forecast",
+          "url": "https://www.thestreet.com/investing/stocks/spcx-scott-galloway-spacex-stock-price-target-forecast",
+          "score": 1,
+          "author": "yogthos",
           "commentCount": 0,
-          "publishedAt": "2026-09-03T22:39:51.000Z"
+          "publishedAt": "2026-09-06T17:46:42.000Z"
         },
         {
           "platform": "youtube",
@@ -2477,6 +2477,39 @@
         "convergence": 0.35,
         "deepTopic": 1,
         "pantheon": 0.92,
+        "graveyard": 0
+      }
+    },
+    {
+      "slug": "ocean-worlds",
+      "label": "Titan & Ocean Worlds",
+      "score": 11,
+      "delta": 200,
+      "direction": "up",
+      "mentions": 1,
+      "sources": [
+        {
+          "platform": "hackernews",
+          "title": "Icy Moons Are Ocean Worlds",
+          "url": "https://mceglowski.substack.com/p/icy-moons-are-ocean-worlds",
+          "score": 11,
+          "author": "worldvoyageur",
+          "commentCount": 0,
+          "publishedAt": "2026-09-06T13:07:52.000Z"
+        }
+      ],
+      "relatedConceptSlugs": [
+        "titan-submarine"
+      ],
+      "resonance": 18,
+      "quadrant": "dead-zone",
+      "resonanceSignals": {
+        "conceptDepth": 0.22629438553091683,
+        "editorial": 0,
+        "connections": 0,
+        "convergence": 0.15,
+        "deepTopic": 0.8,
+        "pantheon": 0.16,
         "graveyard": 0
       }
     },
@@ -2536,29 +2569,6 @@
         "convergence": 0,
         "deepTopic": 0.8,
         "pantheon": 0.92,
-        "graveyard": 0
-      }
-    },
-    {
-      "slug": "ocean-worlds",
-      "label": "Titan & Ocean Worlds",
-      "score": 0,
-      "delta": 0,
-      "direction": "steady",
-      "mentions": 0,
-      "sources": [],
-      "relatedConceptSlugs": [
-        "titan-submarine"
-      ],
-      "resonance": 18,
-      "quadrant": "dead-zone",
-      "resonanceSignals": {
-        "conceptDepth": 0.22629438553091683,
-        "editorial": 0,
-        "connections": 0,
-        "convergence": 0.15,
-        "deepTopic": 0.8,
-        "pantheon": 0.16,
         "graveyard": 0
       }
     }
