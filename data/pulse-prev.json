@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-09-07T21:14:48.623Z",
+  "generatedAt": "2026-09-08T10:22:13.023Z",
   "topics": [
     {
       "slug": "black-holes",
       "label": "Black Holes",
-      "score": 8286,
+      "score": 8288,
       "delta": -2,
       "direction": "steady",
       "mentions": 44,
@@ -270,7 +270,7 @@
       "slug": "space-telescopes",
       "label": "Space Telescopes",
       "score": 7801,
-      "delta": -2,
+      "delta": 0,
       "direction": "steady",
       "mentions": 40,
       "sources": [
@@ -403,7 +403,7 @@
       "slug": "gravitational-waves",
       "label": "Gravitational Waves",
       "score": 7600,
-      "delta": -14,
+      "delta": 0,
       "direction": "steady",
       "mentions": 38,
       "sources": [
@@ -534,10 +534,10 @@
     {
       "slug": "particle-physics",
       "label": "Particle Physics",
-      "score": 6867,
-      "delta": 3,
+      "score": 6677,
+      "delta": -3,
       "direction": "steady",
-      "mentions": 41,
+      "mentions": 42,
       "sources": [
         {
           "platform": "arxiv",
@@ -574,15 +574,6 @@
           "authors": "Chenlei An, Dong Bai, Ziyu Bai et al.",
           "arxivCategory": "hep-ex",
           "publishedAt": "2026-08-30T02:09:15.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Levitated Milligram-scale Ferromagnetic Magnetometer at Room Temperature",
-          "url": "https://arxiv.org/abs/2608.08544",
-          "score": 200,
-          "authors": "Yuanji Sheng, Kenan Tian, Rui Li et al.",
-          "arxivCategory": "quant-ph",
-          "publishedAt": "2026-08-09T07:44:54.000Z"
         },
         {
           "platform": "arxiv",
@@ -646,6 +637,15 @@
           "authors": "Ti-Bin Hou, Zheng Li, Yu-Ju Peng et al.",
           "arxivCategory": "hep-ph",
           "publishedAt": "2026-09-01T04:12:31.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Two-loop QCD corrections to $CP$-even Higgs boson decays into $Vγ$ in the Type-I Two-Higgs-Doublet Model",
+          "url": "https://arxiv.org/abs/2608.30436",
+          "score": 200,
+          "authors": "Lin-Qiao Qu, Zhong-Yuan Liu, Peng-Fei Duan et al.",
+          "arxivCategory": "hep-ph",
+          "publishedAt": "2026-08-31T08:26:54.000Z"
         }
       ],
       "relatedConceptSlugs": [],
@@ -665,7 +665,7 @@
       "slug": "nanotechnology",
       "label": "Nanotechnology & Metamaterials",
       "score": 6600,
-      "delta": 3,
+      "delta": 0,
       "direction": "steady",
       "mentions": 33,
       "sources": [
@@ -797,8 +797,8 @@
     {
       "slug": "condensed-matter",
       "label": "Condensed Matter",
-      "score": 6404,
-      "delta": 7,
+      "score": 6413,
+      "delta": 2,
       "direction": "steady",
       "mentions": 33,
       "sources": [
@@ -808,16 +808,16 @@
           "url": "https://gitlab.com/AuroraOSS/AuroraStore/-/work_items/1566",
           "score": 562,
           "author": "erikvanoosten",
-          "commentCount": 275,
+          "commentCount": 277,
           "publishedAt": "2026-09-01T15:55:53.000Z"
         },
         {
           "platform": "hackernews",
           "title": "GrapheneOS Overhauled Default Apps and Secure Clipboard",
           "url": "https://grapheneos.social/@GrapheneOS/117225539756835649",
-          "score": 394,
+          "score": 402,
           "author": "Cider9986",
-          "commentCount": 248,
+          "commentCount": 256,
           "publishedAt": "2026-09-06T20:24:00.000Z"
         },
         {
@@ -930,7 +930,7 @@
       "slug": "dark-matter",
       "label": "Dark Matter & Dark Energy",
       "score": 5425,
-      "delta": -13,
+      "delta": 0,
       "direction": "steady",
       "mentions": 43,
       "sources": [
@@ -1063,7 +1063,7 @@
       "slug": "cosmology",
       "label": "Cosmology",
       "score": 4800,
-      "delta": 4,
+      "delta": 0,
       "direction": "steady",
       "mentions": 24,
       "sources": [
@@ -1195,7 +1195,7 @@
       "slug": "exoplanets",
       "label": "Exoplanets",
       "score": 4600,
-      "delta": 10,
+      "delta": 0,
       "direction": "steady",
       "mentions": 23,
       "sources": [
@@ -1759,10 +1759,10 @@
     {
       "slug": "starlink",
       "label": "Starlink & Satellite Internet",
-      "score": 1016,
+      "score": 1011,
       "delta": 0,
       "direction": "steady",
-      "mentions": 9,
+      "mentions": 8,
       "sources": [
         {
           "platform": "arxiv",
@@ -1817,15 +1817,6 @@
           "author": "pinewurst",
           "commentCount": 0,
           "publishedAt": "2026-09-02T15:01:32.000Z"
-        },
-        {
-          "platform": "hackernews",
-          "title": "Is Starlink a secret radar constellation?",
-          "url": "https://how-radar-sees.pages.dev/",
-          "score": 5,
-          "author": "grinich",
-          "commentCount": 0,
-          "publishedAt": "2026-08-31T21:12:09.000Z"
         },
         {
           "platform": "hackernews",
@@ -2050,8 +2041,8 @@
       "slug": "ai-space",
       "label": "AI in Space",
       "score": 400,
-      "delta": -33,
-      "direction": "down",
+      "delta": 0,
+      "direction": "steady",
       "mentions": 2,
       "sources": [
         {
@@ -2315,8 +2306,8 @@
     {
       "slug": "ocean-worlds",
       "label": "Titan & Ocean Worlds",
-      "score": 84,
-      "delta": 664,
+      "score": 182,
+      "delta": 214,
       "direction": "up",
       "mentions": 1,
       "sources": [
@@ -2324,9 +2315,9 @@
           "platform": "hackernews",
           "title": "Icy Moons Are Ocean Worlds",
           "url": "https://mceglowski.substack.com/p/icy-moons-are-ocean-worlds",
-          "score": 84,
+          "score": 182,
           "author": "worldvoyageur",
-          "commentCount": 10,
+          "commentCount": 24,
           "publishedAt": "2026-09-06T13:07:52.000Z"
         }
       ],
@@ -2348,10 +2339,10 @@
     {
       "slug": "starship",
       "label": "Starship & SpaceX",
-      "score": 26,
-      "delta": -35,
+      "score": 20,
+      "delta": -50,
       "direction": "down",
-      "mentions": 9,
+      "mentions": 8,
       "sources": [
         {
           "platform": "hackernews",
@@ -2361,15 +2352,6 @@
           "author": "redm",
           "commentCount": 2,
           "publishedAt": "2026-09-03T13:38:58.000Z"
-        },
-        {
-          "platform": "hackernews",
-          "title": "OpenAI to Cut Off AI Models for SpaceX-Owned Cursor",
-          "url": "https://www.reuters.com/business/media-telecom/openai-end-partnership-with-spacexs-cursor-2026-08-29/",
-          "score": 6,
-          "author": "m463",
-          "commentCount": 2,
-          "publishedAt": "2026-09-01T00:43:31.000Z"
         },
         {
           "platform": "hackernews",
