@@ -1,13 +1,13 @@
 {
-  "generatedAt": "2026-09-09T10:28:05.029Z",
+  "generatedAt": "2026-09-09T20:35:58.725Z",
   "topics": [
     {
       "slug": "black-holes",
       "label": "Black Holes",
-      "score": 8888,
-      "delta": 7,
+      "score": 8804,
+      "delta": 6,
       "direction": "steady",
-      "mentions": 47,
+      "mentions": 45,
       "sources": [
         {
           "platform": "arxiv",
@@ -270,10 +270,10 @@
     {
       "slug": "gravitational-waves",
       "label": "Gravitational Waves",
-      "score": 8202,
+      "score": 8200,
       "delta": 8,
       "direction": "steady",
-      "mentions": 42,
+      "mentions": 41,
       "sources": [
         {
           "platform": "arxiv",
@@ -402,10 +402,10 @@
     {
       "slug": "quantum-computing",
       "label": "Quantum Computing",
-      "score": 7877,
-      "delta": 1,
+      "score": 7947,
+      "delta": 2,
       "direction": "steady",
-      "mentions": 45,
+      "mentions": 46,
       "sources": [
         {
           "platform": "arxiv",
@@ -667,10 +667,10 @@
     {
       "slug": "particle-physics",
       "label": "Particle Physics",
-      "score": 6887,
+      "score": 6875,
       "delta": 3,
       "direction": "steady",
-      "mentions": 44,
+      "mentions": 43,
       "sources": [
         {
           "platform": "arxiv",
@@ -797,20 +797,11 @@
     {
       "slug": "dark-matter",
       "label": "Dark Matter & Dark Energy",
-      "score": 6371,
-      "delta": 17,
-      "direction": "up",
-      "mentions": 39,
+      "score": 6022,
+      "delta": 12,
+      "direction": "steady",
+      "mentions": 37,
       "sources": [
-        {
-          "platform": "hackernews",
-          "title": "Biggest dark matter detector spots a single weird particle",
-          "url": "https://www.science.org/content/article/world-s-biggest-dark-matter-detector-spots-single-weird-particle",
-          "score": 346,
-          "author": "randycupertino",
-          "commentCount": 148,
-          "publishedAt": "2026-09-02T13:40:29.000Z"
-        },
         {
           "platform": "arxiv",
           "title": "Baryonification IV: Constraining baryonic feedback with X-ray gas fractions",
@@ -909,6 +900,15 @@
           "authors": "J. García-Bellido, M. R. S. Hawkins",
           "arxivCategory": "astro-ph.GA",
           "publishedAt": "2026-09-08T16:30:22.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Probing the Inert Scalar Sector of the Inert Doublet Model via Vector-Boson Fusion at a Muon Collider",
+          "url": "https://arxiv.org/abs/2609.08918",
+          "score": 200,
+          "authors": "Abdesslam Arhrib, Es-said Ghourmin, Ayoub Hmissou et al.",
+          "arxivCategory": "hep-ph",
+          "publishedAt": "2026-09-08T15:47:07.000Z"
         }
       ],
       "relatedConceptSlugs": [
@@ -930,16 +930,16 @@
     {
       "slug": "condensed-matter",
       "label": "Condensed Matter",
-      "score": 5897,
-      "delta": -8,
+      "score": 5702,
+      "delta": -3,
       "direction": "steady",
-      "mentions": 33,
+      "mentions": 31,
       "sources": [
         {
           "platform": "hackernews",
           "title": "GrapheneOS Overhauled Default Apps and Secure Clipboard",
           "url": "https://grapheneos.social/@GrapheneOS/117225539756835649",
-          "score": 407,
+          "score": 408,
           "author": "Cider9986",
           "commentCount": 259,
           "publishedAt": "2026-09-06T20:24:00.000Z"
@@ -1699,10 +1699,10 @@
     {
       "slug": "space-debris",
       "label": "Space Debris",
-      "score": 1600,
-      "delta": 14,
+      "score": 1200,
+      "delta": -14,
       "direction": "steady",
-      "mentions": 8,
+      "mentions": 6,
       "sources": [
         {
           "platform": "arxiv",
@@ -1751,24 +1751,6 @@
         },
         {
           "platform": "arxiv",
-          "title": "Satellite Trajectory Optimization via Proximal Policy Optimization for Space Debris Avoidance",
-          "url": "https://arxiv.org/abs/2608.09628",
-          "score": 200,
-          "authors": "Logan Luna, Juan Ortiz Couder, Raul Alejandro Vargas-Acosta",
-          "arxivCategory": "cs.LG",
-          "publishedAt": "2026-08-10T14:09:16.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Stochastic Multistage Constellation Reconfiguration Problem: Stochastic Dual Dynamic Integer Programming Approach",
-          "url": "https://arxiv.org/abs/2608.09738",
-          "score": 200,
-          "authors": "Brycen D. Pearl, Hang Woon Lee",
-          "arxivCategory": "math.OC",
-          "publishedAt": "2026-08-10T15:37:01.000Z"
-        },
-        {
-          "platform": "arxiv",
           "title": "Stochastic Dynamics of Low Earth Orbit Near Full Capacity",
           "url": "https://arxiv.org/abs/2608.23491",
           "score": 200,
@@ -1795,10 +1777,10 @@
     {
       "slug": "starlink",
       "label": "Starlink & Satellite Internet",
-      "score": 1011,
-      "delta": 0,
-      "direction": "steady",
-      "mentions": 8,
+      "score": 1003,
+      "delta": 24,
+      "direction": "up",
+      "mentions": 6,
       "sources": [
         {
           "platform": "arxiv",
@@ -1847,30 +1829,12 @@
         },
         {
           "platform": "hackernews",
-          "title": "Is Russia's rival to Starlink failing?",
-          "url": "https://arstechnica.com/space/2026/09/rassvet-russias-rival-to-starlink-is-getting-off-to-a-slow-start/",
-          "score": 5,
-          "author": "pinewurst",
-          "commentCount": 0,
-          "publishedAt": "2026-09-02T15:01:32.000Z"
-        },
-        {
-          "platform": "hackernews",
           "title": "Is Russia's rival to Starlink failing? Here's what we know",
           "url": "https://arstechnica.com/space/2026/09/rassvet-russias-rival-to-starlink-is-getting-off-to-a-slow-start/",
           "score": 3,
           "author": "gumby",
           "commentCount": 0,
           "publishedAt": "2026-09-05T09:58:37.000Z"
-        },
-        {
-          "platform": "hackernews",
-          "title": "All 16 New Russian Starlink-Rival Satellites Short of Target Orbit",
-          "url": "https://www.businessinsider.com/all-16-new-russian-starlink-rival-satellites-short-target-orbit-2026-9",
-          "score": 3,
-          "author": "pavel_lishin",
-          "commentCount": 0,
-          "publishedAt": "2026-09-02T15:10:45.000Z"
         }
       ],
       "relatedConceptSlugs": [
@@ -2127,7 +2091,7 @@
       "slug": "mars",
       "label": "Mars Exploration",
       "score": 400,
-      "delta": -35,
+      "delta": -33,
       "direction": "down",
       "mentions": 2,
       "sources": [
@@ -2214,16 +2178,16 @@
     {
       "slug": "ocean-worlds",
       "label": "Titan & Ocean Worlds",
-      "score": 218,
-      "delta": 20,
-      "direction": "up",
+      "score": 219,
+      "delta": 2,
+      "direction": "steady",
       "mentions": 1,
       "sources": [
         {
           "platform": "hackernews",
           "title": "Icy Moons Are Ocean Worlds",
           "url": "https://mceglowski.substack.com/p/icy-moons-are-ocean-worlds",
-          "score": 218,
+          "score": 219,
           "author": "worldvoyageur",
           "commentCount": 48,
           "publishedAt": "2026-09-06T13:07:52.000Z"
@@ -2384,18 +2348,18 @@
     {
       "slug": "starship",
       "label": "Starship & SpaceX",
-      "score": 47,
-      "delta": 135,
+      "score": 55,
+      "delta": 244,
       "direction": "up",
-      "mentions": 7,
+      "mentions": 8,
       "sources": [
         {
           "platform": "hackernews",
           "title": "Space Force Uniform Is Inspired by Quasi-Satirical Film 'Starship Troopers'",
           "url": "https://deadline.com/2026/09/space-force-uniform-starship-troopers-1237070485/",
-          "score": 31,
+          "score": 36,
           "author": "alex_young",
-          "commentCount": 24,
+          "commentCount": 29,
           "publishedAt": "2026-09-09T01:36:43.000Z"
         },
         {
@@ -2427,18 +2391,18 @@
         },
         {
           "platform": "hackernews",
-          "title": "Scott Galloway issues grim SpaceX stock price forecast",
-          "url": "https://www.thestreet.com/investing/stocks/spcx-scott-galloway-spacex-stock-price-target-forecast",
-          "score": 1,
-          "author": "yogthos",
+          "title": "Besxar is building an orbital semiconductor factory, one SpaceX rocket at a time",
+          "url": "https://techcrunch.com/2026/09/09/besxar-is-strapping-advanced-chip-fabs-onto-spacexs-falcon-9-rockets/",
+          "score": 2,
+          "author": "Brajeshwar",
           "commentCount": 0,
-          "publishedAt": "2026-09-06T17:46:42.000Z"
+          "publishedAt": "2026-09-09T15:18:05.000Z"
         },
         {
           "platform": "youtube",
           "title": "The Technology That Makes SpaceX's Raptor 3 Possible [video]",
           "url": "https://www.youtube.com/watch?v=_meDQry3sf8",
-          "score": 1,
+          "score": 2,
           "thumbnail": "https://img.youtube.com/vi/_meDQry3sf8/mqdefault.jpg",
           "publishedAt": "2026-09-04T13:52:17.000Z"
         },
@@ -2446,10 +2410,19 @@
           "platform": "hackernews",
           "title": "The Technology That Makes SpaceX's Raptor 3 Possible [video]",
           "url": "https://www.youtube.com/watch?v=_meDQry3sf8",
-          "score": 1,
+          "score": 2,
           "author": "o4c",
           "commentCount": 0,
           "publishedAt": "2026-09-04T13:52:17.000Z"
+        },
+        {
+          "platform": "hackernews",
+          "title": "Scott Galloway issues grim SpaceX stock price forecast",
+          "url": "https://www.thestreet.com/investing/stocks/spcx-scott-galloway-spacex-stock-price-target-forecast",
+          "score": 1,
+          "author": "yogthos",
+          "commentCount": 0,
+          "publishedAt": "2026-09-06T17:46:42.000Z"
         },
         {
           "platform": "hackernews",
