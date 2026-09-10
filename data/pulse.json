@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-09-10T10:19:29.787Z",
+  "generatedAt": "2026-09-10T20:33:22.209Z",
   "topics": [
     {
       "slug": "black-holes",
       "label": "Black Holes",
       "score": 9004,
-      "delta": 1,
+      "delta": 2,
       "direction": "steady",
       "mentions": 46,
       "sources": [
@@ -137,10 +137,10 @@
     {
       "slug": "space-telescopes",
       "label": "Space Telescopes",
-      "score": 8406,
+      "score": 8405,
       "delta": 2,
       "direction": "steady",
-      "mentions": 44,
+      "mentions": 43,
       "sources": [
         {
           "platform": "arxiv",
@@ -402,8 +402,8 @@
     {
       "slug": "quantum-computing",
       "label": "Quantum Computing",
-      "score": 7558,
-      "delta": -4,
+      "score": 7559,
+      "delta": -5,
       "direction": "steady",
       "mentions": 45,
       "sources": [
@@ -534,10 +534,10 @@
     {
       "slug": "particle-physics",
       "label": "Particle Physics",
-      "score": 6873,
+      "score": 6883,
       "delta": 0,
       "direction": "steady",
-      "mentions": 42,
+      "mentions": 41,
       "sources": [
         {
           "platform": "arxiv",
@@ -797,10 +797,10 @@
     {
       "slug": "dark-matter",
       "label": "Dark Matter & Dark Energy",
-      "score": 6018,
-      "delta": -6,
+      "score": 6022,
+      "delta": 0,
       "direction": "steady",
-      "mentions": 36,
+      "mentions": 37,
       "sources": [
         {
           "platform": "arxiv",
@@ -930,8 +930,8 @@
     {
       "slug": "condensed-matter",
       "label": "Condensed Matter",
-      "score": 5702,
-      "delta": -3,
+      "score": 5705,
+      "delta": 0,
       "direction": "steady",
       "mentions": 31,
       "sources": [
@@ -939,7 +939,7 @@
           "platform": "hackernews",
           "title": "GrapheneOS Overhauled Default Apps and Secure Clipboard",
           "url": "https://grapheneos.social/@GrapheneOS/117225539756835649",
-          "score": 408,
+          "score": 411,
           "author": "Cider9986",
           "commentCount": 260,
           "publishedAt": "2026-09-06T20:24:00.000Z"
@@ -1194,10 +1194,10 @@
     {
       "slug": "exoplanets",
       "label": "Exoplanets",
-      "score": 4600,
-      "delta": 0,
+      "score": 4400,
+      "delta": -4,
       "direction": "steady",
-      "mentions": 23,
+      "mentions": 22,
       "sources": [
         {
           "platform": "arxiv",
@@ -1459,10 +1459,10 @@
     {
       "slug": "astrobiology",
       "label": "Astrobiology",
-      "score": 2802,
-      "delta": 0,
+      "score": 2602,
+      "delta": -7,
       "direction": "steady",
-      "mentions": 15,
+      "mentions": 14,
       "sources": [
         {
           "platform": "arxiv",
@@ -1565,12 +1565,12 @@
         },
         {
           "platform": "arxiv",
-          "title": "Early Exploration of the Scientific Discovery Space for the Habitable Worlds Observatory",
-          "url": "https://arxiv.org/abs/2608.11294",
+          "title": "Sea Ice as an Origin of Life Location for Hycean and Ocean Worlds",
+          "url": "https://arxiv.org/abs/2609.07818",
           "score": 200,
-          "authors": "Courtney D. Dressing, Danica Adams, Evelyne Alecian et al.",
-          "arxivCategory": "astro-ph.IM",
-          "publishedAt": "2026-08-11T17:36:36.000Z"
+          "authors": "Edouard F. L. Barrier, Nikku Madhusudhan, Frances E. Rigby",
+          "arxivCategory": "astro-ph.EP",
+          "publishedAt": "2026-09-07T17:55:01.000Z"
         }
       ],
       "relatedConceptSlugs": [
@@ -1700,8 +1700,8 @@
       "slug": "space-debris",
       "label": "Space Debris",
       "score": 1200,
-      "delta": -25,
-      "direction": "down",
+      "delta": 0,
+      "direction": "steady",
       "mentions": 6,
       "sources": [
         {
@@ -1778,7 +1778,7 @@
       "slug": "starlink",
       "label": "Starlink & Satellite Internet",
       "score": 1003,
-      "delta": -1,
+      "delta": 0,
       "direction": "steady",
       "mentions": 6,
       "sources": [
@@ -2036,58 +2036,6 @@
       }
     },
     {
-      "slug": "warp-drives",
-      "label": "Warp Drives & Exotic Physics",
-      "score": 401,
-      "delta": 0,
-      "direction": "steady",
-      "mentions": 3,
-      "sources": [
-        {
-          "platform": "arxiv",
-          "title": "Quantum-gravity-inspired Alcubierre warp-drive geometries",
-          "url": "https://arxiv.org/abs/2609.05554",
-          "score": 200,
-          "authors": "Kimet Jusufi, Francisco S. N. Lobo",
-          "arxivCategory": "gr-qc",
-          "publishedAt": "2026-09-03T15:34:50.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Radiative Signatures from Warp Drives Traveling Through the Earth's Atmosphere",
-          "url": "https://arxiv.org/abs/2608.10800",
-          "score": 200,
-          "authors": "Shaun David Brocus Fell, Abraham Loeb",
-          "arxivCategory": "gr-qc",
-          "publishedAt": "2026-08-11T11:16:11.000Z"
-        },
-        {
-          "platform": "hackernews",
-          "title": "Word Warp Drive – An Interactive LLM Explainer, Star Trek TNG Style",
-          "url": "https://marklevy.info/blog/word-warp-drive/",
-          "score": 1,
-          "author": "marktl",
-          "commentCount": 0,
-          "publishedAt": "2026-09-04T17:42:46.000Z"
-        }
-      ],
-      "relatedConceptSlugs": [
-        "procsima",
-        "extreme-metamaterial-solar-sails-for-breakthrough-space-exploration"
-      ],
-      "resonance": 53,
-      "quadrant": "sleeping-giant",
-      "resonanceSignals": {
-        "conceptDepth": 0.6991803252671503,
-        "editorial": 1,
-        "connections": 0.3333333333333333,
-        "convergence": 0.15,
-        "deepTopic": 0,
-        "pantheon": 0.92,
-        "graveyard": 0
-      }
-    },
-    {
       "slug": "mars",
       "label": "Mars Exploration",
       "score": 400,
@@ -2179,7 +2127,7 @@
       "slug": "ocean-worlds",
       "label": "Titan & Ocean Worlds",
       "score": 220,
-      "delta": 1,
+      "delta": 0,
       "direction": "steady",
       "mentions": 1,
       "sources": [
@@ -2189,7 +2137,7 @@
           "url": "https://mceglowski.substack.com/p/icy-moons-are-ocean-worlds",
           "score": 220,
           "author": "worldvoyageur",
-          "commentCount": 48,
+          "commentCount": 49,
           "publishedAt": "2026-09-06T13:07:52.000Z"
         }
       ],
@@ -2205,6 +2153,49 @@
         "convergence": 0.15,
         "deepTopic": 0.8,
         "pantheon": 0.16,
+        "graveyard": 0
+      }
+    },
+    {
+      "slug": "warp-drives",
+      "label": "Warp Drives & Exotic Physics",
+      "score": 201,
+      "delta": -50,
+      "direction": "down",
+      "mentions": 2,
+      "sources": [
+        {
+          "platform": "arxiv",
+          "title": "Quantum-gravity-inspired Alcubierre warp-drive geometries",
+          "url": "https://arxiv.org/abs/2609.05554",
+          "score": 200,
+          "authors": "Kimet Jusufi, Francisco S. N. Lobo",
+          "arxivCategory": "gr-qc",
+          "publishedAt": "2026-09-03T15:34:50.000Z"
+        },
+        {
+          "platform": "hackernews",
+          "title": "Word Warp Drive – An Interactive LLM Explainer, Star Trek TNG Style",
+          "url": "https://marklevy.info/blog/word-warp-drive/",
+          "score": 1,
+          "author": "marktl",
+          "commentCount": 0,
+          "publishedAt": "2026-09-04T17:42:46.000Z"
+        }
+      ],
+      "relatedConceptSlugs": [
+        "procsima",
+        "extreme-metamaterial-solar-sails-for-breakthrough-space-exploration"
+      ],
+      "resonance": 53,
+      "quadrant": "sleeping-giant",
+      "resonanceSignals": {
+        "conceptDepth": 0.6991803252671503,
+        "editorial": 1,
+        "connections": 0.3333333333333333,
+        "convergence": 0.15,
+        "deepTopic": 0,
+        "pantheon": 0.92,
         "graveyard": 0
       }
     },
@@ -2348,10 +2339,10 @@
     {
       "slug": "starship",
       "label": "Starship & SpaceX",
-      "score": 55,
-      "delta": 17,
-      "direction": "up",
-      "mentions": 7,
+      "score": 49,
+      "delta": -11,
+      "direction": "steady",
+      "mentions": 6,
       "sources": [
         {
           "platform": "hackernews",
@@ -2359,17 +2350,8 @@
           "url": "https://deadline.com/2026/09/space-force-uniform-starship-troopers-1237070485/",
           "score": 37,
           "author": "alex_young",
-          "commentCount": 29,
+          "commentCount": 30,
           "publishedAt": "2026-09-09T01:36:43.000Z"
-        },
-        {
-          "platform": "hackernews",
-          "title": "Ask HN: Is SpaceXAI taking Claude down too?",
-          "url": "https://news.ycombinator.com/item?id=49549795",
-          "score": 6,
-          "author": "redm",
-          "commentCount": 2,
-          "publishedAt": "2026-09-03T13:38:58.000Z"
         },
         {
           "platform": "hackernews",
