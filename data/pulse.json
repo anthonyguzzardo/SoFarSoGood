@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-12T09:51:56.570Z",
+  "generatedAt": "2026-09-12T20:19:24.110Z",
   "topics": [
     {
       "slug": "space-telescopes",
@@ -137,7 +137,7 @@
     {
       "slug": "black-holes",
       "label": "Black Holes",
-      "score": 8410,
+      "score": 8411,
       "delta": 0,
       "direction": "steady",
       "mentions": 45,
@@ -534,7 +534,7 @@
     {
       "slug": "particle-physics",
       "label": "Particle Physics",
-      "score": 6853,
+      "score": 6854,
       "delta": 0,
       "direction": "steady",
       "mentions": 39,
@@ -930,27 +930,27 @@
     {
       "slug": "condensed-matter",
       "label": "Condensed Matter",
-      "score": 5385,
-      "delta": 1,
+      "score": 5430,
+      "delta": 5,
       "direction": "steady",
-      "mentions": 28,
+      "mentions": 29,
       "sources": [
         {
           "platform": "hackernews",
           "title": "GrapheneOS Overhauled Default Apps and Secure Clipboard",
           "url": "https://grapheneos.social/@GrapheneOS/117225539756835649",
-          "score": 413,
+          "score": 414,
           "author": "Cider9986",
-          "commentCount": 262,
+          "commentCount": 263,
           "publishedAt": "2026-09-06T20:24:00.000Z"
         },
         {
           "platform": "hackernews",
           "title": "GrapheneOS' rewritten Messages app is released",
           "url": "https://github.com/GrapheneOS/Messaging/releases/tag/13",
-          "score": 278,
+          "score": 301,
           "author": "microtonal",
-          "commentCount": 203,
+          "commentCount": 224,
           "publishedAt": "2026-09-11T18:50:36.000Z"
         },
         {
@@ -1194,10 +1194,10 @@
     {
       "slug": "exoplanets",
       "label": "Exoplanets",
-      "score": 4200,
-      "delta": -5,
+      "score": 3800,
+      "delta": -10,
       "direction": "steady",
-      "mentions": 21,
+      "mentions": 19,
       "sources": [
         {
           "platform": "arxiv",
@@ -1935,10 +1935,10 @@
     {
       "slug": "starlink",
       "label": "Starlink & Satellite Internet",
-      "score": 913,
-      "delta": -9,
+      "score": 933,
+      "delta": -7,
       "direction": "steady",
-      "mentions": 6,
+      "mentions": 5,
       "sources": [
         {
           "platform": "arxiv",
@@ -1980,19 +1980,10 @@
           "platform": "hackernews",
           "title": "Starlink Signal Leakage Threatens Radio Astronomy's Most Critical Frequencies",
           "url": "https://www.gadgetreview.com/starlinks-signal-leakage-is-threatening-radio-astronomys-most-critical-frequencies",
-          "score": 110,
+          "score": 133,
           "author": "upofadown",
-          "commentCount": 68,
+          "commentCount": 81,
           "publishedAt": "2026-09-12T00:40:32.000Z"
-        },
-        {
-          "platform": "hackernews",
-          "title": "Is Russia's rival to Starlink failing? Here's what we know",
-          "url": "https://arstechnica.com/space/2026/09/rassvet-russias-rival-to-starlink-is-getting-off-to-a-slow-start/",
-          "score": 3,
-          "author": "gumby",
-          "commentCount": 0,
-          "publishedAt": "2026-09-05T09:58:37.000Z"
         }
       ],
       "relatedConceptSlugs": [
@@ -2145,7 +2136,7 @@
       "slug": "starship",
       "label": "Starship & SpaceX",
       "score": 243,
-      "delta": -1,
+      "delta": 0,
       "direction": "steady",
       "mentions": 5,
       "sources": [
@@ -2169,12 +2160,12 @@
         },
         {
           "platform": "hackernews",
-          "title": "SpaceX is building its own gas turbine blade factory to power AI faster",
-          "url": "https://qz.com/spacex-turbine-blade-foundry-ai-data-centers-090226",
+          "title": "SpaceX Backtracks on Starlink Data Cap After Complaints",
+          "url": "https://www.pcmag.com/news/spacex-backtracks-on-starlink-data-cap-after-complaints",
           "score": 3,
-          "author": "JumpCrisscross",
-          "commentCount": 3,
-          "publishedAt": "2026-09-05T14:29:00.000Z"
+          "author": "freedomben",
+          "commentCount": 0,
+          "publishedAt": "2026-09-12T14:28:15.000Z"
         },
         {
           "platform": "hackernews",
@@ -2283,8 +2274,8 @@
       "slug": "warp-drives",
       "label": "Warp Drives & Exotic Physics",
       "score": 200,
-      "delta": -17,
-      "direction": "down",
+      "delta": 0,
+      "direction": "steady",
       "mentions": 1,
       "sources": [
         {
