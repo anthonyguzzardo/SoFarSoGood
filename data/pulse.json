@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-09-11T20:36:07.806Z",
+  "generatedAt": "2026-09-12T09:51:56.570Z",
   "topics": [
     {
       "slug": "space-telescopes",
       "label": "Space Telescopes",
       "score": 8605,
-      "delta": 2,
+      "delta": 0,
       "direction": "steady",
       "mentions": 44,
       "sources": [
@@ -138,7 +138,7 @@
       "slug": "black-holes",
       "label": "Black Holes",
       "score": 8410,
-      "delta": -7,
+      "delta": 0,
       "direction": "steady",
       "mentions": 45,
       "sources": [
@@ -271,7 +271,7 @@
       "slug": "gravitational-waves",
       "label": "Gravitational Waves",
       "score": 8200,
-      "delta": 5,
+      "delta": 0,
       "direction": "steady",
       "mentions": 41,
       "sources": [
@@ -402,8 +402,8 @@
     {
       "slug": "quantum-computing",
       "label": "Quantum Computing",
-      "score": 8162,
-      "delta": 8,
+      "score": 8163,
+      "delta": 0,
       "direction": "steady",
       "mentions": 48,
       "sources": [
@@ -534,7 +534,7 @@
     {
       "slug": "particle-physics",
       "label": "Particle Physics",
-      "score": 6852,
+      "score": 6853,
       "delta": 0,
       "direction": "steady",
       "mentions": 39,
@@ -797,10 +797,10 @@
     {
       "slug": "dark-matter",
       "label": "Dark Matter & Dark Energy",
-      "score": 5816,
-      "delta": -3,
+      "score": 5813,
+      "delta": 0,
       "direction": "steady",
-      "mentions": 34,
+      "mentions": 33,
       "sources": [
         {
           "platform": "arxiv",
@@ -930,8 +930,8 @@
     {
       "slug": "condensed-matter",
       "label": "Condensed Matter",
-      "score": 5164,
-      "delta": -9,
+      "score": 5385,
+      "delta": 1,
       "direction": "steady",
       "mentions": 28,
       "sources": [
@@ -939,10 +939,19 @@
           "platform": "hackernews",
           "title": "GrapheneOS Overhauled Default Apps and Secure Clipboard",
           "url": "https://grapheneos.social/@GrapheneOS/117225539756835649",
-          "score": 412,
+          "score": 413,
           "author": "Cider9986",
           "commentCount": 262,
           "publishedAt": "2026-09-06T20:24:00.000Z"
+        },
+        {
+          "platform": "hackernews",
+          "title": "GrapheneOS' rewritten Messages app is released",
+          "url": "https://github.com/GrapheneOS/Messaging/releases/tag/13",
+          "score": 278,
+          "author": "microtonal",
+          "commentCount": 203,
+          "publishedAt": "2026-09-11T18:50:36.000Z"
         },
         {
           "platform": "arxiv",
@@ -1033,15 +1042,6 @@
           "authors": "Emily Maxey, Jacob Mansfield, Beth Thacker et al.",
           "arxivCategory": "quant-ph",
           "publishedAt": "2026-09-05T02:37:33.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Band Gaps and Localization of Surface Waves at Hyperbolic Material and Topological Insulator Interfaces",
-          "url": "https://arxiv.org/abs/2609.04587",
-          "score": 200,
-          "authors": "Andrei I. Maimistov, Ildar R. Gabitov, Ilia Kuk",
-          "arxivCategory": "physics.optics",
-          "publishedAt": "2026-09-04T00:37:37.000Z"
         }
       ],
       "relatedConceptSlugs": [
@@ -1062,10 +1062,10 @@
     {
       "slug": "cosmology",
       "label": "Cosmology",
-      "score": 5000,
-      "delta": 0,
+      "score": 4800,
+      "delta": -4,
       "direction": "steady",
-      "mentions": 25,
+      "mentions": 24,
       "sources": [
         {
           "platform": "arxiv",
@@ -1459,10 +1459,10 @@
     {
       "slug": "astrobiology",
       "label": "Astrobiology",
-      "score": 2802,
-      "delta": 8,
+      "score": 2800,
+      "delta": 0,
       "direction": "steady",
-      "mentions": 15,
+      "mentions": 14,
       "sources": [
         {
           "platform": "arxiv",
@@ -1700,8 +1700,8 @@
       "slug": "artemis",
       "label": "Artemis & Lunar Return",
       "score": 1400,
-      "delta": 40,
-      "direction": "up",
+      "delta": 0,
+      "direction": "steady",
       "mentions": 7,
       "sources": [
         {
@@ -1863,89 +1863,11 @@
       }
     },
     {
-      "slug": "starlink",
-      "label": "Starlink & Satellite Internet",
-      "score": 1003,
-      "delta": 0,
-      "direction": "steady",
-      "mentions": 6,
-      "sources": [
-        {
-          "platform": "arxiv",
-          "title": "Terahertz Inter-Satellite Links: Motivation, Challenges and Opportunities",
-          "url": "https://arxiv.org/abs/2609.05973",
-          "score": 200,
-          "authors": "Chandan Kumar Sheemar, Wali Ullah Khan, Giovanni Iacovelli et al.",
-          "arxivCategory": "eess.SP",
-          "publishedAt": "2026-09-05T08:21:36.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "A measurement-based approach to EPFD calculation, to quantify the impact of satellite mega-constellations on low-frequency radio astronomy",
-          "url": "https://arxiv.org/abs/2609.01995",
-          "score": 200,
-          "authors": "Steven J. Tingay, Gregory Hellbourg, Daniel Sheen et al.",
-          "arxivCategory": "astro-ph.IM",
-          "publishedAt": "2026-09-02T02:04:56.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "FractalNet-Based Heterogeneous Federated Learning for Orbital Edge Intelligence in Satellite Mega-Constellations: A Wildfire Case Study",
-          "url": "https://arxiv.org/abs/2609.00875",
-          "score": 200,
-          "authors": "Sai Puppala, Koushik Sinha",
-          "arxivCategory": "cs.AI",
-          "publishedAt": "2026-09-01T08:07:39.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Fluid-Dynamic Interference Modeling for LEO Mega-Constellations: A Spatiotemporal Kinetic Field Approach",
-          "url": "https://arxiv.org/abs/2608.20651",
-          "score": 200,
-          "authors": "Wen-Yu Dong, Weiwei Jiang, Song Zhao et al.",
-          "arxivCategory": "cs.NI",
-          "publishedAt": "2026-08-21T01:10:02.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Digital Twin Satellite Networks: A Paradigm for Intelligent, Efficient, and Resilient Operations",
-          "url": "https://arxiv.org/abs/2608.12865",
-          "score": 200,
-          "authors": "Mustafa Alhassan, Peng Hu",
-          "arxivCategory": "cs.NI",
-          "publishedAt": "2026-08-13T06:28:20.000Z"
-        },
-        {
-          "platform": "hackernews",
-          "title": "Is Russia's rival to Starlink failing? Here's what we know",
-          "url": "https://arstechnica.com/space/2026/09/rassvet-russias-rival-to-starlink-is-getting-off-to-a-slow-start/",
-          "score": 3,
-          "author": "gumby",
-          "commentCount": 0,
-          "publishedAt": "2026-09-05T09:58:37.000Z"
-        }
-      ],
-      "relatedConceptSlugs": [
-        "sps-alpha"
-      ],
-      "resonance": 21,
-      "quadrant": "dead-zone",
-      "resonanceSignals": {
-        "conceptDepth": 0.22629438553091683,
-        "editorial": 0.7,
-        "connections": 0,
-        "convergence": 0,
-        "deepTopic": 0,
-        "pantheon": 0,
-        "graveyard": 0
-      }
-    },
-    {
       "slug": "asteroid-mining",
       "label": "Asteroid Mining",
       "score": 1000,
-      "delta": 25,
-      "direction": "up",
+      "delta": 0,
+      "direction": "steady",
       "mentions": 5,
       "sources": [
         {
@@ -2007,6 +1929,84 @@
         "convergence": 0.3,
         "deepTopic": 0,
         "pantheon": 0.08,
+        "graveyard": 0
+      }
+    },
+    {
+      "slug": "starlink",
+      "label": "Starlink & Satellite Internet",
+      "score": 913,
+      "delta": -9,
+      "direction": "steady",
+      "mentions": 6,
+      "sources": [
+        {
+          "platform": "arxiv",
+          "title": "Terahertz Inter-Satellite Links: Motivation, Challenges and Opportunities",
+          "url": "https://arxiv.org/abs/2609.05973",
+          "score": 200,
+          "authors": "Chandan Kumar Sheemar, Wali Ullah Khan, Giovanni Iacovelli et al.",
+          "arxivCategory": "eess.SP",
+          "publishedAt": "2026-09-05T08:21:36.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "A measurement-based approach to EPFD calculation, to quantify the impact of satellite mega-constellations on low-frequency radio astronomy",
+          "url": "https://arxiv.org/abs/2609.01995",
+          "score": 200,
+          "authors": "Steven J. Tingay, Gregory Hellbourg, Daniel Sheen et al.",
+          "arxivCategory": "astro-ph.IM",
+          "publishedAt": "2026-09-02T02:04:56.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "FractalNet-Based Heterogeneous Federated Learning for Orbital Edge Intelligence in Satellite Mega-Constellations: A Wildfire Case Study",
+          "url": "https://arxiv.org/abs/2609.00875",
+          "score": 200,
+          "authors": "Sai Puppala, Koushik Sinha",
+          "arxivCategory": "cs.AI",
+          "publishedAt": "2026-09-01T08:07:39.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Fluid-Dynamic Interference Modeling for LEO Mega-Constellations: A Spatiotemporal Kinetic Field Approach",
+          "url": "https://arxiv.org/abs/2608.20651",
+          "score": 200,
+          "authors": "Wen-Yu Dong, Weiwei Jiang, Song Zhao et al.",
+          "arxivCategory": "cs.NI",
+          "publishedAt": "2026-08-21T01:10:02.000Z"
+        },
+        {
+          "platform": "hackernews",
+          "title": "Starlink Signal Leakage Threatens Radio Astronomy's Most Critical Frequencies",
+          "url": "https://www.gadgetreview.com/starlinks-signal-leakage-is-threatening-radio-astronomys-most-critical-frequencies",
+          "score": 110,
+          "author": "upofadown",
+          "commentCount": 68,
+          "publishedAt": "2026-09-12T00:40:32.000Z"
+        },
+        {
+          "platform": "hackernews",
+          "title": "Is Russia's rival to Starlink failing? Here's what we know",
+          "url": "https://arstechnica.com/space/2026/09/rassvet-russias-rival-to-starlink-is-getting-off-to-a-slow-start/",
+          "score": 3,
+          "author": "gumby",
+          "commentCount": 0,
+          "publishedAt": "2026-09-05T09:58:37.000Z"
+        }
+      ],
+      "relatedConceptSlugs": [
+        "sps-alpha"
+      ],
+      "resonance": 21,
+      "quadrant": "dead-zone",
+      "resonanceSignals": {
+        "conceptDepth": 0.22629438553091683,
+        "editorial": 0.7,
+        "connections": 0,
+        "convergence": 0,
+        "deepTopic": 0,
+        "pantheon": 0,
         "graveyard": 0
       }
     },
@@ -2145,8 +2145,8 @@
       "slug": "starship",
       "label": "Starship & SpaceX",
       "score": 243,
-      "delta": 396,
-      "direction": "up",
+      "delta": -1,
+      "direction": "steady",
       "mentions": 5,
       "sources": [
         {
@@ -2283,8 +2283,8 @@
       "slug": "warp-drives",
       "label": "Warp Drives & Exotic Physics",
       "score": 200,
-      "delta": 0,
-      "direction": "steady",
+      "delta": -17,
+      "direction": "down",
       "mentions": 1,
       "sources": [
         {
