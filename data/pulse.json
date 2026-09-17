@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-09-17T10:45:03.246Z",
+  "generatedAt": "2026-09-17T21:05:58.814Z",
   "topics": [
     {
       "slug": "black-holes",
       "label": "Black Holes",
       "score": 8486,
-      "delta": 3,
+      "delta": 2,
       "direction": "steady",
       "mentions": 50,
       "sources": [
@@ -138,7 +138,7 @@
       "slug": "gravitational-waves",
       "label": "Gravitational Waves",
       "score": 8400,
-      "delta": -2,
+      "delta": 5,
       "direction": "steady",
       "mentions": 42,
       "sources": [
@@ -270,7 +270,7 @@
       "slug": "space-telescopes",
       "label": "Space Telescopes",
       "score": 8206,
-      "delta": 0,
+      "delta": -5,
       "direction": "steady",
       "mentions": 42,
       "sources": [
@@ -400,142 +400,12 @@
       }
     },
     {
-      "slug": "particle-physics",
-      "label": "Particle Physics",
-      "score": 7436,
-      "delta": 3,
-      "direction": "steady",
-      "mentions": 38,
-      "sources": [
-        {
-          "platform": "arxiv",
-          "title": "Galaxy-Galaxy Strong Lensing simulation with the GPU acceleration across surveys and multi-bands",
-          "url": "https://arxiv.org/abs/2609.18180",
-          "score": 200,
-          "authors": "Fucheng Zhong, Ruibiao Luo, Nicola R. Napolitano et al.",
-          "arxivCategory": "astro-ph.GA",
-          "publishedAt": "2026-09-16T06:09:10.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "NNLL resummation for the production of four top quarks",
-          "url": "https://arxiv.org/abs/2609.12928",
-          "score": 200,
-          "authors": "Melissa van Beekveld, Anna Kulesza, Michele Lupattelli et al.",
-          "arxivCategory": "hep-ph",
-          "publishedAt": "2026-09-11T14:51:09.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Theory updates for parton distributions in Hessian formalism",
-          "url": "https://arxiv.org/abs/2609.08761",
-          "score": 200,
-          "authors": "Petja Paakkinen, Hannu Paukkunen, Sami Yrjänheikki",
-          "arxivCategory": "hep-ph",
-          "publishedAt": "2026-09-08T13:58:11.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Flavor Tomography of Long-Lived Neutrino-Mass Mediators: Probing the Neutrino Mass Ordering at the HL-LHC",
-          "url": "https://arxiv.org/abs/2609.04761",
-          "score": 200,
-          "authors": "Renjie Wang",
-          "arxivCategory": "hep-ph",
-          "publishedAt": "2026-09-04T05:45:26.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Atmospheric neutrino up-scattering explanation of LZ 2026 excess",
-          "url": "https://arxiv.org/abs/2609.04185",
-          "score": 200,
-          "authors": "Sk Jeesun, Anirban Majumdar",
-          "arxivCategory": "hep-ph",
-          "publishedAt": "2026-09-03T17:58:10.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "The inclusive $\\bar B \\to X_s γ$ decay rate with higher precision",
-          "url": "https://arxiv.org/abs/2608.29863",
-          "score": 200,
-          "authors": "M. Misiak, H. M. Asatrian, K. Brune et al.",
-          "arxivCategory": "hep-ph",
-          "publishedAt": "2026-08-30T15:46:50.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Low-energy Muon-Nucleon scattering experiment: LUNE (White Paper)",
-          "url": "https://arxiv.org/abs/2608.29509",
-          "score": 200,
-          "authors": "Chenlei An, Dong Bai, Ziyu Bai et al.",
-          "arxivCategory": "hep-ex",
-          "publishedAt": "2026-08-30T02:09:15.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Comprehensive reconstruction of collider events with hypergraph representation learning and graph-conditioned diffusion",
-          "url": "https://arxiv.org/abs/2609.18928",
-          "score": 200,
-          "authors": "Lining Mao, Yvonne Peters, Ethan Simpson et al.",
-          "arxivCategory": "hep-ph",
-          "publishedAt": "2026-09-16T17:03:37.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Complete electroweak corrections to diphoton production via gluon fusion at the LHC",
-          "url": "https://arxiv.org/abs/2609.18828",
-          "score": 200,
-          "authors": "Long-Bin Chen, Zi-Qiang Chen, Hai Tao Li et al.",
-          "arxivCategory": "hep-ph",
-          "publishedAt": "2026-09-16T15:34:10.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Theoretical and phenomenological aspects of the Electroweak physics WG studies for the 2026 ESPPU Physics Briefing Book",
-          "url": "https://arxiv.org/abs/2609.18607",
-          "score": 200,
-          "authors": "Jorge de Blas, Monica Dunford, Emanuele Bagnaschi et al.",
-          "arxivCategory": "hep-ph",
-          "publishedAt": "2026-09-16T12:57:38.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "A possible interpretation of the LUX-ZEPLIN recoil event in the 2HD+a scenario",
-          "url": "https://arxiv.org/abs/2609.17196",
-          "score": 200,
-          "authors": "Giorgio Arcadi, Mattia di Mauro, Abdelhak Djouadi et al.",
-          "arxivCategory": "hep-ph",
-          "publishedAt": "2026-09-15T13:52:11.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Exact computation of quantum wave functions for nonlinear potentials",
-          "url": "https://arxiv.org/abs/2609.14480",
-          "score": 200,
-          "authors": "Winfried Loghmiller, Jean-Jacques Slotine",
-          "arxivCategory": "quant-ph",
-          "publishedAt": "2026-09-13T12:39:05.000Z"
-        }
-      ],
-      "relatedConceptSlugs": [],
-      "resonance": 3,
-      "quadrant": "hype-cycle",
-      "resonanceSignals": {
-        "conceptDepth": 0,
-        "editorial": 0,
-        "connections": 0,
-        "convergence": 0,
-        "deepTopic": 0,
-        "pantheon": 0.92,
-        "graveyard": 0.3333333333333333
-      }
-    },
-    {
       "slug": "quantum-computing",
       "label": "Quantum Computing",
-      "score": 7406,
-      "delta": 6,
-      "direction": "steady",
-      "mentions": 39,
+      "score": 7407,
+      "delta": 19,
+      "direction": "up",
+      "mentions": 40,
       "sources": [
         {
           "platform": "arxiv",
@@ -659,6 +529,136 @@
         "deepTopic": 1,
         "pantheon": 1,
         "graveyard": 0
+      }
+    },
+    {
+      "slug": "particle-physics",
+      "label": "Particle Physics",
+      "score": 7400,
+      "delta": 2,
+      "direction": "steady",
+      "mentions": 37,
+      "sources": [
+        {
+          "platform": "arxiv",
+          "title": "Galaxy-Galaxy Strong Lensing simulation with the GPU acceleration across surveys and multi-bands",
+          "url": "https://arxiv.org/abs/2609.18180",
+          "score": 200,
+          "authors": "Fucheng Zhong, Ruibiao Luo, Nicola R. Napolitano et al.",
+          "arxivCategory": "astro-ph.GA",
+          "publishedAt": "2026-09-16T06:09:10.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "NNLL resummation for the production of four top quarks",
+          "url": "https://arxiv.org/abs/2609.12928",
+          "score": 200,
+          "authors": "Melissa van Beekveld, Anna Kulesza, Michele Lupattelli et al.",
+          "arxivCategory": "hep-ph",
+          "publishedAt": "2026-09-11T14:51:09.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Theory updates for parton distributions in Hessian formalism",
+          "url": "https://arxiv.org/abs/2609.08761",
+          "score": 200,
+          "authors": "Petja Paakkinen, Hannu Paukkunen, Sami Yrjänheikki",
+          "arxivCategory": "hep-ph",
+          "publishedAt": "2026-09-08T13:58:11.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Flavor Tomography of Long-Lived Neutrino-Mass Mediators: Probing the Neutrino Mass Ordering at the HL-LHC",
+          "url": "https://arxiv.org/abs/2609.04761",
+          "score": 200,
+          "authors": "Renjie Wang",
+          "arxivCategory": "hep-ph",
+          "publishedAt": "2026-09-04T05:45:26.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Atmospheric neutrino up-scattering explanation of LZ 2026 excess",
+          "url": "https://arxiv.org/abs/2609.04185",
+          "score": 200,
+          "authors": "Sk Jeesun, Anirban Majumdar",
+          "arxivCategory": "hep-ph",
+          "publishedAt": "2026-09-03T17:58:10.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "The inclusive $\\bar B \\to X_s γ$ decay rate with higher precision",
+          "url": "https://arxiv.org/abs/2608.29863",
+          "score": 200,
+          "authors": "M. Misiak, H. M. Asatrian, K. Brune et al.",
+          "arxivCategory": "hep-ph",
+          "publishedAt": "2026-08-30T15:46:50.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Low-energy Muon-Nucleon scattering experiment: LUNE (White Paper)",
+          "url": "https://arxiv.org/abs/2608.29509",
+          "score": 200,
+          "authors": "Chenlei An, Dong Bai, Ziyu Bai et al.",
+          "arxivCategory": "hep-ex",
+          "publishedAt": "2026-08-30T02:09:15.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Comprehensive reconstruction of collider events with hypergraph representation learning and graph-conditioned diffusion",
+          "url": "https://arxiv.org/abs/2609.18928",
+          "score": 200,
+          "authors": "Lining Mao, Yvonne Peters, Ethan Simpson et al.",
+          "arxivCategory": "hep-ph",
+          "publishedAt": "2026-09-16T17:03:37.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Complete electroweak corrections to diphoton production via gluon fusion at the LHC",
+          "url": "https://arxiv.org/abs/2609.18828",
+          "score": 200,
+          "authors": "Long-Bin Chen, Zi-Qiang Chen, Hai Tao Li et al.",
+          "arxivCategory": "hep-ph",
+          "publishedAt": "2026-09-16T15:34:10.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Theoretical and phenomenological aspects of the Electroweak physics WG studies for the 2026 ESPPU Physics Briefing Book",
+          "url": "https://arxiv.org/abs/2609.18607",
+          "score": 200,
+          "authors": "Jorge de Blas, Monica Dunford, Emanuele Bagnaschi et al.",
+          "arxivCategory": "hep-ph",
+          "publishedAt": "2026-09-16T12:57:38.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "A possible interpretation of the LUX-ZEPLIN recoil event in the 2HD+a scenario",
+          "url": "https://arxiv.org/abs/2609.17196",
+          "score": 200,
+          "authors": "Giorgio Arcadi, Mattia di Mauro, Abdelhak Djouadi et al.",
+          "arxivCategory": "hep-ph",
+          "publishedAt": "2026-09-15T13:52:11.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Exact computation of quantum wave functions for nonlinear potentials",
+          "url": "https://arxiv.org/abs/2609.14480",
+          "score": 200,
+          "authors": "Winfried Loghmiller, Jean-Jacques Slotine",
+          "arxivCategory": "quant-ph",
+          "publishedAt": "2026-09-13T12:39:05.000Z"
+        }
+      ],
+      "relatedConceptSlugs": [],
+      "resonance": 3,
+      "quadrant": "hype-cycle",
+      "resonanceSignals": {
+        "conceptDepth": 0,
+        "editorial": 0,
+        "connections": 0,
+        "convergence": 0,
+        "deepTopic": 0,
+        "pantheon": 0.92,
+        "graveyard": 0.3333333333333333
       }
     },
     {
@@ -797,10 +797,10 @@
     {
       "slug": "dark-matter",
       "label": "Dark Matter & Dark Energy",
-      "score": 5803,
-      "delta": -3,
+      "score": 5800,
+      "delta": 0,
       "direction": "steady",
-      "mentions": 30,
+      "mentions": 29,
       "sources": [
         {
           "platform": "arxiv",
@@ -1062,8 +1062,8 @@
     {
       "slug": "condensed-matter",
       "label": "Condensed Matter",
-      "score": 4960,
-      "delta": 4,
+      "score": 4961,
+      "delta": 0,
       "direction": "steady",
       "mentions": 25,
       "sources": [
@@ -1071,7 +1071,7 @@
           "platform": "hackernews",
           "title": "GrapheneOS' rewritten Messages app is released",
           "url": "https://github.com/GrapheneOS/Messaging/releases/tag/13",
-          "score": 327,
+          "score": 328,
           "author": "microtonal",
           "commentCount": 256,
           "publishedAt": "2026-09-11T18:50:36.000Z"
@@ -1194,10 +1194,10 @@
     {
       "slug": "exoplanets",
       "label": "Exoplanets",
-      "score": 4000,
-      "delta": 0,
+      "score": 3800,
+      "delta": -10,
       "direction": "steady",
-      "mentions": 20,
+      "mentions": 19,
       "sources": [
         {
           "platform": "arxiv",
@@ -1459,10 +1459,10 @@
     {
       "slug": "astrobiology",
       "label": "Astrobiology",
-      "score": 2400,
-      "delta": 0,
+      "score": 2200,
+      "delta": -8,
       "direction": "steady",
-      "mentions": 12,
+      "mentions": 11,
       "sources": [
         {
           "platform": "arxiv",
@@ -1490,15 +1490,6 @@
           "authors": "Erica Bisesi, Giuseppe Murante, Jost von Hardenberg et al.",
           "arxivCategory": "astro-ph.EP",
           "publishedAt": "2026-08-26T07:15:36.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Astrobiology and the Transformation of Scientific Epistemology",
-          "url": "https://arxiv.org/abs/2608.17728",
-          "score": 200,
-          "authors": "Kristina Šekrst",
-          "arxivCategory": "physics.hist-ph",
-          "publishedAt": "2026-08-18T12:52:35.000Z"
         },
         {
           "platform": "arxiv",
@@ -1866,10 +1857,10 @@
     {
       "slug": "space-debris",
       "label": "Space Debris",
-      "score": 1000,
-      "delta": -17,
-      "direction": "down",
-      "mentions": 5,
+      "score": 1001,
+      "delta": 0,
+      "direction": "steady",
+      "mentions": 6,
       "sources": [
         {
           "platform": "arxiv",
@@ -1915,6 +1906,15 @@
           "authors": "Priyank Behera, Aditya S. Gopalan, Harsha Honnappa",
           "arxivCategory": "math.PR",
           "publishedAt": "2026-08-24T16:54:26.000Z"
+        },
+        {
+          "platform": "hackernews",
+          "title": "The damage a tiny speck of space debris can do at 15000mph(2018)",
+          "url": "https://bigthink.com/hard-science/heres-the-damage-a-tiny-speck-of-space-debris-can-do-at-15000mph/",
+          "score": 1,
+          "author": "num42",
+          "commentCount": 0,
+          "publishedAt": "2026-09-17T12:05:29.000Z"
         }
       ],
       "relatedConceptSlugs": [
@@ -2111,8 +2111,8 @@
       "slug": "electric-propulsion",
       "label": "Electric Propulsion",
       "score": 400,
-      "delta": 100,
-      "direction": "up",
+      "delta": 0,
+      "direction": "steady",
       "mentions": 2,
       "sources": [
         {
@@ -2197,10 +2197,10 @@
     {
       "slug": "starship",
       "label": "Starship & SpaceX",
-      "score": 243,
-      "delta": -12,
+      "score": 253,
+      "delta": 5,
       "direction": "steady",
-      "mentions": 10,
+      "mentions": 13,
       "sources": [
         {
           "platform": "arxiv",
@@ -2240,6 +2240,15 @@
         },
         {
           "platform": "hackernews",
+          "title": "SpaceX – Starmind",
+          "url": "https://www.spacex.com/spacexai/starmind",
+          "score": 4,
+          "author": "vismit2000",
+          "commentCount": 0,
+          "publishedAt": "2026-09-17T12:04:08.000Z"
+        },
+        {
+          "platform": "hackernews",
           "title": "Space Force gives SpaceX latitude on design of $2.3B satellite network",
           "url": "https://spacenews.com/space-force-gives-spacex-latitude-on-design-of-2-3-billion-satellite-network/",
           "score": 4,
@@ -2267,6 +2276,24 @@
         },
         {
           "platform": "hackernews",
+          "title": "How SpaceX Streamlined the Raptor Engine",
+          "url": "https://www.construction-physics.com/p/how-spacex-streamlined-the-raptor",
+          "score": 3,
+          "author": "crescit_eundo",
+          "commentCount": 0,
+          "publishedAt": "2026-09-17T12:40:49.000Z"
+        },
+        {
+          "platform": "hackernews",
+          "title": "Musk's long-time backer is giving SpaceX stock to its investors",
+          "url": "https://techcrunch.com/2026/09/16/musks-long-time-backer-is-giving-spacex-stock-to-its-investors/",
+          "score": 3,
+          "author": "soltanov",
+          "commentCount": 0,
+          "publishedAt": "2026-09-17T11:22:17.000Z"
+        },
+        {
+          "platform": "hackernews",
           "title": "SpaceX Backtracks on Starlink Data Cap After Complaints",
           "url": "https://www.pcmag.com/news/spacex-backtracks-on-starlink-data-cap-after-complaints",
           "score": 3,
@@ -2282,23 +2309,6 @@
           "author": "spikels",
           "commentCount": 0,
           "publishedAt": "2026-09-14T16:04:23.000Z"
-        },
-        {
-          "platform": "youtube",
-          "title": "Why Does SpaceX Have 11,000 Starlink Satellites? [video]",
-          "url": "https://www.youtube.com/watch?v=DW-aL_MiUz4",
-          "score": 1,
-          "thumbnail": "https://img.youtube.com/vi/DW-aL_MiUz4/mqdefault.jpg",
-          "publishedAt": "2026-09-14T06:38:01.000Z"
-        },
-        {
-          "platform": "hackernews",
-          "title": "Why Does SpaceX Have 11,000 Starlink Satellites? [video]",
-          "url": "https://www.youtube.com/watch?v=DW-aL_MiUz4",
-          "score": 1,
-          "author": "marklit",
-          "commentCount": 0,
-          "publishedAt": "2026-09-14T06:38:01.000Z"
         }
       ],
       "relatedConceptSlugs": [
