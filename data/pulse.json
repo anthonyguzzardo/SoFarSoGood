@@ -1,13 +1,13 @@
 {
-  "generatedAt": "2026-09-19T10:01:52.183Z",
+  "generatedAt": "2026-09-19T20:12:14.576Z",
   "topics": [
     {
       "slug": "black-holes",
       "label": "Black Holes",
-      "score": 8678,
-      "delta": 0,
+      "score": 8550,
+      "delta": -1,
       "direction": "steady",
-      "mentions": 49,
+      "mentions": 48,
       "sources": [
         {
           "platform": "arxiv",
@@ -930,10 +930,10 @@
     {
       "slug": "cosmology",
       "label": "Cosmology",
-      "score": 5400,
-      "delta": 0,
+      "score": 5200,
+      "delta": -4,
       "direction": "steady",
-      "mentions": 27,
+      "mentions": 26,
       "sources": [
         {
           "platform": "arxiv",
@@ -1062,10 +1062,10 @@
     {
       "slug": "condensed-matter",
       "label": "Condensed Matter",
-      "score": 4650,
-      "delta": -7,
+      "score": 4616,
+      "delta": -1,
       "direction": "steady",
-      "mentions": 25,
+      "mentions": 24,
       "sources": [
         {
           "platform": "arxiv",
@@ -1195,7 +1195,7 @@
       "slug": "exoplanets",
       "label": "Exoplanets",
       "score": 3400,
-      "delta": -11,
+      "delta": -6,
       "direction": "steady",
       "mentions": 17,
       "sources": [
@@ -1460,7 +1460,7 @@
       "slug": "astrobiology",
       "label": "Astrobiology",
       "score": 2000,
-      "delta": -9,
+      "delta": 0,
       "direction": "steady",
       "mentions": 10,
       "sources": [
@@ -2067,18 +2067,18 @@
     {
       "slug": "starship",
       "label": "Starship & SpaceX",
-      "score": 464,
-      "delta": 57,
+      "score": 514,
+      "delta": 52,
       "direction": "up",
-      "mentions": 16,
+      "mentions": 18,
       "sources": [
         {
           "platform": "hackernews",
           "title": "How SpaceX streamlined the Raptor engine",
           "url": "https://www.construction-physics.com/p/how-spacex-streamlined-the-raptor",
-          "score": 208,
+          "score": 229,
           "author": "JumpCrisscross",
-          "commentCount": 85,
+          "commentCount": 97,
           "publishedAt": "2026-09-17T21:14:19.000Z"
         },
         {
@@ -2092,6 +2092,15 @@
         },
         {
           "platform": "hackernews",
+          "title": "Lawsuit: Illegal Agreement of Anthropic, OpenAI, SpaceXAI, Google on AI Slowdown",
+          "url": "https://www.independent.co.uk/news/lawsuit-anthropic-google-openai-lawyers-b3052942.html",
+          "score": 15,
+          "author": "mdp2021",
+          "commentCount": 1,
+          "publishedAt": "2026-09-19T16:51:41.000Z"
+        },
+        {
+          "platform": "hackernews",
           "title": "SpaceX sues to block release of tax-break records for its Texas Terafab project",
           "url": "https://www.businessinsider.com/spacex-terafab-tax-break-records-ai-transparency-texas-2026-9",
           "score": 13,
@@ -2101,12 +2110,30 @@
         },
         {
           "platform": "hackernews",
+          "title": "Lawsuit Accuses Anthropic, OpenAI, SpaceXAI, Google of AI Pacing 'Collusion'",
+          "url": "https://thehill.com/policy/technology/6099571-lawsuit-accuses-anthropic-openai-spacexai-google-of-ai-pacing-collusion/",
+          "score": 9,
+          "author": "theanonymousone",
+          "commentCount": 0,
+          "publishedAt": "2026-09-19T15:52:15.000Z"
+        },
+        {
+          "platform": "hackernews",
           "title": "Musk's secretive backer builds $40B SpaceX stake",
           "url": "https://www.ft.com/content/c765f312-e698-4d31-bf71-f64a656ad6f4",
           "score": 8,
           "author": "sbulaev",
           "commentCount": 3,
           "publishedAt": "2026-09-13T09:07:22.000Z"
+        },
+        {
+          "platform": "hackernews",
+          "title": "Anthropic, OpenAI, SpaceXAI, Google sued over call to 'pace' AI development",
+          "url": "https://www.politico.com/news/2026/09/18/anthropic-openai-spacexai-google-sued-over-calls-to-pace-ai-development-01085023",
+          "score": 7,
+          "author": "MarcScott",
+          "commentCount": 4,
+          "publishedAt": "2026-09-19T14:09:55.000Z"
         },
         {
           "platform": "hackernews",
@@ -2152,33 +2179,6 @@
           "author": "gmays",
           "commentCount": 0,
           "publishedAt": "2026-09-16T23:40:46.000Z"
-        },
-        {
-          "platform": "hackernews",
-          "title": "If you can't warp spacetime, what are you doing on the Starship Enterprise?",
-          "url": "https://gardnermcintyre.com/if-you-cant-warp-spacetime",
-          "score": 3,
-          "author": "zebomon",
-          "commentCount": 0,
-          "publishedAt": "2026-09-15T13:00:45.000Z"
-        },
-        {
-          "platform": "hackernews",
-          "title": "How SpaceX Streamlined the Raptor Engine",
-          "url": "https://www.construction-physics.com/p/how-spacex-streamlined-the-raptor",
-          "score": 3,
-          "author": "crescit_eundo",
-          "commentCount": 0,
-          "publishedAt": "2026-09-17T12:40:49.000Z"
-        },
-        {
-          "platform": "hackernews",
-          "title": "SpaceX Backtracks on Starlink Data Cap After Complaints",
-          "url": "https://www.pcmag.com/news/spacex-backtracks-on-starlink-data-cap-after-complaints",
-          "score": 3,
-          "author": "freedomben",
-          "commentCount": 0,
-          "publishedAt": "2026-09-12T14:28:15.000Z"
         }
       ],
       "relatedConceptSlugs": [

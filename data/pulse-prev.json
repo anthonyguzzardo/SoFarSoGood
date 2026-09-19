@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-09-18T20:33:32.273Z",
+  "generatedAt": "2026-09-19T10:01:52.183Z",
   "topics": [
     {
       "slug": "black-holes",
       "label": "Black Holes",
-      "score": 8677,
-      "delta": 2,
+      "score": 8678,
+      "delta": 0,
       "direction": "steady",
       "mentions": 49,
       "sources": [
@@ -138,7 +138,7 @@
       "slug": "space-telescopes",
       "label": "Space Telescopes",
       "score": 8406,
-      "delta": 2,
+      "delta": 0,
       "direction": "steady",
       "mentions": 43,
       "sources": [
@@ -271,7 +271,7 @@
       "slug": "gravitational-waves",
       "label": "Gravitational Waves",
       "score": 8000,
-      "delta": -5,
+      "delta": 0,
       "direction": "steady",
       "mentions": 40,
       "sources": [
@@ -665,10 +665,10 @@
     {
       "slug": "quantum-computing",
       "label": "Quantum Computing",
-      "score": 6803,
-      "delta": -8,
+      "score": 6804,
+      "delta": 0,
       "direction": "steady",
-      "mentions": 36,
+      "mentions": 37,
       "sources": [
         {
           "platform": "arxiv",
@@ -1063,7 +1063,7 @@
       "slug": "condensed-matter",
       "label": "Condensed Matter",
       "score": 4650,
-      "delta": -6,
+      "delta": -7,
       "direction": "steady",
       "mentions": 25,
       "sources": [
@@ -1194,10 +1194,10 @@
     {
       "slug": "exoplanets",
       "label": "Exoplanets",
-      "score": 3600,
-      "delta": -5,
+      "score": 3400,
+      "delta": -11,
       "direction": "steady",
-      "mentions": 18,
+      "mentions": 17,
       "sources": [
         {
           "platform": "arxiv",
@@ -1926,10 +1926,10 @@
     {
       "slug": "starlink",
       "label": "Starlink & Satellite Internet",
-      "score": 947,
-      "delta": 0,
+      "score": 804,
+      "delta": -15,
       "direction": "steady",
-      "mentions": 7,
+      "mentions": 6,
       "sources": [
         {
           "platform": "arxiv",
@@ -1969,15 +1969,6 @@
         },
         {
           "platform": "hackernews",
-          "title": "Starlink Signal Leakage Threatens Radio Astronomy's Most Critical Frequencies",
-          "url": "https://www.gadgetreview.com/starlinks-signal-leakage-is-threatening-radio-astronomys-most-critical-frequencies",
-          "score": 143,
-          "author": "upofadown",
-          "commentCount": 86,
-          "publishedAt": "2026-09-12T00:40:32.000Z"
-        },
-        {
-          "platform": "hackernews",
           "title": "Starlink's Other Network",
           "url": "https://circleid.com/posts/starlinks-other-network",
           "score": 3,
@@ -2014,8 +2005,8 @@
       "slug": "mars",
       "label": "Mars Exploration",
       "score": 606,
-      "delta": 49,
-      "direction": "up",
+      "delta": 0,
+      "direction": "steady",
       "mentions": 4,
       "sources": [
         {
@@ -2070,6 +2061,139 @@
         "convergence": 0.075,
         "deepTopic": 0.8,
         "pantheon": 0.08,
+        "graveyard": 0
+      }
+    },
+    {
+      "slug": "starship",
+      "label": "Starship & SpaceX",
+      "score": 464,
+      "delta": 57,
+      "direction": "up",
+      "mentions": 16,
+      "sources": [
+        {
+          "platform": "hackernews",
+          "title": "How SpaceX streamlined the Raptor engine",
+          "url": "https://www.construction-physics.com/p/how-spacex-streamlined-the-raptor",
+          "score": 208,
+          "author": "JumpCrisscross",
+          "commentCount": 85,
+          "publishedAt": "2026-09-17T21:14:19.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Method for Constrained Computational Guidance and Control with Application to Hypersonic Entry",
+          "url": "https://arxiv.org/abs/2609.10813",
+          "score": 200,
+          "authors": "Emily M. Palmer, Anil V. Rao",
+          "arxivCategory": "math.OC",
+          "publishedAt": "2026-09-09T20:33:53.000Z"
+        },
+        {
+          "platform": "hackernews",
+          "title": "SpaceX sues to block release of tax-break records for its Texas Terafab project",
+          "url": "https://www.businessinsider.com/spacex-terafab-tax-break-records-ai-transparency-texas-2026-9",
+          "score": 13,
+          "author": "snikolaev",
+          "commentCount": 1,
+          "publishedAt": "2026-09-14T07:35:23.000Z"
+        },
+        {
+          "platform": "hackernews",
+          "title": "Musk's secretive backer builds $40B SpaceX stake",
+          "url": "https://www.ft.com/content/c765f312-e698-4d31-bf71-f64a656ad6f4",
+          "score": 8,
+          "author": "sbulaev",
+          "commentCount": 3,
+          "publishedAt": "2026-09-13T09:07:22.000Z"
+        },
+        {
+          "platform": "hackernews",
+          "title": "Elon Musk's secretive backer builds $40B SpaceX stake",
+          "url": "https://www.ft.com/content/c765f312-e698-4d31-bf71-f64a656ad6f4",
+          "score": 6,
+          "author": "geoffbp",
+          "commentCount": 2,
+          "publishedAt": "2026-09-13T20:23:08.000Z"
+        },
+        {
+          "platform": "hackernews",
+          "title": "SpaceX – Starmind",
+          "url": "https://www.spacex.com/spacexai/starmind",
+          "score": 4,
+          "author": "vismit2000",
+          "commentCount": 0,
+          "publishedAt": "2026-09-17T12:04:08.000Z"
+        },
+        {
+          "platform": "hackernews",
+          "title": "Musk's long-time backer is giving SpaceX stock to its investors",
+          "url": "https://techcrunch.com/2026/09/16/musks-long-time-backer-is-giving-spacex-stock-to-its-investors/",
+          "score": 4,
+          "author": "soltanov",
+          "commentCount": 0,
+          "publishedAt": "2026-09-17T11:22:17.000Z"
+        },
+        {
+          "platform": "hackernews",
+          "title": "Space Force gives SpaceX latitude on design of $2.3B satellite network",
+          "url": "https://spacenews.com/space-force-gives-spacex-latitude-on-design-of-2-3-billion-satellite-network/",
+          "score": 4,
+          "author": "KinetiNode",
+          "commentCount": 0,
+          "publishedAt": "2026-09-16T14:30:46.000Z"
+        },
+        {
+          "platform": "hackernews",
+          "title": "SpaceX's next Starship launch is Sept. 22, aims to reach orbit for first time",
+          "url": "https://www.space.com/space-exploration/launches-spacecraft/spacexs-next-starship-launch-will-lift-off-on-sept-22-and-aim-to-reach-orbit-for-1st-time",
+          "score": 3,
+          "author": "gmays",
+          "commentCount": 0,
+          "publishedAt": "2026-09-16T23:40:46.000Z"
+        },
+        {
+          "platform": "hackernews",
+          "title": "If you can't warp spacetime, what are you doing on the Starship Enterprise?",
+          "url": "https://gardnermcintyre.com/if-you-cant-warp-spacetime",
+          "score": 3,
+          "author": "zebomon",
+          "commentCount": 0,
+          "publishedAt": "2026-09-15T13:00:45.000Z"
+        },
+        {
+          "platform": "hackernews",
+          "title": "How SpaceX Streamlined the Raptor Engine",
+          "url": "https://www.construction-physics.com/p/how-spacex-streamlined-the-raptor",
+          "score": 3,
+          "author": "crescit_eundo",
+          "commentCount": 0,
+          "publishedAt": "2026-09-17T12:40:49.000Z"
+        },
+        {
+          "platform": "hackernews",
+          "title": "SpaceX Backtracks on Starlink Data Cap After Complaints",
+          "url": "https://www.pcmag.com/news/spacex-backtracks-on-starlink-data-cap-after-complaints",
+          "score": 3,
+          "author": "freedomben",
+          "commentCount": 0,
+          "publishedAt": "2026-09-12T14:28:15.000Z"
+        }
+      ],
+      "relatedConceptSlugs": [
+        "extraterrestrial-regolith-derived-atmospheric-entry-heat-shields",
+        "phase-i-final-report-nasa-institute-for-advanced-concepts-combined-heat-shield-a"
+      ],
+      "resonance": 43,
+      "quadrant": "dead-zone",
+      "resonanceSignals": {
+        "conceptDepth": 0.5113915944693856,
+        "editorial": 0.4,
+        "connections": 0,
+        "convergence": 0.35,
+        "deepTopic": 1,
+        "pantheon": 0.92,
         "graveyard": 0
       }
     },
@@ -2200,139 +2324,6 @@
         "convergence": 0.025,
         "deepTopic": 0,
         "pantheon": 0.4,
-        "graveyard": 0
-      }
-    },
-    {
-      "slug": "starship",
-      "label": "Starship & SpaceX",
-      "score": 338,
-      "delta": 34,
-      "direction": "up",
-      "mentions": 14,
-      "sources": [
-        {
-          "platform": "arxiv",
-          "title": "Method for Constrained Computational Guidance and Control with Application to Hypersonic Entry",
-          "url": "https://arxiv.org/abs/2609.10813",
-          "score": 200,
-          "authors": "Emily M. Palmer, Anil V. Rao",
-          "arxivCategory": "math.OC",
-          "publishedAt": "2026-09-09T20:33:53.000Z"
-        },
-        {
-          "platform": "hackernews",
-          "title": "How SpaceX streamlined the Raptor engine",
-          "url": "https://www.construction-physics.com/p/how-spacex-streamlined-the-raptor",
-          "score": 84,
-          "author": "JumpCrisscross",
-          "commentCount": 10,
-          "publishedAt": "2026-09-17T21:14:19.000Z"
-        },
-        {
-          "platform": "hackernews",
-          "title": "SpaceX sues to block release of tax-break records for its Texas Terafab project",
-          "url": "https://www.businessinsider.com/spacex-terafab-tax-break-records-ai-transparency-texas-2026-9",
-          "score": 13,
-          "author": "snikolaev",
-          "commentCount": 1,
-          "publishedAt": "2026-09-14T07:35:23.000Z"
-        },
-        {
-          "platform": "hackernews",
-          "title": "Musk's secretive backer builds $40B SpaceX stake",
-          "url": "https://www.ft.com/content/c765f312-e698-4d31-bf71-f64a656ad6f4",
-          "score": 8,
-          "author": "sbulaev",
-          "commentCount": 3,
-          "publishedAt": "2026-09-13T09:07:22.000Z"
-        },
-        {
-          "platform": "hackernews",
-          "title": "Elon Musk's secretive backer builds $40B SpaceX stake",
-          "url": "https://www.ft.com/content/c765f312-e698-4d31-bf71-f64a656ad6f4",
-          "score": 6,
-          "author": "geoffbp",
-          "commentCount": 2,
-          "publishedAt": "2026-09-13T20:23:08.000Z"
-        },
-        {
-          "platform": "hackernews",
-          "title": "SpaceX – Starmind",
-          "url": "https://www.spacex.com/spacexai/starmind",
-          "score": 4,
-          "author": "vismit2000",
-          "commentCount": 0,
-          "publishedAt": "2026-09-17T12:04:08.000Z"
-        },
-        {
-          "platform": "hackernews",
-          "title": "Musk's long-time backer is giving SpaceX stock to its investors",
-          "url": "https://techcrunch.com/2026/09/16/musks-long-time-backer-is-giving-spacex-stock-to-its-investors/",
-          "score": 4,
-          "author": "soltanov",
-          "commentCount": 0,
-          "publishedAt": "2026-09-17T11:22:17.000Z"
-        },
-        {
-          "platform": "hackernews",
-          "title": "Space Force gives SpaceX latitude on design of $2.3B satellite network",
-          "url": "https://spacenews.com/space-force-gives-spacex-latitude-on-design-of-2-3-billion-satellite-network/",
-          "score": 4,
-          "author": "KinetiNode",
-          "commentCount": 0,
-          "publishedAt": "2026-09-16T14:30:46.000Z"
-        },
-        {
-          "platform": "hackernews",
-          "title": "SpaceX's next Starship launch is Sept. 22, aims to reach orbit for first time",
-          "url": "https://www.space.com/space-exploration/launches-spacecraft/spacexs-next-starship-launch-will-lift-off-on-sept-22-and-aim-to-reach-orbit-for-1st-time",
-          "score": 3,
-          "author": "gmays",
-          "commentCount": 0,
-          "publishedAt": "2026-09-16T23:40:46.000Z"
-        },
-        {
-          "platform": "hackernews",
-          "title": "If you can't warp spacetime, what are you doing on the Starship Enterprise?",
-          "url": "https://gardnermcintyre.com/if-you-cant-warp-spacetime",
-          "score": 3,
-          "author": "zebomon",
-          "commentCount": 0,
-          "publishedAt": "2026-09-15T13:00:45.000Z"
-        },
-        {
-          "platform": "hackernews",
-          "title": "How SpaceX Streamlined the Raptor Engine",
-          "url": "https://www.construction-physics.com/p/how-spacex-streamlined-the-raptor",
-          "score": 3,
-          "author": "crescit_eundo",
-          "commentCount": 0,
-          "publishedAt": "2026-09-17T12:40:49.000Z"
-        },
-        {
-          "platform": "hackernews",
-          "title": "SpaceX Backtracks on Starlink Data Cap After Complaints",
-          "url": "https://www.pcmag.com/news/spacex-backtracks-on-starlink-data-cap-after-complaints",
-          "score": 3,
-          "author": "freedomben",
-          "commentCount": 0,
-          "publishedAt": "2026-09-12T14:28:15.000Z"
-        }
-      ],
-      "relatedConceptSlugs": [
-        "extraterrestrial-regolith-derived-atmospheric-entry-heat-shields",
-        "phase-i-final-report-nasa-institute-for-advanced-concepts-combined-heat-shield-a"
-      ],
-      "resonance": 43,
-      "quadrant": "dead-zone",
-      "resonanceSignals": {
-        "conceptDepth": 0.5113915944693856,
-        "editorial": 0.4,
-        "connections": 0,
-        "convergence": 0.35,
-        "deepTopic": 1,
-        "pantheon": 0.92,
         "graveyard": 0
       }
     },
