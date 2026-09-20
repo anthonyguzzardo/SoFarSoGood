@@ -1,13 +1,13 @@
 {
-  "generatedAt": "2026-09-19T20:12:14.576Z",
+  "generatedAt": "2026-09-20T10:21:49.319Z",
   "topics": [
     {
       "slug": "black-holes",
       "label": "Black Holes",
-      "score": 8550,
-      "delta": -1,
+      "score": 8508,
+      "delta": -2,
       "direction": "steady",
-      "mentions": 48,
+      "mentions": 47,
       "sources": [
         {
           "platform": "arxiv",
@@ -137,10 +137,10 @@
     {
       "slug": "space-telescopes",
       "label": "Space Telescopes",
-      "score": 8406,
+      "score": 8400,
       "delta": 0,
       "direction": "steady",
-      "mentions": 43,
+      "mentions": 42,
       "sources": [
         {
           "platform": "arxiv",
@@ -665,7 +665,7 @@
     {
       "slug": "quantum-computing",
       "label": "Quantum Computing",
-      "score": 6804,
+      "score": 6805,
       "delta": 0,
       "direction": "steady",
       "mentions": 37,
@@ -1062,7 +1062,7 @@
     {
       "slug": "condensed-matter",
       "label": "Condensed Matter",
-      "score": 4616,
+      "score": 4617,
       "delta": -1,
       "direction": "steady",
       "mentions": 24,
@@ -1194,10 +1194,10 @@
     {
       "slug": "exoplanets",
       "label": "Exoplanets",
-      "score": 3400,
+      "score": 3200,
       "delta": -6,
       "direction": "steady",
-      "mentions": 17,
+      "mentions": 16,
       "sources": [
         {
           "platform": "arxiv",
@@ -1574,10 +1574,10 @@
     {
       "slug": "fusion-propulsion",
       "label": "Fusion Propulsion",
-      "score": 2000,
-      "delta": 0,
+      "score": 1800,
+      "delta": -10,
       "direction": "steady",
-      "mentions": 10,
+      "mentions": 9,
       "sources": [
         {
           "platform": "arxiv",
@@ -1659,15 +1659,6 @@
           "authors": "Luning Sun, Ben Zhu, Xin-Yang Liu et al.",
           "arxivCategory": "physics.plasm-ph",
           "publishedAt": "2026-08-28T02:25:52.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Power-law-anchored residual learning for H-mode energy confinement time in tokamaks: interpolation and parameter-defined extrapolation",
-          "url": "https://arxiv.org/abs/2608.20684",
-          "score": 200,
-          "authors": "Zhaokun Wang, Tianyuan Liu, Jianguo Chen et al.",
-          "arxivCategory": "physics.plasm-ph",
-          "publishedAt": "2026-08-21T02:44:04.000Z"
         }
       ],
       "relatedConceptSlugs": [
@@ -1926,10 +1917,10 @@
     {
       "slug": "starlink",
       "label": "Starlink & Satellite Internet",
-      "score": 804,
-      "delta": -15,
-      "direction": "steady",
-      "mentions": 6,
+      "score": 604,
+      "delta": -25,
+      "direction": "down",
+      "mentions": 5,
       "sources": [
         {
           "platform": "arxiv",
@@ -1957,15 +1948,6 @@
           "authors": "Sai Puppala, Koushik Sinha",
           "arxivCategory": "cs.AI",
           "publishedAt": "2026-09-01T08:07:39.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Fluid-Dynamic Interference Modeling for LEO Mega-Constellations: A Spatiotemporal Kinetic Field Approach",
-          "url": "https://arxiv.org/abs/2608.20651",
-          "score": 200,
-          "authors": "Wen-Yu Dong, Weiwei Jiang, Song Zhao et al.",
-          "arxivCategory": "cs.NI",
-          "publishedAt": "2026-08-21T01:10:02.000Z"
         },
         {
           "platform": "hackernews",
@@ -2004,10 +1986,10 @@
     {
       "slug": "mars",
       "label": "Mars Exploration",
-      "score": 606,
-      "delta": 0,
+      "score": 600,
+      "delta": -1,
       "direction": "steady",
-      "mentions": 4,
+      "mentions": 3,
       "sources": [
         {
           "platform": "arxiv",
@@ -2035,15 +2017,6 @@
           "authors": "Mavia Anjum, Gwendolyn D. Bart",
           "arxivCategory": "q-bio.OT",
           "publishedAt": "2026-08-28T19:17:54.000Z"
-        },
-        {
-          "platform": "hackernews",
-          "title": "OS that runs the Mars Rovers and Artemis is helping power the Roman Telescope",
-          "url": "https://www.windriver.com/blog/NASA-Nancy-Grace-Roman-Space-Telescope",
-          "score": 6,
-          "author": "ReindeerFlotill",
-          "commentCount": 1,
-          "publishedAt": "2026-09-13T01:10:31.000Z"
         }
       ],
       "relatedConceptSlugs": [
@@ -2067,18 +2040,18 @@
     {
       "slug": "starship",
       "label": "Starship & SpaceX",
-      "score": 514,
-      "delta": 52,
-      "direction": "up",
-      "mentions": 18,
+      "score": 523,
+      "delta": 13,
+      "direction": "steady",
+      "mentions": 17,
       "sources": [
         {
           "platform": "hackernews",
           "title": "How SpaceX streamlined the Raptor engine",
           "url": "https://www.construction-physics.com/p/how-spacex-streamlined-the-raptor",
-          "score": 229,
+          "score": 238,
           "author": "JumpCrisscross",
-          "commentCount": 97,
+          "commentCount": 107,
           "publishedAt": "2026-09-17T21:14:19.000Z"
         },
         {
@@ -2094,7 +2067,7 @@
           "platform": "hackernews",
           "title": "Lawsuit: Illegal Agreement of Anthropic, OpenAI, SpaceXAI, Google on AI Slowdown",
           "url": "https://www.independent.co.uk/news/lawsuit-anthropic-google-openai-lawyers-b3052942.html",
-          "score": 15,
+          "score": 18,
           "author": "mdp2021",
           "commentCount": 1,
           "publishedAt": "2026-09-19T16:51:41.000Z"
@@ -2112,25 +2085,16 @@
           "platform": "hackernews",
           "title": "Lawsuit Accuses Anthropic, OpenAI, SpaceXAI, Google of AI Pacing 'Collusion'",
           "url": "https://thehill.com/policy/technology/6099571-lawsuit-accuses-anthropic-openai-spacexai-google-of-ai-pacing-collusion/",
-          "score": 9,
+          "score": 10,
           "author": "theanonymousone",
           "commentCount": 0,
           "publishedAt": "2026-09-19T15:52:15.000Z"
         },
         {
           "platform": "hackernews",
-          "title": "Musk's secretive backer builds $40B SpaceX stake",
-          "url": "https://www.ft.com/content/c765f312-e698-4d31-bf71-f64a656ad6f4",
-          "score": 8,
-          "author": "sbulaev",
-          "commentCount": 3,
-          "publishedAt": "2026-09-13T09:07:22.000Z"
-        },
-        {
-          "platform": "hackernews",
           "title": "Anthropic, OpenAI, SpaceXAI, Google sued over call to 'pace' AI development",
           "url": "https://www.politico.com/news/2026/09/18/anthropic-openai-spacexai-google-sued-over-calls-to-pace-ai-development-01085023",
-          "score": 7,
+          "score": 9,
           "author": "MarcScott",
           "commentCount": 4,
           "publishedAt": "2026-09-19T14:09:55.000Z"
@@ -2179,6 +2143,15 @@
           "author": "gmays",
           "commentCount": 0,
           "publishedAt": "2026-09-16T23:40:46.000Z"
+        },
+        {
+          "platform": "hackernews",
+          "title": "If you can't warp spacetime, what are you doing on the Starship Enterprise?",
+          "url": "https://gardnermcintyre.com/if-you-cant-warp-spacetime",
+          "score": 3,
+          "author": "zebomon",
+          "commentCount": 0,
+          "publishedAt": "2026-09-15T13:00:45.000Z"
         }
       ],
       "relatedConceptSlugs": [
@@ -2285,92 +2258,6 @@
       }
     },
     {
-      "slug": "ai-space",
-      "label": "AI in Space",
-      "score": 400,
-      "delta": 0,
-      "direction": "steady",
-      "mentions": 2,
-      "sources": [
-        {
-          "platform": "arxiv",
-          "title": "Real-Time Model Predictive Control Algorithms for Autonomous Spacecraft Guidance",
-          "url": "https://arxiv.org/abs/2609.00927",
-          "score": 200,
-          "authors": "Mohammed-Adnane Garab",
-          "arxivCategory": "math.OC",
-          "publishedAt": "2026-09-01T08:50:47.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "EXPO: a quantum leap in fast, wide-band X-ray polarimetry for astrophysics",
-          "url": "https://arxiv.org/abs/2608.20898",
-          "score": 200,
-          "authors": "Paolo Soffitta, Sebastien Guillot, Ian Hutchinson et al.",
-          "arxivCategory": "astro-ph.IM",
-          "publishedAt": "2026-08-21T09:15:51.000Z"
-        }
-      ],
-      "relatedConceptSlugs": [
-        "starnav",
-        "an-automaton-rover-enabling-long-duration"
-      ],
-      "resonance": 37,
-      "quadrant": "dead-zone",
-      "resonanceSignals": {
-        "conceptDepth": 0.5113915944693856,
-        "editorial": 0.7,
-        "connections": 0.3333333333333333,
-        "convergence": 0.025,
-        "deepTopic": 0,
-        "pantheon": 0.4,
-        "graveyard": 0
-      }
-    },
-    {
-      "slug": "warp-drives",
-      "label": "Warp Drives & Exotic Physics",
-      "score": 203,
-      "delta": 0,
-      "direction": "steady",
-      "mentions": 2,
-      "sources": [
-        {
-          "platform": "arxiv",
-          "title": "Quantum-gravity-inspired Alcubierre warp-drive geometries",
-          "url": "https://arxiv.org/abs/2609.05554",
-          "score": 200,
-          "authors": "Kimet Jusufi, Francisco S. N. Lobo",
-          "arxivCategory": "gr-qc",
-          "publishedAt": "2026-09-03T15:34:50.000Z"
-        },
-        {
-          "platform": "hackernews",
-          "title": "Novel Realizations of Warp Drive Spacetimes as Solutions of General Relativity",
-          "url": "https://www.mdpi.com/2218-1997/12/5/132",
-          "score": 3,
-          "author": "lambdaone",
-          "commentCount": 1,
-          "publishedAt": "2026-09-13T00:30:03.000Z"
-        }
-      ],
-      "relatedConceptSlugs": [
-        "procsima",
-        "extreme-metamaterial-solar-sails-for-breakthrough-space-exploration"
-      ],
-      "resonance": 53,
-      "quadrant": "sleeping-giant",
-      "resonanceSignals": {
-        "conceptDepth": 0.6991803252671503,
-        "editorial": 1,
-        "connections": 0.3333333333333333,
-        "convergence": 0.15,
-        "deepTopic": 0,
-        "pantheon": 0.92,
-        "graveyard": 0
-      }
-    },
-    {
       "slug": "nuclear-thermal",
       "label": "Nuclear Propulsion",
       "score": 200,
@@ -2440,6 +2327,40 @@
       }
     },
     {
+      "slug": "warp-drives",
+      "label": "Warp Drives & Exotic Physics",
+      "score": 200,
+      "delta": -1,
+      "direction": "steady",
+      "mentions": 1,
+      "sources": [
+        {
+          "platform": "arxiv",
+          "title": "Quantum-gravity-inspired Alcubierre warp-drive geometries",
+          "url": "https://arxiv.org/abs/2609.05554",
+          "score": 200,
+          "authors": "Kimet Jusufi, Francisco S. N. Lobo",
+          "arxivCategory": "gr-qc",
+          "publishedAt": "2026-09-03T15:34:50.000Z"
+        }
+      ],
+      "relatedConceptSlugs": [
+        "procsima",
+        "extreme-metamaterial-solar-sails-for-breakthrough-space-exploration"
+      ],
+      "resonance": 53,
+      "quadrant": "sleeping-giant",
+      "resonanceSignals": {
+        "conceptDepth": 0.6991803252671503,
+        "editorial": 1,
+        "connections": 0.3333333333333333,
+        "convergence": 0.15,
+        "deepTopic": 0,
+        "pantheon": 0.92,
+        "graveyard": 0
+      }
+    },
+    {
       "slug": "space-solar-power",
       "label": "Space Solar Power",
       "score": 200,
@@ -2470,6 +2391,40 @@
         "convergence": 0.05,
         "deepTopic": 0,
         "pantheon": 0.92,
+        "graveyard": 0
+      }
+    },
+    {
+      "slug": "ai-space",
+      "label": "AI in Space",
+      "score": 200,
+      "delta": -50,
+      "direction": "down",
+      "mentions": 1,
+      "sources": [
+        {
+          "platform": "arxiv",
+          "title": "Real-Time Model Predictive Control Algorithms for Autonomous Spacecraft Guidance",
+          "url": "https://arxiv.org/abs/2609.00927",
+          "score": 200,
+          "authors": "Mohammed-Adnane Garab",
+          "arxivCategory": "math.OC",
+          "publishedAt": "2026-09-01T08:50:47.000Z"
+        }
+      ],
+      "relatedConceptSlugs": [
+        "starnav",
+        "an-automaton-rover-enabling-long-duration"
+      ],
+      "resonance": 37,
+      "quadrant": "dead-zone",
+      "resonanceSignals": {
+        "conceptDepth": 0.5113915944693856,
+        "editorial": 0.7,
+        "connections": 0.3333333333333333,
+        "convergence": 0.025,
+        "deepTopic": 0,
+        "pantheon": 0.4,
         "graveyard": 0
       }
     },
