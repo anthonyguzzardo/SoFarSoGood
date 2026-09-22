@@ -1,13 +1,13 @@
 {
-  "generatedAt": "2026-09-21T11:28:31.831Z",
+  "generatedAt": "2026-09-21T21:49:59.288Z",
   "topics": [
     {
       "slug": "black-holes",
       "label": "Black Holes",
       "score": 8511,
-      "delta": 0,
+      "delta": 2,
       "direction": "steady",
-      "mentions": 47,
+      "mentions": 46,
       "sources": [
         {
           "platform": "arxiv",
@@ -402,10 +402,10 @@
     {
       "slug": "quantum-computing",
       "label": "Quantum Computing",
-      "score": 7805,
+      "score": 7806,
       "delta": 15,
       "direction": "steady",
-      "mentions": 42,
+      "mentions": 43,
       "sources": [
         {
           "platform": "arxiv",
@@ -930,10 +930,10 @@
     {
       "slug": "cosmology",
       "label": "Cosmology",
-      "score": 5200,
+      "score": 5201,
       "delta": 0,
       "direction": "steady",
-      "mentions": 26,
+      "mentions": 27,
       "sources": [
         {
           "platform": "arxiv",
@@ -1327,7 +1327,7 @@
       "slug": "exoplanets",
       "label": "Exoplanets",
       "score": 2800,
-      "delta": -12,
+      "delta": 0,
       "direction": "steady",
       "mentions": 14,
       "sources": [
@@ -1995,10 +1995,10 @@
     {
       "slug": "mars",
       "label": "Mars Exploration",
-      "score": 600,
+      "score": 602,
       "delta": 0,
       "direction": "steady",
-      "mentions": 3,
+      "mentions": 4,
       "sources": [
         {
           "platform": "arxiv",
@@ -2026,6 +2026,23 @@
           "authors": "Mavia Anjum, Gwendolyn D. Bart",
           "arxivCategory": "q-bio.OT",
           "publishedAt": "2026-08-28T19:17:54.000Z"
+        },
+        {
+          "platform": "youtube",
+          "title": "The Steam Deck Is Being Used to Test Mars Rovers [video]",
+          "url": "https://www.youtube.com/watch?v=IJSO-BL3pEU",
+          "score": 2,
+          "thumbnail": "https://img.youtube.com/vi/IJSO-BL3pEU/mqdefault.jpg",
+          "publishedAt": "2026-09-21T19:14:12.000Z"
+        },
+        {
+          "platform": "hackernews",
+          "title": "The Steam Deck Is Being Used to Test Mars Rovers [video]",
+          "url": "https://www.youtube.com/watch?v=IJSO-BL3pEU",
+          "score": 2,
+          "author": "HelloUsername",
+          "commentCount": 0,
+          "publishedAt": "2026-09-21T19:14:12.000Z"
         }
       ],
       "relatedConceptSlugs": [
@@ -2049,16 +2066,16 @@
     {
       "slug": "starship",
       "label": "Starship & SpaceX",
-      "score": 520,
-      "delta": -1,
+      "score": 523,
+      "delta": -2,
       "direction": "steady",
-      "mentions": 17,
+      "mentions": 18,
       "sources": [
         {
           "platform": "hackernews",
           "title": "How SpaceX streamlined the Raptor engine",
           "url": "https://www.construction-physics.com/p/how-spacex-streamlined-the-raptor",
-          "score": 242,
+          "score": 244,
           "author": "JumpCrisscross",
           "commentCount": 125,
           "publishedAt": "2026-09-17T21:14:19.000Z"
