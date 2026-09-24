@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-24T10:50:14.667Z",
+  "generatedAt": "2026-09-24T21:16:54.543Z",
   "topics": [
     {
       "slug": "black-holes",
@@ -137,10 +137,10 @@
     {
       "slug": "space-telescopes",
       "label": "Space Telescopes",
-      "score": 8813,
+      "score": 8816,
       "delta": 5,
       "direction": "steady",
-      "mentions": 47,
+      "mentions": 48,
       "sources": [
         {
           "platform": "arxiv",
@@ -402,10 +402,10 @@
     {
       "slug": "quantum-computing",
       "label": "Quantum Computing",
-      "score": 8009,
+      "score": 8008,
       "delta": -7,
       "direction": "steady",
-      "mentions": 45,
+      "mentions": 44,
       "sources": [
         {
           "platform": "arxiv",
@@ -1062,16 +1062,16 @@
     {
       "slug": "condensed-matter",
       "label": "Condensed Matter",
-      "score": 5139,
-      "delta": 1,
+      "score": 5146,
+      "delta": 0,
       "direction": "steady",
-      "mentions": 28,
+      "mentions": 29,
       "sources": [
         {
           "platform": "hackernews",
           "title": "There's a high chance of devices being sold with GrapheneOS preinstalled in 2027",
           "url": "https://grapheneos.social/@GrapheneOS/117299954135808210",
-          "score": 314,
+          "score": 318,
           "author": "Cider9986",
           "commentCount": 142,
           "publishedAt": "2026-09-22T17:12:51.000Z"
@@ -1195,7 +1195,7 @@
       "slug": "exoplanets",
       "label": "Exoplanets",
       "score": 3000,
-      "delta": -6,
+      "delta": 0,
       "direction": "steady",
       "mentions": 15,
       "sources": [
@@ -1460,7 +1460,7 @@
       "slug": "astrobiology",
       "label": "Astrobiology",
       "score": 2400,
-      "delta": -8,
+      "delta": 0,
       "direction": "steady",
       "mentions": 12,
       "sources": [
@@ -1902,10 +1902,10 @@
     {
       "slug": "space-debris",
       "label": "Space Debris",
-      "score": 1402,
-      "delta": 0,
-      "direction": "steady",
-      "mentions": 8,
+      "score": 1400,
+      "delta": 16,
+      "direction": "up",
+      "mentions": 7,
       "sources": [
         {
           "platform": "arxiv",
@@ -1969,15 +1969,6 @@
           "authors": "Arjun Chhabra, Ryne Beeson",
           "arxivCategory": "stat.AP",
           "publishedAt": "2026-09-18T16:14:23.000Z"
-        },
-        {
-          "platform": "hackernews",
-          "title": "The damage a tiny speck of space debris can do at 15000mph(2018)",
-          "url": "https://bigthink.com/hard-science/heres-the-damage-a-tiny-speck-of-space-debris-can-do-at-15000mph/",
-          "score": 2,
-          "author": "num42",
-          "commentCount": 0,
-          "publishedAt": "2026-09-17T12:05:29.000Z"
         }
       ],
       "relatedConceptSlugs": [
@@ -1998,10 +1989,10 @@
     {
       "slug": "starlink",
       "label": "Starlink & Satellite Internet",
-      "score": 632,
-      "delta": 5,
-      "direction": "steady",
-      "mentions": 6,
+      "score": 779,
+      "delta": 30,
+      "direction": "up",
+      "mentions": 7,
       "sources": [
         {
           "platform": "arxiv",
@@ -2034,19 +2025,28 @@
           "platform": "hackernews",
           "title": "Starlink ground station in Poland hit by fire in suspected arson attack",
           "url": "https://notesfrompoland.com/2026/09/24/starlink-ground-station-in-poland-hit-by-fire-in-suspected-arson-attack/",
-          "score": 17,
+          "score": 159,
           "author": "giuliomagnifico",
-          "commentCount": 0,
+          "commentCount": 169,
           "publishedAt": "2026-09-24T09:52:29.000Z"
         },
         {
           "platform": "hackernews",
           "title": "We've Turned Starlink into a Planetary Barometer",
           "url": "https://www.spaceweather.com/starlink/starlink_drag_explainer.html",
-          "score": 14,
+          "score": 15,
           "author": "NKosmatos",
-          "commentCount": 6,
+          "commentCount": 8,
           "publishedAt": "2026-09-23T23:10:22.000Z"
+        },
+        {
+          "platform": "hackernews",
+          "title": "Fire breaks out at Starlink station in Poland, Russians suspected",
+          "url": "https://www.pravda.com.ua/eng/news/2026/09/24/8054905/",
+          "score": 4,
+          "author": "uxhacker",
+          "commentCount": 0,
+          "publishedAt": "2026-09-24T13:41:32.000Z"
         },
         {
           "platform": "hackernews",
@@ -2199,10 +2199,10 @@
     {
       "slug": "starship",
       "label": "Starship & SpaceX",
-      "score": 525,
-      "delta": 0,
+      "score": 515,
+      "delta": -2,
       "direction": "steady",
-      "mentions": 18,
+      "mentions": 16,
       "sources": [
         {
           "platform": "hackernews",
@@ -2264,26 +2264,8 @@
           "url": "https://en.wikipedia.org/wiki/SpaceX_Starshield",
           "score": 4,
           "author": "simonebrunozzi",
-          "commentCount": 4,
+          "commentCount": 5,
           "publishedAt": "2026-09-23T18:29:01.000Z"
-        },
-        {
-          "platform": "hackernews",
-          "title": "SpaceX – Starmind",
-          "url": "https://www.spacex.com/spacexai/starmind",
-          "score": 4,
-          "author": "vismit2000",
-          "commentCount": 0,
-          "publishedAt": "2026-09-17T12:04:08.000Z"
-        },
-        {
-          "platform": "hackernews",
-          "title": "Musk's long-time backer is giving SpaceX stock to its investors",
-          "url": "https://techcrunch.com/2026/09/16/musks-long-time-backer-is-giving-spacex-stock-to-its-investors/",
-          "score": 4,
-          "author": "soltanov",
-          "commentCount": 0,
-          "publishedAt": "2026-09-17T11:22:17.000Z"
         },
         {
           "platform": "hackernews",
@@ -2311,6 +2293,23 @@
           "author": "starkparker",
           "commentCount": 0,
           "publishedAt": "2026-09-20T17:19:20.000Z"
+        },
+        {
+          "platform": "hackernews",
+          "title": "SpaceX Is Retiring Crew Dragon",
+          "url": "https://gizmodo.com/spacex-is-retiring-crew-dragon-forcing-nasa-to-bet-big-on-boeings-troubled-starliner-2000814072",
+          "score": 3,
+          "author": "calcifer",
+          "commentCount": 0,
+          "publishedAt": "2026-09-19T09:47:34.000Z"
+        },
+        {
+          "platform": "youtube",
+          "title": "Starship – The Holy Grail of Rocketry [video]",
+          "url": "https://www.youtube.com/watch?v=EthkNLasUa8",
+          "score": 2,
+          "thumbnail": "https://img.youtube.com/vi/EthkNLasUa8/mqdefault.jpg",
+          "publishedAt": "2026-09-19T08:12:58.000Z"
         }
       ],
       "relatedConceptSlugs": [
@@ -2520,40 +2519,6 @@
       }
     },
     {
-      "slug": "space-solar-power",
-      "label": "Space Solar Power",
-      "score": 200,
-      "delta": 0,
-      "direction": "steady",
-      "mentions": 1,
-      "sources": [
-        {
-          "platform": "arxiv",
-          "title": "SatDL: Jointly Optimizing Data Redistribution and Training for Satellite-Based Distributed Learning",
-          "url": "https://arxiv.org/abs/2608.24516",
-          "score": 200,
-          "authors": "Hao Wu, Kin Whye Chew, Yizhan Han et al.",
-          "arxivCategory": "cs.DC",
-          "publishedAt": "2026-08-25T13:06:24.000Z"
-        }
-      ],
-      "relatedConceptSlugs": [
-        "sps-alpha",
-        "the-light-bender-concept-for-power-distribution"
-      ],
-      "resonance": 35,
-      "quadrant": "dead-zone",
-      "resonanceSignals": {
-        "conceptDepth": 0.5113915944693856,
-        "editorial": 0.7,
-        "connections": 0,
-        "convergence": 0.05,
-        "deepTopic": 0,
-        "pantheon": 0.92,
-        "graveyard": 0
-      }
-    },
-    {
       "slug": "interstellar-travel",
       "label": "Interstellar Travel",
       "score": 0,
@@ -2619,6 +2584,30 @@
         "editorial": 0.7,
         "connections": 0,
         "convergence": 0,
+        "deepTopic": 0,
+        "pantheon": 0.92,
+        "graveyard": 0
+      }
+    },
+    {
+      "slug": "space-solar-power",
+      "label": "Space Solar Power",
+      "score": 0,
+      "delta": 0,
+      "direction": "steady",
+      "mentions": 0,
+      "sources": [],
+      "relatedConceptSlugs": [
+        "sps-alpha",
+        "the-light-bender-concept-for-power-distribution"
+      ],
+      "resonance": 35,
+      "quadrant": "dead-zone",
+      "resonanceSignals": {
+        "conceptDepth": 0.5113915944693856,
+        "editorial": 0.7,
+        "connections": 0,
+        "convergence": 0.05,
         "deepTopic": 0,
         "pantheon": 0.92,
         "graveyard": 0
