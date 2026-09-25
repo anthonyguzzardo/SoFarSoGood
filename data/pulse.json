@@ -1,13 +1,13 @@
 {
-  "generatedAt": "2026-09-25T10:51:59.189Z",
+  "generatedAt": "2026-09-25T21:13:41.189Z",
   "topics": [
     {
       "slug": "black-holes",
       "label": "Black Holes",
-      "score": 8908,
-      "delta": -2,
+      "score": 8803,
+      "delta": -3,
       "direction": "steady",
-      "mentions": 47,
+      "mentions": 46,
       "sources": [
         {
           "platform": "arxiv",
@@ -535,10 +535,10 @@
     {
       "slug": "quantum-computing",
       "label": "Quantum Computing",
-      "score": 7608,
+      "score": 7606,
       "delta": -5,
       "direction": "steady",
-      "mentions": 42,
+      "mentions": 41,
       "sources": [
         {
           "platform": "arxiv",
@@ -667,10 +667,10 @@
     {
       "slug": "particle-physics",
       "label": "Particle Physics",
-      "score": 7409,
+      "score": 7408,
       "delta": 0,
       "direction": "steady",
-      "mentions": 41,
+      "mentions": 40,
       "sources": [
         {
           "platform": "arxiv",
@@ -1194,10 +1194,10 @@
     {
       "slug": "exoplanets",
       "label": "Exoplanets",
-      "score": 3200,
-      "delta": 7,
+      "score": 3000,
+      "delta": 0,
       "direction": "steady",
-      "mentions": 16,
+      "mentions": 15,
       "sources": [
         {
           "platform": "arxiv",
@@ -1234,15 +1234,6 @@
           "authors": "Garima Singh, Sebastien Vievard, Julien Lozi et al.",
           "arxivCategory": "astro-ph.IM",
           "publishedAt": "2026-09-01T05:15:43.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Alfred: A Flexible, User-Friendly Python Package for Exoplanet Confirmation",
-          "url": "https://arxiv.org/abs/2608.26227",
-          "score": 200,
-          "authors": "Maxwell A. Kroft",
-          "arxivCategory": "astro-ph.IM",
-          "publishedAt": "2026-08-26T16:02:28.000Z"
         },
         {
           "platform": "arxiv",
@@ -1306,6 +1297,15 @@
           "authors": "Grace Henry, Ted von Hippel, Anna Childs",
           "arxivCategory": "astro-ph.EP",
           "publishedAt": "2026-09-01T19:01:42.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Evolution of Stellar Activity and Habitable Zone (EATEN): III. X-ray Activity of Dwarfs in Open Clusters and Field Stars",
+          "url": "https://arxiv.org/abs/2608.29248",
+          "score": 200,
+          "authors": "Xue Li, Song Wang, Henggeng Han et al.",
+          "arxivCategory": "astro-ph.SR",
+          "publishedAt": "2026-08-29T13:07:36.000Z"
         }
       ],
       "relatedConceptSlugs": [
@@ -1457,227 +1457,6 @@
       }
     },
     {
-      "slug": "astrobiology",
-      "label": "Astrobiology",
-      "score": 2000,
-      "delta": -17,
-      "direction": "down",
-      "mentions": 10,
-      "sources": [
-        {
-          "platform": "arxiv",
-          "title": "Inside the Eirenesphere: The Interplay of Porosity, Heat Flux and Mineralogy in Exoplanetary Aquable and Habitable Layers",
-          "url": "https://arxiv.org/abs/2609.25280",
-          "score": 200,
-          "authors": "Santiago A. Orjuela, Jorge I. Zuluaga",
-          "arxivCategory": "astro-ph.EP",
-          "publishedAt": "2026-09-21T18:23:50.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Detection of hydrocarbons in Titan using high-resolution cross-correlation spectroscopy",
-          "url": "https://arxiv.org/abs/2609.03975",
-          "score": 200,
-          "authors": "Maria Coelho, Rafael Rianço-Silva, Diogo Gonçalves et al.",
-          "arxivCategory": "astro-ph.EP",
-          "publishedAt": "2026-09-03T15:12:56.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "The MegaWave Radio Surveyor",
-          "url": "https://arxiv.org/abs/2608.26322",
-          "score": 200,
-          "authors": "T. Joseph W. Lazio, Evgenya Shkolnik, James Aguirre et al.",
-          "arxivCategory": "astro-ph.IM",
-          "publishedAt": "2026-08-26T18:55:06.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Silencing the stellar glare with kernel-nulling and active phase control on photonic chips",
-          "url": "https://arxiv.org/abs/2609.24540",
-          "score": 200,
-          "authors": "Marc-Antoine Martinod, Vincent Foriel, Nick Cvetojevic et al.",
-          "arxivCategory": "astro-ph.IM",
-          "publishedAt": "2026-09-21T13:11:07.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "The Science Potential of Characterizing Gas Giant Exoplanets with HWO",
-          "url": "https://arxiv.org/abs/2609.22653",
-          "score": 200,
-          "authors": "Beck Dacus, Jean-Baptiste Ruffio, Quinn Konopacky et al.",
-          "arxivCategory": "astro-ph.EP",
-          "publishedAt": "2026-09-18T23:58:36.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Energy deposition in planetary and exoplanetary atmospheres induced by cosmic rays",
-          "url": "https://arxiv.org/abs/2609.10688",
-          "score": 200,
-          "authors": "Jesse Polman, Ingo Leya",
-          "arxivCategory": "astro-ph.EP",
-          "publishedAt": "2026-09-09T18:00:04.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "3.5-meter Segmented-Mirror Robotic Space Telescope Mission White Paper III. Key Scientific Mission: Exoplanet Science with a Coronagraph",
-          "url": "https://arxiv.org/abs/2609.02577",
-          "score": 200,
-          "authors": "Juhan Kim, Sang Hyun Lee, Yong-Woo Kang et al.",
-          "arxivCategory": "astro-ph.IM",
-          "publishedAt": "2026-09-02T13:23:29.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "On the Impact of Correlated Noise and Spectral Resolution on the Retrieval Analysis of the Habitable World Observatory",
-          "url": "https://arxiv.org/abs/2608.28748",
-          "score": 200,
-          "authors": "Ji Wang, Philipp A. Huber, Sascha P. Quanz",
-          "arxivCategory": "astro-ph.EP",
-          "publishedAt": "2026-08-28T18:00:02.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "RISTRETTO: Assembly and Testing of the Seven-spaxel, High-resolution, Diffraction-limited Spectrograph",
-          "url": "https://arxiv.org/abs/2608.25867",
-          "score": 200,
-          "authors": "Leonie Hoerner, Bruno Chazelas, Nathanaël Restori et al.",
-          "arxivCategory": "astro-ph.IM",
-          "publishedAt": "2026-08-26T14:40:52.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Sea Ice as an Origin of Life Location for Hycean and Ocean Worlds",
-          "url": "https://arxiv.org/abs/2609.07818",
-          "score": 200,
-          "authors": "Edouard F. L. Barrier, Nikku Madhusudhan, Frances E. Rigby",
-          "arxivCategory": "astro-ph.EP",
-          "publishedAt": "2026-09-07T17:55:01.000Z"
-        }
-      ],
-      "relatedConceptSlugs": [
-        "astropharmacy",
-        "venus-atmosphere-and-cloud-particle-sample-return-for-astrobiology"
-      ],
-      "resonance": 53,
-      "quadrant": "real-deal",
-      "resonanceSignals": {
-        "conceptDepth": 0.5113915944693856,
-        "editorial": 1,
-        "connections": 0.3333333333333333,
-        "convergence": 0.275,
-        "deepTopic": 0.8,
-        "pantheon": 0.08,
-        "graveyard": 0
-      }
-    },
-    {
-      "slug": "artemis",
-      "label": "Artemis & Lunar Return",
-      "score": 1800,
-      "delta": 0,
-      "direction": "steady",
-      "mentions": 9,
-      "sources": [
-        {
-          "platform": "arxiv",
-          "title": "Designing an Efficient Excavator Bucket for Lunar ISRU: A Comparative Study with Vision-Based Fill and Displacement Analysis",
-          "url": "https://arxiv.org/abs/2609.25724",
-          "score": 200,
-          "authors": "Abdulla Hil Kafi, Tomoki Koshi, Jorge Casir et al.",
-          "arxivCategory": "cs.RO",
-          "publishedAt": "2026-09-22T05:53:56.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "DewTwin-Coin: an onboard autonomous framework for lunar water-ice prospecting using Chandrayaan-3 LIBS and ChaSTE data",
-          "url": "https://arxiv.org/abs/2609.17379",
-          "score": 200,
-          "authors": "Soundarya R., Debasish Mondal",
-          "arxivCategory": "astro-ph.EP",
-          "publishedAt": "2026-09-15T16:21:52.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Mechanisms of Electrostatic Charge Formation and Retention in Lunar Regolith",
-          "url": "https://arxiv.org/abs/2609.06496",
-          "score": 200,
-          "authors": "Minhyeok Kim, Hyun Jung Kim, Sang H. Choi et al.",
-          "arxivCategory": "astro-ph.IM",
-          "publishedAt": "2026-09-06T09:24:05.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Distributed Infrastructure Sensors and Cues for Robotic Fire-Fighting and Safety System on a Lunar Base",
-          "url": "https://arxiv.org/abs/2609.22786",
-          "score": 200,
-          "authors": "Alexis Munguia, Eryc Rodriguez, Drake Russ et al.",
-          "arxivCategory": "cs.RO",
-          "publishedAt": "2026-09-19T05:35:03.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Transformer-Informed Trajectory Optimization for Relative Motion in Cislunar Orbits",
-          "url": "https://arxiv.org/abs/2609.25460",
-          "score": 200,
-          "authors": "Walter J. Manuel, Yuji Takubo, Simone D'Amico",
-          "arxivCategory": "math.OC",
-          "publishedAt": "2026-09-21T22:33:15.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Improving Faint Object Detection for Space Situational Awareness with Variational Autoencoders",
-          "url": "https://arxiv.org/abs/2609.11269",
-          "score": 200,
-          "authors": "Angela Cratere, Luca Ghilardi, Vishnu Reddy et al.",
-          "arxivCategory": "cs.CV",
-          "publishedAt": "2026-09-10T09:02:13.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Small-Body Science with the Nautilus Space Observatory: From Cislunar Space Resilience to Mapping the Kuiper-Belt-to-Oort-Cloud Transition",
-          "url": "https://arxiv.org/abs/2609.10663",
-          "score": 200,
-          "authors": "J. de Wit, A. Y. Burdanov, P. McGill et al.",
-          "arxivCategory": "astro-ph.IM",
-          "publishedAt": "2026-09-09T17:59:59.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Nechvile-Transformed Spacecraft Dynamics and Propellant Computation in the 3-Body Problem",
-          "url": "https://arxiv.org/abs/2608.29271",
-          "score": 200,
-          "authors": "Michael J. Dixon, Isaac M. Ross",
-          "arxivCategory": "math.OC",
-          "publishedAt": "2026-08-29T13:51:06.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "The MegaWave Radio Surveyor",
-          "url": "https://arxiv.org/abs/2608.26322",
-          "score": 200,
-          "authors": "T. Joseph W. Lazio, Evgenya Shkolnik, James Aguirre et al.",
-          "arxivCategory": "astro-ph.IM",
-          "publishedAt": "2026-08-26T18:55:06.000Z"
-        }
-      ],
-      "relatedConceptSlugs": [
-        "mycotecture",
-        "regolith-adaptive-modification-systems"
-      ],
-      "resonance": 52,
-      "quadrant": "real-deal",
-      "resonanceSignals": {
-        "conceptDepth": 0.7737056144690831,
-        "editorial": 1,
-        "connections": 0,
-        "convergence": 0.025,
-        "deepTopic": 0.8,
-        "pantheon": 0.08,
-        "graveyard": 0
-      }
-    },
-    {
       "slug": "fusion-propulsion",
       "label": "Fusion Propulsion",
       "score": 1800,
@@ -1785,6 +1564,200 @@
       }
     },
     {
+      "slug": "artemis",
+      "label": "Artemis & Lunar Return",
+      "score": 1600,
+      "delta": -11,
+      "direction": "steady",
+      "mentions": 8,
+      "sources": [
+        {
+          "platform": "arxiv",
+          "title": "Designing an Efficient Excavator Bucket for Lunar ISRU: A Comparative Study with Vision-Based Fill and Displacement Analysis",
+          "url": "https://arxiv.org/abs/2609.25724",
+          "score": 200,
+          "authors": "Abdulla Hil Kafi, Tomoki Koshi, Jorge Casir et al.",
+          "arxivCategory": "cs.RO",
+          "publishedAt": "2026-09-22T05:53:56.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "DewTwin-Coin: an onboard autonomous framework for lunar water-ice prospecting using Chandrayaan-3 LIBS and ChaSTE data",
+          "url": "https://arxiv.org/abs/2609.17379",
+          "score": 200,
+          "authors": "Soundarya R., Debasish Mondal",
+          "arxivCategory": "astro-ph.EP",
+          "publishedAt": "2026-09-15T16:21:52.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Mechanisms of Electrostatic Charge Formation and Retention in Lunar Regolith",
+          "url": "https://arxiv.org/abs/2609.06496",
+          "score": 200,
+          "authors": "Minhyeok Kim, Hyun Jung Kim, Sang H. Choi et al.",
+          "arxivCategory": "astro-ph.IM",
+          "publishedAt": "2026-09-06T09:24:05.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Distributed Infrastructure Sensors and Cues for Robotic Fire-Fighting and Safety System on a Lunar Base",
+          "url": "https://arxiv.org/abs/2609.22786",
+          "score": 200,
+          "authors": "Alexis Munguia, Eryc Rodriguez, Drake Russ et al.",
+          "arxivCategory": "cs.RO",
+          "publishedAt": "2026-09-19T05:35:03.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Transformer-Informed Trajectory Optimization for Relative Motion in Cislunar Orbits",
+          "url": "https://arxiv.org/abs/2609.25460",
+          "score": 200,
+          "authors": "Walter J. Manuel, Yuji Takubo, Simone D'Amico",
+          "arxivCategory": "math.OC",
+          "publishedAt": "2026-09-21T22:33:15.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Improving Faint Object Detection for Space Situational Awareness with Variational Autoencoders",
+          "url": "https://arxiv.org/abs/2609.11269",
+          "score": 200,
+          "authors": "Angela Cratere, Luca Ghilardi, Vishnu Reddy et al.",
+          "arxivCategory": "cs.CV",
+          "publishedAt": "2026-09-10T09:02:13.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Small-Body Science with the Nautilus Space Observatory: From Cislunar Space Resilience to Mapping the Kuiper-Belt-to-Oort-Cloud Transition",
+          "url": "https://arxiv.org/abs/2609.10663",
+          "score": 200,
+          "authors": "J. de Wit, A. Y. Burdanov, P. McGill et al.",
+          "arxivCategory": "astro-ph.IM",
+          "publishedAt": "2026-09-09T17:59:59.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Nechvile-Transformed Spacecraft Dynamics and Propellant Computation in the 3-Body Problem",
+          "url": "https://arxiv.org/abs/2608.29271",
+          "score": 200,
+          "authors": "Michael J. Dixon, Isaac M. Ross",
+          "arxivCategory": "math.OC",
+          "publishedAt": "2026-08-29T13:51:06.000Z"
+        }
+      ],
+      "relatedConceptSlugs": [
+        "mycotecture",
+        "regolith-adaptive-modification-systems"
+      ],
+      "resonance": 52,
+      "quadrant": "real-deal",
+      "resonanceSignals": {
+        "conceptDepth": 0.7737056144690831,
+        "editorial": 1,
+        "connections": 0,
+        "convergence": 0.025,
+        "deepTopic": 0.8,
+        "pantheon": 0.08,
+        "graveyard": 0
+      }
+    },
+    {
+      "slug": "astrobiology",
+      "label": "Astrobiology",
+      "score": 1600,
+      "delta": -33,
+      "direction": "down",
+      "mentions": 8,
+      "sources": [
+        {
+          "platform": "arxiv",
+          "title": "Inside the Eirenesphere: The Interplay of Porosity, Heat Flux and Mineralogy in Exoplanetary Aquable and Habitable Layers",
+          "url": "https://arxiv.org/abs/2609.25280",
+          "score": 200,
+          "authors": "Santiago A. Orjuela, Jorge I. Zuluaga",
+          "arxivCategory": "astro-ph.EP",
+          "publishedAt": "2026-09-21T18:23:50.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Detection of hydrocarbons in Titan using high-resolution cross-correlation spectroscopy",
+          "url": "https://arxiv.org/abs/2609.03975",
+          "score": 200,
+          "authors": "Maria Coelho, Rafael Rianço-Silva, Diogo Gonçalves et al.",
+          "arxivCategory": "astro-ph.EP",
+          "publishedAt": "2026-09-03T15:12:56.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Silencing the stellar glare with kernel-nulling and active phase control on photonic chips",
+          "url": "https://arxiv.org/abs/2609.24540",
+          "score": 200,
+          "authors": "Marc-Antoine Martinod, Vincent Foriel, Nick Cvetojevic et al.",
+          "arxivCategory": "astro-ph.IM",
+          "publishedAt": "2026-09-21T13:11:07.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "The Science Potential of Characterizing Gas Giant Exoplanets with HWO",
+          "url": "https://arxiv.org/abs/2609.22653",
+          "score": 200,
+          "authors": "Beck Dacus, Jean-Baptiste Ruffio, Quinn Konopacky et al.",
+          "arxivCategory": "astro-ph.EP",
+          "publishedAt": "2026-09-18T23:58:36.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Energy deposition in planetary and exoplanetary atmospheres induced by cosmic rays",
+          "url": "https://arxiv.org/abs/2609.10688",
+          "score": 200,
+          "authors": "Jesse Polman, Ingo Leya",
+          "arxivCategory": "astro-ph.EP",
+          "publishedAt": "2026-09-09T18:00:04.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "3.5-meter Segmented-Mirror Robotic Space Telescope Mission White Paper III. Key Scientific Mission: Exoplanet Science with a Coronagraph",
+          "url": "https://arxiv.org/abs/2609.02577",
+          "score": 200,
+          "authors": "Juhan Kim, Sang Hyun Lee, Yong-Woo Kang et al.",
+          "arxivCategory": "astro-ph.IM",
+          "publishedAt": "2026-09-02T13:23:29.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "On the Impact of Correlated Noise and Spectral Resolution on the Retrieval Analysis of the Habitable World Observatory",
+          "url": "https://arxiv.org/abs/2608.28748",
+          "score": 200,
+          "authors": "Ji Wang, Philipp A. Huber, Sascha P. Quanz",
+          "arxivCategory": "astro-ph.EP",
+          "publishedAt": "2026-08-28T18:00:02.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Sea Ice as an Origin of Life Location for Hycean and Ocean Worlds",
+          "url": "https://arxiv.org/abs/2609.07818",
+          "score": 200,
+          "authors": "Edouard F. L. Barrier, Nikku Madhusudhan, Frances E. Rigby",
+          "arxivCategory": "astro-ph.EP",
+          "publishedAt": "2026-09-07T17:55:01.000Z"
+        }
+      ],
+      "relatedConceptSlugs": [
+        "astropharmacy",
+        "venus-atmosphere-and-cloud-particle-sample-return-for-astrobiology"
+      ],
+      "resonance": 53,
+      "quadrant": "real-deal",
+      "resonanceSignals": {
+        "conceptDepth": 0.5113915944693856,
+        "editorial": 1,
+        "connections": 0.3333333333333333,
+        "convergence": 0.275,
+        "deepTopic": 0.8,
+        "pantheon": 0.08,
+        "graveyard": 0
+      }
+    },
+    {
       "slug": "asteroid-mining",
       "label": "Asteroid Mining",
       "score": 1600,
@@ -1870,7 +1843,7 @@
         "gravity-poppers"
       ],
       "resonance": 43,
-      "quadrant": "dead-zone",
+      "quadrant": "hype-cycle",
       "resonanceSignals": {
         "conceptDepth": 0.6131471927654584,
         "editorial": 1,
@@ -1971,10 +1944,10 @@
     {
       "slug": "starlink",
       "label": "Starlink & Satellite Internet",
-      "score": 796,
-      "delta": 26,
-      "direction": "up",
-      "mentions": 6,
+      "score": 828,
+      "delta": 6,
+      "direction": "steady",
+      "mentions": 7,
       "sources": [
         {
           "platform": "arxiv",
@@ -2007,10 +1980,19 @@
           "platform": "hackernews",
           "title": "Starlink ground station in Poland hit by fire in suspected arson attack",
           "url": "https://notesfrompoland.com/2026/09/24/starlink-ground-station-in-poland-hit-by-fire-in-suspected-arson-attack/",
-          "score": 175,
+          "score": 176,
           "author": "giuliomagnifico",
-          "commentCount": 176,
+          "commentCount": 179,
           "publishedAt": "2026-09-24T09:52:29.000Z"
+        },
+        {
+          "platform": "hackernews",
+          "title": "Astronomer watches Starlink satellites sinking to build a 'planetary barometer'",
+          "url": "https://www.theregister.com/science/2026/09/25/astronomer-watches-starlink-satellites-sinking-to-build-a-planetary-barometer/5299036",
+          "score": 31,
+          "author": "whh",
+          "commentCount": 10,
+          "publishedAt": "2026-09-25T18:29:49.000Z"
         },
         {
           "platform": "hackernews",
@@ -2172,10 +2154,10 @@
     {
       "slug": "starship",
       "label": "Starship & SpaceX",
-      "score": 477,
-      "delta": -9,
+      "score": 481,
+      "delta": -7,
       "direction": "steady",
-      "mentions": 18,
+      "mentions": 19,
       "sources": [
         {
           "platform": "arxiv",
@@ -2251,6 +2233,15 @@
         },
         {
           "platform": "hackernews",
+          "title": "How SpaceX's Raptor engine works, one problem at a time",
+          "url": "https://becker.so/raptor",
+          "score": 3,
+          "author": "felixbecker",
+          "commentCount": 0,
+          "publishedAt": "2026-09-24T18:20:45.000Z"
+        },
+        {
+          "platform": "hackernews",
           "title": "SpaceX given unique access to classified DoD space tracking data, sources say",
           "url": "https://breakingdefense.com/2026/09/exclusive-spacex-given-unique-access-to-classified-dod-space-tracking-data-sources-say/",
           "score": 3,
@@ -2275,15 +2266,6 @@
           "author": "starkparker",
           "commentCount": 0,
           "publishedAt": "2026-09-20T17:19:20.000Z"
-        },
-        {
-          "platform": "hackernews",
-          "title": "SpaceX Is Retiring Crew Dragon",
-          "url": "https://gizmodo.com/spacex-is-retiring-crew-dragon-forcing-nasa-to-bet-big-on-boeings-troubled-starliner-2000814072",
-          "score": 3,
-          "author": "calcifer",
-          "commentCount": 0,
-          "publishedAt": "2026-09-19T09:47:34.000Z"
         }
       ],
       "relatedConceptSlugs": [
