@@ -1,13 +1,13 @@
 {
-  "generatedAt": "2026-09-26T20:46:48.783Z",
+  "generatedAt": "2026-09-27T11:06:11.308Z",
   "topics": [
     {
       "slug": "black-holes",
       "label": "Black Holes",
-      "score": 8803,
+      "score": 8806,
       "delta": 0,
       "direction": "steady",
-      "mentions": 46,
+      "mentions": 47,
       "sources": [
         {
           "platform": "arxiv",
@@ -269,7 +269,7 @@
     {
       "slug": "space-telescopes",
       "label": "Space Telescopes",
-      "score": 8223,
+      "score": 8225,
       "delta": 0,
       "direction": "steady",
       "mentions": 47,
@@ -667,10 +667,10 @@
     {
       "slug": "particle-physics",
       "label": "Particle Physics",
-      "score": 7408,
+      "score": 7409,
       "delta": 0,
       "direction": "steady",
-      "mentions": 40,
+      "mentions": 41,
       "sources": [
         {
           "platform": "arxiv",
@@ -931,7 +931,7 @@
       "slug": "cosmology",
       "label": "Cosmology",
       "score": 5401,
-      "delta": -4,
+      "delta": 0,
       "direction": "steady",
       "mentions": 28,
       "sources": [
@@ -1062,7 +1062,7 @@
     {
       "slug": "condensed-matter",
       "label": "Condensed Matter",
-      "score": 5334,
+      "score": 5341,
       "delta": 0,
       "direction": "steady",
       "mentions": 29,
@@ -1326,10 +1326,10 @@
     {
       "slug": "exoplanets",
       "label": "Exoplanets",
-      "score": 2801,
-      "delta": -7,
+      "score": 2805,
+      "delta": -6,
       "direction": "steady",
-      "mentions": 15,
+      "mentions": 16,
       "sources": [
         {
           "platform": "arxiv",
@@ -1453,113 +1453,6 @@
         "convergence": 0.15,
         "deepTopic": 0.8,
         "pantheon": 0.12,
-        "graveyard": 0
-      }
-    },
-    {
-      "slug": "fusion-propulsion",
-      "label": "Fusion Propulsion",
-      "score": 1800,
-      "delta": 0,
-      "direction": "steady",
-      "mentions": 9,
-      "sources": [
-        {
-          "platform": "arxiv",
-          "title": "K-shell x-ray spectroscopy: A reliable probe for stimulated Raman scattering in inertial confinement fusion---",
-          "url": "https://arxiv.org/abs/2609.18423",
-          "score": 200,
-          "authors": "Tianluo Luo, Zeyang Li, Yunping Wang et al.",
-          "arxivCategory": "physics.plasm-ph",
-          "publishedAt": "2026-09-16T10:16:19.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "PiMiX 2.02: Toward AI-Driven Data Fusion in Radiographic Imaging and Tomography",
-          "url": "https://arxiv.org/abs/2609.13347",
-          "score": 200,
-          "authors": "Zhehui Wang, Shanny Lin, Nicholas Amano et al.",
-          "arxivCategory": "eess.IV",
-          "publishedAt": "2026-09-11T15:55:47.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Decomposition-Guided Diffusion Language Models for Inertial Confinement Fusion Prediction",
-          "url": "https://arxiv.org/abs/2609.07756",
-          "score": 200,
-          "authors": "Xiang Zhang, Varchas Gopalaswamy, Rahman Ejaz et al.",
-          "arxivCategory": "cs.LG",
-          "publishedAt": "2026-09-07T17:00:02.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "R-matrix calculations for opacities: V. Temperature-density dependence of photoabsorption cross sections and opacity spectra of oxygen ions O VI and O VII",
-          "url": "https://arxiv.org/abs/2609.07649",
-          "score": 200,
-          "authors": "Divya Chari, Sultana N Nahar, Anil K Pradhan",
-          "arxivCategory": "astro-ph.SR",
-          "publishedAt": "2026-09-07T15:39:02.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Bridging the local and the global: a physically constrained buoyancy--drag model for unified prediction of Rayleigh--Taylor and Richtmyer--Meshkov mixing widths across density ratios",
-          "url": "https://arxiv.org/abs/2609.02128",
-          "score": 200,
-          "authors": "You-Sheng Zhang, Ya-Feng Li, Meng-Juan Xiao et al.",
-          "arxivCategory": "physics.flu-dyn",
-          "publishedAt": "2026-09-02T05:35:38.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Science Of Nuclear Fusion: Insights and Ideas",
-          "url": "https://arxiv.org/abs/2609.01366",
-          "score": 200,
-          "authors": "Johann Rafelski, Andrew Steinmetz",
-          "arxivCategory": "nucl-th",
-          "publishedAt": "2026-09-01T15:05:34.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Interaction renormalization and the plasma staircase",
-          "url": "https://arxiv.org/abs/2609.22915",
-          "score": 200,
-          "authors": "Alexander V. Milovanov, Alexander Iomin, Jens Juul Rasmussen",
-          "arxivCategory": "physics.plasm-ph",
-          "publishedAt": "2026-09-19T09:46:46.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Particle pinch in global tokamak edge simulations",
-          "url": "https://arxiv.org/abs/2609.06744",
-          "score": 200,
-          "authors": "Ben Zhu",
-          "arxivCategory": "physics.plasm-ph",
-          "publishedAt": "2026-09-06T17:36:08.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Reinforcement-learning control of turbulence transition in the modified Hasegawa-Wakatani system",
-          "url": "https://arxiv.org/abs/2608.27845",
-          "score": 200,
-          "authors": "Luning Sun, Ben Zhu, Xin-Yang Liu et al.",
-          "arxivCategory": "physics.plasm-ph",
-          "publishedAt": "2026-08-28T02:25:52.000Z"
-        }
-      ],
-      "relatedConceptSlugs": [
-        "gradient-field-imploding-liner-fusion-propulsion",
-        "fusion-enabled-pluto-orbiter",
-        "pulsed-fission-fusion"
-      ],
-      "resonance": 64,
-      "quadrant": "real-deal",
-      "resonanceSignals": {
-        "conceptDepth": 0.6991803252671503,
-        "editorial": 0.7,
-        "connections": 0,
-        "convergence": 0.975,
-        "deepTopic": 1,
-        "pantheon": 0.92,
         "graveyard": 0
       }
     },
@@ -1758,6 +1651,104 @@
       }
     },
     {
+      "slug": "fusion-propulsion",
+      "label": "Fusion Propulsion",
+      "score": 1600,
+      "delta": -11,
+      "direction": "steady",
+      "mentions": 8,
+      "sources": [
+        {
+          "platform": "arxiv",
+          "title": "K-shell x-ray spectroscopy: A reliable probe for stimulated Raman scattering in inertial confinement fusion---",
+          "url": "https://arxiv.org/abs/2609.18423",
+          "score": 200,
+          "authors": "Tianluo Luo, Zeyang Li, Yunping Wang et al.",
+          "arxivCategory": "physics.plasm-ph",
+          "publishedAt": "2026-09-16T10:16:19.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "PiMiX 2.02: Toward AI-Driven Data Fusion in Radiographic Imaging and Tomography",
+          "url": "https://arxiv.org/abs/2609.13347",
+          "score": 200,
+          "authors": "Zhehui Wang, Shanny Lin, Nicholas Amano et al.",
+          "arxivCategory": "eess.IV",
+          "publishedAt": "2026-09-11T15:55:47.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Decomposition-Guided Diffusion Language Models for Inertial Confinement Fusion Prediction",
+          "url": "https://arxiv.org/abs/2609.07756",
+          "score": 200,
+          "authors": "Xiang Zhang, Varchas Gopalaswamy, Rahman Ejaz et al.",
+          "arxivCategory": "cs.LG",
+          "publishedAt": "2026-09-07T17:00:02.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "R-matrix calculations for opacities: V. Temperature-density dependence of photoabsorption cross sections and opacity spectra of oxygen ions O VI and O VII",
+          "url": "https://arxiv.org/abs/2609.07649",
+          "score": 200,
+          "authors": "Divya Chari, Sultana N Nahar, Anil K Pradhan",
+          "arxivCategory": "astro-ph.SR",
+          "publishedAt": "2026-09-07T15:39:02.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Bridging the local and the global: a physically constrained buoyancy--drag model for unified prediction of Rayleigh--Taylor and Richtmyer--Meshkov mixing widths across density ratios",
+          "url": "https://arxiv.org/abs/2609.02128",
+          "score": 200,
+          "authors": "You-Sheng Zhang, Ya-Feng Li, Meng-Juan Xiao et al.",
+          "arxivCategory": "physics.flu-dyn",
+          "publishedAt": "2026-09-02T05:35:38.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Science Of Nuclear Fusion: Insights and Ideas",
+          "url": "https://arxiv.org/abs/2609.01366",
+          "score": 200,
+          "authors": "Johann Rafelski, Andrew Steinmetz",
+          "arxivCategory": "nucl-th",
+          "publishedAt": "2026-09-01T15:05:34.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Interaction renormalization and the plasma staircase",
+          "url": "https://arxiv.org/abs/2609.22915",
+          "score": 200,
+          "authors": "Alexander V. Milovanov, Alexander Iomin, Jens Juul Rasmussen",
+          "arxivCategory": "physics.plasm-ph",
+          "publishedAt": "2026-09-19T09:46:46.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Particle pinch in global tokamak edge simulations",
+          "url": "https://arxiv.org/abs/2609.06744",
+          "score": 200,
+          "authors": "Ben Zhu",
+          "arxivCategory": "physics.plasm-ph",
+          "publishedAt": "2026-09-06T17:36:08.000Z"
+        }
+      ],
+      "relatedConceptSlugs": [
+        "gradient-field-imploding-liner-fusion-propulsion",
+        "fusion-enabled-pluto-orbiter",
+        "pulsed-fission-fusion"
+      ],
+      "resonance": 64,
+      "quadrant": "real-deal",
+      "resonanceSignals": {
+        "conceptDepth": 0.6991803252671503,
+        "editorial": 0.7,
+        "connections": 0,
+        "convergence": 0.975,
+        "deepTopic": 1,
+        "pantheon": 0.92,
+        "graveyard": 0
+      }
+    },
+    {
       "slug": "asteroid-mining",
       "label": "Asteroid Mining",
       "score": 1600,
@@ -1944,8 +1935,8 @@
     {
       "slug": "starlink",
       "label": "Starlink & Satellite Internet",
-      "score": 864,
-      "delta": 4,
+      "score": 868,
+      "delta": 1,
       "direction": "steady",
       "mentions": 7,
       "sources": [
@@ -1980,7 +1971,7 @@
           "platform": "hackernews",
           "title": "Starlink ground station in Poland hit by fire in suspected arson attack",
           "url": "https://notesfrompoland.com/2026/09/24/starlink-ground-station-in-poland-hit-by-fire-in-suspected-arson-attack/",
-          "score": 180,
+          "score": 181,
           "author": "giuliomagnifico",
           "commentCount": 181,
           "publishedAt": "2026-09-24T09:52:29.000Z"
@@ -1989,7 +1980,7 @@
           "platform": "hackernews",
           "title": "Astronomer watches Starlink satellites sinking to build a 'planetary barometer'",
           "url": "https://www.theregister.com/science/2026/09/25/astronomer-watches-starlink-satellites-sinking-to-build-a-planetary-barometer/5299036",
-          "score": 63,
+          "score": 66,
           "author": "whh",
           "commentCount": 19,
           "publishedAt": "2026-09-25T18:29:49.000Z"
@@ -2083,10 +2074,10 @@
     {
       "slug": "starship",
       "label": "Starship & SpaceX",
-      "score": 440,
-      "delta": -9,
+      "score": 444,
+      "delta": -7,
       "direction": "steady",
-      "mentions": 14,
+      "mentions": 15,
       "sources": [
         {
           "platform": "arxiv",
@@ -2132,6 +2123,15 @@
           "author": "simonebrunozzi",
           "commentCount": 5,
           "publishedAt": "2026-09-23T18:29:01.000Z"
+        },
+        {
+          "platform": "hackernews",
+          "title": "SpaceX Pivots Away from Space",
+          "url": "https://www.ft.com/content/0fd15797-ac89-4222-a4bb-03a6a1330f48",
+          "score": 4,
+          "author": "kaycebasques",
+          "commentCount": 3,
+          "publishedAt": "2026-09-27T01:07:45.000Z"
         },
         {
           "platform": "hackernews",
@@ -2186,15 +2186,6 @@
           "author": "uticus",
           "commentCount": 1,
           "publishedAt": "2026-09-21T19:00:44.000Z"
-        },
-        {
-          "platform": "hackernews",
-          "title": "Grok 4.7 Scores 46 on AI Intelligence Index, Puts SpaceXAI in Top 4 Labs",
-          "url": "https://artificialanalysis.ai/articles/benchmarking-grok-4-7",
-          "score": 2,
-          "author": "wertyk",
-          "commentCount": 0,
-          "publishedAt": "2026-09-22T17:12:58.000Z"
         }
       ],
       "relatedConceptSlugs": [
