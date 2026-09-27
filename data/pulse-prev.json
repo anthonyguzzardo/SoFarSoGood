@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-09-26T10:34:25.576Z",
+  "generatedAt": "2026-09-26T20:46:48.783Z",
   "topics": [
     {
       "slug": "black-holes",
       "label": "Black Holes",
       "score": 8803,
-      "delta": -1,
+      "delta": 0,
       "direction": "steady",
       "mentions": 46,
       "sources": [
@@ -269,10 +269,10 @@
     {
       "slug": "space-telescopes",
       "label": "Space Telescopes",
-      "score": 8220,
+      "score": 8223,
       "delta": 0,
       "direction": "steady",
-      "mentions": 46,
+      "mentions": 47,
       "sources": [
         {
           "platform": "arxiv",
@@ -396,139 +396,6 @@
         "convergence": 0.15,
         "deepTopic": 1,
         "pantheon": 0.16,
-        "graveyard": 0
-      }
-    },
-    {
-      "slug": "nanotechnology",
-      "label": "Nanotechnology & Metamaterials",
-      "score": 7800,
-      "delta": 0,
-      "direction": "steady",
-      "mentions": 39,
-      "sources": [
-        {
-          "platform": "arxiv",
-          "title": "Tunable hyperbolic metamaterials for brightening single-photon emission",
-          "url": "https://arxiv.org/abs/2609.30179",
-          "score": 200,
-          "authors": "Manobina Karmakar, Pavel Klok, Filip Ligmajer et al.",
-          "arxivCategory": "physics.optics",
-          "publishedAt": "2026-09-24T17:27:34.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Dynamic Metasurface Antennas: From Programmable Microwave Hardware to Next-Generation Wireless Systems",
-          "url": "https://arxiv.org/abs/2609.29868",
-          "score": 200,
-          "authors": "Abdul Jabbar, William Whittow",
-          "arxivCategory": "eess.SP",
-          "publishedAt": "2026-09-24T14:25:18.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Growth-Inspired Graph Generation and Inverse Design of Mechanical Lattices via Dot Matrices Database Augmentation and GCNN",
-          "url": "https://arxiv.org/abs/2609.29024",
-          "score": 200,
-          "authors": "Weiyun Xu, Jiamu Liu",
-          "arxivCategory": "cs.LG",
-          "publishedAt": "2026-09-24T04:46:32.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Imaging an obstructed Wannier orbital",
-          "url": "https://arxiv.org/abs/2609.28738",
-          "score": 200,
-          "authors": "Yiting Huang, Benjamin H. November, Jonah Herzog-Arbeitman et al.",
-          "arxivCategory": "cond-mat.str-el",
-          "publishedAt": "2026-09-23T19:29:22.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Temporal Interfaces in Metamaterials with Shape-Varying Inclusions",
-          "url": "https://arxiv.org/abs/2609.26915",
-          "score": 200,
-          "authors": "Ishtiaque Rahman, Mohamed Hesham Mostafa, Viktar Asadchy",
-          "arxivCategory": "physics.optics",
-          "publishedAt": "2026-09-22T18:11:26.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Orthogonal Flatbands-Enabled Robust Fano Resonances through Brillouin-Zone Folding",
-          "url": "https://arxiv.org/abs/2609.25902",
-          "score": 200,
-          "authors": "Yangsong Ye, Hanchuan Chen, Shijie Kang et al.",
-          "arxivCategory": "physics.optics",
-          "publishedAt": "2026-09-22T09:08:56.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Kitaev spin liquid in superconducting networks",
-          "url": "https://arxiv.org/abs/2609.25210",
-          "score": 200,
-          "authors": "Guilherme Delfino, Mehmet Dede, Dmitry Green et al.",
-          "arxivCategory": "cond-mat.str-el",
-          "publishedAt": "2026-09-21T18:00:01.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "A State-Space Framework for trivial and Topological Metamaterial Stochastic Analysis",
-          "url": "https://arxiv.org/abs/2609.24808",
-          "score": 200,
-          "authors": "Luiz Henrique Marra da Silva Ribeiro, Abhilash Sreekumar, Vinícius Fonseca Dal Poggetto et al.",
-          "arxivCategory": "physics.app-ph",
-          "publishedAt": "2026-09-21T16:02:59.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Rapidly prototyping kagome flat band physics with acoustic metamaterials",
-          "url": "https://arxiv.org/abs/2609.24721",
-          "score": 200,
-          "authors": "Jiatong Yang, Benjamin H. November, Yiting Huang et al.",
-          "arxivCategory": "cond-mat.str-el",
-          "publishedAt": "2026-09-21T14:57:58.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Impact of a resonator on vortex induced vibrations of a wind turbine airfoil",
-          "url": "https://arxiv.org/abs/2609.24331",
-          "score": 200,
-          "authors": "Sergio Horcas, David Roca, Enrique Ortega et al.",
-          "arxivCategory": "physics.flu-dyn",
-          "publishedAt": "2026-09-21T09:31:48.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Performance optimization of cascaded traveling wave Josephson parametric amplifiers",
-          "url": "https://arxiv.org/abs/2609.23126",
-          "score": 200,
-          "authors": "Ilari Lilja, Ekaterina Mukhanova, Stanislav Khaldeev et al.",
-          "arxivCategory": "quant-ph",
-          "publishedAt": "2026-09-19T16:52:47.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Two-Stage Refinement Sparse Channel Estimation for Reconfigurable Intelligent Metasurface Antenna (RIMSA) Massive MIMO",
-          "url": "https://arxiv.org/abs/2609.22756",
-          "score": 200,
-          "authors": "Yakun Ma, Hui-Ming Wang, Jiaping He et al.",
-          "arxivCategory": "cs.IT",
-          "publishedAt": "2026-09-19T04:34:02.000Z"
-        }
-      ],
-      "relatedConceptSlugs": [
-        "extreme-metamaterial-solar-sails",
-        "technology-development-and-demonstration-concepts-for-the-space-elevator"
-      ],
-      "resonance": 61,
-      "quadrant": "real-deal",
-      "resonanceSignals": {
-        "conceptDepth": 0.6991803252671503,
-        "editorial": 1,
-        "connections": 0.3333333333333333,
-        "convergence": 0.15,
-        "deepTopic": 0.8,
-        "pantheon": 0.92,
         "graveyard": 0
       }
     },
@@ -661,6 +528,139 @@
         "convergence": 0.025,
         "deepTopic": 1,
         "pantheon": 1,
+        "graveyard": 0
+      }
+    },
+    {
+      "slug": "nanotechnology",
+      "label": "Nanotechnology & Metamaterials",
+      "score": 7600,
+      "delta": -3,
+      "direction": "steady",
+      "mentions": 38,
+      "sources": [
+        {
+          "platform": "arxiv",
+          "title": "Tunable hyperbolic metamaterials for brightening single-photon emission",
+          "url": "https://arxiv.org/abs/2609.30179",
+          "score": 200,
+          "authors": "Manobina Karmakar, Pavel Klok, Filip Ligmajer et al.",
+          "arxivCategory": "physics.optics",
+          "publishedAt": "2026-09-24T17:27:34.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Dynamic Metasurface Antennas: From Programmable Microwave Hardware to Next-Generation Wireless Systems",
+          "url": "https://arxiv.org/abs/2609.29868",
+          "score": 200,
+          "authors": "Abdul Jabbar, William Whittow",
+          "arxivCategory": "eess.SP",
+          "publishedAt": "2026-09-24T14:25:18.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Growth-Inspired Graph Generation and Inverse Design of Mechanical Lattices via Dot Matrices Database Augmentation and GCNN",
+          "url": "https://arxiv.org/abs/2609.29024",
+          "score": 200,
+          "authors": "Weiyun Xu, Jiamu Liu",
+          "arxivCategory": "cs.LG",
+          "publishedAt": "2026-09-24T04:46:32.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Imaging an obstructed Wannier orbital",
+          "url": "https://arxiv.org/abs/2609.28738",
+          "score": 200,
+          "authors": "Yiting Huang, Benjamin H. November, Jonah Herzog-Arbeitman et al.",
+          "arxivCategory": "cond-mat.str-el",
+          "publishedAt": "2026-09-23T19:29:22.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Temporal Interfaces in Metamaterials with Shape-Varying Inclusions",
+          "url": "https://arxiv.org/abs/2609.26915",
+          "score": 200,
+          "authors": "Ishtiaque Rahman, Mohamed Hesham Mostafa, Viktar Asadchy",
+          "arxivCategory": "physics.optics",
+          "publishedAt": "2026-09-22T18:11:26.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Orthogonal Flatbands-Enabled Robust Fano Resonances through Brillouin-Zone Folding",
+          "url": "https://arxiv.org/abs/2609.25902",
+          "score": 200,
+          "authors": "Yangsong Ye, Hanchuan Chen, Shijie Kang et al.",
+          "arxivCategory": "physics.optics",
+          "publishedAt": "2026-09-22T09:08:56.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Kitaev spin liquid in superconducting networks",
+          "url": "https://arxiv.org/abs/2609.25210",
+          "score": 200,
+          "authors": "Guilherme Delfino, Mehmet Dede, Dmitry Green et al.",
+          "arxivCategory": "cond-mat.str-el",
+          "publishedAt": "2026-09-21T18:00:01.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "A State-Space Framework for trivial and Topological Metamaterial Stochastic Analysis",
+          "url": "https://arxiv.org/abs/2609.24808",
+          "score": 200,
+          "authors": "Luiz Henrique Marra da Silva Ribeiro, Abhilash Sreekumar, Vinícius Fonseca Dal Poggetto et al.",
+          "arxivCategory": "physics.app-ph",
+          "publishedAt": "2026-09-21T16:02:59.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Rapidly prototyping kagome flat band physics with acoustic metamaterials",
+          "url": "https://arxiv.org/abs/2609.24721",
+          "score": 200,
+          "authors": "Jiatong Yang, Benjamin H. November, Yiting Huang et al.",
+          "arxivCategory": "cond-mat.str-el",
+          "publishedAt": "2026-09-21T14:57:58.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Impact of a resonator on vortex induced vibrations of a wind turbine airfoil",
+          "url": "https://arxiv.org/abs/2609.24331",
+          "score": 200,
+          "authors": "Sergio Horcas, David Roca, Enrique Ortega et al.",
+          "arxivCategory": "physics.flu-dyn",
+          "publishedAt": "2026-09-21T09:31:48.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Performance optimization of cascaded traveling wave Josephson parametric amplifiers",
+          "url": "https://arxiv.org/abs/2609.23126",
+          "score": 200,
+          "authors": "Ilari Lilja, Ekaterina Mukhanova, Stanislav Khaldeev et al.",
+          "arxivCategory": "quant-ph",
+          "publishedAt": "2026-09-19T16:52:47.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Two-Stage Refinement Sparse Channel Estimation for Reconfigurable Intelligent Metasurface Antenna (RIMSA) Massive MIMO",
+          "url": "https://arxiv.org/abs/2609.22756",
+          "score": 200,
+          "authors": "Yakun Ma, Hui-Ming Wang, Jiaping He et al.",
+          "arxivCategory": "cs.IT",
+          "publishedAt": "2026-09-19T04:34:02.000Z"
+        }
+      ],
+      "relatedConceptSlugs": [
+        "extreme-metamaterial-solar-sails",
+        "technology-development-and-demonstration-concepts-for-the-space-elevator"
+      ],
+      "resonance": 61,
+      "quadrant": "real-deal",
+      "resonanceSignals": {
+        "conceptDepth": 0.6991803252671503,
+        "editorial": 1,
+        "connections": 0.3333333333333333,
+        "convergence": 0.15,
+        "deepTopic": 0.8,
+        "pantheon": 0.92,
         "graveyard": 0
       }
     },
@@ -1062,7 +1062,7 @@
     {
       "slug": "condensed-matter",
       "label": "Condensed Matter",
-      "score": 5333,
+      "score": 5334,
       "delta": 0,
       "direction": "steady",
       "mentions": 29,
@@ -1071,7 +1071,7 @@
           "platform": "hackernews",
           "title": "There's a high chance of devices being sold with GrapheneOS preinstalled in 2027",
           "url": "https://grapheneos.social/@GrapheneOS/117299954135808210",
-          "score": 320,
+          "score": 321,
           "author": "Cider9986",
           "commentCount": 143,
           "publishedAt": "2026-09-22T17:12:51.000Z"
@@ -1188,139 +1188,6 @@
         "convergence": 0.15,
         "deepTopic": 0,
         "pantheon": 0.92,
-        "graveyard": 0
-      }
-    },
-    {
-      "slug": "exoplanets",
-      "label": "Exoplanets",
-      "score": 3000,
-      "delta": -6,
-      "direction": "steady",
-      "mentions": 15,
-      "sources": [
-        {
-          "platform": "arxiv",
-          "title": "Exoplanet Detection Techniques: Radial Velocity",
-          "url": "https://arxiv.org/abs/2609.29378",
-          "score": 200,
-          "authors": "Rafael Luque, Matthew R. Standing",
-          "arxivCategory": "astro-ph.EP",
-          "publishedAt": "2026-09-24T11:01:57.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Exoplanet detection through photometric orbital phase modulations",
-          "url": "https://arxiv.org/abs/2609.20355",
-          "score": 200,
-          "authors": "J. Lillo-Box, O. Balsalobre-Ruza",
-          "arxivCategory": "astro-ph.EP",
-          "publishedAt": "2026-09-17T13:20:41.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Stability of circumbinary planets: the role of binary properties and migration scenarios",
-          "url": "https://arxiv.org/abs/2609.05134",
-          "score": 200,
-          "authors": "Romain Grane, Nicolás Cuello, Mario Sucerquia et al.",
-          "arxivCategory": "astro-ph.EP",
-          "publishedAt": "2026-09-04T13:36:23.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Addressing the low-wind effect with the Lyot-based low-order wavefront sensor on SCExAO",
-          "url": "https://arxiv.org/abs/2609.00737",
-          "score": 200,
-          "authors": "Garima Singh, Sebastien Vievard, Julien Lozi et al.",
-          "arxivCategory": "astro-ph.IM",
-          "publishedAt": "2026-09-01T05:15:43.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "High-Resolution Modelling of Coronae and Winds in Solar-type Stars with Varying Rotation Rates II. Stellar Winds",
-          "url": "https://arxiv.org/abs/2609.28067",
-          "score": 200,
-          "authors": "Yue-Hong Chen, Julián D. Alvarado-Gómez, Xin Cheng et al.",
-          "arxivCategory": "astro-ph.SR",
-          "publishedAt": "2026-09-23T13:15:13.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Inside the Eirenesphere: The Interplay of Porosity, Heat Flux and Mineralogy in Exoplanetary Aquable and Habitable Layers",
-          "url": "https://arxiv.org/abs/2609.25280",
-          "score": 200,
-          "authors": "Santiago A. Orjuela, Jorge I. Zuluaga",
-          "arxivCategory": "astro-ph.EP",
-          "publishedAt": "2026-09-21T18:23:50.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "The Science Potential of Characterizing Gas Giant Exoplanets with HWO",
-          "url": "https://arxiv.org/abs/2609.22653",
-          "score": 200,
-          "authors": "Beck Dacus, Jean-Baptiste Ruffio, Quinn Konopacky et al.",
-          "arxivCategory": "astro-ph.EP",
-          "publishedAt": "2026-09-18T23:58:36.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Rescuing Kepler's False Positives: A Possible Habitable Zone Exoplanet in the Triple Star System KOI-1623",
-          "url": "https://arxiv.org/abs/2609.16201",
-          "score": 200,
-          "authors": "Rita Lanxuan Wang, Daniel Huber, Daniel Hey et al.",
-          "arxivCategory": "astro-ph.EP",
-          "publishedAt": "2026-09-14T18:34:11.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Detecting transiting exoplanets in simulated PLATO data: A comparison of light curve filter and transit search algorithms",
-          "url": "https://arxiv.org/abs/2609.15493",
-          "score": 200,
-          "authors": "Geert Jan Talens, Leigh C. Smith, Luca Malavolta et al.",
-          "arxivCategory": "astro-ph.EP",
-          "publishedAt": "2026-09-14T12:46:14.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Habitable-zone Earths at the detection frontier: Measured completeness and false-alarm rate of a transit pipeline for the PLATO M-dwarf sample",
-          "url": "https://arxiv.org/abs/2609.04887",
-          "score": 200,
-          "authors": "Yohann Tschudi",
-          "arxivCategory": "astro-ph.EP",
-          "publishedAt": "2026-09-04T08:44:06.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Precise Stellar Age Constraints and Habitable Zone Evolution in Exoplanet Systems",
-          "url": "https://arxiv.org/abs/2609.01790",
-          "score": 200,
-          "authors": "Grace Henry, Ted von Hippel, Anna Childs",
-          "arxivCategory": "astro-ph.EP",
-          "publishedAt": "2026-09-01T19:01:42.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Evolution of Stellar Activity and Habitable Zone (EATEN): III. X-ray Activity of Dwarfs in Open Clusters and Field Stars",
-          "url": "https://arxiv.org/abs/2608.29248",
-          "score": 200,
-          "authors": "Xue Li, Song Wang, Henggeng Han et al.",
-          "arxivCategory": "astro-ph.SR",
-          "publishedAt": "2026-08-29T13:07:36.000Z"
-        }
-      ],
-      "relatedConceptSlugs": [
-        "fluidic-telescope",
-        "orbiting-rainbows"
-      ],
-      "resonance": 51,
-      "quadrant": "real-deal",
-      "resonanceSignals": {
-        "conceptDepth": 0.5113915944693856,
-        "editorial": 1,
-        "connections": 0.3333333333333333,
-        "convergence": 0.15,
-        "deepTopic": 0.8,
-        "pantheon": 0.12,
         "graveyard": 0
       }
     },
@@ -1457,6 +1324,139 @@
       }
     },
     {
+      "slug": "exoplanets",
+      "label": "Exoplanets",
+      "score": 2801,
+      "delta": -7,
+      "direction": "steady",
+      "mentions": 15,
+      "sources": [
+        {
+          "platform": "arxiv",
+          "title": "Exoplanet Detection Techniques: Radial Velocity",
+          "url": "https://arxiv.org/abs/2609.29378",
+          "score": 200,
+          "authors": "Rafael Luque, Matthew R. Standing",
+          "arxivCategory": "astro-ph.EP",
+          "publishedAt": "2026-09-24T11:01:57.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Exoplanet detection through photometric orbital phase modulations",
+          "url": "https://arxiv.org/abs/2609.20355",
+          "score": 200,
+          "authors": "J. Lillo-Box, O. Balsalobre-Ruza",
+          "arxivCategory": "astro-ph.EP",
+          "publishedAt": "2026-09-17T13:20:41.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Stability of circumbinary planets: the role of binary properties and migration scenarios",
+          "url": "https://arxiv.org/abs/2609.05134",
+          "score": 200,
+          "authors": "Romain Grane, Nicolás Cuello, Mario Sucerquia et al.",
+          "arxivCategory": "astro-ph.EP",
+          "publishedAt": "2026-09-04T13:36:23.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Addressing the low-wind effect with the Lyot-based low-order wavefront sensor on SCExAO",
+          "url": "https://arxiv.org/abs/2609.00737",
+          "score": 200,
+          "authors": "Garima Singh, Sebastien Vievard, Julien Lozi et al.",
+          "arxivCategory": "astro-ph.IM",
+          "publishedAt": "2026-09-01T05:15:43.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "High-Resolution Modelling of Coronae and Winds in Solar-type Stars with Varying Rotation Rates II. Stellar Winds",
+          "url": "https://arxiv.org/abs/2609.28067",
+          "score": 200,
+          "authors": "Yue-Hong Chen, Julián D. Alvarado-Gómez, Xin Cheng et al.",
+          "arxivCategory": "astro-ph.SR",
+          "publishedAt": "2026-09-23T13:15:13.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Inside the Eirenesphere: The Interplay of Porosity, Heat Flux and Mineralogy in Exoplanetary Aquable and Habitable Layers",
+          "url": "https://arxiv.org/abs/2609.25280",
+          "score": 200,
+          "authors": "Santiago A. Orjuela, Jorge I. Zuluaga",
+          "arxivCategory": "astro-ph.EP",
+          "publishedAt": "2026-09-21T18:23:50.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "The Science Potential of Characterizing Gas Giant Exoplanets with HWO",
+          "url": "https://arxiv.org/abs/2609.22653",
+          "score": 200,
+          "authors": "Beck Dacus, Jean-Baptiste Ruffio, Quinn Konopacky et al.",
+          "arxivCategory": "astro-ph.EP",
+          "publishedAt": "2026-09-18T23:58:36.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Rescuing Kepler's False Positives: A Possible Habitable Zone Exoplanet in the Triple Star System KOI-1623",
+          "url": "https://arxiv.org/abs/2609.16201",
+          "score": 200,
+          "authors": "Rita Lanxuan Wang, Daniel Huber, Daniel Hey et al.",
+          "arxivCategory": "astro-ph.EP",
+          "publishedAt": "2026-09-14T18:34:11.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Detecting transiting exoplanets in simulated PLATO data: A comparison of light curve filter and transit search algorithms",
+          "url": "https://arxiv.org/abs/2609.15493",
+          "score": 200,
+          "authors": "Geert Jan Talens, Leigh C. Smith, Luca Malavolta et al.",
+          "arxivCategory": "astro-ph.EP",
+          "publishedAt": "2026-09-14T12:46:14.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Habitable-zone Earths at the detection frontier: Measured completeness and false-alarm rate of a transit pipeline for the PLATO M-dwarf sample",
+          "url": "https://arxiv.org/abs/2609.04887",
+          "score": 200,
+          "authors": "Yohann Tschudi",
+          "arxivCategory": "astro-ph.EP",
+          "publishedAt": "2026-09-04T08:44:06.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Precise Stellar Age Constraints and Habitable Zone Evolution in Exoplanet Systems",
+          "url": "https://arxiv.org/abs/2609.01790",
+          "score": 200,
+          "authors": "Grace Henry, Ted von Hippel, Anna Childs",
+          "arxivCategory": "astro-ph.EP",
+          "publishedAt": "2026-09-01T19:01:42.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Evolution of Stellar Activity and Habitable Zone (EATEN): III. X-ray Activity of Dwarfs in Open Clusters and Field Stars",
+          "url": "https://arxiv.org/abs/2608.29248",
+          "score": 200,
+          "authors": "Xue Li, Song Wang, Henggeng Han et al.",
+          "arxivCategory": "astro-ph.SR",
+          "publishedAt": "2026-08-29T13:07:36.000Z"
+        }
+      ],
+      "relatedConceptSlugs": [
+        "fluidic-telescope",
+        "orbiting-rainbows"
+      ],
+      "resonance": 51,
+      "quadrant": "real-deal",
+      "resonanceSignals": {
+        "conceptDepth": 0.5113915944693856,
+        "editorial": 1,
+        "connections": 0.3333333333333333,
+        "convergence": 0.15,
+        "deepTopic": 0.8,
+        "pantheon": 0.12,
+        "graveyard": 0
+      }
+    },
+    {
       "slug": "fusion-propulsion",
       "label": "Fusion Propulsion",
       "score": 1800,
@@ -1567,7 +1567,7 @@
       "slug": "artemis",
       "label": "Artemis & Lunar Return",
       "score": 1600,
-      "delta": -11,
+      "delta": 0,
       "direction": "steady",
       "mentions": 8,
       "sources": [
@@ -1664,8 +1664,8 @@
       "slug": "astrobiology",
       "label": "Astrobiology",
       "score": 1600,
-      "delta": -20,
-      "direction": "down",
+      "delta": 0,
+      "direction": "steady",
       "mentions": 8,
       "sources": [
         {
@@ -1944,8 +1944,8 @@
     {
       "slug": "starlink",
       "label": "Starlink & Satellite Internet",
-      "score": 860,
-      "delta": 8,
+      "score": 864,
+      "delta": 4,
       "direction": "steady",
       "mentions": 7,
       "sources": [
@@ -1980,18 +1980,18 @@
           "platform": "hackernews",
           "title": "Starlink ground station in Poland hit by fire in suspected arson attack",
           "url": "https://notesfrompoland.com/2026/09/24/starlink-ground-station-in-poland-hit-by-fire-in-suspected-arson-attack/",
-          "score": 178,
+          "score": 180,
           "author": "giuliomagnifico",
-          "commentCount": 180,
+          "commentCount": 181,
           "publishedAt": "2026-09-24T09:52:29.000Z"
         },
         {
           "platform": "hackernews",
           "title": "Astronomer watches Starlink satellites sinking to build a 'planetary barometer'",
           "url": "https://www.theregister.com/science/2026/09/25/astronomer-watches-starlink-satellites-sinking-to-build-a-planetary-barometer/5299036",
-          "score": 61,
+          "score": 63,
           "author": "whh",
-          "commentCount": 18,
+          "commentCount": 19,
           "publishedAt": "2026-09-25T18:29:49.000Z"
         },
         {
@@ -2025,77 +2025,6 @@
         "convergence": 0,
         "deepTopic": 0,
         "pantheon": 0,
-        "graveyard": 0
-      }
-    },
-    {
-      "slug": "mars",
-      "label": "Mars Exploration",
-      "score": 602,
-      "delta": 0,
-      "direction": "steady",
-      "mentions": 4,
-      "sources": [
-        {
-          "platform": "arxiv",
-          "title": "Widespread plasma jets in the Martian magnetosheath revealed by dual-spacecraft observations",
-          "url": "https://arxiv.org/abs/2609.19788",
-          "score": 200,
-          "authors": "Abigail Tadlock, Chuanfei Dong, Chi Zhang et al.",
-          "arxivCategory": "astro-ph.EP",
-          "publishedAt": "2026-09-17T06:53:01.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Horizon-Dependent Tube MPC for Elliptical-Orbit Rendezvous Under Mass Uncertainty",
-          "url": "https://arxiv.org/abs/2608.27659",
-          "score": 200,
-          "authors": "Omer Burak Iskender, Keck-Voon Ling",
-          "arxivCategory": "eess.SY",
-          "publishedAt": "2026-08-27T19:46:35.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Geochemical Hazard Assessment of Martian Regolith for Future Human Exploration",
-          "url": "https://arxiv.org/abs/2608.28805",
-          "score": 200,
-          "authors": "Mavia Anjum, Gwendolyn D. Bart",
-          "arxivCategory": "q-bio.OT",
-          "publishedAt": "2026-08-28T19:17:54.000Z"
-        },
-        {
-          "platform": "youtube",
-          "title": "The Steam Deck Is Being Used to Test Mars Rovers [video]",
-          "url": "https://www.youtube.com/watch?v=IJSO-BL3pEU",
-          "score": 2,
-          "thumbnail": "https://img.youtube.com/vi/IJSO-BL3pEU/mqdefault.jpg",
-          "publishedAt": "2026-09-21T19:14:12.000Z"
-        },
-        {
-          "platform": "hackernews",
-          "title": "The Steam Deck Is Being Used to Test Mars Rovers [video]",
-          "url": "https://www.youtube.com/watch?v=IJSO-BL3pEU",
-          "score": 2,
-          "author": "HelloUsername",
-          "commentCount": 0,
-          "publishedAt": "2026-09-21T19:14:12.000Z"
-        }
-      ],
-      "relatedConceptSlugs": [
-        "mycotecture",
-        "breathing-mars-air",
-        "evacuated-airship-for-mars-missions",
-        "marsbee"
-      ],
-      "resonance": 60,
-      "quadrant": "sleeping-giant",
-      "resonanceSignals": {
-        "conceptDepth": 1,
-        "editorial": 1,
-        "connections": 0,
-        "convergence": 0.075,
-        "deepTopic": 0.8,
-        "pantheon": 0.08,
         "graveyard": 0
       }
     },
@@ -2154,10 +2083,10 @@
     {
       "slug": "starship",
       "label": "Starship & SpaceX",
-      "score": 476,
-      "delta": 0,
+      "score": 440,
+      "delta": -9,
       "direction": "steady",
-      "mentions": 17,
+      "mentions": 14,
       "sources": [
         {
           "platform": "arxiv",
@@ -2176,33 +2105,6 @@
           "authors": "Emily M. Palmer, Anil V. Rao",
           "arxivCategory": "math.OC",
           "publishedAt": "2026-09-09T20:33:53.000Z"
-        },
-        {
-          "platform": "hackernews",
-          "title": "Lawsuit: Illegal Agreement of Anthropic, OpenAI, SpaceXAI, Google on AI Slowdown",
-          "url": "https://www.independent.co.uk/news/lawsuit-anthropic-google-openai-lawyers-b3052942.html",
-          "score": 18,
-          "author": "mdp2021",
-          "commentCount": 1,
-          "publishedAt": "2026-09-19T16:51:41.000Z"
-        },
-        {
-          "platform": "hackernews",
-          "title": "Lawsuit Accuses Anthropic, OpenAI, SpaceXAI, Google of AI Pacing 'Collusion'",
-          "url": "https://thehill.com/policy/technology/6099571-lawsuit-accuses-anthropic-openai-spacexai-google-of-ai-pacing-collusion/",
-          "score": 10,
-          "author": "theanonymousone",
-          "commentCount": 0,
-          "publishedAt": "2026-09-19T15:52:15.000Z"
-        },
-        {
-          "platform": "hackernews",
-          "title": "Anthropic, OpenAI, SpaceXAI, Google sued over call to 'pace' AI development",
-          "url": "https://www.politico.com/news/2026/09/18/anthropic-openai-spacexai-google-sued-over-calls-to-pace-ai-development-01085023",
-          "score": 9,
-          "author": "MarcScott",
-          "commentCount": 4,
-          "publishedAt": "2026-09-19T14:09:55.000Z"
         },
         {
           "platform": "hackernews",
@@ -2230,6 +2132,15 @@
           "author": "simonebrunozzi",
           "commentCount": 5,
           "publishedAt": "2026-09-23T18:29:01.000Z"
+        },
+        {
+          "platform": "hackernews",
+          "title": "SpaceX-Focused Pentagon Contracts Leave Rivals Feeling Squeezed",
+          "url": "https://www.bloomberg.com/news/articles/2026-09-25/spacex-focused-pentagon-contracts-leave-rivals-feeling-squeezed",
+          "score": 3,
+          "author": "wslh",
+          "commentCount": 1,
+          "publishedAt": "2026-09-25T13:56:32.000Z"
         },
         {
           "platform": "hackernews",
@@ -2266,6 +2177,24 @@
           "author": "starkparker",
           "commentCount": 0,
           "publishedAt": "2026-09-20T17:19:20.000Z"
+        },
+        {
+          "platform": "hackernews",
+          "title": "Temporary Flight Restriction over SpaceX's McGregor, Texas, Test Facility",
+          "url": "https://notams.aim.faa.gov/notamSearch/createNotamPdf?transactionid=82465898",
+          "score": 2,
+          "author": "uticus",
+          "commentCount": 1,
+          "publishedAt": "2026-09-21T19:00:44.000Z"
+        },
+        {
+          "platform": "hackernews",
+          "title": "Grok 4.7 Scores 46 on AI Intelligence Index, Puts SpaceXAI in Top 4 Labs",
+          "url": "https://artificialanalysis.ai/articles/benchmarking-grok-4-7",
+          "score": 2,
+          "author": "wertyk",
+          "commentCount": 0,
+          "publishedAt": "2026-09-22T17:12:58.000Z"
         }
       ],
       "relatedConceptSlugs": [
@@ -2281,6 +2210,68 @@
         "convergence": 0.35,
         "deepTopic": 1,
         "pantheon": 0.92,
+        "graveyard": 0
+      }
+    },
+    {
+      "slug": "mars",
+      "label": "Mars Exploration",
+      "score": 402,
+      "delta": -33,
+      "direction": "down",
+      "mentions": 3,
+      "sources": [
+        {
+          "platform": "arxiv",
+          "title": "Widespread plasma jets in the Martian magnetosheath revealed by dual-spacecraft observations",
+          "url": "https://arxiv.org/abs/2609.19788",
+          "score": 200,
+          "authors": "Abigail Tadlock, Chuanfei Dong, Chi Zhang et al.",
+          "arxivCategory": "astro-ph.EP",
+          "publishedAt": "2026-09-17T06:53:01.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Geochemical Hazard Assessment of Martian Regolith for Future Human Exploration",
+          "url": "https://arxiv.org/abs/2608.28805",
+          "score": 200,
+          "authors": "Mavia Anjum, Gwendolyn D. Bart",
+          "arxivCategory": "q-bio.OT",
+          "publishedAt": "2026-08-28T19:17:54.000Z"
+        },
+        {
+          "platform": "youtube",
+          "title": "The Steam Deck Is Being Used to Test Mars Rovers [video]",
+          "url": "https://www.youtube.com/watch?v=IJSO-BL3pEU",
+          "score": 2,
+          "thumbnail": "https://img.youtube.com/vi/IJSO-BL3pEU/mqdefault.jpg",
+          "publishedAt": "2026-09-21T19:14:12.000Z"
+        },
+        {
+          "platform": "hackernews",
+          "title": "The Steam Deck Is Being Used to Test Mars Rovers [video]",
+          "url": "https://www.youtube.com/watch?v=IJSO-BL3pEU",
+          "score": 2,
+          "author": "HelloUsername",
+          "commentCount": 0,
+          "publishedAt": "2026-09-21T19:14:12.000Z"
+        }
+      ],
+      "relatedConceptSlugs": [
+        "mycotecture",
+        "breathing-mars-air",
+        "evacuated-airship-for-mars-missions",
+        "marsbee"
+      ],
+      "resonance": 60,
+      "quadrant": "sleeping-giant",
+      "resonanceSignals": {
+        "conceptDepth": 1,
+        "editorial": 1,
+        "connections": 0,
+        "convergence": 0.075,
+        "deepTopic": 0.8,
+        "pantheon": 0.08,
         "graveyard": 0
       }
     },
