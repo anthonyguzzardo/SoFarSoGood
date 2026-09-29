@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-28T12:23:36.966Z",
+  "generatedAt": "2026-09-28T23:03:29.098Z",
   "topics": [
     {
       "slug": "black-holes",
@@ -269,7 +269,7 @@
     {
       "slug": "space-telescopes",
       "label": "Space Telescopes",
-      "score": 8424,
+      "score": 8425,
       "delta": 2,
       "direction": "steady",
       "mentions": 47,
@@ -930,18 +930,18 @@
     {
       "slug": "condensed-matter",
       "label": "Condensed Matter",
-      "score": 5539,
-      "delta": 4,
+      "score": 5639,
+      "delta": 6,
       "direction": "steady",
-      "mentions": 29,
+      "mentions": 31,
       "sources": [
         {
           "platform": "hackernews",
           "title": "There's a high chance of devices being sold with GrapheneOS preinstalled in 2027",
           "url": "https://grapheneos.social/@GrapheneOS/117299954135808210",
-          "score": 321,
+          "score": 322,
           "author": "Cider9986",
-          "commentCount": 143,
+          "commentCount": 144,
           "publishedAt": "2026-09-22T17:12:51.000Z"
         },
         {
@@ -1062,10 +1062,10 @@
     {
       "slug": "cosmology",
       "label": "Cosmology",
-      "score": 5401,
-      "delta": 0,
+      "score": 5400,
+      "delta": 4,
       "direction": "steady",
-      "mentions": 28,
+      "mentions": 27,
       "sources": [
         {
           "platform": "arxiv",
@@ -1326,10 +1326,10 @@
     {
       "slug": "exoplanets",
       "label": "Exoplanets",
-      "score": 2805,
-      "delta": 0,
+      "score": 2605,
+      "delta": -7,
       "direction": "steady",
-      "mentions": 16,
+      "mentions": 15,
       "sources": [
         {
           "platform": "arxiv",
@@ -1432,12 +1432,12 @@
         },
         {
           "platform": "arxiv",
-          "title": "Evolution of Stellar Activity and Habitable Zone (EATEN): III. X-ray Activity of Dwarfs in Open Clusters and Field Stars",
-          "url": "https://arxiv.org/abs/2608.29248",
+          "title": "Stellar flares with Ariel: detection prospects and impacts on exoplanet spectroscopy",
+          "url": "https://arxiv.org/abs/2609.28001",
           "score": 200,
-          "authors": "Xue Li, Song Wang, Henggeng Han et al.",
+          "authors": "K. Vida, B. Seli, B. Edwards",
           "arxivCategory": "astro-ph.SR",
-          "publishedAt": "2026-08-29T13:07:36.000Z"
+          "publishedAt": "2026-09-23T12:30:52.000Z"
         }
       ],
       "relatedConceptSlugs": [
@@ -1453,103 +1453,6 @@
         "convergence": 0.15,
         "deepTopic": 0.8,
         "pantheon": 0.12,
-        "graveyard": 0
-      }
-    },
-    {
-      "slug": "artemis",
-      "label": "Artemis & Lunar Return",
-      "score": 1600,
-      "delta": 0,
-      "direction": "steady",
-      "mentions": 8,
-      "sources": [
-        {
-          "platform": "arxiv",
-          "title": "Designing an Efficient Excavator Bucket for Lunar ISRU: A Comparative Study with Vision-Based Fill and Displacement Analysis",
-          "url": "https://arxiv.org/abs/2609.25724",
-          "score": 200,
-          "authors": "Abdulla Hil Kafi, Tomoki Koshi, Jorge Casir et al.",
-          "arxivCategory": "cs.RO",
-          "publishedAt": "2026-09-22T05:53:56.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "DewTwin-Coin: an onboard autonomous framework for lunar water-ice prospecting using Chandrayaan-3 LIBS and ChaSTE data",
-          "url": "https://arxiv.org/abs/2609.17379",
-          "score": 200,
-          "authors": "Soundarya R., Debasish Mondal",
-          "arxivCategory": "astro-ph.EP",
-          "publishedAt": "2026-09-15T16:21:52.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Mechanisms of Electrostatic Charge Formation and Retention in Lunar Regolith",
-          "url": "https://arxiv.org/abs/2609.06496",
-          "score": 200,
-          "authors": "Minhyeok Kim, Hyun Jung Kim, Sang H. Choi et al.",
-          "arxivCategory": "astro-ph.IM",
-          "publishedAt": "2026-09-06T09:24:05.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Distributed Infrastructure Sensors and Cues for Robotic Fire-Fighting and Safety System on a Lunar Base",
-          "url": "https://arxiv.org/abs/2609.22786",
-          "score": 200,
-          "authors": "Alexis Munguia, Eryc Rodriguez, Drake Russ et al.",
-          "arxivCategory": "cs.RO",
-          "publishedAt": "2026-09-19T05:35:03.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Transformer-Informed Trajectory Optimization for Relative Motion in Cislunar Orbits",
-          "url": "https://arxiv.org/abs/2609.25460",
-          "score": 200,
-          "authors": "Walter J. Manuel, Yuji Takubo, Simone D'Amico",
-          "arxivCategory": "math.OC",
-          "publishedAt": "2026-09-21T22:33:15.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Improving Faint Object Detection for Space Situational Awareness with Variational Autoencoders",
-          "url": "https://arxiv.org/abs/2609.11269",
-          "score": 200,
-          "authors": "Angela Cratere, Luca Ghilardi, Vishnu Reddy et al.",
-          "arxivCategory": "cs.CV",
-          "publishedAt": "2026-09-10T09:02:13.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Small-Body Science with the Nautilus Space Observatory: From Cislunar Space Resilience to Mapping the Kuiper-Belt-to-Oort-Cloud Transition",
-          "url": "https://arxiv.org/abs/2609.10663",
-          "score": 200,
-          "authors": "J. de Wit, A. Y. Burdanov, P. McGill et al.",
-          "arxivCategory": "astro-ph.IM",
-          "publishedAt": "2026-09-09T17:59:59.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Nechvile-Transformed Spacecraft Dynamics and Propellant Computation in the 3-Body Problem",
-          "url": "https://arxiv.org/abs/2608.29271",
-          "score": 200,
-          "authors": "Michael J. Dixon, Isaac M. Ross",
-          "arxivCategory": "math.OC",
-          "publishedAt": "2026-08-29T13:51:06.000Z"
-        }
-      ],
-      "relatedConceptSlugs": [
-        "mycotecture",
-        "regolith-adaptive-modification-systems"
-      ],
-      "resonance": 52,
-      "quadrant": "real-deal",
-      "resonanceSignals": {
-        "conceptDepth": 0.7737056144690831,
-        "editorial": 1,
-        "connections": 0,
-        "convergence": 0.025,
-        "deepTopic": 0.8,
-        "pantheon": 0.08,
         "graveyard": 0
       }
     },
@@ -1652,10 +1555,98 @@
       }
     },
     {
+      "slug": "artemis",
+      "label": "Artemis & Lunar Return",
+      "score": 1400,
+      "delta": -12,
+      "direction": "steady",
+      "mentions": 7,
+      "sources": [
+        {
+          "platform": "arxiv",
+          "title": "Designing an Efficient Excavator Bucket for Lunar ISRU: A Comparative Study with Vision-Based Fill and Displacement Analysis",
+          "url": "https://arxiv.org/abs/2609.25724",
+          "score": 200,
+          "authors": "Abdulla Hil Kafi, Tomoki Koshi, Jorge Casir et al.",
+          "arxivCategory": "cs.RO",
+          "publishedAt": "2026-09-22T05:53:56.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "DewTwin-Coin: an onboard autonomous framework for lunar water-ice prospecting using Chandrayaan-3 LIBS and ChaSTE data",
+          "url": "https://arxiv.org/abs/2609.17379",
+          "score": 200,
+          "authors": "Soundarya R., Debasish Mondal",
+          "arxivCategory": "astro-ph.EP",
+          "publishedAt": "2026-09-15T16:21:52.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Mechanisms of Electrostatic Charge Formation and Retention in Lunar Regolith",
+          "url": "https://arxiv.org/abs/2609.06496",
+          "score": 200,
+          "authors": "Minhyeok Kim, Hyun Jung Kim, Sang H. Choi et al.",
+          "arxivCategory": "astro-ph.IM",
+          "publishedAt": "2026-09-06T09:24:05.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Distributed Infrastructure Sensors and Cues for Robotic Fire-Fighting and Safety System on a Lunar Base",
+          "url": "https://arxiv.org/abs/2609.22786",
+          "score": 200,
+          "authors": "Alexis Munguia, Eryc Rodriguez, Drake Russ et al.",
+          "arxivCategory": "cs.RO",
+          "publishedAt": "2026-09-19T05:35:03.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Transformer-Informed Trajectory Optimization for Relative Motion in Cislunar Orbits",
+          "url": "https://arxiv.org/abs/2609.25460",
+          "score": 200,
+          "authors": "Walter J. Manuel, Yuji Takubo, Simone D'Amico",
+          "arxivCategory": "math.OC",
+          "publishedAt": "2026-09-21T22:33:15.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Improving Faint Object Detection for Space Situational Awareness with Variational Autoencoders",
+          "url": "https://arxiv.org/abs/2609.11269",
+          "score": 200,
+          "authors": "Angela Cratere, Luca Ghilardi, Vishnu Reddy et al.",
+          "arxivCategory": "cs.CV",
+          "publishedAt": "2026-09-10T09:02:13.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Small-Body Science with the Nautilus Space Observatory: From Cislunar Space Resilience to Mapping the Kuiper-Belt-to-Oort-Cloud Transition",
+          "url": "https://arxiv.org/abs/2609.10663",
+          "score": 200,
+          "authors": "J. de Wit, A. Y. Burdanov, P. McGill et al.",
+          "arxivCategory": "astro-ph.IM",
+          "publishedAt": "2026-09-09T17:59:59.000Z"
+        }
+      ],
+      "relatedConceptSlugs": [
+        "mycotecture",
+        "regolith-adaptive-modification-systems"
+      ],
+      "resonance": 52,
+      "quadrant": "real-deal",
+      "resonanceSignals": {
+        "conceptDepth": 0.7737056144690831,
+        "editorial": 1,
+        "connections": 0,
+        "convergence": 0.025,
+        "deepTopic": 0.8,
+        "pantheon": 0.08,
+        "graveyard": 0
+      }
+    },
+    {
       "slug": "astrobiology",
       "label": "Astrobiology",
       "score": 1400,
-      "delta": -12,
+      "delta": 0,
       "direction": "steady",
       "mentions": 7,
       "sources": [
@@ -1728,7 +1719,7 @@
         "venus-atmosphere-and-cloud-particle-sample-return-for-astrobiology"
       ],
       "resonance": 53,
-      "quadrant": "sleeping-giant",
+      "quadrant": "real-deal",
       "resonanceSignals": {
         "conceptDepth": 0.5113915944693856,
         "editorial": 1,
@@ -1815,7 +1806,7 @@
         "niac-phase-i-final-report-on-orbit-collision"
       ],
       "resonance": 20,
-      "quadrant": "dead-zone",
+      "quadrant": "hype-cycle",
       "resonanceSignals": {
         "conceptDepth": 0.3868528072345416,
         "editorial": 0.4,
@@ -1830,7 +1821,7 @@
       "slug": "asteroid-mining",
       "label": "Asteroid Mining",
       "score": 1400,
-      "delta": -12,
+      "delta": 0,
       "direction": "steady",
       "mentions": 7,
       "sources": [
@@ -1903,7 +1894,7 @@
         "gravity-poppers"
       ],
       "resonance": 43,
-      "quadrant": "dead-zone",
+      "quadrant": "hype-cycle",
       "resonanceSignals": {
         "conceptDepth": 0.6131471927654584,
         "editorial": 1,
@@ -1917,10 +1908,10 @@
     {
       "slug": "starlink",
       "label": "Starlink & Satellite Internet",
-      "score": 868,
+      "score": 869,
       "delta": 0,
       "direction": "steady",
-      "mentions": 7,
+      "mentions": 8,
       "sources": [
         {
           "platform": "arxiv",
@@ -1984,6 +1975,15 @@
           "author": "uxhacker",
           "commentCount": 0,
           "publishedAt": "2026-09-24T13:41:32.000Z"
+        },
+        {
+          "platform": "hackernews",
+          "title": "Swiss to equip fleet with Starlink high-speed internet by 2029",
+          "url": "https://www.swissinfo.ch/eng/workplace/swiss-to-equip-fleet-with-starlink-high-speed-internet-by-2029/92130877",
+          "score": 1,
+          "author": "7777777phil",
+          "commentCount": 0,
+          "publishedAt": "2026-09-28T17:22:26.000Z"
         }
       ],
       "relatedConceptSlugs": [
@@ -1998,6 +1998,139 @@
         "convergence": 0,
         "deepTopic": 0,
         "pantheon": 0,
+        "graveyard": 0
+      }
+    },
+    {
+      "slug": "starship",
+      "label": "Starship & SpaceX",
+      "score": 766,
+      "delta": 78,
+      "direction": "up",
+      "mentions": 22,
+      "sources": [
+        {
+          "platform": "hackernews",
+          "title": "SpaceX's Starship launching to orbit for first time ever today",
+          "url": "https://www.space.com/space-exploration/launches-spacecraft/spacexs-starship-megarocket-launching-to-orbit-for-1st-time-ever-on-sept-28-watch-it-live",
+          "score": 291,
+          "author": "geox",
+          "commentCount": 314,
+          "publishedAt": "2026-09-28T09:15:04.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Fuel-optimal Boost-Back Guidance via Successive Convexification with a Terminal Constraint for ReusableLaunch Vehicles",
+          "url": "https://arxiv.org/abs/2609.28759",
+          "score": 200,
+          "authors": "Mingyeom Kim, Changhyun Kang, Dohyun Lee et al.",
+          "arxivCategory": "math.OC",
+          "publishedAt": "2026-09-23T20:11:36.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Method for Constrained Computational Guidance and Control with Application to Hypersonic Entry",
+          "url": "https://arxiv.org/abs/2609.10813",
+          "score": 200,
+          "authors": "Emily M. Palmer, Anil V. Rao",
+          "arxivCategory": "math.OC",
+          "publishedAt": "2026-09-09T20:33:53.000Z"
+        },
+        {
+          "platform": "hackernews",
+          "title": "Starship Achieved Orbit",
+          "url": "https://twitter.com/SpaceX/status/2104653511883628569",
+          "score": 8,
+          "author": "karp773",
+          "commentCount": 5,
+          "publishedAt": "2026-09-28T21:17:08.000Z"
+        },
+        {
+          "platform": "hackernews",
+          "title": "SpaceX – Starship Flight 14",
+          "url": "https://www.spacex.com/launches/starship-flight-14",
+          "score": 7,
+          "author": "duck",
+          "commentCount": 2,
+          "publishedAt": "2026-09-28T04:28:06.000Z"
+        },
+        {
+          "platform": "hackernews",
+          "title": "SpaceX – Starship Flight 14",
+          "url": "https://www.spacex.com/launches/starship-flight-14",
+          "score": 7,
+          "author": "corvad",
+          "commentCount": 1,
+          "publishedAt": "2026-09-28T13:45:01.000Z"
+        },
+        {
+          "platform": "hackernews",
+          "title": "SpaceX Pivots Away from Space",
+          "url": "https://www.ft.com/content/0fd15797-ac89-4222-a4bb-03a6a1330f48",
+          "score": 7,
+          "author": "luke5441",
+          "commentCount": 0,
+          "publishedAt": "2026-09-25T08:29:30.000Z"
+        },
+        {
+          "platform": "hackernews",
+          "title": "SpaceX Pivots Away from Space",
+          "url": "https://www.ft.com/content/0fd15797-ac89-4222-a4bb-03a6a1330f48",
+          "score": 6,
+          "author": "kristianp",
+          "commentCount": 5,
+          "publishedAt": "2026-09-27T22:01:25.000Z"
+        },
+        {
+          "platform": "hackernews",
+          "title": "SpaceX's Starship Reaches Orbit for First Time in Major Test",
+          "url": "https://www.bloomberg.com/news/articles/2026-09-28/spacex-to-stage-first-ever-starship-flight-to-orbit-in-key-test",
+          "score": 4,
+          "author": "mooreds",
+          "commentCount": 0,
+          "publishedAt": "2026-09-28T15:24:37.000Z"
+        },
+        {
+          "platform": "hackernews",
+          "title": "SpaceX Starshield",
+          "url": "https://en.wikipedia.org/wiki/SpaceX_Starshield",
+          "score": 4,
+          "author": "simonebrunozzi",
+          "commentCount": 5,
+          "publishedAt": "2026-09-23T18:29:01.000Z"
+        },
+        {
+          "platform": "hackernews",
+          "title": "SpaceX Pivots Away from Space",
+          "url": "https://www.ft.com/content/0fd15797-ac89-4222-a4bb-03a6a1330f48",
+          "score": 4,
+          "author": "kaycebasques",
+          "commentCount": 3,
+          "publishedAt": "2026-09-27T01:07:45.000Z"
+        },
+        {
+          "platform": "hackernews",
+          "title": "SpaceX Starship Orbital Launch Attempt Starting in ~10 Mins",
+          "url": "https://x.com/SpaceX",
+          "score": 3,
+          "author": "somenameforme",
+          "commentCount": 1,
+          "publishedAt": "2026-09-28T12:36:48.000Z"
+        }
+      ],
+      "relatedConceptSlugs": [
+        "extraterrestrial-regolith-derived-atmospheric-entry-heat-shields",
+        "phase-i-final-report-nasa-institute-for-advanced-concepts-combined-heat-shield-a"
+      ],
+      "resonance": 43,
+      "quadrant": "dead-zone",
+      "resonanceSignals": {
+        "conceptDepth": 0.5113915944693856,
+        "editorial": 0.4,
+        "connections": 0,
+        "convergence": 0.35,
+        "deepTopic": 1,
+        "pantheon": 0.92,
         "graveyard": 0
       }
     },
@@ -2050,139 +2183,6 @@
         "convergence": 0.025,
         "deepTopic": 0,
         "pantheon": 0.4,
-        "graveyard": 0
-      }
-    },
-    {
-      "slug": "starship",
-      "label": "Starship & SpaceX",
-      "score": 553,
-      "delta": 25,
-      "direction": "up",
-      "mentions": 17,
-      "sources": [
-        {
-          "platform": "arxiv",
-          "title": "Fuel-optimal Boost-Back Guidance via Successive Convexification with a Terminal Constraint for ReusableLaunch Vehicles",
-          "url": "https://arxiv.org/abs/2609.28759",
-          "score": 200,
-          "authors": "Mingyeom Kim, Changhyun Kang, Dohyun Lee et al.",
-          "arxivCategory": "math.OC",
-          "publishedAt": "2026-09-23T20:11:36.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Method for Constrained Computational Guidance and Control with Application to Hypersonic Entry",
-          "url": "https://arxiv.org/abs/2609.10813",
-          "score": 200,
-          "authors": "Emily M. Palmer, Anil V. Rao",
-          "arxivCategory": "math.OC",
-          "publishedAt": "2026-09-09T20:33:53.000Z"
-        },
-        {
-          "platform": "hackernews",
-          "title": "SpaceX's Starship launching to orbit for first time ever today",
-          "url": "https://www.space.com/space-exploration/launches-spacecraft/spacexs-starship-megarocket-launching-to-orbit-for-1st-time-ever-on-sept-28-watch-it-live",
-          "score": 107,
-          "author": "geox",
-          "commentCount": 27,
-          "publishedAt": "2026-09-28T09:15:04.000Z"
-        },
-        {
-          "platform": "hackernews",
-          "title": "SpaceX Pivots Away from Space",
-          "url": "https://www.ft.com/content/0fd15797-ac89-4222-a4bb-03a6a1330f48",
-          "score": 7,
-          "author": "luke5441",
-          "commentCount": 0,
-          "publishedAt": "2026-09-25T08:29:30.000Z"
-        },
-        {
-          "platform": "hackernews",
-          "title": "SpaceX Pivots Away from Space",
-          "url": "https://www.ft.com/content/0fd15797-ac89-4222-a4bb-03a6a1330f48",
-          "score": 6,
-          "author": "kristianp",
-          "commentCount": 5,
-          "publishedAt": "2026-09-27T22:01:25.000Z"
-        },
-        {
-          "platform": "hackernews",
-          "title": "SpaceX – Starship Flight 14",
-          "url": "https://www.spacex.com/launches/starship-flight-14",
-          "score": 5,
-          "author": "duck",
-          "commentCount": 2,
-          "publishedAt": "2026-09-28T04:28:06.000Z"
-        },
-        {
-          "platform": "hackernews",
-          "title": "SpaceX Starshield",
-          "url": "https://en.wikipedia.org/wiki/SpaceX_Starshield",
-          "score": 4,
-          "author": "simonebrunozzi",
-          "commentCount": 5,
-          "publishedAt": "2026-09-23T18:29:01.000Z"
-        },
-        {
-          "platform": "hackernews",
-          "title": "SpaceX Pivots Away from Space",
-          "url": "https://www.ft.com/content/0fd15797-ac89-4222-a4bb-03a6a1330f48",
-          "score": 4,
-          "author": "kaycebasques",
-          "commentCount": 3,
-          "publishedAt": "2026-09-27T01:07:45.000Z"
-        },
-        {
-          "platform": "hackernews",
-          "title": "Build a Real‑Time Telemetry Pipeline for SpaceX Starship Launches",
-          "url": "https://thelooplet.com/posts/how-to-build-a-real-time-telemetry-pipeline-for-spacex-starship-launches",
-          "score": 3,
-          "author": "killme2008",
-          "commentCount": 0,
-          "publishedAt": "2026-09-28T02:46:08.000Z"
-        },
-        {
-          "platform": "hackernews",
-          "title": "SpaceX-Focused Pentagon Contracts Leave Rivals Feeling Squeezed",
-          "url": "https://www.bloomberg.com/news/articles/2026-09-25/spacex-focused-pentagon-contracts-leave-rivals-feeling-squeezed",
-          "score": 3,
-          "author": "wslh",
-          "commentCount": 1,
-          "publishedAt": "2026-09-25T13:56:32.000Z"
-        },
-        {
-          "platform": "hackernews",
-          "title": "How SpaceX's Raptor engine works, one problem at a time",
-          "url": "https://becker.so/raptor",
-          "score": 3,
-          "author": "felixbecker",
-          "commentCount": 0,
-          "publishedAt": "2026-09-24T18:20:45.000Z"
-        },
-        {
-          "platform": "hackernews",
-          "title": "SpaceX given unique access to classified DoD space tracking data, sources say",
-          "url": "https://breakingdefense.com/2026/09/exclusive-spacex-given-unique-access-to-classified-dod-space-tracking-data-sources-say/",
-          "score": 3,
-          "author": "TMWNN",
-          "commentCount": 0,
-          "publishedAt": "2026-09-24T05:02:48.000Z"
-        }
-      ],
-      "relatedConceptSlugs": [
-        "extraterrestrial-regolith-derived-atmospheric-entry-heat-shields",
-        "phase-i-final-report-nasa-institute-for-advanced-concepts-combined-heat-shield-a"
-      ],
-      "resonance": 43,
-      "quadrant": "dead-zone",
-      "resonanceSignals": {
-        "conceptDepth": 0.5113915944693856,
-        "editorial": 0.4,
-        "connections": 0,
-        "convergence": 0.35,
-        "deepTopic": 1,
-        "pantheon": 0.92,
         "graveyard": 0
       }
     },
@@ -2276,10 +2276,10 @@
     {
       "slug": "mars",
       "label": "Mars Exploration",
-      "score": 202,
-      "delta": -50,
-      "direction": "down",
-      "mentions": 2,
+      "score": 200,
+      "delta": -1,
+      "direction": "steady",
+      "mentions": 1,
       "sources": [
         {
           "platform": "arxiv",
@@ -2289,23 +2289,6 @@
           "authors": "Abigail Tadlock, Chuanfei Dong, Chi Zhang et al.",
           "arxivCategory": "astro-ph.EP",
           "publishedAt": "2026-09-17T06:53:01.000Z"
-        },
-        {
-          "platform": "youtube",
-          "title": "The Steam Deck Is Being Used to Test Mars Rovers [video]",
-          "url": "https://www.youtube.com/watch?v=IJSO-BL3pEU",
-          "score": 2,
-          "thumbnail": "https://img.youtube.com/vi/IJSO-BL3pEU/mqdefault.jpg",
-          "publishedAt": "2026-09-21T19:14:12.000Z"
-        },
-        {
-          "platform": "hackernews",
-          "title": "The Steam Deck Is Being Used to Test Mars Rovers [video]",
-          "url": "https://www.youtube.com/watch?v=IJSO-BL3pEU",
-          "score": 2,
-          "author": "HelloUsername",
-          "commentCount": 0,
-          "publishedAt": "2026-09-21T19:14:12.000Z"
         }
       ],
       "relatedConceptSlugs": [
