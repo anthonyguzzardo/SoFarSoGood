@@ -1,13 +1,13 @@
 {
-  "generatedAt": "2026-09-29T11:51:52.873Z",
+  "generatedAt": "2026-09-29T22:01:25.000Z",
   "topics": [
     {
       "slug": "black-holes",
       "label": "Black Holes",
-      "score": 9006,
+      "score": 9003,
       "delta": 2,
       "direction": "steady",
-      "mentions": 48,
+      "mentions": 46,
       "sources": [
         {
           "platform": "arxiv",
@@ -402,10 +402,10 @@
     {
       "slug": "quantum-computing",
       "label": "Quantum Computing",
-      "score": 7808,
+      "score": 7809,
       "delta": 5,
       "direction": "steady",
-      "mentions": 42,
+      "mentions": 43,
       "sources": [
         {
           "platform": "arxiv",
@@ -667,10 +667,10 @@
     {
       "slug": "particle-physics",
       "label": "Particle Physics",
-      "score": 7408,
-      "delta": 0,
+      "score": 7208,
+      "delta": -3,
       "direction": "steady",
-      "mentions": 40,
+      "mentions": 39,
       "sources": [
         {
           "platform": "arxiv",
@@ -728,15 +728,6 @@
         },
         {
           "platform": "arxiv",
-          "title": "The inclusive $\\bar B \\to X_s γ$ decay rate with higher precision",
-          "url": "https://arxiv.org/abs/2608.29863",
-          "score": 200,
-          "authors": "M. Misiak, H. M. Asatrian, K. Brune et al.",
-          "arxivCategory": "hep-ph",
-          "publishedAt": "2026-08-30T15:46:50.000Z"
-        },
-        {
-          "platform": "arxiv",
           "title": "Differential Higgs production at small-$x$",
           "url": "https://arxiv.org/abs/2609.35458",
           "score": 200,
@@ -779,6 +770,15 @@
           "authors": "Yabo Dong, Kun Wang, Haijun Yang et al.",
           "arxivCategory": "hep-ph",
           "publishedAt": "2026-09-22T15:02:19.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Electroweak phase transition triggered by a long-lived scalar and LHC searches",
+          "url": "https://arxiv.org/abs/2609.25601",
+          "score": 200,
+          "authors": "Lei Wang, Xiaoting Zhao, Xiao-Fang Han et al.",
+          "arxivCategory": "hep-ph",
+          "publishedAt": "2026-09-22T02:47:41.000Z"
         }
       ],
       "relatedConceptSlugs": [],
@@ -795,144 +795,12 @@
       }
     },
     {
-      "slug": "condensed-matter",
-      "label": "Condensed Matter",
-      "score": 6050,
-      "delta": 9,
-      "direction": "steady",
-      "mentions": 33,
-      "sources": [
-        {
-          "platform": "hackernews",
-          "title": "There's a high chance of devices being sold with GrapheneOS preinstalled in 2027",
-          "url": "https://grapheneos.social/@GrapheneOS/117299954135808210",
-          "score": 322,
-          "author": "Cider9986",
-          "commentCount": 144,
-          "publishedAt": "2026-09-22T17:12:51.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "A Renormalized Ginzburg-Landau Framework for Dimensional Crossover and Fluctuation Specific Heat in High-$T_c$ Superconductors in a Magnetic Field",
-          "url": "https://arxiv.org/abs/2609.28705",
-          "score": 200,
-          "authors": "Roger Magloire Keumo Tsiaze, Jeremeie Edmond Danga, Cornelius Fai Lukong",
-          "arxivCategory": "cond-mat.supr-con",
-          "publishedAt": "2026-09-23T18:41:00.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Raman scattering in cuprate oxychlorides high-temperature superconductors single-crystals",
-          "url": "https://arxiv.org/abs/2609.22400",
-          "score": 200,
-          "authors": "Chafic Fawaz, Yingzheng Gao, Luca Laveder et al.",
-          "arxivCategory": "cond-mat.supr-con",
-          "publishedAt": "2026-09-18T12:13:52.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Current - voltage characteristics in magnetic field for layered superconductor with intrinsic pinning of Josephson vortices",
-          "url": "https://arxiv.org/abs/2609.16277",
-          "score": 200,
-          "authors": "T. B. Charikova, V. N. Neverov, M. R. Popov et al.",
-          "arxivCategory": "cond-mat.supr-con",
-          "publishedAt": "2026-09-14T19:36:25.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Nonparametric Variance-Penalized Actor-Critic: Statistical Inference for Risk-Sensitive Reinforcement Learning",
-          "url": "https://arxiv.org/abs/2609.14327",
-          "score": 200,
-          "authors": "Saunak Kumar Panda, Tong Li, Yisha Xiang et al.",
-          "arxivCategory": "cs.LG",
-          "publishedAt": "2026-09-13T06:48:34.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Fixed-mesh based approach for modeling of superconducting magnetic bearings",
-          "url": "https://arxiv.org/abs/2609.09347",
-          "score": 200,
-          "authors": "Elias Paakkunainen, Bárbara Maria Oliveira Santos, Gabriel dos Santos et al.",
-          "arxivCategory": "cs.CE",
-          "publishedAt": "2026-09-08T18:37:12.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Direct Validation of Superconductivity through Contact-Free Detection of Persistent Supercurrents Using Room-Temperature Quantum Magnetometry",
-          "url": "https://arxiv.org/abs/2609.02995",
-          "score": 200,
-          "authors": "Xinyi Zeng, Chengzhen Qin, Bowen Fan et al.",
-          "arxivCategory": "cond-mat.supr-con",
-          "publishedAt": "2026-09-02T16:34:48.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Microwave-Induced Optomagnetism in High-Temperature Superconductors",
-          "url": "https://arxiv.org/abs/2608.31127",
-          "score": 200,
-          "authors": "Anoop Dhillon, Amir Borji, Hamed Majedi",
-          "arxivCategory": "cond-mat.supr-con",
-          "publishedAt": "2026-08-31T17:40:24.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Absolute and relative invariants for low-dimensional topological insulators",
-          "url": "https://arxiv.org/abs/2609.32442",
-          "score": 200,
-          "authors": "Federico Manzoni, Domenico Monaco, Gabriele Peluso",
-          "arxivCategory": "math-ph",
-          "publishedAt": "2026-09-26T10:20:27.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Projected amorphous topological insulators",
-          "url": "https://arxiv.org/abs/2609.30260",
-          "score": 200,
-          "authors": "Archisman Panigrahi, Bitan Roy",
-          "arxivCategory": "cond-mat.mes-hall",
-          "publishedAt": "2026-09-24T17:59:32.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Topological-Insulator Heterophase Gate Stacks for Transistor Electrostatics",
-          "url": "https://arxiv.org/abs/2609.30016",
-          "score": 200,
-          "authors": "Minuk Song, Jiwan Kim, MD Gius Uddin et al.",
-          "arxivCategory": "physics.app-ph",
-          "publishedAt": "2026-09-24T15:54:58.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Helical Anomaly from Concurrent $\\mathbb{Z}$ and $\\mathbb{Z}_2$ Topology in an Acoustic Semimetal",
-          "url": "https://arxiv.org/abs/2609.28125",
-          "score": 200,
-          "authors": "Hou-Yin Li, Hua-Shan Lai, Jian-Lan Xie et al.",
-          "arxivCategory": "cond-mat.mes-hall",
-          "publishedAt": "2026-09-23T13:52:02.000Z"
-        }
-      ],
-      "relatedConceptSlugs": [
-        "extreme-metamaterial-solar-sails"
-      ],
-      "resonance": 50,
-      "quadrant": "real-deal",
-      "resonanceSignals": {
-        "conceptDepth": 0.6131471927654584,
-        "editorial": 1,
-        "connections": 0.3333333333333333,
-        "convergence": 0.15,
-        "deepTopic": 0,
-        "pantheon": 0.92,
-        "graveyard": 0
-      }
-    },
-    {
       "slug": "dark-matter",
       "label": "Dark Matter & Dark Energy",
-      "score": 5801,
+      "score": 5802,
       "delta": 0,
       "direction": "steady",
-      "mentions": 30,
+      "mentions": 31,
       "sources": [
         {
           "platform": "arxiv",
@@ -1055,6 +923,138 @@
         "connections": 0.3333333333333333,
         "convergence": 0.15,
         "deepTopic": 1,
+        "pantheon": 0.92,
+        "graveyard": 0
+      }
+    },
+    {
+      "slug": "condensed-matter",
+      "label": "Condensed Matter",
+      "score": 5734,
+      "delta": 2,
+      "direction": "steady",
+      "mentions": 33,
+      "sources": [
+        {
+          "platform": "arxiv",
+          "title": "A Renormalized Ginzburg-Landau Framework for Dimensional Crossover and Fluctuation Specific Heat in High-$T_c$ Superconductors in a Magnetic Field",
+          "url": "https://arxiv.org/abs/2609.28705",
+          "score": 200,
+          "authors": "Roger Magloire Keumo Tsiaze, Jeremeie Edmond Danga, Cornelius Fai Lukong",
+          "arxivCategory": "cond-mat.supr-con",
+          "publishedAt": "2026-09-23T18:41:00.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Raman scattering in cuprate oxychlorides high-temperature superconductors single-crystals",
+          "url": "https://arxiv.org/abs/2609.22400",
+          "score": 200,
+          "authors": "Chafic Fawaz, Yingzheng Gao, Luca Laveder et al.",
+          "arxivCategory": "cond-mat.supr-con",
+          "publishedAt": "2026-09-18T12:13:52.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Current - voltage characteristics in magnetic field for layered superconductor with intrinsic pinning of Josephson vortices",
+          "url": "https://arxiv.org/abs/2609.16277",
+          "score": 200,
+          "authors": "T. B. Charikova, V. N. Neverov, M. R. Popov et al.",
+          "arxivCategory": "cond-mat.supr-con",
+          "publishedAt": "2026-09-14T19:36:25.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Nonparametric Variance-Penalized Actor-Critic: Statistical Inference for Risk-Sensitive Reinforcement Learning",
+          "url": "https://arxiv.org/abs/2609.14327",
+          "score": 200,
+          "authors": "Saunak Kumar Panda, Tong Li, Yisha Xiang et al.",
+          "arxivCategory": "cs.LG",
+          "publishedAt": "2026-09-13T06:48:34.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Fixed-mesh based approach for modeling of superconducting magnetic bearings",
+          "url": "https://arxiv.org/abs/2609.09347",
+          "score": 200,
+          "authors": "Elias Paakkunainen, Bárbara Maria Oliveira Santos, Gabriel dos Santos et al.",
+          "arxivCategory": "cs.CE",
+          "publishedAt": "2026-09-08T18:37:12.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Direct Validation of Superconductivity through Contact-Free Detection of Persistent Supercurrents Using Room-Temperature Quantum Magnetometry",
+          "url": "https://arxiv.org/abs/2609.02995",
+          "score": 200,
+          "authors": "Xinyi Zeng, Chengzhen Qin, Bowen Fan et al.",
+          "arxivCategory": "cond-mat.supr-con",
+          "publishedAt": "2026-09-02T16:34:48.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Microwave-Induced Optomagnetism in High-Temperature Superconductors",
+          "url": "https://arxiv.org/abs/2608.31127",
+          "score": 200,
+          "authors": "Anoop Dhillon, Amir Borji, Hamed Majedi",
+          "arxivCategory": "cond-mat.supr-con",
+          "publishedAt": "2026-08-31T17:40:24.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Absolute and relative invariants for low-dimensional topological insulators",
+          "url": "https://arxiv.org/abs/2609.32442",
+          "score": 200,
+          "authors": "Federico Manzoni, Domenico Monaco, Gabriele Peluso",
+          "arxivCategory": "math-ph",
+          "publishedAt": "2026-09-26T10:20:27.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Projected amorphous topological insulators",
+          "url": "https://arxiv.org/abs/2609.30260",
+          "score": 200,
+          "authors": "Archisman Panigrahi, Bitan Roy",
+          "arxivCategory": "cond-mat.mes-hall",
+          "publishedAt": "2026-09-24T17:59:32.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Topological-Insulator Heterophase Gate Stacks for Transistor Electrostatics",
+          "url": "https://arxiv.org/abs/2609.30016",
+          "score": 200,
+          "authors": "Minuk Song, Jiwan Kim, MD Gius Uddin et al.",
+          "arxivCategory": "physics.app-ph",
+          "publishedAt": "2026-09-24T15:54:58.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Helical Anomaly from Concurrent $\\mathbb{Z}$ and $\\mathbb{Z}_2$ Topology in an Acoustic Semimetal",
+          "url": "https://arxiv.org/abs/2609.28125",
+          "score": 200,
+          "authors": "Hou-Yin Li, Hua-Shan Lai, Jian-Lan Xie et al.",
+          "arxivCategory": "cond-mat.mes-hall",
+          "publishedAt": "2026-09-23T13:52:02.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Spectroscopic signatures of persistent exciton condensation in a bulk magnetic topological insulator",
+          "url": "https://arxiv.org/abs/2609.27079",
+          "score": 200,
+          "authors": "Paulina Majchrzak, Chakradhar Sahoo, Manuel Tuniz et al.",
+          "arxivCategory": "cond-mat.mes-hall",
+          "publishedAt": "2026-09-22T21:19:49.000Z"
+        }
+      ],
+      "relatedConceptSlugs": [
+        "extreme-metamaterial-solar-sails"
+      ],
+      "resonance": 50,
+      "quadrant": "real-deal",
+      "resonanceSignals": {
+        "conceptDepth": 0.6131471927654584,
+        "editorial": 1,
+        "connections": 0.3333333333333333,
+        "convergence": 0.15,
+        "deepTopic": 0,
         "pantheon": 0.92,
         "graveyard": 0
       }
@@ -1194,10 +1194,10 @@
     {
       "slug": "exoplanets",
       "label": "Exoplanets",
-      "score": 3205,
-      "delta": 14,
-      "direction": "steady",
-      "mentions": 18,
+      "score": 3207,
+      "delta": 23,
+      "direction": "up",
+      "mentions": 19,
       "sources": [
         {
           "platform": "arxiv",
@@ -1655,7 +1655,7 @@
       "slug": "artemis",
       "label": "Artemis & Lunar Return",
       "score": 1400,
-      "delta": -12,
+      "delta": 0,
       "direction": "steady",
       "mentions": 7,
       "sources": [
@@ -2013,18 +2013,18 @@
     {
       "slug": "starship",
       "label": "Starship & SpaceX",
-      "score": 777,
-      "delta": 41,
-      "direction": "up",
+      "score": 781,
+      "delta": 2,
+      "direction": "steady",
       "mentions": 22,
       "sources": [
         {
           "platform": "hackernews",
           "title": "SpaceX's Starship launching to orbit for first time ever today",
           "url": "https://www.space.com/space-exploration/launches-spacecraft/spacexs-starship-megarocket-launching-to-orbit-for-1st-time-ever-on-sept-28-watch-it-live",
-          "score": 300,
+          "score": 303,
           "author": "geox",
-          "commentCount": 351,
+          "commentCount": 362,
           "publishedAt": "2026-09-28T09:15:04.000Z"
         },
         {
@@ -2049,9 +2049,9 @@
           "platform": "hackernews",
           "title": "Starship Achieved Orbit",
           "url": "https://twitter.com/SpaceX/status/2104653511883628569",
-          "score": 8,
+          "score": 10,
           "author": "karp773",
-          "commentCount": 6,
+          "commentCount": 7,
           "publishedAt": "2026-09-28T21:17:08.000Z"
         },
         {
@@ -2286,7 +2286,7 @@
       "slug": "mars",
       "label": "Mars Exploration",
       "score": 200,
-      "delta": -1,
+      "delta": 0,
       "direction": "steady",
       "mentions": 1,
       "sources": [
