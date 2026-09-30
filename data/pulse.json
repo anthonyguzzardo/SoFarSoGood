@@ -1,13 +1,13 @@
 {
-  "generatedAt": "2026-09-30T11:38:09.369Z",
+  "generatedAt": "2026-09-30T22:00:10.916Z",
   "topics": [
     {
       "slug": "space-telescopes",
       "label": "Space Telescopes",
-      "score": 9025,
+      "score": 9012,
       "delta": 12,
       "direction": "steady",
-      "mentions": 50,
+      "mentions": 48,
       "sources": [
         {
           "platform": "arxiv",
@@ -137,10 +137,10 @@
     {
       "slug": "black-holes",
       "label": "Black Holes",
-      "score": 9003,
+      "score": 9004,
       "delta": 0,
       "direction": "steady",
-      "mentions": 46,
+      "mentions": 47,
       "sources": [
         {
           "platform": "arxiv",
@@ -667,10 +667,10 @@
     {
       "slug": "particle-physics",
       "label": "Particle Physics",
-      "score": 7208,
-      "delta": -3,
+      "score": 7204,
+      "delta": 0,
       "direction": "steady",
-      "mentions": 39,
+      "mentions": 38,
       "sources": [
         {
           "platform": "arxiv",
@@ -797,10 +797,10 @@
     {
       "slug": "dark-matter",
       "label": "Dark Matter & Dark Energy",
-      "score": 6002,
+      "score": 6001,
       "delta": 3,
       "direction": "steady",
-      "mentions": 32,
+      "mentions": 31,
       "sources": [
         {
           "platform": "arxiv",
@@ -930,10 +930,10 @@
     {
       "slug": "condensed-matter",
       "label": "Condensed Matter",
-      "score": 5734,
-      "delta": -5,
+      "score": 5526,
+      "delta": -4,
       "direction": "steady",
-      "mentions": 33,
+      "mentions": 31,
       "sources": [
         {
           "platform": "arxiv",
@@ -991,15 +991,6 @@
         },
         {
           "platform": "arxiv",
-          "title": "Microwave-Induced Optomagnetism in High-Temperature Superconductors",
-          "url": "https://arxiv.org/abs/2608.31127",
-          "score": 200,
-          "authors": "Anoop Dhillon, Amir Borji, Hamed Majedi",
-          "arxivCategory": "cond-mat.supr-con",
-          "publishedAt": "2026-08-31T17:40:24.000Z"
-        },
-        {
-          "platform": "arxiv",
           "title": "Vapor phase growth and characterization of van der Waals BiSbTeSe platelets on semiconducting MoS2",
           "url": "https://arxiv.org/abs/2609.37303",
           "score": 200,
@@ -1042,6 +1033,15 @@
           "authors": "Minuk Song, Jiwan Kim, MD Gius Uddin et al.",
           "arxivCategory": "physics.app-ph",
           "publishedAt": "2026-09-24T15:54:58.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Helical Anomaly from Concurrent $\\mathbb{Z}$ and $\\mathbb{Z}_2$ Topology in an Acoustic Semimetal",
+          "url": "https://arxiv.org/abs/2609.28125",
+          "score": 200,
+          "authors": "Hou-Yin Li, Hua-Shan Lai, Jian-Lan Xie et al.",
+          "arxivCategory": "cond-mat.mes-hall",
+          "publishedAt": "2026-09-23T13:52:02.000Z"
         }
       ],
       "relatedConceptSlugs": [
@@ -1935,10 +1935,10 @@
     {
       "slug": "starlink",
       "label": "Starlink & Satellite Internet",
-      "score": 1069,
+      "score": 1073,
       "delta": 23,
       "direction": "up",
-      "mentions": 9,
+      "mentions": 10,
       "sources": [
         {
           "platform": "arxiv",
@@ -1980,7 +1980,7 @@
           "platform": "hackernews",
           "title": "Starlink ground station in Poland hit by fire in suspected arson attack",
           "url": "https://notesfrompoland.com/2026/09/24/starlink-ground-station-in-poland-hit-by-fire-in-suspected-arson-attack/",
-          "score": 181,
+          "score": 182,
           "author": "giuliomagnifico",
           "commentCount": 181,
           "publishedAt": "2026-09-24T09:52:29.000Z"
@@ -1989,7 +1989,7 @@
           "platform": "hackernews",
           "title": "Astronomer watches Starlink satellites sinking to build a 'planetary barometer'",
           "url": "https://www.theregister.com/science/2026/09/25/astronomer-watches-starlink-satellites-sinking-to-build-a-planetary-barometer/5299036",
-          "score": 66,
+          "score": 67,
           "author": "whh",
           "commentCount": 19,
           "publishedAt": "2026-09-25T18:29:49.000Z"
@@ -2011,6 +2011,15 @@
           "author": "uxhacker",
           "commentCount": 0,
           "publishedAt": "2026-09-24T13:41:32.000Z"
+        },
+        {
+          "platform": "hackernews",
+          "title": "Delta CEO Reportedly Trashes Elon Musk to Explain Rejecting Starlink",
+          "url": "https://viewfromthewing.com/delta-ceo-reportedly-trashes-elon-musk-to-explain-rejecting-starlink-its-all-true-what-they-say-about-him/",
+          "score": 2,
+          "author": "rmason",
+          "commentCount": 0,
+          "publishedAt": "2026-09-30T20:14:51.000Z"
         },
         {
           "platform": "hackernews",
@@ -2040,10 +2049,10 @@
     {
       "slug": "starship",
       "label": "Starship & SpaceX",
-      "score": 790,
-      "delta": 2,
+      "score": 786,
+      "delta": 1,
       "direction": "steady",
-      "mentions": 24,
+      "mentions": 23,
       "sources": [
         {
           "platform": "hackernews",
@@ -2051,7 +2060,7 @@
           "url": "https://www.space.com/space-exploration/launches-spacecraft/spacexs-starship-megarocket-launching-to-orbit-for-1st-time-ever-on-sept-28-watch-it-live",
           "score": 303,
           "author": "geox",
-          "commentCount": 364,
+          "commentCount": 366,
           "publishedAt": "2026-09-28T09:15:04.000Z"
         },
         {
@@ -2146,12 +2155,12 @@
         },
         {
           "platform": "hackernews",
-          "title": "SpaceX Starshield",
-          "url": "https://en.wikipedia.org/wiki/SpaceX_Starshield",
+          "title": "SpaceX Pivots Away from Space",
+          "url": "https://www.ft.com/content/0fd15797-ac89-4222-a4bb-03a6a1330f48",
           "score": 4,
-          "author": "simonebrunozzi",
-          "commentCount": 5,
-          "publishedAt": "2026-09-23T18:29:01.000Z"
+          "author": "kaycebasques",
+          "commentCount": 3,
+          "publishedAt": "2026-09-27T01:07:45.000Z"
         }
       ],
       "relatedConceptSlugs": [
