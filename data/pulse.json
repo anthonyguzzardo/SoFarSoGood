@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-02T21:57:20.792Z",
+  "generatedAt": "2026-10-03T10:52:58.709Z",
   "topics": [
     {
       "slug": "black-holes",
@@ -137,10 +137,10 @@
     {
       "slug": "space-telescopes",
       "label": "Space Telescopes",
-      "score": 8609,
+      "score": 8604,
       "delta": -2,
       "direction": "steady",
-      "mentions": 45,
+      "mentions": 44,
       "sources": [
         {
           "platform": "arxiv",
@@ -798,7 +798,7 @@
       "slug": "dark-matter",
       "label": "Dark Matter & Dark Energy",
       "score": 5802,
-      "delta": 4,
+      "delta": 0,
       "direction": "steady",
       "mentions": 31,
       "sources": [
@@ -930,8 +930,8 @@
     {
       "slug": "condensed-matter",
       "label": "Condensed Matter",
-      "score": 5398,
-      "delta": -2,
+      "score": 5444,
+      "delta": -1,
       "direction": "steady",
       "mentions": 31,
       "sources": [
@@ -1063,7 +1063,7 @@
       "slug": "cosmology",
       "label": "Cosmology",
       "score": 5200,
-      "delta": -4,
+      "delta": 0,
       "direction": "steady",
       "mentions": 26,
       "sources": [
@@ -1194,8 +1194,8 @@
     {
       "slug": "exoplanets",
       "label": "Exoplanets",
-      "score": 3407,
-      "delta": 0,
+      "score": 3210,
+      "delta": -6,
       "direction": "steady",
       "mentions": 20,
       "sources": [
@@ -1673,7 +1673,7 @@
       "slug": "artemis",
       "label": "Artemis & Lunar Return",
       "score": 1600,
-      "delta": 14,
+      "delta": 0,
       "direction": "steady",
       "mentions": 8,
       "sources": [
@@ -1770,7 +1770,7 @@
       "slug": "space-debris",
       "label": "Space Debris",
       "score": 1200,
-      "delta": -14,
+      "delta": 0,
       "direction": "steady",
       "mentions": 6,
       "sources": [
@@ -1847,10 +1847,10 @@
     {
       "slug": "asteroid-mining",
       "label": "Asteroid Mining",
-      "score": 1000,
-      "delta": -17,
+      "score": 800,
+      "delta": -33,
       "direction": "down",
-      "mentions": 5,
+      "mentions": 4,
       "sources": [
         {
           "platform": "arxiv",
@@ -1887,15 +1887,6 @@
           "authors": "J. de Wit, A. Y. Burdanov, P. McGill et al.",
           "arxivCategory": "astro-ph.IM",
           "publishedAt": "2026-09-09T17:59:59.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "3.5-meter Segmented-Mirror Robotic Space Telescope Mission White Paper IV. Key Scientific Mission: Solar-System Small Bodies and Planetary Defense",
-          "url": "https://arxiv.org/abs/2609.03371",
-          "score": 200,
-          "authors": "Juhan Kim, Yong-Woo Kang, Sang Hyun Lee et al.",
-          "arxivCategory": "astro-ph.IM",
-          "publishedAt": "2026-09-03T05:01:15.000Z"
         }
       ],
       "relatedConceptSlugs": [
@@ -1918,7 +1909,7 @@
       "slug": "starship",
       "label": "Starship & SpaceX",
       "score": 776,
-      "delta": -1,
+      "delta": 0,
       "direction": "steady",
       "mentions": 21,
       "sources": [
@@ -2050,10 +2041,10 @@
     {
       "slug": "starlink",
       "label": "Starlink & Satellite Internet",
-      "score": 606,
-      "delta": -31,
-      "direction": "down",
-      "mentions": 7,
+      "score": 610,
+      "delta": -9,
+      "direction": "steady",
+      "mentions": 9,
       "sources": [
         {
           "platform": "arxiv",
@@ -2081,6 +2072,32 @@
           "authors": "Chandan Kumar Sheemar, Wali Ullah Khan, Giovanni Iacovelli et al.",
           "arxivCategory": "eess.SP",
           "publishedAt": "2026-09-05T08:21:36.000Z"
+        },
+        {
+          "platform": "youtube",
+          "title": "We Investigated Starlink. The Corruption We Found Will Shock You",
+          "url": "https://www.youtube.com/watch?v=LQYnlg4pO9o",
+          "score": 2,
+          "thumbnail": "https://img.youtube.com/vi/LQYnlg4pO9o/mqdefault.jpg",
+          "publishedAt": "2026-10-03T10:21:24.000Z"
+        },
+        {
+          "platform": "hackernews",
+          "title": "We Investigated Starlink. The Corruption We Found Will Shock You",
+          "url": "https://www.youtube.com/watch?v=LQYnlg4pO9o",
+          "score": 2,
+          "author": "tukunjil",
+          "commentCount": 1,
+          "publishedAt": "2026-10-03T10:21:24.000Z"
+        },
+        {
+          "platform": "hackernews",
+          "title": "Delta Is the Only Big Four Airline That Won't Use Starlink–Elon Musk Is Furious",
+          "url": "https://www.wsj.com/business/airlines/delta-is-the-only-big-four-airline-that-wont-use-starlinkand-elon-musk-is-furious-3438591e",
+          "score": 2,
+          "author": "doener",
+          "commentCount": 0,
+          "publishedAt": "2026-10-03T03:11:03.000Z"
         },
         {
           "platform": "hackernews",
@@ -2138,8 +2155,8 @@
       "slug": "nuclear-thermal",
       "label": "Nuclear Propulsion",
       "score": 400,
-      "delta": -33,
-      "direction": "down",
+      "delta": 0,
+      "direction": "steady",
       "mentions": 2,
       "sources": [
         {
@@ -2372,8 +2389,8 @@
       "slug": "electric-propulsion",
       "label": "Electric Propulsion",
       "score": 200,
-      "delta": -50,
-      "direction": "down",
+      "delta": 0,
+      "direction": "steady",
       "mentions": 1,
       "sources": [
         {
