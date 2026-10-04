@@ -1,13 +1,13 @@
 {
-  "generatedAt": "2026-10-03T20:44:33.041Z",
+  "generatedAt": "2026-10-04T11:39:52.763Z",
   "topics": [
     {
       "slug": "black-holes",
       "label": "Black Holes",
-      "score": 8806,
-      "delta": 0,
+      "score": 8603,
+      "delta": -2,
       "direction": "steady",
-      "mentions": 46,
+      "mentions": 44,
       "sources": [
         {
           "platform": "arxiv",
@@ -544,7 +544,7 @@
           "title": "Light-driven Modulation of 1-bit Metamaterial Unit Cells and Arrays",
           "url": "https://arxiv.org/abs/2609.39516",
           "score": 200,
-          "authors": "Benjamin A Scott, Keiran J Cowan, Fraser Burton et al.",
+          "authors": "Benjamin A Scott, Kieran J Cowan, Fraser Burton et al.",
           "arxivCategory": "physics.app-ph",
           "publishedAt": "2026-09-30T11:17:41.000Z"
         },
@@ -667,10 +667,10 @@
     {
       "slug": "particle-physics",
       "label": "Particle Physics",
-      "score": 7013,
+      "score": 6963,
       "delta": -3,
       "direction": "steady",
-      "mentions": 37,
+      "mentions": 35,
       "sources": [
         {
           "platform": "arxiv",
@@ -707,15 +707,6 @@
           "authors": "Petja Paakkinen, Hannu Paukkunen, Sami Yrjänheikki",
           "arxivCategory": "hep-ph",
           "publishedAt": "2026-09-08T13:58:11.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Flavor Tomography of Long-Lived Neutrino-Mass Mediators: Probing the Neutrino Mass Ordering at the HL-LHC",
-          "url": "https://arxiv.org/abs/2609.04761",
-          "score": 200,
-          "authors": "Renjie Wang",
-          "arxivCategory": "hep-ph",
-          "publishedAt": "2026-09-04T05:45:26.000Z"
         },
         {
           "platform": "arxiv",
@@ -779,6 +770,15 @@
           "authors": "Hadrien Brochet, Maximilian Haensch, Johannes Henn et al.",
           "arxivCategory": "hep-th",
           "publishedAt": "2026-09-29T13:21:10.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Differential Higgs production at small-$x$",
+          "url": "https://arxiv.org/abs/2609.35458",
+          "score": 200,
+          "authors": "Benedetta Bernardini",
+          "arxivCategory": "hep-ph",
+          "publishedAt": "2026-09-28T15:48:45.000Z"
         }
       ],
       "relatedConceptSlugs": [],
@@ -930,8 +930,8 @@
     {
       "slug": "condensed-matter",
       "label": "Condensed Matter",
-      "score": 5266,
-      "delta": -2,
+      "score": 5284,
+      "delta": -3,
       "direction": "steady",
       "mentions": 30,
       "sources": [
@@ -1194,10 +1194,10 @@
     {
       "slug": "exoplanets",
       "label": "Exoplanets",
-      "score": 3208,
+      "score": 3005,
       "delta": -6,
       "direction": "steady",
-      "mentions": 19,
+      "mentions": 17,
       "sources": [
         {
           "platform": "arxiv",
@@ -1839,8 +1839,8 @@
       "slug": "asteroid-mining",
       "label": "Asteroid Mining",
       "score": 800,
-      "delta": -20,
-      "direction": "down",
+      "delta": 0,
+      "direction": "steady",
       "mentions": 4,
       "sources": [
         {
@@ -1899,10 +1899,10 @@
     {
       "slug": "starship",
       "label": "Starship & SpaceX",
-      "score": 776,
-      "delta": 0,
+      "score": 772,
+      "delta": -1,
       "direction": "steady",
-      "mentions": 21,
+      "mentions": 20,
       "sources": [
         {
           "platform": "hackernews",
@@ -1996,21 +1996,21 @@
         },
         {
           "platform": "hackernews",
-          "title": "SpaceX Pivots Away from Space",
-          "url": "https://www.ft.com/content/0fd15797-ac89-4222-a4bb-03a6a1330f48",
-          "score": 4,
-          "author": "kaycebasques",
-          "commentCount": 3,
-          "publishedAt": "2026-09-27T01:07:45.000Z"
-        },
-        {
-          "platform": "hackernews",
           "title": "SpaceX Starship Orbital Launch Attempt Starting in ~10 Mins",
           "url": "https://x.com/SpaceX",
           "score": 3,
           "author": "somenameforme",
           "commentCount": 1,
           "publishedAt": "2026-09-28T12:36:48.000Z"
+        },
+        {
+          "platform": "hackernews",
+          "title": "SpaceX's Starship makes orbital debut deploying Starlinks before early ending",
+          "url": "https://www.reuters.com/business/media-telecom/spacexs-starship-launches-14th-flight-first-headed-orbit-2026-09-28/",
+          "score": 3,
+          "author": "TechTechTech",
+          "commentCount": 0,
+          "publishedAt": "2026-09-28T15:45:24.000Z"
         }
       ],
       "relatedConceptSlugs": [
@@ -2032,8 +2032,8 @@
     {
       "slug": "starlink",
       "label": "Starlink & Satellite Internet",
-      "score": 645,
-      "delta": 6,
+      "score": 650,
+      "delta": 7,
       "direction": "steady",
       "mentions": 9,
       "sources": [
@@ -2068,7 +2068,7 @@
           "platform": "youtube",
           "title": "We Investigated Starlink. The Corruption We Found Will Shock You",
           "url": "https://www.youtube.com/watch?v=LQYnlg4pO9o",
-          "score": 36,
+          "score": 41,
           "thumbnail": "https://img.youtube.com/vi/LQYnlg4pO9o/mqdefault.jpg",
           "publishedAt": "2026-10-03T10:21:24.000Z"
         },
@@ -2076,7 +2076,7 @@
           "platform": "hackernews",
           "title": "We Investigated Starlink. The Corruption We Found Will Shock You",
           "url": "https://www.youtube.com/watch?v=LQYnlg4pO9o",
-          "score": 36,
+          "score": 41,
           "author": "tukunjil",
           "commentCount": 15,
           "publishedAt": "2026-10-03T10:21:24.000Z"
@@ -2232,10 +2232,10 @@
     {
       "slug": "warp-drives",
       "label": "Warp Drives & Exotic Physics",
-      "score": 317,
-      "delta": -21,
-      "direction": "down",
-      "mentions": 2,
+      "score": 378,
+      "delta": -5,
+      "direction": "steady",
+      "mentions": 3,
       "sources": [
         {
           "platform": "arxiv",
@@ -2250,10 +2250,19 @@
           "platform": "hackernews",
           "title": "FTL: A new operating system for clouds",
           "url": "https://ftl-os.org/",
-          "score": 117,
+          "score": 177,
           "author": "romac",
-          "commentCount": 49,
+          "commentCount": 68,
           "publishedAt": "2026-10-03T15:02:36.000Z"
+        },
+        {
+          "platform": "hackernews",
+          "title": "FTL: A new operating system for clouds",
+          "url": "https://seiya.me/blog/introducing-ftl",
+          "score": 1,
+          "author": "Bluestein",
+          "commentCount": 0,
+          "publishedAt": "2026-10-03T21:18:09.000Z"
         }
       ],
       "relatedConceptSlugs": [
