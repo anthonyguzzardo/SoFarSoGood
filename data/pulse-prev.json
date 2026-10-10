@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-10-09T22:24:03.007Z",
+  "generatedAt": "2026-10-10T11:39:07.283Z",
   "topics": [
     {
       "slug": "gravitational-waves",
       "label": "Gravitational Waves",
       "score": 9000,
-      "delta": 7,
+      "delta": 0,
       "direction": "steady",
       "mentions": 45,
       "sources": [
@@ -136,10 +136,10 @@
     {
       "slug": "black-holes",
       "label": "Black Holes",
-      "score": 8800,
-      "delta": 0,
+      "score": 8600,
+      "delta": -4,
       "direction": "steady",
-      "mentions": 44,
+      "mentions": 43,
       "sources": [
         {
           "platform": "arxiv",
@@ -270,7 +270,7 @@
       "slug": "space-telescopes",
       "label": "Space Telescopes",
       "score": 7600,
-      "delta": -3,
+      "delta": 0,
       "direction": "steady",
       "mentions": 38,
       "sources": [
@@ -533,7 +533,7 @@
       "slug": "quantum-computing",
       "label": "Quantum Computing",
       "score": 7017,
-      "delta": -15,
+      "delta": 0,
       "direction": "steady",
       "mentions": 39,
       "sources": [
@@ -941,7 +941,7 @@
           "url": "https://discuss.grapheneos.org/d/41564-pixel-11-doesnt-yet-meet-the-grapheneos-security-standards-and-may-be-skipped",
           "score": 439,
           "author": "finnlab",
-          "commentCount": 312,
+          "commentCount": 314,
           "publishedAt": "2026-10-05T13:02:25.000Z"
         },
         {
@@ -1194,10 +1194,10 @@
     {
       "slug": "exoplanets",
       "label": "Exoplanets",
-      "score": 3609,
-      "delta": 6,
+      "score": 3606,
+      "delta": 0,
       "direction": "steady",
-      "mentions": 22,
+      "mentions": 21,
       "sources": [
         {
           "platform": "arxiv",
@@ -1460,8 +1460,8 @@
       "slug": "fusion-propulsion",
       "label": "Fusion Propulsion",
       "score": 2001,
-      "delta": 43,
-      "direction": "up",
+      "delta": 0,
+      "direction": "steady",
       "mentions": 11,
       "sources": [
         {
@@ -1582,103 +1582,6 @@
       }
     },
     {
-      "slug": "artemis",
-      "label": "Artemis & Lunar Return",
-      "score": 1404,
-      "delta": 0,
-      "direction": "steady",
-      "mentions": 8,
-      "sources": [
-        {
-          "platform": "arxiv",
-          "title": "A pyramidal ISRU lunar habitat design based on topological interlocking of sintered regolith blocks",
-          "url": "https://arxiv.org/abs/2610.01770",
-          "score": 200,
-          "authors": "Lukas Schnelle, Kai-Uwe Schröder, Alice C. Niemeyer et al.",
-          "arxivCategory": "cs.CE",
-          "publishedAt": "2026-10-01T14:26:30.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Designing an Efficient Excavator Bucket for Lunar ISRU: A Comparative Study with Vision-Based Fill and Displacement Analysis",
-          "url": "https://arxiv.org/abs/2609.25724",
-          "score": 200,
-          "authors": "Abdulla Hil Kafi, Tomoki Koshi, Jorge Casir et al.",
-          "arxivCategory": "cs.RO",
-          "publishedAt": "2026-09-22T05:53:56.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "DewTwin-Coin: an onboard autonomous framework for lunar water-ice prospecting using Chandrayaan-3 LIBS and ChaSTE data",
-          "url": "https://arxiv.org/abs/2609.17379",
-          "score": 200,
-          "authors": "Soundarya R., Debasish Mondal",
-          "arxivCategory": "astro-ph.EP",
-          "publishedAt": "2026-09-15T16:21:52.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Distributed Infrastructure Sensors and Cues for Robotic Fire-Fighting and Safety System on a Lunar Base",
-          "url": "https://arxiv.org/abs/2609.22786",
-          "score": 200,
-          "authors": "Alexis Munguia, Eryc Rodriguez, Drake Russ et al.",
-          "arxivCategory": "cs.RO",
-          "publishedAt": "2026-09-19T05:35:03.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "High-Fidelity Baseline Design and Station Keeping Analyses for Earth-Moon Vertical Orbits",
-          "url": "https://arxiv.org/abs/2610.10803",
-          "score": 200,
-          "authors": "Derek Phung, Yuri Shimane",
-          "arxivCategory": "eess.SY",
-          "publishedAt": "2026-10-07T19:03:12.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Transformer-Informed Trajectory Optimization for Relative Motion in Cislunar Orbits",
-          "url": "https://arxiv.org/abs/2609.25460",
-          "score": 200,
-          "authors": "Walter J. Manuel, Yuji Takubo, Simone D'Amico",
-          "arxivCategory": "math.OC",
-          "publishedAt": "2026-09-21T22:33:15.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Improving Faint Object Detection for Space Situational Awareness with Variational Autoencoders",
-          "url": "https://arxiv.org/abs/2609.11269",
-          "score": 200,
-          "authors": "Angela Cratere, Luca Ghilardi, Vishnu Reddy et al.",
-          "arxivCategory": "cs.CV",
-          "publishedAt": "2026-09-10T09:02:13.000Z"
-        },
-        {
-          "platform": "hackernews",
-          "title": "Margaret Hamilton, whose software powered Apollo 11 moon landing, dies at 90",
-          "url": "https://www.theguardian.com/science/2026/oct/07/margaret-hamilton-moon-computer-software",
-          "score": 4,
-          "author": "ljf",
-          "commentCount": 2,
-          "publishedAt": "2026-10-08T08:20:36.000Z"
-        }
-      ],
-      "relatedConceptSlugs": [
-        "mycotecture",
-        "regolith-adaptive-modification-systems"
-      ],
-      "resonance": 52,
-      "quadrant": "real-deal",
-      "resonanceSignals": {
-        "conceptDepth": 0.7737056144690831,
-        "editorial": 1,
-        "connections": 0,
-        "convergence": 0.025,
-        "deepTopic": 0.8,
-        "pantheon": 0.08,
-        "graveyard": 0
-      }
-    },
-    {
       "slug": "astrobiology",
       "label": "Astrobiology",
       "score": 1400,
@@ -1755,12 +1658,100 @@
         "venus-atmosphere-and-cloud-particle-sample-return-for-astrobiology"
       ],
       "resonance": 53,
-      "quadrant": "sleeping-giant",
+      "quadrant": "real-deal",
       "resonanceSignals": {
         "conceptDepth": 0.5113915944693856,
         "editorial": 1,
         "connections": 0.3333333333333333,
         "convergence": 0.275,
+        "deepTopic": 0.8,
+        "pantheon": 0.08,
+        "graveyard": 0
+      }
+    },
+    {
+      "slug": "artemis",
+      "label": "Artemis & Lunar Return",
+      "score": 1204,
+      "delta": -25,
+      "direction": "down",
+      "mentions": 7,
+      "sources": [
+        {
+          "platform": "arxiv",
+          "title": "A pyramidal ISRU lunar habitat design based on topological interlocking of sintered regolith blocks",
+          "url": "https://arxiv.org/abs/2610.01770",
+          "score": 200,
+          "authors": "Lukas Schnelle, Kai-Uwe Schröder, Alice C. Niemeyer et al.",
+          "arxivCategory": "cs.CE",
+          "publishedAt": "2026-10-01T14:26:30.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Designing an Efficient Excavator Bucket for Lunar ISRU: A Comparative Study with Vision-Based Fill and Displacement Analysis",
+          "url": "https://arxiv.org/abs/2609.25724",
+          "score": 200,
+          "authors": "Abdulla Hil Kafi, Tomoki Koshi, Jorge Casir et al.",
+          "arxivCategory": "cs.RO",
+          "publishedAt": "2026-09-22T05:53:56.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "DewTwin-Coin: an onboard autonomous framework for lunar water-ice prospecting using Chandrayaan-3 LIBS and ChaSTE data",
+          "url": "https://arxiv.org/abs/2609.17379",
+          "score": 200,
+          "authors": "Soundarya R., Debasish Mondal",
+          "arxivCategory": "astro-ph.EP",
+          "publishedAt": "2026-09-15T16:21:52.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Distributed Infrastructure Sensors and Cues for Robotic Fire-Fighting and Safety System on a Lunar Base",
+          "url": "https://arxiv.org/abs/2609.22786",
+          "score": 200,
+          "authors": "Alexis Munguia, Eryc Rodriguez, Drake Russ et al.",
+          "arxivCategory": "cs.RO",
+          "publishedAt": "2026-09-19T05:35:03.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "High-Fidelity Baseline Design and Station Keeping Analyses for Earth-Moon Vertical Orbits",
+          "url": "https://arxiv.org/abs/2610.10803",
+          "score": 200,
+          "authors": "Derek Phung, Yuri Shimane",
+          "arxivCategory": "eess.SY",
+          "publishedAt": "2026-10-07T19:03:12.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Transformer-Informed Trajectory Optimization for Relative Motion in Cislunar Orbits",
+          "url": "https://arxiv.org/abs/2609.25460",
+          "score": 200,
+          "authors": "Walter J. Manuel, Yuji Takubo, Simone D'Amico",
+          "arxivCategory": "math.OC",
+          "publishedAt": "2026-09-21T22:33:15.000Z"
+        },
+        {
+          "platform": "hackernews",
+          "title": "Margaret Hamilton, whose software powered Apollo 11 moon landing, dies at 90",
+          "url": "https://www.theguardian.com/science/2026/oct/07/margaret-hamilton-moon-computer-software",
+          "score": 4,
+          "author": "ljf",
+          "commentCount": 2,
+          "publishedAt": "2026-10-08T08:20:36.000Z"
+        }
+      ],
+      "relatedConceptSlugs": [
+        "mycotecture",
+        "regolith-adaptive-modification-systems"
+      ],
+      "resonance": 52,
+      "quadrant": "sleeping-giant",
+      "resonanceSignals": {
+        "conceptDepth": 0.7737056144690831,
+        "editorial": 1,
+        "connections": 0,
+        "convergence": 0.025,
         "deepTopic": 0.8,
         "pantheon": 0.08,
         "graveyard": 0
@@ -1917,10 +1908,10 @@
     {
       "slug": "starlink",
       "label": "Starlink & Satellite Internet",
-      "score": 666,
-      "delta": 44,
-      "direction": "up",
-      "mentions": 9,
+      "score": 620,
+      "delta": -7,
+      "direction": "steady",
+      "mentions": 8,
       "sources": [
         {
           "platform": "arxiv",
@@ -1950,23 +1941,6 @@
           "publishedAt": "2026-10-07T19:36:19.000Z"
         },
         {
-          "platform": "youtube",
-          "title": "We Investigated Starlink. The Corruption We Found Will Shock You",
-          "url": "https://www.youtube.com/watch?v=LQYnlg4pO9o",
-          "score": 46,
-          "thumbnail": "https://img.youtube.com/vi/LQYnlg4pO9o/mqdefault.jpg",
-          "publishedAt": "2026-10-03T10:21:24.000Z"
-        },
-        {
-          "platform": "hackernews",
-          "title": "We Investigated Starlink. The Corruption We Found Will Shock You",
-          "url": "https://www.youtube.com/watch?v=LQYnlg4pO9o",
-          "score": 46,
-          "author": "tukunjil",
-          "commentCount": 16,
-          "publishedAt": "2026-10-03T10:21:24.000Z"
-        },
-        {
           "platform": "hackernews",
           "title": "Zelenskyy says Ukraine is developing satellite system similar to Starlink",
           "url": "https://www.pravda.com.ua/eng/news/2026/10/04/8056442/",
@@ -1977,21 +1951,21 @@
         },
         {
           "platform": "hackernews",
-          "title": "Delta Is the Only Big Four Airline That Won't Use Starlink–Elon Musk Is Furious",
-          "url": "https://www.wsj.com/business/airlines/delta-is-the-only-big-four-airline-that-wont-use-starlinkand-elon-musk-is-furious-3438591e",
-          "score": 3,
-          "author": "doener",
-          "commentCount": 0,
-          "publishedAt": "2026-10-03T03:11:03.000Z"
-        },
-        {
-          "platform": "hackernews",
           "title": "American Airlines extends Starlink Wi-Fi roll-out to mainline fleet",
           "url": "https://www.reuters.com/business/aerospace-defense/american-airlines-extends-starlink-wi-fi-roll-out-entire-mainline-fleet-2026-10-08/",
-          "score": 2,
+          "score": 3,
           "author": "paaloeye",
           "commentCount": 0,
           "publishedAt": "2026-10-09T14:08:34.000Z"
+        },
+        {
+          "platform": "hackernews",
+          "title": "Delta's CEO on Skipping Starlink, Premium-Travel Rush and High Fuel Prices",
+          "url": "https://www.wsj.com/business/airlines/deltas-ceo-on-skipping-starlink-premium-travel-rush-and-high-fuel-prices-47102a88",
+          "score": 2,
+          "author": "gmays",
+          "commentCount": 0,
+          "publishedAt": "2026-10-10T02:48:25.000Z"
         },
         {
           "platform": "hackernews",
@@ -2041,7 +2015,7 @@
           "url": "https://ftl-os.org/",
           "score": 210,
           "author": "romac",
-          "commentCount": 79,
+          "commentCount": 78,
           "publishedAt": "2026-10-03T15:02:36.000Z"
         },
         {
@@ -2181,8 +2155,8 @@
       "slug": "electric-propulsion",
       "label": "Electric Propulsion",
       "score": 400,
-      "delta": 100,
-      "direction": "up",
+      "delta": 0,
+      "direction": "steady",
       "mentions": 2,
       "sources": [
         {
@@ -2267,10 +2241,10 @@
     {
       "slug": "starship",
       "label": "Starship & SpaceX",
-      "score": 313,
+      "score": 316,
       "delta": -37,
       "direction": "down",
-      "mentions": 18,
+      "mentions": 19,
       "sources": [
         {
           "platform": "arxiv",
@@ -2294,7 +2268,7 @@
           "platform": "hackernews",
           "title": "SpaceX to Acquire Low-Band Spectrum for Mobile Phone Service",
           "url": "https://www.bloomberg.com/news/articles/2026-10-08/spacex-to-acquire-low-band-spectrum-for-mobile-phone-service",
-          "score": 15,
+          "score": 16,
           "author": "mfiguiere",
           "commentCount": 2,
           "publishedAt": "2026-10-08T20:45:49.000Z"
