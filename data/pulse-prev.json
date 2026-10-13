@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-12T13:55:17.747Z",
+  "generatedAt": "2026-10-13T13:13:53.396Z",
   "topics": [
     {
       "slug": "gravitational-waves",
@@ -269,10 +269,10 @@
     {
       "slug": "space-telescopes",
       "label": "Space Telescopes",
-      "score": 7800,
-      "delta": 3,
+      "score": 7801,
+      "delta": 5,
       "direction": "steady",
-      "mentions": 39,
+      "mentions": 40,
       "sources": [
         {
           "platform": "arxiv",
@@ -667,10 +667,10 @@
     {
       "slug": "particle-physics",
       "label": "Particle Physics",
-      "score": 6412,
-      "delta": -3,
+      "score": 6420,
+      "delta": 0,
       "direction": "steady",
-      "mentions": 33,
+      "mentions": 34,
       "sources": [
         {
           "platform": "arxiv",
@@ -797,10 +797,10 @@
     {
       "slug": "dark-matter",
       "label": "Dark Matter & Dark Energy",
-      "score": 6002,
+      "score": 6003,
       "delta": 3,
       "direction": "steady",
-      "mentions": 31,
+      "mentions": 32,
       "sources": [
         {
           "platform": "arxiv",
@@ -931,7 +931,7 @@
       "slug": "cosmology",
       "label": "Cosmology",
       "score": 5001,
-      "delta": -4,
+      "delta": 0,
       "direction": "steady",
       "mentions": 26,
       "sources": [
@@ -1062,10 +1062,10 @@
     {
       "slug": "condensed-matter",
       "label": "Condensed Matter",
-      "score": 5000,
-      "delta": -8,
+      "score": 4800,
+      "delta": -12,
       "direction": "steady",
-      "mentions": 25,
+      "mentions": 24,
       "sources": [
         {
           "platform": "arxiv",
@@ -1093,15 +1093,6 @@
           "authors": "T. B. Charikova, V. N. Neverov, M. R. Popov et al.",
           "arxivCategory": "cond-mat.supr-con",
           "publishedAt": "2026-09-14T19:36:25.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Nonparametric Variance-Penalized Actor-Critic: Statistical Inference for Risk-Sensitive Reinforcement Learning",
-          "url": "https://arxiv.org/abs/2609.14327",
-          "score": 200,
-          "authors": "Saunak Kumar Panda, Tong Li, Yisha Xiang et al.",
-          "arxivCategory": "cs.LG",
-          "publishedAt": "2026-09-13T06:48:34.000Z"
         },
         {
           "platform": "arxiv",
@@ -1174,6 +1165,15 @@
           "authors": "Sunkyu Yu, Xianji Piao, Namkyoo Park",
           "arxivCategory": "cond-mat.mes-hall",
           "publishedAt": "2026-10-02T06:30:13.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Topological robustness of thermally disordered lattices: From average structures to ensemble electronic properties",
+          "url": "https://arxiv.org/abs/2610.00963",
+          "score": 200,
+          "authors": "Oleg Rubel, Karekin Sadikian",
+          "arxivCategory": "cond-mat.mtrl-sci",
+          "publishedAt": "2026-10-01T02:51:34.000Z"
         }
       ],
       "relatedConceptSlugs": [
@@ -1459,10 +1459,10 @@
     {
       "slug": "fusion-propulsion",
       "label": "Fusion Propulsion",
-      "score": 1800,
-      "delta": -10,
+      "score": 1802,
+      "delta": 0,
       "direction": "steady",
-      "mentions": 9,
+      "mentions": 10,
       "sources": [
         {
           "platform": "arxiv",
@@ -1544,6 +1544,15 @@
           "authors": "Alexander V. Milovanov, Alexander Iomin, Jens Juul Rasmussen",
           "arxivCategory": "physics.plasm-ph",
           "publishedAt": "2026-09-19T09:46:46.000Z"
+        },
+        {
+          "platform": "hackernews",
+          "title": "Commercialization of laser fusion energy [pdf]",
+          "url": "https://xcimer.energy/wp-content/uploads/2026/04/XEC-20260224-Commercialization-of-LFE-Whtppr-SHARED-24-FEB-26.pdf",
+          "score": 2,
+          "author": "Eridanus2",
+          "commentCount": 0,
+          "publishedAt": "2026-10-12T16:48:48.000Z"
         }
       ],
       "relatedConceptSlugs": [
@@ -1654,10 +1663,10 @@
     {
       "slug": "artemis",
       "label": "Artemis & Lunar Return",
-      "score": 1204,
+      "score": 1207,
       "delta": 0,
       "direction": "steady",
-      "mentions": 7,
+      "mentions": 8,
       "sources": [
         {
           "platform": "arxiv",
@@ -1721,6 +1730,15 @@
           "author": "ljf",
           "commentCount": 2,
           "publishedAt": "2026-10-08T08:20:36.000Z"
+        },
+        {
+          "platform": "hackernews",
+          "title": "NASA Wants More Than 70 Moon Landings in the Next Decade–But How?",
+          "url": "https://spectrum.ieee.org/nasa-moon-base-landings",
+          "score": 3,
+          "author": "purplekohav",
+          "commentCount": 0,
+          "publishedAt": "2026-10-12T18:05:57.000Z"
         }
       ],
       "relatedConceptSlugs": [
@@ -1977,10 +1995,10 @@
     {
       "slug": "starship",
       "label": "Starship & SpaceX",
-      "score": 481,
-      "delta": 6,
+      "score": 485,
+      "delta": 0,
       "direction": "steady",
-      "mentions": 21,
+      "mentions": 19,
       "sources": [
         {
           "platform": "arxiv",
@@ -2004,7 +2022,7 @@
           "platform": "hackernews",
           "title": "Why hasn't SpaceX, worth $2T, paid this Bay Area chef the $70K it owes him?",
           "url": "https://www.sfchronicle.com/food/restaurants/article/spacex-stateline-napa-late-payment-22463945.php",
-          "score": 42,
+          "score": 44,
           "author": "hn_acker",
           "commentCount": 34,
           "publishedAt": "2026-10-11T16:59:24.000Z"
@@ -2026,6 +2044,15 @@
           "author": "mfiguiere",
           "commentCount": 2,
           "publishedAt": "2026-10-08T20:45:49.000Z"
+        },
+        {
+          "platform": "hackernews",
+          "title": "SpaceXSI: Unified plans across Grok, Cursor, and X Premium",
+          "url": "https://x.ai/pricing",
+          "score": 11,
+          "author": "vini",
+          "commentCount": 2,
+          "publishedAt": "2026-10-13T00:07:46.000Z"
         },
         {
           "platform": "hackernews",
@@ -2079,15 +2106,6 @@
           "score": 4,
           "thumbnail": "https://img.youtube.com/vi/9SAgLMahZm4/mqdefault.jpg",
           "publishedAt": "2026-10-11T04:37:28.000Z"
-        },
-        {
-          "platform": "hackernews",
-          "title": "SpaceX Raised $111B – It Needs More [video]",
-          "url": "https://www.youtube.com/watch?v=9SAgLMahZm4",
-          "score": 4,
-          "author": "koolhead17",
-          "commentCount": 0,
-          "publishedAt": "2026-10-11T04:37:28.000Z"
         }
       ],
       "relatedConceptSlugs": [
@@ -2109,10 +2127,10 @@
     {
       "slug": "mars",
       "label": "Mars Exploration",
-      "score": 400,
-      "delta": 0,
+      "score": 402,
+      "delta": 1,
       "direction": "steady",
-      "mentions": 2,
+      "mentions": 3,
       "sources": [
         {
           "platform": "arxiv",
@@ -2131,6 +2149,15 @@
           "authors": "Abigail Tadlock, Chuanfei Dong, Chi Zhang et al.",
           "arxivCategory": "astro-ph.EP",
           "publishedAt": "2026-09-17T06:53:01.000Z"
+        },
+        {
+          "platform": "hackernews",
+          "title": "28 Miles and Counting: NASA's Perseverance Rover Sets a Mars Driving Record",
+          "url": "https://www.nytimes.com/2026/10/12/science/mars-rover-sets-record.html",
+          "score": 2,
+          "author": "pseudolus",
+          "commentCount": 1,
+          "publishedAt": "2026-10-13T09:51:38.000Z"
         }
       ],
       "relatedConceptSlugs": [
