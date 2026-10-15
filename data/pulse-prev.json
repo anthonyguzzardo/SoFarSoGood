@@ -1,13 +1,13 @@
 {
-  "generatedAt": "2026-10-14T10:55:08.969Z",
+  "generatedAt": "2026-10-14T21:24:50.036Z",
   "topics": [
     {
       "slug": "black-holes",
       "label": "Black Holes",
-      "score": 9001,
-      "delta": 5,
+      "score": 8801,
+      "delta": 2,
       "direction": "steady",
-      "mentions": 46,
+      "mentions": 45,
       "sources": [
         {
           "platform": "arxiv",
@@ -402,10 +402,10 @@
     {
       "slug": "quantum-computing",
       "label": "Quantum Computing",
-      "score": 7011,
-      "delta": -3,
+      "score": 7033,
+      "delta": -2,
       "direction": "steady",
-      "mentions": 39,
+      "mentions": 38,
       "sources": [
         {
           "platform": "arxiv",
@@ -797,10 +797,10 @@
     {
       "slug": "dark-matter",
       "label": "Dark Matter & Dark Energy",
-      "score": 5803,
+      "score": 5804,
       "delta": -3,
       "direction": "steady",
-      "mentions": 31,
+      "mentions": 32,
       "sources": [
         {
           "platform": "arxiv",
@@ -930,10 +930,10 @@
     {
       "slug": "condensed-matter",
       "label": "Condensed Matter",
-      "score": 5200,
-      "delta": 8,
+      "score": 5000,
+      "delta": 4,
       "direction": "steady",
-      "mentions": 26,
+      "mentions": 25,
       "sources": [
         {
           "platform": "arxiv",
@@ -961,15 +961,6 @@
           "authors": "Chafic Fawaz, Yingzheng Gao, Luca Laveder et al.",
           "arxivCategory": "cond-mat.supr-con",
           "publishedAt": "2026-09-18T12:13:52.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Current - voltage characteristics in magnetic field for layered superconductor with intrinsic pinning of Josephson vortices",
-          "url": "https://arxiv.org/abs/2609.16277",
-          "score": 200,
-          "authors": "T. B. Charikova, V. N. Neverov, M. R. Popov et al.",
-          "arxivCategory": "cond-mat.supr-con",
-          "publishedAt": "2026-09-14T19:36:25.000Z"
         },
         {
           "platform": "arxiv",
@@ -1042,6 +1033,15 @@
           "authors": "Igor Veremchuk, Pavlo Makushko, Anita Guarino et al.",
           "arxivCategory": "cond-mat.mes-hall",
           "publishedAt": "2026-10-09T13:01:32.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Observation of robust corner states in photonic crystals without global symmetries",
+          "url": "https://arxiv.org/abs/2610.12062",
+          "score": 200,
+          "authors": "Zitao Ji, Jianfeng Chen, Yidong Zheng et al.",
+          "arxivCategory": "physics.optics",
+          "publishedAt": "2026-10-08T14:43:37.000Z"
         }
       ],
       "relatedConceptSlugs": [
@@ -1062,10 +1062,10 @@
     {
       "slug": "cosmology",
       "label": "Cosmology",
-      "score": 4801,
-      "delta": -4,
+      "score": 4601,
+      "delta": -8,
       "direction": "steady",
-      "mentions": 25,
+      "mentions": 24,
       "sources": [
         {
           "platform": "arxiv",
@@ -1194,10 +1194,10 @@
     {
       "slug": "exoplanets",
       "label": "Exoplanets",
-      "score": 3806,
-      "delta": 6,
+      "score": 3404,
+      "delta": -6,
       "direction": "steady",
-      "mentions": 22,
+      "mentions": 19,
       "sources": [
         {
           "platform": "arxiv",
@@ -1796,10 +1796,10 @@
     {
       "slug": "space-debris",
       "label": "Space Debris",
-      "score": 1201,
-      "delta": 0,
-      "direction": "steady",
-      "mentions": 7,
+      "score": 1002,
+      "delta": -16,
+      "direction": "down",
+      "mentions": 6,
       "sources": [
         {
           "platform": "arxiv",
@@ -1818,15 +1818,6 @@
           "authors": "Rafael Carrillo Navarro, Pablo García-Martín, René Duffard et al.",
           "arxivCategory": "astro-ph.IM",
           "publishedAt": "2026-09-23T10:47:14.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Automatic astrometric calibration of low-cost all-sky cameras",
-          "url": "https://arxiv.org/abs/2609.15724",
-          "score": 200,
-          "authors": "J. R. González Fernández, Laura Hermosa Muñoz, María Fernández Alonso et al.",
-          "arxivCategory": "astro-ph.IM",
-          "publishedAt": "2026-09-14T15:21:36.000Z"
         },
         {
           "platform": "arxiv",
@@ -1859,7 +1850,7 @@
           "platform": "hackernews",
           "title": "The Most Remote Place on Earth Has Space Junk and a Sea Monster",
           "url": "https://www.atlasobscura.com/articles/strange-maps-point-nemo",
-          "score": 1,
+          "score": 2,
           "author": "bcaulfield",
           "commentCount": 0,
           "publishedAt": "2026-10-14T03:14:22.000Z"
@@ -1883,10 +1874,10 @@
     {
       "slug": "asteroid-mining",
       "label": "Asteroid Mining",
-      "score": 1200,
-      "delta": 20,
-      "direction": "up",
-      "mentions": 6,
+      "score": 1000,
+      "delta": 0,
+      "direction": "steady",
+      "mentions": 5,
       "sources": [
         {
           "platform": "arxiv",
@@ -1914,15 +1905,6 @@
           "authors": "Caio Gomes, Andre Amarante, Filipe Monteiro et al.",
           "arxivCategory": "astro-ph.EP",
           "publishedAt": "2026-09-23T07:07:59.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Thermophysical characterization of the potentially hazardous near-Earth object 2024 YR4",
-          "url": "https://arxiv.org/abs/2609.15756",
-          "score": 200,
-          "authors": "T. G. Müller, E. M. MacLennan, A. Y. Burdanov et al.",
-          "arxivCategory": "astro-ph.EP",
-          "publishedAt": "2026-09-14T15:42:55.000Z"
         },
         {
           "platform": "arxiv",
@@ -1960,12 +1942,144 @@
       }
     },
     {
+      "slug": "starlink",
+      "label": "Starlink & Satellite Internet",
+      "score": 983,
+      "delta": 61,
+      "direction": "up",
+      "mentions": 16,
+      "sources": [
+        {
+          "platform": "hackernews",
+          "title": "Fire at Starlink site in Bulgaria after suspected sabotage in Poland",
+          "url": "https://dpa-international.com/politics/urn:newsml:dpa.com:20090101:261014-930-839530/",
+          "score": 217,
+          "author": "ilamont",
+          "commentCount": 145,
+          "publishedAt": "2026-10-14T18:37:21.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Distributed Power Control for Equal-Priority NGSO Mega-Constellation Coexistence",
+          "url": "https://arxiv.org/abs/2609.38935",
+          "score": 200,
+          "authors": "Hao Yuan, Shuang Zheng, Heying Cao et al.",
+          "arxivCategory": "eess.SP",
+          "publishedAt": "2026-09-30T04:12:21.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Spectrum Sharing Among Broadband LEO Mega-Constellations: Interference Regulations and Coexistence Mechanisms",
+          "url": "https://arxiv.org/abs/2609.36122",
+          "score": 200,
+          "authors": "Ian P. Roberts",
+          "arxivCategory": "eess.SP",
+          "publishedAt": "2026-09-28T18:54:59.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Systematic non-compliance of satellite megaconstellations with IAU brightness limits",
+          "url": "https://arxiv.org/abs/2610.10834",
+          "score": 200,
+          "authors": "Jack Rayworth, Denis Vida, Pauline Barmby et al.",
+          "arxivCategory": "astro-ph.EP",
+          "publishedAt": "2026-10-07T19:36:19.000Z"
+        },
+        {
+          "platform": "hackernews",
+          "title": "Ukraine says new Starlink restrictions disrupt their military",
+          "url": "https://www.nbcnews.com/world/ukraine/ukraine-starlink-restrictions-military-intel-trump-zelenskyy-russia-rcna603412",
+          "score": 49,
+          "author": "Snawoot",
+          "commentCount": 23,
+          "publishedAt": "2026-10-14T14:44:30.000Z"
+        },
+        {
+          "platform": "hackernews",
+          "title": "Starlink restricted in Ukraine with no notice",
+          "url": "https://malcontentnews.substack.com/p/starlink-restricted-in-ukraine-with",
+          "score": 46,
+          "author": "vrganj",
+          "commentCount": 8,
+          "publishedAt": "2026-10-14T09:33:27.000Z"
+        },
+        {
+          "platform": "hackernews",
+          "title": "The operation of Starlink terminals in Ukraine was restricted above 160 kph",
+          "url": "https://www.reddit.com/r/UkraineWarVideoReport/comments/1x5kefw/last_night_the_operation_of_starlink_terminals_in/",
+          "score": 19,
+          "author": "jacquesm",
+          "commentCount": 0,
+          "publishedAt": "2026-10-14T09:55:12.000Z"
+        },
+        {
+          "platform": "hackernews",
+          "title": "Ukraine's Starlink Access Restricted Without Warning",
+          "url": "https://kyivindependent.com/this-cannot-be-a-coincidence-ukraines-starlink-access-restricted-without-warning-zelensky-adviser-says/",
+          "score": 17,
+          "author": "defly",
+          "commentCount": 4,
+          "publishedAt": "2026-10-14T08:06:39.000Z"
+        },
+        {
+          "platform": "hackernews",
+          "title": "Ukrainian military's access to Starlink satellite internet suddenly restricted",
+          "url": "https://www.theguardian.com/world/2026/oct/14/ukraine-soldiers-combat-access-starlink-satellite-internet-restricted",
+          "score": 13,
+          "author": "alpha_squared",
+          "commentCount": 3,
+          "publishedAt": "2026-10-14T15:21:24.000Z"
+        },
+        {
+          "platform": "hackernews",
+          "title": "Starlink restricts access to Ukrainian drones moving faster than 100mph",
+          "url": "https://www.nytimes.com/2026/10/14/business/starshield-spacex-ukraine-starlink-satellites-musk.html",
+          "score": 6,
+          "author": "johnny313",
+          "commentCount": 4,
+          "publishedAt": "2026-10-14T15:40:56.000Z"
+        },
+        {
+          "platform": "hackernews",
+          "title": "Ukrainian officers warn Starlink slowdown comparable to a nuclear strike",
+          "url": "https://www.politico.eu/article/ukraine-starlink-restrictions-disrupt-drone-strikes/",
+          "score": 4,
+          "author": "doener",
+          "commentCount": 2,
+          "publishedAt": "2026-10-14T17:57:40.000Z"
+        },
+        {
+          "platform": "hackernews",
+          "title": "Ukraine Starlink Access Restricted as Musk Says Zelensky 'Has Gone Too Far'",
+          "url": "https://www.newsweek.com/ukraine-starlink-access-restricted-as-musk-says-zelensky-has-gone-too-far-12565652",
+          "score": 4,
+          "author": "cisc",
+          "commentCount": 1,
+          "publishedAt": "2026-10-14T20:43:04.000Z"
+        }
+      ],
+      "relatedConceptSlugs": [
+        "sps-alpha"
+      ],
+      "resonance": 21,
+      "quadrant": "dead-zone",
+      "resonanceSignals": {
+        "conceptDepth": 0.22629438553091683,
+        "editorial": 0.7,
+        "connections": 0,
+        "convergence": 0,
+        "deepTopic": 0,
+        "pantheon": 0,
+        "graveyard": 0
+      }
+    },
+    {
       "slug": "starship",
       "label": "Starship & SpaceX",
-      "score": 734,
-      "delta": 51,
+      "score": 848,
+      "delta": 74,
       "direction": "up",
-      "mentions": 20,
+      "mentions": 23,
       "sources": [
         {
           "platform": "arxiv",
@@ -1998,9 +2112,9 @@
           "platform": "hackernews",
           "title": "Starlink limit hits Ukraine's drones. The battlefield depends on SpaceX",
           "url": "https://defence24.com/geopolitics/starlink-limit-hits-ukraines-drones-the-battlefield-depends-on-spacex",
-          "score": 53,
+          "score": 131,
           "author": "uxhacker",
-          "commentCount": 65,
+          "commentCount": 143,
           "publishedAt": "2026-10-14T09:10:37.000Z"
         },
         {
@@ -2014,12 +2128,12 @@
         },
         {
           "platform": "hackernews",
-          "title": "SpaceX credit risk jumps on worries over its borrowing spree",
-          "url": "https://www.ft.com/content/4f2417d3-3de6-4f62-bd3a-8c8f740a4b29",
-          "score": 24,
-          "author": "JumpCrisscross",
-          "commentCount": 2,
-          "publishedAt": "2026-10-07T20:27:11.000Z"
+          "title": "SpaceX activated 100mph speed-limit restriction on Starlink terminals in Ukraine",
+          "url": "https://bsky.app/profile/adamjschwarz.bsky.social/post/3mxsy6s4nt22m",
+          "score": 33,
+          "author": "ck2",
+          "commentCount": 14,
+          "publishedAt": "2026-10-14T13:05:00.000Z"
         },
         {
           "platform": "hackernews",
@@ -2041,6 +2155,24 @@
         },
         {
           "platform": "hackernews",
+          "title": "Ukraine accuses SpaceX of crippling drone missions as ties with US worsen",
+          "url": "https://www.reuters.com/business/media-telecom/ukraine-accuses-spacex-crippling-drone-missions-ties-with-us-worsen-2026-10-14/",
+          "score": 10,
+          "author": "JumpCrisscross",
+          "commentCount": 1,
+          "publishedAt": "2026-10-14T12:34:19.000Z"
+        },
+        {
+          "platform": "hackernews",
+          "title": "Ukraine says SpaceX limits Starlink operations, disrupting military",
+          "url": "https://www.reuters.com/world/europe/spacex-limits-starlink-operations-ukraine-disrupting-military-missions-2026-10-14/",
+          "score": 9,
+          "author": "tosh",
+          "commentCount": 1,
+          "publishedAt": "2026-10-14T17:40:45.000Z"
+        },
+        {
+          "platform": "hackernews",
           "title": "SpaceX's recovered Starship after Flight 13 splashdown returns to Texan port",
           "url": "https://www.floridatoday.com/story/tech/science/space/spacex/2026/10/07/spacex-brings-home-first-recovered-starship-to-texas-starbase-flight-13/92137434007/",
           "score": 8,
@@ -2050,30 +2182,12 @@
         },
         {
           "platform": "hackernews",
-          "title": "A Cruise and a Starship: SpaceX Used Bystander Videos to Track Explosion Debris",
-          "url": "https://www.propublica.org/article/spacex-starship-caribbean-explosion-report",
-          "score": 6,
-          "author": "hn_acker",
-          "commentCount": 1,
-          "publishedAt": "2026-10-08T17:01:42.000Z"
-        },
-        {
-          "platform": "hackernews",
-          "title": "SpaceX calls for better coordination in orbit after near-misses with Starlink",
-          "url": "https://arstechnica.com/space/2026/10/spacex-calls-for-better-coordination-in-orbit-after-near-misses-with-starlink/",
-          "score": 6,
-          "author": "rbanffy",
-          "commentCount": 2,
-          "publishedAt": "2026-10-09T09:16:41.000Z"
-        },
-        {
-          "platform": "hackernews",
-          "title": "SpaceX Makes Big Play to Become a Wireless Carrier",
-          "url": "https://www.wsj.com/business/telecom/spacex-makes-big-play-to-become-a-wireless-carrier-a90b2a1b",
-          "score": 5,
-          "author": "bcaulfield",
+          "title": "SpaceX and Google said no. Now his software rides SpaceX rocket next to Google's",
+          "url": "https://techcrunch.com/2026/10/13/satlyt-founded-by-a-former-google-and-spacex-product-manager-raises-8m-to-run-ai-on-satellites/",
+          "score": 8,
+          "author": "prmph",
           "commentCount": 0,
-          "publishedAt": "2026-10-09T01:02:36.000Z"
+          "publishedAt": "2026-10-14T14:48:34.000Z"
         }
       ],
       "relatedConceptSlugs": [
@@ -2089,129 +2203,6 @@
         "convergence": 0.35,
         "deepTopic": 1,
         "pantheon": 0.92,
-        "graveyard": 0
-      }
-    },
-    {
-      "slug": "starlink",
-      "label": "Starlink & Satellite Internet",
-      "score": 642,
-      "delta": 5,
-      "direction": "steady",
-      "mentions": 11,
-      "sources": [
-        {
-          "platform": "arxiv",
-          "title": "Distributed Power Control for Equal-Priority NGSO Mega-Constellation Coexistence",
-          "url": "https://arxiv.org/abs/2609.38935",
-          "score": 200,
-          "authors": "Hao Yuan, Shuang Zheng, Heying Cao et al.",
-          "arxivCategory": "eess.SP",
-          "publishedAt": "2026-09-30T04:12:21.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Spectrum Sharing Among Broadband LEO Mega-Constellations: Interference Regulations and Coexistence Mechanisms",
-          "url": "https://arxiv.org/abs/2609.36122",
-          "score": 200,
-          "authors": "Ian P. Roberts",
-          "arxivCategory": "eess.SP",
-          "publishedAt": "2026-09-28T18:54:59.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Systematic non-compliance of satellite megaconstellations with IAU brightness limits",
-          "url": "https://arxiv.org/abs/2610.10834",
-          "score": 200,
-          "authors": "Jack Rayworth, Denis Vida, Pauline Barmby et al.",
-          "arxivCategory": "astro-ph.EP",
-          "publishedAt": "2026-10-07T19:36:19.000Z"
-        },
-        {
-          "platform": "hackernews",
-          "title": "Starlink restricted in Ukraine with no notice",
-          "url": "https://malcontentnews.substack.com/p/starlink-restricted-in-ukraine-with",
-          "score": 13,
-          "author": "vrganj",
-          "commentCount": 0,
-          "publishedAt": "2026-10-14T09:33:27.000Z"
-        },
-        {
-          "platform": "hackernews",
-          "title": "Ukraine's Starlink Access Restricted Without Warning",
-          "url": "https://kyivindependent.com/this-cannot-be-a-coincidence-ukraines-starlink-access-restricted-without-warning-zelensky-adviser-says/",
-          "score": 10,
-          "author": "defly",
-          "commentCount": 4,
-          "publishedAt": "2026-10-14T08:06:39.000Z"
-        },
-        {
-          "platform": "hackernews",
-          "title": "The operation of Starlink terminals in Ukraine was restricted above 160 kph",
-          "url": "https://www.reddit.com/r/UkraineWarVideoReport/comments/1x5kefw/last_night_the_operation_of_starlink_terminals_in/",
-          "score": 9,
-          "author": "jacquesm",
-          "commentCount": 0,
-          "publishedAt": "2026-10-14T09:55:12.000Z"
-        },
-        {
-          "platform": "hackernews",
-          "title": "American Airlines extends Starlink Wi-Fi roll-out to mainline fleet",
-          "url": "https://www.reuters.com/business/aerospace-defense/american-airlines-extends-starlink-wi-fi-roll-out-entire-mainline-fleet-2026-10-08/",
-          "score": 3,
-          "author": "paaloeye",
-          "commentCount": 0,
-          "publishedAt": "2026-10-09T14:08:34.000Z"
-        },
-        {
-          "platform": "hackernews",
-          "title": "Delta's CEO on Skipping Starlink, Premium-Travel Rush and High Fuel Prices",
-          "url": "https://www.wsj.com/business/airlines/deltas-ceo-on-skipping-starlink-premium-travel-rush-and-high-fuel-prices-47102a88",
-          "score": 2,
-          "author": "gmays",
-          "commentCount": 0,
-          "publishedAt": "2026-10-10T02:48:25.000Z"
-        },
-        {
-          "platform": "hackernews",
-          "title": "Ukraine warns China and Russia are close to creating a Starlink competitor",
-          "url": "https://ukranews.com/en/news/1178852-ukraine-will-ask-u-s-to-impose-sanctions-on-russia-and-china-over-russia-s-version-of-starlink-media",
-          "score": 2,
-          "author": "ilamont",
-          "commentCount": 0,
-          "publishedAt": "2026-10-08T19:30:31.000Z"
-        },
-        {
-          "platform": "hackernews",
-          "title": "Starlink's plan to avoid orbital near-misses: Ephemeris sharing",
-          "url": "https://www.theregister.com/offbeat/2026/10/07/starlinks-plan-to-avoid-orbital-near-misses-ephemeris-sharing/5301650",
-          "score": 2,
-          "author": "beardyw",
-          "commentCount": 0,
-          "publishedAt": "2026-10-07T19:22:51.000Z"
-        },
-        {
-          "platform": "hackernews",
-          "title": "Germany detains 2 Turkish citizens over Starlink station fire in Poland",
-          "url": "https://www.turkiyetoday.com/region/germany-detains-2-turkish-citizens-over-starlink-station-fire-in-poland-3230189",
-          "score": 1,
-          "author": "pinewurst",
-          "commentCount": 0,
-          "publishedAt": "2026-10-14T04:17:24.000Z"
-        }
-      ],
-      "relatedConceptSlugs": [
-        "sps-alpha"
-      ],
-      "resonance": 21,
-      "quadrant": "dead-zone",
-      "resonanceSignals": {
-        "conceptDepth": 0.22629438553091683,
-        "editorial": 0.7,
-        "connections": 0,
-        "convergence": 0,
-        "deepTopic": 0,
-        "pantheon": 0,
         "graveyard": 0
       }
     },
