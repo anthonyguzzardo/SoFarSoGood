@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-10-17T09:58:09.370Z",
+  "generatedAt": "2026-10-17T20:16:27.360Z",
   "topics": [
     {
       "slug": "gravitational-waves",
       "label": "Gravitational Waves",
       "score": 8800,
-      "delta": 2,
+      "delta": 0,
       "direction": "steady",
       "mentions": 44,
       "sources": [
@@ -136,10 +136,10 @@
     {
       "slug": "black-holes",
       "label": "Black Holes",
-      "score": 8601,
-      "delta": 0,
+      "score": 8201,
+      "delta": -5,
       "direction": "steady",
-      "mentions": 44,
+      "mentions": 42,
       "sources": [
         {
           "platform": "arxiv",
@@ -668,7 +668,7 @@
       "slug": "particle-physics",
       "label": "Particle Physics",
       "score": 6205,
-      "delta": -3,
+      "delta": 0,
       "direction": "steady",
       "mentions": 32,
       "sources": [
@@ -797,10 +797,10 @@
     {
       "slug": "dark-matter",
       "label": "Dark Matter & Dark Energy",
-      "score": 5805,
+      "score": 5807,
       "delta": 0,
       "direction": "steady",
-      "mentions": 32,
+      "mentions": 33,
       "sources": [
         {
           "platform": "arxiv",
@@ -930,10 +930,10 @@
     {
       "slug": "condensed-matter",
       "label": "Condensed Matter",
-      "score": 5203,
-      "delta": 4,
+      "score": 5003,
+      "delta": -4,
       "direction": "steady",
-      "mentions": 27,
+      "mentions": 26,
       "sources": [
         {
           "platform": "arxiv",
@@ -1194,10 +1194,10 @@
     {
       "slug": "exoplanets",
       "label": "Exoplanets",
-      "score": 3801,
-      "delta": 0,
+      "score": 3601,
+      "delta": -5,
       "direction": "steady",
-      "mentions": 20,
+      "mentions": 19,
       "sources": [
         {
           "platform": "arxiv",
@@ -1264,15 +1264,6 @@
         },
         {
           "platform": "arxiv",
-          "title": "Exoplanet detection through photometric orbital phase modulations",
-          "url": "https://arxiv.org/abs/2609.20355",
-          "score": 200,
-          "authors": "J. Lillo-Box, O. Balsalobre-Ruza",
-          "arxivCategory": "astro-ph.EP",
-          "publishedAt": "2026-09-17T13:20:41.000Z"
-        },
-        {
-          "platform": "arxiv",
           "title": "The contact frontier in Galactic civilization networks: radial structure and the Galactic habitable zone",
           "url": "https://arxiv.org/abs/2610.20475",
           "score": 200,
@@ -1306,6 +1297,15 @@
           "authors": "Isabel Gerrard, Sofia Z. Sheikh",
           "arxivCategory": "astro-ph.IM",
           "publishedAt": "2026-10-05T08:01:48.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "High-CO2 Climates and Observables in the Outer Habitable Zone",
+          "url": "https://arxiv.org/abs/2609.36697",
+          "score": 200,
+          "authors": "Daria Pidhorodetska, Edward W. Schwieterman, Thomas J. Fauchez et al.",
+          "arxivCategory": "astro-ph.EP",
+          "publishedAt": "2026-09-29T04:37:26.000Z"
         }
       ],
       "relatedConceptSlugs": [
@@ -1460,7 +1460,7 @@
       "slug": "astrobiology",
       "label": "Astrobiology",
       "score": 2200,
-      "delta": 10,
+      "delta": 0,
       "direction": "steady",
       "mentions": 11,
       "sources": [
@@ -1584,7 +1584,7 @@
       "slug": "fusion-propulsion",
       "label": "Fusion Propulsion",
       "score": 1802,
-      "delta": -10,
+      "delta": 0,
       "direction": "steady",
       "mentions": 10,
       "sources": [
@@ -1699,8 +1699,8 @@
     {
       "slug": "starlink",
       "label": "Starlink & Satellite Internet",
-      "score": 1459,
-      "delta": 8,
+      "score": 1465,
+      "delta": 7,
       "direction": "steady",
       "mentions": 26,
       "sources": [
@@ -1760,21 +1760,21 @@
         },
         {
           "platform": "hackernews",
+          "title": "Musk approached Trump to slow down Starlink in Ukraine",
+          "url": "https://www.telegraph.co.uk/world-news/2026/10/16/musk-approached-trump-slow-down-starlink-help-ukraine/",
+          "score": 48,
+          "author": "defly",
+          "commentCount": 21,
+          "publishedAt": "2026-10-16T18:28:12.000Z"
+        },
+        {
+          "platform": "hackernews",
           "title": "Starlink restricted in Ukraine with no notice",
           "url": "https://malcontentnews.substack.com/p/starlink-restricted-in-ukraine-with",
           "score": 48,
           "author": "vrganj",
           "commentCount": 7,
           "publishedAt": "2026-10-14T09:33:27.000Z"
-        },
-        {
-          "platform": "hackernews",
-          "title": "Musk approached Trump to slow down Starlink in Ukraine",
-          "url": "https://www.telegraph.co.uk/world-news/2026/10/16/musk-approached-trump-slow-down-starlink-help-ukraine/",
-          "score": 42,
-          "author": "defly",
-          "commentCount": 21,
-          "publishedAt": "2026-10-16T18:28:12.000Z"
         },
         {
           "platform": "hackernews",
@@ -1929,8 +1929,8 @@
       "slug": "space-debris",
       "label": "Space Debris",
       "score": 1202,
-      "delta": 20,
-      "direction": "up",
+      "delta": 0,
+      "direction": "steady",
       "mentions": 7,
       "sources": [
         {
@@ -2146,10 +2146,10 @@
     {
       "slug": "starship",
       "label": "Starship & SpaceX",
-      "score": 754,
-      "delta": 10,
+      "score": 643,
+      "delta": -5,
       "direction": "steady",
-      "mentions": 15,
+      "mentions": 17,
       "sources": [
         {
           "platform": "arxiv",
@@ -2168,15 +2168,6 @@
           "authors": "Mingyeom Kim, Changhyun Kang, Dohyun Lee et al.",
           "arxivCategory": "math.OC",
           "publishedAt": "2026-09-23T20:11:36.000Z"
-        },
-        {
-          "platform": "hackernews",
-          "title": "Tom Brown used GOP ties to broker a $1.25B/month SpaceX compute deal",
-          "url": "https://wsj.com/tech/ai/tom-brown-athropic-669005ad",
-          "score": 136,
-          "author": "utiiiD",
-          "commentCount": 53,
-          "publishedAt": "2026-10-10T15:04:38.000Z"
         },
         {
           "platform": "youtube",
@@ -2248,6 +2239,15 @@
           "author": "JumpCrisscross",
           "commentCount": 1,
           "publishedAt": "2026-10-14T12:34:19.000Z"
+        },
+        {
+          "platform": "hackernews",
+          "title": "Texas Has Been Considering Selling a Beloved State Park to Elon Musk's SpaceX",
+          "url": "https://www.texasmonthly.com/news-politics/boca-chica-spacex-elon-musk/",
+          "score": 10,
+          "author": "malshe",
+          "commentCount": 0,
+          "publishedAt": "2026-10-17T17:09:41.000Z"
         },
         {
           "platform": "hackernews",
@@ -2417,8 +2417,8 @@
       "slug": "dyson-spheres",
       "label": "Dyson Spheres",
       "score": 400,
-      "delta": 100,
-      "direction": "up",
+      "delta": 0,
+      "direction": "steady",
       "mentions": 2,
       "sources": [
         {
