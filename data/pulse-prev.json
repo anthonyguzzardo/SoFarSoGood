@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-18T10:09:48.276Z",
+  "generatedAt": "2026-10-18T20:14:59.741Z",
   "topics": [
     {
       "slug": "gravitational-waves",
@@ -137,7 +137,7 @@
       "slug": "black-holes",
       "label": "Black Holes",
       "score": 8201,
-      "delta": -5,
+      "delta": 0,
       "direction": "steady",
       "mentions": 42,
       "sources": [
@@ -402,10 +402,10 @@
     {
       "slug": "quantum-computing",
       "label": "Quantum Computing",
-      "score": 7258,
+      "score": 7260,
       "delta": 0,
       "direction": "steady",
-      "mentions": 39,
+      "mentions": 40,
       "sources": [
         {
           "platform": "arxiv",
@@ -797,7 +797,7 @@
     {
       "slug": "dark-matter",
       "label": "Dark Matter & Dark Energy",
-      "score": 5809,
+      "score": 5810,
       "delta": 0,
       "direction": "steady",
       "mentions": 33,
@@ -930,10 +930,10 @@
     {
       "slug": "condensed-matter",
       "label": "Condensed Matter",
-      "score": 5003,
+      "score": 4803,
       "delta": -4,
       "direction": "steady",
-      "mentions": 26,
+      "mentions": 25,
       "sources": [
         {
           "platform": "arxiv",
@@ -961,15 +961,6 @@
           "authors": "Roger Magloire Keumo Tsiaze, Jeremeie Edmond Danga, Cornelius Fai Lukong",
           "arxivCategory": "cond-mat.supr-con",
           "publishedAt": "2026-09-23T18:41:00.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Raman scattering in cuprate oxychlorides high-temperature superconductors single-crystals",
-          "url": "https://arxiv.org/abs/2609.22400",
-          "score": 200,
-          "authors": "Chafic Fawaz, Yingzheng Gao, Luca Laveder et al.",
-          "arxivCategory": "cond-mat.supr-con",
-          "publishedAt": "2026-09-18T12:13:52.000Z"
         },
         {
           "platform": "arxiv",
@@ -1042,6 +1033,15 @@
           "authors": "Shrinkhala Sharma, Rabindra Basnet, Thomas Parker et al.",
           "arxivCategory": "cond-mat.mtrl-sci",
           "publishedAt": "2026-10-09T18:50:37.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Giant geometric nonlinear transport in inhomogeneously strained Bi$_2$Se$_3$ single crystalline slabs",
+          "url": "https://arxiv.org/abs/2610.13542",
+          "score": 200,
+          "authors": "Igor Veremchuk, Pavlo Makushko, Anita Guarino et al.",
+          "arxivCategory": "cond-mat.mes-hall",
+          "publishedAt": "2026-10-09T13:01:32.000Z"
         }
       ],
       "relatedConceptSlugs": [
@@ -1062,10 +1062,10 @@
     {
       "slug": "cosmology",
       "label": "Cosmology",
-      "score": 4401,
+      "score": 4400,
       "delta": 0,
       "direction": "steady",
-      "mentions": 23,
+      "mentions": 22,
       "sources": [
         {
           "platform": "arxiv",
@@ -1194,10 +1194,10 @@
     {
       "slug": "exoplanets",
       "label": "Exoplanets",
-      "score": 3601,
-      "delta": -5,
+      "score": 3604,
+      "delta": 0,
       "direction": "steady",
-      "mentions": 19,
+      "mentions": 20,
       "sources": [
         {
           "platform": "arxiv",
@@ -1699,16 +1699,16 @@
     {
       "slug": "starlink",
       "label": "Starlink & Satellite Internet",
-      "score": 1472,
-      "delta": 1,
+      "score": 1510,
+      "delta": 3,
       "direction": "steady",
-      "mentions": 26,
+      "mentions": 28,
       "sources": [
         {
           "platform": "hackernews",
           "title": "Fire at Starlink site in Bulgaria after suspected sabotage in Poland",
           "url": "https://dpa-international.com/politics/urn:newsml:dpa.com:20090101:261014-930-839530/",
-          "score": 387,
+          "score": 388,
           "author": "ilamont",
           "commentCount": 297,
           "publishedAt": "2026-10-14T18:37:21.000Z"
@@ -1744,7 +1744,7 @@
           "platform": "hackernews",
           "title": "Starlink limit hits Ukraine's drones",
           "url": "https://defence24.com/geopolitics/starlink-limit-hits-ukraines-drones-the-battlefield-depends-on-spacex",
-          "score": 178,
+          "score": 179,
           "author": "uxhacker",
           "commentCount": 182,
           "publishedAt": "2026-10-14T09:10:37.000Z"
@@ -1778,6 +1778,15 @@
         },
         {
           "platform": "hackernews",
+          "title": "US threatens Europe over Starlink restrictions",
+          "url": "https://www.ft.com/content/d1e28d93-8574-4a46-946a-b261c401d6fa",
+          "score": 27,
+          "author": "mraniki",
+          "commentCount": 19,
+          "publishedAt": "2026-10-18T19:24:30.000Z"
+        },
+        {
+          "platform": "hackernews",
           "title": "The operation of Starlink terminals in Ukraine was restricted above 160 kph",
           "url": "https://www.reddit.com/r/UkraineWarVideoReport/comments/1x5kefw/last_night_the_operation_of_starlink_terminals_in/",
           "score": 20,
@@ -1802,15 +1811,6 @@
           "author": "alpha_squared",
           "commentCount": 3,
           "publishedAt": "2026-10-14T15:21:24.000Z"
-        },
-        {
-          "platform": "hackernews",
-          "title": "US senators call for investigation into Ukraine's Starlink restrictions",
-          "url": "https://www.bbc.com/news/articles/cq398zl8jmvdo",
-          "score": 14,
-          "author": "toomuchtodo",
-          "commentCount": 0,
-          "publishedAt": "2026-10-16T14:30:32.000Z"
         }
       ],
       "relatedConceptSlugs": [
@@ -1928,10 +1928,10 @@
     {
       "slug": "space-debris",
       "label": "Space Debris",
-      "score": 1202,
-      "delta": 0,
-      "direction": "steady",
-      "mentions": 7,
+      "score": 1002,
+      "delta": -17,
+      "direction": "down",
+      "mentions": 6,
       "sources": [
         {
           "platform": "arxiv",
@@ -1979,15 +1979,6 @@
           "publishedAt": "2026-09-22T15:35:08.000Z"
         },
         {
-          "platform": "arxiv",
-          "title": "A Probabilistic Modeling Framework for Transient Debris Outcomes in Low Lunar Orbits",
-          "url": "https://arxiv.org/abs/2609.21955",
-          "score": 200,
-          "authors": "Arjun Chhabra, Ryne Beeson",
-          "arxivCategory": "stat.AP",
-          "publishedAt": "2026-09-18T16:14:23.000Z"
-        },
-        {
           "platform": "hackernews",
           "title": "The Most Remote Place on Earth Has Space Junk and a Sea Monster",
           "url": "https://www.atlasobscura.com/articles/strange-maps-point-nemo",
@@ -2015,10 +2006,10 @@
     {
       "slug": "asteroid-mining",
       "label": "Asteroid Mining",
-      "score": 1000,
-      "delta": 0,
-      "direction": "steady",
-      "mentions": 5,
+      "score": 800,
+      "delta": -20,
+      "direction": "down",
+      "mentions": 4,
       "sources": [
         {
           "platform": "arxiv",
@@ -2055,15 +2046,6 @@
           "authors": "Edoardo Gramigna, Ozgur Karatekin, Birgit Ritter et al.",
           "arxivCategory": "astro-ph.EP",
           "publishedAt": "2026-10-10T10:28:50.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Asteroids Impacting the Solar System Planets and the Moon. I. Collision Rates from N-body Simulations",
-          "url": "https://arxiv.org/abs/2609.22042",
-          "score": 200,
-          "authors": "Qifeng Cheng, Daniel Scolnic",
-          "arxivCategory": "astro-ph.EP",
-          "publishedAt": "2026-09-18T17:34:07.000Z"
         }
       ],
       "relatedConceptSlugs": [
@@ -2146,8 +2128,8 @@
     {
       "slug": "starship",
       "label": "Starship & SpaceX",
-      "score": 653,
-      "delta": -13,
+      "score": 612,
+      "delta": -5,
       "direction": "steady",
       "mentions": 16,
       "sources": [
@@ -2188,15 +2170,6 @@
         },
         {
           "platform": "hackernews",
-          "title": "Why hasn't SpaceX, worth $2T, paid this Bay Area chef the $70K it owes him?",
-          "url": "https://www.sfchronicle.com/food/restaurants/article/spacex-stateline-napa-late-payment-22463945.php",
-          "score": 44,
-          "author": "hn_acker",
-          "commentCount": 34,
-          "publishedAt": "2026-10-11T16:59:24.000Z"
-        },
-        {
-          "platform": "hackernews",
           "title": "SpaceX activated 100mph speed-limit restriction on Starlink terminals in Ukraine",
           "url": "https://bsky.app/profile/adamjschwarz.bsky.social/post/3mxsy6s4nt22m",
           "score": 35,
@@ -2226,7 +2199,7 @@
           "platform": "hackernews",
           "title": "SpaceX Crew-12 commander wishes we could all see our fragile Earth from space",
           "url": "https://www.space.com/space-exploration/international-space-station/it-really-does-change-you-spacex-crew-12-commander-wishes-we-could-all-see-our-fragile-earth-from-space",
-          "score": 13,
+          "score": 14,
           "author": "saikatsg",
           "commentCount": 0,
           "publishedAt": "2026-10-17T16:24:23.000Z"
@@ -2257,6 +2230,15 @@
           "author": "JumpCrisscross",
           "commentCount": 1,
           "publishedAt": "2026-10-14T12:34:19.000Z"
+        },
+        {
+          "platform": "hackernews",
+          "title": "EU plans to fast-track antitrust approval of SpaceX rival",
+          "url": "https://finance.yahoo.com/economy/policy/articles/eu-plans-fast-track-antitrust-183153257.html",
+          "score": 9,
+          "author": "malshe",
+          "commentCount": 4,
+          "publishedAt": "2026-10-17T17:04:47.000Z"
         }
       ],
       "relatedConceptSlugs": [
