@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-19T11:37:17.172Z",
+  "generatedAt": "2026-10-19T22:08:21.251Z",
   "topics": [
     {
       "slug": "gravitational-waves",
@@ -136,10 +136,10 @@
     {
       "slug": "black-holes",
       "label": "Black Holes",
-      "score": 8201,
-      "delta": 0,
+      "score": 8001,
+      "delta": -2,
       "direction": "steady",
-      "mentions": 42,
+      "mentions": 41,
       "sources": [
         {
           "platform": "arxiv",
@@ -269,10 +269,10 @@
     {
       "slug": "quantum-computing",
       "label": "Quantum Computing",
-      "score": 7660,
+      "score": 7662,
       "delta": 6,
       "direction": "steady",
-      "mentions": 42,
+      "mentions": 43,
       "sources": [
         {
           "platform": "arxiv",
@@ -401,10 +401,10 @@
     {
       "slug": "space-telescopes",
       "label": "Space Telescopes",
-      "score": 7602,
-      "delta": -3,
+      "score": 7402,
+      "delta": -5,
       "direction": "steady",
-      "mentions": 39,
+      "mentions": 38,
       "sources": [
         {
           "platform": "arxiv",
@@ -667,11 +667,20 @@
     {
       "slug": "particle-physics",
       "label": "Particle Physics",
-      "score": 6205,
-      "delta": 0,
+      "score": 6488,
+      "delta": 5,
       "direction": "steady",
-      "mentions": 32,
+      "mentions": 33,
       "sources": [
+        {
+          "platform": "hackernews",
+          "title": "CERN and Mistral sign a statement of intent to establish a strategic partnership",
+          "url": "https://home.cern/cern-and-mistral-join-forces-to-accelerate-ai-for-science/",
+          "score": 283,
+          "author": "kensai",
+          "commentCount": 54,
+          "publishedAt": "2026-10-19T15:28:24.000Z"
+        },
         {
           "platform": "arxiv",
           "title": "Unitarity limits on HH production from VBF mediated channels",
@@ -770,15 +779,6 @@
           "authors": "Shiksha Bhardwaj, Ankhi Roy",
           "arxivCategory": "quant-ph",
           "publishedAt": "2026-10-10T03:45:01.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Estimate of $Γ(H \\to gg)$ at $O(α_s^7)$ from Padé approximants with constraints from large-$n_f$",
-          "url": "https://arxiv.org/abs/2610.09874",
-          "score": 200,
-          "authors": "Diogo Boito, Cristiane Y. London, Guilherme A. Nogueira",
-          "arxivCategory": "hep-ph",
-          "publishedAt": "2026-10-07T11:33:26.000Z"
         }
       ],
       "relatedConceptSlugs": [],
@@ -931,7 +931,7 @@
       "slug": "condensed-matter",
       "label": "Condensed Matter",
       "score": 5003,
-      "delta": 0,
+      "delta": 4,
       "direction": "steady",
       "mentions": 26,
       "sources": [
@@ -1195,7 +1195,7 @@
       "slug": "exoplanets",
       "label": "Exoplanets",
       "score": 3404,
-      "delta": -5,
+      "delta": -6,
       "direction": "steady",
       "mentions": 19,
       "sources": [
@@ -1583,10 +1583,10 @@
     {
       "slug": "fusion-propulsion",
       "label": "Fusion Propulsion",
-      "score": 1802,
+      "score": 1800,
       "delta": 0,
       "direction": "steady",
-      "mentions": 10,
+      "mentions": 9,
       "sources": [
         {
           "platform": "arxiv",
@@ -1668,15 +1668,6 @@
           "authors": "J. F. Parisi",
           "arxivCategory": "physics.plasm-ph",
           "publishedAt": "2026-10-08T01:42:48.000Z"
-        },
-        {
-          "platform": "hackernews",
-          "title": "Commercialization of laser fusion energy [pdf]",
-          "url": "https://xcimer.energy/wp-content/uploads/2026/04/XEC-20260224-Commercialization-of-LFE-Whtppr-SHARED-24-FEB-26.pdf",
-          "score": 2,
-          "author": "Eridanus2",
-          "commentCount": 0,
-          "publishedAt": "2026-10-12T16:48:48.000Z"
         }
       ],
       "relatedConceptSlugs": [
@@ -1699,10 +1690,10 @@
     {
       "slug": "starlink",
       "label": "Starlink & Satellite Internet",
-      "score": 1565,
-      "delta": 6,
+      "score": 1588,
+      "delta": 5,
       "direction": "steady",
-      "mentions": 29,
+      "mentions": 31,
       "sources": [
         {
           "platform": "hackernews",
@@ -1753,9 +1744,9 @@
           "platform": "hackernews",
           "title": "US threatens Europe over Starlink restrictions",
           "url": "https://www.ft.com/content/d1e28d93-8574-4a46-946a-b261c401d6fa",
-          "score": 75,
+          "score": 88,
           "author": "mraniki",
-          "commentCount": 112,
+          "commentCount": 134,
           "publishedAt": "2026-10-18T19:24:30.000Z"
         },
         {
@@ -1831,10 +1822,10 @@
     {
       "slug": "artemis",
       "label": "Artemis & Lunar Return",
-      "score": 1203,
+      "score": 1200,
       "delta": -14,
       "direction": "steady",
-      "mentions": 7,
+      "mentions": 6,
       "sources": [
         {
           "platform": "arxiv",
@@ -1889,15 +1880,6 @@
           "authors": "Walter J. Manuel, Yuji Takubo, Simone D'Amico",
           "arxivCategory": "math.OC",
           "publishedAt": "2026-09-21T22:33:15.000Z"
-        },
-        {
-          "platform": "hackernews",
-          "title": "NASA Wants More Than 70 Moon Landings in the Next Decade–But How?",
-          "url": "https://spectrum.ieee.org/nasa-moon-base-landings",
-          "score": 3,
-          "author": "purplekohav",
-          "commentCount": 0,
-          "publishedAt": "2026-10-12T18:05:57.000Z"
         }
       ],
       "relatedConceptSlugs": [
@@ -1920,8 +1902,8 @@
       "slug": "space-debris",
       "label": "Space Debris",
       "score": 1002,
-      "delta": -17,
-      "direction": "down",
+      "delta": 0,
+      "direction": "steady",
       "mentions": 6,
       "sources": [
         {
@@ -1998,8 +1980,8 @@
       "slug": "asteroid-mining",
       "label": "Asteroid Mining",
       "score": 1000,
-      "delta": 0,
-      "direction": "steady",
+      "delta": 25,
+      "direction": "up",
       "mentions": 5,
       "sources": [
         {
@@ -2128,10 +2110,10 @@
     {
       "slug": "starship",
       "label": "Starship & SpaceX",
-      "score": 610,
-      "delta": -7,
+      "score": 644,
+      "delta": 5,
       "direction": "steady",
-      "mentions": 15,
+      "mentions": 22,
       "sources": [
         {
           "platform": "arxiv",
@@ -2215,6 +2197,15 @@
         },
         {
           "platform": "hackernews",
+          "title": "I will give one of my SpaceX shares to every kid in America",
+          "url": "https://twitter.com/elonmusk/status/2112089556615123114",
+          "score": 11,
+          "author": "bilsbie",
+          "commentCount": 18,
+          "publishedAt": "2026-10-19T11:31:11.000Z"
+        },
+        {
+          "platform": "hackernews",
           "title": "Ukraine says SpaceX limits Starlink operations, disrupting military",
           "url": "https://www.reuters.com/world/europe/spacex-limits-starlink-operations-ukraine-disrupting-military-missions-2026-10-14/",
           "score": 10,
@@ -2230,15 +2221,6 @@
           "author": "JumpCrisscross",
           "commentCount": 1,
           "publishedAt": "2026-10-14T12:34:19.000Z"
-        },
-        {
-          "platform": "hackernews",
-          "title": "EU plans to fast-track antitrust approval of SpaceX rival",
-          "url": "https://finance.yahoo.com/economy/policy/articles/eu-plans-fast-track-antitrust-183153257.html",
-          "score": 9,
-          "author": "malshe",
-          "commentCount": 4,
-          "publishedAt": "2026-10-17T17:04:47.000Z"
         }
       ],
       "relatedConceptSlugs": [
@@ -2527,6 +2509,41 @@
       }
     },
     {
+      "slug": "interstellar-travel",
+      "label": "Interstellar Travel",
+      "score": 5,
+      "delta": 200,
+      "direction": "up",
+      "mentions": 1,
+      "sources": [
+        {
+          "platform": "hackernews",
+          "title": "Dr Garry Hunt talks to us about the astonishing Voyager probes",
+          "url": "https://www.theregister.com/offbeat/2026/10/19/dr-garry-hunt-talks-to-us-about-the-astonishing-voyager-probes/5303632",
+          "score": 5,
+          "author": "sohkamyung",
+          "commentCount": 0,
+          "publishedAt": "2026-10-19T13:52:37.000Z"
+        }
+      ],
+      "relatedConceptSlugs": [
+        "procsima",
+        "dynamic-orbital-slingshot",
+        "solar-system-escape-architecture"
+      ],
+      "resonance": 53,
+      "quadrant": "sleeping-giant",
+      "resonanceSignals": {
+        "conceptDepth": 0.6131471927654584,
+        "editorial": 1,
+        "connections": 0,
+        "convergence": 0.125,
+        "deepTopic": 0.8,
+        "pantheon": 0.92,
+        "graveyard": 0
+      }
+    },
+    {
       "slug": "solar-sails",
       "label": "Solar Sails",
       "score": 0,
@@ -2545,31 +2562,6 @@
         "editorial": 1,
         "connections": 0.3333333333333333,
         "convergence": 0.25,
-        "deepTopic": 0.8,
-        "pantheon": 0.92,
-        "graveyard": 0
-      }
-    },
-    {
-      "slug": "interstellar-travel",
-      "label": "Interstellar Travel",
-      "score": 0,
-      "delta": 0,
-      "direction": "steady",
-      "mentions": 0,
-      "sources": [],
-      "relatedConceptSlugs": [
-        "procsima",
-        "dynamic-orbital-slingshot",
-        "solar-system-escape-architecture"
-      ],
-      "resonance": 53,
-      "quadrant": "sleeping-giant",
-      "resonanceSignals": {
-        "conceptDepth": 0.6131471927654584,
-        "editorial": 1,
-        "connections": 0,
-        "convergence": 0.125,
         "deepTopic": 0.8,
         "pantheon": 0.92,
         "graveyard": 0
