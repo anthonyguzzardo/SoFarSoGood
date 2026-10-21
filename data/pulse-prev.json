@@ -1,253 +1,121 @@
 {
-  "generatedAt": "2026-10-20T21:22:58.109Z",
+  "generatedAt": "2026-10-21T10:53:43.911Z",
   "topics": [
-    {
-      "slug": "gravitational-waves",
-      "label": "Gravitational Waves",
-      "score": 9000,
-      "delta": 5,
-      "direction": "steady",
-      "mentions": 45,
-      "sources": [
-        {
-          "platform": "arxiv",
-          "title": "Cosmological implications of two mock TianQin standard siren catalogs generated under different background cosmological models",
-          "url": "https://arxiv.org/abs/2610.26727",
-          "score": 200,
-          "authors": "Jun-Xian Li, Shuang Wang, Liang-Gui Zhu",
-          "arxivCategory": "astro-ph.CO",
-          "publishedAt": "2026-10-19T16:56:30.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Impact of cosmic evolution on the gravitational wave spectrum from cosmic strings",
-          "url": "https://arxiv.org/abs/2610.26652",
-          "score": 200,
-          "authors": "Xi-He Hu, Danny Marfatia, Ye-Ling Zhou",
-          "arxivCategory": "hep-ph",
-          "publishedAt": "2026-10-19T16:10:58.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "GPU-accelerated Bayesian inference for diffracted gravitational wave signals",
-          "url": "https://arxiv.org/abs/2610.26619",
-          "score": 200,
-          "authors": "Zihao Lin, Jef Heynen, Mick Wright et al.",
-          "arxivCategory": "gr-qc",
-          "publishedAt": "2026-10-19T15:54:13.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Outer trapped surface formation from gravitational waves collision",
-          "url": "https://arxiv.org/abs/2610.26320",
-          "score": 200,
-          "authors": "Junbin Li",
-          "arxivCategory": "gr-qc",
-          "publishedAt": "2026-10-19T12:59:21.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Periodic orbits and gravitational-wave emission from extreme-mass-ratio inspirals around rotating charged black holes in nonlinear electrodynamics",
-          "url": "https://arxiv.org/abs/2610.26113",
-          "score": 200,
-          "authors": "Xi Luo, Meirong Tang, Zhaoyi Xu",
-          "arxivCategory": "gr-qc",
-          "publishedAt": "2026-10-19T10:09:09.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Searching for lensed gravitational waves with unlensed templates",
-          "url": "https://arxiv.org/abs/2610.26080",
-          "score": 200,
-          "authors": "Digvijay Wadekar, Barak Zackay, Mark Ho-Yeuk Cheung et al.",
-          "arxivCategory": "gr-qc",
-          "publishedAt": "2026-10-19T09:39:02.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Constraints on the Cosmic Expansion Rate Using the DECam Local Volume Exploration Survey and the Fifth Gravitational Wave Transient Catalog",
-          "url": "https://arxiv.org/abs/2610.25909",
-          "score": 200,
-          "authors": "Sean Patrick MacBride, Isaac McMahon, Danny Laghi et al.",
-          "arxivCategory": "astro-ph.CO",
-          "publishedAt": "2026-10-19T07:12:32.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Hostbusters: constraining $H_0$ and binary formation channels through gravitational-wave host galaxy associations",
-          "url": "https://arxiv.org/abs/2610.25866",
-          "score": 200,
-          "authors": "Madeline L. Cross-Parkin, Ignacio Magaña Hernandez, Antonella Palmese et al.",
-          "arxivCategory": "astro-ph.CO",
-          "publishedAt": "2026-10-19T06:20:44.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Characterization of integrating-sphere systematic effects for photon calibration of the KAGRA gravitational wave detector",
-          "url": "https://arxiv.org/abs/2610.25581",
-          "score": 200,
-          "authors": "Shingo Hido, Misato Onishi, Shinji Miyoki et al.",
-          "arxivCategory": "astro-ph.IM",
-          "publishedAt": "2026-10-18T23:08:15.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Statistical Analysis of Neutron Star Cooling: Implications for the Nuclear Equation of State and Nucleon Pairing",
-          "url": "https://arxiv.org/abs/2610.25427",
-          "score": 200,
-          "authors": "Afonso Ávila, Ricardo Z. Ferreira, Violetta Sagun",
-          "arxivCategory": "astro-ph.HE",
-          "publishedAt": "2026-10-18T17:39:42.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Probing parity-breaking black-hole geometry with extreme-mass-ratio inspirals",
-          "url": "https://arxiv.org/abs/2610.25291",
-          "score": 200,
-          "authors": "Zhen-Bo Wu, Qing Ou, Peng-Cheng Li",
-          "arxivCategory": "gr-qc",
-          "publishedAt": "2026-10-18T14:17:40.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Linearised gravitational radiation in de Sitter spacetime at all multipole orders",
-          "url": "https://arxiv.org/abs/2610.24303",
-          "score": 200,
-          "authors": "Harsh, Omkar Shetye, Amitabh Virmani",
-          "arxivCategory": "gr-qc",
-          "publishedAt": "2026-10-16T22:56:24.000Z"
-        }
-      ],
-      "relatedConceptSlugs": [
-        "atom-interferometry-for-detection-of-gravitational-waves"
-      ],
-      "resonance": 41,
-      "quadrant": "hype-cycle",
-      "resonanceSignals": {
-        "conceptDepth": 0.3868528072345416,
-        "editorial": 0.7,
-        "connections": 0,
-        "convergence": 0.05,
-        "deepTopic": 1,
-        "pantheon": 0.92,
-        "graveyard": 0
-      }
-    },
     {
       "slug": "black-holes",
       "label": "Black Holes",
-      "score": 8800,
-      "delta": 10,
+      "score": 8600,
+      "delta": -2,
       "direction": "steady",
-      "mentions": 44,
+      "mentions": 43,
       "sources": [
         {
           "platform": "arxiv",
-          "title": "X-ray Comptonization in an Accreting Kerr Black Hole System with a Tilted Disc and Thermal Corona; A General-Relativistic Monte Carlo Simulation: I. Model, Radiative Transfer and Spectral-Timing Properties",
-          "url": "https://arxiv.org/abs/2610.26769",
+          "title": "Dynamical stability of Magnetic Supramassive Neutron Stars",
+          "url": "https://arxiv.org/abs/2610.28609",
           "score": 200,
-          "authors": "Mainak Chatterjee, Dipankar Bhattacharya",
+          "authors": "Jorge L. Rodríguez-Monteverde, Sebastiano Bernuzzi, William Cook et al.",
           "arxivCategory": "astro-ph.HE",
-          "publishedAt": "2026-10-19T17:27:35.000Z"
+          "publishedAt": "2026-10-20T17:50:33.000Z"
         },
         {
           "platform": "arxiv",
-          "title": "Ion Heating in Pair-loaded Relativistic Turbulence",
-          "url": "https://arxiv.org/abs/2610.26731",
+          "title": "Monopole stability of time-dependent, spherically symmetric backgrounds in Horndeski theory",
+          "url": "https://arxiv.org/abs/2610.28592",
           "score": 200,
-          "authors": "Yusen Wang, Zhonghai Zhao, Xinyu Zhu et al.",
-          "arxivCategory": "physics.plasm-ph",
-          "publishedAt": "2026-10-19T16:58:53.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Cosmological implications of two mock TianQin standard siren catalogs generated under different background cosmological models",
-          "url": "https://arxiv.org/abs/2610.26727",
-          "score": 200,
-          "authors": "Jun-Xian Li, Shuang Wang, Liang-Gui Zhu",
-          "arxivCategory": "astro-ph.CO",
-          "publishedAt": "2026-10-19T16:56:30.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Gravitational fingerprints of a black hole solution in Palatini Kalb-Ramond gravity",
-          "url": "https://arxiv.org/abs/2610.26692",
-          "score": 200,
-          "authors": "Carlos F. S. Pereira, Araújo Filho, Marcos V. de S. Silva et al.",
+          "authors": "K. Kiselev, V. Volkova",
           "arxivCategory": "gr-qc",
-          "publishedAt": "2026-10-19T16:34:53.000Z"
+          "publishedAt": "2026-10-20T17:43:15.000Z"
         },
         {
           "platform": "arxiv",
-          "title": "A new class of rotating black hole solutions endowed with a scalar hair",
-          "url": "https://arxiv.org/abs/2610.26678",
+          "title": "Finite-range hair from a nonlocal matter sector: charged Yukawa black holes",
+          "url": "https://arxiv.org/abs/2610.28451",
           "score": 200,
-          "authors": "Hugo Candan, Philippe Grandclement",
+          "authors": "Francisco Tello-Ortiz, Hishan Farfán-Bachiloglu, Alejandro Rueda et al.",
           "arxivCategory": "gr-qc",
-          "publishedAt": "2026-10-19T16:26:28.000Z"
+          "publishedAt": "2026-10-20T16:10:55.000Z"
         },
         {
           "platform": "arxiv",
-          "title": "Primordial black holes in braneworld gravity: A gateway to hidden dimensions and the dark Universe",
-          "url": "https://arxiv.org/abs/2610.26482",
+          "title": "Geometrically Induced Semiclassical Limit for Quasinormal Modes and Greybody Factors in Higher-Dimensional Near-Ultracold spacetimes",
+          "url": "https://arxiv.org/abs/2610.28367",
           "score": 200,
-          "authors": "Itzi Aldecoa-Tamayo",
+          "authors": "Bogeun Gwak",
           "arxivCategory": "gr-qc",
-          "publishedAt": "2026-10-19T14:27:12.000Z"
+          "publishedAt": "2026-10-20T15:27:03.000Z"
         },
         {
           "platform": "arxiv",
-          "title": "Analog regular black holes and black hole mimickers in a Bose-Einstein condensate: from the core to the light rings",
-          "url": "https://arxiv.org/abs/2610.26257",
+          "title": "Topological ModMax--AdS Black Holes: Extremality, Charge Normalization, and Limits of WGC Diagnostics",
+          "url": "https://arxiv.org/abs/2610.28359",
           "score": 200,
-          "authors": "Valentin Pomakov, Stefano Liberati",
+          "authors": "Saeed Noori Gashti, Behnam Pourhassan, Saheb Soroushfar",
           "arxivCategory": "gr-qc",
-          "publishedAt": "2026-10-19T12:14:12.000Z"
+          "publishedAt": "2026-10-20T15:21:52.000Z"
         },
         {
           "platform": "arxiv",
-          "title": "Geodesics of the five-dimensional Kerr-(A)dS black hole in closed form",
-          "url": "https://arxiv.org/abs/2610.26242",
+          "title": "Black Holes are about Quantum Information",
+          "url": "https://arxiv.org/abs/2610.28185",
           "score": 200,
-          "authors": "Özgür Sarıoğlu, Enes Yılmaz",
+          "authors": "Aude Corbeel, Sebastian De Haro",
+          "arxivCategory": "physics.hist-ph",
+          "publishedAt": "2026-10-20T13:21:24.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Thin-Shell Wormholes in Born--Infeld-Type Magnetic Spacetimes",
+          "url": "https://arxiv.org/abs/2610.28112",
+          "score": 200,
+          "authors": "Jonathan A. Rebouças, Edson Otoniel, Muhammad Israr Aslam et al.",
           "arxivCategory": "gr-qc",
-          "publishedAt": "2026-10-19T12:02:20.000Z"
+          "publishedAt": "2026-10-20T12:22:51.000Z"
         },
         {
           "platform": "arxiv",
-          "title": "Local scale symmetry and black holes",
-          "url": "https://arxiv.org/abs/2610.26208",
+          "title": "Geometric Quantum Discord in Schwarzschild de Sitter Spacetime",
+          "url": "https://arxiv.org/abs/2610.27887",
           "score": 200,
-          "authors": "Malik Almatwi",
+          "authors": "Xukun Wang, Tinggui Zhang, Xiaofen Huang",
           "arxivCategory": "gr-qc",
-          "publishedAt": "2026-10-19T11:35:12.000Z"
+          "publishedAt": "2026-10-20T09:11:18.000Z"
         },
         {
           "platform": "arxiv",
-          "title": "Disc breaking and parametric instability in warped accretion discs driven by differential precession",
-          "url": "https://arxiv.org/abs/2610.26184",
+          "title": "Thermodynamic Supercritical Scaling Law for the charged Gauss-Bonnet AdS Black Hole",
+          "url": "https://arxiv.org/abs/2610.27824",
           "score": 200,
-          "authors": "Loren E. Held, Gordon I. Ogilvie",
-          "arxivCategory": "astro-ph.SR",
-          "publishedAt": "2026-10-19T11:15:29.000Z"
+          "authors": "Jia-Yi Xia, Zhen-Ming Xu",
+          "arxivCategory": "hep-th",
+          "publishedAt": "2026-10-20T08:15:06.000Z"
         },
         {
           "platform": "arxiv",
-          "title": "Periodic orbits and gravitational-wave emission from extreme-mass-ratio inspirals around rotating charged black holes in nonlinear electrodynamics",
-          "url": "https://arxiv.org/abs/2610.26113",
+          "title": "Probing the Optical/UV Continuum Variability of Active Galactic Nuclei with the Damped Random Walk Model",
+          "url": "https://arxiv.org/abs/2610.27806",
           "score": 200,
-          "authors": "Xi Luo, Meirong Tang, Zhaoyi Xu",
+          "authors": "Xiang-Wei Ning, Wen-Jie Hu, Zi-Han Yuan et al.",
+          "arxivCategory": "astro-ph.GA",
+          "publishedAt": "2026-10-20T08:03:11.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "An improved self-gravity treatment in general relativistic smoothed particle hydrodynamics",
+          "url": "https://arxiv.org/abs/2610.27775",
+          "score": 200,
+          "authors": "Pritam Banerjee, Kowsona Chakraborty, Niles Mondal et al.",
+          "arxivCategory": "astro-ph.HE",
+          "publishedAt": "2026-10-20T07:40:10.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Untangling Extreme Mass Ratio Inspirals and Massive Black Hole Binaries in LISA Data",
+          "url": "https://arxiv.org/abs/2610.27642",
+          "score": 200,
+          "authors": "Rishav Agrawal, Clémence Allietta, Ollie Burke et al.",
           "arxivCategory": "gr-qc",
-          "publishedAt": "2026-10-19T10:09:09.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Black hole free energy landscapes from constrained instantons",
-          "url": "https://arxiv.org/abs/2610.26094",
-          "score": 200,
-          "authors": "Shan-Ping Wu, Jia-Zhou Liu, Yu-Xiao Liu et al.",
-          "arxivCategory": "gr-qc",
-          "publishedAt": "2026-10-19T09:56:07.000Z"
+          "publishedAt": "2026-10-20T05:03:26.000Z"
         }
       ],
       "relatedConceptSlugs": [
@@ -267,145 +135,144 @@
       }
     },
     {
-      "slug": "space-telescopes",
-      "label": "Space Telescopes",
-      "score": 8000,
-      "delta": 8,
+      "slug": "gravitational-waves",
+      "label": "Gravitational Waves",
+      "score": 8600,
+      "delta": -4,
       "direction": "steady",
-      "mentions": 40,
+      "mentions": 43,
       "sources": [
         {
           "platform": "arxiv",
-          "title": "Low-mass and High-sSFR H$α$ Emitters at $z \\sim 2$ in the ZFOURGE-COSMOS Field",
-          "url": "https://arxiv.org/abs/2610.26788",
+          "title": "The \"Rubin 2036: Opportunities for Discovery\" Workshop: A Community Roadmap for the Future of the Vera C. Rubin Observatory After the LSST",
+          "url": "https://arxiv.org/abs/2610.28482",
           "score": 200,
-          "authors": "Jeung Yun, Kentaro Motohara, Kosuke Kushibiki et al.",
-          "arxivCategory": "astro-ph.GA",
-          "publishedAt": "2026-10-19T17:38:13.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Connecting galaxy structure, quenching, and halo environments during cosmic noon",
-          "url": "https://arxiv.org/abs/2610.25446",
-          "score": 200,
-          "authors": "Ziwen Zhang, Cheng Jia, Huiyuan Wang et al.",
-          "arxivCategory": "astro-ph.GA",
-          "publishedAt": "2026-10-18T18:07:43.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Mid-infrared Imaging of SR 12 c with JWST/MIRI: Grain Growth in an Evolved Circumplanetary Disk",
-          "url": "https://arxiv.org/abs/2610.24776",
-          "score": 200,
-          "authors": "Ya-Lin Wu, Claire O. Finley, Brendan P. Bowler et al.",
-          "arxivCategory": "astro-ph.EP",
-          "publishedAt": "2026-10-17T16:40:13.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Granulation in Color: The Chromatic Stellar Flicker of LTT-9779 and WASP-121",
-          "url": "https://arxiv.org/abs/2610.24550",
-          "score": 200,
-          "authors": "William C. Waalkes, Nadiia Kostogryz, Valeriy Vasilyev et al.",
-          "arxivCategory": "astro-ph.SR",
-          "publishedAt": "2026-10-17T08:18:12.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Can Blue UV-Bright Galaxies Drive Reionization at Cosmic Dawn? An $M_{\\rm UV}=-19.6$ Galaxy with $f_{\\rm esc}\\approx0.85$ at $z=9.244$",
-          "url": "https://arxiv.org/abs/2610.24092",
-          "score": 200,
-          "authors": "Yunjing Wu, Sijia Cai, Yongda Zhu et al.",
-          "arxivCategory": "astro-ph.GA",
-          "publishedAt": "2026-10-16T18:21:42.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Beyond the Disc--Spheroid Dichotomy at $0.6 &lt; z &lt; 8.0$: Evidence for a Morphological Indeterminacy Regime from JWST",
-          "url": "https://arxiv.org/abs/2610.24078",
-          "score": 200,
-          "authors": "Igor Kolesnikov, Reinaldo Ramos de Carvalho, Jeong Hwan Lee et al.",
-          "arxivCategory": "astro-ph.GA",
-          "publishedAt": "2026-10-16T18:03:22.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Beyond the dust: JWST reveals extinction and ice content in local (U)LIRGs",
-          "url": "https://arxiv.org/abs/2610.24069",
-          "score": 200,
-          "authors": "G. Speranza, M. Pereira-Santaella, I. García-Bernete et al.",
-          "arxivCategory": "astro-ph.GA",
-          "publishedAt": "2026-10-16T18:00:02.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Consistently Reproducing Early Galaxy Observations and 21-cm Signal during the Epoch of Reionization",
-          "url": "https://arxiv.org/abs/2610.24064",
-          "score": 200,
-          "authors": "Michele Bianco, Sambit K. Giri, Arghyadeep Basu\\orcidlink et al.",
-          "arxivCategory": "astro-ph.CO",
-          "publishedAt": "2026-10-16T18:00:00.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Clustering of JWST LRDs. Implications for PBHs and other early-forming seeds",
-          "url": "https://arxiv.org/abs/2610.23806",
-          "score": 200,
-          "authors": "Gert Hütsi",
-          "arxivCategory": "astro-ph.CO",
-          "publishedAt": "2026-10-16T17:30:38.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Dust in Galaxies at $z=10-15$: Attenuation and Re-emission Predictions from the FirstLight Simulations",
-          "url": "https://arxiv.org/abs/2610.22766",
-          "score": 200,
-          "authors": "Yurina Nakazato, Akio K. Inoue, Rachel S. Somerville et al.",
-          "arxivCategory": "astro-ph.GA",
-          "publishedAt": "2026-10-16T00:14:04.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Identifying deformed exoplanets with JWST and Ariel: A target selection metric for phase curve observations",
-          "url": "https://arxiv.org/abs/2610.22338",
-          "score": 200,
-          "authors": "Vanesa Ramirez, Yamila Miguel, Billy Edwards et al.",
-          "arxivCategory": "astro-ph.EP",
-          "publishedAt": "2026-10-15T17:54:33.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Probing cold gas and dust in quiescent galaxies across cosmic time",
-          "url": "https://arxiv.org/abs/2610.21513",
-          "score": 200,
-          "authors": "Anita Zanella, Sirio Belli, Belen Alcalde Pampliega et al.",
+          "authors": "Andrés Alejandro Plazas Malagón, Steve Allen, Shreya Anand et al.",
           "arxivCategory": "astro-ph.IM",
-          "publishedAt": "2026-10-15T08:49:08.000Z"
+          "publishedAt": "2026-10-20T16:30:19.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Two-Component Dark Matter and Strongly First-Order Electroweak Phase Transition via a Two-Step Mechanism in the Inert Doublet plus Real Singlet Model",
+          "url": "https://arxiv.org/abs/2610.28014",
+          "score": 200,
+          "authors": "Deeksha Dattaram Naik, Arnab Chaudhuri",
+          "arxivCategory": "hep-ph",
+          "publishedAt": "2026-10-20T11:06:00.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Untangling Extreme Mass Ratio Inspirals and Massive Black Hole Binaries in LISA Data",
+          "url": "https://arxiv.org/abs/2610.27642",
+          "score": 200,
+          "authors": "Rishav Agrawal, Clémence Allietta, Ollie Burke et al.",
+          "arxivCategory": "gr-qc",
+          "publishedAt": "2026-10-20T05:03:26.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "The presence and order of QCD phase transitions from gravitational-wave observations of neutron star mergers",
+          "url": "https://arxiv.org/abs/2610.27287",
+          "score": 200,
+          "authors": "Paul D. Lasky, Alexander Clevinger, Andre G. da Silva et al.",
+          "arxivCategory": "astro-ph.HE",
+          "publishedAt": "2026-10-19T20:59:35.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "High-cadence GW astrometry in the $μ$Hz gap",
+          "url": "https://arxiv.org/abs/2610.27221",
+          "score": 200,
+          "authors": "Giorgio Mentasti, Carlo Contaldi",
+          "arxivCategory": "gr-qc",
+          "publishedAt": "2026-10-19T19:51:32.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Evolution of Massive Main-Sequence Stars in Binary Population Synthesis. II. Consequences for Black Hole High-Mass X-ray Binaries and Binary Black Holes",
+          "url": "https://arxiv.org/abs/2610.27186",
+          "score": 200,
+          "authors": "Adam Brček, Ryosuke Hirai, Ilya Mandel et al.",
+          "arxivCategory": "astro-ph.SR",
+          "publishedAt": "2026-10-19T19:21:25.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Curvature Reconstruction and Tensor Polarizations in Isospectrality-Breaking Black-Hole Perturbations",
+          "url": "https://arxiv.org/abs/2610.27116",
+          "score": 200,
+          "authors": "Pratik Wagle, Dongjun Li, Yanbei Chen et al.",
+          "arxivCategory": "gr-qc",
+          "publishedAt": "2026-10-19T18:14:20.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Localizing binary neutron stars with the Einstein Telescope: a full Bayesian comparison of the triangular and 2L configurations",
+          "url": "https://arxiv.org/abs/2610.27081",
+          "score": 200,
+          "authors": "Filippo Santoliquido, Jacopo Tissino, Marica Branchesi et al.",
+          "arxivCategory": "astro-ph.HE",
+          "publishedAt": "2026-10-19T18:00:04.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Cosmic birefringence from a stiff axion field and its cosmological implications",
+          "url": "https://arxiv.org/abs/2610.27082",
+          "score": 200,
+          "authors": "Andrea Minotti, Yunzhi Wu, Tiziano Zanzarella et al.",
+          "arxivCategory": "hep-ph",
+          "publishedAt": "2026-10-19T18:00:04.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Deglobalising the fit: how to search for physics beyond vacuum General Relativity in LISA catalogues",
+          "url": "https://arxiv.org/abs/2610.27069",
+          "score": 200,
+          "authors": "Francisco Duque, Jonathan Gair",
+          "arxivCategory": "gr-qc",
+          "publishedAt": "2026-10-19T18:00:02.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Cosmological implications of two mock TianQin standard siren catalogs generated under different background cosmological models",
+          "url": "https://arxiv.org/abs/2610.26727",
+          "score": 200,
+          "authors": "Jun-Xian Li, Shuang Wang, Liang-Gui Zhu",
+          "arxivCategory": "astro-ph.CO",
+          "publishedAt": "2026-10-19T16:56:30.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Impact of cosmic evolution on the gravitational wave spectrum from cosmic strings",
+          "url": "https://arxiv.org/abs/2610.26652",
+          "score": 200,
+          "authors": "Xi-He Hu, Danny Marfatia, Ye-Ling Zhou",
+          "arxivCategory": "hep-ph",
+          "publishedAt": "2026-10-19T16:10:58.000Z"
         }
       ],
       "relatedConceptSlugs": [
-        "fluidic-telescope",
-        "orbiting-rainbows"
+        "atom-interferometry-for-detection-of-gravitational-waves"
       ],
-      "resonance": 53,
-      "quadrant": "real-deal",
+      "resonance": 41,
+      "quadrant": "hype-cycle",
       "resonanceSignals": {
-        "conceptDepth": 0.5113915944693856,
-        "editorial": 1,
-        "connections": 0.3333333333333333,
-        "convergence": 0.15,
+        "conceptDepth": 0.3868528072345416,
+        "editorial": 0.7,
+        "connections": 0,
+        "convergence": 0.05,
         "deepTopic": 1,
-        "pantheon": 0.16,
+        "pantheon": 0.92,
         "graveyard": 0
       }
     },
     {
       "slug": "quantum-computing",
       "label": "Quantum Computing",
-      "score": 7467,
-      "delta": -3,
+      "score": 8042,
+      "delta": 8,
       "direction": "steady",
-      "mentions": 45,
+      "mentions": 49,
       "sources": [
         {
           "platform": "arxiv",
@@ -532,13 +399,155 @@
       }
     },
     {
-      "slug": "nanotechnology",
-      "label": "Nanotechnology & Metamaterials",
-      "score": 6800,
+      "slug": "space-telescopes",
+      "label": "Space Telescopes",
+      "score": 8000,
       "delta": 0,
       "direction": "steady",
-      "mentions": 34,
+      "mentions": 40,
       "sources": [
+        {
+          "platform": "arxiv",
+          "title": "The clumpy fraction of galaxies at $z=1-9$ with JADES: evidence for a mass-dependent transition in clump origin",
+          "url": "https://arxiv.org/abs/2610.28515",
+          "score": 200,
+          "authors": "Dávid Puskás, Sandro Tacchella, Phoebe Chapman et al.",
+          "arxivCategory": "astro-ph.GA",
+          "publishedAt": "2026-10-20T16:53:53.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Constraining Solid HNCO and Its Environment in Open JWST Data with Laboratory Spectra",
+          "url": "https://arxiv.org/abs/2610.27949",
+          "score": 200,
+          "authors": "Ruslan Nakibov, Varvara Karteyeva, Katerina Borshcheva et al.",
+          "arxivCategory": "astro-ph.GA",
+          "publishedAt": "2026-10-20T09:56:46.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "The Future of Gamma-Ray Bursts as Probes of the Epoch of Reionization in the Era of JWST and the Extremely Large Telescope",
+          "url": "https://arxiv.org/abs/2610.27282",
+          "score": 200,
+          "authors": "H. M. Fausey, A. J. van der Horst, N. R. Tanvir et al.",
+          "arxivCategory": "astro-ph.CO",
+          "publishedAt": "2026-10-19T20:57:27.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Leviathan: a very massive, extended sub-millimetre galaxy spectroscopically confirmed at $\\rm z = 4.05$",
+          "url": "https://arxiv.org/abs/2610.27101",
+          "score": 200,
+          "authors": "William M. Baker, Francesco Valentino, Jens Hjorth et al.",
+          "arxivCategory": "astro-ph.GA",
+          "publishedAt": "2026-10-19T18:01:06.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Low-mass and High-sSFR H$α$ Emitters at $z \\sim 2$ in the ZFOURGE-COSMOS Field",
+          "url": "https://arxiv.org/abs/2610.26788",
+          "score": 200,
+          "authors": "Jeung Yun, Kentaro Motohara, Kosuke Kushibiki et al.",
+          "arxivCategory": "astro-ph.GA",
+          "publishedAt": "2026-10-19T17:38:13.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Connecting galaxy structure, quenching, and halo environments during cosmic noon",
+          "url": "https://arxiv.org/abs/2610.25446",
+          "score": 200,
+          "authors": "Ziwen Zhang, Cheng Jia, Huiyuan Wang et al.",
+          "arxivCategory": "astro-ph.GA",
+          "publishedAt": "2026-10-18T18:07:43.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Inferring the shapes of low-mass galaxies at $z&gt;6$ from FIREbox$^{HR}$. Where are the disks?",
+          "url": "https://arxiv.org/abs/2610.26969",
+          "score": 200,
+          "authors": "Haojie Geng, Robert Feldmann, Jorge Moreno et al.",
+          "arxivCategory": "astro-ph.GA",
+          "publishedAt": "2026-10-18T17:07:01.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Mid-infrared Imaging of SR 12 c with JWST/MIRI: Grain Growth in an Evolved Circumplanetary Disk",
+          "url": "https://arxiv.org/abs/2610.24776",
+          "score": 200,
+          "authors": "Ya-Lin Wu, Claire O. Finley, Brendan P. Bowler et al.",
+          "arxivCategory": "astro-ph.EP",
+          "publishedAt": "2026-10-17T16:40:13.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Granulation in Color: The Chromatic Stellar Flicker of LTT-9779 and WASP-121",
+          "url": "https://arxiv.org/abs/2610.24550",
+          "score": 200,
+          "authors": "William C. Waalkes, Nadiia Kostogryz, Valeriy Vasilyev et al.",
+          "arxivCategory": "astro-ph.SR",
+          "publishedAt": "2026-10-17T08:18:12.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Can Blue UV-Bright Galaxies Drive Reionization at Cosmic Dawn? An $M_{\\rm UV}=-19.6$ Galaxy with $f_{\\rm esc}\\approx0.85$ at $z=9.244$",
+          "url": "https://arxiv.org/abs/2610.24092",
+          "score": 200,
+          "authors": "Yunjing Wu, Sijia Cai, Yongda Zhu et al.",
+          "arxivCategory": "astro-ph.GA",
+          "publishedAt": "2026-10-16T18:21:42.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Beyond the Disc--Spheroid Dichotomy at $0.6 &lt; z &lt; 8.0$: Evidence for a Morphological Indeterminacy Regime from JWST",
+          "url": "https://arxiv.org/abs/2610.24078",
+          "score": 200,
+          "authors": "Igor Kolesnikov, Reinaldo Ramos de Carvalho, Jeong Hwan Lee et al.",
+          "arxivCategory": "astro-ph.GA",
+          "publishedAt": "2026-10-16T18:03:22.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Beyond the dust: JWST reveals extinction and ice content in local (U)LIRGs",
+          "url": "https://arxiv.org/abs/2610.24069",
+          "score": 200,
+          "authors": "G. Speranza, M. Pereira-Santaella, I. García-Bernete et al.",
+          "arxivCategory": "astro-ph.GA",
+          "publishedAt": "2026-10-16T18:00:02.000Z"
+        }
+      ],
+      "relatedConceptSlugs": [
+        "fluidic-telescope",
+        "orbiting-rainbows"
+      ],
+      "resonance": 53,
+      "quadrant": "real-deal",
+      "resonanceSignals": {
+        "conceptDepth": 0.5113915944693856,
+        "editorial": 1,
+        "connections": 0.3333333333333333,
+        "convergence": 0.15,
+        "deepTopic": 1,
+        "pantheon": 0.16,
+        "graveyard": 0
+      }
+    },
+    {
+      "slug": "nanotechnology",
+      "label": "Nanotechnology & Metamaterials",
+      "score": 7400,
+      "delta": 6,
+      "direction": "steady",
+      "mentions": 37,
+      "sources": [
+        {
+          "platform": "arxiv",
+          "title": "DeHNSSo-v2: A compressible, curvilinear, and efficient extension of the Delft Harmonic Navier-Stokes Solver",
+          "url": "https://arxiv.org/abs/2610.27906",
+          "score": 200,
+          "authors": "Pietro Carlo Boldini, Yifu Chen, Marios Kotsonis",
+          "arxivCategory": "physics.comp-ph",
+          "publishedAt": "2026-10-20T09:21:28.000Z"
+        },
         {
           "platform": "arxiv",
           "title": "Tunable annealing of defects in self-aligning active crystals",
@@ -637,15 +646,6 @@
           "authors": "Xiaofei Xiao, Tingjun Zheng, Alex Vanstone et al.",
           "arxivCategory": "physics.optics",
           "publishedAt": "2026-10-07T12:06:44.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Design Principles for Programmable Topological Soft Networks",
-          "url": "https://arxiv.org/abs/2610.08298",
-          "score": 200,
-          "authors": "Andrea Bonato, Davide Marenduzzo, Enzo Orlandini",
-          "arxivCategory": "cond-mat.soft",
-          "publishedAt": "2026-10-06T13:01:42.000Z"
         }
       ],
       "relatedConceptSlugs": [
@@ -667,19 +667,28 @@
     {
       "slug": "particle-physics",
       "label": "Particle Physics",
-      "score": 6559,
-      "delta": 1,
+      "score": 6762,
+      "delta": 3,
       "direction": "steady",
-      "mentions": 33,
+      "mentions": 34,
       "sources": [
         {
           "platform": "hackernews",
           "title": "CERN and Mistral sign a statement of intent to establish a strategic partnership",
           "url": "https://home.cern/cern-and-mistral-join-forces-to-accelerate-ai-for-science/",
-          "score": 354,
+          "score": 357,
           "author": "kensai",
-          "commentCount": 60,
+          "commentCount": 61,
           "publishedAt": "2026-10-19T15:28:24.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Axion detection in the non-Markovian noise",
+          "url": "https://arxiv.org/abs/2610.27731",
+          "score": 200,
+          "authors": "Jing Dong, Shuang-Quan Ma, Rong-Hang Chen et al.",
+          "arxivCategory": "quant-ph",
+          "publishedAt": "2026-10-20T06:51:46.000Z"
         },
         {
           "platform": "arxiv",
@@ -770,15 +779,6 @@
           "authors": "Dario Buttazzo, Keshav Chaudhary, Roberto Franceschini et al.",
           "arxivCategory": "hep-ph",
           "publishedAt": "2026-10-13T16:52:11.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Lepton Flavour Universality in Semileptonic $\\bar B_{(s)} \\to D_{(s)}^{(\\ast)}$ Transitions",
-          "url": "https://arxiv.org/abs/2610.17289",
-          "score": 200,
-          "authors": "Yu-Chen Hu, Cong-Cong Ye, Craig D. Roberts et al.",
-          "arxivCategory": "hep-ph",
-          "publishedAt": "2026-10-12T18:45:08.000Z"
         }
       ],
       "relatedConceptSlugs": [],
@@ -797,118 +797,118 @@
     {
       "slug": "dark-matter",
       "label": "Dark Matter & Dark Energy",
-      "score": 6089,
-      "delta": 5,
+      "score": 5703,
+      "delta": -5,
       "direction": "steady",
-      "mentions": 33,
+      "mentions": 31,
       "sources": [
         {
           "platform": "arxiv",
-          "title": "Optical imaging in dual-phase xenon time projection chambers for neutrinoless double beta decay searches",
-          "url": "https://arxiv.org/abs/2610.26739",
+          "title": "Large fluctuations and cusp-core transformation in dwarf galaxies",
+          "url": "https://arxiv.org/abs/2610.28583",
           "score": 200,
-          "authors": "Adam D. Tidball, Jingke Xu, Brian G. Lenardo et al.",
-          "arxivCategory": "physics.ins-det",
-          "publishedAt": "2026-10-19T17:04:48.000Z"
+          "authors": "Mahmoud Hashim, Amr El-Zant, Francoise Combes",
+          "arxivCategory": "astro-ph.GA",
+          "publishedAt": "2026-10-20T17:39:33.000Z"
         },
         {
           "platform": "arxiv",
-          "title": "Dark Matter Interpretations of the Galactic Center Gamma-Ray Excess with 18 Years of Fermi-LAT Data and the FL16Y Source Catalog",
-          "url": "https://arxiv.org/abs/2610.26648",
+          "title": "Constraints on Dark Matter Annihilation from Starlight-Induced Inverse Compton Emission in Omega Centauri",
+          "url": "https://arxiv.org/abs/2610.28068",
           "score": 200,
-          "authors": "Sang Hwan Kim, Hae Barg Kang, Seodong Shin",
+          "authors": "Guan-Sen Wang, Xu Pan, Lei Feng",
+          "arxivCategory": "astro-ph.HE",
+          "publishedAt": "2026-10-20T11:51:00.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Two-Component Dark Matter and Strongly First-Order Electroweak Phase Transition via a Two-Step Mechanism in the Inert Doublet plus Real Singlet Model",
+          "url": "https://arxiv.org/abs/2610.28014",
+          "score": 200,
+          "authors": "Deeksha Dattaram Naik, Arnab Chaudhuri",
           "arxivCategory": "hep-ph",
-          "publishedAt": "2026-10-19T16:08:00.000Z"
+          "publishedAt": "2026-10-20T11:06:00.000Z"
         },
         {
           "platform": "arxiv",
-          "title": "Evolving only the observed spacetime region: perfectly parallel lightcone simulations with sCOLA",
-          "url": "https://arxiv.org/abs/2610.26639",
+          "title": "Kinematically isolating intracluster light in AS1063: a distinct stellar population tracing the dark matter core",
+          "url": "https://arxiv.org/abs/2610.28013",
           "score": 200,
-          "authors": "Mayeul Aubin, Florent Leclercq, Guilhem Lavaux",
-          "arxivCategory": "astro-ph.CO",
-          "publishedAt": "2026-10-19T16:02:10.000Z"
+          "authors": "Callum Bellhouse, Steven Bamford, Nina Hatch et al.",
+          "arxivCategory": "astro-ph.GA",
+          "publishedAt": "2026-10-20T11:02:28.000Z"
         },
         {
           "platform": "arxiv",
-          "title": "Probing Leptophilic Scalar Dark Matter with SMEFT and Direct Detection",
-          "url": "https://arxiv.org/abs/2610.26512",
+          "title": "Phase shifts and fluctuations from motional, relativistic, and dark-matter effects in ion-trap clocks",
+          "url": "https://arxiv.org/abs/2610.27994",
           "score": 200,
-          "authors": "Simone Biondini, Chiara Megan Bolloni, Orlando Panella et al.",
-          "arxivCategory": "hep-ph",
-          "publishedAt": "2026-10-19T14:45:46.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Primordial black holes in braneworld gravity: A gateway to hidden dimensions and the dark Universe",
-          "url": "https://arxiv.org/abs/2610.26482",
-          "score": 200,
-          "authors": "Itzi Aldecoa-Tamayo",
-          "arxivCategory": "gr-qc",
-          "publishedAt": "2026-10-19T14:27:12.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Neural Bayesian Online Calibration with Deficient Simulators for MADMAX Dark Matter Experiment",
-          "url": "https://arxiv.org/abs/2610.26343",
-          "score": 200,
-          "authors": "Nabil Salama",
-          "arxivCategory": "hep-ex",
-          "publishedAt": "2026-10-19T13:11:05.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Gravitational Dark Matter Production in Einstein-Cartan Theory",
-          "url": "https://arxiv.org/abs/2610.26237",
-          "score": 200,
-          "authors": "Kamil Mudrunka, Kazunori Nakayama",
-          "arxivCategory": "hep-ph",
-          "publishedAt": "2026-10-19T12:01:28.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Gravitational Instability of Cold Axion Dark Matter Beyond Minimal Coupling",
-          "url": "https://arxiv.org/abs/2610.25984",
-          "score": 200,
-          "authors": "Bryan Cordero-Patino, Álvaro Duenas-Vidal, Jorge Segovia",
-          "arxivCategory": "astro-ph.CO",
-          "publishedAt": "2026-10-19T08:09:45.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Squeezing and Decoherence of Axion Dark Matter",
-          "url": "https://arxiv.org/abs/2610.25466",
-          "score": 200,
-          "authors": "Vasileios Fragkos, Igor Pikovski",
+          "authors": "Alexander Bott, Fabio Di Pumpo, Enno Giese",
           "arxivCategory": "quant-ph",
-          "publishedAt": "2026-10-18T18:50:53.000Z"
+          "publishedAt": "2026-10-20T10:31:39.000Z"
         },
         {
           "platform": "arxiv",
-          "title": "Exothermic Dark Matter with a Dark Higgs: The LZ 248 keV Event and the Galactic Center Excess",
-          "url": "https://arxiv.org/abs/2610.25423",
+          "title": "Probing Minihalos in the Late Dark Ages through Velocity Acoustic Oscillations in the 21-cm Power Spectrum",
+          "url": "https://arxiv.org/abs/2610.27933",
           "score": 200,
-          "authors": "Jinheung Kim, Jongkuk Kim, Pyungwon Ko",
+          "authors": "Yan Dong, Bin Yue, Chen Zhang et al.",
+          "arxivCategory": "astro-ph.CO",
+          "publishedAt": "2026-10-20T09:43:30.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Single-Parameter Exponential Model Outperforms Standard Dark Matter and Modified Newtonian Frameworks in Predicting Galactic Rotation Curves",
+          "url": "https://arxiv.org/abs/2610.27876",
+          "score": 200,
+          "authors": "Mohammed Guhdar",
+          "arxivCategory": "astro-ph.GA",
+          "publishedAt": "2026-10-20T08:59:49.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Searching for Axion Dark Matter via Superconductor-Spin Hybrid Magnetometers",
+          "url": "https://arxiv.org/abs/2610.27764",
+          "score": 200,
+          "authors": "Runqi Kang, Jian Zhang, Liangliang Rong et al.",
+          "arxivCategory": "physics.ins-det",
+          "publishedAt": "2026-10-20T07:26:53.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Axion detection in the non-Markovian noise",
+          "url": "https://arxiv.org/abs/2610.27731",
+          "score": 200,
+          "authors": "Jing Dong, Shuang-Quan Ma, Rong-Hang Chen et al.",
+          "arxivCategory": "quant-ph",
+          "publishedAt": "2026-10-20T06:51:46.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Thermal and optical signatures of a magnetic AdS black hole in dark matter and quintessence",
+          "url": "https://arxiv.org/abs/2610.27503",
+          "score": 200,
+          "authors": "Mohsen Fathi, Marco Olivares, Carlos E. Romero-Figueroa et al.",
+          "arxivCategory": "gr-qc",
+          "publishedAt": "2026-10-20T02:19:12.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Searching for Dense Perturbers in Cold Dark Matter Simulations",
+          "url": "https://arxiv.org/abs/2610.27236",
+          "score": 200,
+          "authors": "Xingyu Zhang, Hai-Bo Yu, Demao Kong et al.",
+          "arxivCategory": "astro-ph.CO",
+          "publishedAt": "2026-10-19T20:02:50.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Illuminating Light Dark Matter with Fixed-Target Experiments",
+          "url": "https://arxiv.org/abs/2610.27131",
+          "score": 200,
+          "authors": "Taylor R. Gray",
           "arxivCategory": "hep-ph",
-          "publishedAt": "2026-10-18T17:27:07.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "More than a Lifetime: Towards Precision Predictions for $B$-Meson Decays in the Standard Model and Beyond",
-          "url": "https://arxiv.org/abs/2610.25311",
-          "score": 200,
-          "authors": "Ali Mohamed",
-          "arxivCategory": "hep-ph",
-          "publishedAt": "2026-10-18T14:42:57.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Neutron-star dark-matter limits measure the maximum-mass headroom",
-          "url": "https://arxiv.org/abs/2610.25240",
-          "score": 200,
-          "authors": "Probit J Kalita, Soham Singh, Pinku Routaray et al.",
-          "arxivCategory": "nucl-th",
-          "publishedAt": "2026-10-18T13:02:57.000Z"
+          "publishedAt": "2026-10-19T18:28:50.000Z"
         }
       ],
       "relatedConceptSlugs": [
@@ -930,8 +930,8 @@
     {
       "slug": "condensed-matter",
       "label": "Condensed Matter",
-      "score": 5236,
-      "delta": 5,
+      "score": 5247,
+      "delta": 1,
       "direction": "steady",
       "mentions": 28,
       "sources": [
@@ -961,6 +961,24 @@
           "authors": "Roger Magloire Keumo Tsiaze, Jeremeie Edmond Danga, Cornelius Fai Lukong",
           "arxivCategory": "cond-mat.supr-con",
           "publishedAt": "2026-09-23T18:41:00.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Attosecond Quantum Optical Spectroscopy of Topological Materials",
+          "url": "https://arxiv.org/abs/2610.28046",
+          "score": 200,
+          "authors": "C. Granados, J. Rivera-Dean, D. Kim et al.",
+          "arxivCategory": "physics.optics",
+          "publishedAt": "2026-10-20T11:31:43.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "On the origin of nonreciprocal charge transport in topological insulator BiSbTeSe2",
+          "url": "https://arxiv.org/abs/2610.27849",
+          "score": 200,
+          "authors": "Fengyi Guo, Ziqi Wang, Xiubing Li et al.",
+          "arxivCategory": "cond-mat.mes-hall",
+          "publishedAt": "2026-10-20T08:31:08.000Z"
         },
         {
           "platform": "arxiv",
@@ -1024,24 +1042,6 @@
           "authors": "Timothy Carlson, Daniel Lazega, Scott McGuire et al.",
           "arxivCategory": "cond-mat.mtrl-sci",
           "publishedAt": "2026-10-10T13:29:16.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Chemical-Potential-Dependent Superconducting Spectroscopy on Bi2Te3/NbSe2 Heterostructures",
-          "url": "https://arxiv.org/abs/2610.14627",
-          "score": 200,
-          "authors": "Pengyu Hu, Chun Yu Wan, Qiaoyan Yu et al.",
-          "arxivCategory": "cond-mat.supr-con",
-          "publishedAt": "2026-10-10T06:23:06.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Maximal Axion Optical Chirality Enabled by Degenerate Quasibound States in the Continuum",
-          "url": "https://arxiv.org/abs/2610.14611",
-          "score": 200,
-          "authors": "Chang-Yin Ji, Chong Wang, Jiafang Li et al.",
-          "arxivCategory": "physics.optics",
-          "publishedAt": "2026-10-10T05:54:34.000Z"
         }
       ],
       "relatedConceptSlugs": [
@@ -1063,10 +1063,37 @@
       "slug": "cosmology",
       "label": "Cosmology",
       "score": 5200,
-      "delta": 8,
+      "delta": 0,
       "direction": "steady",
       "mentions": 26,
       "sources": [
+        {
+          "platform": "arxiv",
+          "title": "Constraints on Millimeter-wave Extragalactic Transient Populations from 4 Years of SPT-3G data",
+          "url": "https://arxiv.org/abs/2610.28633",
+          "score": 200,
+          "authors": "S. Guns, C. Tandoi, D. Anbajagane et al.",
+          "arxivCategory": "astro-ph.HE",
+          "publishedAt": "2026-10-20T17:59:56.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Are Dynamical Dark-Energy Cosmologies Old Enough?",
+          "url": "https://arxiv.org/abs/2610.27209",
+          "score": 200,
+          "authors": "Agripino Sousa-Neto, Susana J. Landau, Jailson Alcaniz",
+          "arxivCategory": "astro-ph.CO",
+          "publishedAt": "2026-10-19T19:43:13.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Cosmic birefringence from a stiff axion field and its cosmological implications",
+          "url": "https://arxiv.org/abs/2610.27082",
+          "score": 200,
+          "authors": "Andrea Minotti, Yunzhi Wu, Tiziano Zanzarella et al.",
+          "arxivCategory": "hep-ph",
+          "publishedAt": "2026-10-19T18:00:04.000Z"
+        },
         {
           "platform": "arxiv",
           "title": "Cosmological implications of two mock TianQin standard siren catalogs generated under different background cosmological models",
@@ -1147,33 +1174,6 @@
           "authors": "Sara M. Simon, Jacques Delabrouille, Julien Carron et al.",
           "arxivCategory": "astro-ph.IM",
           "publishedAt": "2026-10-14T20:58:13.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Nonlocal Gravity, Restricted CPL Dynamics and DESI Constraints",
-          "url": "https://arxiv.org/abs/2610.20720",
-          "score": 200,
-          "authors": "Luca Amendola, Ismael Ayuso, Amlan Chakraborty et al.",
-          "arxivCategory": "astro-ph.CO",
-          "publishedAt": "2026-10-14T18:00:03.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Analog Cosmology in a Quenched Bose-Einstein Condensate Bubble",
-          "url": "https://arxiv.org/abs/2610.20382",
-          "score": 200,
-          "authors": "Ruotong Zhai, Brendan Rhyno, Zain Mehdi et al.",
-          "arxivCategory": "cond-mat.quant-gas",
-          "publishedAt": "2026-10-14T15:49:03.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Exact map-space beam convolution via spin-mapmaking",
-          "url": "https://arxiv.org/abs/2610.20231",
-          "score": 200,
-          "authors": "Camille Demay, Magdy Morshed, Martina Gerbino et al.",
-          "arxivCategory": "astro-ph.CO",
-          "publishedAt": "2026-10-14T14:12:37.000Z"
         }
       ],
       "relatedConceptSlugs": [
@@ -1334,6 +1334,51 @@
       "sources": [
         {
           "platform": "arxiv",
+          "title": "Finite-Size CV-QKD for Satellite Quantum Communication under a Hybrid Noise Model",
+          "url": "https://arxiv.org/abs/2610.28353",
+          "score": 200,
+          "authors": "Mouli Chakraborty, Avishek Nag, Subhash Chandra et al.",
+          "arxivCategory": "eess.SP",
+          "publishedAt": "2026-10-20T15:18:40.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Observable-Level Framework for Finite-Key Security in Coherent-One-Way Quantum Key Distribution",
+          "url": "https://arxiv.org/abs/2610.28239",
+          "score": 200,
+          "authors": "Aryan Kuntal, Utkarsh Giradkar, Mudit Chaudhary et al.",
+          "arxivCategory": "quant-ph",
+          "publishedAt": "2026-10-20T14:04:04.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Field demonstration of a self-contained 10 km mobile-to-ground quantum network node via common-aperture co-propagation",
+          "url": "https://arxiv.org/abs/2610.27427",
+          "score": 200,
+          "authors": "Dongkyu Kim, Dong-Gil Im, Kyungdeuk Park et al.",
+          "arxivCategory": "quant-ph",
+          "publishedAt": "2026-10-20T00:28:08.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Orchestrating Key Scarcity: Global Capacity Allocation in Hybrid QKD-PQC Networks",
+          "url": "https://arxiv.org/abs/2610.27332",
+          "score": 200,
+          "authors": "Pablo P. Rejo, Manuel Fernández-Veiga, Ana Fernández-Vilas et al.",
+          "arxivCategory": "cs.CR",
+          "publishedAt": "2026-10-19T21:50:31.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Quantum-Seeded Distributed Post-Quantum Group Signatures for 5G V2X Communications",
+          "url": "https://arxiv.org/abs/2610.27316",
+          "score": 200,
+          "authors": "P. Blanco-Casal, P. Rejo-Iglesias, D. Cajaraville-Aboy et al.",
+          "arxivCategory": "cs.CR",
+          "publishedAt": "2026-10-19T21:37:39.000Z"
+        },
+        {
+          "platform": "arxiv",
           "title": "Multi-path Security in Quantum Networks with Trusted Nodes",
           "url": "https://arxiv.org/abs/2610.26120",
           "score": 200,
@@ -1394,51 +1439,6 @@
           "authors": "Yu-Chun Yin, Ching-Yi Lai, Alexei Ashikhmin",
           "arxivCategory": "quant-ph",
           "publishedAt": "2026-10-14T13:08:26.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Hyperentanglement in intermediate phase-space planes: benchmarking a photon-pair source for quantum key distribution",
-          "url": "https://arxiv.org/abs/2610.20005",
-          "score": 200,
-          "authors": "Murilo H. Magiotto, Millena B. Novaes, Wesley B. Cardoso et al.",
-          "arxivCategory": "quant-ph",
-          "publishedAt": "2026-10-14T11:21:34.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Combining Post-Quantum Cryptography and Quantum Key Distribution: Taxonomy, Constructions, Proofs, Standards, Deployments and Open Problems",
-          "url": "https://arxiv.org/abs/2610.19039",
-          "score": 200,
-          "authors": "Mona Alotaibi, Noora Fetais, Saif Al-Kuwari",
-          "arxivCategory": "cs.CR",
-          "publishedAt": "2026-10-13T18:28:12.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Quantum Cryptography and Autoformalization in Lean",
-          "url": "https://arxiv.org/abs/2610.17286",
-          "score": 200,
-          "authors": "Maor Ben Shahar, Jonathan Morag, Dirk Englund et al.",
-          "arxivCategory": "quant-ph",
-          "publishedAt": "2026-10-12T18:41:50.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Foundations for a Lens of Quantum Governance",
-          "url": "https://arxiv.org/abs/2610.16939",
-          "score": 200,
-          "authors": "Shira K. Huizing Lemstra, Tzula B. Propp",
-          "arxivCategory": "physics.soc-ph",
-          "publishedAt": "2026-10-12T15:16:16.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Entanglement Catalysis Beyond the Asymptotic Rate",
-          "url": "https://arxiv.org/abs/2610.13602",
-          "score": 200,
-          "authors": "Alexander Streltsov",
-          "arxivCategory": "quant-ph",
-          "publishedAt": "2026-10-09T13:50:33.000Z"
         }
       ],
       "relatedConceptSlugs": [
@@ -1460,8 +1460,8 @@
       "slug": "astrobiology",
       "label": "Astrobiology",
       "score": 2600,
-      "delta": 18,
-      "direction": "up",
+      "delta": 0,
+      "direction": "steady",
       "mentions": 13,
       "sources": [
         {
@@ -1593,8 +1593,8 @@
       "slug": "fusion-propulsion",
       "label": "Fusion Propulsion",
       "score": 2200,
-      "delta": 22,
-      "direction": "up",
+      "delta": 0,
+      "direction": "steady",
       "mentions": 11,
       "sources": [
         {
@@ -1717,10 +1717,10 @@
     {
       "slug": "starlink",
       "label": "Starlink & Satellite Internet",
-      "score": 1619,
-      "delta": 2,
+      "score": 1454,
+      "delta": -9,
       "direction": "steady",
-      "mentions": 32,
+      "mentions": 29,
       "sources": [
         {
           "platform": "hackernews",
@@ -1760,21 +1760,21 @@
         },
         {
           "platform": "hackernews",
-          "title": "Starlink limit hits Ukraine's drones",
-          "url": "https://defence24.com/geopolitics/starlink-limit-hits-ukraines-drones-the-battlefield-depends-on-spacex",
-          "score": 179,
-          "author": "uxhacker",
-          "commentCount": 183,
-          "publishedAt": "2026-10-14T09:10:37.000Z"
+          "title": "US threatens Europe over Starlink restrictions",
+          "url": "https://www.ft.com/content/d1e28d93-8574-4a46-946a-b261c401d6fa",
+          "score": 95,
+          "author": "mraniki",
+          "commentCount": 144,
+          "publishedAt": "2026-10-18T19:24:30.000Z"
         },
         {
           "platform": "hackernews",
-          "title": "US threatens Europe over Starlink restrictions",
-          "url": "https://www.ft.com/content/d1e28d93-8574-4a46-946a-b261c401d6fa",
-          "score": 94,
-          "author": "mraniki",
-          "commentCount": 141,
-          "publishedAt": "2026-10-18T19:24:30.000Z"
+          "title": "Musk Ordered Starlink Slowdown That Blindsided Ukraine",
+          "url": "https://www.wsj.com/world/ukraine-starlink-elon-musk-trump-dbc49193",
+          "score": 90,
+          "author": "jaredwiener",
+          "commentCount": 45,
+          "publishedAt": "2026-10-20T20:29:38.000Z"
         },
         {
           "platform": "hackernews",
@@ -1796,39 +1796,39 @@
         },
         {
           "platform": "hackernews",
-          "title": "Starlink restricted in Ukraine with no notice",
-          "url": "https://malcontentnews.substack.com/p/starlink-restricted-in-ukraine-with",
-          "score": 48,
-          "author": "vrganj",
-          "commentCount": 7,
-          "publishedAt": "2026-10-14T09:33:27.000Z"
+          "title": "Musk ordered slowdown of Starlink in Ukraine",
+          "url": "https://www.reuters.com/business/media-telecom/musk-ordered-starlink-slowdown-that-blindsided-ukraine-wsj-reports-2026-10-20/",
+          "score": 17,
+          "author": "soundworlds",
+          "commentCount": 2,
+          "publishedAt": "2026-10-20T22:16:39.000Z"
         },
         {
           "platform": "hackernews",
-          "title": "Musk Ordered Starlink Slowdown That Blindsided Ukraine",
-          "url": "https://www.wsj.com/world/ukraine-starlink-elon-musk-trump-dbc49193",
-          "score": 23,
-          "author": "jaredwiener",
-          "commentCount": 9,
-          "publishedAt": "2026-10-20T20:29:38.000Z"
+          "title": "Ukrainian military's access to Starlink satellite internet suddenly restricted",
+          "url": "https://www.theguardian.com/world/2026/oct/14/ukraine-soldiers-combat-access-starlink-satellite-internet-restricted",
+          "score": 16,
+          "author": "alpha_squared",
+          "commentCount": 3,
+          "publishedAt": "2026-10-14T15:21:24.000Z"
         },
         {
           "platform": "hackernews",
-          "title": "The operation of Starlink terminals in Ukraine was restricted above 160 kph",
-          "url": "https://www.reddit.com/r/UkraineWarVideoReport/comments/1x5kefw/last_night_the_operation_of_starlink_terminals_in/",
-          "score": 20,
-          "author": "jacquesm",
+          "title": "Musk ordered Starlink slowdown in Ukraine: WSJ",
+          "url": "https://thehill.com/policy/international/6161243-musk-ordered-starshield-slowdown/",
+          "score": 15,
+          "author": "rectang",
+          "commentCount": 1,
+          "publishedAt": "2026-10-20T21:51:20.000Z"
+        },
+        {
+          "platform": "hackernews",
+          "title": "US senators call for investigation into Ukraine's Starlink restrictions",
+          "url": "https://www.bbc.com/news/articles/cq398zl8jmvdo",
+          "score": 14,
+          "author": "toomuchtodo",
           "commentCount": 0,
-          "publishedAt": "2026-10-14T09:55:12.000Z"
-        },
-        {
-          "platform": "hackernews",
-          "title": "Ukraine's Starlink Access Restricted Without Warning",
-          "url": "https://kyivindependent.com/this-cannot-be-a-coincidence-ukraines-starlink-access-restricted-without-warning-zelensky-adviser-says/",
-          "score": 18,
-          "author": "defly",
-          "commentCount": 4,
-          "publishedAt": "2026-10-14T08:06:39.000Z"
+          "publishedAt": "2026-10-16T14:30:32.000Z"
         }
       ],
       "relatedConceptSlugs": [
@@ -1847,100 +1847,22 @@
       }
     },
     {
-      "slug": "space-debris",
-      "label": "Space Debris",
-      "score": 1202,
-      "delta": 20,
+      "slug": "artemis",
+      "label": "Artemis & Lunar Return",
+      "score": 1400,
+      "delta": 17,
       "direction": "up",
       "mentions": 7,
       "sources": [
         {
           "platform": "arxiv",
-          "title": "Attitude Estimation of Falcon 9 Rocket Body Based on Photometric Characteristics",
-          "url": "https://arxiv.org/abs/2610.24596",
+          "title": "Design and implementation of thermal control strategy for micro-size lunar exploration rover hakuto",
+          "url": "https://arxiv.org/abs/2610.28127",
           "score": 200,
-          "authors": "Hui Li, Rong-Wang Li, Ru-Feng Tang et al.",
-          "arxivCategory": "astro-ph.IM",
-          "publishedAt": "2026-10-17T10:01:27.000Z"
+          "authors": "Toshiki Tanaka, Takuto Oikawa, Keeni Shruti et al.",
+          "arxivCategory": "cs.RO",
+          "publishedAt": "2026-10-20T12:35:18.000Z"
         },
-        {
-          "platform": "arxiv",
-          "title": "The Fast Transient Foreground Fog of LSST",
-          "url": "https://arxiv.org/abs/2610.09394",
-          "score": 200,
-          "authors": "G. Megias Homar, S. R. Kulkarni, C. S. Lage et al.",
-          "arxivCategory": "astro-ph.IM",
-          "publishedAt": "2026-10-07T03:51:48.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "A ready-to-deploy MLOps software platform for satellite and NEO detection at meter-class ground-based observatories",
-          "url": "https://arxiv.org/abs/2609.27676",
-          "score": 200,
-          "authors": "Rafael Carrillo Navarro, Pablo García-Martín, René Duffard et al.",
-          "arxivCategory": "astro-ph.IM",
-          "publishedAt": "2026-09-23T10:47:14.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Space Sustainability: The Global Commons",
-          "url": "https://arxiv.org/abs/2610.21517",
-          "score": 200,
-          "authors": "Angelina Frolova, Sascha Nick, Jean-Paul Kneib et al.",
-          "arxivCategory": "physics.soc-ph",
-          "publishedAt": "2026-10-15T08:50:56.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Concept and Rationale for Stratospheric Balloon-Based Laser Debris Removal",
-          "url": "https://arxiv.org/abs/2609.39850",
-          "score": 200,
-          "authors": "F. Ruiz Vincueria, M. Divoky, E. Sanchez-Laulhe et al.",
-          "arxivCategory": "eess.SY",
-          "publishedAt": "2026-09-30T14:40:34.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Decentralized Guidance and Control for Rendezvous and Docking with a Tumbling Target using Multiple Servicers",
-          "url": "https://arxiv.org/abs/2609.26593",
-          "score": 200,
-          "authors": "Jonathan Taylor Jönsson, Sathyanarayanan Seshasayanan, Sumeet Gajanan Satpute et al.",
-          "arxivCategory": "eess.SY",
-          "publishedAt": "2026-09-22T15:35:08.000Z"
-        },
-        {
-          "platform": "hackernews",
-          "title": "The Most Remote Place on Earth Has Space Junk and a Sea Monster",
-          "url": "https://www.atlasobscura.com/articles/strange-maps-point-nemo",
-          "score": 2,
-          "author": "bcaulfield",
-          "commentCount": 0,
-          "publishedAt": "2026-10-14T03:14:22.000Z"
-        }
-      ],
-      "relatedConceptSlugs": [
-        "niac-phase-i-final-report-on-orbit-collision"
-      ],
-      "resonance": 20,
-      "quadrant": "dead-zone",
-      "resonanceSignals": {
-        "conceptDepth": 0.3868528072345416,
-        "editorial": 0.4,
-        "connections": 0,
-        "convergence": 0,
-        "deepTopic": 0,
-        "pantheon": 0,
-        "graveyard": 0
-      }
-    },
-    {
-      "slug": "artemis",
-      "label": "Artemis & Lunar Return",
-      "score": 1200,
-      "delta": 0,
-      "direction": "steady",
-      "mentions": 6,
-      "sources": [
         {
           "platform": "arxiv",
           "title": "A pyramidal ISRU lunar habitat design based on topological interlocking of sintered regolith blocks",
@@ -2009,6 +1931,84 @@
         "convergence": 0.025,
         "deepTopic": 0.8,
         "pantheon": 0.08,
+        "graveyard": 0
+      }
+    },
+    {
+      "slug": "space-debris",
+      "label": "Space Debris",
+      "score": 1200,
+      "delta": 0,
+      "direction": "steady",
+      "mentions": 6,
+      "sources": [
+        {
+          "platform": "arxiv",
+          "title": "Attitude Estimation of Falcon 9 Rocket Body Based on Photometric Characteristics",
+          "url": "https://arxiv.org/abs/2610.24596",
+          "score": 200,
+          "authors": "Hui Li, Rong-Wang Li, Ru-Feng Tang et al.",
+          "arxivCategory": "astro-ph.IM",
+          "publishedAt": "2026-10-17T10:01:27.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "The Fast Transient Foreground Fog of LSST",
+          "url": "https://arxiv.org/abs/2610.09394",
+          "score": 200,
+          "authors": "G. Megias Homar, S. R. Kulkarni, C. S. Lage et al.",
+          "arxivCategory": "astro-ph.IM",
+          "publishedAt": "2026-10-07T03:51:48.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "A ready-to-deploy MLOps software platform for satellite and NEO detection at meter-class ground-based observatories",
+          "url": "https://arxiv.org/abs/2609.27676",
+          "score": 200,
+          "authors": "Rafael Carrillo Navarro, Pablo García-Martín, René Duffard et al.",
+          "arxivCategory": "astro-ph.IM",
+          "publishedAt": "2026-09-23T10:47:14.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Space Sustainability: The Global Commons",
+          "url": "https://arxiv.org/abs/2610.21517",
+          "score": 200,
+          "authors": "Angelina Frolova, Sascha Nick, Jean-Paul Kneib et al.",
+          "arxivCategory": "physics.soc-ph",
+          "publishedAt": "2026-10-15T08:50:56.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Concept and Rationale for Stratospheric Balloon-Based Laser Debris Removal",
+          "url": "https://arxiv.org/abs/2609.39850",
+          "score": 200,
+          "authors": "F. Ruiz Vincueria, M. Divoky, E. Sanchez-Laulhe et al.",
+          "arxivCategory": "eess.SY",
+          "publishedAt": "2026-09-30T14:40:34.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Decentralized Guidance and Control for Rendezvous and Docking with a Tumbling Target using Multiple Servicers",
+          "url": "https://arxiv.org/abs/2609.26593",
+          "score": 200,
+          "authors": "Jonathan Taylor Jönsson, Sathyanarayanan Seshasayanan, Sumeet Gajanan Satpute et al.",
+          "arxivCategory": "eess.SY",
+          "publishedAt": "2026-09-22T15:35:08.000Z"
+        }
+      ],
+      "relatedConceptSlugs": [
+        "niac-phase-i-final-report-on-orbit-collision"
+      ],
+      "resonance": 20,
+      "quadrant": "dead-zone",
+      "resonanceSignals": {
+        "conceptDepth": 0.3868528072345416,
+        "editorial": 0.4,
+        "connections": 0,
+        "convergence": 0,
+        "deepTopic": 0,
+        "pantheon": 0,
         "graveyard": 0
       }
     },
@@ -2146,10 +2146,10 @@
     {
       "slug": "starship",
       "label": "Starship & SpaceX",
-      "score": 647,
-      "delta": 0,
+      "score": 713,
+      "delta": 12,
       "direction": "steady",
-      "mentions": 25,
+      "mentions": 33,
       "sources": [
         {
           "platform": "arxiv",
@@ -2197,6 +2197,15 @@
         },
         {
           "platform": "hackernews",
+          "title": "SpaceX revenue soars 161% as AI business grows",
+          "url": "https://abcnews.com/Business/spacex-revenue-soars-161-ai-business-grows/story?id=137408509",
+          "score": 22,
+          "author": "andsoitis",
+          "commentCount": 5,
+          "publishedAt": "2026-10-21T00:25:45.000Z"
+        },
+        {
+          "platform": "hackernews",
           "title": "Trump Bought $5M in SpaceX Debt Two Days Before Space Transport Executive Order",
           "url": "https://www.techdirt.com/2026/10/16/trump-acquired-5-million-in-spacex-debt-two-days-before-space-transportation-executive-order/",
           "score": 17,
@@ -2226,10 +2235,19 @@
           "platform": "hackernews",
           "title": "I will give one of my SpaceX shares to every kid in America",
           "url": "https://twitter.com/elonmusk/status/2112089556615123114",
-          "score": 12,
+          "score": 13,
           "author": "bilsbie",
-          "commentCount": 26,
+          "commentCount": 27,
           "publishedAt": "2026-10-19T11:31:11.000Z"
+        },
+        {
+          "platform": "hackernews",
+          "title": "Musk calls Tesla-SpaceX merger a 'good idea'",
+          "url": "https://www.reuters.com/business/media-telecom/spacex-quarterly-revenue-jumps-beats-estimates-ai-business-surges-2026-10-20/",
+          "score": 13,
+          "author": "lossolo",
+          "commentCount": 7,
+          "publishedAt": "2026-10-20T23:32:34.000Z"
         },
         {
           "platform": "hackernews",
@@ -2239,24 +2257,6 @@
           "author": "tosh",
           "commentCount": 1,
           "publishedAt": "2026-10-14T17:40:45.000Z"
-        },
-        {
-          "platform": "hackernews",
-          "title": "Ukraine accuses SpaceX of crippling drone missions as ties with US worsen",
-          "url": "https://www.reuters.com/business/media-telecom/ukraine-accuses-spacex-crippling-drone-missions-ties-with-us-worsen-2026-10-14/",
-          "score": 10,
-          "author": "JumpCrisscross",
-          "commentCount": 1,
-          "publishedAt": "2026-10-14T12:34:19.000Z"
-        },
-        {
-          "platform": "hackernews",
-          "title": "EU plans to fast-track antitrust approval of SpaceX rival",
-          "url": "https://finance.yahoo.com/economy/policy/articles/eu-plans-fast-track-antitrust-183153257.html",
-          "score": 9,
-          "author": "malshe",
-          "commentCount": 4,
-          "publishedAt": "2026-10-17T17:04:47.000Z"
         }
       ],
       "relatedConceptSlugs": [
@@ -2276,62 +2276,10 @@
       }
     },
     {
-      "slug": "warp-drives",
-      "label": "Warp Drives & Exotic Physics",
-      "score": 402,
-      "delta": 0,
-      "direction": "steady",
-      "mentions": 3,
-      "sources": [
-        {
-          "platform": "arxiv",
-          "title": "Exact radial stability threshold for a Minkowski-Schwarzschild thin shell",
-          "url": "https://arxiv.org/abs/2610.17629",
-          "score": 200,
-          "authors": "Anuar Idrissov",
-          "arxivCategory": "gr-qc",
-          "publishedAt": "2026-10-13T02:53:04.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Zero expansion is not free: the sharp minimum of Eulerian negative energy in Natário warp drives",
-          "url": "https://arxiv.org/abs/2609.36211",
-          "score": 200,
-          "authors": "Nelson Bolívar, Ivaylo Vasilev, Gabriel Abellán",
-          "arxivCategory": "gr-qc",
-          "publishedAt": "2026-09-28T20:09:43.000Z"
-        },
-        {
-          "platform": "hackernews",
-          "title": "Sonic CD / FTL and Hotline Miami on the Web",
-          "url": "https://remake.games/",
-          "score": 2,
-          "author": "nihey",
-          "commentCount": 2,
-          "publishedAt": "2026-10-13T23:08:39.000Z"
-        }
-      ],
-      "relatedConceptSlugs": [
-        "procsima",
-        "extreme-metamaterial-solar-sails-for-breakthrough-space-exploration"
-      ],
-      "resonance": 53,
-      "quadrant": "sleeping-giant",
-      "resonanceSignals": {
-        "conceptDepth": 0.6991803252671503,
-        "editorial": 1,
-        "connections": 0.3333333333333333,
-        "convergence": 0.15,
-        "deepTopic": 0,
-        "pantheon": 0.92,
-        "graveyard": 0
-      }
-    },
-    {
       "slug": "mars",
       "label": "Mars Exploration",
       "score": 400,
-      "delta": -1,
+      "delta": 0,
       "direction": "steady",
       "mentions": 2,
       "sources": [
@@ -2459,6 +2407,49 @@
       }
     },
     {
+      "slug": "warp-drives",
+      "label": "Warp Drives & Exotic Physics",
+      "score": 400,
+      "delta": 0,
+      "direction": "steady",
+      "mentions": 2,
+      "sources": [
+        {
+          "platform": "arxiv",
+          "title": "Exact radial stability threshold for a Minkowski-Schwarzschild thin shell",
+          "url": "https://arxiv.org/abs/2610.17629",
+          "score": 200,
+          "authors": "Anuar Idrissov",
+          "arxivCategory": "gr-qc",
+          "publishedAt": "2026-10-13T02:53:04.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Zero expansion is not free: the sharp minimum of Eulerian negative energy in Natário warp drives",
+          "url": "https://arxiv.org/abs/2609.36211",
+          "score": 200,
+          "authors": "Nelson Bolívar, Ivaylo Vasilev, Gabriel Abellán",
+          "arxivCategory": "gr-qc",
+          "publishedAt": "2026-09-28T20:09:43.000Z"
+        }
+      ],
+      "relatedConceptSlugs": [
+        "procsima",
+        "extreme-metamaterial-solar-sails-for-breakthrough-space-exploration"
+      ],
+      "resonance": 53,
+      "quadrant": "sleeping-giant",
+      "resonanceSignals": {
+        "conceptDepth": 0.6991803252671503,
+        "editorial": 1,
+        "connections": 0.3333333333333333,
+        "convergence": 0.15,
+        "deepTopic": 0,
+        "pantheon": 0.92,
+        "graveyard": 0
+      }
+    },
+    {
       "slug": "dyson-spheres",
       "label": "Dyson Spheres",
       "score": 400,
@@ -2504,8 +2495,8 @@
       "slug": "interstellar-travel",
       "label": "Interstellar Travel",
       "score": 206,
-      "delta": 4020,
-      "direction": "up",
+      "delta": 0,
+      "direction": "steady",
       "mentions": 2,
       "sources": [
         {
