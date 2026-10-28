@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-27T11:20:08.951Z",
+  "generatedAt": "2026-10-27T21:57:04.664Z",
   "topics": [
     {
       "slug": "gravitational-waves",
@@ -134,12 +134,144 @@
       }
     },
     {
+      "slug": "quantum-computing",
+      "label": "Quantum Computing",
+      "score": 7833,
+      "delta": -3,
+      "direction": "steady",
+      "mentions": 44,
+      "sources": [
+        {
+          "platform": "arxiv",
+          "title": "Decoding with alternating weighted graph sparsification for quantum low-density parity-check codes",
+          "url": "https://arxiv.org/abs/2610.35735",
+          "score": 200,
+          "authors": "Josu Etxezarreta Martinez, Francisco Garcia-Herrero, Ruben M. Otxoa et al.",
+          "arxivCategory": "quant-ph",
+          "publishedAt": "2026-10-26T16:53:14.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Fast and accurate rare-event simulation by Markov chain Monte Carlo for general quantum codes",
+          "url": "https://arxiv.org/abs/2610.35498",
+          "score": 200,
+          "authors": "Junichi Haruna, Kotaro Murakami",
+          "arxivCategory": "quant-ph",
+          "publishedAt": "2026-10-26T14:26:53.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Multipartite dynamics beyond bipartite entanglement equilibration",
+          "url": "https://arxiv.org/abs/2610.35377",
+          "score": 200,
+          "authors": "Yan Liu, Ya-Wen Sun, Ren-Jie Ying et al.",
+          "arxivCategory": "quant-ph",
+          "publishedAt": "2026-10-26T13:01:00.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "A Control Line Multiplexing Framework for Scalable Quantum Computing",
+          "url": "https://arxiv.org/abs/2610.35227",
+          "score": 200,
+          "authors": "Dayu Li, Naibin Zhou, Zhiyuan Chen et al.",
+          "arxivCategory": "quant-ph",
+          "publishedAt": "2026-10-26T11:16:45.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "New families of additive non-RS MDS codes and ACD codes from twisted Reed-Solomon codes",
+          "url": "https://arxiv.org/abs/2610.35105",
+          "score": 200,
+          "authors": "Xia Li, Yu Wang, Yansheng Wu",
+          "arxivCategory": "cs.IT",
+          "publishedAt": "2026-10-26T09:45:12.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Quantum Secret Sharing from CSS qLDPC Codes: Computable Access Structures, Accessible Logical Dimension, and Topology-Aware Network Cost",
+          "url": "https://arxiv.org/abs/2610.32428",
+          "score": 200,
+          "authors": "Malik Mouaji, Saif Al-Kuwari",
+          "arxivCategory": "quant-ph",
+          "publishedAt": "2026-10-23T09:53:31.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "ConQEC: Concolic Testing for Quantum Error-Correcting Code Implementations",
+          "url": "https://arxiv.org/abs/2610.31443",
+          "score": 200,
+          "authors": "Zihao Li, Ji Guan, Mingsheng Ying",
+          "arxivCategory": "quant-ph",
+          "publishedAt": "2026-10-22T15:40:04.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Noise redistribution by stabilizer codes: an organizing view of concatenated three-qubit codes",
+          "url": "https://arxiv.org/abs/2610.31007",
+          "score": 200,
+          "authors": "Long Huang",
+          "arxivCategory": "quant-ph",
+          "publishedAt": "2026-10-22T09:45:44.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Transversal syndrome extraction: A unifying construction for measuring the error syndromes of any stabilizer code",
+          "url": "https://arxiv.org/abs/2610.30279",
+          "score": 200,
+          "authors": "Miles D. Gorman",
+          "arxivCategory": "quant-ph",
+          "publishedAt": "2026-10-21T18:01:04.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Injection is all you need: parallel universal logic in high-rate concatenated self-dual codes",
+          "url": "https://arxiv.org/abs/2610.30087",
+          "score": 200,
+          "authors": "Joseph Sullivan, David Amaro, Michael A. Perlin",
+          "arxivCategory": "quant-ph",
+          "publishedAt": "2026-10-21T17:34:04.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Engineering Low-Latency, High-Throughput Quantum Decoders on NVIDIA GPUs",
+          "url": "https://arxiv.org/abs/2610.28867",
+          "score": 200,
+          "authors": "Stefano Markidis, Luca Pennati, Ivy Peng",
+          "arxivCategory": "cs.DC",
+          "publishedAt": "2026-10-20T19:38:22.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "LiftDiff: Guided Discrete Diffusion for Quantum Code Construction",
+          "url": "https://arxiv.org/abs/2610.25213",
+          "score": 200,
+          "authors": "Yotam Peled, Eliya Nachmani",
+          "arxivCategory": "quant-ph",
+          "publishedAt": "2026-10-18T12:10:36.000Z"
+        }
+      ],
+      "relatedConceptSlugs": [
+        "magneto-inductive-communications-for-ocean-worlds"
+      ],
+      "resonance": 30,
+      "quadrant": "hype-cycle",
+      "resonanceSignals": {
+        "conceptDepth": 0.22629438553091683,
+        "editorial": 0.4,
+        "connections": 0,
+        "convergence": 0.025,
+        "deepTopic": 1,
+        "pantheon": 1,
+        "graveyard": 0
+      }
+    },
+    {
       "slug": "black-holes",
       "label": "Black Holes",
-      "score": 8007,
+      "score": 7808,
       "delta": 3,
       "direction": "steady",
-      "mentions": 43,
+      "mentions": 42,
       "sources": [
         {
           "platform": "arxiv",
@@ -263,138 +395,6 @@
         "convergence": 0.2,
         "deepTopic": 1,
         "pantheon": 0.92,
-        "graveyard": 0
-      }
-    },
-    {
-      "slug": "quantum-computing",
-      "label": "Quantum Computing",
-      "score": 7830,
-      "delta": -2,
-      "direction": "steady",
-      "mentions": 43,
-      "sources": [
-        {
-          "platform": "arxiv",
-          "title": "Decoding with alternating weighted graph sparsification for quantum low-density parity-check codes",
-          "url": "https://arxiv.org/abs/2610.35735",
-          "score": 200,
-          "authors": "Josu Etxezarreta Martinez, Francisco Garcia-Herrero, Ruben M. Otxoa et al.",
-          "arxivCategory": "quant-ph",
-          "publishedAt": "2026-10-26T16:53:14.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Fast and accurate rare-event simulation by Markov chain Monte Carlo for general quantum codes",
-          "url": "https://arxiv.org/abs/2610.35498",
-          "score": 200,
-          "authors": "Junichi Haruna, Kotaro Murakami",
-          "arxivCategory": "quant-ph",
-          "publishedAt": "2026-10-26T14:26:53.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Multipartite dynamics beyond bipartite entanglement equilibration",
-          "url": "https://arxiv.org/abs/2610.35377",
-          "score": 200,
-          "authors": "Yan Liu, Ya-Wen Sun, Ren-Jie Ying et al.",
-          "arxivCategory": "quant-ph",
-          "publishedAt": "2026-10-26T13:01:00.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "A Control Line Multiplexing Framework for Scalable Quantum Computing",
-          "url": "https://arxiv.org/abs/2610.35227",
-          "score": 200,
-          "authors": "Dayu Li, Naibin Zhou, Zhiyuan Chen et al.",
-          "arxivCategory": "quant-ph",
-          "publishedAt": "2026-10-26T11:16:45.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "New families of additive non-RS MDS codes and ACD codes from twisted Reed-Solomon codes",
-          "url": "https://arxiv.org/abs/2610.35105",
-          "score": 200,
-          "authors": "Xia Li, Yu Wang, Yansheng Wu",
-          "arxivCategory": "cs.IT",
-          "publishedAt": "2026-10-26T09:45:12.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Quantum Secret Sharing from CSS qLDPC Codes: Computable Access Structures, Accessible Logical Dimension, and Topology-Aware Network Cost",
-          "url": "https://arxiv.org/abs/2610.32428",
-          "score": 200,
-          "authors": "Malik Mouaji, Saif Al-Kuwari",
-          "arxivCategory": "quant-ph",
-          "publishedAt": "2026-10-23T09:53:31.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "ConQEC: Concolic Testing for Quantum Error-Correcting Code Implementations",
-          "url": "https://arxiv.org/abs/2610.31443",
-          "score": 200,
-          "authors": "Zihao Li, Ji Guan, Mingsheng Ying",
-          "arxivCategory": "quant-ph",
-          "publishedAt": "2026-10-22T15:40:04.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Noise redistribution by stabilizer codes: an organizing view of concatenated three-qubit codes",
-          "url": "https://arxiv.org/abs/2610.31007",
-          "score": 200,
-          "authors": "Long Huang",
-          "arxivCategory": "quant-ph",
-          "publishedAt": "2026-10-22T09:45:44.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Transversal syndrome extraction: A unifying construction for measuring the error syndromes of any stabilizer code",
-          "url": "https://arxiv.org/abs/2610.30279",
-          "score": 200,
-          "authors": "Miles D. Gorman",
-          "arxivCategory": "quant-ph",
-          "publishedAt": "2026-10-21T18:01:04.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Injection is all you need: parallel universal logic in high-rate concatenated self-dual codes",
-          "url": "https://arxiv.org/abs/2610.30087",
-          "score": 200,
-          "authors": "Joseph Sullivan, David Amaro, Michael A. Perlin",
-          "arxivCategory": "quant-ph",
-          "publishedAt": "2026-10-21T17:34:04.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Engineering Low-Latency, High-Throughput Quantum Decoders on NVIDIA GPUs",
-          "url": "https://arxiv.org/abs/2610.28867",
-          "score": 200,
-          "authors": "Stefano Markidis, Luca Pennati, Ivy Peng",
-          "arxivCategory": "cs.DC",
-          "publishedAt": "2026-10-20T19:38:22.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "LiftDiff: Guided Discrete Diffusion for Quantum Code Construction",
-          "url": "https://arxiv.org/abs/2610.25213",
-          "score": 200,
-          "authors": "Yotam Peled, Eliya Nachmani",
-          "arxivCategory": "quant-ph",
-          "publishedAt": "2026-10-18T12:10:36.000Z"
-        }
-      ],
-      "relatedConceptSlugs": [
-        "magneto-inductive-communications-for-ocean-worlds"
-      ],
-      "resonance": 30,
-      "quadrant": "hype-cycle",
-      "resonanceSignals": {
-        "conceptDepth": 0.22629438553091683,
-        "editorial": 0.4,
-        "connections": 0,
-        "convergence": 0.025,
-        "deepTopic": 1,
-        "pantheon": 1,
         "graveyard": 0
       }
     },
@@ -668,7 +668,7 @@
       "slug": "particle-physics",
       "label": "Particle Physics",
       "score": 6600,
-      "delta": -8,
+      "delta": 0,
       "direction": "steady",
       "mentions": 33,
       "sources": [
@@ -797,8 +797,8 @@
     {
       "slug": "condensed-matter",
       "label": "Condensed Matter",
-      "score": 6336,
-      "delta": 3,
+      "score": 6294,
+      "delta": 6,
       "direction": "steady",
       "mentions": 30,
       "sources": [
@@ -806,9 +806,9 @@
           "platform": "hackernews",
           "title": "Around a dozen banking apps began specifically permitting GrapheneOS",
           "url": "https://grapheneos.social/@GrapheneOS/117492375462459244",
-          "score": 687,
+          "score": 690,
           "author": "privacyishuman",
-          "commentCount": 338,
+          "commentCount": 339,
           "publishedAt": "2026-10-24T01:15:14.000Z"
         },
         {
@@ -1727,7 +1727,7 @@
       "slug": "exoplanets",
       "label": "Exoplanets",
       "score": 2200,
-      "delta": -8,
+      "delta": 0,
       "direction": "steady",
       "mentions": 11,
       "sources": [
@@ -1850,10 +1850,10 @@
     {
       "slug": "starlink",
       "label": "Starlink & Satellite Internet",
-      "score": 1409,
-      "delta": 0,
+      "score": 1407,
+      "delta": -1,
       "direction": "steady",
-      "mentions": 26,
+      "mentions": 27,
       "sources": [
         {
           "platform": "arxiv",
@@ -1902,12 +1902,12 @@
         },
         {
           "platform": "hackernews",
-          "title": "Musk ordered Starlink slowdown that blindsided Ukraine",
-          "url": "https://www.wsj.com/world/ukraine-starlink-elon-musk-trump-dbc49193",
-          "score": 126,
-          "author": "jaredwiener",
-          "commentCount": 55,
-          "publishedAt": "2026-10-20T20:29:38.000Z"
+          "title": "Alleged Israeli spy company targeted Starlink users",
+          "url": "https://www.reuters.com/business/media-telecom/alleged-israeli-spy-company-heavily-targeted-starlink-users-sources-say-2026-10-27/",
+          "score": 120,
+          "author": "mmaia",
+          "commentCount": 29,
+          "publishedAt": "2026-10-27T13:33:30.000Z"
         },
         {
           "platform": "hackernews",
@@ -1922,7 +1922,7 @@
           "platform": "hackernews",
           "title": "It's Time to Take Starlink Away from Elon Musk",
           "url": "https://paulkrugman.substack.com/p/its-time-to-take-starlink-away-from",
-          "score": 46,
+          "score": 47,
           "author": "martythemaniak",
           "commentCount": 28,
           "publishedAt": "2026-10-22T18:21:55.000Z"
@@ -1931,7 +1931,7 @@
           "platform": "hackernews",
           "title": "Elon Musk says he was behind restricting Ukraine's Starlink speed",
           "url": "https://www.chicagotribune.com/2026/10/24/musk-behind-starlink-speed-restriction-in-ukraine/",
-          "score": 30,
+          "score": 31,
           "author": "MilnerRoute",
           "commentCount": 3,
           "publishedAt": "2026-10-25T02:15:31.000Z"
@@ -2359,7 +2359,7 @@
       "slug": "interstellar-travel",
       "label": "Interstellar Travel",
       "score": 400,
-      "delta": 94,
+      "delta": 100,
       "direction": "up",
       "mentions": 2,
       "sources": [
@@ -2487,10 +2487,10 @@
     {
       "slug": "starship",
       "label": "Starship & SpaceX",
-      "score": 373,
-      "delta": -4,
+      "score": 358,
+      "delta": -5,
       "direction": "steady",
-      "mentions": 33,
+      "mentions": 30,
       "sources": [
         {
           "platform": "arxiv",
@@ -2521,6 +2521,15 @@
         },
         {
           "platform": "hackernews",
+          "title": "SpaceX and Tesla Explore Merger",
+          "url": "https://www.nytimes.com/2026/10/21/business/elon-musk-spacex-tesla-merger.html",
+          "score": 10,
+          "author": "Doches",
+          "commentCount": 5,
+          "publishedAt": "2026-10-21T11:23:30.000Z"
+        },
+        {
+          "platform": "hackernews",
           "title": "Musk admits SpaceX restricted Ukraine's Starlink: \"That loophole was closed\"",
           "url": "https://www.mediaite.com/media/news/elon-musk-admits-spacex-purposely-restricted-ukraines-starlink-access-in-war-with-russia-that-loophole-was-closed/",
           "score": 10,
@@ -2530,27 +2539,9 @@
         },
         {
           "platform": "hackernews",
-          "title": "SpaceX and Tesla Explore Merger",
-          "url": "https://www.nytimes.com/2026/10/21/business/elon-musk-spacex-tesla-merger.html",
-          "score": 9,
-          "author": "Doches",
-          "commentCount": 5,
-          "publishedAt": "2026-10-21T11:23:30.000Z"
-        },
-        {
-          "platform": "hackernews",
-          "title": "SpaceX's data centre deals boost revenue by 161%",
-          "url": "https://www.ft.com/content/f2a2a578-5a2e-42ff-b4c9-8bafff271b37",
-          "score": 9,
-          "author": "JumpCrisscross",
-          "commentCount": 0,
-          "publishedAt": "2026-10-20T20:31:29.000Z"
-        },
-        {
-          "platform": "hackernews",
           "title": "SpaceX in Talks to Access 80k Cell Sites for Wireless Network",
           "url": "https://finance.yahoo.com/technology/articles/spacex-talks-access-80-000-213142634.html",
-          "score": 8,
+          "score": 9,
           "author": "TMWNN",
           "commentCount": 1,
           "publishedAt": "2026-10-24T00:02:46.000Z"
@@ -2599,6 +2590,15 @@
           "author": "Betelbuddy",
           "commentCount": 5,
           "publishedAt": "2026-10-20T22:34:23.000Z"
+        },
+        {
+          "platform": "hackernews",
+          "title": "Latest estimate for Starship launches required to support a Moon landing? 22",
+          "url": "https://arstechnica.com/space/2026/10/latest-estimate-for-starship-launches-required-to-support-a-moon-landing-22/",
+          "score": 5,
+          "author": "PaulHoule",
+          "commentCount": 5,
+          "publishedAt": "2026-10-23T12:01:52.000Z"
         }
       ],
       "relatedConceptSlugs": [
