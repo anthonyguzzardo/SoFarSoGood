@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-28T11:53:56.429Z",
+  "generatedAt": "2026-10-28T22:19:00.911Z",
   "topics": [
     {
       "slug": "gravitational-waves",
@@ -137,7 +137,7 @@
       "slug": "black-holes",
       "label": "Black Holes",
       "score": 8008,
-      "delta": 0,
+      "delta": 3,
       "direction": "steady",
       "mentions": 43,
       "sources": [
@@ -269,10 +269,10 @@
     {
       "slug": "quantum-computing",
       "label": "Quantum Computing",
-      "score": 7832,
+      "score": 7829,
       "delta": 0,
       "direction": "steady",
-      "mentions": 44,
+      "mentions": 43,
       "sources": [
         {
           "platform": "arxiv",
@@ -797,18 +797,18 @@
     {
       "slug": "condensed-matter",
       "label": "Condensed Matter",
-      "score": 6494,
-      "delta": 2,
+      "score": 6295,
+      "delta": 0,
       "direction": "steady",
-      "mentions": 31,
+      "mentions": 30,
       "sources": [
         {
           "platform": "hackernews",
           "title": "Around a dozen banking apps began specifically permitting GrapheneOS",
           "url": "https://grapheneos.social/@GrapheneOS/117492375462459244",
-          "score": 690,
+          "score": 691,
           "author": "privacyishuman",
-          "commentCount": 339,
+          "commentCount": 340,
           "publishedAt": "2026-10-24T01:15:14.000Z"
         },
         {
@@ -1458,139 +1458,6 @@
       }
     },
     {
-      "slug": "astrobiology",
-      "label": "Astrobiology",
-      "score": 2600,
-      "delta": 0,
-      "direction": "steady",
-      "mentions": 13,
-      "sources": [
-        {
-          "platform": "arxiv",
-          "title": "A Technical Reanalysis of the Viking Carbon Assimilation-Pyrolytic Release Experiment",
-          "url": "https://arxiv.org/abs/2610.30368",
-          "score": 200,
-          "authors": "Jan Spacek, Clay A. Abraham, Steven A. Benner",
-          "arxivCategory": "astro-ph.IM",
-          "publishedAt": "2026-10-21T19:29:31.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Microbial Methanogenesis on Mars: A Life Detection Target for an MLE-Type Mission and Future Human Exploration",
-          "url": "https://arxiv.org/abs/2610.24082",
-          "score": 200,
-          "authors": "Rachel L. Harris",
-          "arxivCategory": "astro-ph.IM",
-          "publishedAt": "2026-10-16T18:08:16.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "On the foundations of anthropic reasoning: Implications for life across the universe",
-          "url": "https://arxiv.org/abs/2610.22896",
-          "score": 200,
-          "authors": "Brendon J. Brewer, Geraint F. Lewis, Jesse Goodman",
-          "arxivCategory": "astro-ph.IM",
-          "publishedAt": "2026-10-16T03:54:51.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Paleo-heat flux estimates across Enceladus derived from flexural response of the ice shell",
-          "url": "https://arxiv.org/abs/2610.19242",
-          "score": 200,
-          "authors": "Chelsea Eakins, Francis Nimmo, Paul Schenk",
-          "arxivCategory": "astro-ph.EP",
-          "publishedAt": "2026-10-13T21:58:39.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Tentative Detection of FeS toward Orion SrcI",
-          "url": "https://arxiv.org/abs/2610.06346",
-          "score": 200,
-          "authors": "Aitana Tasa-Chaveli, Holger S. P. Müller, Álvaro Sánchez-Monge et al.",
-          "arxivCategory": "astro-ph.GA",
-          "publishedAt": "2026-10-05T13:48:01.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Bacteriophage Q$β$: Six Decades at the Frontier of Molecular and Viral Evolution",
-          "url": "https://arxiv.org/abs/2609.35594",
-          "score": 200,
-          "authors": "Ester Lázaro, Susanna Manrubia",
-          "arxivCategory": "q-bio.PE",
-          "publishedAt": "2026-09-28T16:44:09.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "The first selection of optimal targets for the Lazuli ExtraSolar Coronagraph's reflected starlight exoplanet campaign",
-          "url": "https://arxiv.org/abs/2610.31286",
-          "score": 200,
-          "authors": "Logan A. Pearce, Ewan Douglas",
-          "arxivCategory": "astro-ph.EP",
-          "publishedAt": "2026-10-22T13:51:21.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Science-Driven Performance Requirements for UV Coronagraph Design: Implications for O$_3$ Detection in Earth-like Atmospheres",
-          "url": "https://arxiv.org/abs/2610.19081",
-          "score": 200,
-          "authors": "Amber V. Young, Giada Arney, Shawn Domagal-Goldman et al.",
-          "arxivCategory": "astro-ph.EP",
-          "publishedAt": "2026-10-13T19:12:46.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Radiation limits on amino acid preservation and chiral measurement at Oxia Planum",
-          "url": "https://arxiv.org/abs/2610.17931",
-          "score": 200,
-          "authors": "Dimitra Atri",
-          "arxivCategory": "astro-ph.EP",
-          "publishedAt": "2026-10-13T08:17:16.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "High-CO2 Climates and Observables in the Outer Habitable Zone",
-          "url": "https://arxiv.org/abs/2609.36697",
-          "score": 200,
-          "authors": "Daria Pidhorodetska, Edward W. Schwieterman, Thomas J. Fauchez et al.",
-          "arxivCategory": "astro-ph.EP",
-          "publishedAt": "2026-09-29T04:37:26.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "The Central Molecular Zone of our Galaxy, a chemical complexity factory: first interstellar detections of molecules towards G+0.693",
-          "url": "https://arxiv.org/abs/2610.26308",
-          "score": 200,
-          "authors": "Víctor M. Rivilla",
-          "arxivCategory": "astro-ph.GA",
-          "publishedAt": "2026-10-19T12:53:00.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Frontiers of chemical complexity in the interstellar medium: unveiling the cosmic origins of life",
-          "url": "https://arxiv.org/abs/2610.21849",
-          "score": 200,
-          "authors": "Víctor M. Rivilla, Miguel Sanz-Novo, Maite Beltrán et al.",
-          "arxivCategory": "astro-ph.IM",
-          "publishedAt": "2026-10-15T13:26:59.000Z"
-        }
-      ],
-      "relatedConceptSlugs": [
-        "astropharmacy",
-        "venus-atmosphere-and-cloud-particle-sample-return-for-astrobiology"
-      ],
-      "resonance": 53,
-      "quadrant": "real-deal",
-      "resonanceSignals": {
-        "conceptDepth": 0.5113915944693856,
-        "editorial": 1,
-        "connections": 0.3333333333333333,
-        "convergence": 0.275,
-        "deepTopic": 0.8,
-        "pantheon": 0.08,
-        "graveyard": 0
-      }
-    },
-    {
       "slug": "exoplanets",
       "label": "Exoplanets",
       "score": 2400,
@@ -1720,6 +1587,139 @@
         "convergence": 0.15,
         "deepTopic": 0.8,
         "pantheon": 0.12,
+        "graveyard": 0
+      }
+    },
+    {
+      "slug": "astrobiology",
+      "label": "Astrobiology",
+      "score": 2400,
+      "delta": -8,
+      "direction": "steady",
+      "mentions": 12,
+      "sources": [
+        {
+          "platform": "arxiv",
+          "title": "A Technical Reanalysis of the Viking Carbon Assimilation-Pyrolytic Release Experiment",
+          "url": "https://arxiv.org/abs/2610.30368",
+          "score": 200,
+          "authors": "Jan Spacek, Clay A. Abraham, Steven A. Benner",
+          "arxivCategory": "astro-ph.IM",
+          "publishedAt": "2026-10-21T19:29:31.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Microbial Methanogenesis on Mars: A Life Detection Target for an MLE-Type Mission and Future Human Exploration",
+          "url": "https://arxiv.org/abs/2610.24082",
+          "score": 200,
+          "authors": "Rachel L. Harris",
+          "arxivCategory": "astro-ph.IM",
+          "publishedAt": "2026-10-16T18:08:16.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "On the foundations of anthropic reasoning: Implications for life across the universe",
+          "url": "https://arxiv.org/abs/2610.22896",
+          "score": 200,
+          "authors": "Brendon J. Brewer, Geraint F. Lewis, Jesse Goodman",
+          "arxivCategory": "astro-ph.IM",
+          "publishedAt": "2026-10-16T03:54:51.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Paleo-heat flux estimates across Enceladus derived from flexural response of the ice shell",
+          "url": "https://arxiv.org/abs/2610.19242",
+          "score": 200,
+          "authors": "Chelsea Eakins, Francis Nimmo, Paul Schenk",
+          "arxivCategory": "astro-ph.EP",
+          "publishedAt": "2026-10-13T21:58:39.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Tentative Detection of FeS toward Orion SrcI",
+          "url": "https://arxiv.org/abs/2610.06346",
+          "score": 200,
+          "authors": "Aitana Tasa-Chaveli, Holger S. P. Müller, Álvaro Sánchez-Monge et al.",
+          "arxivCategory": "astro-ph.GA",
+          "publishedAt": "2026-10-05T13:48:01.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "The first selection of optimal targets for the Lazuli ExtraSolar Coronagraph's reflected starlight exoplanet campaign",
+          "url": "https://arxiv.org/abs/2610.31286",
+          "score": 200,
+          "authors": "Logan A. Pearce, Ewan Douglas",
+          "arxivCategory": "astro-ph.EP",
+          "publishedAt": "2026-10-22T13:51:21.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Science-Driven Performance Requirements for UV Coronagraph Design: Implications for O$_3$ Detection in Earth-like Atmospheres",
+          "url": "https://arxiv.org/abs/2610.19081",
+          "score": 200,
+          "authors": "Amber V. Young, Giada Arney, Shawn Domagal-Goldman et al.",
+          "arxivCategory": "astro-ph.EP",
+          "publishedAt": "2026-10-13T19:12:46.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Radiation limits on amino acid preservation and chiral measurement at Oxia Planum",
+          "url": "https://arxiv.org/abs/2610.17931",
+          "score": 200,
+          "authors": "Dimitra Atri",
+          "arxivCategory": "astro-ph.EP",
+          "publishedAt": "2026-10-13T08:17:16.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "High-CO2 Climates and Observables in the Outer Habitable Zone",
+          "url": "https://arxiv.org/abs/2609.36697",
+          "score": 200,
+          "authors": "Daria Pidhorodetska, Edward W. Schwieterman, Thomas J. Fauchez et al.",
+          "arxivCategory": "astro-ph.EP",
+          "publishedAt": "2026-09-29T04:37:26.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "The Central Molecular Zone of our Galaxy, a chemical complexity factory: first interstellar detections of molecules towards G+0.693",
+          "url": "https://arxiv.org/abs/2610.26308",
+          "score": 200,
+          "authors": "Víctor M. Rivilla",
+          "arxivCategory": "astro-ph.GA",
+          "publishedAt": "2026-10-19T12:53:00.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Frontiers of chemical complexity in the interstellar medium: unveiling the cosmic origins of life",
+          "url": "https://arxiv.org/abs/2610.21849",
+          "score": 200,
+          "authors": "Víctor M. Rivilla, Miguel Sanz-Novo, Maite Beltrán et al.",
+          "arxivCategory": "astro-ph.IM",
+          "publishedAt": "2026-10-15T13:26:59.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Project CERES: Nuclear Thermal Transportation and In-Situ Propellant Production A Foundational Architecture for Solar System Logistics",
+          "url": "https://arxiv.org/abs/2609.40011",
+          "score": 200,
+          "authors": "S. P. Worden, F. G. Kennedy",
+          "arxivCategory": "astro-ph.EP",
+          "publishedAt": "2026-09-30T15:50:56.000Z"
+        }
+      ],
+      "relatedConceptSlugs": [
+        "astropharmacy",
+        "venus-atmosphere-and-cloud-particle-sample-return-for-astrobiology"
+      ],
+      "resonance": 53,
+      "quadrant": "real-deal",
+      "resonanceSignals": {
+        "conceptDepth": 0.5113915944693856,
+        "editorial": 1,
+        "connections": 0.3333333333333333,
+        "convergence": 0.275,
+        "deepTopic": 0.8,
+        "pantheon": 0.08,
         "graveyard": 0
       }
     },
@@ -1964,8 +1964,8 @@
     {
       "slug": "starlink",
       "label": "Starlink & Satellite Internet",
-      "score": 1396,
-      "delta": -1,
+      "score": 1199,
+      "delta": -15,
       "direction": "steady",
       "mentions": 26,
       "sources": [
@@ -1998,15 +1998,6 @@
         },
         {
           "platform": "arxiv",
-          "title": "Spectrum Sharing Among Broadband LEO Mega-Constellations: Interference Regulations and Coexistence Mechanisms",
-          "url": "https://arxiv.org/abs/2609.36122",
-          "score": 200,
-          "authors": "Ian P. Roberts",
-          "arxivCategory": "eess.SP",
-          "publishedAt": "2026-09-28T18:54:59.000Z"
-        },
-        {
-          "platform": "arxiv",
           "title": "Systematic non-compliance of satellite megaconstellations with IAU brightness limits",
           "url": "https://arxiv.org/abs/2610.10834",
           "score": 200,
@@ -2018,9 +2009,9 @@
           "platform": "hackernews",
           "title": "Alleged Israeli spy company targeted Starlink users",
           "url": "https://www.reuters.com/business/media-telecom/alleged-israeli-spy-company-heavily-targeted-starlink-users-sources-say-2026-10-27/",
-          "score": 138,
+          "score": 141,
           "author": "mmaia",
-          "commentCount": 31,
+          "commentCount": 33,
           "publishedAt": "2026-10-27T13:33:30.000Z"
         },
         {
@@ -2076,6 +2067,15 @@
           "author": "toomanyrichies",
           "commentCount": 2,
           "publishedAt": "2026-10-24T20:20:53.000Z"
+        },
+        {
+          "platform": "hackernews",
+          "title": "Ukraine learns to fight without Starlink as Musk plays politics with satellites",
+          "url": "https://arstechnica.com/gadgets/2026/10/ukraine-learns-to-fight-without-starlink-as-musk-plays-politics-with-satellites/",
+          "score": 11,
+          "author": "Bender",
+          "commentCount": 2,
+          "publishedAt": "2026-10-23T12:37:37.000Z"
         }
       ],
       "relatedConceptSlugs": [
@@ -2332,10 +2332,10 @@
     {
       "slug": "starship",
       "label": "Starship & SpaceX",
-      "score": 489,
-      "delta": 31,
+      "score": 480,
+      "delta": 34,
       "direction": "up",
-      "mentions": 24,
+      "mentions": 22,
       "sources": [
         {
           "platform": "arxiv",
@@ -2393,15 +2393,6 @@
         },
         {
           "platform": "hackernews",
-          "title": "SpaceX and Tesla Explore Merger",
-          "url": "https://www.nytimes.com/2026/10/21/business/elon-musk-spacex-tesla-merger.html",
-          "score": 7,
-          "author": "forthwall",
-          "commentCount": 1,
-          "publishedAt": "2026-10-21T21:18:47.000Z"
-        },
-        {
-          "platform": "hackernews",
           "title": "Latest estimate for Starship launches required to support a Moon landing? 22",
           "url": "https://arstechnica.com/space/2026/10/latest-estimate-for-starship-launches-required-to-support-a-moon-landing-22/",
           "score": 5,
@@ -2411,12 +2402,12 @@
         },
         {
           "platform": "hackernews",
-          "title": "Musk says Tesla and SpaceX formed special committees to discuss merger",
-          "url": "https://www.cnbc.com/2026/10/20/spacex-spcx-earnings-live-updates-q3-2026html.html",
+          "title": "Nationalize SpaceX",
+          "url": "https://www.thebulwark.com/p/nationalize-spacex-elon-musk",
           "score": 5,
-          "author": "malshe",
-          "commentCount": 1,
-          "publishedAt": "2026-10-21T17:37:47.000Z"
+          "author": "Anon84",
+          "commentCount": 2,
+          "publishedAt": "2026-10-28T10:14:13.000Z"
         },
         {
           "platform": "hackernews",
@@ -2444,6 +2435,15 @@
           "author": "dvaplima",
           "commentCount": 0,
           "publishedAt": "2026-10-26T12:37:29.000Z"
+        },
+        {
+          "platform": "hackernews",
+          "title": "Musk says SpaceX restricted Ukraine's Starlink connection as service restored",
+          "url": "https://www.bbc.co.uk/news/articles/cvx28ljp8n4xo",
+          "score": 4,
+          "author": "iamflimflam1",
+          "commentCount": 0,
+          "publishedAt": "2026-10-25T10:02:05.000Z"
         }
       ],
       "relatedConceptSlugs": [
@@ -2551,49 +2551,6 @@
       }
     },
     {
-      "slug": "warp-drives",
-      "label": "Warp Drives & Exotic Physics",
-      "score": 400,
-      "delta": 0,
-      "direction": "steady",
-      "mentions": 2,
-      "sources": [
-        {
-          "platform": "arxiv",
-          "title": "Exact radial stability threshold for a Minkowski-Schwarzschild thin shell",
-          "url": "https://arxiv.org/abs/2610.17629",
-          "score": 200,
-          "authors": "Anuar Idrissov",
-          "arxivCategory": "gr-qc",
-          "publishedAt": "2026-10-13T02:53:04.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Zero expansion is not free: the sharp minimum of Eulerian negative energy in Natário warp drives",
-          "url": "https://arxiv.org/abs/2609.36211",
-          "score": 200,
-          "authors": "Nelson Bolívar, Ivaylo Vasilev, Gabriel Abellán",
-          "arxivCategory": "gr-qc",
-          "publishedAt": "2026-09-28T20:09:43.000Z"
-        }
-      ],
-      "relatedConceptSlugs": [
-        "procsima",
-        "extreme-metamaterial-solar-sails-for-breakthrough-space-exploration"
-      ],
-      "resonance": 53,
-      "quadrant": "sleeping-giant",
-      "resonanceSignals": {
-        "conceptDepth": 0.6991803252671503,
-        "editorial": 1,
-        "connections": 0.3333333333333333,
-        "convergence": 0.15,
-        "deepTopic": 0,
-        "pantheon": 0.92,
-        "graveyard": 0
-      }
-    },
-    {
       "slug": "electric-propulsion",
       "label": "Electric Propulsion",
       "score": 400,
@@ -2638,48 +2595,6 @@
       }
     },
     {
-      "slug": "dyson-spheres",
-      "label": "Dyson Spheres",
-      "score": 400,
-      "delta": 0,
-      "direction": "steady",
-      "mentions": 2,
-      "sources": [
-        {
-          "platform": "arxiv",
-          "title": "Millimetre/Sub-Millimetre SETI: Expanding the Radio Technosignature Parameter Space with ALMA2040",
-          "url": "https://arxiv.org/abs/2610.22266",
-          "score": 200,
-          "authors": "Louisa A. Mason, Michael A. Garrett, Sofia Z. Sheikh et al.",
-          "arxivCategory": "astro-ph.IM",
-          "publishedAt": "2026-10-15T17:31:03.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "A technological capability scale for civilizations from the Kardashev and Barrow scales",
-          "url": "https://arxiv.org/abs/2609.35237",
-          "score": 200,
-          "authors": "Volkan Gurses",
-          "arxivCategory": "quant-ph",
-          "publishedAt": "2026-09-28T14:13:17.000Z"
-        }
-      ],
-      "relatedConceptSlugs": [
-        "sps-alpha"
-      ],
-      "resonance": 25,
-      "quadrant": "dead-zone",
-      "resonanceSignals": {
-        "conceptDepth": 0.22629438553091683,
-        "editorial": 0.7,
-        "connections": 0,
-        "convergence": 0,
-        "deepTopic": 0,
-        "pantheon": 0.92,
-        "graveyard": 0
-      }
-    },
-    {
       "slug": "solar-sails",
       "label": "Solar Sails",
       "score": 200,
@@ -2709,6 +2624,73 @@
         "connections": 0.3333333333333333,
         "convergence": 0.25,
         "deepTopic": 0.8,
+        "pantheon": 0.92,
+        "graveyard": 0
+      }
+    },
+    {
+      "slug": "warp-drives",
+      "label": "Warp Drives & Exotic Physics",
+      "score": 200,
+      "delta": -50,
+      "direction": "down",
+      "mentions": 1,
+      "sources": [
+        {
+          "platform": "arxiv",
+          "title": "Exact radial stability threshold for a Minkowski-Schwarzschild thin shell",
+          "url": "https://arxiv.org/abs/2610.17629",
+          "score": 200,
+          "authors": "Anuar Idrissov",
+          "arxivCategory": "gr-qc",
+          "publishedAt": "2026-10-13T02:53:04.000Z"
+        }
+      ],
+      "relatedConceptSlugs": [
+        "procsima",
+        "extreme-metamaterial-solar-sails-for-breakthrough-space-exploration"
+      ],
+      "resonance": 53,
+      "quadrant": "sleeping-giant",
+      "resonanceSignals": {
+        "conceptDepth": 0.6991803252671503,
+        "editorial": 1,
+        "connections": 0.3333333333333333,
+        "convergence": 0.15,
+        "deepTopic": 0,
+        "pantheon": 0.92,
+        "graveyard": 0
+      }
+    },
+    {
+      "slug": "dyson-spheres",
+      "label": "Dyson Spheres",
+      "score": 200,
+      "delta": -50,
+      "direction": "down",
+      "mentions": 1,
+      "sources": [
+        {
+          "platform": "arxiv",
+          "title": "Millimetre/Sub-Millimetre SETI: Expanding the Radio Technosignature Parameter Space with ALMA2040",
+          "url": "https://arxiv.org/abs/2610.22266",
+          "score": 200,
+          "authors": "Louisa A. Mason, Michael A. Garrett, Sofia Z. Sheikh et al.",
+          "arxivCategory": "astro-ph.IM",
+          "publishedAt": "2026-10-15T17:31:03.000Z"
+        }
+      ],
+      "relatedConceptSlugs": [
+        "sps-alpha"
+      ],
+      "resonance": 25,
+      "quadrant": "dead-zone",
+      "resonanceSignals": {
+        "conceptDepth": 0.22629438553091683,
+        "editorial": 0.7,
+        "connections": 0,
+        "convergence": 0,
+        "deepTopic": 0,
         "pantheon": 0.92,
         "graveyard": 0
       }
