@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-10-30T22:03:16.435Z",
+  "generatedAt": "2026-10-31T11:29:33.320Z",
   "topics": [
     {
       "slug": "gravitational-waves",
       "label": "Gravitational Waves",
       "score": 8600,
-      "delta": 2,
+      "delta": 0,
       "direction": "steady",
       "mentions": 43,
       "sources": [
@@ -136,7 +136,7 @@
     {
       "slug": "black-holes",
       "label": "Black Holes",
-      "score": 7876,
+      "score": 7906,
       "delta": 1,
       "direction": "steady",
       "mentions": 41,
@@ -401,10 +401,10 @@
     {
       "slug": "space-telescopes",
       "label": "Space Telescopes",
-      "score": 7612,
-      "delta": 3,
+      "score": 7616,
+      "delta": 0,
       "direction": "steady",
-      "mentions": 40,
+      "mentions": 41,
       "sources": [
         {
           "platform": "arxiv",
@@ -668,7 +668,7 @@
       "slug": "particle-physics",
       "label": "Particle Physics",
       "score": 6800,
-      "delta": 3,
+      "delta": 0,
       "direction": "steady",
       "mentions": 34,
       "sources": [
@@ -795,142 +795,10 @@
       }
     },
     {
-      "slug": "condensed-matter",
-      "label": "Condensed Matter",
-      "score": 6495,
-      "delta": 3,
-      "direction": "steady",
-      "mentions": 31,
-      "sources": [
-        {
-          "platform": "hackernews",
-          "title": "Around a dozen banking apps began specifically permitting GrapheneOS",
-          "url": "https://grapheneos.social/@GrapheneOS/117492375462459244",
-          "score": 691,
-          "author": "privacyishuman",
-          "commentCount": 340,
-          "publishedAt": "2026-10-24T01:15:14.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Field misalignment effect on the in-plane magnetoresistance in the high-temperature superconductor FeSe/SrTiO3",
-          "url": "https://arxiv.org/abs/2610.34168",
-          "score": 200,
-          "authors": "Jie Liu, Zihan Cui, Xiaorong Liu et al.",
-          "arxivCategory": "cond-mat.supr-con",
-          "publishedAt": "2026-10-25T08:55:56.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Extreme competition between stripes and superconductivity in the hole-doped Hubbard model",
-          "url": "https://arxiv.org/abs/2610.30321",
-          "score": 200,
-          "authors": "Ao Chen, Johnnie Gray, Si-Jing Du et al.",
-          "arxivCategory": "cond-mat.str-el",
-          "publishedAt": "2026-10-21T18:33:57.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Extended strange metal and superconductivity in partially filled moiré Hubbard bands",
-          "url": "https://arxiv.org/abs/2610.22307",
-          "score": 200,
-          "authors": "Yiyu Xia, Yichi Zhang, Zhongdong Han et al.",
-          "arxivCategory": "cond-mat.mes-hall",
-          "publishedAt": "2026-10-15T17:49:42.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Quantitative Impact of Occupation Smearing Methods on Conventional Superconductivity: from Electronic Structure through Lattice Dynamics to Electron-Phonon Coupling",
-          "url": "https://arxiv.org/abs/2610.18185",
-          "score": 200,
-          "authors": "Zhongyu Wan",
-          "arxivCategory": "cond-mat.supr-con",
-          "publishedAt": "2026-10-13T11:25:00.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Néel vector switching by magnetization-dependent layer-resolved spin-orbit torque",
-          "url": "https://arxiv.org/abs/2610.40215",
-          "score": 200,
-          "authors": "Sheng Pan, Weiwei Wang, Jie-Xiang Yu",
-          "arxivCategory": "cond-mat.mtrl-sci",
-          "publishedAt": "2026-10-29T14:58:40.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Magnetotransport experiments on side-contacted topological insulator three-terminal Josephson junctions",
-          "url": "https://arxiv.org/abs/2610.40083",
-          "score": 200,
-          "authors": "Christoph Wassmer, Ella Nikodem, Oliver Breunig et al.",
-          "arxivCategory": "cond-mat.mes-hall",
-          "publishedAt": "2026-10-29T13:54:42.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Observation of light-induced topological state in graphene",
-          "url": "https://arxiv.org/abs/2610.39695",
-          "score": 200,
-          "authors": "Sotirios Fragkos, Ann Chantal Goutier, Umberto Dellasette et al.",
-          "arxivCategory": "cond-mat.mtrl-sci",
-          "publishedAt": "2026-10-29T09:32:52.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Direct observation of a spin-polarized surface Dirac gap in the antiferromagnetic topological insulator NdBi",
-          "url": "https://arxiv.org/abs/2610.35353",
-          "score": 200,
-          "authors": "Yuto Fukushima, Hiroyuki S. Suzuki, Masayuki Ochi et al.",
-          "arxivCategory": "cond-mat.mtrl-sci",
-          "publishedAt": "2026-10-26T12:45:59.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Effect of Annealing on Maze Domains in Topological Insulator - Magnetic Multilayer Heterostructures",
-          "url": "https://arxiv.org/abs/2610.29694",
-          "score": 200,
-          "authors": "Benjamin A. Brereton, Soumyarup Hait, Christy J. Kinane et al.",
-          "arxivCategory": "cond-mat.mes-hall",
-          "publishedAt": "2026-10-21T13:08:39.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Ubiquitous topological materials protected by hidden partial symmetries",
-          "url": "https://arxiv.org/abs/2610.29028",
-          "score": 200,
-          "authors": "Lumen Eek, Xuelong Chen, Malte Röntgen et al.",
-          "arxivCategory": "cond-mat.mes-hall",
-          "publishedAt": "2026-10-21T00:59:39.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Attosecond Quantum Optical Spectroscopy of Topological Materials",
-          "url": "https://arxiv.org/abs/2610.28046",
-          "score": 200,
-          "authors": "C. Granados, J. Rivera-Dean, D. Kim et al.",
-          "arxivCategory": "physics.optics",
-          "publishedAt": "2026-10-20T11:31:43.000Z"
-        }
-      ],
-      "relatedConceptSlugs": [
-        "extreme-metamaterial-solar-sails"
-      ],
-      "resonance": 50,
-      "quadrant": "real-deal",
-      "resonanceSignals": {
-        "conceptDepth": 0.6131471927654584,
-        "editorial": 1,
-        "connections": 0.3333333333333333,
-        "convergence": 0.15,
-        "deepTopic": 0,
-        "pantheon": 0.92,
-        "graveyard": 0
-      }
-    },
-    {
       "slug": "cosmology",
       "label": "Cosmology",
       "score": 5800,
-      "delta": 4,
+      "delta": 0,
       "direction": "steady",
       "mentions": 29,
       "sources": [
@@ -1062,7 +930,7 @@
       "slug": "dark-matter",
       "label": "Dark Matter & Dark Energy",
       "score": 5605,
-      "delta": -3,
+      "delta": 0,
       "direction": "steady",
       "mentions": 30,
       "sources": [
@@ -1187,6 +1055,138 @@
         "connections": 0.3333333333333333,
         "convergence": 0.15,
         "deepTopic": 1,
+        "pantheon": 0.92,
+        "graveyard": 0
+      }
+    },
+    {
+      "slug": "condensed-matter",
+      "label": "Condensed Matter",
+      "score": 5604,
+      "delta": -14,
+      "direction": "steady",
+      "mentions": 29,
+      "sources": [
+        {
+          "platform": "arxiv",
+          "title": "Field misalignment effect on the in-plane magnetoresistance in the high-temperature superconductor FeSe/SrTiO3",
+          "url": "https://arxiv.org/abs/2610.34168",
+          "score": 200,
+          "authors": "Jie Liu, Zihan Cui, Xiaorong Liu et al.",
+          "arxivCategory": "cond-mat.supr-con",
+          "publishedAt": "2026-10-25T08:55:56.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Extreme competition between stripes and superconductivity in the hole-doped Hubbard model",
+          "url": "https://arxiv.org/abs/2610.30321",
+          "score": 200,
+          "authors": "Ao Chen, Johnnie Gray, Si-Jing Du et al.",
+          "arxivCategory": "cond-mat.str-el",
+          "publishedAt": "2026-10-21T18:33:57.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Extended strange metal and superconductivity in partially filled moiré Hubbard bands",
+          "url": "https://arxiv.org/abs/2610.22307",
+          "score": 200,
+          "authors": "Yiyu Xia, Yichi Zhang, Zhongdong Han et al.",
+          "arxivCategory": "cond-mat.mes-hall",
+          "publishedAt": "2026-10-15T17:49:42.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Quantitative Impact of Occupation Smearing Methods on Conventional Superconductivity: from Electronic Structure through Lattice Dynamics to Electron-Phonon Coupling",
+          "url": "https://arxiv.org/abs/2610.18185",
+          "score": 200,
+          "authors": "Zhongyu Wan",
+          "arxivCategory": "cond-mat.supr-con",
+          "publishedAt": "2026-10-13T11:25:00.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Néel vector switching by magnetization-dependent layer-resolved spin-orbit torque",
+          "url": "https://arxiv.org/abs/2610.40215",
+          "score": 200,
+          "authors": "Sheng Pan, Weiwei Wang, Jie-Xiang Yu",
+          "arxivCategory": "cond-mat.mtrl-sci",
+          "publishedAt": "2026-10-29T14:58:40.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Magnetotransport experiments on side-contacted topological insulator three-terminal Josephson junctions",
+          "url": "https://arxiv.org/abs/2610.40083",
+          "score": 200,
+          "authors": "Christoph Wassmer, Ella Nikodem, Oliver Breunig et al.",
+          "arxivCategory": "cond-mat.mes-hall",
+          "publishedAt": "2026-10-29T13:54:42.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Observation of light-induced topological state in graphene",
+          "url": "https://arxiv.org/abs/2610.39695",
+          "score": 200,
+          "authors": "Sotirios Fragkos, Ann Chantal Goutier, Umberto Dellasette et al.",
+          "arxivCategory": "cond-mat.mtrl-sci",
+          "publishedAt": "2026-10-29T09:32:52.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Direct observation of a spin-polarized surface Dirac gap in the antiferromagnetic topological insulator NdBi",
+          "url": "https://arxiv.org/abs/2610.35353",
+          "score": 200,
+          "authors": "Yuto Fukushima, Hiroyuki S. Suzuki, Masayuki Ochi et al.",
+          "arxivCategory": "cond-mat.mtrl-sci",
+          "publishedAt": "2026-10-26T12:45:59.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Effect of Annealing on Maze Domains in Topological Insulator - Magnetic Multilayer Heterostructures",
+          "url": "https://arxiv.org/abs/2610.29694",
+          "score": 200,
+          "authors": "Benjamin A. Brereton, Soumyarup Hait, Christy J. Kinane et al.",
+          "arxivCategory": "cond-mat.mes-hall",
+          "publishedAt": "2026-10-21T13:08:39.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Ubiquitous topological materials protected by hidden partial symmetries",
+          "url": "https://arxiv.org/abs/2610.29028",
+          "score": 200,
+          "authors": "Lumen Eek, Xuelong Chen, Malte Röntgen et al.",
+          "arxivCategory": "cond-mat.mes-hall",
+          "publishedAt": "2026-10-21T00:59:39.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Attosecond Quantum Optical Spectroscopy of Topological Materials",
+          "url": "https://arxiv.org/abs/2610.28046",
+          "score": 200,
+          "authors": "C. Granados, J. Rivera-Dean, D. Kim et al.",
+          "arxivCategory": "physics.optics",
+          "publishedAt": "2026-10-20T11:31:43.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "On the origin of nonreciprocal charge transport in topological insulator BiSbTeSe2",
+          "url": "https://arxiv.org/abs/2610.27849",
+          "score": 200,
+          "authors": "Fengyi Guo, Ziqi Wang, Xiubing Li et al.",
+          "arxivCategory": "cond-mat.mes-hall",
+          "publishedAt": "2026-10-20T08:31:08.000Z"
+        }
+      ],
+      "relatedConceptSlugs": [
+        "extreme-metamaterial-solar-sails"
+      ],
+      "resonance": 50,
+      "quadrant": "real-deal",
+      "resonanceSignals": {
+        "conceptDepth": 0.6131471927654584,
+        "editorial": 1,
+        "connections": 0.3333333333333333,
+        "convergence": 0.15,
+        "deepTopic": 0,
         "pantheon": 0.92,
         "graveyard": 0
       }
@@ -1327,7 +1327,7 @@
       "slug": "fusion-propulsion",
       "label": "Fusion Propulsion",
       "score": 3200,
-      "delta": 7,
+      "delta": -6,
       "direction": "steady",
       "mentions": 16,
       "sources": [
@@ -1461,7 +1461,7 @@
       "slug": "astrobiology",
       "label": "Astrobiology",
       "score": 2400,
-      "delta": 9,
+      "delta": -8,
       "direction": "steady",
       "mentions": 12,
       "sources": [
@@ -1593,10 +1593,10 @@
     {
       "slug": "artemis",
       "label": "Artemis & Lunar Return",
-      "score": 2210,
+      "score": 2205,
       "delta": 0,
       "direction": "steady",
-      "mentions": 14,
+      "mentions": 13,
       "sources": [
         {
           "platform": "arxiv",
@@ -1699,12 +1699,12 @@
         },
         {
           "platform": "hackernews",
-          "title": "NASA updates lander plans for Moon landings",
+          "title": "NASA updates lander plans for Moon landings solves long-festering Orion issue",
           "url": "https://arstechnica.com/space/2026/10/nasa-updates-lander-plans-for-moon-landings-finally-solves-long-festering-orion-issue/",
-          "score": 5,
-          "author": "sandyarmstrong",
-          "commentCount": 2,
-          "publishedAt": "2026-10-23T23:32:11.000Z"
+          "score": 3,
+          "author": "rbanffy",
+          "commentCount": 0,
+          "publishedAt": "2026-10-25T16:41:11.000Z"
         }
       ],
       "relatedConceptSlugs": [
@@ -1832,10 +1832,10 @@
     {
       "slug": "space-debris",
       "label": "Space Debris",
-      "score": 1400,
-      "delta": 0,
+      "score": 1402,
+      "delta": -12,
       "direction": "steady",
-      "mentions": 7,
+      "mentions": 8,
       "sources": [
         {
           "platform": "arxiv",
@@ -1899,6 +1899,15 @@
           "authors": "Bernhard K Meister",
           "arxivCategory": "q-fin.PM",
           "publishedAt": "2026-10-29T14:21:42.000Z"
+        },
+        {
+          "platform": "hackernews",
+          "title": "Name the UK Space Agency's Active Debris Removal Mission",
+          "url": "https://space.blog.gov.uk/2026/10/15/name-the-uk-space-agencys-first-national-mission-%f0%9f%9b%b0%ef%b8%8f%f0%9f%8c%8d/",
+          "score": 2,
+          "author": "helsinkiandrew",
+          "commentCount": 0,
+          "publishedAt": "2026-10-31T07:34:53.000Z"
         }
       ],
       "relatedConceptSlugs": [
@@ -1989,9 +1998,9 @@
     {
       "slug": "starlink",
       "label": "Starlink & Satellite Internet",
-      "score": 883,
-      "delta": -23,
-      "direction": "down",
+      "score": 890,
+      "delta": -6,
+      "direction": "steady",
       "mentions": 23,
       "sources": [
         {
@@ -2027,7 +2036,7 @@
           "url": "https://www.reuters.com/business/media-telecom/alleged-israeli-spy-company-heavily-targeted-starlink-users-sources-say-2026-10-27/",
           "score": 144,
           "author": "mmaia",
-          "commentCount": 33,
+          "commentCount": 35,
           "publishedAt": "2026-10-27T13:33:30.000Z"
         },
         {
@@ -2047,6 +2056,15 @@
           "author": "doener",
           "commentCount": 1,
           "publishedAt": "2026-10-26T08:16:53.000Z"
+        },
+        {
+          "platform": "hackernews",
+          "title": "Ukrainian arms manufacturer Fire Point has overcome Starlink restrictions",
+          "url": "https://www.reuters.com/business/aerospace-defense/ukrainian-arms-maker-fire-point-says-its-systems-can-complete-missions-without-2026-10-30/",
+          "score": 13,
+          "author": "uxhacker",
+          "commentCount": 0,
+          "publishedAt": "2026-10-30T22:45:58.000Z"
         },
         {
           "platform": "hackernews",
@@ -2077,12 +2095,12 @@
         },
         {
           "platform": "hackernews",
-          "title": "US has for years asked Musk to alter Starlink service in Ukraine, Middle East",
-          "url": "https://www.reuters.com/business/autos-transportation/us-has-years-asked-musk-alter-starlink-service-ukraine-middle-east-sources-say-2026-10-24/",
-          "score": 9,
-          "author": "JumpCrisscross",
-          "commentCount": 0,
-          "publishedAt": "2026-10-24T05:22:11.000Z"
+          "title": "Europe plans to squeeze out Starlink",
+          "url": "https://www.politico.eu/article/eu-telecom-giants-team-up-against-starlink/",
+          "score": 8,
+          "author": "TMWNN",
+          "commentCount": 4,
+          "publishedAt": "2026-10-30T09:40:48.000Z"
         },
         {
           "platform": "hackernews",
@@ -2092,15 +2110,6 @@
           "author": "onemoresoop",
           "commentCount": 1,
           "publishedAt": "2026-10-28T16:07:52.000Z"
-        },
-        {
-          "platform": "hackernews",
-          "title": "Musk claims Ukraine violated Starlink service agreement",
-          "url": "https://www.cnbc.com/2026/10/24/ukraine-starlink-starshield-service-restored.html",
-          "score": 6,
-          "author": "kristianp",
-          "commentCount": 2,
-          "publishedAt": "2026-10-25T04:33:50.000Z"
         }
       ],
       "relatedConceptSlugs": [
@@ -2287,10 +2296,10 @@
     {
       "slug": "starship",
       "label": "Starship & SpaceX",
-      "score": 533,
-      "delta": 7,
+      "score": 548,
+      "delta": 6,
       "direction": "steady",
-      "mentions": 25,
+      "mentions": 24,
       "sources": [
         {
           "platform": "arxiv",
@@ -2312,21 +2321,21 @@
         },
         {
           "platform": "hackernews",
-          "title": "SpaceX no longer needs NASA, and that's a problem for America's space agency",
+          "title": "SpaceX No longer needs NASA",
           "url": "https://arstechnica.com/space/2026/10/spacex-no-longer-needs-nasa-and-thats-a-problem-for-americas-space-agency/",
-          "score": 18,
-          "author": "civilchaos",
-          "commentCount": 23,
-          "publishedAt": "2026-10-29T22:51:13.000Z"
+          "score": 35,
+          "author": "amosj",
+          "commentCount": 9,
+          "publishedAt": "2026-10-30T20:19:34.000Z"
         },
         {
           "platform": "hackernews",
-          "title": "SpaceX No longer needs NASA",
+          "title": "SpaceX no longer needs NASA, and that's a problem for America's space agency",
           "url": "https://arstechnica.com/space/2026/10/spacex-no-longer-needs-nasa-and-thats-a-problem-for-americas-space-agency/",
-          "score": 15,
-          "author": "amosj",
-          "commentCount": 3,
-          "publishedAt": "2026-10-30T20:19:34.000Z"
+          "score": 22,
+          "author": "civilchaos",
+          "commentCount": 34,
+          "publishedAt": "2026-10-29T22:51:13.000Z"
         },
         {
           "platform": "hackernews",
@@ -2354,15 +2363,6 @@
           "author": "entryleveljobsc",
           "commentCount": 0,
           "publishedAt": "2026-10-25T02:03:43.000Z"
-        },
-        {
-          "platform": "hackernews",
-          "title": "SpaceX in Talks to Access 80k Cell Sites for Wireless Network",
-          "url": "https://finance.yahoo.com/technology/articles/spacex-talks-access-80-000-213142634.html",
-          "score": 9,
-          "author": "TMWNN",
-          "commentCount": 1,
-          "publishedAt": "2026-10-24T00:02:46.000Z"
         },
         {
           "platform": "hackernews",
@@ -2399,6 +2399,15 @@
           "author": "pretext",
           "commentCount": 0,
           "publishedAt": "2026-10-29T20:41:33.000Z"
+        },
+        {
+          "platform": "hackernews",
+          "title": "SpaceX closes $40B debt deal for AI chips",
+          "url": "https://www.cnbc.com/2026/10/26/spacex-closes-40-billion-debt-deal-for-ai-chips-elon-musk-.html",
+          "score": 4,
+          "author": "Betelbuddy",
+          "commentCount": 0,
+          "publishedAt": "2026-10-26T17:59:53.000Z"
         }
       ],
       "relatedConceptSlugs": [
@@ -2412,6 +2421,59 @@
         "editorial": 0.4,
         "connections": 0,
         "convergence": 0.35,
+        "deepTopic": 1,
+        "pantheon": 0.92,
+        "graveyard": 0
+      }
+    },
+    {
+      "slug": "electric-propulsion",
+      "label": "Electric Propulsion",
+      "score": 403,
+      "delta": 1,
+      "direction": "steady",
+      "mentions": 3,
+      "sources": [
+        {
+          "platform": "arxiv",
+          "title": "Propulsion Systems for a Starshade Rendezvous Mission with the Habitable World Observatory",
+          "url": "https://arxiv.org/abs/2610.36200",
+          "score": 200,
+          "authors": "Mario Damiano, Rhonda Morgan, Michael Turmon et al.",
+          "arxivCategory": "astro-ph.IM",
+          "publishedAt": "2026-10-26T19:38:20.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Contributions of the breathing waveform and residual fluctuations to power and higher-order spectra in a Hall-thruster plume",
+          "url": "https://arxiv.org/abs/2610.11348",
+          "score": 200,
+          "authors": "Zilong Peng, Baisheng Wang, Zhongping Zhao et al.",
+          "arxivCategory": "physics.plasm-ph",
+          "publishedAt": "2026-10-08T06:43:31.000Z"
+        },
+        {
+          "platform": "hackernews",
+          "title": "General Atomics Developing Flying Wing That Uses Hybrid-Electric Propulsion",
+          "url": "https://www.twz.com/news-features/general-atomics-developing-strike-recon-flying-wing-called-nextgen-that-uses-hybrid-electric-propulsion",
+          "score": 3,
+          "author": "cisc",
+          "commentCount": 0,
+          "publishedAt": "2026-10-30T23:52:27.000Z"
+        }
+      ],
+      "relatedConceptSlugs": [
+        "electric-sail-propulsion",
+        "e-glider",
+        "nasa-innovative-advanced-concepts-niac-heliopause-electrostatic-rapid-transit-sy"
+      ],
+      "resonance": 50,
+      "quadrant": "sleeping-giant",
+      "resonanceSignals": {
+        "conceptDepth": 0.6131471927654584,
+        "editorial": 0.4,
+        "connections": 0,
+        "convergence": 0.575,
         "deepTopic": 1,
         "pantheon": 0.92,
         "graveyard": 0
@@ -2457,50 +2519,6 @@
         "connections": 0,
         "convergence": 0.125,
         "deepTopic": 0.8,
-        "pantheon": 0.92,
-        "graveyard": 0
-      }
-    },
-    {
-      "slug": "electric-propulsion",
-      "label": "Electric Propulsion",
-      "score": 400,
-      "delta": 0,
-      "direction": "steady",
-      "mentions": 2,
-      "sources": [
-        {
-          "platform": "arxiv",
-          "title": "Propulsion Systems for a Starshade Rendezvous Mission with the Habitable World Observatory",
-          "url": "https://arxiv.org/abs/2610.36200",
-          "score": 200,
-          "authors": "Mario Damiano, Rhonda Morgan, Michael Turmon et al.",
-          "arxivCategory": "astro-ph.IM",
-          "publishedAt": "2026-10-26T19:38:20.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Contributions of the breathing waveform and residual fluctuations to power and higher-order spectra in a Hall-thruster plume",
-          "url": "https://arxiv.org/abs/2610.11348",
-          "score": 200,
-          "authors": "Zilong Peng, Baisheng Wang, Zhongping Zhao et al.",
-          "arxivCategory": "physics.plasm-ph",
-          "publishedAt": "2026-10-08T06:43:31.000Z"
-        }
-      ],
-      "relatedConceptSlugs": [
-        "electric-sail-propulsion",
-        "e-glider",
-        "nasa-innovative-advanced-concepts-niac-heliopause-electrostatic-rapid-transit-sy"
-      ],
-      "resonance": 50,
-      "quadrant": "sleeping-giant",
-      "resonanceSignals": {
-        "conceptDepth": 0.6131471927654584,
-        "editorial": 0.4,
-        "connections": 0,
-        "convergence": 0.575,
-        "deepTopic": 1,
         "pantheon": 0.92,
         "graveyard": 0
       }
