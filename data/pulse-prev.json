@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-31T21:07:40.073Z",
+  "generatedAt": "2026-11-01T12:24:34.351Z",
   "topics": [
     {
       "slug": "gravitational-waves",
@@ -268,7 +268,7 @@
     {
       "slug": "black-holes",
       "label": "Black Holes",
-      "score": 7713,
+      "score": 7716,
       "delta": -2,
       "direction": "steady",
       "mentions": 40,
@@ -401,10 +401,10 @@
     {
       "slug": "space-telescopes",
       "label": "Space Telescopes",
-      "score": 7621,
+      "score": 7625,
       "delta": 0,
       "direction": "steady",
-      "mentions": 42,
+      "mentions": 43,
       "sources": [
         {
           "platform": "arxiv",
@@ -797,10 +797,10 @@
     {
       "slug": "cosmology",
       "label": "Cosmology",
-      "score": 5800,
+      "score": 5801,
       "delta": 0,
       "direction": "steady",
-      "mentions": 29,
+      "mentions": 30,
       "sources": [
         {
           "platform": "arxiv",
@@ -1062,8 +1062,8 @@
     {
       "slug": "condensed-matter",
       "label": "Condensed Matter",
-      "score": 5604,
-      "delta": -14,
+      "score": 5458,
+      "delta": -3,
       "direction": "steady",
       "mentions": 29,
       "sources": [
@@ -1998,10 +1998,10 @@
     {
       "slug": "starlink",
       "label": "Starlink & Satellite Internet",
-      "score": 866,
-      "delta": -2,
+      "score": 820,
+      "delta": -8,
       "direction": "steady",
-      "mentions": 19,
+      "mentions": 16,
       "sources": [
         {
           "platform": "arxiv",
@@ -2041,15 +2041,6 @@
         },
         {
           "platform": "hackernews",
-          "title": "Elon Musk says he was behind restricting Ukraine's Starlink speed",
-          "url": "https://www.chicagotribune.com/2026/10/24/musk-behind-starlink-speed-restriction-in-ukraine/",
-          "score": 31,
-          "author": "MilnerRoute",
-          "commentCount": 3,
-          "publishedAt": "2026-10-25T02:15:31.000Z"
-        },
-        {
-          "platform": "hackernews",
           "title": "Musk says he was behind Starlink speed restriction in Ukraine",
           "url": "https://www.cbc.ca/news/world/ukraine-starlink-satellite-restored-9.7394719",
           "score": 15,
@@ -2061,19 +2052,10 @@
           "platform": "hackernews",
           "title": "Ukrainian arms manufacturer Fire Point has overcome Starlink restrictions",
           "url": "https://www.reuters.com/business/aerospace-defense/ukrainian-arms-maker-fire-point-says-its-systems-can-complete-missions-without-2026-10-30/",
-          "score": 14,
+          "score": 15,
           "author": "uxhacker",
           "commentCount": 0,
           "publishedAt": "2026-10-30T22:45:58.000Z"
-        },
-        {
-          "platform": "hackernews",
-          "title": "For Starlink alternative, Ukraine partners with Nokia and satellite maker ICEYE",
-          "url": "https://www.cnbc.com/2026/10/23/ukraine-partners-with-nokia-and-iceye-for-starlink-alternative.html",
-          "score": 10,
-          "author": "MilnerRoute",
-          "commentCount": 1,
-          "publishedAt": "2026-10-25T06:19:06.000Z"
         },
         {
           "platform": "hackernews",
@@ -2104,12 +2086,30 @@
         },
         {
           "platform": "hackernews",
-          "title": "Musk claims Ukraine violated Starlink service agreement",
-          "url": "https://www.cnbc.com/2026/10/24/ukraine-starlink-starshield-service-restored.html",
-          "score": 6,
-          "author": "kristianp",
-          "commentCount": 2,
-          "publishedAt": "2026-10-25T04:33:50.000Z"
+          "title": "Musk accuses Ukraine of violating Starlink terms with deadly drone strikes",
+          "url": "https://arstechnica.com/tech-policy/2026/10/musk-accuses-ukraine-of-violating-starlink-terms-with-deadly-drone-strikes/",
+          "score": 5,
+          "author": "rbanffy",
+          "commentCount": 1,
+          "publishedAt": "2026-10-28T18:17:25.000Z"
+        },
+        {
+          "platform": "hackernews",
+          "title": "Israeli ad tech firm tied to suspected Starlink tracking",
+          "url": "https://www.tomshardware.com/tech-industry/cyber-security/israeli-ad-tech-firm-tied-to-suspected-starlink-tracking-effort-report-claims-researchers-say-it-outbid-everyone-for-starlink-linked-ads-in-100-countries-including-where-the-service-is-banned",
+          "score": 4,
+          "author": "beansovertoast",
+          "commentCount": 0,
+          "publishedAt": "2026-10-28T12:05:04.000Z"
+        },
+        {
+          "platform": "hackernews",
+          "title": "Russia pursuing spacecraft from companies helping Ukraine including Starlink",
+          "url": "https://meduza.io/en/feature/2026/10/26/russia-is-escalating-its-confrontation-with-the-west-in-orbit-its-satellites-are-pursuing-spacecraft-from-companies-helping-ukraine-and-starlink-has-been-put-on-notice",
+          "score": 4,
+          "author": "BaudouinVH",
+          "commentCount": 0,
+          "publishedAt": "2026-10-26T08:19:02.000Z"
         }
       ],
       "relatedConceptSlugs": [
@@ -2190,8 +2190,8 @@
     {
       "slug": "ai-space",
       "label": "AI in Space",
-      "score": 601,
-      "delta": 0,
+      "score": 604,
+      "delta": 1,
       "direction": "steady",
       "mentions": 4,
       "sources": [
@@ -2226,7 +2226,7 @@
           "platform": "hackernews",
           "title": "Google's AI satellite sends a expensive haiku to Earth",
           "url": "https://www.theregister.com/ai-and-ml/2026/10/31/googles-ai-satellite-sends-a-very-expensive-haiku-to-earth/5306818",
-          "score": 1,
+          "score": 4,
           "author": "saikatsg",
           "commentCount": 0,
           "publishedAt": "2026-10-31T18:48:53.000Z"
@@ -2305,10 +2305,10 @@
     {
       "slug": "starship",
       "label": "Starship & SpaceX",
-      "score": 553,
-      "delta": 4,
+      "score": 539,
+      "delta": -2,
       "direction": "steady",
-      "mentions": 24,
+      "mentions": 22,
       "sources": [
         {
           "platform": "arxiv",
@@ -2366,15 +2366,6 @@
         },
         {
           "platform": "hackernews",
-          "title": "Musk admits SpaceX restricted Ukraine's Starlink: \"That loophole was closed\"",
-          "url": "https://www.mediaite.com/media/news/elon-musk-admits-spacex-purposely-restricted-ukraines-starlink-access-in-war-with-russia-that-loophole-was-closed/",
-          "score": 10,
-          "author": "entryleveljobsc",
-          "commentCount": 0,
-          "publishedAt": "2026-10-25T02:03:43.000Z"
-        },
-        {
-          "platform": "hackernews",
           "title": "Musk says SpaceX restricted Ukraine's Starlink connection as service restored",
           "url": "https://www.bbc.com/news/articles/cvx28ljp8n4xo",
           "score": 8,
@@ -2417,6 +2408,15 @@
           "author": "Betelbuddy",
           "commentCount": 0,
           "publishedAt": "2026-10-26T17:59:53.000Z"
+        },
+        {
+          "platform": "hackernews",
+          "title": "US Military gives SpaceX access to sensitive space-tracking data",
+          "url": "https://www.theguardian.com/science/2026/oct/25/spacex-access-sensitive-tracking-data",
+          "score": 4,
+          "author": "dvaplima",
+          "commentCount": 0,
+          "publishedAt": "2026-10-26T12:37:29.000Z"
         }
       ],
       "relatedConceptSlugs": [
@@ -2439,7 +2439,7 @@
       "slug": "electric-propulsion",
       "label": "Electric Propulsion",
       "score": 403,
-      "delta": 1,
+      "delta": 0,
       "direction": "steady",
       "mentions": 3,
       "sources": [
