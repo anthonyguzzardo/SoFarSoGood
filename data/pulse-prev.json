@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-03T13:18:40.414Z",
+  "generatedAt": "2026-11-03T23:03:10.517Z",
   "topics": [
     {
       "slug": "quantum-computing",
@@ -136,10 +136,10 @@
     {
       "slug": "gravitational-waves",
       "label": "Gravitational Waves",
-      "score": 8200,
+      "score": 8203,
       "delta": 5,
       "direction": "steady",
-      "mentions": 41,
+      "mentions": 42,
       "sources": [
         {
           "platform": "arxiv",
@@ -268,10 +268,10 @@
     {
       "slug": "space-telescopes",
       "label": "Space Telescopes",
-      "score": 8053,
+      "score": 8059,
       "delta": 0,
       "direction": "steady",
-      "mentions": 47,
+      "mentions": 48,
       "sources": [
         {
           "platform": "arxiv",
@@ -401,8 +401,8 @@
     {
       "slug": "black-holes",
       "label": "Black Holes",
-      "score": 7917,
-      "delta": 0,
+      "score": 7918,
+      "delta": 3,
       "direction": "steady",
       "mentions": 40,
       "sources": [
@@ -667,10 +667,10 @@
     {
       "slug": "particle-physics",
       "label": "Particle Physics",
-      "score": 6803,
+      "score": 6800,
       "delta": 0,
       "direction": "steady",
-      "mentions": 35,
+      "mentions": 34,
       "sources": [
         {
           "platform": "arxiv",
@@ -797,10 +797,10 @@
     {
       "slug": "condensed-matter",
       "label": "Condensed Matter",
-      "score": 5682,
+      "score": 5678,
       "delta": 0,
       "direction": "steady",
-      "mentions": 31,
+      "mentions": 30,
       "sources": [
         {
           "platform": "arxiv",
@@ -1195,7 +1195,7 @@
       "slug": "fusion-propulsion",
       "label": "Fusion Propulsion",
       "score": 3600,
-      "delta": 6,
+      "delta": 13,
       "direction": "steady",
       "mentions": 18,
       "sources": [
@@ -2005,138 +2005,6 @@
       }
     },
     {
-      "slug": "starlink",
-      "label": "Starlink & Satellite Internet",
-      "score": 804,
-      "delta": 0,
-      "direction": "steady",
-      "mentions": 13,
-      "sources": [
-        {
-          "platform": "arxiv",
-          "title": "Migration as a Steady-State Execution Primitive: A Runtime for Virtual Stationarity in Low-Earth Orbit",
-          "url": "https://arxiv.org/abs/2610.32720",
-          "score": 200,
-          "authors": "Daniel Kleebinder, Alireza Furutanpey, Stefan Nastic",
-          "arxivCategory": "cs.DC",
-          "publishedAt": "2026-10-23T14:39:39.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "StarRTT: An End-to-End Real-Time Framework for Blind Zone-Free RTT Prediction in Starlink LEO Satellite Networks",
-          "url": "https://arxiv.org/abs/2610.32540",
-          "score": 200,
-          "authors": "Jaeyong Lee, Seongjin Jeong, Yusang Park et al.",
-          "arxivCategory": "cs.IT",
-          "publishedAt": "2026-10-23T12:20:09.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Systematic non-compliance of satellite megaconstellations with IAU brightness limits",
-          "url": "https://arxiv.org/abs/2610.10834",
-          "score": 200,
-          "authors": "Jack Rayworth, Denis Vida, Pauline Barmby et al.",
-          "arxivCategory": "astro-ph.EP",
-          "publishedAt": "2026-10-07T19:36:19.000Z"
-        },
-        {
-          "platform": "hackernews",
-          "title": "Alleged Israeli spy company targeted Starlink users",
-          "url": "https://www.reuters.com/business/media-telecom/alleged-israeli-spy-company-heavily-targeted-starlink-users-sources-say-2026-10-27/",
-          "score": 145,
-          "author": "mmaia",
-          "commentCount": 36,
-          "publishedAt": "2026-10-27T13:33:30.000Z"
-        },
-        {
-          "platform": "hackernews",
-          "title": "Ukrainian arms manufacturer Fire Point has overcome Starlink restrictions",
-          "url": "https://www.reuters.com/business/aerospace-defense/ukrainian-arms-maker-fire-point-says-its-systems-can-complete-missions-without-2026-10-30/",
-          "score": 15,
-          "author": "uxhacker",
-          "commentCount": 0,
-          "publishedAt": "2026-10-30T22:45:58.000Z"
-        },
-        {
-          "platform": "hackernews",
-          "title": "Researchers Uncover Signs of Surveillance Operation on Starlink Users",
-          "url": "https://gizmodo.com/researchers-uncover-signs-of-massive-surveillance-operation-on-starlink-users-2000831366",
-          "score": 9,
-          "author": "MBCook",
-          "commentCount": 1,
-          "publishedAt": "2026-10-27T22:26:03.000Z"
-        },
-        {
-          "platform": "hackernews",
-          "title": "Europe plans to squeeze out Starlink",
-          "url": "https://www.politico.eu/article/eu-telecom-giants-team-up-against-starlink/",
-          "score": 8,
-          "author": "TMWNN",
-          "commentCount": 5,
-          "publishedAt": "2026-10-30T09:40:48.000Z"
-        },
-        {
-          "platform": "hackernews",
-          "title": "Putin salutes Musk's genius as Russia plays catch-up with Starlink",
-          "url": "https://www.reuters.com/world/europe/putin-salutes-musks-genius-russia-plays-catch-up-with-starlink-2026-10-28/",
-          "score": 8,
-          "author": "onemoresoop",
-          "commentCount": 1,
-          "publishedAt": "2026-10-28T16:07:52.000Z"
-        },
-        {
-          "platform": "hackernews",
-          "title": "Musk accuses Ukraine of violating Starlink terms with deadly drone strikes",
-          "url": "https://arstechnica.com/tech-policy/2026/10/musk-accuses-ukraine-of-violating-starlink-terms-with-deadly-drone-strikes/",
-          "score": 5,
-          "author": "rbanffy",
-          "commentCount": 1,
-          "publishedAt": "2026-10-28T18:17:25.000Z"
-        },
-        {
-          "platform": "hackernews",
-          "title": "Ask HN: Starlink Emails Leaked?",
-          "url": "https://news.ycombinator.com/item?id=50329905",
-          "score": 5,
-          "author": "simenf",
-          "commentCount": 0,
-          "publishedAt": "2026-11-01T21:07:39.000Z"
-        },
-        {
-          "platform": "hackernews",
-          "title": "Israeli ad tech firm tied to suspected Starlink tracking",
-          "url": "https://www.tomshardware.com/tech-industry/cyber-security/israeli-ad-tech-firm-tied-to-suspected-starlink-tracking-effort-report-claims-researchers-say-it-outbid-everyone-for-starlink-linked-ads-in-100-countries-including-where-the-service-is-banned",
-          "score": 4,
-          "author": "beansovertoast",
-          "commentCount": 0,
-          "publishedAt": "2026-10-28T12:05:04.000Z"
-        },
-        {
-          "platform": "hackernews",
-          "title": "Putin hails Elon Musk 'genius' announcing plans for Russian version of Starlink",
-          "url": "https://www.theguardian.com/world/2026/oct/28/vladimir-putin-elon-musk-genius-russia-starlink",
-          "score": 3,
-          "author": "ck2",
-          "commentCount": 1,
-          "publishedAt": "2026-10-29T13:27:46.000Z"
-        }
-      ],
-      "relatedConceptSlugs": [
-        "sps-alpha"
-      ],
-      "resonance": 21,
-      "quadrant": "dead-zone",
-      "resonanceSignals": {
-        "conceptDepth": 0.22629438553091683,
-        "editorial": 0.7,
-        "connections": 0,
-        "convergence": 0,
-        "deepTopic": 0,
-        "pantheon": 0,
-        "graveyard": 0
-      }
-    },
-    {
       "slug": "ocean-worlds",
       "label": "Titan & Ocean Worlds",
       "score": 800,
@@ -2193,6 +2061,129 @@
         "convergence": 0.15,
         "deepTopic": 0.8,
         "pantheon": 0.16,
+        "graveyard": 0
+      }
+    },
+    {
+      "slug": "starlink",
+      "label": "Starlink & Satellite Internet",
+      "score": 650,
+      "delta": -19,
+      "direction": "down",
+      "mentions": 11,
+      "sources": [
+        {
+          "platform": "arxiv",
+          "title": "Migration as a Steady-State Execution Primitive: A Runtime for Virtual Stationarity in Low-Earth Orbit",
+          "url": "https://arxiv.org/abs/2610.32720",
+          "score": 200,
+          "authors": "Daniel Kleebinder, Alireza Furutanpey, Stefan Nastic",
+          "arxivCategory": "cs.DC",
+          "publishedAt": "2026-10-23T14:39:39.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "StarRTT: An End-to-End Real-Time Framework for Blind Zone-Free RTT Prediction in Starlink LEO Satellite Networks",
+          "url": "https://arxiv.org/abs/2610.32540",
+          "score": 200,
+          "authors": "Jaeyong Lee, Seongjin Jeong, Yusang Park et al.",
+          "arxivCategory": "cs.IT",
+          "publishedAt": "2026-10-23T12:20:09.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Systematic non-compliance of satellite megaconstellations with IAU brightness limits",
+          "url": "https://arxiv.org/abs/2610.10834",
+          "score": 200,
+          "authors": "Jack Rayworth, Denis Vida, Pauline Barmby et al.",
+          "arxivCategory": "astro-ph.EP",
+          "publishedAt": "2026-10-07T19:36:19.000Z"
+        },
+        {
+          "platform": "hackernews",
+          "title": "Ukrainian arms manufacturer Fire Point has overcome Starlink restrictions",
+          "url": "https://www.reuters.com/business/aerospace-defense/ukrainian-arms-maker-fire-point-says-its-systems-can-complete-missions-without-2026-10-30/",
+          "score": 15,
+          "author": "uxhacker",
+          "commentCount": 0,
+          "publishedAt": "2026-10-30T22:45:58.000Z"
+        },
+        {
+          "platform": "hackernews",
+          "title": "Europe plans to squeeze out Starlink",
+          "url": "https://www.politico.eu/article/eu-telecom-giants-team-up-against-starlink/",
+          "score": 8,
+          "author": "TMWNN",
+          "commentCount": 5,
+          "publishedAt": "2026-10-30T09:40:48.000Z"
+        },
+        {
+          "platform": "hackernews",
+          "title": "Putin salutes Musk's genius as Russia plays catch-up with Starlink",
+          "url": "https://www.reuters.com/world/europe/putin-salutes-musks-genius-russia-plays-catch-up-with-starlink-2026-10-28/",
+          "score": 8,
+          "author": "onemoresoop",
+          "commentCount": 1,
+          "publishedAt": "2026-10-28T16:07:52.000Z"
+        },
+        {
+          "platform": "hackernews",
+          "title": "Musk accuses Ukraine of violating Starlink terms with deadly drone strikes",
+          "url": "https://arstechnica.com/tech-policy/2026/10/musk-accuses-ukraine-of-violating-starlink-terms-with-deadly-drone-strikes/",
+          "score": 5,
+          "author": "rbanffy",
+          "commentCount": 1,
+          "publishedAt": "2026-10-28T18:17:25.000Z"
+        },
+        {
+          "platform": "hackernews",
+          "title": "Ask HN: Starlink Emails Leaked?",
+          "url": "https://news.ycombinator.com/item?id=50329905",
+          "score": 5,
+          "author": "simenf",
+          "commentCount": 0,
+          "publishedAt": "2026-11-01T21:07:39.000Z"
+        },
+        {
+          "platform": "hackernews",
+          "title": "Israeli ad tech firm tied to suspected Starlink tracking",
+          "url": "https://www.tomshardware.com/tech-industry/cyber-security/israeli-ad-tech-firm-tied-to-suspected-starlink-tracking-effort-report-claims-researchers-say-it-outbid-everyone-for-starlink-linked-ads-in-100-countries-including-where-the-service-is-banned",
+          "score": 4,
+          "author": "beansovertoast",
+          "commentCount": 0,
+          "publishedAt": "2026-10-28T12:05:04.000Z"
+        },
+        {
+          "platform": "hackernews",
+          "title": "Putin hails Elon Musk 'genius' announcing plans for Russian version of Starlink",
+          "url": "https://www.theguardian.com/world/2026/oct/28/vladimir-putin-elon-musk-genius-russia-starlink",
+          "score": 3,
+          "author": "ck2",
+          "commentCount": 1,
+          "publishedAt": "2026-10-29T13:27:46.000Z"
+        },
+        {
+          "platform": "hackernews",
+          "title": "United Starlink Tracker",
+          "url": "http://starlinktracker.united.com/",
+          "score": 2,
+          "author": "craigkerstiens",
+          "commentCount": 1,
+          "publishedAt": "2026-10-29T02:43:46.000Z"
+        }
+      ],
+      "relatedConceptSlugs": [
+        "sps-alpha"
+      ],
+      "resonance": 21,
+      "quadrant": "dead-zone",
+      "resonanceSignals": {
+        "conceptDepth": 0.22629438553091683,
+        "editorial": 0.7,
+        "connections": 0,
+        "convergence": 0,
+        "deepTopic": 0,
+        "pantheon": 0,
         "graveyard": 0
       }
     },
@@ -2260,10 +2251,10 @@
     {
       "slug": "starship",
       "label": "Starship & SpaceX",
-      "score": 535,
-      "delta": 0,
+      "score": 536,
+      "delta": 1,
       "direction": "steady",
-      "mentions": 18,
+      "mentions": 19,
       "sources": [
         {
           "platform": "arxiv",
