@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-08T12:29:55.001Z",
+  "generatedAt": "2026-11-08T21:48:07.675Z",
   "topics": [
     {
       "slug": "quantum-computing",
@@ -401,7 +401,7 @@
     {
       "slug": "condensed-matter",
       "label": "Condensed Matter",
-      "score": 7456,
+      "score": 7464,
       "delta": -1,
       "direction": "steady",
       "mentions": 36,
@@ -410,16 +410,16 @@
           "platform": "hackernews",
           "title": "Dutch 'idealist' bank ASN blocks non-Google Android, including GrapheneOS",
           "url": "https://github.com/PrivSec-dev/banking-apps-compat-report/issues/105",
-          "score": 648,
+          "score": 654,
           "author": "microtonal",
-          "commentCount": 424,
+          "commentCount": 425,
           "publishedAt": "2026-11-06T09:27:12.000Z"
         },
         {
           "platform": "hackernews",
           "title": "Motorola Signature 27 with GrapheneOS support",
           "url": "https://motorolanews.com/motorola-signature-27-2/",
-          "score": 582,
+          "score": 583,
           "author": "monneyboi",
           "commentCount": 405,
           "publishedAt": "2026-11-05T16:01:34.000Z"
@@ -1062,10 +1062,10 @@
     {
       "slug": "cosmology",
       "label": "Cosmology",
-      "score": 5203,
-      "delta": -4,
+      "score": 5000,
+      "delta": -7,
       "direction": "steady",
-      "mentions": 27,
+      "mentions": 25,
       "sources": [
         {
           "platform": "arxiv",
@@ -1593,10 +1593,10 @@
     {
       "slug": "artemis",
       "label": "Artemis & Lunar Return",
-      "score": 1805,
+      "score": 1802,
       "delta": 0,
       "direction": "steady",
-      "mentions": 11,
+      "mentions": 10,
       "sources": [
         {
           "platform": "arxiv",
@@ -1678,15 +1678,6 @@
           "authors": "Lyuye Lin, Zhifu Feng, Ermanno Miele et al.",
           "arxivCategory": "physics.app-ph",
           "publishedAt": "2026-10-12T15:28:52.000Z"
-        },
-        {
-          "platform": "hackernews",
-          "title": "China Details Precursors to Crewed Moon Landing, Considers Future Exploration",
-          "url": "https://www.china-in-space.com/p/china-details-precursors-to-crewed",
-          "score": 3,
-          "author": "JPLeRouzic",
-          "commentCount": 0,
-          "publishedAt": "2026-11-01T18:46:35.000Z"
         },
         {
           "platform": "hackernews",
@@ -1980,10 +1971,10 @@
     {
       "slug": "starship",
       "label": "Starship & SpaceX",
-      "score": 916,
-      "delta": 1,
+      "score": 935,
+      "delta": 3,
       "direction": "steady",
-      "mentions": 21,
+      "mentions": 20,
       "sources": [
         {
           "platform": "arxiv",
@@ -2016,9 +2007,9 @@
           "platform": "hackernews",
           "title": "Democrats launching congressional investigations into SpaceXAI, META and Apple",
           "url": "https://www.washingtonpost.com/technology/2026/11/06/after-courting-trump-corporate-america-faces-democratic-reckoning/",
-          "score": 146,
+          "score": 148,
           "author": "pretext",
-          "commentCount": 150,
+          "commentCount": 152,
           "publishedAt": "2026-11-06T19:24:24.000Z"
         },
         {
@@ -2032,12 +2023,12 @@
         },
         {
           "platform": "hackernews",
-          "title": "SpaceX Blocked NATO Satellite to Assist Russian Intercept",
-          "url": "https://twitter.com/LibertyLynx/status/2115171072668790981",
-          "score": 15,
-          "author": "vrganj",
-          "commentCount": 2,
-          "publishedAt": "2026-11-01T16:57:42.000Z"
+          "title": "Starship Flight 15 on 11/13 plans to catch both booster and ship",
+          "url": "https://www.spacex.com/launches/starship-flight-15",
+          "score": 36,
+          "author": "spikels",
+          "commentCount": 16,
+          "publishedAt": "2026-11-08T19:49:46.000Z"
         },
         {
           "platform": "hackernews",
@@ -2165,7 +2156,7 @@
       "slug": "ai-space",
       "label": "AI in Space",
       "score": 600,
-      "delta": -1,
+      "delta": 0,
       "direction": "steady",
       "mentions": 3,
       "sources": [
@@ -2216,8 +2207,8 @@
     {
       "slug": "starlink",
       "label": "Starlink & Satellite Internet",
-      "score": 460,
-      "delta": 0,
+      "score": 457,
+      "delta": -1,
       "direction": "steady",
       "mentions": 7,
       "sources": [
@@ -2268,21 +2259,21 @@
         },
         {
           "platform": "hackernews",
-          "title": "Ask HN: Starlink Emails Leaked?",
-          "url": "https://news.ycombinator.com/item?id=50329905",
-          "score": 5,
-          "author": "simenf",
-          "commentCount": 0,
-          "publishedAt": "2026-11-01T21:07:39.000Z"
-        },
-        {
-          "platform": "hackernews",
           "title": "Musk's Starlink Mobile plans to challenge AT&T, Verizon, T-Mobile",
           "url": "https://www.bloomberg.com/news/articles/2026-11-05/how-musk-s-starlink-can-challenge-at-t-verizon-and-t-mobile",
           "score": 4,
           "author": "dvaplima",
           "commentCount": 0,
           "publishedAt": "2026-11-06T15:35:39.000Z"
+        },
+        {
+          "platform": "hackernews",
+          "title": "Russia races to build rival to Elon Musk's Starlink",
+          "url": "https://www.ft.com/content/423ca208-8e22-4fb3-a76d-b9c722fd8cc0",
+          "score": 2,
+          "author": "uxhacker",
+          "commentCount": 1,
+          "publishedAt": "2026-11-08T12:06:32.000Z"
         }
       ],
       "relatedConceptSlugs": [
@@ -2304,7 +2295,7 @@
       "slug": "electric-propulsion",
       "label": "Electric Propulsion",
       "score": 402,
-      "delta": 1,
+      "delta": 0,
       "direction": "steady",
       "mentions": 3,
       "sources": [

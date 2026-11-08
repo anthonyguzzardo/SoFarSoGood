@@ -1,13 +1,13 @@
 {
-  "generatedAt": "2026-11-07T21:34:55.613Z",
+  "generatedAt": "2026-11-08T12:29:55.001Z",
   "topics": [
     {
       "slug": "quantum-computing",
       "label": "Quantum Computing",
-      "score": 8409,
+      "score": 8414,
       "delta": 0,
       "direction": "steady",
-      "mentions": 45,
+      "mentions": 46,
       "sources": [
         {
           "platform": "arxiv",
@@ -136,10 +136,10 @@
     {
       "slug": "space-telescopes",
       "label": "Space Telescopes",
-      "score": 8243,
+      "score": 8239,
       "delta": 0,
       "direction": "steady",
-      "mentions": 46,
+      "mentions": 45,
       "sources": [
         {
           "platform": "arxiv",
@@ -401,25 +401,25 @@
     {
       "slug": "condensed-matter",
       "label": "Condensed Matter",
-      "score": 7522,
-      "delta": 1,
+      "score": 7456,
+      "delta": -1,
       "direction": "steady",
-      "mentions": 37,
+      "mentions": 36,
       "sources": [
         {
           "platform": "hackernews",
           "title": "Dutch 'idealist' bank ASN blocks non-Google Android, including GrapheneOS",
           "url": "https://github.com/PrivSec-dev/banking-apps-compat-report/issues/105",
-          "score": 641,
+          "score": 648,
           "author": "microtonal",
-          "commentCount": 423,
+          "commentCount": 424,
           "publishedAt": "2026-11-06T09:27:12.000Z"
         },
         {
           "platform": "hackernews",
           "title": "Motorola Signature 27 with GrapheneOS support",
           "url": "https://motorolanews.com/motorola-signature-27-2/",
-          "score": 578,
+          "score": 582,
           "author": "monneyboi",
           "commentCount": 405,
           "publishedAt": "2026-11-05T16:01:34.000Z"
@@ -1062,10 +1062,10 @@
     {
       "slug": "cosmology",
       "label": "Cosmology",
-      "score": 5404,
-      "delta": 0,
+      "score": 5203,
+      "delta": -4,
       "direction": "steady",
-      "mentions": 29,
+      "mentions": 27,
       "sources": [
         {
           "platform": "arxiv",
@@ -1328,8 +1328,8 @@
       "slug": "fusion-propulsion",
       "label": "Fusion Propulsion",
       "score": 3200,
-      "delta": -16,
-      "direction": "down",
+      "delta": 0,
+      "direction": "steady",
       "mentions": 16,
       "sources": [
         {
@@ -1593,10 +1593,10 @@
     {
       "slug": "artemis",
       "label": "Artemis & Lunar Return",
-      "score": 1803,
+      "score": 1805,
       "delta": 0,
       "direction": "steady",
-      "mentions": 10,
+      "mentions": 11,
       "sources": [
         {
           "platform": "arxiv",
@@ -1687,6 +1687,15 @@
           "author": "JPLeRouzic",
           "commentCount": 0,
           "publishedAt": "2026-11-01T18:46:35.000Z"
+        },
+        {
+          "platform": "hackernews",
+          "title": "NASA is looking for new astronauts to help grow its Artemis program",
+          "url": "https://www.nbcnews.com/science/space/nasa-is-looking-for-new-astronauts-rcna608025",
+          "score": 2,
+          "author": "TMWNN",
+          "commentCount": 0,
+          "publishedAt": "2026-11-08T08:16:04.000Z"
         }
       ],
       "relatedConceptSlugs": [
@@ -1805,7 +1814,7 @@
       "slug": "exoplanets",
       "label": "Exoplanets",
       "score": 1400,
-      "delta": -12,
+      "delta": 0,
       "direction": "steady",
       "mentions": 7,
       "sources": [
@@ -1971,8 +1980,8 @@
     {
       "slug": "starship",
       "label": "Starship & SpaceX",
-      "score": 911,
-      "delta": 3,
+      "score": 916,
+      "delta": 1,
       "direction": "steady",
       "mentions": 21,
       "sources": [
@@ -2007,9 +2016,9 @@
           "platform": "hackernews",
           "title": "Democrats launching congressional investigations into SpaceXAI, META and Apple",
           "url": "https://www.washingtonpost.com/technology/2026/11/06/after-courting-trump-corporate-america-faces-democratic-reckoning/",
-          "score": 142,
+          "score": 146,
           "author": "pretext",
-          "commentCount": 149,
+          "commentCount": 150,
           "publishedAt": "2026-11-06T19:24:24.000Z"
         },
         {
@@ -2018,7 +2027,7 @@
           "url": "https://techlaws.pages.dev/tesla-and-spacex-lose-over-420b-in-combined-market-cap-in-the-two-days/",
           "score": 84,
           "author": "Pepitobombito",
-          "commentCount": 62,
+          "commentCount": 66,
           "publishedAt": "2026-11-06T02:30:25.000Z"
         },
         {
@@ -2104,10 +2113,10 @@
     {
       "slug": "ocean-worlds",
       "label": "Titan & Ocean Worlds",
-      "score": 800,
-      "delta": 0,
-      "direction": "steady",
-      "mentions": 4,
+      "score": 600,
+      "delta": -25,
+      "direction": "down",
+      "mentions": 3,
       "sources": [
         {
           "platform": "arxiv",
@@ -2135,15 +2144,6 @@
           "authors": "Mark A. Johnson, Jose R. Montes-Bojorquez, Adis Husic et al.",
           "arxivCategory": "astro-ph.EP",
           "publishedAt": "2026-10-13T01:35:53.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Fermentation heterotrophy can reproduce Enceladus's plume H2 and CH4 under limited serpentinization",
-          "url": "https://arxiv.org/abs/2610.13434",
-          "score": 200,
-          "authors": "Sam Nasreldine, Antonin Affholder, Laura Molares Moncayo et al.",
-          "arxivCategory": "astro-ph.EP",
-          "publishedAt": "2026-10-09T11:34:44.000Z"
         }
       ],
       "relatedConceptSlugs": [
@@ -2217,7 +2217,7 @@
       "slug": "starlink",
       "label": "Starlink & Satellite Internet",
       "score": 460,
-      "delta": -1,
+      "delta": 0,
       "direction": "steady",
       "mentions": 7,
       "sources": [
@@ -2303,9 +2303,9 @@
     {
       "slug": "electric-propulsion",
       "label": "Electric Propulsion",
-      "score": 401,
-      "delta": -33,
-      "direction": "down",
+      "score": 402,
+      "delta": 1,
+      "direction": "steady",
       "mentions": 3,
       "sources": [
         {
@@ -2330,7 +2330,7 @@
           "platform": "hackernews",
           "title": "Segmentation Drives Market Share Wins in AI",
           "url": "https://tomtunguz.com/anthropic-repriced-the-enterprise/",
-          "score": 1,
+          "score": 2,
           "author": "gmays",
           "commentCount": 0,
           "publishedAt": "2026-11-07T21:15:00.000Z"
