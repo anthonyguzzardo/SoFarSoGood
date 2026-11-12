@@ -1,13 +1,13 @@
 {
-  "generatedAt": "2026-11-11T13:15:43.247Z",
+  "generatedAt": "2026-11-12T14:18:48.596Z",
   "topics": [
     {
       "slug": "gravitational-waves",
       "label": "Gravitational Waves",
-      "score": 8400,
-      "delta": 0,
+      "score": 8402,
+      "delta": 5,
       "direction": "steady",
-      "mentions": 42,
+      "mentions": 43,
       "sources": [
         {
           "platform": "arxiv",
@@ -136,10 +136,10 @@
     {
       "slug": "black-holes",
       "label": "Black Holes",
-      "score": 8025,
-      "delta": 3,
+      "score": 8028,
+      "delta": -2,
       "direction": "steady",
-      "mentions": 43,
+      "mentions": 44,
       "sources": [
         {
           "platform": "arxiv",
@@ -269,10 +269,10 @@
     {
       "slug": "quantum-computing",
       "label": "Quantum Computing",
-      "score": 8019,
+      "score": 8016,
       "delta": -7,
       "direction": "steady",
-      "mentions": 46,
+      "mentions": 45,
       "sources": [
         {
           "platform": "arxiv",
@@ -401,10 +401,10 @@
     {
       "slug": "space-telescopes",
       "label": "Space Telescopes",
-      "score": 8003,
-      "delta": -5,
+      "score": 8000,
+      "delta": -9,
       "direction": "steady",
-      "mentions": 41,
+      "mentions": 40,
       "sources": [
         {
           "platform": "arxiv",
@@ -534,10 +534,10 @@
     {
       "slug": "condensed-matter",
       "label": "Condensed Matter",
-      "score": 7892,
-      "delta": 3,
+      "score": 7709,
+      "delta": -2,
       "direction": "steady",
-      "mentions": 41,
+      "mentions": 42,
       "sources": [
         {
           "platform": "hackernews",
@@ -545,7 +545,7 @@
           "url": "https://github.com/PrivSec-dev/banking-apps-compat-report/issues/105",
           "score": 658,
           "author": "microtonal",
-          "commentCount": 437,
+          "commentCount": 439,
           "publishedAt": "2026-11-06T09:27:12.000Z"
         },
         {
@@ -613,15 +613,6 @@
         },
         {
           "platform": "arxiv",
-          "title": "Quantitative Impact of Occupation Smearing Methods on Conventional Superconductivity: from Electronic Structure through Lattice Dynamics to Electron-Phonon Coupling",
-          "url": "https://arxiv.org/abs/2610.18185",
-          "score": 200,
-          "authors": "Zhongyu Wan",
-          "arxivCategory": "cond-mat.supr-con",
-          "publishedAt": "2026-10-13T11:25:00.000Z"
-        },
-        {
-          "platform": "arxiv",
           "title": "End-state-assisted tunneling at a topological insulator STM tip",
           "url": "https://arxiv.org/abs/2611.14155",
           "score": 200,
@@ -646,6 +637,15 @@
           "authors": "Siyuan Cheng, Yuee Xie, Xiaosen Yang et al.",
           "arxivCategory": "cond-mat.mes-hall",
           "publishedAt": "2026-11-10T01:26:22.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Theory of spin-polarized scanning tunneling microscopy with topological insulator tips",
+          "url": "https://arxiv.org/abs/2611.11267",
+          "score": 200,
+          "authors": "Zhuo-Yuan Shi, Chuang Li, Lin Jiao et al.",
+          "arxivCategory": "cond-mat.mes-hall",
+          "publishedAt": "2026-11-08T09:43:10.000Z"
         }
       ],
       "relatedConceptSlugs": [
@@ -666,10 +666,10 @@
     {
       "slug": "nanotechnology",
       "label": "Nanotechnology & Metamaterials",
-      "score": 7800,
+      "score": 7600,
       "delta": 3,
       "direction": "steady",
-      "mentions": 39,
+      "mentions": 38,
       "sources": [
         {
           "platform": "arxiv",
@@ -799,10 +799,10 @@
     {
       "slug": "particle-physics",
       "label": "Particle Physics",
-      "score": 6811,
-      "delta": 3,
+      "score": 6806,
+      "delta": 0,
       "direction": "steady",
-      "mentions": 37,
+      "mentions": 36,
       "sources": [
         {
           "platform": "arxiv",
@@ -929,10 +929,10 @@
     {
       "slug": "dark-matter",
       "label": "Dark Matter & Dark Energy",
-      "score": 5602,
-      "delta": 0,
+      "score": 5605,
+      "delta": 4,
       "direction": "steady",
-      "mentions": 29,
+      "mentions": 30,
       "sources": [
         {
           "platform": "arxiv",
@@ -1063,7 +1063,7 @@
       "slug": "cosmology",
       "label": "Cosmology",
       "score": 5400,
-      "delta": 8,
+      "delta": 4,
       "direction": "steady",
       "mentions": 27,
       "sources": [
@@ -1194,10 +1194,10 @@
     {
       "slug": "astrobiology",
       "label": "Astrobiology",
-      "score": 3603,
-      "delta": 13,
+      "score": 3403,
+      "delta": -6,
       "direction": "steady",
-      "mentions": 19,
+      "mentions": 18,
       "sources": [
         {
           "platform": "arxiv",
@@ -1328,7 +1328,7 @@
       "slug": "fusion-propulsion",
       "label": "Fusion Propulsion",
       "score": 3200,
-      "delta": 7,
+      "delta": 0,
       "direction": "steady",
       "mentions": 16,
       "sources": [
@@ -1591,135 +1591,11 @@
       }
     },
     {
-      "slug": "exoplanets",
-      "label": "Exoplanets",
-      "score": 2004,
-      "delta": 11,
-      "direction": "steady",
-      "mentions": 11,
-      "sources": [
-        {
-          "platform": "arxiv",
-          "title": "Advances in High-Precision Astrometry for Exoplanet Detection for Astrometric Missions",
-          "url": "https://arxiv.org/abs/2611.09657",
-          "score": 200,
-          "authors": "Fabien Malbet, Jerôme Amiaux, Florence Ardellier-Desages et al.",
-          "arxivCategory": "astro-ph.EP",
-          "publishedAt": "2026-11-06T16:06:25.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "On-sky performance and prospects of near-infrared CMOS detectors in exoplanet detection: first year of SPIRIT",
-          "url": "https://arxiv.org/abs/2610.19902",
-          "score": 200,
-          "authors": "Clàudia Janó-Muñoz, Matthew J. Hooton, Peter P. Pedersen et al.",
-          "arxivCategory": "astro-ph.EP",
-          "publishedAt": "2026-10-14T09:59:29.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Evolving stellar wind environment around M dwarfs and its influence on magnetic star-planet interactions",
-          "url": "https://arxiv.org/abs/2611.11642",
-          "score": 200,
-          "authors": "Szymon Petyniak, Stefano Bellotti, Aline Vidotto et al.",
-          "arxivCategory": "astro-ph.SR",
-          "publishedAt": "2026-11-08T21:56:51.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Validation of Habitable Zone Limits with a New Radiative-Convective Equilibrium Climate Model",
-          "url": "https://arxiv.org/abs/2611.09475",
-          "score": 200,
-          "authors": "Jacob Haqq-Misra, Eric T. Wolf, Ravi K. Kopparapu",
-          "arxivCategory": "astro-ph.EP",
-          "publishedAt": "2026-11-06T13:55:59.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Shadowing the Sun I: Testing Synthetic Granulation Spectra with NEID Solar Eclipse Observations",
-          "url": "https://arxiv.org/abs/2611.03898",
-          "score": 200,
-          "authors": "Elizabeth Gonzalez, Michael L. Palumbo, Suvrath Mahadevan et al.",
-          "arxivCategory": "astro-ph.SR",
-          "publishedAt": "2026-11-02T20:07:03.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Are habitable-zone TESS Objects of Interest really there? Period resolution from the full archive",
-          "url": "https://arxiv.org/abs/2611.03019",
-          "score": 200,
-          "authors": "Juan F. Pagés Navarrete",
-          "arxivCategory": "astro-ph.EP",
-          "publishedAt": "2026-11-02T12:17:59.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Measuring masses of transiting Earth-like planets: first insights from the PLATO RV data challenge",
-          "url": "https://arxiv.org/abs/2610.36201",
-          "score": 200,
-          "authors": "M. Cretignier, N. C. Hara, S. Aigrain et al.",
-          "arxivCategory": "astro-ph.EP",
-          "publishedAt": "2026-10-26T19:38:39.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "A Headwind-like Helium Outflow from TOI-3884b",
-          "url": "https://arxiv.org/abs/2610.31492",
-          "score": 200,
-          "authors": "Joe P. Ninan, Jessica Libby-Roberts, Suvrath Mahadevan et al.",
-          "arxivCategory": "astro-ph.EP",
-          "publishedAt": "2026-10-22T16:12:31.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "The contact frontier in Galactic civilization networks: radial structure and the Galactic habitable zone",
-          "url": "https://arxiv.org/abs/2610.20475",
-          "score": 200,
-          "authors": "Kohji Tsumura",
-          "arxivCategory": "astro-ph.GA",
-          "publishedAt": "2026-10-14T16:51:19.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Ultraviolet Reflected-Light Spectroscopy of Modern Earth Analogs with Starshade Observations",
-          "url": "https://arxiv.org/abs/2610.17377",
-          "score": 200,
-          "authors": "Zahra Ahmed, Stuart Shaklan, Mario Damiano et al.",
-          "arxivCategory": "astro-ph.EP",
-          "publishedAt": "2026-10-12T20:35:37.000Z"
-        },
-        {
-          "platform": "hackernews",
-          "title": "Software squeezes more data out of Webb Telescope for imaging exoplanets",
-          "url": "https://arstechnica.com/science/2026/11/getting-software-to-help-block-out-a-star-so-we-can-see-exoplanets/",
-          "score": 4,
-          "author": "rbanffy",
-          "commentCount": 0,
-          "publishedAt": "2026-11-09T21:24:13.000Z"
-        }
-      ],
-      "relatedConceptSlugs": [
-        "fluidic-telescope",
-        "orbiting-rainbows"
-      ],
-      "resonance": 51,
-      "quadrant": "real-deal",
-      "resonanceSignals": {
-        "conceptDepth": 0.5113915944693856,
-        "editorial": 1,
-        "connections": 0.3333333333333333,
-        "convergence": 0.15,
-        "deepTopic": 0.8,
-        "pantheon": 0.12,
-        "graveyard": 0
-      }
-    },
-    {
       "slug": "space-debris",
       "label": "Space Debris",
       "score": 2000,
-      "delta": 25,
-      "direction": "up",
+      "delta": 11,
+      "direction": "steady",
       "mentions": 10,
       "sources": [
         {
@@ -1817,7 +1693,7 @@
         "niac-phase-i-final-report-on-orbit-collision"
       ],
       "resonance": 20,
-      "quadrant": "dead-zone",
+      "quadrant": "hype-cycle",
       "resonanceSignals": {
         "conceptDepth": 0.3868528072345416,
         "editorial": 0.4,
@@ -1829,12 +1705,127 @@
       }
     },
     {
+      "slug": "exoplanets",
+      "label": "Exoplanets",
+      "score": 1804,
+      "delta": -10,
+      "direction": "steady",
+      "mentions": 10,
+      "sources": [
+        {
+          "platform": "arxiv",
+          "title": "Advances in High-Precision Astrometry for Exoplanet Detection for Astrometric Missions",
+          "url": "https://arxiv.org/abs/2611.09657",
+          "score": 200,
+          "authors": "Fabien Malbet, Jerôme Amiaux, Florence Ardellier-Desages et al.",
+          "arxivCategory": "astro-ph.EP",
+          "publishedAt": "2026-11-06T16:06:25.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "On-sky performance and prospects of near-infrared CMOS detectors in exoplanet detection: first year of SPIRIT",
+          "url": "https://arxiv.org/abs/2610.19902",
+          "score": 200,
+          "authors": "Clàudia Janó-Muñoz, Matthew J. Hooton, Peter P. Pedersen et al.",
+          "arxivCategory": "astro-ph.EP",
+          "publishedAt": "2026-10-14T09:59:29.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Evolving stellar wind environment around M dwarfs and its influence on magnetic star-planet interactions",
+          "url": "https://arxiv.org/abs/2611.11642",
+          "score": 200,
+          "authors": "Szymon Petyniak, Stefano Bellotti, Aline Vidotto et al.",
+          "arxivCategory": "astro-ph.SR",
+          "publishedAt": "2026-11-08T21:56:51.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Validation of Habitable Zone Limits with a New Radiative-Convective Equilibrium Climate Model",
+          "url": "https://arxiv.org/abs/2611.09475",
+          "score": 200,
+          "authors": "Jacob Haqq-Misra, Eric T. Wolf, Ravi K. Kopparapu",
+          "arxivCategory": "astro-ph.EP",
+          "publishedAt": "2026-11-06T13:55:59.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Shadowing the Sun I: Testing Synthetic Granulation Spectra with NEID Solar Eclipse Observations",
+          "url": "https://arxiv.org/abs/2611.03898",
+          "score": 200,
+          "authors": "Elizabeth Gonzalez, Michael L. Palumbo, Suvrath Mahadevan et al.",
+          "arxivCategory": "astro-ph.SR",
+          "publishedAt": "2026-11-02T20:07:03.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Are habitable-zone TESS Objects of Interest really there? Period resolution from the full archive",
+          "url": "https://arxiv.org/abs/2611.03019",
+          "score": 200,
+          "authors": "Juan F. Pagés Navarrete",
+          "arxivCategory": "astro-ph.EP",
+          "publishedAt": "2026-11-02T12:17:59.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Measuring masses of transiting Earth-like planets: first insights from the PLATO RV data challenge",
+          "url": "https://arxiv.org/abs/2610.36201",
+          "score": 200,
+          "authors": "M. Cretignier, N. C. Hara, S. Aigrain et al.",
+          "arxivCategory": "astro-ph.EP",
+          "publishedAt": "2026-10-26T19:38:39.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "A Headwind-like Helium Outflow from TOI-3884b",
+          "url": "https://arxiv.org/abs/2610.31492",
+          "score": 200,
+          "authors": "Joe P. Ninan, Jessica Libby-Roberts, Suvrath Mahadevan et al.",
+          "arxivCategory": "astro-ph.EP",
+          "publishedAt": "2026-10-22T16:12:31.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "The contact frontier in Galactic civilization networks: radial structure and the Galactic habitable zone",
+          "url": "https://arxiv.org/abs/2610.20475",
+          "score": 200,
+          "authors": "Kohji Tsumura",
+          "arxivCategory": "astro-ph.GA",
+          "publishedAt": "2026-10-14T16:51:19.000Z"
+        },
+        {
+          "platform": "hackernews",
+          "title": "Software squeezes more data out of Webb Telescope for imaging exoplanets",
+          "url": "https://arstechnica.com/science/2026/11/getting-software-to-help-block-out-a-star-so-we-can-see-exoplanets/",
+          "score": 4,
+          "author": "rbanffy",
+          "commentCount": 0,
+          "publishedAt": "2026-11-09T21:24:13.000Z"
+        }
+      ],
+      "relatedConceptSlugs": [
+        "fluidic-telescope",
+        "orbiting-rainbows"
+      ],
+      "resonance": 51,
+      "quadrant": "sleeping-giant",
+      "resonanceSignals": {
+        "conceptDepth": 0.5113915944693856,
+        "editorial": 1,
+        "connections": 0.3333333333333333,
+        "convergence": 0.15,
+        "deepTopic": 0.8,
+        "pantheon": 0.12,
+        "graveyard": 0
+      }
+    },
+    {
       "slug": "artemis",
       "label": "Artemis & Lunar Return",
-      "score": 1602,
-      "delta": 0,
+      "score": 1402,
+      "delta": -12,
       "direction": "steady",
-      "mentions": 9,
+      "mentions": 8,
       "sources": [
         {
           "platform": "arxiv",
@@ -1900,15 +1891,6 @@
           "publishedAt": "2026-10-17T03:37:02.000Z"
         },
         {
-          "platform": "arxiv",
-          "title": "Wireless Energy Transfer for Space Applications: A Review of Technologies, Mission Architectures, Energy Routing, and System Integration",
-          "url": "https://arxiv.org/abs/2610.16960",
-          "score": 200,
-          "authors": "Lyuye Lin, Zhifu Feng, Ermanno Miele et al.",
-          "arxivCategory": "physics.app-ph",
-          "publishedAt": "2026-10-12T15:28:52.000Z"
-        },
-        {
           "platform": "hackernews",
           "title": "NASA is looking for new astronauts to help grow its Artemis program",
           "url": "https://www.nbcnews.com/science/space/nasa-is-looking-for-new-astronauts-rcna608025",
@@ -1937,10 +1919,10 @@
     {
       "slug": "asteroid-mining",
       "label": "Asteroid Mining",
-      "score": 1203,
-      "delta": 50,
-      "direction": "up",
-      "mentions": 7,
+      "score": 1200,
+      "delta": 0,
+      "direction": "steady",
+      "mentions": 6,
       "sources": [
         {
           "platform": "arxiv",
@@ -1995,15 +1977,6 @@
           "authors": "Yixuan Wu, Kin Thong Lee, Yifei Jiao et al.",
           "arxivCategory": "astro-ph.EP",
           "publishedAt": "2026-10-31T20:02:48.000Z"
-        },
-        {
-          "platform": "hackernews",
-          "title": "Asteroid defense hits a lump in the road",
-          "url": "https://newsreleases.sandia.gov/asteroid-defense-hits-a-lump-in-the-road/",
-          "score": 3,
-          "author": "titusblair",
-          "commentCount": 0,
-          "publishedAt": "2026-11-05T02:32:30.000Z"
         }
       ],
       "relatedConceptSlugs": [
@@ -2023,153 +1996,20 @@
       }
     },
     {
-      "slug": "starship",
-      "label": "Starship & SpaceX",
-      "score": 1075,
-      "delta": 1,
-      "direction": "steady",
-      "mentions": 22,
-      "sources": [
-        {
-          "platform": "arxiv",
-          "title": "Overcoming Fundamental Control Limitations in Powered Descent Flight through Robust Incremental Nonlinear Dynamic Inversion",
-          "url": "https://arxiv.org/abs/2611.08121",
-          "score": 200,
-          "authors": "João T. Diz, Paulo Rosa, Pedro Simplício et al.",
-          "arxivCategory": "eess.SY",
-          "publishedAt": "2026-11-05T14:54:21.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Curriculum-Driven Deep Reinforcement Learning for Autonomous Far-Range Rocket Landing",
-          "url": "https://arxiv.org/abs/2610.35954",
-          "score": 200,
-          "authors": "Atin Chowdhury, Piyush Joshi",
-          "arxivCategory": "cs.LG",
-          "publishedAt": "2026-10-24T19:57:44.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Theoretical and Computational Advances in Birkhoff Pseudospectral Transcription for Aerospace Optimal Control",
-          "url": "https://arxiv.org/abs/2610.17842",
-          "score": 200,
-          "authors": "Riccardo Minnozzi, Marco Sagliano",
-          "arxivCategory": "math.OC",
-          "publishedAt": "2026-10-13T07:03:58.000Z"
-        },
-        {
-          "platform": "hackernews",
-          "title": "Starship Flight 15 on 11/13 plans to catch both booster and ship",
-          "url": "https://www.spacex.com/launches/starship-flight-15",
-          "score": 176,
-          "author": "spikels",
-          "commentCount": 172,
-          "publishedAt": "2026-11-08T19:49:46.000Z"
-        },
-        {
-          "platform": "hackernews",
-          "title": "Democrats launching congressional investigations into SpaceXAI, META and Apple",
-          "url": "https://www.washingtonpost.com/technology/2026/11/06/after-courting-trump-corporate-america-faces-democratic-reckoning/",
-          "score": 148,
-          "author": "pretext",
-          "commentCount": 155,
-          "publishedAt": "2026-11-06T19:24:24.000Z"
-        },
-        {
-          "platform": "hackernews",
-          "title": "Tesla and SpaceX lose over $420B in combined market cap in the two days",
-          "url": "https://techlaws.pages.dev/tesla-and-spacex-lose-over-420b-in-combined-market-cap-in-the-two-days/",
-          "score": 84,
-          "author": "Pepitobombito",
-          "commentCount": 66,
-          "publishedAt": "2026-11-06T02:30:25.000Z"
-        },
-        {
-          "platform": "hackernews",
-          "title": "After Texas' blue wave, what happens to Elon Musk and SpaceX?",
-          "url": "https://arstechnica.com/space/2026/11/elon-musk-moved-spacex-to-red-texas-now-its-blue-what-happens-next/",
-          "score": 11,
-          "author": "rbanffy",
-          "commentCount": 8,
-          "publishedAt": "2026-11-05T07:35:14.000Z"
-        },
-        {
-          "platform": "hackernews",
-          "title": "Shares in Musk's SpaceX plunge as tech and AI stocks fall",
-          "url": "https://www.bbc.com/news/articles/cmn04705rd8jo",
-          "score": 10,
-          "author": "madihaa",
-          "commentCount": 1,
-          "publishedAt": "2026-11-05T19:51:12.000Z"
-        },
-        {
-          "platform": "hackernews",
-          "title": "Musk Faces Setback as SpaceX and Tesla Stocks Tumble on Midterm Election Results",
-          "url": "https://www.nytimes.com/2026/11/04/business/musk-elections-spacex-tesla-stocks.html",
-          "score": 7,
-          "author": "cdrnsf",
-          "commentCount": 11,
-          "publishedAt": "2026-11-04T14:04:37.000Z"
-        },
-        {
-          "platform": "hackernews",
-          "title": "SpaceX Starship Will Need to Re-Fuel 22 Times in Space to Make It to the Moon",
-          "url": "https://www.jalopnik.com/2306690/spacex-starships-orbit-refueling/",
-          "score": 6,
-          "author": "teachrdan",
-          "commentCount": 2,
-          "publishedAt": "2026-11-04T23:47:59.000Z"
-        },
-        {
-          "platform": "hackernews",
-          "title": "Starship Telemetry Visualizer",
-          "url": "https://telemetry.starshipspaceprogram.com/",
-          "score": 5,
-          "author": "Eridanus2",
-          "commentCount": 2,
-          "publishedAt": "2026-11-06T18:14:02.000Z"
-        },
-        {
-          "platform": "hackernews",
-          "title": "Returning Starship to the Launch Site",
-          "url": "https://www.spacex.com/updates#starship-catch",
-          "score": 4,
-          "author": "d_silin",
-          "commentCount": 0,
-          "publishedAt": "2026-11-09T01:40:31.000Z"
-        }
-      ],
-      "relatedConceptSlugs": [
-        "extraterrestrial-regolith-derived-atmospheric-entry-heat-shields",
-        "phase-i-final-report-nasa-institute-for-advanced-concepts-combined-heat-shield-a"
-      ],
-      "resonance": 43,
-      "quadrant": "dead-zone",
-      "resonanceSignals": {
-        "conceptDepth": 0.5113915944693856,
-        "editorial": 0.4,
-        "connections": 0,
-        "convergence": 0.35,
-        "deepTopic": 1,
-        "pantheon": 0.92,
-        "graveyard": 0
-      }
-    },
-    {
       "slug": "starlink",
       "label": "Starlink & Satellite Internet",
-      "score": 945,
-      "delta": 105,
+      "score": 1030,
+      "delta": 57,
       "direction": "up",
-      "mentions": 10,
+      "mentions": 11,
       "sources": [
         {
           "platform": "hackernews",
           "title": "Starlink Mini 2",
           "url": "https://starlink.com/mini-2",
-          "score": 444,
+          "score": 509,
           "author": "robertjfclarke",
-          "commentCount": 476,
+          "commentCount": 607,
           "publishedAt": "2026-11-10T18:22:32.000Z"
         },
         {
@@ -2194,9 +2034,9 @@
           "platform": "hackernews",
           "title": "Ukraine Pivots to Israeli-Italian Satellite Tech to Bypass Starlink Restrictions",
           "url": "https://policy-wire.com/ukraine-pivots-to-israeli-italian-satellite-tech-to-bypass-starlink-restrictions/",
-          "score": 39,
+          "score": 55,
           "author": "vrganj",
-          "commentCount": 5,
+          "commentCount": 27,
           "publishedAt": "2026-11-11T08:26:40.000Z"
         },
         {
@@ -2221,7 +2061,7 @@
           "platform": "hackernews",
           "title": "Musk reposts tweet calling Starlink service for Ukraine 'mistake'",
           "url": "https://kyivindependent.com/musk-reposts-tweet-calling-starlink-service-for-ukraine-mistake/",
-          "score": 9,
+          "score": 10,
           "author": "doener",
           "commentCount": 2,
           "publishedAt": "2026-11-07T02:52:30.000Z"
@@ -2243,6 +2083,15 @@
           "author": "dvaplima",
           "commentCount": 0,
           "publishedAt": "2026-11-06T15:35:39.000Z"
+        },
+        {
+          "platform": "hackernews",
+          "title": "British Telecom delays Starlink partnership amid recent Ukrainian disruption",
+          "url": "https://www.datacenterdynamics.com/en/news/bt-delays-starlink-partnership-amid-recent-ukrainian-disruption-report/",
+          "score": 3,
+          "author": "giuliomagnifico",
+          "commentCount": 0,
+          "publishedAt": "2026-11-11T17:19:32.000Z"
         },
         {
           "platform": "hackernews",
@@ -2270,62 +2119,135 @@
       }
     },
     {
-      "slug": "ocean-worlds",
-      "label": "Titan & Ocean Worlds",
-      "score": 800,
-      "delta": 0,
-      "direction": "steady",
-      "mentions": 4,
+      "slug": "starship",
+      "label": "Starship & SpaceX",
+      "score": 863,
+      "delta": -20,
+      "direction": "down",
+      "mentions": 18,
       "sources": [
         {
           "platform": "arxiv",
-          "title": "TitanMPAS - a new global and regional Titan atmospheric circulation model. Part I: Global model results",
-          "url": "https://arxiv.org/abs/2611.08700",
+          "title": "Overcoming Fundamental Control Limitations in Powered Descent Flight through Robust Incremental Nonlinear Dynamic Inversion",
+          "url": "https://arxiv.org/abs/2611.08121",
           "score": 200,
-          "authors": "Yuan Lian, Mark I. Richardson, Claire E. Newman et al.",
-          "arxivCategory": "astro-ph.EP",
-          "publishedAt": "2026-11-05T21:00:00.000Z"
+          "authors": "João T. Diz, Paulo Rosa, Pedro Simplício et al.",
+          "arxivCategory": "eess.SY",
+          "publishedAt": "2026-11-05T14:54:21.000Z"
         },
         {
           "platform": "arxiv",
-          "title": "The physical and chemical structure of Titan's upper atmosphere: energy balance, photochemistry and Jeans escape",
-          "url": "https://arxiv.org/abs/2610.30258",
+          "title": "Curriculum-Driven Deep Reinforcement Learning for Autonomous Far-Range Rocket Landing",
+          "url": "https://arxiv.org/abs/2610.35954",
           "score": 200,
-          "authors": "Sudeshna Boro Saikia, Jonathan Tennyson, Shuchen Ji et al.",
-          "arxivCategory": "astro-ph.EP",
-          "publishedAt": "2026-10-21T18:00:05.000Z"
+          "authors": "Atin Chowdhury, Piyush Joshi",
+          "arxivCategory": "cs.LG",
+          "publishedAt": "2026-10-24T19:57:44.000Z"
         },
         {
-          "platform": "arxiv",
-          "title": "Topographically Forced Stationary Waves Can Explain the Near-Surface Zonal Winds Observed by Huygens on Titan",
-          "url": "https://arxiv.org/abs/2610.29930",
-          "score": 200,
-          "authors": "Sooman Han, Scot Rafkin, J. Michael Battalio et al.",
-          "arxivCategory": "astro-ph.EP",
-          "publishedAt": "2026-10-21T16:03:29.000Z"
+          "platform": "hackernews",
+          "title": "Starship Flight 15 on 11/13 plans to catch both booster and ship",
+          "url": "https://www.spacex.com/launches/starship-flight-15",
+          "score": 178,
+          "author": "spikels",
+          "commentCount": 175,
+          "publishedAt": "2026-11-08T19:49:46.000Z"
         },
         {
-          "platform": "arxiv",
-          "title": "Elastic Properties of Titan Tholins Revealed by Brillouin Spectroscopy",
-          "url": "https://arxiv.org/abs/2610.17564",
-          "score": 200,
-          "authors": "Mark A. Johnson, Jose R. Montes-Bojorquez, Adis Husic et al.",
-          "arxivCategory": "astro-ph.EP",
-          "publishedAt": "2026-10-13T01:35:53.000Z"
+          "platform": "hackernews",
+          "title": "Democrats launching congressional investigations into SpaceXAI, META and Apple",
+          "url": "https://www.washingtonpost.com/technology/2026/11/06/after-courting-trump-corporate-america-faces-democratic-reckoning/",
+          "score": 148,
+          "author": "pretext",
+          "commentCount": 156,
+          "publishedAt": "2026-11-06T19:24:24.000Z"
+        },
+        {
+          "platform": "hackernews",
+          "title": "Tesla and SpaceX lose over $420B in combined market cap in the two days",
+          "url": "https://techlaws.pages.dev/tesla-and-spacex-lose-over-420b-in-combined-market-cap-in-the-two-days/",
+          "score": 84,
+          "author": "Pepitobombito",
+          "commentCount": 66,
+          "publishedAt": "2026-11-06T02:30:25.000Z"
+        },
+        {
+          "platform": "hackernews",
+          "title": "Shares in Musk's SpaceX plunge as tech and AI stocks fall",
+          "url": "https://www.bbc.com/news/articles/cmn04705rd8jo",
+          "score": 10,
+          "author": "madihaa",
+          "commentCount": 1,
+          "publishedAt": "2026-11-05T19:51:12.000Z"
+        },
+        {
+          "platform": "hackernews",
+          "title": "SpaceX Loses Appeal to Force Sexual Harassment Lawsuit into Private Arbitration",
+          "url": "https://gizmodo.com/spacex-loses-appeal-to-force-sexual-harassment-lawsuit-into-private-arbitration-2000838724",
+          "score": 10,
+          "author": "rbanffy",
+          "commentCount": 0,
+          "publishedAt": "2026-11-12T10:42:46.000Z"
+        },
+        {
+          "platform": "hackernews",
+          "title": "Grok Build coding agent leaks confidential info, some belonging to SpaceXSI",
+          "url": "https://arstechnica.com/security/2026/11/grok-build-coding-agent-leaks-oodles-of-confidential-info-some-belonging-to-spacexsi/",
+          "score": 7,
+          "author": "Palmik",
+          "commentCount": 0,
+          "publishedAt": "2026-11-11T07:24:31.000Z"
+        },
+        {
+          "platform": "hackernews",
+          "title": "Starship Telemetry Visualizer",
+          "url": "https://telemetry.starshipspaceprogram.com/",
+          "score": 5,
+          "author": "Eridanus2",
+          "commentCount": 2,
+          "publishedAt": "2026-11-06T18:14:02.000Z"
+        },
+        {
+          "platform": "hackernews",
+          "title": "Returning Starship to the Launch Site",
+          "url": "https://www.spacex.com/updates#starship-catch",
+          "score": 4,
+          "author": "d_silin",
+          "commentCount": 0,
+          "publishedAt": "2026-11-09T01:40:31.000Z"
+        },
+        {
+          "platform": "hackernews",
+          "title": "SpaceX now fundamentally an \"infrastructure company,\" senior official says",
+          "url": "https://arstechnica.com/space/2026/11/spacex-now-fundamentally-an-infrastructure-company-senior-official-says/",
+          "score": 4,
+          "author": "rbanffy",
+          "commentCount": 0,
+          "publishedAt": "2026-11-09T17:27:36.000Z"
+        },
+        {
+          "platform": "hackernews",
+          "title": "SpaceX launched Google AI chips to orbit with Planet Labs satellites",
+          "url": "https://www.cnbc.com/2026/10/01/spacex-to-launch-google-ai-chips-to-orbit-with-planet-labs-satellites.html",
+          "score": 3,
+          "author": "gmays",
+          "commentCount": 3,
+          "publishedAt": "2026-11-06T15:49:39.000Z"
         }
       ],
       "relatedConceptSlugs": [
-        "titan-submarine"
+        "extraterrestrial-regolith-derived-atmospheric-entry-heat-shields",
+        "phase-i-final-report-nasa-institute-for-advanced-concepts-combined-heat-shield-a"
       ],
-      "resonance": 18,
+      "resonance": 43,
       "quadrant": "dead-zone",
       "resonanceSignals": {
-        "conceptDepth": 0.22629438553091683,
-        "editorial": 0,
+        "conceptDepth": 0.5113915944693856,
+        "editorial": 0.4,
         "connections": 0,
-        "convergence": 0.15,
-        "deepTopic": 0.8,
-        "pantheon": 0.16,
+        "convergence": 0.35,
+        "deepTopic": 1,
+        "pantheon": 0.92,
         "graveyard": 0
       }
     },
@@ -2333,8 +2255,8 @@
       "slug": "interstellar-travel",
       "label": "Interstellar Travel",
       "score": 600,
-      "delta": 50,
-      "direction": "up",
+      "delta": 0,
+      "direction": "steady",
       "mentions": 3,
       "sources": [
         {
@@ -2383,54 +2305,104 @@
       }
     },
     {
-      "slug": "ai-space",
-      "label": "AI in Space",
+      "slug": "ocean-worlds",
+      "label": "Titan & Ocean Worlds",
       "score": 600,
-      "delta": 0,
+      "delta": -25,
+      "direction": "down",
+      "mentions": 3,
+      "sources": [
+        {
+          "platform": "arxiv",
+          "title": "TitanMPAS - a new global and regional Titan atmospheric circulation model. Part I: Global model results",
+          "url": "https://arxiv.org/abs/2611.08700",
+          "score": 200,
+          "authors": "Yuan Lian, Mark I. Richardson, Claire E. Newman et al.",
+          "arxivCategory": "astro-ph.EP",
+          "publishedAt": "2026-11-05T21:00:00.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "The physical and chemical structure of Titan's upper atmosphere: energy balance, photochemistry and Jeans escape",
+          "url": "https://arxiv.org/abs/2610.30258",
+          "score": 200,
+          "authors": "Sudeshna Boro Saikia, Jonathan Tennyson, Shuchen Ji et al.",
+          "arxivCategory": "astro-ph.EP",
+          "publishedAt": "2026-10-21T18:00:05.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Topographically Forced Stationary Waves Can Explain the Near-Surface Zonal Winds Observed by Huygens on Titan",
+          "url": "https://arxiv.org/abs/2610.29930",
+          "score": 200,
+          "authors": "Sooman Han, Scot Rafkin, J. Michael Battalio et al.",
+          "arxivCategory": "astro-ph.EP",
+          "publishedAt": "2026-10-21T16:03:29.000Z"
+        }
+      ],
+      "relatedConceptSlugs": [
+        "titan-submarine"
+      ],
+      "resonance": 18,
+      "quadrant": "dead-zone",
+      "resonanceSignals": {
+        "conceptDepth": 0.22629438553091683,
+        "editorial": 0,
+        "connections": 0,
+        "convergence": 0.15,
+        "deepTopic": 0.8,
+        "pantheon": 0.16,
+        "graveyard": 0
+      }
+    },
+    {
+      "slug": "dyson-spheres",
+      "label": "Dyson Spheres",
+      "score": 404,
+      "delta": 1,
       "direction": "steady",
       "mentions": 3,
       "sources": [
         {
           "platform": "arxiv",
-          "title": "Evaluating Spiking MoveNet Deployability for Near-Future Onboard Spiking Satellite Pose Estimation",
-          "url": "https://arxiv.org/abs/2610.33061",
+          "title": "Millimetre/Sub-Millimetre SETI: Expanding the Radio Technosignature Parameter Space with ALMA2040",
+          "url": "https://arxiv.org/abs/2610.22266",
           "score": 200,
-          "authors": "Jonathan Courtois, Christophe Marabotto, Benoit Miramond et al.",
-          "arxivCategory": "cs.NE",
-          "publishedAt": "2026-10-19T12:58:47.000Z"
+          "authors": "Louisa A. Mason, Michael A. Garrett, Sofia Z. Sheikh et al.",
+          "arxivCategory": "astro-ph.IM",
+          "publishedAt": "2026-10-15T17:31:03.000Z"
         },
         {
           "platform": "arxiv",
-          "title": "Learning in Orbit: Onboard Training and Closed-Loop Attitude Control with a Thermal Segmentation Model on a Spacecraft",
-          "url": "https://arxiv.org/abs/2610.19122",
+          "title": "Power Density as a Universal Biosignature: An Application to the Stellivore Hypothesis",
+          "url": "https://arxiv.org/abs/2611.03691",
           "score": 200,
-          "authors": "Elena Sorina Lupu, Hannah Grauer, Phaedrus Leeds et al.",
-          "arxivCategory": "cs.RO",
-          "publishedAt": "2026-10-13T19:57:06.000Z"
+          "authors": "Clément Vidal, Luciano Kadian",
+          "arxivCategory": "physics.gen-ph",
+          "publishedAt": "2026-10-27T08:40:53.000Z"
         },
         {
-          "platform": "arxiv",
-          "title": "From Orbit Matching to Docking: A Hierarchical Reinforcement-Learning Approach to Multiphase Rendezvous Trajectory Design",
-          "url": "https://arxiv.org/abs/2610.17468",
-          "score": 200,
-          "authors": "Mariko Storey-Matsutani, Anatoly Zlotnik, Lee Holguin et al.",
-          "arxivCategory": "cs.RO",
-          "publishedAt": "2026-10-12T22:30:58.000Z"
+          "platform": "hackernews",
+          "title": "Type 0.73: Earth on the Kardashev scale, and why AI is short of wire",
+          "url": "https://oliverdb.ai/blog/type-0-73.html",
+          "score": 4,
+          "author": "pnr-consulting",
+          "commentCount": 0,
+          "publishedAt": "2026-11-11T20:39:36.000Z"
         }
       ],
       "relatedConceptSlugs": [
-        "starnav",
-        "an-automaton-rover-enabling-long-duration"
+        "sps-alpha"
       ],
-      "resonance": 37,
+      "resonance": 25,
       "quadrant": "dead-zone",
       "resonanceSignals": {
-        "conceptDepth": 0.5113915944693856,
+        "conceptDepth": 0.22629438553091683,
         "editorial": 0.7,
-        "connections": 0.3333333333333333,
-        "convergence": 0.025,
+        "connections": 0,
+        "convergence": 0,
         "deepTopic": 0,
-        "pantheon": 0.4,
+        "pantheon": 0.92,
         "graveyard": 0
       }
     },
@@ -2533,44 +2505,45 @@
       }
     },
     {
-      "slug": "dyson-spheres",
-      "label": "Dyson Spheres",
+      "slug": "ai-space",
+      "label": "AI in Space",
       "score": 400,
-      "delta": 0,
-      "direction": "steady",
+      "delta": -33,
+      "direction": "down",
       "mentions": 2,
       "sources": [
         {
           "platform": "arxiv",
-          "title": "Millimetre/Sub-Millimetre SETI: Expanding the Radio Technosignature Parameter Space with ALMA2040",
-          "url": "https://arxiv.org/abs/2610.22266",
+          "title": "Evaluating Spiking MoveNet Deployability for Near-Future Onboard Spiking Satellite Pose Estimation",
+          "url": "https://arxiv.org/abs/2610.33061",
           "score": 200,
-          "authors": "Louisa A. Mason, Michael A. Garrett, Sofia Z. Sheikh et al.",
-          "arxivCategory": "astro-ph.IM",
-          "publishedAt": "2026-10-15T17:31:03.000Z"
+          "authors": "Jonathan Courtois, Christophe Marabotto, Benoit Miramond et al.",
+          "arxivCategory": "cs.NE",
+          "publishedAt": "2026-10-19T12:58:47.000Z"
         },
         {
           "platform": "arxiv",
-          "title": "Power Density as a Universal Biosignature: An Application to the Stellivore Hypothesis",
-          "url": "https://arxiv.org/abs/2611.03691",
+          "title": "Learning in Orbit: Onboard Training and Closed-Loop Attitude Control with a Thermal Segmentation Model on a Spacecraft",
+          "url": "https://arxiv.org/abs/2610.19122",
           "score": 200,
-          "authors": "Clément Vidal, Luciano Kadian",
-          "arxivCategory": "physics.gen-ph",
-          "publishedAt": "2026-10-27T08:40:53.000Z"
+          "authors": "Elena Sorina Lupu, Hannah Grauer, Phaedrus Leeds et al.",
+          "arxivCategory": "cs.RO",
+          "publishedAt": "2026-10-13T19:57:06.000Z"
         }
       ],
       "relatedConceptSlugs": [
-        "sps-alpha"
+        "starnav",
+        "an-automaton-rover-enabling-long-duration"
       ],
-      "resonance": 25,
+      "resonance": 37,
       "quadrant": "dead-zone",
       "resonanceSignals": {
-        "conceptDepth": 0.22629438553091683,
+        "conceptDepth": 0.5113915944693856,
         "editorial": 0.7,
-        "connections": 0,
-        "convergence": 0,
+        "connections": 0.3333333333333333,
+        "convergence": 0.025,
         "deepTopic": 0,
-        "pantheon": 0.92,
+        "pantheon": 0.4,
         "graveyard": 0
       }
     },
@@ -2604,40 +2577,6 @@
         "connections": 0.3333333333333333,
         "convergence": 0.25,
         "deepTopic": 0.8,
-        "pantheon": 0.92,
-        "graveyard": 0
-      }
-    },
-    {
-      "slug": "warp-drives",
-      "label": "Warp Drives & Exotic Physics",
-      "score": 200,
-      "delta": 0,
-      "direction": "steady",
-      "mentions": 1,
-      "sources": [
-        {
-          "platform": "arxiv",
-          "title": "Exact radial stability threshold for a Minkowski-Schwarzschild thin shell",
-          "url": "https://arxiv.org/abs/2610.17629",
-          "score": 200,
-          "authors": "Anuar Idrissov",
-          "arxivCategory": "gr-qc",
-          "publishedAt": "2026-10-13T02:53:04.000Z"
-        }
-      ],
-      "relatedConceptSlugs": [
-        "procsima",
-        "extreme-metamaterial-solar-sails-for-breakthrough-space-exploration"
-      ],
-      "resonance": 53,
-      "quadrant": "sleeping-giant",
-      "resonanceSignals": {
-        "conceptDepth": 0.6991803252671503,
-        "editorial": 1,
-        "connections": 0.3333333333333333,
-        "convergence": 0.15,
-        "deepTopic": 0,
         "pantheon": 0.92,
         "graveyard": 0
       }
@@ -2687,6 +2626,30 @@
         "connections": 0,
         "convergence": 0,
         "deepTopic": 0.8,
+        "pantheon": 0.92,
+        "graveyard": 0
+      }
+    },
+    {
+      "slug": "warp-drives",
+      "label": "Warp Drives & Exotic Physics",
+      "score": 0,
+      "delta": 0,
+      "direction": "steady",
+      "mentions": 0,
+      "sources": [],
+      "relatedConceptSlugs": [
+        "procsima",
+        "extreme-metamaterial-solar-sails-for-breakthrough-space-exploration"
+      ],
+      "resonance": 53,
+      "quadrant": "sleeping-giant",
+      "resonanceSignals": {
+        "conceptDepth": 0.6991803252671503,
+        "editorial": 1,
+        "connections": 0.3333333333333333,
+        "convergence": 0.15,
+        "deepTopic": 0,
         "pantheon": 0.92,
         "graveyard": 0
       }
