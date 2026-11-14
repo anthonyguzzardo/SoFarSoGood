@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-13T23:22:22.893Z",
+  "generatedAt": "2026-11-14T12:47:07.602Z",
   "topics": [
     {
       "slug": "gravitational-waves",
@@ -136,10 +136,10 @@
     {
       "slug": "black-holes",
       "label": "Black Holes",
-      "score": 8028,
-      "delta": 3,
+      "score": 8024,
+      "delta": 0,
       "direction": "steady",
-      "mentions": 44,
+      "mentions": 43,
       "sources": [
         {
           "platform": "arxiv",
@@ -403,7 +403,7 @@
       "slug": "nanotechnology",
       "label": "Nanotechnology & Metamaterials",
       "score": 7801,
-      "delta": 3,
+      "delta": 0,
       "direction": "steady",
       "mentions": 40,
       "sources": [
@@ -536,7 +536,7 @@
       "slug": "quantum-computing",
       "label": "Quantum Computing",
       "score": 7416,
-      "delta": -7,
+      "delta": 0,
       "direction": "steady",
       "mentions": 43,
       "sources": [
@@ -667,8 +667,8 @@
     {
       "slug": "particle-physics",
       "label": "Particle Physics",
-      "score": 7070,
-      "delta": 4,
+      "score": 7091,
+      "delta": 1,
       "direction": "steady",
       "mentions": 38,
       "sources": [
@@ -798,7 +798,7 @@
       "slug": "condensed-matter",
       "label": "Condensed Matter",
       "score": 6644,
-      "delta": -4,
+      "delta": 0,
       "direction": "steady",
       "mentions": 41,
       "sources": [
@@ -930,7 +930,7 @@
       "slug": "cosmology",
       "label": "Cosmology",
       "score": 5800,
-      "delta": 7,
+      "delta": 0,
       "direction": "steady",
       "mentions": 29,
       "sources": [
@@ -1062,7 +1062,7 @@
       "slug": "dark-matter",
       "label": "Dark Matter & Dark Energy",
       "score": 5403,
-      "delta": -4,
+      "delta": 0,
       "direction": "steady",
       "mentions": 28,
       "sources": [
@@ -1195,7 +1195,7 @@
       "slug": "astrobiology",
       "label": "Astrobiology",
       "score": 3207,
-      "delta": 7,
+      "delta": 0,
       "direction": "steady",
       "mentions": 19,
       "sources": [
@@ -1593,10 +1593,10 @@
     {
       "slug": "space-debris",
       "label": "Space Debris",
-      "score": 2000,
-      "delta": 0,
+      "score": 1800,
+      "delta": -10,
       "direction": "steady",
-      "mentions": 10,
+      "mentions": 9,
       "sources": [
         {
           "platform": "arxiv",
@@ -1663,15 +1663,6 @@
         },
         {
           "platform": "arxiv",
-          "title": "Space Sustainability: The Global Commons",
-          "url": "https://arxiv.org/abs/2610.21517",
-          "score": 200,
-          "authors": "Angelina Frolova, Sascha Nick, Jean-Paul Kneib et al.",
-          "arxivCategory": "physics.soc-ph",
-          "publishedAt": "2026-10-15T08:50:56.000Z"
-        },
-        {
-          "platform": "arxiv",
           "title": "The Generalised Kessler Syndrome and the Persian Gulf",
           "url": "https://arxiv.org/abs/2610.40129",
           "score": 200,
@@ -1708,8 +1699,8 @@
       "slug": "exoplanets",
       "label": "Exoplanets",
       "score": 1407,
-      "delta": -22,
-      "direction": "down",
+      "delta": -12,
+      "direction": "steady",
       "mentions": 9,
       "sources": [
         {
@@ -1911,8 +1902,8 @@
       "slug": "asteroid-mining",
       "label": "Asteroid Mining",
       "score": 1400,
-      "delta": 17,
-      "direction": "up",
+      "delta": 0,
+      "direction": "steady",
       "mentions": 7,
       "sources": [
         {
@@ -1998,18 +1989,18 @@
     {
       "slug": "starlink",
       "label": "Starlink & Satellite Internet",
-      "score": 1001,
-      "delta": -1,
+      "score": 992,
+      "delta": -2,
       "direction": "steady",
-      "mentions": 9,
+      "mentions": 8,
       "sources": [
         {
           "platform": "hackernews",
           "title": "Starlink Mini 2",
           "url": "https://starlink.com/mini-2",
-          "score": 513,
+          "score": 514,
           "author": "robertjfclarke",
-          "commentCount": 619,
+          "commentCount": 624,
           "publishedAt": "2026-11-10T18:22:32.000Z"
         },
         {
@@ -2047,15 +2038,6 @@
           "author": "doener",
           "commentCount": 0,
           "publishedAt": "2026-11-12T19:56:29.000Z"
-        },
-        {
-          "platform": "hackernews",
-          "title": "Musk reposts tweet calling Starlink service for Ukraine 'mistake'",
-          "url": "https://kyivindependent.com/musk-reposts-tweet-calling-starlink-service-for-ukraine-mistake/",
-          "score": 10,
-          "author": "doener",
-          "commentCount": 2,
-          "publishedAt": "2026-11-07T02:52:30.000Z"
         },
         {
           "platform": "hackernews",
@@ -2103,10 +2085,10 @@
     {
       "slug": "starship",
       "label": "Starship & SpaceX",
-      "score": 884,
-      "delta": 2,
+      "score": 924,
+      "delta": -6,
       "direction": "steady",
-      "mentions": 20,
+      "mentions": 21,
       "sources": [
         {
           "platform": "arxiv",
@@ -2146,27 +2128,27 @@
         },
         {
           "platform": "hackernews",
+          "title": "Starship Flight 15 live",
+          "url": "https://twitter.com/SpaceX/status/2121316300702056595",
+          "score": 35,
+          "author": "mudil",
+          "commentCount": 5,
+          "publishedAt": "2026-11-13T22:09:55.000Z"
+        },
+        {
+          "platform": "hackernews",
           "title": "Russia strikes hospital in central Kyiv after SpaceX system falters again",
           "url": "https://www.theguardian.com/world/2026/nov/13/russia-strikes-hospital-central-kyiv-spacex-starshield-system-fails",
-          "score": 26,
+          "score": 30,
           "author": "cdrnsf",
           "commentCount": 0,
           "publishedAt": "2026-11-13T19:03:08.000Z"
         },
         {
           "platform": "hackernews",
-          "title": "Starship Flight 15 live",
-          "url": "https://twitter.com/SpaceX/status/2121316300702056595",
-          "score": 15,
-          "author": "mudil",
-          "commentCount": 2,
-          "publishedAt": "2026-11-13T22:09:55.000Z"
-        },
-        {
-          "platform": "hackernews",
           "title": "Starship Launch 15 Live",
           "url": "https://x.com/i/broadcasts/2brajgZlOKRMka",
-          "score": 11,
+          "score": 17,
           "author": "gibsonf1",
           "commentCount": 2,
           "publishedAt": "2026-11-13T22:18:33.000Z"
@@ -2179,6 +2161,15 @@
           "author": "rbanffy",
           "commentCount": 0,
           "publishedAt": "2026-11-12T10:42:46.000Z"
+        },
+        {
+          "platform": "hackernews",
+          "title": "SpaceX Starship Flight 15 double catch has failed",
+          "url": "https://bsky.app/profile/onemoney.bsky.social/post/3n2a3glt7bk2t",
+          "score": 8,
+          "author": "PLenz",
+          "commentCount": 0,
+          "publishedAt": "2026-11-14T00:10:46.000Z"
         },
         {
           "platform": "hackernews",
@@ -2200,21 +2191,12 @@
         },
         {
           "platform": "hackernews",
-          "title": "Returning Starship to the Launch Site",
-          "url": "https://www.spacex.com/updates#starship-catch",
-          "score": 4,
-          "author": "d_silin",
-          "commentCount": 0,
-          "publishedAt": "2026-11-09T01:40:31.000Z"
-        },
-        {
-          "platform": "hackernews",
-          "title": "SpaceX and Tesla Talks on Record Merger Are Said to Progress",
-          "url": "https://www.bloomberg.com/news/articles/2026-11-12/spacex-and-tesla-talks-on-record-merger-are-said-to-progress",
-          "score": 4,
-          "author": "mfiguiere",
+          "title": "SpaceX's giant rocket may leave NASA in the dust",
+          "url": "https://text.npr.org/nx-s1-6039312",
+          "score": 5,
+          "author": "mooreds",
           "commentCount": 1,
-          "publishedAt": "2026-11-12T20:26:43.000Z"
+          "publishedAt": "2026-11-14T04:57:24.000Z"
         }
       ],
       "relatedConceptSlugs": [
