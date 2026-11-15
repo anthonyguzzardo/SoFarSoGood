@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-14T22:07:37.780Z",
+  "generatedAt": "2026-11-15T13:13:09.827Z",
   "topics": [
     {
       "slug": "gravitational-waves",
@@ -137,7 +137,7 @@
       "slug": "black-holes",
       "label": "Black Holes",
       "score": 7824,
-      "delta": -3,
+      "delta": -2,
       "direction": "steady",
       "mentions": 42,
       "sources": [
@@ -535,10 +535,10 @@
     {
       "slug": "quantum-computing",
       "label": "Quantum Computing",
-      "score": 7416,
+      "score": 7410,
       "delta": 0,
       "direction": "steady",
-      "mentions": 43,
+      "mentions": 42,
       "sources": [
         {
           "platform": "arxiv",
@@ -667,7 +667,7 @@
     {
       "slug": "particle-physics",
       "label": "Particle Physics",
-      "score": 7096,
+      "score": 7102,
       "delta": 0,
       "direction": "steady",
       "mentions": 38,
@@ -1326,139 +1326,6 @@
       }
     },
     {
-      "slug": "astrobiology",
-      "label": "Astrobiology",
-      "score": 3007,
-      "delta": -6,
-      "direction": "steady",
-      "mentions": 18,
-      "sources": [
-        {
-          "platform": "arxiv",
-          "title": "Direct Analysis in Real Time Mass Spectrometry (DART-MS) Study of Amino Acids in the Vacuum Stable Liquids EMI-BF$_4$, EMI-Acetate, DEMA-OTf, DEMA-MsO, and Glycerol",
-          "url": "https://arxiv.org/abs/2611.03990",
-          "score": 200,
-          "authors": "Zach Ulibarri, Samantha E. Adamski, Amy E. Hofmann et al.",
-          "arxivCategory": "physics.app-ph",
-          "publishedAt": "2026-11-02T21:29:39.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Tailoring Infra-Red Filters for Global Mapping of Enceladus' Thermal Environment",
-          "url": "https://arxiv.org/abs/2610.40456",
-          "score": 200,
-          "authors": "D. G. Lyster, C. J. A. Howett, N. E. Bowles et al.",
-          "arxivCategory": "astro-ph.IM",
-          "publishedAt": "2026-10-29T17:01:35.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Power Density as a Universal Biosignature: An Application to the Stellivore Hypothesis",
-          "url": "https://arxiv.org/abs/2611.03691",
-          "score": 200,
-          "authors": "Clément Vidal, Luciano Kadian",
-          "arxivCategory": "physics.gen-ph",
-          "publishedAt": "2026-10-27T08:40:53.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "A Technical Reanalysis of the Viking Carbon Assimilation-Pyrolytic Release Experiment",
-          "url": "https://arxiv.org/abs/2610.30368",
-          "score": 200,
-          "authors": "Jan Spacek, Clay A. Abraham, Steven A. Benner",
-          "arxivCategory": "astro-ph.IM",
-          "publishedAt": "2026-10-21T19:29:31.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Microbial Methanogenesis on Mars: A Life Detection Target for an MLE-Type Mission and Future Human Exploration",
-          "url": "https://arxiv.org/abs/2610.24082",
-          "score": 200,
-          "authors": "Rachel L. Harris",
-          "arxivCategory": "astro-ph.IM",
-          "publishedAt": "2026-10-16T18:08:16.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "On the foundations of anthropic reasoning: Implications for life across the universe",
-          "url": "https://arxiv.org/abs/2610.22896",
-          "score": 200,
-          "authors": "Brendon J. Brewer, Geraint F. Lewis, Jesse Goodman",
-          "arxivCategory": "astro-ph.IM",
-          "publishedAt": "2026-10-16T03:54:51.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "From Exo-Earth Detection to Atmospheric Characterization: Enabling Phase-Dependent Molecular Detection SNR in EXOSIMS",
-          "url": "https://arxiv.org/abs/2611.10342",
-          "score": 200,
-          "authors": "Searra Foote, Tyler D. Robinson, Rhonda Morgan et al.",
-          "arxivCategory": "astro-ph.EP",
-          "publishedAt": "2026-11-07T00:19:21.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Distinguishing N$_2$-Dominated from O$_2$-Dominated Atmospheres on Terrestrial Exoplanets with Reflected-Light Spectroscopy",
-          "url": "https://arxiv.org/abs/2610.42035",
-          "score": 200,
-          "authors": "Nick Burri, Mario Damiano, Renyu Hu",
-          "arxivCategory": "astro-ph.EP",
-          "publishedAt": "2026-10-30T17:01:07.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "From Anoxic to Oxic Earth: Detectability of Atmospheric Biosignatures across Stellar Hosts with ELT/ANDES",
-          "url": "https://arxiv.org/abs/2610.41621",
-          "score": 200,
-          "authors": "Dwaipayan Dubey, Spandan Dash, Liton Majumdar",
-          "arxivCategory": "astro-ph.EP",
-          "publishedAt": "2026-10-30T11:58:18.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Proposed optimal targets for a Lazuli ExtraSolar Coronagraph reflected starlight exoplanet campaign",
-          "url": "https://arxiv.org/abs/2610.31286",
-          "score": 200,
-          "authors": "Logan A. Pearce, Ewan Douglas",
-          "arxivCategory": "astro-ph.EP",
-          "publishedAt": "2026-10-22T13:51:21.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Hydrolyzed Hazes on Water-rich Exoplanets: Composition and Prebiotic Chemistry",
-          "url": "https://arxiv.org/abs/2611.14666",
-          "score": 200,
-          "authors": "Cara Pesciotta, Sarah M. Hörst, Michael J. Radke et al.",
-          "arxivCategory": "astro-ph.EP",
-          "publishedAt": "2026-11-10T19:21:51.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Symmetry-Induced Conservation Laws, Three-Channel Attribution, and Solid-Phase Recycling in Prebiotic Enantiomeric Excess Amplification",
-          "url": "https://arxiv.org/abs/2611.10725",
-          "score": 200,
-          "authors": "Zeyu Jia, Anlin Gong, Bingmei Wu",
-          "arxivCategory": "q-bio.BM",
-          "publishedAt": "2026-11-07T13:38:03.000Z"
-        }
-      ],
-      "relatedConceptSlugs": [
-        "astropharmacy",
-        "venus-atmosphere-and-cloud-particle-sample-return-for-astrobiology"
-      ],
-      "resonance": 53,
-      "quadrant": "real-deal",
-      "resonanceSignals": {
-        "conceptDepth": 0.5113915944693856,
-        "editorial": 1,
-        "connections": 0.3333333333333333,
-        "convergence": 0.275,
-        "deepTopic": 0.8,
-        "pantheon": 0.08,
-        "graveyard": 0
-      }
-    },
-    {
       "slug": "quantum-comms",
       "label": "Quantum Communication",
       "score": 3000,
@@ -1591,12 +1458,278 @@
       }
     },
     {
+      "slug": "astrobiology",
+      "label": "Astrobiology",
+      "score": 2809,
+      "delta": -12,
+      "direction": "steady",
+      "mentions": 18,
+      "sources": [
+        {
+          "platform": "arxiv",
+          "title": "Direct Analysis in Real Time Mass Spectrometry (DART-MS) Study of Amino Acids in the Vacuum Stable Liquids EMI-BF$_4$, EMI-Acetate, DEMA-OTf, DEMA-MsO, and Glycerol",
+          "url": "https://arxiv.org/abs/2611.03990",
+          "score": 200,
+          "authors": "Zach Ulibarri, Samantha E. Adamski, Amy E. Hofmann et al.",
+          "arxivCategory": "physics.app-ph",
+          "publishedAt": "2026-11-02T21:29:39.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Tailoring Infra-Red Filters for Global Mapping of Enceladus' Thermal Environment",
+          "url": "https://arxiv.org/abs/2610.40456",
+          "score": 200,
+          "authors": "D. G. Lyster, C. J. A. Howett, N. E. Bowles et al.",
+          "arxivCategory": "astro-ph.IM",
+          "publishedAt": "2026-10-29T17:01:35.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Power Density as a Universal Biosignature: An Application to the Stellivore Hypothesis",
+          "url": "https://arxiv.org/abs/2611.03691",
+          "score": 200,
+          "authors": "Clément Vidal, Luciano Kadian",
+          "arxivCategory": "physics.gen-ph",
+          "publishedAt": "2026-10-27T08:40:53.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "A Technical Reanalysis of the Viking Carbon Assimilation-Pyrolytic Release Experiment",
+          "url": "https://arxiv.org/abs/2610.30368",
+          "score": 200,
+          "authors": "Jan Spacek, Clay A. Abraham, Steven A. Benner",
+          "arxivCategory": "astro-ph.IM",
+          "publishedAt": "2026-10-21T19:29:31.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Microbial Methanogenesis on Mars: A Life Detection Target for an MLE-Type Mission and Future Human Exploration",
+          "url": "https://arxiv.org/abs/2610.24082",
+          "score": 200,
+          "authors": "Rachel L. Harris",
+          "arxivCategory": "astro-ph.IM",
+          "publishedAt": "2026-10-16T18:08:16.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "From Exo-Earth Detection to Atmospheric Characterization: Enabling Phase-Dependent Molecular Detection SNR in EXOSIMS",
+          "url": "https://arxiv.org/abs/2611.10342",
+          "score": 200,
+          "authors": "Searra Foote, Tyler D. Robinson, Rhonda Morgan et al.",
+          "arxivCategory": "astro-ph.EP",
+          "publishedAt": "2026-11-07T00:19:21.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Distinguishing N$_2$-Dominated from O$_2$-Dominated Atmospheres on Terrestrial Exoplanets with Reflected-Light Spectroscopy",
+          "url": "https://arxiv.org/abs/2610.42035",
+          "score": 200,
+          "authors": "Nick Burri, Mario Damiano, Renyu Hu",
+          "arxivCategory": "astro-ph.EP",
+          "publishedAt": "2026-10-30T17:01:07.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "From Anoxic to Oxic Earth: Detectability of Atmospheric Biosignatures across Stellar Hosts with ELT/ANDES",
+          "url": "https://arxiv.org/abs/2610.41621",
+          "score": 200,
+          "authors": "Dwaipayan Dubey, Spandan Dash, Liton Majumdar",
+          "arxivCategory": "astro-ph.EP",
+          "publishedAt": "2026-10-30T11:58:18.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Proposed optimal targets for a Lazuli ExtraSolar Coronagraph reflected starlight exoplanet campaign",
+          "url": "https://arxiv.org/abs/2610.31286",
+          "score": 200,
+          "authors": "Logan A. Pearce, Ewan Douglas",
+          "arxivCategory": "astro-ph.EP",
+          "publishedAt": "2026-10-22T13:51:21.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Hydrolyzed Hazes on Water-rich Exoplanets: Composition and Prebiotic Chemistry",
+          "url": "https://arxiv.org/abs/2611.14666",
+          "score": 200,
+          "authors": "Cara Pesciotta, Sarah M. Hörst, Michael J. Radke et al.",
+          "arxivCategory": "astro-ph.EP",
+          "publishedAt": "2026-11-10T19:21:51.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Symmetry-Induced Conservation Laws, Three-Channel Attribution, and Solid-Phase Recycling in Prebiotic Enantiomeric Excess Amplification",
+          "url": "https://arxiv.org/abs/2611.10725",
+          "score": 200,
+          "authors": "Zeyu Jia, Anlin Gong, Bingmei Wu",
+          "arxivCategory": "q-bio.BM",
+          "publishedAt": "2026-11-07T13:38:03.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Cometary impacts an unlikely pathway towards the origins of life on Earth",
+          "url": "https://arxiv.org/abs/2611.02924",
+          "score": 200,
+          "authors": "Richard J. Anslow, Catriona H. McDonald, Amy Bonsor et al.",
+          "arxivCategory": "astro-ph.EP",
+          "publishedAt": "2026-11-02T10:52:47.000Z"
+        }
+      ],
+      "relatedConceptSlugs": [
+        "astropharmacy",
+        "venus-atmosphere-and-cloud-particle-sample-return-for-astrobiology"
+      ],
+      "resonance": 53,
+      "quadrant": "real-deal",
+      "resonanceSignals": {
+        "conceptDepth": 0.5113915944693856,
+        "editorial": 1,
+        "connections": 0.3333333333333333,
+        "convergence": 0.275,
+        "deepTopic": 0.8,
+        "pantheon": 0.08,
+        "graveyard": 0
+      }
+    },
+    {
+      "slug": "starship",
+      "label": "Starship & SpaceX",
+      "score": 2294,
+      "delta": 148,
+      "direction": "up",
+      "mentions": 25,
+      "sources": [
+        {
+          "platform": "hackernews",
+          "title": "SpaceX catches the Starship to end Flight 15",
+          "url": "https://www.spacex.com/launches/starship-flight-15",
+          "score": 1341,
+          "author": "ls612",
+          "commentCount": 901,
+          "publishedAt": "2026-11-14T21:22:24.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Margin-Inducing Optimal Guidance and Control for Atmospheric Entry",
+          "url": "https://arxiv.org/abs/2611.16891",
+          "score": 200,
+          "authors": "Emily M. Palmer, Anil V. Rao",
+          "arxivCategory": "math.OC",
+          "publishedAt": "2026-11-12T14:49:33.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Overcoming Fundamental Control Limitations in Powered Descent Flight through Robust Incremental Nonlinear Dynamic Inversion",
+          "url": "https://arxiv.org/abs/2611.08121",
+          "score": 200,
+          "authors": "João T. Diz, Paulo Rosa, Pedro Simplício et al.",
+          "arxivCategory": "eess.SY",
+          "publishedAt": "2026-11-05T14:54:21.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Curriculum-Driven Deep Reinforcement Learning for Autonomous Far-Range Rocket Landing",
+          "url": "https://arxiv.org/abs/2610.35954",
+          "score": 200,
+          "authors": "Atin Chowdhury, Piyush Joshi",
+          "arxivCategory": "cs.LG",
+          "publishedAt": "2026-10-24T19:57:44.000Z"
+        },
+        {
+          "platform": "hackernews",
+          "title": "Starship Flight 15 on 11/13 plans to catch both booster and ship",
+          "url": "https://www.spacex.com/launches/starship-flight-15",
+          "score": 181,
+          "author": "spikels",
+          "commentCount": 177,
+          "publishedAt": "2026-11-08T19:49:46.000Z"
+        },
+        {
+          "platform": "hackernews",
+          "title": "Starship Flight 15 live",
+          "url": "https://twitter.com/SpaceX/status/2121316300702056595",
+          "score": 37,
+          "author": "mudil",
+          "commentCount": 7,
+          "publishedAt": "2026-11-13T22:09:55.000Z"
+        },
+        {
+          "platform": "hackernews",
+          "title": "Russia strikes hospital in central Kyiv after SpaceX system falters again",
+          "url": "https://www.theguardian.com/world/2026/nov/13/russia-strikes-hospital-central-kyiv-spacex-starshield-system-fails",
+          "score": 32,
+          "author": "cdrnsf",
+          "commentCount": 0,
+          "publishedAt": "2026-11-13T19:03:08.000Z"
+        },
+        {
+          "platform": "hackernews",
+          "title": "Starship Launch 15 Live",
+          "url": "https://x.com/i/broadcasts/2brajgZlOKRMka",
+          "score": 19,
+          "author": "gibsonf1",
+          "commentCount": 2,
+          "publishedAt": "2026-11-13T22:18:33.000Z"
+        },
+        {
+          "platform": "hackernews",
+          "title": "Live Starship Flight 15 Entry, Landing Burn, and Catch",
+          "url": "https://studio.x.com/embed/broadcast/2brajgZlOKRMka",
+          "score": 15,
+          "author": "asoberbeck",
+          "commentCount": 3,
+          "publishedAt": "2026-11-14T20:33:50.000Z"
+        },
+        {
+          "platform": "hackernews",
+          "title": "SpaceX Loses Appeal to Force Sexual Harassment Lawsuit into Private Arbitration",
+          "url": "https://gizmodo.com/spacex-loses-appeal-to-force-sexual-harassment-lawsuit-into-private-arbitration-2000838724",
+          "score": 11,
+          "author": "rbanffy",
+          "commentCount": 0,
+          "publishedAt": "2026-11-12T10:42:46.000Z"
+        },
+        {
+          "platform": "hackernews",
+          "title": "SpaceX Starship Flight 15 double catch has failed",
+          "url": "https://bsky.app/profile/onemoney.bsky.social/post/3n2a3glt7bk2t",
+          "score": 8,
+          "author": "PLenz",
+          "commentCount": 0,
+          "publishedAt": "2026-11-14T00:10:46.000Z"
+        },
+        {
+          "platform": "hackernews",
+          "title": "Fake OpenAI, SpaceX events used to steal Microsoft, Google accounts",
+          "url": "https://www.bleepingcomputer.com/news/security/fake-openai-spacex-events-used-to-steal-microsoft-google-accounts/",
+          "score": 7,
+          "author": "noorsimar",
+          "commentCount": 0,
+          "publishedAt": "2026-11-12T19:29:33.000Z"
+        }
+      ],
+      "relatedConceptSlugs": [
+        "extraterrestrial-regolith-derived-atmospheric-entry-heat-shields",
+        "phase-i-final-report-nasa-institute-for-advanced-concepts-combined-heat-shield-a"
+      ],
+      "resonance": 43,
+      "quadrant": "hype-cycle",
+      "resonanceSignals": {
+        "conceptDepth": 0.5113915944693856,
+        "editorial": 0.4,
+        "connections": 0,
+        "convergence": 0.35,
+        "deepTopic": 1,
+        "pantheon": 0.92,
+        "graveyard": 0
+      }
+    },
+    {
       "slug": "space-debris",
       "label": "Space Debris",
-      "score": 1800,
-      "delta": -10,
+      "score": 1803,
+      "delta": 0,
       "direction": "steady",
-      "mentions": 9,
+      "mentions": 10,
       "sources": [
         {
           "platform": "arxiv",
@@ -1678,13 +1811,22 @@
           "authors": "Jared Solovei, Sakshi Agarwal, Aubrey Toland et al.",
           "arxivCategory": "physics.geo-ph",
           "publishedAt": "2026-10-22T03:28:03.000Z"
+        },
+        {
+          "platform": "hackernews",
+          "title": "Kessler Syndrome",
+          "url": "https://en.wikipedia.org/wiki/Kessler_syndrome",
+          "score": 3,
+          "author": "tosh",
+          "commentCount": 0,
+          "publishedAt": "2026-11-15T09:22:44.000Z"
         }
       ],
       "relatedConceptSlugs": [
         "niac-phase-i-final-report-on-orbit-collision"
       ],
       "resonance": 20,
-      "quadrant": "hype-cycle",
+      "quadrant": "dead-zone",
       "resonanceSignals": {
         "conceptDepth": 0.3868528072345416,
         "editorial": 0.4,
@@ -1804,10 +1946,10 @@
     {
       "slug": "artemis",
       "label": "Artemis & Lunar Return",
-      "score": 1402,
+      "score": 1400,
       "delta": 0,
       "direction": "steady",
-      "mentions": 8,
+      "mentions": 7,
       "sources": [
         {
           "platform": "arxiv",
@@ -1871,15 +2013,6 @@
           "authors": "Ian M. Down, James McElreath, Manoranjan Majji",
           "arxivCategory": "physics.space-ph",
           "publishedAt": "2026-10-17T03:37:02.000Z"
-        },
-        {
-          "platform": "hackernews",
-          "title": "NASA is looking for new astronauts to help grow its Artemis program",
-          "url": "https://www.nbcnews.com/science/space/nasa-is-looking-for-new-astronauts-rcna608025",
-          "score": 2,
-          "author": "TMWNN",
-          "commentCount": 0,
-          "publishedAt": "2026-11-08T08:16:04.000Z"
         }
       ],
       "relatedConceptSlugs": [
@@ -1901,10 +2034,10 @@
     {
       "slug": "asteroid-mining",
       "label": "Asteroid Mining",
-      "score": 1400,
-      "delta": 0,
+      "score": 1200,
+      "delta": -14,
       "direction": "steady",
-      "mentions": 7,
+      "mentions": 6,
       "sources": [
         {
           "platform": "arxiv",
@@ -1932,15 +2065,6 @@
           "authors": "Mikko Vuori, Antti Penttilä, Karri Muinonen et al.",
           "arxivCategory": "astro-ph.EP",
           "publishedAt": "2026-10-21T08:11:07.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "The START mission: Probing the 2029 Apophis Flyby via a Low-Cost Geocentric SmallSat",
-          "url": "https://arxiv.org/abs/2610.22904",
-          "score": 200,
-          "authors": "Yixuan Wu, Yunda Li, Bowen Zheng et al.",
-          "arxivCategory": "astro-ph.EP",
-          "publishedAt": "2026-10-16T04:08:39.000Z"
         },
         {
           "platform": "arxiv",
@@ -1987,145 +2111,12 @@
       }
     },
     {
-      "slug": "starship",
-      "label": "Starship & SpaceX",
-      "score": 1151,
-      "delta": 30,
-      "direction": "up",
-      "mentions": 24,
-      "sources": [
-        {
-          "platform": "hackernews",
-          "title": "SpaceX Catches the Starship to end Flight 15",
-          "url": "https://x.com/i/broadcasts/2brajgZlOKRMka",
-          "score": 204,
-          "author": "ls612",
-          "commentCount": 100,
-          "publishedAt": "2026-11-14T21:22:24.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Margin-Inducing Optimal Guidance and Control for Atmospheric Entry",
-          "url": "https://arxiv.org/abs/2611.16891",
-          "score": 200,
-          "authors": "Emily M. Palmer, Anil V. Rao",
-          "arxivCategory": "math.OC",
-          "publishedAt": "2026-11-12T14:49:33.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Overcoming Fundamental Control Limitations in Powered Descent Flight through Robust Incremental Nonlinear Dynamic Inversion",
-          "url": "https://arxiv.org/abs/2611.08121",
-          "score": 200,
-          "authors": "João T. Diz, Paulo Rosa, Pedro Simplício et al.",
-          "arxivCategory": "eess.SY",
-          "publishedAt": "2026-11-05T14:54:21.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Curriculum-Driven Deep Reinforcement Learning for Autonomous Far-Range Rocket Landing",
-          "url": "https://arxiv.org/abs/2610.35954",
-          "score": 200,
-          "authors": "Atin Chowdhury, Piyush Joshi",
-          "arxivCategory": "cs.LG",
-          "publishedAt": "2026-10-24T19:57:44.000Z"
-        },
-        {
-          "platform": "hackernews",
-          "title": "Starship Flight 15 on 11/13 plans to catch both booster and ship",
-          "url": "https://www.spacex.com/launches/starship-flight-15",
-          "score": 181,
-          "author": "spikels",
-          "commentCount": 177,
-          "publishedAt": "2026-11-08T19:49:46.000Z"
-        },
-        {
-          "platform": "hackernews",
-          "title": "Starship Flight 15 live",
-          "url": "https://twitter.com/SpaceX/status/2121316300702056595",
-          "score": 36,
-          "author": "mudil",
-          "commentCount": 7,
-          "publishedAt": "2026-11-13T22:09:55.000Z"
-        },
-        {
-          "platform": "hackernews",
-          "title": "Russia strikes hospital in central Kyiv after SpaceX system falters again",
-          "url": "https://www.theguardian.com/world/2026/nov/13/russia-strikes-hospital-central-kyiv-spacex-starshield-system-fails",
-          "score": 32,
-          "author": "cdrnsf",
-          "commentCount": 0,
-          "publishedAt": "2026-11-13T19:03:08.000Z"
-        },
-        {
-          "platform": "hackernews",
-          "title": "Starship Launch 15 Live",
-          "url": "https://x.com/i/broadcasts/2brajgZlOKRMka",
-          "score": 18,
-          "author": "gibsonf1",
-          "commentCount": 2,
-          "publishedAt": "2026-11-13T22:18:33.000Z"
-        },
-        {
-          "platform": "hackernews",
-          "title": "Live Starship Flight 15 Entry, Landing Burn, and Catch",
-          "url": "https://studio.x.com/embed/broadcast/2brajgZlOKRMka",
-          "score": 15,
-          "author": "asoberbeck",
-          "commentCount": 3,
-          "publishedAt": "2026-11-14T20:33:50.000Z"
-        },
-        {
-          "platform": "hackernews",
-          "title": "SpaceX Loses Appeal to Force Sexual Harassment Lawsuit into Private Arbitration",
-          "url": "https://gizmodo.com/spacex-loses-appeal-to-force-sexual-harassment-lawsuit-into-private-arbitration-2000838724",
-          "score": 11,
-          "author": "rbanffy",
-          "commentCount": 0,
-          "publishedAt": "2026-11-12T10:42:46.000Z"
-        },
-        {
-          "platform": "hackernews",
-          "title": "SpaceX Starship Flight 15 double catch has failed",
-          "url": "https://bsky.app/profile/onemoney.bsky.social/post/3n2a3glt7bk2t",
-          "score": 8,
-          "author": "PLenz",
-          "commentCount": 0,
-          "publishedAt": "2026-11-14T00:10:46.000Z"
-        },
-        {
-          "platform": "hackernews",
-          "title": "Fake OpenAI, SpaceX events used to steal Microsoft, Google accounts",
-          "url": "https://www.bleepingcomputer.com/news/security/fake-openai-spacex-events-used-to-steal-microsoft-google-accounts/",
-          "score": 7,
-          "author": "noorsimar",
-          "commentCount": 0,
-          "publishedAt": "2026-11-12T19:29:33.000Z"
-        }
-      ],
-      "relatedConceptSlugs": [
-        "extraterrestrial-regolith-derived-atmospheric-entry-heat-shields",
-        "phase-i-final-report-nasa-institute-for-advanced-concepts-combined-heat-shield-a"
-      ],
-      "resonance": 43,
-      "quadrant": "dead-zone",
-      "resonanceSignals": {
-        "conceptDepth": 0.5113915944693856,
-        "editorial": 0.4,
-        "connections": 0,
-        "convergence": 0.35,
-        "deepTopic": 1,
-        "pantheon": 0.92,
-        "graveyard": 0
-      }
-    },
-    {
       "slug": "starlink",
       "label": "Starlink & Satellite Internet",
-      "score": 992,
-      "delta": -1,
+      "score": 990,
+      "delta": 0,
       "direction": "steady",
-      "mentions": 8,
+      "mentions": 7,
       "sources": [
         {
           "platform": "hackernews",
@@ -2133,7 +2124,7 @@
           "url": "https://starlink.com/mini-2",
           "score": 514,
           "author": "robertjfclarke",
-          "commentCount": 624,
+          "commentCount": 625,
           "publishedAt": "2026-11-10T18:22:32.000Z"
         },
         {
@@ -2160,7 +2151,7 @@
           "url": "https://policy-wire.com/ukraine-pivots-to-israeli-italian-satellite-tech-to-bypass-starlink-restrictions/",
           "score": 56,
           "author": "vrganj",
-          "commentCount": 28,
+          "commentCount": 29,
           "publishedAt": "2026-11-11T08:26:40.000Z"
         },
         {
@@ -2189,15 +2180,6 @@
           "author": "giuliomagnifico",
           "commentCount": 0,
           "publishedAt": "2026-11-11T17:19:32.000Z"
-        },
-        {
-          "platform": "hackernews",
-          "title": "Russia races to build rival to Elon Musk's Starlink",
-          "url": "https://www.ft.com/content/423ca208-8e22-4fb3-a76d-b9c722fd8cc0",
-          "score": 2,
-          "author": "uxhacker",
-          "commentCount": 1,
-          "publishedAt": "2026-11-08T12:06:32.000Z"
         }
       ],
       "relatedConceptSlugs": [
