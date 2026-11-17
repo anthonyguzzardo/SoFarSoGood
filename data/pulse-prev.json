@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-15T13:13:09.827Z",
+  "generatedAt": "2026-11-15T22:38:00.498Z",
   "topics": [
     {
       "slug": "gravitational-waves",
@@ -137,7 +137,7 @@
       "slug": "black-holes",
       "label": "Black Holes",
       "score": 7824,
-      "delta": -2,
+      "delta": 0,
       "direction": "steady",
       "mentions": 42,
       "sources": [
@@ -263,139 +263,6 @@
         "convergence": 0.2,
         "deepTopic": 1,
         "pantheon": 0.92,
-        "graveyard": 0
-      }
-    },
-    {
-      "slug": "space-telescopes",
-      "label": "Space Telescopes",
-      "score": 7802,
-      "delta": 0,
-      "direction": "steady",
-      "mentions": 40,
-      "sources": [
-        {
-          "platform": "arxiv",
-          "title": "The full Gaia colour-magnitude diagram with white dwarfs reveals a declining Milky Way star formation history",
-          "url": "https://arxiv.org/abs/2611.17337",
-          "score": 200,
-          "authors": "K. Sysoliatina, Akash Vani",
-          "arxivCategory": "astro-ph.GA",
-          "publishedAt": "2026-11-12T18:59:56.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "JWST Rocky Worlds DDT Observations of LTT 1445 A b and c in Secondary Eclipse Using MIRI/F1500W",
-          "url": "https://arxiv.org/abs/2611.17300",
-          "score": 200,
-          "authors": "Jegug Ih, Shubham Kanodia, Nicholas Wogan et al.",
-          "arxivCategory": "astro-ph.EP",
-          "publishedAt": "2026-11-12T18:55:27.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "The ultraviolet continuum slopes of galaxies at $\\mathbf{z \\gtrsim 12}$ selected from ${\\mathbf{0.6 \\, deg}^2}$ of JWST imaging",
-          "url": "https://arxiv.org/abs/2611.17208",
-          "score": 200,
-          "authors": "C. Bondestam, D. J. McLeod, F. Cullen et al.",
-          "arxivCategory": "astro-ph.GA",
-          "publishedAt": "2026-11-12T18:07:08.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "The Same But Different: SiO$_2$ Clouds in Two L-Dwarfs with JWST",
-          "url": "https://arxiv.org/abs/2611.16783",
-          "score": 200,
-          "authors": "Joshua D. Lothringer, Jeff A. Valenti, Sarah E. Moran et al.",
-          "arxivCategory": "astro-ph.SR",
-          "publishedAt": "2026-11-12T13:29:38.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Globular Clusters in the Time of JWST. II. Looks like the second, moves like the first: the syrphid-like intermediate population of NGC 2808",
-          "url": "https://arxiv.org/abs/2611.16150",
-          "score": 200,
-          "authors": "G. Cordoni, A. P. Milone, E. Dondoglio et al.",
-          "arxivCategory": "astro-ph.GA",
-          "publishedAt": "2026-11-12T01:24:14.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Euclid: Data Release 1 (DR1) -- Bayesian 3D shape inference of star-forming galaxy populations",
-          "url": "https://arxiv.org/abs/2611.16109",
-          "score": 200,
-          "authors": "M. Dunn, M. Huertas-Company, J. H. Knapen et al.",
-          "arxivCategory": "astro-ph.GA",
-          "publishedAt": "2026-11-11T23:32:52.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Desorption of water from cosmic silicates",
-          "url": "https://arxiv.org/abs/2611.16077",
-          "score": 200,
-          "authors": "C. Jäger, D. Köhler, Th. Henning et al.",
-          "arxivCategory": "astro-ph.EP",
-          "publishedAt": "2026-11-11T22:35:09.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Anatomy of LyC Escape in MEGATRON: Connecting Feedback Physics to Demographics, Leakage Timescales, and Explorations of ISM Density as a Tracer of Escape Fraction",
-          "url": "https://arxiv.org/abs/2611.15931",
-          "score": 200,
-          "authors": "Nicholas Choustikov, Harley Katz, Taysun Kimm et al.",
-          "arxivCategory": "astro-ph.GA",
-          "publishedAt": "2026-11-11T19:27:14.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Sailing with the winds of HL Tau: the JWST view",
-          "url": "https://arxiv.org/abs/2611.15910",
-          "score": 200,
-          "authors": "T. Nony, F. Bacciotti, C. Dougados et al.",
-          "arxivCategory": "astro-ph.SR",
-          "publishedAt": "2026-11-11T19:12:44.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "A Multi-Cycle Treasury Survey of Andromeda: Comprehensive, All-Encompassing Spectroscopy, Imaging, and Mid-Infrared Mapping of the Nearest Giant Spiral",
-          "url": "https://arxiv.org/abs/2611.15901",
-          "score": 200,
-          "authors": "David M. Nataf, David L. Nidever, Gagandeep Anand et al.",
-          "arxivCategory": "astro-ph.IM",
-          "publishedAt": "2026-11-11T19:07:14.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Non-Gaussian matter fluctuations from primordial magnetic fields and galaxy luminosity function",
-          "url": "https://arxiv.org/abs/2611.15188",
-          "score": 200,
-          "authors": "Teppei Minoda, Yi Mao, Shohei Saga et al.",
-          "arxivCategory": "astro-ph.CO",
-          "publishedAt": "2026-11-11T08:35:51.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Dwarfs of Fire and Ice: UV-Irradiation-Driven Thermal Inversion, Disequilibrium Chemistry, and a Cloud-Free Atmosphere in a Strongly Irradiated Brown Dwarf Probed by JWST/NIRSpec Phase-Resolved Spectroscopy",
-          "url": "https://arxiv.org/abs/2611.14703",
-          "score": 200,
-          "authors": "Lael Shin, Daniel Apai, Yifan Zhou et al.",
-          "arxivCategory": "astro-ph.EP",
-          "publishedAt": "2026-11-10T20:10:27.000Z"
-        }
-      ],
-      "relatedConceptSlugs": [
-        "fluidic-telescope",
-        "orbiting-rainbows"
-      ],
-      "resonance": 53,
-      "quadrant": "real-deal",
-      "resonanceSignals": {
-        "conceptDepth": 0.5113915944693856,
-        "editorial": 1,
-        "connections": 0.3333333333333333,
-        "convergence": 0.15,
-        "deepTopic": 1,
-        "pantheon": 0.16,
         "graveyard": 0
       }
     },
@@ -529,6 +396,139 @@
         "convergence": 0.15,
         "deepTopic": 0.8,
         "pantheon": 0.92,
+        "graveyard": 0
+      }
+    },
+    {
+      "slug": "space-telescopes",
+      "label": "Space Telescopes",
+      "score": 7412,
+      "delta": -5,
+      "direction": "steady",
+      "mentions": 39,
+      "sources": [
+        {
+          "platform": "arxiv",
+          "title": "The full Gaia colour-magnitude diagram with white dwarfs reveals a declining Milky Way star formation history",
+          "url": "https://arxiv.org/abs/2611.17337",
+          "score": 200,
+          "authors": "K. Sysoliatina, Akash Vani",
+          "arxivCategory": "astro-ph.GA",
+          "publishedAt": "2026-11-12T18:59:56.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "JWST Rocky Worlds DDT Observations of LTT 1445 A b and c in Secondary Eclipse Using MIRI/F1500W",
+          "url": "https://arxiv.org/abs/2611.17300",
+          "score": 200,
+          "authors": "Jegug Ih, Shubham Kanodia, Nicholas Wogan et al.",
+          "arxivCategory": "astro-ph.EP",
+          "publishedAt": "2026-11-12T18:55:27.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "The ultraviolet continuum slopes of galaxies at $\\mathbf{z \\gtrsim 12}$ selected from ${\\mathbf{0.6 \\, deg}^2}$ of JWST imaging",
+          "url": "https://arxiv.org/abs/2611.17208",
+          "score": 200,
+          "authors": "C. Bondestam, D. J. McLeod, F. Cullen et al.",
+          "arxivCategory": "astro-ph.GA",
+          "publishedAt": "2026-11-12T18:07:08.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "The Same But Different: SiO$_2$ Clouds in Two L-Dwarfs with JWST",
+          "url": "https://arxiv.org/abs/2611.16783",
+          "score": 200,
+          "authors": "Joshua D. Lothringer, Jeff A. Valenti, Sarah E. Moran et al.",
+          "arxivCategory": "astro-ph.SR",
+          "publishedAt": "2026-11-12T13:29:38.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Globular Clusters in the Time of JWST. II. Looks like the second, moves like the first: the syrphid-like intermediate population of NGC 2808",
+          "url": "https://arxiv.org/abs/2611.16150",
+          "score": 200,
+          "authors": "G. Cordoni, A. P. Milone, E. Dondoglio et al.",
+          "arxivCategory": "astro-ph.GA",
+          "publishedAt": "2026-11-12T01:24:14.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Euclid: Data Release 1 (DR1) -- Bayesian 3D shape inference of star-forming galaxy populations",
+          "url": "https://arxiv.org/abs/2611.16109",
+          "score": 200,
+          "authors": "M. Dunn, M. Huertas-Company, J. H. Knapen et al.",
+          "arxivCategory": "astro-ph.GA",
+          "publishedAt": "2026-11-11T23:32:52.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Desorption of water from cosmic silicates",
+          "url": "https://arxiv.org/abs/2611.16077",
+          "score": 200,
+          "authors": "C. Jäger, D. Köhler, Th. Henning et al.",
+          "arxivCategory": "astro-ph.EP",
+          "publishedAt": "2026-11-11T22:35:09.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Anatomy of LyC Escape in MEGATRON: Connecting Feedback Physics to Demographics, Leakage Timescales, and Explorations of ISM Density as a Tracer of Escape Fraction",
+          "url": "https://arxiv.org/abs/2611.15931",
+          "score": 200,
+          "authors": "Nicholas Choustikov, Harley Katz, Taysun Kimm et al.",
+          "arxivCategory": "astro-ph.GA",
+          "publishedAt": "2026-11-11T19:27:14.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Sailing with the winds of HL Tau: the JWST view",
+          "url": "https://arxiv.org/abs/2611.15910",
+          "score": 200,
+          "authors": "T. Nony, F. Bacciotti, C. Dougados et al.",
+          "arxivCategory": "astro-ph.SR",
+          "publishedAt": "2026-11-11T19:12:44.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "A Multi-Cycle Treasury Survey of Andromeda: Comprehensive, All-Encompassing Spectroscopy, Imaging, and Mid-Infrared Mapping of the Nearest Giant Spiral",
+          "url": "https://arxiv.org/abs/2611.15901",
+          "score": 200,
+          "authors": "David M. Nataf, David L. Nidever, Gagandeep Anand et al.",
+          "arxivCategory": "astro-ph.IM",
+          "publishedAt": "2026-11-11T19:07:14.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Non-Gaussian matter fluctuations from primordial magnetic fields and galaxy luminosity function",
+          "url": "https://arxiv.org/abs/2611.15188",
+          "score": 200,
+          "authors": "Teppei Minoda, Yi Mao, Shohei Saga et al.",
+          "arxivCategory": "astro-ph.CO",
+          "publishedAt": "2026-11-11T08:35:51.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Dwarfs of Fire and Ice: UV-Irradiation-Driven Thermal Inversion, Disequilibrium Chemistry, and a Cloud-Free Atmosphere in a Strongly Irradiated Brown Dwarf Probed by JWST/NIRSpec Phase-Resolved Spectroscopy",
+          "url": "https://arxiv.org/abs/2611.14703",
+          "score": 200,
+          "authors": "Lael Shin, Daniel Apai, Yifan Zhou et al.",
+          "arxivCategory": "astro-ph.EP",
+          "publishedAt": "2026-11-10T20:10:27.000Z"
+        }
+      ],
+      "relatedConceptSlugs": [
+        "fluidic-telescope",
+        "orbiting-rainbows"
+      ],
+      "resonance": 53,
+      "quadrant": "real-deal",
+      "resonanceSignals": {
+        "conceptDepth": 0.5113915944693856,
+        "editorial": 1,
+        "connections": 0.3333333333333333,
+        "convergence": 0.15,
+        "deepTopic": 1,
+        "pantheon": 0.16,
         "graveyard": 0
       }
     },
@@ -667,7 +667,7 @@
     {
       "slug": "particle-physics",
       "label": "Particle Physics",
-      "score": 7102,
+      "score": 7103,
       "delta": 0,
       "direction": "steady",
       "mentions": 38,
@@ -797,10 +797,10 @@
     {
       "slug": "condensed-matter",
       "label": "Condensed Matter",
-      "score": 6444,
+      "score": 6240,
       "delta": -3,
       "direction": "steady",
-      "mentions": 40,
+      "mentions": 38,
       "sources": [
         {
           "platform": "arxiv",
@@ -929,10 +929,10 @@
     {
       "slug": "cosmology",
       "label": "Cosmology",
-      "score": 5800,
-      "delta": 0,
+      "score": 5600,
+      "delta": -3,
       "direction": "steady",
-      "mentions": 29,
+      "mentions": 28,
       "sources": [
         {
           "platform": "arxiv",
@@ -1194,10 +1194,10 @@
     {
       "slug": "fusion-propulsion",
       "label": "Fusion Propulsion",
-      "score": 3200,
-      "delta": 0,
+      "score": 3000,
+      "delta": -6,
       "direction": "steady",
-      "mentions": 16,
+      "mentions": 15,
       "sources": [
         {
           "platform": "arxiv",
@@ -1273,15 +1273,6 @@
         },
         {
           "platform": "arxiv",
-          "title": "Leveraging verifiable structure in quantum circuits to find more efficient compilations with agentic AI",
-          "url": "https://arxiv.org/abs/2610.23832",
-          "score": 200,
-          "authors": "Tanuj Khattar, Nicholas C. Rubin, Craig Gidney et al.",
-          "arxivCategory": "quant-ph",
-          "publishedAt": "2026-10-16T17:53:07.000Z"
-        },
-        {
-          "platform": "arxiv",
           "title": "Heterogeneous Acceleration of TRIMEG++ code using OpenMP for Gyrokinetic Simulations",
           "url": "https://arxiv.org/abs/2611.12209",
           "score": 200,
@@ -1306,6 +1297,15 @@
           "authors": "Patrick S. Kim, Noah R. Mandell, Ian G. Abel et al.",
           "arxivCategory": "physics.plasm-ph",
           "publishedAt": "2026-10-31T06:13:55.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "AMPERe: an exactly divergence-free quadrature-by-expansion evaluator for near-surface Biot--Savart and virtual-casing fields in fusion geometries",
+          "url": "https://arxiv.org/abs/2610.41544",
+          "score": 200,
+          "authors": "H. Betar, Y. Sarazin, V. Grandgirard et al.",
+          "arxivCategory": "physics.comp-ph",
+          "publishedAt": "2026-10-30T10:42:00.000Z"
         }
       ],
       "relatedConceptSlugs": [
@@ -1460,10 +1460,10 @@
     {
       "slug": "astrobiology",
       "label": "Astrobiology",
-      "score": 2809,
-      "delta": -12,
+      "score": 2609,
+      "delta": -13,
       "direction": "steady",
-      "mentions": 18,
+      "mentions": 17,
       "sources": [
         {
           "platform": "arxiv",
@@ -1500,15 +1500,6 @@
           "authors": "Jan Spacek, Clay A. Abraham, Steven A. Benner",
           "arxivCategory": "astro-ph.IM",
           "publishedAt": "2026-10-21T19:29:31.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Microbial Methanogenesis on Mars: A Life Detection Target for an MLE-Type Mission and Future Human Exploration",
-          "url": "https://arxiv.org/abs/2610.24082",
-          "score": 200,
-          "authors": "Rachel L. Harris",
-          "arxivCategory": "astro-ph.IM",
-          "publishedAt": "2026-10-16T18:08:16.000Z"
         },
         {
           "platform": "arxiv",
@@ -1572,6 +1563,15 @@
           "authors": "Richard J. Anslow, Catriona H. McDonald, Amy Bonsor et al.",
           "arxivCategory": "astro-ph.EP",
           "publishedAt": "2026-11-02T10:52:47.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Extending the limits of rotationally resolved mid-IR spectroscopy: an accurate model of trioxane derived from combining Fourier transform and sub-Doppler measurements",
+          "url": "https://arxiv.org/abs/2610.38565",
+          "score": 200,
+          "authors": "Pierre Asselin, Dang-Bao-An Tran, Alexander Shelkovnikov et al.",
+          "arxivCategory": "physics.atom-ph",
+          "publishedAt": "2026-10-28T10:00:17.000Z"
         }
       ],
       "relatedConceptSlugs": [
@@ -1593,18 +1593,18 @@
     {
       "slug": "starship",
       "label": "Starship & SpaceX",
-      "score": 2294,
-      "delta": 148,
+      "score": 2395,
+      "delta": 108,
       "direction": "up",
-      "mentions": 25,
+      "mentions": 28,
       "sources": [
         {
           "platform": "hackernews",
           "title": "SpaceX catches the Starship to end Flight 15",
           "url": "https://www.spacex.com/launches/starship-flight-15",
-          "score": 1341,
+          "score": 1613,
           "author": "ls612",
-          "commentCount": 901,
+          "commentCount": 1185,
           "publishedAt": "2026-11-14T21:22:24.000Z"
         },
         {
@@ -1633,15 +1633,6 @@
           "authors": "Atin Chowdhury, Piyush Joshi",
           "arxivCategory": "cs.LG",
           "publishedAt": "2026-10-24T19:57:44.000Z"
-        },
-        {
-          "platform": "hackernews",
-          "title": "Starship Flight 15 on 11/13 plans to catch both booster and ship",
-          "url": "https://www.spacex.com/launches/starship-flight-15",
-          "score": 181,
-          "author": "spikels",
-          "commentCount": 177,
-          "publishedAt": "2026-11-08T19:49:46.000Z"
         },
         {
           "platform": "hackernews",
@@ -1705,6 +1696,15 @@
           "author": "noorsimar",
           "commentCount": 0,
           "publishedAt": "2026-11-12T19:29:33.000Z"
+        },
+        {
+          "platform": "hackernews",
+          "title": "Grok Build coding agent leaks confidential info, some belonging to SpaceXSI",
+          "url": "https://arstechnica.com/security/2026/11/grok-build-coding-agent-leaks-oodles-of-confidential-info-some-belonging-to-spacexsi/",
+          "score": 7,
+          "author": "Palmik",
+          "commentCount": 0,
+          "publishedAt": "2026-11-11T07:24:31.000Z"
         }
       ],
       "relatedConceptSlugs": [
@@ -1726,7 +1726,7 @@
     {
       "slug": "space-debris",
       "label": "Space Debris",
-      "score": 1803,
+      "score": 1804,
       "delta": 0,
       "direction": "steady",
       "mentions": 10,
@@ -1816,7 +1816,7 @@
           "platform": "hackernews",
           "title": "Kessler Syndrome",
           "url": "https://en.wikipedia.org/wiki/Kessler_syndrome",
-          "score": 3,
+          "score": 4,
           "author": "tosh",
           "commentCount": 0,
           "publishedAt": "2026-11-15T09:22:44.000Z"
@@ -2113,10 +2113,10 @@
     {
       "slug": "starlink",
       "label": "Starlink & Satellite Internet",
-      "score": 990,
-      "delta": 0,
+      "score": 1003,
+      "delta": 1,
       "direction": "steady",
-      "mentions": 7,
+      "mentions": 8,
       "sources": [
         {
           "platform": "hackernews",
@@ -2149,9 +2149,9 @@
           "platform": "hackernews",
           "title": "Ukraine Pivots to Israeli-Italian Satellite Tech to Bypass Starlink Restrictions",
           "url": "https://policy-wire.com/ukraine-pivots-to-israeli-italian-satellite-tech-to-bypass-starlink-restrictions/",
-          "score": 56,
+          "score": 57,
           "author": "vrganj",
-          "commentCount": 29,
+          "commentCount": 30,
           "publishedAt": "2026-11-11T08:26:40.000Z"
         },
         {
@@ -2162,6 +2162,15 @@
           "author": "doener",
           "commentCount": 0,
           "publishedAt": "2026-11-12T19:56:29.000Z"
+        },
+        {
+          "platform": "hackernews",
+          "title": "Zelensky urges US and Musk to lift Starlink restrictions",
+          "url": "https://www.bbc.com/news/articles/c6m25zg88k45o",
+          "score": 12,
+          "author": "tartoran",
+          "commentCount": 0,
+          "publishedAt": "2026-11-15T18:18:18.000Z"
         },
         {
           "platform": "hackernews",
@@ -2302,51 +2311,6 @@
       }
     },
     {
-      "slug": "mars",
-      "label": "Mars Exploration",
-      "score": 400,
-      "delta": 0,
-      "direction": "steady",
-      "mentions": 2,
-      "sources": [
-        {
-          "platform": "arxiv",
-          "title": "Deep-Learning Identification and Global Characterization of Energetic O2+ Beams at Mars",
-          "url": "https://arxiv.org/abs/2610.30578",
-          "score": 200,
-          "authors": "Chi Zhang, Chuanfei Dong, Kathleen G. Hanley et al.",
-          "arxivCategory": "physics.space-ph",
-          "publishedAt": "2026-10-22T01:15:32.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "The Atmospheric Chemistry and Surface Interactions on Mars (ACSIOM) Workshop 2025",
-          "url": "https://arxiv.org/abs/2610.23500",
-          "score": 200,
-          "authors": "Benjamin Benne, Megan A. J. Brown, Bethan S. Gregory et al.",
-          "arxivCategory": "astro-ph.IM",
-          "publishedAt": "2026-10-16T14:12:44.000Z"
-        }
-      ],
-      "relatedConceptSlugs": [
-        "mycotecture",
-        "breathing-mars-air",
-        "evacuated-airship-for-mars-missions",
-        "marsbee"
-      ],
-      "resonance": 60,
-      "quadrant": "sleeping-giant",
-      "resonanceSignals": {
-        "conceptDepth": 1,
-        "editorial": 1,
-        "connections": 0,
-        "convergence": 0.075,
-        "deepTopic": 0.8,
-        "pantheon": 0.08,
-        "graveyard": 0
-      }
-    },
-    {
       "slug": "electric-propulsion",
       "label": "Electric Propulsion",
       "score": 400,
@@ -2394,8 +2358,8 @@
       "slug": "dyson-spheres",
       "label": "Dyson Spheres",
       "score": 204,
-      "delta": -50,
-      "direction": "down",
+      "delta": 0,
+      "direction": "steady",
       "mentions": 2,
       "sources": [
         {
@@ -2429,6 +2393,42 @@
         "convergence": 0,
         "deepTopic": 0,
         "pantheon": 0.92,
+        "graveyard": 0
+      }
+    },
+    {
+      "slug": "mars",
+      "label": "Mars Exploration",
+      "score": 200,
+      "delta": -50,
+      "direction": "down",
+      "mentions": 1,
+      "sources": [
+        {
+          "platform": "arxiv",
+          "title": "Deep-Learning Identification and Global Characterization of Energetic O2+ Beams at Mars",
+          "url": "https://arxiv.org/abs/2610.30578",
+          "score": 200,
+          "authors": "Chi Zhang, Chuanfei Dong, Kathleen G. Hanley et al.",
+          "arxivCategory": "physics.space-ph",
+          "publishedAt": "2026-10-22T01:15:32.000Z"
+        }
+      ],
+      "relatedConceptSlugs": [
+        "mycotecture",
+        "breathing-mars-air",
+        "evacuated-airship-for-mars-missions",
+        "marsbee"
+      ],
+      "resonance": 60,
+      "quadrant": "sleeping-giant",
+      "resonanceSignals": {
+        "conceptDepth": 1,
+        "editorial": 1,
+        "connections": 0,
+        "convergence": 0.075,
+        "deepTopic": 0.8,
+        "pantheon": 0.08,
         "graveyard": 0
       }
     },
