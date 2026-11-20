@@ -1,13 +1,13 @@
 {
-  "generatedAt": "2026-11-19T14:58:53.415Z",
+  "generatedAt": "2026-11-20T00:26:00.070Z",
   "topics": [
     {
       "slug": "gravitational-waves",
       "label": "Gravitational Waves",
-      "score": 8400,
+      "score": 8402,
       "delta": 0,
       "direction": "steady",
-      "mentions": 42,
+      "mentions": 43,
       "sources": [
         {
           "platform": "arxiv",
@@ -134,12 +134,145 @@
       }
     },
     {
+      "slug": "black-holes",
+      "label": "Black Holes",
+      "score": 8365,
+      "delta": 7,
+      "direction": "steady",
+      "mentions": 46,
+      "sources": [
+        {
+          "platform": "hackernews",
+          "title": "Claude solves two open problems in the physics of black holes",
+          "url": "https://www.anthropic.com/research/claude-black-hole-physics",
+          "score": 352,
+          "author": "cybermango",
+          "commentCount": 157,
+          "publishedAt": "2026-11-19T17:30:44.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Rotating black hole thermodynamics at NNLO in higher-curvature gravity",
+          "url": "https://arxiv.org/abs/2611.24874",
+          "score": 200,
+          "authors": "Cristobal Laporte",
+          "arxivCategory": "hep-th",
+          "publishedAt": "2026-11-18T18:23:23.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Deep Multiwavelength Constraints on the Host Galaxies and Black-Hole Growth of Dwarf AGNs",
+          "url": "https://arxiv.org/abs/2611.24698",
+          "score": 200,
+          "authors": "Wei Leong Tee, W. N. Brandt, Zhibo Yu et al.",
+          "arxivCategory": "astro-ph.GA",
+          "publishedAt": "2026-11-18T16:25:17.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Deep learning spacetime from entanglement dynamics",
+          "url": "https://arxiv.org/abs/2611.24666",
+          "score": 200,
+          "authors": "Hyun-Sik Jeong, Keun-Young Kim, Gaya Yun et al.",
+          "arxivCategory": "hep-th",
+          "publishedAt": "2026-11-18T16:04:26.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Complete quasinormal modes of Type-D black holes. III. Reissner-Nordstrom spectra from zero to extremal charge",
+          "url": "https://arxiv.org/abs/2611.24647",
+          "score": 200,
+          "authors": "Changkai Chen, Xiaohua Zhang, Zhoujian Cao et al.",
+          "arxivCategory": "gr-qc",
+          "publishedAt": "2026-11-18T15:51:49.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "A $10^5\\,M_\\odot$ Black Hole in the Bulgeless Spiral Galaxy IC 342: First Stellar-Dynamical $M_{\\rm BH}$ Measurement with Keck/OSIRIS LGS-AO",
+          "url": "https://arxiv.org/abs/2611.24608",
+          "score": 200,
+          "authors": "Tuan N. Le, Dieu D. Nguyen, Mark Durré et al.",
+          "arxivCategory": "astro-ph.GA",
+          "publishedAt": "2026-11-18T15:30:43.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Electro-Penrose Process in Charged BTZ Black Holes: From Probe Limit to Thermodynamic Backreaction",
+          "url": "https://arxiv.org/abs/2611.24501",
+          "score": 200,
+          "authors": "Hanjun Zou, Ruo-Cen Wu, Meng Xu et al.",
+          "arxivCategory": "gr-qc",
+          "publishedAt": "2026-11-18T14:27:01.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Orbit-averaged spinning and eccentric binary black holes: Hamiltonian and integrability",
+          "url": "https://arxiv.org/abs/2611.24492",
+          "score": 200,
+          "authors": "Tom Colin, Sashwat Tanay, Manuel Alva-Morales et al.",
+          "arxivCategory": "gr-qc",
+          "publishedAt": "2026-11-18T14:23:54.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Powerful Radio Jets and Galaxy Assembly Align at Cosmic Noon",
+          "url": "https://arxiv.org/abs/2611.24490",
+          "score": 200,
+          "authors": "Peter Breiding, Marco Chiaberge, Eileen T. Meyer et al.",
+          "arxivCategory": "astro-ph.GA",
+          "publishedAt": "2026-11-18T14:22:35.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Boundary preparation and anomalous relaxation near a black hole exceptional point",
+          "url": "https://arxiv.org/abs/2611.24488",
+          "score": 200,
+          "authors": "Yu Shi, Sheng Long",
+          "arxivCategory": "gr-qc",
+          "publishedAt": "2026-11-18T14:21:08.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Black hole binary mergers in dynamical Chern-Simons gravity with regularisation",
+          "url": "https://arxiv.org/abs/2611.24420",
+          "score": 200,
+          "authors": "Llibert Aresté Saló, Maxence Corman, Pau Figueras et al.",
+          "arxivCategory": "gr-qc",
+          "publishedAt": "2026-11-18T13:42:26.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Unveiling the Central Black Hole of NGC 3862: A Direct Mass Determination Using ALMA's High-Resolution Molecular Gas Kinematics",
+          "url": "https://arxiv.org/abs/2611.24393",
+          "score": 200,
+          "authors": "Tuan N. Le, Dieu D. Nguyen, Hai N. Ngo et al.",
+          "arxivCategory": "astro-ph.GA",
+          "publishedAt": "2026-11-18T13:27:50.000Z"
+        }
+      ],
+      "relatedConceptSlugs": [
+        "direct-multipixel-imaging-and-spectroscopy-of-an-exoplanet-with-a-solar-gravity",
+        "gravity-observation-and-dark-energy-detection-explorer"
+      ],
+      "resonance": 80,
+      "quadrant": "real-deal",
+      "resonanceSignals": {
+        "conceptDepth": 0.8982444017039272,
+        "editorial": 1,
+        "connections": 1,
+        "convergence": 0.2,
+        "deepTopic": 1,
+        "pantheon": 0.92,
+        "graveyard": 0
+      }
+    },
+    {
       "slug": "space-telescopes",
       "label": "Space Telescopes",
-      "score": 8217,
+      "score": 8215,
       "delta": 2,
       "direction": "steady",
-      "mentions": 44,
+      "mentions": 43,
       "sources": [
         {
           "platform": "arxiv",
@@ -267,145 +400,12 @@
       }
     },
     {
-      "slug": "black-holes",
-      "label": "Black Holes",
-      "score": 8210,
-      "delta": 5,
-      "direction": "steady",
-      "mentions": 44,
-      "sources": [
-        {
-          "platform": "arxiv",
-          "title": "Rotating black hole thermodynamics at NNLO in higher-curvature gravity",
-          "url": "https://arxiv.org/abs/2611.24874",
-          "score": 200,
-          "authors": "Cristobal Laporte",
-          "arxivCategory": "hep-th",
-          "publishedAt": "2026-11-18T18:23:23.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Deep Multiwavelength Constraints on the Host Galaxies and Black-Hole Growth of Dwarf AGNs",
-          "url": "https://arxiv.org/abs/2611.24698",
-          "score": 200,
-          "authors": "Wei Leong Tee, W. N. Brandt, Zhibo Yu et al.",
-          "arxivCategory": "astro-ph.GA",
-          "publishedAt": "2026-11-18T16:25:17.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Deep learning spacetime from entanglement dynamics",
-          "url": "https://arxiv.org/abs/2611.24666",
-          "score": 200,
-          "authors": "Hyun-Sik Jeong, Keun-Young Kim, Gaya Yun et al.",
-          "arxivCategory": "hep-th",
-          "publishedAt": "2026-11-18T16:04:26.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Complete quasinormal modes of Type-D black holes. III. Reissner-Nordstrom spectra from zero to extremal charge",
-          "url": "https://arxiv.org/abs/2611.24647",
-          "score": 200,
-          "authors": "Changkai Chen, Xiaohua Zhang, Zhoujian Cao et al.",
-          "arxivCategory": "gr-qc",
-          "publishedAt": "2026-11-18T15:51:49.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "A $10^5\\,M_\\odot$ Black Hole in the Bulgeless Spiral Galaxy IC 342: First Stellar-Dynamical $M_{\\rm BH}$ Measurement with Keck/OSIRIS LGS-AO",
-          "url": "https://arxiv.org/abs/2611.24608",
-          "score": 200,
-          "authors": "Tuan N. Le, Dieu D. Nguyen, Mark Durré et al.",
-          "arxivCategory": "astro-ph.GA",
-          "publishedAt": "2026-11-18T15:30:43.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Electro-Penrose Process in Charged BTZ Black Holes: From Probe Limit to Thermodynamic Backreaction",
-          "url": "https://arxiv.org/abs/2611.24501",
-          "score": 200,
-          "authors": "Hanjun Zou, Ruo-Cen Wu, Meng Xu et al.",
-          "arxivCategory": "gr-qc",
-          "publishedAt": "2026-11-18T14:27:01.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Orbit-averaged spinning and eccentric binary black holes: Hamiltonian and integrability",
-          "url": "https://arxiv.org/abs/2611.24492",
-          "score": 200,
-          "authors": "Tom Colin, Sashwat Tanay, Manuel Alva-Morales et al.",
-          "arxivCategory": "gr-qc",
-          "publishedAt": "2026-11-18T14:23:54.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Powerful Radio Jets and Galaxy Assembly Align at Cosmic Noon",
-          "url": "https://arxiv.org/abs/2611.24490",
-          "score": 200,
-          "authors": "Peter Breiding, Marco Chiaberge, Eileen T. Meyer et al.",
-          "arxivCategory": "astro-ph.GA",
-          "publishedAt": "2026-11-18T14:22:35.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Boundary preparation and anomalous relaxation near a black hole exceptional point",
-          "url": "https://arxiv.org/abs/2611.24488",
-          "score": 200,
-          "authors": "Yu Shi, Sheng Long",
-          "arxivCategory": "gr-qc",
-          "publishedAt": "2026-11-18T14:21:08.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Black hole binary mergers in dynamical Chern-Simons gravity with regularisation",
-          "url": "https://arxiv.org/abs/2611.24420",
-          "score": 200,
-          "authors": "Llibert Aresté Saló, Maxence Corman, Pau Figueras et al.",
-          "arxivCategory": "gr-qc",
-          "publishedAt": "2026-11-18T13:42:26.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Unveiling the Central Black Hole of NGC 3862: A Direct Mass Determination Using ALMA's High-Resolution Molecular Gas Kinematics",
-          "url": "https://arxiv.org/abs/2611.24393",
-          "score": 200,
-          "authors": "Tuan N. Le, Dieu D. Nguyen, Hai N. Ngo et al.",
-          "arxivCategory": "astro-ph.GA",
-          "publishedAt": "2026-11-18T13:27:50.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Radio emission from a local Little Red Dot: a challenge to the ionized cocoon scenario",
-          "url": "https://arxiv.org/abs/2611.24387",
-          "score": 200,
-          "authors": "Giovanni Mazzolari, Hannah Übler, Grace E. V. Blomfield et al.",
-          "arxivCategory": "astro-ph.GA",
-          "publishedAt": "2026-11-18T13:17:00.000Z"
-        }
-      ],
-      "relatedConceptSlugs": [
-        "direct-multipixel-imaging-and-spectroscopy-of-an-exoplanet-with-a-solar-gravity",
-        "gravity-observation-and-dark-energy-detection-explorer"
-      ],
-      "resonance": 80,
-      "quadrant": "real-deal",
-      "resonanceSignals": {
-        "conceptDepth": 0.8982444017039272,
-        "editorial": 1,
-        "connections": 1,
-        "convergence": 0.2,
-        "deepTopic": 1,
-        "pantheon": 0.92,
-        "graveyard": 0
-      }
-    },
-    {
       "slug": "nanotechnology",
       "label": "Nanotechnology & Metamaterials",
-      "score": 8001,
-      "delta": -2,
+      "score": 7801,
+      "delta": -5,
       "direction": "steady",
-      "mentions": 41,
+      "mentions": 40,
       "sources": [
         {
           "platform": "arxiv",
@@ -535,10 +535,10 @@
     {
       "slug": "quantum-computing",
       "label": "Quantum Computing",
-      "score": 7232,
+      "score": 7231,
       "delta": 3,
       "direction": "steady",
-      "mentions": 43,
+      "mentions": 42,
       "sources": [
         {
           "platform": "arxiv",
@@ -665,142 +665,12 @@
       }
     },
     {
-      "slug": "particle-physics",
-      "label": "Particle Physics",
-      "score": 6899,
-      "delta": -3,
-      "direction": "steady",
-      "mentions": 35,
-      "sources": [
-        {
-          "platform": "arxiv",
-          "title": "A Scattering Phase Space Primer",
-          "url": "https://arxiv.org/abs/2611.15861",
-          "score": 200,
-          "authors": "Francesca Acanfora",
-          "arxivCategory": "hep-ph",
-          "publishedAt": "2026-11-11T19:00:02.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Theoretical constraints on beyond Standard Model extensions of the Higgs potential",
-          "url": "https://arxiv.org/abs/2611.12105",
-          "score": 200,
-          "authors": "Javier E. Pena-Vico, Carlos Quezada-Calonge, Juan J. Sanz-Cillero",
-          "arxivCategory": "hep-ph",
-          "publishedAt": "2026-11-09T09:21:33.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Cold Hypersonic Gas Jets for Precision Laser Spectroscopy of Radioactive Molecules",
-          "url": "https://arxiv.org/abs/2610.38242",
-          "score": 200,
-          "authors": "A. Claessens, R. Ferrer, Harshithbabu et al.",
-          "arxivCategory": "physics.atom-ph",
-          "publishedAt": "2026-10-28T03:48:12.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "New CP-violating sources beyond the reach of EDMs",
-          "url": "https://arxiv.org/abs/2610.28790",
-          "score": 200,
-          "authors": "Venus Keus",
-          "arxivCategory": "hep-ph",
-          "publishedAt": "2026-10-20T18:20:42.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Search for Heavy Charged Higgs Bosons in Boosted Top and Bottom Quark Final States at a 1.4 TeV Future Lepton Collider",
-          "url": "https://arxiv.org/abs/2611.24241",
-          "score": 200,
-          "authors": "Majid Hashemi",
-          "arxivCategory": "hep-ph",
-          "publishedAt": "2026-11-18T11:21:27.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Improving Sensitivity to Rare Processes at the LHC with Geodesic-Aware Graph Neural Networks",
-          "url": "https://arxiv.org/abs/2611.24091",
-          "score": 200,
-          "authors": "Benjamin Fuks, A. Hammad, Adil Jueid et al.",
-          "arxivCategory": "hep-ph",
-          "publishedAt": "2026-11-18T09:17:22.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Analytic next-to-leading order electroweak corrections to Higgs boson pair production in the forward limit",
-          "url": "https://arxiv.org/abs/2611.21757",
-          "score": 200,
-          "authors": "Joshua Davies, Dominik Grau, Kay Schönwald et al.",
-          "arxivCategory": "hep-ph",
-          "publishedAt": "2026-11-16T19:00:29.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "The Future Circular Collider as a photon-photon collider",
-          "url": "https://arxiv.org/abs/2611.20085",
-          "score": 200,
-          "authors": "Patricia Rebello Teles, David d'Enterria",
-          "arxivCategory": "hep-ph",
-          "publishedAt": "2026-11-15T15:58:15.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Quantum tomography of Higgsstrahlung: Higgs boson self-coupling and $Z$ boson anomalous couplings",
-          "url": "https://arxiv.org/abs/2611.18136",
-          "score": 200,
-          "authors": "Clelia Altomonte, Marco Fabbrichesi, Niko Koivunen et al.",
-          "arxivCategory": "hep-ph",
-          "publishedAt": "2026-11-13T13:06:06.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Matching 2HDM to HEFT in triple Higgs boson production from WBF",
-          "url": "https://arxiv.org/abs/2611.15979",
-          "score": 200,
-          "authors": "L. Barreiro, D. Domenech, D. Garcia-Tejada et al.",
-          "arxivCategory": "hep-ph",
-          "publishedAt": "2026-11-11T20:32:26.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "The Higgs boson, naturalness, and the Universe",
-          "url": "https://arxiv.org/abs/2611.14370",
-          "score": 200,
-          "authors": "Mikhail Shaposhnikov",
-          "arxivCategory": "hep-ph",
-          "publishedAt": "2026-11-10T17:26:05.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Search for heavy top quark partners with charge 5/3 in the single-lepton final state in proton-proton collisions at $\\sqrt{s}$ = 13 TeV",
-          "url": "https://arxiv.org/abs/2611.14335",
-          "score": 200,
-          "authors": "CMS Collaboration",
-          "arxivCategory": "hep-ex",
-          "publishedAt": "2026-11-10T16:59:03.000Z"
-        }
-      ],
-      "relatedConceptSlugs": [],
-      "resonance": 3,
-      "quadrant": "hype-cycle",
-      "resonanceSignals": {
-        "conceptDepth": 0,
-        "editorial": 0,
-        "connections": 0,
-        "convergence": 0,
-        "deepTopic": 0,
-        "pantheon": 0.92,
-        "graveyard": 0.3333333333333333
-      }
-    },
-    {
       "slug": "condensed-matter",
       "label": "Condensed Matter",
-      "score": 6810,
+      "score": 6806,
       "delta": 6,
       "direction": "steady",
-      "mentions": 38,
+      "mentions": 37,
       "sources": [
         {
           "platform": "arxiv",
@@ -924,6 +794,136 @@
         "deepTopic": 0,
         "pantheon": 0.92,
         "graveyard": 0
+      }
+    },
+    {
+      "slug": "particle-physics",
+      "label": "Particle Physics",
+      "score": 6699,
+      "delta": -6,
+      "direction": "steady",
+      "mentions": 34,
+      "sources": [
+        {
+          "platform": "arxiv",
+          "title": "A Scattering Phase Space Primer",
+          "url": "https://arxiv.org/abs/2611.15861",
+          "score": 200,
+          "authors": "Francesca Acanfora",
+          "arxivCategory": "hep-ph",
+          "publishedAt": "2026-11-11T19:00:02.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Theoretical constraints on beyond Standard Model extensions of the Higgs potential",
+          "url": "https://arxiv.org/abs/2611.12105",
+          "score": 200,
+          "authors": "Javier E. Pena-Vico, Carlos Quezada-Calonge, Juan J. Sanz-Cillero",
+          "arxivCategory": "hep-ph",
+          "publishedAt": "2026-11-09T09:21:33.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Cold Hypersonic Gas Jets for Precision Laser Spectroscopy of Radioactive Molecules",
+          "url": "https://arxiv.org/abs/2610.38242",
+          "score": 200,
+          "authors": "A. Claessens, R. Ferrer, Harshithbabu et al.",
+          "arxivCategory": "physics.atom-ph",
+          "publishedAt": "2026-10-28T03:48:12.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Search for Heavy Charged Higgs Bosons in Boosted Top and Bottom Quark Final States at a 1.4 TeV Future Lepton Collider",
+          "url": "https://arxiv.org/abs/2611.24241",
+          "score": 200,
+          "authors": "Majid Hashemi",
+          "arxivCategory": "hep-ph",
+          "publishedAt": "2026-11-18T11:21:27.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Improving Sensitivity to Rare Processes at the LHC with Geodesic-Aware Graph Neural Networks",
+          "url": "https://arxiv.org/abs/2611.24091",
+          "score": 200,
+          "authors": "Benjamin Fuks, A. Hammad, Adil Jueid et al.",
+          "arxivCategory": "hep-ph",
+          "publishedAt": "2026-11-18T09:17:22.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Analytic next-to-leading order electroweak corrections to Higgs boson pair production in the forward limit",
+          "url": "https://arxiv.org/abs/2611.21757",
+          "score": 200,
+          "authors": "Joshua Davies, Dominik Grau, Kay Schönwald et al.",
+          "arxivCategory": "hep-ph",
+          "publishedAt": "2026-11-16T19:00:29.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "The Future Circular Collider as a photon-photon collider",
+          "url": "https://arxiv.org/abs/2611.20085",
+          "score": 200,
+          "authors": "Patricia Rebello Teles, David d'Enterria",
+          "arxivCategory": "hep-ph",
+          "publishedAt": "2026-11-15T15:58:15.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Quantum tomography of Higgsstrahlung: Higgs boson self-coupling and $Z$ boson anomalous couplings",
+          "url": "https://arxiv.org/abs/2611.18136",
+          "score": 200,
+          "authors": "Clelia Altomonte, Marco Fabbrichesi, Niko Koivunen et al.",
+          "arxivCategory": "hep-ph",
+          "publishedAt": "2026-11-13T13:06:06.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Matching 2HDM to HEFT in triple Higgs boson production from WBF",
+          "url": "https://arxiv.org/abs/2611.15979",
+          "score": 200,
+          "authors": "L. Barreiro, D. Domenech, D. Garcia-Tejada et al.",
+          "arxivCategory": "hep-ph",
+          "publishedAt": "2026-11-11T20:32:26.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "The Higgs boson, naturalness, and the Universe",
+          "url": "https://arxiv.org/abs/2611.14370",
+          "score": 200,
+          "authors": "Mikhail Shaposhnikov",
+          "arxivCategory": "hep-ph",
+          "publishedAt": "2026-11-10T17:26:05.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Search for heavy top quark partners with charge 5/3 in the single-lepton final state in proton-proton collisions at $\\sqrt{s}$ = 13 TeV",
+          "url": "https://arxiv.org/abs/2611.14335",
+          "score": 200,
+          "authors": "CMS Collaboration",
+          "arxivCategory": "hep-ex",
+          "publishedAt": "2026-11-10T16:59:03.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Self-interacting dark matter and neutrino masses from MeV-scale lepton-number breaking",
+          "url": "https://arxiv.org/abs/2611.13617",
+          "score": 200,
+          "authors": "Manoranjan Dutta",
+          "arxivCategory": "hep-ph",
+          "publishedAt": "2026-11-10T05:57:20.000Z"
+        }
+      ],
+      "relatedConceptSlugs": [],
+      "resonance": 3,
+      "quadrant": "hype-cycle",
+      "resonanceSignals": {
+        "conceptDepth": 0,
+        "editorial": 0,
+        "connections": 0,
+        "convergence": 0,
+        "deepTopic": 0,
+        "pantheon": 0.92,
+        "graveyard": 0.3333333333333333
       }
     },
     {
@@ -1460,10 +1460,10 @@
     {
       "slug": "astrobiology",
       "label": "Astrobiology",
-      "score": 2806,
+      "score": 2804,
       "delta": 0,
       "direction": "steady",
-      "mentions": 17,
+      "mentions": 16,
       "sources": [
         {
           "platform": "arxiv",
@@ -1593,10 +1593,10 @@
     {
       "slug": "starship",
       "label": "Starship & SpaceX",
-      "score": 2582,
+      "score": 2577,
       "delta": 0,
       "direction": "steady",
-      "mentions": 31,
+      "mentions": 29,
       "sources": [
         {
           "platform": "hackernews",
@@ -1604,7 +1604,7 @@
           "url": "https://www.spacex.com/launches/starship-flight-15",
           "score": 1761,
           "author": "ls612",
-          "commentCount": 1490,
+          "commentCount": 1494,
           "publishedAt": "2026-11-14T21:22:24.000Z"
         },
         {
@@ -1640,7 +1640,7 @@
           "url": "https://twitter.com/SpaceX/status/2121316300702056595",
           "score": 37,
           "author": "mudil",
-          "commentCount": 8,
+          "commentCount": 9,
           "publishedAt": "2026-11-13T22:09:55.000Z"
         },
         {
@@ -1681,21 +1681,21 @@
         },
         {
           "platform": "hackernews",
+          "title": "Elon Musk's SpaceXAI suffers chemical spill at Mississippi AI data center",
+          "url": "https://www.tomshardware.com/tech-industry/data-centers/elon-musks-spacexai-suffers-chemical-spill-at-mississippi-ai-data-center-up-to-6-000-gallons-of-propylene-glycol-heat-transfer-fluid-lost-environment-agency-says-no-threat-to-residents",
+          "score": 9,
+          "author": "Brajeshwar",
+          "commentCount": 7,
+          "publishedAt": "2026-11-19T16:14:51.000Z"
+        },
+        {
+          "platform": "hackernews",
           "title": "SpaceX Starship Flight 15 double catch has failed",
           "url": "https://bsky.app/profile/onemoney.bsky.social/post/3n2a3glt7bk2t",
           "score": 8,
           "author": "PLenz",
           "commentCount": 0,
           "publishedAt": "2026-11-14T00:10:46.000Z"
-        },
-        {
-          "platform": "hackernews",
-          "title": "Fake OpenAI, SpaceX events used to steal Microsoft, Google accounts",
-          "url": "https://www.bleepingcomputer.com/news/security/fake-openai-spacex-events-used-to-steal-microsoft-google-accounts/",
-          "score": 7,
-          "author": "noorsimar",
-          "commentCount": 0,
-          "publishedAt": "2026-11-12T19:29:33.000Z"
         },
         {
           "platform": "hackernews",
@@ -1840,10 +1840,10 @@
     {
       "slug": "exoplanets",
       "label": "Exoplanets",
-      "score": 1803,
+      "score": 1800,
       "delta": 0,
       "direction": "steady",
-      "mentions": 10,
+      "mentions": 9,
       "sources": [
         {
           "platform": "arxiv",
@@ -1925,15 +1925,6 @@
           "authors": "Joe P. Ninan, Jessica Libby-Roberts, Suvrath Mahadevan et al.",
           "arxivCategory": "astro-ph.EP",
           "publishedAt": "2026-10-22T16:12:31.000Z"
-        },
-        {
-          "platform": "hackernews",
-          "title": "The Disappearing Exoplanet",
-          "url": "https://arstechnica.com/science/2026/11/the-amazing-disappearing-exoplanet/",
-          "score": 3,
-          "author": "dverlaeckt80",
-          "commentCount": 0,
-          "publishedAt": "2026-11-12T18:40:33.000Z"
         }
       ],
       "relatedConceptSlugs": [
@@ -2095,9 +2086,9 @@
     {
       "slug": "starlink",
       "label": "Starlink & Satellite Internet",
-      "score": 657,
-      "delta": -46,
-      "direction": "down",
+      "score": 648,
+      "delta": -6,
+      "direction": "steady",
       "mentions": 9,
       "sources": [
         {
@@ -2138,20 +2129,11 @@
         },
         {
           "platform": "hackernews",
-          "title": "Amid US-Russia Talks, Ukraine Says Its Starlink Access Is Restricted Again",
-          "url": "https://uk.pcmag.com/networking/168362/amid-us-russia-talks-ukraine-says-its-starlink-access-is-restricted-again",
-          "score": 13,
-          "author": "doener",
-          "commentCount": 0,
-          "publishedAt": "2026-11-12T19:56:29.000Z"
-        },
-        {
-          "platform": "hackernews",
           "title": "Ukraine blew up Putin's bridge using relay drones to bypass Starlink limits",
           "url": "https://arstechnica.com/gadgets/2026/11/ukraine-blew-up-putins-bridge-using-relay-drones-to-bypass-starlink-limits/",
           "score": 12,
           "author": "hackthemack",
-          "commentCount": 3,
+          "commentCount": 4,
           "publishedAt": "2026-11-19T05:11:36.000Z"
         },
         {
@@ -2167,10 +2149,19 @@
           "platform": "hackernews",
           "title": "Elon Musk Says Sean Duffy Turned Down Free Starlink for FAA",
           "url": "https://finance.yahoo.com/technology/articles/elon-musk-says-sean-duffy-014354751.html",
-          "score": 3,
+          "score": 4,
           "author": "canucker2016",
-          "commentCount": 4,
+          "commentCount": 5,
           "publishedAt": "2026-11-18T03:40:34.000Z"
+        },
+        {
+          "platform": "hackernews",
+          "title": "Positioning with Starlink Leo Satellites: A Blind Doppler Spectral Approach",
+          "url": "https://people.engineering.osu.edu/media/document/2023-08-11/kassas_positioning_with_starlink_leo_satellites_a_blind_doppler_spectral",
+          "score": 3,
+          "author": "oidar",
+          "commentCount": 0,
+          "publishedAt": "2026-11-19T15:50:38.000Z"
         },
         {
           "platform": "hackernews",
@@ -2251,8 +2242,8 @@
     {
       "slug": "mars",
       "label": "Mars Exploration",
-      "score": 457,
-      "delta": 126,
+      "score": 459,
+      "delta": 127,
       "direction": "up",
       "mentions": 3,
       "sources": [
@@ -2278,7 +2269,7 @@
           "platform": "hackernews",
           "title": "A Collage Showing 49 Drill Holes Made by NASA's Curiosity Mars Rover",
           "url": "https://science.nasa.gov/photojournal/a-collage-showing-49-drill-holes-made-by-nasas-curiosity-mars-rover/",
-          "score": 57,
+          "score": 59,
           "author": "wawayanda",
           "commentCount": 6,
           "publishedAt": "2026-11-16T22:19:31.000Z"
@@ -2400,40 +2391,6 @@
       }
     },
     {
-      "slug": "solar-sails",
-      "label": "Solar Sails",
-      "score": 200,
-      "delta": 0,
-      "direction": "steady",
-      "mentions": 1,
-      "sources": [
-        {
-          "platform": "arxiv",
-          "title": "Optimized Bragg Grating Liquid Crystal Solar Sail",
-          "url": "https://arxiv.org/abs/2610.28942",
-          "score": 200,
-          "authors": "Sai Keshav Sasanapuri, Xiulian, Shan et al.",
-          "arxivCategory": "physics.space-ph",
-          "publishedAt": "2026-10-20T21:35:41.000Z"
-        }
-      ],
-      "relatedConceptSlugs": [
-        "extreme-metamaterial-solar-sails",
-        "solar-surfing"
-      ],
-      "resonance": 68,
-      "quadrant": "sleeping-giant",
-      "resonanceSignals": {
-        "conceptDepth": 0.8982444017039272,
-        "editorial": 1,
-        "connections": 0.3333333333333333,
-        "convergence": 0.25,
-        "deepTopic": 0.8,
-        "pantheon": 0.92,
-        "graveyard": 0
-      }
-    },
-    {
       "slug": "dyson-spheres",
       "label": "Dyson Spheres",
       "score": 200,
@@ -2462,6 +2419,30 @@
         "connections": 0,
         "convergence": 0,
         "deepTopic": 0,
+        "pantheon": 0.92,
+        "graveyard": 0
+      }
+    },
+    {
+      "slug": "solar-sails",
+      "label": "Solar Sails",
+      "score": 0,
+      "delta": 0,
+      "direction": "steady",
+      "mentions": 0,
+      "sources": [],
+      "relatedConceptSlugs": [
+        "extreme-metamaterial-solar-sails",
+        "solar-surfing"
+      ],
+      "resonance": 68,
+      "quadrant": "sleeping-giant",
+      "resonanceSignals": {
+        "conceptDepth": 0.8982444017039272,
+        "editorial": 1,
+        "connections": 0.3333333333333333,
+        "convergence": 0.25,
+        "deepTopic": 0.8,
         "pantheon": 0.92,
         "graveyard": 0
       }
