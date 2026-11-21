@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-21T13:58:06.399Z",
+  "generatedAt": "2026-11-21T22:53:43.118Z",
   "topics": [
     {
       "slug": "gravitational-waves",
@@ -136,18 +136,18 @@
     {
       "slug": "black-holes",
       "label": "Black Holes",
-      "score": 8379,
-      "delta": -6,
+      "score": 8185,
+      "delta": -4,
       "direction": "steady",
-      "mentions": 47,
+      "mentions": 46,
       "sources": [
         {
           "platform": "hackernews",
           "title": "Claude solves two open problems in the physics of black holes",
           "url": "https://www.anthropic.com/research/claude-black-hole-physics",
-          "score": 560,
+          "score": 566,
           "author": "cybermango",
-          "commentCount": 270,
+          "commentCount": 274,
           "publishedAt": "2026-11-19T17:30:44.000Z"
         },
         {
@@ -535,18 +535,18 @@
     {
       "slug": "condensed-matter",
       "label": "Condensed Matter",
-      "score": 7200,
-      "delta": -1,
+      "score": 7233,
+      "delta": 1,
       "direction": "steady",
-      "mentions": 40,
+      "mentions": 41,
       "sources": [
         {
           "platform": "hackernews",
           "title": "Google is pushing OEMs against GrapheneOS and bootloader unlocking",
           "url": "https://grapheneos.social/@GrapheneOS/117645038299496084",
-          "score": 499,
+          "score": 502,
           "author": "mraniki",
-          "commentCount": 201,
+          "commentCount": 205,
           "publishedAt": "2026-11-20T05:21:02.000Z"
         },
         {
@@ -1461,7 +1461,7 @@
       "slug": "astrobiology",
       "label": "Astrobiology",
       "score": 2602,
-      "delta": -13,
+      "delta": -7,
       "direction": "steady",
       "mentions": 14,
       "sources": [
@@ -1591,145 +1591,12 @@
       }
     },
     {
-      "slug": "starship",
-      "label": "Starship & SpaceX",
-      "score": 2497,
-      "delta": -3,
-      "direction": "steady",
-      "mentions": 25,
-      "sources": [
-        {
-          "platform": "hackernews",
-          "title": "SpaceX catches the Starship to end Flight 15",
-          "url": "https://www.spacex.com/launches/starship-flight-15",
-          "score": 1765,
-          "author": "ls612",
-          "commentCount": 1495,
-          "publishedAt": "2026-11-14T21:22:24.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Margin-Inducing Optimal Guidance and Control for Atmospheric Entry",
-          "url": "https://arxiv.org/abs/2611.16891",
-          "score": 200,
-          "authors": "Emily M. Palmer, Anil V. Rao",
-          "arxivCategory": "math.OC",
-          "publishedAt": "2026-11-12T14:49:33.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Overcoming Fundamental Control Limitations in Powered Descent Flight through Robust Incremental Nonlinear Dynamic Inversion",
-          "url": "https://arxiv.org/abs/2611.08121",
-          "score": 200,
-          "authors": "João T. Diz, Paulo Rosa, Pedro Simplício et al.",
-          "arxivCategory": "eess.SY",
-          "publishedAt": "2026-11-05T14:54:21.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Curriculum-Driven Deep Reinforcement Learning for Autonomous Far-Range Rocket Landing",
-          "url": "https://arxiv.org/abs/2610.35954",
-          "score": 200,
-          "authors": "Atin Chowdhury, Piyush Joshi",
-          "arxivCategory": "cs.LG",
-          "publishedAt": "2026-10-24T19:57:44.000Z"
-        },
-        {
-          "platform": "hackernews",
-          "title": "Chemical spills into drainage ditch at SpaceXAI in Southaven",
-          "url": "https://wreg.com/news/chemical-spills-into-drainage-ditch-at-spacexai-in-southaven/",
-          "score": 34,
-          "author": "mikhael",
-          "commentCount": 13,
-          "publishedAt": "2026-11-15T23:12:38.000Z"
-        },
-        {
-          "platform": "hackernews",
-          "title": "Live Starship Flight 15 Entry, Landing Burn, and Catch",
-          "url": "https://studio.x.com/embed/broadcast/2brajgZlOKRMka",
-          "score": 15,
-          "author": "asoberbeck",
-          "commentCount": 3,
-          "publishedAt": "2026-11-14T20:33:50.000Z"
-        },
-        {
-          "platform": "hackernews",
-          "title": "Elon Musk's SpaceXAI suffers chemical spill at Mississippi AI data center",
-          "url": "https://www.tomshardware.com/tech-industry/data-centers/elon-musks-spacexai-suffers-chemical-spill-at-mississippi-ai-data-center-up-to-6-000-gallons-of-propylene-glycol-heat-transfer-fluid-lost-environment-agency-says-no-threat-to-residents",
-          "score": 10,
-          "author": "Brajeshwar",
-          "commentCount": 7,
-          "publishedAt": "2026-11-19T16:14:51.000Z"
-        },
-        {
-          "platform": "hackernews",
-          "title": "SpaceX lenders don't want Elon Musk launching their collateral into space",
-          "url": "https://arstechnica.com/space/2026/11/spacex-lenders-dont-want-elon-musk-launching-their-collateral-into-space/",
-          "score": 8,
-          "author": "lakis",
-          "commentCount": 0,
-          "publishedAt": "2026-11-20T19:31:13.000Z"
-        },
-        {
-          "platform": "hackernews",
-          "title": "Lenders aim to bar SpaceX from launching $40B of chips into orbit",
-          "url": "https://www.ft.com/content/33b5643c-2957-4d42-9116-5e34a3c54e29",
-          "score": 7,
-          "author": "ryzvonusef",
-          "commentCount": 2,
-          "publishedAt": "2026-11-20T11:07:38.000Z"
-        },
-        {
-          "platform": "hackernews",
-          "title": "\"Musk suggested, then insisted, that Mechazilla could catch Starship\"",
-          "url": "https://twitter.com/WalterIsaacson/status/2121725076919717899",
-          "score": 6,
-          "author": "TMWNN",
-          "commentCount": 3,
-          "publishedAt": "2026-11-15T22:16:00.000Z"
-        },
-        {
-          "platform": "hackernews",
-          "title": "SpaceX lenders don't want Elon Musk launching their collateral into space",
-          "url": "https://arstechnica.com/space/2026/11/spacex-lenders-dont-want-elon-musk-launching-their-collateral-into-space/",
-          "score": 6,
-          "author": "FabHK",
-          "commentCount": 1,
-          "publishedAt": "2026-11-21T03:51:44.000Z"
-        },
-        {
-          "platform": "hackernews",
-          "title": "Vulcan rocket fails during launch, dealing major blow to SpaceX competitors",
-          "url": "https://arstechnica.com/space/2026/11/vulcan-rocket-fails-during-launch-dealing-major-blow-to-spacex-competitors/",
-          "score": 6,
-          "author": "bookmtn",
-          "commentCount": 1,
-          "publishedAt": "2026-11-16T00:42:43.000Z"
-        }
-      ],
-      "relatedConceptSlugs": [
-        "extraterrestrial-regolith-derived-atmospheric-entry-heat-shields",
-        "phase-i-final-report-nasa-institute-for-advanced-concepts-combined-heat-shield-a"
-      ],
-      "resonance": 43,
-      "quadrant": "dead-zone",
-      "resonanceSignals": {
-        "conceptDepth": 0.5113915944693856,
-        "editorial": 0.4,
-        "connections": 0,
-        "convergence": 0.35,
-        "deepTopic": 1,
-        "pantheon": 0.92,
-        "graveyard": 0
-      }
-    },
-    {
       "slug": "exoplanets",
       "label": "Exoplanets",
-      "score": 2200,
-      "delta": 0,
+      "score": 2000,
+      "delta": -9,
       "direction": "steady",
-      "mentions": 11,
+      "mentions": 10,
       "sources": [
         {
           "platform": "arxiv",
@@ -1820,15 +1687,6 @@
           "authors": "M. Cretignier, N. C. Hara, S. Aigrain et al.",
           "arxivCategory": "astro-ph.EP",
           "publishedAt": "2026-10-26T19:38:39.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "A Headwind-like Helium Outflow from TOI-3884b",
-          "url": "https://arxiv.org/abs/2610.31492",
-          "score": 200,
-          "authors": "Joe P. Ninan, Jessica Libby-Roberts, Suvrath Mahadevan et al.",
-          "arxivCategory": "astro-ph.EP",
-          "publishedAt": "2026-10-22T16:12:31.000Z"
         }
       ],
       "relatedConceptSlugs": [
@@ -1850,10 +1708,10 @@
     {
       "slug": "space-debris",
       "label": "Space Debris",
-      "score": 1604,
-      "delta": -11,
-      "direction": "steady",
-      "mentions": 9,
+      "score": 1404,
+      "delta": -22,
+      "direction": "down",
+      "mentions": 8,
       "sources": [
         {
           "platform": "arxiv",
@@ -1911,15 +1769,6 @@
         },
         {
           "platform": "arxiv",
-          "title": "A Topology-Aware Quantum-Classical Framework for Multi-Target Active Debris Removal using Gaussian Boson Sampling",
-          "url": "https://arxiv.org/abs/2610.31824",
-          "score": 200,
-          "authors": "Komal Pandya, Saiyam Sakhuja, Nagaraj Kattaian",
-          "arxivCategory": "cs.CE",
-          "publishedAt": "2026-10-22T19:03:02.000Z"
-        },
-        {
-          "platform": "arxiv",
           "title": "The Generalised Kessler Syndrome and the Persian Gulf",
           "url": "https://arxiv.org/abs/2610.40129",
           "score": 200,
@@ -1955,10 +1804,10 @@
     {
       "slug": "asteroid-mining",
       "label": "Asteroid Mining",
-      "score": 1000,
+      "score": 1002,
       "delta": 0,
       "direction": "steady",
-      "mentions": 5,
+      "mentions": 7,
       "sources": [
         {
           "platform": "arxiv",
@@ -2004,6 +1853,24 @@
           "authors": "Yixuan Wu, Kin Thong Lee, Yifei Jiao et al.",
           "arxivCategory": "astro-ph.EP",
           "publishedAt": "2026-10-31T20:02:48.000Z"
+        },
+        {
+          "platform": "hackernews",
+          "title": "China unveils space mining road map with a big move on the moon within 4 years",
+          "url": "https://www.scmp.com/news/china/science/article/3375323/china-unveils-space-mining-road-map-big-move-moon-within-4-years",
+          "score": 1,
+          "author": "bushwart",
+          "commentCount": 0,
+          "publishedAt": "2026-11-21T17:18:59.000Z"
+        },
+        {
+          "platform": "hackernews",
+          "title": "A Space Probe Returns to Asteroids Where NASA Tested Planetary Defense Systems",
+          "url": "https://www.wired.com/story/a-space-probe-returns-to-astroids-where-nasa-tested-planetary-defense-systems/",
+          "score": 1,
+          "author": "beardyw",
+          "commentCount": 0,
+          "publishedAt": "2026-11-21T18:09:21.000Z"
         }
       ],
       "relatedConceptSlugs": [
@@ -2023,12 +1890,145 @@
       }
     },
     {
+      "slug": "starship",
+      "label": "Starship & SpaceX",
+      "score": 717,
+      "delta": -71,
+      "direction": "down",
+      "mentions": 23,
+      "sources": [
+        {
+          "platform": "arxiv",
+          "title": "Margin-Inducing Optimal Guidance and Control for Atmospheric Entry",
+          "url": "https://arxiv.org/abs/2611.16891",
+          "score": 200,
+          "authors": "Emily M. Palmer, Anil V. Rao",
+          "arxivCategory": "math.OC",
+          "publishedAt": "2026-11-12T14:49:33.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Overcoming Fundamental Control Limitations in Powered Descent Flight through Robust Incremental Nonlinear Dynamic Inversion",
+          "url": "https://arxiv.org/abs/2611.08121",
+          "score": 200,
+          "authors": "João T. Diz, Paulo Rosa, Pedro Simplício et al.",
+          "arxivCategory": "eess.SY",
+          "publishedAt": "2026-11-05T14:54:21.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Curriculum-Driven Deep Reinforcement Learning for Autonomous Far-Range Rocket Landing",
+          "url": "https://arxiv.org/abs/2610.35954",
+          "score": 200,
+          "authors": "Atin Chowdhury, Piyush Joshi",
+          "arxivCategory": "cs.LG",
+          "publishedAt": "2026-10-24T19:57:44.000Z"
+        },
+        {
+          "platform": "hackernews",
+          "title": "Chemical spills into drainage ditch at SpaceXAI in Southaven",
+          "url": "https://wreg.com/news/chemical-spills-into-drainage-ditch-at-spacexai-in-southaven/",
+          "score": 34,
+          "author": "mikhael",
+          "commentCount": 13,
+          "publishedAt": "2026-11-15T23:12:38.000Z"
+        },
+        {
+          "platform": "hackernews",
+          "title": "Elon Musk's SpaceXAI suffers chemical spill at Mississippi AI data center",
+          "url": "https://www.tomshardware.com/tech-industry/data-centers/elon-musks-spacexai-suffers-chemical-spill-at-mississippi-ai-data-center-up-to-6-000-gallons-of-propylene-glycol-heat-transfer-fluid-lost-environment-agency-says-no-threat-to-residents",
+          "score": 10,
+          "author": "Brajeshwar",
+          "commentCount": 7,
+          "publishedAt": "2026-11-19T16:14:51.000Z"
+        },
+        {
+          "platform": "hackernews",
+          "title": "SpaceX lenders don't want Elon Musk launching their collateral into space",
+          "url": "https://arstechnica.com/space/2026/11/spacex-lenders-dont-want-elon-musk-launching-their-collateral-into-space/",
+          "score": 8,
+          "author": "lakis",
+          "commentCount": 0,
+          "publishedAt": "2026-11-20T19:31:13.000Z"
+        },
+        {
+          "platform": "hackernews",
+          "title": "Lenders aim to bar SpaceX from launching $40B of chips into orbit",
+          "url": "https://www.ft.com/content/33b5643c-2957-4d42-9116-5e34a3c54e29",
+          "score": 7,
+          "author": "ryzvonusef",
+          "commentCount": 2,
+          "publishedAt": "2026-11-20T11:07:38.000Z"
+        },
+        {
+          "platform": "hackernews",
+          "title": "SpaceX lenders don't want Elon Musk launching their collateral into space",
+          "url": "https://arstechnica.com/space/2026/11/spacex-lenders-dont-want-elon-musk-launching-their-collateral-into-space/",
+          "score": 7,
+          "author": "FabHK",
+          "commentCount": 1,
+          "publishedAt": "2026-11-21T03:51:44.000Z"
+        },
+        {
+          "platform": "hackernews",
+          "title": "\"Musk suggested, then insisted, that Mechazilla could catch Starship\"",
+          "url": "https://twitter.com/WalterIsaacson/status/2121725076919717899",
+          "score": 6,
+          "author": "TMWNN",
+          "commentCount": 3,
+          "publishedAt": "2026-11-15T22:16:00.000Z"
+        },
+        {
+          "platform": "hackernews",
+          "title": "Vulcan rocket fails during launch, dealing major blow to SpaceX competitors",
+          "url": "https://arstechnica.com/space/2026/11/vulcan-rocket-fails-during-launch-dealing-major-blow-to-spacex-competitors/",
+          "score": 6,
+          "author": "bookmtn",
+          "commentCount": 1,
+          "publishedAt": "2026-11-16T00:42:43.000Z"
+        },
+        {
+          "platform": "hackernews",
+          "title": "Zelenskyy accuses SpaceX of lying about Starshield",
+          "url": "https://www.theguardian.com/world/2026/nov/14/spacex-not-honest-slowing-starshield-elon-musk-volodymyr-zelenskyy",
+          "score": 5,
+          "author": "Betelbuddy",
+          "commentCount": 0,
+          "publishedAt": "2026-11-15T17:49:58.000Z"
+        },
+        {
+          "platform": "hackernews",
+          "title": "Texas issues air permit for SpaceX data center",
+          "url": "https://www.politico.com/news/2026/11/17/texas-issues-air-permit-for-massive-spacex-data-center-01170758",
+          "score": 5,
+          "author": "cdrnsf",
+          "commentCount": 0,
+          "publishedAt": "2026-11-18T20:08:42.000Z"
+        }
+      ],
+      "relatedConceptSlugs": [
+        "extraterrestrial-regolith-derived-atmospheric-entry-heat-shields",
+        "phase-i-final-report-nasa-institute-for-advanced-concepts-combined-heat-shield-a"
+      ],
+      "resonance": 43,
+      "quadrant": "dead-zone",
+      "resonanceSignals": {
+        "conceptDepth": 0.5113915944693856,
+        "editorial": 0.4,
+        "connections": 0,
+        "convergence": 0.35,
+        "deepTopic": 1,
+        "pantheon": 0.92,
+        "graveyard": 0
+      }
+    },
+    {
       "slug": "starlink",
       "label": "Starlink & Satellite Internet",
-      "score": 649,
+      "score": 650,
       "delta": 0,
       "direction": "steady",
-      "mentions": 9,
+      "mentions": 10,
       "sources": [
         {
           "platform": "arxiv",
@@ -2110,6 +2110,15 @@
           "author": "ilamont",
           "commentCount": 0,
           "publishedAt": "2026-11-16T15:29:15.000Z"
+        },
+        {
+          "platform": "hackernews",
+          "title": "Starlink reintroduces SNR and signal quality measurement from LAN side gRPC",
+          "url": "https://www.reddit.com/r/StarlinkEngineering/comments/1y1jvqp/getting_starlink_snr/",
+          "score": 1,
+          "author": "walrus01",
+          "commentCount": 0,
+          "publishedAt": "2026-11-21T20:06:18.000Z"
         }
       ],
       "relatedConceptSlugs": [
@@ -2316,8 +2325,8 @@
       "slug": "ocean-worlds",
       "label": "Titan & Ocean Worlds",
       "score": 200,
-      "delta": -67,
-      "direction": "down",
+      "delta": 0,
+      "direction": "steady",
       "mentions": 1,
       "sources": [
         {
