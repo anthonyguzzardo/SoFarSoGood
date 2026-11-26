@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-25T16:30:31.156Z",
+  "generatedAt": "2026-11-26T01:42:13.052Z",
   "topics": [
     {
       "slug": "gravitational-waves",
@@ -128,139 +128,6 @@
         "editorial": 0.7,
         "connections": 0,
         "convergence": 0.05,
-        "deepTopic": 1,
-        "pantheon": 0.92,
-        "graveyard": 0
-      }
-    },
-    {
-      "slug": "black-holes",
-      "label": "Black Holes",
-      "score": 8458,
-      "delta": 0,
-      "direction": "steady",
-      "mentions": 48,
-      "sources": [
-        {
-          "platform": "hackernews",
-          "title": "Claude solves two open problems in the physics of black holes",
-          "url": "https://www.anthropic.com/research/claude-black-hole-physics",
-          "score": 580,
-          "author": "cybermango",
-          "commentCount": 274,
-          "publishedAt": "2026-11-19T17:30:44.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Scalar perturbations in extremal Reissner-Nordström geometry: new methods at work",
-          "url": "https://arxiv.org/abs/2611.33123",
-          "score": 200,
-          "authors": "Giorgio Di Russo, Davide Fioravanti, Francesco Olivi et al.",
-          "arxivCategory": "hep-th",
-          "publishedAt": "2026-11-24T18:50:39.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "General-relativistic Vlasov disks in external magnetic fields around Kerr black holes",
-          "url": "https://arxiv.org/abs/2611.33053",
-          "score": 200,
-          "authors": "Paweł Doruchowski, Tomasz Grewenda, David Kofroň et al.",
-          "arxivCategory": "gr-qc",
-          "publishedAt": "2026-11-24T17:58:55.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Geometrothermodynamics characterization of ABG-AdS black hole immersed by string clouds",
-          "url": "https://arxiv.org/abs/2611.32907",
-          "score": 200,
-          "authors": "Sayed Farooq Ahmed Shah, Safia Taj",
-          "arxivCategory": "gr-qc",
-          "publishedAt": "2026-11-24T16:28:26.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "On the potential of widening the band of X-ray polarimetry",
-          "url": "https://arxiv.org/abs/2611.32885",
-          "score": 200,
-          "authors": "Nicolas De Angelis",
-          "arxivCategory": "astro-ph.HE",
-          "publishedAt": "2026-11-24T16:18:07.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "An uncalibrated effective-one-body waveform model for intermediate-mass-ratio black hole binaries",
-          "url": "https://arxiv.org/abs/2611.32840",
-          "score": 200,
-          "authors": "Angelica Albertini, Vojtěch Witzany",
-          "arxivCategory": "gr-qc",
-          "publishedAt": "2026-11-24T15:52:16.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Toward Solving the Galactic Foreground Problem in Gravitational-Wave Astronomy with Machine Learning",
-          "url": "https://arxiv.org/abs/2611.32800",
-          "score": 200,
-          "authors": "Bo Liang, Jinwen Deng, Minghui Du et al.",
-          "arxivCategory": "gr-qc",
-          "publishedAt": "2026-11-24T15:23:14.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Stellar-evolution systematic biases on $^{12}\\text{C}(α,γ)^{16}\\text{O}$ constraints from the primordial-black-hole mass gap",
-          "url": "https://arxiv.org/abs/2611.32692",
-          "score": 200,
-          "authors": "Jiancheng Wang, Xiaogu Zhong, Jirong Mao",
-          "arxivCategory": "astro-ph.HE",
-          "publishedAt": "2026-11-24T14:26:49.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Area-minimizing surfaces and the rigidity of three-dimensional electrostatic systems",
-          "url": "https://arxiv.org/abs/2611.32478",
-          "score": 200,
-          "authors": "Rafael Rocha de Farias",
-          "arxivCategory": "math.DG",
-          "publishedAt": "2026-11-24T12:07:28.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Horizon dynamical entropies and phase space topology",
-          "url": "https://arxiv.org/abs/2611.32444",
-          "score": 200,
-          "authors": "Matteo Bruno, Simone Speziale",
-          "arxivCategory": "gr-qc",
-          "publishedAt": "2026-11-24T11:42:20.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Entanglement island and Page curve for one-sided rotating Kerr black holes",
-          "url": "https://arxiv.org/abs/2611.32438",
-          "score": 200,
-          "authors": "Soumen Pari",
-          "arxivCategory": "hep-th",
-          "publishedAt": "2026-11-24T11:37:03.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "NS5-branes and the black hole/string transition",
-          "url": "https://arxiv.org/abs/2611.31945",
-          "score": 200,
-          "authors": "Asad Fayiz, Emil J. Martinec",
-          "arxivCategory": "hep-th",
-          "publishedAt": "2026-11-24T04:50:44.000Z"
-        }
-      ],
-      "relatedConceptSlugs": [
-        "direct-multipixel-imaging-and-spectroscopy-of-an-exoplanet-with-a-solar-gravity",
-        "gravity-observation-and-dark-energy-detection-explorer"
-      ],
-      "resonance": 80,
-      "quadrant": "real-deal",
-      "resonanceSignals": {
-        "conceptDepth": 0.8982444017039272,
-        "editorial": 1,
-        "connections": 1,
-        "convergence": 0.2,
         "deepTopic": 1,
         "pantheon": 0.92,
         "graveyard": 0
@@ -400,10 +267,143 @@
       }
     },
     {
+      "slug": "black-holes",
+      "label": "Black Holes",
+      "score": 8253,
+      "delta": -2,
+      "direction": "steady",
+      "mentions": 46,
+      "sources": [
+        {
+          "platform": "hackernews",
+          "title": "Claude solves two open problems in the physics of black holes",
+          "url": "https://www.anthropic.com/research/claude-black-hole-physics",
+          "score": 580,
+          "author": "cybermango",
+          "commentCount": 274,
+          "publishedAt": "2026-11-19T17:30:44.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Scalar perturbations in extremal Reissner-Nordström geometry: new methods at work",
+          "url": "https://arxiv.org/abs/2611.33123",
+          "score": 200,
+          "authors": "Giorgio Di Russo, Davide Fioravanti, Francesco Olivi et al.",
+          "arxivCategory": "hep-th",
+          "publishedAt": "2026-11-24T18:50:39.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "General-relativistic Vlasov disks in external magnetic fields around Kerr black holes",
+          "url": "https://arxiv.org/abs/2611.33053",
+          "score": 200,
+          "authors": "Paweł Doruchowski, Tomasz Grewenda, David Kofroň et al.",
+          "arxivCategory": "gr-qc",
+          "publishedAt": "2026-11-24T17:58:55.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Geometrothermodynamics characterization of ABG-AdS black hole immersed by string clouds",
+          "url": "https://arxiv.org/abs/2611.32907",
+          "score": 200,
+          "authors": "Sayed Farooq Ahmed Shah, Safia Taj",
+          "arxivCategory": "gr-qc",
+          "publishedAt": "2026-11-24T16:28:26.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "On the potential of widening the band of X-ray polarimetry",
+          "url": "https://arxiv.org/abs/2611.32885",
+          "score": 200,
+          "authors": "Nicolas De Angelis",
+          "arxivCategory": "astro-ph.HE",
+          "publishedAt": "2026-11-24T16:18:07.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "An uncalibrated effective-one-body waveform model for intermediate-mass-ratio black hole binaries",
+          "url": "https://arxiv.org/abs/2611.32840",
+          "score": 200,
+          "authors": "Angelica Albertini, Vojtěch Witzany",
+          "arxivCategory": "gr-qc",
+          "publishedAt": "2026-11-24T15:52:16.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Toward Solving the Galactic Foreground Problem in Gravitational-Wave Astronomy with Machine Learning",
+          "url": "https://arxiv.org/abs/2611.32800",
+          "score": 200,
+          "authors": "Bo Liang, Jinwen Deng, Minghui Du et al.",
+          "arxivCategory": "gr-qc",
+          "publishedAt": "2026-11-24T15:23:14.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Stellar-evolution systematic biases on $^{12}\\text{C}(α,γ)^{16}\\text{O}$ constraints from the primordial-black-hole mass gap",
+          "url": "https://arxiv.org/abs/2611.32692",
+          "score": 200,
+          "authors": "Jiancheng Wang, Xiaogu Zhong, Jirong Mao",
+          "arxivCategory": "astro-ph.HE",
+          "publishedAt": "2026-11-24T14:26:49.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Area-minimizing surfaces and the rigidity of three-dimensional electrostatic systems",
+          "url": "https://arxiv.org/abs/2611.32478",
+          "score": 200,
+          "authors": "Rafael Rocha de Farias",
+          "arxivCategory": "math.DG",
+          "publishedAt": "2026-11-24T12:07:28.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Horizon dynamical entropies and phase space topology",
+          "url": "https://arxiv.org/abs/2611.32444",
+          "score": 200,
+          "authors": "Matteo Bruno, Simone Speziale",
+          "arxivCategory": "gr-qc",
+          "publishedAt": "2026-11-24T11:42:20.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Entanglement island and Page curve for one-sided rotating Kerr black holes",
+          "url": "https://arxiv.org/abs/2611.32438",
+          "score": 200,
+          "authors": "Soumen Pari",
+          "arxivCategory": "hep-th",
+          "publishedAt": "2026-11-24T11:37:03.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "NS5-branes and the black hole/string transition",
+          "url": "https://arxiv.org/abs/2611.31945",
+          "score": 200,
+          "authors": "Asad Fayiz, Emil J. Martinec",
+          "arxivCategory": "hep-th",
+          "publishedAt": "2026-11-24T04:50:44.000Z"
+        }
+      ],
+      "relatedConceptSlugs": [
+        "direct-multipixel-imaging-and-spectroscopy-of-an-exoplanet-with-a-solar-gravity",
+        "gravity-observation-and-dark-energy-detection-explorer"
+      ],
+      "resonance": 80,
+      "quadrant": "real-deal",
+      "resonanceSignals": {
+        "conceptDepth": 0.8982444017039272,
+        "editorial": 1,
+        "connections": 1,
+        "convergence": 0.2,
+        "deepTopic": 1,
+        "pantheon": 0.92,
+        "graveyard": 0
+      }
+    },
+    {
       "slug": "quantum-computing",
       "label": "Quantum Computing",
-      "score": 7821,
-      "delta": 2,
+      "score": 7820,
+      "delta": 0,
       "direction": "steady",
       "mentions": 46,
       "sources": [
@@ -545,7 +545,7 @@
           "url": "https://grapheneos.social/@GrapheneOS/117645038299496084",
           "score": 512,
           "author": "mraniki",
-          "commentCount": 210,
+          "commentCount": 212,
           "publishedAt": "2026-11-20T05:21:02.000Z"
         },
         {
@@ -929,10 +929,10 @@
     {
       "slug": "dark-matter",
       "label": "Dark Matter & Dark Energy",
-      "score": 5669,
+      "score": 5672,
       "delta": -3,
       "direction": "steady",
-      "mentions": 30,
+      "mentions": 31,
       "sources": [
         {
           "platform": "arxiv",
@@ -1062,10 +1062,10 @@
     {
       "slug": "cosmology",
       "label": "Cosmology",
-      "score": 5401,
-      "delta": 0,
+      "score": 5201,
+      "delta": -4,
       "direction": "steady",
-      "mentions": 28,
+      "mentions": 27,
       "sources": [
         {
           "platform": "arxiv",
@@ -1194,10 +1194,10 @@
     {
       "slug": "exoplanets",
       "label": "Exoplanets",
-      "score": 3200,
-      "delta": 23,
-      "direction": "up",
-      "mentions": 16,
+      "score": 3000,
+      "delta": 15,
+      "direction": "steady",
+      "mentions": 15,
       "sources": [
         {
           "platform": "arxiv",
@@ -1978,65 +1978,12 @@
       }
     },
     {
-      "slug": "electric-propulsion",
-      "label": "Electric Propulsion",
-      "score": 600,
-      "delta": 50,
-      "direction": "up",
-      "mentions": 3,
-      "sources": [
-        {
-          "platform": "arxiv",
-          "title": "Annular-curvature effects on high-frequency azimuthal fluctuations in 3D PIC simulations of Hall-thruster plasmas",
-          "url": "https://arxiv.org/abs/2611.32385",
-          "score": 200,
-          "authors": "Yingjie Chen, Yinjian Zhao",
-          "arxivCategory": "physics.plasm-ph",
-          "publishedAt": "2026-11-24T10:49:56.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "A Two-Dimensional Physics-Informed Neural Network Model of a Hall Effect Thruster Plasma: Self-Consistent Electrostatics and Physical-Consistency Diagnostics",
-          "url": "https://arxiv.org/abs/2611.04194",
-          "score": 200,
-          "authors": "Josh Adjedj, Subrata Roy",
-          "arxivCategory": "physics.plasm-ph",
-          "publishedAt": "2026-11-03T02:28:22.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Propulsion Systems for a Starshade Rendezvous Mission with the Habitable World Observatory",
-          "url": "https://arxiv.org/abs/2610.36200",
-          "score": 200,
-          "authors": "Mario Damiano, Rhonda Morgan, Michael Turmon et al.",
-          "arxivCategory": "astro-ph.IM",
-          "publishedAt": "2026-10-26T19:38:20.000Z"
-        }
-      ],
-      "relatedConceptSlugs": [
-        "electric-sail-propulsion",
-        "e-glider",
-        "nasa-innovative-advanced-concepts-niac-heliopause-electrostatic-rapid-transit-sy"
-      ],
-      "resonance": 50,
-      "quadrant": "sleeping-giant",
-      "resonanceSignals": {
-        "conceptDepth": 0.6131471927654584,
-        "editorial": 0.4,
-        "connections": 0,
-        "convergence": 0.575,
-        "deepTopic": 1,
-        "pantheon": 0.92,
-        "graveyard": 0
-      }
-    },
-    {
       "slug": "starship",
       "label": "Starship & SpaceX",
-      "score": 506,
-      "delta": 1,
-      "direction": "steady",
-      "mentions": 22,
+      "score": 622,
+      "delta": 23,
+      "direction": "up",
+      "mentions": 27,
       "sources": [
         {
           "platform": "arxiv",
@@ -2055,6 +2002,24 @@
           "authors": "João T. Diz, Paulo Rosa, Pedro Simplício et al.",
           "arxivCategory": "eess.SY",
           "publishedAt": "2026-11-05T14:54:21.000Z"
+        },
+        {
+          "platform": "hackernews",
+          "title": "SpaceX wins FCC approval to deploy 1M orbital data center satellites",
+          "url": "https://www.cnbc.com/2026/11/25/spacex-fcc-satellite-approval.html",
+          "score": 66,
+          "author": "johnyzee",
+          "commentCount": 114,
+          "publishedAt": "2026-11-25T18:59:43.000Z"
+        },
+        {
+          "platform": "hackernews",
+          "title": "US authorizes SpaceX to deploy 1M satellites for data centers in space",
+          "url": "https://www.reuters.com/business/media-telecom/us-authorizes-spacex-deploy-1-million-satellites-data-centers-space-2026-11-25/",
+          "score": 39,
+          "author": "jonbaer",
+          "commentCount": 25,
+          "publishedAt": "2026-11-25T17:22:07.000Z"
         },
         {
           "platform": "hackernews",
@@ -2103,6 +2068,15 @@
         },
         {
           "platform": "hackernews",
+          "title": "SpaceX to contribute one share of its Class A common stock to every kid",
+          "url": "https://ir.spacex.com/updates/releases-details/2026/SpaceX-to-Invest-in-the-Next-Generation-of-Americans-2026-r_LYQ5cH94/default.aspx",
+          "score": 7,
+          "author": "bilsbie",
+          "commentCount": 4,
+          "publishedAt": "2026-11-25T22:48:22.000Z"
+        },
+        {
+          "platform": "hackernews",
           "title": "Lenders aim to bar SpaceX from launching $40B of chips into orbit",
           "url": "https://www.ft.com/content/33b5643c-2957-4d42-9116-5e34a3c54e29",
           "score": 7,
@@ -2118,33 +2092,6 @@
           "author": "FabHK",
           "commentCount": 1,
           "publishedAt": "2026-11-21T03:51:44.000Z"
-        },
-        {
-          "platform": "hackernews",
-          "title": "SpaceX's Starshield troubles in Ukraine could threaten broader military business",
-          "url": "https://arstechnica.com/space/2026/11/incoming-house-chair-threatens-spacex-funding-over-ukraine-controversy/",
-          "score": 6,
-          "author": "rbanffy",
-          "commentCount": 0,
-          "publishedAt": "2026-11-23T10:32:48.000Z"
-        },
-        {
-          "platform": "hackernews",
-          "title": "Elon Musk says SpaceX and Tesla exploring largest merger in history",
-          "url": "https://www.aljazeera.com/economy/2026/10/21/elon-musk-says-spacex-and-tesla-exploring-largest-merger-in",
-          "score": 6,
-          "author": "tosh",
-          "commentCount": 0,
-          "publishedAt": "2026-11-24T12:33:11.000Z"
-        },
-        {
-          "platform": "hackernews",
-          "title": "Texas issues air permit for SpaceX data center",
-          "url": "https://www.politico.com/news/2026/11/17/texas-issues-air-permit-for-massive-spacex-data-center-01170758",
-          "score": 5,
-          "author": "cdrnsf",
-          "commentCount": 0,
-          "publishedAt": "2026-11-18T20:08:42.000Z"
         }
       ],
       "relatedConceptSlugs": [
@@ -2158,6 +2105,50 @@
         "editorial": 0.4,
         "connections": 0,
         "convergence": 0.35,
+        "deepTopic": 1,
+        "pantheon": 0.92,
+        "graveyard": 0
+      }
+    },
+    {
+      "slug": "electric-propulsion",
+      "label": "Electric Propulsion",
+      "score": 400,
+      "delta": 0,
+      "direction": "steady",
+      "mentions": 2,
+      "sources": [
+        {
+          "platform": "arxiv",
+          "title": "Annular-curvature effects on high-frequency azimuthal fluctuations in 3D PIC simulations of Hall-thruster plasmas",
+          "url": "https://arxiv.org/abs/2611.32385",
+          "score": 200,
+          "authors": "Yingjie Chen, Yinjian Zhao",
+          "arxivCategory": "physics.plasm-ph",
+          "publishedAt": "2026-11-24T10:49:56.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "A Two-Dimensional Physics-Informed Neural Network Model of a Hall Effect Thruster Plasma: Self-Consistent Electrostatics and Physical-Consistency Diagnostics",
+          "url": "https://arxiv.org/abs/2611.04194",
+          "score": 200,
+          "authors": "Josh Adjedj, Subrata Roy",
+          "arxivCategory": "physics.plasm-ph",
+          "publishedAt": "2026-11-03T02:28:22.000Z"
+        }
+      ],
+      "relatedConceptSlugs": [
+        "electric-sail-propulsion",
+        "e-glider",
+        "nasa-innovative-advanced-concepts-niac-heliopause-electrostatic-rapid-transit-sy"
+      ],
+      "resonance": 50,
+      "quadrant": "sleeping-giant",
+      "resonanceSignals": {
+        "conceptDepth": 0.6131471927654584,
+        "editorial": 0.4,
+        "connections": 0,
+        "convergence": 0.575,
         "deepTopic": 1,
         "pantheon": 0.92,
         "graveyard": 0
@@ -2251,50 +2242,6 @@
       }
     },
     {
-      "slug": "interstellar-travel",
-      "label": "Interstellar Travel",
-      "score": 202,
-      "delta": -50,
-      "direction": "down",
-      "mentions": 2,
-      "sources": [
-        {
-          "platform": "arxiv",
-          "title": "The Physics of Interstellar Travel",
-          "url": "https://arxiv.org/abs/2611.10651",
-          "score": 200,
-          "authors": "Coryn A. L. Bailer-Jones",
-          "arxivCategory": "physics.pop-ph",
-          "publishedAt": "2026-11-07T10:50:25.000Z"
-        },
-        {
-          "platform": "hackernews",
-          "title": "Video: Manned Interstellar Mission",
-          "url": "https://twitter.com/PicoSputnik/status/2123224137959190993",
-          "score": 2,
-          "author": "Ontolorg",
-          "commentCount": 1,
-          "publishedAt": "2026-11-19T01:27:38.000Z"
-        }
-      ],
-      "relatedConceptSlugs": [
-        "procsima",
-        "dynamic-orbital-slingshot",
-        "solar-system-escape-architecture"
-      ],
-      "resonance": 53,
-      "quadrant": "sleeping-giant",
-      "resonanceSignals": {
-        "conceptDepth": 0.6131471927654584,
-        "editorial": 1,
-        "connections": 0,
-        "convergence": 0.125,
-        "deepTopic": 0.8,
-        "pantheon": 0.92,
-        "graveyard": 0
-      }
-    },
-    {
       "slug": "mars",
       "label": "Mars Exploration",
       "score": 200,
@@ -2327,6 +2274,41 @@
         "convergence": 0.075,
         "deepTopic": 0.8,
         "pantheon": 0.08,
+        "graveyard": 0
+      }
+    },
+    {
+      "slug": "interstellar-travel",
+      "label": "Interstellar Travel",
+      "score": 200,
+      "delta": -50,
+      "direction": "down",
+      "mentions": 1,
+      "sources": [
+        {
+          "platform": "arxiv",
+          "title": "The Physics of Interstellar Travel",
+          "url": "https://arxiv.org/abs/2611.10651",
+          "score": 200,
+          "authors": "Coryn A. L. Bailer-Jones",
+          "arxivCategory": "physics.pop-ph",
+          "publishedAt": "2026-11-07T10:50:25.000Z"
+        }
+      ],
+      "relatedConceptSlugs": [
+        "procsima",
+        "dynamic-orbital-slingshot",
+        "solar-system-escape-architecture"
+      ],
+      "resonance": 53,
+      "quadrant": "sleeping-giant",
+      "resonanceSignals": {
+        "conceptDepth": 0.6131471927654584,
+        "editorial": 1,
+        "connections": 0,
+        "convergence": 0.125,
+        "deepTopic": 0.8,
+        "pantheon": 0.92,
         "graveyard": 0
       }
     },
