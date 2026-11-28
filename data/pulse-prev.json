@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-11-27T01:37:05.621Z",
+  "generatedAt": "2026-11-27T15:53:29.890Z",
   "topics": [
     {
       "slug": "gravitational-waves",
       "label": "Gravitational Waves",
       "score": 8600,
-      "delta": -4,
+      "delta": 0,
       "direction": "steady",
       "mentions": 43,
       "sources": [
@@ -136,10 +136,10 @@
     {
       "slug": "space-telescopes",
       "label": "Space Telescopes",
-      "score": 8004,
-      "delta": -5,
+      "score": 8000,
+      "delta": -2,
       "direction": "steady",
-      "mentions": 41,
+      "mentions": 40,
       "sources": [
         {
           "platform": "arxiv",
@@ -269,10 +269,10 @@
     {
       "slug": "black-holes",
       "label": "Black Holes",
-      "score": 7875,
-      "delta": -5,
+      "score": 7818,
+      "delta": -8,
       "direction": "steady",
-      "mentions": 46,
+      "mentions": 45,
       "sources": [
         {
           "platform": "arxiv",
@@ -395,138 +395,6 @@
         "connections": 1,
         "convergence": 0.2,
         "deepTopic": 1,
-        "pantheon": 0.92,
-        "graveyard": 0
-      }
-    },
-    {
-      "slug": "condensed-matter",
-      "label": "Condensed Matter",
-      "score": 7681,
-      "delta": 0,
-      "direction": "steady",
-      "mentions": 43,
-      "sources": [
-        {
-          "platform": "hackernews",
-          "title": "Google is pushing OEMs against GrapheneOS and bootloader unlocking",
-          "url": "https://grapheneos.social/@GrapheneOS/117645038299496084",
-          "score": 512,
-          "author": "mraniki",
-          "commentCount": 212,
-          "publishedAt": "2026-11-20T05:21:02.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Spectroscopic Signatures of Polaronic Density Wave Fluctuations in Superconducting Bismuthates",
-          "url": "https://arxiv.org/abs/2611.33422",
-          "score": 200,
-          "authors": "Wojciech R. Pudełko, Muntaser Naamneh, Philip M. Dee et al.",
-          "arxivCategory": "cond-mat.supr-con",
-          "publishedAt": "2026-11-24T20:45:51.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Attosecond Wigner time delay of photoionization in the quantum critical systems and phase transitions",
-          "url": "https://arxiv.org/abs/2611.27569",
-          "score": 200,
-          "authors": "Shuaidong Wang, Jiaji Zhang, Zhongchen Xing et al.",
-          "arxivCategory": "physics.atom-ph",
-          "publishedAt": "2026-11-20T13:05:43.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Inversion of magnetization anisotropy in low magnetic fields for textured Bi2223 superconductor due to magnetic responses from superconducting crystallites and intercrystalline boundaries",
-          "url": "https://arxiv.org/abs/2611.20560",
-          "score": 200,
-          "authors": "D. A. Balaev, S. V. Semenov, D. M. Gokhfeld et al.",
-          "arxivCategory": "cond-mat.supr-con",
-          "publishedAt": "2026-11-16T05:39:09.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Stabilization of LaH$_{10}$ with Thorium: Superconductivity in (La,Th)H$_{10}$ up to 232 K near 1 Mbar",
-          "url": "https://arxiv.org/abs/2611.20170",
-          "score": 200,
-          "authors": "Dmitrii V. Semenok, Mikhail A. Volkov, Andrey V. Sadakov et al.",
-          "arxivCategory": "cond-mat.supr-con",
-          "publishedAt": "2026-11-15T18:17:13.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Superconducting Fluctuation Driven Quantum Transport in Bi$_2$Sr$_2$CaCu$_2$O$_{8+δ}$ Thin Films",
-          "url": "https://arxiv.org/abs/2611.09510",
-          "score": 200,
-          "authors": "Sohini Guin, Naresh Shyaga, Jagadish Rajendran et al.",
-          "arxivCategory": "cond-mat.supr-con",
-          "publishedAt": "2026-11-06T14:27:03.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Nonreciprocal charge transport in quantum materials: From superconductors to magnetic systems",
-          "url": "https://arxiv.org/abs/2611.04821",
-          "score": 200,
-          "authors": "Boning Yu, Yalei Huang, Alltrin Dhanarajagopal et al.",
-          "arxivCategory": "cond-mat.supr-con",
-          "publishedAt": "2026-11-03T12:48:37.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Creating functional nanostructures for vortex manipulation in superconducting Bi$_\\text{2}$Sr$_\\text{2}$CaCu$_\\text{2}$O$_\\text{8+x}$ thin films via focused He ion beam irradiation",
-          "url": "https://arxiv.org/abs/2610.41827",
-          "score": 200,
-          "authors": "Bernd Aichner, Christoph Schmid, Sandra Keppert et al.",
-          "arxivCategory": "cond-mat.supr-con",
-          "publishedAt": "2026-10-30T14:45:22.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Emergent Chern metal in strongly correlated moiré bilayers",
-          "url": "https://arxiv.org/abs/2611.34780",
-          "score": 200,
-          "authors": "Kaushal Kumar Kesharpu, Evgenii A. Kochetov",
-          "arxivCategory": "cond-mat.str-el",
-          "publishedAt": "2026-11-25T17:39:22.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Structural Anisotropy in Bi$_2$Se$_3$/$λ$-(BETS)$_2$GaCl$_4$ Topological Insulator/Superconductor Bilayer",
-          "url": "https://arxiv.org/abs/2611.33869",
-          "score": 200,
-          "authors": "Fathan M. Santana, Arifa D. Agustin, Aulia A. Firdaus et al.",
-          "arxivCategory": "cond-mat.supr-con",
-          "publishedAt": "2026-11-25T06:50:42.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Topological insulators on site-eliminated, projected, and patterned fractal lattices",
-          "url": "https://arxiv.org/abs/2611.33155",
-          "score": 200,
-          "authors": "Aiden Mains, Danile Salib, Christopher Leong et al.",
-          "arxivCategory": "cond-mat.mes-hall",
-          "publishedAt": "2026-11-24T18:59:34.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Spectral localizers in phase space: $\\mathbb{Z}$ and $\\mathbb{Z}_2$ invariants for higher-order, semimetal, and valley modes",
-          "url": "https://arxiv.org/abs/2611.26160",
-          "score": 200,
-          "authors": "Lucien Jezequel, Christophe Mora",
-          "arxivCategory": "cond-mat.mes-hall",
-          "publishedAt": "2026-11-19T14:16:42.000Z"
-        }
-      ],
-      "relatedConceptSlugs": [
-        "extreme-metamaterial-solar-sails"
-      ],
-      "resonance": 50,
-      "quadrant": "real-deal",
-      "resonanceSignals": {
-        "conceptDepth": 0.6131471927654584,
-        "editorial": 1,
-        "connections": 0.3333333333333333,
-        "convergence": 0.15,
-        "deepTopic": 0,
         "pantheon": 0.92,
         "graveyard": 0
       }
@@ -667,10 +535,10 @@
     {
       "slug": "quantum-computing",
       "label": "Quantum Computing",
-      "score": 7422,
-      "delta": -5,
+      "score": 7418,
+      "delta": 0,
       "direction": "steady",
-      "mentions": 45,
+      "mentions": 43,
       "sources": [
         {
           "platform": "arxiv",
@@ -797,12 +665,144 @@
       }
     },
     {
+      "slug": "condensed-matter",
+      "label": "Condensed Matter",
+      "score": 6935,
+      "delta": -10,
+      "direction": "steady",
+      "mentions": 39,
+      "sources": [
+        {
+          "platform": "arxiv",
+          "title": "Spectroscopic Signatures of Polaronic Density Wave Fluctuations in Superconducting Bismuthates",
+          "url": "https://arxiv.org/abs/2611.33422",
+          "score": 200,
+          "authors": "Wojciech R. Pudełko, Muntaser Naamneh, Philip M. Dee et al.",
+          "arxivCategory": "cond-mat.supr-con",
+          "publishedAt": "2026-11-24T20:45:51.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Attosecond Wigner time delay of photoionization in the quantum critical systems and phase transitions",
+          "url": "https://arxiv.org/abs/2611.27569",
+          "score": 200,
+          "authors": "Shuaidong Wang, Jiaji Zhang, Zhongchen Xing et al.",
+          "arxivCategory": "physics.atom-ph",
+          "publishedAt": "2026-11-20T13:05:43.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Inversion of magnetization anisotropy in low magnetic fields for textured Bi2223 superconductor due to magnetic responses from superconducting crystallites and intercrystalline boundaries",
+          "url": "https://arxiv.org/abs/2611.20560",
+          "score": 200,
+          "authors": "D. A. Balaev, S. V. Semenov, D. M. Gokhfeld et al.",
+          "arxivCategory": "cond-mat.supr-con",
+          "publishedAt": "2026-11-16T05:39:09.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Stabilization of LaH$_{10}$ with Thorium: Superconductivity in (La,Th)H$_{10}$ up to 232 K near 1 Mbar",
+          "url": "https://arxiv.org/abs/2611.20170",
+          "score": 200,
+          "authors": "Dmitrii V. Semenok, Mikhail A. Volkov, Andrey V. Sadakov et al.",
+          "arxivCategory": "cond-mat.supr-con",
+          "publishedAt": "2026-11-15T18:17:13.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Superconducting Fluctuation Driven Quantum Transport in Bi$_2$Sr$_2$CaCu$_2$O$_{8+δ}$ Thin Films",
+          "url": "https://arxiv.org/abs/2611.09510",
+          "score": 200,
+          "authors": "Sohini Guin, Naresh Shyaga, Jagadish Rajendran et al.",
+          "arxivCategory": "cond-mat.supr-con",
+          "publishedAt": "2026-11-06T14:27:03.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Nonreciprocal charge transport in quantum materials: From superconductors to magnetic systems",
+          "url": "https://arxiv.org/abs/2611.04821",
+          "score": 200,
+          "authors": "Boning Yu, Yalei Huang, Alltrin Dhanarajagopal et al.",
+          "arxivCategory": "cond-mat.supr-con",
+          "publishedAt": "2026-11-03T12:48:37.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Creating functional nanostructures for vortex manipulation in superconducting Bi$_\\text{2}$Sr$_\\text{2}$CaCu$_\\text{2}$O$_\\text{8+x}$ thin films via focused He ion beam irradiation",
+          "url": "https://arxiv.org/abs/2610.41827",
+          "score": 200,
+          "authors": "Bernd Aichner, Christoph Schmid, Sandra Keppert et al.",
+          "arxivCategory": "cond-mat.supr-con",
+          "publishedAt": "2026-10-30T14:45:22.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Emergent Chern metal in strongly correlated moiré bilayers",
+          "url": "https://arxiv.org/abs/2611.34780",
+          "score": 200,
+          "authors": "Kaushal Kumar Kesharpu, Evgenii A. Kochetov",
+          "arxivCategory": "cond-mat.str-el",
+          "publishedAt": "2026-11-25T17:39:22.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Structural Anisotropy in Bi$_2$Se$_3$/$λ$-(BETS)$_2$GaCl$_4$ Topological Insulator/Superconductor Bilayer",
+          "url": "https://arxiv.org/abs/2611.33869",
+          "score": 200,
+          "authors": "Fathan M. Santana, Arifa D. Agustin, Aulia A. Firdaus et al.",
+          "arxivCategory": "cond-mat.supr-con",
+          "publishedAt": "2026-11-25T06:50:42.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Topological insulators on site-eliminated, projected, and patterned fractal lattices",
+          "url": "https://arxiv.org/abs/2611.33155",
+          "score": 200,
+          "authors": "Aiden Mains, Danile Salib, Christopher Leong et al.",
+          "arxivCategory": "cond-mat.mes-hall",
+          "publishedAt": "2026-11-24T18:59:34.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Spectral localizers in phase space: $\\mathbb{Z}$ and $\\mathbb{Z}_2$ invariants for higher-order, semimetal, and valley modes",
+          "url": "https://arxiv.org/abs/2611.26160",
+          "score": 200,
+          "authors": "Lucien Jezequel, Christophe Mora",
+          "arxivCategory": "cond-mat.mes-hall",
+          "publishedAt": "2026-11-19T14:16:42.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "$C_T$ and $C_J$ of general scalar--fermion conformal field theories in $d=4-ε$",
+          "url": "https://arxiv.org/abs/2611.25055",
+          "score": 200,
+          "authors": "Shiroman Prakash, Shubham Kumar Sinha",
+          "arxivCategory": "hep-th",
+          "publishedAt": "2026-11-18T19:03:23.000Z"
+        }
+      ],
+      "relatedConceptSlugs": [
+        "extreme-metamaterial-solar-sails"
+      ],
+      "resonance": 50,
+      "quadrant": "real-deal",
+      "resonanceSignals": {
+        "conceptDepth": 0.6131471927654584,
+        "editorial": 1,
+        "connections": 0.3333333333333333,
+        "convergence": 0.15,
+        "deepTopic": 0,
+        "pantheon": 0.92,
+        "graveyard": 0
+      }
+    },
+    {
       "slug": "particle-physics",
       "label": "Particle Physics",
-      "score": 6600,
-      "delta": 0,
+      "score": 6400,
+      "delta": -3,
       "direction": "steady",
-      "mentions": 33,
+      "mentions": 32,
       "sources": [
         {
           "platform": "arxiv",
@@ -821,15 +821,6 @@
           "authors": "Javier E. Pena-Vico, Carlos Quezada-Calonge, Juan J. Sanz-Cillero",
           "arxivCategory": "hep-ph",
           "publishedAt": "2026-11-09T09:21:33.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Cold Hypersonic Gas Jets for Precision Laser Spectroscopy of Radioactive Molecules",
-          "url": "https://arxiv.org/abs/2610.38242",
-          "score": 200,
-          "authors": "A. Claessens, R. Ferrer, Harshithbabu et al.",
-          "arxivCategory": "physics.atom-ph",
-          "publishedAt": "2026-10-28T03:48:12.000Z"
         },
         {
           "platform": "arxiv",
@@ -911,6 +902,15 @@
           "authors": "Abdelhak Djouadi, John Ellis",
           "arxivCategory": "hep-ph",
           "publishedAt": "2026-11-20T15:08:58.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Interplay of elliptical laser polarization and scattering geometry in laser-assisted pair production of doubly charged Higgs bosons in the Higgs Triplet Model",
+          "url": "https://arxiv.org/abs/2611.27356",
+          "score": 200,
+          "authors": "S. El Handi, Y. Attaourti, B. Taki et al.",
+          "arxivCategory": "hep-ph",
+          "publishedAt": "2026-11-20T09:26:16.000Z"
         }
       ],
       "relatedConceptSlugs": [],
@@ -929,8 +929,8 @@
     {
       "slug": "dark-matter",
       "label": "Dark Matter & Dark Energy",
-      "score": 6076,
-      "delta": 7,
+      "score": 6077,
+      "delta": 0,
       "direction": "steady",
       "mentions": 34,
       "sources": [
@@ -1063,7 +1063,7 @@
       "slug": "cosmology",
       "label": "Cosmology",
       "score": 4602,
-      "delta": -12,
+      "delta": -4,
       "direction": "steady",
       "mentions": 24,
       "sources": [
@@ -1194,10 +1194,10 @@
     {
       "slug": "exoplanets",
       "label": "Exoplanets",
-      "score": 3200,
-      "delta": 7,
+      "score": 3204,
+      "delta": 0,
       "direction": "steady",
-      "mentions": 16,
+      "mentions": 17,
       "sources": [
         {
           "platform": "arxiv",
@@ -1459,10 +1459,10 @@
     {
       "slug": "astrobiology",
       "label": "Astrobiology",
-      "score": 2800,
-      "delta": 0,
+      "score": 2600,
+      "delta": -7,
       "direction": "steady",
-      "mentions": 14,
+      "mentions": 13,
       "sources": [
         {
           "platform": "arxiv",
@@ -1727,7 +1727,7 @@
       "slug": "asteroid-mining",
       "label": "Asteroid Mining",
       "score": 1605,
-      "delta": 14,
+      "delta": 0,
       "direction": "steady",
       "mentions": 10,
       "sources": [
@@ -1842,7 +1842,7 @@
       "slug": "space-debris",
       "label": "Space Debris",
       "score": 1200,
-      "delta": -14,
+      "delta": 0,
       "direction": "steady",
       "mentions": 6,
       "sources": [
@@ -1920,8 +1920,8 @@
       "slug": "artemis",
       "label": "Artemis & Lunar Return",
       "score": 1000,
-      "delta": 25,
-      "direction": "up",
+      "delta": 0,
+      "direction": "steady",
       "mentions": 5,
       "sources": [
         {
@@ -1989,8 +1989,8 @@
     {
       "slug": "starship",
       "label": "Starship & SpaceX",
-      "score": 672,
-      "delta": 8,
+      "score": 676,
+      "delta": 2,
       "direction": "steady",
       "mentions": 35,
       "sources": [
@@ -2016,9 +2016,9 @@
           "platform": "hackernews",
           "title": "SpaceX wins FCC approval to deploy 1M orbital data center satellites",
           "url": "https://www.cnbc.com/2026/11/25/spacex-fcc-satellite-approval.html",
-          "score": 76,
+          "score": 78,
           "author": "johnyzee",
-          "commentCount": 158,
+          "commentCount": 165,
           "publishedAt": "2026-11-25T18:59:43.000Z"
         },
         {
@@ -2027,7 +2027,7 @@
           "url": "https://www.reuters.com/business/media-telecom/us-authorizes-spacex-deploy-1-million-satellites-data-centers-space-2026-11-25/",
           "score": 46,
           "author": "jonbaer",
-          "commentCount": 36,
+          "commentCount": 40,
           "publishedAt": "2026-11-25T17:22:07.000Z"
         },
         {
@@ -2077,30 +2077,30 @@
         },
         {
           "platform": "hackernews",
+          "title": "Musk pledges two SpaceX shares for every US child",
+          "url": "https://www.reuters.com/business/media-telecom/musk-says-every-child-us-will-get-two-spacex-shares-2026-11-26/",
+          "score": 7,
+          "author": "TechTechTech",
+          "commentCount": 5,
+          "publishedAt": "2026-11-26T14:57:18.000Z"
+        },
+        {
+          "platform": "hackernews",
+          "title": "Every child in America will receive two SpaceX shares",
+          "url": "https://twitter.com/elonmusk/status/2125797463047258119",
+          "score": 7,
+          "author": "tosh",
+          "commentCount": 5,
+          "publishedAt": "2026-11-26T08:58:10.000Z"
+        },
+        {
+          "platform": "hackernews",
           "title": "SpaceX to contribute one share of its Class A common stock to every kid",
           "url": "https://ir.spacex.com/updates/releases-details/2026/SpaceX-to-Invest-in-the-Next-Generation-of-Americans-2026-r_LYQ5cH94/default.aspx",
           "score": 7,
           "author": "bilsbie",
           "commentCount": 5,
           "publishedAt": "2026-11-25T22:48:22.000Z"
-        },
-        {
-          "platform": "hackernews",
-          "title": "Lenders aim to bar SpaceX from launching $40B of chips into orbit",
-          "url": "https://www.ft.com/content/33b5643c-2957-4d42-9116-5e34a3c54e29",
-          "score": 7,
-          "author": "ryzvonusef",
-          "commentCount": 2,
-          "publishedAt": "2026-11-20T11:07:38.000Z"
-        },
-        {
-          "platform": "hackernews",
-          "title": "SpaceX lenders don't want Elon Musk launching their collateral into space",
-          "url": "https://arstechnica.com/space/2026/11/spacex-lenders-dont-want-elon-musk-launching-their-collateral-into-space/",
-          "score": 7,
-          "author": "FabHK",
-          "commentCount": 1,
-          "publishedAt": "2026-11-21T03:51:44.000Z"
         }
       ],
       "relatedConceptSlugs": [
@@ -2166,8 +2166,8 @@
     {
       "slug": "starlink",
       "label": "Starlink & Satellite Internet",
-      "score": 223,
-      "delta": -1,
+      "score": 228,
+      "delta": 5,
       "direction": "steady",
       "mentions": 7,
       "sources": [
@@ -2184,7 +2184,7 @@
           "platform": "hackernews",
           "title": "Taking on Starlink: Europe's largest satellite factory opens in push to rival",
           "url": "https://www.cnbc.com/2026/11/26/starlink-satellites-aerospacelab-factory-belgium.html",
-          "score": 8,
+          "score": 10,
           "author": "svggrfgovgf",
           "commentCount": 1,
           "publishedAt": "2026-11-26T15:11:23.000Z"
@@ -2193,7 +2193,7 @@
           "platform": "hackernews",
           "title": "One in 25 Starlink IPs Is a Residential Proxy",
           "url": "https://iptrust.co/blog/one-in-25-starlink-ips-is-a-residential-proxy",
-          "score": 5,
+          "score": 8,
           "author": "protoduction",
           "commentCount": 0,
           "publishedAt": "2026-11-26T15:08:00.000Z"
@@ -2290,8 +2290,8 @@
       "slug": "solar-sails",
       "label": "Solar Sails",
       "score": 200,
-      "delta": 200,
-      "direction": "up",
+      "delta": 0,
+      "direction": "steady",
       "mentions": 1,
       "sources": [
         {
