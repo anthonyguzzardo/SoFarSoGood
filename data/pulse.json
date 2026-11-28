@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-28T01:13:41.804Z",
+  "generatedAt": "2026-11-28T14:48:59.419Z",
   "topics": [
     {
       "slug": "gravitational-waves",
@@ -136,10 +136,10 @@
     {
       "slug": "space-telescopes",
       "label": "Space Telescopes",
-      "score": 8000,
+      "score": 8001,
       "delta": 0,
       "direction": "steady",
-      "mentions": 40,
+      "mentions": 41,
       "sources": [
         {
           "platform": "arxiv",
@@ -269,8 +269,8 @@
     {
       "slug": "black-holes",
       "label": "Black Holes",
-      "score": 7816,
-      "delta": -1,
+      "score": 7823,
+      "delta": 0,
       "direction": "steady",
       "mentions": 45,
       "sources": [
@@ -668,7 +668,7 @@
       "slug": "condensed-matter",
       "label": "Condensed Matter",
       "score": 6872,
-      "delta": -11,
+      "delta": -1,
       "direction": "steady",
       "mentions": 38,
       "sources": [
@@ -800,7 +800,7 @@
       "slug": "particle-physics",
       "label": "Particle Physics",
       "score": 6400,
-      "delta": -3,
+      "delta": 0,
       "direction": "steady",
       "mentions": 32,
       "sources": [
@@ -929,10 +929,10 @@
     {
       "slug": "dark-matter",
       "label": "Dark Matter & Dark Energy",
-      "score": 6078,
+      "score": 6080,
       "delta": 0,
       "direction": "steady",
-      "mentions": 34,
+      "mentions": 35,
       "sources": [
         {
           "platform": "arxiv",
@@ -1460,7 +1460,7 @@
       "slug": "astrobiology",
       "label": "Astrobiology",
       "score": 2600,
-      "delta": -7,
+      "delta": 0,
       "direction": "steady",
       "mentions": 13,
       "sources": [
@@ -1839,80 +1839,135 @@
       }
     },
     {
-      "slug": "space-debris",
-      "label": "Space Debris",
-      "score": 1200,
-      "delta": 0,
-      "direction": "steady",
-      "mentions": 6,
+      "slug": "starship",
+      "label": "Starship & SpaceX",
+      "score": 1129,
+      "delta": 67,
+      "direction": "up",
+      "mentions": 40,
       "sources": [
         {
-          "platform": "arxiv",
-          "title": "Detecting Small Space Objects for Space Situational Awareness with Collaborative Edge AI",
-          "url": "https://arxiv.org/abs/2611.19394",
-          "score": 200,
-          "authors": "Xingyu Qu, Peng Hu",
-          "arxivCategory": "cs.CV",
-          "publishedAt": "2026-11-14T13:23:47.000Z"
+          "platform": "hackernews",
+          "title": "States sue SpaceX to stop Grok from generating child sex images, revenge porn",
+          "url": "https://www.oag.state.va.us/media-center/news-releases/jay-jones/3162-attorneys-general-jones-and-rayfield-file-suit-against-spacex-parent-company-of-x-xai-and-grok-over-creation-and-promotion-of-child-exploitation-and-non-consensual-images-on-platform",
+          "score": 425,
+          "author": "DeepLogin",
+          "commentCount": 297,
+          "publishedAt": "2026-11-27T19:42:25.000Z"
         },
         {
           "platform": "arxiv",
-          "title": "Efficient Identification and Analysis of Space debris Trails in Time-Domain Astronomy",
-          "url": "https://arxiv.org/abs/2611.04610",
+          "title": "Margin-Inducing Optimal Guidance and Control for Atmospheric Entry",
+          "url": "https://arxiv.org/abs/2611.16891",
           "score": 200,
-          "authors": "Sarvesh Kumar Yadav, Bhavya Ailawadhi, Talat Akhunov et al.",
-          "arxivCategory": "astro-ph.IM",
-          "publishedAt": "2026-11-03T10:01:36.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "The Neural Density Model: An Open 3D Thermospheric Density Reanalysis for 2003--2026 From Tracked Space Debris",
-          "url": "https://arxiv.org/abs/2611.02103",
-          "score": 200,
-          "authors": "Enrico Camporeale",
-          "arxivCategory": "physics.space-ph",
-          "publishedAt": "2026-11-01T18:16:47.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Aerodynamic Collision Avoidance Manoeuvres in Very Low Earth Orbit: Exploiting Lift for Short Warning Times and Reduced Orbital Decay",
-          "url": "https://arxiv.org/abs/2611.32556",
-          "score": 200,
-          "authors": "Paul J. Haufe, Fabrizio Turco, Friedrich Tuttas et al.",
+          "authors": "Emily M. Palmer, Anil V. Rao",
           "arxivCategory": "math.OC",
-          "publishedAt": "2026-11-24T13:08:12.000Z"
+          "publishedAt": "2026-11-12T14:49:33.000Z"
         },
         {
           "platform": "arxiv",
-          "title": "Detecting space objects with Earth-observation radar satellites",
-          "url": "https://arxiv.org/abs/2611.12158",
+          "title": "Overcoming Fundamental Control Limitations in Powered Descent Flight through Robust Incremental Nonlinear Dynamic Inversion",
+          "url": "https://arxiv.org/abs/2611.08121",
           "score": 200,
-          "authors": "Juha Vierinen, Laura-Kristin Scholtz, Ulrik Noer et al.",
-          "arxivCategory": "astro-ph.EP",
-          "publishedAt": "2026-11-09T10:06:46.000Z"
+          "authors": "João T. Diz, Paulo Rosa, Pedro Simplício et al.",
+          "arxivCategory": "eess.SY",
+          "publishedAt": "2026-11-05T14:54:21.000Z"
         },
         {
-          "platform": "arxiv",
-          "title": "The Generalised Kessler Syndrome and the Persian Gulf",
-          "url": "https://arxiv.org/abs/2610.40129",
-          "score": 200,
-          "authors": "Bernhard K Meister",
-          "arxivCategory": "q-fin.PM",
-          "publishedAt": "2026-10-29T14:21:42.000Z"
+          "platform": "hackernews",
+          "title": "SpaceX wins FCC approval to deploy 1M orbital data center satellites",
+          "url": "https://www.cnbc.com/2026/11/25/spacex-fcc-satellite-approval.html",
+          "score": 79,
+          "author": "johnyzee",
+          "commentCount": 170,
+          "publishedAt": "2026-11-25T18:59:43.000Z"
+        },
+        {
+          "platform": "hackernews",
+          "title": "US authorizes SpaceX to deploy 1M satellites for data centers in space",
+          "url": "https://www.reuters.com/business/media-telecom/us-authorizes-spacex-deploy-1-million-satellites-data-centers-space-2026-11-25/",
+          "score": 46,
+          "author": "jonbaer",
+          "commentCount": 40,
+          "publishedAt": "2026-11-25T17:22:07.000Z"
+        },
+        {
+          "platform": "hackernews",
+          "title": "FCC approves 1M SpaceX data centers in space. Astronomers are dismayed",
+          "url": "https://www.washingtonpost.com/technology/2026/11/26/fcc-approves-1-million-spacex-data-centers-space-astronomers-are-dismayed/",
+          "score": 21,
+          "author": "bookofjoe",
+          "commentCount": 26,
+          "publishedAt": "2026-11-28T13:21:21.000Z"
+        },
+        {
+          "platform": "hackernews",
+          "title": "Musk makes $18B SpaceX stock pledge for every kid in America",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/musk-makes-18-billion-spacex-053902980.html",
+          "score": 13,
+          "author": "cybermango",
+          "commentCount": 3,
+          "publishedAt": "2026-11-27T23:08:02.000Z"
+        },
+        {
+          "platform": "hackernews",
+          "title": "SpaceX and Anthropic Ran an Unusual IPO Process",
+          "url": "https://www.reuters.com/world/like-spacex-anthropic-ran-an-unusual-ipo-process-chafing-some-bankers-2026-11-22/",
+          "score": 11,
+          "author": "monster_group",
+          "commentCount": 0,
+          "publishedAt": "2026-11-22T12:44:51.000Z"
+        },
+        {
+          "platform": "hackernews",
+          "title": "US approves SpaceX plan to send a million data satellites to space",
+          "url": "https://www.bbc.co.uk/news/articles/cwp836l8n1jgo",
+          "score": 9,
+          "author": "lifeisstillgood",
+          "commentCount": 5,
+          "publishedAt": "2026-11-26T01:42:47.000Z"
+        },
+        {
+          "platform": "hackernews",
+          "title": "States Sue SpaceX Over Grok Deepfakes",
+          "url": "https://www.wired.com/story/states-sue-spacex-over-grok-deepfakes/",
+          "score": 9,
+          "author": "Brajeshwar",
+          "commentCount": 2,
+          "publishedAt": "2026-11-23T14:59:39.000Z"
+        },
+        {
+          "platform": "hackernews",
+          "title": "States sue SpaceX to stop Grok from generating child sex images, revenge porn",
+          "url": "https://arstechnica.com/tech-policy/2026/11/states-sue-spacex-to-stop-grok-from-generating-child-sex-images-revenge-porn/",
+          "score": 8,
+          "author": "Bender",
+          "commentCount": 1,
+          "publishedAt": "2026-11-23T22:39:37.000Z"
+        },
+        {
+          "platform": "hackernews",
+          "title": "Musk pledges two SpaceX shares for every US child",
+          "url": "https://www.reuters.com/business/media-telecom/musk-says-every-child-us-will-get-two-spacex-shares-2026-11-26/",
+          "score": 7,
+          "author": "TechTechTech",
+          "commentCount": 5,
+          "publishedAt": "2026-11-26T14:57:18.000Z"
         }
       ],
       "relatedConceptSlugs": [
-        "niac-phase-i-final-report-on-orbit-collision"
+        "extraterrestrial-regolith-derived-atmospheric-entry-heat-shields",
+        "phase-i-final-report-nasa-institute-for-advanced-concepts-combined-heat-shield-a"
       ],
-      "resonance": 20,
+      "resonance": 43,
       "quadrant": "dead-zone",
       "resonanceSignals": {
-        "conceptDepth": 0.3868528072345416,
+        "conceptDepth": 0.5113915944693856,
         "editorial": 0.4,
         "connections": 0,
-        "convergence": 0,
-        "deepTopic": 0,
-        "pantheon": 0,
+        "convergence": 0.35,
+        "deepTopic": 1,
+        "pantheon": 0.92,
         "graveyard": 0
       }
     },
@@ -1987,135 +2042,71 @@
       }
     },
     {
-      "slug": "starship",
-      "label": "Starship & SpaceX",
-      "score": 938,
-      "delta": 40,
-      "direction": "up",
-      "mentions": 39,
+      "slug": "space-debris",
+      "label": "Space Debris",
+      "score": 1000,
+      "delta": -17,
+      "direction": "down",
+      "mentions": 5,
       "sources": [
         {
-          "platform": "hackernews",
-          "title": "States sue SpaceX to stop Grok from generating child sex images, revenge porn",
-          "url": "https://www.oag.state.va.us/media-center/news-releases/jay-jones/3162-attorneys-general-jones-and-rayfield-file-suit-against-spacex-parent-company-of-x-xai-and-grok-over-creation-and-promotion-of-child-exploitation-and-non-consensual-images-on-platform",
-          "score": 252,
-          "author": "DeepLogin",
-          "commentCount": 133,
-          "publishedAt": "2026-11-27T19:42:25.000Z"
+          "platform": "arxiv",
+          "title": "Detecting Small Space Objects for Space Situational Awareness with Collaborative Edge AI",
+          "url": "https://arxiv.org/abs/2611.19394",
+          "score": 200,
+          "authors": "Xingyu Qu, Peng Hu",
+          "arxivCategory": "cs.CV",
+          "publishedAt": "2026-11-14T13:23:47.000Z"
         },
         {
           "platform": "arxiv",
-          "title": "Margin-Inducing Optimal Guidance and Control for Atmospheric Entry",
-          "url": "https://arxiv.org/abs/2611.16891",
+          "title": "Efficient Identification and Analysis of Space debris Trails in Time-Domain Astronomy",
+          "url": "https://arxiv.org/abs/2611.04610",
           "score": 200,
-          "authors": "Emily M. Palmer, Anil V. Rao",
+          "authors": "Sarvesh Kumar Yadav, Bhavya Ailawadhi, Talat Akhunov et al.",
+          "arxivCategory": "astro-ph.IM",
+          "publishedAt": "2026-11-03T10:01:36.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "The Neural Density Model: An Open 3D Thermospheric Density Reanalysis for 2003--2026 From Tracked Space Debris",
+          "url": "https://arxiv.org/abs/2611.02103",
+          "score": 200,
+          "authors": "Enrico Camporeale",
+          "arxivCategory": "physics.space-ph",
+          "publishedAt": "2026-11-01T18:16:47.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Aerodynamic Collision Avoidance Manoeuvres in Very Low Earth Orbit: Exploiting Lift for Short Warning Times and Reduced Orbital Decay",
+          "url": "https://arxiv.org/abs/2611.32556",
+          "score": 200,
+          "authors": "Paul J. Haufe, Fabrizio Turco, Friedrich Tuttas et al.",
           "arxivCategory": "math.OC",
-          "publishedAt": "2026-11-12T14:49:33.000Z"
+          "publishedAt": "2026-11-24T13:08:12.000Z"
         },
         {
           "platform": "arxiv",
-          "title": "Overcoming Fundamental Control Limitations in Powered Descent Flight through Robust Incremental Nonlinear Dynamic Inversion",
-          "url": "https://arxiv.org/abs/2611.08121",
+          "title": "Detecting space objects with Earth-observation radar satellites",
+          "url": "https://arxiv.org/abs/2611.12158",
           "score": 200,
-          "authors": "João T. Diz, Paulo Rosa, Pedro Simplício et al.",
-          "arxivCategory": "eess.SY",
-          "publishedAt": "2026-11-05T14:54:21.000Z"
-        },
-        {
-          "platform": "hackernews",
-          "title": "SpaceX wins FCC approval to deploy 1M orbital data center satellites",
-          "url": "https://www.cnbc.com/2026/11/25/spacex-fcc-satellite-approval.html",
-          "score": 79,
-          "author": "johnyzee",
-          "commentCount": 168,
-          "publishedAt": "2026-11-25T18:59:43.000Z"
-        },
-        {
-          "platform": "hackernews",
-          "title": "US authorizes SpaceX to deploy 1M satellites for data centers in space",
-          "url": "https://www.reuters.com/business/media-telecom/us-authorizes-spacex-deploy-1-million-satellites-data-centers-space-2026-11-25/",
-          "score": 46,
-          "author": "jonbaer",
-          "commentCount": 40,
-          "publishedAt": "2026-11-25T17:22:07.000Z"
-        },
-        {
-          "platform": "hackernews",
-          "title": "SpaceX and Anthropic Ran an Unusual IPO Process",
-          "url": "https://www.reuters.com/world/like-spacex-anthropic-ran-an-unusual-ipo-process-chafing-some-bankers-2026-11-22/",
-          "score": 11,
-          "author": "monster_group",
-          "commentCount": 0,
-          "publishedAt": "2026-11-22T12:44:51.000Z"
-        },
-        {
-          "platform": "hackernews",
-          "title": "Musk makes $18B SpaceX stock pledge for every kid in America",
-          "url": "https://finance.yahoo.com/markets/stocks/articles/musk-makes-18-billion-spacex-053902980.html",
-          "score": 10,
-          "author": "cybermango",
-          "commentCount": 2,
-          "publishedAt": "2026-11-27T23:08:02.000Z"
-        },
-        {
-          "platform": "hackernews",
-          "title": "US approves SpaceX plan to send a million data satellites to space",
-          "url": "https://www.bbc.co.uk/news/articles/cwp836l8n1jgo",
-          "score": 9,
-          "author": "lifeisstillgood",
-          "commentCount": 5,
-          "publishedAt": "2026-11-26T01:42:47.000Z"
-        },
-        {
-          "platform": "hackernews",
-          "title": "States Sue SpaceX Over Grok Deepfakes",
-          "url": "https://www.wired.com/story/states-sue-spacex-over-grok-deepfakes/",
-          "score": 9,
-          "author": "Brajeshwar",
-          "commentCount": 2,
-          "publishedAt": "2026-11-23T14:59:39.000Z"
-        },
-        {
-          "platform": "hackernews",
-          "title": "States sue SpaceX to stop Grok from generating child sex images, revenge porn",
-          "url": "https://arstechnica.com/tech-policy/2026/11/states-sue-spacex-to-stop-grok-from-generating-child-sex-images-revenge-porn/",
-          "score": 8,
-          "author": "Bender",
-          "commentCount": 1,
-          "publishedAt": "2026-11-23T22:39:37.000Z"
-        },
-        {
-          "platform": "hackernews",
-          "title": "Musk pledges two SpaceX shares for every US child",
-          "url": "https://www.reuters.com/business/media-telecom/musk-says-every-child-us-will-get-two-spacex-shares-2026-11-26/",
-          "score": 7,
-          "author": "TechTechTech",
-          "commentCount": 5,
-          "publishedAt": "2026-11-26T14:57:18.000Z"
-        },
-        {
-          "platform": "hackernews",
-          "title": "Every child in America will receive two SpaceX shares",
-          "url": "https://twitter.com/elonmusk/status/2125797463047258119",
-          "score": 7,
-          "author": "tosh",
-          "commentCount": 5,
-          "publishedAt": "2026-11-26T08:58:10.000Z"
+          "authors": "Juha Vierinen, Laura-Kristin Scholtz, Ulrik Noer et al.",
+          "arxivCategory": "astro-ph.EP",
+          "publishedAt": "2026-11-09T10:06:46.000Z"
         }
       ],
       "relatedConceptSlugs": [
-        "extraterrestrial-regolith-derived-atmospheric-entry-heat-shields",
-        "phase-i-final-report-nasa-institute-for-advanced-concepts-combined-heat-shield-a"
+        "niac-phase-i-final-report-on-orbit-collision"
       ],
-      "resonance": 43,
+      "resonance": 20,
       "quadrant": "dead-zone",
       "resonanceSignals": {
-        "conceptDepth": 0.5113915944693856,
+        "conceptDepth": 0.3868528072345416,
         "editorial": 0.4,
         "connections": 0,
-        "convergence": 0.35,
-        "deepTopic": 1,
-        "pantheon": 0.92,
+        "convergence": 0,
+        "deepTopic": 0,
+        "pantheon": 0,
         "graveyard": 0
       }
     },
@@ -2166,8 +2157,8 @@
     {
       "slug": "starlink",
       "label": "Starlink & Satellite Internet",
-      "score": 228,
-      "delta": 2,
+      "score": 229,
+      "delta": 0,
       "direction": "steady",
       "mentions": 7,
       "sources": [
@@ -2193,7 +2184,7 @@
           "platform": "hackernews",
           "title": "One in 25 Starlink IPs Is a Residential Proxy",
           "url": "https://iptrust.co/blog/one-in-25-starlink-ips-is-a-residential-proxy",
-          "score": 8,
+          "score": 9,
           "author": "protoduction",
           "commentCount": 0,
           "publishedAt": "2026-11-26T15:08:00.000Z"

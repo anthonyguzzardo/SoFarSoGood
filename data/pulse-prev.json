@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-27T15:53:29.890Z",
+  "generatedAt": "2026-11-28T01:13:41.804Z",
   "topics": [
     {
       "slug": "gravitational-waves",
@@ -137,7 +137,7 @@
       "slug": "space-telescopes",
       "label": "Space Telescopes",
       "score": 8000,
-      "delta": -2,
+      "delta": 0,
       "direction": "steady",
       "mentions": 40,
       "sources": [
@@ -269,8 +269,8 @@
     {
       "slug": "black-holes",
       "label": "Black Holes",
-      "score": 7818,
-      "delta": -8,
+      "score": 7816,
+      "delta": -1,
       "direction": "steady",
       "mentions": 45,
       "sources": [
@@ -395,139 +395,6 @@
         "connections": 1,
         "convergence": 0.2,
         "deepTopic": 1,
-        "pantheon": 0.92,
-        "graveyard": 0
-      }
-    },
-    {
-      "slug": "nanotechnology",
-      "label": "Nanotechnology & Metamaterials",
-      "score": 7600,
-      "delta": 0,
-      "direction": "steady",
-      "mentions": 38,
-      "sources": [
-        {
-          "platform": "arxiv",
-          "title": "Periodic and quasiperiodic structures produced by microphase separation in one-component simple liquids with competing interactions",
-          "url": "https://arxiv.org/abs/2611.32273",
-          "score": 200,
-          "authors": "Lorenzo Agosta, Alfredo Metere, Mikhail Dzugutov",
-          "arxivCategory": "cond-mat.mes-hall",
-          "publishedAt": "2026-11-24T09:40:57.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Critical Topology: A New Perspective for Phase Transitions",
-          "url": "https://arxiv.org/abs/2611.30368",
-          "score": 200,
-          "authors": "Xue-Jia Yu",
-          "arxivCategory": "cond-mat.str-el",
-          "publishedAt": "2026-11-23T09:37:50.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Strain-driven terahertz phase modulation in piezoelectric and nonlinear optical crystals: mechanisms, material developments, and modulation strategies",
-          "url": "https://arxiv.org/abs/2611.30194",
-          "score": 200,
-          "authors": "Aarifa Muhammed Ashraf, Rajaboopathi Mani",
-          "arxivCategory": "physics.optics",
-          "publishedAt": "2026-11-23T07:37:09.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Efficient Optimization of Mechanical Metamaterials via Transferable Representation Learning",
-          "url": "https://arxiv.org/abs/2611.28362",
-          "score": 200,
-          "authors": "Antonio Varagnolo, Miaomiao Dai, Bolei Deng et al.",
-          "arxivCategory": "cs.CE",
-          "publishedAt": "2026-11-20T22:19:16.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Silver/alumina-capped Janus particles: a dispersible hyperbolic metamaterial",
-          "url": "https://arxiv.org/abs/2611.27736",
-          "score": 200,
-          "authors": "Samhita Kattekola, Raymond R. Dagastine, Alexander Couzis et al.",
-          "arxivCategory": "cond-mat.soft",
-          "publishedAt": "2026-11-20T15:31:13.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Interfacial Transition Waves and Domain Wall Self-Pinning in Bi-stable Mechanical Metamaterial",
-          "url": "https://arxiv.org/abs/2611.26877",
-          "score": 200,
-          "authors": "Michael J. Frazier",
-          "arxivCategory": "cond-mat.mtrl-sci",
-          "publishedAt": "2026-11-19T22:44:24.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "A Metamaterial Agentic Swarm: Coordinated Search for Discrete Mechanical Design",
-          "url": "https://arxiv.org/abs/2611.26743",
-          "score": 200,
-          "authors": "Achuth Chandrasekhar, Alexander Zhao, Amir Barati Farimani",
-          "arxivCategory": "cs.CE",
-          "publishedAt": "2026-11-19T19:37:57.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Fractional Charge at Dislocations from Band-Inversion Cancellation",
-          "url": "https://arxiv.org/abs/2611.26616",
-          "score": 200,
-          "authors": "Vladimir Juričić, Rodrigo Soto-Garrido",
-          "arxivCategory": "cond-mat.mes-hall",
-          "publishedAt": "2026-11-19T18:58:11.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Formalizing local gauge freedom via bi-equivariant groupoid algebras",
-          "url": "https://arxiv.org/abs/2611.23475",
-          "score": 200,
-          "authors": "Emil Prodan",
-          "arxivCategory": "math-ph",
-          "publishedAt": "2026-11-17T20:26:14.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Spatiotemporal programming of shape memory polymers for tunable vibration responses",
-          "url": "https://arxiv.org/abs/2611.21930",
-          "score": 200,
-          "authors": "Samantha Averitt, Jay Sim, Ruike Renee Zhao",
-          "arxivCategory": "physics.app-ph",
-          "publishedAt": "2026-11-16T21:45:03.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "High-resolution top-down nanopatterning of NbN thin films for superconducting metamaterials",
-          "url": "https://arxiv.org/abs/2611.21848",
-          "score": 200,
-          "authors": "Francesca Incalza, Davide Mondin, Dip Joti Paul et al.",
-          "arxivCategory": "cond-mat.supr-con",
-          "publishedAt": "2026-11-16T20:09:51.000Z"
-        },
-        {
-          "platform": "arxiv",
-          "title": "Conditioned Reactive-Power Tuning Manifolds in Constrained Inverse Source Problems",
-          "url": "https://arxiv.org/abs/2611.21428",
-          "score": 200,
-          "authors": "Mohamed R. Khodja",
-          "arxivCategory": "math-ph",
-          "publishedAt": "2026-11-16T17:20:14.000Z"
-        }
-      ],
-      "relatedConceptSlugs": [
-        "extreme-metamaterial-solar-sails",
-        "technology-development-and-demonstration-concepts-for-the-space-elevator"
-      ],
-      "resonance": 61,
-      "quadrant": "real-deal",
-      "resonanceSignals": {
-        "conceptDepth": 0.6991803252671503,
-        "editorial": 1,
-        "connections": 0.3333333333333333,
-        "convergence": 0.15,
-        "deepTopic": 0.8,
         "pantheon": 0.92,
         "graveyard": 0
       }
@@ -665,12 +532,145 @@
       }
     },
     {
+      "slug": "nanotechnology",
+      "label": "Nanotechnology & Metamaterials",
+      "score": 7400,
+      "delta": -3,
+      "direction": "steady",
+      "mentions": 37,
+      "sources": [
+        {
+          "platform": "arxiv",
+          "title": "Periodic and quasiperiodic structures produced by microphase separation in one-component simple liquids with competing interactions",
+          "url": "https://arxiv.org/abs/2611.32273",
+          "score": 200,
+          "authors": "Lorenzo Agosta, Alfredo Metere, Mikhail Dzugutov",
+          "arxivCategory": "cond-mat.mes-hall",
+          "publishedAt": "2026-11-24T09:40:57.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Critical Topology: A New Perspective for Phase Transitions",
+          "url": "https://arxiv.org/abs/2611.30368",
+          "score": 200,
+          "authors": "Xue-Jia Yu",
+          "arxivCategory": "cond-mat.str-el",
+          "publishedAt": "2026-11-23T09:37:50.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Strain-driven terahertz phase modulation in piezoelectric and nonlinear optical crystals: mechanisms, material developments, and modulation strategies",
+          "url": "https://arxiv.org/abs/2611.30194",
+          "score": 200,
+          "authors": "Aarifa Muhammed Ashraf, Rajaboopathi Mani",
+          "arxivCategory": "physics.optics",
+          "publishedAt": "2026-11-23T07:37:09.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Efficient Optimization of Mechanical Metamaterials via Transferable Representation Learning",
+          "url": "https://arxiv.org/abs/2611.28362",
+          "score": 200,
+          "authors": "Antonio Varagnolo, Miaomiao Dai, Bolei Deng et al.",
+          "arxivCategory": "cs.CE",
+          "publishedAt": "2026-11-20T22:19:16.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Silver/alumina-capped Janus particles: a dispersible hyperbolic metamaterial",
+          "url": "https://arxiv.org/abs/2611.27736",
+          "score": 200,
+          "authors": "Samhita Kattekola, Raymond R. Dagastine, Alexander Couzis et al.",
+          "arxivCategory": "cond-mat.soft",
+          "publishedAt": "2026-11-20T15:31:13.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Interfacial Transition Waves and Domain Wall Self-Pinning in Bi-stable Mechanical Metamaterial",
+          "url": "https://arxiv.org/abs/2611.26877",
+          "score": 200,
+          "authors": "Michael J. Frazier",
+          "arxivCategory": "cond-mat.mtrl-sci",
+          "publishedAt": "2026-11-19T22:44:24.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "A Metamaterial Agentic Swarm: Coordinated Search for Discrete Mechanical Design",
+          "url": "https://arxiv.org/abs/2611.26743",
+          "score": 200,
+          "authors": "Achuth Chandrasekhar, Alexander Zhao, Amir Barati Farimani",
+          "arxivCategory": "cs.CE",
+          "publishedAt": "2026-11-19T19:37:57.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Fractional Charge at Dislocations from Band-Inversion Cancellation",
+          "url": "https://arxiv.org/abs/2611.26616",
+          "score": 200,
+          "authors": "Vladimir Juričić, Rodrigo Soto-Garrido",
+          "arxivCategory": "cond-mat.mes-hall",
+          "publishedAt": "2026-11-19T18:58:11.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Formalizing local gauge freedom via bi-equivariant groupoid algebras",
+          "url": "https://arxiv.org/abs/2611.23475",
+          "score": 200,
+          "authors": "Emil Prodan",
+          "arxivCategory": "math-ph",
+          "publishedAt": "2026-11-17T20:26:14.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Spatiotemporal programming of shape memory polymers for tunable vibration responses",
+          "url": "https://arxiv.org/abs/2611.21930",
+          "score": 200,
+          "authors": "Samantha Averitt, Jay Sim, Ruike Renee Zhao",
+          "arxivCategory": "physics.app-ph",
+          "publishedAt": "2026-11-16T21:45:03.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "High-resolution top-down nanopatterning of NbN thin films for superconducting metamaterials",
+          "url": "https://arxiv.org/abs/2611.21848",
+          "score": 200,
+          "authors": "Francesca Incalza, Davide Mondin, Dip Joti Paul et al.",
+          "arxivCategory": "cond-mat.supr-con",
+          "publishedAt": "2026-11-16T20:09:51.000Z"
+        },
+        {
+          "platform": "arxiv",
+          "title": "Conditioned Reactive-Power Tuning Manifolds in Constrained Inverse Source Problems",
+          "url": "https://arxiv.org/abs/2611.21428",
+          "score": 200,
+          "authors": "Mohamed R. Khodja",
+          "arxivCategory": "math-ph",
+          "publishedAt": "2026-11-16T17:20:14.000Z"
+        }
+      ],
+      "relatedConceptSlugs": [
+        "extreme-metamaterial-solar-sails",
+        "technology-development-and-demonstration-concepts-for-the-space-elevator"
+      ],
+      "resonance": 61,
+      "quadrant": "real-deal",
+      "resonanceSignals": {
+        "conceptDepth": 0.6991803252671503,
+        "editorial": 1,
+        "connections": 0.3333333333333333,
+        "convergence": 0.15,
+        "deepTopic": 0.8,
+        "pantheon": 0.92,
+        "graveyard": 0
+      }
+    },
+    {
       "slug": "condensed-matter",
       "label": "Condensed Matter",
-      "score": 6935,
-      "delta": -10,
+      "score": 6872,
+      "delta": -11,
       "direction": "steady",
-      "mentions": 39,
+      "mentions": 38,
       "sources": [
         {
           "platform": "arxiv",
@@ -929,7 +929,7 @@
     {
       "slug": "dark-matter",
       "label": "Dark Matter & Dark Energy",
-      "score": 6077,
+      "score": 6078,
       "delta": 0,
       "direction": "steady",
       "mentions": 34,
@@ -1063,7 +1063,7 @@
       "slug": "cosmology",
       "label": "Cosmology",
       "score": 4602,
-      "delta": -4,
+      "delta": 0,
       "direction": "steady",
       "mentions": 24,
       "sources": [
@@ -1194,7 +1194,7 @@
     {
       "slug": "exoplanets",
       "label": "Exoplanets",
-      "score": 3204,
+      "score": 3205,
       "delta": 0,
       "direction": "steady",
       "mentions": 17,
@@ -1593,7 +1593,7 @@
       "slug": "fusion-propulsion",
       "label": "Fusion Propulsion",
       "score": 2202,
-      "delta": -15,
+      "delta": 0,
       "direction": "steady",
       "mentions": 12,
       "sources": [
@@ -1989,11 +1989,20 @@
     {
       "slug": "starship",
       "label": "Starship & SpaceX",
-      "score": 676,
-      "delta": 2,
-      "direction": "steady",
-      "mentions": 35,
+      "score": 938,
+      "delta": 40,
+      "direction": "up",
+      "mentions": 39,
       "sources": [
+        {
+          "platform": "hackernews",
+          "title": "States sue SpaceX to stop Grok from generating child sex images, revenge porn",
+          "url": "https://www.oag.state.va.us/media-center/news-releases/jay-jones/3162-attorneys-general-jones-and-rayfield-file-suit-against-spacex-parent-company-of-x-xai-and-grok-over-creation-and-promotion-of-child-exploitation-and-non-consensual-images-on-platform",
+          "score": 252,
+          "author": "DeepLogin",
+          "commentCount": 133,
+          "publishedAt": "2026-11-27T19:42:25.000Z"
+        },
         {
           "platform": "arxiv",
           "title": "Margin-Inducing Optimal Guidance and Control for Atmospheric Entry",
@@ -2016,9 +2025,9 @@
           "platform": "hackernews",
           "title": "SpaceX wins FCC approval to deploy 1M orbital data center satellites",
           "url": "https://www.cnbc.com/2026/11/25/spacex-fcc-satellite-approval.html",
-          "score": 78,
+          "score": 79,
           "author": "johnyzee",
-          "commentCount": 165,
+          "commentCount": 168,
           "publishedAt": "2026-11-25T18:59:43.000Z"
         },
         {
@@ -2038,6 +2047,15 @@
           "author": "monster_group",
           "commentCount": 0,
           "publishedAt": "2026-11-22T12:44:51.000Z"
+        },
+        {
+          "platform": "hackernews",
+          "title": "Musk makes $18B SpaceX stock pledge for every kid in America",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/musk-makes-18-billion-spacex-053902980.html",
+          "score": 10,
+          "author": "cybermango",
+          "commentCount": 2,
+          "publishedAt": "2026-11-27T23:08:02.000Z"
         },
         {
           "platform": "hackernews",
@@ -2068,15 +2086,6 @@
         },
         {
           "platform": "hackernews",
-          "title": "SpaceX lenders don't want Elon Musk launching their collateral into space",
-          "url": "https://arstechnica.com/space/2026/11/spacex-lenders-dont-want-elon-musk-launching-their-collateral-into-space/",
-          "score": 8,
-          "author": "lakis",
-          "commentCount": 0,
-          "publishedAt": "2026-11-20T19:31:13.000Z"
-        },
-        {
-          "platform": "hackernews",
           "title": "Musk pledges two SpaceX shares for every US child",
           "url": "https://www.reuters.com/business/media-telecom/musk-says-every-child-us-will-get-two-spacex-shares-2026-11-26/",
           "score": 7,
@@ -2092,15 +2101,6 @@
           "author": "tosh",
           "commentCount": 5,
           "publishedAt": "2026-11-26T08:58:10.000Z"
-        },
-        {
-          "platform": "hackernews",
-          "title": "SpaceX to contribute one share of its Class A common stock to every kid",
-          "url": "https://ir.spacex.com/updates/releases-details/2026/SpaceX-to-Invest-in-the-Next-Generation-of-Americans-2026-r_LYQ5cH94/default.aspx",
-          "score": 7,
-          "author": "bilsbie",
-          "commentCount": 5,
-          "publishedAt": "2026-11-25T22:48:22.000Z"
         }
       ],
       "relatedConceptSlugs": [
@@ -2167,7 +2167,7 @@
       "slug": "starlink",
       "label": "Starlink & Satellite Internet",
       "score": 228,
-      "delta": 5,
+      "delta": 2,
       "direction": "steady",
       "mentions": 7,
       "sources": [
